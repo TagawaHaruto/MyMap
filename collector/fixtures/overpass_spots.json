@@ -1,7 +1,7 @@
 {"elements": [
   {"type": "node", "id": 1, "lat": 35.701, "lon": 139.403, "tags": {"name": "青梅鉄道公園", "tourism": "museum", "museum": "railway", "addr:province": "東京都", "website": "https://www.ome-tetsudou-park.com/"}},
-  {"type": "way", "id": 2, "center": {"lat": 35.716, "lon": 139.776}, "tags": {"name": "東京国立博物館", "tourism": "museum", "wikipedia": "ja:東京国立博物館"}},
-  {"type": "node", "id": 3, "lat": 35.65, "lon": 139.5, "tags": {"name": "某寺", "amenity": "place_of_worship", "religion": "buddhist", "wikipedia": "ja:某寺", "addr:province": "神奈川県"}},
+  {"type": "way", "id": 2, "center": {"lat": 35.716, "lon": 139.776}, "tags": {"name": "東京国立博物館", "name:ja-Hira": "とうきょうこくりつはくぶつかん", "tourism": "museum", "wikipedia": "ja:東京国立博物館"}},
+  {"type": "node", "id": 3, "lat": 35.65, "lon": 139.5, "tags": {"name": "某寺", "name:ja_kana": "ボウジ", "amenity": "place_of_worship", "religion": "buddhist", "wikipedia": "ja:某寺", "addr:province": "神奈川県"}},
   {"type": "node", "id": 4, "lat": 35.66, "lon": 139.6, "tags": {"name": "〇〇の湯", "amenity": "public_bath", "bath:type": "onsen"}},
   {"type": "node", "id": 5, "lat": 35.67, "lon": 139.7, "tags": {"name": "某水族館", "tourism": "aquarium"}},
   {"type": "node", "id": 6, "lat": 35.68, "lon": 139.71, "tags": {"name": "某動物園", "tourism": "zoo"}},

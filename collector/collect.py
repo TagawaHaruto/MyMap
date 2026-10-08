@@ -361,10 +361,14 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
             continue
         seen.add(key)
         site = t.get('website', '')
-        out.append({'id': f"osm:{el['type']}:{el['id']}", 'name': t['name'], 'lat': round(pos['lat'], 5),
-                    'lon': round(pos['lon'], 5), 'pref': norm_province(t.get('addr:province')), 'genres': g[0], 'indoor': g[1],
-                    'url': site if site.startswith(('http://', 'https://')) else wiki_url(t.get('wikipedia')) or '',
-                    'note': g[2], 'k': kind})
+        spot = {'id': f"osm:{el['type']}:{el['id']}", 'name': t['name'], 'lat': round(pos['lat'], 5),
+                'lon': round(pos['lon'], 5), 'pref': norm_province(t.get('addr:province')), 'genres': g[0], 'indoor': g[1],
+                'url': site if site.startswith(('http://', 'https://')) else wiki_url(t.get('wikipedia')) or '',
+                'note': g[2], 'k': kind}
+        kana = t.get('name:ja-Hira') or t.get('name:ja_kana') or t.get('name:ja-Hrkt')
+        if kana:  # 読みでの名前検索用（ないものはファイルを小さくするため付けない）
+            spot['kana'] = kana
+        out.append(spot)
     return out
 
 

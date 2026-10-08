@@ -214,6 +214,10 @@ class OsmSpotTest(unittest.TestCase):
         self.assertEqual(by['航空公園']['genres'], ['vehicle', 'play'])
         self.assertEqual((by['某プラネタリウム']['genres'], by['某プラネタリウム']['url']), (['museum'], ''))
         self.assertTrue(all(s['note'] for s in spots))
+        # 読み仮名タグがあれば検索用に残す（ないものはキー自体を付けない）
+        self.assertEqual(by['東京国立博物館']['kana'], 'とうきょうこくりつはくぶつかん')
+        self.assertEqual(by['某寺']['kana'], 'ボウジ')
+        self.assertNotIn('kana', by['某水族館'])
 
     def test_refresh_spots_keeps_old_entries_of_failed_queries(self):
         old = [{'id': 'osm:node:99', 'name': '旧', 'lat': 35.0, 'lon': 139.0, 'k': 'bath'}]
