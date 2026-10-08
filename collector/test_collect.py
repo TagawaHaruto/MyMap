@@ -134,12 +134,13 @@ class PoiTest(unittest.TestCase):
         self.assertEqual(lake['wikipedia'], 'https://ja.wikipedia.org/wiki/' + urllib.parse.quote('奥多摩湖'))
         self.assertIsNone(next(p for p in pois if p['kind'] == 'onsen')['wikipedia'])
 
-    def test_overpass_query_has_bbox_and_all_kinds(self):
-        q = collect.overpass_query({'lat': 35.65, 'lon': 139.54}, 150)
-        self.assertIn('[out:json]', q)
-        self.assertIn('(34.299,137.877,37.001,141.203)', q)
-        for word in ('道の駅', 'public_bath', 'viewpoint', 'waterfall', 'peak', 'water', 'beach'):
+    def test_poi_queries_are_split_by_kind(self):
+        self.assertEqual([k for k, _ in collect.POI_QUERIES], ['michinoeki', 'onsen', 'viewpoint', 'scenic'])
+        q = collect.overpass_body(collect.POI_QUERIES[3][1], '(34.299,137.877,37.001,141.203)').decode()
+        self.assertIn(urllib.parse.quote('(34.299,137.877,37.001,141.203)'), q)
+        for word in ('waterfall', 'peak', 'lake', 'beach'):
             self.assertIn(word, q)
+        self.assertEqual(collect.bbox({'lat': 35.65, 'lon': 139.54}, 150), '(34.299,137.877,37.001,141.203)')
 
     def test_refresh_pois_skips_when_fresh(self):
         status = {'pois_at': '2026-10-05T00:00:00+09:00'}
@@ -153,7 +154,7 @@ class ReviewFixTest(unittest.TestCase):
     def test_unnamed_onsen_is_skipped(self):
         text = '{"elements": [{"type": "node", "id": 1, "lat": 35.7, "lon": 139.2, "tags": {"amenity": "public_bath", "bath:type": "onsen"}}]}'
         self.assertEqual(collect.parse_overpass(text), [])
-        self.assertIn('nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]', collect.overpass_query({'lat': 35.65, 'lon': 139.54}, 150))
+        self.assertIn('nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]', dict(collect.POI_QUERIES)['onsen'])
 
     def test_zero_events_with_previous_future_events_is_error(self):
         cfg = {'eventMonthsAhead': 3, 'sources': [src(id='d', type='daylist', url='https://d/{YM}')]}
@@ -240,6 +241,41 @@ class OsmSpotTest(unittest.TestCase):
         got = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                                     lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set())
         self.assertIsNone(got)
+
+
+class OverpassRemarkTest(unittest.TestCase):
+    TIMEOUT = '{"elements": [], "remark": "runtime error: Query timed out in \\"query\\" at line 1 after 181 seconds."}'
+
+    def test_parsers_raise_on_runtime_error(self):
+        with self.assertRaises(RuntimeError):
+            collect.parse_overpass(self.TIMEOUT)
+        with self.assertRaises(RuntimeError):
+            collect.parse_osm_spots(self.TIMEOUT)
+
+    def test_refresh_pois_keeps_old_kind_on_runtime_error(self):
+        old = [{'name': '旧道の駅', 'lat': 35.5, 'lon': 139.0, 'kind': 'michinoeki', 'wikipedia': None, 'k': 'michinoeki'}]
+        status = {}
+        pois = collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
+                                    lambda *a, **k: self.TIMEOUT, dt.datetime(2026, 10, 8, tzinfo=collect.JST),
+                                    old, sleep=lambda s: None)
+        self.assertEqual([p['name'] for p in pois], ['旧道の駅'])
+        self.assertIn('timed out', status['pois_error'])
+
+    def test_refresh_pois_tags_kind_group(self):
+        pois = collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, {},
+                                    lambda *a, **k: fx('overpass.json'), dt.datetime(2026, 10, 8, tzinfo=collect.JST),
+                                    [], sleep=lambda s: None)
+        self.assertIn(('michinoeki', '道の駅どうし'), {(p['kind'], p['name']) for p in pois})
+        self.assertTrue(all(p['k'] for p in pois))
+
+    def test_refresh_spots_keeps_old_kind_on_runtime_error(self):
+        old = [{'id': 'osm:node:1', 'name': '旧博物館', 'lat': 35.0, 'lon': 139.0, 'k': 'museum'}]
+        status = {}
+        spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
+                                      lambda *a, **k: self.TIMEOUT, dt.datetime(2026, 10, 8, tzinfo=collect.JST),
+                                      old, set(), sleep=lambda s: None)
+        self.assertEqual([s['name'] for s in spots], ['旧博物館'])
+        self.assertIn('museum', status['spots_error'])
 
 
 if __name__ == '__main__':

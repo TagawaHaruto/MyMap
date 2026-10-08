@@ -143,15 +143,41 @@ def bbox(origin, radius_km):
     return f"({origin['lat'] - dlat:.3f},{origin['lon'] - dlon:.3f},{origin['lat'] + dlat:.3f},{origin['lon'] + dlon:.3f})"
 
 
-def overpass_query(origin, radius_km):
-    # 429（混雑）を避けるため全種類を 1 回の問い合わせにまとめる
-    bb = bbox(origin, radius_km)
-    parts = ['nwr["name"~"^道の駅"]', 'nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]',
-             'nwr["tourism"="viewpoint"]["name"]', 'nwr["waterway"="waterfall"]["name"]["wikipedia"]',
-             'nwr["natural"="peak"]["name"]["wikipedia"]', 'nwr["natural"~"^(valley|gorge)$"]["name"]["wikipedia"]',
-             'nwr["natural"="water"]["water"="lake"]["name"]["wikipedia"]',
-             'nwr["natural"~"^(beach|cape)$"]["name"]["wikipedia"]']
-    return '[out:json][timeout:180];(' + ''.join(p + bb + ';' for p in parts) + ');out center tags;'
+# 種類ごとに分けて取得する（全部まとめると Overpass がタイムアウトするため）
+POI_QUERIES = [
+    ('michinoeki', ['nwr["name"~"^道の駅"]']),
+    ('onsen', ['nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]']),
+    ('viewpoint', ['nwr["tourism"="viewpoint"]["name"]']),
+    ('scenic', ['nwr["waterway"="waterfall"]["name"]["wikipedia"]',
+                'nwr["natural"~"^(peak|valley|gorge|beach|cape)$"]["name"]["wikipedia"]',
+                'nwr["natural"="water"]["water"="lake"]["name"]["wikipedia"]']),
+]
+
+
+def overpass_body(stmts, bb):
+    stmts = [stmts] if isinstance(stmts, str) else stmts
+    q = '[out:json][timeout:180];(' + ''.join(s + bb + ';' for s in stmts) + ');out center tags;'
+    return urllib.parse.urlencode({'data': q}).encode()
+
+
+def overpass_by_kind(queries, bb, parse, fetch, old, sleep):
+    """種類ごとに取得。混雑やタイムアウトは別サーバーで再試行し、それでも失敗した種類は前回分（k が同じもの）を残す。"""
+    out, errors = [], []
+    for i, (kind, stmts) in enumerate(queries):
+        if i:
+            sleep(5)  # Overpass への配慮
+        body = overpass_body(stmts, bb)
+        for n, url in enumerate(OVERPASS_URLS):
+            try:
+                out += parse(fetch(url, data=body, timeout=240), kind)
+                break
+            except Exception as err:
+                if n + 1 < len(OVERPASS_URLS):
+                    sleep(30)
+                    continue
+                errors.append(f'{kind}: {type(err).__name__}: {err}'[:160])
+                out += [x for x in old if x.get('k') == kind]
+    return out, errors
 
 
 def poi_kind(t):
@@ -186,9 +212,18 @@ def wiki_url(tag):
     return f'https://{lang}.wikipedia.org/wiki/' + urllib.parse.quote(title.replace(' ', '_'))
 
 
+def overpass_elements(text):
+    """Overpass は実行時エラー（タイムアウト等）でも 200 と空の結果を返すので、remark を見て例外にする。"""
+    data = json.loads(text)
+    remark = data.get('remark') or ''
+    if 'error' in remark.lower():
+        raise RuntimeError(remark[:200])
+    return data['elements']
+
+
 def parse_overpass(text):
     seen, out = set(), []
-    for el in json.loads(text)['elements']:
+    for el in overpass_elements(text):
         t = el.get('tags', {})
         kind = poi_kind(t)
         pos = el if 'lat' in el else el.get('center')
@@ -200,19 +235,19 @@ def parse_overpass(text):
     return out
 
 
-def refresh_pois(cfg, status, fetch, now):
+def refresh_pois(cfg, status, fetch, now, old=(), sleep=time.sleep):
+    """週 1 回だけ取り直す。取り直さないときは None。"""
     last = status.get('pois_at')
     if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7):
-        return
-    try:
-        body = urllib.parse.urlencode({'data': overpass_query(cfg['origin'], cfg['poiRadiusKm'])}).encode()
-        pois = parse_overpass(fetch('https://overpass-api.de/api/interpreter', data=body, timeout=240))  # 1〜2 分かかる
-        save(os.path.join(DATA, 'pois.json'), pois)
-        status['pois_at'], status['pois_error'] = now.isoformat(timespec='seconds'), None
-        print(f'pois: {len(pois)}')
-    except Exception as err:  # 失敗したら前回の pois.json を残す
-        status['pois_error'] = f'{type(err).__name__}: {err}'[:300]
-        print(f'[pois] {status["pois_error"]}', file=sys.stderr)
+        return None
+    pois, errors = overpass_by_kind(POI_QUERIES, bbox(cfg['origin'], cfg['poiRadiusKm']),
+                                    lambda text, kind: [dict(p, k=kind) for p in parse_overpass(text)],
+                                    fetch, old, sleep)
+    status['pois_at'] = now.isoformat(timespec='seconds')
+    status['pois_error'] = ' / '.join(errors) or None
+    if errors:
+        print(f"[pois] {status['pois_error']}", file=sys.stderr)
+    return pois
 
 # ---- 自動収集スポット（OpenStreetMap。厳選リストとは別ファイル） ----
 
@@ -277,7 +312,7 @@ def osm_genre(t):
 def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
     seen = set() if seen is None else seen
     out = []
-    for el in json.loads(text)['elements']:
+    for el in overpass_elements(text):
         t = el.get('tags', {})
         pos = el if 'lat' in el else el.get('center')
         if not t.get('name') or not pos or t['name'] in exclude_names:
@@ -301,21 +336,10 @@ def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep)
     last = status.get('spots_at')
     if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7):
         return None
-    bb, seen, out, errors = bbox(cfg['origin'], cfg['poiRadiusKm']), set(), [], []
-    for i, (kind, q) in enumerate(SPOT_QUERIES):
-        if i:
-            sleep(5)  # Overpass への配慮
-        body = urllib.parse.urlencode({'data': f'[out:json][timeout:180];{q}{bb};out center tags;'}).encode()
-        for n, url in enumerate(OVERPASS_URLS):
-            try:
-                out += parse_osm_spots(fetch(url, data=body, timeout=240), exclude_names, kind, seen)
-                break
-            except Exception as err:
-                if n + 1 < len(OVERPASS_URLS):
-                    sleep(30)
-                    continue
-                errors.append(f'{kind}: {type(err).__name__}: {err}'[:120])
-                out += [s for s in old if s.get('k') == kind]
+    seen = set()
+    out, errors = overpass_by_kind(SPOT_QUERIES, bbox(cfg['origin'], cfg['poiRadiusKm']),
+                                   lambda text, kind: parse_osm_spots(text, exclude_names, kind, seen),
+                                   fetch, old, sleep)
     status['spots_at'] = now.isoformat(timespec='seconds')
     status['spots_error'] = ' / '.join(errors) or None
     if errors:
@@ -446,7 +470,10 @@ def main():
     fetch = make_fetch(cfg)
     events = collect_events(cfg, today, old, status, fetch)
     save(os.path.join(DATA, 'events.json'), events)
-    refresh_pois(cfg, status, fetch, dt.datetime.now(JST))
+    pois = refresh_pois(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'pois.json'), []))
+    if pois is not None:
+        save(os.path.join(DATA, 'pois.json'), pois)
+        print(f'pois: {len(pois)}')
     curated = {s['name'] for s in load(os.path.join(DATA, 'spots.json'), [])}
     spots = refresh_spots(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'osm_spots.json'), []), curated)
     if spots is not None:
