@@ -134,3 +134,13 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 .cand[aria-pressed="true"] { border: 3px solid var(--key); background: var(--key-bg); }
 .cand[aria-pressed="true"] .cand-title::before { content: "✓ "; color: var(--key); }
 .tour-bar #nav { flex: 2; }
+/* スポットの説明と写真 */
+.info { margin-top: 8px; padding-top: 8px; border-top: var(--bw) solid var(--line); }
+.stop-info { margin: -4px 0 4px; padding: 8px 12px; border: var(--bw) solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; }
+.info p { margin: 0 0 6px; }
+.info-img { display: block; width: 100%; max-height: 240px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; background: var(--bg-sub); }
+.photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 6px; }
+.photos a { display: grid; gap: 2px; color: var(--fg-sub); text-decoration: none; }
+.photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; background: var(--bg-sub); }
+.credit { font-size: var(--font-size-14); color: var(--fg-sub); overflow-wrap: anywhere; }
+.stop .info-btn { display: flex; margin-top: 4px; min-height: 40px; font-size: var(--font-size-14); }

@@ -142,7 +142,8 @@ function spotCard(s) {
       ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
       ${s.poi ? '' : `<button type="button" class="icon" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>
       <button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
-    </div></article>`;
+      ${infoButton(s)}
+    </div><div class="info" hidden></div></article>`;
 }
 function renderSpots() {
   // 検索欄は作り直さない（入力中にほかの更新が来てもフォーカスを失わないように）
@@ -178,6 +179,77 @@ function renderSpotList() {
       : !DATA.osmLoaded ? 'スポットを読み込み中…' : '条件に合うスポットがありません。条件を広げてみてください。'}</p>`);
   if (more) $('#more').onclick = () => { state.limit += 300; renderSpotList(); };
 }
+// ---- スポットの説明と写真（Wikipedia の要約、なければ Wikimedia Commons の付近の写真） ----
+const INFO_ITEMS = new Map(); // 画面に出ている id → スポット
+const INFO_CACHE_MAX = 200;
+function infoButton(s) {
+  INFO_ITEMS.set(s.id, s);
+  return `<button type="button" class="btn info-btn" data-info="${esc(s.id)}" aria-expanded="false">▼詳しく</button>`;
+}
+function infoCache() { return store.get('info') || {}; }
+function saveInfo(id, v) {
+  const all = infoCache();
+  all[id] = { ...v, at: Date.now() };
+  // 古いものから消して、端末の保存領域を使いすぎない
+  const keys = Object.keys(all).sort((a, b) => all[a].at - all[b].at);
+  for (const k of keys.slice(0, Math.max(0, keys.length - INFO_CACHE_MAX))) delete all[k];
+  store.set('info', all);
+}
+async function fetchJSON(url) {
+  const r = await fetch(url, { signal: timeoutSignal(8000) });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return r.json();
+}
+async function loadInfo(s) {
+  const cached = infoCache()[s.id];
+  if (cached) return cached;
+  const ref = Lib.wikiRef(s);
+  let summary = null, photos = [], failed = false;
+  if (ref) {
+    try { summary = Lib.parseSummary(await fetchJSON(Lib.summaryUrl(ref))); } catch (err) { if (!/HTTP 404/.test(err.message)) failed = true; }
+  }
+  if (!summary || !summary.thumb) {
+    try { photos = Lib.parseCommons(await fetchJSON(Lib.commonsNearbyUrl(s.lat, s.lon, 300, 3))); } catch { failed = true; }
+  }
+  const v = { summary, photos };
+  if (!failed) saveInfo(s.id, v); // 圏外などで取れなかったときは保存しない（次に開いたときに取り直す）
+  return { ...v, failed };
+}
+function infoHtml(s, v) {
+  const parts = [];
+  if (v.summary) {
+    if (v.summary.thumb) parts.push(`<img class="info-img" src="${esc(v.summary.thumb)}" alt="${esc(s.name)}の写真" loading="lazy">`);
+    parts.push(`<p>${esc(v.summary.text)}</p>`);
+    if (v.summary.page) parts.push(`<p class="credit">出典: <a href="${esc(v.summary.page)}" target="_blank" rel="noopener">Wikipedia</a>（文章 CC BY-SA）${v.summary.thumb ? '・写真は記事のページで撮影者とライセンスを確認できます' : ''}</p>`);
+  } else if (!isCurated(s)) {
+    parts.push('<p class="hint">この場所の説明はまだありません。</p>');
+  }
+  if (v.photos && v.photos.length) {
+    parts.push(`<p class="credit"><strong>付近の写真</strong>（約300m以内で撮られたもの。関係のない写真が含まれることがあります）</p><div class="photos">`
+      + v.photos.map((p) => `<a href="${esc(p.page)}" target="_blank" rel="noopener"><img src="${esc(p.thumb)}" alt="付近の写真" loading="lazy">
+        <span class="credit">${p.artist ? '撮影: ' + esc(p.artist) + ' / ' : ''}${esc(p.license) || 'ライセンスはリンク先'}</span></a>`).join('') + '</div>');
+  } else if (!(v.summary && v.summary.thumb)) {
+    parts.push('<p class="hint">写真は見つかりませんでした。</p>');
+  }
+  if (v.failed) parts.push('<p class="hint">一部を読み込めませんでした（圏外の可能性があります）。電波の良い場所でもう一度開いてください。</p>');
+  return parts.join('');
+}
+document.addEventListener('click', async (e) => {
+  const b = e.target.closest('[data-info]'); if (!b) return;
+  e.preventDefault(); // 立ち寄りの行（label）の中でもチェックを切り替えない
+  buzz();
+  const box = b.closest('article.card') ? b.closest('article.card').querySelector('.info') : b.closest('.stop').nextElementSibling;
+  const open = b.getAttribute('aria-expanded') !== 'true';
+  b.setAttribute('aria-expanded', open);
+  b.textContent = open ? '▲閉じる' : '▼詳しく';
+  box.hidden = !open;
+  if (!open || box.dataset.loaded) return;
+  const s = INFO_ITEMS.get(b.dataset.info); if (!s) return;
+  box.innerHTML = '<p class="hint">読み込み中…</p>';
+  const v = await loadInfo(s);
+  box.innerHTML = infoHtml(s, v);
+  if (!v.failed) box.dataset.loaded = '1';
+});
 document.addEventListener('click', (e) => {
   const fav = e.target.closest('[data-fav]'), vis = e.target.closest('[data-visited]');
   if (fav) { buzz(); toggle(state.favs, fav.dataset.fav); store.set('favs', [...state.favs]); fav.setAttribute('aria-pressed', state.favs.has(fav.dataset.fav)); }
@@ -543,7 +615,8 @@ function renderTouring() {
       <label class="card stop"><input type="checkbox" data-stop="${esc(s.id)}" ${tour.picked.has(s.id) ? 'checked' : ''}>
         <span class="km">${Math.round(s.alongKm)}<small>km</small></span>
         <span class="name">${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}${parkText(s) ? ` <strong>${parkText(s)}</strong>` : ''}
-          <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span></span></label>`).join('')
+          <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span>${infoButton(s)}</span></label>
+      <div class="info stop-info" hidden></div>`).join('')
         : '<p class="empty">この範囲に立ち寄り候補はありません。範囲を広げてみてください。</p>') : ''}
     ${dest ? `<div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a>
       ${tour.route ? '<button type="button" class="btn" id="gpx">GPXで保存</button>' : ''}</div>` : ''}`;
