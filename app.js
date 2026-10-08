@@ -236,8 +236,10 @@ function popupHtml(s, v) {
 function refitPopup(m) {
   const el = m.getPopup() && m.getPopup().getElement();
   if (!el) return;
-  el.querySelectorAll('img').forEach((im) => { if (!im.complete) im.addEventListener('load', () => m.getPopup().update(), { once: true }); });
-  m.getPopup().update();
+  // 大きさが変わったら吹き出しが地図の中（上のボタンより下）に収まるよう地図を動かす
+  const fit = () => { const p = m.getPopup(); p.update(); if (p._adjustPan) p._adjustPan(); };
+  el.querySelectorAll('img').forEach((im) => { if (!im.complete) im.addEventListener('load', fit, { once: true }); });
+  fit();
 }
 // 立ち寄りの選択を切り替える（一覧のチェックと地図の吹き出しの両方から使う）
 function togglePick(id, on) {
@@ -483,27 +485,46 @@ function scenicPoints() {
 }
 
 // 1 回の検索で候補を最大 4 本作る: 標準（＋別ルート）、おすすめの道を寄り道として通すもの
+// Google マップに道をそのまま通らせるための地点（入口・途中・出口。最大 4 点）
+const roadFix = (points) => (points.length <= 4 ? points
+  : [points[0], points[Math.round((points.length - 1) / 3)], points[Math.round(2 * (points.length - 1) / 3)], points[points.length - 1]])
+  .map(([lat, lon]) => ({ lat, lon }));
+
+// 1 回の検索で候補を最大 5 本作る: 標準（＋別ルート）、コースの経由地なし、おすすめの道を寄り道として通すもの
 async function fetchCandidates(dest) {
-  const o = DATA.cfg.origin;
-  const fixed = dest.loop ? Lib.loopPoints(o, dest.road) : [o, ...(dest.waypoints || []).map(([lat, lon]) => ({ lat, lon })), dest];
+  const o = DATA.cfg.origin, optsKey = JSON.stringify(tour.opts);
+  const course = (dest.waypoints || []).map(([lat, lon]) => ({ lat, lon }));
+  const main = dest.loop ? Lib.loopPoints(o, dest.road) : [o, ...course, dest];
+  const baseFix = dest.loop ? roadFix(dest.road.points) : course;
+  const pause = () => new Promise((ok) => setTimeout(ok, 800)); // 公開サーバーへの配慮
   const out = [];
   let note = '';
   try {
-    const std = await valhalla(fixed, tour.opts, fixed.length === 2 ? 2 : 0);
-    std.forEach((rt, i) => out.push({ ...rt, label: i ? `別ルート${i}` : dest.loop ? `${dest.road.name}を周回` : '標準', via: dest.loop ? [dest.road.id] : [] }));
-    if (!dest.loop && !(dest.waypoints || []).length) {
-      for (const d of Lib.detourRoads(o, dest, DATA.roads, 1.6, 2)) {
-        if (tour.opts.noToll && d.road.toll) continue;
-        await new Promise((ok) => setTimeout(ok, 800)); // 公開サーバーへの配慮
+    const std = await valhalla(main, tour.opts, main.length === 2 ? 2 : 0);
+    const baseLabel = dest.loop ? `${dest.road.name}を周回` : course.length ? 'おすすめのコース' : '標準';
+    std.forEach((rt, i) => out.push({ ...rt, label: i ? `別ルート${i}` : baseLabel, via: dest.loop ? [dest.road.id] : [], fixed: i ? [] : baseFix }));
+    if (!dest.loop) {
+      if (course.length) {
+        // コースの経由地がある目的地でも、経由地なしの候補と比べられるように
+        await pause();
+        try {
+          (await valhalla([o, dest], tour.opts, 1)).forEach((rt, i) => out.push({ ...rt, label: i ? '経由地なしの別ルート' : '経由地なし', via: [], fixed: [] }));
+        } catch { /* 取れなくてもコースは出す */ }
+      }
+      // 「有料道路を使わない」なら、絞り込む前に有料の道を外す（上位 2 本が有料で候補が 0 にならないように）
+      const roads = tour.opts.noToll ? DATA.roads.filter((r) => !r.toll) : DATA.roads;
+      for (const d of Lib.detourRoads(o, dest, roads, 1.6, 2)) {
+        await pause();
         try {
           const [rt] = await valhalla([o, ...d.points.map(([lat, lon]) => ({ lat, lon })), dest], tour.opts);
-          out.push({ ...rt, label: `${d.road.name}経由`, via: [d.road.id] });
+          out.push({ ...rt, label: `${d.road.name}経由`, via: [d.road.id], fixed: roadFix(d.points) });
         } catch { /* 寄り道ルートが取れなくても標準ルートは出す */ }
       }
     }
   } catch (err) {
-    if (err.mine && /通信できません|時間内/.test(err.message)) throw err; // 圏外なら予備も同じなので止める
-    out.push({ ...(await osrm(fixed)), label: '標準', via: dest.loop ? [dest.road.id] : [] });
+    // 端末が圏外のときだけ止める。サーバー停止・混雑・時間切れなどは予備の OSRM を試す（それも失敗したらその理由を出す）
+    if (navigator.onLine === false) throw err;
+    out.push({ ...(await osrm(main)), label: dest.loop ? `${dest.road.name}を周回` : '標準', via: dest.loop ? [dest.road.id] : [], fixed: baseFix });
     note = 'メインのルートサーバーが使えなかったため、予備のサーバーで 1 本だけ表示しています（有料道路の回避などは効きません）。';
   }
   // ほぼ同じルートは 1 本にまとめる
@@ -517,7 +538,7 @@ async function fetchCandidates(dest) {
   const scores = uniq.map((c) => Lib.scenicScore(c.line, scenicPoints(), DATA.roads));
   const stars = Lib.scenicStars(scores);
   const fastest = Math.min(...uniq.map((c) => c.min));
-  return uniq.map((c, i) => ({ ...c, ...scores[i], stars: stars[i], fastest: c.min === fastest, note, at: Date.now() }));
+  return uniq.map((c, i) => ({ ...c, ...scores[i], stars: stars[i], fastest: uniq.length > 1 && c.min === fastest, note, opts: optsKey, at: Date.now() }));
 }
 
 const currentDest = () => {
@@ -532,9 +553,12 @@ const currentDest = () => {
 // Google マップへ渡す経由地のうち、決まって使うもの（コースの経由地・周回する道の入口と出口）
 function fixedWaypoints() {
   const dest = currentDest(); if (!dest) return [];
-  if (dest.loop) { const p = Lib.loopPoints(DATA.cfg.origin, dest.road); return [p[1], p[p.length - 2]]; }
+  if (tour.route && tour.route.fixed) return tour.route.fixed; // 選んだ候補が通る道・コース
+  if (dest.loop) return roadFix(dest.road.points);
   return (dest.waypoints || []).map(([lat, lon]) => ({ lat, lon }));
 }
+// 候補を作ったあとで走り方を変えたか
+const routeStale = () => !!(tour.route && tour.route.opts && tour.route.opts !== JSON.stringify(tour.opts));
 const MIN_PINS = 2; // ルート固定用に最低限残す枠
 const room = () => Math.max(0, MAX_WAYPOINTS - fixedWaypoints().length - MIN_PINS);
 function getStops() {
@@ -550,16 +574,24 @@ function getStops() {
 }
 function navUrl() {
   const dest = currentDest(), line = tour.route.line;
+  // 並べる順はすべて同じ物差し（distToRoute の進行距離）で測る
   const along = (p) => Lib.distToRoute(p, line).along;
-  const picked = getStops().filter((s) => tour.picked.has(s.id)).map((s) => ({ ...s, along: s.alongKm }));
+  const picked = getStops().filter((s) => tour.picked.has(s.id)).slice(0, room()).map((s) => ({ ...s, along: s.alongKm }));
   const fixed = fixedWaypoints().map((p) => ({ ...p, along: along(p) }));
-  // 残りの枠でルート上の地点を等間隔に足し、Google マップが別の道（有料道路など）を選ばないようにする
-  const pins = Lib.pinWaypoints(line, Math.min(4, MAX_WAYPOINTS - fixed.length - picked.length));
+  // 残りの枠でルート上の地点を等間隔に足し、Google マップが別の道（有料道路など）を選ばないようにする。
+  // 走り方を変えた後は古いルートに沿わせない
+  const pins = routeStale() ? [] : Lib.pinWaypoints(line, Math.min(4, MAX_WAYPOINTS - fixed.length - picked.length)).map((p) => ({ ...p, along: along(p) }));
   const wps = [...fixed, ...picked, ...pins].sort((a, b) => a.along - b.along);
   return Lib.gmapsDirUrl(DATA.cfg.origin, dest.loop ? DATA.cfg.origin : dest, wps, 'driving');
 }
 function pickedCount() { return getStops().filter((s) => tour.picked.has(s.id)).length; }
 function updateTourSelection() {
+  // 旧版で選んだ立ち寄りが今の上限を超えていたら、走る順に上限まで残す
+  if (pickedCount() > room()) {
+    tour.picked = new Set(getStops().filter((s) => tour.picked.has(s.id)).slice(0, room()).map((s) => s.id));
+    saveTour();
+    document.querySelectorAll('[data-stop]').forEach((cb) => { cb.checked = tour.picked.has(cb.dataset.stop); });
+  }
   const n = pickedCount(), full = n >= room();
   document.querySelectorAll('[data-stop]').forEach((cb) => {
     cb.disabled = !cb.checked && full;
@@ -570,7 +602,9 @@ function updateTourSelection() {
   const nav = $('#nav');
   if (nav) {
     const waiting = tour.route && !DATA.eventsLoaded; // 道の駅などの読み込み前に押すと経由地が抜けるため
-    nav.href = waiting ? '#' : tour.route ? navUrl() : Lib.gmapsDirUrl(DATA.cfg.origin, currentDest(), [], 'driving');
+    const d = currentDest();
+    nav.href = waiting ? '#' : tour.route ? navUrl()
+      : Lib.gmapsDirUrl(DATA.cfg.origin, d.loop ? DATA.cfg.origin : d, fixedWaypoints(), 'driving'); // ルート未検索でも周回・コースの道を渡す
     nav.textContent = waiting ? '立ち寄り候補を読み込み中…' : `ナビ開始（立ち寄り ${n}/${room()}）`;
     nav.toggleAttribute('aria-disabled', !!waiting);
   }
@@ -604,7 +638,7 @@ function saveGpx() {
   setTimeout(() => URL.revokeObjectURL(url), 10000);
 }
 const candCard = (c, i) => `<button type="button" class="card cand" data-cand="${i}" aria-pressed="${i === tour.sel}">
-  <span class="cand-title">${esc(c.label)}${c.fastest ? ' <span class="badge">最速</span>' : ''}</span>
+  <span class="cand-title">${esc(c.label)}${c.fastest ? ' <span class="badge fast">最速</span>' : ''}</span>
   <span class="cand-time">${fmtMin(Math.round(c.min))}・${Math.round(c.km)}km</span>
   <span class="cand-sub">${c.toll === true ? '<span class="badge warn">有料あり</span>' : c.toll === false ? '有料なし' : ''}
     ・景色 ${'★'.repeat(c.stars)}${'☆'.repeat(5 - c.stars)}（展望台など${c.spots}か所${c.roadKm >= 1 ? `・おすすめの道${Math.round(c.roadKm)}km` : ''}）</span></button>`;
@@ -633,7 +667,7 @@ function renderTouring() {
         `<option value="road:${esc(r.id)}" ${r.id === tour.roadId ? 'selected' : ''}>${esc(r.name)}${r.toll ? '（有料）' : ''}</option>`).join('')}</optgroup>` : ''}
       ${tour.custom ? '<option selected>地図で指定した地点</option>' : ''}</select>
     <p class="hint">地図を動かして中央の＋を合わせ「中心を目的地に」を押す（または長押し）と、地図から指定できます</p>
-    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路${road.fee ? `（${esc(road.fee)}）` : ''}。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}</p>`
+    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}</p>`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
     <fieldset class="opts"><legend><strong>走り方</strong></legend>
@@ -648,10 +682,12 @@ function renderTouring() {
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
     ${tour.error ? `<p class="notice">${esc(tour.error)}</p>` : ''}
     ${tour.route && (tour.restored || offline) ? `<p class="notice">${offline ? '📴 圏外のため、' : ''}${fmtStamp(tour.route.at || 0)} に検索して保存したルートを表示しています${offline ? '' : '（再検索で更新）'}。</p>` : ''}
-    ${tour.cands && tour.cands.length > 1 ? `<h2>ルート候補（${tour.cands.length}本・押して切り替え）</h2><div class="cands">${tour.cands.map(candCard).join('')}</div>` : ''}
+    ${routeStale() ? '<p class="notice">⚠ 走り方を変えました。「ルート候補を探す」で探し直してください（このままナビを開くと、ルートを固定する地点なしで Google マップに渡します）。</p>' : ''}
+    ${tour.cands && tour.cands.length ? `<h2>ルート候補（${tour.cands.length}本${tour.cands.length > 1 ? '・押して切り替え' : ''}）</h2><div class="cands">${tour.cands.map(candCard).join('')}</div>` : ''}
     ${tour.route ? `<p class="route-sum">${esc(tour.route.label)}：約${Math.round(tour.route.km)}km・${fmtMin(Math.round(tour.route.min))}</p>
       <p class="hint">${esc(tour.route.engine || 'OSRM')} による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}${tour.opts.noToll || tour.opts.fewHighways ? '。Google マップでは「ルートオプション」でも同じ設定にしてください' : ''}</p>
-      ${viaRoads.filter((r) => (r.closedMonths || []).includes(thisMonth())).map((r) => `<p class="notice">⚠ <strong>${esc(r.name)}は今月、通行止め・閉鎖の期間です。</strong>${esc(r.closed)}</p>`).join('')}` : ''}
+      ${dest && !dest.loop ? viaRoads.map((r) => `<p class="notice">「${esc(r.name)}」${(r.closedMonths || []).includes(thisMonth()) ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${r.toll ? `有料道路（${r.fee ? esc(r.fee) : '料金は公式サイトで確認'}）。` : ''}${r.closed ? `⚠ ${esc(r.closed)}` : ''}</p>`).join('') : ''}
+      <p class="hint">ナビは Google マップのアプリで開いてください（ブラウザ版の Google マップは経由地が 3 件までしか使えません）。</p>` : ''}
     ${tour.route ? `<h2>立ち寄り候補（${stops.length}件・走る順）</h2>
       <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
@@ -682,26 +718,27 @@ function renderTouring() {
   const pc = $('#pick-center');
   if (pc) pc.onclick = () => { if (!map) return; buzz(); const ce = map.getCenter(); setCustomDest(ce.lat, ce.lng); };
   document.querySelectorAll('[data-opt]').forEach((cb) => {
-    cb.onchange = () => { buzz(); tour.opts = { ...tour.opts, [cb.dataset.opt]: cb.checked }; saveTour(); };
+    // 変えたら描き直して「探し直して」を出す（古いルートのまま固定の地点を渡さない）
+    cb.onchange = () => { buzz(); tour.opts = { ...tour.opts, [cb.dataset.opt]: cb.checked }; saveTour(); renderTouring(); };
   });
   $('#awake').onchange = (e) => { tour.awake = e.target.checked; store.set('awake', tour.awake); keepAwake(tour.awake); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
-    const d = currentDest(), optsAt = JSON.stringify(tour.opts);
+    // 地図で指定した地点は id がいつも 'custom' なので、地点そのものと走り方で同じ検索かを見分ける
+    const sig = () => JSON.stringify([tour.destId, tour.roadId, tour.custom, tour.opts]);
+    const d = currentDest(), at = sig();
     try {
       const cands = await fetchCandidates(d);
-      // 検索中に目的地や走り方が変わっていたら、古い結果は捨てる
-      if (currentDest() && currentDest().id === d.id && JSON.stringify(tour.opts) === optsAt) {
-        tour.cands = cands; tour.sel = 0; tour.restored = false; tour.stops = null; tour.picked.clear(); saveTour();
-      }
+      if (sig() === at) { tour.cands = cands; tour.sel = 0; tour.restored = false; tour.stops = null; tour.picked.clear(); saveTour(); }
+      else tour.error = '検索中に目的地か走り方が変わったため、結果を使いませんでした。もう一度探してください。';
     } catch (err) {
-      if (currentDest() && currentDest().id === d.id) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
+      if (sig() === at) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
     }
     tour.busy = false;
     if (state.tab === 'touring') renderTouring(); // 検索中に別のタブへ移っていたら描かない
   };
   $('#view').onclick = (e) => {
-    const b = e.target.closest('[data-cand]'); if (!b) return;
+    const b = e.target.closest('[data-cand]'); if (!b || +b.dataset.cand === tour.sel) return; // 選択中をもう一度押しても何も変えない
     buzz(); tour.sel = +b.dataset.cand; tour.stops = null; tour.picked.clear(); saveTour(); renderTouring();
   };
   const g = $('#gpx'); if (g) g.onclick = () => { buzz(); saveGpx(); };
@@ -749,7 +786,7 @@ function drawMap(dest, stops) {
     const line = L.polyline(latlngs, { color: keyColor(), weight: 7, opacity: 1, bubblingMouseEvents: false }).addTo(map);
     stops.forEach((s) => {
       const m = L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false }).addTo(map)
-        .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, autoPanPadding: [16, 16] });
+        .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, maxHeight: 240, autoPanPaddingTopLeft: [16, 112], autoPanPaddingBottomRight: [16, 40] });
       m.on('popupopen', async () => {
         if (infoCache()[s.id]) return;
         const v = await loadInfo(s);

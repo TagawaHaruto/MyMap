@@ -122,7 +122,7 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 .map-wrap { position: relative; }
 .crosshair { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 500; pointer-events: none;
   font-size: 32px; font-weight: var(--font-weight-700); color: var(--color-neutral-black); text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff; }
-.map-pick { position: absolute; right: 8px; bottom: 24px; z-index: 600; background: var(--bg); font-weight: var(--font-weight-700); }
+.map-pick { position: absolute; right: 8px; top: 8px; z-index: 600; background: var(--bg); font-weight: var(--font-weight-700); } /* 下は地図の出典表示と重なるので上に */
 /* 走り方の選択とルート候補 */
 .opts { border: var(--bw) solid var(--line); border-radius: 8px; margin: 0; padding: 4px 12px 8px; }
 .opts legend { padding: 0 4px; }
@@ -148,7 +148,8 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 .pop { display: grid; gap: 4px; font-family: var(--font-family-sans); font-size: var(--font-size-14); color: var(--fg); }
 .pop strong { font-size: var(--font-size-16); }
 .pop-sub { color: var(--fg-sub); }
-.pop-img { display: block; width: 100%; max-height: 150px; object-fit: cover; border-radius: 6px; background: var(--bg-sub); }
+.pop-img { display: block; width: 100%; max-height: 110px; object-fit: cover; border-radius: 6px; background: var(--bg-sub); }
 .pop p { margin: 0; }
 .pop-pick { margin-top: 4px; min-height: 44px; }
 .leaflet-popup-content { margin: 12px; }
+.badge.fast { border: var(--bw) solid var(--key); color: var(--key); font-weight: var(--font-weight-700); }
