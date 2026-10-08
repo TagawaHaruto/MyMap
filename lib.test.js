@@ -232,4 +232,8 @@ assert.deepStrictEqual(photos, [
 ]);
 assert.deepStrictEqual(Lib.parseCommons({}), []);
 
+// Google マップで場所を開く（写真・口コミはそちらで見る。API は使わない）
+assert.strictEqual(Lib.gmapsSearchUrl({ name: '深大寺', lat: 35.67, lon: 139.55 }),
+  'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('深大寺'));
+
 console.log('lib: ALL PASS');

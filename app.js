@@ -215,6 +215,48 @@ async function loadInfo(s) {
   if (!failed) saveInfo(s.id, v); // 圏外などで取れなかったときは保存しない（次に開いたときに取り直す）
   return { ...v, failed };
 }
+// 地図の吹き出し: 名前・距離・写真 1 枚・説明・立ち寄りの追加ボタン
+function popupHtml(s, v) {
+  const picked = tour.picked.has(s.id);
+  const img = v && v.summary && v.summary.thumb ? { src: v.summary.thumb, credit: '写真: Wikipedia', page: v.summary.page }
+    : v && v.photos && v.photos.length ? { src: v.photos[0].thumb, credit: `付近の写真${v.photos[0].artist ? '・撮影: ' + v.photos[0].artist : ''}（${v.photos[0].license || 'ライセンスはリンク先'}）`, page: v.photos[0].page } : null;
+  const text = v && v.summary ? v.summary.text : s.note || '';
+  return `<div class="pop">
+    <strong>${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}</strong>
+    <div class="pop-sub">${s.alongKm != null ? `${Math.round(s.alongKm)}km地点・道から${s.offKm.toFixed(1)}km` : ''}${parkText(s) ? '・' + parkText(s) : ''}</div>
+    ${img ? `<a href="${esc(img.page)}" target="_blank" rel="noopener"><img class="pop-img" src="${esc(img.src)}" alt="${esc(s.name)}の写真"></a><div class="credit">${esc(img.credit)}</div>` : ''}
+    ${text ? `<p>${esc(text)}</p>` : ''}
+    ${!v ? '<p class="hint">写真と説明を読み込み中…</p>' : v.failed ? '<p class="hint">写真と説明を読み込めませんでした（圏外の可能性）。</p>' : ''}
+    ${v && v.summary && v.summary.page ? `<div class="credit">出典: <a href="${esc(v.summary.page)}" target="_blank" rel="noopener">Wikipedia</a></div>` : ''}
+    <a class="btn" href="${esc(Lib.gmapsSearchUrl(s))}" target="_blank" rel="noopener">Googleマップで写真・口コミを見る</a>
+    <button type="button" class="btn ${picked ? '' : 'primary'} pop-pick" data-popup-pick="${esc(s.id)}">${picked ? '立ち寄りから外す' : '立ち寄りに追加'}</button>
+  </div>`;
+}
+// 画像が読み込まれて吹き出しの大きさが変わったら、地図の中に収め直す
+function refitPopup(m) {
+  const el = m.getPopup() && m.getPopup().getElement();
+  if (!el) return;
+  el.querySelectorAll('img').forEach((im) => { if (!im.complete) im.addEventListener('load', () => m.getPopup().update(), { once: true }); });
+  m.getPopup().update();
+}
+// 立ち寄りの選択を切り替える（一覧のチェックと地図の吹き出しの両方から使う）
+function togglePick(id, on) {
+  if (on && !tour.picked.has(id) && pickedCount() >= room()) return false;
+  on ? tour.picked.add(id) : tour.picked.delete(id);
+  const cb = document.querySelector(`[data-stop="${CSS.escape(id)}"]`);
+  if (cb) cb.checked = on;
+  saveTour(); updateTourSelection();
+  return true;
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-popup-pick]'); if (!b) return;
+  buzz();
+  const id = b.dataset.popupPick, on = !tour.picked.has(id);
+  if (!togglePick(id, on)) { b.textContent = `立ち寄りは${room()}件までです`; return; }
+  const m = markers.get(id), s = getStops().find((x) => x.id === id);
+  if (m && s) { m.setPopupContent(popupHtml(s, infoCache()[id] || { summary: null, photos: [] })); refitPopup(m); }
+});
+
 function infoHtml(s, v) {
   const parts = [];
   if (v.summary) {
@@ -232,6 +274,7 @@ function infoHtml(s, v) {
     parts.push('<p class="hint">写真は見つかりませんでした。</p>');
   }
   if (v.failed) parts.push('<p class="hint">一部を読み込めませんでした（圏外の可能性があります）。電波の良い場所でもう一度開いてください。</p>');
+  parts.push(`<div class="actions"><a class="btn" href="${esc(Lib.gmapsSearchUrl(s))}" target="_blank" rel="noopener">Googleマップで写真・口コミを見る</a></div>`);
   return parts.join('');
 }
 document.addEventListener('click', async (e) => {
@@ -666,8 +709,7 @@ function renderTouring() {
   $('#view').onchange = (e) => {
     const cb = e.target.closest('[data-stop]'); if (!cb) return;
     buzz();
-    cb.checked ? tour.picked.add(cb.dataset.stop) : tour.picked.delete(cb.dataset.stop);
-    saveTour(); updateTourSelection();
+    togglePick(cb.dataset.stop, cb.checked);
   };
   drawMap(dest, stops);
   updateTourSelection();
@@ -705,8 +747,16 @@ function drawMap(dest, stops) {
     // 白い縁取りの上に濃い線を重ね、色の多い地図の上でも浮き上がらせる
     L.polyline(latlngs, { color: '#fff', weight: 12, opacity: 1, bubblingMouseEvents: false }).addTo(map);
     const line = L.polyline(latlngs, { color: keyColor(), weight: 7, opacity: 1, bubblingMouseEvents: false }).addTo(map);
-    stops.forEach((s) => markers.set(s.id, L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false })
-      .addTo(map).bindPopup(esc(s.name))));
+    stops.forEach((s) => {
+      const m = L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false }).addTo(map)
+        .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, autoPanPadding: [16, 16] });
+      m.on('popupopen', async () => {
+        if (infoCache()[s.id]) return;
+        const v = await loadInfo(s);
+        if (m.isPopupOpen()) { m.setPopupContent(popupHtml(s, v)); refitPopup(m); }
+      });
+      markers.set(s.id, m);
+    });
     map.fitBounds(line.getBounds(), { padding: [16, 16] });
   } else if (dest && dest.loop) {
     map.fitBounds(L.latLngBounds(dest.road.points.concat([[DATA.cfg.origin.lat, DATA.cfg.origin.lon]])), { padding: [16, 16] });

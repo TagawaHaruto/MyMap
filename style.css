@@ -144,3 +144,11 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 .photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; background: var(--bg-sub); }
 .credit { font-size: var(--font-size-14); color: var(--fg-sub); overflow-wrap: anywhere; }
 .stop .info-btn { display: flex; margin-top: 4px; min-height: 40px; font-size: var(--font-size-14); }
+/* 地図の吹き出し */
+.pop { display: grid; gap: 4px; font-family: var(--font-family-sans); font-size: var(--font-size-14); color: var(--fg); }
+.pop strong { font-size: var(--font-size-16); }
+.pop-sub { color: var(--fg-sub); }
+.pop-img { display: block; width: 100%; max-height: 150px; object-fit: cover; border-radius: 6px; background: var(--bg-sub); }
+.pop p { margin: 0; }
+.pop-pick { margin-top: 4px; min-height: 44px; }
+.leaflet-popup-content { margin: 12px; }
