@@ -39,6 +39,16 @@ class DataTest(unittest.TestCase):
         self.assertGreaterEqual(len(sims), 20)
         self.assertTrue(all('vehicle' in s['genres'] for s in sims))
 
+    def test_prefecture_boundaries_match_curated(self):
+        # 同梱の都県境界で判定した都県が、手で確かめた厳選スポットの都県と一致すること
+        import sys
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import collect
+        prepared = collect.prep_prefectures(load('data/prefectures.json')['prefectures'])
+        spots = load('data/spots.json')
+        agree = sum(1 for s in spots if collect.pref_of(s['lat'], s['lon'], prepared) == s['pref'])
+        self.assertGreaterEqual(agree / len(spots), 0.98, f'{agree}/{len(spots)}')
+
     def test_touring(self):
         tours = load('data/touring.json')
         self.assertGreaterEqual(len(tours), 8)

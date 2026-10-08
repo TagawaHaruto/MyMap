@@ -59,6 +59,6 @@
   }
  },
  "pois_error": null,
- "spots_at": "2026-10-08T16:01:20+09:00",
- "spots_error": "attraction: HTTPError: HTTP Error 504: Gateway Timeout / garden: HTTPError: HTTP Error 504: Gateway Timeout / temple: HTTPError: HTTP Error 504: Gateway Timeout / bath: HTTPError: HTTP Error 504: Gateway Time-out"
+ "spots_error": null,
+ "spots_at": "2026-10-08T18:12:09+09:00"
 }

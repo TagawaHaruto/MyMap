@@ -280,7 +280,6 @@ OVERPASS_URLS = ['https://overpass-api.de/api/interpreter', 'https://overpass.pr
                  'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
 VEHICLE_WORDS = re.compile('鉄道|電車|機関車|航空|飛行|宇宙|ロケット|自動車|クルマ|モーター|バイク|オートバイ|船|交通|乗り物')
 # 都県の付与に使う主要 5 都県（ISO3166-2 → 表示名）。これ以外は「その他」
-PREF_AREAS = [('JP-13', '東京'), ('JP-14', '神奈川'), ('JP-11', '埼玉'), ('JP-12', '千葉'), ('JP-19', '山梨')]
 # addr:province の表記ゆれ用（周辺県も area 失敗時の手がかりとして残す）
 PROVINCES = ('東京', '神奈川', '埼玉', '千葉', '山梨', '群馬', '栃木', '茨城', '静岡', '長野')
 PROVINCE_ROMAJI = {'tokyo': '東京', 'kanagawa': '神奈川', 'saitama': '埼玉', 'chiba': '千葉', 'yamanashi': '山梨'}
@@ -293,20 +292,42 @@ def norm_province(v):
     return name if name in PROVINCES else PROVINCE_ROMAJI.get(v.lower())
 
 
-def osm_prefs(fetch, sleep):
-    """都県の area ごとに全種類の id だけ取り、OSM id → 都県 の対応表を作る。失敗した都県はエラーに積む。"""
-    stmts = ''.join(s + '(area.a);' for _, s in SPOT_QUERIES)
-    prefs, errors = {}, []
-    for iso, name in PREF_AREAS:
-        sleep(5)  # 種類別の問い合わせの直後にも続くので、毎回前にあける
-        q = f'[out:json][timeout:180];area["ISO3166-2"="{iso}"]->.a;({stmts});out ids;'
-        try:
-            els = overpass_try(urllib.parse.urlencode({'data': q}).encode(), overpass_elements, fetch, sleep)
-        except Exception as err:
-            errors.append(f'pref {iso}: {type(err).__name__}: {err}'[:160])
-            continue
-        prefs.update((f"osm:{e['type']}:{e['id']}", name) for e in els)
-    return prefs, errors
+def prep_prefectures(prefs):
+    """都県の境界（外周リングの配列）に外接矩形を添えて、判定を速くする。"""
+    out = []
+    for p in prefs:
+        rings = []
+        for ring in p['rings']:
+            xs, ys = [pt[0] for pt in ring], [pt[1] for pt in ring]
+            rings.append((ring, (min(xs), min(ys), max(xs), max(ys))))
+        out.append((p['name'], rings))
+    return out
+
+
+def _in_ring(x, y, ring):
+    inside, j = False, len(ring) - 1
+    for i in range(len(ring)):
+        xi, yi = ring[i]
+        xj, yj = ring[j]
+        if (yi > y) != (yj > y) and x < (xj - xi) * (y - yi) / (yj - yi) + xi:
+            inside = not inside
+        j = i
+    return inside
+
+
+def pref_of(lat, lon, prepared):
+    """点が入っている都県名。どの境界にも入らなければ None。"""
+    for name, rings in prepared:
+        for ring, (x0, y0, x1, y1) in rings:
+            if x0 <= lon <= x1 and y0 <= lat <= y1 and _in_ring(lon, lat, ring):
+                return name
+    return None
+
+
+def load_prefectures():
+    # data/prefectures.json は OSM の都県境界を簡略化したもの（通信せずに判定できるよう同梱）
+    data = load(os.path.join(DATA, 'prefectures.json'), {})
+    return data.get('prefectures', []) if isinstance(data, dict) else data
 
 
 def osm_genre(t):
@@ -372,7 +393,7 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
     return out
 
 
-def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep):
+def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep, prefectures=None):
     """週 1 回だけ取り直す。失敗した種類は前回分を残す。取り直さないときは None。"""
     last = status.get('spots_at')
     if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7):
@@ -381,12 +402,10 @@ def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep)
     out, errors = overpass_by_kind(SPOT_QUERIES, bbox(cfg['origin'], cfg['poiRadiusKm']),
                                    lambda text, kind: parse_osm_spots(text, exclude_names, kind, seen),
                                    fetch, old, sleep)
-    prefs, pref_errors = osm_prefs(fetch, sleep)
-    old_pref = {x['id']: x.get('pref') for x in old}
+    # 都県は同梱の境界データで判定する（Overpass に都県ごとの重い問い合わせを送らない）。境界外は addr:province を使う
+    prepared = prep_prefectures(load_prefectures() if prefectures is None else prefectures)
     for s in out:
-        # area に無いものは、全都県が取れたときだけ「その他」。一部失敗なら（その都県かもしれないので）前回値 → addr:province
-        s['pref'] = prefs.get(s['id']) or ('その他' if not pref_errors else old_pref.get(s['id']) or s.get('pref'))
-    errors += pref_errors
+        s['pref'] = pref_of(s['lat'], s['lon'], prepared) or s.get('pref')
     status['spots_at'] = now.isoformat(timespec='seconds')
     status['spots_error'] = ' / '.join(errors) or None
     if errors:

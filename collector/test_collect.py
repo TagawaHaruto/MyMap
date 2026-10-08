@@ -238,7 +238,7 @@ class OsmSpotTest(unittest.TestCase):
         spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status, fake_fetch,
                                       dt.datetime(2026, 10, 8, tzinfo=collect.JST), old, set(), sleep=lambda s: None)
         # 失敗した種類は別サーバーで再試行。都県の問い合わせは都県ごとに 1 回
-        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + len(collect.OVERPASS_URLS) - 1 + len(collect.PREF_AREAS))
+        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + len(collect.OVERPASS_URLS) - 1)
         self.assertEqual(len({u for u in urls if u}), len(collect.OVERPASS_URLS))
         self.assertIn('旧', [s['name'] for s in spots])
         self.assertIn('bath', status['spots_error'])
@@ -290,20 +290,9 @@ CFG = {'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}
 NOW = dt.datetime(2026, 10, 8, tzinfo=collect.JST)
 
 
-def pref_fetch(over=None):
-    """都県 area の問い合わせ: JP-13 → fixture（node 1, way 2, relation 999）、JP-14 → node 3、他は空。
-    over で都県ごとの応答（例外なら送出）を差し替える。種類別の問い合わせには spots の fixture を返す。"""
-    ids = {'JP-13': fx('overpass_pref_ids.json'), 'JP-14': '{"elements": [{"type": "node", "id": 3}]}', **(over or {})}
-
-    def fetch(url, data=None, timeout=60):
-        m = re.search(r'JP-\d+', urllib.parse.unquote_plus(data.decode()))
-        if not m:
-            return fx('overpass_spots.json')
-        r = ids.get(m.group(), '{"elements": []}')
-        if isinstance(r, Exception):
-            raise r
-        return r
-    return fetch
+# 都県の境界（テスト用の四角）: 東京 = 経度139.45〜139.8・緯度35.6〜35.8、神奈川 = その南
+SQUARES = [{'name': '東京', 'rings': [[[139.45, 35.6], [139.8, 35.6], [139.8, 35.8], [139.45, 35.8], [139.45, 35.6]]]},
+           {'name': '神奈川', 'rings': [[[139.45, 35.3], [139.8, 35.3], [139.8, 35.6], [139.45, 35.6], [139.45, 35.3]]]}]
 
 
 class PrefTest(unittest.TestCase):
@@ -317,60 +306,29 @@ class PrefTest(unittest.TestCase):
             with self.subTest(raw=raw):
                 self.assertEqual(collect.norm_province(raw), want)
 
-    def test_osm_prefs_query_and_map(self):
-        bodies, sleeps = [], []
-        base = pref_fetch()
+    def test_pref_of_point_in_polygon(self):
+        prefs = collect.prep_prefectures(SQUARES)
+        self.assertEqual(collect.pref_of(35.7, 139.6, prefs), '東京')
+        self.assertEqual(collect.pref_of(35.4, 139.6, prefs), '神奈川')
+        self.assertIsNone(collect.pref_of(36.5, 139.6, prefs))
+        self.assertIsNone(collect.pref_of(35.7, 139.6, []))
 
-        def fetch(url, data=None, timeout=60):
-            bodies.append(urllib.parse.parse_qs(data.decode())['data'][0])
-            return base(url, data, timeout)
-
-        prefs, errors = collect.osm_prefs(fetch, sleeps.append)
-        self.assertEqual(prefs, {'osm:node:1': '東京', 'osm:way:2': '東京', 'osm:relation:999': '東京', 'osm:node:3': '神奈川'})
-        self.assertEqual(errors, [])
-        self.assertEqual([re.search(r'JP-\d+', b).group() for b in bodies], ['JP-13', 'JP-14', 'JP-11', 'JP-12', 'JP-19'])
-        q = bodies[0]
-        self.assertTrue(q.startswith('[out:json][timeout:180];area["ISO3166-2"="JP-13"]->.a;('))
-        self.assertTrue(q.endswith(');out ids;'))
-        self.assertIn(collect.SPOT_QUERIES[0][1] + '(area.a);', q)
-        self.assertEqual(q.count('(area.a);'), len(collect.SPOT_QUERIES))
-        self.assertEqual(sleeps, [5] * 5)  # 種類別の問い合わせの直後にも続くので、毎回前にあける
-
-    def test_osm_prefs_retries_mirror_then_reports(self):
-        calls, sleeps = [], []
-        base = pref_fetch({'JP-13': OSError('504')})
+    def test_refresh_spots_assigns_pref_without_network(self):
+        calls = []
 
         def fetch(url, data=None, timeout=60):
             calls.append(url)
-            return base(url, data, timeout)
+            return fx('overpass_spots.json')
 
-        prefs, errors = collect.osm_prefs(fetch, sleeps.append)
-        self.assertEqual(prefs, {'osm:node:3': '神奈川'})
-        self.assertEqual(errors, ['pref JP-13: OSError: 504'])
-        self.assertEqual(calls[:3], collect.OVERPASS_URLS)  # 失敗した都県は別サーバーで再試行
-        self.assertEqual(sleeps, [5, 30, 30, 5, 5, 5, 5])
-
-    def test_refresh_spots_assigns_pref(self):
         status = {}
-        spots = collect.refresh_spots(CFG, status, pref_fetch(), NOW, [], set(), sleep=lambda s: None)
-        by = {s['id']: s['pref'] for s in spots}
-        self.assertEqual((by.pop('osm:node:1'), by.pop('osm:way:2'), by.pop('osm:node:3')), ('東京', '東京', '神奈川'))
-        self.assertEqual(set(by.values()), {'その他'})  # 全都県が取れたので、どの area にも無いものは「その他」
+        spots = collect.refresh_spots(CFG, status, fetch, NOW, [], set(), sleep=lambda s: None, prefectures=SQUARES)
+        by = {s['name']: s['pref'] for s in spots}
+        self.assertEqual(by['東京国立博物館'], '東京')   # 境界の内側
+        self.assertEqual(by['某寺'], '東京')             # addr:province（神奈川）より境界の判定を優先
+        self.assertEqual(by['某水族館'], '東京')
+        self.assertEqual(by['某展望台'], None)           # 境界の外で addr:province もない
+        self.assertEqual(len(calls), len(collect.SPOT_QUERIES))  # 都県のための問い合わせはしない
         self.assertIsNone(status['spots_error'])
-
-    def test_refresh_spots_pref_fallback_when_a_pref_fails(self):
-        old = [{'id': 'osm:way:2', 'name': '東京国立博物館', 'pref': '東京'}]
-        status = {}
-        spots = collect.refresh_spots(CFG, status, pref_fetch({'JP-13': OverpassRemarkTest.TIMEOUT}), NOW, old, set(),
-                                      sleep=lambda s: None)
-        by = {s['id']: s['pref'] for s in spots}
-        self.assertEqual(by['osm:way:2'], '東京')    # 前回値
-        self.assertEqual(by['osm:node:1'], '東京')   # addr:province「東京都」
-        self.assertEqual(by['osm:node:3'], '神奈川')  # 取れた都県の area
-        self.assertIsNone(by['osm:node:5'])          # 手がかりなし
-        self.assertNotIn('その他', by.values())       # 一部失敗なので「その他」にしない（東京かもしれない）
-        self.assertIn('pref JP-13', status['spots_error'])
-        self.assertIn('timed out', status['spots_error'])
 
 
 class IndoorTest(unittest.TestCase):
