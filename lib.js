@@ -57,10 +57,17 @@ const Lib = (() => {
     if (!key) return [];
     const out = [];
     for (const s of items) {
-      if (!norm(s.name).includes(key) && !(s.tags || []).some((t) => norm(t).includes(key))) continue;
+      if (!norm(s.name).includes(key) && !norm(s.kana).includes(key) && !(s.tags || []).some((t) => norm(t).includes(key))) continue;
       out.push({ ...s, minutes: travelMinutes(haversineKm(cfg.origin, s), mode, cfg), tier: tierOf(s, favs) });
     }
-    return out.sort(byTier).slice(0, limit);
+    // 同じ場所が厳選・自動収集・立ち寄り候補に重複していても 1 件にする（約 1km 以内の同名）
+    const seen = new Set();
+    return out.sort(byTier).filter((s) => {
+      const k = `${norm(s.name)}@${s.lat.toFixed(2)},${s.lon.toFixed(2)}`;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    }).slice(0, limit);
   }
 
   const spanDays = (e) => Math.round((Date.parse(e.end) - Date.parse(e.start)) / 864e5) + 1;

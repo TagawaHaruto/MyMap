@@ -1,23 +1,142 @@
 {
-  "origin": { "name": "調布駅", "lat": 35.6518, "lon": 139.5440 },
-  "github": { "owner": "", "repo": "MyMap", "workflow": "collect.yml", "branch": "main" },
+  "origin": {
+    "name": "調布駅",
+    "lat": 35.6518,
+    "lon": 139.544
+  },
+  "github": {
+    "owner": "",
+    "repo": "MyMap",
+    "workflow": "collect.yml",
+    "branch": "main"
+  },
   "staleHours": 24,
   "rainThreshold": 50,
-  "speedsKmh": { "train": 30, "car": 25, "bike": 25, "bicycle": 12 },
+  "speedsKmh": {
+    "train": 30,
+    "car": 25,
+    "bike": 25,
+    "bicycle": 12
+  },
   "trainOverheadMin": 10,
   "eventMonthsAhead": 3,
   "poiRadiusKm": 150,
   "sources": [
-    { "id": "chofu", "type": "daylist", "url": "https://www.city.chofu.lg.jp/cgi-bin/event_cal_multi/calendar.cgi?type=2&year={Y}&month={M}", "pref": "東京", "lat": 35.6505, "lon": 139.5410 },
-    { "id": "fuchu", "type": "daylist", "url": "http://www.city.fuchu.tokyo.jp/event/calendar/list_calendar{YM}.html", "firstUrl": "http://www.city.fuchu.tokyo.jp/event/calendar/list_calendar.html", "pref": "東京", "lat": 35.6688, "lon": 139.4777 },
-    { "id": "tazukuri", "type": "nextdata", "url": "https://www.chofu-culture-community.org/events?page={page}", "pages": 3, "pref": "東京", "lat": 35.6509, "lon": 139.5413, "indoor": true, "place": "たづくり・グリーンホール・せんがわ劇場" },
-    { "id": "musashino", "type": "eventjs", "url": "https://www.city.musashino.lg.jp/event_city.js", "pref": "東京", "lat": 35.7178, "lon": 139.5661 },
-    { "id": "musashino-zaidan", "type": "eventjs", "url": "https://www.city.musashino.lg.jp/event_m.js", "pref": "東京", "lat": 35.7178, "lon": 139.5661 },
-    { "id": "tama", "type": "eventjs", "url": "https://www.city.tama.lg.jp/event.js", "pref": "東京", "lat": 35.6369, "lon": 139.4463 },
-    { "id": "inagi", "type": "eventjs", "url": "https://www.city.inagi.tokyo.jp/event.js", "pref": "東京", "lat": 35.6380, "lon": 139.5047 },
-    { "id": "tachikawa", "type": "eventjs", "url": "https://www.city.tachikawa.lg.jp/event.js", "pref": "東京", "lat": 35.7139, "lon": 139.4077 },
-    { "id": "akishima", "type": "eventjs", "url": "https://www.city.akishima.lg.jp/event.js", "pref": "東京", "lat": 35.7058, "lon": 139.3536 },
-    { "id": "kawagoe", "type": "eventjs", "url": "https://www.city.kawagoe.saitama.jp/event.js", "pref": "埼玉", "lat": 35.9251, "lon": 139.4858 },
-    { "id": "doorkeeper-chofu", "type": "doorkeeper", "query": "調布", "pref": "東京", "lat": 35.6518, "lon": 139.5440 }
-  ]
+    {
+      "id": "chofu",
+      "type": "daylist",
+      "url": "https://www.city.chofu.lg.jp/cgi-bin/event_cal_multi/calendar.cgi?type=2&year={Y}&month={M}",
+      "pref": "東京",
+      "lat": 35.6505,
+      "lon": 139.541
+    },
+    {
+      "id": "fuchu",
+      "type": "daylist",
+      "url": "http://www.city.fuchu.tokyo.jp/event/calendar/list_calendar{YM}.html",
+      "firstUrl": "http://www.city.fuchu.tokyo.jp/event/calendar/list_calendar.html",
+      "pref": "東京",
+      "lat": 35.6688,
+      "lon": 139.4777
+    },
+    {
+      "id": "tazukuri",
+      "type": "nextdata",
+      "url": "https://www.chofu-culture-community.org/events?page={page}",
+      "pages": 3,
+      "pref": "東京",
+      "lat": 35.6509,
+      "lon": 139.5413,
+      "indoor": true,
+      "place": "たづくり・グリーンホール・せんがわ劇場"
+    },
+    {
+      "id": "musashino",
+      "type": "eventjs",
+      "url": "https://www.city.musashino.lg.jp/event_city.js",
+      "pref": "東京",
+      "lat": 35.7178,
+      "lon": 139.5661
+    },
+    {
+      "id": "musashino-zaidan",
+      "type": "eventjs",
+      "url": "https://www.city.musashino.lg.jp/event_m.js",
+      "pref": "東京",
+      "lat": 35.7178,
+      "lon": 139.5661
+    },
+    {
+      "id": "tama",
+      "type": "eventjs",
+      "url": "https://www.city.tama.lg.jp/event.js",
+      "pref": "東京",
+      "lat": 35.6369,
+      "lon": 139.4463
+    },
+    {
+      "id": "inagi",
+      "type": "eventjs",
+      "url": "https://www.city.inagi.tokyo.jp/event.js",
+      "pref": "東京",
+      "lat": 35.638,
+      "lon": 139.5047
+    },
+    {
+      "id": "tachikawa",
+      "type": "eventjs",
+      "url": "https://www.city.tachikawa.lg.jp/event.js",
+      "pref": "東京",
+      "lat": 35.7139,
+      "lon": 139.4077
+    },
+    {
+      "id": "akishima",
+      "type": "eventjs",
+      "url": "https://www.city.akishima.lg.jp/event.js",
+      "pref": "東京",
+      "lat": 35.7058,
+      "lon": 139.3536
+    },
+    {
+      "id": "kawagoe",
+      "type": "eventjs",
+      "url": "https://www.city.kawagoe.saitama.jp/event.js",
+      "pref": "埼玉",
+      "lat": 35.9251,
+      "lon": 139.4858
+    },
+    {
+      "id": "doorkeeper-chofu",
+      "type": "doorkeeper",
+      "query": "調布",
+      "pref": "東京",
+      "lat": 35.6518,
+      "lon": 139.544
+    }
+  ],
+  "eventExcludeWords": [
+    "募集",
+    "締切",
+    "受付終了",
+    "セミナー",
+    "講座",
+    "説明会",
+    "相談",
+    "研修",
+    "検診",
+    "健診",
+    "会議",
+    "養成"
+  ],
+  "directionLabels": {
+    "N": "北（埼玉・秩父）",
+    "NE": "北東（埼玉東部・茨城）",
+    "E": "東（都心・千葉）",
+    "SE": "南東（川崎・東京湾）",
+    "S": "南（横浜・湘南）",
+    "SW": "南西（丹沢・箱根）",
+    "W": "西（奥多摩・山梨）",
+    "NW": "北西（青梅・奥武蔵）"
+  }
 }

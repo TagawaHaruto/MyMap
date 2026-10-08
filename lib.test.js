@@ -134,4 +134,13 @@ const g2 = Lib.gmapsDirUrl(null, { lat: 35.7, lon: 139.0 });
 assert(!g2.includes('origin='), g2);
 assert(g2.includes('dir_action=navigate'), g2);
 
+// 検索: 読み仮名（kana）でも当たる・近くの同名は 1 件にまとめる
+const dupe = [
+  { id: 'cur2', name: '深大寺', kana: 'じんだいじ', lat: 35.6705, lon: 139.5522, genres: ['temple'], indoor: false, url: 'https://j' },
+  { id: 'osm:node:7', name: '深大寺天然温泉 湯守の里', lat: 35.668, lon: 139.551, genres: ['onsen'], indoor: true, url: '' },
+  { id: 'poi:onsen:x', poi: true, name: '深大寺天然温泉 湯守の里', lat: 35.6681, lon: 139.5511, genres: ['onsen'], indoor: false, url: '' },
+];
+assert.deepStrictEqual(ids(Lib.searchSpots(dupe, 'じんだいじ', cfg, new Set(), 'car')), ['cur2']);
+assert.deepStrictEqual(ids(Lib.searchSpots(dupe, '深大寺', cfg, new Set(), 'car')), ['cur2', 'osm:node:7']);
+
 console.log('lib: ALL PASS');
