@@ -137,11 +137,15 @@ PARSERS = {'eventjs': parse_eventjs, 'daylist': parse_daylist, 'doorkeeper': par
 
 # ---- 立ち寄り候補・絶景（OpenStreetMap / Overpass） ----
 
-def overpass_query(origin, radius_km):
-    # 429（混雑）を避けるため全種類を 1 回の問い合わせにまとめる
+def bbox(origin, radius_km):
     dlat = radius_km / 111
     dlon = radius_km / (111 * math.cos(math.radians(origin['lat'])))
-    bb = f"({origin['lat'] - dlat:.3f},{origin['lon'] - dlon:.3f},{origin['lat'] + dlat:.3f},{origin['lon'] + dlon:.3f})"
+    return f"({origin['lat'] - dlat:.3f},{origin['lon'] - dlon:.3f},{origin['lat'] + dlat:.3f},{origin['lon'] + dlon:.3f})"
+
+
+def overpass_query(origin, radius_km):
+    # 429（混雑）を避けるため全種類を 1 回の問い合わせにまとめる
+    bb = bbox(origin, radius_km)
     parts = ['nwr["name"~"^道の駅"]', 'nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]',
              'nwr["tourism"="viewpoint"]["name"]', 'nwr["waterway"="waterfall"]["name"]["wikipedia"]',
              'nwr["natural"="peak"]["name"]["wikipedia"]', 'nwr["natural"~"^(valley|gorge)$"]["name"]["wikipedia"]',
@@ -209,6 +213,113 @@ def refresh_pois(cfg, status, fetch, now):
     except Exception as err:  # 失敗したら前回の pois.json を残す
         status['pois_error'] = f'{type(err).__name__}: {err}'[:300]
         print(f'[pois] {status["pois_error"]}', file=sys.stderr)
+
+# ---- 自動収集スポット（OpenStreetMap。厳選リストとは別ファイル） ----
+
+# 種類ごとに分けて取得する（1 回にまとめると Overpass が 504 を返すため）
+SPOT_QUERIES = [
+    ('museum', 'nwr["tourism"~"^(museum|gallery)$"]["name"]'),
+    ('attraction', 'nwr["tourism"="attraction"]["name"]'),
+    ('park', 'nwr["tourism"~"^(theme_park|zoo|aquarium)$"]["name"]'),
+    ('viewpoint', 'nwr["tourism"="viewpoint"]["name"]'),
+    ('garden', 'nwr["leisure"="garden"]["name"]'),
+    ('bigpark', 'nwr["leisure"="park"]["name"]["wikipedia"]'),
+    ('temple', 'nwr["amenity"="place_of_worship"]["name"]["wikipedia"]'),
+    ('bath', 'nwr["amenity"="public_bath"]["name"]'),
+    ('shop', 'nwr["shop"~"^(mall|department_store)$"]["name"]'),
+    ('play', 'nwr["leisure"~"^(water_park|amusement_arcade|trampoline_park|miniature_golf)$"]["name"]'),
+    ('planetarium', 'nwr["amenity"="planetarium"]["name"]'),
+]
+VEHICLE_WORDS = re.compile('鉄道|電車|機関車|航空|飛行|宇宙|ロケット|自動車|クルマ|モーター|バイク|オートバイ|船|交通|乗り物')
+
+
+def osm_genre(t):
+    """タグ → (genres, 屋内か, 種類の表示名)。対象外は None。"""
+    tour, leis, amen = t.get('tourism'), t.get('leisure'), t.get('amenity')
+    if tour in ('museum', 'gallery'):
+        g = (['museum'], True, '美術館' if tour == 'gallery' else '博物館')
+    elif amen == 'planetarium':
+        g = (['museum'], True, 'プラネタリウム')
+    elif tour == 'aquarium':
+        g = (['play'], True, '水族館')
+    elif tour == 'zoo':
+        g = (['play'], False, '動物園')
+    elif tour == 'theme_park':
+        g = (['play'], False, '遊園地・テーマパーク')
+    elif tour == 'viewpoint':
+        g = (['scenic'], False, '展望台')
+    elif tour == 'attraction':
+        g = (['sightseeing'], False, '観光名所')
+    elif leis == 'garden':
+        g = (['garden'], False, '庭園')
+    elif leis == 'park':
+        g = (['play'], False, '公園')
+    elif leis in ('amusement_arcade', 'trampoline_park'):
+        g = (['play'], True, '屋内の遊び場')
+    elif leis in ('water_park', 'miniature_golf'):
+        g = (['play'], False, 'プール・遊び場')
+    elif amen == 'place_of_worship':
+        g = (['temple'], False, '寺社')
+    elif amen == 'public_bath':
+        g = (['onsen'], True, '温泉' if t.get('bath:type') == 'onsen' else '銭湯・入浴施設')
+    elif t.get('shop') in ('mall', 'department_store'):
+        g = (['shopping'], True, 'ショッピング')
+    else:
+        return None
+    if VEHICLE_WORDS.search(t['name']) or t.get('museum') in ('railway', 'transport', 'aviation', 'technology'):
+        g = (['vehicle'] + g[0], g[1], g[2])
+    return g
+
+
+def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
+    seen = set() if seen is None else seen
+    out = []
+    for el in json.loads(text)['elements']:
+        t = el.get('tags', {})
+        pos = el if 'lat' in el else el.get('center')
+        if not t.get('name') or not pos or t['name'] in exclude_names:
+            continue
+        g = osm_genre(t)
+        key = (t['name'], round(pos['lat'], 3), round(pos['lon'], 3))  # 建物と敷地など、近くの同名は 1 件に
+        if not g or key in seen:
+            continue
+        seen.add(key)
+        site = t.get('website', '')
+        pref = re.sub('[都府県]$', '', t.get('addr:province', '')) or None
+        out.append({'id': f"osm:{el['type']}:{el['id']}", 'name': t['name'], 'lat': round(pos['lat'], 5),
+                    'lon': round(pos['lon'], 5), 'pref': pref, 'genres': g[0], 'indoor': g[1],
+                    'url': site if site.startswith(('http://', 'https://')) else wiki_url(t.get('wikipedia')) or '',
+                    'note': g[2], 'k': kind})
+    return out
+
+
+def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep):
+    """週 1 回だけ取り直す。失敗した種類は前回分を残す。取り直さないときは None。"""
+    last = status.get('spots_at')
+    if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7):
+        return None
+    bb, seen, out, errors = bbox(cfg['origin'], cfg['poiRadiusKm']), set(), [], []
+    for i, (kind, q) in enumerate(SPOT_QUERIES):
+        if i:
+            sleep(5)  # Overpass への配慮
+        body = urllib.parse.urlencode({'data': f'[out:json][timeout:180];{q}{bb};out center tags;'}).encode()
+        for attempt in (1, 2):
+            try:
+                out += parse_osm_spots(fetch('https://overpass-api.de/api/interpreter', data=body, timeout=240),
+                                       exclude_names, kind, seen)
+                break
+            except Exception as err:
+                if attempt == 1:
+                    sleep(30)  # 混雑（429/504）は少し待って 1 回だけ再試行
+                    continue
+                errors.append(f'{kind}: {type(err).__name__}: {err}'[:120])
+                out += [s for s in old if s.get('k') == kind]
+    status['spots_at'] = now.isoformat(timespec='seconds')
+    status['spots_error'] = ' / '.join(errors) or None
+    if errors:
+        print(f"[spots] {status['spots_error']}", file=sys.stderr)
+    return out
+
 
 # ---- 取得と集約 ----
 
@@ -314,10 +425,13 @@ def load(path, default):
         return default
 
 
-def save(path, obj):
+def save(path, obj, compact=False):
     tmp = path + '.tmp'  # 書きかけで壊さないよう、一時ファイルから置き換える
     with open(tmp, 'w', encoding='utf-8') as f:
-        json.dump(obj, f, ensure_ascii=False, indent=1)
+        if compact:  # 1 万件超のファイルは 1 行 1 件で小さく
+            f.write('[\n' + ',\n'.join(json.dumps(x, ensure_ascii=False, separators=(',', ':')) for x in obj) + '\n]\n')
+        else:
+            json.dump(obj, f, ensure_ascii=False, indent=1)
     os.replace(tmp, path)
 
 
@@ -331,6 +445,11 @@ def main():
     events = collect_events(cfg, today, old, status, fetch)
     save(os.path.join(DATA, 'events.json'), events)
     refresh_pois(cfg, status, fetch, dt.datetime.now(JST))
+    curated = {s['name'] for s in load(os.path.join(DATA, 'spots.json'), [])}
+    spots = refresh_spots(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'osm_spots.json'), []), curated)
+    if spots is not None:
+        save(os.path.join(DATA, 'osm_spots.json'), spots, compact=True)
+        print(f'osm spots: {len(spots)}')
     status['updated_at'] = now_iso()
     save(os.path.join(DATA, 'status.json'), status)
     print(f'events: {len(events)}')

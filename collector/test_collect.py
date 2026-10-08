@@ -189,5 +189,54 @@ class ReviewFixTest(unittest.TestCase):
         self.assertEqual([e['title'] for e in evs], ['良い'])
 
 
+class OsmSpotTest(unittest.TestCase):
+    def test_parse_osm_spots(self):
+        spots = collect.parse_osm_spots(fx('overpass_spots.json'), exclude_names={'深大寺'})
+        by = {s['name']: s for s in spots}
+        # 名前なし・厳選リストと同名・近接同名は除外
+        self.assertNotIn('深大寺', by)
+        self.assertEqual(sum(1 for s in spots if s['name'] == '青梅鉄道公園'), 1)
+        self.assertEqual(len(spots), 10)
+        rail = by['青梅鉄道公園']
+        self.assertEqual(rail['genres'], ['vehicle', 'museum'])
+        self.assertIs(rail['indoor'], True)
+        self.assertEqual((rail['pref'], rail['url']), ('東京', 'https://www.ome-tetsudou-park.com/'))
+        self.assertEqual(rail['id'], 'osm:node:1')
+        self.assertEqual(by['東京国立博物館']['url'], 'https://ja.wikipedia.org/wiki/' + urllib.parse.quote('東京国立博物館'))
+        self.assertEqual((by['某寺']['genres'], by['某寺']['indoor'], by['某寺']['pref']), (['temple'], False, '神奈川'))
+        self.assertEqual((by['〇〇の湯']['genres'], by['〇〇の湯']['indoor']), (['onsen'], True))
+        self.assertEqual((by['某水族館']['genres'], by['某水族館']['indoor']), (['play'], True))
+        self.assertEqual((by['某動物園']['genres'], by['某動物園']['indoor']), (['play'], False))
+        self.assertEqual((by['某モール']['genres'], by['某モール']['indoor']), (['shopping'], True))
+        self.assertEqual((by['某展望台']['genres'], by['某展望台']['indoor']), (['scenic'], False))
+        self.assertEqual(by['航空公園']['genres'], ['vehicle', 'play'])
+        self.assertEqual((by['某プラネタリウム']['genres'], by['某プラネタリウム']['url']), (['museum'], ''))
+        self.assertTrue(all(s['note'] for s in spots))
+
+    def test_refresh_spots_keeps_old_entries_of_failed_queries(self):
+        old = [{'id': 'osm:node:99', 'name': '旧', 'lat': 35.0, 'lon': 139.0, 'k': 'bath'}]
+        calls = []
+
+        def fake_fetch(url, data=None, timeout=60):
+            calls.append(data)
+            if b'public_bath' in data:
+                raise OSError('504')
+            return fx('overpass_spots.json')
+
+        status = {}
+        spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status, fake_fetch,
+                                      dt.datetime(2026, 10, 8, tzinfo=collect.JST), old, set(), sleep=lambda s: None)
+        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + 1)  # 失敗した 1 種類は 1 回だけ再試行
+        self.assertIn('旧', [s['name'] for s in spots])
+        self.assertIn('bath', status['spots_error'])
+        self.assertIsNotNone(status['spots_at'])
+
+    def test_refresh_spots_skips_when_fresh(self):
+        status = {'spots_at': '2026-10-05T00:00:00+09:00'}
+        got = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
+                                    lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set())
+        self.assertIsNone(got)
+
+
 if __name__ == '__main__':
     unittest.main()
