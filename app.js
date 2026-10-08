@@ -16,6 +16,13 @@ const store = {
 };
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const $ = (sel) => document.querySelector(sel);
+// AbortSignal.timeout が無い古い iPhone（iOS 15 以前）でも時間切れを扱えるようにする
+const timeoutSignal = (ms) => {
+  if (AbortSignal.timeout) return AbortSignal.timeout(ms);
+  const c = new AbortController();
+  setTimeout(() => c.abort(new DOMException('timeout', 'TimeoutError')), ms);
+  return c.signal;
+};
 const buzz = () => { try { navigator.vibrate?.(15); } catch { /* 振動できない端末は無視 */ } };
 
 const saved = store.get('filters') || {};
@@ -27,7 +34,7 @@ const state = {
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
-const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], ver: 0, eventsLoaded: false };
+const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], ver: 0, eventsLoaded: false, osmLoaded: false };
 const FAILED = new Set();
 
 const rainy = () => (state.rainOverride ?? state.weatherRainy);
@@ -68,6 +75,7 @@ function renderLoadMsg() {
 function setOutdoor(on, save = true) {
   document.documentElement.toggleAttribute('data-outdoor', on);
   $('#outdoor').setAttribute('aria-pressed', on);
+  const cb = $('#set-outdoor'); if (cb) cb.checked = on;
   if (save) store.set('outdoor', on);
   if (map) setTimeout(() => map.invalidateSize(), 0);
 }
@@ -106,10 +114,15 @@ function poiAsSpot(p) {
     genres: SCENIC_KINDS.includes(p.kind) ? ['scenic'] : p.kind === 'onsen' ? ['onsen'] : ['sightseeing'],
     indoor: false, fee: '', parking: null, tags: [], url: p.wikipedia || '', note: POI_KIND[p.kind] || '', poi: true, kind: p.kind };
 }
+let poiSpots = null, poiVer = -1;
+function poiSpotList() {
+  if (poiVer !== DATA.ver) { poiSpots = DATA.pois.map(poiAsSpot); poiVer = DATA.ver; }
+  return poiSpots;
+}
 function spotCandidates() {
   // 絶景を選んだときだけ滝・山・湖などの POI を混ぜる（展望台は osm_spots 側にある）
   const extra = state.genres.has('scenic')
-    ? DATA.pois.filter((p) => SCENIC_KINDS.includes(p.kind) && p.kind !== 'viewpoint').map(poiAsSpot) : [];
+    ? poiSpotList().filter((p) => SCENIC_KINDS.includes(p.kind) && p.kind !== 'viewpoint') : [];
   return DATA.spots.concat(DATA.osm, extra);
 }
 const isCurated = (s) => !s.poi && !String(s.id).startsWith('osm:');
@@ -148,7 +161,7 @@ function renderSpots() {
 function renderSpotList() {
   const box = $('#spot-list'); if (!box) return;
   if (state.q.trim()) {
-    const all = DATA.spots.concat(DATA.osm, DATA.pois.map(poiAsSpot));
+    const all = DATA.spots.concat(DATA.osm, poiSpotList());
     const hits = Lib.searchSpots(all, state.q, DATA.cfg, state.favs, state.mode);
     setCount(null);
     box.innerHTML = `<p class="status">「${esc(state.q.trim())}」の検索結果 ${hits.length}件（絞り込み条件を外して検索・上位50件）</p>`
@@ -161,7 +174,8 @@ function renderSpotList() {
   const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}</p>`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
   box.innerHTML = head + (list.length ? list.slice(0, state.limit).map(spotCard).join('') + more
-    : `<p class="empty">${failed ? 'スポットのデータを読み込めていません。電波の良い場所で開き直してください。' : '条件に合うスポットがありません。条件を広げてみてください。'}</p>`);
+    : `<p class="empty">${failed ? 'スポットのデータを読み込めていません。電波の良い場所で開き直してください。'
+      : !DATA.osmLoaded ? 'スポットを読み込み中…' : '条件に合うスポットがありません。条件を広げてみてください。'}</p>`);
   if (more) $('#more').onclick = () => { state.limit += 300; renderSpotList(); };
 }
 document.addEventListener('click', (e) => {
@@ -186,7 +200,7 @@ async function loadWeather() {
   const [sat, sun] = Lib.weekend(new Date());
   try {
     const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=precipitation_probability_max&timezone=Asia%2FTokyo&forecast_days=10`,
-      { signal: AbortSignal.timeout(8000) });
+      { signal: timeoutSignal(8000) });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const j = await r.json();
     const pick = (d) => j.daily.precipitation_probability_max[j.daily.time.indexOf(d)];
@@ -227,7 +241,7 @@ function eventCard(e, from) {
 }
 function statusHtml() {
   const st = DATA.status;
-  if (!st || !st.updated_at) return '<p class="status">イベントはまだ収集されていません。</p>';
+  if (!st || !st.updated_at) return `<p class="status">${FAILED.has('data/status.json') ? '収集状況を読み込めませんでした。' : 'イベントはまだ収集されていません。'}</p>`;
   const old = (iso) => Lib.isStale(iso, Date.now(), 72);
   const rows = Object.entries(st.sources || {}).map(([id, s]) =>
     `<li>${old(s.ok_at) || s.error ? '<span class="badge warn">⚠</span>' : ''}${esc(id)}: ${s.ok_at ? esc(s.ok_at.slice(0, 16).replace('T', ' ')) : '未取得'}（${s.count}件）</li>`);
@@ -238,14 +252,17 @@ function statusHtml() {
 function renderEvents() {
   if (!DATA.eventsLoaded) { setCount(null); $('#view').innerHTML = '<p class="status">イベントを読み込み中…</p>'; return; }
   const [from, to] = Lib.periodRange(state.period, new Date());
-  const list = Lib.filterEvents(DATA.events, filterState(), DATA.cfg, from, to);
-  const all = Lib.filterEvents(DATA.events, { ...filterState(), exclude: null }, DATA.cfg, from, to).length;
+  const sortBy = ['month', '3m'].includes(state.period) ? 'date' : 'relevance';
+  const list = Lib.filterEvents(DATA.events, { ...filterState(), sortBy }, DATA.cfg, from, to);
+  const all = Lib.filterEvents(DATA.events, { ...filterState(), sortBy, exclude: null }, DATA.cfg, from, to).length;
+  const evFailed = FAILED.has('data/events.json');
   const hidden = all - list.length;
   setCount(list.length);
   $('#view').innerHTML = `<div id="periods" class="chips"></div>
-    <p class="status">${list.length}件・その日だけ／短期のものを先頭に表示${rainy() ? '（雨の日モード：屋外を除外）' : ''}</p>
+    <p class="status">${list.length}件・${sortBy === 'date' ? '開始日の早い順（開催中の長期展示は最後）' : 'その日だけ／短期のものを先頭に表示'}${rainy() ? '（雨の日モード：屋外を除外）' : ''}${list.length > 300 ? '・先頭300件を表示' : ''}</p>
     ${hidden || state.showNotices ? `<button type="button" class="btn" id="notices">${state.showNotices ? '募集・講座などの告知を隠す' : `募集・講座などの告知${hidden}件を非表示中（表示する）`}</button>` : ''}
-    ${list.length ? list.slice(0, 300).map((e) => eventCard(e, from)).join('') : '<p class="empty">この期間・条件のイベントはありません。</p>'}
+    ${list.length ? list.slice(0, 300).map((e) => eventCard(e, from)).join('')
+      : `<p class="empty">${evFailed ? 'イベントのデータを読み込めませんでした。電波の良い場所で開き直してください。' : 'この期間・条件のイベントはありません。'}</p>`}
     ${statusHtml()}`;
   chips($('#periods'), PERIODS, (v) => v === state.period, (v) => { state.period = v; });
   const nb = $('#notices'); if (nb) nb.onclick = () => { buzz(); state.showNotices = !state.showNotices; renderEvents(); };
@@ -303,16 +320,25 @@ const keyColor = () => getComputedStyle(document.documentElement).getPropertyVal
 async function fetchRoute(dest, avoid) {
   const pts = [DATA.cfg.origin, ...(dest.waypoints || []).map(([lat, lon]) => ({ lat, lon })), dest];
   const base = `https://router.project-osrm.org/route/v1/driving/${pts.map((p) => `${p.lon},${p.lat}`).join(';')}?overview=full&geometries=geojson`;
-  const get = (u) => fetch(u, { signal: AbortSignal.timeout(15000) });
+  const fail = (msg) => Object.assign(new Error(msg), { mine: true });
+  const get = async (u) => {
+    try { return await fetch(u, { signal: timeoutSignal(15000) }); } catch (err) {
+      // 圏外・時間切れはブラウザごとに英語の文言が違うので、ここで日本語にそろえる
+      throw fail(err.name === 'TimeoutError' || err.name === 'AbortError'
+        ? 'ルートサーバーから時間内に応答がありませんでした。電波の良い場所で再検索してください。'
+        : '通信できませんでした（圏外の可能性があります）。電波の良い場所で再検索してください。');
+    }
+  };
   let r = null, note = '';
   if (avoid) {
-    r = await get(base + '&exclude=motorway').catch(() => null);
-    if (!r || !r.ok) { note = '公開ルートサーバーが高速回避に未対応のため、通常のルートです。'; r = null; }
+    r = await get(base + '&exclude=motorway'); // 通信できないときは通常ルートでも同じなので、ここで止める（待ち時間を倍にしない）
+    if (r.status === 400) { note = '公開ルートサーバーが高速回避に未対応のため、通常のルートです。'; r = null; }
   }
   r = r || await get(base);
-  if (r.status === 429) throw new Error('ルートサーバーが混雑しています。少し待ってから再検索してください。');
+  if (r.status === 429) throw fail('ルートサーバーが混雑しています。少し待ってから再検索してください。');
+  if (r.status >= 500) throw fail(`ルートサーバーが一時的に使えません（${r.status}）。時間をおいて再検索してください。`);
   const j = await r.json().catch(() => ({}));
-  if (!r.ok || j.code !== 'Ok' || !j.routes || !j.routes.length) throw new Error('この地点までの車のルートが見つかりませんでした。');
+  if (!r.ok || j.code !== 'Ok' || !j.routes || !j.routes.length) throw fail('この地点までの車のルートが見つかりませんでした。');
   const rt = j.routes[0];
   return { line: rt.geometry.coordinates, km: rt.distance / 1000, min: rt.duration / 60, note, at: Date.now() };
 }
@@ -323,8 +349,10 @@ function getStops() {
   if (!tour.route) return [];
   if (!tour.stops) {
     // 山頂は車・バイクで寄れないことが多いので除く
-    const items = DATA.spots.concat(DATA.pois.filter((p) => p.kind !== 'peak').map(poiAsSpot));
-    tour.stops = Lib.stopsAlongRoute(items, tour.route.line, tour.radius).filter((s) => s.alongKm > 1);
+    const items = DATA.spots.concat(poiSpotList().filter((p) => p.kind !== 'peak'));
+    const seen = new Set();
+    tour.stops = Lib.stopsAlongRoute(items, tour.route.line, tour.radius)
+      .filter((s) => s.alongKm > 1 && !seen.has(s.id) && seen.add(s.id));
   }
   return tour.stops;
 }
@@ -339,11 +367,18 @@ function navUrl() {
 function pickedCount() { return getStops().filter((s) => tour.picked.has(s.id)).length; }
 function updateTourSelection() {
   const n = pickedCount(), full = n >= room();
-  document.querySelectorAll('[data-stop]').forEach((cb) => { cb.disabled = !cb.checked && full; });
+  document.querySelectorAll('[data-stop]').forEach((cb) => {
+    cb.disabled = !cb.checked && full;
+    const row = cb.closest('.stop');
+    row.classList.toggle('is-picked', cb.checked);
+    row.classList.toggle('is-disabled', cb.disabled);
+  });
   const nav = $('#nav');
   if (nav) {
-    nav.href = tour.route ? navUrl() : Lib.gmapsDirUrl(DATA.cfg.origin, currentDest(), [], 'driving');
-    nav.textContent = `ナビ開始（経由 ${n}/${room()}）`;
+    const waiting = tour.route && !DATA.eventsLoaded; // 道の駅などの読み込み前に押すと経由地が抜けるため
+    nav.href = waiting ? '#' : tour.route ? navUrl() : Lib.gmapsDirUrl(DATA.cfg.origin, currentDest(), [], 'driving');
+    nav.textContent = waiting ? '立ち寄り候補を読み込み中…' : `ナビ開始（経由 ${n}/${room()}）`;
+    nav.toggleAttribute('aria-disabled', !!waiting);
   }
   const lim = $('#limit-msg'); if (lim) lim.hidden = !full;
   styleMarkers();
@@ -366,7 +401,8 @@ function styleMarkers() {
 
 function renderTouring() {
   const dest = currentDest();
-  const key = JSON.stringify([tour.destId, tour.custom, tour.route && tour.route.at, tour.radius, tour.error, tour.busy, DATA.ver, !!DATA.touring.length]);
+  const key = JSON.stringify([tour.destId, tour.custom, tour.route && tour.route.at, tour.radius, tour.error, tour.busy, DATA.ver,
+    !!DATA.touring.length, navigator.onLine, tour.restored]);
   // 変化がなければ作り直さない（地図のズームと位置、スクロール位置を保つ）
   if (key === tour.key && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
@@ -378,7 +414,7 @@ function renderTouring() {
     <select id="dest"><option value="">選んでください</option>${DATA.touring.map((t) =>
       `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}
       ${tour.custom ? '<option selected>地図で指定した地点</option>' : ''}</select>
-    <p class="hint">地図を長押しして目的地を指定することもできます</p>
+    <p class="hint">地図を動かして中央の＋を合わせ「中心を目的地に」を押す（または長押し）と、地図から指定できます</p>
     ${dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
     <label class="check"><input type="checkbox" id="avoid" ${tour.avoid ? 'checked' : ''}>高速を使わない（下道）</label>
@@ -386,7 +422,8 @@ function renderTouring() {
     <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label>
     <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
     <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…' : dest ? 'ルート検索' : '目的地を選ぶと押せます'}</button></div>
-    <div id="map"></div>
+    <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
+      <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
     ${tour.error ? `<p class="notice">${esc(tour.error)}</p>` : ''}
     ${tour.route && (tour.restored || offline) ? `<p class="notice">${offline ? '📴 圏外のため、' : ''}${fmtStamp(tour.route.at || 0)} に検索して保存したルートを表示しています${offline ? '' : '（再検索で更新）'}。</p>` : ''}
     ${tour.route ? `<p class="route-sum">約${Math.round(tour.route.km)}km・${fmtMin(Math.round(tour.route.min))}</p><p class="hint">OSRM による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}</p>` : ''}
@@ -400,23 +437,32 @@ function renderTouring() {
         : '<p class="empty">この範囲に立ち寄り候補はありません。範囲を広げてみてください。</p>') : ''}
     ${dest ? `<div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a></div>` : ''}`;
 
-  chips($('#radius'), [[1, '1km'], [3, '3km'], [5, '5km']], (v) => v === tour.radius, (v) => { tour.radius = v; tour.stops = null; saveTour(); });
+  chips($('#radius'), [[1, '1km'], [3, '3km'], [5, '5km']], (v) => v === tour.radius, (v) => {
+    tour.radius = v; tour.stops = null;
+    // 範囲外になった立ち寄りは選択から外す（狭めて広げたときに上限を超えないように）
+    const ids = new Set(getStops().map((s) => s.id));
+    for (const id of [...tour.picked]) if (!ids.has(id)) tour.picked.delete(id);
+    saveTour();
+  });
   $('#dest').onchange = (e) => {
-    tour.destId = e.target.value || null; tour.custom = null; tour.route = null; tour.stops = null; tour.restored = false;
-    tour.picked.clear(); tour.error = ''; saveTour(); renderTouring();
+    if (!setDest(() => { tour.destId = e.target.value || null; tour.custom = null; })) e.target.value = tour.custom ? '' : tour.destId || '';
   };
+  const pc = $('#pick-center');
+  if (pc) pc.onclick = () => { if (!map) return; buzz(); const ce = map.getCenter(); setCustomDest(ce.lat, ce.lng); };
   $('#avoid').onchange = (e) => { tour.avoid = e.target.checked; saveTour(); tour.key = ''; renderTouring(); };
   $('#awake').onchange = (e) => { tour.awake = e.target.checked; store.set('awake', tour.awake); keepAwake(tour.awake); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
+    const d = currentDest();
     try {
-      tour.route = await fetchRoute(currentDest(), tour.avoid);
-      tour.restored = false; tour.stops = null; saveTour();
+      const rt = await fetchRoute(d, tour.avoid);
+      // 検索中に目的地が変わっていたら、古い結果は捨てる
+      if (currentDest() === d) { tour.route = rt; tour.restored = false; tour.stops = null; saveTour(); }
     } catch (err) {
-      tour.error = err.name === 'TimeoutError' ? 'ルートサーバーから時間内に応答がありませんでした。電波の良い場所で再検索してください。'
-        : err.message && !err.message.startsWith('Failed') ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
+      if (currentDest() === d) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
     }
-    tour.busy = false; renderTouring();
+    tour.busy = false;
+    if (state.tab === 'touring') renderTouring(); // 検索中に別のタブへ移っていたら描かない
   };
   // チェックの変更では地図も一覧も作り直さない（マーカーとナビボタンだけ更新）
   $('#view').onchange = (e) => {
@@ -428,6 +474,19 @@ function renderTouring() {
   drawMap(dest, stops);
   updateTourSelection();
 }
+
+// 目的地を変える。保存したルートがあるときは消えてよいか確かめる（圏外では取り直せないため）
+function setDest(apply) {
+  if (tour.route && !confirm(navigator.onLine === false
+    ? '圏外のため、目的地を変えると保存したルートを取り直せません。変更しますか？' : '目的地を変えると、今のルートと選んだ立ち寄りが消えます。変更しますか？')) return false;
+  apply();
+  tour.route = null; tour.stops = null; tour.restored = false; tour.picked.clear(); tour.error = '';
+  saveTour(); renderTouring();
+  return true;
+}
+const setCustomDest = (lat, lon) => setDest(() => {
+  tour.custom = { id: 'custom', name: '地図で指定した地点', lat: +lat.toFixed(5), lon: +lon.toFixed(5), waypoints: [] };
+});
 
 function drawMap(dest, stops) {
   if (typeof L === 'undefined') { $('#map').textContent = '地図を読み込めませんでした（圏外の可能性があります）。'; return; }
@@ -447,12 +506,9 @@ function drawMap(dest, stops) {
       .addTo(map).bindPopup(esc(s.name))));
     map.fitBounds(line.getBounds(), { padding: [16, 16] });
   }
-  // 誤操作を防ぐため、目的地の指定は長押し（スマホでは contextmenu として届く）だけにする
-  map.on('contextmenu', (e) => {
-    buzz();
-    tour.custom = { id: 'custom', name: '地図で指定した地点', lat: +e.latlng.lat.toFixed(5), lon: +e.latlng.lng.toFixed(5), waypoints: [] };
-    tour.route = null; tour.stops = null; tour.restored = false; tour.picked.clear(); tour.error = ''; saveTour(); renderTouring();
-  });
+  // 誤操作を防ぐため、目的地の指定は長押し（スマホでは contextmenu として届く）か「中心を目的地に」ボタンだけ。
+  // 長押し中（指が触れている間）に地図を作り直すと iPhone で次のタップが効かなくなることがあるので、少し遅らせる
+  map.on('contextmenu', (e) => { buzz(); setTimeout(() => setCustomDest(e.latlng.lat, e.latlng.lng), 350); });
 }
 
 // ---- 画面を消さない（ツーリングタブを開いている間だけ） ----
@@ -473,6 +529,7 @@ window.addEventListener('offline', () => renderAll());
 // ---- 設定 ----
 function renderSettings() {
   setCount(null);
+  const prevToken = $('#token'), typed = prevToken ? prevToken.value : '', focused = document.activeElement === prevToken;
   const has = !!store.get('token');
   $('#view').innerHTML = `<h2>表示</h2>
     <label class="check"><input type="checkbox" id="set-outdoor" ${document.documentElement.hasAttribute('data-outdoor') ? 'checked' : ''}>屋外モード（日なた・グローブ向けに大きく太く表示）</label>
@@ -492,6 +549,8 @@ function renderSettings() {
   el.innerHTML = Object.entries(GENRES).map(([g, l]) => `<button type="button" class="chip" data-g="${g}" aria-pressed="${state.favGenres.has(g)}">${l}</button>`).join('');
   el.onclick = (e) => { const b = e.target.closest('.chip'); if (b) { buzz(); toggle(state.favGenres, b.dataset.g); store.set('favGenres', [...state.favGenres]); renderAll(); } };
   $('#set-outdoor').onchange = (e) => setOutdoor(e.target.checked);
+  if (typed) $('#token').value = typed;
+  if (focused) $('#token').focus();
   $('#token-save').onclick = () => { const v = $('#token').value.trim(); if (v) { store.set('token', v); renderSettings(); } };
   $('#token-del').onclick = () => { store.set('token', null); renderSettings(); };
   $('#update-now').onclick = () => { buzz(); requestUpdate(true); };
@@ -501,7 +560,7 @@ function renderSettings() {
 const RENDER = { spots: renderSpots, events: renderEvents, touring: renderTouring, settings: renderSettings };
 function goTab(t) {
   // ツーリングタブを開いたら屋外モードを自動でオン（手動で切った後も、次に開いたときは再びオン）
-  if (t === 'touring' && state.tab !== 'touring') setOutdoor(true);
+  if (t === 'touring' && state.tab !== 'touring') setOutdoor(true, false); // 自動の ON は保存しない（手動の設定を上書きしない）
   state.tab = t; store.set('tab', t); window.scrollTo(0, 0); renderAll();
 }
 document.querySelector('.tabs').onclick = (e) => {
@@ -521,7 +580,7 @@ async function init() {
   const outdoor = store.get('outdoor');
   // 初回は端末の「コントラストを上げる」設定に合わせる
   setOutdoor(outdoor ?? matchMedia('(prefers-contrast: more)').matches, outdoor != null);
-  if (state.tab === 'touring') setOutdoor(true);
+  if (state.tab === 'touring') setOutdoor(true, false);
   $('#filters').open = !!store.get('filtersOpen');
   $('#rec').open = store.get('recOpen') !== false;
   DATA.cfg = await getJSON('config.json', null);
@@ -537,6 +596,7 @@ async function init() {
   renderAll();
   // 自動収集スポットは大きい（数 MB）ので最後に読み込む
   DATA.osm = await getJSON('data/osm_spots.json', []);
+  DATA.osmLoaded = true;
   renderAll();
 }
 init();

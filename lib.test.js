@@ -143,4 +143,13 @@ const dupe = [
 assert.deepStrictEqual(ids(Lib.searchSpots(dupe, 'じんだいじ', cfg, new Set(), 'car')), ['cur2']);
 assert.deepStrictEqual(ids(Lib.searchSpots(dupe, '深大寺', cfg, new Set(), 'car')), ['cur2', 'osm:node:7']);
 
+// 長い期間（今月・3か月）は開始日順。開催中の長期展示は最後
+const evs3 = [
+  { id: 'far', title: 'a', start: '2026-11-01', end: '2026-11-01', lat: 35.66, lon: 139.55, pref: '東京', indoor: true },
+  { id: 'long', title: 'b', start: '2026-10-01', end: '2026-10-31', lat: 35.66, lon: 139.55, pref: '東京', indoor: true },
+  { id: 'soon', title: 'c', start: '2026-10-10', end: '2026-10-10', lat: 36.5, lon: 139.0, pref: '群馬', indoor: true },
+];
+assert.deepStrictEqual(ids(Lib.filterEvents(evs3, f({ sortBy: 'date' }), cfg, '2026-10-08', '2026-11-08')), ['soon', 'far', 'long']);
+assert.deepStrictEqual(ids(Lib.filterEvents(evs3, f({}), cfg, '2026-10-08', '2026-11-08')), ['far', 'soon', 'long']);
+
 console.log('lib: ALL PASS');

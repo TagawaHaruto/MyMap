@@ -32,7 +32,6 @@ INDOOR_WORDS = [
     ('スタジアム', False), ('競技場', False), ('公園', False), ('広場', False), ('グラウンド', False),
     ('河川敷', False), ('ハイキング', False), ('マルシェ', False), ('まつり', False), ('祭り', False),
     ('テニスコート', False), ('農園', False), ('キャンプ', False), ('森', False),
-    ('センター', True),  # 「〇〇の森 自然観察センター」等に負けないよう最後
 ]
 MORE = re.compile(r'^(もっと見る|続きを見る|一覧)')
 
@@ -435,11 +434,11 @@ def source_pages(src, today, months):
 
 
 def guess_indoor(place, title=''):
-    # 場所の「[」以降は施設リンクの文字列（収集元が付ける）なので見ない
-    text = re.split(r'[\[［]', place or '', maxsplit=1)[0] + ' ' + title
-    for word, indoor in INDOOR_WORDS:
-        if word in text:
-            return indoor
+    # 場所で決まればそれを使い、決まらないときだけ題名を見る（公園での「移動児童館」を屋内にしない）
+    for text in (place or '', title or ''):
+        for word, indoor in INDOOR_WORDS:
+            if word in text:
+                return indoor
     return None
 
 
