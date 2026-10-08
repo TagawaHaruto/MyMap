@@ -49,7 +49,7 @@ config.json              ★コピーした人が書き換える唯一のファ�
 data/spots.json          厳選スポット（手作業でメンテ）
 data/touring.json        定番ツーリング目的地（経由地付き）
 data/events.json         生成物: イベント
-data/pois.json           生成物: OSM の立ち寄り候補（道の駅・温泉・展望台）
+data/pois.json           生成物: OSM の立ち寄り候補（道の駅・温泉・展望台・絶景）
 data/status.json         生成物: 全体と収集元ごとの最終成功日時・件数・エラー
 collector/collect.py     収集スクリプト（Python 標準ライブラリのみ）
 collector/test_collect.py
@@ -89,7 +89,7 @@ README.md                テンプレート利用手順
    - 移動手段: 🚃電車 / 🚗車 / 🏍バイク / 🚲自転車
    - 時間: 30分 / 60分 / 90分 / 2時間 / 3時間 / 制限なし
    - 都県: 東京 / 神奈川 / 埼玉 / 千葉 / 山梨 / その他（複数選択）
-   - ジャンル: 遊び / 観光 / 買い物 / 🚗乗り物 / 🏛博物館 / 🌿植物園 / ⛩寺社 / ♨温泉
+   - ジャンル: 遊び / 観光 / 買い物 / 🚗乗り物 / 🏛博物館 / 🌿植物園 / ⛩寺社 / ♨温泉 / 🏔絶景
 3. **今週末のおすすめ**（3 件）
 4. **タブ**: スポット / イベント / ツーリング / 設定
 
@@ -98,6 +98,7 @@ README.md                テンプレート利用手順
 - カードの内容: ジャンルアイコン、名前、☔OK、推定時間、料金目安、駐車場・二輪駐車場の有無、⭐お気に入り、✓行った。
 - ボタン: [地図で経路]（Google マップ）、[#Instagram]、[#X]、[公式サイト]。
 - 雨の日モードでは `indoor: true` のスポットだけを表示する。
+- 🏔絶景を選んだときは、spots.json の `scenic` に加えて、pois.json の絶景系（viewpoint〜coast）も一覧に混ぜて表示する。これらは屋外扱いとし、Wikipedia へのリンクを付ける。
 
 ### 5.2 イベントタブ
 - 期間: 今週末 / 来週末 / 今月 / 3か月。開始日順に並べる。
@@ -147,7 +148,7 @@ README.md                テンプレート利用手順
   "tags": ["京王れーるランド"], "url": "https://www.keio.co.jp/train/rail-land/",
   "note": "運転シミュレーターあり" }
 ```
-- genres に使う値: `play` / `sightseeing` / `shopping` / `vehicle` / `museum` / `garden` / `temple` / `onsen`。
+- genres に使う値: `play` / `sightseeing` / `shopping` / `vehicle` / `museum` / `garden` / `temple` / `onsen` / `scenic`。
 - 初期データは関東全域で 150〜200 件。乗り物系（鉄道・航空宇宙・シミュレーター・工場見学・車とバイクの博物館）、博物館、植物園、寺社、温泉、ショッピング、雨の日向け施設を厚めにする。
 - 各スポットの公式サイトで、名前・住所・座標を確認してから登録する。
 
@@ -166,9 +167,10 @@ README.md                テンプレート利用手順
 
 ### pois.json（配列）
 ```json
-{ "name": "道の駅 どうし", "lat": 35.53, "lon": 139.03, "kind": "michinoeki" }
+{ "name": "道の駅 どうし", "lat": 35.53, "lon": 139.03, "kind": "michinoeki", "wikipedia": null }
 ```
-- kind に使う値: `michinoeki` / `onsen` / `viewpoint`。
+- kind に使う値: `michinoeki` / `onsen` / `viewpoint` / `waterfall` / `peak` / `gorge` / `lake` / `coast`。
+- `viewpoint` から `coast` までを「絶景」として扱う。
 
 ### status.json
 ```json
@@ -203,10 +205,16 @@ Python 標準ライブラリのみを使う（urllib, json, re, html.parser, xml
 
 ### POI（立ち寄り候補）
 - `pois.json` が 7 日より古い場合だけ、Overpass API で取り直す。
-- 範囲は起点から `poiRadiusKm` 以内。取得条件は次の 3 つ。
+- 範囲は起点から `poiRadiusKm` 以内。取得条件は次のとおり。
   - 道の駅: `name ~ "^道の駅"`
   - 温泉: `amenity=public_bath` かつ `bath:type=onsen`
   - 展望台: `tourism=viewpoint` かつ名前あり
+  - 絶景（いずれも名前と `wikipedia` / `wikidata` タグがあるもの。これを「知名度の目安」として使い、数を絞る）:
+    - 滝: `waterway=waterfall`
+    - 山頂: `natural=peak`
+    - 渓谷: `natural=valley` / `natural=gorge`
+    - 湖: `natural=water` + `water=lake`
+    - 海岸: `natural=beach` / `natural=cape`
 - カフェは関東全域だと数万件になるため、OSM からは取らない。おすすめのカフェは spots.json で扱う。
 
 ### 失敗時の扱い
