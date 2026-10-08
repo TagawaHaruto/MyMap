@@ -1,0 +1,10 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.1",
+  "osm3s": {"timestamp_osm_base": "2026-10-08T07:00:00Z", "timestamp_areas_base": "2026-10-08T06:00:00Z"},
+  "elements": [
+    {"type": "node", "id": 1},
+    {"type": "way", "id": 2},
+    {"type": "relation", "id": 999}
+  ]
+}
