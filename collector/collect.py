@@ -20,6 +20,8 @@ JST = dt.timezone(dt.timedelta(hours=9))
 
 # 全カテゴリがこれに当てはまる event.js のイベントは除外（自治体ごとに名前が違うため部分一致）
 EXCLUDE = '相談|講座|講習|講演|教室|説明会|会議|議会|審議|委員会|健康|福祉|しごと|はたらく'
+# ただしこれに当てはまるカテゴリは除外しない（「スポーツ・健康」「親子教室」など）
+KEEP = '祭|まつり|催し|イベント|文化|芸術|スポーツ|キッズ|子ども|こども|親子|展示|鑑賞|観光'
 # 会場名・タイトルの語 → 屋内か（上から順に最初に当たったもの）
 INDOOR_WORDS = [
     ('体育館', True), ('ホール', True), ('劇場', True), ('文化センター', True), ('公民館', True), ('図書館', True),
@@ -56,18 +58,19 @@ def parse_eventjs(text, src, today):
     body = re.sub(r'([{\n]\s*)([A-Za-z_]\w*)\s*:', r'\1"\2":', body)  # 行頭の素のキーを JSON 用に引用
     data = json.loads(body)
     cats = data.get('categories', {})
-    skip = re.compile(src.get('excludePattern', EXCLUDE))
+    skip, keep = re.compile(src.get('excludePattern', EXCLUDE)), re.compile(KEEP)
     out = []
     for e in data['events']:
         names = [cats.get(c, '') for c in e.get('category', [])]
-        if names and all(skip.search(n) for n in names):
+        if names and all(skip.search(n) and not keep.search(n) for n in names):
             continue
         days = sorted(d.replace('/', '-') for d in e.get('opendays', []))
         days = [d for d in days if d >= today]
         if not days:
             continue
         place = e.get('place2') if isinstance(e.get('place2'), str) else e.get('place') if isinstance(e.get('place'), str) else None
-        out.append(ev(src, e.get('outer') or e['url'], e['eventtitle'], days[0], days[-1], e['url'], place))
+        url = urllib.parse.urljoin(src.get('url', ''), e['url'])  # 相対 URL は収集元基準で解決
+        out.append(ev(src, e.get('outer') or e['url'], e['eventtitle'], days[0], days[-1], url, place))
     return out
 
 
@@ -88,6 +91,8 @@ def parse_daylist(text, src, today, year, month, page_url):
             if MORE.match(clean(title)):
                 continue
             url = urllib.parse.urljoin(page_url, unescape(href))
+            if not url.startswith(('http://', 'https://')):  # javascript: 等
+                continue
             span = spans.setdefault(url, [clean(title), day, day])
             span[1], span[2] = min(span[1], day), max(span[2], day)
     return [ev(src, url, t, a, b, url) for url, (t, a, b) in spans.items() if b >= today and t]
@@ -137,7 +142,7 @@ def overpass_query(origin, radius_km):
     dlat = radius_km / 111
     dlon = radius_km / (111 * math.cos(math.radians(origin['lat'])))
     bb = f"({origin['lat'] - dlat:.3f},{origin['lon'] - dlon:.3f},{origin['lat'] + dlat:.3f},{origin['lon'] + dlon:.3f})"
-    parts = ['nwr["name"~"^道の駅"]', 'nwr["amenity"="public_bath"]["bath:type"="onsen"]',
+    parts = ['nwr["name"~"^道の駅"]', 'nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]',
              'nwr["tourism"="viewpoint"]["name"]', 'nwr["waterway"="waterfall"]["name"]["wikipedia"]',
              'nwr["natural"="peak"]["name"]["wikipedia"]', 'nwr["natural"~"^(valley|gorge)$"]["name"]["wikipedia"]',
              'nwr["natural"="water"]["water"="lake"]["name"]["wikipedia"]',
@@ -183,7 +188,7 @@ def parse_overpass(text):
         t = el.get('tags', {})
         kind = poi_kind(t)
         pos = el if 'lat' in el else el.get('center')
-        if not kind or not pos or (kind, t['name']) in seen:  # 同名（建物と駐車場など）は 1 件に
+        if not kind or not pos or not t.get('name') or (kind, t['name']) in seen:  # 同名（建物と駐車場など）は 1 件に
             continue
         seen.add((kind, t['name']))
         out.append({'name': t['name'], 'lat': pos['lat'], 'lon': pos['lon'], 'kind': kind,
@@ -233,12 +238,22 @@ def guess_indoor(text):
     return None
 
 
+def merge_spans(events):
+    """月をまたぐ一覧ページで分かれた同じイベント（同 URL・同タイトル）を 1 件にまとめる。"""
+    merged = {}
+    for e in events:
+        m = merged.setdefault((e['url'], e['title']), e)
+        m['start'], m['end'] = min(m['start'], e['start']), max(m['end'], e['end'])
+    return list(merged.values())
+
+
 def finalize(events, today, months_ahead):
     first, last = today.isoformat(), (today + dt.timedelta(days=31 * months_ahead)).isoformat()
     seen, out = set(), []
     for e in sorted(events, key=lambda x: (x['start'], x['title'])):
         key = (e['title'], e['start'])
-        if key in seen or e['end'] < first or e['start'] > last:
+        bad_url = not str(e['url']).startswith(('http://', 'https://'))  # javascript: 等は表示しない
+        if key in seen or bad_url or e['end'] < first or e['start'] > last:
             continue
         seen.add(key)
         if e['indoor'] is None:
@@ -259,6 +274,9 @@ def collect_events(cfg, today, old_events, status, fetch):
             got = []
             for url, kw in source_pages(src, today, cfg['eventMonthsAhead']):
                 got += PARSERS[src['type']](fetch(url), src, today.isoformat(), **kw)
+            got = merge_spans(got)
+            if not got and any(e['source'] == src['id'] and e['end'] >= today.isoformat() for e in old_events):
+                raise ValueError('0件（ページ構造の変化の可能性）')
             events += got
             st.update(ok_at=now_iso(), count=len(got), error=None)
         except Exception as err:  # 1 つの収集元の失敗で全体を止めない。前回分を残す

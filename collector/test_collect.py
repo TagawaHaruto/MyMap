@@ -92,7 +92,7 @@ class FlowTest(unittest.TestCase):
 
     def test_finalize_dedup_window_indoor(self):
         e = lambda **kw: {'id': 'x', 'title': 'A', 'start': '2026-10-10', 'end': '2026-10-10', 'place': None,
-                          'lat': None, 'lon': None, 'pref': '東京', 'indoor': None, 'url': 'u', 'source': 's', **kw}
+                          'lat': None, 'lon': None, 'pref': '東京', 'indoor': None, 'url': 'https://u', 'source': 's', **kw}
         out = collect.finalize([
             e(), e(source='s2'),                                   # 同名同日 → 1 件
             e(title='過去', start='2026-10-01', end='2026-10-07'),  # 終了済み → 除外
@@ -107,7 +107,7 @@ class FlowTest(unittest.TestCase):
         cfg = {'eventMonthsAhead': 3, 'sources': [
             src(id='ok', type='doorkeeper', query='調布'), src(id='ng', type='eventjs', url='https://ng/event.js')]}
         old = [{'id': 'ng:1', 'title': '前回', 'start': '2026-10-20', 'end': '2026-10-20', 'place': None, 'lat': None,
-                'lon': None, 'pref': '東京', 'indoor': None, 'url': 'u', 'source': 'ng'}]
+                'lon': None, 'pref': '東京', 'indoor': None, 'url': 'https://u', 'source': 'ng'}]
         status = {'sources': {}}
 
         def fake_fetch(url):
@@ -147,6 +147,46 @@ class PoiTest(unittest.TestCase):
         collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                              lambda *a, **k: calls.append(a), dt.datetime(2026, 10, 8, tzinfo=collect.JST))
         self.assertEqual(calls, [])
+
+
+class ReviewFixTest(unittest.TestCase):
+    def test_unnamed_onsen_is_skipped(self):
+        text = '{"elements": [{"type": "node", "id": 1, "lat": 35.7, "lon": 139.2, "tags": {"amenity": "public_bath", "bath:type": "onsen"}}]}'
+        self.assertEqual(collect.parse_overpass(text), [])
+        self.assertIn('nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]', collect.overpass_query({'lat': 35.65, 'lon': 139.54}, 150))
+
+    def test_zero_events_with_previous_future_events_is_error(self):
+        cfg = {'eventMonthsAhead': 3, 'sources': [src(id='d', type='daylist', url='https://d/{YM}')]}
+        old = [{'id': 'd:1', 'title': '前回', 'start': '2026-10-20', 'end': '2026-10-20', 'place': None, 'lat': None,
+                'lon': None, 'pref': '東京', 'indoor': None, 'url': 'https://d/1', 'source': 'd'}]
+        status = {'sources': {}}
+        evs = collect.collect_events(cfg, dt.date(2026, 10, 8), old, status, lambda url: '<html>redesigned</html>')
+        self.assertEqual([e['title'] for e in evs], ['前回'])
+        self.assertIn('0件', status['sources']['d']['error'])
+
+    def test_daylist_event_spanning_months_is_one_entry(self):
+        pages = {'https://d/202610': '<table><tr><td>31日</td><td><a href="/ex">展示</a></td></tr></table>',
+                 'https://d/202611': '<table><tr><td>1日</td><td><a href="/ex">展示</a></td></tr></table>',
+                 'https://d/202612': '<table></table>'}
+        cfg = {'eventMonthsAhead': 3, 'sources': [src(id='d', type='daylist', url='https://d/{YM}')]}
+        evs = collect.collect_events(cfg, dt.date(2026, 10, 8), [], {'sources': {}}, lambda url: pages[url])
+        self.assertEqual([(e['title'], e['start'], e['end']) for e in evs], [('展示', '2026-10-31', '2026-11-01')])
+
+    def test_keep_pattern_beats_exclude(self):
+        text = ('var event_data = {\nevents: ['
+                '{"eventtitle":"市民マラソン","url":"https://a/1","category":["10"],"opendays":["2026/10/10"]},'
+                '{"eventtitle":"健診","url":"https://a/2","category":["20"],"opendays":["2026/10/10"]}],\n'
+                'categories: {"10":"スポーツ・健康","20":"健康"}\n};')
+        self.assertEqual([e['title'] for e in collect.parse_eventjs(text, src(url='https://a/event.js'), TODAY)], ['市民マラソン'])
+
+    def test_urls_resolved_and_non_http_dropped(self):
+        text = ('var event_data = {\nevents: ['
+                '{"eventtitle":"相対","url":"/event/1.html","category":[],"opendays":["2026/10/10"]}],\ncategories: {}\n};')
+        evs = collect.parse_eventjs(text, src(url='https://www.city.x.lg.jp/event.js'), TODAY)
+        self.assertEqual(evs[0]['url'], 'https://www.city.x.lg.jp/event/1.html')
+        page = '<table><tr><td>10日</td><td><a href="javascript:alert(1)">悪い</a><a href="/ok">良い</a></td></tr></table>'
+        evs = collect.parse_daylist(page, src(id='d'), TODAY, 2026, 10, 'https://d/')
+        self.assertEqual([e['title'] for e in evs], ['良い'])
 
 
 if __name__ == '__main__':
