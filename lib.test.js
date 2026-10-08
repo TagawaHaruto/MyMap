@@ -196,4 +196,40 @@ assert(g3.includes('<trkpt lat="35.6" lon="139.5"></trkpt>'), g3);
 assert(g3.includes('<wpt lat="35.65" lon="139.55"><name>A&amp;B</name></wpt>'), g3);
 assert(g3.includes('<name>調布→奥多摩 &lt;テスト&gt;</name>'), g3);
 
+// ---- スポットの説明と写真（Wikipedia / Wikimedia Commons） ----
+assert.deepStrictEqual(Lib.wikiRef({ wp: 'ja:深大寺' }), { lang: 'ja', title: '深大寺' });
+assert.deepStrictEqual(Lib.wikiRef({ url: 'https://ja.wikipedia.org/wiki/' + encodeURIComponent('奥多摩湖') }), { lang: 'ja', title: '奥多摩湖' });
+assert.deepStrictEqual(Lib.wikiRef({ url: 'https://ja.wikipedia.org/wiki/%E9%81%93_%E5%BF%97' }), { lang: 'ja', title: '道 志' });
+assert.strictEqual(Lib.wikiRef({ url: 'https://www.example.jp/' }), null);
+assert.strictEqual(Lib.wikiRef({}), null);
+assert.strictEqual(Lib.summaryUrl({ lang: 'ja', title: '深大寺' }), 'https://ja.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent('深大寺'));
+
+// 説明は 1〜2 文に短く（句点で切る）
+assert.strictEqual(Lib.shortExtract('一文目です。二文目です。三文目はとても長いのでここまでは入らない文章です。', 14), '一文目です。二文目です。');
+assert.strictEqual(Lib.shortExtract('句点のない長い文章が続いていく', 8), '句点のない長い文…');
+assert.strictEqual(Lib.shortExtract('', 10), '');
+
+const sum = Lib.parseSummary({ type: 'standard', extract: '道志村は山梨県の村。山梨県の最東端。', thumbnail: { source: 'https://upload.wikimedia.org/a.jpg' },
+  content_urls: { mobile: { page: 'https://ja.m.wikipedia.org/wiki/x' }, desktop: { page: 'https://ja.wikipedia.org/wiki/x' } } });
+assert.deepStrictEqual(sum, { text: '道志村は山梨県の村。山梨県の最東端。', thumb: 'https://upload.wikimedia.org/a.jpg', page: 'https://ja.m.wikipedia.org/wiki/x' });
+assert.strictEqual(Lib.parseSummary({ type: 'disambiguation', extract: 'x' }), null);
+assert.strictEqual(Lib.parseSummary({ type: 'standard', extract: '' }), null);
+assert.strictEqual(Lib.parseSummary({ type: 'standard', extract: 'あ。' }).thumb, null);
+
+// 付近の写真: 近い順・撮影者の HTML を外す・https 以外は捨てる
+const cu = Lib.commonsNearbyUrl(35.1, 139.2, 300, 3);
+assert(cu.startsWith('https://commons.wikimedia.org/w/api.php?') && cu.includes('ggscoord=35.1%7C139.2') && cu.includes('ggsradius=300') && cu.includes('origin=*'), cu);
+const photos = Lib.parseCommons({ query: { pages: {
+  '2': { index: 2, title: 'File:B.jpg', imageinfo: [{ thumburl: 'https://upload.wikimedia.org/b.jpg', descriptionurl: 'https://commons.wikimedia.org/wiki/File:B.jpg',
+    extmetadata: { Artist: { value: '<a href="x">山田</a>' }, LicenseShortName: { value: 'CC BY-SA 4.0' } } }] },
+  '1': { index: 1, title: 'File:A.jpg', imageinfo: [{ thumburl: 'https://upload.wikimedia.org/a.jpg', descriptionurl: 'https://commons.wikimedia.org/wiki/File:A.jpg',
+    extmetadata: { LicenseShortName: { value: 'Public domain' } } }] },
+  '3': { index: 3, title: 'File:C.jpg', imageinfo: [{ thumburl: 'javascript:alert(1)', descriptionurl: 'https://x' }] },
+} } });
+assert.deepStrictEqual(photos, [
+  { thumb: 'https://upload.wikimedia.org/a.jpg', page: 'https://commons.wikimedia.org/wiki/File:A.jpg', artist: '', license: 'Public domain' },
+  { thumb: 'https://upload.wikimedia.org/b.jpg', page: 'https://commons.wikimedia.org/wiki/File:B.jpg', artist: '山田', license: 'CC BY-SA 4.0' },
+]);
+assert.deepStrictEqual(Lib.parseCommons({}), []);
+
 console.log('lib: ALL PASS');
