@@ -230,6 +230,9 @@ SPOT_QUERIES = [
     ('play', 'nwr["leisure"~"^(water_park|amusement_arcade|trampoline_park|miniature_golf)$"]["name"]'),
     ('planetarium', 'nwr["amenity"="planetarium"]["name"]'),
 ]
+# 混雑（429/504）時は別の公開サーバーで再試行する
+OVERPASS_URLS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter',
+                 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
 VEHICLE_WORDS = re.compile('鉄道|電車|機関車|航空|飛行|宇宙|ロケット|自動車|クルマ|モーター|バイク|オートバイ|船|交通|乗り物')
 
 
@@ -303,14 +306,13 @@ def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep)
         if i:
             sleep(5)  # Overpass への配慮
         body = urllib.parse.urlencode({'data': f'[out:json][timeout:180];{q}{bb};out center tags;'}).encode()
-        for attempt in (1, 2):
+        for n, url in enumerate(OVERPASS_URLS):
             try:
-                out += parse_osm_spots(fetch('https://overpass-api.de/api/interpreter', data=body, timeout=240),
-                                       exclude_names, kind, seen)
+                out += parse_osm_spots(fetch(url, data=body, timeout=240), exclude_names, kind, seen)
                 break
             except Exception as err:
-                if attempt == 1:
-                    sleep(30)  # 混雑（429/504）は少し待って 1 回だけ再試行
+                if n + 1 < len(OVERPASS_URLS):
+                    sleep(30)
                     continue
                 errors.append(f'{kind}: {type(err).__name__}: {err}'[:120])
                 out += [s for s in old if s.get('k') == kind]

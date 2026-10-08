@@ -217,8 +217,11 @@ class OsmSpotTest(unittest.TestCase):
         old = [{'id': 'osm:node:99', 'name': '旧', 'lat': 35.0, 'lon': 139.0, 'k': 'bath'}]
         calls = []
 
+        urls = []
+
         def fake_fetch(url, data=None, timeout=60):
             calls.append(data)
+            urls.append(url)
             if b'public_bath' in data:
                 raise OSError('504')
             return fx('overpass_spots.json')
@@ -226,7 +229,8 @@ class OsmSpotTest(unittest.TestCase):
         status = {}
         spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status, fake_fetch,
                                       dt.datetime(2026, 10, 8, tzinfo=collect.JST), old, set(), sleep=lambda s: None)
-        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + 1)  # 失敗した 1 種類は 1 回だけ再試行
+        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + len(collect.OVERPASS_URLS) - 1)  # 失敗した種類は別サーバーで再試行
+        self.assertEqual(len({u for u in urls if u}), len(collect.OVERPASS_URLS))
         self.assertIn('旧', [s['name'] for s in spots])
         self.assertIn('bath', status['spots_error'])
         self.assertIsNotNone(status['spots_at'])
