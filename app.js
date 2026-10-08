@@ -195,6 +195,98 @@ async function pollStatus(prev) {
   setUpdateMsg('更新に時間がかかっています。しばらくしてから開き直してください。');
 }
 
+// ---- ツーリング（ルート：OSRM 公開サーバー／地図：OSM。どちらも登録不要） ----
+const tour = { destId: null, custom: null, avoid: false, radius: 3, route: null, picked: new Set(), error: '' };
+let map = null, routeLayer = null;
+
+async function fetchRoute(dest, avoid) {
+  const pts = [DATA.cfg.origin, ...(dest.waypoints || []).map(([lat, lon]) => ({ lat, lon })), dest];
+  const base = `https://router.project-osrm.org/route/v1/driving/${pts.map((p) => `${p.lon},${p.lat}`).join(';')}?overview=full&geometries=geojson`;
+  let r = null, note = '';
+  if (avoid) {
+    r = await fetch(base + '&exclude=motorway');
+    if (!r.ok) { note = '高速回避に未対応のため、通常のルートを表示しています。'; r = null; }
+  }
+  r = r || await fetch(base);
+  if (!r.ok) throw new Error(`OSRM ${r.status}`);
+  const j = await r.json();
+  const rt = j.routes[0];
+  return { line: rt.geometry.coordinates, km: rt.distance / 1000, min: rt.duration / 60, note };
+}
+
+const currentDest = () => tour.custom || DATA.touring.find((t) => t.id === tour.destId) || null;
+function tourStops() {
+  if (!tour.route) return [];
+  const items = DATA.spots.concat(DATA.pois.map(poiAsSpot));
+  return Lib.stopsAlongRoute(items, tour.route.line, tour.radius).filter((s) => s.alongKm > 1);
+}
+function navUrl() {
+  const dest = currentDest();
+  const picked = tourStops().filter((s) => tour.picked.has(s.id));
+  // 経由地は「ルート上の順番」に並べ、Google マップの上限 9 件に収める
+  const wps = [...(dest.waypoints || []).map(([lat, lon]) => ({ lat, lon })), ...picked]
+    .map((p) => ({ ...p, along: Lib.distToRoute(p, tour.route.line).along }))
+    .sort((a, b) => a.along - b.along);
+  return Lib.gmapsDirUrl(DATA.cfg.origin, dest, wps, 'driving');
+}
+
+function renderTouring() {
+  const dest = currentDest();
+  const stops = tourStops();
+  $('#view').innerHTML = `
+    <label for="dest">目的地（地図をタップしても指定できます）</label>
+    <select id="dest"><option value="">選んでください</option>${DATA.touring.map((t) =>
+      `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}
+      ${tour.custom ? '<option selected>地図で指定した地点</option>' : ''}</select>
+    <label class="check"><input type="checkbox" id="avoid" ${tour.avoid ? 'checked' : ''}>高速を使わない（下道）</label>
+    <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
+    <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest ? '' : 'disabled'}>ルート検索</button></div>
+    <div id="map"></div>
+    ${tour.error ? `<p class="notice">${esc(tour.error)}</p>` : ''}
+    ${tour.route ? `<p class="status">約${Math.round(tour.route.km)}km・${fmtMin(Math.round(tour.route.min))}（OSRM の推定）${esc(tour.route.note)}</p>` : ''}
+    ${tour.route ? `<h2>立ち寄り候補（${stops.length}件・走る順）</h2>` + stops.slice(0, 100).map((s) => `
+      <label class="check card"><input type="checkbox" data-stop="${esc(s.id)}" ${tour.picked.has(s.id) ? 'checked' : ''}>
+        <span>${Math.round(s.alongKm)}km地点 ${s.genres.map((g) => icon(GENRES[g])).join('')} ${esc(s.name)}
+        <span class="status">（道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}）</span></span></label>`).join('') : ''}
+    ${dest ? `<div class="actions"><a class="btn primary" target="_blank" rel="noopener" href="${esc(tour.route ? navUrl() : Lib.gmapsDirUrl(DATA.cfg.origin, dest, [], 'driving'))}">Google マップでナビ開始</a></div>` : ''}`;
+
+  chips($('#radius'), [[1, '1km'], [3, '3km'], [5, '5km']], (v) => v === tour.radius, (v) => { tour.radius = v; });
+  $('#dest').onchange = (e) => { tour.destId = e.target.value || null; tour.custom = null; tour.route = null; tour.picked.clear(); renderTouring(); };
+  $('#avoid').onchange = (e) => { tour.avoid = e.target.checked; };
+  $('#route-go').onclick = async () => {
+    tour.error = '';
+    try { tour.route = await fetchRoute(currentDest(), tour.avoid); }
+    catch { tour.route = null; tour.error = 'ルートを取得できませんでした。Google マップのボタンから確認してください。'; }
+    renderTouring();
+  };
+  $('#view').onchange = (e) => {
+    const cb = e.target.closest('[data-stop]'); if (!cb) return;
+    cb.checked ? tour.picked.add(cb.dataset.stop) : tour.picked.delete(cb.dataset.stop);
+    renderTouring();
+  };
+  drawMap(dest, stops);
+}
+
+function drawMap(dest, stops) {
+  if (typeof L === 'undefined') { $('#map').textContent = '地図を読み込めませんでした。'; return; }
+  if (map) map.remove(); // 再描画のたびに作り直す（#map 要素が置き換わるため）
+  map = L.map('map').setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 9);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> / ルート: OSRM' }).addTo(map);
+  L.marker([DATA.cfg.origin.lat, DATA.cfg.origin.lon]).addTo(map).bindPopup(esc(DATA.cfg.origin.name));
+  if (dest) L.marker([dest.lat, dest.lon]).addTo(map).bindPopup(esc(dest.name));
+  if (tour.route) {
+    routeLayer = L.polyline(tour.route.line.map(([lon, lat]) => [lat, lon]), { color: '#264af4', weight: 5 }).addTo(map);
+    stops.forEach((s) => L.circleMarker([s.lat, s.lon], { radius: 6, color: tour.picked.has(s.id) ? '#264af4' : '#666' })
+      .addTo(map).bindPopup(esc(s.name)));
+    map.fitBounds(routeLayer.getBounds(), { padding: [16, 16] });
+  }
+  map.on('click', (e) => {
+    tour.custom = { id: 'custom', name: '地図で指定した地点', lat: +e.latlng.lat.toFixed(5), lon: +e.latlng.lng.toFixed(5), waypoints: [] };
+    tour.route = null; tour.picked.clear(); renderTouring();
+  });
+}
+
 // ---- 設定 ----
 function renderSettings() {
   const has = !!store.get('token');
@@ -218,7 +310,7 @@ function renderSettings() {
 }
 
 // ---- タブと全体描画 ----
-const RENDER = { spots: renderSpots, events: renderEvents, settings: renderSettings };
+const RENDER = { spots: renderSpots, events: renderEvents, touring: renderTouring, settings: renderSettings };
 document.querySelector('.tabs').onclick = (e) => {
   const b = e.target.closest('[data-tab]'); if (!b) return;
   state.tab = b.dataset.tab; store.set('tab', state.tab); renderAll();
