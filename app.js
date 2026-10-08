@@ -124,6 +124,40 @@ function renderWeather() {
 }
 $('#weather').onclick = () => { state.rainOverride = !rainy(); renderAll(); };
 
+// ---- イベント ----
+const PERIODS = [['weekend', '今週末'], ['next', '来週末'], ['month', '今月'], ['3m', '3か月']];
+const fmtDate = (d) => { const [, m, day] = d.split('-'); return `${+m}/${+day}`; };
+function eventCard(e) {
+  const when = e.start === e.end ? fmtDate(e.start) : `${fmtDate(e.start)}〜${fmtDate(e.end)}`;
+  const inout = e.indoor === true ? '<span class="badge rain">☔屋内</span> ' : e.indoor == null ? '<span class="badge">?</span> ' : '';
+  return `<article class="card">
+    <p class="meta">${inout}${esc(when)}${e.minutes != null ? '・' + icon(MODES[state.mode]) + fmtMin(e.minutes) : '・位置不明'}</p>
+    <h3>${esc(e.title)}</h3>
+    ${e.place ? `<p>${esc(e.place)}</p>` : ''}
+    <div class="actions">
+      <a class="btn" href="${esc(e.url)}" target="_blank" rel="noopener">詳細</a>
+      ${e.lat != null ? `<a class="btn" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, e, [], GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">地図で経路</a>` : ''}
+      <a class="btn" href="https://x.com/search?q=${encodeURIComponent(e.title)}" target="_blank" rel="noopener">Xで検索</a>
+    </div></article>`;
+}
+function statusHtml() {
+  const st = DATA.status;
+  if (!st || !st.updated_at) return '<p class="status">イベントはまだ収集されていません。</p>';
+  const old = (iso) => Lib.isStale(iso, Date.now(), 72);
+  const rows = Object.entries(st.sources || {}).map(([id, s]) =>
+    `<li>${old(s.ok_at) || s.error ? '<span class="badge warn">⚠</span>' : ''}${esc(id)}: ${s.ok_at ? esc(s.ok_at.slice(0, 16).replace('T', ' ')) : '未取得'}（${s.count}件）</li>`).join('');
+  return `<details class="status"><summary>最終更新 ${esc(st.updated_at.slice(0, 16).replace('T', ' '))}</summary><ul>${rows}</ul></details>`;
+}
+function renderEvents() {
+  const [from, to] = Lib.periodRange(state.period, new Date());
+  const list = Lib.filterEvents(DATA.events, filterState(), DATA.cfg, from, to);
+  $('#view').innerHTML = `<div id="periods" class="chips"></div>
+    <p class="status">${list.length}件${rainy() ? '（雨の日モード：屋外を除外、?は屋内外不明）' : ''}</p>
+    ${list.length ? list.slice(0, 300).map(eventCard).join('') : '<p class="empty">この期間・条件のイベントはありません。</p>'}
+    ${statusHtml()}`;
+  chips($('#periods'), PERIODS, (v) => v === state.period, (v) => { state.period = v; });
+}
+
 // ---- 設定 ----
 function renderSettings() {
   $('#view').innerHTML = `<h2>好きなジャンル</h2><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>`;
@@ -133,7 +167,7 @@ function renderSettings() {
 }
 
 // ---- タブと全体描画 ----
-const RENDER = { spots: renderSpots, settings: renderSettings };
+const RENDER = { spots: renderSpots, events: renderEvents, settings: renderSettings };
 document.querySelector('.tabs').onclick = (e) => {
   const b = e.target.closest('[data-tab]'); if (!b) return;
   state.tab = b.dataset.tab; store.set('tab', state.tab); renderAll();
