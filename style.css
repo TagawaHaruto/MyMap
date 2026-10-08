@@ -1,0 +1,52 @@
+/* DADS トークン（index.html で読み込み）を参照する */
+:root {
+  --fg: var(--color-neutral-solid-gray-900);
+  --fg-sub: var(--color-neutral-solid-gray-700);
+  --bg: var(--color-neutral-white);
+  --bg-sub: var(--color-neutral-solid-gray-50);
+  --line: var(--color-neutral-solid-gray-420);
+  --key: var(--color-primitive-blue-900);
+  --key-bg: var(--color-primitive-blue-50);
+  --rain: var(--color-primitive-light-blue-900);
+  --rain-bg: var(--color-primitive-light-blue-50);
+  --warn: var(--color-semantic-warning-orange-2);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-family-sans); font-size: var(--font-size-16); line-height: 1.6; }
+h1 { font-size: var(--font-size-20); margin: 0; }
+h2 { font-size: var(--font-size-18); margin: 16px 0 8px; }
+h3 { font-size: var(--font-size-16); margin: 0 0 4px; }
+a { color: var(--key); }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 16px; border-bottom: 1px solid var(--line); }
+.weather { min-height: 44px; padding: 0 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); font: inherit; }
+.weather[aria-pressed="true"] { background: var(--rain-bg); color: var(--rain); border-color: var(--rain); font-weight: 700; }
+.notice { margin: 8px 16px; padding: 8px 12px; border-left: 4px solid var(--key); background: var(--key-bg); }
+.filters { padding: 8px 16px; display: grid; gap: 4px; }
+.row { min-width: 0; display: flex; gap: 8px; align-items: center; }
+.label { flex: 0 0 2.5em; color: var(--fg-sub); font-size: var(--font-size-14); }
+.chips { min-width: 0; display: flex; gap: 6px; overflow-x: auto; padding: 2px 0; scrollbar-width: none; }
+.chip { flex: 0 0 auto; min-height: 44px; padding: 0 12px; border: 1px solid var(--line); border-radius: 22px; background: var(--bg); color: var(--fg); font: inherit; font-size: var(--font-size-14); }
+.chip[aria-pressed="true"] { background: var(--key); border-color: var(--key); color: var(--color-neutral-white); font-weight: 700; }
+.recommend { padding: 0 16px; }
+.recommend .cards { display: grid; gap: 8px; }
+.tabs { position: sticky; top: 0; z-index: 10; display: flex; background: var(--bg); border-bottom: 1px solid var(--line); }
+.tabs button { flex: 1; white-space: nowrap; min-height: 48px; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--fg-sub); font: inherit; font-size: var(--font-size-14); }
+.tabs button[aria-selected="true"] { color: var(--key); border-bottom-color: var(--key); font-weight: 700; }
+main { padding: 8px 16px 32px; display: grid; gap: 8px; }
+.card { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: var(--bg); }
+.card .meta { margin: 0 0 4px; color: var(--fg-sub); font-size: var(--font-size-14); }
+.card p { margin: 0 0 4px; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: 0 6px; border-radius: 4px; font-size: var(--font-size-14); }
+.badge.rain { background: var(--rain-bg); color: var(--rain); }
+.badge.warn { color: var(--warn); }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.btn, .icon { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border: 1px solid var(--key); border-radius: 8px; background: var(--bg); color: var(--key); font: inherit; font-size: var(--font-size-14); text-decoration: none; }
+.btn.primary { background: var(--key); color: var(--color-neutral-white); }
+.icon[aria-pressed="true"] { background: var(--key-bg); font-weight: 700; }
+.empty { color: var(--fg-sub); }
+.status { font-size: var(--font-size-14); color: var(--fg-sub); }
+#map { height: 320px; border: 1px solid var(--line); border-radius: 8px; }
+input[type="password"], select { width: 100%; min-height: 44px; font: inherit; padding: 0 8px; border: 1px solid var(--line); border-radius: 8px; }
+label.check { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+label.check input { width: 20px; height: 20px; }
+:focus-visible { outline: 3px solid var(--color-primitive-yellow-400); outline-offset: 2px; }
