@@ -158,12 +158,63 @@ function renderEvents() {
   chips($('#periods'), PERIODS, (v) => v === state.period, (v) => { state.period = v; });
 }
 
+// ---- データ更新の依頼（方式 C：古いときだけ GitHub Actions を起動。トークンは端末内のみ） ----
+function setUpdateMsg(text) { const el = $('#update-msg'); el.hidden = !text; el.textContent = text || ''; }
+async function requestUpdate(force = false) {
+  const st = DATA.status;
+  if (!force && !Lib.isStale(st && st.updated_at, Date.now(), DATA.cfg.staleHours)) return;
+  const token = store.get('token');
+  if (!token) { setUpdateMsg('データが古くなっています。設定タブでトークンを登録すると自動で更新できます。'); return; }
+  const prev = st && st.updated_at;
+  if (!force && Date.now() - (store.get('lastDispatch') || 0) < 10 * 60e3) { pollStatus(prev); return; }
+  const { owner, repo, workflow, branch } = DATA.cfg.github;
+  try {
+    const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
+      body: JSON.stringify({ ref: branch || 'main' }),
+    });
+    if (!r.ok) { setUpdateMsg(`更新の依頼に失敗しました（${r.status}）。トークンの権限と有効期限を確認してください。`); return; }
+  } catch {
+    setUpdateMsg('更新の依頼を送れませんでした（通信エラー）。'); return;
+  }
+  store.set('lastDispatch', Date.now());
+  pollStatus(prev);
+}
+async function pollStatus(prev) {
+  setUpdateMsg('データを更新中です…（数分かかります。前回のデータを表示しています）');
+  for (let i = 0; i < 20; i++) { // 30 秒ごとに最大 10 分
+    await new Promise((ok) => setTimeout(ok, 30e3));
+    const st = await getJSON('data/status.json', null);
+    if (st && st.updated_at && st.updated_at !== prev) {
+      DATA.status = st;
+      [DATA.events, DATA.pois] = await Promise.all([getJSON('data/events.json', DATA.events), getJSON('data/pois.json', DATA.pois)]);
+      setUpdateMsg(''); renderAll(); return;
+    }
+  }
+  setUpdateMsg('更新に時間がかかっています。しばらくしてから開き直してください。');
+}
+
 // ---- 設定 ----
 function renderSettings() {
-  $('#view').innerHTML = `<h2>好きなジャンル</h2><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>`;
+  const has = !!store.get('token');
+  $('#view').innerHTML = `<h2>好きなジャンル</h2><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>
+    <h2>データの自動更新</h2>
+    <p>GitHub の Fine-grained トークン（対象リポジトリ：このアプリのリポジトリだけ／権限：Actions の Read and write だけ）を貼ってください。トークンはこの端末の中にだけ保存されます。</p>
+    <p class="status">状態：${has ? '登録済み' : '未登録'}</p>
+    <input id="token" type="password" autocomplete="off" placeholder="github_pat_..." aria-label="GitHub トークン">
+    <div class="actions">
+      <button type="button" class="btn primary" id="token-save">保存</button>
+      <button type="button" class="btn" id="token-del">削除</button>
+      <button type="button" class="btn" id="update-now">今すぐ更新</button>
+    </div>
+    <h2>収集状況</h2>${statusHtml()}`;
   const el = $('#fav-genres');
   el.innerHTML = Object.entries(GENRES).map(([g, l]) => `<button type="button" class="chip" data-g="${g}" aria-pressed="${state.favGenres.has(g)}">${l}</button>`).join('');
   el.onclick = (e) => { const b = e.target.closest('.chip'); if (b) { toggle(state.favGenres, b.dataset.g); store.set('favGenres', [...state.favGenres]); renderAll(); } };
+  $('#token-save').onclick = () => { const v = $('#token').value.trim(); if (v) { store.set('token', v); renderSettings(); } };
+  $('#token-del').onclick = () => { store.set('token', null); renderSettings(); };
+  $('#update-now').onclick = () => requestUpdate(true);
 }
 
 // ---- タブと全体描画 ----
@@ -186,5 +237,6 @@ async function init() {
     getJSON('data/touring.json', []), getJSON('data/status.json', null)]);
   renderAll();
   loadWeather();
+  requestUpdate();
 }
 init();

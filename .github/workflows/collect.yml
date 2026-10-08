@@ -1,0 +1,25 @@
+# 定期実行はしない。アプリ（または Actions タブ）からの起動時だけ動く
+name: collect
+on: workflow_dispatch
+permissions:
+  contents: write
+concurrency:
+  group: collect
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test
+        run: python3 -m unittest discover -s collector -v
+      - name: Collect
+        run: python3 collector/collect.py
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: update $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
