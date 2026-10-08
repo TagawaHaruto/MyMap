@@ -37,10 +37,11 @@ const events = [
   { id: 'e2', title: 'y', start: '2026-10-01', end: '2026-10-31', lat: 35.66, lon: 139.55, pref: '東京', indoor: false },
   { id: 'e3', title: 'z', start: '2026-11-01', end: '2026-11-01', lat: 35.66, lon: 139.55, pref: '東京', indoor: true },
 ];
-assert.deepStrictEqual(ids(Lib.filterEvents(events, f({}), cfg, '2026-10-10', '2026-10-11')), ['e2', 'e1']);
+// 長期（3日超）の e2 より、その日だけの e1 を先に
+assert.deepStrictEqual(ids(Lib.filterEvents(events, f({}), cfg, '2026-10-10', '2026-10-11')), ['e1', 'e2']);
 assert.deepStrictEqual(ids(Lib.filterEvents(events, f({ rainy: true }), cfg, '2026-10-10', '2026-10-11')), ['e1']);
 assert.deepStrictEqual(ids(Lib.filterEvents(events, f({ maxMin: 1 }), cfg, '2026-10-10', '2026-10-11')), ['e1']);
-assert.strictEqual(Lib.filterEvents(events, f({}), cfg, '2026-10-10', '2026-10-11')[1].minutes, null);
+assert.strictEqual(Lib.filterEvents(events, f({}), cfg, '2026-10-10', '2026-10-11')[0].minutes, null);
 
 // ルートまでの距離（東西にまっすぐな約 9km の線）
 const line = [[139.50, 35.65], [139.55, 35.65], [139.60, 35.65]];
@@ -81,5 +82,56 @@ assert.deepStrictEqual(Lib.periodRange('3m', new Date(2026, 9, 8)), ['2026-10-08
 assert.strictEqual(Lib.isStale(null, 0, 24), true);
 assert.strictEqual(Lib.isStale('2026-10-08T00:00:00Z', Date.parse('2026-10-08T23:00:00Z'), 24), false);
 assert.strictEqual(Lib.isStale('2026-10-08T00:00:00Z', Date.parse('2026-10-09T01:00:00Z'), 24), true);
+
+// ---- 第1弾 ----
+// 並び順: 厳選・⭐（段0）→ url/wp あり（段1）→ その他（段2）、同じ段は近い順
+const tiered = [
+  { id: 'osm:node:1', name: '近いOSM', lat: 35.652, lon: 139.545, genres: ['play'], indoor: false, url: '' },
+  { id: 'osm:node:2', name: 'WikiありOSM', lat: 35.70, lon: 139.60, genres: ['museum'], indoor: true, url: 'https://ja.wikipedia.org/wiki/x' },
+  { id: 'cur', name: '厳選', lat: 35.75, lon: 139.70, genres: ['museum'], indoor: true, url: 'https://x' },
+  { id: 'osm:node:3', name: '⭐OSM', lat: 35.80, lon: 139.80, genres: ['temple'], indoor: false, url: '' },
+  { id: 'poi:x', poi: true, name: 'POI', lat: 35.66, lon: 139.55, genres: ['scenic'], indoor: false, url: '' },
+];
+assert.deepStrictEqual(ids(Lib.filterSpots(tiered, f({ favs: new Set(['osm:node:3']) }), cfg)),
+  ['cur', 'osm:node:3', 'osm:node:2', 'osm:node:1', 'poi:x']);
+assert.strictEqual(Lib.tierOf({ id: 'osm:node:9', wp: 'ja:深大寺' }, new Set()), 1);
+
+// 方面（起点からの8方位）
+assert.strictEqual(Lib.direction(cfg.origin, { lat: 35.80, lon: 139.544 }), 'N');
+assert.strictEqual(Lib.direction(cfg.origin, { lat: 35.65, lon: 139.20 }), 'W');
+assert.strictEqual(Lib.direction(cfg.origin, { lat: 35.30, lon: 139.10 }), 'SW');
+assert.strictEqual(Lib.direction(cfg.origin, { lat: 35.65, lon: 140.00 }), 'E');
+assert.deepStrictEqual(ids(Lib.filterSpots(spots, f({ dirs: new Set(['SW']) }), cfg)), ['c']);
+
+// 名前検索の正規化（NFKC・カタカナ→ひらがな・空白除去・小文字）
+assert.strictEqual(Lib.norm('ＪＡＸＡ 調布'), 'jaxa調布');
+assert.strictEqual(Lib.norm('シンダイジ'), Lib.norm('しんだいじ'));
+const found = Lib.searchSpots(tiered.concat([{ id: 'jd', name: '深大寺', tags: ['じんだいじ'], lat: 35.67, lon: 139.55, genres: ['temple'], indoor: false, url: 'https://j' }]),
+  'ジンダイジ', cfg, new Set(), 'car');
+assert.deepStrictEqual(ids(found), ['jd']);
+assert.strictEqual(Lib.searchSpots(tiered, 'osm', cfg, new Set(), 'car', 2).length, 2);
+assert.strictEqual(Lib.searchSpots(tiered, '  ', cfg, new Set(), 'car').length, 0);
+
+// イベント: 告知の除外語
+const ex = /募集|講座/;
+const evs2 = [
+  { id: 'a', title: '出展募集', start: '2026-10-10', end: '2026-10-10', lat: null, lon: null, pref: '東京', indoor: true },
+  { id: 'b', title: '秋まつり', start: '2026-10-10', end: '2026-10-10', lat: null, lon: null, pref: '東京', indoor: false },
+];
+assert.deepStrictEqual(ids(Lib.filterEvents(evs2, f({ exclude: ex }), cfg, '2026-10-10', '2026-10-11')), ['b']);
+assert.strictEqual(Lib.filterEvents(evs2, f({ exclude: null }), cfg, '2026-10-10', '2026-10-11').length, 2);
+assert.strictEqual(Lib.spanDays({ start: '2026-10-01', end: '2026-10-03' }), 3);
+
+// ルート近傍: bbox の前絞りをしても結果は同じ（遠い点が大量でも）
+const many = Array.from({ length: 200 }, (_, i) => ({ id: 'z' + i, lat: 34.5 + i * 0.01, lon: 139.0 + (i % 50) * 0.02 }));
+const near = [{ id: 'n', lat: 35.66, lon: 139.58 }, { id: 'm', lat: 35.651, lon: 139.52 }];
+assert.deepStrictEqual(ids(Lib.stopsAlongRoute(near.concat(many), line, 3)).filter((x) => x === 'n' || x === 'm'), ['m', 'n']);
+const brute = near.concat(many).map((s) => ({ s, r: Lib.distToRoute(s, line) })).filter((x) => x.r.km <= 3).length;
+assert.strictEqual(Lib.stopsAlongRoute(near.concat(many), line, 3).length, brute);
+
+// Google マップ: origin 省略で現在地から案内
+const g2 = Lib.gmapsDirUrl(null, { lat: 35.7, lon: 139.0 });
+assert(!g2.includes('origin='), g2);
+assert(g2.includes('dir_action=navigate'), g2);
 
 console.log('lib: ALL PASS');
