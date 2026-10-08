@@ -332,3 +332,4 @@ async function init() {
   requestUpdate();
 }
 init();
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => { /* 非対応でも動く */ });
