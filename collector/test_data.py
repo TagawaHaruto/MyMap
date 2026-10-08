@@ -49,6 +49,21 @@ class DataTest(unittest.TestCase):
         agree = sum(1 for s in spots if collect.pref_of(s['lat'], s['lon'], prepared) == s['pref'])
         self.assertGreaterEqual(agree / len(spots), 0.98, f'{agree}/{len(spots)}')
 
+    def test_scenic_roads(self):
+        roads = load('data/scenic_roads.json')
+        self.assertGreaterEqual(len(roads), 25)
+        self.assertEqual(len({r['id'] for r in roads}), len(roads), 'id が重複')
+        for r in roads:
+            with self.subTest(r.get('id')):
+                for k in ('id', 'name', 'kana', 'points', 'toll', 'fee', 'closed', 'closedMonths', 'note', 'tags', 'url'):
+                    self.assertIn(k, r)
+                self.assertTrue(3 <= len(r['points']) <= 6, len(r['points']))
+                for lat, lon in r['points']:
+                    self.assertTrue(in_area(lat, lon))
+                self.assertIsInstance(r['toll'], bool)
+                self.assertTrue(all(1 <= m <= 12 for m in r['closedMonths']))
+                self.assertTrue(r['url'].startswith('https://'))
+
     def test_touring(self):
         tours = load('data/touring.json')
         self.assertGreaterEqual(len(tours), 8)
