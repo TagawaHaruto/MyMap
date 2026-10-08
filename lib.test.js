@@ -152,4 +152,48 @@ const evs3 = [
 assert.deepStrictEqual(ids(Lib.filterEvents(evs3, f({ sortBy: 'date' }), cfg, '2026-10-08', '2026-11-08')), ['soon', 'far', 'long']);
 assert.deepStrictEqual(ids(Lib.filterEvents(evs3, f({}), cfg, '2026-10-08', '2026-11-08')), ['far', 'soon', 'long']);
 
+// ---- ルート提案（Valhalla） ----
+// polyline（精度 6）の復号。Google の例の文字列を精度 6 で読むと値は 1/10 になる。[lon, lat] で返す
+const dec = Lib.decodePolyline('_p~iF~ps|U_ulLnnqC_mqNvxq`@', 6);
+assert.strictEqual(dec.length, 3);
+[[-12.02, 3.85], [-12.095, 4.07], [-12.6453, 4.3252]].forEach(([x, y], i) => {
+  assert(Math.abs(dec[i][0] - x) < 1e-6 && Math.abs(dec[i][1] - y) < 1e-6, JSON.stringify(dec[i]));
+});
+assert.deepStrictEqual(Lib.decodePolyline('', 6), []);
+
+// 景色の点数: ルートの 1km 以内の景色の地点数と、おすすめの道を通る距離
+const road1 = { id: 'r1', name: '道1', points: [[35.65, 139.52], [35.65, 139.55], [35.65, 139.58]] };
+const road2 = { id: 'r2', name: '遠い道', points: [[36.2, 139.0], [36.3, 139.1], [36.4, 139.2]] };
+const sc = Lib.scenicScore(line, [{ lat: 35.655, lon: 139.53 }, { lat: 35.70, lon: 139.53 }, { lat: 35.651, lon: 139.59 }], [road1, road2]);
+assert.strictEqual(sc.spots, 2);
+assert(Math.abs(sc.roadKm - 5.44) < 0.1, sc.roadKm); // 道1 は全点がルート沿い（約 5.4km）、道2 は 0
+assert.deepStrictEqual(Lib.scenicStars([{ spots: 0, roadKm: 0 }, { spots: 4, roadKm: 10 }, { spots: 2, roadKm: 0 }]), [1, 5, 2]);
+assert.deepStrictEqual(Lib.scenicStars([{ spots: 0, roadKm: 0 }]), [1]);
+
+// 寄り道できるおすすめの道: 遠回りが 1.6 倍以内のものを、道の長さに対して遠回りが少ない順に
+const O2 = { lat: 35.65, lon: 139.50 }, D2 = { lat: 35.65, lon: 139.62 };
+const det = Lib.detourRoads(O2, D2, [road1, road2], 1.6, 2);
+assert.deepStrictEqual(det.map((d) => d.road.id), ['r1']);
+assert.deepStrictEqual(det[0].points, road1.points); // 起点に近い側から走る向き
+const det2 = Lib.detourRoads(D2, O2, [road1], 1.6, 2);
+assert.deepStrictEqual(det2[0].points, [...road1.points].reverse());
+
+// ルート固定用の経由地: 端を避けて等間隔に k 点（進行距離つき）
+const pins = Lib.pinWaypoints(line, 3);
+assert.strictEqual(pins.length, 3);
+assert(pins[0].along < pins[1].along && pins[1].along < pins[2].along);
+assert(Math.abs(pins[1].lon - 139.55) < 0.002, JSON.stringify(pins[1]));
+assert.deepStrictEqual(Lib.pinWaypoints(line, 0), []);
+
+// 周回: 起点に近い端から入り、起点に戻る
+const loop = Lib.loopPoints({ lat: 35.65, lon: 139.60 }, road1);
+assert.deepStrictEqual(loop.map((p) => [p.lat, p.lon]), [[35.65, 139.60], [35.65, 139.58], [35.65, 139.55], [35.65, 139.52], [35.65, 139.60]]);
+
+// GPX: 線と立ち寄りを書き出し、名前はエスケープする
+const g3 = Lib.toGpx('調布→奥多摩 <テスト>', [[139.5, 35.6], [139.6, 35.7]], [{ lat: 35.65, lon: 139.55, name: 'A&B' }]);
+assert(g3.startsWith('<?xml version="1.0" encoding="UTF-8"?>'), g3.slice(0, 60));
+assert(g3.includes('<trkpt lat="35.6" lon="139.5"></trkpt>'), g3);
+assert(g3.includes('<wpt lat="35.65" lon="139.55"><name>A&amp;B</name></wpt>'), g3);
+assert(g3.includes('<name>調布→奥多摩 &lt;テスト&gt;</name>'), g3);
+
 console.log('lib: ALL PASS');
