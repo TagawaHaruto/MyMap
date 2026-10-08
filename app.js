@@ -1,6 +1,6 @@
 // MyMap 画面ロジック。純粋な計算は lib.js（Lib）に置く。
 const GENRES = { play: '🎡遊び', sightseeing: '📷観光', shopping: '🛍買い物', vehicle: '🚗乗り物', museum: '🏛博物館',
-  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景' };
+  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', simulator: '🎮シミュレーター' };
 const MODES = { train: '🚃電車', car: '🚗車', bike: '🏍バイク', bicycle: '🚲自転車' };
 const GMAP_MODE = { train: 'transit', car: 'driving', bike: 'driving', bicycle: 'bicycling' };
 const TIMES = [[30, '30分'], [60, '60分'], [90, '90分'], [120, '2時間'], [180, '3時間'], [null, '制限なし']];
@@ -19,11 +19,11 @@ const saved = store.get('filters') || {};
 const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []),
-  rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
+  limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
-const DATA = { cfg: null, spots: [], pois: [], events: [], status: null, touring: [] };
+const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [] };
 
 const rainy = () => (state.rainOverride ?? state.weatherRainy);
 const filterState = () => ({ mode: state.mode, maxMin: state.maxMin, prefs: state.prefs, genres: state.genres, rainy: rainy() });
@@ -41,7 +41,7 @@ async function getJSON(url, fallback) {
 function chips(el, options, isOn, onClick) {
   el.innerHTML = options.map(([v, label], i) =>
     `<button type="button" class="chip" data-i="${i}" aria-pressed="${isOn(v)}">${esc(label)}</button>`).join('');
-  el.onclick = (e) => { const b = e.target.closest('.chip'); if (b) { onClick(options[+b.dataset.i][0]); saveFilters(); renderAll(); } };
+  el.onclick = (e) => { const b = e.target.closest('.chip'); if (b) { onClick(options[+b.dataset.i][0]); state.limit = 300; saveFilters(); renderAll(); } };
 }
 const toggle = (set, v) => (set.has(v) ? set.delete(v) : set.add(v));
 function renderFilters() {
@@ -58,23 +58,24 @@ function poiAsSpot(p) {
     indoor: false, fee: '', parking: null, tags: [], url: p.wikipedia || '', note: POI_KIND[p.kind] || '', poi: true };
 }
 function spotCandidates() {
-  // 絶景を選んだときだけ OSM の絶景 POI を混ぜる（数が多いため）
-  const extra = state.genres.has('scenic') ? DATA.pois.filter((p) => SCENIC_KINDS.includes(p.kind)).map(poiAsSpot) : [];
-  return DATA.spots.concat(extra);
+  // 絶景を選んだときだけ滝・山・湖などの POI を混ぜる（展望台は osm_spots 側にある）
+  const extra = state.genres.has('scenic')
+    ? DATA.pois.filter((p) => SCENIC_KINDS.includes(p.kind) && p.kind !== 'viewpoint').map(poiAsSpot) : [];
+  return DATA.spots.concat(DATA.osm, extra);
 }
 function spotCard(s) {
   const sns = Lib.snsLinks(s);
   const icons = s.genres.map((g) => icon(GENRES[g])).join('');
   const park = s.parking ? [s.parking.car ? '🅿車' : '', s.parking.bike ? '🅿二輪' : ''].filter(Boolean).join(' ') : '';
   return `<article class="card">
-    <h3>${icons} ${esc(s.name)}</h3>
+    <h3>${s.id.startsWith('osm:') || s.poi ? '' : '<span title="厳選スポット">★</span> '}${icons} ${esc(s.name)}</h3>
     <p class="meta">${s.indoor ? '<span class="badge rain">☔OK</span> ' : ''}${icon(MODES[state.mode])}${fmtMin(s.minutes)}${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}</p>
     ${s.note ? `<p>${esc(s.note)}</p>` : ''}
     <div class="actions">
       <a class="btn" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, s, [], GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">地図で経路</a>
       ${s.poi ? '' : `<a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a>
       <a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X</a>`}
-      ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.poi ? 'Wikipedia' : '公式'}</a>` : ''}
+      ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
       ${s.poi ? '' : `<button type="button" class="icon" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>
       <button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">✓行った</button>`}
     </div></article>`;
@@ -82,8 +83,9 @@ function spotCard(s) {
 function renderSpots() {
   const list = Lib.filterSpots(spotCandidates(), filterState(), DATA.cfg);
   const head = `<p class="status">${list.length}件${rainy() ? '（雨の日モード：屋内のみ）' : ''}</p>`;
-  // ponytail: 全件描画。数千件で重くなったら先頭 N 件＋「もっと見る」にする
-  $('#view').innerHTML = head + (list.length ? list.slice(0, 300).map(spotCard).join('') : '<p class="empty">条件に合うスポットがありません。条件を広げてみてください。</p>');
+  const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${list.length - state.limit}件）</button>` : '';
+  $('#view').innerHTML = head + (list.length ? list.slice(0, state.limit).map(spotCard).join('') + more : '<p class="empty">条件に合うスポットがありません。条件を広げてみてください。</p>');
+  if (more) $('#more').onclick = () => { state.limit += 300; renderSpots(); };
 }
 document.addEventListener('click', (e) => {
   const fav = e.target.closest('[data-fav]'), vis = e.target.closest('[data-visited]');
@@ -189,6 +191,7 @@ async function pollStatus(prev) {
     if (st && st.updated_at && st.updated_at !== prev) {
       DATA.status = st;
       [DATA.events, DATA.pois] = await Promise.all([getJSON('data/events.json', DATA.events), getJSON('data/pois.json', DATA.pois)]);
+      DATA.osm = await getJSON('data/osm_spots.json', DATA.osm);
       setUpdateMsg(''); renderAll(); return;
     }
   }
@@ -330,6 +333,9 @@ async function init() {
   renderAll();
   loadWeather();
   requestUpdate();
+  // 自動収集スポットは大きい（数 MB）ので、画面を出してから読み込む
+  DATA.osm = await getJSON('data/osm_spots.json', []);
+  renderAll();
 }
 init();
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => { /* 非対応でも動く */ });

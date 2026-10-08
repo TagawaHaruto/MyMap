@@ -4,7 +4,7 @@ import os
 import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-GENRES = {'play', 'sightseeing', 'shopping', 'vehicle', 'museum', 'garden', 'temple', 'onsen', 'scenic'}
+GENRES = {'play', 'sightseeing', 'shopping', 'vehicle', 'museum', 'garden', 'temple', 'onsen', 'scenic', 'simulator'}
 PREFS = {'東京', '神奈川', '埼玉', '千葉', '山梨', '群馬', '栃木', '茨城', '静岡', '長野'}
 TYPES = {'eventjs', 'daylist', 'doorkeeper', 'nextdata'}
 
@@ -33,6 +33,11 @@ class DataTest(unittest.TestCase):
                 self.assertIsInstance(s['indoor'], bool)
                 self.assertEqual(set(s['parking']), {'car', 'bike'})
                 self.assertTrue(s['url'].startswith('https://'))
+
+    def test_simulator_spots(self):
+        sims = [s for s in load('data/spots.json') if 'simulator' in s['genres']]
+        self.assertGreaterEqual(len(sims), 20)
+        self.assertTrue(all('vehicle' in s['genres'] for s in sims))
 
     def test_touring(self):
         tours = load('data/touring.json')
