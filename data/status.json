@@ -1,1 +1,64 @@
-{"updated_at": null, "pois_at": null, "sources": {}}
+{
+ "updated_at": "2026-10-08T16:15:09+09:00",
+ "pois_at": "2026-10-08T15:58:15+09:00",
+ "sources": {
+  "chofu": {
+   "ok_at": "2026-10-08T15:57:48+09:00",
+   "count": 66,
+   "error": null
+  },
+  "fuchu": {
+   "ok_at": "2026-10-08T15:57:53+09:00",
+   "count": 60,
+   "error": null
+  },
+  "tazukuri": {
+   "ok_at": "2026-10-08T15:58:02+09:00",
+   "count": 30,
+   "error": null
+  },
+  "musashino": {
+   "ok_at": "2026-10-08T15:58:04+09:00",
+   "count": 98,
+   "error": null
+  },
+  "musashino-zaidan": {
+   "ok_at": "2026-10-08T15:58:06+09:00",
+   "count": 78,
+   "error": null
+  },
+  "tama": {
+   "ok_at": "2026-10-08T15:58:07+09:00",
+   "count": 126,
+   "error": null
+  },
+  "inagi": {
+   "ok_at": "2026-10-08T15:58:09+09:00",
+   "count": 38,
+   "error": null
+  },
+  "tachikawa": {
+   "ok_at": "2026-10-08T15:58:10+09:00",
+   "count": 47,
+   "error": null
+  },
+  "akishima": {
+   "ok_at": "2026-10-08T15:58:12+09:00",
+   "count": 81,
+   "error": null
+  },
+  "kawagoe": {
+   "ok_at": "2026-10-08T15:58:14+09:00",
+   "count": 173,
+   "error": null
+  },
+  "doorkeeper-chofu": {
+   "ok_at": "2026-10-08T15:58:15+09:00",
+   "count": 1,
+   "error": null
+  }
+ },
+ "pois_error": null,
+ "spots_at": "2026-10-08T16:01:20+09:00",
+ "spots_error": "attraction: HTTPError: HTTP Error 504: Gateway Timeout / garden: HTTPError: HTTP Error 504: Gateway Timeout / temple: HTTPError: HTTP Error 504: Gateway Timeout / bath: HTTPError: HTTP Error 504: Gateway Time-out"
+}
