@@ -21,7 +21,7 @@ def in_area(lat, lon):  # 関東＋隣接県のおおまかな範囲
 class DataTest(unittest.TestCase):
     def test_spots(self):
         spots = load('data/spots.json')
-        self.assertGreaterEqual(len(spots), 30)
+        self.assertGreaterEqual(len(spots), 150)
         self.assertEqual(len({s['id'] for s in spots}), len(spots), 'id が重複')
         for s in spots:
             with self.subTest(s.get('id')):
