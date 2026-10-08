@@ -180,6 +180,8 @@ README.md                テンプレート利用手順
 
 ## 7. 収集スクリプト（collector/collect.py）
 
+> 実装計画（`docs/superpowers/plans/2026-10-08-mymap.md` 末尾）で次のとおり具体化した: `chofu_html` / `fuchu_html` は共通の `daylist` に統合、`jsonld` は対象サイトがないため見送り、イベントの座標は収集元の所在地で代用、絶景の知名度フィルタは `wikipedia` タグのみ。
+
 Python 標準ライブラリのみを使う（urllib, json, re, html.parser, xml）。依存パッケージなし。
 
 ### 収集の部品（type）
