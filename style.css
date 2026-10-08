@@ -123,3 +123,14 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 .crosshair { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 500; pointer-events: none;
   font-size: 32px; font-weight: var(--font-weight-700); color: var(--color-neutral-black); text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff; }
 .map-pick { position: absolute; right: 8px; bottom: 24px; z-index: 600; background: var(--bg); font-weight: var(--font-weight-700); }
+/* 走り方の選択とルート候補 */
+.opts { border: var(--bw) solid var(--line); border-radius: 8px; margin: 0; padding: 4px 12px 8px; }
+.opts legend { padding: 0 4px; }
+.cands { display: grid; gap: 8px; }
+.cand { display: grid; gap: 2px; width: 100%; text-align: left; font: inherit; color: var(--fg); cursor: pointer; }
+.cand-title { font-weight: var(--font-weight-700); font-size: var(--font-size-16); }
+.cand-time { font-size: var(--font-size-20); font-weight: var(--font-weight-700); font-variant-numeric: tabular-nums; }
+.cand-sub { font-size: var(--font-size-14); color: var(--fg-sub); }
+.cand[aria-pressed="true"] { border: 3px solid var(--key); background: var(--key-bg); }
+.cand[aria-pressed="true"] .cand-title::before { content: "✓ "; color: var(--key); }
+.tour-bar #nav { flex: 2; }

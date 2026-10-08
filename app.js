@@ -34,7 +34,7 @@ const state = {
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
-const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], ver: 0, eventsLoaded: false, osmLoaded: false };
+const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], ver: 0, eventsLoaded: false, osmLoaded: false };
 const FAILED = new Set();
 
 const rainy = () => (state.rainOverride ?? state.weatherRainy);
@@ -307,44 +307,121 @@ async function pollStatus(prev) {
   setUpdateMsg('更新に時間がかかっています。しばらくしてから開き直してください。');
 }
 
-// ---- ツーリング（ルート：OSRM 公開サーバー／地図：OSM。どちらも登録不要） ----
+// ---- ツーリング（ルート：Valhalla・OSRM の公開サーバー／地図：OSM。どれも登録不要） ----
 const savedTour = store.get('tour') || {};
-const tour = { destId: savedTour.destId || null, custom: savedTour.custom || null, avoid: !!savedTour.avoid, radius: savedTour.radius || 3,
-  route: savedTour.route || null, restored: !!savedTour.route, picked: new Set(savedTour.picked || []), error: '', busy: false,
-  awake: store.get('awake') !== false, stops: null, key: '' };
+const tour = { destId: savedTour.destId || null, custom: savedTour.custom || null, roadId: savedTour.roadId || null,
+  opts: { noToll: false, fewHighways: !!savedTour.avoid, bike: false, ...(savedTour.opts || {}) }, radius: savedTour.radius || 3,
+  cands: savedTour.cands || (savedTour.route ? [{ ...savedTour.route, label: 'ルート' }] : null), sel: savedTour.sel || 0,
+  picked: new Set(savedTour.picked || []), error: '', busy: false, awake: store.get('awake') !== false, stops: null, key: '' };
+tour.restored = !!tour.cands;
+Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour.sel]) || null });
 let map = null, markers = new Map();
-const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, avoid: tour.avoid, radius: tour.radius,
-  route: tour.route, picked: [...tour.picked] });
+const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
+  cands: tour.cands, sel: tour.sel, picked: [...tour.picked] });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
+const fail = (msg) => Object.assign(new Error(msg), { mine: true });
+const roadById = (id) => DATA.roads.find((r) => r.id === id) || null;
+const thisMonth = () => new Date().getMonth() + 1;
 
-async function fetchRoute(dest, avoid) {
-  const pts = [DATA.cfg.origin, ...(dest.waypoints || []).map(([lat, lon]) => ({ lat, lon })), dest];
-  const base = `https://router.project-osrm.org/route/v1/driving/${pts.map((p) => `${p.lon},${p.lat}`).join(';')}?overview=full&geometries=geojson`;
-  const fail = (msg) => Object.assign(new Error(msg), { mine: true });
-  const get = async (u) => {
-    try { return await fetch(u, { signal: timeoutSignal(15000) }); } catch (err) {
-      // 圏外・時間切れはブラウザごとに英語の文言が違うので、ここで日本語にそろえる
-      throw fail(err.name === 'TimeoutError' || err.name === 'AbortError'
-        ? 'ルートサーバーから時間内に応答がありませんでした。電波の良い場所で再検索してください。'
-        : '通信できませんでした（圏外の可能性があります）。電波の良い場所で再検索してください。');
-    }
-  };
-  let r = null, note = '';
-  if (avoid) {
-    r = await get(base + '&exclude=motorway'); // 通信できないときは通常ルートでも同じなので、ここで止める（待ち時間を倍にしない）
-    if (r.status === 400) { note = '公開ルートサーバーが高速回避に未対応のため、通常のルートです。'; r = null; }
+async function getRoute(url, init) {
+  try { return await fetch(url, { ...init, signal: timeoutSignal(15000) }); } catch (err) {
+    // 圏外・時間切れはブラウザごとに英語の文言が違うので、ここで日本語にそろえる
+    throw fail(err.name === 'TimeoutError' || err.name === 'AbortError'
+      ? 'ルートサーバーから時間内に応答がありませんでした。電波の良い場所で再検索してください。'
+      : '通信できませんでした（圏外の可能性があります）。電波の良い場所で再検索してください。');
   }
-  r = r || await get(base);
+}
+
+// Valhalla（FOSSGIS の公開サーバー）: 有料道路の回避・高速の好み・バイク向け・別ルート候補に対応
+async function valhalla(points, opts, alternates = 0) {
+  const costing = opts.bike ? 'motorcycle' : 'auto';
+  const co = { use_tolls: opts.noToll ? 0 : 0.5, use_highways: opts.fewHighways ? 0 : 1, ...(opts.bike ? { use_trails: 0.8 } : {}) };
+  const body = { locations: points.map((p, i) => ({ lat: p.lat, lon: p.lon, type: i === 0 || i === points.length - 1 ? 'break' : 'through' })),
+    costing, costing_options: { [costing]: co }, directions_type: 'none', units: 'kilometers', ...(alternates ? { alternates } : {}) };
+  const r = await getRoute('https://valhalla1.openstreetmap.de/route', { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' } });
+  if (r.status === 429) throw fail('ルートサーバーが混雑しています。少し待ってから再検索してください。');
+  if (r.status >= 500) throw fail(`ルートサーバーが一時的に使えません（${r.status}）。`);
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || !j.trip) throw fail('この地点までのルートが見つかりませんでした。');
+  const toRoute = (trip) => ({
+    line: trip.legs.flatMap((leg, i) => Lib.decodePolyline(leg.shape, 6).slice(i ? 1 : 0)),
+    km: trip.summary.length, min: trip.summary.time / 60, toll: !!trip.summary.has_toll, highway: !!trip.summary.has_highway, engine: 'Valhalla' });
+  return [toRoute(j.trip), ...(j.alternates || []).map((a) => toRoute(a.trip))];
+}
+
+// OSRM（予備）: 回避の指定はできない
+async function osrm(points) {
+  const r = await getRoute(`https://router.project-osrm.org/route/v1/driving/${points.map((p) => `${p.lon},${p.lat}`).join(';')}?overview=full&geometries=geojson`);
   if (r.status === 429) throw fail('ルートサーバーが混雑しています。少し待ってから再検索してください。');
   if (r.status >= 500) throw fail(`ルートサーバーが一時的に使えません（${r.status}）。時間をおいて再検索してください。`);
   const j = await r.json().catch(() => ({}));
   if (!r.ok || j.code !== 'Ok' || !j.routes || !j.routes.length) throw fail('この地点までの車のルートが見つかりませんでした。');
   const rt = j.routes[0];
-  return { line: rt.geometry.coordinates, km: rt.distance / 1000, min: rt.duration / 60, note, at: Date.now() };
+  return { line: rt.geometry.coordinates, km: rt.distance / 1000, min: rt.duration / 60, toll: null, highway: null, engine: 'OSRM' };
 }
 
-const currentDest = () => tour.custom || DATA.touring.find((t) => t.id === tour.destId) || null;
-const room = () => MAX_WAYPOINTS - ((currentDest() || {}).waypoints || []).length;
+// 景色の地点（展望台・湖・滝・渓谷・海岸）
+let scenicPts = null, scenicVer = -1;
+function scenicPoints() {
+  if (scenicVer !== DATA.ver) { scenicPts = DATA.pois.filter((p) => SCENIC_KINDS.includes(p.kind) && p.kind !== 'peak'); scenicVer = DATA.ver; }
+  return scenicPts;
+}
+
+// 1 回の検索で候補を最大 4 本作る: 標準（＋別ルート）、おすすめの道を寄り道として通すもの
+async function fetchCandidates(dest) {
+  const o = DATA.cfg.origin;
+  const fixed = dest.loop ? Lib.loopPoints(o, dest.road) : [o, ...(dest.waypoints || []).map(([lat, lon]) => ({ lat, lon })), dest];
+  const out = [];
+  let note = '';
+  try {
+    const std = await valhalla(fixed, tour.opts, fixed.length === 2 ? 2 : 0);
+    std.forEach((rt, i) => out.push({ ...rt, label: i ? `別ルート${i}` : dest.loop ? `${dest.road.name}を周回` : '標準', via: dest.loop ? [dest.road.id] : [] }));
+    if (!dest.loop && !(dest.waypoints || []).length) {
+      for (const d of Lib.detourRoads(o, dest, DATA.roads, 1.6, 2)) {
+        if (tour.opts.noToll && d.road.toll) continue;
+        await new Promise((ok) => setTimeout(ok, 800)); // 公開サーバーへの配慮
+        try {
+          const [rt] = await valhalla([o, ...d.points.map(([lat, lon]) => ({ lat, lon })), dest], tour.opts);
+          out.push({ ...rt, label: `${d.road.name}経由`, via: [d.road.id] });
+        } catch { /* 寄り道ルートが取れなくても標準ルートは出す */ }
+      }
+    }
+  } catch (err) {
+    if (err.mine && /通信できません|時間内/.test(err.message)) throw err; // 圏外なら予備も同じなので止める
+    out.push({ ...(await osrm(fixed)), label: '標準', via: dest.loop ? [dest.road.id] : [] });
+    note = 'メインのルートサーバーが使えなかったため、予備のサーバーで 1 本だけ表示しています（有料道路の回避などは効きません）。';
+  }
+  // ほぼ同じルートは 1 本にまとめる
+  let uniq = out.filter((c, i) => !out.slice(0, i).some((p) => Math.abs(p.km - c.km) < Math.max(0.5, c.km * 0.01) && Math.abs(p.min - c.min) < 2));
+  // 「有料道路を使わない」なら、有料道路を含む候補（別ルートは回避の指定が効かないことがある）を外す
+  if (tour.opts.noToll) {
+    const free = uniq.filter((c) => c.toll !== true);
+    if (free.length) uniq = free;
+    else note = '有料道路を通らないルートが見つかりませんでした。有料道路を含むルートを表示しています。';
+  }
+  const scores = uniq.map((c) => Lib.scenicScore(c.line, scenicPoints(), DATA.roads));
+  const stars = Lib.scenicStars(scores);
+  const fastest = Math.min(...uniq.map((c) => c.min));
+  return uniq.map((c, i) => ({ ...c, ...scores[i], stars: stars[i], fastest: c.min === fastest, note, at: Date.now() }));
+}
+
+const currentDest = () => {
+  if (tour.roadId) {
+    const road = roadById(tour.roadId);
+    if (!road) return null;
+    const pts = Lib.loopPoints(DATA.cfg.origin, road);
+    return { id: 'road:' + road.id, name: `${road.name}（周回）`, lat: pts[1].lat, lon: pts[1].lon, loop: true, road, note: road.note, tags: road.tags };
+  }
+  return tour.custom || DATA.touring.find((t) => t.id === tour.destId) || null;
+};
+// Google マップへ渡す経由地のうち、決まって使うもの（コースの経由地・周回する道の入口と出口）
+function fixedWaypoints() {
+  const dest = currentDest(); if (!dest) return [];
+  if (dest.loop) { const p = Lib.loopPoints(DATA.cfg.origin, dest.road); return [p[1], p[p.length - 2]]; }
+  return (dest.waypoints || []).map(([lat, lon]) => ({ lat, lon }));
+}
+const MIN_PINS = 2; // ルート固定用に最低限残す枠
+const room = () => Math.max(0, MAX_WAYPOINTS - fixedWaypoints().length - MIN_PINS);
 function getStops() {
   if (!tour.route) return [];
   if (!tour.stops) {
@@ -357,12 +434,14 @@ function getStops() {
   return tour.stops;
 }
 function navUrl() {
-  const dest = currentDest();
+  const dest = currentDest(), line = tour.route.line;
+  const along = (p) => Lib.distToRoute(p, line).along;
   const picked = getStops().filter((s) => tour.picked.has(s.id)).map((s) => ({ ...s, along: s.alongKm }));
-  // 経由地は「ルート上の順番」に並べる（コースの経由地も含めて最大 9 件）
-  const wps = [...(dest.waypoints || []).map(([lat, lon]) => ({ lat, lon, along: Lib.distToRoute({ lat, lon }, tour.route.line).along })), ...picked]
-    .sort((a, b) => a.along - b.along);
-  return Lib.gmapsDirUrl(DATA.cfg.origin, dest, wps, 'driving');
+  const fixed = fixedWaypoints().map((p) => ({ ...p, along: along(p) }));
+  // 残りの枠でルート上の地点を等間隔に足し、Google マップが別の道（有料道路など）を選ばないようにする
+  const pins = Lib.pinWaypoints(line, Math.min(4, MAX_WAYPOINTS - fixed.length - picked.length));
+  const wps = [...fixed, ...picked, ...pins].sort((a, b) => a.along - b.along);
+  return Lib.gmapsDirUrl(DATA.cfg.origin, dest.loop ? DATA.cfg.origin : dest, wps, 'driving');
 }
 function pickedCount() { return getStops().filter((s) => tour.picked.has(s.id)).length; }
 function updateTourSelection() {
@@ -377,7 +456,7 @@ function updateTourSelection() {
   if (nav) {
     const waiting = tour.route && !DATA.eventsLoaded; // 道の駅などの読み込み前に押すと経由地が抜けるため
     nav.href = waiting ? '#' : tour.route ? navUrl() : Lib.gmapsDirUrl(DATA.cfg.origin, currentDest(), [], 'driving');
-    nav.textContent = waiting ? '立ち寄り候補を読み込み中…' : `ナビ開始（経由 ${n}/${room()}）`;
+    nav.textContent = waiting ? '立ち寄り候補を読み込み中…' : `ナビ開始（立ち寄り ${n}/${room()}）`;
     nav.toggleAttribute('aria-disabled', !!waiting);
   }
   const lim = $('#limit-msg'); if (lim) lim.hidden = !full;
@@ -398,44 +477,76 @@ function styleMarkers() {
     }
   }
 }
+function saveGpx() {
+  const dest = currentDest();
+  const wpts = getStops().filter((s) => tour.picked.has(s.id)).map((s) => ({ lat: s.lat, lon: s.lon, name: s.name }));
+  if (!dest.loop) wpts.push({ lat: dest.lat, lon: dest.lon, name: dest.name });
+  const name = `${DATA.cfg.origin.name}→${dest.name}（${tour.route.label}）`;
+  const url = URL.createObjectURL(new Blob([Lib.toGpx(name, tour.route.line, wpts)], { type: 'application/gpx+xml' }));
+  const a = document.createElement('a');
+  a.href = url; a.download = `mymap-${dest.name.replace(/[\\/:*?"<>|（）() ]/g, '')}.gpx`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+}
+const candCard = (c, i) => `<button type="button" class="card cand" data-cand="${i}" aria-pressed="${i === tour.sel}">
+  <span class="cand-title">${esc(c.label)}${c.fastest ? ' <span class="badge">最速</span>' : ''}</span>
+  <span class="cand-time">${fmtMin(Math.round(c.min))}・${Math.round(c.km)}km</span>
+  <span class="cand-sub">${c.toll === true ? '<span class="badge warn">有料あり</span>' : c.toll === false ? '有料なし' : ''}
+    ・景色 ${'★'.repeat(c.stars)}${'☆'.repeat(5 - c.stars)}（展望台など${c.spots}か所${c.roadKm >= 1 ? `・おすすめの道${Math.round(c.roadKm)}km` : ''}）</span></button>`;
 
 function renderTouring() {
   const dest = currentDest();
-  const key = JSON.stringify([tour.destId, tour.custom, tour.route && tour.route.at, tour.radius, tour.error, tour.busy, DATA.ver,
-    !!DATA.touring.length, navigator.onLine, tour.restored]);
+  const key = JSON.stringify([tour.destId, tour.custom, tour.roadId, tour.route && tour.route.at, tour.sel, tour.radius, tour.error, tour.busy, DATA.ver,
+    !!DATA.touring.length, DATA.roads.length, navigator.onLine, tour.restored, tour.opts]);
   // 変化がなければ作り直さない（地図のズームと位置、スクロール位置を保つ）
   if (key === tour.key && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
   const stops = getStops();
   const offline = navigator.onLine === false;
-  const sns = dest && !tour.custom ? Lib.snsLinks({ name: dest.name, tags: dest.tags }) : null;
+  const sns = dest && !tour.custom ? Lib.snsLinks({ name: dest.loop ? dest.road.name : dest.name, tags: dest.tags }) : null;
+  const road = dest && dest.loop ? dest.road : null;
+  const closedNow = road && (road.closedMonths || []).includes(thisMonth());
+  const roadsByDist = [...DATA.roads].sort((a, b) => Lib.haversineKm(DATA.cfg.origin, { lat: a.points[0][0], lon: a.points[0][1] })
+    - Lib.haversineKm(DATA.cfg.origin, { lat: b.points[0][0], lon: b.points[0][1] }));
+  const viaRoads = tour.route ? (tour.route.via || []).map(roadById).filter(Boolean) : [];
   $('#view').innerHTML = `
     <label for="dest"><strong>目的地</strong></label>
-    <select id="dest"><option value="">選んでください</option>${DATA.touring.map((t) =>
-      `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}
+    <select id="dest"><option value="">選んでください</option>
+      <optgroup label="目的地まで走る">${DATA.touring.map((t) =>
+        `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</optgroup>
+      ${DATA.roads.length ? `<optgroup label="おすすめの道を走る（調布に戻る周回）">${roadsByDist.map((r) =>
+        `<option value="road:${esc(r.id)}" ${r.id === tour.roadId ? 'selected' : ''}>${esc(r.name)}${r.toll ? '（有料）' : ''}</option>`).join('')}</optgroup>` : ''}
       ${tour.custom ? '<option selected>地図で指定した地点</option>' : ''}</select>
     <p class="hint">地図を動かして中央の＋を合わせ「中心を目的地に」を押す（または長押し）と、地図から指定できます</p>
-    ${dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
+    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路${road.fee ? `（${esc(road.fee)}）` : ''}。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}</p>`
+      : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
-    <label class="check"><input type="checkbox" id="avoid" ${tour.avoid ? 'checked' : ''}>高速を使わない（下道）</label>
-    ${tour.avoid ? '<p class="hint">Google マップ側でも「ルートオプション → 高速道路を使わない」をオンにしてください。</p>' : ''}
+    <fieldset class="opts"><legend><strong>走り方</strong></legend>
+      <label class="check"><input type="checkbox" data-opt="noToll" ${tour.opts.noToll ? 'checked' : ''}>有料道路を使わない</label>
+      <label class="check"><input type="checkbox" data-opt="fewHighways" ${tour.opts.fewHighways ? 'checked' : ''}>高速道路をなるべく使わない</label>
+      <label class="check"><input type="checkbox" data-opt="bike" ${tour.opts.bike ? 'checked' : ''}>バイク向け（幹線を避け、地方の道を好む）</label>
+    </fieldset>
     <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label>
     <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
-    <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…' : dest ? 'ルート検索' : '目的地を選ぶと押せます'}</button></div>
+    <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
     ${tour.error ? `<p class="notice">${esc(tour.error)}</p>` : ''}
     ${tour.route && (tour.restored || offline) ? `<p class="notice">${offline ? '📴 圏外のため、' : ''}${fmtStamp(tour.route.at || 0)} に検索して保存したルートを表示しています${offline ? '' : '（再検索で更新）'}。</p>` : ''}
-    ${tour.route ? `<p class="route-sum">約${Math.round(tour.route.km)}km・${fmtMin(Math.round(tour.route.min))}</p><p class="hint">OSRM による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}</p>` : ''}
+    ${tour.cands && tour.cands.length > 1 ? `<h2>ルート候補（${tour.cands.length}本・押して切り替え）</h2><div class="cands">${tour.cands.map(candCard).join('')}</div>` : ''}
+    ${tour.route ? `<p class="route-sum">${esc(tour.route.label)}：約${Math.round(tour.route.km)}km・${fmtMin(Math.round(tour.route.min))}</p>
+      <p class="hint">${esc(tour.route.engine || 'OSRM')} による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}${tour.opts.noToll || tour.opts.fewHighways ? '。Google マップでは「ルートオプション」でも同じ設定にしてください' : ''}</p>
+      ${viaRoads.filter((r) => (r.closedMonths || []).includes(thisMonth())).map((r) => `<p class="notice">⚠ <strong>${esc(r.name)}は今月、通行止め・閉鎖の期間です。</strong>${esc(r.closed)}</p>`).join('')}` : ''}
     ${tour.route ? `<h2>立ち寄り候補（${stops.length}件・走る順）</h2>
-      <p id="limit-msg" class="notice" hidden>経由地は Google マップの上限（${room()}件）に達しました。ほかを外すと選べます。</p>`
+      <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
       <label class="card stop"><input type="checkbox" data-stop="${esc(s.id)}" ${tour.picked.has(s.id) ? 'checked' : ''}>
         <span class="km">${Math.round(s.alongKm)}<small>km</small></span>
         <span class="name">${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}${parkText(s) ? ` <strong>${parkText(s)}</strong>` : ''}
           <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span></span></label>`).join('')
         : '<p class="empty">この範囲に立ち寄り候補はありません。範囲を広げてみてください。</p>') : ''}
-    ${dest ? `<div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a></div>` : ''}`;
+    ${dest ? `<div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a>
+      ${tour.route ? '<button type="button" class="btn" id="gpx">GPXで保存</button>' : ''}</div>` : ''}`;
 
   chips($('#radius'), [[1, '1km'], [3, '3km'], [5, '5km']], (v) => v === tour.radius, (v) => {
     tour.radius = v; tour.stops = null;
@@ -445,25 +556,39 @@ function renderTouring() {
     saveTour();
   });
   $('#dest').onchange = (e) => {
-    if (!setDest(() => { tour.destId = e.target.value || null; tour.custom = null; })) e.target.value = tour.custom ? '' : tour.destId || '';
+    const v = e.target.value;
+    const ok = setDest(() => {
+      tour.custom = null;
+      if (v.startsWith('road:')) { tour.roadId = v.slice(5); tour.destId = null; } else { tour.roadId = null; tour.destId = v || null; }
+    });
+    if (!ok) e.target.value = tour.roadId ? 'road:' + tour.roadId : tour.custom ? '' : tour.destId || '';
   };
   const pc = $('#pick-center');
   if (pc) pc.onclick = () => { if (!map) return; buzz(); const ce = map.getCenter(); setCustomDest(ce.lat, ce.lng); };
-  $('#avoid').onchange = (e) => { tour.avoid = e.target.checked; saveTour(); tour.key = ''; renderTouring(); };
+  document.querySelectorAll('[data-opt]').forEach((cb) => {
+    cb.onchange = () => { buzz(); tour.opts = { ...tour.opts, [cb.dataset.opt]: cb.checked }; saveTour(); };
+  });
   $('#awake').onchange = (e) => { tour.awake = e.target.checked; store.set('awake', tour.awake); keepAwake(tour.awake); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
-    const d = currentDest();
+    const d = currentDest(), optsAt = JSON.stringify(tour.opts);
     try {
-      const rt = await fetchRoute(d, tour.avoid);
-      // 検索中に目的地が変わっていたら、古い結果は捨てる
-      if (currentDest() === d) { tour.route = rt; tour.restored = false; tour.stops = null; saveTour(); }
+      const cands = await fetchCandidates(d);
+      // 検索中に目的地や走り方が変わっていたら、古い結果は捨てる
+      if (currentDest() && currentDest().id === d.id && JSON.stringify(tour.opts) === optsAt) {
+        tour.cands = cands; tour.sel = 0; tour.restored = false; tour.stops = null; tour.picked.clear(); saveTour();
+      }
     } catch (err) {
-      if (currentDest() === d) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
+      if (currentDest() && currentDest().id === d.id) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
     }
     tour.busy = false;
     if (state.tab === 'touring') renderTouring(); // 検索中に別のタブへ移っていたら描かない
   };
+  $('#view').onclick = (e) => {
+    const b = e.target.closest('[data-cand]'); if (!b) return;
+    buzz(); tour.sel = +b.dataset.cand; tour.stops = null; tour.picked.clear(); saveTour(); renderTouring();
+  };
+  const g = $('#gpx'); if (g) g.onclick = () => { buzz(); saveGpx(); };
   // チェックの変更では地図も一覧も作り直さない（マーカーとナビボタンだけ更新）
   $('#view').onchange = (e) => {
     const cb = e.target.closest('[data-stop]'); if (!cb) return;
@@ -480,11 +605,12 @@ function setDest(apply) {
   if (tour.route && !confirm(navigator.onLine === false
     ? '圏外のため、目的地を変えると保存したルートを取り直せません。変更しますか？' : '目的地を変えると、今のルートと選んだ立ち寄りが消えます。変更しますか？')) return false;
   apply();
-  tour.route = null; tour.stops = null; tour.restored = false; tour.picked.clear(); tour.error = '';
+  tour.cands = null; tour.sel = 0; tour.stops = null; tour.restored = false; tour.picked.clear(); tour.error = '';
   saveTour(); renderTouring();
   return true;
 }
 const setCustomDest = (lat, lon) => setDest(() => {
+  tour.roadId = null;
   tour.custom = { id: 'custom', name: '地図で指定した地点', lat: +lat.toFixed(5), lon: +lon.toFixed(5), waypoints: [] };
 });
 
@@ -494,10 +620,14 @@ function drawMap(dest, stops) {
   markers = new Map();
   map = L.map('map', { renderer: L.canvas({ tolerance: 8 }) }).setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 9);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> / ルート: OSRM' }).addTo(map);
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> / ルート: Valhalla (FOSSGIS)・OSRM' }).addTo(map);
   L.marker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { bubblingMouseEvents: false }).addTo(map).bindPopup(esc(DATA.cfg.origin.name));
   if (dest) L.marker([dest.lat, dest.lon], { bubblingMouseEvents: false }).addTo(map).bindPopup(esc(dest.name));
   if (tour.route) {
+    // ほかの候補は細い灰色の破線で比べられるように
+    (tour.cands || []).forEach((c, i) => {
+      if (i !== tour.sel) L.polyline(c.line.map(([lon, lat]) => [lat, lon]), { color: '#666', weight: 4, opacity: 0.8, dashArray: '6 8', bubblingMouseEvents: false }).addTo(map);
+    });
     const latlngs = tour.route.line.map(([lon, lat]) => [lat, lon]);
     // 白い縁取りの上に濃い線を重ね、色の多い地図の上でも浮き上がらせる
     L.polyline(latlngs, { color: '#fff', weight: 12, opacity: 1, bubblingMouseEvents: false }).addTo(map);
@@ -505,6 +635,8 @@ function drawMap(dest, stops) {
     stops.forEach((s) => markers.set(s.id, L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false })
       .addTo(map).bindPopup(esc(s.name))));
     map.fitBounds(line.getBounds(), { padding: [16, 16] });
+  } else if (dest && dest.loop) {
+    map.fitBounds(L.latLngBounds(dest.road.points.concat([[DATA.cfg.origin.lat, DATA.cfg.origin.lon]])), { padding: [16, 16] });
   }
   // 誤操作を防ぐため、目的地の指定は長押し（スマホでは contextmenu として届く）か「中心を目的地に」ボタンだけ。
   // 長押し中（指が触れている間）に地図を作り直すと iPhone で次のタップが効かなくなることがあるので、少し遅らせる
@@ -586,8 +718,9 @@ async function init() {
   DATA.cfg = await getJSON('config.json', null);
   if (!DATA.cfg) { renderLoadMsg(); $('#view').innerHTML = '<p class="empty">config.json を読み込めません。電波の良い場所で開き直してください。</p>'; return; }
   // 先にスポットを出し、イベントなどは後から読み込む
-  [DATA.spots, DATA.touring, DATA.status] = await Promise.all([
-    getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store')]);
+  [DATA.spots, DATA.touring, DATA.status, DATA.roads] = await Promise.all([
+    getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
+    getJSON('data/scenic_roads.json', [])]);
   renderAll();
   loadWeather();
   requestUpdate();
