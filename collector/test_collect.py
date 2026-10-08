@@ -1,6 +1,7 @@
 """collect.py のテスト。python -m unittest discover -s collector -v"""
 import datetime as dt
 import os
+import re
 import sys
 import urllib.parse
 import unittest
@@ -223,6 +224,8 @@ class OsmSpotTest(unittest.TestCase):
         def fake_fetch(url, data=None, timeout=60):
             calls.append(data)
             urls.append(url)
+            if b'ISO3166' in data:  # 都県 area の問い合わせ（全種類の文を含むので先に返す）
+                return '{"elements": []}'
             if b'public_bath' in data:
                 raise OSError('504')
             return fx('overpass_spots.json')
@@ -230,7 +233,8 @@ class OsmSpotTest(unittest.TestCase):
         status = {}
         spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status, fake_fetch,
                                       dt.datetime(2026, 10, 8, tzinfo=collect.JST), old, set(), sleep=lambda s: None)
-        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + len(collect.OVERPASS_URLS) - 1)  # 失敗した種類は別サーバーで再試行
+        # 失敗した種類は別サーバーで再試行。都県の問い合わせは都県ごとに 1 回
+        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + len(collect.OVERPASS_URLS) - 1 + len(collect.PREF_AREAS))
         self.assertEqual(len({u for u in urls if u}), len(collect.OVERPASS_URLS))
         self.assertIn('旧', [s['name'] for s in spots])
         self.assertIn('bath', status['spots_error'])
@@ -276,6 +280,120 @@ class OverpassRemarkTest(unittest.TestCase):
                                       old, set(), sleep=lambda s: None)
         self.assertEqual([s['name'] for s in spots], ['旧博物館'])
         self.assertIn('museum', status['spots_error'])
+
+
+CFG = {'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}
+NOW = dt.datetime(2026, 10, 8, tzinfo=collect.JST)
+
+
+def pref_fetch(over=None):
+    """都県 area の問い合わせ: JP-13 → fixture（node 1, way 2, relation 999）、JP-14 → node 3、他は空。
+    over で都県ごとの応答（例外なら送出）を差し替える。種類別の問い合わせには spots の fixture を返す。"""
+    ids = {'JP-13': fx('overpass_pref_ids.json'), 'JP-14': '{"elements": [{"type": "node", "id": 3}]}', **(over or {})}
+
+    def fetch(url, data=None, timeout=60):
+        m = re.search(r'JP-\d+', urllib.parse.unquote_plus(data.decode()))
+        if not m:
+            return fx('overpass_spots.json')
+        r = ids.get(m.group(), '{"elements": []}')
+        if isinstance(r, Exception):
+            raise r
+        return r
+    return fetch
+
+
+class PrefTest(unittest.TestCase):
+    def test_norm_province(self):
+        for raw, want in [
+            ('東京都', '東京'), (' 神奈川県 ', '神奈川'), ('埼玉', '埼玉'), ('千葉県', '千葉'), ('山梨県', '山梨'),
+            ('群馬県', '群馬'), ('栃木県', '栃木'), ('茨城県', '茨城'), ('静岡県', '静岡'), ('長野県', '長野'),
+            ('Tokyo', '東京'), ('KANAGAWA', '神奈川'), ('saitama', '埼玉'), (' Chiba ', '千葉'), ('Yamanashi', '山梨'),
+            ('长野县', None), ('1231', None), ('京都府', None), ('Tokyo-to', None), ('', None), (None, None),
+        ]:
+            with self.subTest(raw=raw):
+                self.assertEqual(collect.norm_province(raw), want)
+
+    def test_osm_prefs_query_and_map(self):
+        bodies, sleeps = [], []
+        base = pref_fetch()
+
+        def fetch(url, data=None, timeout=60):
+            bodies.append(urllib.parse.parse_qs(data.decode())['data'][0])
+            return base(url, data, timeout)
+
+        prefs, errors = collect.osm_prefs(fetch, sleeps.append)
+        self.assertEqual(prefs, {'osm:node:1': '東京', 'osm:way:2': '東京', 'osm:relation:999': '東京', 'osm:node:3': '神奈川'})
+        self.assertEqual(errors, [])
+        self.assertEqual([re.search(r'JP-\d+', b).group() for b in bodies], ['JP-13', 'JP-14', 'JP-11', 'JP-12', 'JP-19'])
+        q = bodies[0]
+        self.assertTrue(q.startswith('[out:json][timeout:180];area["ISO3166-2"="JP-13"]->.a;('))
+        self.assertTrue(q.endswith(');out ids;'))
+        self.assertIn(collect.SPOT_QUERIES[0][1] + '(area.a);', q)
+        self.assertEqual(q.count('(area.a);'), len(collect.SPOT_QUERIES))
+        self.assertEqual(sleeps, [5] * 5)  # 種類別の問い合わせの直後にも続くので、毎回前にあける
+
+    def test_osm_prefs_retries_mirror_then_reports(self):
+        calls, sleeps = [], []
+        base = pref_fetch({'JP-13': OSError('504')})
+
+        def fetch(url, data=None, timeout=60):
+            calls.append(url)
+            return base(url, data, timeout)
+
+        prefs, errors = collect.osm_prefs(fetch, sleeps.append)
+        self.assertEqual(prefs, {'osm:node:3': '神奈川'})
+        self.assertEqual(errors, ['pref JP-13: OSError: 504'])
+        self.assertEqual(calls[:3], collect.OVERPASS_URLS)  # 失敗した都県は別サーバーで再試行
+        self.assertEqual(sleeps, [5, 30, 30, 5, 5, 5, 5])
+
+    def test_refresh_spots_assigns_pref(self):
+        status = {}
+        spots = collect.refresh_spots(CFG, status, pref_fetch(), NOW, [], set(), sleep=lambda s: None)
+        by = {s['id']: s['pref'] for s in spots}
+        self.assertEqual((by.pop('osm:node:1'), by.pop('osm:way:2'), by.pop('osm:node:3')), ('東京', '東京', '神奈川'))
+        self.assertEqual(set(by.values()), {'その他'})  # 全都県が取れたので、どの area にも無いものは「その他」
+        self.assertIsNone(status['spots_error'])
+
+    def test_refresh_spots_pref_fallback_when_a_pref_fails(self):
+        old = [{'id': 'osm:way:2', 'name': '東京国立博物館', 'pref': '東京'}]
+        status = {}
+        spots = collect.refresh_spots(CFG, status, pref_fetch({'JP-13': OverpassRemarkTest.TIMEOUT}), NOW, old, set(),
+                                      sleep=lambda s: None)
+        by = {s['id']: s['pref'] for s in spots}
+        self.assertEqual(by['osm:way:2'], '東京')    # 前回値
+        self.assertEqual(by['osm:node:1'], '東京')   # addr:province「東京都」
+        self.assertEqual(by['osm:node:3'], '神奈川')  # 取れた都県の area
+        self.assertIsNone(by['osm:node:5'])          # 手がかりなし
+        self.assertNotIn('その他', by.values())       # 一部失敗なので「その他」にしない（東京かもしれない）
+        self.assertIn('pref JP-13', status['spots_error'])
+        self.assertIn('timed out', status['spots_error'])
+
+
+class IndoorTest(unittest.TestCase):
+    def test_guess_indoor(self):
+        # INDOOR_WORDS は上から順に最初に当たった語で決まる（文中の位置は関係ない）。
+        # 並び: 屋内の具体的な語 → 屋外の語 → 最後に広い「センター」
+        for place, title, want in [
+            ('市立児童館', '', True), ('児童センター', '', True), ('郷土歴史館', '', True), ('郷土資料館', '', True),
+            ('行政資料室', '', True), ('〇〇ミュージアム', '', True), ('XX MUSEUM', '', True), ('ガスショールーム', '', True),
+            ('第1会議室', '', True), ('生涯学習館', '', True), ('地区集会所', '', True), ('市民温水プール', '', True),
+            ('メインアリーナ', '', True), ('保健センター', '', True), ('地域センター', '', True),
+            ('市営テニスコート', '', False), ('市民農園', '', False), ('キャンプ場', '', False), ('こどもの森', '', False),
+            # 衝突: 屋内の具体語（アリーナ・図書館・資料館）は「森」より先、「森」は広い「センター」より先
+            ('武蔵野の森総合スポーツプラザ メインアリーナ', '', True),
+            ('中央図書館', '森のおはなし会', True),
+            ('森の資料館', '', True),
+            ('こどもの森 自然観察センター', '', False),
+            # 場所の「[」「［」以降は施設リンクの文字列なので見ない（見ると「体育館」で屋内になる）
+            ('中央公園[市民体育館のページへ]', '', False),
+            ('中央公園［体育館］', '', False),
+            (None, '体育館で卓球', True),  # 題名も見る（題名は切らない）
+            ('[中止]市民体育館', '', None),  # 先頭が「[」なら場所は空扱い
+            ('どこか', '', None),
+        ]:
+            with self.subTest(place=place, title=title):
+                self.assertIs(collect.guess_indoor(place, title), want)
+        self.assertEqual(collect.INDOOR_WORDS[-1], ('センター', True))
 
 
 if __name__ == '__main__':

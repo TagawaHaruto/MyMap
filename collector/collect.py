@@ -22,12 +22,17 @@ JST = dt.timezone(dt.timedelta(hours=9))
 EXCLUDE = '相談|講座|講習|講演|教室|説明会|会議|議会|審議|委員会|健康|福祉|しごと|はたらく'
 # ただしこれに当てはまるカテゴリは除外しない（「スポーツ・健康」「親子教室」など）
 KEEP = '祭|まつり|催し|イベント|文化|芸術|スポーツ|キッズ|子ども|こども|親子|展示|鑑賞|観光'
-# 会場名・タイトルの語 → 屋内か（上から順に最初に当たったもの）
+# 会場名・タイトルの語 → 屋内か（上から順に最初に当たったもの。屋内の具体語 → 屋外の語 → 広い語の順）
 INDOOR_WORDS = [
     ('体育館', True), ('ホール', True), ('劇場', True), ('文化センター', True), ('公民館', True), ('図書館', True),
     ('博物館', True), ('美術館', True), ('プラネタリウム', True), ('プレイス', True), ('たづくり', True), ('会館', True),
+    ('児童館', True), ('児童センター', True), ('歴史館', True), ('資料館', True), ('資料室', True), ('ミュージアム', True),
+    ('MUSEUM', True), ('ショールーム', True), ('会議室', True), ('学習館', True), ('集会所', True), ('温水プール', True),
+    ('アリーナ', True), ('保健センター', True),
     ('スタジアム', False), ('競技場', False), ('公園', False), ('広場', False), ('グラウンド', False),
     ('河川敷', False), ('ハイキング', False), ('マルシェ', False), ('まつり', False), ('祭り', False),
+    ('テニスコート', False), ('農園', False), ('キャンプ', False), ('森', False),
+    ('センター', True),  # 「〇〇の森 自然観察センター」等に負けないよう最後
 ]
 MORE = re.compile(r'^(もっと見る|続きを見る|一覧)')
 
@@ -160,23 +165,28 @@ def overpass_body(stmts, bb):
     return urllib.parse.urlencode({'data': q}).encode()
 
 
+def overpass_try(body, parse, fetch, sleep):
+    """混雑やタイムアウトは別サーバーで再試行。全サーバーで失敗したら最後の例外を投げる。"""
+    for n, url in enumerate(OVERPASS_URLS):
+        try:
+            return parse(fetch(url, data=body, timeout=240))
+        except Exception:
+            if n + 1 == len(OVERPASS_URLS):
+                raise
+            sleep(30)
+
+
 def overpass_by_kind(queries, bb, parse, fetch, old, sleep):
-    """種類ごとに取得。混雑やタイムアウトは別サーバーで再試行し、それでも失敗した種類は前回分（k が同じもの）を残す。"""
+    """種類ごとに取得。失敗した種類は前回分（k が同じもの）を残す。"""
     out, errors = [], []
     for i, (kind, stmts) in enumerate(queries):
         if i:
             sleep(5)  # Overpass への配慮
-        body = overpass_body(stmts, bb)
-        for n, url in enumerate(OVERPASS_URLS):
-            try:
-                out += parse(fetch(url, data=body, timeout=240), kind)
-                break
-            except Exception as err:
-                if n + 1 < len(OVERPASS_URLS):
-                    sleep(30)
-                    continue
-                errors.append(f'{kind}: {type(err).__name__}: {err}'[:160])
-                out += [x for x in old if x.get('k') == kind]
+        try:
+            out += overpass_try(overpass_body(stmts, bb), lambda text: parse(text, kind), fetch, sleep)
+        except Exception as err:
+            errors.append(f'{kind}: {type(err).__name__}: {err}'[:160])
+            out += [x for x in old if x.get('k') == kind]
     return out, errors
 
 
@@ -269,6 +279,34 @@ SPOT_QUERIES = [
 OVERPASS_URLS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter',
                  'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
 VEHICLE_WORDS = re.compile('鉄道|電車|機関車|航空|飛行|宇宙|ロケット|自動車|クルマ|モーター|バイク|オートバイ|船|交通|乗り物')
+# 都県の付与に使う主要 5 都県（ISO3166-2 → 表示名）。これ以外は「その他」
+PREF_AREAS = [('JP-13', '東京'), ('JP-14', '神奈川'), ('JP-11', '埼玉'), ('JP-12', '千葉'), ('JP-19', '山梨')]
+# addr:province の表記ゆれ用（周辺県も area 失敗時の手がかりとして残す）
+PROVINCES = ('東京', '神奈川', '埼玉', '千葉', '山梨', '群馬', '栃木', '茨城', '静岡', '長野')
+PROVINCE_ROMAJI = {'tokyo': '東京', 'kanagawa': '神奈川', 'saitama': '埼玉', 'chiba': '千葉', 'yamanashi': '山梨'}
+
+
+def norm_province(v):
+    """addr:province → 都県名。他言語や番地の誤入力など、知らない値は None。"""
+    v = (v or '').strip()
+    name = re.sub('[都府県]$', '', v)
+    return name if name in PROVINCES else PROVINCE_ROMAJI.get(v.lower())
+
+
+def osm_prefs(fetch, sleep):
+    """都県の area ごとに全種類の id だけ取り、OSM id → 都県 の対応表を作る。失敗した都県はエラーに積む。"""
+    stmts = ''.join(s + '(area.a);' for _, s in SPOT_QUERIES)
+    prefs, errors = {}, []
+    for iso, name in PREF_AREAS:
+        sleep(5)  # 種類別の問い合わせの直後にも続くので、毎回前にあける
+        q = f'[out:json][timeout:180];area["ISO3166-2"="{iso}"]->.a;({stmts});out ids;'
+        try:
+            els = overpass_try(urllib.parse.urlencode({'data': q}).encode(), overpass_elements, fetch, sleep)
+        except Exception as err:
+            errors.append(f'pref {iso}: {type(err).__name__}: {err}'[:160])
+            continue
+        prefs.update((f"osm:{e['type']}:{e['id']}", name) for e in els)
+    return prefs, errors
 
 
 def osm_genre(t):
@@ -323,9 +361,8 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
             continue
         seen.add(key)
         site = t.get('website', '')
-        pref = re.sub('[都府県]$', '', t.get('addr:province', '')) or None
         out.append({'id': f"osm:{el['type']}:{el['id']}", 'name': t['name'], 'lat': round(pos['lat'], 5),
-                    'lon': round(pos['lon'], 5), 'pref': pref, 'genres': g[0], 'indoor': g[1],
+                    'lon': round(pos['lon'], 5), 'pref': norm_province(t.get('addr:province')), 'genres': g[0], 'indoor': g[1],
                     'url': site if site.startswith(('http://', 'https://')) else wiki_url(t.get('wikipedia')) or '',
                     'note': g[2], 'k': kind})
     return out
@@ -340,6 +377,12 @@ def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep)
     out, errors = overpass_by_kind(SPOT_QUERIES, bbox(cfg['origin'], cfg['poiRadiusKm']),
                                    lambda text, kind: parse_osm_spots(text, exclude_names, kind, seen),
                                    fetch, old, sleep)
+    prefs, pref_errors = osm_prefs(fetch, sleep)
+    old_pref = {x['id']: x.get('pref') for x in old}
+    for s in out:
+        # area に無いものは、全都県が取れたときだけ「その他」。一部失敗なら（その都県かもしれないので）前回値 → addr:province
+        s['pref'] = prefs.get(s['id']) or ('その他' if not pref_errors else old_pref.get(s['id']) or s.get('pref'))
+    errors += pref_errors
     status['spots_at'] = now.isoformat(timespec='seconds')
     status['spots_error'] = ' / '.join(errors) or None
     if errors:
@@ -368,7 +411,9 @@ def source_pages(src, today, months):
     return [(src['url'], {})]
 
 
-def guess_indoor(text):
+def guess_indoor(place, title=''):
+    # 場所の「[」以降は施設リンクの文字列（収集元が付ける）なので見ない
+    text = re.split(r'[\[［]', place or '', maxsplit=1)[0] + ' ' + title
     for word, indoor in INDOOR_WORDS:
         if word in text:
             return indoor
@@ -394,7 +439,7 @@ def finalize(events, today, months_ahead):
             continue
         seen.add(key)
         if e['indoor'] is None:
-            e['indoor'] = guess_indoor(f"{e['place'] or ''} {e['title']}")
+            e['indoor'] = guess_indoor(e['place'], e['title'])
         out.append(e)
     return out
 
