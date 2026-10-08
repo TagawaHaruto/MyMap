@@ -5,6 +5,7 @@ config.json の sources を順に取得し、data/events.json と data/status.js
 """
 import datetime as dt
 import json
+import math
 import os
 import re
 import sys
@@ -129,6 +130,81 @@ def parse_nextdata(text, src, today):
 PARSERS = {'eventjs': parse_eventjs, 'daylist': parse_daylist, 'doorkeeper': parse_doorkeeper, 'nextdata': parse_nextdata}
 
 
+# ---- 立ち寄り候補・絶景（OpenStreetMap / Overpass） ----
+
+def overpass_query(origin, radius_km):
+    # 429（混雑）を避けるため全種類を 1 回の問い合わせにまとめる
+    dlat = radius_km / 111
+    dlon = radius_km / (111 * math.cos(math.radians(origin['lat'])))
+    bb = f"({origin['lat'] - dlat:.3f},{origin['lon'] - dlon:.3f},{origin['lat'] + dlat:.3f},{origin['lon'] + dlon:.3f})"
+    parts = ['nwr["name"~"^道の駅"]', 'nwr["amenity"="public_bath"]["bath:type"="onsen"]',
+             'nwr["tourism"="viewpoint"]["name"]', 'nwr["waterway"="waterfall"]["name"]["wikipedia"]',
+             'nwr["natural"="peak"]["name"]["wikipedia"]', 'nwr["natural"~"^(valley|gorge)$"]["name"]["wikipedia"]',
+             'nwr["natural"="water"]["water"="lake"]["name"]["wikipedia"]',
+             'nwr["natural"~"^(beach|cape)$"]["name"]["wikipedia"]']
+    return '[out:json][timeout:180];(' + ''.join(p + bb + ';' for p in parts) + ');out center tags;'
+
+
+def poi_kind(t):
+    name = t.get('name', '')
+    if name.startswith('道の駅'):
+        bus = t.get('highway') == 'bus_stop' or 'public_transport' in t or name.endswith(('入口', '前'))
+        return None if bus else 'michinoeki'
+    if t.get('amenity') == 'public_bath':
+        return 'onsen'
+    if t.get('tourism') == 'viewpoint':
+        return 'viewpoint'
+    if not t.get('wikipedia'):
+        return None
+    if t.get('waterway') == 'waterfall':
+        return 'waterfall'
+    nat = t.get('natural')
+    if nat == 'peak':
+        return 'peak'
+    if nat in ('valley', 'gorge'):
+        return 'gorge'
+    if nat == 'water' and t.get('water') == 'lake':
+        return 'lake'
+    if nat in ('beach', 'cape'):
+        return 'coast'
+    return None
+
+
+def wiki_url(tag):
+    if not tag or ':' not in tag:
+        return None
+    lang, title = tag.split(':', 1)
+    return f'https://{lang}.wikipedia.org/wiki/' + urllib.parse.quote(title.replace(' ', '_'))
+
+
+def parse_overpass(text):
+    seen, out = set(), []
+    for el in json.loads(text)['elements']:
+        t = el.get('tags', {})
+        kind = poi_kind(t)
+        pos = el if 'lat' in el else el.get('center')
+        if not kind or not pos or (kind, t['name']) in seen:  # 同名（建物と駐車場など）は 1 件に
+            continue
+        seen.add((kind, t['name']))
+        out.append({'name': t['name'], 'lat': pos['lat'], 'lon': pos['lon'], 'kind': kind,
+                    'wikipedia': wiki_url(t.get('wikipedia'))})
+    return out
+
+
+def refresh_pois(cfg, status, fetch, now):
+    last = status.get('pois_at')
+    if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7):
+        return
+    try:
+        body = urllib.parse.urlencode({'data': overpass_query(cfg['origin'], cfg['poiRadiusKm'])}).encode()
+        pois = parse_overpass(fetch('https://overpass-api.de/api/interpreter', data=body, timeout=240))  # 1〜2 分かかる
+        save(os.path.join(DATA, 'pois.json'), pois)
+        status['pois_at'], status['pois_error'] = now.isoformat(timespec='seconds'), None
+        print(f'pois: {len(pois)}')
+    except Exception as err:  # 失敗したら前回の pois.json を残す
+        status['pois_error'] = f'{type(err).__name__}: {err}'[:300]
+        print(f'[pois] {status["pois_error"]}', file=sys.stderr)
+
 # ---- 取得と集約 ----
 
 def source_pages(src, today, months):
@@ -236,6 +312,7 @@ def main():
     fetch = make_fetch(cfg)
     events = collect_events(cfg, today, old, status, fetch)
     save(os.path.join(DATA, 'events.json'), events)
+    refresh_pois(cfg, status, fetch, dt.datetime.now(JST))
     status['updated_at'] = now_iso()
     save(os.path.join(DATA, 'status.json'), status)
     print(f'events: {len(events)}')

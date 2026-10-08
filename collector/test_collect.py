@@ -2,6 +2,7 @@
 import datetime as dt
 import os
 import sys
+import urllib.parse
 import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -119,6 +120,33 @@ class FlowTest(unittest.TestCase):
         self.assertIn('boom', status['sources']['ng']['error'])
         self.assertIsNone(status['sources']['ok']['error'])
         self.assertEqual(status['sources']['ok']['count'], 1)
+
+
+class PoiTest(unittest.TestCase):
+    def test_parse_overpass(self):
+        pois = collect.parse_overpass(fx('overpass.json'))
+        got = {(p['kind'], p['name']) for p in pois}
+        self.assertEqual(got, {('michinoeki', '道の駅どうし'), ('onsen', '瀬音の湯'), ('waterfall', '払沢の滝'),
+                               ('lake', '奥多摩湖'), ('peak', '高尾山'), ('coast', '城ヶ島'), ('gorge', '中津渓谷'),
+                               ('viewpoint', '大観山展望台')})
+        lake = next(p for p in pois if p['kind'] == 'lake')
+        self.assertEqual((lake['lat'], lake['lon']), (35.78, 139.02))
+        self.assertEqual(lake['wikipedia'], 'https://ja.wikipedia.org/wiki/' + urllib.parse.quote('奥多摩湖'))
+        self.assertIsNone(next(p for p in pois if p['kind'] == 'onsen')['wikipedia'])
+
+    def test_overpass_query_has_bbox_and_all_kinds(self):
+        q = collect.overpass_query({'lat': 35.65, 'lon': 139.54}, 150)
+        self.assertIn('[out:json]', q)
+        self.assertIn('(34.299,137.877,37.001,141.203)', q)
+        for word in ('道の駅', 'public_bath', 'viewpoint', 'waterfall', 'peak', 'water', 'beach'):
+            self.assertIn(word, q)
+
+    def test_refresh_pois_skips_when_fresh(self):
+        status = {'pois_at': '2026-10-05T00:00:00+09:00'}
+        calls = []
+        collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
+                             lambda *a, **k: calls.append(a), dt.datetime(2026, 10, 8, tzinfo=collect.JST))
+        self.assertEqual(calls, [])
 
 
 if __name__ == '__main__':

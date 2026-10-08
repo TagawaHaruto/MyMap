@@ -1,0 +1,13 @@
+{"elements": [
+  {"type": "node", "id": 1, "lat": 35.53, "lon": 139.03, "tags": {"name": "道の駅どうし", "highway": "services"}},
+  {"type": "way", "id": 2, "center": {"lat": 35.531, "lon": 139.031}, "tags": {"name": "道の駅どうし", "amenity": "parking"}},
+  {"type": "node", "id": 3, "lat": 35.6, "lon": 139.1, "tags": {"name": "道の駅入口", "highway": "bus_stop"}},
+  {"type": "node", "id": 4, "lat": 35.7, "lon": 139.2, "tags": {"name": "瀬音の湯", "amenity": "public_bath", "bath:type": "onsen"}},
+  {"type": "node", "id": 5, "lat": 35.8, "lon": 139.0, "tags": {"name": "払沢の滝", "waterway": "waterfall", "wikipedia": "ja:払沢の滝"}},
+  {"type": "node", "id": 6, "lat": 35.8, "lon": 139.0, "tags": {"name": "無名滝", "waterway": "waterfall"}},
+  {"type": "relation", "id": 7, "center": {"lat": 35.78, "lon": 139.02}, "tags": {"name": "奥多摩湖", "natural": "water", "water": "lake", "wikipedia": "ja:奥多摩湖"}},
+  {"type": "node", "id": 8, "lat": 35.62, "lon": 139.24, "tags": {"name": "高尾山", "natural": "peak", "wikipedia": "ja:高尾山"}},
+  {"type": "node", "id": 9, "lat": 35.3, "lon": 139.5, "tags": {"name": "城ヶ島", "natural": "cape", "wikipedia": "ja:城ヶ島"}},
+  {"type": "node", "id": 10, "lat": 35.4, "lon": 139.1, "tags": {"name": "中津渓谷", "natural": "valley", "wikipedia": "ja:中津渓谷"}},
+  {"type": "node", "id": 11, "lat": 35.5, "lon": 139.2, "tags": {"name": "大観山展望台", "tourism": "viewpoint"}}
+]}
