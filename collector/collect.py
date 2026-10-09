@@ -273,7 +273,13 @@ SPOT_QUERIES = [
     ('shop', 'nwr["shop"~"^(mall|department_store)$"]["name"]'),
     ('play', 'nwr["leisure"~"^(water_park|amusement_arcade|trampoline_park|miniature_golf)$"]["name"]'),
     ('planetarium', 'nwr["amenity"="planetarium"]["name"]'),
+    # 体験: 脱出ゲーム・カート/サーキット・ボルダリング・陶芸/ガラス工房・果物狩り/牧場
+    ('experience', ['nwr["leisure"="escape_game"]["name"]', 'nwr["sport"~"karting|motor|climbing"]["name"]',
+                    'nwr["craft"~"^(pottery|glassblower|handicraft)$"]["name"]',
+                    'nwr["landuse"~"^(orchard|farmyard|farmland|vineyard|meadow)$"]["name"~"狩|摘み|観光農園|体験農園|果樹園|ぶどう園|いちご園|ブルーベリー|牧場"]']),
 ]
+FARM_WORDS = re.compile('狩|摘み|観光農園|体験農園|果樹園|ぶどう園|いちご園|ブルーベリー|牧場')
+CRAFT = {'pottery': '陶芸体験', 'glassblower': 'ガラス工房', 'handicraft': '工芸体験'}
 # 混雑（429/504）時は別の公開サーバーで再試行する
 OVERPASS_URLS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter',
                  'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
@@ -354,6 +360,16 @@ def osm_genre(t):
         g = (['play'], True, '屋内の遊び場')
     elif leis in ('water_park', 'miniature_golf'):
         g = (['play'], False, 'プール・遊び場')
+    elif leis == 'escape_game':
+        g = (['experience', 'play'], True, '謎解き・脱出ゲーム')
+    elif re.search('karting|motor', t.get('sport', '')):
+        g = (['experience', 'vehicle'], False, 'カート・サーキット')
+    elif 'climbing' in t.get('sport', ''):
+        g = (['experience'], leis == 'sports_centre', 'ボルダリング・クライミング')
+    elif t.get('craft') in CRAFT:
+        g = (['experience'], True, CRAFT[t['craft']])
+    elif t.get('landuse') and FARM_WORDS.search(t['name']):
+        g = (['experience', 'outdoor'], False, '牧場' if '牧場' in t['name'] else '果物狩り・観光農園')
     elif amen == 'place_of_worship':
         g = (['temple'], False, '寺社')
     elif amen == 'public_bath':
