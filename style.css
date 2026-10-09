@@ -170,3 +170,11 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .card.spot .info .actions { margin-top: 0; }
 .card.spot .info { margin-top: 6px; }
+/* 絞り込みの項目は横スクロールさせず、折り返して全部見せる */
+.filters .chips { flex-wrap: wrap; overflow: visible; }
+.filters .chip { min-height: 40px; padding: 0 10px; }
+:root[data-outdoor] .filters .chip { min-height: var(--tap); }
+/* 天気ボタンは 2 行まで折り返す（雨の日モードの表示が見切れないように） */
+.weather#weather { white-space: normal; line-height: 1.2; text-overflow: clip; text-align: center; padding: 2px 8px; }
+.filters .row { align-items: flex-start; }
+.filters .label { padding-top: 10px; }

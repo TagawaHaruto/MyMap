@@ -338,7 +338,7 @@ async function loadWeather() {
 }
 function renderWeather() {
   const btn = $('#weather');
-  btn.textContent = `${btn.dataset.text || '天気を確認中…'}${rainy() ? ' ☔雨モード' : ''}`;
+  btn.innerHTML = `${esc(btn.dataset.text || '天気を確認中…')}${rainy() ? '<br>☔雨の日モード' : ''}`;
   btn.setAttribute('aria-pressed', rainy());
 }
 $('#weather').onclick = () => { buzz(); state.rainOverride = !rainy(); renderAll(); };
