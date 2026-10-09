@@ -188,33 +188,63 @@ def splits(cfg, per_km=150):
     return max(1, math.ceil(cfg['poiRadiusKm'] / per_km))
 
 
-def is_fresh(status, name, now, sig):
-    """前回から 1 週間以内で、範囲と種類が同じなら取り直さない。"""
-    last = status.get(f'{name}_at')
-    return bool(last) and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7) and status.get(f'{name}_sig') == sig
+def done_kinds(status, name, radius):
+    """取得済みの種類 → 取得日時。範囲を変えたときは空（全部取り直す）。"""
+    if status.get(f'{name}_radius') == radius:
+        return dict(status.get(f'{name}_done') or {})
+    sig, at = status.get(f'{name}_sig'), status.get(f'{name}_at')
+    if sig and sig[0] == radius and at:  # 旧形式（全種類まとめて記録）から: エラーのなかった種類は取得済み
+        err = status.get(f'{name}_error') or ''
+        return {k: at for k in sig[1:] if not re.search(f'(^| / ){re.escape(k)}: ', err)}
+    return {}
 
 
-def query_sig(cfg, queries):
-    return [cfg['poiRadiusKm']] + [q[0] for q in queries]
-
-
-def overpass_by_kind(queries, bb, parse, fetch, old, sleep, n=1):
-    """種類ごとに取得（範囲は n×n に分ける）。失敗した種類は前回分（k が同じもの）を残す。"""
-    out, errors = [], []
+def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep):
+    """種類ごとに週 1 回取り直す。成功した種類だけ取得済みにし、失敗した種類は前回分を残して
+    最後にもう一度、それでもだめなら次の実行で取り直す。全種類が取得済みなら None。"""
+    radius = cfg['poiRadiusKm']
+    done = done_kinds(status, name, radius)
+    fresh = {k for k, at in done.items() if k in kinds and now - dt.datetime.fromisoformat(at) < dt.timedelta(days=7)}
+    todo = [k for k in kinds if k not in fresh]
+    if not todo:
+        return None
+    out = [x for x in old if x.get('k') in fresh]
+    errors = {}
     first = True
-    for kind, stmts in queries:
-        try:
-            got = []
-            for part in grid(bb, n):
-                if not first:
-                    sleep(5)  # Overpass への配慮
-                first = False
-                got += overpass_try(overpass_body(stmts, part), lambda text: parse(text, kind), fetch, sleep)
-            out += got
-        except Exception as err:
-            errors.append(f'{kind}: {type(err).__name__}: {err}'[:160])
-            out += [x for x in old if x.get('k') == kind]
-    return out, errors
+    for rnd in range(2):
+        if rnd:
+            if not errors:
+                break
+            sleep(120)  # 混雑（504 など）が収まるのを待つ
+            todo, errors = list(errors), {}
+        for kind in todo:
+            if not first:
+                sleep(5)  # Overpass への配慮
+            first = False
+            try:
+                out += fetch_kind(kind)
+                done[kind] = now.isoformat(timespec='seconds')
+            except Exception as err:
+                errors[kind] = f'{kind}: {type(err).__name__}: {err}'[:160]
+    for kind in errors:
+        out += [x for x in old if x.get('k') == kind]
+    status[f'{name}_at'], status[f'{name}_radius'] = now.isoformat(timespec='seconds'), radius
+    status[f'{name}_done'] = {k: v for k, v in done.items() if k in kinds}
+    status.pop(f'{name}_sig', None)
+    status[f'{name}_error'] = ' / '.join(errors.values()) or None
+    if errors:
+        print(f"[{name}] {status[f'{name}_error']}", file=sys.stderr)
+    return out
+
+
+def overpass_kind(stmts, bb, n, parse, fetch, sleep):
+    """1 種類を n×n に分けて取得。1 つでも失敗したら例外。"""
+    got = []
+    for i, part in enumerate(grid(bb, n)):
+        if i:
+            sleep(5)
+        got += overpass_try(overpass_body(stmts, part), parse, fetch, sleep)
+    return got
 
 
 def poi_kind(t):
@@ -273,18 +303,10 @@ def parse_overpass(text):
 
 
 def refresh_pois(cfg, status, fetch, now, old=(), sleep=time.sleep):
-    """週 1 回だけ取り直す（範囲や種類を変えたときはすぐ）。取り直さないときは None。"""
-    sig = query_sig(cfg, POI_QUERIES)
-    if is_fresh(status, 'pois', now, sig):
-        return None
-    pois, errors = overpass_by_kind(POI_QUERIES, bbox(cfg['origin'], cfg['poiRadiusKm']),
-                                    lambda text, kind: [dict(p, k=kind) for p in parse_overpass(text)],
-                                    fetch, old, sleep, splits(cfg))
-    status['pois_at'], status['pois_sig'] = now.isoformat(timespec='seconds'), sig
-    status['pois_error'] = ' / '.join(errors) or None
-    if errors:
-        print(f"[pois] {status['pois_error']}", file=sys.stderr)
-    return pois
+    """種類ごとに週 1 回取り直す（失敗した種類は次の実行で）。取り直さないときは None。"""
+    q, bb = dict(POI_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
+    return refresh_kinds('pois', list(q), cfg, status, now, old, lambda kind: overpass_kind(
+        q[kind], bb, splits(cfg), lambda text: [dict(p, k=kind) for p in parse_overpass(text)], fetch, sleep), sleep)
 
 # ---- 自動収集スポット（OpenStreetMap。厳選リストとは別ファイル） ----
 
@@ -437,23 +459,21 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
 
 
 def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep, prefectures=None):
-    """週 1 回だけ取り直す（種類を増やしたときはすぐ）。失敗した種類は前回分を残す。取り直さないときは None。"""
-    sig = query_sig(cfg, SPOT_QUERIES)
-    if is_fresh(status, 'spots', now, sig):
+    """種類ごとに週 1 回取り直す（範囲や種類を変えたときはすぐ）。失敗した種類は前回分を残す。取り直さないときは None。"""
+    q, bb, seen = dict(SPOT_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm']), set()
+
+    def fetch_kind(kind):
+        local = set(seen)  # 途中で失敗したときに、取れた分を「取得済み」にしない
+        got = overpass_kind(q[kind], bb, splits(cfg), lambda text: parse_osm_spots(text, exclude_names, kind, local), fetch, sleep)
+        seen.update(local)
+        return got
+    out = refresh_kinds('spots', list(q), cfg, status, now, old, fetch_kind, sleep)
+    if out is None:
         return None
-    seen = set()
-    out, errors = overpass_by_kind(SPOT_QUERIES, bbox(cfg['origin'], cfg['poiRadiusKm']),
-                                   lambda text, kind: parse_osm_spots(text, exclude_names, kind, seen),
-                                   fetch, old, sleep, splits(cfg))
     # 都県は同梱の境界データで判定する（Overpass に都県ごとの重い問い合わせを送らない）。境界外は addr:province を使う
     prepared = prep_prefectures(load_prefectures() if prefectures is None else prefectures)
     for s in out:
         s['pref'] = pref_of(s['lat'], s['lon'], prepared) or s.get('pref') or 'その他'  # 境界データ（10 都県）の外
-    status['spots_at'] = now.isoformat(timespec='seconds')
-    status['spots_sig'] = sig
-    status['spots_error'] = ' / '.join(errors) or None
-    if errors:
-        print(f"[spots] {status['spots_error']}", file=sys.stderr)
     return out
 
 
@@ -541,33 +561,23 @@ def parse_group_items(text, seen, kind=None):
 
 def refresh_cells(cfg, status, fetch, now, old, sleep=time.sleep):
     """週 1 回だけ取り直し、{グループ: {升目: [項目]}} を返す。失敗した種類は前回分を残す。取り直さないときは None。"""
-    sig = query_sig(cfg, CELL_QUERIES)
-    if is_fresh(status, 'cells', now, sig):
+    q = {kind: (stmt, split) for kind, _, stmt, split in CELL_QUERIES}
+    bb, seen = bbox(cfg['origin'], cfg['poiRadiusKm']), set()
+
+    def fetch_kind(kind):
+        stmt, split = q[kind]
+        local = set(seen)
+        got = overpass_kind(stmt, bb, splits(cfg, 75 if split else 150), lambda text: parse_group_items(text, local, kind), fetch, sleep)
+        seen.update(local)
+        return got
+    items = refresh_kinds('cells', list(q), cfg, status, now, old, fetch_kind, sleep)
+    if items is None:
         return None
-    bb = bbox(cfg['origin'], cfg['poiRadiusKm'])
-    seen, items, errors = set(), [], []
-    first = True
-    for kind, group, stmt, split in CELL_QUERIES:
-        got = []
-        try:
-            for part in grid(bb, splits(cfg, 75 if split else 150)):
-                if not first:
-                    sleep(5)  # Overpass への配慮
-                first = False
-                got += overpass_try(overpass_body(stmt, part), lambda text: parse_group_items(text, seen, kind), fetch, sleep)
-            items += got
-        except Exception as err:
-            errors.append(f'{kind}: {type(err).__name__}: {err}'[:160])
-            items += [x for x in old if x.get('k') == kind]
     prepared = prep_prefectures(load_prefectures())
     cells = {}
     for x in items:
         x['pref'] = pref_of(x['lat'], x['lon'], prepared) or x.get('pref') or 'その他'  # 境界データ（10 都県）の外
         cells.setdefault(x['g'], {}).setdefault(cell_id(x['lat'], x['lon']), []).append(x)
-    status['cells_at'], status['cells_sig'] = now.isoformat(timespec='seconds'), sig
-    status['cells_error'] = ' / '.join(errors) or None
-    if errors:
-        print(f"[cells] {status['cells_error']}", file=sys.stderr)
     return cells
 
 
