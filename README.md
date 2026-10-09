@@ -42,7 +42,7 @@
 1. このリポジトリの **Use this template → Create a new repository** で自分のアカウントにコピーする（Public）。
 2. `config.json` を書き換える。
    - `origin`：起点の名前と緯度・経度（Google マップで地点を長押しすると表示されます）。
-   - `github`：`owner` を自分のユーザー名、`repo` をリポジトリ名に。
+   - `github`：通常は書き換え不要（持ち主の名前は公開 URL から自動で判定。リポジトリ名を変えたときは `repo` も）。
    - `sources`：イベントの収集元。地元の自治体サイトの `/event.js` があれば `"type": "eventjs"` で 1 行追加できます。
    - `directionLabels`：方面の表示名（例 `"W": "西（奥多摩・山梨）"`）。
 3. **Settings → Actions → General → Workflow permissions** を「Read and write permissions」にする。

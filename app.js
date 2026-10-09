@@ -470,7 +470,10 @@ async function requestUpdate(force = false) {
   if (!token) { setUpdateMsg('データが古くなっています。設定タブでトークンを登録すると自動で更新できます。'); return; }
   const prev = st && st.updated_at;
   if (!force && Date.now() - (store.get('lastDispatch') || 0) < 10 * 60e3) { pollStatus(prev); return; }
-  const { owner, repo, workflow, branch } = DATA.cfg.github;
+  // 持ち主とリポジトリ名は公開 URL（<owner>.github.io/<repo>/）から求める。config に書いてあればそちらを使う
+  const { workflow, branch } = DATA.cfg.github;
+  const owner = DATA.cfg.github.owner || location.hostname.split('.')[0];
+  const repo = DATA.cfg.github.repo || location.pathname.split('/')[1];
   try {
     const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`, {
       method: 'POST',
