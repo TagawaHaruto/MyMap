@@ -270,4 +270,29 @@ assert.deepStrictEqual(Lib.parseGsi([
 ], 1), [{ name: '河口湖', lat: 35.515, lon: 138.748 }]);
 assert.deepStrictEqual(Lib.parseGsi(null), []);
 
+// ---- 約10万件への拡大: 升目と関連スポット ----
+assert.strictEqual(Lib.cellId(35.6518, 139.544), '142_558');   // floor(35.6518*4)=142, floor(139.544*4)=558
+assert.strictEqual(Lib.cellId(-0.1, -0.1), '-1_-1');
+// 半径 10km の円にかかる升目（調布駅は升目の中ほど → 周りの升目も含む）
+const cs = Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 10);
+assert(cs.includes('142_558') && cs.includes('142_557') && !cs.includes('140_558'), cs.join(','));
+assert.strictEqual(Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 0).length, 1);
+
+// 関連スポット: 似たもの（同じジャンル・近い順）、周辺（2km 以内・近い順）、飲食（1km 以内）
+const base = { id: 'b', name: '基準', lat: 35.65, lon: 139.55, genres: ['museum'] };
+const pool = [
+  base,
+  { id: 'm1', name: '近い博物館', lat: 35.66, lon: 139.55, genres: ['museum'] },
+  { id: 'm2', name: '遠い博物館', lat: 35.90, lon: 139.55, genres: ['museum'] },
+  { id: 'g1', name: '近い庭園', lat: 35.651, lon: 139.551, genres: ['garden'] },
+  { id: 'f1', name: '近いカフェ', lat: 35.6505, lon: 139.5505, genres: ['food'] },
+  { id: 'f2', name: '遠いカフェ', lat: 35.70, lon: 139.55, genres: ['food'] },
+  { id: 'c1', name: 'チェーン店', lat: 35.6502, lon: 139.5502, genres: ['food'], chain: true },
+];
+const rel = Lib.relatedSpots(base, pool, { limit: 5 });
+assert.deepStrictEqual(ids(rel.similar), ['m1', 'm2']);
+assert.deepStrictEqual(ids(rel.nearby), ['g1', 'm1']);       // 飲食は周辺から除き、別枠
+assert.deepStrictEqual(ids(rel.food), ['f1']);                // チェーン店は既定で除く、1km 以内
+assert.deepStrictEqual(ids(Lib.relatedSpots(base, pool, { limit: 5, chains: true }).food), ['c1', 'f1']);
+
 console.log('lib: ALL PASS');

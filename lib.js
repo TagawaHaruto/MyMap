@@ -347,6 +347,41 @@ const Lib = (() => {
     return out;
   }
 
+  // ---- 約10万件のデータ: 0.25 度（約25km）四方の升目に分けて、必要な分だけ読み込む ----
+  const CELL = 4; // 1 度あたりの升目の数
+  const cellId = (lat, lon) => `${Math.floor(lat * CELL)}_${Math.floor(lon * CELL)}`;
+  // 半径 km の円に少しでもかかる升目
+  function cellsInRadius(o, km) {
+    const dlat = km / 111, dlon = km / (111 * Math.cos(rad(o.lat)));
+    const out = [];
+    for (let y = Math.floor((o.lat - dlat) * CELL); y <= Math.floor((o.lat + dlat) * CELL); y++) {
+      for (let x = Math.floor((o.lon - dlon) * CELL); x <= Math.floor((o.lon + dlon) * CELL); x++) {
+        // 升目の中で起点にいちばん近い点までの距離
+        const lat = Math.min(Math.max(o.lat, y / CELL), (y + 1) / CELL), lon = Math.min(Math.max(o.lon, x / CELL), (x + 1) / CELL);
+        if (haversineKm(o, { lat, lon }) <= km) out.push(`${y}_${x}`);
+      }
+    }
+    return out;
+  }
+
+  // 「詳しく」の関連スポット: 似たもの（同じジャンル・30km 以内）、周辺（2km 以内・飲食以外）、近くの飲食（1km 以内）
+  function relatedSpots(s, items, { limit = 5, chains = false } = {}) {
+    const g0 = s.genres && s.genres[0];
+    const withD = [];
+    for (const x of items) {
+      if (x.id === s.id || x.name === s.name) continue;
+      const d = haversineKm(s, x);
+      if (d <= 30) withD.push({ ...x, distKm: d });
+    }
+    withD.sort((a, b) => a.distKm - b.distKm);
+    const isFood = (x) => (x.genres || []).includes('food');
+    return {
+      similar: withD.filter((x) => !isFood(x) && x.genres && x.genres[0] === g0).slice(0, limit),
+      nearby: withD.filter((x) => !isFood(x) && x.distKm <= 2).slice(0, limit),
+      food: withD.filter((x) => isFood(x) && x.distKm <= 1 && (chains || !x.chain)).slice(0, limit),
+    };
+  }
+
   const ymd = (d) => d.toLocaleDateString('sv-SE'); // 端末のローカル日付で YYYY-MM-DD
   const addDays = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
 
@@ -369,7 +404,8 @@ const Lib = (() => {
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
     decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, toGpx,
-    wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gsiSearchUrl, parseGsi };
+    wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gsiSearchUrl, parseGsi,
+    cellId, cellsInRadius, relatedSpots };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;
