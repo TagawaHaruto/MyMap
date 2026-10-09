@@ -4,7 +4,7 @@ import os
 import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-GENRES = {'play', 'sightseeing', 'shopping', 'vehicle', 'museum', 'garden', 'temple', 'onsen', 'scenic', 'simulator'}
+GENRES = {'play', 'sightseeing', 'shopping', 'vehicle', 'museum', 'garden', 'temple', 'onsen', 'scenic', 'simulator', 'factory', 'food', 'heritage', 'lodging', 'souvenir', 'outdoor'}
 PREFS = {'東京', '神奈川', '埼玉', '千葉', '山梨', '群馬', '栃木', '茨城', '静岡', '長野'}
 TYPES = {'eventjs', 'daylist', 'doorkeeper', 'nextdata'}
 

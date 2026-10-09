@@ -1,6 +1,9 @@
 // MyMap 画面ロジック。純粋な計算は lib.js（Lib）に置く。
 const GENRES = { play: '🎡遊び', sightseeing: '📷観光', shopping: '🛍買い物', vehicle: '🚗乗り物', museum: '🏛博物館',
-  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', simulator: '🎮シミュレーター' };
+  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', simulator: '🎮シミュレーター', factory: '🏭工場見学',
+  food: '🍴グルメ', heritage: '🏯史跡', lodging: '🏨宿', souvenir: '🛍お土産・直売', outdoor: '⚽遊び・アウトドア' };
+// これらのジャンルは件数が多いので、升目ごとのファイルを選んだときだけ読み込む（data/cells/<グループ>/<升目>.json）
+const GROUP_OF = { food: 'food', heritage: 'heritage', lodging: 'heritage', souvenir: 'local', outdoor: 'local' };
 const MODES = { train: '🚃電車', car: '🚗車', bike: '🏍バイク', bicycle: '🚲自転車' };
 const GMAP_MODE = { train: 'transit', car: 'driving', bike: 'driving', bicycle: 'bicycling' };
 const TIMES = [[30, '30分'], [60, '60分'], [90, '90分'], [120, '2時間'], [180, '3時間'], [null, '制限なし']];
@@ -30,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []),
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false,
+  showNotices: false, showChains: false, walkinOnly: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -119,11 +122,52 @@ function poiSpotList() {
   if (poiVer !== DATA.ver) { poiSpots = DATA.pois.map(poiAsSpot); poiVer = DATA.ver; }
   return poiSpots;
 }
+// ---- 升目ごとのデータ（飲食・史跡・宿・お土産・遊び） ----
+const CELL_DATA = new Map(); // 'グループ/升目' → 項目
+const cellLoading = new Set();
+let cellIndex = null;
+// 読み込む範囲（km）: 移動時間から求めた半径。制限なしは 60km まで
+function loadKm() {
+  if (state.maxMin == null) return 60;
+  const min = state.maxMin - (state.mode === 'train' ? DATA.cfg.trainOverheadMin : 0);
+  return Math.min(150, Math.max(0, min) / 60 * DATA.cfg.speedsKmh[state.mode] + 2);
+}
+async function ensureCells(groups, center, km) {
+  if (!cellIndex) return false;
+  const need = [];
+  for (const g of groups) {
+    for (const cid of Lib.cellsInRadius(center, km)) {
+      const key = `${g}/${cid}`;
+      if (cellIndex[g] && cellIndex[g][cid] && !CELL_DATA.has(key) && !cellLoading.has(key)) need.push(key);
+    }
+  }
+  if (!need.length) return false;
+  need.forEach((k) => cellLoading.add(k));
+  await Promise.all(need.map(async (k) => { CELL_DATA.set(k, await getJSON(`data/cells/${k}.json`, [])); cellLoading.delete(k); }));
+  return true;
+}
+function cellItems(groups, center, km) {
+  const out = [];
+  for (const g of groups) for (const cid of Lib.cellsInRadius(center, km)) { const xs = CELL_DATA.get(`${g}/${cid}`); if (xs) out.push(...xs); }
+  return out;
+}
+const selectedGroups = () => [...new Set([...state.genres].map((g) => GROUP_OF[g]).filter(Boolean))];
+
 function spotCandidates() {
   // 絶景を選んだときだけ滝・山・湖などの POI を混ぜる（展望台は osm_spots 側にある）
   const extra = state.genres.has('scenic')
     ? poiSpotList().filter((p) => SCENIC_KINDS.includes(p.kind) && p.kind !== 'viewpoint') : [];
-  return DATA.spots.concat(DATA.osm, extra);
+  // グルメなどは、そのジャンルを選んだときだけ（「全種類」には混ぜない）
+  const groups = selectedGroups();
+  let cellsPart = [];
+  if (groups.length) {
+    ensureCells(groups, DATA.cfg.origin, loadKm()).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
+    cellsPart = cellItems(groups, DATA.cfg.origin, loadKm());
+  }
+  let all = DATA.spots.concat(DATA.osm, extra, cellsPart);
+  if (!state.showChains) all = all.filter((s) => !s.chain);
+  if (state.walkinOnly && state.genres.has('factory')) all = all.filter((s) => s.walkin === true);
+  return all;
 }
 const isCurated = (s) => !s.poi && !String(s.id).startsWith('osm:');
 const parkText = (s) => (s.parking ? [s.parking.car ? '🅿車' : '', s.parking.bike ? '🅿二輪' : ''].filter(Boolean).join(' ') : '');
@@ -135,7 +179,7 @@ function spotCard(s) {
   return `<article class="card spot">
     <div class="spot-head"><h3>${isCurated(s) ? '<span title="厳選スポット">★</span> ' : ''}${icons} ${esc(s.name)}</h3>
       <div class="head-btns">${infoButton(s)}${s.poi ? '' : `<button type="button" class="icon fav" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>`}</div></div>
-    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}</p>
+    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${s.genres.includes('factory') ? (s.walkin ? '・<strong>当日参加OK</strong>' : '・要予約') : ''}</p>
     ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
     <div class="info" hidden>
       <div class="actions">
@@ -175,12 +219,22 @@ function renderSpotList() {
   const list = Lib.filterSpots(spotCandidates(), filterState(), DATA.cfg);
   setCount(list.length);
   const failed = FAILED.has('data/spots.json');
-  const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}</p>`;
+  const groups = selectedGroups();
+  const toggles = [
+    state.genres.has('factory') ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
+    groups.includes('food') ? `<button type="button" class="chip" id="t-chain" aria-pressed="${state.showChains}">チェーン店も表示</button>` : '',
+  ].join('');
+  const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';
+  const noCells = groups.length && !cellIndex ? '・グルメなどのデータはまだ収集されていません' : '';
+  const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length && state.maxMin == null ? '・グルメなどは起点から60km以内' : ''}${loadingCells}${noCells}</p>
+    ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
   box.innerHTML = head + (list.length ? list.slice(0, state.limit).map(spotCard).join('') + more
     : `<p class="empty">${failed ? 'スポットのデータを読み込めていません。電波の良い場所で開き直してください。'
       : !DATA.osmLoaded ? 'スポットを読み込み中…' : '条件に合うスポットがありません。条件を広げてみてください。'}</p>`);
   if (more) $('#more').onclick = () => { state.limit += 300; renderSpotList(); };
+  const tw = $('#t-walkin'); if (tw) tw.onclick = () => { buzz(); state.walkinOnly = !state.walkinOnly; renderSpotList(); };
+  const tc = $('#t-chain'); if (tc) tc.onclick = () => { buzz(); state.showChains = !state.showChains; renderSpotList(); };
 }
 // ---- スポットの説明と写真（Wikipedia の要約、なければ Wikimedia Commons の付近の写真） ----
 const INFO_ITEMS = new Map(); // 画面に出ている id → スポット
@@ -262,6 +316,23 @@ document.addEventListener('click', (e) => {
   if (m && s) { m.setPopupContent(popupHtml(s, infoCache()[id] || { summary: null, photos: [] })); refitPopup(m); }
 });
 
+// 似たスポット・周辺のスポット・近くのカフェ・食事（近くの升目の飲食データも読み込む）
+async function fillRelated(el, s) {
+  const draw = () => {
+    const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food', 'heritage', 'local'], s, 2));
+    const rel = Lib.relatedSpots(s, pool, { limit: 5, chains: state.showChains });
+    const list = (title, xs) => (xs.length ? `<h4>${title}</h4><ul class="rel">${xs.map((x) => `<li>
+      <a href="${esc(Lib.gmapsSearchUrl(x))}" target="_blank" rel="noopener">${(x.genres || []).map((g) => icon(GENRES[g] || '・')).join('')} ${esc(x.name)}</a>
+      <span class="status">${x.distKm < 1 ? Math.round(x.distKm * 1000) + 'm' : x.distKm.toFixed(1) + 'km'}${x.note ? '・' + esc(x.note) : ''}</span></li>`).join('')}</ul>` : '');
+    el.innerHTML = list('似たスポット', rel.similar) + list('周辺のスポット（2km以内）', rel.nearby)
+      + list('近くのカフェ・食事（1km以内）', rel.food)
+      + (!rel.food.length && cellIndex ? '<p class="hint">1km以内のカフェ・食事は見つかりませんでした。</p>' : '')
+      + (!cellIndex ? '<p class="hint">カフェ・食事のデータはまだ収集されていません。</p>' : '');
+  };
+  draw();
+  if (await ensureCells(['food', 'heritage', 'local'], s, 2)) draw();
+}
+
 function infoHtml(s, v) {
   const parts = [];
   if (v.summary) {
@@ -296,8 +367,9 @@ document.addEventListener('click', async (e) => {
   const body = box.querySelector('.info-body') || box; // スポットのカードはボタン類を残して、写真と説明だけ入れる
   body.innerHTML = '<p class="hint">読み込み中…</p>';
   const v = await loadInfo(s);
-  body.innerHTML = infoHtml(s, v);
+  body.innerHTML = infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}<div class="related"></div>`;
   if (!v.failed) box.dataset.loaded = '1';
+  fillRelated(body.querySelector('.related'), s);
 });
 document.addEventListener('click', (e) => {
   const fav = e.target.closest('[data-fav]'), vis = e.target.closest('[data-visited]');
@@ -944,6 +1016,8 @@ async function init() {
   requestUpdate();
   [DATA.pois, DATA.events] = await Promise.all([getJSON('data/pois.json', []), getJSON('data/events.json', [])]);
   DATA.eventsLoaded = true; DATA.ver++; tour.stops = null;
+  cellIndex = await getJSON('data/cells/index.json', null);
+  FAILED.delete('data/cells/index.json'); // まだ収集していないとき（404）は失敗扱いにしない
   renderAll();
   // 自動収集スポットは大きい（数 MB）ので最後に読み込む
   DATA.osm = await getJSON('data/osm_spots.json', []);

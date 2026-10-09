@@ -295,4 +295,9 @@ assert.deepStrictEqual(ids(rel.nearby), ['g1', 'm1']);       // 飲食は周辺�
 assert.deepStrictEqual(ids(rel.food), ['f1']);                // チェーン店は既定で除く、1km 以内
 assert.deepStrictEqual(ids(Lib.relatedSpots(base, pool, { limit: 5, chains: true }).food), ['c1', 'f1']);
 
+// 関連スポット: 同じ名前（自動収集と立ち寄り候補の重複など）は 1 件に
+const dupPool = [base, { id: 'x1', name: '湯守の里', lat: 35.651, lon: 139.551, genres: ['onsen'] },
+  { id: 'x2', name: '湯守の里', lat: 35.6511, lon: 139.5511, genres: ['onsen'] }];
+assert.deepStrictEqual(ids(Lib.relatedSpots(base, dupPool).nearby), ['x1']);
+
 console.log('lib: ALL PASS');

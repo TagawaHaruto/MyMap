@@ -3,7 +3,7 @@
 起点（初期設定：調布駅）から、関東の遊び場・観光地・乗り物スポット・博物館・植物園・寺社・温泉・絶景・ショッピング・イベント・ツーリングルートを探せるスマホ用 Web アプリ（PWA）です。AI や有料サービスは使わず、無料で動きます。
 
 ## できること
-- **スポット**（約 1 万 3 千件）：移動手段（電車・車・バイク・自転車）と時間、都県、方面（北・西など）、ジャンルで絞り込み。★厳選と⭐お気に入りを先頭に表示
+- **スポット**（観光スポット約 1 万 3 千件＋グルメ・史跡・宿・お土産・遊び 約 10 万件）：移動手段（電車・車・バイク・自転車）と時間、都県、方面（北・西など）、ジャンルで絞り込み。★厳選と⭐お気に入りを先頭に表示
 - **名前で検索**：ひらがな・カタカナ・全角半角の違いを無視（例：「じんだいじ」で深大寺）
 - **説明と写真**：「▼詳しく」で Wikipedia の説明と写真、なければ付近の写真（Wikimedia Commons）。Google マップで写真・口コミを見るボタンつき
 - **雨の日モード**：週末の天気を見て自動で ON（屋内のみ表示）
@@ -22,7 +22,8 @@
 ## スマホで使う（このリポジトリの持ち主）
 1. **リポジトリを公開にする**：GitHub のリポジトリ画面 → **Settings → General** の一番下 **Danger Zone → Change visibility → Make public**。
    - 無料プランの GitHub Pages は公開リポジトリでしか使えません。公開されるのはアプリとスポット・イベントのデータだけです（お気に入り・行った記録・トークンはスマホの中にだけ保存され、公開されません）。
-2. **Pages を有効にする**：**Settings → Pages** → Source を「Deploy from a branch」、Branch を `main` / `/ (root)` にして **Save**。1〜2 分で `https://<ユーザー名>.github.io/<リポジトリ名>/` が開けるようになります。
+2. **Pages を有効にする**：**Settings → Pages** → Source を「Deploy from a branch」、Branch を **`gh-pages`** / `/ (root)` にして **Save**。1〜2 分で `https://<ユーザー名>.github.io/<リポジトリ名>/` が開けるようになります。
+   - `gh-pages` は Actions が「アプリ＋最新のデータ」を組み立てて毎回上書きする公開用のブランチです（約10万件のデータを `main` の履歴に積まないため）。`main` を更新すると自動で作り直されます。
 3. **スマホで開いてホーム画面に追加**
    - iPhone（Safari）：共有ボタン（□↑）→「ホーム画面に追加」
    - Android（Chrome）：右上の ⋮ →「ホーム画面に追加」または「アプリをインストール」
@@ -48,7 +49,7 @@
 
 ## データについて
 - `data/spots.json`・`data/touring.json`・`data/scenic_roads.json`：手作業で選んだスポット・ツーリング目的地・おすすめの道。自由に追加・編集できます。
-- `data/osm_spots.json`・`data/pois.json`：OpenStreetMap から週 1 回自動収集。料金や駐車場の情報はありません。
+- `data/osm_spots.json`・`data/pois.json`・`data/cells/`（グルメなどを約 25km 四方の升目ごとに分けたもの）：OpenStreetMap から週 1 回自動収集。料金や駐車場の情報はありません。これらは `gh-pages` にだけ置かれます。
 - `data/events.json`・`data/status.json`：自動生成。手で編集しないでください。
 - `data/prefectures.json`：都県の判定用の境界（OpenStreetMap を簡略化したもの）。関東周辺の 10 都県のみ。
 - 出典：地図・スポットの一部 © OpenStreetMap contributors（ODbL）／ルート Valhalla (FOSSGIS)・OSRM／天気 Open-Meteo／説明・写真 Wikipedia・Wikimedia Commons（各ページのライセンス）。

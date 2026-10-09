@@ -2,3 +2,8 @@
 __pycache__/
 *.tmp
 .claude/
+data/events.json
+data/pois.json
+data/status.json
+data/osm_spots.json
+data/cells/

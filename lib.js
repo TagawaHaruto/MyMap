@@ -367,9 +367,11 @@ const Lib = (() => {
   // 「詳しく」の関連スポット: 似たもの（同じジャンル・30km 以内）、周辺（2km 以内・飲食以外）、近くの飲食（1km 以内）
   function relatedSpots(s, items, { limit = 5, chains = false } = {}) {
     const g0 = s.genres && s.genres[0];
-    const withD = [];
-    for (const x of items) {
-      if (x.id === s.id || x.name === s.name) continue;
+    const withD = [], names = new Set([norm(s.name)]);
+    for (const x of [...items].sort((a, b) => haversineKm(s, a) - haversineKm(s, b))) {
+      const n = norm(x.name);
+      if (x.id === s.id || names.has(n)) continue; // 同じ名前（データの重複）は近い 1 件だけ
+      names.add(n);
       const d = haversineKm(s, x);
       if (d <= 30) withD.push({ ...x, distKm: d });
     }

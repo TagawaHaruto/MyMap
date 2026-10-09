@@ -178,3 +178,10 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 .weather#weather { white-space: normal; line-height: 1.2; text-overflow: clip; text-align: center; padding: 2px 8px; }
 .filters .row { align-items: flex-start; }
 .filters .label { padding-top: 10px; }
+/* 関連スポット */
+.related h4 { margin: 10px 0 4px; font-size: var(--font-size-16); }
+.rel { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.rel li { overflow-wrap: anywhere; }
+.rel a { font-weight: var(--font-weight-700); }
+.rel .status { display: block; }
+.chips.wrap { flex-wrap: wrap; overflow: visible; }
