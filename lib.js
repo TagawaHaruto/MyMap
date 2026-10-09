@@ -294,7 +294,24 @@ const Lib = (() => {
     return { lang: m[1], title: title.replace(/_/g, ' ') };
   }
   // Google マップでその場所を開く（写真・口コミは Google マップ側で見る。有料の Places API は使わない）
-  const gmapsSearchUrl = (s) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name)}`;
+  // 名前だけで検索すると同じ名前の別の場所に飛ぶので、住所（市区町村＋町名）を添える。
+  // 住所がまだわからないときは、その場所を中心にした地図で検索する
+  const gmapsSearchUrl = (s, addr) => (addr
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${s.name} ${addr}`)}`
+    : s.lat != null ? `https://www.google.com/maps/search/${encodeURIComponent(s.name)}/@${s.lat},${s.lon},17z`
+      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name)}`);
+  // スポットへの経路: 目的地を座標（「指定した場所」と表示される）でなく、施設名＋住所で渡す。住所がなければ座標
+  const gmapsPlaceDirUrl = (origin, s, mode = 'driving', addr) => (addr
+    ? `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lon}&destination=${encodeURIComponent(`${s.name} ${addr}`)}&travelmode=${mode}`
+    : gmapsDirUrl(origin, s, [], mode));
+  // 国土地理院の逆ジオコーダー（緯度経度 → 市区町村コード・町名）
+  const gsiReverseUrl = (s) => `https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat=${s.lat}&lon=${s.lon}`;
+  function parseGsiAddress(j, muni) {
+    const r = j && j.results;
+    const city = r && muni[String(Number(r.muniCd))];
+    if (!city) return null;
+    return city + (r.lv01Nm && r.lv01Nm !== '－' ? r.lv01Nm : '');
+  }
   // 目的地の検索: 国土地理院の地名・住所検索（無料・登録不要）
   const gsiSearchUrl = (q) => `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(q)}`;
   function parseGsi(j, limit = 8) {
@@ -406,7 +423,7 @@ const Lib = (() => {
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
     decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, toGpx,
-    wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gsiSearchUrl, parseGsi,
+    wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots };
 })();
 

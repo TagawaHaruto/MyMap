@@ -57,6 +57,41 @@ const dirName = (d) => (DATA.cfg && DATA.cfg.directionLabels && DATA.cfg.directi
 const fmtStamp = (ms) => { const d = new Date(ms); return `${d.getMonth() + 1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`; };
 
 // 週 1 回しか変わらないデータは 'no-cache'（ETag で再検証し、変わっていなければ 304 でほぼ通信しない）
+// ---- Google マップへのリンク: 同じ名前の別の場所に飛ばないよう「名前＋住所」で開く ----
+// 住所は国土地理院の逆ジオコーダーで調べ、端末に保存する（最大 500 件）
+const ADDR = new Map(Object.entries(store.get('addr') || {}));
+const addrKey = (s) => `${s.lat},${s.lon}`;
+let MUNI = null;
+async function addressOf(s) {
+  if (ADDR.has(addrKey(s))) return ADDR.get(addrKey(s));
+  MUNI = MUNI || await getJSON('data/muni.json', {}, 'default');
+  const j = await fetch(Lib.gsiReverseUrl(s), { signal: timeoutSignal(4000) }).then((r) => r.json());
+  const a = Lib.parseGsiAddress(j, MUNI);
+  if (a) {
+    ADDR.set(addrKey(s), a);
+    store.set('addr', Object.fromEntries([...ADDR].slice(-500)));
+  }
+  return a;
+}
+const gmUrl = (kind, s, addr) => (kind === 'dir'
+  ? Lib.gmapsPlaceDirUrl(DATA.cfg.origin, s, GMAP_MODE[state.mode], addr) : Lib.gmapsSearchUrl(s, addr));
+const gm = (s, kind = 'search') => `href="${esc(gmUrl(kind, s, ADDR.get(addrKey(s))))}" target="_blank" rel="noopener"
+  data-gm="${kind}" data-name="${esc(s.name)}" data-lat="${s.lat}" data-lon="${s.lon}"`;
+document.addEventListener('click', async (e) => {
+  const a = e.target.closest && e.target.closest('a[data-gm]');
+  if (!a || a.dataset.lat === 'undefined') return;
+  const s = { name: a.dataset.name, lat: +a.dataset.lat, lon: +a.dataset.lon };
+  if (ADDR.has(addrKey(s))) { a.href = gmUrl(a.dataset.gm, s, ADDR.get(addrKey(s))); return; }
+  // 住所を調べてから開く（先に空のタブを開いておかないと、ポップアップとして止められる）
+  e.preventDefault();
+  const w = window.open('', '_blank');
+  let addr = null;
+  try { addr = await addressOf(s); } catch { /* 圏外などは座標・地図の範囲で開く */ }
+  const url = gmUrl(a.dataset.gm, s, addr);
+  a.href = url;
+  if (w) w.location.href = url; else location.href = url;
+});
+
 async function getJSON(url, fallback, cache = 'no-cache') {
   try {
     const r = await fetch(url, { cache });
@@ -183,7 +218,7 @@ function spotCard(s) {
     ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
     <div class="info" hidden>
       <div class="actions">
-        <a class="btn" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, s, [], GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">地図で経路</a>
+        <a class="btn" ${gm(s, 'dir')}>地図で経路</a>
         ${s.poi ? '' : `<a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a>
         <a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X</a>`}
         ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
@@ -285,7 +320,7 @@ function popupHtml(s, v) {
     ${text ? `<p>${esc(text)}</p>` : ''}
     ${!v ? '<p class="hint">写真と説明を読み込み中…</p>' : v.failed ? '<p class="hint">写真と説明を読み込めませんでした（圏外の可能性）。</p>' : ''}
     ${v && v.summary && v.summary.page ? `<div class="credit">出典: <a href="${esc(v.summary.page)}" target="_blank" rel="noopener">Wikipedia</a></div>` : ''}
-    <a class="btn" href="${esc(Lib.gmapsSearchUrl(s))}" target="_blank" rel="noopener">Googleマップで写真・口コミを見る</a>
+    <a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a>
     <button type="button" class="btn ${picked ? '' : 'primary'} pop-pick" data-popup-pick="${esc(s.id)}">${picked ? '立ち寄りから外す' : '立ち寄りに追加'}</button>
   </div>`;
 }
@@ -322,7 +357,7 @@ async function fillRelated(el, s) {
     const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food', 'heritage', 'local'], s, 2));
     const rel = Lib.relatedSpots(s, pool, { limit: 5, chains: state.showChains });
     const list = (title, xs) => (xs.length ? `<h4>${title}</h4><ul class="rel">${xs.map((x) => `<li>
-      <a href="${esc(Lib.gmapsSearchUrl(x))}" target="_blank" rel="noopener">${(x.genres || []).map((g) => icon(GENRES[g] || '・')).join('')} ${esc(x.name)}</a>
+      <a ${gm(x)}>${(x.genres || []).map((g) => icon(GENRES[g] || '・')).join('')} ${esc(x.name)}</a>
       <span class="status">${x.distKm < 1 ? Math.round(x.distKm * 1000) + 'm' : x.distKm.toFixed(1) + 'km'}${x.note ? '・' + esc(x.note) : ''}</span></li>`).join('')}</ul>` : '');
     el.innerHTML = list('似たスポット', rel.similar) + list('周辺のスポット（2km以内）', rel.nearby)
       + list('近くのカフェ・食事（1km以内）', rel.food)
@@ -350,7 +385,7 @@ function infoHtml(s, v) {
     parts.push('<p class="hint">写真は見つかりませんでした。</p>');
   }
   if (v.failed) parts.push('<p class="hint">一部を読み込めませんでした（圏外の可能性があります）。電波の良い場所でもう一度開いてください。</p>');
-  parts.push(`<div class="actions"><a class="btn" href="${esc(Lib.gmapsSearchUrl(s))}" target="_blank" rel="noopener">Googleマップで写真・口コミを見る</a></div>`);
+  parts.push(`<div class="actions"><a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a></div>`);
   return parts.join('');
 }
 document.addEventListener('click', async (e) => {
