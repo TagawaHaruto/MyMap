@@ -53,7 +53,7 @@
 - `data/osm_spots.json`・`data/pois.json`・`data/cells/`（グルメなどを約 25km 四方の升目ごとに分けたもの）：OpenStreetMap から週 1 回自動収集。料金や駐車場の情報はありません。これらは `gh-pages` にだけ置かれます。
 - `data/events.json`・`data/status.json`：自動生成。手で編集しないでください。
 - `data/prefectures.json`：都県の判定用の境界（OpenStreetMap を簡略化したもの）。関東周辺の 10 都県のみ（それより外は「その他」）。
-- 出典：地図・スポットの一部 © OpenStreetMap contributors（ODbL）／ルート Valhalla (FOSSGIS)・OSRM／天気 Open-Meteo／説明・写真 Wikipedia・Wikimedia Commons（各ページのライセンス）。
+- 出典：地図・スポットの一部 © OpenStreetMap contributors（ODbL）／ルート Valhalla (FOSSGIS)・OSRM／天気 Open-Meteo／住所・目的地の検索 国土地理院（`data/muni.json` は市区町村コード表）／説明・写真 Wikipedia・Wikimedia Commons（各ページのライセンス）。
 - 移動時間は直線距離からの概算です。ずれる場合は `config.json` の `speedsKmh` を調整してください。
 
 ## 開発
