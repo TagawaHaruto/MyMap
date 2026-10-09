@@ -254,10 +254,14 @@ class OsmSpotTest(unittest.TestCase):
         self.assertIsNotNone(status['spots_at'])
 
     def test_refresh_spots_skips_when_fresh(self):
-        status = {'spots_at': '2026-10-05T00:00:00+09:00'}
+        status = {'spots_at': '2026-10-05T00:00:00+09:00', 'spots_kinds': [k for k, _ in collect.SPOT_QUERIES]}
         got = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                                     lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set())
         self.assertIsNone(got)
+        # 種類を増やした直後は、1 週間たっていなくても取り直す
+        status['spots_kinds'] = status['spots_kinds'][:-1]
+        self.assertIsNotNone(collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
+                                                   lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set(), sleep=lambda s: None))
 
 
 class OverpassRemarkTest(unittest.TestCase):
