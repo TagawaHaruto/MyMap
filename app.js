@@ -1,6 +1,6 @@
 // MyMap 画面ロジック。純粋な計算は lib.js（Lib）に置く。
 const GENRES = { play: '🎡遊び', sightseeing: '📷観光', shopping: '🛍買い物', vehicle: '🚗乗り物', museum: '🏛博物館',
-  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', simulator: '🎮シミュレーター', factory: '🏭工場見学',
+  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', simulator: '🎮シミュレーター', factory: '🏭工場見学', experience: '🎨体験',
   food: '🍴グルメ', heritage: '🏯史跡', lodging: '🏨宿', souvenir: '🛍お土産・直売', outdoor: '⚽遊び・アウトドア' };
 // これらのジャンルは件数が多いので、升目ごとのファイルを選んだときだけ読み込む（data/cells/<グループ>/<升目>.json）
 const GROUP_OF = { food: 'food', heritage: 'heritage', lodging: 'heritage', souvenir: 'local', outdoor: 'local' };
@@ -166,7 +166,7 @@ function spotCandidates() {
   }
   let all = DATA.spots.concat(DATA.osm, extra, cellsPart);
   if (!state.showChains) all = all.filter((s) => !s.chain);
-  if (state.walkinOnly && state.genres.has('factory')) all = all.filter((s) => s.walkin === true);
+  if (state.walkinOnly && (state.genres.has('factory') || state.genres.has('experience'))) all = all.filter((s) => s.walkin === true);
   return all;
 }
 const isCurated = (s) => !s.poi && !String(s.id).startsWith('osm:');
@@ -179,7 +179,7 @@ function spotCard(s) {
   return `<article class="card spot">
     <div class="spot-head"><h3>${isCurated(s) ? '<span title="厳選スポット">★</span> ' : ''}${icons} ${esc(s.name)}</h3>
       <div class="head-btns">${infoButton(s)}${s.poi ? '' : `<button type="button" class="icon fav" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>`}</div></div>
-    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${s.genres.includes('factory') ? (s.walkin ? '・<strong>当日参加OK</strong>' : '・要予約') : ''}</p>
+    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${'walkin' in s ? (s.walkin ? '・<strong>当日参加OK</strong>' : '・要予約') : ''}</p>
     ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
     <div class="info" hidden>
       <div class="actions">
@@ -221,7 +221,7 @@ function renderSpotList() {
   const failed = FAILED.has('data/spots.json');
   const groups = selectedGroups();
   const toggles = [
-    state.genres.has('factory') ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
+    (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
     groups.includes('food') ? `<button type="button" class="chip" id="t-chain" aria-pressed="${state.showChains}">チェーン店も表示</button>` : '',
   ].join('');
   const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';

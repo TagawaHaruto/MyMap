@@ -192,6 +192,15 @@ class ReviewFixTest(unittest.TestCase):
 
 
 class OsmSpotTest(unittest.TestCase):
+    def test_experience_genre(self):
+        g = lambda **t: collect.osm_genre({'name': 'x', **t})
+        self.assertEqual(g(leisure='escape_game')[:2], (['experience', 'play'], True))
+        self.assertEqual(g(leisure='track', sport='karting')[:2], (['experience', 'vehicle'], False))
+        self.assertEqual(g(leisure='sports_centre', sport='climbing')[:2], (['experience'], True))
+        self.assertEqual(g(craft='pottery'), (['experience'], True, '陶芸体験'))
+        self.assertEqual(collect.osm_genre({'name': '某いちご狩り園', 'landuse': 'farmland'})[0], ['experience', 'outdoor'])
+        self.assertIsNone(collect.osm_genre({'name': '田んぼ', 'landuse': 'farmland'}))
+
     def test_parse_osm_spots(self):
         spots = collect.parse_osm_spots(fx('overpass_spots.json'), exclude_names={'深大寺'})
         by = {s['name']: s for s in spots}
