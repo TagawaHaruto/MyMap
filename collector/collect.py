@@ -237,13 +237,26 @@ def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep):
     return out
 
 
-def overpass_kind(stmts, bb, n, parse, fetch, sleep):
-    """1 種類を n×n に分けて取得。1 つでも失敗したら例外。"""
+# Actions の制限時間（180 分）で打ち切られると何も公開されないので、この時刻を過ぎたら新しい問い合わせをしない
+# （残りの種類は前回分を使い、次の実行で取り直す）
+DEADLINE = time.time() + 140 * 60
+
+
+def overpass_kind(stmts, bb, n, parse, fetch, sleep, tries=3):
+    """1 種類を n×n に分けて取得。分けた 1 つずつ、混雑で失敗したら待って最大 tries 回まで試す。"""
     got = []
     for i, part in enumerate(grid(bb, n)):
-        if i:
-            sleep(5)
-        got += overpass_try(overpass_body(stmts, part), parse, fetch, sleep)
+        for t in range(tries):
+            if time.time() > DEADLINE:
+                raise TimeoutError('収集の制限時間を過ぎたので次の実行で取得')
+            if i or t:
+                sleep(5 if not t else 60 * t)
+            try:
+                got += overpass_try(overpass_body(stmts, part), parse, fetch, sleep)
+                break
+            except Exception:
+                if t + 1 == tries:
+                    raise
     return got
 
 

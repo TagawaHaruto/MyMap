@@ -247,13 +247,25 @@ class OsmSpotTest(unittest.TestCase):
         spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status, fake_fetch,
                                       dt.datetime(2026, 10, 8, tzinfo=collect.JST), old, set(), sleep=lambda s: None)
         # 失敗した種類は別サーバーで再試行し、最後にもう一度だけ試す。失敗した種類は取得済みにしない（次の実行で取り直す）
-        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) + 2 * len(collect.OVERPASS_URLS) - 1)
+        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) - 1 + 2 * 3 * len(collect.OVERPASS_URLS))  # 2 回目の試行 × 区画ごと 3 回 × サーバー
         self.assertNotIn('bath', status['spots_done'])
         self.assertIn('museum', status['spots_done'])
         self.assertEqual(len({u for u in urls if u}), len(collect.OVERPASS_URLS))
         self.assertIn('旧', [s['name'] for s in spots])
         self.assertIn('bath', status['spots_error'])
         self.assertIsNotNone(status['spots_at'])
+
+    def test_overpass_kind_retries_each_tile(self):
+        calls, waits = [], []
+
+        def fetch(url, data=None, timeout=None):
+            calls.append(data)
+            if len(calls) <= len(collect.OVERPASS_URLS):  # 最初の区画は全サーバーで 1 回失敗
+                raise OSError('504')
+            return '{"elements": []}'
+        got = collect.overpass_kind('nwr["amenity"="cafe"]["name"]', '(34.0,138.0,36.0,140.0)', 2, lambda t: [1], fetch, waits.append)
+        self.assertEqual(got, [1, 1, 1, 1])
+        self.assertIn(60, waits)
 
     def test_done_kinds_from_old_status(self):
         st = {'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],
