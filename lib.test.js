@@ -246,8 +246,24 @@ assert.deepStrictEqual(photos, [
 assert.deepStrictEqual(Lib.parseCommons({}), []);
 
 // Google マップで場所を開く（写真・口コミはそちらで見る。API は使わない）
+// 同じ名前の別の場所に飛ばないよう、その場所を中心にした地図で名前を検索する
 assert.strictEqual(Lib.gmapsSearchUrl({ name: '深大寺', lat: 35.67, lon: 139.55 }),
-  'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('深大寺'));
+  'https://www.google.com/maps/search/' + encodeURIComponent('深大寺') + '/@35.67,139.55,17z');
+assert.strictEqual(Lib.gmapsSearchUrl({ name: 'A/B' }), 'https://www.google.com/maps/search/?api=1&query=A%2FB');
+// 住所（市区町村＋町名）がわかれば「名前 住所」で検索する（同じ名前の別の場所に飛ばない）
+assert.strictEqual(Lib.gmapsSearchUrl({ name: '深大寺', lat: 35.67, lon: 139.55 }, '東京都調布市深大寺元町五丁目'),
+  'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('深大寺 東京都調布市深大寺元町五丁目'));
+// 経路: 目的地を「指定した場所（座標）」でなく施設名＋住所で渡す。住所がなければ座標
+assert.strictEqual(Lib.gmapsPlaceDirUrl({ lat: 35.65, lon: 139.54 }, { name: '深大寺', lat: 35.67, lon: 139.55 }, 'transit', '東京都調布市'),
+  'https://www.google.com/maps/dir/?api=1&origin=35.65,139.54&destination=' + encodeURIComponent('深大寺 東京都調布市') + '&travelmode=transit');
+assert.strictEqual(Lib.gmapsPlaceDirUrl({ lat: 1, lon: 2 }, { name: 'x', lat: 3, lon: 4 }, 'driving'),
+  Lib.gmapsDirUrl({ lat: 1, lon: 2 }, { lat: 3, lon: 4 }, [], 'driving'));
+// 国土地理院の逆ジオコーダーの結果 → 住所
+const MUNI = { 13208: '東京都調布市', 1101: '北海道札幌市中央区' };
+assert.strictEqual(Lib.parseGsiAddress({ results: { muniCd: '13208', lv01Nm: '深大寺元町五丁目' } }, MUNI), '東京都調布市深大寺元町五丁目');
+assert.strictEqual(Lib.parseGsiAddress({ results: { muniCd: '01101', lv01Nm: '－' } }, MUNI), '北海道札幌市中央区');
+assert.strictEqual(Lib.parseGsiAddress({ results: { muniCd: '99999', lv01Nm: 'x' } }, MUNI), null);
+assert.strictEqual(Lib.parseGsiAddress({}, MUNI), null);
 
 // ---- レビュー指摘への対応 ----
 // 一方通行の道は逆向きにしない
