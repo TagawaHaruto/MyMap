@@ -64,6 +64,14 @@ class DataTest(unittest.TestCase):
                 self.assertTrue(all(1 <= m <= 12 for m in r['closedMonths']))
                 self.assertTrue(r['url'].startswith('https://'))
 
+    def test_factory_tours(self):
+        tours = [s for s in load('data/spots.json') if 'factory' in s['genres']]
+        self.assertGreaterEqual(len(tours), 50)
+        for s in tours:
+            with self.subTest(s['id']):
+                self.assertIsInstance(s.get('walkin'), bool)   # 当日参加OK の絞り込みに使う
+                self.assertTrue(s.get('booking'))
+
     def test_touring(self):
         tours = load('data/touring.json')
         self.assertGreaterEqual(len(tours), 8)
