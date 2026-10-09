@@ -412,6 +412,155 @@ def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep,
     return out
 
 
+# ---- 約10万件のデータ（飲食・史跡・宿・お土産・遊び）: 0.25 度四方の升目ごとのファイルに分ける ----
+CELL = 4  # 1 度あたりの升目の数（lib.js の cellId と同じ）
+# (種類, グループ, Overpass の条件, 範囲を 2×2 に分けるか)。件数の多い種類は分けないと時間切れになる
+CELL_QUERIES = [
+    ('restaurant', 'food', 'nwr["amenity"="restaurant"]["name"]', True),
+    ('cafe', 'food', 'nwr["amenity"="cafe"]["name"]', True),
+    ('fastfood', 'food', 'nwr["amenity"="fast_food"]["name"]', True),
+    ('sweets', 'food', 'nwr["shop"~"^(bakery|confectionery|pastry)$"]["name"]', True),
+    ('historic', 'heritage', 'nwr["historic"~"^(castle|ruins|archaeological_site|monument|memorial|fort|manor|city_gate|tomb|building)$"]["name"]', True),
+    ('lodging', 'heritage', 'nwr["tourism"~"^(hotel|guest_house|hostel|motel)$"]["name"]', False),
+    ('souvenir', 'local', 'nwr["shop"~"^(gift|farm|seafood|wine|deli|tea|cheese)$"]["name"]', False),
+    ('market', 'local', 'nwr["amenity"="marketplace"]["name"]', False),
+    ('activity', 'local', 'nwr["leisure"~"^(sports_centre|fishing|bowling_alley|marina|horse_riding|ice_rink|golf_course)$"]["name"]', False),
+    ('camp', 'local', 'nwr["tourism"~"^(camp_site|caravan_site|picnic_site)$"]["name"]', False),
+]
+CUISINE = {'soba': 'そば', 'udon': 'うどん', 'ramen': 'ラーメン', 'sushi': '寿司', 'japanese': '和食', 'italian': 'イタリアン',
+           'chinese': '中華', 'french': 'フレンチ', 'indian': 'カレー', 'curry': 'カレー', 'yakiniku': '焼肉', 'barbecue': '焼肉',
+           'pizza': 'ピザ', 'steak_house': 'ステーキ', 'seafood': '海鮮', 'tempura': '天ぷら', 'tonkatsu': 'とんかつ',
+           'okonomiyaki': 'お好み焼き', 'korean': '韓国料理', 'burger': 'ハンバーガー', 'coffee_shop': 'カフェ'}
+HISTORIC = {'castle': '城跡', 'ruins': '遺跡', 'archaeological_site': '遺跡', 'monument': '記念碑', 'memorial': '記念碑',
+            'fort': '砦跡', 'manor': '屋敷', 'city_gate': '門', 'tomb': '古墳・墓所', 'building': '歴史的建造物'}
+INDOOR_LEISURE = ('sports_centre', 'bowling_alley', 'ice_rink')
+
+
+def cell_id(lat, lon):
+    return f'{math.floor(lat * CELL)}_{math.floor(lon * CELL)}'
+
+
+def group_genre(t):
+    """タグ → (グループ, genres, 屋内か, 表示名)。対象外は None。"""
+    amen, shop, tour, leis = t.get('amenity'), t.get('shop'), t.get('tourism'), t.get('leisure')
+    if amen == 'restaurant':
+        first = (t.get('cuisine') or '').split(';')[0].strip()
+        return 'food', ['food'], True, CUISINE.get(first, '飲食店')
+    if amen == 'cafe':
+        return 'food', ['food'], True, 'カフェ'
+    if amen == 'fast_food':
+        return 'food', ['food'], True, 'ファストフード'
+    if shop in ('bakery', 'confectionery', 'pastry'):
+        return 'food', ['food', 'shopping'], True, 'パン・お菓子'
+    if t.get('historic') in HISTORIC:
+        return 'heritage', ['heritage'], False, HISTORIC[t['historic']]
+    if tour in ('hotel', 'guest_house', 'hostel', 'motel'):
+        return 'heritage', ['lodging'], True, '宿'
+    if shop in ('gift', 'farm', 'seafood', 'wine', 'deli', 'tea', 'cheese'):
+        return 'local', ['souvenir'], True, '直売所' if shop == 'farm' else 'お土産・特産品'
+    if amen == 'marketplace':
+        return 'local', ['souvenir'], False, '市場'
+    if leis in ('sports_centre', 'fishing', 'bowling_alley', 'marina', 'horse_riding', 'ice_rink', 'golf_course'):
+        return 'local', ['outdoor'], leis in INDOOR_LEISURE, '遊び・スポーツ'
+    if tour in ('camp_site', 'caravan_site', 'picnic_site'):
+        return 'local', ['outdoor'], False, 'キャンプ・野外'
+    return None
+
+
+def parse_group_items(text, seen, kind=None):
+    out = []
+    for el in overpass_elements(text):
+        t = el.get('tags', {})
+        pos = el if 'lat' in el else el.get('center')
+        g = group_genre(t)
+        if not g or not t.get('name') or not pos:
+            continue
+        key = (t['name'], round(pos['lat'], 3), round(pos['lon'], 3))  # 建物と敷地など、近くの同名は 1 件に
+        if key in seen:
+            continue
+        seen.add(key)
+        site = t.get('website', '')
+        item = {'id': f"osm:{el['type']}:{el['id']}", 'name': t['name'], 'lat': round(pos['lat'], 5), 'lon': round(pos['lon'], 5),
+                'pref': norm_province(t.get('addr:province')), 'genres': g[1], 'indoor': g[2],
+                'url': site if site.startswith(('http://', 'https://')) else '', 'note': g[3], 'g': g[0], 'k': kind}
+        if t.get('wikipedia') and ':' in t['wikipedia']:
+            item['wp'] = t['wikipedia']
+        kana = t.get('name:ja-Hira') or t.get('name:ja_kana') or t.get('name:ja-Hrkt')
+        if kana:
+            item['kana'] = kana
+        if t.get('brand') or t.get('brand:wikidata'):  # チェーン店（画面では既定で隠す）
+            item['chain'] = True
+        out.append(item)
+    return out
+
+
+def quadrants(bb):
+    """'(s,w,n,e)' を 2×2 の 4 つに分ける（件数の多い種類の時間切れ対策）。"""
+    s, w, n, e = (float(x) for x in bb.strip('()').split(','))
+    ms, mw = (s + n) / 2, (w + e) / 2
+    return [f'({a:.3f},{b:.3f},{c:.3f},{d:.3f})' for a, c in ((s, ms), (ms, n)) for b, d in ((w, mw), (mw, e))]
+
+
+def refresh_cells(cfg, status, fetch, now, old, sleep=time.sleep):
+    """週 1 回だけ取り直し、{グループ: {升目: [項目]}} を返す。失敗した種類は前回分を残す。取り直さないときは None。"""
+    last = status.get('cells_at')
+    if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7):
+        return None
+    bb = bbox(cfg['origin'], cfg['poiRadiusKm'])
+    seen, items, errors = set(), [], []
+    first = True
+    for kind, group, stmt, split in CELL_QUERIES:
+        got = []
+        try:
+            for part in (quadrants(bb) if split else [bb]):
+                if not first:
+                    sleep(5)  # Overpass への配慮
+                first = False
+                got += overpass_try(overpass_body(stmt, part), lambda text: parse_group_items(text, seen, kind), fetch, sleep)
+            items += got
+        except Exception as err:
+            errors.append(f'{kind}: {type(err).__name__}: {err}'[:160])
+            items += [x for x in old if x.get('k') == kind]
+    prepared = prep_prefectures(load_prefectures())
+    cells = {}
+    for x in items:
+        x['pref'] = pref_of(x['lat'], x['lon'], prepared) or x.get('pref')
+        cells.setdefault(x['g'], {}).setdefault(cell_id(x['lat'], x['lon']), []).append(x)
+    status['cells_at'] = now.isoformat(timespec='seconds')
+    status['cells_error'] = ' / '.join(errors) or None
+    if errors:
+        print(f"[cells] {status['cells_error']}", file=sys.stderr)
+    return cells
+
+
+def load_cells(root):
+    """前回の升目ファイルをすべて読み込む（失敗した種類を前回分で埋めるため）。"""
+    out = []
+    base = os.path.join(root, 'cells')
+    for group in os.listdir(base) if os.path.isdir(base) else []:
+        gdir = os.path.join(base, group)
+        if os.path.isdir(gdir):
+            for name in os.listdir(gdir):
+                if name.endswith('.json'):
+                    out += load(os.path.join(gdir, name), [])
+    return out
+
+
+def save_cells(root, cells):
+    import shutil
+    base = os.path.join(root, 'cells')
+    if os.path.isdir(base):
+        shutil.rmtree(base)  # 消えた升目のファイルを残さない
+    index = {}
+    for group, by_cell in cells.items():
+        os.makedirs(os.path.join(base, group), exist_ok=True)
+        for cid, xs in by_cell.items():
+            save(os.path.join(base, group, f'{cid}.json'), xs, compact=True)
+            index.setdefault(group, {})[cid] = len(xs)
+    save(os.path.join(base, 'index.json'), index)
+    return sum(sum(v.values()) for v in index.values())
+
+
 # ---- 取得と集約 ----
 
 def source_pages(src, today, months):
@@ -542,6 +691,9 @@ def main():
         save(os.path.join(DATA, 'pois.json'), pois)
         print(f'pois: {len(pois)}')
     curated = {s['name'] for s in load(os.path.join(DATA, 'spots.json'), [])}
+    cells = refresh_cells(cfg, status, fetch, dt.datetime.now(JST), load_cells(DATA))
+    if cells is not None:
+        print(f'cells: {save_cells(DATA, cells)}')
     spots = refresh_spots(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'osm_spots.json'), []), curated)
     if spots is not None:
         save(os.path.join(DATA, 'osm_spots.json'), spots, compact=True)

@@ -358,5 +358,53 @@ class IndoorTest(unittest.TestCase):
         self.assertNotIn(('センター', True), collect.INDOOR_WORDS)
 
 
+class CellTest(unittest.TestCase):
+    def test_cell_id_matches_lib(self):
+        self.assertEqual(collect.cell_id(35.6518, 139.544), '142_558')
+        self.assertEqual(collect.cell_id(-0.1, -0.1), '-1_-1')
+
+    def test_parse_group_items(self):
+        seen = set()
+        items = collect.parse_group_items(fx('overpass_cells.json'), seen)
+        by = {s['name']: s for s in items}
+        self.assertEqual(len(items), 8)                  # 名前なし 1 件・近くの同名 1 件を除く
+        self.assertEqual((by['深大寺そば 玉乃屋']['genres'], by['深大寺そば 玉乃屋']['note']), (['food'], 'そば'))
+        self.assertIs(by['マクドナルド 調布店']['chain'], True)
+        self.assertNotIn('chain', by['森のカフェ'])
+        self.assertEqual((by['森のカフェ']['note'], by['森のカフェ']['indoor'], by['森のカフェ']['url']), ('カフェ', True, 'https://cafe.example.jp/'))
+        self.assertEqual((by['八王子城跡']['genres'], by['八王子城跡']['note'], by['八王子城跡']['wp']), (['heritage'], '城跡', 'ja:八王子城'))
+        self.assertEqual(by['道志の湯宿']['genres'], ['lodging'])
+        self.assertEqual((by['朝採り直売所']['genres'], by['朝採り直売所']['indoor']), (['souvenir'], True))
+        self.assertEqual((by['相模湖ボウル']['genres'], by['相模湖ボウル']['indoor']), (['outdoor'], True))
+        self.assertEqual((by['湖畔キャンプ場']['genres'], by['湖畔キャンプ場']['indoor']), (['outdoor'], False))
+        self.assertEqual({s['g'] for s in items}, {'food', 'heritage', 'local'})
+
+    def test_split_bbox_into_quadrants(self):
+        q = collect.quadrants('(34.0,138.0,36.0,140.0)')
+        self.assertEqual(q, ['(34.000,138.000,35.000,139.000)', '(34.000,139.000,35.000,140.000)',
+                             '(35.000,138.000,36.000,139.000)', '(35.000,139.000,36.000,140.000)'])
+
+    def test_refresh_cells_groups_and_keeps_old_on_failure(self):
+        old = [{'id': 'osm:node:900', 'name': '旧カフェ', 'lat': 35.6, 'lon': 139.5, 'genres': ['food'], 'g': 'food', 'k': 'cafe'}]
+        calls = []
+
+        def fetch(url, data=None, timeout=60):
+            body = urllib.parse.unquote_plus(data.decode())
+            calls.append(body)
+            if '"cafe"' in body:
+                raise OSError('504')
+            return fx('overpass_cells.json')
+
+        status = {}
+        cells = collect.refresh_cells(CFG, status, fetch, NOW, old, sleep=lambda s: None)
+        self.assertIn('旧カフェ', [x['name'] for x in cells['food'][collect.cell_id(35.6, 139.5)]])
+        self.assertIn('cafe', status['cells_error'])
+        self.assertIsNotNone(status['cells_at'])
+        # 同じ要素が複数の問い合わせに出ても 1 件
+        food_names = [x['name'] for v in cells['food'].values() for x in v]
+        self.assertEqual(food_names.count('深大寺そば 玉乃屋'), 1)
+        self.assertIsNone(collect.refresh_cells(CFG, {'cells_at': '2026-10-05T00:00:00+09:00'}, fetch, NOW, [], sleep=lambda s: None))
+
+
 if __name__ == '__main__':
     unittest.main()

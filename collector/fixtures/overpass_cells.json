@@ -1,0 +1,12 @@
+{"elements": [
+  {"type": "node", "id": 101, "lat": 35.66, "lon": 139.55, "tags": {"name": "深大寺そば 玉乃屋", "amenity": "restaurant", "cuisine": "soba"}},
+  {"type": "node", "id": 102, "lat": 35.6601, "lon": 139.5501, "tags": {"name": "深大寺そば 玉乃屋", "amenity": "restaurant"}},
+  {"type": "node", "id": 103, "lat": 35.70, "lon": 139.60, "tags": {"name": "マクドナルド 調布店", "amenity": "fast_food", "brand": "マクドナルド"}},
+  {"type": "way", "id": 104, "center": {"lat": 35.40, "lon": 139.20}, "tags": {"name": "森のカフェ", "amenity": "cafe", "website": "https://cafe.example.jp/"}},
+  {"type": "node", "id": 105, "lat": 35.67, "lon": 139.56, "tags": {"amenity": "cafe"}},
+  {"type": "node", "id": 106, "lat": 35.62, "lon": 139.30, "tags": {"name": "八王子城跡", "historic": "castle", "wikipedia": "ja:八王子城"}},
+  {"type": "node", "id": 107, "lat": 35.50, "lon": 139.00, "tags": {"name": "道志の湯宿", "tourism": "guest_house"}},
+  {"type": "node", "id": 108, "lat": 35.30, "lon": 139.10, "tags": {"name": "朝採り直売所", "shop": "farm"}},
+  {"type": "node", "id": 109, "lat": 35.31, "lon": 139.11, "tags": {"name": "相模湖ボウル", "leisure": "bowling_alley"}},
+  {"type": "node", "id": 110, "lat": 35.32, "lon": 139.12, "tags": {"name": "湖畔キャンプ場", "tourism": "camp_site"}}
+]}
