@@ -72,6 +72,12 @@ class DataTest(unittest.TestCase):
                 self.assertIsInstance(s.get('walkin'), bool)   # 当日参加OK の絞り込みに使う
                 self.assertTrue(s.get('booking'))
 
+    def test_experiences(self):
+        xs = [s for s in load('data/spots.json') if 'experience' in s['genres']]
+        self.assertGreaterEqual(len(xs), 60)
+        for s in xs:
+            self.assertIsInstance(s.get('walkin'), bool, s['id'])
+
     def test_touring(self):
         tours = load('data/touring.json')
         self.assertGreaterEqual(len(tours), 8)
