@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:11377747005","name":"松原荘","lat":35.61906,"lon":140.54098,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11377747006","name":"民宿旅館 白磯","lat":35.6204,"lon":140.54271,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11377747007","name":"山柄荘","lat":35.62016,"lon":140.54241,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11621550766","name":"川野荘","lat":35.60138,"lon":140.51622,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11621618891","name":"民宿 北島荘","lat":35.60316,"lon":140.51734,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13991102501","name":"House of Tailwaggers","lat":35.60879,"lon":140.52642,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"https://www.houseoftailwaggers.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:420549917","name":"蓮沼ガーデンハウス マリーノ","lat":35.59869,"lon":140.51564,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"http://marino.hasunuma.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10694298769","name":"かんぽの宿","lat":35.68806,"lon":140.65191,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"https://kamenoi-hotels.com/kujukuri/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:742079137","name":"ホテルサンモール","lat":35.72564,"lon":140.65894,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:915862173","name":"いいおか潮騒ホテル","lat":35.70297,"lon":140.71054,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"https://www.iioka-s718.net/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5890893668","name":"蓮沼村閉村記念碑","lat":35.60179,"lon":140.50121,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6853524546","name":"開拓記念碑","lat":35.60501,"lon":140.52262,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8507179489","name":"東日本大震災 旭市飯岡津波被災の碑","lat":35.70235,"lon":140.71143,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8507189963","name":"座頭市物語の碑","lat":35.70281,"lon":140.71019,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11462188596","name":"平和記念碑","lat":35.66219,"lon":140.50071,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11662986282","name":"庚申搭","lat":35.65937,"lon":140.50292,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

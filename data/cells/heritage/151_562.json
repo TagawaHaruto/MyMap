@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4741215630","name":"ホテルラビ","lat":37.96583,"lon":140.61614,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5114987231","name":"旅館しんゆ","lat":37.99067,"lon":140.56648,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5114990122","name":"河鹿荘","lat":37.9821,"lon":140.56213,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5466288954","name":"ベネシアンホテル白石蔵王","lat":37.99639,"lon":140.63343,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://venezian.jp","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8242290022","name":"白石湯沢温泉 やくせん","lat":37.93983,"lon":140.52299,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://yakusen.jp","note":"宿","g":"heritage","k":"lodging"}
+]

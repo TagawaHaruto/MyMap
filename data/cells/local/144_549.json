@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:6164766409","name":"Kiosk","lat":36.14125,"lon":137.2515,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6164766423","name":"三川屋本店","lat":36.14244,"lon":137.25909,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6164766464","name":"Blue Leaf","lat":36.14282,"lon":137.25536,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6164768196","name":"San ai handmade","lat":36.14232,"lon":137.25934,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10972119105","name":"舩坂酒造店","lat":36.14071,"lon":137.25966,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"http://funasaka-shozu.co.jp","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13683997793","name":"なべしま銘茶","lat":36.14431,"lon":137.25998,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13684085988","name":"swing HIDE TAKAYAMA","lat":36.14355,"lon":137.2599,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13914296592","name":"Boss","lat":36.15264,"lon":137.2621,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2291055192","name":"Jinyamae Morning Market","lat":36.1395,"lon":137.25912,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:2291055940","name":"宮川朝市","lat":36.14469,"lon":137.25785,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","wp":"ja:宮川朝市"},
+{"id":"osm:node:6164768207","name":"朝市","lat":36.13966,"lon":137.25824,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"}
+]

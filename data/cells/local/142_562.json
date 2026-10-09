@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5431131810","name":"物産館 喜太陽","lat":35.60178,"lon":140.50162,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:10588156963","name":"石田牧場","lat":35.63644,"lon":140.55474,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:10588168403","name":"鈴木屋水產","lat":35.64556,"lon":140.57775,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11377747011","name":"山本鮮魚店","lat":35.62344,"lon":140.54549,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9374917497","name":"なでしこファーム","lat":35.72603,"lon":140.65777,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9376085015","name":"マルイチ苺園","lat":35.70956,"lon":140.71995,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9386997901","name":"ピザウイリー","lat":35.72245,"lon":140.65811,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10692165179","name":"福福茶","lat":35.72211,"lon":140.6132,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11637869329","name":"無人野菜販売所","lat":35.65208,"lon":140.51153,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:762381039","name":"ふれあいパーク八日市場","lat":35.74,"lon":140.55819,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"http://fureaipark.jp/","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:13420335762","name":"千葉県東部中央市場","lat":35.71625,"lon":140.58446,"pref":"千葉","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:742079123","name":"旭青果市場","lat":35.72643,"lon":140.65926,"pref":"千葉","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:591621969","name":"蓮沼海浜公園 テニスガーデン","lat":35.60083,"lon":140.51774,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"http://tennis.hasunuma.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:685607826","name":"光B&G海洋センター","lat":35.6355,"lon":140.53142,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"https://www.town.yokoshibahikari.chiba.jp/shisetsu/undo/03.html","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:300342576","name":"旭ボール","lat":35.72139,"lon":140.65229,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:678808152","name":"旭市総合体育館","lat":35.72251,"lon":140.63125,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:732126308","name":"八日市場ドーム","lat":35.7079,"lon":140.56529,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"https://www.city.sosa.lg.jp/page/page001278.html","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

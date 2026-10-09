@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5367765499","name":"珠洲ビーチホテル","lat":37.44024,"lon":137.32675,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://suzu-beachhotel.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604135009","name":"民宿＆お食事 むろや","lat":37.44219,"lon":137.30831,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604135012","name":"民宿＆和風グリル 瀬戸","lat":37.42722,"lon":137.25232,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1236041375","name":"忠魂碑","lat":37.43102,"lon":137.25564,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1236240143","name":"戦没者慰霊塔","lat":37.44735,"lon":137.271,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

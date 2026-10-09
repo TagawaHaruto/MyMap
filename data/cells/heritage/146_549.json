@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5243968535","name":"旅館 もちだ","lat":36.58237,"lon":137.44484,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5243972199","name":"旅館 立山館","lat":36.58317,"lon":137.44435,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5244354695","name":"民宿 千寿荘","lat":36.58268,"lon":137.44564,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5770372275","name":"グリーンビュー立山","lat":36.58361,"lon":137.44341,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7682864623","name":"旅館 大岩館","lat":36.66167,"lon":137.3906,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7682864624","name":"旅館 だんごや","lat":36.6617,"lon":137.39082,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7682864625","name":"旅館 いとや","lat":36.66193,"lon":137.39044,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7682864626","name":"旅館 門前館","lat":36.66216,"lon":137.39019,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9588541738","name":"森の風立山","lat":36.57996,"lon":137.43571,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10127327057","name":"ホテルテトラリゾート立山国際","lat":36.57832,"lon":137.41554,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://tateyamakokusai.e-tetora.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10127330615","name":"松井山荘","lat":36.57541,"lon":137.43976,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8208646888","name":"國幣小社 雄山神社","lat":36.60801,"lon":137.31334,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8223784574","name":"立山開山御廟","lat":36.58299,"lon":137.39264,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8223793741","name":"立山大宮","lat":36.58338,"lon":137.39221,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8223793800","name":"秩父宮雍仁親王殿下御手植","lat":36.58235,"lon":137.39275,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8223793834","name":"雄山神社","lat":36.58189,"lon":137.39287,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979235","name":"紀念碑","lat":36.69899,"lon":137.25047,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10123054728","name":"播隆上人像","lat":36.56567,"lon":137.39315,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:339197637","name":"稚児塚古墳","lat":36.69272,"lon":137.31877,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

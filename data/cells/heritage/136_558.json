@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:369676332","name":"三宅島釣宿　新鼻荘","lat":34.05208,"lon":139.53128,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:371578265","name":"ペンション&ベーカリー 花海月","lat":34.12121,"lon":139.52738,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2125891572","name":"snapper","lat":34.11944,"lon":139.544,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4346644119","name":"民宿 千成荘","lat":34.06053,"lon":139.54597,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4346644120","name":"疫病除けの塔","lat":34.06086,"lon":139.54693,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:9438716774","name":"梅のや","lat":35.75339,"lon":140.77515,"pref":"千葉","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9438723420","name":"うさぎ","lat":35.75332,"lon":140.77624,"pref":"千葉","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12861786462","name":"プライムリブ","lat":35.75442,"lon":140.8104,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:way:264407684","name":"梅のや","lat":35.75506,"lon":140.80979,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:264407686","name":"やまこ庵波崎店","lat":35.75685,"lon":140.80393,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"}
+]

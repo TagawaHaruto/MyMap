@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5603024125","name":"まるはち食堂","lat":35.75985,"lon":137.31641,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7236618026","name":"水交園","lat":35.81142,"lon":137.45246,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:765755084","name":"合掌茶屋 (旧伊並家)","lat":35.80848,"lon":137.25028,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:766390132","name":"菅田庵","lat":35.80944,"lon":137.2506,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13242767361","name":"がんだて茶屋","lat":35.91383,"lon":137.32935,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:766792846","name":"萬古庵","lat":35.80783,"lon":137.2503,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

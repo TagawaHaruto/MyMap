@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5421706992","name":"日替わりシェフキッチン サラダボール","lat":34.47792,"lon":136.49101,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6794300585","name":"飯高グリーンランド","lat":34.4201,"lon":136.28852,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:13785724201","name":"つる太郎めん処","lat":34.42056,"lon":136.47904,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant"},
+{"id":"osm:node:8285648920","name":"スナックコーナー","lat":34.41449,"lon":136.45458,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

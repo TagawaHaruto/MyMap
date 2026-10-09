@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5865079903","name":"ナツキハウス","lat":35.27445,"lon":136.24249,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5865096688","name":"プロスペリティー馬場","lat":35.27801,"lon":136.24542,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5901193287","name":"彦根荘","lat":35.26646,"lon":136.22017,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13741828978","name":"lake villa chitose","lat":35.28496,"lon":136.24818,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:917885857","name":"かんぽの宿彦根","lat":35.28719,"lon":136.24945,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","chain":true},
+{"id":"osm:node:5598726331","name":"松原橋","lat":35.28305,"lon":136.24973,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10285294048","name":"琵琶湖周航の歌","lat":35.28564,"lon":136.2467,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10285356609","name":"松原寺","lat":35.284,"lon":136.24876,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1455052945","name":"善利組 服部家住宅","lat":35.26835,"lon":136.24994,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1455093099","name":"善利組 吉居家住宅","lat":35.26866,"lon":136.24999,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1455093112","name":"善利組 旧磯部家住宅","lat":35.26822,"lon":136.24957,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1455419507","name":"善利組 中居家住宅","lat":35.26849,"lon":136.24776,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1455421641","name":"善利組 旧戸塚家住宅","lat":35.26898,"lon":136.24834,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1455423746","name":"善利組 林家住宅","lat":35.26841,"lon":136.24738,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1462011359","name":"旧彦根藩足軽組屋敷 善利組 辻番所","lat":35.26814,"lon":136.2496,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2055694271","name":"Kojo-en","lat":36.73991,"lon":139.49215,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"http://www.kojoen.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4347743261","name":"国民宿舎サンレイク草木","lat":36.55389,"lon":139.38492,"pref":"群馬","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5552147521","name":"星野リゾート 界 日光","lat":36.73644,"lon":139.49667,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"https://hoshinoresorts.com/ja/hotels/kainikko/","note":"宿","g":"heritage","k":"lodging","wp":"ja:星野リゾート"},
+{"id":"osm:node:6433501929","name":"民宿  おかじん","lat":36.73423,"lon":139.49268,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6433502193","name":"旅籠なごみ","lat":36.73989,"lon":139.49342,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7818348608","name":"The Ritz-Carlton, Nikko","lat":36.73838,"lon":139.49769,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"https://www.ritzcarlton.com/en/hotels/japan/nikko","note":"宿","g":"heritage","k":"lodging","chain":true},
+{"id":"osm:node:12960663901","name":"ゆとりろ日光","lat":36.74111,"lon":139.49007,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"https://yutorelo-nikko.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13190075825","name":"Nikko Beans Hotel","lat":36.73294,"lon":139.49263,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:345637361","name":"国民宿舎かじか荘","lat":36.65509,"lon":139.4088,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:900361679","name":"なごみ","lat":36.74034,"lon":139.49381,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4111284078","name":"足尾銅山精錬所跡","lat":36.66805,"lon":139.44316,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4163094474","name":"中国人殉難烈士慰霊塔","lat":36.65433,"lon":139.41123,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4163099553","name":"足尾朝鮮人強制連行犠牲者追悼碑","lat":36.63455,"lon":139.42103,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6703590553","name":"明治天皇御製碑","lat":36.73923,"lon":139.49668,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","kana":"めいじてんのうごせいいしぶみ"},
+{"id":"osm:node:6741813578","name":"足尾町道路元標","lat":36.63679,"lon":139.44107,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6741813581","name":"足字銭　鋳銭座跡","lat":36.63747,"lon":139.44205,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6741813582","name":"鋳銭座の碑","lat":36.63747,"lon":139.44202,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8614958570","name":"防空監視硝跡","lat":36.52283,"lon":139.3118,"pref":"群馬","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

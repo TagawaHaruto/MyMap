@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2120259085","name":"天野屋","lat":35.44081,"lon":137.81804,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2120259090","name":"中村陶苑","lat":35.44086,"lon":137.81709,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2120259091","name":"キクヤ","lat":35.44053,"lon":137.81723,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7990584897","name":"郷土物産品とお漬物のお土産コーナー","lat":35.41706,"lon":137.79465,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9085660067","name":"原野農園　無人販売","lat":35.4933,"lon":137.76196,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9994807334","name":"知久平地産直売所","lat":35.4767,"lon":137.8489,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1026628406","name":"ドライブイン酒蔵","lat":35.49987,"lon":137.7999,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:776939208","name":"県営飯田弓道場","lat":35.48382,"lon":137.80049,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:788099757","name":"沢城湖ハートランド牧場","lat":35.49862,"lon":137.75916,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://sawashiroko.jimdofree.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:882202805","name":"飯田CC","lat":35.39193,"lon":137.79908,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:903629990","name":"喬木カントリークラブ","lat":35.49883,"lon":137.90315,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:956474258","name":"飯田市南信濃Ｂ＆Ｇ海洋センター","lat":35.31667,"lon":137.92485,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:1674111752","name":"スーパーおおさわ","lat":35.78498,"lon":137.69381,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1674111754","name":"フードセンターしょうきち駅前店","lat":35.78382,"lon":137.69405,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1675224744","name":"池田木材展示場","lat":35.78348,"lon":137.69087,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1675224749","name":"ひのき精香駅前店","lat":35.78375,"lon":137.69426,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4060878089","name":"覚明堂","lat":35.84401,"lon":137.69288,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7236824760","name":"日野百草本舗 王滝店","lat":35.82899,"lon":137.60954,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12802029766","name":"tubunone","lat":35.84901,"lon":137.69513,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:901800282","name":"木曽市場","lat":35.81714,"lon":137.68238,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13014751601","name":"Local farmer market (unmanned)","lat":35.92962,"lon":137.57998,"pref":"長野","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:633023018","name":"日野百草本舗 里宮店","lat":35.85048,"lon":137.61504,"pref":"長野","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3640133093","name":"日義スポーツ公園","lat":35.87595,"lon":137.74747,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:12104289964","name":"寿屋","lat":35.91722,"lon":136.24077,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8264503015","name":"比翼の丘 相聞歌碑","lat":35.88537,"lon":136.23761,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8264503023","name":"池のほとりの 相聞歌碑","lat":35.88582,"lon":136.23719,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8264615643","name":"味真野茶揉み歌","lat":35.88522,"lon":136.23865,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8280456493","name":"福井鉄道南越線 五分市駅跡","lat":35.89837,"lon":136.22617,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:五分市駅"},
+{"id":"osm:way:888915194","name":"旧谷口家住宅","lat":35.88521,"lon":136.23898,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"}
+]

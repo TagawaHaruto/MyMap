@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4516639493","name":"多幸八","lat":35.57967,"lon":137.18807,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:4518079522","name":"ミキランカ","lat":35.5804,"lon":137.19054,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant"},
+{"id":"osm:way:453669174","name":"寿し幸","lat":35.58033,"lon":137.19041,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:722840640","name":"杉の子","lat":35.59305,"lon":137.08379,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:722840642","name":"こぶしの里","lat":35.59239,"lon":137.08487,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6175364389","name":"レストランひざん","lat":35.66113,"lon":137.1559,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4516574491","name":"カフェときどき庵","lat":35.58155,"lon":137.18795,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:453669176","name":"ポパイ","lat":35.58041,"lon":137.19037,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4071103964","name":"喫茶カーコ","lat":35.73817,"lon":137.00861,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1191601218","name":"cafeあおやぎ","lat":35.51982,"lon":137.19088,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2319141942","name":"峠のうどん屋 藤屋","lat":36.11444,"lon":138.72241,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:4373094405","name":"Chitoseya Restaurant","lat":36.16871,"lon":138.72841,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11668498834","name":"おかた茶屋","lat":36.23414,"lon":138.73034,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12387410579","name":"秀山中華レストラン","lat":36.22708,"lon":138.53912,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13087475071","name":"Tienda de postres - 房月堂南牧本店","lat":36.16847,"lon":138.72816,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1255173511","name":"ラーメンショップ 下仁田店","lat":36.24137,"lon":138.71517,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:1255174218","name":"大竹食堂","lat":36.23904,"lon":138.67494,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1255174219","name":"茂木ドライブイン","lat":36.23866,"lon":138.69025,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4803074921","name":"コーヒー・軽食","lat":36.08758,"lon":138.72436,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13087475081","name":"なんもく村のちょっとしたcafe","lat":36.15945,"lon":138.71485,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:487919687","name":"モリカフェ","lat":36.08765,"lon":138.72546,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1255173509","name":"思恋路","lat":36.23194,"lon":138.73415,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4374485532","name":"菓心処 信濃屋嘉助","lat":36.16779,"lon":138.72856,"pref":"群馬","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:way:682638720","name":"八幡館","lat":37.98683,"lon":138.34505,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:931284205","name":"ロハスの館 こがね荘","lat":37.99688,"lon":138.40649,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1171661699","name":"静海荘","lat":37.96787,"lon":138.34488,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1171661721","name":"ご縁の宿　伊藤屋","lat":37.96768,"lon":138.34661,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4346805290","name":"さくら亭","lat":37.99658,"lon":138.36945,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","kana":"サクラテイ"},
+{"id":"osm:node:9960670585","name":"金原宮司顕彰之碑","lat":37.85998,"lon":138.33087,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960670588","name":"末社 八幡宮","lat":37.85993,"lon":138.33092,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960676071","name":"度津神社御由緒","lat":37.85976,"lon":138.33047,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960676074","name":"佐渡一ノ宮 度津神社","lat":37.85973,"lon":138.33053,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960832990","name":"小木町道路元標","lat":37.81497,"lon":138.27727,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960845681","name":"お光の碑","lat":37.8083,"lon":138.26664,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11298963949","name":"関川八百吉翁壽碑","lat":37.99841,"lon":138.32516,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11298963950","name":"齋川一壽先生壽碑","lat":37.99839,"lon":138.32516,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11484340584","name":"長塚節文学碑","lat":37.87302,"lon":138.37312,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11667814770","name":"山吹江治水碑","lat":37.98684,"lon":138.38311,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13067889548","name":"義民永井七郎左衛門追遠碑","lat":37.96025,"lon":138.3522,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:682372046","name":"真野御陵","lat":37.95266,"lon":138.35428,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:1039499478","name":"忠魂碑","lat":37.99477,"lon":138.4252,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1255112384","name":"順徳天皇皇女 慶子女王墓","lat":37.9868,"lon":138.38325,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:1255115635","name":"順徳天皇皇子 千歳宮墓","lat":37.9856,"lon":138.36391,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"}
+]

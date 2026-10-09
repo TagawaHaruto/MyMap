@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2119221761","name":"大島漁業協同組合","lat":34.78955,"lon":139.3923,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2123735346","name":"恵比寿屋土産店","lat":34.75198,"lon":139.35309,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2125070447","name":"あべもり","lat":34.75174,"lon":139.35335,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2146142269","name":"大島マリンショップ","lat":34.75193,"lon":139.35268,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5235751630","name":"大屋売店","lat":34.78947,"lon":139.39215,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2120255328","name":"海市場","lat":34.75007,"lon":139.35358,"pref":"東京","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:201845458","name":"大島ゴルフクラブ","lat":34.78958,"lon":139.38174,"pref":"東京","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4778013271","name":"しんすい庵","lat":36.59215,"lon":140.42078,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:5994588439","name":"幸楽苑","lat":36.532,"lon":140.42371,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6288103860","name":"ばんどう太郎","lat":36.537,"lon":140.41744,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:6288109585","name":"台湾料理 四季紅","lat":36.53688,"lon":140.41655,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:6288109591","name":"伝丸","lat":36.53946,"lon":140.41197,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6288109596","name":"中国飯店","lat":36.53864,"lon":140.41314,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:11927235178","name":"artisan アーティザン水府","lat":36.63968,"lon":140.48629,"pref":"茨城","genres":["food"],"indoor":true,"url":"https://sd-works.net/artisan/artisan_suifu/","note":"カフェ","g":"food","k":"restaurant"},
+{"id":"osm:node:12147907158","name":"レストラン北斗庵","lat":36.65574,"lon":140.27945,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12901475849","name":"常陸亭","lat":36.5972,"lon":140.41016,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:467320588","name":"ココス","lat":36.55996,"lon":140.40744,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ここす","chain":true},
+{"id":"osm:way:482903133","name":"そば園 佐竹 (Soba Garden Satake)","lat":36.51985,"lon":140.49707,"pref":"茨城","genres":["food"],"indoor":true,"url":"http://www.geocities.jp/sobaensatake/","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:485044467","name":"レストラン山ゆり","lat":36.63004,"lon":140.38255,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:671489578","name":"ガスト","lat":36.53505,"lon":140.42051,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:6288103821","name":"マクドナルド","lat":36.54073,"lon":140.41016,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:6288109602","name":"はま寿司","lat":36.5396,"lon":140.41248,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:12901475850","name":"麺屋げんき","lat":36.59715,"lon":140.41016,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:12901475851","name":"Cow Cow","lat":36.59712,"lon":140.41016,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

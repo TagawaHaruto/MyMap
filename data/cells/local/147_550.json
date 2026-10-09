@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5110325318","name":"長沢鮮魚店","lat":36.85884,"lon":137.5377,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5111953481","name":"いわさき","lat":36.81571,"lon":137.58317,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5606872724","name":"泉鮮魚店","lat":36.93764,"lon":137.5006,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6089900555","name":"寺田鮮魚店","lat":36.95286,"lon":137.5604,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:541730288","name":"竹中鮮魚店 Fish Store","lat":36.95137,"lon":137.56043,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:542790169","name":"Tea Store 松田松寿園","lat":36.95663,"lon":137.55853,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:542806537","name":"名越養鯉場","lat":36.9467,"lon":137.54616,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5235247844","name":"朝日町文化体育センター（サンリーナ）","lat":36.94442,"lon":137.56467,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5437447367","name":"入善町総合体育館","lat":36.924,"lon":137.50361,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5437447368","name":"入善町武道館","lat":36.92453,"lon":137.50397,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5473065615","name":"Nyuzencho Shakai Gymnastics 入善町社会体育館","lat":36.884,"lon":137.55142,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:570538264","name":"Tanayama Golf Club 棚山ゴルフ倶楽部","lat":36.88574,"lon":137.57287,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:573448504","name":"Asahihisuikaigan Park Golf Course あさひヒスイ海岸 パークゴルフ場","lat":36.97358,"lon":137.60554,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:758556675","name":"青野自然公園パークゴルフ場","lat":36.8878,"lon":137.50747,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:1131980405","name":"HottoMotto","lat":34.72015,"lon":136.49404,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:611823270","name":"津市営白山体育館","lat":34.65097,"lon":136.34086,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538545","name":"白山ヴィレッジゴルフコース","lat":34.6359,"lon":136.36214,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538546","name":"伊勢中川CC","lat":34.64086,"lon":136.37759,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538547","name":"富士OMGエクセレントクラブ 一志温泉コース","lat":34.63684,"lon":136.39399,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538548","name":"名松GC","lat":34.6171,"lon":136.3702,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538549","name":"三重フェニックスGC","lat":34.60619,"lon":136.41699,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538550","name":"西日本セブンスリーGC","lat":34.63045,"lon":136.42989,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538551","name":"一志GC","lat":34.65484,"lon":136.39899,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538552","name":"榊原GC","lat":34.66388,"lon":136.38541,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538553","name":"青山高原CC","lat":34.70032,"lon":136.39801,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876538554","name":"エクセレントGC 伊勢大鷲コース","lat":34.70012,"lon":136.41738,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1476110952","name":"ザ・サードプレースゴルフ俱楽部","lat":34.61131,"lon":136.29928,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:15850133","name":"津CC","lat":34.71763,"lon":136.42663,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3666702142","name":"国盗り","lat":35.16562,"lon":137.86997,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:3666702211","name":"みさくぼっち","lat":35.16293,"lon":137.86925,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:7080262249","name":"中村屋食堂","lat":35.16496,"lon":137.86742,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7080262251","name":"さかいや食堂","lat":35.16688,"lon":137.86782,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:528518208","name":"そば処「一休」","lat":35.01535,"lon":137.92283,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2570951454","name":"手打ちそば 一休","lat":35.01539,"lon":137.92284,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7080262235","name":"ライオンカフェ","lat":35.1634,"lon":137.86938,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:2569263280","name":"八幡屋製菓","lat":35.15973,"lon":137.86878,"pref":"静岡","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:2569263732","name":"大滝屋","lat":35.15804,"lon":137.86845,"pref":"静岡","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:7080262280","name":"小松屋製菓","lat":35.16766,"lon":137.86812,"pref":"静岡","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

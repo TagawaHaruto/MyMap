@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3991215816","name":"ひより堂あじいち","lat":36.93944,"lon":138.80559,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4378228594","name":"丸須製菓","lat":36.7655,"lon":138.96885,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11813695575","name":"茅平堂","lat":36.95062,"lon":138.79961,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1203861242","name":"湯沢みやげ店","lat":36.93361,"lon":138.8204,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"}
+]

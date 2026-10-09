@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:7878612720","name":"相馬双葉漁協 鹿島支所","lat":37.68119,"lon":141.01096,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:86098235","name":"牛島パークゴルフ場","lat":37.68311,"lon":141.00788,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

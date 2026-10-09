@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:4488731595","name":"焼肉　ソウル","lat":34.10081,"lon":139.4927,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2125891071","name":"CAFE691","lat":34.06688,"lon":139.48224,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

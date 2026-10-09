@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:409766150","name":"静心庵","lat":36.17647,"lon":136.90672,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4901651721","name":"フレンドハウスひるがの","lat":36.00518,"lon":136.89699,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7636807894","name":"Holiday House GREEN GARDEN","lat":36.00352,"lon":136.90364,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9137943667","name":"龍リゾート＆スパ","lat":36.00529,"lon":136.96191,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:972806689","name":"御母衣旅館","lat":36.14851,"lon":136.91102,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:294463765","name":"荘内桜","lat":36.09025,"lon":136.93946,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9008068196","name":"帰雲城址","lat":36.21012,"lon":136.89267,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:973228886","name":"旧遠山家住宅","lat":36.15535,"lon":136.90661,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"屋敷","g":"heritage","k":"historic"}
+]

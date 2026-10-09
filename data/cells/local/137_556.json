@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5008659069","name":"しきね　あまぁにいらのココロイキ！！","lat":34.32208,"lon":139.21933,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5008659087","name":"いのうえ","lat":34.32407,"lon":139.21933,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5008659114","name":"前岩商店","lat":34.32393,"lon":139.2193,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:512578914","name":"大浦スポーツ広場","lat":34.33261,"lon":139.2108,"pref":"東京","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

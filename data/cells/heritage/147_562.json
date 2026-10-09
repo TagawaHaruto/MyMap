@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4393437689","name":"田人おふくろの宿","lat":36.94161,"lon":140.66134,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12178141947","name":"プラトーさとみ","lat":36.79951,"lon":140.53548,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:relation:4460901","name":"神の山鉱・選炭場貯炭槽跡","lat":36.85231,"lon":140.74199,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

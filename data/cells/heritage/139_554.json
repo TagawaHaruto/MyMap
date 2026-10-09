@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2536014264","name":"旅館 潮騒","lat":34.99901,"lon":138.52028,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"https://www.shiosai.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:262802804","name":"羽衣ホテル","lat":34.99463,"lon":138.52185,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2684635802","name":"エレーヌジュグラリス記念碑","lat":34.99423,"lon":138.52231,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

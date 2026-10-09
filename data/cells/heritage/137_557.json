@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6709057885","name":"タデー","lat":34.3777,"lon":139.25683,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6709363985","name":"民宿マタデー","lat":34.37319,"lon":139.25698,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6753149696","name":"都道開設の碑","lat":34.38995,"lon":139.27618,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6753149701","name":"貫通石","lat":34.40799,"lon":139.27943,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

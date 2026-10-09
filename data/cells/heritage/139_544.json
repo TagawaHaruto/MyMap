@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3707767713","name":"旅籠屋伊賀店","lat":34.8345,"lon":136.22952,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:366798949","name":"ファミリーロッジ旅籠屋伊賀店","lat":34.83463,"lon":136.22938,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2422688525","name":"福地城","lat":34.83647,"lon":136.24802,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9197446078","name":"忠魂碑","lat":34.94389,"lon":136.23591,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

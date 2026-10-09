@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:7194617583","name":"飛騨屋","lat":35.80932,"lon":137.24194,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:10920737914","name":"このみラーメン","lat":35.80639,"lon":137.24021,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:13444741401","name":"Lavita e Bella","lat":35.80511,"lon":137.24341,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:14067321985","name":"うな昇","lat":35.80737,"lon":137.23989,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:764323605","name":"山びこ","lat":35.80799,"lon":137.24334,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:765755074","name":"市倉","lat":35.80797,"lon":137.24916,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:767172712","name":"ひさご","lat":35.80934,"lon":137.24407,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:770946715","name":"以和喜","lat":35.89185,"lon":137.20963,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:5038001191","name":"マルコ","lat":35.80541,"lon":137.23918,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6793235185","name":"思ひ出の味 下呂プリン","lat":35.81001,"lon":137.24097,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7194617584","name":"湯島庵","lat":35.80929,"lon":137.24205,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:14067321978","name":"お肉屋さんの下呂カリーパン","lat":35.80964,"lon":137.24163,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:764327799","name":"串けいちゃん屋","lat":35.80781,"lon":137.24336,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

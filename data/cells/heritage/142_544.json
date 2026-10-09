@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5517520460","name":"草野旅館","lat":35.50556,"lon":136.2237,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5517520461","name":"清泉閣","lat":35.50579,"lon":136.22319,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://seisenkaku.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5517520465","name":"木之本札ノ辻跡","lat":35.50567,"lon":136.22523,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7791641043","name":"隧道記念碑","lat":35.56023,"lon":136.23931,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7791662798","name":"式内 丹生神社","lat":35.56327,"lon":136.23197,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7793602201","name":"伊香郡木之本町道路元標","lat":35.50583,"lon":136.22523,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12421948718","name":"蓮如上人腰掛説法石","lat":35.50522,"lon":136.22637,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

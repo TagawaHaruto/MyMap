@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4327190910","name":"民宿しちみ","lat":37.26143,"lon":137.0904,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://notocho.com/shichimi.html","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4708832568","name":"Noto Isaribi YH","lat":37.3024,"lon":137.23515,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5255069621","name":"真脇ポーレポーレ","lat":37.30903,"lon":137.20846,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5255082134","name":"のとじ荘","lat":37.39844,"lon":137.24404,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11476165838","name":"農村宿大坊","lat":37.46004,"lon":137.20766,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11478408668","name":"能登観光ホテル","lat":37.46828,"lon":137.08801,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11478437969","name":"ホテル海楽荘","lat":37.46671,"lon":137.087,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604099453","name":"民宿 かね八","lat":37.30329,"lon":137.15232,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604099454","name":"ホテルのときんぷら","lat":37.31215,"lon":137.23486,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604099455","name":"国民宿舎 能登うしつ荘","lat":37.30133,"lon":137.17053,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604099456","name":"ラブロ恋路","lat":37.36776,"lon":137.24442,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604113668","name":"国民宿舎 能登やなぎだ荘","lat":37.36675,"lon":137.09043,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:604113669","name":"セミナーハウス山びこ","lat":37.36556,"lon":137.04261,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1126075793","name":"のと旅館","lat":37.30995,"lon":137.14702,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10297163935","name":"ごいた発祥の地宇出津","lat":37.30611,"lon":137.15027,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:543610096","name":"真脇遺跡","lat":37.3053,"lon":137.20822,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:真脇遺跡"}
+]

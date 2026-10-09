@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4470527217","name":"Auberge Hidanomori (オーベルジュ飛騨の森)","lat":36.13312,"lon":137.21714,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.hidanomori.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5706613023","name":"飛騨ともえホテル","lat":36.23587,"lon":137.1887,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.tomoe-jp.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6038971354","name":"Minshuku Sosuke","lat":36.13824,"lon":137.24769,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.irori-sosuke.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6164766483","name":"Kuretakeso","lat":36.14149,"lon":137.249,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6944120585","name":"Yamanami","lat":36.23649,"lon":137.18803,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10586157631","name":"villa-rizo","lat":36.2355,"lon":137.19072,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13253142701","name":"Hotel Associa Takayama Ressort","lat":36.12217,"lon":137.24379,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13833694844","name":"Hotel Kuretakeso","lat":36.14183,"lon":137.24969,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:177445363","name":"Takayama Green","lat":36.13772,"lon":137.2472,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.takayama-gh.com/","note":"宿","g":"heritage","k":"lodging","wp":"ja:高山グリーンホテル"},
+{"id":"osm:way:592156849","name":"ルートイングランティア飛騨高山","lat":36.12292,"lon":137.24995,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.hotel-grantia.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:655293933","name":"ファミリーロッジ旅籠屋飛騨高山店","lat":36.1346,"lon":137.24907,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:723980367","name":"桜ゲストハウス","lat":36.13571,"lon":137.24153,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:787929466","name":"飛騨古川スペランツァホテル","lat":36.23623,"lon":137.18936,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.hida-sp.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:787929467","name":"大村屋旅館","lat":36.23627,"lon":137.18969,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:294483263","name":"「ああ野麦峠」文学碑","lat":36.23359,"lon":137.1877,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1221929135","name":"Matsukura Castle","lat":36.12618,"lon":137.23404,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"en:Matsukura Castle (Toyama Prefecture)"}
+]

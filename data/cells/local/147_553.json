@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:1783271862","name":"ギフトランドモア中野店","lat":36.755,"lon":138.35242,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5909318079","name":"ふるさと豊田農産物直売所","lat":36.80058,"lon":138.32257,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:6189174386","name":"三久工芸","lat":36.92371,"lon":138.44656,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8905740526","name":"みさとみやげ店","lat":36.91688,"lon":138.44147,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9910688182","name":"小野りんご園","lat":36.75552,"lon":138.35744,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9966292269","name":"三九郎","lat":36.92361,"lon":138.44703,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"http://www.janis.or.jp/users/sankurou/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14098067096","name":"サンクゼールワイナリー本店","lat":36.76712,"lon":138.26249,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4225002828","name":"Sparena","lat":36.91853,"lon":138.4472,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:160695083","name":"中野武道館","lat":36.75783,"lon":138.38076,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:160695085","name":"中野市営体育館","lat":36.75762,"lon":138.38018,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:478551177","name":"飯山市スポーツ施設屋内運動場・ゲートボール場","lat":36.85103,"lon":138.35891,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:551002281","name":"中野市豊田B&G海洋センター","lat":36.77966,"lon":138.32365,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:790629714","name":"志賀高原カントリークラブ","lat":36.78937,"lon":138.41384,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

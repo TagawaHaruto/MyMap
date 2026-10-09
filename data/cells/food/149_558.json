@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:9784491912","name":"おふくろ","lat":37.45397,"lon":139.52266,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:244649777","name":"道の駅 奥会津かねやま","lat":37.47182,"lon":139.53026,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wp":"ja:道の駅奥会津かねやま"},
+{"id":"osm:node:3686851289","name":"玉梨とうふ茶屋","lat":37.40539,"lon":139.55163,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7173692223","name":"中野屋","lat":37.47078,"lon":139.64387,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7173692225","name":"双葉食堂","lat":37.47175,"lon":139.64686,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7173718833","name":"ログハウス どんぐり","lat":37.48292,"lon":139.66508,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10956344592","name":"食堂みしま","lat":37.46978,"lon":139.64235,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:244753751","name":"Karankoron Tourist Information Center","lat":37.47204,"lon":139.64647,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7173588901","name":"雪国","lat":37.47525,"lon":139.66049,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

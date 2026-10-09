@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:1242897548","name":"メイワサンピア","lat":37.81104,"lon":138.87746,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12487692545","name":"guest house　くちなし","lat":37.86777,"lon":138.96325,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13939598737","name":"ホテル寺尾","lat":37.88422,"lon":138.98483,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14019364781","name":"ハウス優","lat":37.87633,"lon":138.95268,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14030297072","name":"ゲストハウスORIORI","lat":37.87154,"lon":138.95031,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14055375746","name":"アランルージュ","lat":37.8643,"lon":138.94512,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1234218426","name":"旅館橋本屋","lat":37.85822,"lon":138.98503,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1234218428","name":"緒立温泉きらく荘","lat":37.85794,"lon":138.98473,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7560931370","name":"菖蒲塚古墳","lat":37.76685,"lon":138.86569,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:菖蒲塚古墳"},
+{"id":"osm:node:8454118751","name":"ホワイトハウス","lat":37.7919,"lon":138.82233,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10207039604","name":"工学部碑","lat":37.86724,"lon":138.93876,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10207370392","name":"旧制長岡高等学校の記念碑","lat":37.86616,"lon":138.93704,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10214580411","name":"ヒポクラテスの木","lat":37.86815,"lon":138.94614,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10214584229","name":"遠藤実顕彰碑","lat":37.85801,"lon":138.93659,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13963864119","name":"古俣岩吉の碑","lat":37.88368,"lon":138.96934,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13973585857","name":"忠魂碑","lat":37.87991,"lon":138.97343,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13982171297","name":"坂井輪の歴史の碑","lat":37.86748,"lon":138.96829,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14038419476","name":"新通南ノ礎新通土地区画整理事業記念碑","lat":37.86152,"lon":138.96073,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14141465904","name":"四十石遺跡","lat":37.83033,"lon":138.90668,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

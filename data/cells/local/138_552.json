@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:6344160988","name":"お茶の菊川城","lat":34.74797,"lon":138.08896,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"http://www.kikugawajo.jp/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6447124334","name":"九三共栄製茶","lat":34.72067,"lon":138.09279,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8826327195","name":"苺屋川口","lat":34.64984,"lon":138.07747,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:8826683629","name":"中山農園","lat":34.66379,"lon":138.01568,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:8827247898","name":"ティーファームジャパン","lat":34.74534,"lon":138.05236,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8837595311","name":"小笠農園","lat":34.69702,"lon":138.07983,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8855592759","name":"JA遠州夢咲 菊川茶直売所","lat":34.70027,"lon":138.09217,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8874196583","name":"ミナクル市 御前崎店","lat":34.64625,"lon":138.08806,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:432319777","name":"どんどん大東店","lat":34.67074,"lon":138.04502,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:433767373","name":"シャディ・サラダ館 大東店","lat":34.66996,"lon":138.0487,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:521474618","name":"しずなみよってけ市","lat":34.73619,"lon":138.22801,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4914575345","name":"海鮮なぶら市場","lat":34.60542,"lon":138.22343,"pref":"静岡","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4933867968","name":"浜岡ゴルフプラザ","lat":34.62963,"lon":138.13875,"pref":"静岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8869061923","name":"パロミノ・ポニークラブ","lat":34.63132,"lon":138.13927,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:482126742","name":"菊川市民総合体育館","lat":34.69421,"lon":138.09359,"pref":"静岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:482231616","name":"ビクトリースイミングスクール","lat":34.69017,"lon":138.09597,"pref":"静岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:693847821","name":"ミオス掛川カントリークラブ","lat":34.72521,"lon":138.03504,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:9669566","name":"静岡カントリークラブ浜岡コース＆ホテル","lat":34.65897,"lon":138.09894,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

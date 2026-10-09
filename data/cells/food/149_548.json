@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:604099449","name":"紅寿し","lat":37.30672,"lon":137.1496,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:604099451","name":"焼肉・居酒屋 あさひ","lat":37.30785,"lon":137.1483,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:604099452","name":"割烹 あたか","lat":37.30609,"lon":137.14967,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:604099457","name":"ファミリーレストラン 大家族","lat":37.35434,"lon":137.24172,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604099458","name":"レストラン花菖蒲ピッコロ","lat":37.33449,"lon":137.1383,"pref":"その他","genres":["food"],"indoor":true,"url":"https://yanagida.main.jp/shop.html","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604099460","name":"汝忽里ダイニング","lat":37.3523,"lon":137.23823,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604113667","name":"和味家 竹次郎","lat":37.36711,"lon":137.09485,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604113670","name":"夢一輪館","lat":37.33574,"lon":137.01449,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:604113671","name":"菓子処「いわずみ」の直営 とんとん家","lat":37.34611,"lon":137.06904,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604122391","name":"天然活魚 今新","lat":37.46088,"lon":137.07949,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604135013","name":"レストラン浜中","lat":37.41645,"lon":137.2458,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604135014","name":"魚料理 幸ずし","lat":37.3958,"lon":137.23967,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604135015","name":"割烹 滝見亭","lat":37.4664,"lon":137.08694,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:604135016","name":"茅葺民家のお食事処 庄屋の館","lat":37.46769,"lon":137.08737,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:616474754","name":"8番らーめん能登柳田店","lat":37.35042,"lon":137.10223,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:616474756","name":"七味ラーメン","lat":37.351,"lon":137.10183,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1236965875","name":"味の珍萬","lat":37.40153,"lon":137.23388,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:1237191268","name":"食堂　絹","lat":37.42476,"lon":137.08985,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

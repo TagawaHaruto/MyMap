@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11740366014","name":"民宿やまや","lat":37.25679,"lon":138.36132,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1209962287","name":"笠島シーサイドヴィラ","lat":37.33639,"lon":138.47218,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1210681707","name":"たわら屋敷","lat":37.32117,"lon":138.43776,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"屋敷","g":"heritage","k":"historic"}
+]

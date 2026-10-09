@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5008659073","name":"もんじゃ焼 佐助","lat":34.32372,"lon":139.21963,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5008659104","name":"中華 上山","lat":34.32433,"lon":139.21844,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5008659117","name":"サンバレー","lat":34.32364,"lon":139.22059,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5008659624","name":"中華 大師","lat":34.32443,"lon":139.21817,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5017829170","name":"こころ","lat":34.32406,"lon":139.22204,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5006832391","name":"島cafe","lat":34.32831,"lon":139.21533,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5017828500","name":"NINZ COFFEE","lat":34.32638,"lon":139.22087,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5151604021","name":"家","lat":36.51044,"lon":140.62711,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:106861802","name":"東横イン日立駅前","lat":36.59169,"lon":140.66031,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:305366785","name":"日立プラザ","lat":36.58944,"lon":140.65821,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:629000028","name":"ホテル 三幸園","lat":36.55735,"lon":140.62875,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"https://sankouen.biz/hitachi/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:682191783","name":"国民宿舎　鵜の岬","lat":36.66385,"lon":140.71414,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"https://www.unomisaki.com/","note":"宿","g":"heritage","k":"lodging","wp":"ja:国民宿舎鵜の岬"},
+{"id":"osm:way:829264933","name":"大菅温泉元湯旅館","lat":36.67198,"lon":140.52234,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:829264934","name":"里美屋温泉旅館","lat":36.67228,"lon":140.52204,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3296223443","name":"入四間道標","lat":36.63404,"lon":140.54662,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3328463024","name":"下孫停車場紀念碑","lat":36.55258,"lon":140.63233,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6052257513","name":"タービン","lat":36.59207,"lon":140.66128,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7737267118","name":"忠魂碑","lat":36.51278,"lon":140.58717,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7737513153","name":"水戸八景「太田落雁」","lat":36.54683,"lon":140.52367,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7737515704","name":"田渡城跡","lat":36.55755,"lon":140.54869,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8379960388","name":"久慈川改修記念碑","lat":36.50411,"lon":140.51646,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11088554209","name":"鮎川駅跡","lat":36.56648,"lon":140.64604,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11353297269","name":"戌亥碑","lat":36.71479,"lon":140.70379,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11357385473","name":"結び石","lat":36.71464,"lon":140.70392,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13871596812","name":"福聚寺跡慰霊碑","lat":36.58109,"lon":140.65576,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13871596813","name":"萬霊塔","lat":36.58209,"lon":140.65819,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

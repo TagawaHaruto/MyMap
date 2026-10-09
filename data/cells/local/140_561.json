@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:12958770510","name":"今井魚店","lat":35.14975,"lon":140.31567,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12958903467","name":"荻野鮮魚店","lat":35.15153,"lon":140.31361,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12958918072","name":"勝浦おみやげ","lat":35.15268,"lon":140.31276,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12995186772","name":"鵜原漁協売店","lat":35.13535,"lon":140.28422,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:697254644","name":"勝浦ゴルフ倶楽部","lat":35.22643,"lon":140.29576,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254645","name":"キャメルゴルフ＆ホテルリゾート","lat":35.20817,"lon":140.31397,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254646","name":"大原・御宿ゴルフコース","lat":35.21315,"lon":140.36317,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:773021206","name":"勝浦東急ゴルフコース","lat":35.15336,"lon":140.27733,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

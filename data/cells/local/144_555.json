@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4375465835","name":"上野村 物産販売所 観光案内所","lat":36.22393,"lon":138.80181,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:487737455","name":"こんにゃくパーク","lat":36.24372,"lon":138.92027,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"https://konnyaku-park.com/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:189098951","name":"関越ハイランドGC","lat":36.22828,"lon":138.95897,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:189098952","name":"関越ハイランドGC","lat":36.23274,"lon":138.95992,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:189098953","name":"関越ハイランドGC","lat":36.23527,"lon":138.96578,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:216505093","name":"グリーンパークCC","lat":36.21337,"lon":138.98952,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:220777080","name":"甘楽カントリークラブ","lat":36.23214,"lon":138.94487,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934335","name":"小幡郷ゴルフ倶楽部","lat":36.2189,"lon":138.92502,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

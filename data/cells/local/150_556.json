@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:7968776511","name":"田村鮮魚店","lat":37.69371,"lon":139.17813,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7968776512","name":"食品の沢田屋","lat":37.69411,"lon":139.17826,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7968853529","name":"うまか亭","lat":37.69288,"lon":139.17824,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:729432846","name":"ほっともっと","lat":37.74612,"lon":139.18158,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:944099666","name":"青柳鮮魚店","lat":37.65741,"lon":139.05973,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:944100271","name":"魚や樋口食品店","lat":37.65717,"lon":139.0606,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:947176943","name":"豊田屋","lat":37.65686,"lon":139.06034,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10014246071","name":"湯田上カントリークラブ","lat":37.72489,"lon":139.09074,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:362866884","name":"下条体育センター","lat":37.65335,"lon":139.04296,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:729106577","name":"村松体育館 さくらアリーナ","lat":37.69681,"lon":139.19001,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:851988629","name":"加茂市民体育館","lat":37.65757,"lon":139.05388,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:905259183","name":"勤労者体育センター","lat":37.65427,"lon":139.07644,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:905259184","name":"体操トレーニングセンター","lat":37.65486,"lon":139.07696,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:905259188","name":"温水プール","lat":37.66193,"lon":139.06219,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

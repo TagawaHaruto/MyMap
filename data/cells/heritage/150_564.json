@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:105498426","name":"蒲庭温泉","lat":37.7434,"lon":141.00288,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3698775374","name":"浦尻貝塚","lat":37.5195,"lon":141.02533,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:浦尻貝塚"},
+{"id":"osm:way:1286253804","name":"東日本大震災伝承地 萱浜地区","lat":37.62993,"lon":141.00688,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1286769859","name":"南萱浜慰霊碑","lat":37.6238,"lon":141.0077,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1286805723","name":"雫慰霊碑","lat":37.61389,"lon":141.01212,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

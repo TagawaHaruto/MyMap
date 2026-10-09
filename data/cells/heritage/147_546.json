@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1243847016","name":"河北亭","lat":36.7715,"lon":136.72109,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://kahoku-tei.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14233779743","name":"千里浜なぎさドライブウェイモニュメント","lat":36.83894,"lon":136.7496,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

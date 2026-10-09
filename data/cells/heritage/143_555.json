@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5791880064","name":"雲取お祭り山荘","lat":35.78586,"lon":138.96773,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"http://kumotoriomasturi.web.fc2.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5792037481","name":"源水館","lat":35.80485,"lon":138.82644,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5792037484","name":"民宿みはらし","lat":35.83878,"lon":138.8378,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6795366685","name":"Datoji","lat":35.96057,"lon":138.9827,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6830029422","name":"ゲストハウス錦","lat":35.9517,"lon":138.96265,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8559285737","name":"民宿広美荘","lat":35.99999,"lon":138.87009,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9076602741","name":"こまどり荘","lat":35.99417,"lon":138.80042,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1491396013","name":"Kaniwa","lat":35.94399,"lon":138.94097,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"https://www.kaniwabudokan.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1491396014","name":"Kanba Budokan","lat":35.94543,"lon":138.9412,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"https://www.kaniwabudokan.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5465246921","name":"大滝小学校三峰分校","lat":35.92728,"lon":138.92385,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5892614232","name":"田部重治レリーフ","lat":35.8607,"lon":138.94341,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8815666621","name":"中双里分校記念碑","lat":35.98646,"lon":138.8342,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8816838924","name":"秩父湖の碑","lat":35.94098,"lon":138.91057,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9020199467","name":"墜落事故殉職者慰霊碑","lat":35.91213,"lon":138.81827,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11294861087","name":"三峰ロープウェイ大輪駅跡","lat":35.9354,"lon":138.94583,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11294861088","name":"三峰ロープウェイ三峰山頂駅跡","lat":35.93141,"lon":138.92686,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:12538501803","name":"武尊","lat":35.92521,"lon":138.93183,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13789159445","name":"雁坂峠","lat":35.89341,"lon":138.78914,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14143834513","name":"釣橋小屋跡","lat":35.89099,"lon":138.83495,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

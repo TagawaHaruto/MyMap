@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:9992418617","name":"いせや(蕎麦)","lat":37.06792,"lon":139.52768,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10064984620","name":"かねまる食堂","lat":37.09312,"lon":139.5334,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3263393048","name":"オーロラ","lat":37.10717,"lon":139.61612,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3263396276","name":"ユングフラウ","lat":37.10977,"lon":139.61535,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3263404290","name":"カフェテリアハイランド","lat":37.11735,"lon":139.63153,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13124696406","name":"お休処 やすらぎ","lat":37.01425,"lon":139.72951,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13124696407","name":"こま草","lat":37.01365,"lon":139.72958,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1107265851","name":"会津らーめん処 みのや","lat":37.11119,"lon":139.71974,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:13124696409","name":"ひのえ屋","lat":37.01394,"lon":139.72995,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

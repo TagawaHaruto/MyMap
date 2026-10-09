@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5501180322","name":"春蘭の宿別館 海の家","lat":37.24773,"lon":137.08201,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5501180323","name":"農家民宿 陸","lat":37.24803,"lon":137.08272,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5501180332","name":"一本木旅館","lat":37.21875,"lon":137.06679,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5890226385","name":"松島荘","lat":37.12641,"lon":137.04594,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13293524019","name":"龍王閣","lat":37.08214,"lon":137.03877,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:572626102","name":"農家民宿ふるきみ","lat":37.23894,"lon":137.07191,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12533395481","name":"能登線列車脱線事故慰霊碑","lat":37.24218,"lon":137.07067,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

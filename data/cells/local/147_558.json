@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:2034694003","name":"金谷菓子本舗","lat":36.82399,"lon":139.71606,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2034694103","name":"一楽","lat":36.82427,"lon":139.71722,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2034694164","name":"おおあみ (Ooami)","lat":36.83366,"lon":139.71891,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2034694165","name":"すみ屋","lat":36.82439,"lon":139.71698,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3429730569","name":"メルカドⅠ","lat":36.80793,"lon":139.71137,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3429730622","name":"メルカドⅡ","lat":36.8085,"lon":139.71126,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6094073286","name":"ギャラリーなかむら","lat":36.75222,"lon":139.60668,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10132671505","name":"こだか","lat":36.82491,"lon":139.71768,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10132691604","name":"さかえや物産店","lat":36.82879,"lon":139.71888,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13411699896","name":"日光骨董村","lat":36.82965,"lon":139.71974,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13412657183","name":"Tashiro","lat":36.82424,"lon":139.71628,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13412730413","name":"たまり漬け","lat":36.77936,"lon":139.70585,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:192646739","name":"日光ろばたづけ","lat":36.77755,"lon":139.7066,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:342005924","name":"栗山観光ドライブイン","lat":36.8673,"lon":139.60512,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:424524467","name":"日光霧降カントリークラブ","lat":36.78182,"lon":139.60002,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1264483427","name":"Japan Total Club","lat":36.78067,"lon":139.60891,"pref":"栃木","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:16446567","name":"鬼怒川カントリークラブ","lat":36.77208,"lon":139.72253,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

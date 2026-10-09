@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5116628233","name":"小国食堂","lat":38.05501,"lon":139.75522,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5116628326","name":"金ちゃんラーメン 小国店","lat":38.05443,"lon":139.75413,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5116628522","name":"だるま","lat":38.05904,"lon":139.75117,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5116629136","name":"そば丸武","lat":38.05612,"lon":139.75609,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5119171822","name":"魚井","lat":38.04121,"lon":139.99258,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5119171829","name":"夕月","lat":38.04527,"lon":139.98956,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5119171834","name":"農家レストラン エルべ","lat":38.06211,"lon":139.99183,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5119184522","name":"来々軒","lat":38.03963,"lon":139.99269,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6077798848","name":"金目そばの館","lat":38.09254,"lon":139.80449,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6099228901","name":"峠の茶屋","lat":38.0174,"lon":139.90486,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13935268600","name":"田中商店","lat":38.05712,"lon":139.75308,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:5119171831","name":"香月","lat":38.05878,"lon":139.99316,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:5119184530","name":"菓子の丸屋","lat":38.06182,"lon":139.98953,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

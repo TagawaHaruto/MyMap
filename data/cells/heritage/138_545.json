@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:5826762796","name":"湯元榊原館","lat":34.70707,"lon":136.37492,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10035230837","name":"久居グリーンホテル","lat":34.671,"lon":136.4753,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.greens.co.jp/hisaigh/","note":"宿","g":"heritage","k":"lodging","chain":true},
+{"id":"osm:way:308377316","name":"ステーション ホテル AU","lat":34.67552,"lon":136.4749,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://www.hotel-au.jp/hisai/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:449367773","name":"ルートイン","lat":34.68349,"lon":136.47233,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:545811794","name":"プラザ洞津","lat":34.7161,"lon":136.49842,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:839170674","name":"美杉リゾートAnnex","lat":34.56086,"lon":136.26952,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1522338178","name":"メナード青山リゾート ホテルシャンベール霧生温泉","lat":34.59576,"lon":136.25442,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4459068331","name":"寶珠山大観音寺純金大観音像","lat":34.67834,"lon":136.35076,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5283243756","name":"八重田１０号墳","lat":34.56909,"lon":136.49561,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5965730854","name":"霧山城","lat":34.5233,"lon":136.28957,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:霧山城"},
+{"id":"osm:node:7252090922","name":"旧町名 古河","lat":34.71619,"lon":136.49987,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659654551","name":"花将軍 北畠顕家公","lat":34.51889,"lon":136.29892,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659695736","name":"名勝 史蹟北畠氏館阯","lat":34.51839,"lon":136.29921,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659695776","name":"ひかり降るごとく雨来て山櫻","lat":34.51799,"lon":136.29911,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659695793","name":"別格官幣社 北畠神社","lat":34.51777,"lon":136.29914,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659917790","name":"鐘撞堂阯","lat":34.52183,"lon":136.29038,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659917828","name":"北畠神社神饌田","lat":34.51803,"lon":136.29858,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659917851","name":"忠魂碑","lat":34.51949,"lon":136.29893,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7659917868","name":"鎮魂之碑","lat":34.51913,"lon":136.2989,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10572162889","name":"おともだち","lat":34.71685,"lon":136.49845,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13368722336","name":"丸ケ谷古墳群","lat":34.64734,"lon":136.41908,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

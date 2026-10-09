@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:924799296","name":"Hotel Granmirage (グランミラージュ）","lat":36.82606,"lon":137.41002,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5606870957","name":"ちとせ旅館","lat":36.9405,"lon":137.499,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5857180681","name":"ホテルアクア黒部","lat":36.87103,"lon":137.43559,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5992404746","name":"長谷川旅館","lat":36.87034,"lon":137.43511,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5992404747","name":"名水の里やすらぎの宿 芳の屋","lat":36.87035,"lon":137.43525,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5992959350","name":"黒部旅館","lat":36.87194,"lon":137.43875,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6004813149","name":"ベストイン魚津","lat":36.82533,"lon":137.41898,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6125639921","name":"Tanakaya 生地温泉 たなかや","lat":36.89882,"lon":137.4145,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6139809013","name":"ファミリーロッジ・旅籠屋黒部店","lat":36.88571,"lon":137.43988,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6173486420","name":"Kintarou Onsen 金太郎温泉 カルナの館","lat":36.83946,"lon":137.43672,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6173486421","name":"金太郎温泉 光風閣","lat":36.83815,"lon":137.437,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6221831578","name":"住定夢の館（黒部市定住体験施設）","lat":36.89107,"lon":137.41577,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8932814303","name":"渚泊魚津丸","lat":36.82083,"lon":137.39494,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:526587803","name":"APA HOTEL (魚津駅前)","lat":36.82726,"lon":137.40644,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:546362404","name":"じょうべのま遺跡","lat":36.95421,"lon":137.49497,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:じょうべのま遺跡"}
+]

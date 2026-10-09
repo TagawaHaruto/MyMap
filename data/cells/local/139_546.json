@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:3268393438","name":"桃太郎","lat":34.97169,"lon":136.61708,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6271317139","name":"大安商店","lat":34.75744,"lon":136.527,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13318654102","name":"（株）北山水産","lat":34.77796,"lon":136.54495,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:458962308","name":"ほっかほっか亭　白子店","lat":34.83477,"lon":136.586,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:459376868","name":"ほっかほっか亭　稲生店","lat":34.83876,"lon":136.56277,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:639096489","name":"魚茂","lat":34.8173,"lon":136.54805,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:838425472","name":"鈴鹿市漁協 白子港魚市場","lat":34.82743,"lon":136.59321,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:844881566","name":"千代崎港魚市場","lat":34.85508,"lon":136.61518,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:1920251701","name":"鈴鹿ニイミBOXING GYM","lat":34.85337,"lon":136.6073,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3809636816","name":"Isewan Marina","lat":34.99271,"lon":136.65427,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4833833795","name":"ダイヤゴルフガーデン","lat":34.94776,"lon":136.6191,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:443498288","name":"三重県営鈴鹿スポーツガーデン","lat":34.83725,"lon":136.51531,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:三重県営鈴鹿スポーツガーデン"},
+{"id":"osm:way:445268525","name":"鈴鹿グランドボウル","lat":34.87459,"lon":136.56135,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:510585891","name":"大プール","lat":34.89838,"lon":136.60046,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:510585892","name":"小プール","lat":34.8985,"lon":136.60025,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:565784632","name":"パシフィックスポーツクラブ四日市","lat":34.93759,"lon":136.57098,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:572356655","name":"オリンピアスポーツクラブ","lat":34.97757,"lon":136.61879,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:775428456","name":"鈴鹿サーキット","lat":34.84374,"lon":136.5324,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:鈴鹿サーキット"},
+{"id":"osm:way:841132927","name":"マリーナ河芸","lat":34.79839,"lon":136.56115,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://www.marina-kawage.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1456672664","name":"中央第２体育館","lat":34.95263,"lon":136.61396,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:11928617","name":"グレイスヒルズカントリー倶楽部","lat":34.9985,"lon":136.51305,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

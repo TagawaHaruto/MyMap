@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:4105660026","name":"菱屋 菅沼営業所","lat":36.82082,"lon":139.37982,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5237749923","name":"高原の駅 丸沼","lat":36.81614,"lon":139.32985,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8742073938","name":"レストランとんふぁん","lat":36.8144,"lon":139.33685,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9992417217","name":"福ちゃん食堂","lat":36.80678,"lon":139.42488,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13993858924","name":"レストランコラール","lat":36.79877,"lon":139.45288,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:416441771","name":"龍頭之茶屋","lat":36.75749,"lon":139.45154,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"りゅうずのちゃや"},
+{"id":"osm:way:416442000","name":"赤沼茶屋","lat":36.76932,"lon":139.45233,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:416442378","name":"菖蒲ケ浜レストハウス","lat":36.75225,"lon":139.45471,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:416442395","name":"レストラン奥日光","lat":36.75262,"lon":139.45398,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:416442875","name":"郭公","lat":36.77739,"lon":139.45102,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:416442876","name":"三本松茶屋","lat":36.77748,"lon":139.45122,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:416442877","name":"竜胆","lat":36.77787,"lon":139.45129,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:479261470","name":"長蔵小屋無料休憩所","lat":36.9273,"lon":139.3149,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:944213493","name":"高原の駅　丸沼","lat":36.81612,"lon":139.32975,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5237754825","name":"Cou 屋","lat":36.81159,"lon":139.32231,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11464499456","name":"COFFEE SPOT","lat":36.94034,"lon":139.25205,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"こーひーすぽっと"},
+{"id":"osm:node:11464499461","name":"ひげくま","lat":36.94055,"lon":139.25237,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:357211523","name":"山頂喫茶しらね","lat":36.80663,"lon":139.35554,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:416446828","name":"コーヒーハウスユーコン","lat":36.75346,"lon":139.46241,"pref":"栃木","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5237754826","name":"つるやの塩羊羮本舗","lat":36.8067,"lon":139.42426,"pref":"栃木","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

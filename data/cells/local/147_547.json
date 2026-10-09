@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4899038721","name":"氷見 きときと寿し","lat":36.82109,"lon":136.99449,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://kitokito.jp/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1504728389","name":"鮮魚樋口","lat":36.86251,"lon":136.98545,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6172768366","name":"おらっちゃの店","lat":36.88563,"lon":136.99397,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:6283391354","name":"農産物直売店","lat":36.85624,"lon":136.96878,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:5294954865","name":"氷見市Ｂ＆Ｇ海洋センター","lat":36.82975,"lon":136.97311,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:188345715","name":"羽咋市武道館","lat":36.8988,"lon":136.79,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:188345726","name":"羽咋体育館","lat":36.89831,"lon":136.79034,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:290086431","name":"中能登町運動公園","lat":36.97062,"lon":136.88957,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:547553247","name":"氷見市ふれあいスポーツセンター","lat":36.85272,"lon":136.97419,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:610748324","name":"鹿島体育センター","lat":36.96625,"lon":136.91648,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:623368831","name":"宝達志水総合体育館","lat":36.82648,"lon":136.75037,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:623372898","name":"宝達志水武道館","lat":36.8277,"lon":136.75,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:624967567","name":"宝達志水スポーツセンター","lat":36.85965,"lon":136.80452,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:778535344","name":"氷見カントリークラブ","lat":36.90812,"lon":136.99547,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1219109459","name":"滝港マリーナ","lat":36.92283,"lon":136.75749,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:滝港マリーナ"},
+{"id":"osm:way:1238596303","name":"スポーツセンターろくせい","lat":36.95659,"lon":136.86682,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:17616966","name":"千里浜カントリークラブ","lat":36.84739,"lon":136.75932,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

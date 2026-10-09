@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:1963085932","name":"ココス","lat":36.15458,"lon":140.52217,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:4744130922","name":"立花","lat":36.02679,"lon":140.63402,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:7681946085","name":"ファームコート苺一会","lat":36.12977,"lon":140.58272,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:945129246","name":"市丸食堂","lat":36.15244,"lon":140.51047,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1258448498","name":"肉のひらやま","lat":36.01628,"lon":140.53426,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:5595280021","name":"村田農園","lat":36.21272,"lon":140.52723,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1227251096","name":"CUP OF JOE","lat":36.16648,"lon":140.5263,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7681948285","name":"深作農園","lat":36.1298,"lon":140.58271,"pref":"茨城","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:1225327037","name":"さんて旬菜館","lat":36.08243,"lon":140.60123,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1227248077","name":"ファーマーズマーケットなだろう","lat":36.16254,"lon":140.50207,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:831743460","name":"ザ・ロイヤルゴルフクラブ","lat":36.09508,"lon":140.57773,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1231843056","name":"旭スポーツセンター","lat":36.24142,"lon":140.51104,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1277543100","name":"セントラルGC NEWコース","lat":36.04773,"lon":140.52146,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

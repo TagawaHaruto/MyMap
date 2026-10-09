@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4976789017","name":"下郷産農林産物直売所","lat":37.20366,"lon":139.91622,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:310366070","name":"まちの駅「南会津ふるさと物産館」","lat":37.20524,"lon":139.77739,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1175246851","name":"お不動様直売所","lat":37.22328,"lon":139.89553,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:424730099","name":"那須ゴルフ倶楽部","lat":37.0962,"lon":139.99284,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:627084962","name":"那須ハイランドゴルフクラブ","lat":37.07162,"lon":139.94176,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:627978954","name":"戸田ゴルフ練習場","lat":37.02776,"lon":139.97731,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:61929415","name":"岐阜国際CC","lat":35.5288,"lon":136.7582,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:641739643","name":"武芸川体育館","lat":35.53615,"lon":136.84197,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:642490019","name":"美濃市美濃体育館","lat":35.55873,"lon":136.92225,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:776232364","name":"岐阜セントフィールドCC","lat":35.52363,"lon":136.99611,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1473839925","name":"洞戸テニスコート","lat":35.60273,"lon":136.84272,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1548034337","name":"美濃関カントリークラブ","lat":35.50879,"lon":136.93777,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1548034338","name":"ぎふ美濃ゴルフ倶楽部","lat":35.54091,"lon":136.88798,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:10750784","name":"シーだ-ヒルズCC","lat":35.5359,"lon":136.96455,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

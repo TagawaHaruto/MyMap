@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2193750913","name":"スイス村ワイナリー","lat":36.32436,"lon":137.91648,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5738226391","name":"八面大王","lat":36.33848,"lon":137.90973,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6374676487","name":"刑務所作業製品展示場","lat":36.25773,"lon":137.97486,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12248621721","name":"浅間温泉わいわい広場","lat":36.26161,"lon":137.98713,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://www.yyhiroba.jp/","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:12270695094","name":"Charcuterie Ruz","lat":36.37506,"lon":137.84991,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://www.instagram.com/charcuterieruz/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12960382134","name":"夢農場売店","lat":36.4081,"lon":137.90982,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13375307454","name":"ハイジの里","lat":36.32406,"lon":137.91483,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5426700042","name":"スポーティプラザ","lat":36.42933,"lon":137.83111,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:489457034","name":"あづみ野広場マレットゴルフ場","lat":36.39056,"lon":137.87517,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://www.azm.janis.or.jp/~mallet/1-ikedamati-aduminohiroba-.htm","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:489758995","name":"アルプス広場マレットゴルフ場","lat":36.42433,"lon":137.87083,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://www.azm.janis.or.jp/~mallet/1-ikedamati-arupusuhiroba-.htm","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:493275172","name":"ラーラ松本","lat":36.26918,"lon":137.94074,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:ラーラ松本"},
+{"id":"osm:way:497314390","name":"あづみの乗馬苑","lat":36.33495,"lon":137.90775,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"http://www.azumino-jobaen.jdlibex.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:545390144","name":"池田町総合体育館","lat":36.41948,"lon":137.87354,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:546994945","name":"クラフトパークマレットゴルフ場","lat":36.38499,"lon":137.89775,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:550094707","name":"アピナボウル","lat":36.30655,"lon":137.90112,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:553879208","name":"体育館","lat":36.25906,"lon":137.89329,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:555032484","name":"マレットゴルフ場","lat":36.27501,"lon":137.921,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:555032485","name":"マレットゴルフ場","lat":36.27626,"lon":137.91956,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:601285945","name":"美須々屋内運動場","lat":36.25477,"lon":137.97667,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:956234810","name":"松本市立浅間温泉庭球公園","lat":36.25697,"lon":137.98882,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

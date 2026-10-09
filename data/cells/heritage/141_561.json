@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2176904937","name":"九十九里浜白子ユースホステル","lat":35.4517,"lon":140.39948,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"http://www13.plala.or.jp/shirako_yh/","note":"宿","g":"heritage","k":"lodging","wp":"ja:九十九里浜白子ユースホステル"},
+{"id":"osm:node:6377370593","name":"国民宿舎","lat":35.38137,"lon":140.38916,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6377378589","name":"九十九里浜  一宮館","lat":35.38146,"lon":140.38607,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"https://www.ichinomiyakan.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1220558736","name":"武田屋旅館","lat":35.42571,"lon":140.28919,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"https://wgsa7132wx25.wixsite.com/takedaya","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1529292925","name":"ホテルニューオーツカ","lat":35.43562,"lon":140.39678,"pref":"千葉","genres":["lodging"],"indoor":true,"url":"https://www.new-otsuka.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4746309145","name":"油殿古墳群","lat":35.3732,"lon":140.2931,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:油殿古墳群"},
+{"id":"osm:node:4746309146","name":"能満寺古墳","lat":35.36181,"lon":140.30445,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:能満寺古墳"},
+{"id":"osm:node:8462979272","name":"宮原の水害碑","lat":35.37975,"lon":140.35999,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979273","name":"延宝の津波供養塔","lat":35.35599,"lon":140.3771,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9573093193","name":"高藤山城址","lat":35.35466,"lon":140.3456,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:高藤山城"},
+{"id":"osm:node:9573093194","name":"大柳館跡","lat":35.37461,"lon":140.32308,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:大柳館"},
+{"id":"osm:node:11539078832","name":"竣工記念碑","lat":35.43826,"lon":140.28924,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11670366389","name":"上總國一之宮 玉前神社","lat":35.37567,"lon":140.36102,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11684000183","name":"白鳥井","lat":35.37571,"lon":140.36067,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11689175286","name":"さざれ石","lat":35.37582,"lon":140.3607,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11689175321","name":"三峯神社","lat":35.3758,"lon":140.36043,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11710927746","name":"宮町招魂殿","lat":35.37613,"lon":140.36066,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13375728991","name":"竣工記念碑","lat":35.41611,"lon":140.37157,"pref":"千葉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

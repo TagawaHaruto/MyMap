@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:273694161","name":"芳乃ガーデン","lat":37.23748,"lon":140.43648,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:321242698","name":"石川町総合体育館","lat":37.14402,"lon":140.43565,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424727892","name":"新ゲインズボローカントリー倶楽部(閉鎖)","lat":37.04419,"lon":140.31971,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424728541","name":"棚倉ステークスカントリークラブ(閉鎖)","lat":37.04061,"lon":140.33215,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424729093","name":"新白河ゴルフ倶楽部(閉鎖)","lat":37.05266,"lon":140.27804,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:810377887","name":"矢吹ゴルフ倶楽部","lat":37.16844,"lon":140.33161,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:967423064","name":"矢吹町温水プール","lat":37.19475,"lon":140.33179,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1207082911","name":"グリーンアカデミーカントリークラブ","lat":37.10168,"lon":140.26837,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1207082912","name":"白河国際カントリークラブ","lat":37.09566,"lon":140.38378,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://www.sk-cc.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1314136783","name":"棚倉田舎倶楽部ゴルフ場","lat":37.03985,"lon":140.41135,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

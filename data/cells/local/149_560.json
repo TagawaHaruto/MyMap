@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2784580428","name":"JAあいづ 湊 営農センター","lat":37.46844,"lon":140.01145,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:2784580430","name":"JAあいづ 湊支店","lat":37.46843,"lon":140.01131,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:491722958","name":"Ye shoppe","lat":37.25863,"lon":140.06149,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:270263565","name":"大アリーナ","lat":37.38266,"lon":140.11243,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:270263573","name":"小アリーナ","lat":37.3821,"lon":140.11448,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:538505932","name":"白河メドウゴルフ倶楽部","lat":37.25344,"lon":140.0498,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

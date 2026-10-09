@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5963474053","name":"Sunny's Kitchen","lat":38.29253,"lon":141.51106,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8226600425","name":"黄金寿司","lat":38.29504,"lon":141.51026,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8226600620","name":"プラザ サイトウ","lat":38.29523,"lon":141.51023,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8226600818","name":"海鮮レストラン なぎさ","lat":38.29482,"lon":141.51037,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

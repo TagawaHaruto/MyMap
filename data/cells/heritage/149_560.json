@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:270269235","name":"郡山市少年自然の村","lat":37.42387,"lon":140.13639,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1209778836","name":"ブリティッシュ・ヒルズ","lat":37.25819,"lon":140.05989,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.british-hills.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3696093007","name":"高坂一里塚","lat":37.41227,"lon":140.04684,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5212300020","name":"きもり跡記念碑","lat":37.30335,"lon":140.08094,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6515034516","name":"郡山布引高原風力発電所","lat":37.33714,"lon":140.05888,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7928102928","name":"旧中山宿駅跡","lat":37.49387,"lon":140.22787,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"}
+]

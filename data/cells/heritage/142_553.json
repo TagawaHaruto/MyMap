@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:4180096094","name":"白雲荘","lat":35.63314,"lon":138.3602,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:281559171","name":"慶雲館","lat":35.55463,"lon":138.30612,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"https://www.keiunkan.co.jp/","note":"宿","g":"heritage","k":"lodging","wp":"ja:慶雲館 (旅館)","kana":"けいうんかん"},
+{"id":"osm:way:556602167","name":"Akaishi Onsen","lat":35.5664,"lon":138.39259,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:赤石温泉 (山梨県)"},
+{"id":"osm:way:1339180572","name":"増穂ふるさと自然塾","lat":35.59023,"lon":138.41047,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4245443303","name":"甘利山グリーンロッジ","lat":35.68585,"lon":138.37819,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:421826472","name":"青木鉱泉","lat":35.71324,"lon":138.35266,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あおきこうせん"},
+{"id":"osm:node:8462979217","name":"宮沢上小路の道祖神","lat":35.59139,"lon":138.47589,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:759622091","name":"ED16 15（ED型電気機関車）","lat":35.60546,"lon":138.49101,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2484962810","name":"新府城跡","lat":35.7356,"lon":138.42531,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:新府城"},
+{"id":"osm:node:3802063954","name":"南アルプスの開祖","lat":35.69732,"lon":138.27055,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6458147751","name":"水難供養塔","lat":35.7216,"lon":138.43159,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6461713828","name":"二十二夜塔","lat":35.68884,"lon":138.48314,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6466621640","name":"二十三夜塔","lat":35.69539,"lon":138.47368,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6466621651","name":"韮崎宿本陣の跡","lat":35.70699,"lon":138.45074,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979218","name":"治水護郷","lat":35.73542,"lon":138.41754,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979219","name":"昭和34年災害被災60周年祈念碑","lat":35.70843,"lon":138.44663,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9099492913","name":"小塚 長篠役陣歿将士之墓","lat":35.73622,"lon":138.42492,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9099492937","name":"大塚 長篠役陣歿将士之墓","lat":35.73622,"lon":138.42513,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9099492956","name":"史跡 新府城跡","lat":35.73602,"lon":138.42674,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

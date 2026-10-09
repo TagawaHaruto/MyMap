@@ -1,0 +1,17 @@
+[
+{"id":"osm:way:764328857","name":"JA常陸特産物奥久慈","lat":36.72382,"lon":140.38383,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:764328858","name":"JA常陸農産加工場奥久慈","lat":36.72407,"lon":140.38384,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:427019847","name":"那珂カントリー倶楽部","lat":36.53757,"lon":140.39519,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427021032","name":"ＧＯＬＦ５カントリー サニーフィールド","lat":36.56233,"lon":140.32846,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427024093","name":"カバヤゴルフクラブ","lat":36.57342,"lon":140.31076,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427028681","name":"アザレア健楽園","lat":36.59932,"lon":140.30149,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427030639","name":"マナゴルフクラブ","lat":36.57925,"lon":140.34896,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427032508","name":"ゴルフ倶楽部セブンレイクス","lat":36.59491,"lon":140.34374,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427033217","name":"ロックヒルゴルフクラブ","lat":36.6111,"lon":140.34062,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427040527","name":"ボボスカントリークラブ久慈川コース","lat":36.62258,"lon":140.37494,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427064358","name":"スパ&ゴルフリゾート久慈","lat":36.56946,"lon":140.46948,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://www.spagolf-kuji.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427064795","name":"金砂郷カントリークラブ","lat":36.57108,"lon":140.44355,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427066982","name":"水戸グリーンカントリークラブ山方コース","lat":36.59059,"lon":140.38027,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:439845247","name":"ライジングゴルフクラブ","lat":36.66632,"lon":140.26531,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:479983975","name":"城里町桂体育館","lat":36.51626,"lon":140.36936,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

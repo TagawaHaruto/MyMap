@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:12811142226","name":"時計台の売店","lat":35.01337,"lon":136.28007,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12811142227","name":"ソーセージと乳製品のお店","lat":35.01359,"lon":136.28039,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:641265037","name":"茶縁むすび：政所","lat":35.11076,"lon":136.37002,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1466138471","name":"みやおえん","lat":35.24413,"lon":136.25,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:600182491","name":"秦荘体育館","lat":35.16401,"lon":136.25253,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:600184910","name":"秦荘武道館","lat":35.16362,"lon":136.25218,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:600187476","name":"秦荘グラウンド","lat":35.16326,"lon":136.25307,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:620358339","name":"おくのの運動公園 体育館","lat":35.10271,"lon":136.27176,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:643092740","name":"多賀グリーン倶楽部","lat":35.21408,"lon":136.30247,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:648000915","name":"日野ゴルフ倶楽部","lat":35.05236,"lon":136.27531,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:日野ゴルフ倶楽部"},
+{"id":"osm:way:651987686","name":"東近江市永源寺運動公園体育館","lat":35.06954,"lon":136.29635,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876058702","name":"三重CC","lat":35.02652,"lon":136.47825,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876169546","name":"リオフジワラCC","lat":35.2113,"lon":136.47331,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:876184323","name":"藤原GC","lat":35.19844,"lon":136.4988,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

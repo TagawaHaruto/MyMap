@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:723019246","name":"まほろば（寿司・喫茶）","lat":37.34842,"lon":139.31777,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:858098861","name":"太郎鮨(Taro sushi)","lat":37.34877,"lon":139.32022,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7183589953","name":"ぴょっここ亭","lat":37.39433,"lon":139.4445,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10840893995","name":"味付マトンケバブカフェ","lat":37.34951,"lon":139.31531,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4392989001","name":"マトンケバブCafe","lat":37.3502,"lon":139.31763,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:723019030","name":"三石屋","lat":37.34845,"lon":139.31765,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:198706622","name":"ヤマザキショップ","lat":37.34924,"lon":139.31703,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:859742139","name":"歳時記会館","lat":37.33762,"lon":139.29859,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:862480499","name":"森のくまさん","lat":37.31154,"lon":139.28472,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

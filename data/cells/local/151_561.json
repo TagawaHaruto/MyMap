@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4308176832","name":"福島県観光物産館","lat":37.75688,"lon":140.458,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://www.tif.ne.jp/bussan/bussankan/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10813177165","name":"令和や","lat":37.83161,"lon":140.45165,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10813928436","name":"飯坂温泉駅","lat":37.83027,"lon":140.45467,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10814020316","name":"詠帰亭","lat":37.83325,"lon":140.452,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10815515268","name":"角田豆腐店","lat":37.83305,"lon":140.45684,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10815515302","name":"京","lat":37.82993,"lon":140.45608,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10815515304","name":"阿部留","lat":37.83004,"lon":140.45592,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10815596832","name":"あおき","lat":37.83493,"lon":140.45048,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10815611570","name":"芭蕉堂","lat":37.83349,"lon":140.45311,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10819468776","name":"まるよし","lat":37.81696,"lon":140.43759,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:10819468777","name":"マルシゲ","lat":37.81882,"lon":140.43602,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:10931047347","name":"宍戸果樹園","lat":37.7877,"lon":140.39666,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:536222147","name":"湯らっと　さばこちゃん","lat":37.83207,"lon":140.45212,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3177512913","name":"栗子国際スキー＆リゾート","lat":37.82749,"lon":140.26513,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"http://www.kurikokokusai.jp/","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:栗子国際スキー場"},
+{"id":"osm:way:232929534","name":"ラウンドワン","lat":37.75252,"lon":140.45637,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","chain":true},
+{"id":"osm:way:320038280","name":"からしまボウル福島","lat":37.78044,"lon":140.48663,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:336043269","name":"ヘルシーランド福島","lat":37.76567,"lon":140.49236,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

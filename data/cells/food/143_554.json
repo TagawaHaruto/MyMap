@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5237747321","name":"民芸茶屋 清水","lat":35.79658,"lon":138.74209,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8519219817","name":"みずがき湖ビジターセンター","lat":35.85665,"lon":138.50296,"pref":"山梨","genres":["food"],"indoor":true,"url":"https://prozack3.wixsite.com/visitorcentre","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:305352625","name":"富士見茶屋いろり","lat":35.75372,"lon":138.71933,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

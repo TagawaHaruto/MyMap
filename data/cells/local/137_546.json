@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4162444522","name":"土実樹","lat":34.34976,"lon":136.70493,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:14105821825","name":"おいせさん　外宮本店","lat":34.48913,"lon":136.70714,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:463370832","name":"だるまや本店","lat":34.45965,"lon":136.72282,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:463370851","name":"寺子屋伊勢店","lat":34.46052,"lon":136.7234,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:464863023","name":"みえぎょれん販売","lat":34.46258,"lon":136.72275,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:464863036","name":"魚春","lat":34.46304,"lon":136.72313,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:464863070","name":"横丁のおみげや","lat":34.46236,"lon":136.7232,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1209060780","name":"あじ横 産直市場","lat":34.49892,"lon":136.66252,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:313958273","name":"体育館","lat":34.46563,"lon":136.72712,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:414394426","name":"ニコニコゴルフ","lat":34.46682,"lon":136.55349,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:458938378","name":"三重交通G　スポーツの杜　伊勢","lat":34.46449,"lon":136.72907,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1208859615","name":"市営庭球場","lat":34.4827,"lon":136.72321,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:19722687","name":"神宮道場","lat":34.46409,"lon":136.72364,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

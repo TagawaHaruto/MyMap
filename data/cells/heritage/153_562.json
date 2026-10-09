@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:740936513","name":"ゆづくしsalon 一の坊","lat":38.33524,"lon":140.61125,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2288730237","name":"La楽リゾートHotel","lat":38.32808,"lon":140.61736,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2288730249","name":"湯の原ホテル","lat":38.32874,"lon":140.61669,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2288733589","name":"清明荘","lat":38.33054,"lon":140.61645,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2288738316","name":"大江戸温泉物語Premium 仙台作並","lat":38.33369,"lon":140.61267,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7631927305","name":"静御前碑","lat":38.26571,"lon":140.65565,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14048058567","name":"交流電化発祥地","lat":38.3178,"lon":140.63254,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14213734624","name":"旧石垣家住宅","lat":38.33835,"lon":140.68558,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

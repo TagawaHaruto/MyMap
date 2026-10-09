@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2143723741","name":"飛騨古川ユースホステル","lat":36.25479,"lon":137.13838,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://www.d2.dion.ne.jp/~hidafyh/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3714738772","name":"天竺温泉の郷","lat":36.42729,"lon":137.0431,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:836221632","name":"飛騨まんが王国","lat":36.41221,"lon":137.19012,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://www.miyagawa.org/","note":"宿","g":"heritage","k":"lodging","wp":"ja:飛騨まんが王国"},
+{"id":"osm:node:6435656851","name":"野口城址","lat":36.26403,"lon":137.14103,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6435656868","name":"小島城跡","lat":36.25181,"lon":137.17422,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"}
+]

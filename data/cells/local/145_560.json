@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:912020533","name":"Kasama Royal Golf Club","lat":36.33792,"lon":140.16377,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4158683561","name":"スプリングフィルズゴルフクラブ","lat":36.37231,"lon":140.02494,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:382617578","name":"下館GC","lat":36.28868,"lon":140.01536,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:418987730","name":"東ノ宮カントリークラブ","lat":36.49614,"lon":140.17077,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:418988456","name":"ましこゴルフ倶楽部","lat":36.48857,"lon":140.1435,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:418989006","name":"希望丘カントリークラブ","lat":36.45143,"lon":140.18003,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424526284","name":"アジア下館カントリー倶楽部","lat":36.34355,"lon":140.05894,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424526716","name":"スプリングフィルズゴルフクラブ【PGM】","lat":36.37072,"lon":140.02955,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424526867","name":"ゴールデンレイクスカントリークラブ","lat":36.38057,"lon":140.04546,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424527266","name":"東都栃木カントリー倶楽部","lat":36.42017,"lon":140.06547,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424527454","name":"岩瀬桜川カントリークラブ","lat":36.39503,"lon":140.11325,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424527594","name":"筑波学園ゴルフ倶楽部","lat":36.3728,"lon":140.0711,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424530598","name":"益子カントリー倶楽部","lat":36.46273,"lon":140.14077,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424531012","name":"益子ヒルズゴルフクラブ","lat":36.49764,"lon":140.1257,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:903662891","name":"下館GC","lat":36.28488,"lon":140.01737,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

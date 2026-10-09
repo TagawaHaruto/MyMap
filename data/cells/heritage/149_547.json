@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4289667984","name":"深見荘","lat":37.41048,"lon":136.97281,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5500251866","name":"新橋旅館","lat":37.39446,"lon":136.89874,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5500810161","name":"川端旅館","lat":37.39308,"lon":136.90444,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5510669012","name":"ホテル高洲園","lat":37.39457,"lon":136.91504,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5791973508","name":"八汐","lat":37.40171,"lon":136.89633,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5798335542","name":"ホテルメルカート輪島","lat":37.38737,"lon":136.90861,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11493821869","name":"ホテルルートイン輪島","lat":37.39608,"lon":136.90509,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.route-inn.co.jp/search/hotel/index_hotel_id_229","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13305675790","name":"かもめ","lat":37.39329,"lon":136.90481,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5598839211","name":"輪島ふく","lat":37.39627,"lon":136.90446,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5798335769","name":"柳に緑 花に紅","lat":37.38896,"lon":136.90655,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979227","name":"能登半島地震復興感謝之碑","lat":37.28821,"lon":136.76892,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13305686037","name":"龍峰山 蓮江寺","lat":37.39576,"lon":136.90052,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13305697362","name":"馬出し小路","lat":37.39602,"lon":136.90294,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13339312384","name":"伊右ェ門小路","lat":37.39625,"lon":136.90233,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13339312385","name":"木下小路","lat":37.39601,"lon":136.90282,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13345672780","name":"輪島朝市","lat":37.39567,"lon":136.90374,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:輪島朝市 (曲)"}
+]

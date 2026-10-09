@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4424587693","name":"キッチン栂の森","lat":36.76472,"lon":137.83195,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10050220019","name":"レストハウスたかなみ","lat":36.91383,"lon":137.83025,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11250236824","name":"みずばしょう","lat":36.77381,"lon":137.81863,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11703397802","name":"レストランSNOW DROP","lat":36.76538,"lon":137.87628,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3298520375","name":"レストラン リブラ","lat":36.93414,"lon":137.88706,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6045635242","name":"奧裾花食堂","lat":36.78016,"lon":137.99184,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1202307753","name":"おたり名産館","lat":36.77847,"lon":137.90919,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3298520377","name":"歩荷茶屋","lat":36.9409,"lon":137.89907,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6482099974","name":"そばうどん","lat":36.84548,"lon":137.90029,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

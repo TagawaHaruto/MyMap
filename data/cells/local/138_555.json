@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2643897067","name":"河津売店","lat":34.7474,"lon":138.99622,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2665225136","name":"かま康","lat":34.74702,"lon":138.99601,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"https://kamaya.biz/shop-infomation/kamayasu/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5603024175","name":"夕日ヶ丘休憩所","lat":34.69435,"lon":138.76493,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9653823873","name":"散歩道","lat":34.68663,"lon":138.97129,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11010275868","name":"シャディながさきや","lat":34.74712,"lon":138.99696,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"https://shaddy.jp/gs_front/app/shop/shop_introduction/search/shizuoka/kamogunkawazu/54150-001/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12347218609","name":"小川魚店","lat":34.67663,"lon":138.94436,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:62241219","name":"伊豆下田カントリークラブ","lat":34.64165,"lon":138.8016,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

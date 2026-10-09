@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:1941448760","name":"みさき さざえ店","lat":34.48601,"lon":136.84396,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1941448811","name":"松本さざえ店","lat":34.48611,"lon":136.84372,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1941448817","name":"水沼さざえ店","lat":34.48606,"lon":136.84384,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1941448822","name":"鈴木水産","lat":34.4861,"lon":136.84376,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1944220196","name":"かまどや","lat":34.4836,"lon":136.84319,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4163229315","name":"丸義鮮魚店","lat":34.3298,"lon":136.82457,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4199980802","name":"鳥羽マルシェ","lat":34.48712,"lon":136.84466,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","wp":"ja:鳥羽マルシェ"},
+{"id":"osm:node:6374842386","name":"お土産","lat":34.45014,"lon":136.87494,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10038478660","name":"朝熊山頂売店","lat":34.45987,"lon":136.79124,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://www.iseshimaskyline.com/sanchou.html/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12143940723","name":"おみやげ い志川","lat":34.30754,"lon":136.81885,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12522523362","name":"金子２号店","lat":34.48724,"lon":136.84381,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12522523363","name":"ミネルヴァ食品館","lat":34.4872,"lon":136.84392,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4144563770","name":"阿児アリーナ","lat":34.32299,"lon":136.83051,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4172848040","name":"賢島フィッシングパーク 海遊苑","lat":34.30931,"lon":136.82844,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:292990169","name":"近鉄浜島カンツリークラブ (Kintetsu Hamajima Country Club)","lat":34.31018,"lon":136.78286,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:413674110","name":"近鉄賢島カンツリークラブ","lat":34.32136,"lon":136.81353,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:近鉄賢島カンツリークラブ"},
+{"id":"osm:way:428719889","name":"伊勢志摩カントリークラブ","lat":34.37719,"lon":136.86198,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:469345733","name":"合歓の郷GC","lat":34.30125,"lon":136.78467,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1420286638","name":"釣り船 美丸","lat":34.28058,"lon":136.89805,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://waveslash.net","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6048782527","name":"民宿 どい","lat":38.07544,"lon":138.24874,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6048782529","name":"尖閣荘","lat":38.08063,"lon":138.2478,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6048782530","name":"安寿荘","lat":38.08091,"lon":138.24646,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6048782531","name":"すだれ荘","lat":38.0819,"lon":138.2453,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6048782532","name":"ベルメールユースホステル","lat":38.08124,"lon":138.24108,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8414160551","name":"民宿 岩百合荘","lat":38.07573,"lon":138.2497,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12726583101","name":"NIPPONIA 佐渡相川金山町 清水家","lat":38.03008,"lon":138.24162,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://nipponia-sado.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:683387286","name":"ホテルファミリーオ佐渡相川","lat":38.06132,"lon":138.23571,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1012318069","name":"ホテル万長","lat":38.02734,"lon":138.23898,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1012661066","name":"ホテル大佐渡","lat":38.02154,"lon":138.22508,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1012661069","name":"いさりびの宿 道遊","lat":38.02002,"lon":138.22522,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1176602161","name":"ホテル吾妻","lat":38.01317,"lon":138.22611,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1176602166","name":"たきもと","lat":38.01276,"lon":138.22779,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1176902242","name":"旅荘あさひ荘","lat":38.03219,"lon":138.24251,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9960832962","name":"相川町道路元標","lat":38.03367,"lon":138.23966,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:682609424","name":"大間港跡","lat":38.03897,"lon":138.23548,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:958396342","name":"鎮目市左衛門維明墓","lat":38.04582,"lon":138.23754,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"}
+]

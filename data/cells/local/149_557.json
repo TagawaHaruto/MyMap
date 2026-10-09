@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:72411436","name":"レークビュー(LakeView)","lat":37.31146,"lon":139.28467,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:243639531","name":"体育館","lat":37.39544,"lon":139.44415,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2687998913","name":"まつぼっくり","lat":34.99667,"lon":138.52204,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4481524528","name":"香満楼","lat":34.98482,"lon":138.50703,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:5174546452","name":"はま寿司","lat":34.98583,"lon":138.50059,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6094753086","name":"とん将","lat":34.99876,"lon":138.51641,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10559181193","name":"若ざわ 富海亭","lat":34.97704,"lon":138.50014,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:262803757","name":"ステーキハウス 天女の里","lat":34.99488,"lon":138.52156,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2146311476","name":"松屋","lat":34.98517,"lon":138.50206,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:2966982456","name":"マクドナルド","lat":34.98554,"lon":138.50136,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:5174546451","name":"すき家","lat":34.9857,"lon":138.50087,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

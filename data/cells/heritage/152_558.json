@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:12236920632","name":"中村の四季之宿","lat":38.22302,"lon":139.50036,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12236927369","name":"櫻ゆ","lat":38.21709,"lon":139.50302,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5116628222","name":"ビジネスホテルいづみ","lat":38.06045,"lon":139.7497,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5116629131","name":"つたや旅館","lat":38.05846,"lon":139.7486,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8379960396","name":"羽越災害記念碑","lat":38.05648,"lon":139.74799,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

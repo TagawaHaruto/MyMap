@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5923607865","name":"新野千石平直売所 かあちゃんの店","lat":35.25761,"lon":137.74528,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:8444439015","name":"うるぎふるさと館","lat":35.27409,"lon":137.70945,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://www.urugi.jp/db/miyage/post-25.html","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8301939868","name":"ブナの嶺GC","lat":35.25768,"lon":137.66744,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8703403886","name":"ひまわりプール","lat":35.32455,"lon":137.63083,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"https://hiraya-himawarinoyu.com/pool.php","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11166135887","name":"清流の里 車屋","lat":35.36707,"lon":137.70849,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:461844912","name":"平谷湖フィッシングスポット","lat":35.30517,"lon":137.64223,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.hirayako.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:548181555","name":"あららぎカントリークラブ","lat":35.41225,"lon":137.67194,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:941716953","name":"平谷CC","lat":35.31531,"lon":137.6069,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://www.hirayacc.com/","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

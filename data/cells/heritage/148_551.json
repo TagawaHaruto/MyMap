@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:4024800629","name":"ペンション・クルー　Pension Crew","lat":37.05209,"lon":137.88999,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4569813066","name":"ホテル ジオパーク","lat":37.04413,"lon":137.86142,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9961088717","name":"ホテルえびや","lat":37.04437,"lon":137.86075,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12254427608","name":"見晴らし亭","lat":37.09796,"lon":137.98048,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12280784329","name":"ホテル糸魚川インター","lat":37.03203,"lon":137.8542,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12283866824","name":"山岸荘","lat":37.01308,"lon":137.81302,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12626847610","name":"古民家民泊アトリエFUMI","lat":37.02903,"lon":137.94047,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.atorie-fumi.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:671423997","name":"たつみ旅館別館","lat":37.04146,"lon":137.84903,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:671423999","name":"たつみ旅館","lat":37.04111,"lon":137.84869,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:671511646","name":"ホテルルートイン","lat":37.04252,"lon":137.85221,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4569817492","name":"奴奈川姫","lat":37.04661,"lon":137.8602,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5750742827","name":"相馬御風歌碑","lat":37.02346,"lon":137.8567,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9653396649","name":"糸魚川町道路元標","lat":37.04476,"lon":137.85665,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9653708177","name":"忠魂碑","lat":37.04056,"lon":137.86448,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9653708185","name":"千代の松","lat":37.04043,"lon":137.86446,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9653725359","name":"社務所一棟","lat":37.03949,"lon":137.86402,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:606566841","name":"長者ヶ原遺跡","lat":37.02741,"lon":137.86533,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:長者ヶ原遺跡"},
+{"id":"osm:node:11215417867","name":"浦本村道路元標","lat":37.06944,"lon":137.92948,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

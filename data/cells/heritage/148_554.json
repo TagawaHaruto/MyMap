@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2019594878","name":"光の館(Hikarinoyakata)","lat":37.18912,"lon":138.72989,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3347752693","name":"三省ハウス","lat":37.10311,"lon":138.59453,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6936974492","name":"門出かやぶきの里","lat":37.187,"lon":138.61914,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6936989887","name":"荻の島かやぶきの里","lat":37.19903,"lon":138.62605,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11045596080","name":"ひなの宿 ちとせ","lat":37.06478,"lon":138.59922,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11045596081","name":"山の森のホテル ふくずみ","lat":37.06584,"lon":138.60149,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11045596084","name":"白川屋","lat":37.06465,"lon":138.5986,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:176422880","name":"ミオンなかさと","lat":37.06664,"lon":138.70706,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:597015929","name":"ベルナティオ本館","lat":37.0488,"lon":138.73819,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:597015938","name":"ベルナティオ別館","lat":37.04737,"lon":138.73683,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:675386441","name":"越後田中温泉 しなの荘","lat":37.00293,"lon":138.62586,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:675770007","name":"Ciassic Lab 柳の家","lat":37.05371,"lon":138.68084,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:675770013","name":"渓泉荘","lat":37.04809,"lon":138.66812,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:789173478","name":"綿屋旅館","lat":37.01226,"lon":138.64977,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:978178179","name":"だいすきさんが－旧三箇小学校","lat":37.04939,"lon":138.67285,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1189357249","name":"野本旅館","lat":37.06452,"lon":138.59886,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://nomotoryokan.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2483331142","name":"節黒城","lat":37.19664,"lon":138.72914,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2483350408","name":"松代城","lat":37.12509,"lon":138.61387,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:松代城 (越後国)"},
+{"id":"osm:node:5759953724","name":"ほくほく線発祥の地","lat":37.13238,"lon":138.61394,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9049729559","name":"子孫千年宝","lat":37.02895,"lon":138.65715,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9053927912","name":"忠霊塔","lat":37.03894,"lon":138.65839,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:11815974307","name":"丸市食堂","lat":35.52243,"lon":137.47742,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:793779785","name":"満珍軒","lat":35.64108,"lon":137.44383,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:7310799097","name":"渡合温泉","lat":35.74898,"lon":137.40834,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wp":"ja:渡合温泉"},
+{"id":"osm:node:13601958059","name":"ピッツェリアと喫茶 樹らり","lat":35.7379,"lon":137.33598,"pref":"その他","genres":["food"],"indoor":true,"url":"https://www.instagram.com/pizzeria_cafe_kirari","note":"カフェ","g":"food","k":"restaurant","kana":"ぴっつぇりあときっさ きらり"},
+{"id":"osm:way:1421501478","name":"そば茶屋 付知店","lat":35.65884,"lon":137.43204,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:11815974310","name":"左中","lat":35.52185,"lon":137.4766,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:793779786","name":"山茶里","lat":35.64097,"lon":137.44394,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6332884874","name":"ケルン","lat":35.74293,"lon":137.33958,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6335774580","name":"コロボックル","lat":35.73434,"lon":137.34672,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11638219969","name":"ジャンボくん","lat":35.67394,"lon":137.4168,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

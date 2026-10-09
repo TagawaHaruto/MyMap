@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4346739689","name":"ホテル海楽","lat":34.06817,"lon":139.48263,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:368635425","name":"阿古小学校跡","lat":34.08004,"lon":139.47912,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:368635444","name":"阿古中学校跡","lat":34.07936,"lon":139.4788,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:368635484","name":"阿古小中学校 体育館跡","lat":34.07984,"lon":139.47874,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"}
+]

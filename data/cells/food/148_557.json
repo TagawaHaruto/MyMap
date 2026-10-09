@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:257216490","name":"熊ノ屋","lat":37.10141,"lon":139.44898,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:461666186","name":"よりみち","lat":37.01857,"lon":139.38424,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:461697732","name":"食事処「水芭蕉」","lat":37.03383,"lon":139.39716,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:461666242","name":"本家 七代目 まる家","lat":37.02125,"lon":139.38456,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

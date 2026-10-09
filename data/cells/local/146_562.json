@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:4548910184","name":"茨城ひたち農協豆腐工房名水亭なか里","lat":36.63971,"lon":140.58434,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:627371908","name":"あずまや","lat":36.57847,"lon":140.64818,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:628935604","name":"あかつ水産","lat":36.52424,"lon":140.62687,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1188399159","name":"JA常陸","lat":36.5076,"lon":140.58517,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1316158079","name":"鮮魚店","lat":36.63352,"lon":140.54529,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:829059161","name":"常陸太田　市民市場","lat":36.54452,"lon":140.53007,"pref":"茨城","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:94498074","name":"からしまボウル","lat":36.51335,"lon":140.60514,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:106735547","name":"日立市池の川さくらアリーナ","lat":36.57667,"lon":140.64727,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"en:Hitachi City Ikenokawa Sakura Arena"},
+{"id":"osm:way:288772751","name":"十王体育館","lat":36.68014,"lon":140.67786,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427061657","name":"ザ・オーシャンゴルフクラブ","lat":36.6541,"lon":140.65866,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427062771","name":"日立高鈴ゴルフ倶楽部","lat":36.58758,"lon":140.57675,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427062999","name":"グランドスラムカントリークラブ","lat":36.55968,"lon":140.55329,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427063545","name":"茨城ロイヤルカントリー倶楽部","lat":36.56141,"lon":140.5026,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427063902","name":"新・西山荘カントリー倶楽部","lat":36.58545,"lon":140.50589,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:458492460","name":"市民プール","lat":36.61219,"lon":140.6555,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:458495496","name":"東金沢体育館","lat":36.53806,"lon":140.62582,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:627300011","name":"プレビボウル","lat":36.5536,"lon":140.62946,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:644322207","name":"日立ゴルフクラブ","lat":36.6177,"lon":140.65655,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

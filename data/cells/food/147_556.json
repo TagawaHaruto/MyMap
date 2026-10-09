@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:4378431389","name":"芳味亭","lat":36.76979,"lon":139.22562,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4379568089","name":"かたしなや","lat":36.77021,"lon":139.22617,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4920703644","name":"竹屋","lat":36.77295,"lon":139.2264,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5472085466","name":"マグノリア","lat":36.85866,"lon":139.07631,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant"},
+{"id":"osm:node:5474419838","name":"ふじ","lat":36.85102,"lon":139.06626,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11464383864","name":"軽食処 山の鼻小屋食堂","lat":36.91603,"lon":139.19767,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11464400471","name":"カフェ 至仏","lat":36.91581,"lon":139.19734,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11468699148","name":"お食事処 健太","lat":36.83872,"lon":139.24781,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:13478843965","name":"ホルン","lat":36.82151,"lon":139.19551,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13478843966","name":"オクタ","lat":36.8186,"lon":139.20949,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:913869262","name":"オクタ","lat":36.77553,"lon":139.11903,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4986674076","name":"奈良俣サービスセンター","lat":36.87944,"lon":139.08077,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6251045261","name":"sky terrace asahi","lat":36.82593,"lon":139.09505,"pref":"群馬","genres":["food"],"indoor":true,"url":"https://www.facebook.com/skyterraceasahi","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8500133913","name":"アザリア","lat":36.78245,"lon":139.16452,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8500133915","name":"リストランスクォーレル","lat":36.77717,"lon":139.17307,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8500133916","name":"CAFEめし屋ごはんじょう","lat":36.77673,"lon":139.17307,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8500138917","name":"モンヴェール武尊","lat":36.77635,"lon":139.17289,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11464400472","name":"喫茶コーナー","lat":36.91616,"lon":139.19817,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5472085484","name":"みなかみ食堂","lat":36.85864,"lon":139.07619,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:569151591","name":"レストハウス がんばり山","lat":36.85178,"lon":139.0669,"pref":"群馬","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

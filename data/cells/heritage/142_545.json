@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12291438201","name":"Choijian","lat":35.56377,"lon":136.26047,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5669048421","name":"土倉鉱山跡","lat":35.59103,"lon":136.30085,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11683886007","name":"伊吹町青少年旅行村","lat":35.5227,"lon":136.38627,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

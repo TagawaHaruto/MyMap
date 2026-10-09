@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:1400540622","name":"杉尾はなのき展望休憩所","lat":35.0786,"lon":138.20366,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:1468788752","name":"玄国茶屋","lat":35.10774,"lon":138.22752,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:5015570523","name":"あしざわ","lat":35.10854,"lon":138.13728,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5288746110","name":"紅竹食堂","lat":35.17523,"lon":138.11951,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5288857759","name":"天狗石茶屋","lat":35.18039,"lon":138.18553,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5288902218","name":"先頭館","lat":35.10841,"lon":138.13825,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6239124600","name":"丹味","lat":35.10864,"lon":138.1377,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:6239131368","name":"ゑびすや食堂","lat":35.1088,"lon":138.13807,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6239134806","name":"cafe Grandma","lat":35.10603,"lon":138.13667,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6239147631","name":"おざわ屋食堂","lat":35.11033,"lon":138.1393,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5288704124","name":"古民家お茶カフェ山口屋","lat":35.17476,"lon":138.11968,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5288734284","name":"晴耕雨読village","lat":35.17576,"lon":138.11801,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6239127507","name":"ノハル草源","lat":35.10994,"lon":138.13912,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6239134609","name":"Cafeうえまる千頭駅前店","lat":35.10862,"lon":138.13777,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6239135191","name":"Cafeうえまる","lat":35.10873,"lon":138.1382,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

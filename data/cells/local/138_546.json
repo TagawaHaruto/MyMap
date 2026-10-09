@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5977475339","name":"誠実屋","lat":34.51833,"lon":136.72875,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6042995301","name":"大谷魚店","lat":34.50515,"lon":136.66787,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6174390451","name":"バースデイ","lat":34.554,"lon":136.513,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://www.s-birthday.com/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6207464800","name":"魚佐太商店","lat":34.58336,"lon":136.53803,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6267371103","name":"魚吉","lat":34.71752,"lon":136.51769,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11220302168","name":"チーズandリカー kamosu","lat":34.50032,"lon":136.71849,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1689771628","name":"フレッシュマートやまか","lat":34.54144,"lon":136.70005,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3675121101","name":"伊勢市御薗B&G海洋センター","lat":34.51384,"lon":136.71333,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4584835554","name":"松阪牛の里オーシャンファーム武道館","lat":34.56605,"lon":136.50796,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5889670242","name":"マリーナ伊勢","lat":34.52444,"lon":136.7442,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:444015343","name":"津市香良洲プール","lat":34.64482,"lon":136.54287,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:548037244","name":"体育館","lat":34.54468,"lon":136.50814,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:550631291","name":"明和町総合体育館","lat":34.54949,"lon":136.6216,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:625272668","name":"相好体操クラブ","lat":34.50573,"lon":136.72491,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:642445901","name":"伊勢シーサイドゴルフ倶楽部","lat":34.51415,"lon":136.73636,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:689247755","name":"松阪公園プール","lat":34.57605,"lon":136.52403,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1068755089","name":"伊勢カントリークラブ","lat":34.51334,"lon":136.61529,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1443609042","name":"総合体育館","lat":34.51544,"lon":136.66084,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:21451776","name":"松阪カントリークラブ","lat":34.53624,"lon":136.54407,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

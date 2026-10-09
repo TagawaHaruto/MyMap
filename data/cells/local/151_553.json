@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:363069957","name":"佐渡市陸上競技場","lat":37.97152,"lon":138.34987,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:363069962","name":"真野体育館","lat":37.96978,"lon":138.34776,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:453046573","name":"赤泊港","lat":37.8666,"lon":138.41237,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1356573011","name":"ときの郷ゴルフクラブ","lat":37.91836,"lon":138.30793,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5461175529","name":"伊賀食堂","lat":34.83156,"lon":136.23548,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8671784623","name":"はなぶさ","lat":34.94576,"lon":136.24144,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:572535411","name":"宇奈月","lat":34.89471,"lon":136.22288,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13993826501","name":"Hygge Cafe & Garden","lat":34.94433,"lon":136.23719,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

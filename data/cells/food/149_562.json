@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4359636522","name":"ふるさと","lat":37.44564,"lon":140.52273,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4359636523","name":"はし軒","lat":37.44571,"lon":140.52361,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4359636525","name":"はじめや","lat":37.44686,"lon":140.52891,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4359636528","name":"丸信","lat":37.44058,"lon":140.53882,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4359719238","name":"ガスト","lat":37.43593,"lon":140.58564,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4359719244","name":"かっぱ寿司","lat":37.43526,"lon":140.59233,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4977185103","name":"お食事処","lat":37.34445,"lon":140.67407,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1197584907","name":"レストランMOC","lat":37.44206,"lon":140.56778,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1378289870","name":"洋食志木","lat":37.2733,"lon":140.62799,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4359636524","name":"かんのや","lat":37.44686,"lon":140.52843,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:4359636526","name":"ミルクのおうち","lat":37.44449,"lon":140.53362,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1378289858","name":"株式会社宍戸本店","lat":37.275,"lon":140.63634,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:4359645201","name":"幸楽苑","lat":37.44004,"lon":140.5562,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:4359719240","name":"すき家","lat":37.43616,"lon":140.59085,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4924057033","name":"みちくさ食堂","lat":36.26575,"lon":137.69042,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5650717332","name":"喫茶・軽食 マウントビュー","lat":36.26794,"lon":137.60198,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7916818496","name":"レストラン あるぷす","lat":36.28263,"lon":137.58065,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7916868444","name":"喫茶・軽食 笠ヶ岳","lat":36.2859,"lon":137.57533,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7916818488","name":"Cafe Peak’s","lat":36.26798,"lon":137.60177,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7916818494","name":"テイクアウト パノラマ","lat":36.28228,"lon":137.58061,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13963910982","name":"Café Do Koisyo","lat":36.25304,"lon":137.66516,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7916818495","name":"アルプスのパン屋さん","lat":36.28244,"lon":137.58042,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

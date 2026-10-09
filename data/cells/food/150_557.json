@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:942091652","name":"会津屋","lat":37.7375,"lon":139.31376,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:4531013184","name":"四季","lat":37.73243,"lon":139.33094,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:456875818","name":"ラーメン一心亭","lat":37.67339,"lon":139.46161,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:456875820","name":"かつ丸","lat":37.67369,"lon":139.46083,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:456886668","name":"どさん子大将","lat":37.73813,"lon":139.30634,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:736945465","name":"麒麟館","lat":37.68334,"lon":139.45528,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6899544452","name":"combirie","lat":37.681,"lon":139.45597,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:4840996941","name":"リードパークリゾート八丈島","lat":33.14331,"lon":139.78744,"pref":"東京","genres":["lodging"],"indoor":true,"url":"https://www.lidohotels.jp/park/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5100726655","name":"八丈ビューホテル","lat":33.11563,"lon":139.7685,"pref":"東京","genres":["lodging"],"indoor":true,"url":"http://www.hachijo-v.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5212642413","name":"リゾート・シーピロス","lat":33.12329,"lon":139.81515,"pref":"東京","genres":["lodging"],"indoor":true,"url":"https://www.seapiross.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5407290826","name":"ロッジ オーシャン","lat":33.12559,"lon":139.81333,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13340127503","name":"ジーダイブゲストハウス","lat":33.12166,"lon":139.81558,"pref":"東京","genres":["lodging"],"indoor":true,"url":"https://seadive.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:584826316","name":"満天望","lat":33.09296,"lon":139.78144,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4840974622","name":"流人の碑","lat":33.12994,"lon":139.80863,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4840995565","name":"メットウ井戸 (まいまいず井戸)","lat":33.10108,"lon":139.77034,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5103426748","name":"人間魚雷「回天」二号壕跡(底土基地)","lat":33.11986,"lon":139.81553,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5412208172","name":"心頭技健","lat":33.11057,"lon":139.79175,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412208173","name":"菊地義郎先生之像","lat":33.11068,"lon":139.79185,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412208217","name":"島酒之碑","lat":33.1105,"lon":139.79156,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412208218","name":"魚之碑","lat":33.1105,"lon":139.79153,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412208229","name":"八丈都市計画道路事業完成の証","lat":33.11727,"lon":139.78252,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412232480","name":"御神輿寄贈之碑","lat":33.12108,"lon":139.8028,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412253719","name":"災害復旧流魂之碑","lat":33.09847,"lon":139.78129,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412276434","name":"行幸記念碑","lat":33.10246,"lon":139.78589,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9594455171","name":"人捨穴","lat":33.0839,"lon":139.78504,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10915496605","name":"鴨川林道終点碑","lat":33.10204,"lon":139.81341,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

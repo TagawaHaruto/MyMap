@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2125960854","name":"とんとん","lat":34.1202,"lon":139.53555,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:4405152141","name":"フェニックス","lat":34.12026,"lon":139.52141,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4407778022","name":"大衆割烹 さぶちゃん","lat":34.11962,"lon":139.53762,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2125879099","name":"misaki+cafe","lat":34.06156,"lon":139.55307,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:370536954","name":"サンライズ","lat":34.07922,"lon":139.56197,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4487064218","name":"ハート食堂","lat":34.0612,"lon":139.5476,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:370734234","name":"岡太楼本舗（牛乳煎餅）","lat":34.11835,"lon":139.54254,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

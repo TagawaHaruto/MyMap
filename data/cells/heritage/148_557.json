@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:461666150","name":"民宿松源","lat":37.0175,"lon":139.38473,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:461666165","name":"檜扇","lat":37.01724,"lon":139.38428,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:461666336","name":"あづま","lat":37.01825,"lon":139.384,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:461666359","name":"民宿わたすげ荘","lat":37.01669,"lon":139.38479,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:461666366","name":"ひのき屋","lat":37.016,"lon":139.38475,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1524824973","name":"清四郎小屋","lat":37.04446,"lon":139.25691,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1524824976","name":"民宿まー君","lat":37.10375,"lon":139.45074,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1524824977","name":"ペンション マドリード５８","lat":37.10404,"lon":139.45091,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1524824978","name":"温泉民宿ももたろう","lat":37.13373,"lon":139.49485,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

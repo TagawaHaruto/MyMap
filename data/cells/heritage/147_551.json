@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:3298520374","name":"ホワイトクリフ","lat":36.94122,"lon":137.89874,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3521080820","name":"ゲストハウス もりおの家 白馬店","lat":36.76603,"lon":137.8857,"pref":"長野","genres":["lodging"],"indoor":true,"url":"http://morionoie2.okoshi-yasu.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4797577367","name":"リゾートインマリオンシナノ","lat":36.75022,"lon":137.8716,"pref":"長野","genres":["lodging"],"indoor":true,"url":"http://www.marion-s.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5825603730","name":"Hakuba Cortina Backpackers","lat":36.76795,"lon":137.88284,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.hakubacortina.com/hakuba-cortina-backpackers","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6762335036","name":"Hakuba Cortina Lodge","lat":36.76739,"lon":137.88343,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.hakubacortina.com/hakuba-cortina-lodge","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12989301507","name":"雨飾山荘","lat":36.92081,"lon":137.95457,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:330316916","name":"ホテル・ラ・ブランシュ","lat":36.75108,"lon":137.87453,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:330360148","name":"Hai Lodge","lat":36.75042,"lon":137.87294,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://hailodge.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:375409889","name":"栂池山荘","lat":36.77383,"lon":137.8187,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"つがいけさんそう"},
+{"id":"osm:way:575114656","name":"丘の上ホテル宮川","lat":36.75057,"lon":137.8712,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://okanouehotel.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:575114659","name":"エスポワールみさわ","lat":36.75124,"lon":137.87022,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.espoir-misawa.co.jp","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:575114664","name":"Tsugaike Kogen Hotel Hakuba Berghaus","lat":36.75213,"lon":137.86935,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.tsugaike.jp","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:575114667","name":"Highland Lodge","lat":36.75222,"lon":137.86894,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:575114677","name":"Conntry Joe","lat":36.75162,"lon":137.86992,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.c-joe.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:673847158","name":"白馬アルプスホテル","lat":36.76436,"lon":137.87677,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.hakuba-alps.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1203979898","name":"白馬アルプスホテル","lat":36.765,"lon":137.87714,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.hakuba-alps.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1203979940","name":"乗鞍荘","lat":36.76488,"lon":137.88148,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1203979948","name":"GS Lodge","lat":36.76527,"lon":137.87958,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1258950283","name":"ホテルグリーンプラザ白馬","lat":36.77547,"lon":137.88754,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.hgp.co.jp/hakuba/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3879305146","name":"松沢貞逸氏像","lat":36.75704,"lon":137.75781,"pref":"長野","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11146247341","name":"藤原金重翁之碑","lat":36.77849,"lon":137.90947,"pref":"長野","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

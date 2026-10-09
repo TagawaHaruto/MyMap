@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:1566545359","name":"なまこや","lat":37.08392,"lon":136.92644,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12547890970","name":"道の駅あなみず","lat":37.22823,"lon":136.90462,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12548527074","name":"大和 七尾サテライトショップ","lat":37.04313,"lon":136.96428,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5894108394","name":"能登島ゴルフアンドカントリークラブ","lat":37.12651,"lon":136.95144,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:289134256","name":"アスロン","lat":37.05569,"lon":136.89639,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:572626099","name":"穴水町営相撲場","lat":37.22733,"lon":136.92044,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:624183169","name":"能登島ゴルフアンドカントリークラブ","lat":37.12311,"lon":136.9488,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1361941614","name":"城山運動公園","lat":37.02447,"lon":136.97124,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:18728805","name":"和倉GC","lat":37.05666,"lon":136.91574,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:18735162","name":"のと蘭ノ国","lat":37.03415,"lon":136.92909,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

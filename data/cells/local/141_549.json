@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:10156233041","name":"岩村地域特産物直売所","lat":35.41039,"lon":137.4312,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10264467616","name":"無人販売所","lat":35.35575,"lon":137.29169,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:6460703347","name":"東濃カントリー倶楽部","lat":35.31619,"lon":137.30842,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6460703372","name":"クラウンカントリークラブ","lat":35.32919,"lon":137.32704,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:688316711","name":"阿木川湖パターゴルフ場","lat":35.4061,"lon":137.44721,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1392377721","name":"中仙道ゴルフ倶楽部","lat":35.44256,"lon":137.30856,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1412980380","name":"ユーグリーン中津川G.C.","lat":35.45198,"lon":137.46894,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1422943922","name":"恵那峡カントリークラブ","lat":35.4394,"lon":137.38828,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1423710518","name":"グルフ5カントリーみずなみコース","lat":35.39627,"lon":137.32935,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1423996122","name":"瑞陵ゴルフクラブ","lat":35.3825,"lon":137.30931,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1424032455","name":"瑞浪高原ゴルフクラブ","lat":35.37416,"lon":137.29867,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:7392473","name":"明智ゴルフ倶楽部 明智ゴルフ場","lat":35.30164,"lon":137.33916,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:8654663","name":"ゴルフ倶楽部大樹　旭コース","lat":35.25958,"lon":137.37104,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://www.asahi-country.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:8677363","name":"小原カントリークラブ","lat":35.28335,"lon":137.28817,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://www.sanko-sha.co.jp/obara/","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

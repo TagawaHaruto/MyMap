@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:7968853536","name":"若松屋旅館","lat":37.69297,"lon":139.17871,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1092628393","name":"越後乃お宿 わか竹","lat":37.71541,"lon":139.0819,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.oyado-wakatake.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1092628396","name":"湯田上温泉 ホテル小柳","lat":37.71495,"lon":139.08302,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1092628450","name":"旅館初音","lat":37.71235,"lon":139.07866,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1092632603","name":"末廣館","lat":37.70997,"lon":139.07767,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7653251676","name":"歩兵三十聯隊営門","lat":37.69744,"lon":139.18941,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7653251677","name":"大手門跡","lat":37.69291,"lon":139.17476,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7653251678","name":"村松城跡","lat":37.69315,"lon":139.16968,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7653262889","name":"蒲原鉄道モハ11","lat":37.69329,"lon":139.16934,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7653262910","name":"戦没陸軍少年通信兵慰霊碑","lat":37.69168,"lon":139.18856,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7653262911","name":"忠魂碑","lat":37.69133,"lon":139.18878,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7653263267","name":"忠犬タマ公像","lat":37.69301,"lon":139.18985,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7653263268","name":"村松兵営跡","lat":37.69639,"lon":139.18962,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7786542106","name":"蒲原鉄道モハ41","lat":37.74769,"lon":139.18023,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7968776486","name":"営所通り","lat":37.69292,"lon":139.17874,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7968776530","name":"下町","lat":37.69351,"lon":139.17803,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:947176975","name":"旧賀茂銀行","lat":37.65705,"lon":139.06113,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:948960891","name":"旧生田屋","lat":37.6566,"lon":139.06248,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

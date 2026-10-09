@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4896195021","name":"名剣 温泉","lat":36.69651,"lon":137.66463,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11346409999","name":"Kanetsuri Ryokan","lat":36.73381,"lon":137.65159,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:199357186","name":"立山荘","lat":36.56674,"lon":137.55733,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:199362780","name":"みくりが池温泉","lat":36.58198,"lon":137.59623,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:みくりが池温泉"},
+{"id":"osm:way:664601638","name":"弥陀ヶ原ホテル","lat":36.56838,"lon":137.55689,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://midagahara.alpen-route.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:950056302","name":"立山高原ホテル","lat":36.5816,"lon":137.58048,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4143881389","name":"ホテル立山","lat":36.57757,"lon":137.59525,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:ホテル立山"},
+{"id":"osm:node:6880798559","name":"幸田文文学碑","lat":36.54006,"lon":137.55138,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12536125707","name":"殉職者慰霊碑","lat":36.56598,"lon":137.66451,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

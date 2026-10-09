@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2501451285","name":"苗木城","lat":35.51316,"lon":137.48526,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:苗木城"},
+{"id":"osm:node:6112625233","name":"国指定史跡 苗木城跡","lat":35.51342,"lon":137.48798,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6114437163","name":"苗木遠山史料館","lat":35.51448,"lon":137.48124,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6114437406","name":"恵那の雪 ひとまづ消えし 小春かな","lat":35.51303,"lon":137.47938,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6114437408","name":"苗木城公園","lat":35.51295,"lon":137.47928,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6125724834","name":"苗木城址碑","lat":35.5132,"lon":137.48527,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6342460281","name":"整郷塔","lat":35.74863,"lon":137.33193,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

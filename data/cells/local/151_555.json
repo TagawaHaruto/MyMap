@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:13890179213","name":"ほっともっと　新潟青山店","lat":37.8987,"lon":138.99437,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13890427538","name":"小針かに屋","lat":37.89392,"lon":138.99331,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13924657419","name":"ほっともっと　新潟小針店","lat":37.88029,"lon":138.9891,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14007600982","name":"たきたて弁当やなぎ","lat":37.88122,"lon":138.9613,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14016809397","name":"お魚屋秋ちゃん","lat":37.8774,"lon":138.95525,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14060648800","name":"岩松水産","lat":37.85762,"lon":138.93675,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14084739126","name":"内野農産　野菜直売所","lat":37.84975,"lon":138.93865,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:14106648708","name":"ほっともっと　西内野店","lat":37.84952,"lon":138.9228,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14118119197","name":"岡田鮮魚","lat":37.84945,"lon":138.91816,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14136172484","name":"さがのや","lat":37.83971,"lon":138.90374,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14136565585","name":"広沢鮮魚","lat":37.82812,"lon":138.88759,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14141396909","name":"割烹　山川屋","lat":37.82245,"lon":138.88181,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14143626814","name":"キッチン咲","lat":37.81824,"lon":138.88293,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14143672435","name":"ナカノフーズ","lat":37.81533,"lon":138.88584,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14158996869","name":"富味　Fumi","lat":37.8155,"lon":138.90742,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14161860459","name":"魚松","lat":37.82369,"lon":138.93225,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:338734558","name":"メイワサンピア","lat":37.80981,"lon":138.87679,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:377985421","name":"pool factory","lat":37.88149,"lon":138.97504,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:420049052","name":"新潟ドーム","lat":37.86718,"lon":138.99054,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:16062144","name":"西総合スポーツセンター","lat":37.87913,"lon":138.95338,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"https://niigata-kaikou.jp/facility/442","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

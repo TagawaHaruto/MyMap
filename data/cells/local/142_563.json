@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:2319379894","name":"篠田食料品店","lat":35.73152,"lon":140.83002,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6180845636","name":"犬吠駅売店","lat":35.70624,"lon":140.86112,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9383004486","name":"宮内魚店","lat":35.73342,"lon":140.84597,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9419703027","name":"全渡辺","lat":35.73061,"lon":140.82734,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9419703028","name":"椎名商店","lat":35.73056,"lon":140.82733,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9438726020","name":"酒のやまや","lat":35.73298,"lon":140.81766,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9438726152","name":"木樽鮮魚店","lat":35.73715,"lon":140.8527,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9438729206","name":"銚子電鉄","lat":35.71191,"lon":140.77588,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"https://chodenshop.com/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12189419632","name":"魚伊","lat":35.7238,"lon":140.83523,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4883865695","name":"銚子セレクト市場","lat":35.7332,"lon":140.82849,"pref":"千葉","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4883857523","name":"銚子エースレーン","lat":35.72739,"lon":140.84188,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

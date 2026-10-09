@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4193599066","name":"あきやま学寮","lat":36.50683,"lon":139.52149,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4193599356","name":"古代生活体験村","lat":36.50529,"lon":139.52198,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4193600409","name":"ウッドランド森沢","lat":36.50509,"lon":139.5209,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6433501927","name":"すぎもと館","lat":36.73982,"lon":139.50071,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:1924688243","name":"earth hostel ~ the riverhouse","lat":36.64648,"lon":139.64935,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"https://earthhostel.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2497268880","name":"Nikko Guest House Sumica","lat":36.74731,"lon":139.62024,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13279612155","name":"Nikko Park Lodge","lat":36.74708,"lon":139.61911,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:308893891","name":"ホテル 村上","lat":36.72344,"lon":139.68985,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:308974359","name":"熱海館","lat":36.72159,"lon":139.68754,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:993649012","name":"ステーションホテル2番館","lat":36.74644,"lon":139.61911,"pref":"栃木","genres":["lodging"],"indoor":true,"url":"https://www.nsh2.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4100085681","name":"二宮尊徳の墓　県指定史跡","lat":36.72584,"lon":139.68953,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:6741519225","name":"聖徳太子","lat":36.73766,"lon":139.55811,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6741547541","name":"馬頭観音","lat":36.74835,"lon":139.57546,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6741547542","name":"庚申塔　本町","lat":36.74836,"lon":139.57545,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6741566487","name":"庚申塔","lat":36.74276,"lon":139.56494,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6741566488","name":"庚申供養塔","lat":36.74279,"lon":139.56496,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6741566490","name":"得大勢至菩薩","lat":36.74283,"lon":139.56498,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6745979104","name":"並木寄進碑","lat":36.61857,"lon":139.73582,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11262154788","name":"Dainichido Ruins","lat":36.74912,"lon":139.58024,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1094401774","name":"光太寺山門","lat":36.56302,"lon":139.74116,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"門","g":"heritage","k":"historic"},
+{"id":"osm:way:1429653977","name":"鳥居跡","lat":36.55767,"lon":139.74692,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"門","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:7003376385","name":"おくまや","lat":35.84881,"lon":140.61717,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"https://www.okumaya.com","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9365243564","name":"伊太郎","lat":35.94633,"lon":140.589,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9365243566","name":"うるおい館","lat":35.94618,"lon":140.58932,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:335169377","name":"高はし梨園 売店","lat":35.82307,"lon":140.5095,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"https://nashitakahashi.com/","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:483753126","name":"鹿島中央青果株式会社","lat":35.92479,"lon":140.64969,"pref":"茨城","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:1774322597","name":"千葉桜の里ゴルフクラブ","lat":35.81685,"lon":140.57691,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5353836283","name":"東庄町町民体育館","lat":35.83871,"lon":140.66822,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10813145768","name":"旭市長熊釣堀センター","lat":35.76088,"lon":140.5958,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://www.city.asahi.lg.jp/soshiki/14/2367.html","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:378394158","name":"B&G財団栗源海洋センター","lat":35.81253,"lon":140.50806,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:420449117","name":"温水プール","lat":35.95318,"lon":140.67326,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:483874126","name":"神栖海浜温水プール","lat":35.89671,"lon":140.71977,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:516731962","name":"ワイルドダックカントリークラブ","lat":35.85205,"lon":140.6856,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:552849767","name":"千葉県総合スポーツセンター　東総運動場","lat":35.77399,"lon":140.62035,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:719955134","name":"成田の森カントリークラブ【PMG】","lat":35.7971,"lon":140.52877,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:961083837","name":"東庄ゴルフ倶楽部","lat":35.79773,"lon":140.63546,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://tsgc.tatemono-golf.com/","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:東庄ゴルフ倶楽部"},
+{"id":"osm:way:1025060984","name":"東京国際空港ゴルフ倶楽部","lat":35.77157,"lon":140.55001,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1028608670","name":"小見川東急ゴルフクラブ","lat":35.87133,"lon":140.57395,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://www.tokyu-golf-resort.com/omigawa/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1028608683","name":"佐原カントリークラブ","lat":35.87385,"lon":140.55283,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://reserve.accordiagolf.com/golfCourse/sawara","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1028608801","name":"香取カントリークラブ","lat":35.85991,"lon":140.54366,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"http://www.katoricc.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1219092527","name":"トライレイクゴルフクラブ","lat":35.95241,"lon":140.65833,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1276434432","name":"ジェイゴルフ霞ケ浦","lat":35.98915,"lon":140.53781,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

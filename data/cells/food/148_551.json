@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:2905187874","name":"銭形","lat":37.01349,"lon":137.86472,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:7177544788","name":"重寿し","lat":37.04399,"lon":137.8595,"pref":"その他","genres":["food"],"indoor":true,"url":"https://shigesushi-itoigawa.gorp.jp","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10048777620","name":"膳処くろひめ   食酒場いといがわ","lat":37.0446,"lon":137.86037,"pref":"その他","genres":["food"],"indoor":true,"url":"https://www.itoigawa-kurohime.jp","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:463637078","name":"ガスト","lat":37.04287,"lon":137.85153,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"がすと","chain":true},
+{"id":"osm:way:463637079","name":"横町ホルモン","lat":37.04265,"lon":137.85181,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:671423998","name":"かわせみ","lat":37.04107,"lon":137.84888,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:671424020","name":"すし活","lat":37.04181,"lon":137.84803,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:671511640","name":"楽々荘","lat":37.0421,"lon":137.8527,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:671511645","name":"すし廣","lat":37.04228,"lon":137.85219,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:672272724","name":"いっさく","lat":37.04098,"lon":137.86632,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:943776171","name":"はたの寿司","lat":37.03017,"lon":137.82402,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12254409202","name":"お食事処　常","lat":37.08858,"lon":137.99293,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1324948221","name":"はちろさ","lat":37.04556,"lon":137.91516,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:328712187","name":"新潟スイーツ・ナカシマ","lat":37.04368,"lon":137.85067,"pref":"その他","genres":["food"],"indoor":true,"url":"http://www.okasi-nakasima.com/","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:3355357231","name":"新潟スイーツ・ナカシマ 能生本店","lat":37.10251,"lon":137.98632,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8840436470","name":"フェルエッグ","lat":37.04658,"lon":137.88396,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"https://f-agg.com","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:12473348958","name":"Cafe 02glee","lat":36.25844,"lon":136.22668,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:14040472853","name":"シフォンケーキの店 森のプチリス","lat":36.27081,"lon":136.22378,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

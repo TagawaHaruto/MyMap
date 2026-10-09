@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5093665353","name":"めん丸","lat":35.42376,"lon":138.44423,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5765621151","name":"峠のラーメン","lat":35.27541,"lon":138.45075,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5766010094","name":"南部路","lat":35.30064,"lon":138.44723,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6263285340","name":"魚魚の家","lat":35.2838,"lon":138.34393,"pref":"静岡","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:node:6741238083","name":"食事処 ゆたか屋","lat":35.36111,"lon":138.45217,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13347003668","name":"丸一食堂","lat":35.42521,"lon":138.47217,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13347003669","name":"藤川","lat":35.42508,"lon":138.47219,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"ステーキ","g":"food","k":"restaurant"},
+{"id":"osm:way:1003886163","name":"やがわ","lat":35.27941,"lon":138.46644,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1003886165","name":"こばやし焼きそば店","lat":35.28365,"lon":138.46198,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1003886166","name":"寿限無","lat":35.28186,"lon":138.45662,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1189273041","name":"うな富士","lat":35.26761,"lon":138.45986,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1335281644","name":"うまいもん","lat":35.30102,"lon":138.44759,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1335281645","name":"そば処 味里","lat":35.29853,"lon":138.44743,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1335281646","name":"kelly","lat":35.29528,"lon":138.44029,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1335281647","name":"さかや食堂","lat":35.29885,"lon":138.45063,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1335281649","name":"竹王","lat":35.27499,"lon":138.4512,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1335281651","name":"登喜和寿司","lat":35.28691,"lon":138.45653,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1336347254","name":"JO-JOE","lat":35.29543,"lon":138.44657,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12353287013","name":"ワイワイふるさと館","lat":35.28882,"lon":138.4561,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13347003670","name":"タニタカフェ パセリ","lat":35.42591,"lon":138.47197,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

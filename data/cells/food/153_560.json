@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5108865623","name":"やきとり柳川","lat":38.29935,"lon":140.14399,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865635","name":"そば処太郎亭","lat":38.29955,"lon":140.15151,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865640","name":"やきとりひでまる","lat":38.30075,"lon":140.14603,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865642","name":"どのまえ","lat":38.30109,"lon":140.14504,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865643","name":"西郷亭","lat":38.30235,"lon":140.14585,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865648","name":"楽家","lat":38.32673,"lon":140.16846,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865654","name":"丸七そば店","lat":38.33772,"lon":140.17485,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865655","name":"おかめ","lat":38.3393,"lon":140.17891,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108873933","name":"ふくろう村","lat":38.32355,"lon":140.16586,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108873940","name":"コシーナ・デ・ミエ","lat":38.33894,"lon":140.17503,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108873942","name":"秋葉亭","lat":38.3413,"lon":140.1799,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108874121","name":"お食じ処 番外地","lat":38.29917,"lon":140.14464,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108874127","name":"長岡商店","lat":38.30173,"lon":140.1414,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108874134","name":"亀次郎そば屋","lat":38.32713,"lon":140.16873,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5108865627","name":"カフェ蔵","lat":38.30116,"lon":140.14986,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5108865650","name":"スマイルカフェ 縁joy コーヒー","lat":38.34516,"lon":140.16656,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5108865656","name":"あさひ珈琲館","lat":38.28413,"lon":140.12651,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5108874128","name":"カフェいろは","lat":38.30224,"lon":140.15511,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5108865626","name":"永勝堂菓子店","lat":38.30177,"lon":140.1484,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:5108874135","name":"松谷屋菓子店","lat":38.3458,"lon":140.16635,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:2427228904","name":"売店","lat":36.02655,"lon":138.07625,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6744063285","name":"売店","lat":36.05126,"lon":138.11316,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7095302438","name":"諏訪湖マルシェ","lat":36.03524,"lon":138.10983,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:8697040009","name":"洞沢豆腐店","lat":36.19369,"lon":138.00242,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10677338443","name":"角上魚類　諏訪店","lat":36.03245,"lon":138.11676,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","chain":true},
+{"id":"osm:node:13624204675","name":"諏訪湖いちご園","lat":36.02696,"lon":138.08183,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:374675922","name":"藤本園","lat":36.04722,"lon":138.11681,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:375641037","name":"金鵄園","lat":36.0448,"lon":138.11833,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:442867733","name":"たてしな自由農園","lat":36.0325,"lon":138.19685,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://www.tateshinafree.co.jp/chino/","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:442867736","name":"八ヶ岳福祉農園","lat":36.03186,"lon":138.1954,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:732338504","name":"清水屋川魚店","lat":36.0744,"lon":138.04948,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:973192054","name":"専女八幡","lat":36.07469,"lon":138.08958,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11222571665","name":"下諏訪ローイングパーク(AQUA未来)","lat":36.06295,"lon":138.0803,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426294131","name":"パークゴルフ","lat":36.05757,"lon":138.06398,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:815801509","name":"下諏訪体育館","lat":36.07059,"lon":138.07898,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1545979884","name":"下諏訪町秋宮スケートリンク","lat":36.0762,"lon":138.09144,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

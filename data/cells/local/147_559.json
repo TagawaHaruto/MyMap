@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5422188045","name":"ほっともっと","lat":36.80921,"lon":139.93793,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5422188046","name":"ほっともっと","lat":36.80011,"lon":139.9263,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5491184356","name":"チーズファクトリー","lat":36.8277,"lon":139.91508,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6404733106","name":"旬鮮やいた","lat":36.80567,"lon":139.92156,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:10035871923","name":"農産物直売所","lat":36.76465,"lon":139.78119,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:490452110","name":"そすいの郷直売センター","lat":36.88649,"lon":139.95573,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5453988496","name":"にしなすの運動公園","lat":36.89948,"lon":139.9886,"pref":"栃木","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:199767089","name":"Arrow Ace Golf Club","lat":36.79118,"lon":139.96506,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424730951","name":"塩原カントリークラブ","lat":36.96332,"lon":139.93339,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424731181","name":"ホウライカントリー倶楽部","lat":36.94546,"lon":139.92454,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424731373","name":"西那須野カントリー倶楽部","lat":36.95035,"lon":139.93849,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424731846","name":"メイフラワーゴルフクラブ","lat":36.8823,"lon":139.90119,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424732205","name":"矢板カントリークラブ","lat":36.86668,"lon":139.89298,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424733665","name":"大日向カントリー倶楽部【PGM】","lat":36.75754,"lon":139.99378,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:452364012","name":"にしなすの運動公園体育館","lat":36.90068,"lon":139.98894,"pref":"栃木","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:571332352","name":"玉生ゴルフ練習場","lat":36.78281,"lon":139.86534,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1238882335","name":"つくるまサーキット那須","lat":36.97507,"lon":139.94044,"pref":"栃木","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

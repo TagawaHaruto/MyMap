@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:9781060878","name":"おい菜","lat":35.56493,"lon":138.03724,"pref":"長野","genres":["food"],"indoor":true,"url":"https://kabukinosato.com/outline/food/","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:10720585110","name":"秋葉路","lat":35.5649,"lon":138.03715,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11204149323","name":"塩の里食事処ふじ","lat":35.58888,"lon":138.04935,"pref":"長野","genres":["food"],"indoor":true,"url":"http://ooshika-kanko.com/sagasu/post-67.html","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:11240370780","name":"ディア・イーター","lat":35.55733,"lon":138.0416,"pref":"長野","genres":["food"],"indoor":true,"url":"https://blog.nagano-ken.jp/gibier/report/153.html","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:826361881","name":"Hakko Ooshika","lat":35.60165,"lon":138.07143,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:903235488","name":"するぎ農園（手打ちそばと水出し珈琲）","lat":35.58917,"lon":138.06063,"pref":"長野","genres":["food"],"indoor":true,"url":"http://www.osk.janis.or.jp/~kindosan/","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:11088274928","name":"Sol-ka","lat":35.58883,"lon":138.04881,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1036126729","name":"農家カフェBAU（バウ）","lat":35.54937,"lon":138.03371,"pref":"長野","genres":["food"],"indoor":true,"url":"http://bauooshika.wixsite.com/cafe","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:10962891593","name":"ムーンメルゼ","lat":35.58999,"lon":138.07899,"pref":"長野","genres":["food","shopping"],"indoor":true,"url":"https://moonmeruze.cart.fc2.com/","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:14038667399","name":"奥原菓子店","lat":35.72665,"lon":138.09374,"pref":"長野","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

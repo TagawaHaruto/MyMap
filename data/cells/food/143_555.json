@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4578480694","name":"大島屋","lat":35.92281,"lon":138.93231,"pref":"埼玉","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5066022168","name":"陣家","lat":35.77421,"lon":138.99846,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:5237747121","name":"やまびこ食堂","lat":35.79049,"lon":138.91563,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5791880135","name":"島勝","lat":35.77789,"lon":138.9905,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5791882541","name":"深山荘","lat":35.77398,"lon":138.99794,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5791882542","name":"矢久亭","lat":35.77408,"lon":138.99817,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5792036646","name":"ドライブインふるさと","lat":35.80551,"lon":138.83451,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5858993769","name":"源流レストラン","lat":35.7537,"lon":138.95005,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8816838919","name":"そば工房 そば福","lat":35.97778,"lon":138.9705,"pref":"埼玉","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:8816840617","name":"蕎麦カフェ神庭","lat":35.94382,"lon":138.94109,"pref":"埼玉","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:301758681","name":"柳沢峠茶屋","lat":35.77596,"lon":138.8025,"pref":"山梨","genres":["food"],"indoor":true,"url":"http://yanagisawatouge.web.fc2.com/","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4340648447","name":"Rider's Caf’e 丹波里場","lat":35.78854,"lon":138.94322,"pref":"山梨","genres":["food"],"indoor":true,"url":"http://tabariver.com/","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1010100501","name":"山の休憩所かゑる","lat":35.77921,"lon":138.98338,"pref":"山梨","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:262019556","name":"きのしたベーカリー","lat":35.79338,"lon":138.91362,"pref":"山梨","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

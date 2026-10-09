@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:1668368551","name":"お食事処　もりのや","lat":36.3319,"lon":137.29876,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1668368569","name":"もりぐち","lat":36.33469,"lon":137.29601,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10088286783","name":"ひだ小僧","lat":36.32891,"lon":137.30728,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1209070012","name":"てん路　天ぷら","lat":37.34292,"lon":138.56758,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2354368587","name":"少年広場","lat":37.37258,"lon":138.55067,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3106331851","name":"西山町総合体育館","lat":37.48781,"lon":138.6359,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:471883732","name":"長岡ニュータウン運動公園","lat":37.43446,"lon":138.7484,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

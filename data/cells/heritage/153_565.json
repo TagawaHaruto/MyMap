@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5177796677","name":"大国旅館","lat":38.25482,"lon":141.49384,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5177810624","name":"木村旅館","lat":38.27358,"lon":141.45951,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5177817821","name":"真崎荘","lat":38.25524,"lon":141.49482,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5177817921","name":"ペンション&レストラン 晴耕雨読","lat":38.2761,"lon":141.46434,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5177817922","name":"潮美荘","lat":38.27645,"lon":141.46412,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5177817923","name":"白浜荘","lat":38.27874,"lon":141.46303,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5177817924","name":"ニューしらはま","lat":38.27907,"lon":141.46305,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5485154020","name":"はま屋","lat":38.30663,"lon":141.41873,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5963474055","name":"後山荘","lat":38.3253,"lon":141.47087,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://ushiroyamasou.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5963496630","name":"めぐろ","lat":38.32295,"lon":141.46954,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.oshika-meguro.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5963496631","name":"あたご荘","lat":38.32333,"lon":141.4688,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://atagosou.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8380017234","name":"石巻市牡鹿地区慰霊碑及びモニュメント","lat":38.33329,"lon":141.47439,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8380017235","name":"昭和８年３月３日　大震嘯記念碑","lat":38.31064,"lon":141.4905,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8380017236","name":"昭和８年３月３日　大震嘯記念碑","lat":38.31955,"lon":141.47002,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8380017239","name":"昭和８年３月３日　大震嘯記念碑","lat":38.35322,"lon":141.45933,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

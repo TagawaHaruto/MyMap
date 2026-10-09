@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2482450617","name":"上田からあげセンター","lat":36.39694,"lon":138.24944,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12064608672","name":"ハリカ","lat":36.39036,"lon":138.21562,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14026328401","name":"まんだらの庄","lat":36.43645,"lon":138.07243,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:442950885","name":"道の駅あおき　農産物直売所","lat":36.37265,"lon":138.13996,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:888545399","name":"東山観光農園","lat":36.35559,"lon":138.23574,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1274351262","name":"エム・アイギフト","lat":36.49587,"lon":138.14352,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9396011393","name":"(株)戸倉中央青果市場","lat":36.4883,"lon":138.14878,"pref":"長野","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:1015879429","name":"さかき地場産直売所 あいさい","lat":36.44368,"lon":138.19059,"pref":"長野","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:11515951470","name":"和平公園","lat":36.48686,"lon":138.21198,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:838997456","name":"青木村営プール","lat":36.36914,"lon":138.12359,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:935859041","name":"OUTDOOR BASE 武石の森","lat":36.26354,"lon":138.20911,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1006463540","name":"大西緑地公園マレットゴルフ場","lat":36.49828,"lon":138.1379,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1011238378","name":"さらしなの里マレットパーク","lat":36.48977,"lon":138.11449,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1011238380","name":"ゲートボール場","lat":36.4908,"lon":138.11374,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1228803064","name":"マレットゴルフ場","lat":36.47644,"lon":138.15373,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1301891914","name":"冠着マレットゴルフ場","lat":36.45678,"lon":138.07887,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1301892160","name":"ふれあい広場マレットゴルフ場","lat":36.4063,"lon":138.00483,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1341263784","name":"千曲高原カントリークラブ","lat":36.48881,"lon":138.07888,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

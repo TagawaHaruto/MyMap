@@ -1,0 +1,22 @@
+[
+{"id":"osm:way:75497088","name":"八幡屋","lat":37.17575,"lon":140.46599,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.yahataya.co.jp/index.html","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11040497413","name":"近津村道路元標","lat":37.00161,"lon":140.39286,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2469766659","name":"宮ノ前古墳","lat":37.20031,"lon":140.40634,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:宮ノ前古墳"},
+{"id":"osm:node:9233046994","name":"借宿廃寺跡","lat":37.12002,"lon":140.29462,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:借宿廃寺跡"},
+{"id":"osm:node:9233046995","name":"下総塚古墳","lat":37.12298,"lon":140.2908,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:下総塚古墳"},
+{"id":"osm:node:9233046996","name":"関和久官衙遺跡","lat":37.12996,"lon":140.30867,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:関和久官衙遺跡"},
+{"id":"osm:node:11040497412","name":"棚倉町道路元標","lat":37.03097,"lon":140.37697,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11040497436","name":"金山村道路元標","lat":37.05676,"lon":140.29682,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11059308875","name":"都々古別神社","lat":37.03108,"lon":140.37692,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062455084","name":"忠魂碑","lat":37.14378,"lon":140.45213,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062455085","name":"石都々古和氣神社","lat":37.1438,"lon":140.45217,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062455092","name":"澁谷直蔵先生","lat":37.14398,"lon":140.4521,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062546003","name":"史蹟 石川城跡","lat":37.14527,"lon":140.45103,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062546004","name":"永遠に称えよ","lat":37.14509,"lon":140.45092,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062751541","name":"亀ヶ城址","lat":37.02934,"lon":140.38658,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062751548","name":"創建之碑","lat":37.03032,"lon":140.38614,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062751552","name":"元帥畑俊六 終焉之地","lat":37.03061,"lon":140.38563,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062751553","name":"忠霊塔","lat":37.03062,"lon":140.38567,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11062751577","name":"棚倉町合併記念碑","lat":37.03036,"lon":140.38538,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12802056671","name":"塚原古墳","lat":37.00949,"lon":140.38732,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"}
+]

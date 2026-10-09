@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:6288103865","name":"ホテル KAMEYA","lat":36.53585,"lon":140.41992,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:828491252","name":"白山鉱泉 白山荘","lat":36.52962,"lon":140.34048,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:829228837","name":"湯の澤鉱泉","lat":36.62626,"lon":140.37489,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4340086845","name":"風車の弥七の墓","lat":36.60778,"lon":140.29005,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4776457415","name":"中島藤右衛門翁顕彰之碑","lat":36.63253,"lon":140.39575,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4785403462","name":"江下山古墳","lat":36.63135,"lon":140.39175,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5716826693","name":"泉坂下遺跡","lat":36.53362,"lon":140.43497,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:泉坂下遺跡"},
+{"id":"osm:node:7724607446","name":"梵天山古墳","lat":36.50965,"lon":140.4927,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7734171032","name":"孫根城跡","lat":36.51176,"lon":140.34624,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7734280132","name":"大山城跡","lat":36.51416,"lon":140.36274,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7737513172","name":"久米城跡","lat":36.55152,"lon":140.48258,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7738872057","name":"瓜連城跡","lat":36.50383,"lon":140.45192,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7740270629","name":"小場城跡","lat":36.50794,"lon":140.39179,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7743501937","name":"高部館跡","lat":36.66648,"lon":140.29944,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7743670107","name":"長倉陣屋跡","lat":36.57226,"lon":140.27532,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8379963987","name":"築堤記念碑","lat":36.55897,"lon":140.31071,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:484898638","name":"御城展望台","lat":36.63407,"lon":140.39376,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1390439202","name":"本覚寺跡地","lat":36.69799,"lon":140.41715,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

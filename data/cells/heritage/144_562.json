@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5173966949","name":"ホテルさわや","lat":36.15241,"lon":140.51233,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:945129247","name":"旅館 札幌","lat":36.15306,"lon":140.50909,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7762061324","name":"烟田城跡","lat":36.1478,"lon":140.52462,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:way:550427934","name":"鹿島鉄道線鉾田駅跡","lat":36.15317,"lon":140.5076,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1473275127","name":"霜水寺西堂址","lat":36.03514,"lon":140.62736,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

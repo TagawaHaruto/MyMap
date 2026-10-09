@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4663566839","name":"飛騨古川さくら物産館","lat":36.23367,"lon":137.1855,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5853188485","name":"花と雑貨の店 いたばし","lat":36.23541,"lon":137.18698,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://www.itabashiseikaten.com","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6164766425","name":"Pottery","lat":36.13558,"lon":137.24016,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6819919086","name":"三嶋和ろうそく店","lat":36.2344,"lon":137.18765,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://www.hida-kankou.jp/product/28/article/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:798391241","name":"岡田屋","lat":36.23648,"lon":137.18534,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1414272782","name":"あじか","lat":36.2047,"lon":137.22472,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:1416000409","name":"飛騨高山ビッグアリーナ","lat":36.15029,"lon":137.2327,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4416143903","name":"High-Mount","lat":36.14683,"lon":137.24943,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1463958525","name":"飛騨高山カントリークラブ","lat":36.10292,"lon":137.24668,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://www.hidatakayama-cc.jp","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

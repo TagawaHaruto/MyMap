@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:1986906619","name":"三徳荘","lat":35.79227,"lon":138.72545,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:1986906620","name":"中村屋","lat":35.79208,"lon":138.72567,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:1986906623","name":"和楽荘","lat":35.79224,"lon":138.72578,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4406779012","name":"みずがき山リーゼンヒュッテ","lat":35.85825,"lon":138.56269,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4463501882","name":"山縣館","lat":35.80016,"lon":138.74743,"pref":"山梨","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:571903206","name":"金峰山荘","lat":35.90897,"lon":138.64152,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2352076602","name":"造林記念碑","lat":35.83805,"lon":138.61961,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4407140938","name":"千曲川信濃川水源地標","lat":35.91074,"lon":138.72208,"pref":"長野","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4407140939","name":"奥秩父遭難者慰霊碑","lat":35.90747,"lon":138.73062,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4407140940","name":"慰霊の碑","lat":35.93965,"lon":138.71381,"pref":"長野","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4407140941","name":"荒川水源の碑","lat":35.90742,"lon":138.73059,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13531851944","name":"深田久弥終焉の地","lat":35.79356,"lon":138.51575,"pref":"山梨","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

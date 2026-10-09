@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:3324533461","name":"終着駅北濃","lat":35.93039,"lon":136.82991,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4742153892","name":"サンパ","lat":35.75059,"lon":136.95677,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4742153903","name":"俄","lat":35.75028,"lon":136.95841,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4742153904","name":"新橋亭","lat":35.75026,"lon":136.95883,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4742162946","name":"さんたべーる","lat":35.92727,"lon":136.83028,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4742162947","name":"かじか","lat":35.92874,"lon":136.8302,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6341102088","name":"かつ弥","lat":35.80071,"lon":136.90709,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8999482317","name":"源助さん","lat":35.88148,"lon":136.85473,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10915701030","name":"ゴンザ","lat":35.8834,"lon":136.85409,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:11591292760","name":"レストラン小さな丘","lat":35.9579,"lon":136.89468,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:372414833","name":"四季紅","lat":35.78105,"lon":136.91602,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:4742153895","name":"SERRNE","lat":35.75,"lon":136.95692,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4742153901","name":"とも家","lat":35.75044,"lon":136.95753,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4742153905","name":"chocotte","lat":35.75033,"lon":136.95904,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:372540587","name":"みのばんば","lat":35.92341,"lon":136.83105,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:409191082","name":"TAKASU TERRACE","lat":35.99824,"lon":136.84891,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4458847892","name":"クリークサイド","lat":35.99731,"lon":136.89741,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

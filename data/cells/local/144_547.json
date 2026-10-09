@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:7636807897","name":"木曽馬牧場　ホープロッジ","lat":36.00169,"lon":136.89714,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1547000521","name":"明智ゴルフ倶楽部 荘川ゴルフ場","lat":36.01889,"lon":136.92334,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1547000522","name":"荘川高原カントリー倶楽部","lat":36.0583,"lon":136.95474,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

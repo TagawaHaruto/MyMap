@@ -1,0 +1,17 @@
+[
+{"id":"osm:way:1012318099","name":"京町亭","lat":38.03446,"lon":138.24127,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1012318101","name":"持田家","lat":38.03202,"lon":138.2417,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1012318102","name":"板前の店 竹屋","lat":38.03214,"lon":138.24173,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1012318103","name":"磯の家","lat":38.03252,"lon":138.242,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1012320748","name":"パーラーつるや","lat":38.03219,"lon":138.24126,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1012320750","name":"銀寿司","lat":38.03259,"lon":138.24149,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1012320751","name":"割烹 中庄","lat":38.03104,"lon":138.24186,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1042779215","name":"輿左エ門","lat":38.03545,"lon":138.24699,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1176601759","name":"寿司初","lat":38.02513,"lon":138.23679,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1177246693","name":"炙り屋ちゃらくらげぇ","lat":38.03163,"lon":138.24178,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1522033151","name":"生そば とみ","lat":38.02886,"lon":138.2401,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1012318100","name":"京町茶屋","lat":38.03463,"lon":138.24119,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1012320749","name":"カトレア","lat":38.03252,"lon":138.24167,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1177246328","name":"cafe 丘の上の雲の向こう","lat":38.03607,"lon":138.24269,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1522033152","name":"北沢Terrace","lat":38.03735,"lon":138.24132,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5909239736","name":"栄村直売所かたくり","lat":36.98853,"lon":138.58094,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5909239737","name":"物産館またたび","lat":36.98852,"lon":138.58141,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12069444273","name":"たかはし","lat":36.95132,"lon":138.6667,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12069444295","name":"わらび","lat":36.95139,"lon":138.66628,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:586026020","name":"笹小舎","lat":36.97419,"lon":138.74972,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"}
+]

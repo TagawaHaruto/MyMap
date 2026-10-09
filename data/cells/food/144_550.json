@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:3612137772","name":"ネイチャープラザ一の瀬 (Natureplaza ichinose)","lat":36.1114,"lon":137.62669,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3621762161","name":"三本滝レストハウス","lat":36.11398,"lon":137.59662,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4381798716","name":"上高地食堂","lat":36.24601,"lon":137.63553,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4459178988","name":"Ankiya restaurant","lat":36.18474,"lon":137.55204,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7347775819","name":"オアシス","lat":36.12208,"lon":137.62487,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7366154785","name":"レストラン乗鞍","lat":36.12236,"lon":137.61889,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9936340279","name":"ひぐち","lat":36.16361,"lon":137.66007,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12890583901","name":"Shiro","lat":36.12127,"lon":137.62645,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:191022645","name":"よし本","lat":36.1913,"lon":137.55198,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:787833956","name":"メープル","lat":36.12205,"lon":137.62273,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:787876005","name":"レストラン シヨン","lat":36.11966,"lon":137.64298,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:793657406","name":"野麦峠の館","lat":36.05169,"lon":137.60464,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:794203755","name":"そば処 峠路","lat":36.04173,"lon":137.63651,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4409464070","name":"マスタシュ","lat":36.19171,"lon":137.55275,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6815122288","name":"トワサンク","lat":36.24891,"lon":137.63725,"pref":"長野","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13342629093","name":"こもれび","lat":36.18935,"lon":137.55129,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

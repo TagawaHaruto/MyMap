@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:3800357850","name":"鮮魚栗山","lat":36.55944,"lon":136.87231,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3800739463","name":"吉尾とうふ店","lat":36.55777,"lon":136.8769,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5274811354","name":"庄川健康プラザ","lat":36.57708,"lon":136.98577,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:541253694","name":"南砺市城南屋内グラウンド","lat":36.5083,"lon":136.89502,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:545793236","name":"庄川体育センター","lat":36.58044,"lon":136.98905,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:546754768","name":"油田体育館","lat":36.65577,"lon":136.96828,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:553943674","name":"体育館","lat":36.67159,"lon":136.89841,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:553960180","name":"小矢部市 市民プール","lat":36.67637,"lon":136.85889,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:553960198","name":"小矢部市民体育館","lat":36.67872,"lon":136.86462,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:706344420","name":"グランドゴルフ","lat":36.58052,"lon":136.99168,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1465201422","name":"金沢東ゴルフクラブ","lat":36.60825,"lon":136.77867,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1465207514","name":"ゴルフ倶楽部 ゴールドウイン","lat":36.60645,"lon":136.87524,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1465207515","name":"千羽平ゴルフクラブ","lat":36.61583,"lon":136.87529,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5732034749","name":"両神荘","lat":36.0078,"lon":138.97496,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6403414532","name":"下仁田館","lat":36.21101,"lon":138.78343,"pref":"群馬","genres":["lodging"],"indoor":true,"url":"https://shimonitakan.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8539065955","name":"両神山荘","lat":36.02841,"lon":138.87871,"pref":"埼玉","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8808621725","name":"みかぼ高原荘","lat":36.14354,"lon":138.91301,"pref":"群馬","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4374280045","name":"瀬林の漣痕(さざ波岩）恐竜の足跡","lat":36.07149,"lon":138.8299,"pref":"群馬","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5155868841","name":"内匠城跡","lat":36.23934,"lon":138.9031,"pref":"群馬","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5447296454","name":"道祖神","lat":36.24186,"lon":138.8451,"pref":"群馬","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9076602695","name":"慰霊之碑","lat":36.02086,"lon":138.81151,"pref":"埼玉","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12479874778","name":"高瀬地区土地改良事業 竣工記念碑","lat":36.2472,"lon":138.87711,"pref":"群馬","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

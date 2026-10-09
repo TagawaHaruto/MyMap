@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:440143519","name":"奥胎内ヒュッテ","lat":37.92389,"lon":139.54017,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4730366633","name":"飯豊山荘","lat":37.92564,"lon":139.6698,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6077907760","name":"民宿の越後屋","lat":37.96513,"lon":139.67711,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6077907761","name":"Guest House 花筏","lat":37.96736,"lon":139.67688,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:466221597","name":"泡の湯温泉 三好荘","lat":37.95348,"lon":139.6977,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8811773021","name":"遭難碑","lat":37.90253,"lon":139.67049,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8811773091","name":"遭難碑","lat":37.94466,"lon":139.61162,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

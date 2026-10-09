@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:9262029722","name":"Fairfield by Marriott Mie Odai","lat":34.39418,"lon":136.40785,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.marriott.com/hotels/travel/ngofi-fairfield-mie-odai/","note":"宿","g":"heritage","k":"lodging","chain":true},
+{"id":"osm:node:13785724601","name":"まてまてハウス","lat":34.38466,"lon":136.36937,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8463015831","name":"津波海難者慰霊碑","lat":34.27596,"lon":136.49821,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463015832","name":"津波供養寳塔","lat":34.25872,"lon":136.46238,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463015833","name":"三界萬霊","lat":34.25876,"lon":136.46266,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

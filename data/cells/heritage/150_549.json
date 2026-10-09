@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:520528753","name":"禄光旅館","lat":37.52618,"lon":137.32596,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1235110986","name":"LAC能登珠洲","lat":37.52759,"lon":137.26639,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://livinganywherecommons.com/base/notosuzu/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10229718750","name":"日本列島中心の碑","lat":37.52892,"lon":137.32543,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11490976036","name":"奥能登絶景海道","lat":37.52912,"lon":137.27192,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

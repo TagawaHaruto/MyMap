@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5083871218","name":"長門牧場","lat":36.16992,"lon":138.27747,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"ながとぼくじょう"},
+{"id":"osm:node:6461890130","name":"長門牧場レストハウス","lat":36.17096,"lon":138.27732,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://nagatofarm.com/","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:6516678224","name":"物産品直売所","lat":36.23613,"lon":138.44069,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6516678225","name":"農産物直売所","lat":36.23612,"lon":138.44059,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9914376242","name":"臼田鯉点","lat":36.22965,"lon":138.4788,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12464754014","name":"Bloomin","lat":36.12854,"lon":138.46533,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:223019606","name":"まちの駅","lat":36.16613,"lon":138.4847,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:622379287","name":"小海町農産物加工直売所","lat":36.0931,"lon":138.48314,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:1743936320","name":"佐久リゾートゴルフ倶楽部","lat":36.15927,"lon":138.43401,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:681785870","name":"しらかば社会体育館","lat":36.13719,"lon":138.47715,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:962427000","name":"海瀬社会体育館","lat":36.15453,"lon":138.48183,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1237876896","name":"サニーカントリークラブ","lat":36.18713,"lon":138.30884,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://sunny-cc.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1252218269","name":"松原湖高原スケートセンター","lat":36.05297,"lon":138.44671,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:16717401","name":"鹿島南蓼科ゴルフコース","lat":36.00106,"lon":138.27122,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://kajima-resort.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

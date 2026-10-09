@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:12796857838","name":"農家民宿れすとらん ひがし","lat":36.96413,"lon":138.59807,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"lodging"},
+{"id":"osm:node:2850702381","name":"レストランかぐら","lat":36.87076,"lon":138.72765,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6389133687","name":"ニュープールー","lat":36.87778,"lon":138.73693,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6389133689","name":"白樺","lat":36.85275,"lon":138.73924,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant"},
+{"id":"osm:node:6389133690","name":"アリエスカ","lat":36.85267,"lon":138.7393,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6389133696","name":"ぶなの木","lat":36.84759,"lon":138.74832,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11036469711","name":"Soba Testaurant","lat":36.99088,"lon":138.60359,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12796857838","name":"農家民宿れすとらん ひがし","lat":36.96413,"lon":138.59807,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:388178309","name":"和田小屋","lat":36.87037,"lon":138.72859,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:586026021","name":"渓谷","lat":36.97433,"lon":138.74964,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:641159900","name":"味処大平","lat":36.97751,"lon":138.67035,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:641159903","name":"ごっつぉ市","lat":36.99176,"lon":138.66846,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:682257434","name":"レストラン アルム","lat":36.84315,"lon":138.74838,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1304006954","name":"雪ふる食堂（清津百貨）","lat":36.98577,"lon":138.74419,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1384347443","name":"食事 いろり","lat":36.99594,"lon":138.73069,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6389133688","name":"かぐらラーメンコーナー","lat":36.8777,"lon":138.73702,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:6389133695","name":"田代ラーメンコーナー","lat":36.8477,"lon":138.7483,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

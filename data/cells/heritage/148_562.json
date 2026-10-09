@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1375569209","name":"旅館 喜楽亭","lat":37.0897,"lon":140.55527,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:962689917","name":"三斗巻遺跡","lat":37.23834,"lon":140.56815,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

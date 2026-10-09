@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5352771683","name":"奥志賀高原ホテル","lat":36.77941,"lon":138.52936,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8242713968","name":"志賀高原プリンスホテル東館フロント","lat":36.75092,"lon":138.5287,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8242713976","name":"秋山郷 雄川閣","lat":36.80937,"lon":138.6202,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://yusenkaku.yadoroku.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8242713977","name":"切明リバーサイドハウス","lat":36.81032,"lon":138.6203,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://kiriake-riverside.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:434673364","name":"中条温泉トマトの国","lat":36.99983,"lon":138.56776,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:中条温泉 トマトの国"},
+{"id":"osm:way:586026015","name":"清津館","lat":36.97363,"lon":138.74958,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:586026016","name":"旅館 村山荘","lat":36.97395,"lon":138.74955,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:586026019","name":"民宿 渓山荘","lat":36.97398,"lon":138.74988,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:641127029","name":"秋山郷　萌木の里","lat":36.91562,"lon":138.63437,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:644449286","name":"北野天満温泉　学問の湯","lat":36.93746,"lon":138.57418,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:958741003","name":"ホテルグランフェニックス奥志賀","lat":36.78066,"lon":138.52728,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://www.hotelgrandphenix.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3639864411","name":"JR 日本最高積雪地点","lat":36.98924,"lon":138.5776,"pref":"長野","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6038275223","name":"佐藤佐平治翁記念碑","lat":36.91922,"lon":138.63728,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

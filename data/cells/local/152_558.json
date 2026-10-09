@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5116629521","name":"丸清鮮魚店","lat":38.05977,"lon":139.7496,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4377326831","name":"胎内高原ゴルフ倶楽部","lat":38.02932,"lon":139.50887,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4210445498","name":"Kojima","lat":34.68681,"lon":137.83123,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4428912720","name":"佐野屋","lat":34.68262,"lon":137.97801,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9787012417","name":"くれたけイン","lat":34.74179,"lon":137.92653,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:426284700","name":"ホテル観世","lat":34.74167,"lon":137.92476,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:426284734","name":"袋井プリンセスホテル","lat":34.7498,"lon":137.92156,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:434988402","name":"割烹旅館 八百甚","lat":34.68189,"lon":137.98155,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13770138701","name":"F-86 Sabre","lat":34.66907,"lon":137.82711,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:297129731","name":"遠江国分寺跡","lat":34.71951,"lon":137.85132,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2501539724","name":"横須賀城跡地","lat":34.68554,"lon":137.9715,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4805024579","name":"二宮金次郎像","lat":34.68311,"lon":137.98195,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4972894313","name":"浅羽佐喜太郎記念碑","lat":34.68913,"lon":137.93615,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8826410377","name":"普門寺聖堂","lat":34.69285,"lon":137.98586,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:8852727997","name":"大野命山","lat":34.67857,"lon":137.94959,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:436904998","name":"横須賀町番所","lat":34.67961,"lon":137.98879,"pref":"静岡","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"}
+]

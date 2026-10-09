@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:453669152","name":"元気ショップこめこめ","lat":35.58067,"lon":137.19001,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:686810208","name":"白川園本舗 七宗御殿","lat":35.53246,"lon":137.11491,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:776232359","name":"正願寺CC","lat":35.51672,"lon":137.00011,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

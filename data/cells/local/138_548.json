@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:12113588439","name":"中神茶園","lat":34.65468,"lon":137.24301,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:364717780","name":"浜の休憩所さつき","lat":34.58126,"lon":137.02201,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:427372105","name":"しーちゃんの里","lat":34.7268,"lon":137.03454,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:700625967","name":"長栄","lat":34.58847,"lon":137.02829,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://choei.net/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:505450205","name":"体育館","lat":34.60098,"lon":137.16603,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544315129","name":"体育館","lat":34.60979,"lon":137.0673,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544503367","name":"体育館","lat":34.59754,"lon":137.09665,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544503371","name":"体育館","lat":34.59716,"lon":137.0967,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544590448","name":"体育館","lat":34.61215,"lon":137.19505,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544594878","name":"体育館","lat":34.62616,"lon":137.23453,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544611501","name":"体育館","lat":34.64929,"lon":137.15338,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"}
+]

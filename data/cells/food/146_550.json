@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:6464242271","name":"黒部ダムレストハウス","lat":36.56651,"lon":137.66458,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10142779824","name":"Soba Noodle","lat":36.57732,"lon":137.59574,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10142779831","name":"Restaurant Tateyama","lat":36.57712,"lon":137.59577,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:554794113","name":"レストハウス称名","lat":36.57977,"lon":137.50901,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3721345936","name":"ティーラウンジりんどう","lat":36.57749,"lon":137.59518,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:372669751","name":"大汝休憩所","lat":36.57636,"lon":137.62005,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

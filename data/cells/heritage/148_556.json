@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:272484310","name":"ホテル湯元","lat":37.19509,"lon":139.08089,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:272484311","name":"大湯ホテル","lat":37.19924,"lon":139.07719,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:895236828","name":"和泉屋旅館","lat":37.19346,"lon":139.08109,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:895877882","name":"ペンション デューク","lat":37.19384,"lon":139.0795,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1311698704","name":"駒の湯温泉 駒の湯山荘","lat":37.16226,"lon":139.08909,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1311705908","name":"奥只見山荘","lat":37.13493,"lon":139.13817,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1311705909","name":"湖山荘","lat":37.13543,"lon":139.13871,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1524811744","name":"民宿 樹湖里","lat":37.13688,"lon":139.1407,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1524811745","name":"銀山平 伝之助","lat":37.13656,"lon":139.15448,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9804502523","name":"科学の碑","lat":37.23117,"lon":139.00564,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:科学の碑"},
+{"id":"osm:node:9807182403","name":"大沢城址","lat":37.23186,"lon":139.001,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13898186028","name":"三島由紀夫文学碑","lat":37.16851,"lon":139.12153,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13903500970","name":"大杉分校跡地","lat":37.00997,"lon":139.24825,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

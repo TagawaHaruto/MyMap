@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2852693138","name":"たてしな自由農園","lat":35.9687,"lon":138.24147,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://www.tateshinafree.co.jp/","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5325882853","name":"直売所 ファーム長谷","lat":35.80979,"lon":138.08387,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11505214660","name":"大明神釣堀センター","lat":35.81879,"lon":138.07817,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:62138348","name":"中央道晴ヶ峰カントリー倶楽部","lat":35.96096,"lon":138.13417,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:387759151","name":"高遠スポーツ公園プール","lat":35.83644,"lon":138.05424,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:565643226","name":"茅野市営プール","lat":35.99453,"lon":138.16702,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

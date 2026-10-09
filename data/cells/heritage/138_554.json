@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:7802253322","name":"浜道楽","lat":34.72577,"lon":138.74401,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7802253704","name":"いなばや旅館","lat":34.72545,"lon":138.74462,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7802253706","name":"雲見園","lat":34.72569,"lon":138.74526,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523354","name":"かごや","lat":34.72564,"lon":138.74371,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523355","name":"川端荘","lat":34.72533,"lon":138.74424,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523356","name":"雲見温泉 民宿 吉右ェ門","lat":34.725,"lon":138.74426,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523357","name":"庄兵衛","lat":34.72537,"lon":138.7441,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523361","name":"仙造屋","lat":34.72545,"lon":138.74308,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523362","name":"松原荘","lat":34.72553,"lon":138.74332,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523363","name":"太郎","lat":34.72496,"lon":138.74461,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523364","name":"網元 又五郎","lat":34.72482,"lon":138.74462,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523365","name":"長右ェ門","lat":34.72474,"lon":138.74494,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523366","name":"富久三苑","lat":34.72335,"lon":138.74499,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523367","name":"番上屋","lat":34.7232,"lon":138.74506,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523368","name":"大漁","lat":34.7224,"lon":138.74505,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523369","name":"船よし","lat":34.72264,"lon":138.74542,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523370","name":"高見家","lat":34.72218,"lon":138.74591,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523372","name":"温泉民宿さかんや","lat":34.72088,"lon":138.7463,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523373","name":"民宿たき","lat":34.72055,"lon":138.74642,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11107523374","name":"みどり荘","lat":34.72048,"lon":138.74602,"pref":"静岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:11661676924","name":"すぎもと","lat":35.9522,"lon":136.24407,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12104222665","name":"大黒食堂","lat":35.91791,"lon":136.24416,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:12104289992","name":"勘助","lat":35.91664,"lon":136.23995,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12104296848","name":"池萬","lat":35.91506,"lon":136.23542,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:888915191","name":"万葉庵","lat":35.88501,"lon":136.23684,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:11661676920","name":"にしげん","lat":35.95245,"lon":136.24413,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:11661677255","name":"ささや","lat":35.91738,"lon":136.23934,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:12104222164","name":"くになかのケーキ屋さん","lat":35.93454,"lon":136.23406,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:718235954","name":"カネタみやげ店","lat":36.87229,"lon":138.21148,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:919304410","name":"信濃町立総合体育館","lat":36.79871,"lon":138.21694,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6283802893","name":"野尻湖体育館","lat":36.83147,"lon":138.20581,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:90289882","name":"妙高CC","lat":36.91454,"lon":138.1822,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:653839504","name":"信濃ゴルフ倶楽部","lat":36.76054,"lon":138.20312,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:653839505","name":"信濃ゴルフ倶楽部","lat":36.75184,"lon":138.20373,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1161959697","name":"三水Ｂ＆Ｇ海洋センター","lat":36.7592,"lon":138.24878,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

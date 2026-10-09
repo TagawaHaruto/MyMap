@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:682917697","name":"宿根木体験学習館","lat":37.80631,"lon":138.24276,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1175639539","name":"すし角","lat":37.97431,"lon":138.24009,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1175914043","name":"手打ちそば　徳平","lat":37.97559,"lon":138.23782,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:682917735","name":"茶房やました","lat":37.80705,"lon":138.24311,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:683172849","name":"cafe nano","lat":37.80678,"lon":138.24282,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:4231252199","name":"くりくりの里中津川","lat":35.54364,"lon":137.44918,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:61933044","name":"ひるかわゴルフ場","lat":35.50338,"lon":137.41997,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

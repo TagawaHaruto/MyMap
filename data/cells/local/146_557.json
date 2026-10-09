@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4347762494","name":"赤城豆腐すみれ屋","lat":36.51496,"lon":139.25432,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:900361670","name":"やお藤","lat":36.73946,"lon":139.4988,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:900361671","name":"ゑびすや","lat":36.73951,"lon":139.49872,"pref":"栃木","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4326608934","name":"みどり市東運動公園","lat":36.5386,"lon":139.36918,"pref":"群馬","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4326613653","name":"みどり市役所東運動公園社会体育館","lat":36.5374,"lon":139.37058,"pref":"群馬","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

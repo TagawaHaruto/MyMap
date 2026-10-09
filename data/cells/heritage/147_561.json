@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:6002062459","name":"豊年万作","lat":36.76405,"lon":140.40054,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12901478456","name":"滝美館","lat":36.76547,"lon":140.40257,"pref":"茨城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7741228070","name":"鏡城跡","lat":36.78798,"lon":140.36857,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8379960394","name":"可恐","lat":36.76194,"lon":140.37961,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8379960395","name":"可恐","lat":36.75663,"lon":140.37952,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8379963985","name":"明治二十三年洪水被害紀念碑","lat":36.7883,"lon":140.36127,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11057990114","name":"三界萬霊","lat":36.99352,"lon":140.39233,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11058996865","name":"國幣中社都都古別神社","lat":36.99396,"lon":140.39248,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:829311156","name":"小里城跡","lat":36.75447,"lon":140.48933,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"}
+]

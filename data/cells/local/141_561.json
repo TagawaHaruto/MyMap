@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:1217905690","name":"富士園茶舗","lat":35.41902,"lon":140.29946,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1220558828","name":"㈱白井園本町店","lat":35.42581,"lon":140.2918,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"https://shiraien.jimdofree.com/%E7%9B%B4%E5%96%B6%E5%BA%97/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6294570010","name":"釣ヶ崎海岸サーフィンビーチ","lat":35.38249,"lon":140.39235,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12898374201","name":"Anytime fitness Mobara","lat":35.43104,"lon":140.30883,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:112431634","name":"真名カントリー","lat":35.47426,"lon":140.26123,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:115228082","name":"南茂原ＧＣ","lat":35.3597,"lon":140.27439,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:521680048","name":"ムーンレイク ゴルフクラブ茂原コース","lat":35.456,"lon":140.27727,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://booking.pacificgolf.co.jp/guide/65.html","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254635","name":"万木城カントリークラブ","lat":35.3093,"lon":140.27833,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254636","name":"大多喜カントリークラブ【PGM】","lat":35.30823,"lon":140.26646,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254637","name":"房総カントリークラブ房総ゴルフ場","lat":35.32121,"lon":140.26937,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254638","name":"房総カントリークラブ大上ゴルフ場","lat":35.32828,"lon":140.28222,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254639","name":"デイスターゴルフクラブ","lat":35.33552,"lon":140.262,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254643","name":"ABCいすみゴルフコース","lat":35.27113,"lon":140.29962,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254995","name":"一の宮カントリー倶楽部","lat":35.34602,"lon":140.36747,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697256016","name":"茂原カントリー倶楽部","lat":35.40145,"lon":140.26957,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://shotnavi.jp/gcguide/gcinfo_1407.htm","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1234246491","name":"茂原ヤングボウル","lat":35.43501,"lon":140.29317,"pref":"千葉","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1302557323","name":"Taitō Port","lat":35.32962,"lon":140.40162,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

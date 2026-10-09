@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:622708708","name":"魚甚","lat":35.55733,"lon":138.48813,"pref":"山梨","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4138810808","name":"ほっともっと韮崎中田店","lat":35.74746,"lon":138.43863,"pref":"山梨","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:169788673","name":"アーバン・バッティングスタジアム","lat":35.64707,"lon":138.49617,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:552494263","name":"スポルトコスモボウル","lat":35.61559,"lon":138.46583,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14155772483","name":"RIKUSAKUエビ釣り堀（陸作）","lat":35.69705,"lon":138.49278,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://ebituri-restaurant.rikusaku.com","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:757846349","name":"八田河川敷グラウンド","lat":35.65899,"lon":138.49854,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1143835222","name":"ダイトースターレーン","lat":35.679,"lon":138.49557,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

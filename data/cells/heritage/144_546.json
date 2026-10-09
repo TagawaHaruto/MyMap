@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:3698120525","name":"御前荘","lat":36.16492,"lon":136.63466,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3752214729","name":"ホテル八鵬","lat":36.19357,"lon":136.62808,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.h-happo.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3865933367","name":"ザ・ウッディ白峰 ヤマドリの家","lat":36.16538,"lon":136.63346,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4349794019","name":"東急ハーヴェストクラブスキージャム勝山","lat":36.07306,"lon":136.55562,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4349794020","name":"ホテルハーヴェストスキージャム勝山","lat":36.07333,"lon":136.55555,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6501535255","name":"奥越高原青少年自然の家","lat":36.02346,"lon":136.58262,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6501535396","name":"農家民宿 このは","lat":36.01923,"lon":136.57283,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10605411942","name":"山和荘","lat":36.17508,"lon":136.62529,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10605412003","name":"あざみ荘","lat":36.17523,"lon":136.62568,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10610473164","name":"民宿つるの","lat":36.17546,"lon":136.62551,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1322869477","name":"勝山ニューホテル","lat":36.05007,"lon":136.51479,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.rio-hotels.co.jp/katsuyama/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2927348260","name":"忠魂碑","lat":36.04366,"lon":136.54167,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2927348262","name":"記功碑","lat":36.04362,"lon":136.5417,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4213475370","name":"村岡中央土地改良記念碑","lat":36.07673,"lon":136.50091,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6713837341","name":"白山稚児神社 御造営記念","lat":36.04333,"lon":136.51956,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979222","name":"享保11年女神川洪水200年災害供養碑","lat":36.03249,"lon":136.51768,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979223","name":"享保11年山崩れ・水害100年災害供養碑","lat":36.03245,"lon":136.51934,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462979224","name":"慰霊碑","lat":36.12592,"lon":136.50846,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12880187301","name":"Echizen Daibutsu","lat":36.05365,"lon":136.51929,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12880191101","name":"Pagoda","lat":36.05524,"lon":136.51857,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

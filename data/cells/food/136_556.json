@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6654770904","name":"美家古寿し","lat":34.20557,"lon":139.13592,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6659765396","name":"まいとりぃ","lat":34.20622,"lon":139.13417,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:6664701855","name":"新栄楼","lat":34.20523,"lon":139.13599,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:6664918849","name":"Ailana","lat":34.2067,"lon":139.13412,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant"},
+{"id":"osm:node:6665242143","name":"潮見","lat":34.20449,"lon":139.13489,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6664701843","name":"みんなの別荘　ファミリア","lat":34.20507,"lon":139.13533,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6664918848","name":"COZY CAFE","lat":34.20674,"lon":139.13422,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6665204961","name":"OWL","lat":34.20718,"lon":139.13468,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13740184764","name":"Deep","lat":34.20722,"lon":139.13484,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6664701856","name":"つるや和菓子店","lat":34.20548,"lon":139.13653,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6664918838","name":"雑貨生菓子　中豊商店","lat":34.20504,"lon":139.13714,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6664918841","name":"洋菓子のUMEYA","lat":34.20591,"lon":139.13716,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6664918844","name":"藤屋ベーカリー","lat":34.20662,"lon":139.13707,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6664965015","name":"味美","lat":34.20692,"lon":139.13721,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

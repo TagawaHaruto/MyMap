@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:826337534","name":"大平高原保養センター","lat":35.44904,"lon":138.00566,"pref":"長野","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:847996888","name":"しらびそ高原 天の川","lat":35.43402,"lon":138.02848,"pref":"長野","genres":["lodging"],"indoor":true,"url":"https://shirabiso-amanogawa.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11397130175","name":"地蔵峠地蔵菩薩像","lat":35.48132,"lon":138.01148,"pref":"長野","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","kana":"じぞうとうげじぞうぼさつぞう"}
+]

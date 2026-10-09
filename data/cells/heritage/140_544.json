@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4986006440","name":"ホテルレイクランド彦根","lat":35.24609,"lon":136.24705,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5887276793","name":"南彦根ステーションホテル","lat":35.24682,"lon":136.24717,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://minami-hikone.net","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5893801288","name":"ビジネスホテルくらま","lat":35.21213,"lon":136.22483,"pref":"その他","genres":["lodging"],"indoor":true,"url":"http://kurama.co.jp","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5915730504","name":"福島屋旅館","lat":35.01499,"lon":136.24034,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5915747391","name":"旅館寿志社","lat":35.01374,"lon":136.24724,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:702454040","name":"コンフォートイン八日市","lat":35.09574,"lon":136.23017,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.choice-hotels.jp/inn/yokaichi/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2635951496","name":"伊藤忠兵衛翁碑","lat":35.19871,"lon":136.22851,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2636416618","name":"ソニー受賞記念","lat":35.20365,"lon":136.23268,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2636416632","name":"古川欽次郎像","lat":35.20336,"lon":136.23268,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5915730491","name":"鯰江城跡","lat":35.1089,"lon":136.24216,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6312163360","name":"大谷遺跡","lat":35.02921,"lon":136.2394,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8908362540","name":"日野町道路元標","lat":35.01294,"lon":136.24875,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:169101581","name":"講堂","lat":35.20306,"lon":136.23213,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:169101606","name":"酬徳記念館","lat":35.20401,"lon":136.23292,"pref":"その他","genres":["heritage"],"indoor":false,"url":"http://bushitsu.blog47.fc2.com/","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:674026516","name":"すこやか","lat":35.03011,"lon":136.23883,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

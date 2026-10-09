@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4569817368","name":"ヒスイ王国館","lat":37.04407,"lon":137.86238,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"http://itoigawa-base.com/jhisui/index.html","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:462006162","name":"一印かまぼこ屋","lat":37.04652,"lon":137.86508,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"https://ichijirushi.com","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:349684426","name":"能生体育館","lat":37.10154,"lon":137.98545,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:594880607","name":"糸魚川市民総合体育館","lat":37.03156,"lon":137.86024,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:606566846","name":"美山公園グラウンドゴルフ場","lat":37.02438,"lon":137.86072,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:606566847","name":"美山公園グラウンドゴルフ場","lat":37.02492,"lon":137.8596,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:633427085","name":"糸魚川カントリークラブ","lat":37.01777,"lon":137.87537,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://itoigawa-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

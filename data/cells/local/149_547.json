@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5506125758","name":"中小路商店","lat":37.39526,"lon":136.90912,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5514148283","name":"おおぞら村輪島支店","lat":37.3916,"lon":136.90166,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5798335548","name":"アストアワジマ","lat":37.38918,"lon":136.90608,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5907624126","name":"わら庄","lat":37.39564,"lon":136.90325,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5907624127","name":"ぬりものやまぎし","lat":37.39563,"lon":136.9034,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5907624128","name":"大徹","lat":37.39569,"lon":136.90359,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5907624129","name":"八井漆器本店","lat":37.39575,"lon":136.90351,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5907624130","name":"泉秀芳堂","lat":37.39584,"lon":136.90335,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5907624131","name":"てふてふ","lat":37.39594,"lon":136.90319,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13305702043","name":"西浦茶舗","lat":37.39278,"lon":136.90496,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13305724402","name":"漆市番","lat":37.3967,"lon":136.90493,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13305744664","name":"わじまおみやげ館","lat":37.38962,"lon":136.90658,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12870681091","name":"出張　輪島朝市","lat":37.38621,"lon":136.9046,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:591922161","name":"体育館","lat":37.39318,"lon":136.9187,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:825712371","name":"ザ・カントリークラブ・能登","lat":37.25425,"lon":136.92481,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"http://www.cc-noto.co.jp","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

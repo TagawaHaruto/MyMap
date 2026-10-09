@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1831645141","name":"鯛佐","lat":36.44768,"lon":136.62779,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3692589125","name":"松村鮮魚店","lat":36.44849,"lon":136.62645,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","chain":true},
+{"id":"osm:node:4524216389","name":"しらやまさん","lat":36.4372,"lon":136.63029,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:498271917","name":"海産物乾物つちや","lat":36.44781,"lon":136.62673,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:498271919","name":"鮮魚栗田屋","lat":36.44779,"lon":136.62705,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:875379947","name":"わくわくファーム川北","lat":36.4689,"lon":136.54039,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2181146362","name":"トレーニングルーム","lat":36.44384,"lon":136.5944,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4151439443","name":"物見山総合体育館","lat":36.44786,"lon":136.54782,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5762634877","name":"小松恵那トレーニングセンター","lat":36.40829,"lon":136.52057,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:171300138","name":"白山郷公園体育館","lat":36.45512,"lon":136.61961,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:479748868","name":"Hakusan Country Club Sensui Course","lat":36.44248,"lon":136.56164,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:479748869","name":"Hakusan Country Club Shofu Course","lat":36.43524,"lon":136.55889,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:491739241","name":"サンアリーナ川北","lat":36.46969,"lon":136.54067,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:496283346","name":"温泉プール","lat":36.43735,"lon":136.54661,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:516823169","name":"ハンドレッドゴルフ","lat":36.49092,"lon":136.62111,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:612287151","name":"バードハミング鳥越テニスコート","lat":36.37142,"lon":136.61086,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:664065049","name":"GCツインフィールズ","lat":36.41251,"lon":136.53564,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1124787182","name":"ドリームレイク","lat":36.46059,"lon":136.50658,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

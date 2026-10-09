@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:3106273783","name":"どさん子礼拝店","lat":37.46011,"lon":138.66594,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:3106324645","name":"らーめん一竜","lat":37.45359,"lon":138.66133,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:4311435831","name":"昇龍軒","lat":37.36063,"lon":138.55516,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9843287094","name":"ガスト","lat":37.36089,"lon":138.55565,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11958025207","name":"GROWRENCE　CAFE","lat":37.36865,"lon":138.59003,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14047859948","name":"麺屋しゃがら","lat":37.36157,"lon":138.56354,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:1289604723","name":"竹田家","lat":37.36819,"lon":138.59004,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4311435828","name":"スターバックスコーヒー柏崎穂波町店","lat":37.36073,"lon":138.56143,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8639225428","name":"雪甘月","lat":37.43697,"lon":138.73603,"pref":"その他","genres":["food"],"indoor":true,"url":"https://e-dango.com/cafe/","note":"カフェ","g":"food","k":"cafe","kana":"ゆきかんげつ"},
+{"id":"osm:node:5517322835","name":"びわじまベーカリー","lat":37.36017,"lon":138.5572,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6371737289","name":"江口だんご本店","lat":37.43731,"lon":138.73619,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"https://e-dango.com/","note":"パン・お菓子","g":"food","k":"sweets","kana":"えぐちだんごほんてん"},
+{"id":"osm:node:9843242390","name":"モスバーガー","lat":37.37294,"lon":138.57889,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:10075248679","name":"すき家","lat":37.37687,"lon":138.57976,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:10113346220","name":"ファミリーマート","lat":37.3747,"lon":138.57185,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:1544351460","name":"かっぱ寿司","lat":37.36119,"lon":138.56319,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true}
+]

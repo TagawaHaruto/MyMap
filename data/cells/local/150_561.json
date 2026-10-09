@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:8353731287","name":"あだたらの里直売所","lat":37.53827,"lon":140.39595,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11932917882","name":"（有）ベスト21","lat":37.66314,"lon":140.46235,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11940076222","name":"加藤魚店","lat":37.65436,"lon":140.48145,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12034906059","name":"JAふくしま未来農産物直売所 ここら黒岩店","lat":37.7295,"lon":140.46418,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:12133343319","name":"駅菜都","lat":37.63553,"lon":140.48355,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"えきさいと"},
+{"id":"osm:way:242682332","name":"農園いちば","lat":37.71284,"lon":140.36365,"pref":"その他","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:2628060303","name":"箕輪スキー場","lat":37.65178,"lon":140.25327,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4413512045","name":"エビスサーキット","lat":37.63862,"lon":140.36668,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8353731660","name":"大玉村民体育館","lat":37.54409,"lon":140.37611,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8353772801","name":"大玉カントリークラブ","lat":37.54059,"lon":140.32242,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:60936308","name":"エビスサーキット","lat":37.64217,"lon":140.3691,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:エビスサーキット"},
+{"id":"osm:way:105833005","name":"県立あづま総合体育館","lat":37.7247,"lon":140.36493,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:242379018","name":"体育館","lat":37.70796,"lon":140.36218,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:367487506","name":"安達体育館","lat":37.61851,"lon":140.4558,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:720418864","name":"NCVふくしまパークゴルフ場","lat":37.72039,"lon":140.42944,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:738820183","name":"本宮市民プール","lat":37.51853,"lon":140.39013,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:899071174","name":"大玉カントリークラブ","lat":37.54084,"lon":140.31838,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

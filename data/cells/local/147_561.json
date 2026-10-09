@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6002062440","name":"まるせんや","lat":36.76498,"lon":140.40347,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6002062445","name":"依田屋","lat":36.76473,"lon":140.40241,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6002062452","name":"瀧本屋支店","lat":36.76484,"lon":140.4039,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6002062456","name":"たま屋","lat":36.76506,"lon":140.40312,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6002062462","name":"菊池みやげ店","lat":36.7648,"lon":140.40409,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6002062466","name":"滝本屋本店","lat":36.76478,"lon":140.40181,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12901478455","name":"滝生屋","lat":36.76522,"lon":140.40214,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12901478458","name":"若葉みやげ店","lat":36.76513,"lon":140.40266,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13705226102","name":"農産物直売所","lat":36.95059,"lon":140.41453,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:582396054","name":"滝本屋本店","lat":36.76451,"lon":140.40119,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:804483651","name":"石井製茶工場","lat":36.84865,"lon":140.32761,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:424724350","name":"うぐいすの森 ゴルフクラブ","lat":36.78196,"lon":140.25033,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:424724493","name":"袋田の滝カントリークラブ大子コース","lat":36.7948,"lon":140.32578,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

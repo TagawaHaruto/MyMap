@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:370734223","name":"清漁水産","lat":34.11854,"lon":139.54113,"pref":"東京","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4348061789","name":"レクリエーションセンター","lat":34.05922,"lon":139.54668,"pref":"東京","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

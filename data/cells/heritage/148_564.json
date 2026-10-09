@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3424219798","name":"旅館 慶州","lat":37.21949,"lon":141.00127,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3896101742","name":"ホテル双葉邸","lat":37.23751,"lon":141.00014,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6435457056","name":"Jヴィレッジ","lat":37.245,"lon":141.0027,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6438076456","name":"天皇皇后両陛下　行幸啓記念","lat":37.24528,"lon":141.00261,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6511200192","name":"正観世音","lat":37.24413,"lon":141.00071,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7334820146","name":"祖先累代之霊","lat":37.20764,"lon":141.00418,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7334820147","name":"石鳥居階段玉垣建設","lat":37.20764,"lon":141.00417,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

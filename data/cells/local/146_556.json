@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4843126084","name":"あぐりーむ販売","lat":36.61271,"lon":139.06902,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4843499525","name":"ファーマーズマーケット","lat":36.68689,"lon":139.10787,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4920618751","name":"金子リンゴ園","lat":36.69386,"lon":139.20919,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4920618754","name":"滝の駅吹割","lat":36.69918,"lon":139.209,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4920667217","name":"かぼちゃ屋","lat":36.73131,"lon":139.22583,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5873950147","name":"くずはがた売店","lat":36.55206,"lon":139.18389,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:492265065","name":"旬菜館","lat":36.6128,"lon":139.06843,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1117538464","name":"上州真田武将隊 商い処 松之屋","lat":36.64723,"lon":139.04031,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:292613718","name":"沼田魚菜市場","lat":36.65179,"lon":139.06824,"pref":"群馬","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:426745960","name":"赤城ゴルフ倶楽部","lat":36.53737,"lon":139.07102,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426745961","name":"ノーザンカントリークラブ赤城ゴルフ場","lat":36.57294,"lon":139.09544,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426745962","name":"昭和の森ゴルフ場","lat":36.5845,"lon":139.09022,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934323","name":"初穂カントリークラブ白沢高原コース","lat":36.67164,"lon":139.13652,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934324","name":"ゴルフクラブスカイリゾート","lat":36.69054,"lon":139.15897,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:557846235","name":"体育館","lat":36.55277,"lon":139.0463,"pref":"群馬","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:777699695","name":"ターゲットバードゴルフ","lat":36.69173,"lon":139.1046,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

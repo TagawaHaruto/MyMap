@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:10720543480","name":"ゆたかや旅館","lat":38.08543,"lon":138.4316,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:682638721","name":"浦島 東の館","lat":38.00371,"lon":138.31133,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:682638722","name":"浦島 南の館","lat":38.00414,"lon":138.31053,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:682638725","name":"佐和田温泉旅館 入海","lat":38.00767,"lon":138.29677,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:686250120","name":"両津やまきホテル","lat":38.07867,"lon":138.41606,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:686250139","name":"佐渡グランドホテル","lat":38.0827,"lon":138.42614,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1087129249","name":"旅館 金沢屋","lat":38.07727,"lon":138.43889,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1166130106","name":"Green Village Patio House","lat":38.01627,"lon":138.43011,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://r.goope.jp/gvyh1234/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1173116686","name":"SHiMano HOteL","lat":38.00557,"lon":138.31873,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1180437460","name":"旅荘みなと","lat":38.19763,"lon":138.33519,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6394353511","name":"順徳天皇皇女 忠子女王墓","lat":38.01906,"lon":138.32644,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:6653324886","name":"村雨の松","lat":38.08184,"lon":138.43555,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960814365","name":"皇紀二千六百年記念","lat":38.0791,"lon":138.43633,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960814366","name":"庚申塔","lat":38.07911,"lon":138.43632,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960814413","name":"八幡若宮社","lat":38.07922,"lon":138.43657,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960817223","name":"御嶽山神社","lat":38.07827,"lon":138.4378,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9960832989","name":"河原田町道路元標","lat":38.00087,"lon":138.3215,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10783391259","name":"キリシタン塚","lat":38.01747,"lon":138.25161,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10783446898","name":"コレラ地蔵","lat":38.0287,"lon":138.26088,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11372416963","name":"安寿と厨子王の碑","lat":38.13215,"lon":138.28942,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:75861076","name":"日蓮聖人像","lat":38.09645,"lon":138.42505,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

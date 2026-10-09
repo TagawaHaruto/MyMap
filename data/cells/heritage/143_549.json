@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6796169485","name":"仙游館","lat":35.92087,"lon":137.32345,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:294594339","name":"巌立","lat":35.91407,"lon":137.33042,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7157734774","name":"東海の観光と史跡認定地","lat":35.80896,"lon":137.25035,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7157734775","name":"飛騨美濃紅葉三十三選の地 下呂温泉合掌村","lat":35.80897,"lon":137.25036,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7157837559","name":"旧岩崎家住宅主屋","lat":35.80875,"lon":137.25009,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462968709","name":"御嶽山噴火災害犠牲者慰霊碑","lat":35.89295,"lon":137.48085,"pref":"長野","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:765755088","name":"民俗資料館 （旧岩崎家住宅主屋）","lat":35.8087,"lon":137.25,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"屋敷","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4518043438","name":"成田屋","lat":35.58105,"lon":137.18782,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4516619493","name":"野原城址","lat":35.61687,"lon":137.16747,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6780019685","name":"金比羅神社 川平神社 多度神社","lat":35.53972,"lon":137.13038,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6780019687","name":"天然記念物 飛水峡甌穴群","lat":35.53954,"lon":137.13024,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6780202273","name":"戦没記念碑","lat":35.52316,"lon":137.11686,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6780266632","name":"報国橋創設顕彰碑","lat":35.52278,"lon":137.11663,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6780316202","name":"日本列島最古の石発見地","lat":35.5258,"lon":137.11649,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6786106527","name":"御嶽山大権現","lat":35.52683,"lon":137.11781,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8462968705","name":"天心白菊の塔","lat":35.6036,"lon":137.17284,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:飛騨川バス転落事故"},
+{"id":"osm:node:14138839399","name":"飛水身代観音","lat":35.56037,"lon":137.18422,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:飛騨川バス転落事故"}
+]

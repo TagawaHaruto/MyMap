@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5282178621","name":"美濃観光ホテル","lat":35.52935,"lon":136.90239,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6038138313","name":"迎島バンガロー","lat":35.59873,"lon":136.84119,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1448483820","name":"湯本館","lat":35.57983,"lon":136.9315,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.mino-yumotokan.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14008700003","name":"Gujo Base","lat":35.74843,"lon":136.96033,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2530163694","name":"人口重心地 (JAPAN'S POPULATION CENTER)","lat":35.61491,"lon":136.97953,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2530163702","name":"炭窯跡休憩所","lat":35.61436,"lon":136.98002,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2530163711","name":"炭窯跡","lat":35.61341,"lon":136.98236,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2530201834","name":"水晶出土地帯 (Crystal excavation zone)","lat":35.6159,"lon":136.98045,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6053652539","name":"丸山古窯跡","lat":35.52833,"lon":136.86763,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6077921789","name":"大桜　土地改良碑","lat":35.52205,"lon":136.78649,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6148825508","name":"顕彰碑","lat":35.58321,"lon":136.8355,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6191695033","name":"落洞古墳","lat":35.54404,"lon":136.83856,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

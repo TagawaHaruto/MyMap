@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:2554854821","name":"三慶園","lat":35.01585,"lon":136.44736,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3842588334","name":"ホテルウェルネス鈴鹿路","lat":35.01276,"lon":136.46921,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5491349050","name":"レストハウス","lat":35.21851,"lon":136.28525,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9245324871","name":"グリーンホテル","lat":35.01343,"lon":136.47005,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13987326702","name":"でたらめ荘","lat":35.12247,"lon":136.28273,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:619181068","name":"渓流館","lat":35.09371,"lon":136.37857,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:1742869074","name":"山口誓子 句碑","lat":35.02019,"lon":136.41913,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2482318824","name":"佐久良城","lat":35.04567,"lon":136.25224,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5909042786","name":"藤之森溜","lat":35.08307,"lon":136.25945,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6052686933","name":"藤堂高虎像","lat":35.20644,"lon":136.26044,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7416954900","name":"一里塚跡","lat":35.22921,"lon":136.25124,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9419855344","name":"圃場整備事業完成記念","lat":35.00831,"lon":136.49356,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13341668820","name":"領界石","lat":35.00859,"lon":136.27562,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13341674523","name":"憩いの郷","lat":35.00863,"lon":136.27562,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

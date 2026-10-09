@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1212431077","name":"上越市大潟体育センター","lat":37.2252,"lon":138.33646,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1267362340","name":"じょうえつ海の駅 マリーナ上越 泊地","lat":37.17813,"lon":138.25731,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1276733282","name":"上越市高田スポーツセンター","lat":37.10656,"lon":138.25713,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

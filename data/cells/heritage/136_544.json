@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6859756402","name":"料理民宿 ささき","lat":34.1089,"lon":136.23439,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8463015825","name":"津波の碑","lat":34.10563,"lon":136.23663,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463015826","name":"奉石書佛経宝塔","lat":34.10562,"lon":136.23364,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11944704575","name":"小山浦狼煙場跡","lat":34.09217,"lon":136.22586,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

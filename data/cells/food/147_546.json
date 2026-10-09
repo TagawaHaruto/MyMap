@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3342703336","name":"とり野菜 まつや本店","lat":36.75144,"lon":136.71133,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11298995780","name":"ウシミツドキ","lat":36.77668,"lon":136.73319,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:11298998334","name":"バーニングカフェ","lat":36.77942,"lon":136.72923,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11405105333","name":"北本","lat":36.7768,"lon":136.73426,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:11405127897","name":"麦の屋","lat":36.77669,"lon":136.73236,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11530045914","name":"８番ラーメン","lat":36.77089,"lon":136.72634,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1240930769","name":"百味軒","lat":36.76905,"lon":136.72344,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:11298998333","name":"ＨＡＰＰＹ","lat":36.77922,"lon":136.73103,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:11405105364","name":"ピザキャリー","lat":36.77605,"lon":136.73233,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

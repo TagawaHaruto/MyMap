@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:11762519529","name":"あわら北潟温泉 hanaゆらり","lat":36.26162,"lon":136.23148,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.hanayurari.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11759440227","name":"北潟湖辺ほ場整備事業竣工記念碑","lat":36.25783,"lon":136.24496,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

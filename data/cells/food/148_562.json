@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6488864286","name":"ひさご食堂","lat":37.24111,"lon":140.56971,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8905116052","name":"幸寿し","lat":37.24128,"lon":140.56926,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:8905116082","name":"味楽","lat":37.24094,"lon":140.5692,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:8905116147","name":"団欒","lat":37.23767,"lon":140.57026,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8905146317","name":"よもぎ","lat":37.23879,"lon":140.5653,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8925983748","name":"たけちゃん弁当","lat":37.23798,"lon":140.57062,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:962689902","name":"藤乃家","lat":37.22074,"lon":140.57652,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1375174633","name":"桃飯房sone","lat":37.09427,"lon":140.54373,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:423136470","name":"Cafe de buddy","lat":37.05741,"lon":140.70671,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1375174593","name":"菓子処やまかみ田口店","lat":37.09467,"lon":140.54074,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1375559822","name":"暖工房","lat":37.08811,"lon":140.56307,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1375559831","name":"山形屋","lat":37.08542,"lon":140.56138,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1376704572","name":"せや菓子店","lat":37.0932,"lon":140.54887,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1376710749","name":"山上菓子店","lat":37.10842,"lon":140.5668,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

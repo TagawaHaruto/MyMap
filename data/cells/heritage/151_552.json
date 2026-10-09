@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1117711444","name":"ホテルめおと岩","lat":37.99609,"lon":138.23546,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1175914175","name":"敷島荘","lat":37.97492,"lon":138.23429,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1521343285","name":"七浦荘","lat":37.98276,"lon":138.23524,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9960873302","name":"村社 白山神社","lat":37.80753,"lon":138.24336,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4378226594","name":"たくみの里 ヨーグルト工房","lat":36.69567,"lon":138.90774,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4378252192","name":"キャンドルの家","lat":36.69692,"lon":138.90766,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4379044638","name":"七宝焼きの店","lat":36.69697,"lon":138.90771,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11256635337","name":"まるみや","lat":36.6847,"lon":138.77537,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:426745963","name":"白水ゴルフ倶楽部","lat":36.55342,"lon":138.98709,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426745964","name":"伊香保ゴルフ倶楽部 清瀧城コース　2014年2月28日閉業","lat":36.54929,"lon":138.88929,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426745965","name":"伊香保ゴルフ倶楽部","lat":36.52592,"lon":138.91686,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934325","name":"群馬カントリークラブ","lat":36.66808,"lon":138.95156,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934326","name":"関越ゴルフ倶楽部中山コース","lat":36.6391,"lon":138.92807,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934327","name":"高山ゴルフ倶楽部","lat":36.61046,"lon":138.94419,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934328","name":"上毛森林カントリー倶楽部","lat":36.60234,"lon":138.95351,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934329","name":"ノーザンカントリークラブ上毛ゴルフ場","lat":36.5959,"lon":138.96694,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934330","name":"美野原カントリークラブ","lat":36.62516,"lon":138.82498,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426934331","name":"伊香保国際カンツリークラブ","lat":36.51057,"lon":138.94272,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:777649019","name":"ターゲットバードゴルフ場","lat":36.67736,"lon":138.99065,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

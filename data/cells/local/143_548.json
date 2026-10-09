@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:14067321967","name":"ヤマカワ招猫店","lat":35.80676,"lon":137.23987,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14067321969","name":"桜苑","lat":35.80653,"lon":137.24003,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14067321972","name":"酒蔵舘","lat":35.80669,"lon":137.23967,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:relation:18248989","name":"朝霧スポーツ公園","lat":35.88851,"lon":137.20673,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

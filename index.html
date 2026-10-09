@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MyMap</title>
+  <meta name="theme-color" content="#264af4">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="MyMap">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@digital-go-jp/design-tokens@2.0.1/dist/tokens.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <h1>MyMap</h1>
+    <div class="bar-actions">
+      <button id="weather" class="weather" type="button" aria-pressed="false">天気を確認中…</button>
+      <button id="outdoor" class="weather" type="button" aria-pressed="false" title="日なたでも見やすい表示">☀屋外</button>
+    </div>
+  </header>
+  <p id="load-msg" class="notice" role="status" hidden></p>
+  <p id="update-msg" class="notice" role="status" hidden></p>
+
+  <details id="filters" class="filters">
+    <summary><span id="f-sum"></span><span id="f-count" class="count"></span></summary>
+    <div class="row"><span class="label">移動</span><div id="f-mode" class="chips"></div></div>
+    <div class="row"><span class="label">時間</span><div id="f-time" class="chips"></div></div>
+    <div class="row"><span class="label">都県</span><div id="f-pref" class="chips"></div></div>
+    <div class="row"><span class="label">方面</span><div id="f-dir" class="chips"></div></div>
+    <div class="row" id="r-genre"><span class="label">種類</span><div id="f-genre" class="chips"></div></div>
+  </details>
+
+  <details id="rec" class="recommend" open>
+    <summary>今週末のおすすめ</summary>
+    <div id="recommend" class="cards"></div>
+  </details>
+
+  <main id="view"></main>
+
+  <nav class="tabs" role="tablist" aria-label="画面の切り替え">
+    <button role="tab" data-tab="spots"><span aria-hidden="true">📍</span>スポット</button>
+    <button role="tab" data-tab="events"><span aria-hidden="true">📅</span>イベント</button>
+    <button role="tab" data-tab="touring"><span aria-hidden="true">🏍</span>ツーリング</button>
+    <button role="tab" data-tab="settings"><span aria-hidden="true">⚙</span>設定</button>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="lib.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

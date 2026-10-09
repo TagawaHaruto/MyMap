@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:451982311","name":"一水荘","lat":37.73552,"lon":139.29404,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:451982313","name":"柳水園","lat":37.73573,"lon":139.29241,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:451982314","name":"旅館末廣","lat":37.7365,"lon":139.29184,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:451982316","name":"望川閣","lat":37.7361,"lon":139.29135,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:451982317","name":"湯元館","lat":37.73622,"lon":139.29535,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:451982318","name":"ホテル丸松","lat":37.73613,"lon":139.29423,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:451982319","name":"咲花温泉 ぬくもりの宿 翠玉の湯 佐取館","lat":37.73624,"lon":139.29457,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:736945442","name":"かのせ温泉 赤崎荘","lat":37.71226,"lon":139.46274,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:736945443","name":"ホテル角神","lat":37.71041,"lon":139.47052,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1225826939","name":"ゆらりゆら　水鳥の宿　さきはな","lat":37.73512,"lon":139.28126,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1225832760","name":"碧水荘","lat":37.73614,"lon":139.29587,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6899544483","name":"豪商・平田家の屋敷跡","lat":37.68343,"lon":139.45266,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8550553992","name":"昭和橋跡（右岸）","lat":37.6957,"lon":139.41773,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8550553993","name":"昭和橋跡（左岸）","lat":37.69532,"lon":139.41619,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

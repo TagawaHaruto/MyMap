@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4440181192","name":"ピッケル","lat":36.24609,"lon":137.63547,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5652689085","name":"ショップ白樺","lat":36.24914,"lon":137.63758,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6594028084","name":"アルプラザ","lat":36.19102,"lon":137.55178,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6832392885","name":"上高地のおみやげや","lat":36.24853,"lon":137.63807,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:191022641","name":"平湯産直市場","lat":36.19112,"lon":137.55214,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"ひらゆさんちょくいちば"},
+{"id":"osm:way:699421616","name":"白骨斎藤売店","lat":36.15246,"lon":137.62729,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:786007238","name":"エコー乗鞍","lat":36.12133,"lon":137.62389,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"}
+]

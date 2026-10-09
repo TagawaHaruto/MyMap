@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:14004464116","name":"百年草","lat":35.13889,"lon":137.33247,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.hyakunensou.co.jp","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:301337160","name":"清山荘","lat":35.21696,"lon":137.32257,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:301344423","name":"紫翠閣とうふや","lat":35.21728,"lon":137.32189,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:301608613","name":"勇屋別館","lat":35.21702,"lon":137.32205,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://sasado-isamiya.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2483156274","name":"松平城","lat":35.04583,"lon":137.26284,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2502351300","name":"足助城","lat":35.13529,"lon":137.32494,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6449218422","name":"営林支局開庁100周年植樹記念碑","lat":35.1187,"lon":137.47669,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7257280859","name":"川口城址","lat":35.18371,"lon":137.26618,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7257280860","name":"水汲遺跡　碑","lat":35.18301,"lon":137.26869,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7742587476","name":"市場城址","lat":35.22797,"lon":137.29502,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8002082736","name":"串原水力発電所跡地","lat":35.22839,"lon":137.42614,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8463015892","name":"昭和47.7集中豪雨　災害復興記念碑","lat":35.2305,"lon":137.28417,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10857503667","name":"杉田久米句碑","lat":35.24305,"lon":137.30446,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:779476578","name":"水汲遺跡","lat":35.18342,"lon":137.26848,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1392865100","name":"足助陣屋跡","lat":35.13731,"lon":137.31742,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1537451626","name":"今朝平遺跡","lat":35.13897,"lon":137.32636,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

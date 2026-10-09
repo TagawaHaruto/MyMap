@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:5331240732","name":"おみやげ処 香藝の郷","lat":38.21408,"lon":139.43984,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5331240735","name":"おみやげ処 河内物産","lat":38.21407,"lon":139.43925,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5331240757","name":"虎屋おみやげ店","lat":38.21407,"lon":139.439,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6047838573","name":"新潟フルーツパーク","lat":38.08157,"lon":139.45143,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:6152144869","name":"九重園","lat":38.22388,"lon":139.47404,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152144879","name":"松本園","lat":38.22368,"lon":139.47518,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152936127","name":"永徳 鮭乃蔵","lat":38.22631,"lon":139.47313,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152936138","name":"冨士美園茶","lat":38.21983,"lon":139.47791,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152936192","name":"千年鮭 きっかわ","lat":38.22431,"lon":139.47869,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152936202","name":"鮭こうば","lat":38.22489,"lon":139.47934,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152936207","name":"越後村上うおや","lat":38.22492,"lon":139.47859,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152936208","name":"鮭こうばⅡ","lat":38.22496,"lon":139.4788,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6152936426","name":"常盤園","lat":38.22387,"lon":139.46916,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13695415392","name":"農産市場","lat":38.19148,"lon":139.43159,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:13695415393","name":"漁師市場","lat":38.19134,"lon":139.43156,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1276027356","name":"ふれあい野菜市","lat":38.11866,"lon":139.4474,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1276062781","name":"あらかわ直売所","lat":38.1217,"lon":139.4505,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4373260191","name":"クアハウスたいない","lat":38.06415,"lon":139.45163,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:364832541","name":"神林総合体育館","lat":38.17992,"lon":139.45735,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:364835507","name":"黒川体育館","lat":38.07731,"lon":139.43774,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1276062778","name":"荒川温水","lat":38.1233,"lon":139.45302,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

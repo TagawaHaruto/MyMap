@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:6742582503","name":"キッチン柳","lat":37.53206,"lon":139.72524,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7183641599","name":"すずや","lat":37.53165,"lon":139.72569,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:241854037","name":"御膳馬車屋","lat":37.54963,"lon":139.74431,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:241875321","name":"キッチンノエル","lat":37.5265,"lon":139.7219,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:244558626","name":"とらや食堂","lat":37.53458,"lon":139.72455,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:246572888","name":"レストハウス","lat":37.53745,"lon":139.71393,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:700656228","name":"KURA.","lat":37.587,"lon":139.6446,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:700656373","name":"同気","lat":37.58683,"lon":139.64413,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:700656739","name":"仙台屋食堂","lat":37.5873,"lon":139.64445,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:700678844","name":"洋食堂K","lat":37.58583,"lon":139.64619,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1495963979","name":"碧音","lat":37.62458,"lon":139.63144,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1495973277","name":"むらおか食堂","lat":37.62745,"lon":139.63018,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7183641603","name":"Tonobo Coffee","lat":37.5322,"lon":139.72488,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4836804125","name":"清水屋製菓舗","lat":37.58721,"lon":139.63749,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6742582595","name":"ぱん工房 あかべこ","lat":37.53201,"lon":139.72538,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

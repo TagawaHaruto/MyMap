@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:925237056","name":"ホテルサンシャイン","lat":37.36447,"lon":138.55628,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:925237126","name":"ホテルα-1","lat":37.36441,"lon":138.55601,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11722108452","name":"海月荘　別館","lat":37.35324,"lon":138.50737,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11722108459","name":"ファミリー旅館　海月荘","lat":37.35295,"lon":138.50784,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11722108464","name":"ハチの寝床","lat":37.35286,"lon":138.50814,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:378346214","name":"ホテルニューグリーン柏崎","lat":37.36406,"lon":138.55515,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://www.newgreen.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:583257983","name":"柏崎緑ケ丘宿舎","lat":37.35953,"lon":138.54442,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:942153036","name":"ホテルエリアワン番神岬","lat":37.36505,"lon":138.52923,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1261383547","name":"浪花屋　夕凪亭","lat":37.35487,"lon":138.51034,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3106269942","name":"鎌田城址","lat":37.47014,"lon":138.65031,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5858985787","name":"飯塚邸","lat":37.32425,"lon":138.56564,"pref":"その他","genres":["heritage"],"indoor":false,"url":"https://www.iizukatei.jp/","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:8153056486","name":"岩野城跡","lat":37.46752,"lon":138.74219,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10854073464","name":"鯨波村道路元標","lat":37.35465,"lon":138.51312,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:7636807896","name":"キッチンバーアウル","lat":36.00255,"lon":136.89776,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11591293056","name":"お食事処おうか","lat":36.02121,"lon":136.96517,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:972467141","name":"そば処 心打亭","lat":36.04016,"lon":136.95164,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5800197042","name":"つき","lat":37.8483,"lon":136.91844,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5800197313","name":"民宿つかさ","lat":37.852,"lon":136.92232,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5800197279","name":"益谷秀次先生","lat":37.8507,"lon":136.92012,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5800197280","name":"忠霊塔","lat":37.85076,"lon":136.92005,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5800197296","name":"無他神社遥拝所","lat":37.85216,"lon":136.91711,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5800197300","name":"観音堂","lat":37.85278,"lon":136.91746,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5800197310","name":"荒磯碑","lat":37.85385,"lon":136.92314,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]
