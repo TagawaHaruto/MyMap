@@ -77,20 +77,18 @@ const gmUrl = (kind, s, addr) => (kind === 'dir'
   ? Lib.gmapsPlaceDirUrl(DATA.cfg.origin, s, GMAP_MODE[state.mode], addr) : Lib.gmapsSearchUrl(s, addr));
 const gm = (s, kind = 'search') => `href="${esc(gmUrl(kind, s, ADDR.get(addrKey(s))))}" target="_blank" rel="noopener"
   data-gm="${kind}" data-name="${esc(s.name)}" data-lat="${s.lat}" data-lon="${s.lon}"`;
-document.addEventListener('click', async (e) => {
-  const a = e.target.closest && e.target.closest('a[data-gm]');
-  if (!a || a.dataset.lat === 'undefined') return;
-  const s = { name: a.dataset.name, lat: +a.dataset.lat, lon: +a.dataset.lon };
-  if (ADDR.has(addrKey(s))) { a.href = gmUrl(a.dataset.gm, s, ADDR.get(addrKey(s))); return; }
-  // 住所を調べてから開く（先に空のタブを開いておかないと、ポップアップとして止められる）
-  e.preventDefault();
-  const w = window.open('', '_blank');
-  let addr = null;
-  try { addr = await addressOf(s); } catch { /* 圏外などは座標・地図の範囲で開く */ }
-  const url = gmUrl(a.dataset.gm, s, addr);
-  a.href = url;
-  if (w) w.location.href = url; else location.href = url;
-});
+// 表示したリンクの住所を調べて、リンク先を「名前＋住所」に書き換える（リンクは普通のリンクのまま。
+// 押したときに空のタブを開いてから行き先を入れる方式は、スマホで about:blank が残るのでやめた）
+async function fillAddr(root) {
+  for (const a of root.querySelectorAll('a[data-gm]')) {
+    if (a.dataset.lat === 'undefined') continue;
+    const s = { name: a.dataset.name, lat: +a.dataset.lat, lon: +a.dataset.lon };
+    try {
+      const addr = await addressOf(s);
+      if (addr) a.href = gmUrl(a.dataset.gm, s, addr);
+    } catch { return; } // 圏外などは座標・地図の範囲のまま
+  }
+}
 
 async function getJSON(url, fallback, cache = 'no-cache') {
   try {
@@ -366,6 +364,7 @@ async function fillRelated(el, s) {
   };
   draw();
   if (await ensureCells(['food', 'heritage', 'local'], s, 2)) draw();
+  fillAddr(el);
 }
 
 function infoHtml(s, v) {
@@ -405,6 +404,7 @@ document.addEventListener('click', async (e) => {
   body.innerHTML = infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}<div class="related"></div>`;
   if (!v.failed) box.dataset.loaded = '1';
   fillRelated(body.querySelector('.related'), s);
+  fillAddr(box);
 });
 document.addEventListener('click', (e) => {
   const fav = e.target.closest('[data-fav]'), vis = e.target.closest('[data-visited]');
@@ -956,9 +956,12 @@ function drawMap(dest, stops) {
       const m = L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false }).addTo(map)
         .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, maxHeight: 240, autoPanPaddingTopLeft: [16, 112], autoPanPaddingBottomRight: [16, 40] });
       m.on('popupopen', async () => {
-        if (infoCache()[s.id]) return;
-        const v = await loadInfo(s);
-        if (m.isPopupOpen()) { m.setPopupContent(popupHtml(s, v)); refitPopup(m); }
+        if (!infoCache()[s.id]) {
+          const v = await loadInfo(s);
+          if (m.isPopupOpen()) { m.setPopupContent(popupHtml(s, v)); refitPopup(m); }
+        }
+        const el = m.getPopup() && m.getPopup().getElement();
+        if (el) fillAddr(el);
       });
       markers.set(s.id, m);
     });
