@@ -20,7 +20,7 @@
   },
   "trainOverheadMin": 10,
   "eventMonthsAhead": 3,
-  "poiRadiusKm": 150,
+  "poiRadiusKm": 300,
   "sources": [
     {
       "id": "chofu",

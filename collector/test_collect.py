@@ -144,7 +144,7 @@ class PoiTest(unittest.TestCase):
         self.assertEqual(collect.bbox({'lat': 35.65, 'lon': 139.54}, 150), '(34.299,137.877,37.001,141.203)')
 
     def test_refresh_pois_skips_when_fresh(self):
-        status = {'pois_at': '2026-10-05T00:00:00+09:00'}
+        status = {'pois_at': '2026-10-05T00:00:00+09:00', 'pois_sig': collect.query_sig({'poiRadiusKm': 150}, collect.POI_QUERIES)}
         calls = []
         collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                              lambda *a, **k: calls.append(a), dt.datetime(2026, 10, 8, tzinfo=collect.JST))
@@ -254,12 +254,13 @@ class OsmSpotTest(unittest.TestCase):
         self.assertIsNotNone(status['spots_at'])
 
     def test_refresh_spots_skips_when_fresh(self):
-        status = {'spots_at': '2026-10-05T00:00:00+09:00', 'spots_kinds': [k for k, _ in collect.SPOT_QUERIES]}
+        status = {'spots_at': '2026-10-05T00:00:00+09:00',
+                  'spots_sig': collect.query_sig({'poiRadiusKm': 150}, collect.SPOT_QUERIES)}
         got = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                                     lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set())
         self.assertIsNone(got)
-        # 種類を増やした直後は、1 週間たっていなくても取り直す
-        status['spots_kinds'] = status['spots_kinds'][:-1]
+        # 種類や範囲を変えた直後は、1 週間たっていなくても取り直す
+        status['spots_sig'] = collect.query_sig({'poiRadiusKm': 300}, collect.SPOT_QUERIES)
         self.assertIsNotNone(collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                                                    lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set(), sleep=lambda s: None))
 
@@ -339,7 +340,7 @@ class PrefTest(unittest.TestCase):
         self.assertEqual(by['東京国立博物館'], '東京')   # 境界の内側
         self.assertEqual(by['某寺'], '東京')             # addr:province（神奈川）より境界の判定を優先
         self.assertEqual(by['某水族館'], '東京')
-        self.assertEqual(by['某展望台'], None)           # 境界の外で addr:province もない
+        self.assertEqual(by['某展望台'], 'その他')           # 境界の外で addr:province もない → その他
         self.assertEqual(len(calls), len(collect.SPOT_QUERIES))  # 都県のための問い合わせはしない
         self.assertIsNone(status['spots_error'])
 
@@ -392,10 +393,13 @@ class CellTest(unittest.TestCase):
         self.assertEqual((by['湖畔キャンプ場']['genres'], by['湖畔キャンプ場']['indoor']), (['outdoor'], False))
         self.assertEqual({s['g'] for s in items}, {'food', 'heritage', 'local'})
 
-    def test_split_bbox_into_quadrants(self):
-        q = collect.quadrants('(34.0,138.0,36.0,140.0)')
+    def test_split_bbox_into_grid(self):
+        q = collect.grid('(34.0,138.0,36.0,140.0)', 2)
         self.assertEqual(q, ['(34.000,138.000,35.000,139.000)', '(34.000,139.000,35.000,140.000)',
                              '(35.000,138.000,36.000,139.000)', '(35.000,139.000,36.000,140.000)'])
+        self.assertEqual(len(collect.grid('(34.0,138.0,36.0,140.0)', 4)), 16)
+        self.assertEqual([collect.splits({'poiRadiusKm': r}) for r in (150, 300)], [1, 2])
+        self.assertEqual(collect.splits({'poiRadiusKm': 300}, 75), 4)
 
     def test_refresh_cells_groups_and_keeps_old_on_failure(self):
         old = [{'id': 'osm:node:900', 'name': '旧カフェ', 'lat': 35.6, 'lon': 139.5, 'genres': ['food'], 'g': 'food', 'k': 'cafe'}]
@@ -416,7 +420,7 @@ class CellTest(unittest.TestCase):
         # 同じ要素が複数の問い合わせに出ても 1 件
         food_names = [x['name'] for v in cells['food'].values() for x in v]
         self.assertEqual(food_names.count('深大寺そば 玉乃屋'), 1)
-        self.assertIsNone(collect.refresh_cells(CFG, {'cells_at': '2026-10-05T00:00:00+09:00'}, fetch, NOW, [], sleep=lambda s: None))
+        self.assertIsNone(collect.refresh_cells(CFG, {'cells_at': '2026-10-05T00:00:00+09:00', 'cells_sig': collect.query_sig(CFG, collect.CELL_QUERIES)}, fetch, NOW, [], sleep=lambda s: None))
 
 
 if __name__ == '__main__':

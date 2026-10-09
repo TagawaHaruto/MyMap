@@ -6,7 +6,7 @@ const GENRES = { play: '🎡遊び', sightseeing: '📷観光', shopping: '🛍�
 const GROUP_OF = { food: 'food', heritage: 'heritage', lodging: 'heritage', souvenir: 'local', outdoor: 'local' };
 const MODES = { train: '🚃電車', car: '🚗車', bike: '🏍バイク', bicycle: '🚲自転車' };
 const GMAP_MODE = { train: 'transit', car: 'driving', bike: 'driving', bicycle: 'bicycling' };
-const TIMES = [[30, '30分'], [60, '60分'], [90, '90分'], [120, '2時間'], [180, '3時間'], [null, '制限なし']];
+const TIMES = [[30, '30分'], [60, '60分'], [90, '90分'], [120, '2時間'], [180, '3時間'], [240, '4時間'], [300, '5時間'], [null, '制限なし']];
 const PREFS = ['東京', '神奈川', '埼玉', '千葉', '山梨', 'その他'];
 const DIR_NAMES = { N: '北', NE: '北東', E: '東', SE: '南東', S: '南', SW: '南西', W: '西', NW: '北西' };
 const POI_KIND = { michinoeki: '道の駅', onsen: '温泉', viewpoint: '展望台', waterfall: '滝', peak: '山', gorge: '渓谷', lake: '湖', coast: '海岸' };
@@ -130,7 +130,7 @@ let cellIndex = null;
 function loadKm() {
   if (state.maxMin == null) return 60;
   const min = state.maxMin - (state.mode === 'train' ? DATA.cfg.trainOverheadMin : 0);
-  return Math.min(150, Math.max(0, min) / 60 * DATA.cfg.speedsKmh[state.mode] + 2);
+  return Math.min(DATA.cfg.poiRadiusKm, Math.max(0, min) / 60 * DATA.cfg.speedsKmh[state.mode] + 2);
 }
 async function ensureCells(groups, center, km) {
   if (!cellIndex) return false;
