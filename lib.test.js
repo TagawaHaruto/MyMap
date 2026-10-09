@@ -249,4 +249,13 @@ assert.strictEqual(Lib.scenicScore(line, [], [graze]).roadKm, 0);
 // 道の全体がルート上にあれば、ルートに沿った距離（約 5.4km）
 assert(Math.abs(Lib.scenicScore(line, [], [road1]).roadKm - 5.43) < 0.1);
 
+// 目的地の検索（国土地理院の地名・住所検索）
+assert.strictEqual(Lib.gsiSearchUrl('河口湖'), 'https://msearch.gsi.go.jp/address-search/AddressSearch?q=' + encodeURIComponent('河口湖'));
+assert.deepStrictEqual(Lib.parseGsi([
+  { geometry: { coordinates: [138.748, 35.515] }, properties: { title: '河口湖' } },
+  { geometry: { coordinates: ['x', null] }, properties: { title: '壊れた' } },
+  { geometry: { coordinates: [138.779, 35.543] }, properties: { title: '山梨県富士河口湖町河口' } },
+], 1), [{ name: '河口湖', lat: 35.515, lon: 138.748 }]);
+assert.deepStrictEqual(Lib.parseGsi(null), []);
+
 console.log('lib: ALL PASS');

@@ -153,3 +153,8 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 .pop-pick { margin-top: 4px; min-height: 44px; }
 .leaflet-popup-content { margin: 12px; }
 .badge.fast { border: var(--bw) solid var(--key); color: var(--key); font-weight: var(--font-weight-700); }
+/* 目的地の検索 */
+.dest-search { display: flex; gap: var(--gap); margin-top: 8px; }
+.dest-search input { flex: 1; min-width: 0; }
+.dq-list { display: grid; gap: 6px; margin-top: 6px; }
+.dq-item { display: grid; gap: 2px; width: 100%; text-align: left; font: inherit; color: var(--fg); cursor: pointer; padding: 8px 12px; }

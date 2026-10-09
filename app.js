@@ -665,8 +665,11 @@ function renderTouring() {
         `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</optgroup>
       ${DATA.roads.length ? `<optgroup label="おすすめの道を走る（調布に戻る周回）">${roadsByDist.map((r) =>
         `<option value="road:${esc(r.id)}" ${r.id === tour.roadId ? 'selected' : ''}>${esc(r.name)}${r.toll ? '（有料）' : ''}</option>`).join('')}</optgroup>` : ''}
-      ${tour.custom ? '<option selected>地図で指定した地点</option>' : ''}</select>
-    <p class="hint">地図を動かして中央の＋を合わせ「中心を目的地に」を押す（または長押し）と、地図から指定できます</p>
+      ${tour.custom ? `<option selected>${esc(tour.custom.name)}</option>` : ''}</select>
+    <div class="dest-search"><input id="dq" type="search" enterkeyhint="search" autocomplete="off" placeholder="目的地を検索（例：じんだいじ、河口湖、箱根町）" aria-label="目的地を検索">
+      <button type="button" class="btn" id="dq-go">検索</button></div>
+    <div id="dq-results"></div>
+    <p class="hint">選ぶ・検索する・地図を動かして中央の＋を合わせ「中心を目的地に」を押す（または長押し）の、どれでも指定できます</p>
     ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}</p>`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
@@ -715,6 +718,20 @@ function renderTouring() {
     });
     if (!ok) e.target.value = tour.roadId ? 'road:' + tour.roadId : tour.custom ? '' : tour.destId || '';
   };
+  // 目的地の検索欄（作り直しても入力中の文字とフォーカスを保つ）
+  const dq = $('#dq');
+  dq.value = dqState.q;
+  if (dqState.focused) dq.focus();
+  renderDestResults();
+  let dqTimer = 0;
+  dq.addEventListener('input', () => {
+    dqState.q = dq.value; dqState.places = null;
+    clearTimeout(dqTimer); dqTimer = setTimeout(renderDestResults, 150);
+  });
+  dq.addEventListener('focus', () => { dqState.focused = true; });
+  dq.addEventListener('blur', () => { dqState.focused = false; });
+  dq.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); searchPlaces(); } });
+  $('#dq-go').onclick = () => { buzz(); searchPlaces(); };
   const pc = $('#pick-center');
   if (pc) pc.onclick = () => { if (!map) return; buzz(); const ce = map.getCenter(); setCustomDest(ce.lat, ce.lng); };
   document.querySelectorAll('[data-opt]').forEach((cb) => {
@@ -761,9 +778,46 @@ function setDest(apply) {
   saveTour(); renderTouring();
   return true;
 }
-const setCustomDest = (lat, lon) => setDest(() => {
+const setCustomDest = (lat, lon, name = '地図で指定した地点') => setDest(() => {
   tour.roadId = null;
-  tour.custom = { id: 'custom', name: '地図で指定した地点', lat: +lat.toFixed(5), lon: +lon.toFixed(5), waypoints: [] };
+  tour.custom = { id: 'custom', name, lat: +lat.toFixed(5), lon: +lon.toFixed(5), waypoints: [] };
+});
+
+// ---- 目的地の検索: 入力中はアプリ内のスポットから（通信なし）、「検索」で国土地理院の地名・住所検索も ----
+const dqState = { q: '', places: null, busy: false, error: '', focused: false, items: [] };
+function renderDestResults() {
+  const box = $('#dq-results'); if (!box) return;
+  const q = dqState.q.trim();
+  if (!q) { box.innerHTML = ''; dqState.items = []; return; }
+  const spots = Lib.searchSpots(DATA.spots.concat(DATA.osm, poiSpotList()), q, DATA.cfg, state.favs, 'car', 6)
+    .map((s) => ({ name: s.name, lat: s.lat, lon: s.lon, sub: `${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${fmtMin(s.minutes)}` }));
+  const places = (dqState.places || []).map((p) => ({ ...p, sub: '地名・住所' }));
+  dqState.items = spots.concat(places);
+  box.innerHTML = `<div class="dq-list">${dqState.items.map((x, i) => `<button type="button" class="card dq-item" data-dq="${i}">
+      <strong>${esc(x.name)}</strong><span class="status">${esc(x.sub)}</span></button>`).join('')}</div>
+    ${dqState.busy ? '<p class="hint">地名・住所を検索中…</p>' : dqState.error ? `<p class="hint">${esc(dqState.error)}</p>`
+      : dqState.places ? (places.length ? '' : '<p class="hint">地名・住所では見つかりませんでした。</p>')
+      : '<p class="hint">見つからないときは「検索」を押すと、地名・住所（国土地理院）でも探します。</p>'}`;
+}
+async function searchPlaces() {
+  const q = dqState.q.trim(); if (!q || dqState.busy) return;
+  dqState.busy = true; dqState.error = ''; renderDestResults();
+  try {
+    const r = await fetch(Lib.gsiSearchUrl(q), { signal: timeoutSignal(8000) });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    if (dqState.q.trim() === q) dqState.places = Lib.parseGsi(await r.json(), 8);
+  } catch {
+    dqState.error = '地名・住所の検索ができませんでした（圏外の可能性があります）。';
+  }
+  dqState.busy = false; renderDestResults();
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-dq]'); if (!b) return;
+  const x = dqState.items[+b.dataset.dq]; if (!x) return;
+  buzz();
+  const prev = { ...dqState };
+  dqState.q = ''; dqState.places = null; dqState.focused = false;
+  if (!setCustomDest(x.lat, x.lon, x.name)) Object.assign(dqState, prev); // 変更をやめたら入力を戻す
 });
 
 function drawMap(dest, stops) {
