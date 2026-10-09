@@ -131,19 +131,22 @@ function spotCard(s) {
   const sns = Lib.snsLinks(s);
   const icons = s.genres.map((g) => icon(GENRES[g] || '・')).join('');
   const park = parkText(s);
-  return `<article class="card">
-    <h3>${isCurated(s) ? '<span title="厳選スポット">★</span> ' : ''}${icons} ${esc(s.name)}</h3>
-    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}</p>
-    ${s.note ? `<p>${esc(s.note)}</p>` : ''}
-    <div class="actions">
-      <a class="btn" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, s, [], GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">地図で経路</a>
-      ${s.poi ? '' : `<a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a>
-      <a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X</a>`}
-      ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
-      ${s.poi ? '' : `<button type="button" class="icon" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>
-      <button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
-      ${infoButton(s)}
-    </div><div class="info" hidden></div></article>`;
+  // 一覧では名前・時間・短い説明だけ。ボタン類と写真は「▼詳しく」を押してから（1 画面にたくさん並べるため）
+  return `<article class="card spot">
+    <div class="spot-head"><h3>${isCurated(s) ? '<span title="厳選スポット">★</span> ' : ''}${icons} ${esc(s.name)}</h3>
+      <div class="head-btns">${infoButton(s)}${s.poi ? '' : `<button type="button" class="icon fav" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>`}</div></div>
+    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}</p>
+    ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
+    <div class="info" hidden>
+      <div class="actions">
+        <a class="btn" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, s, [], GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">地図で経路</a>
+        ${s.poi ? '' : `<a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a>
+        <a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X</a>`}
+        ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
+        ${s.poi ? '' : `<button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
+      </div>
+      <div class="info-body"></div>
+    </div></article>`;
 }
 function renderSpots() {
   // 検索欄は作り直さない（入力中にほかの更新が来てもフォーカスを失わないように）
@@ -290,9 +293,10 @@ document.addEventListener('click', async (e) => {
   box.hidden = !open;
   if (!open || box.dataset.loaded) return;
   const s = INFO_ITEMS.get(b.dataset.info); if (!s) return;
-  box.innerHTML = '<p class="hint">読み込み中…</p>';
+  const body = box.querySelector('.info-body') || box; // スポットのカードはボタン類を残して、写真と説明だけ入れる
+  body.innerHTML = '<p class="hint">読み込み中…</p>';
   const v = await loadInfo(s);
-  box.innerHTML = infoHtml(s, v);
+  body.innerHTML = infoHtml(s, v);
   if (!v.failed) box.dataset.loaded = '1';
 });
 document.addEventListener('click', (e) => {
