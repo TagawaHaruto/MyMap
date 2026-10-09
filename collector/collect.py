@@ -409,9 +409,9 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
 
 
 def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep, prefectures=None):
-    """週 1 回だけ取り直す。失敗した種類は前回分を残す。取り直さないときは None。"""
-    last = status.get('spots_at')
-    if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7):
+    """週 1 回だけ取り直す（種類を増やしたときはすぐ）。失敗した種類は前回分を残す。取り直さないときは None。"""
+    last, kinds = status.get('spots_at'), [k for k, _ in SPOT_QUERIES]
+    if last and now - dt.datetime.fromisoformat(last) < dt.timedelta(days=7) and status.get('spots_kinds') == kinds:
         return None
     seen = set()
     out, errors = overpass_by_kind(SPOT_QUERIES, bbox(cfg['origin'], cfg['poiRadiusKm']),
@@ -422,6 +422,7 @@ def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep,
     for s in out:
         s['pref'] = pref_of(s['lat'], s['lon'], prepared) or s.get('pref')
     status['spots_at'] = now.isoformat(timespec='seconds')
+    status['spots_kinds'] = kinds
     status['spots_error'] = ' / '.join(errors) or None
     if errors:
         print(f"[spots] {status['spots_error']}", file=sys.stderr)
