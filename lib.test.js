@@ -64,10 +64,22 @@ assert.strictEqual(Lib.weekSeed(new Date('2026-10-12T12:00:00Z')), Lib.weekSeed(
 assert.strictEqual(Lib.weekSeed(new Date('2026-10-19T12:00:00Z')), Lib.weekSeed(new Date('2026-10-12T12:00:00Z')) + 1);
 
 // URL
+// SNS: その場所の名前で探す（一般的なタグだけでは別の場所ばかり出るため）
+const ig = (t) => `https://www.instagram.com/explore/tags/${encodeURIComponent(t)}/`;
+const xq = (q) => 'https://x.com/search?q=' + encodeURIComponent(q);
 const sns = Lib.snsLinks({ name: '京王 れーるランド' });
-assert(sns.instagram.endsWith(encodeURIComponent('京王れーるランド') + '/'), sns.instagram);
-assert(sns.x.includes('%23'), sns.x);
-assert.strictEqual(Lib.snsLinks({ name: 'x', tags: ['深大寺'] }).x, 'https://x.com/search?q=' + encodeURIComponent('#深大寺'));
+assert.strictEqual(sns.instagram, ig('京王れーるランド'));
+assert.strictEqual(sns.x, xq('"京王 れーるランド"'));
+// タグが名前と関係ない一般語なら名前を使う
+assert.deepStrictEqual(Lib.snsLinks({ name: '川崎市立日本民家園', tags: ['古民家'] }),
+  { instagram: ig('川崎市立日本民家園'), x: xq('"川崎市立日本民家園"') });
+// タグが名前の一部なら、投稿の多いそのタグを Instagram に使う。括弧の補足は外す
+assert.deepStrictEqual(Lib.snsLinks({ name: '奥多摩周遊道路（都道206号）', tags: ['奥多摩周遊道路'] }),
+  { instagram: ig('奥多摩周遊道路'), x: xq('"奥多摩周遊道路"') });
+assert.deepStrictEqual(Lib.snsLinks({ name: '鉄道博物館（大宮）', tags: ['てっぱく'] }),
+  { instagram: ig('鉄道博物館'), x: xq('"鉄道博物館"') });
+// 記号や中黒は Instagram のタグに使えないので外す
+assert.strictEqual(Lib.snsLinks({ name: '帆船日本丸・横浜みなと博物館' }).instagram, ig('帆船日本丸横浜みなと博物館'));
 const wps = Array.from({ length: 10 }, (_, i) => ({ lat: 35 + i / 100, lon: 139 }));
 const g = Lib.gmapsDirUrl(cfg.origin, { lat: 35.7, lon: 139.0 }, wps);
 assert.strictEqual((g.match(/%7C/g) || []).length, 8);
