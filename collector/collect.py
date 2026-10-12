@@ -205,9 +205,9 @@ def extra_tags(t):
     return out
 
 
-def done_kinds(status, name, radius):
+def done_kinds(status, name, radius, ver=DATA_VER):
     """取得済みの種類 → 取得日時。範囲や収集する項目を変えたときは空（全部取り直す）。"""
-    if status.get(f'{name}_ver', 1) != DATA_VER:
+    if status.get(f'{name}_ver', 1) != ver:
         return {}
     if status.get(f'{name}_radius') == radius:
         return dict(status.get(f'{name}_done') or {})
@@ -218,11 +218,11 @@ def done_kinds(status, name, radius):
     return {}
 
 
-def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep):
+def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep, ver=DATA_VER):
     """種類ごとに週 1 回取り直す。成功した種類だけ取得済みにし、失敗した種類は前回分を残して
     最後にもう一度、それでもだめなら次の実行で取り直す。全種類が取得済みなら None。"""
     radius = cfg['poiRadiusKm']
-    done = done_kinds(status, name, radius)
+    done = done_kinds(status, name, radius, ver)
     fresh = {k for k, at in done.items() if k in kinds and now - dt.datetime.fromisoformat(at) < dt.timedelta(days=7)}
     todo = [k for k in kinds if k not in fresh]
     if not todo:
@@ -247,7 +247,7 @@ def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep):
                 errors[kind] = f'{kind}: {type(err).__name__}: {err}'[:160]
     for kind in errors:
         out += [x for x in old if x.get('k') == kind]
-    status[f'{name}_at'], status[f'{name}_radius'], status[f'{name}_ver'] = now.isoformat(timespec='seconds'), radius, DATA_VER
+    status[f'{name}_at'], status[f'{name}_radius'], status[f'{name}_ver'] = now.isoformat(timespec='seconds'), radius, ver
     status[f'{name}_done'] = {k: v for k, v in done.items() if k in kinds}
     status.pop(f'{name}_sig', None)
     status[f'{name}_error'] = ' / '.join(errors.values()) or None
@@ -516,7 +516,8 @@ ROAD_QUERIES = [
     ('road', f'way["highway"~"^(trunk|primary|secondary|tertiary|unclassified)$"]["name"~"{ROAD_WORDS}"]'),
     ('pass', 'node["mountain_pass"="yes"]["name"]'),
 ]
-ROAD_MIN_KM = 3
+ROAD_MIN_KM = 2
+ROADS_VER = 3  # ドライブコースの決め方を変えたら上げる（3: 最短 2km）
 
 
 def km_ll(a, b):
@@ -641,7 +642,7 @@ def refresh_roads(cfg, status, fetch, now, old, curated=(), sleep=time.sleep):
     def fetch_kind(kind):
         got = overpass_kind(q[kind], bb, splits(cfg), lambda text: parse_road_parts(text, kind), fetch, sleep, out='geom' if kind == 'road' else 'body')
         return build_roads(got, curated) if kind == 'road' else got
-    return refresh_kinds('roads', list(q), cfg, status, now, old, fetch_kind, sleep)
+    return refresh_kinds('roads', list(q), cfg, status, now, old, fetch_kind, sleep, ROADS_VER)
 
 
 # ---- 約10万件のデータ（飲食・史跡・宿・お土産・遊び）: 0.25 度四方の升目ごとのファイルに分ける ----
