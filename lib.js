@@ -566,14 +566,15 @@ const Lib = (() => {
   }
 
   // ---- カーブの多さ（1km あたりの向きの変化の合計・度）。100m おきに間引いてから測る ----
+  const lonlat = ([lon, lat]) => ({ lat, lon }); // ルートの線は [経度, 緯度]
   function curviness(line) {
-    const pts = [line[0]];
-    for (const q of line) if (haversineKm(pt(pts[pts.length - 1]), pt(q)) >= 0.1) pts.push(q);
+    const pts = [lonlat(line[0])];
+    for (const q of line) if (haversineKm(pts[pts.length - 1], lonlat(q)) >= 0.1) pts.push(lonlat(q));
     let turn = 0, km = 0;
     for (let i = 1; i < pts.length; i++) {
-      km += haversineKm(pt(pts[i - 1]), pt(pts[i]));
+      km += haversineKm(pts[i - 1], pts[i]);
       if (i < 2) continue;
-      const h1 = bearing(pt(pts[i - 2]), pt(pts[i - 1])), h2 = bearing(pt(pts[i - 1]), pt(pts[i]));
+      const h1 = bearing(pts[i - 2], pts[i - 1]), h2 = bearing(pts[i - 1], pts[i]);
       turn += Math.abs(((h2 - h1 + 540) % 360) - 180);
     }
     return km > 0.5 ? turn / km : 0;
@@ -638,6 +639,32 @@ const Lib = (() => {
   // ルートが通る、その月に閉鎖・通行止めの道（道の地点が 2 つ以上ルートから 500m 以内）
   const closedAlong = (line, roads, month) => roads.filter((r) => (r.closedMonths || []).includes(month)
     && stopsAlongRoute(r.points.map(pt), line, 0.5).length >= 2);
+
+  // 帰り道に寄れる温泉: ルートから offKm 以内の温泉を、帰る向き（周回なら後半、目的地までなら目的地から起点へ）に並べる。
+  // at: その温泉に着く時刻の目安（周回は出発時刻から、片道は「帰り始める時刻」backMs から）
+  function onsenHome(items, line, totalMin, opts) {
+    const { loop, departMs, backMs, offKm = 3 } = opts;
+    const hits = stopsAlongRoute(items.filter((s) => (s.genres || []).includes('onsen')), line, offKm);
+    const total = hits.length ? Math.max(...hits.map((h) => h.alongKm), 1) : 1;
+    let len = 0;
+    for (let i = 1; i < line.length; i++) len += haversineKm(lonlat(line[i - 1]), lonlat(line[i]));
+    const kmh = len / Math.max(totalMin / 60, 0.1);
+    const out = [];
+    const seen = new Set();
+    for (const h of hits) {
+      const key = norm(h.name);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      if (loop) {
+        if (h.alongKm < len * 0.5) continue; // 周回は後半だけ
+        out.push({ ...h, homeKm: len - h.alongKm, at: departMs + h.alongKm / kmh * 3600e3 });
+      } else {
+        out.push({ ...h, homeKm: h.alongKm, at: backMs + (len - h.alongKm) / kmh * 3600e3 });
+      }
+    }
+    // 家に近い（最後に寄れる）順
+    return out.sort((a, b) => a.homeKm - b.homeKm).map((x) => ({ ...x, open: openState(x.oh, new Date(x.at)) }));
+  }
 
   const gsiSearchUrl = (q) => `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(q)}`;
   function parseGsi(j, limit = 8) {
@@ -754,7 +781,7 @@ const Lib = (() => {
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
     dayPlan, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
-    jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong };
+    jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

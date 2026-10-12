@@ -401,7 +401,7 @@ assert.strictEqual(Lib.inGeometry({ lat: 36.5, lon: 139.5 }, sq), false);
 const straight = Array.from({ length: 50 }, (_, i) => [139 + i * 0.002, 35]);
 const zig = Array.from({ length: 50 }, (_, i) => [139 + i * 0.002, 35 + (i % 2) * 0.0015]);
 assert.ok(Lib.curviness(straight) < 1);
-assert.ok(Lib.curviness(zig) > 150 && Lib.curvStars(Lib.curviness(zig)) === 4);
+assert.ok(Lib.curviness(zig) > 150 && Lib.curvStars(Lib.curviness(zig)) === 5);
 assert.strictEqual(Lib.curvStars(500), 5);
 // ---- 祝日・混みやすさ ----
 assert.strictEqual(Lib.jpHoliday(new Date(2026, 9, 12)), true); // スポーツの日（10 月第 2 月曜）
@@ -418,5 +418,20 @@ assert.strictEqual(Lib.tilesAlong([[139.54, 35.65]], [10], 1).length, 9);
 const closedRoads = [{ name: 'X', points: [[35.0, 139.05], [35.0, 139.15]], closedMonths: [1] }];
 assert.strictEqual(Lib.closedAlong(rline, closedRoads, 1).length, 1);
 assert.strictEqual(Lib.closedAlong(rline, closedRoads, 6).length, 0);
+
+// ---- 帰り道の温泉 ----
+const hline = [[139.0, 35.0], [139.5, 35.0], [140.0, 35.0]]; // 約91km
+const onsens = [
+  { id: 'a', name: '起点近くの湯', lat: 35.01, lon: 139.05, genres: ['onsen'], oh: 'Mo-Su 10:00-22:00' },
+  { id: 'b', name: '目的地近くの湯', lat: 35.01, lon: 139.95, genres: ['onsen'], oh: 'Mo-Su 10:00-15:00' },
+  { id: 'c', name: '遠い湯', lat: 35.2, lon: 139.5, genres: ['onsen'] },
+  { id: 'd', name: 'カフェ', lat: 35.0, lon: 139.5, genres: ['food'] }];
+const back = Date.parse('2026-10-17T15:00:00+09:00');
+const oh1 = Lib.onsenHome(onsens, hline, 90, { loop: false, departMs: back - 6 * 3600e3, backMs: back });
+assert.deepStrictEqual(oh1.map((x) => x.id), ['a', 'b']); // 家に近い順。3km より遠い・温泉以外は除く
+assert.strictEqual(oh1[0].open, true);  // 15 時に目的地を出て約 1 時間半後
+assert.strictEqual(oh1[1].open, false); // 目的地の近く: 15:04 着で、15 時までの湯は営業時間外
+const oh2 = Lib.onsenHome(onsens, hline, 90, { loop: true, departMs: back, backMs: back });
+assert.deepStrictEqual(oh2.map((x) => x.id), ['b']); // 周回は後半だけ
 
 console.log('lib: ALL PASS');
