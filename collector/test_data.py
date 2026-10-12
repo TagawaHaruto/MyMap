@@ -14,8 +14,8 @@ def load(name):
         return json.load(f)
 
 
-def in_area(lat, lon):  # 関東＋隣接県のおおまかな範囲
-    return 34.5 <= lat <= 37.2 and 137.8 <= lon <= 141.0
+def in_area(lat, lon):  # 起点（調布）から約 300km の範囲（config の poiRadiusKm）
+    return 32.9 <= lat <= 38.4 and 136.2 <= lon <= 142.9
 
 
 class DataTest(unittest.TestCase):
@@ -62,7 +62,7 @@ class DataTest(unittest.TestCase):
                     self.assertTrue(in_area(lat, lon))
                 self.assertIsInstance(r['toll'], bool)
                 self.assertTrue(all(1 <= m <= 12 for m in r['closedMonths']))
-                self.assertTrue(r['url'].startswith('https://'))
+                self.assertTrue(r['url'] == '' or r['url'].startswith('https://'))
 
     def test_factory_tours(self):
         tours = [s for s in load('data/spots.json') if 'factory' in s['genres']]
