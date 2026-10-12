@@ -158,9 +158,9 @@ POI_QUERIES = [
 ]
 
 
-def overpass_body(stmts, bb):
+def overpass_body(stmts, bb, out='center tags'):
     stmts = [stmts] if isinstance(stmts, str) else stmts
-    q = '[out:json][timeout:180];(' + ''.join(s + bb + ';' for s in stmts) + ');out center tags;'
+    q = '[out:json][timeout:180];(' + ''.join(s + bb + ';' for s in stmts) + f');out {out};'
     return urllib.parse.urlencode({'data': q}).encode()
 
 
@@ -242,7 +242,7 @@ def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep):
 DEADLINE = time.time() + 140 * 60
 
 
-def overpass_kind(stmts, bb, n, parse, fetch, sleep, tries=3):
+def overpass_kind(stmts, bb, n, parse, fetch, sleep, tries=3, out='center tags'):
     """1 種類を n×n に分けて取得。分けた 1 つずつ、混雑で失敗したら待って最大 tries 回まで試す。"""
     got = []
     for i, part in enumerate(grid(bb, n)):
@@ -252,7 +252,7 @@ def overpass_kind(stmts, bb, n, parse, fetch, sleep, tries=3):
             if i or t:
                 sleep(5 if not t else 60 * t)
             try:
-                got += overpass_try(overpass_body(stmts, part), parse, fetch, sleep)
+                got += overpass_try(overpass_body(stmts, part, out), parse, fetch, sleep)
                 break
             except Exception:
                 if t + 1 == tries:
@@ -488,6 +488,120 @@ def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep,
     for s in out:
         s['pref'] = pref_of(s['lat'], s['lon'], prepared) or s.get('pref') or 'その他'  # 境界データ（10 都県）の外
     return out
+
+
+# ---- ドライブコース（OpenStreetMap）: 名前付きの観光道路（同じ名前の断片をつないで 1 本に）と峠 ----
+ROAD_WORDS = 'スカイライン|パークウェイ|ターンパイク|ライン$|有料道路|峠|林道|シーサイド|湖畔|高原|観光道路|周遊|ロード$'
+ROAD_QUERIES = [
+    ('road', f'way["highway"~"^(trunk|primary|secondary|tertiary|unclassified)$"]["name"~"{ROAD_WORDS}"]'),
+    ('pass', 'node["mountain_pass"="yes"]["name"]'),
+]
+ROAD_MIN_KM = 3
+
+
+def km_ll(a, b):
+    """[lat, lon] どうしの距離（km）。"""
+    dy, dx = (a[0] - b[0]) * 111, (a[1] - b[1]) * 111 * math.cos(math.radians(a[0]))
+    return math.hypot(dx, dy)
+
+
+def road_note(name):
+    for pat, label in (('スカイライン|パークウェイ|ターンパイク|観光道路|ライン$', 'スカイライン・観光道路'), ('林道', '林道（未舗装の区間がないか確認を）'),
+                       ('峠', '峠道'), ('有料道路', '有料道路'), ('シーサイド|湖畔', '海沿い・湖畔の道'), ('高原', '高原の道')):
+        if re.search(pat, name):
+            return label
+    return '景色の道'
+
+
+def parse_road_parts(text, kind):
+    """way → {name, coords, toll, wid}、峠の node → そのままコース（目的地として使う）。"""
+    out = []
+    for el in overpass_elements(text):
+        t = el.get('tags', {})
+        if not t.get('name'):
+            continue
+        if kind == 'pass' and 'lat' in el:
+            ele = t.get('ele', '').split('.')[0]
+            out.append({'id': f"osm:node:{el['id']}", 'name': t['name'], 'points': [[round(el['lat'], 4), round(el['lon'], 4)]],
+                        'pass': True, 'note': f"峠{'（標高' + ele + 'm）' if ele.isdigit() else ''}", 'k': 'pass'})
+        elif kind == 'road' and el.get('geometry'):
+            out.append({'wid': el['id'], 'name': t['name'], 'toll': t.get('toll') == 'yes',
+                        'coords': [[g['lat'], g['lon']] for g in el['geometry']]})
+    return out
+
+
+def road_core(name):
+    """比べる用の名前: かっこ書きと空白を除く。"""
+    return re.sub(r'[（(].*?[)）]|\s', '', name)
+
+
+def build_roads(parts, curated=(), k=6):
+    """同じ名前で端どうしがつながる断片を 1 本にまとめ、走る順に並べて k 点に間引く。短い道・厳選と同じ道は除く。"""
+    by_name = {}
+    for p in parts:
+        by_name.setdefault(p['name'], []).append(p)
+    roads = []
+    for name, segs in by_name.items():
+        # 端が 1km 以内でつながる断片を同じ道に（union-find）
+        parent = list(range(len(segs)))
+
+        def find(i):
+            while parent[i] != i:
+                parent[i] = parent[parent[i]]
+                i = parent[i]
+            return i
+        ends = [(s['coords'][0], s['coords'][-1]) for s in segs]
+        for i in range(len(segs)):
+            for j in range(i + 1, len(segs)):
+                if min(km_ll(a, b) for a in ends[i] for b in ends[j]) < 1:
+                    parent[find(i)] = find(j)
+        groups = {}
+        for i, s in enumerate(segs):
+            groups.setdefault(find(i), []).append(s)
+        for g in groups.values():
+            # 中心からいちばん遠い端から、近い断片を順につないでいく
+            allpts = [c for s in g for c in s['coords']]
+            mid = [sum(c[0] for c in allpts) / len(allpts), sum(c[1] for c in allpts) / len(allpts)]
+            cur = max((e for s in g for e in (s['coords'][0], s['coords'][-1])), key=lambda e: km_ll(e, mid))
+            path, rest = [], list(g)
+            while rest:
+                s = min(rest, key=lambda s: min(km_ll(cur, s['coords'][0]), km_ll(cur, s['coords'][-1])))
+                rest.remove(s)
+                cs = s['coords'] if km_ll(cur, s['coords'][0]) <= km_ll(cur, s['coords'][-1]) else s['coords'][::-1]
+                path += cs
+                cur = cs[-1]
+            # 上下線が別の道だと「行って戻る」並びになるので、始点からいちばん遠い所で切る
+            far = max(range(len(path)), key=lambda i: km_ll(path[0], path[i]))
+            if km_ll(path[0], path[-1]) < 0.5 * km_ll(path[0], path[far]):
+                path = path[:far + 1]
+            cum = [0]
+            for a, b in zip(path, path[1:]):
+                cum.append(cum[-1] + km_ll(a, b))
+            if cum[-1] < ROAD_MIN_KM:
+                continue
+            pts = []
+            for j in range(k):
+                target = cum[-1] * j / (k - 1)
+                i = next(i for i, d in enumerate(cum) if d >= target - 1e-9)
+                pts.append([round(path[i][0], 4), round(path[i][1], 4)])
+            core = road_core(name)
+            if any((core in road_core(c['name']) or road_core(c['name']) in core)
+                   and min(km_ll(p, q) for p in pts for q in c['points']) < 10 for c in curated):
+                continue
+            roads.append({'id': f"osm:way:{min(s['wid'] for s in g)}", 'name': name, 'points': pts,
+                          'toll': any(s['toll'] for s in g), 'note': f'{road_note(name)}（約{round(cum[-1])}km）',
+                          'km': round(cum[-1], 1), 'k': 'road'})
+    return roads
+
+
+def refresh_roads(cfg, status, fetch, now, old, curated=(), sleep=time.sleep):
+    """ドライブコースを種類ごとに週 1 回取り直す。取り直さないときは None。"""
+    q, bb = dict(ROAD_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
+
+    def fetch_kind(kind):
+        got = overpass_kind(q[kind], bb, splits(cfg), lambda text: parse_road_parts(text, kind), fetch, sleep, out='geom' if kind == 'road' else 'body')
+        return build_roads(got, curated) if kind == 'road' else got
+    return refresh_kinds('roads', list(q), cfg, status, now, old, fetch_kind, sleep)
 
 
 # ---- 約10万件のデータ（飲食・史跡・宿・お土産・遊び）: 0.25 度四方の升目ごとのファイルに分ける ----
@@ -755,6 +869,11 @@ def main():
     cells = refresh_cells(cfg, status, fetch, dt.datetime.now(JST), load_cells(DATA))
     if cells is not None:
         print(f'cells: {save_cells(DATA, cells)}')
+    roads = refresh_roads(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'roads_osm.json'), []),
+                          load(os.path.join(DATA, 'scenic_roads.json'), []))
+    if roads is not None:
+        save(os.path.join(DATA, 'roads_osm.json'), roads, compact=True)
+        print(f'roads: {len(roads)}')
     spots = refresh_spots(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'osm_spots.json'), []), curated)
     if spots is not None:
         save(os.path.join(DATA, 'osm_spots.json'), spots, compact=True)

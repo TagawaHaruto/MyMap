@@ -37,7 +37,7 @@ const state = {
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
-const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], ver: 0, eventsLoaded: false, osmLoaded: false };
+const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], courses: [], passes: [], ver: 0, eventsLoaded: false, osmLoaded: false };
 const FAILED = new Set();
 
 const rainy = () => (state.rainOverride ?? state.weatherRainy);
@@ -587,7 +587,8 @@ const savedTour = store.get('tour') || {};
 const tour = { destId: savedTour.destId || null, custom: savedTour.custom || null, roadId: savedTour.roadId || null,
   opts: { noToll: false, fewHighways: !!savedTour.avoid, bike: false, ...(savedTour.opts || {}) }, radius: savedTour.radius || 3,
   cands: savedTour.cands || (savedTour.route ? [{ ...savedTour.route, label: 'ルート' }] : null), sel: savedTour.sel || 0,
-  picked: new Set(savedTour.picked || []), error: '', busy: false, awake: store.get('awake') !== false, stops: null, key: '' };
+  picked: new Set(savedTour.picked || []), error: '', busy: false, awake: store.get('awake') !== false, stops: null, key: '',
+  showCourses: store.get('showCourses') === true };
 tour.restored = !!tour.cands;
 Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour.sel]) || null });
 let map = null, markers = new Map();
@@ -595,7 +596,7 @@ const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.cus
   cands: tour.cands, sel: tour.sel, picked: [...tour.picked] });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
 const fail = (msg) => Object.assign(new Error(msg), { mine: true });
-const roadById = (id) => DATA.roads.find((r) => r.id === id) || null;
+const roadById = (id) => DATA.roads.find((r) => r.id === id) || DATA.courses.find((r) => r.id === id) || null;
 const thisMonth = () => new Date().getMonth() + 1;
 
 async function getRoute(url, init) {
@@ -804,7 +805,7 @@ const candCard = (c, i) => `<button type="button" class="card cand" data-cand="$
 function renderTouring() {
   const dest = currentDest();
   const key = JSON.stringify([tour.destId, tour.custom, tour.roadId, tour.route && tour.route.at, tour.sel, tour.radius, tour.error, tour.busy, DATA.ver,
-    !!DATA.touring.length, DATA.roads.length, navigator.onLine, tour.restored, tour.opts]);
+    !!DATA.touring.length, DATA.roads.length, DATA.courses.length, tour.showCourses, navigator.onLine, tour.restored, tour.opts]);
   // 変化がなければ作り直さない（地図のズームと位置、スクロール位置を保つ）
   if (key === tour.key && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
@@ -837,6 +838,7 @@ function renderTouring() {
       <label class="check"><input type="checkbox" data-opt="bike" ${tour.opts.bike ? 'checked' : ''}>バイク向け（幹線を避け、地方の道を好む）</label>
     </fieldset>
     <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label>
+    <label class="check"><input type="checkbox" id="show-courses" ${tour.showCourses ? 'checked' : ''}>ドライブコース（${(DATA.roads.length + DATA.courses.length).toLocaleString()}本）と峠（${DATA.passes.length.toLocaleString()}か所）を地図に表示</label>
     <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
     <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
@@ -897,6 +899,7 @@ function renderTouring() {
     cb.onchange = () => { buzz(); tour.opts = { ...tour.opts, [cb.dataset.opt]: cb.checked }; saveTour(); renderTouring(); };
   });
   $('#awake').onchange = (e) => { tour.awake = e.target.checked; store.set('awake', tour.awake); keepAwake(tour.awake); };
+  $('#show-courses').onchange = (e) => { tour.showCourses = e.target.checked; store.set('showCourses', tour.showCourses); renderTouring(); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
     // 地図で指定した地点は id がいつも 'custom' なので、地点そのものと走り方で同じ検索かを見分ける
@@ -941,6 +944,15 @@ const setCustomDest = (lat, lon, name = '地図で指定した地点') => setDes
   tour.custom = { id: 'custom', name, lat: +lat.toFixed(5), lon: +lon.toFixed(5), waypoints: [] };
 });
 
+// コースと峠を名前で探せるように（データが変わったときだけ作り直す）
+let courseItems = { ver: -1, items: [] };
+function courseSearchItems() {
+  if (courseItems.ver !== DATA.ver) {
+    courseItems = { ver: DATA.ver, items: DATA.roads.concat(DATA.courses, DATA.passes).map((r) =>
+      ({ id: r.id, name: r.name, kana: r.kana, note: r.note, tags: r.tags, pass: !!r.pass, lat: r.points[0][0], lon: r.points[0][1], genres: [] })) };
+  }
+  return courseItems.items;
+}
 // ---- 目的地の検索: 入力中はアプリ内のスポットから（通信なし）、「検索」で国土地理院の地名・住所検索も ----
 const dqState = { q: '', places: null, busy: false, error: '', focused: false, items: [] };
 function renderDestResults() {
@@ -950,7 +962,9 @@ function renderDestResults() {
   const spots = Lib.searchSpots(DATA.spots.concat(DATA.osm, poiSpotList()), q, DATA.cfg, state.favs, 'car', 6)
     .map((s) => ({ name: s.name, lat: s.lat, lon: s.lon, sub: `${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${fmtMin(s.minutes)}` }));
   const places = (dqState.places || []).map((p) => ({ ...p, sub: '地名・住所' }));
-  dqState.items = spots.concat(places);
+  const roads = Lib.searchSpots(courseSearchItems(), q, DATA.cfg, state.favs, 'car', 6)
+    .map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, roadId: x.pass ? null : x.id, sub: `${x.pass ? '⛰ 峠' : '🛣 ドライブコース（周回）'} ${fmtMin(x.minutes)}` }));
+  dqState.items = roads.concat(spots, places);
   box.innerHTML = `<div class="dq-list">${dqState.items.map((x, i) => `<button type="button" class="card dq-item" data-dq="${i}">
       <strong>${esc(x.name)}</strong><span class="status">${esc(x.sub)}</span></button>`).join('')}</div>
     ${dqState.busy ? '<p class="hint">地名・住所を検索中…</p>' : dqState.error ? `<p class="hint">${esc(dqState.error)}</p>`
@@ -975,7 +989,8 @@ document.addEventListener('click', (e) => {
   buzz();
   const prev = { ...dqState };
   dqState.q = ''; dqState.places = null; dqState.focused = false;
-  if (!setCustomDest(x.lat, x.lon, x.name)) Object.assign(dqState, prev); // 変更をやめたら入力を戻す
+  const ok = x.roadId ? setDest(() => { tour.custom = null; tour.roadId = x.roadId; tour.destId = null; }) : setCustomDest(x.lat, x.lon, x.name);
+  if (!ok) Object.assign(dqState, prev); // 変更をやめたら入力を戻す
 });
 
 function drawMap(dest, stops) {
@@ -1013,9 +1028,37 @@ function drawMap(dest, stops) {
   } else if (dest && dest.loop) {
     map.fitBounds(L.latLngBounds(dest.road.points.concat([[DATA.cfg.origin.lat, DATA.cfg.origin.lon]])), { padding: [16, 16] });
   }
+  if (tour.showCourses) drawCourses();
   // 誤操作を防ぐため、目的地の指定は長押し（スマホでは contextmenu として届く）か「中心を目的地に」ボタンだけ。
   // 長押し中（指が触れている間）に地図を作り直すと iPhone で次のタップが効かなくなることがあるので、少し遅らせる
   map.on('contextmenu', (e) => { buzz(); setTimeout(() => setCustomDest(e.latlng.lat, e.latlng.lng), 350); });
+}
+
+// ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
+function courseHtml(r) {
+  const closedNow = (r.closedMonths || []).includes(thisMonth());
+  return `<div class="pop"><strong>${r.pass ? '⛰' : '🛣'} ${esc(r.name)}</strong>
+    <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}</p>
+    <div class="actions">${r.pass ? `<button type="button" class="btn primary" data-pass-go="${esc(r.id)}">ここを目的地に</button>`
+      : `<button type="button" class="btn primary" data-course-go="${esc(r.id)}">このコースを走る（周回）</button>`}</div></div>`;
+}
+function bindCourseBtns(el) {
+  if (!el) return;
+  el.querySelectorAll('[data-course-go]').forEach((b) => { b.onclick = () => {
+    buzz(); const id = b.dataset.courseGo;
+    setDest(() => { tour.custom = null; tour.roadId = id; tour.destId = null; });
+  }; });
+  el.querySelectorAll('[data-pass-go]').forEach((b) => { b.onclick = () => {
+    const p = DATA.passes.find((x) => x.id === b.dataset.passGo);
+    if (p) { buzz(); setCustomDest(p.points[0][0], p.points[0][1], p.name); }
+  }; });
+}
+function drawCourses() {
+  const add = (layer, r) => layer.bindPopup(() => courseHtml(r), { maxWidth: 260 })
+    .on('popupopen', (e) => bindCourseBtns(e.popup.getElement())).addTo(map);
+  for (const r of DATA.courses) add(L.polyline(r.points, { color: '#e8590c', weight: 4, opacity: 0.6 }), r);
+  for (const r of DATA.roads) add(L.polyline(r.points, { color: '#e8590c', weight: 7, opacity: 0.85 }), r);
+  for (const p of DATA.passes) add(L.circleMarker(p.points[0], { radius: 5, weight: 2, color: '#fff', fillColor: '#7048e8', fillOpacity: 0.9 }), p);
 }
 
 // ---- 画面を消さない（ツーリングタブを開いている間だけ） ----
@@ -1103,6 +1146,11 @@ async function init() {
   DATA.eventsLoaded = true; DATA.ver++; tour.stops = null;
   cellIndex = await getJSON('data/cells/index.json', null);
   FAILED.delete('data/cells/index.json'); // まだ収集していないとき（404）は失敗扱いにしない
+  const ro = await getJSON('data/roads_osm.json', []);
+  FAILED.delete('data/roads_osm.json');
+  DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2);
+  DATA.passes = ro.filter((r) => r.pass);
+  DATA.ver++;
   renderAll();
   // 自動収集スポットは大きい（数 MB）ので最後に読み込む
   DATA.osm = await getJSON('data/osm_spots.json', []);
