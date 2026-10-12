@@ -328,4 +328,52 @@ const dupPool = [base, { id: 'x1', name: '湯守の里', lat: 35.651, lon: 139.5
   { id: 'x2', name: '湯守の里', lat: 35.6511, lon: 139.5511, genres: ['onsen'] }];
 assert.deepStrictEqual(ids(Lib.relatedSpots(base, dupPool).nearby), ['x1']);
 
+// ---- 営業時間 ----
+const at = (s) => new Date(s); // 2026-10-12 は月曜
+assert.strictEqual(Lib.openState('Mo-Fr 09:00-17:00', at('2026-10-12T10:00')), true);
+assert.strictEqual(Lib.openState('Mo-Fr 09:00-17:00', at('2026-10-12T17:00')), false);
+assert.strictEqual(Lib.openState('Mo-Fr 09:00-17:00', at('2026-10-11T10:00')), false); // 日曜
+assert.strictEqual(Lib.openState('Mo-Fr 09:00-17:00; Su 10:00-12:00', at('2026-10-11T11:00')), true);
+assert.strictEqual(Lib.openState('Mo-Su 11:00-14:00,17:00-22:00; Tu off', at('2026-10-13T12:00')), false); // 火曜休み
+assert.strictEqual(Lib.openState('Mo-Su 11:00-14:00,17:00-22:00', at('2026-10-12T15:00')), false);
+assert.strictEqual(Lib.openState('Mo-Su 11:00-14:00,17:00-22:00', at('2026-10-12T18:00')), true);
+assert.strictEqual(Lib.openState('Fr-Mo 18:00-02:00', at('2026-10-13T01:00')), true); // 月曜の夜から続く
+assert.strictEqual(Lib.openState('24/7', at('2026-10-12T03:00')), true);
+assert.strictEqual(Lib.openState('10:00-20:00', at('2026-10-11T19:59')), true);
+assert.strictEqual(Lib.openState('Mo-Fr 09:00-17:00; PH off', at('2026-10-12T10:00')), true);
+assert.strictEqual(Lib.openState('Apr-Oct: Mo-Su 09:00-17:00', at('2026-10-12T10:00')), null); // 読めない書き方
+assert.strictEqual(Lib.openState('', at('2026-10-12T10:00')), null);
+assert.strictEqual(Lib.ohText('Mo-Fr 09:00-17:00; Sa,Su off'), '月-金 09:00-17:00／土,日 休み');
+// ---- 季節の見頃 ----
+const sakura = { best: [{ what: '桜', months: [3, 4] }, { what: '紅葉', months: [11] }] };
+assert.deepStrictEqual(Lib.seasonNow(sakura, 4).map((b) => b.what), ['桜']);
+assert.strictEqual(Lib.seasonNow({}, 4).length, 0);
+assert.strictEqual(Lib.seasonText(sakura.best), '桜 3〜4月・紅葉 11月');
+// ---- ルート上の地点と雨 ----
+const rline = [[139.0, 35.0], [139.1, 35.0], [139.2, 35.0]];
+const smp = Lib.routeSamples(rline, 60, Date.parse('2026-10-12T08:00:00+09:00'), 3);
+assert.deepStrictEqual(smp.map((p) => p.lon), [139.0, 139.1, 139.2]);
+assert.strictEqual(smp[2].at - smp[0].at, 60 * 60e3);
+const rj = [{ hourly: { time: ['2026-10-12T08:00', '2026-10-12T09:00'], precipitation_probability: [10, 80], precipitation: [0, 2.5] } }];
+const rr = Lib.parseRainAlong(rj, [{ lat: 35, lon: 139, at: Date.parse('2026-10-12T09:20:00+09:00') }]);
+assert.deepStrictEqual([rr[0].prob, rr[0].mm], [80, 2.5]);
+assert.ok(Lib.rainAlongUrl(smp).includes('latitude=35.0000,35.0000,35.0000'));
+assert.strictEqual(Lib.climbOf([100, 150, 120, 200]), 130);
+// ---- 日帰りプラン ----
+const pcfg = { ...cfg, origin: { name: '調布駅', lat: 35.65, lon: 139.54 } };
+const tgt = { id: 't', name: '博物館', lat: 35.70, lon: 139.40, genres: ['museum'] };
+const ppool = [tgt,
+  { id: 'r1', name: '食堂A', lat: 35.701, lon: 139.401, genres: ['food'], oh: 'Mo-Su 11:00-15:00' },
+  { id: 'r2', name: 'チェーンB', lat: 35.7005, lon: 139.4005, genres: ['food'], chain: true },
+  { id: 'o1', name: '湯の里', lat: 35.72, lon: 139.45, genres: ['onsen'] }];
+const plan = Lib.dayPlan(tgt, ppool, pcfg, 'car', 9 * 60, at('2026-10-12T09:00'));
+assert.deepStrictEqual(plan.map((x) => x.what), ['調布駅を出発', '博物館に到着', '昼食: 食堂A', '湯の里へ', '調布駅に帰着']);
+assert.strictEqual(plan[0].time, '9:00');
+// ---- 行った記録・周辺検索 ----
+assert.deepStrictEqual(Lib.visitedStats([{ pref: '東京' }, { pref: '東京' }, { pref: '山梨' }, {}]), [['東京', 2], ['山梨', 1], ['その他', 1]]);
+assert.ok(Lib.streetViewUrl({ lat: 35.1, lon: 139.2 }).endsWith('viewpoint=35.1,139.2'));
+assert.ok(decodeURIComponent(Lib.nearbyQuery({ lat: 35, lon: 139 }, 'fuel')).includes('nwr["amenity"="fuel"](around:2000,35,139)'));
+const nb = Lib.parseNearby({ elements: [{ lat: 35.01, lon: 139, tags: { name: '遠い' } }, { center: { lat: 35.001, lon: 139 }, tags: { brand: 'ENEOS' } }] }, { lat: 35, lon: 139 });
+assert.deepStrictEqual(nb.map((x) => x.name), ['ENEOS', '遠い']);
+
 console.log('lib: ALL PASS');

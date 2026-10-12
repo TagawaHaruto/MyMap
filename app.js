@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []),
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -201,6 +201,8 @@ function spotCandidates() {
   if (!state.showChains) all = all.filter((s) => !s.chain);
   if (state.walkinOnly && (state.genres.has('factory') || state.genres.has('experience'))) all = all.filter((s) => s.walkin === true);
   if (state.foodCat && groups.includes('food')) all = all.filter((s) => !s.genres.includes('food') || Lib.inFoodCat(s, state.foodCat));
+  if (state.openOnly) { const now = new Date(); all = all.filter((s) => Lib.openState(s.oh, now) === true); }
+  if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
 }
 const isCurated = (s) => !s.poi && !String(s.id).startsWith('osm:');
@@ -213,19 +215,93 @@ function spotCard(s) {
   return `<article class="card spot">
     <div class="spot-head"><h3>${isCurated(s) ? '<span title="厳選スポット">★</span> ' : ''}${icons} ${esc(s.name)}</h3>
       <div class="head-btns">${infoButton(s)}${s.poi ? '' : `<button type="button" class="icon fav" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>`}</div></div>
-    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${'walkin' in s ? (s.walkin ? '・<strong>当日参加OK</strong>' : '・要予約') : ''}</p>
+    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${'walkin' in s ? (s.walkin ? '・<strong>当日参加OK</strong>' : '・要予約') : ''}${openBadge(s)}${seasonBadge(s)}</p>
     ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
     <div class="info" hidden>
+      ${detailLine(s)}
       <div class="actions">
         <a class="btn" ${gm(s, 'dir')}>地図で経路</a>
+        <a class="btn" href="${esc(Lib.streetViewUrl(s))}" target="_blank" rel="noopener">ストリートビュー</a>
+        ${s.tel ? `<a class="btn" href="tel:${esc(s.tel.replace(/[^\d+]/g, ''))}">📞電話</a>` : ''}
+        <button type="button" class="btn" data-share="${esc(s.id)}">共有</button>
+        <button type="button" class="btn" data-plan="${esc(s.id)}">日帰りプラン</button>
         ${s.poi ? '' : `<a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a>
         <a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X</a>`}
         ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
         ${s.poi ? '' : `<button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
       </div>
+      <div class="plan"></div>
+      <div class="chips wrap" aria-label="周辺を探す">${Object.entries(Lib.NEARBY_KINDS).map(([k, [label]]) =>
+        `<button type="button" class="chip" data-nb="${k}" data-nb-for="${esc(s.id)}">${label}</button>`).join('')}</div>
+      <div class="nearby"></div>
       <div class="info-body"></div>
     </div></article>`;
 }
+// 営業中か（営業時間がわかるものだけ）・季節の見頃・営業時間などの 1 行
+function openBadge(s) {
+  const o = s.oh ? Lib.openState(s.oh) : null;
+  return o === true ? ' <span class="badge open">営業中</span>' : o === false ? ' <span class="badge closed">営業時間外</span>' : '';
+}
+function seasonBadge(s) {
+  const now = Lib.seasonNow(s, thisMonth());
+  return now.length ? ` <span class="badge season">🌸今が見頃: ${esc(now.map((b) => b.what).join('・'))}</span>` : '';
+}
+function detailLine(s) {
+  const parts = [];
+  if (s.oh) parts.push(`🕘営業時間: ${esc(Lib.ohText(s.oh))}（OpenStreetMap の情報・祝日や臨時休業は公式で確認）`);
+  if (s.best && s.best.length) parts.push(`🌸見頃: ${esc(Lib.seasonText(s.best))}`);
+  if (s.wc) parts.push(`♿車いす: ${s.wc === 'yes' ? '利用できる' : s.wc === 'limited' ? '一部利用できる' : '利用しにくい'}`);
+  return parts.length ? `<p class="hint">${parts.join('<br>')}</p>` : '';
+}
+
+// ---- 共有・日帰りプラン・周辺検索（「詳しく」の中のボタン） ----
+async function shareText(title, text, url) {
+  try {
+    if (navigator.share) { await navigator.share({ title, text, url }); return; }
+    await navigator.clipboard.writeText(`${text}\n${url || ''}`);
+    alert('コピーしました。LINE などに貼り付けて送れます。');
+  } catch { /* 共有をやめたとき */ }
+}
+const planState = { depart: store.get('planDepart') || '09:00' };
+async function renderPlan(el, s) {
+  el.innerHTML = '<p class="hint">プランを作成中…</p>';
+  await ensureCells(['food'], s, 2);
+  const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food'], s, 2));
+  const [h, m] = planState.depart.split(':').map(Number);
+  const steps = Lib.dayPlan(s, pool, DATA.cfg, state.mode, h * 60 + m);
+  const places = steps.filter((x) => x.place).map((x) => x.place);
+  const text = steps.map((x) => `${x.time} ${x.what}`).join('\n');
+  el.innerHTML = `<h4>日帰りプラン（${esc(MODES[state.mode])}・移動時間は概算）</h4>
+    <label>出発 <input type="time" class="plan-depart" value="${esc(planState.depart)}"></label>
+    <ol class="plan-steps">${steps.map((x) => `<li><strong>${esc(x.time)}</strong> ${x.place ? `<a ${gm(x.place)}>${esc(x.what)}</a>` : esc(x.what)}${x.stay ? `<span class="status">（${x.stay}分）</span>` : ''}</li>`).join('')}</ol>
+    <div class="actions"><a class="btn primary" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, DATA.cfg.origin, places, GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">Googleマップで1日の経路</a>
+      <button type="button" class="btn plan-share">プランを共有</button></div>
+    <p class="hint">昼食は目的地から1.5km以内で昼に営業している（または営業時間不明の）チェーン以外の店、もう1か所は15km以内の温泉か3km以内の見どころから選んでいます。</p>`;
+  el.querySelector('.plan-depart').onchange = (e) => { planState.depart = e.target.value || '09:00'; store.set('planDepart', planState.depart); renderPlan(el, s); };
+  el.querySelector('.plan-share').onclick = () => shareText(`${s.name} 日帰りプラン`, text, '');
+  fillAddr(el);
+}
+async function renderNearby(el, s, kind) {
+  el.innerHTML = `<p class="hint">${esc(Lib.NEARBY_KINDS[kind][0])}を探しています…</p>`;
+  try {
+    const r = await fetch('https://overpass-api.de/api/interpreter', { method: 'POST', body: Lib.nearbyQuery(s, kind),
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: timeoutSignal(30000) });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const xs = Lib.parseNearby(await r.json(), s).slice(0, 6);
+    el.innerHTML = `<h4>${esc(Lib.NEARBY_KINDS[kind][0])}（2km以内・近い順）</h4>` + (xs.length ? `<ul class="rel">${xs.map((x) => `<li>
+      <a ${gm(x)}>${esc(x.name)}</a> <span class="status">${x.distKm < 1 ? Math.round(x.distKm * 1000) + 'm' : x.distKm.toFixed(1) + 'km'}${openBadge(x)}</span></li>`).join('')}</ul>`
+      : '<p class="hint">見つかりませんでした（OpenStreetMap に登録がない場合もあります）。</p>');
+  } catch {
+    el.innerHTML = '<p class="hint">探せませんでした（混雑か圏外の可能性があります）。少し待ってもう一度押してください。</p>';
+  }
+}
+document.addEventListener('click', (e) => {
+  const sh = e.target.closest('[data-share]'), pl = e.target.closest('[data-plan]'), nb = e.target.closest('[data-nb]');
+  if (sh) { const s = INFO_ITEMS.get(sh.dataset.share); if (s) shareText(s.name, `${s.name}${s.note ? '（' + s.note + '）' : ''}`, gmUrl('search', s, ADDR.get(addrKey(s)))); }
+  if (pl) { const s = INFO_ITEMS.get(pl.dataset.plan); if (s) { buzz(); renderPlan(pl.closest('.info').querySelector('.plan'), s); } }
+  if (nb) { const s = INFO_ITEMS.get(nb.dataset.nbFor); if (s) { buzz(); renderNearby(nb.closest('.info').querySelector('.nearby'), s, nb.dataset.nb); } }
+});
+
 function renderSpots() {
   // 検索欄は作り直さない（入力中にほかの更新が来てもフォーカスを失わないように）
   if (!$('#q')) {
@@ -261,6 +337,8 @@ function renderSpotList() {
   const failed = FAILED.has('data/spots.json');
   const groups = selectedGroups();
   const toggles = [
+    `<button type="button" class="chip" id="t-open" aria-pressed="${state.openOnly}">🕘営業中だけ</button>`,
+    `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
     (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
     groups.includes('food') ? `<button type="button" class="chip" id="t-chain" aria-pressed="${state.showChains}">チェーン店も表示</button>` : '',
   ].join('');
@@ -277,10 +355,39 @@ function renderSpotList() {
   if (more && !state.spotMap) $('#more').onclick = () => { state.limit += 300; renderSpotList(); };
   const tw = $('#t-walkin'); if (tw) tw.onclick = () => { buzz(); state.walkinOnly = !state.walkinOnly; renderSpotList(); };
   const tc = $('#t-chain'); if (tc) tc.onclick = () => { buzz(); state.showChains = !state.showChains; renderSpotList(); };
+  $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
+  $('#t-season').onclick = () => { buzz(); state.seasonOnly = !state.seasonOnly; state.limit = 300; renderSpotList(); };
   box.querySelectorAll('[data-foodcat]').forEach((b) => { b.onclick = () => {
     buzz(); state.foodCat = state.foodCat === b.dataset.foodcat ? '' : b.dataset.foodcat; state.limit = 300; renderSpotList();
   }; });
   bindMapToggle(list);
+}
+
+// ---- 地図の共通部品: 背景（地図・航空写真・地理院地図）と陰影起伏、現在地ボタン ----
+function baseLayers(m, credit = '') {
+  const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18,
+    attribution: `&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>${credit}` }).addTo(m);
+  const gsi = (id, ext, z = 18) => L.tileLayer(`https://cyberjapandata.gsi.go.jp/xyz/${id}/{z}/{x}/{y}.${ext}`, { maxZoom: 18, maxNativeZoom: z,
+    attribution: `<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>${credit}` });
+  L.control.layers({ '地図': osm, '航空写真': gsi('seamlessphoto', 'jpg'), '地理院地図': gsi('std', 'png') },
+    { '陰影（山の起伏）': L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png', { maxZoom: 18, maxNativeZoom: 16, opacity: 0.4 }) },
+    { position: 'topright' }).addTo(m);
+  const Locate = L.Control.extend({ options: { position: 'topleft' }, onAdd() {
+    const b = L.DomUtil.create('a', 'leaflet-bar locate'); b.href = '#'; b.title = '現在地'; b.setAttribute('role', 'button'); b.textContent = '◎';
+    L.DomEvent.on(b, 'click', (e) => { L.DomEvent.stop(e); locate(m); });
+    return b;
+  } });
+  new Locate().addTo(m);
+}
+let hereMarker = null;
+function locate(m) {
+  if (!navigator.geolocation) { alert('この端末では現在地を使えません。'); return; }
+  navigator.geolocation.getCurrentPosition((p) => {
+    const ll = [p.coords.latitude, p.coords.longitude];
+    if (hereMarker) hereMarker.remove();
+    hereMarker = L.circleMarker(ll, { radius: 8, weight: 3, color: '#fff', fillColor: '#1a73e8', fillOpacity: 1 }).bindTooltip('現在地').addTo(m);
+    m.setView(ll, Math.max(m.getZoom(), 14));
+  }, () => alert('現在地を取得できませんでした（位置情報の許可を確認してください）。'), { enableHighAccuracy: true, timeout: 10000 });
 }
 
 // ---- 候補を地図で見る（一覧・検索結果の上位 2,000 件。★厳選・⭐は大きい点） ----
@@ -292,8 +399,7 @@ function bindMapToggle(list) {
   if (spotMap) { spotMap.remove(); spotMap = null; }
   if (!state.spotMap || !$('#spot-map') || typeof L === 'undefined') return;
   spotMap = L.map('spot-map', { renderer: L.canvas({ tolerance: 8 }) }).setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 10);
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(spotMap);
+  baseLayers(spotMap);
   L.circleMarker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { radius: 7, color: '#000', fillColor: '#fff', fillOpacity: 1, weight: 3 })
     .bindTooltip(esc(DATA.cfg.origin.name)).addTo(spotMap);
   const shown = list.slice(0, SPOT_MAP_MAX);
@@ -453,7 +559,13 @@ document.addEventListener('click', async (e) => {
 document.addEventListener('click', (e) => {
   const fav = e.target.closest('[data-fav]'), vis = e.target.closest('[data-visited]');
   if (fav) { buzz(); toggle(state.favs, fav.dataset.fav); store.set('favs', [...state.favs]); fav.setAttribute('aria-pressed', state.favs.has(fav.dataset.fav)); }
-  if (vis) { buzz(); toggle(state.visited, vis.dataset.visited); store.set('visited', [...state.visited]); vis.setAttribute('aria-pressed', state.visited.has(vis.dataset.visited)); }
+  if (vis) {
+    buzz(); toggle(state.visited, vis.dataset.visited); store.set('visited', [...state.visited]); vis.setAttribute('aria-pressed', state.visited.has(vis.dataset.visited));
+    const s = INFO_ITEMS.get(vis.dataset.visited), meta = store.get('visitedMeta') || {};
+    if (state.visited.has(vis.dataset.visited) && s) meta[s.id] = { name: s.name, lat: s.lat, lon: s.lon, pref: s.pref, at: Date.now() };
+    else delete meta[vis.dataset.visited];
+    store.set('visitedMeta', meta);
+  }
 });
 
 // ---- 今週末のおすすめ ----
@@ -588,12 +700,12 @@ const tour = { destId: savedTour.destId || null, custom: savedTour.custom || nul
   opts: { noToll: false, fewHighways: !!savedTour.avoid, bike: false, ...(savedTour.opts || {}) }, radius: savedTour.radius || 3,
   cands: savedTour.cands || (savedTour.route ? [{ ...savedTour.route, label: 'ルート' }] : null), sel: savedTour.sel || 0,
   picked: new Set(savedTour.picked || []), error: '', busy: false, awake: store.get('awake') !== false, stops: null, key: '',
-  showCourses: store.get('showCourses') === true };
+  showCourses: store.get('showCourses') === true, depart: savedTour.depart || '' };
 tour.restored = !!tour.cands;
 Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour.sel]) || null });
 let map = null, markers = new Map();
 const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
-  cands: tour.cands, sel: tour.sel, picked: [...tour.picked] });
+  cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
 const fail = (msg) => Object.assign(new Error(msg), { mine: true });
 const roadById = (id) => DATA.roads.find((r) => r.id === id) || DATA.courses.find((r) => r.id === id) || null;
@@ -850,7 +962,12 @@ function renderTouring() {
     ${tour.route ? `<p class="route-sum">${esc(tour.route.label)}：約${Math.round(tour.route.km)}km・${fmtMin(Math.round(tour.route.min))}</p>
       <p class="hint">${esc(tour.route.engine || 'OSRM')} による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}${tour.opts.noToll || tour.opts.fewHighways ? '。Google マップでは「ルートオプション」でも同じ設定にしてください' : ''}</p>
       ${dest && !dest.loop ? viaRoads.map((r) => `<p class="notice">「${esc(r.name)}」${(r.closedMonths || []).includes(thisMonth()) ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${r.toll ? `有料道路（${r.fee ? esc(r.fee) : '料金は公式サイトで確認'}）。` : ''}${r.closed ? `⚠ ${esc(r.closed)}` : ''}</p>`).join('') : ''}
-      <p class="hint">ナビは Google マップのアプリで開いてください（ブラウザ版の Google マップは経由地が 3 件までしか使えません）。</p>` : ''}
+      <p class="hint">ナビは Google マップのアプリで開いてください（ブラウザ版の Google マップは経由地が 3 件までしか使えません）。</p>
+      <div class="row"><label for="depart" class="label">出発</label><input type="datetime-local" id="depart" value="${esc(departValue())}"></div>
+      <p class="status" id="eta">${etaText()}</p>
+      <div class="actions"><button type="button" class="btn" id="rt-rain">☔ルート上の雨</button><button type="button" class="btn" id="rt-elev">⛰標高</button>
+        <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button></div>
+      <div id="rt-out"></div>` : ''}
     ${tour.route ? `<h2>立ち寄り候補（${stops.length}件・走る順）</h2>
       <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
@@ -899,6 +1016,13 @@ function renderTouring() {
     cb.onchange = () => { buzz(); tour.opts = { ...tour.opts, [cb.dataset.opt]: cb.checked }; saveTour(); renderTouring(); };
   });
   $('#awake').onchange = (e) => { tour.awake = e.target.checked; store.set('awake', tour.awake); keepAwake(tour.awake); };
+  const dp = $('#depart');
+  if (dp) {
+    dp.onchange = (e) => { tour.depart = e.target.value; saveTour(); $('#eta').textContent = etaText(); };
+    $('#rt-rain').onclick = () => { buzz(); routeRain(); };
+    $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
+    $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
+  }
   $('#show-courses').onchange = (e) => { tour.showCourses = e.target.checked; store.set('showCourses', tour.showCourses); renderTouring(); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
@@ -998,8 +1122,7 @@ function drawMap(dest, stops) {
   if (map) map.remove();
   markers = new Map();
   map = L.map('map', { renderer: L.canvas({ tolerance: 8 }) }).setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 9);
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> / ルート: Valhalla (FOSSGIS)・OSRM' }).addTo(map);
+  baseLayers(map, ' / ルート: Valhalla (FOSSGIS)・OSRM');
   L.marker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { bubblingMouseEvents: false }).addTo(map).bindPopup(esc(DATA.cfg.origin.name));
   if (dest) L.marker([dest.lat, dest.lon], { bubblingMouseEvents: false }).addTo(map).bindPopup(esc(dest.name));
   if (tour.route) {
@@ -1032,6 +1155,68 @@ function drawMap(dest, stops) {
   // 誤操作を防ぐため、目的地の指定は長押し（スマホでは contextmenu として届く）か「中心を目的地に」ボタンだけ。
   // 長押し中（指が触れている間）に地図を作り直すと iPhone で次のタップが効かなくなることがあるので、少し遅らせる
   map.on('contextmenu', (e) => { buzz(); setTimeout(() => setCustomDest(e.latlng.lat, e.latlng.lng), 350); });
+}
+
+// 出発時刻（未設定なら次の正時）と到着予定
+function departValue() {
+  if (tour.depart) return tour.depart;
+  const d = new Date(Date.now() + 3600e3); d.setMinutes(0, 0, 0);
+  return `${Lib.ymd(d)}T${String(d.getHours()).padStart(2, '0')}:00`;
+}
+const departMs = () => new Date(departValue()).getTime();
+const hm = (ms) => { const d = new Date(ms); return `${d.getMonth() + 1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`; };
+function etaText() {
+  if (!tour.route) return '';
+  const back = tour.route.loop || (currentDest() && currentDest().loop);
+  return `${back ? '帰着' : '到着'}予定 ${hm(departMs() + tour.route.min * 60e3)}（休憩・立ち寄りの時間は含みません）`;
+}
+async function routeRain() {
+  const out = $('#rt-out'); out.innerHTML = '<p class="hint">ルート上の天気を調べています…</p>';
+  const pts = Lib.routeSamples(tour.route.line, tour.route.min, departMs(), 8);
+  try {
+    const r = await fetch(Lib.rainAlongUrl(pts), { signal: timeoutSignal(10000) });
+    const rows = Lib.parseRainAlong(await r.json(), pts);
+    const wet = rows.filter((x) => x.prob != null && x.prob >= 50);
+    out.innerHTML = `<h4>☔ルート上の雨（通過する時刻の予報）</h4>
+      ${wet.length ? `<p class="notice">⚠ 降水確率50%以上の区間があります（${wet.map((x) => Math.round(x.km) + 'km').join('・')}付近）。</p>` : rows.some((x) => x.prob != null) ? '<p class="status">雨の心配は少なそうです。</p>' : ''}
+      <table class="rain"><tr><th>距離</th><th>通過</th><th>降水確率</th><th>雨量</th></tr>${rows.map((x) => `<tr><td>${Math.round(x.km)}km</td><td>${hm(x.at)}</td>
+        <td>${x.prob == null ? '予報の範囲外' : `${x.prob}%`}</td><td>${x.mm == null ? '' : `${x.mm}mm`}</td></tr>`).join('')}</table>
+      <p class="hint">天気: Open-Meteo（7日先まで）</p>`;
+  } catch { out.innerHTML = '<p class="hint">天気を取得できませんでした（圏外の可能性があります）。</p>'; }
+}
+async function routeElevation() {
+  const out = $('#rt-out'); out.innerHTML = '<p class="hint">標高を調べています…</p>';
+  const pts = Lib.routeSamples(tour.route.line, tour.route.min, departMs(), 80);
+  try {
+    const r = await fetch(Lib.elevationUrl(pts), { signal: timeoutSignal(10000) });
+    const elev = (await r.json()).elevation;
+    const lo = Math.min(...elev), hi = Math.max(...elev), span = Math.max(hi - lo, 1), total = pts[pts.length - 1].km || 1;
+    const poly = elev.map((e, i) => `${(pts[i].km / total * 300).toFixed(1)},${(95 - (e - lo) / span * 85).toFixed(1)}`).join(' ');
+    out.innerHTML = `<h4>⛰標高（最高 ${Math.round(hi)}m・最低 ${Math.round(lo)}m・上り合計 約${Math.round(Lib.climbOf(elev))}m）</h4>
+      <svg class="elev" viewBox="0 0 300 100" preserveAspectRatio="none" role="img" aria-label="ルートの標高グラフ">
+        <polyline points="0,100 ${poly} 300,100" class="elev-fill"/><polyline points="${poly}" class="elev-line"/></svg>
+      <p class="hint">左が出発、右が${Math.round(total)}km地点。標高: Open-Meteo（Copernicus DEM）</p>`;
+  } catch { out.innerHTML = '<p class="hint">標高を取得できませんでした（圏外の可能性があります）。</p>'; }
+}
+async function routePhotos() {
+  const out = $('#rt-out'); out.innerHTML = '<p class="hint">ルート沿いの写真を探しています…</p>';
+  const pts = Lib.routeSamples(tour.route.line, tour.route.min, departMs(), 10).slice(1);
+  const seen = new Set(), photos = [];
+  await Promise.all(pts.map(async (p) => {
+    try {
+      const r = await fetch(Lib.commonsNearbyUrl(p.lat, p.lon, 3000, 3), { signal: timeoutSignal(10000) });
+      for (const ph of Lib.parseCommons(await r.json())) if (!seen.has(ph.page)) { seen.add(ph.page); photos.push({ ...ph, lat: p.lat, lon: p.lon, km: p.km }); }
+    } catch { /* 取れなかった地点はとばす */ }
+  }));
+  photos.sort((a, b) => a.km - b.km);
+  out.innerHTML = `<h4>📷ルート沿いの写真（${photos.length}枚・押すと地図でその付近へ）</h4>` + (photos.length ? `<div class="rt-photos">${photos.map((ph, i) => `
+    <figure><button type="button" class="ph" data-ph="${i}"><img src="${esc(ph.thumb)}" alt="${Math.round(ph.km)}km付近の写真" loading="lazy"></button>
+      <figcaption>${Math.round(ph.km)}km付近・<a href="${esc(ph.page)}" target="_blank" rel="noopener">${esc(ph.artist || '撮影者')}</a>（${esc(ph.license || 'ライセンスはリンク先')}）</figcaption></figure>`).join('')}</div>`
+    : '<p class="hint">写真が見つかりませんでした。</p>') + '<p class="hint">写真: Wikimedia Commons（ルート上の地点から3km以内）</p>';
+  out.querySelectorAll('[data-ph]').forEach((b) => { b.onclick = () => {
+    const ph = photos[+b.dataset.ph];
+    if (map) { map.setView([ph.lat, ph.lon], 13); L.popup().setLatLng([ph.lat, ph.lon]).setContent(`<img class="pop-img" src="${esc(ph.thumb)}" alt="">`).openOn(map); $('#map').scrollIntoView({ block: 'center' }); }
+  }; });
 }
 
 // ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
@@ -1084,6 +1269,11 @@ function renderSettings() {
   $('#view').innerHTML = `<h2>表示</h2>
     <label class="check"><input type="checkbox" id="set-outdoor" ${document.documentElement.hasAttribute('data-outdoor') ? 'checked' : ''}>屋外モード（日なた・グローブ向けに大きく太く表示）</label>
     <p class="hint">画面上の「☀屋外」でも切り替えられます。ツーリングタブを開くと自動でオンになります。</p>
+    <h2>起点</h2>
+    <p class="status">今の起点：<strong>${esc(DATA.cfg.origin.name)}</strong>（移動時間・ルートはここから計算）</p>
+    <div class="actions"><button type="button" class="btn" id="origin-here">現在地を起点にする</button>
+      ${store.get('origin') ? `<button type="button" class="btn" id="origin-reset">${esc(CFG_ORIGIN.name)}に戻す</button>` : ''}</div>
+    <h2>行った場所の記録</h2>${visitedHtml()}
     <h2>好きなジャンル</h2><p class="hint">今週末のおすすめに優先して出します。</p><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>
     <h2>データの自動更新（管理者向け）</h2>
     <p>GitHub の Fine-grained トークン（対象リポジトリ：このアプリのリポジトリだけ／権限：Actions の Read and write だけ）を貼ってください。トークンはこの端末の中にだけ保存されます。</p>
@@ -1104,6 +1294,42 @@ function renderSettings() {
   $('#token-save').onclick = () => { const v = $('#token').value.trim(); if (v) { store.set('token', v); renderSettings(); } };
   $('#token-del').onclick = () => { store.set('token', null); renderSettings(); };
   $('#update-now').onclick = () => { buzz(); requestUpdate(true); };
+  $('#origin-here').onclick = () => {
+    if (!navigator.geolocation) { alert('この端末では現在地を使えません。'); return; }
+    navigator.geolocation.getCurrentPosition((p) => {
+      setOrigin({ name: '現在地', lat: +p.coords.latitude.toFixed(5), lon: +p.coords.longitude.toFixed(5) });
+    }, () => alert('現在地を取得できませんでした（位置情報の許可を確認してください）。'), { enableHighAccuracy: true, timeout: 10000 });
+  };
+  const or = $('#origin-reset'); if (or) or.onclick = () => setOrigin(null);
+  drawVisitedMap();
+}
+let CFG_ORIGIN = null; // config.json の起点（現在地にしたあと戻すため）
+function setOrigin(o) {
+  store.set('origin', o);
+  DATA.cfg.origin = o || CFG_ORIGIN;
+  tour.cands = null; tour.stops = null; tour.key = ''; DATA.ver++;
+  buzz(); renderAll();
+}
+function visitedRecords() {
+  const meta = store.get('visitedMeta') || {};
+  const byId = new Map(DATA.spots.concat(DATA.osm).map((s) => [s.id, s]));
+  return [...state.visited].map((id) => meta[id] || byId.get(id)).filter((r) => r && r.lat != null);
+}
+function visitedHtml() {
+  const recs = visitedRecords();
+  if (!recs.length) return '<p class="hint">スポットの「▼詳しく」→「行った」を押すと、ここに地図と都県ごとの数が出ます。</p>';
+  return `<p class="status">${recs.length}か所：${Lib.visitedStats(recs).map(([p, n]) => `${esc(p)} ${n}`).join('・')}</p><div id="visited-map"></div>`;
+}
+let visitedMap = null;
+function drawVisitedMap() {
+  if (visitedMap) { visitedMap.remove(); visitedMap = null; }
+  const recs = visitedRecords();
+  if (!recs.length || !$('#visited-map') || typeof L === 'undefined') return;
+  visitedMap = L.map('visited-map', { renderer: L.canvas({ tolerance: 8 }) });
+  baseLayers(visitedMap);
+  for (const r of recs) L.circleMarker([r.lat, r.lon], { radius: 7, weight: 2, color: '#fff', fillColor: '#2f9e44', fillOpacity: 0.95 })
+    .bindPopup(`<strong>✓ ${esc(r.name)}</strong>${r.at ? `<br>${new Date(r.at).toLocaleDateString('ja-JP')}に記録` : ''}`).addTo(visitedMap);
+  visitedMap.fitBounds(L.latLngBounds(recs.map((r) => [r.lat, r.lon])).pad(0.2), { maxZoom: 12 });
 }
 
 // ---- タブと全体描画 ----
@@ -1135,6 +1361,8 @@ async function init() {
   $('#rec').open = store.get('recOpen') !== false;
   DATA.cfg = await getJSON('config.json', null);
   if (!DATA.cfg) { renderLoadMsg(); $('#view').innerHTML = '<p class="empty">config.json を読み込めません。電波の良い場所で開き直してください。</p>'; return; }
+  CFG_ORIGIN = DATA.cfg.origin;
+  if (store.get('origin')) DATA.cfg.origin = store.get('origin');
   // 先にスポットを出し、イベントなどは後から読み込む
   [DATA.spots, DATA.touring, DATA.status, DATA.roads] = await Promise.all([
     getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
