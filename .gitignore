@@ -6,4 +6,5 @@ data/events.json
 data/pois.json
 data/status.json
 data/osm_spots.json
+data/roads_osm.json
 data/cells/

@@ -267,6 +267,37 @@ class OsmSpotTest(unittest.TestCase):
         self.assertEqual(got, [1, 1, 1, 1])
         self.assertIn(60, waits)
 
+    def test_build_roads_joins_parts_in_order(self):
+        # 同じ名前の 3 断片（1 つは逆向き）→ 1 本。短い道・厳選と同じ道は除く
+        parts = [
+            {'wid': 3, 'name': 'Aスカイライン', 'toll': False, 'coords': [[35.00, 139.02], [35.00, 139.04]]},
+            {'wid': 1, 'name': 'Aスカイライン', 'toll': True, 'coords': [[35.00, 139.00], [35.00, 139.02]]},
+            {'wid': 2, 'name': 'Aスカイライン', 'toll': False, 'coords': [[35.00, 139.06], [35.00, 139.04]]},
+            {'wid': 9, 'name': 'B峠', 'toll': False, 'coords': [[36.0, 139.0], [36.01, 139.0]]},
+            {'wid': 7, 'name': 'Cライン', 'toll': False, 'coords': [[34.5, 139.0], [34.6, 139.0]]},
+            # 上下線が別の道（行って戻る並び）→ 片道分だけ
+            {'wid': 20, 'name': 'D峠線', 'toll': False, 'coords': [[34.0, 139.0], [34.05, 139.0]]},
+            {'wid': 21, 'name': 'D峠線', 'toll': False, 'coords': [[34.05, 139.0005], [34.0, 139.0005]]},
+        ]
+        parts.append({'wid': 30, 'name': 'E ターンパイク', 'toll': True, 'coords': [[33.0, 139.0], [33.05, 139.0]]})
+        roads = collect.build_roads(parts, curated=[{'name': 'Cライン（県道）', 'points': [[34.55, 139.0]]},
+                                                    {'name': 'Eターンパイク（本線）', 'points': [[33.02, 139.0]]}])
+        self.assertEqual([r['name'] for r in roads], ['Aスカイライン', 'D峠線'])
+        d = roads[1]
+        self.assertAlmostEqual(d['km'], 5.55, delta=0.3)
+        self.assertGreater(abs(d['points'][0][0] - d['points'][-1][0]), 0.04)
+        r = roads[0]
+        self.assertEqual((r['id'], r['toll'], len(r['points'])), ('osm:way:1', True, 6))
+        lons = [p[1] for p in r['points']]
+        self.assertTrue(lons == sorted(lons) or lons == sorted(lons, reverse=True), lons)
+        self.assertAlmostEqual(r['km'], 5.5, delta=0.3)
+        self.assertIn('スカイライン', r['note'])
+
+    def test_parse_pass(self):
+        text = '{"elements": [{"type": "node", "id": 5, "lat": 35.5, "lon": 138.9, "tags": {"name": "雁坂峠", "mountain_pass": "yes", "ele": "2082"}}]}'
+        p = collect.parse_road_parts(text, 'pass')[0]
+        self.assertEqual((p['name'], p['points'], p['pass'], p['note']), ('雁坂峠', [[35.5, 138.9]], True, '峠（標高2082m）'))
+
     def test_done_kinds_from_old_status(self):
         st = {'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],
               'cells_error': 'cafe: HTTPError: 504 / bigpark: HTTPError: 504'}
