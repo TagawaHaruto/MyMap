@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []),
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -200,6 +200,7 @@ function spotCandidates() {
   let all = DATA.spots.concat(DATA.osm, extra, cellsPart);
   if (!state.showChains) all = all.filter((s) => !s.chain);
   if (state.walkinOnly && (state.genres.has('factory') || state.genres.has('experience'))) all = all.filter((s) => s.walkin === true);
+  if (state.foodCat && groups.includes('food')) all = all.filter((s) => !s.genres.includes('food') || Lib.inFoodCat(s, state.foodCat));
   return all;
 }
 const isCurated = (s) => !s.poi && !String(s.id).startsWith('osm:');
@@ -242,11 +243,17 @@ function renderSpots() {
 function renderSpotList() {
   const box = $('#spot-list'); if (!box) return;
   if (state.q.trim()) {
-    const all = DATA.spots.concat(DATA.osm, poiSpotList());
-    const hits = Lib.searchSpots(all, state.q, DATA.cfg, state.favs, state.mode);
+    // グルメ・史跡・宿・お土産なども、移動時間の範囲（制限なしは 60km）の分を読み込んで探す
+    const groups = ['food', 'heritage', 'local'];
+    ensureCells(groups, DATA.cfg.origin, loadKm()).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
+    const all = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(groups, DATA.cfg.origin, loadKm()).filter((s) => state.showChains || !s.chain));
+    const hits = Lib.searchSpots(all, state.q, DATA.cfg, state.favs, state.mode, 300);
     setCount(null);
-    box.innerHTML = `<p class="status">「${esc(state.q.trim())}」の検索結果 ${hits.length}件（絞り込み条件を外して検索・上位50件）</p>`
-      + (hits.length ? hits.map(spotCard).join('') : '<p class="empty">見つかりませんでした。ひらがなや別の呼び方でも試してください。</p>');
+    box.innerHTML = `<p class="status">「${esc(state.q.trim())}」の検索結果 ${hits.length}件（近い順・上位300件。グルメなどは${state.maxMin == null ? '起点から60km' : '移動時間の範囲'}以内${cellLoading.size ? '・読み込み中…' : ''}）</p>`
+      + mapToggle()
+      + (!hits.length ? '<p class="empty">見つかりませんでした。ひらがなや別の呼び方でも試してください。</p>'
+        : state.spotMap ? '<div id="spot-map"></div>' : hits.slice(0, 100).map(spotCard).join(''));
+    bindMapToggle(hits);
     return;
   }
   const list = Lib.filterSpots(spotCandidates(), filterState(), DATA.cfg);
@@ -257,17 +264,54 @@ function renderSpotList() {
     (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
     groups.includes('food') ? `<button type="button" class="chip" id="t-chain" aria-pressed="${state.showChains}">チェーン店も表示</button>` : '',
   ].join('');
+  const cats = groups.includes('food') ? `<div class="chips wrap" aria-label="料理のジャンル">${Lib.FOOD_CATS.map(([label]) =>
+    `<button type="button" class="chip" data-foodcat="${esc(label)}" aria-pressed="${state.foodCat === label}">${esc(label)}</button>`).join('')}</div>` : '';
   const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';
   const noCells = groups.length && !cellIndex ? '・グルメなどのデータはまだ収集されていません' : '';
   const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length && state.maxMin == null ? '・グルメなどは起点から60km以内' : ''}${loadingCells}${noCells}</p>
-    ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}`;
+    ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}${cats}${list.length ? mapToggle() : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
-  box.innerHTML = head + (list.length ? list.slice(0, state.limit).map(spotCard).join('') + more
+  box.innerHTML = head + (list.length ? (state.spotMap ? '<div id="spot-map"></div>' : list.slice(0, state.limit).map(spotCard).join('') + more)
     : `<p class="empty">${failed ? 'スポットのデータを読み込めていません。電波の良い場所で開き直してください。'
       : !DATA.osmLoaded ? 'スポットを読み込み中…' : '条件に合うスポットがありません。条件を広げてみてください。'}</p>`);
-  if (more) $('#more').onclick = () => { state.limit += 300; renderSpotList(); };
+  if (more && !state.spotMap) $('#more').onclick = () => { state.limit += 300; renderSpotList(); };
   const tw = $('#t-walkin'); if (tw) tw.onclick = () => { buzz(); state.walkinOnly = !state.walkinOnly; renderSpotList(); };
   const tc = $('#t-chain'); if (tc) tc.onclick = () => { buzz(); state.showChains = !state.showChains; renderSpotList(); };
+  box.querySelectorAll('[data-foodcat]').forEach((b) => { b.onclick = () => {
+    buzz(); state.foodCat = state.foodCat === b.dataset.foodcat ? '' : b.dataset.foodcat; state.limit = 300; renderSpotList();
+  }; });
+  bindMapToggle(list);
+}
+
+// ---- 候補を地図で見る（一覧・検索結果の上位 2,000 件。★厳選・⭐は大きい点） ----
+let spotMap = null;
+const SPOT_MAP_MAX = 2000;
+const mapToggle = () => `<div class="actions"><button type="button" class="btn" id="t-map">${state.spotMap ? '☰ 一覧で見る' : '🗺 地図で見る'}</button></div>`;
+function bindMapToggle(list) {
+  const t = $('#t-map'); if (t) t.onclick = () => { buzz(); state.spotMap = !state.spotMap; renderSpotList(); };
+  if (spotMap) { spotMap.remove(); spotMap = null; }
+  if (!state.spotMap || !$('#spot-map') || typeof L === 'undefined') return;
+  spotMap = L.map('spot-map', { renderer: L.canvas({ tolerance: 8 }) }).setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 10);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(spotMap);
+  L.circleMarker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { radius: 7, color: '#000', fillColor: '#fff', fillOpacity: 1, weight: 3 })
+    .bindTooltip(esc(DATA.cfg.origin.name)).addTo(spotMap);
+  const shown = list.slice(0, SPOT_MAP_MAX);
+  for (const s of shown) {
+    const top = s.tier === 0;
+    L.circleMarker([s.lat, s.lon], { radius: top ? 8 : 6, weight: 2, color: '#fff', fillOpacity: 0.9,
+      fillColor: top ? '#d4a000' : s.genres.includes('food') ? '#c4302b' : '#0055ad' })
+      .bindPopup(() => spotPopup(s), { maxWidth: 260 })
+      .on('popupopen', (e) => fillAddr(e.popup.getElement()))
+      .addTo(spotMap);
+  }
+  if (shown.length) spotMap.fitBounds(L.latLngBounds(shown.map((s) => [s.lat, s.lon])).pad(0.05), { maxZoom: 14 });
+}
+function spotPopup(s) {
+  return `<div class="pop"><strong>${isCurated(s) ? '★ ' : ''}${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}</strong>
+    <p class="meta">${icon(MODES[state.mode])}${fmtMin(s.minutes)}${s.indoor ? '・☔雨OK' : ''}${'walkin' in s ? (s.walkin ? '・当日参加OK' : '・要予約') : ''}</p>
+    ${s.note ? `<p>${esc(s.note)}</p>` : ''}
+    <div class="actions"><a class="btn" ${gm(s, 'dir')}>経路</a><a class="btn" ${gm(s)}>写真・口コミ</a></div></div>`;
 }
 // ---- スポットの説明と写真（Wikipedia の要約、なければ Wikimedia Commons の付近の写真） ----
 const INFO_ITEMS = new Map(); // 画面に出ている id → スポット

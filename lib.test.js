@@ -123,6 +123,18 @@ const found = Lib.searchSpots(tiered.concat([{ id: 'jd', name: '深大寺', tags
 assert.deepStrictEqual(ids(found), ['jd']);
 assert.strictEqual(Lib.searchSpots(tiered, 'osm', cfg, new Set(), 'car', 2).length, 2);
 assert.strictEqual(Lib.searchSpots(tiered, '  ', cfg, new Set(), 'car').length, 0);
+// 飲食のジャンル: 呼び方の違い・料理の種類（note）でも見つかる
+const foods = [
+  { id: 'f1', name: '麺屋 一番', note: 'ラーメン', lat: 35.65, lon: 139.54, genres: ['food'] },
+  { id: 'f2', name: '中華そば 二郎', note: '飲食店', lat: 35.66, lon: 139.54, genres: ['food'] },
+  { id: 'f3', name: 'キッチン山田', note: '洋食', lat: 35.67, lon: 139.54, genres: ['food'] },
+  { id: 'f4', name: '手打ち蕎麦 松', note: '飲食店', lat: 35.68, lon: 139.54, genres: ['food'] },
+];
+assert.deepStrictEqual(Lib.searchSpots(foods, 'ラーメン', cfg, new Set(), 'car').map((s) => s.id).sort(), ['f1', 'f2']);
+assert.deepStrictEqual(Lib.searchSpots(foods, 'ハンバーグ', cfg, new Set(), 'car').map((s) => s.id), ['f3']);
+assert.deepStrictEqual(Lib.searchSpots(foods, 'そば', cfg, new Set(), 'car').map((s) => s.id), ['f4']);
+assert.ok(Lib.inFoodCat(foods[3], 'そば・うどん') && !Lib.inFoodCat(foods[0], 'そば・うどん'));
+assert.deepStrictEqual(Lib.searchKeys('じんだいじ'), ['じんだいじ']);
 
 // イベント: 告知の除外語
 const ex = /募集|講座/;
