@@ -103,7 +103,7 @@ label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var
 :focus-visible { outline: 3px solid var(--color-primitive-yellow-400); outline-offset: 2px; }
 
 /* ツーリング */
-#map { height: min(60vh, 520px); border: var(--bw) solid var(--line); border-radius: 8px; }
+#map, #spot-map { height: min(60vh, 520px); border: var(--bw) solid var(--line); border-radius: 8px; }
 .leaflet-touch .leaflet-bar a { width: 48px; height: 48px; line-height: 48px; font-size: 24px; }
 .leaflet-tooltip.num { background: none; border: 0; box-shadow: none; color: var(--color-neutral-white); font-weight: var(--font-weight-700); font-size: 13px; padding: 0; }
 .leaflet-tooltip.num::before { display: none; }
