@@ -490,6 +490,155 @@ const Lib = (() => {
     }).filter((x) => x.lat != null).sort((a, b) => a.distKm - b.distKm);
   }
 
+  // ---- 太陽の位置（NOAA の簡易式。誤差 1 分・0.1 度程度） ----
+  const RAD = Math.PI / 180;
+  function sunPosition(date, lat, lon) {
+    const jd = date.getTime() / 864e5 + 2440587.5, t = (jd - 2451545) / 36525;
+    const l0 = (280.46646 + t * (36000.76983 + t * 0.0003032)) % 360, m = 357.52911 + t * (35999.05029 - 0.0001537 * t);
+    const c = Math.sin(m * RAD) * (1.914602 - t * (0.004817 + 0.000014 * t)) + Math.sin(2 * m * RAD) * (0.019993 - 0.000101 * t) + Math.sin(3 * m * RAD) * 0.000289;
+    const lam = l0 + c - 0.00569 - 0.00478 * Math.sin((125.04 - 1934.136 * t) * RAD);
+    const eps = 23 + (26 + (21.448 - t * (46.815 + t * (0.00059 - t * 0.001813))) / 60) / 60 + 0.00256 * Math.cos((125.04 - 1934.136 * t) * RAD);
+    const dec = Math.asin(Math.sin(eps * RAD) * Math.sin(lam * RAD));
+    const ra = Math.atan2(Math.cos(eps * RAD) * Math.sin(lam * RAD), Math.cos(lam * RAD));
+    const gmst = (280.46061837 + 360.98564736629 * (jd - 2451545)) % 360;
+    const ha = (gmst + lon) * RAD - ra;
+    const alt = Math.asin(Math.sin(lat * RAD) * Math.sin(dec) + Math.cos(lat * RAD) * Math.cos(dec) * Math.cos(ha));
+    const az = Math.atan2(-Math.sin(ha), Math.tan(dec) * Math.cos(lat * RAD) - Math.sin(lat * RAD) * Math.cos(ha));
+    return { alt: alt / RAD, az: ((az / RAD) + 360) % 360 };
+  }
+  // その日（0 時から 24 時間）で、高度 target を上向き・下向きに横切る時刻と方角（2 分刻みで探して直線で補う）
+  function sunCross(day, lat, lon, target) {
+    const t0 = new Date(day); t0.setHours(0, 0, 0, 0);
+    const out = { rise: null, set: null };
+    let prev = sunPosition(t0, lat, lon).alt;
+    for (let k = 1; k <= 720; k++) {
+      const d = new Date(t0.getTime() + k * 120e3), p = sunPosition(d, lat, lon);
+      if ((prev < target) !== (p.alt < target)) {
+        const f = (target - prev) / (p.alt - prev), at = new Date(d.getTime() - 120e3 * (1 - f));
+        out[p.alt > prev ? 'rise' : 'set'] = { at, az: sunPosition(at, lat, lon).az };
+      }
+      prev = p.alt;
+    }
+    return out;
+  }
+  const sunTimes = (day, p) => sunCross(day, p.lat, p.lon, -0.833);
+  const DIR16 = ['北', '北北東', '北東', '東北東', '東', '東南東', '南東', '南南東', '南', '南南西', '南西', '西南西', '西', '西北西', '北西', '北北西'];
+  const dir16 = (az) => DIR16[Math.round(az / 22.5) % 16];
+  function bearing(a, b) {
+    const y = Math.sin((b.lon - a.lon) * RAD) * Math.cos(b.lat * RAD);
+    const x = Math.cos(a.lat * RAD) * Math.sin(b.lat * RAD) - Math.sin(a.lat * RAD) * Math.cos(b.lat * RAD) * Math.cos((b.lon - a.lon) * RAD);
+    return (Math.atan2(y, x) / RAD + 360) % 360;
+  }
+  // ダイヤモンド富士（太陽が富士山頂に重なる日）の予測。その場所から山頂が見える前提で、方角 ±0.3 度に入る日と時刻
+  const FUJI = { lat: 35.3606, lon: 138.7274, ele: 3776 };
+  function diamondFuji(p, from = new Date(), days = 366) {
+    const dist = haversineKm(p, FUJI);
+    if (dist < 8 || dist > 200) return [];
+    const az = bearing(p, FUJI);
+    const kind = az > 200 && az < 320 ? 'set' : az > 40 && az < 160 ? 'rise' : null;
+    if (!kind) return [];
+    const angle = Math.atan((FUJI.ele - (p.ele || 50) - dist * dist / (2 * 6371) * 1000 * 0.87) / (dist * 1000)) / RAD;
+    const out = [];
+    for (let i = 0; i < days; i++) {
+      const d = new Date(from.getTime() + i * 864e5);
+      const x = sunCross(d, p.lat, p.lon, angle)[kind];
+      if (x && Math.abs(x.az - az) < 0.3) out.push({ at: x.at, kind: kind === 'set' ? '夕方（沈む）' : '朝（昇る）' });
+    }
+    return out;
+  }
+
+  // ---- 到達圏（Valhalla の isochrone）と、多角形の中にあるか ----
+  const ISO_COSTING = { car: 'auto', bike: 'motorcycle', bicycle: 'bicycle' };
+  const isochroneUrl = (o, mode, minutes) => ISO_COSTING[mode] ? 'https://valhalla1.openstreetmap.de/isochrone?json=' + encodeURIComponent(JSON.stringify({
+    locations: [{ lat: o.lat, lon: o.lon }], costing: ISO_COSTING[mode], contours: minutes.map((time) => ({ time })), polygons: true, denoise: 0.5, generalize: 150 })) : null;
+  function inRing(p, ring) {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const [xi, yi] = ring[i], [xj, yj] = ring[j];
+      if ((yi > p.lat) !== (yj > p.lat) && p.lon < (xj - xi) * (p.lat - yi) / (yj - yi) + xi) inside = !inside;
+    }
+    return inside;
+  }
+  // GeoJSON の Polygon / MultiPolygon（外周の中で、穴の外）
+  function inGeometry(p, g) {
+    const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : [];
+    return polys.some((rings) => inRing(p, rings[0]) && !rings.slice(1).some((h) => inRing(p, h)));
+  }
+
+  // ---- カーブの多さ（1km あたりの向きの変化の合計・度）。100m おきに間引いてから測る ----
+  function curviness(line) {
+    const pts = [line[0]];
+    for (const q of line) if (haversineKm(pt(pts[pts.length - 1]), pt(q)) >= 0.1) pts.push(q);
+    let turn = 0, km = 0;
+    for (let i = 1; i < pts.length; i++) {
+      km += haversineKm(pt(pts[i - 1]), pt(pts[i]));
+      if (i < 2) continue;
+      const h1 = bearing(pt(pts[i - 2]), pt(pts[i - 1])), h2 = bearing(pt(pts[i - 1]), pt(pts[i]));
+      turn += Math.abs(((h2 - h1 + 540) % 360) - 180);
+    }
+    return km > 0.5 ? turn / km : 0;
+  }
+  const curvStars = (v) => (v < 40 ? 1 : v < 90 ? 2 : v < 160 ? 3 : v < 260 ? 4 : 5); // 箱根の林道・峠道で 200〜500
+
+  // ---- 祝日（振替休日・春分・秋分を含む。2000〜2099 年） ----
+  function baseHoliday(date) {
+    const y = date.getFullYear(), m = date.getMonth() + 1, d = date.getDate(), wd = date.getDay();
+    const nthMon = (n) => d === (8 - new Date(y, m - 1, 1).getDay()) % 7 + 1 + 7 * (n - 1);
+    const fixed = { 1: [1], 2: [11, 23], 4: [29], 5: [3, 4, 5], 8: [11], 11: [3, 23] };
+    const spring = Math.floor(20.8431 + 0.242194 * (y - 1980) - Math.floor((y - 1980) / 4));
+    const autumn = Math.floor(23.2488 + 0.242194 * (y - 1980) - Math.floor((y - 1980) / 4));
+    const isH = (fixed[m] || []).includes(d) || (m === 3 && d === spring) || (m === 9 && d === autumn)
+      || (wd === 1 && ((m === 1 && nthMon(2)) || (m === 7 && nthMon(3)) || (m === 9 && nthMon(3)) || (m === 10 && nthMon(2))));
+    return isH;
+  }
+  // 振替休日: 日曜の祝日のあと、最初の祝日でない日
+  function jpHoliday(date) {
+    if (baseHoliday(date)) return true;
+    for (let k = 1; k < 7; k++) {
+      const p = new Date(date.getFullYear(), date.getMonth(), date.getDate() - k);
+      if (!baseHoliday(p)) return false;
+      if (p.getDay() === 0) return true;
+    }
+    return false;
+  }
+  // 混みやすさの目安（実際の混雑ではなく、休日・連休・見頃・時間帯から）
+  function crowdLevel(s, date) {
+    const m = date.getMonth() + 1, d = date.getDate(), h = date.getHours();
+    const reasons = [];
+    if (date.getDay() === 0 || date.getDay() === 6 || jpHoliday(date)) reasons.push(jpHoliday(date) ? '祝日' : '週末');
+    if ((m === 4 && d >= 29) || (m === 5 && d <= 5) || (m === 8 && d >= 11 && d <= 16) || (m === 12 && d >= 29) || (m === 1 && d <= 3)) reasons.push('大型連休');
+    if (seasonNow(s, m).length) reasons.push('見頃の時期');
+    if (h >= 10 && h < 15) reasons.push('昼の時間帯');
+    const score = reasons.filter((r) => r !== '昼の時間帯').length + (reasons.includes('昼の時間帯') ? 0.5 : 0);
+    return { level: score >= 2 ? 2 : score >= 1 ? 1 : 0, label: ['空いていそう', 'やや混みそう', '混みやすい'][score >= 2 ? 2 : score >= 1 ? 1 : 0], reasons };
+  }
+
+  // ---- 方面別の天気用: 起点から各方面へ km 先の地点 ----
+  function destPoint(o, az, km) {
+    const r = km / 6371, b = az * RAD, la = o.lat * RAD, lo = o.lon * RAD;
+    const lat2 = Math.asin(Math.sin(la) * Math.cos(r) + Math.cos(la) * Math.sin(r) * Math.cos(b));
+    const lon2 = lo + Math.atan2(Math.sin(b) * Math.sin(r) * Math.cos(la), Math.cos(r) - Math.sin(la) * Math.sin(lat2));
+    return { lat: lat2 / RAD, lon: lon2 / RAD };
+  }
+  const dirPoints = (o, km = 70) => DIRS.map((d, i) => ({ dir: d, ...destPoint(o, i * 45, km) }));
+
+  // ---- 圏外用の地図: ルートにかかるタイル（前後 pad 枚） ----
+  function tilesAlong(line, zooms, pad = 1) {
+    const out = new Map();
+    for (const z of zooms) {
+      const n = 2 ** z;
+      for (const [lon, lat] of line) {
+        const x = Math.floor((lon + 180) / 360 * n);
+        const y = Math.floor((1 - Math.log(Math.tan(lat * RAD) + 1 / Math.cos(lat * RAD)) / Math.PI) / 2 * n);
+        for (let dx = -pad; dx <= pad; dx++) for (let dy = -pad; dy <= pad; dy++) out.set(`${z}/${x + dx}/${y + dy}`, { z, x: x + dx, y: y + dy });
+      }
+    }
+    return [...out.values()];
+  }
+  // ルートが通る、その月に閉鎖・通行止めの道（道の地点が 2 つ以上ルートから 500m 以内）
+  const closedAlong = (line, roads, month) => roads.filter((r) => (r.closedMonths || []).includes(month)
+    && stopsAlongRoute(r.points.map(pt), line, 0.5).length >= 2);
+
   const gsiSearchUrl = (q) => `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(q)}`;
   function parseGsi(j, limit = 8) {
     const out = [];
@@ -603,7 +752,9 @@ const Lib = (() => {
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
-    dayPlan, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby };
+    dayPlan, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
+    sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
+    jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

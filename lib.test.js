@@ -376,4 +376,47 @@ assert.ok(decodeURIComponent(Lib.nearbyQuery({ lat: 35, lon: 139 }, 'fuel')).inc
 const nb = Lib.parseNearby({ elements: [{ lat: 35.01, lon: 139, tags: { name: '遠い' } }, { center: { lat: 35.001, lon: 139 }, tags: { brand: 'ENEOS' } }] }, { lat: 35, lon: 139 });
 assert.deepStrictEqual(nb.map((x) => x.name), ['ENEOS', '遠い']);
 
+// ---- 太陽・ダイヤモンド富士 ----
+const tokyo = { lat: 35.6895, lon: 139.6917 };
+const st2 = Lib.sunTimes(new Date('2026-06-21T12:00:00+09:00'), tokyo);
+// 夏至の東京: 日の出 4:25 ごろ（東北東）・日の入り 19:00 ごろ（西北西）
+assert.ok(Math.abs(st2.rise.at.getHours() * 60 + st2.rise.at.getMinutes() - (4 * 60 + 25)) <= 4, String(st2.rise.at));
+assert.ok(Math.abs(st2.set.at.getHours() * 60 + st2.set.at.getMinutes() - (19 * 60)) <= 5, String(st2.set.at));
+assert.strictEqual(Lib.dir16(st2.rise.az), '東北東');
+assert.strictEqual(Lib.dir16(st2.set.az), '西北西');
+assert.ok(Lib.bearing({ lat: 35, lon: 139 }, { lat: 35, lon: 138 }) > 269 && Lib.bearing({ lat: 35, lon: 139 }, { lat: 35, lon: 138 }) < 271);
+// 山中湖（パノラマ台付近）は 10〜11 月・2 月ごろに夕方のダイヤモンド富士
+const df = Lib.diamondFuji({ lat: 35.4300, lon: 138.8700, ele: 1000 }, new Date('2026-01-01T00:00:00+09:00'));
+assert.ok(df.length > 0 && df.every((x) => x.kind === '夕方（沈む）'));
+assert.ok(df.some((x) => [10, 11, 2].includes(x.at.getMonth() + 1)), df.map((x) => x.at.toISOString()).join());
+assert.deepStrictEqual(Lib.diamondFuji({ lat: 35.36, lon: 138.73 }), []); // 山頂の近く
+// ---- 到達圏 ----
+assert.ok(decodeURIComponent(Lib.isochroneUrl({ lat: 35, lon: 139 }, 'car', [30, 60])).includes('"costing":"auto"'));
+assert.strictEqual(Lib.isochroneUrl({ lat: 35, lon: 139 }, 'train', [30]), null);
+const sq = { type: 'Polygon', coordinates: [[[139, 35], [140, 35], [140, 36], [139, 36], [139, 35]], [[139.4, 35.4], [139.6, 35.4], [139.6, 35.6], [139.4, 35.6], [139.4, 35.4]]] };
+assert.strictEqual(Lib.inGeometry({ lat: 35.2, lon: 139.2 }, sq), true);
+assert.strictEqual(Lib.inGeometry({ lat: 35.5, lon: 139.5 }, sq), false); // 穴の中
+assert.strictEqual(Lib.inGeometry({ lat: 36.5, lon: 139.5 }, sq), false);
+// ---- カーブの多さ: まっすぐ < ジグザグ ----
+const straight = Array.from({ length: 50 }, (_, i) => [139 + i * 0.002, 35]);
+const zig = Array.from({ length: 50 }, (_, i) => [139 + i * 0.002, 35 + (i % 2) * 0.0015]);
+assert.ok(Lib.curviness(straight) < 1);
+assert.ok(Lib.curviness(zig) > 150 && Lib.curvStars(Lib.curviness(zig)) === 4);
+assert.strictEqual(Lib.curvStars(500), 5);
+// ---- 祝日・混みやすさ ----
+assert.strictEqual(Lib.jpHoliday(new Date(2026, 9, 12)), true); // スポーツの日（10 月第 2 月曜）
+assert.strictEqual(Lib.jpHoliday(new Date(2026, 8, 23)), true); // 秋分の日
+assert.strictEqual(Lib.jpHoliday(new Date(2026, 4, 6)), true); // 振替休日（5/3 が日曜）
+assert.strictEqual(Lib.jpHoliday(new Date(2026, 9, 13)), false);
+assert.strictEqual(Lib.crowdLevel({ best: [{ what: '紅葉', months: [11] }] }, new Date(2026, 10, 3, 12)).level, 2);
+assert.strictEqual(Lib.crowdLevel({}, new Date(2026, 9, 14, 8)).level, 0);
+// ---- 方面・タイル・閉鎖 ----
+const dp8 = Lib.dirPoints({ lat: 35.65, lon: 139.54 }, 70);
+assert.strictEqual(dp8.length, 8);
+assert.strictEqual(Lib.direction({ lat: 35.65, lon: 139.54 }, dp8[6]), 'W');
+assert.strictEqual(Lib.tilesAlong([[139.54, 35.65]], [10], 1).length, 9);
+const closedRoads = [{ name: 'X', points: [[35.0, 139.05], [35.0, 139.15]], closedMonths: [1] }];
+assert.strictEqual(Lib.closedAlong(rline, closedRoads, 1).length, 1);
+assert.strictEqual(Lib.closedAlong(rline, closedRoads, 6).length, 0);
+
 console.log('lib: ALL PASS');

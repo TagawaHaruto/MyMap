@@ -525,6 +525,26 @@ def km_ll(a, b):
     return math.hypot(dx, dy)
 
 
+def bearing_ll(a, b):
+    y = math.sin(math.radians(b[1] - a[1])) * math.cos(math.radians(b[0]))
+    x = math.cos(math.radians(a[0])) * math.sin(math.radians(b[0])) - math.sin(math.radians(a[0])) * math.cos(math.radians(b[0])) * math.cos(math.radians(b[1] - a[1]))
+    return math.degrees(math.atan2(y, x)) % 360
+
+
+def curviness(path):
+    """カーブの多さ: 100m おきに間引いて、1km あたりの向きの変化の合計（度）。lib.js の curviness と同じ。"""
+    pts = [path[0]]
+    for q in path:
+        if km_ll(pts[-1], q) >= 0.1:
+            pts.append(q)
+    turn = km = 0
+    for i in range(1, len(pts)):
+        km += km_ll(pts[i - 1], pts[i])
+        if i >= 2:
+            turn += abs((bearing_ll(pts[i - 1], pts[i]) - bearing_ll(pts[i - 2], pts[i - 1]) + 540) % 360 - 180)
+    return turn / km if km > 0.5 else 0
+
+
 def road_note(name):
     for pat, label in (('スカイライン|パークウェイ|ターンパイク|観光道路|ライン$', 'スカイライン・観光道路'), ('林道', '林道（未舗装の区間がないか確認を）'),
                        ('峠', '峠道'), ('有料道路', '有料道路'), ('シーサイド|湖畔', '海沿い・湖畔の道'), ('高原', '高原の道')):
@@ -610,7 +630,7 @@ def build_roads(parts, curated=(), k=6):
                 continue
             roads.append({'id': f"osm:way:{min(s['wid'] for s in g)}", 'name': name, 'points': pts,
                           'toll': any(s['toll'] for s in g), 'note': f'{road_note(name)}（約{round(cum[-1])}km）',
-                          'km': round(cum[-1], 1), 'k': 'road'})
+                          'km': round(cum[-1], 1), 'curv': round(curviness(path)), 'k': 'road'})
     return roads
 
 

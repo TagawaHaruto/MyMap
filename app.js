@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []),
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -46,7 +46,8 @@ const noticeRe = () => {
   const words = (DATA.cfg && DATA.cfg.eventExcludeWords) || [];
   return words.length ? new RegExp(words.map(escRe).join('|')) : null;
 };
-const filterState = () => ({ mode: state.mode, maxMin: state.maxMin, prefs: state.prefs, genres: state.genres, dirs: state.dirs,
+// 到達圏で判定しているときは、直線距離からの時間の絞り込みを使わない
+const filterState = () => ({ mode: state.mode, maxMin: isoGeom() ? null : state.maxMin, prefs: state.prefs, genres: state.genres, dirs: state.dirs,
   favs: state.favs, rainy: rainy(), exclude: state.showNotices ? null : noticeRe() });
 function saveFilters() {
   store.set('filters', { mode: state.mode, maxMin: state.maxMin, prefs: [...state.prefs], genres: [...state.genres], dirs: [...state.dirs] });
@@ -201,6 +202,11 @@ function spotCandidates() {
   if (!state.showChains) all = all.filter((s) => !s.chain);
   if (state.walkinOnly && (state.genres.has('factory') || state.genres.has('experience'))) all = all.filter((s) => s.walkin === true);
   if (state.foodCat && groups.includes('food')) all = all.filter((s) => !s.genres.includes('food') || Lib.inFoodCat(s, state.foodCat));
+  if (state.isoOn && isoAvailable()) {
+    loadIso();
+    const g = isoGeom();
+    if (g) all = all.filter((s) => Lib.inGeometry(s, g));
+  }
   if (state.openOnly) { const now = new Date(); all = all.filter((s) => Lib.openState(s.oh, now) === true); }
   if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
@@ -237,6 +243,26 @@ function spotCard(s) {
       <div class="info-body"></div>
     </div></article>`;
 }
+// 日の出・日の入りの時刻と方角、ダイヤモンド富士（見える場所なら）、混みやすさの目安
+const hmOf = (d) => `${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`;
+function nextWeekendNoon() {
+  const d = new Date(); d.setHours(12, 0, 0, 0);
+  while (d.getDay() !== 6 && d.getDay() !== 0 && !Lib.jpHoliday(d)) d.setDate(d.getDate() + 1);
+  return d;
+}
+function extraInfo(s) {
+  const parts = [];
+  const t = Lib.sunTimes(new Date(), s);
+  if (t.rise && t.set) parts.push(`🌅今日の日の出 ${hmOf(t.rise.at)}（${Lib.dir16(t.rise.az)}）・日の入り ${hmOf(t.set.at)}（${Lib.dir16(t.set.az)}）`);
+  if ((s.genres || []).includes('scenic') || /富士|展望|湖|峠|山|岬|海岸|浜|丘|高原/.test(s.name)) {
+    const df = Lib.diamondFuji(s).slice(0, 4);
+    if (df.length) parts.push(`🗻ダイヤモンド富士（富士山が見える場所なら・予測）: ${df.map((x) => `${x.at.getMonth() + 1}/${x.at.getDate()} ${hmOf(x.at)} ${x.kind}`).join('、')}`);
+  }
+  const wk = nextWeekendNoon(), c = Lib.crowdLevel(s, wk);
+  parts.push(`👥混みやすさの目安（${wk.getMonth() + 1}/${wk.getDate()}の昼）: <strong>${c.label}</strong>${c.reasons.length ? `（${esc(c.reasons.join('・'))}）` : ''}`);
+  return `<p class="hint">${parts.join('<br>')}</p>`;
+}
+
 // 営業中か（営業時間がわかるものだけ）・季節の見頃・営業時間などの 1 行
 function openBadge(s) {
   const o = s.oh ? Lib.openState(s.oh) : null;
@@ -339,6 +365,7 @@ function renderSpotList() {
   const toggles = [
     `<button type="button" class="chip" id="t-open" aria-pressed="${state.openOnly}">🕘営業中だけ</button>`,
     `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
+    `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>`,
     (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
     groups.includes('food') ? `<button type="button" class="chip" id="t-chain" aria-pressed="${state.showChains}">チェーン店も表示</button>` : '',
   ].join('');
@@ -346,7 +373,7 @@ function renderSpotList() {
     `<button type="button" class="chip" data-foodcat="${esc(label)}" aria-pressed="${state.foodCat === label}">${esc(label)}</button>`).join('')}</div>` : '';
   const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';
   const noCells = groups.length && !cellIndex ? '・グルメなどのデータはまだ収集されていません' : '';
-  const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length && state.maxMin == null ? '・グルメなどは起点から60km以内' : ''}${loadingCells}${noCells}</p>
+  const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length && state.maxMin == null ? '・グルメなどは起点から60km以内' : ''}${loadingCells}${noCells}${isoStatus()}</p>
     ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}${cats}${list.length ? mapToggle() : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
   box.innerHTML = head + (list.length ? (state.spotMap ? '<div id="spot-map"></div>' : list.slice(0, state.limit).map(spotCard).join('') + more)
@@ -356,6 +383,7 @@ function renderSpotList() {
   const tw = $('#t-walkin'); if (tw) tw.onclick = () => { buzz(); state.walkinOnly = !state.walkinOnly; renderSpotList(); };
   const tc = $('#t-chain'); if (tc) tc.onclick = () => { buzz(); state.showChains = !state.showChains; renderSpotList(); };
   $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
+  $('#t-iso').onclick = () => { buzz(); state.isoOn = !state.isoOn; state.limit = 300; renderSpotList(); };
   $('#t-season').onclick = () => { buzz(); state.seasonOnly = !state.seasonOnly; state.limit = 300; renderSpotList(); };
   box.querySelectorAll('[data-foodcat]').forEach((b) => { b.onclick = () => {
     buzz(); state.foodCat = state.foodCat === b.dataset.foodcat ? '' : b.dataset.foodcat; state.limit = 300; renderSpotList();
@@ -366,10 +394,12 @@ function renderSpotList() {
 // ---- 地図の共通部品: 背景（地図・航空写真・地理院地図）と陰影起伏、現在地ボタン ----
 function baseLayers(m, credit = '') {
   const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18,
-    attribution: `&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>${credit}` }).addTo(m);
+    attribution: `&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>${credit}` });
   const gsi = (id, ext, z = 18) => L.tileLayer(`https://cyberjapandata.gsi.go.jp/xyz/${id}/{z}/{x}/{y}.${ext}`, { maxZoom: 18, maxNativeZoom: z,
     attribution: `<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>${credit}` });
-  L.control.layers({ '地図': osm, '航空写真': gsi('seamlessphoto', 'jpg'), '地理院地図': gsi('std', 'png') },
+  const std = gsi('std', 'png');
+  (navigator.onLine === false ? std : osm).addTo(m); // 圏外では保存した地理院地図を使う
+  L.control.layers({ '地図': osm, '航空写真': gsi('seamlessphoto', 'jpg'), '地理院地図': std },
     { '陰影（山の起伏）': L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png', { maxZoom: 18, maxNativeZoom: 16, opacity: 0.4 }) },
     { position: 'topright' }).addTo(m);
   const Locate = L.Control.extend({ options: { position: 'topleft' }, onAdd() {
@@ -390,6 +420,33 @@ function locate(m) {
   }, () => alert('現在地を取得できませんでした（位置情報の許可を確認してください）。'), { enableHighAccuracy: true, timeout: 10000 });
 }
 
+// ---- 今から行ける範囲（実際の道のりで、移動時間内に着ける範囲。Valhalla の到達圏） ----
+const ISO = new Map(); // 'mode|分|起点' → GeoJSON の形（読み込み中は 'loading'、失敗は 'fail'）
+const isoKey = () => `${state.mode}|${state.maxMin}|${DATA.cfg.origin.lat},${DATA.cfg.origin.lon}`;
+const isoAvailable = () => !!Lib.isochroneUrl(DATA.cfg.origin, state.mode, [30]) && state.maxMin != null && state.maxMin <= 120;
+function isoGeom() {
+  if (!state.isoOn || !isoAvailable()) return null;
+  const g = ISO.get(isoKey());
+  return g && typeof g === 'object' ? g : null;
+}
+async function loadIso() {
+  const key = isoKey();
+  if (ISO.has(key)) return;
+  ISO.set(key, 'loading');
+  try {
+    const r = await fetch(Lib.isochroneUrl(DATA.cfg.origin, state.mode, [state.maxMin]), { signal: timeoutSignal(20000) });
+    const j = await r.json();
+    ISO.set(key, (j.features || [])[0] ? j.features[0].geometry : 'fail');
+  } catch { ISO.set(key, 'fail'); }
+  if (state.tab === 'spots') renderSpotList();
+}
+const isoStatus = () => {
+  if (!state.isoOn) return '';
+  if (!isoAvailable()) return '・道のりの判定は車・バイク・自転車の2時間以内だけ';
+  const g = ISO.get(isoKey());
+  return g === 'loading' || !g ? '・道のりで判定中…' : g === 'fail' ? '・道のりの判定に失敗（直線距離で表示）' : `・実際の道のりで${state.maxMin}分以内`;
+};
+
 // ---- 候補を地図で見る（一覧・検索結果の上位 2,000 件。★厳選・⭐は大きい点） ----
 let spotMap = null;
 const SPOT_MAP_MAX = 2000;
@@ -402,6 +459,8 @@ function bindMapToggle(list) {
   baseLayers(spotMap);
   L.circleMarker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { radius: 7, color: '#000', fillColor: '#fff', fillOpacity: 1, weight: 3 })
     .bindTooltip(esc(DATA.cfg.origin.name)).addTo(spotMap);
+  const g = isoGeom();
+  if (g) L.geoJSON(g, { style: { color: '#1a73e8', weight: 2, fillOpacity: 0.08 }, interactive: false }).addTo(spotMap);
   const shown = list.slice(0, SPOT_MAP_MAX);
   for (const s of shown) {
     const top = s.tier === 0;
@@ -551,7 +610,7 @@ document.addEventListener('click', async (e) => {
   const body = box.querySelector('.info-body') || box; // スポットのカードはボタン類を残して、写真と説明だけ入れる
   body.innerHTML = '<p class="hint">読み込み中…</p>';
   const v = await loadInfo(s);
-  body.innerHTML = infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}<div class="related"></div>`;
+  body.innerHTML = infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}${extraInfo(s)}<div class="related"></div>`;
   if (!v.failed) box.dataset.loaded = '1';
   fillRelated(body.querySelector('.related'), s);
   fillAddr(box);
@@ -573,8 +632,39 @@ function renderRecommend() {
   const cands = Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set() }, DATA.cfg);
   const ctx = { favGenres: state.favGenres, rainy: rainy(), visited: state.visited };
   const rec = Lib.pickRecommendations(cands, ctx, Lib.weekSeed(new Date()));
-  $('#recommend').innerHTML = rec.map(spotCard).join('');
+  $('#recommend').innerHTML = weatherPlanHtml(cands) + rec.map(spotCard).join('');
   $('#rec').hidden = !rec.length;
+  if (!WPLAN.loaded) loadWeatherPlan();
+}
+// 週末の午前・午後の降水確率を見て、晴れの時間は屋外、雨の時間は屋内のスポットを当てる
+const WPLAN = { loaded: false, days: null };
+async function loadWeatherPlan() {
+  WPLAN.loaded = true;
+  const { lat, lon } = DATA.cfg.origin;
+  try {
+    const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=precipitation_probability&timezone=Asia%2FTokyo&forecast_days=10`, { signal: timeoutSignal(8000) });
+    const h = (await r.json()).hourly;
+    WPLAN.days = Lib.weekend(new Date()).map((key) => {
+      const day = new Date(`${key}T00:00:00`), max = (a, b) => Math.max(...h.time.map((t, i) => (t.startsWith(key) && +t.slice(11, 13) >= a && +t.slice(11, 13) < b ? h.precipitation_probability[i] : -1)));
+      return { day, am: max(9, 12), pm: max(12, 17) };
+    }).filter((d) => d.am >= 0);
+  } catch { WPLAN.days = null; }
+  renderRecommend();
+}
+function weatherPlanHtml(cands) {
+  if (!WPLAN.days || !WPLAN.days.length) return '';
+  const used = new Set(), seed = Lib.weekSeed(new Date());
+  const pick = (wet, k) => {
+    const xs = Lib.pickRecommendations(cands.filter((s) => !used.has(s.id) && (wet ? s.indoor : !s.indoor)),
+      { favGenres: state.favGenres, rainy: wet, visited: state.visited }, seed + k);
+    if (xs[0]) used.add(xs[0].id);
+    return xs[0];
+  };
+  const slot = (label, p, k) => { const wet = p >= 50, s = pick(wet, k);
+    return `<li>${label} ${wet ? '☔' : '☀'}${p}% → ${s ? `<a ${gm(s)}>${esc(s.name)}</a>${wet ? '（屋内）' : ''}` : '—'}</li>`; };
+  return `<div class="wplan"><strong>天気で選んだ週末プラン</strong><ul>${WPLAN.days.map((d, i) => `<li>${d.day.getMonth() + 1}/${d.day.getDate()}（${'日月火水木金土'[d.day.getDay()]}）<ul>
+    ${slot('午前', d.am, i * 2)}${slot('午後', d.pm, i * 2 + 1)}</ul></li>`).join('')}</ul>
+    <p class="hint">降水確率50%以上の時間は屋内のスポットにしています（天気: Open-Meteo）。</p></div>`;
 }
 
 // ---- 天気（Open-Meteo, 登録不要） ----
@@ -912,7 +1002,9 @@ const candCard = (c, i) => `<button type="button" class="card cand" data-cand="$
   <span class="cand-title">${esc(c.label)}${c.fastest ? ' <span class="badge fast">最速</span>' : ''}</span>
   <span class="cand-time">${fmtMin(Math.round(c.min))}・${Math.round(c.km)}km</span>
   <span class="cand-sub">${c.toll === true ? '<span class="badge warn">有料あり</span>' : c.toll === false ? '有料なし' : ''}
-    ・景色 ${'★'.repeat(c.stars)}${'☆'.repeat(5 - c.stars)}（展望台など${c.spots}か所${c.roadKm >= 1 ? `・おすすめの道${Math.round(c.roadKm)}km` : ''}）</span></button>`;
+    ・景色 ${'★'.repeat(c.stars)}${'☆'.repeat(5 - c.stars)}（展望台など${c.spots}か所${c.roadKm >= 1 ? `・おすすめの道${Math.round(c.roadKm)}km` : ''}）
+    ・カーブ ${'★'.repeat(curvOf(c))}${'☆'.repeat(5 - curvOf(c))}</span></button>`;
+const curvOf = (c) => (c.curvStars = c.curvStars || Lib.curvStars(Lib.curviness(c.line)));
 
 function renderTouring() {
   const dest = currentDest();
@@ -950,7 +1042,16 @@ function renderTouring() {
       <label class="check"><input type="checkbox" data-opt="bike" ${tour.opts.bike ? 'checked' : ''}>バイク向け（幹線を避け、地方の道を好む）</label>
     </fieldset>
     <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label>
+    <details class="tools"><summary>🧭方面別の雨・🏍走行記録・閉鎖中の道</summary>
+      <div class="actions"><button type="button" class="btn" id="dir-rain">🧭方面別の雨（出発日の9〜17時）</button></div><div id="dir-out"></div>
+      <h4>🏍走行記録（GPS）</h4><p class="status" id="trk-msg">${trackText()}</p>
+      <div class="actions"><button type="button" class="btn ${track.on ? '' : 'primary'}" id="trk-toggle">${track.on ? '⏹記録を止める' : '⏺記録を始める'}</button>
+        <button type="button" class="btn" id="trk-gpx" ${track.pts.length > 1 ? '' : 'disabled'}>記録をGPXで保存</button>
+        <button type="button" class="btn" id="trk-clear" ${track.pts.length ? '' : 'disabled'}>記録を消す</button></div>
+      <p class="hint">記録中は画面をつけたままにしてください（画面が消えると止まる端末があります）。記録は端末の中にだけ保存します。</p>
+      ${closedListHtml()}</details>
     <label class="check"><input type="checkbox" id="show-courses" ${tour.showCourses ? 'checked' : ''}>ドライブコース（${(DATA.roads.length + DATA.courses.length).toLocaleString()}本）と峠（${DATA.passes.length.toLocaleString()}か所）を地図に表示</label>
+    ${tour.showCourses ? curvyHtml() : ''}
     <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
     <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
@@ -967,7 +1068,10 @@ function renderTouring() {
       <p class="status" id="eta">${etaText()}</p>
       <div class="actions"><button type="button" class="btn" id="rt-rain">☔ルート上の雨</button><button type="button" class="btn" id="rt-elev">⛰標高</button>
         <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button></div>
-      <div id="rt-out"></div>` : ''}
+      <div class="actions"><button type="button" class="btn" id="rt-save-map">📥ルート沿いの地図を保存（圏外用）</button></div>
+      <p class="status" id="rt-save-msg"></p>
+      <div id="rt-out"></div>
+      ${closedHtml()}` : ''}
     ${tour.route ? `<h2>立ち寄り候補（${stops.length}件・走る順）</h2>
       <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
@@ -1023,6 +1127,12 @@ function renderTouring() {
     $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
   }
+  $('#dir-rain').onclick = () => { buzz(); dirRain(); };
+  $('#trk-toggle').onclick = () => { buzz(); toggleTrack(); };
+  $('#trk-gpx').onclick = () => { buzz(); saveTrackGpx(); };
+  $('#trk-clear').onclick = () => { if (confirm('走行記録を消しますか？')) { track.pts = []; saveTrack(); tour.key = ''; renderTouring(); } };
+  const sm = $('#rt-save-map'); if (sm) sm.onclick = () => { buzz(); saveRouteTiles(); };
+  bindCourseBtns($('#curvy'));
   $('#show-courses').onchange = (e) => { tour.showCourses = e.target.checked; store.set('showCourses', tour.showCourses); renderTouring(); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
@@ -1152,6 +1262,7 @@ function drawMap(dest, stops) {
     map.fitBounds(L.latLngBounds(dest.road.points.concat([[DATA.cfg.origin.lat, DATA.cfg.origin.lon]])), { padding: [16, 16] });
   }
   if (tour.showCourses) drawCourses();
+  track.line = track.pts.length ? L.polyline(track.pts.map((p) => [p[0], p[1]]), { color: '#2f9e44', weight: 5 }).addTo(map) : null;
   // 誤操作を防ぐため、目的地の指定は長押し（スマホでは contextmenu として届く）か「中心を目的地に」ボタンだけ。
   // 長押し中（指が触れている間）に地図を作り直すと iPhone で次のタップが効かなくなることがあるので、少し遅らせる
   map.on('contextmenu', (e) => { buzz(); setTimeout(() => setCustomDest(e.latlng.lat, e.latlng.lng), 350); });
@@ -1219,6 +1330,111 @@ async function routePhotos() {
   }; });
 }
 
+// カーブの多いコース（起点から150km以内・上位20）
+function curvyHtml() {
+  const xs = DATA.courses.filter((r) => r.curv && Lib.haversineKm(DATA.cfg.origin, { lat: r.points[0][0], lon: r.points[0][1] }) <= 150)
+    .sort((a, b) => b.curv - a.curv).slice(0, 20);
+  if (!xs.length) return '';
+  return `<details id="curvy"><summary>🌀カーブの多いコース（150km以内の上位${xs.length}本）</summary><ul class="rel">${xs.map((r) => `<li>
+    <button type="button" class="btn" data-course-go="${esc(r.id)}">走る</button> ${'★'.repeat(Lib.curvStars(r.curv))} ${esc(r.name)}<span class="status">${esc(r.note || '')}</span></li>`).join('')}</ul>
+    <p class="hint">林道は狭い・未舗装の区間があることがあります。路面と通行止めは事前に確認してください。</p></details>`;
+}
+// 出発する月に閉鎖・通行止めの道をルートが通るか
+function closedHtml() {
+  if (!tour.route) return '';
+  const m = new Date(departMs()).getMonth() + 1;
+  const xs = Lib.closedAlong(tour.route.line, DATA.roads, m);
+  return xs.map((r) => `<p class="notice">⚠ このルートは<strong>${m}月に閉鎖・通行止めの期間</strong>の「${esc(r.name)}」を通ります。${r.closed ? esc(r.closed) : ''}</p>`).join('');
+}
+function closedListHtml() {
+  const m = thisMonth(), n = m % 12 + 1;
+  const xs = DATA.roads.filter((r) => (r.closedMonths || []).some((x) => x === m || x === n));
+  if (!xs.length) return '';
+  return `<h4>🚧今月・来月に閉鎖・通行止めの期間がある道（${xs.length}本）</h4><ul class="rel">${xs.map((r) =>
+    `<li>${esc(r.name)}<span class="status">${(r.closedMonths || []).join('・')}月${r.closed ? '・' + esc(r.closed) : ''}</span></li>`).join('')}</ul>`;
+}
+// 方面別の雨: 起点から 70km 先の 8 方面で、出発日の 9〜17 時の最大降水確率
+async function dirRain() {
+  const out = $('#dir-out'); out.innerHTML = '<p class="hint">方面ごとの天気を調べています…</p>';
+  const pts = Lib.dirPoints(DATA.cfg.origin, 70), day = Lib.ymd(new Date(departMs()));
+  try {
+    const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${pts.map((p) => p.lat.toFixed(3)).join(',')}&longitude=${pts.map((p) => p.lon.toFixed(3)).join(',')}&hourly=precipitation_probability&timezone=Asia%2FTokyo&forecast_days=10`, { signal: timeoutSignal(10000) });
+    const js = await r.json(), arr = Array.isArray(js) ? js : [js];
+    const rows = pts.map((p, i) => { const h = arr[i].hourly;
+      const v = Math.max(...h.time.map((t, k) => (t.startsWith(day) && +t.slice(11, 13) >= 9 && +t.slice(11, 13) <= 17 ? h.precipitation_probability[k] : -1)));
+      return { ...p, prob: v }; }).sort((a, b) => a.prob - b.prob);
+    if (rows[0].prob < 0) { out.innerHTML = '<p class="hint">出発日が予報の範囲外です（10日先まで）。</p>'; return; }
+    out.innerHTML = `<p class="status">${day.slice(5).replace('-', '/')} の日中、雨が少なそうなのは <strong>${esc(dirName(rows[0].dir))}</strong> 方面です。</p>
+      <ul class="rel">${rows.map((x) => `<li>${esc(dirName(x.dir))}：${x.prob >= 50 ? '☔' : '☀'}${x.prob}%</li>`).join('')}</ul><p class="hint">起点から約70km先の地点の予報（Open-Meteo）</p>`;
+  } catch { out.innerHTML = '<p class="hint">天気を取得できませんでした（圏外の可能性があります）。</p>'; }
+}
+
+// ---- 走行記録（GPS）: 15m 以上動いたら 1 点。端末の中にだけ保存 ----
+const track = { on: false, pts: store.get('track') || [], watch: null, line: null };
+const saveTrack = () => store.set('track', track.pts.slice(-20000));
+function trackStats() {
+  let km = 0, hi = null;
+  for (let i = 0; i < track.pts.length; i++) {
+    if (i) km += Lib.haversineKm({ lat: track.pts[i - 1][0], lon: track.pts[i - 1][1] }, { lat: track.pts[i][0], lon: track.pts[i][1] });
+    if (track.pts[i][2] != null) hi = Math.max(hi ?? -1e9, track.pts[i][2]);
+  }
+  const min = track.pts.length > 1 ? Math.round((track.pts[track.pts.length - 1][3] - track.pts[0][3]) / 60e3) : 0;
+  return { km, min, hi };
+}
+function trackText() {
+  if (!track.pts.length) return track.on ? '記録中（位置を待っています）…' : 'まだ記録はありません。';
+  const s = trackStats();
+  return `${track.on ? '⏺記録中：' : '記録：'}${s.km.toFixed(1)}km・${fmtMin(s.min) || '0分'}${s.hi != null ? `・最高地点 約${Math.round(s.hi)}m` : ''}`;
+}
+function toggleTrack() {
+  if (track.on) {
+    navigator.geolocation.clearWatch(track.watch); track.on = false; saveTrack();
+  } else {
+    if (!navigator.geolocation) { alert('この端末では位置情報を使えません。'); return; }
+    if (track.pts.length && !confirm('前の記録に続けて記録しますか？（「キャンセル」で新しく始めます）')) track.pts = [];
+    track.on = true;
+    keepAwake(true);
+    track.watch = navigator.geolocation.watchPosition((p) => {
+      const q = [+p.coords.latitude.toFixed(6), +p.coords.longitude.toFixed(6), p.coords.altitude == null ? null : Math.round(p.coords.altitude), p.timestamp];
+      const last = track.pts[track.pts.length - 1];
+      if (last && Lib.haversineKm({ lat: last[0], lon: last[1] }, { lat: q[0], lon: q[1] }) < 0.015) return;
+      track.pts.push(q);
+      if (track.pts.length % 10 === 0) saveTrack();
+      const msg = $('#trk-msg'); if (msg) msg.textContent = trackText();
+      if (map) { if (!track.line) track.line = L.polyline([], { color: '#2f9e44', weight: 5 }).addTo(map); track.line.addLatLng([q[0], q[1]]); }
+    }, () => { const msg = $('#trk-msg'); if (msg) msg.textContent = '位置を取得できません（位置情報の許可を確認してください）。'; },
+    { enableHighAccuracy: true, maximumAge: 5000, timeout: 30000 });
+  }
+  tour.key = ''; renderTouring();
+}
+function saveTrackGpx() {
+  const d = new Date(track.pts[0][3]);
+  const name = `走行記録 ${Lib.ymd(d)}`;
+  const url = URL.createObjectURL(new Blob([Lib.toGpx(name, track.pts.map((p) => [p[1], p[0]]))], { type: 'application/gpx+xml' }));
+  const a = document.createElement('a'); a.href = url; a.download = `mymap-track-${Lib.ymd(d)}.gpx`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+}
+
+// ---- 圏外用にルート沿いの地図（国土地理院の地理院地図）を端末に保存 ----
+async function saveRouteTiles() {
+  const tiles = Lib.tilesAlong(tour.route.line, [10, 11, 12, 13, 14], 1);
+  const msg = $('#rt-save-msg');
+  if (!confirm(`ルート沿いの地図 ${tiles.length}枚（約${Math.round(tiles.length * 25 / 1024)}MB）を保存します。Wi-Fi での保存がおすすめです。保存しますか？`)) return;
+  const cache = await caches.open('mymap-tiles');
+  let done = 0, fail = 0;
+  const queue = [...tiles];
+  await Promise.all(Array.from({ length: 4 }, async () => {
+    while (queue.length) {
+      const t = queue.shift(), url = `https://cyberjapandata.gsi.go.jp/xyz/std/${t.z}/${t.x}/${t.y}.png`;
+      try { if (!(await cache.match(url))) { const r = await fetch(url); if (r.ok) await cache.put(url, r); else fail++; } } catch { fail++; }
+      done++;
+      if (msg) msg.textContent = `保存中… ${done}/${tiles.length}`;
+    }
+  }));
+  if (msg) msg.textContent = `保存しました（${done - fail}枚）。圏外では地図の右上で「地理院地図」を選ぶと表示されます（圏外で開いたときは自動で切り替えます）。`;
+}
+
 // ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
 function courseHtml(r) {
   const closedNow = (r.closedMonths || []).includes(thisMonth());
@@ -1274,6 +1490,9 @@ function renderSettings() {
     <div class="actions"><button type="button" class="btn" id="origin-here">現在地を起点にする</button>
       ${store.get('origin') ? `<button type="button" class="btn" id="origin-reset">${esc(CFG_ORIGIN.name)}に戻す</button>` : ''}</div>
     <h2>行った場所の記録</h2>${visitedHtml()}
+    <h2>お気に入りの共有</h2>
+    <p class="hint">⭐お気に入り（${state.favs.size}件）を 1 本のリンクにして家族に送れます。相手がリンクを開くと、その端末のお気に入りに追加されます。</p>
+    <div class="actions"><button type="button" class="btn" id="fav-share" ${state.favs.size ? '' : 'disabled'}>⭐お気に入りを共有</button></div>
     <h2>好きなジャンル</h2><p class="hint">今週末のおすすめに優先して出します。</p><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>
     <h2>データの自動更新（管理者向け）</h2>
     <p>GitHub の Fine-grained トークン（対象リポジトリ：このアプリのリポジトリだけ／権限：Actions の Read and write だけ）を貼ってください。トークンはこの端末の中にだけ保存されます。</p>
@@ -1301,6 +1520,10 @@ function renderSettings() {
     }, () => alert('現在地を取得できませんでした（位置情報の許可を確認してください）。'), { enableHighAccuracy: true, timeout: 10000 });
   };
   const or = $('#origin-reset'); if (or) or.onclick = () => setOrigin(null);
+  $('#fav-share').onclick = () => {
+    const url = `${location.origin}${location.pathname}#favs=${encodeURIComponent([...state.favs].join(','))}`;
+    shareText('MyMap のお気に入り', `おでかけ候補 ${state.favs.size}件`, url);
+  };
   drawVisitedMap();
 }
 let CFG_ORIGIN = null; // config.json の起点（現在地にしたあと戻すため）
@@ -1362,6 +1585,15 @@ async function init() {
   DATA.cfg = await getJSON('config.json', null);
   if (!DATA.cfg) { renderLoadMsg(); $('#view').innerHTML = '<p class="empty">config.json を読み込めません。電波の良い場所で開き直してください。</p>'; return; }
   CFG_ORIGIN = DATA.cfg.origin;
+  // 共有されたお気に入りのリンク（#favs=id,id,...）
+  const fm = location.hash.match(/^#favs=(.+)$/);
+  if (fm) {
+    const ids = decodeURIComponent(fm[1]).split(',').filter(Boolean).slice(0, 500);
+    if (ids.length && confirm(`共有されたお気に入り ${ids.length}件を、この端末のお気に入りに追加しますか？`)) {
+      ids.forEach((id) => state.favs.add(id)); store.set('favs', [...state.favs]);
+    }
+    history.replaceState(null, '', location.pathname);
+  }
   if (store.get('origin')) DATA.cfg.origin = store.get('origin');
   // 先にスポットを出し、イベントなどは後から読み込む
   [DATA.spots, DATA.touring, DATA.status, DATA.roads] = await Promise.all([

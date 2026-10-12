@@ -292,6 +292,9 @@ class OsmSpotTest(unittest.TestCase):
         self.assertTrue(lons == sorted(lons) or lons == sorted(lons, reverse=True), lons)
         self.assertAlmostEqual(r['km'], 5.5, delta=0.3)
         self.assertIn('スカイライン', r['note'])
+        self.assertLess(r['curv'], 5)  # まっすぐな道
+        zig = [[35 + (i % 2) * 0.0015, 139 + i * 0.002] for i in range(50)]
+        self.assertGreater(collect.curviness(zig), 150)
 
     def test_parse_pass(self):
         text = '{"elements": [{"type": "node", "id": 5, "lat": 35.5, "lon": 138.9, "tags": {"name": "雁坂峠", "mountain_pass": "yes", "ele": "2082"}}]}'
