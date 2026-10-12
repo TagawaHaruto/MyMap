@@ -188,8 +188,27 @@ def splits(cfg, per_km=150):
     return max(1, math.ceil(cfg['poiRadiusKm'] / per_km))
 
 
+# 収集する項目を増やしたら上げる（前回分が 1 週間以内でも全部取り直す）。2: 営業時間・電話・車いす
+DATA_VER = 2
+
+
+def extra_tags(t):
+    """営業時間・電話番号・車いす対応（あるものだけ。ファイルを小さくするため）。"""
+    out = {}
+    if t.get('opening_hours'):
+        out['oh'] = t['opening_hours'][:120]
+    tel = t.get('phone') or t.get('contact:phone')
+    if tel:
+        out['tel'] = tel.split(';')[0].strip()[:20]
+    if t.get('wheelchair') in ('yes', 'limited', 'no'):
+        out['wc'] = t['wheelchair']
+    return out
+
+
 def done_kinds(status, name, radius):
-    """取得済みの種類 → 取得日時。範囲を変えたときは空（全部取り直す）。"""
+    """取得済みの種類 → 取得日時。範囲や収集する項目を変えたときは空（全部取り直す）。"""
+    if status.get(f'{name}_ver', 1) != DATA_VER:
+        return {}
     if status.get(f'{name}_radius') == radius:
         return dict(status.get(f'{name}_done') or {})
     sig, at = status.get(f'{name}_sig'), status.get(f'{name}_at')
@@ -228,7 +247,7 @@ def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep):
                 errors[kind] = f'{kind}: {type(err).__name__}: {err}'[:160]
     for kind in errors:
         out += [x for x in old if x.get('k') == kind]
-    status[f'{name}_at'], status[f'{name}_radius'] = now.isoformat(timespec='seconds'), radius
+    status[f'{name}_at'], status[f'{name}_radius'], status[f'{name}_ver'] = now.isoformat(timespec='seconds'), radius, DATA_VER
     status[f'{name}_done'] = {k: v for k, v in done.items() if k in kinds}
     status.pop(f'{name}_sig', None)
     status[f'{name}_error'] = ' / '.join(errors.values()) or None
@@ -311,7 +330,7 @@ def parse_overpass(text):
             continue
         seen.add((kind, t['name']))
         out.append({'name': t['name'], 'lat': pos['lat'], 'lon': pos['lon'], 'kind': kind,
-                    'wikipedia': wiki_url(t.get('wikipedia'))})
+                    'wikipedia': wiki_url(t.get('wikipedia')), **extra_tags(t)})
     return out
 
 
@@ -467,6 +486,7 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
         kana = t.get('name:ja-Hira') or t.get('name:ja_kana') or t.get('name:ja-Hrkt')
         if kana:  # 読みでの名前検索用（ないものはファイルを小さくするため付けない）
             spot['kana'] = kana
+        spot.update(extra_tags(t))
         out.append(spot)
     return out
 
@@ -682,6 +702,7 @@ def parse_group_items(text, seen, kind=None):
             item['kana'] = kana
         if t.get('brand') or t.get('brand:wikidata'):  # チェーン店（画面では既定で隠す）
             item['chain'] = True
+        item.update(extra_tags(t))
         out.append(item)
     return out
 

@@ -144,7 +144,7 @@ class PoiTest(unittest.TestCase):
         self.assertEqual(collect.bbox({'lat': 35.65, 'lon': 139.54}, 150), '(34.299,137.877,37.001,141.203)')
 
     def test_refresh_pois_skips_when_fresh(self):
-        status = {'pois_radius': 150, 'pois_done': {k: '2026-10-05T00:00:00+09:00' for k, _ in collect.POI_QUERIES}}
+        status = {'pois_radius': 150, 'pois_ver': collect.DATA_VER, 'pois_done': {k: '2026-10-05T00:00:00+09:00' for k, _ in collect.POI_QUERIES}}
         calls = []
         collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                              lambda *a, **k: calls.append(a), dt.datetime(2026, 10, 8, tzinfo=collect.JST))
@@ -298,14 +298,24 @@ class OsmSpotTest(unittest.TestCase):
         p = collect.parse_road_parts(text, 'pass')[0]
         self.assertEqual((p['name'], p['points'], p['pass'], p['note']), ('雁坂峠', [[35.5, 138.9]], True, '峠（標高2082m）'))
 
+    def test_extra_tags_and_version(self):
+        self.assertEqual(collect.extra_tags({'opening_hours': 'Mo-Fr 09:00-17:00', 'contact:phone': '+81 42-000-0000;03-1', 'wheelchair': 'yes'}),
+                         {'oh': 'Mo-Fr 09:00-17:00', 'tel': '+81 42-000-0000', 'wc': 'yes'})
+        self.assertEqual(collect.extra_tags({'wheelchair': 'designated'}), {})
+        # 収集する項目を増やした（版が違う）ときは、1 週間以内でも取り直す
+        st = {'spots_radius': 300, 'spots_ver': collect.DATA_VER - 1, 'spots_done': {'museum': '2026-10-09T00:00:00+09:00'}}
+        self.assertEqual(collect.done_kinds(st, 'spots', 300), {})
+        st['spots_ver'] = collect.DATA_VER
+        self.assertIn('museum', collect.done_kinds(st, 'spots', 300))
+
     def test_done_kinds_from_old_status(self):
-        st = {'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],
+        st = {'cells_ver': collect.DATA_VER, 'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],
               'cells_error': 'cafe: HTTPError: 504 / bigpark: HTTPError: 504'}
         self.assertEqual(collect.done_kinds(st, 'cells', 300), {'park': '2026-10-09T12:00:00+09:00'})
         self.assertEqual(collect.done_kinds(st, 'cells', 150), {})
 
     def test_refresh_spots_skips_when_fresh(self):
-        status = {'spots_radius': 150, 'spots_done': {k: '2026-10-05T00:00:00+09:00' for k, _ in collect.SPOT_QUERIES}}
+        status = {'spots_radius': 150, 'spots_ver': collect.DATA_VER, 'spots_done': {k: '2026-10-05T00:00:00+09:00' for k, _ in collect.SPOT_QUERIES}}
         got = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
                                     lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set())
         self.assertIsNone(got)
@@ -470,7 +480,7 @@ class CellTest(unittest.TestCase):
         # 同じ要素が複数の問い合わせに出ても 1 件
         food_names = [x['name'] for v in cells['food'].values() for x in v]
         self.assertEqual(food_names.count('深大寺そば 玉乃屋'), 1)
-        self.assertIsNone(collect.refresh_cells(CFG, {'cells_radius': 150, 'cells_done': {q[0]: '2026-10-05T00:00:00+09:00' for q in collect.CELL_QUERIES}}, fetch, NOW, [], sleep=lambda s: None))
+        self.assertIsNone(collect.refresh_cells(CFG, {'cells_radius': 150, 'cells_ver': collect.DATA_VER, 'cells_done': {q[0]: '2026-10-05T00:00:00+09:00' for q in collect.CELL_QUERIES}}, fetch, NOW, [], sleep=lambda s: None))
 
 
 if __name__ == '__main__':
