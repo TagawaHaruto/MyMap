@@ -345,6 +345,151 @@ const Lib = (() => {
     return city + (r.lv01Nm && r.lv01Nm !== '－' ? r.lv01Nm : '');
   }
   // 目的地の検索: 国土地理院の地名・住所検索（無料・登録不要）
+  // ---- 営業時間（OpenStreetMap の opening_hours のよく使われる書き方だけ読む。読めないときは null） ----
+  const OH_DAYS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+  const OH_JA = { Mo: '月', Tu: '火', We: '水', Th: '木', Fr: '金', Sa: '土', Su: '日', PH: '祝' };
+  function ohDays(spec) {
+    const days = new Set();
+    for (const part of spec.split(',')) {
+      const m = part.trim().match(/^(Mo|Tu|We|Th|Fr|Sa|Su)(?:-(Mo|Tu|We|Th|Fr|Sa|Su))?$/);
+      if (!m) { if (part.trim() === 'PH' || part.trim() === 'SH') continue; return null; }
+      const a = OH_DAYS.indexOf(m[1]), b = OH_DAYS.indexOf(m[2] || m[1]);
+      for (let d = a; ; d = (d + 1) % 7) { days.add(d); if (d === b) break; }
+    }
+    return days;
+  }
+  function parseOh(oh) {
+    const s = String(oh || '').trim();
+    if (!s) return null;
+    if (s === '24/7') return [{ days: new Set([0, 1, 2, 3, 4, 5, 6]), spans: [[0, 1440]] }];
+    const rules = [];
+    for (const raw of s.split(/;|\|\|/)) {
+      const r = raw.trim(); if (!r) continue;
+      const m = r.match(/^((?:(?:Mo|Tu|We|Th|Fr|Sa|Su|PH|SH)(?:-(?:Mo|Tu|We|Th|Fr|Sa|Su))?,?\s*)+)?\s*(.*)$/);
+      const days = m[1] ? ohDays(m[1].replace(/\s/g, '')) : new Set([0, 1, 2, 3, 4, 5, 6]);
+      if (!days) return null;
+      if (!days.size) continue; // 祝日だけの決まりは、祝日がわからないので使わない
+      const rest = m[2].trim();
+      if (/^(off|closed)$/i.test(rest)) { rules.push({ days, spans: [] }); continue; }
+      const spans = [];
+      for (const t of rest.split(',')) {
+        const x = t.trim().match(/^(\d{1,2}):(\d{2})-(\d{1,2}):(\d{2})$/) || t.trim().match(/^(\d{1,2}):(\d{2})\+$/);
+        if (!x) return null;
+        const a = +x[1] * 60 + +x[2];
+        let b = x[3] != null ? +x[3] * 60 + +x[4] : 1440;
+        if (b <= a) b += 1440; // 日をまたぐ（22:00-02:00）
+        spans.push([a, b]);
+      }
+      rules.push({ days, spans });
+    }
+    return rules.length ? rules : null;
+  }
+  // 後に書いた決まりが優先（OpenStreetMap の約束）
+  const ohRuleFor = (rules, day) => { let r = null; for (const x of rules) if (x.days.has(day)) r = x; return r; };
+  function openState(oh, date = new Date()) {
+    const rules = parseOh(oh);
+    if (!rules) return null;
+    const day = date.getDay(), min = date.getHours() * 60 + date.getMinutes();
+    const today = ohRuleFor(rules, day), prev = ohRuleFor(rules, (day + 6) % 7);
+    if (today && today.spans.some(([a, b]) => min >= a && min < b)) return true;
+    if (prev && prev.spans.some(([, b]) => b > 1440 && min + 1440 < b)) return true;
+    return false; // 書いていない曜日は休み（OpenStreetMap の約束）
+  }
+  const ohText = (oh) => String(oh || '').replace(/\b(Mo|Tu|We|Th|Fr|Sa|Su|PH)\b/g, (d) => OH_JA[d])
+    .replace(/\boff\b|\bclosed\b/gi, '休み').replace(/24\/7/, '24時間').replace(/;\s*/g, '／');
+
+  // ---- 季節の見頃（厳選スポットの best: [{ what, months }]） ----
+  const seasonNow = (s, month) => (s.best || []).filter((b) => b.months.includes(month));
+  const seasonText = (best) => (best || []).map((b) => `${b.what} ${b.months.length > 1 ? `${b.months[0]}〜${b.months[b.months.length - 1]}` : b.months[0]}月`).join('・');
+
+  // ---- ルート上の地点（雨の予報・写真・標高用）: 距離で等間隔に n 点、出発からの到着時刻つき ----
+  function routeSamples(line, totalMin, departMs, n) {
+    const cum = [0];
+    for (let i = 1; i < line.length; i++) cum.push(cum[i - 1] + haversineKm(pt([line[i - 1][1], line[i - 1][0]]), pt([line[i][1], line[i][0]])));
+    const total = cum[cum.length - 1] || 1, out = [];
+    for (let j = 0; j < n; j++) {
+      const target = total * j / Math.max(n - 1, 1);
+      const i = Math.max(0, cum.findIndex((d) => d >= target - 1e-9));
+      out.push({ lat: line[i][1], lon: line[i][0], km: cum[i], at: departMs + totalMin * 60e3 * cum[i] / total });
+    }
+    return out;
+  }
+  const ll4 = (xs, k) => xs.map((p) => p[k].toFixed(4)).join(',');
+  const rainAlongUrl = (pts) => `https://api.open-meteo.com/v1/forecast?latitude=${ll4(pts, 'lat')}&longitude=${ll4(pts, 'lon')}`
+    + '&hourly=precipitation_probability,precipitation&timezone=Asia%2FTokyo&forecast_days=7';
+  // 各地点の、通過する時刻（1 時間単位）の降水確率と雨量。予報の範囲外は null
+  function parseRainAlong(json, pts) {
+    const arr = Array.isArray(json) ? json : [json];
+    return pts.map((p, i) => {
+      const h = arr[i] && arr[i].hourly;
+      if (!h) return { ...p, prob: null, mm: null };
+      const d = new Date(p.at);
+      const key = `${ymd(d)}T${String(d.getHours()).padStart(2, '0')}:00`;
+      const k = h.time.indexOf(key);
+      return { ...p, prob: k < 0 ? null : h.precipitation_probability[k], mm: k < 0 ? null : h.precipitation[k] };
+    });
+  }
+  const elevationUrl = (pts) => `https://api.open-meteo.com/v1/elevation?latitude=${ll4(pts, 'lat')}&longitude=${ll4(pts, 'lon')}`;
+  const climbOf = (elev) => elev.reduce((a, e, i) => a + (i && e > elev[i - 1] ? e - elev[i - 1] : 0), 0);
+
+  // ---- 日帰りプラン: 出発 → 目的地（見学）→ 近くで昼食 → もう 1 か所（温泉か近くの見どころ）→ 帰着 ----
+  const STAY_MIN = { museum: 120, play: 180, garden: 90, onsen: 90, temple: 60, scenic: 60, shopping: 120, factory: 90, experience: 120, vehicle: 120 };
+  const stayOf = (s) => Math.max(45, ...(s.genres || []).map((g) => STAY_MIN[g] || 60));
+  function dayPlan(spot, pool, cfg, mode, departMin, date = new Date()) {
+    const move = (a, b) => travelMinutes(haversineKm(a, b), mode, cfg);
+    const fmt = (m) => `${Math.floor(m / 60) % 24}:${String(Math.round(m % 60)).padStart(2, '0')}`;
+    const steps = [];
+    let t = departMin;
+    steps.push({ time: fmt(t), what: `${cfg.origin.name}を出発` });
+    t += move(cfg.origin, spot);
+    steps.push({ time: fmt(t), what: `${spot.name}に到着`, place: spot, stay: stayOf(spot) });
+    t += stayOf(spot);
+    const lunchAt = new Date(date); lunchAt.setHours(Math.floor(Math.max(t, 690) / 60), Math.max(t, 690) % 60, 0, 0);
+    const near = (xs, km) => xs.map((x) => ({ x, d: haversineKm(spot, x) })).filter((o) => o.d <= km && o.x.id !== spot.id).sort((a, b) => a.d - b.d);
+    const lunch = near(pool.filter((x) => (x.genres || []).includes('food') && !x.chain && openState(x.oh, lunchAt) !== false), 1.5)
+      .sort((a, b) => (openState(b.x.oh, lunchAt) === true) - (openState(a.x.oh, lunchAt) === true) || a.d - b.d)[0];
+    if (lunch) {
+      t = Math.max(t, 690); // 昼食は 11:30 以降
+      steps.push({ time: fmt(t), what: `昼食: ${lunch.x.name}`, place: lunch.x, stay: 60 });
+      t += 60;
+    }
+    const second = near(pool.filter((x) => (x.genres || []).includes('onsen')), 15)[0]
+      || near(pool.filter((x) => !(x.genres || []).includes('food') && (x.genres || []).some((g) => g !== 'lodging')), 3)[0];
+    let last = spot;
+    if (second) {
+      t += move(spot, second.x);
+      steps.push({ time: fmt(t), what: `${second.x.name}へ`, place: second.x, stay: stayOf(second.x) });
+      t += stayOf(second.x);
+      last = second.x;
+    }
+    t += move(last, cfg.origin);
+    steps.push({ time: fmt(t), what: `${cfg.origin.name}に帰着` });
+    return steps;
+  }
+
+  // ---- 行った場所の記録: 都県ごとの数 ----
+  function visitedStats(records) {
+    const by = {};
+    for (const r of records) { const p = r.pref || 'その他'; by[p] = (by[p] || 0) + 1; }
+    return Object.entries(by).sort((a, b) => b[1] - a[1]);
+  }
+  const streetViewUrl = (s) => `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${s.lat},${s.lon}`;
+  // 周辺の施設（コンビニ・トイレなど）を OpenStreetMap からその場で探す
+  const NEARBY_KINDS = {
+    conv: ['🏪コンビニ', 'nwr["shop"="convenience"]'], toilet: ['🚻トイレ', 'nwr["amenity"="toilets"]'],
+    parking: ['🅿駐車場', 'nwr["amenity"="parking"]'], moto: ['🏍バイク駐車場', 'nwr["amenity"="motorcycle_parking"]'],
+    fuel: ['⛽ガソリンスタンド', 'nwr["amenity"="fuel"]'], ev: ['🔌EV充電', 'nwr["amenity"="charging_station"]'],
+    atm: ['🏧ATM', 'nwr["amenity"="atm"]'], cafe: ['☕カフェ', 'nwr["amenity"="cafe"]'],
+  };
+  const nearbyQuery = (p, kind, m = 2000) => 'data=' + encodeURIComponent(`[out:json][timeout:25];${NEARBY_KINDS[kind][1]}(around:${m},${p.lat},${p.lon});out center tags 30;`);
+  function parseNearby(json, p) {
+    return ((json && json.elements) || []).map((e) => {
+      const c = e.lat != null ? e : e.center || {};
+      const t = e.tags || {};
+      return { name: t.name || t.brand || t.operator || '（名前なし）', lat: c.lat, lon: c.lon, oh: t.opening_hours, distKm: haversineKm(p, c) };
+    }).filter((x) => x.lat != null).sort((a, b) => a.distKm - b.distKm);
+  }
+
   const gsiSearchUrl = (q) => `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(q)}`;
   function parseGsi(j, limit = 8) {
     const out = [];
@@ -456,7 +601,9 @@ const Lib = (() => {
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
     decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, toGpx,
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
-    cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat };
+    cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
+    openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
+    dayPlan, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;
