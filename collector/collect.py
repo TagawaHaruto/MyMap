@@ -258,7 +258,7 @@ def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep):
 
 # Actions の制限時間（180 分）で打ち切られると何も公開されないので、この時刻を過ぎたら新しい問い合わせをしない
 # （残りの種類は前回分を使い、次の実行で取り直す）
-DEADLINE = time.time() + 140 * 60
+DEADLINE = time.time() + 150 * 60
 
 
 def overpass_kind(stmts, bb, n, parse, fetch, sleep, tries=3, out='center tags'):
@@ -907,9 +907,7 @@ def main():
         save(os.path.join(DATA, 'pois.json'), pois)
         print(f'pois: {len(pois)}')
     curated = {s['name'] for s in load(os.path.join(DATA, 'spots.json'), [])}
-    cells = refresh_cells(cfg, status, fetch, dt.datetime.now(JST), load_cells(DATA))
-    if cells is not None:
-        print(f'cells: {save_cells(DATA, cells)}')
+    # 件数の多いグルメなど（升目）は最後に（制限時間で打ち切られても、ほかの種類が先にそろうように）
     roads = refresh_roads(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'roads_osm.json'), []),
                           load(os.path.join(DATA, 'scenic_roads.json'), []))
     if roads is not None:
@@ -919,6 +917,9 @@ def main():
     if spots is not None:
         save(os.path.join(DATA, 'osm_spots.json'), spots, compact=True)
         print(f'osm spots: {len(spots)}')
+    cells = refresh_cells(cfg, status, fetch, dt.datetime.now(JST), load_cells(DATA))
+    if cells is not None:
+        print(f'cells: {save_cells(DATA, cells)}')
     status['updated_at'] = now_iso()
     save(os.path.join(DATA, 'status.json'), status)
     print(f'events: {len(events)}')
