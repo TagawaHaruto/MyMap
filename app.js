@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []),
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -363,6 +363,7 @@ function renderSpotList() {
   const failed = FAILED.has('data/spots.json');
   const groups = selectedGroups();
   const toggles = [
+    `<button type="button" class="chip" id="t-gacha">🎲おまかせ</button>`,
     `<button type="button" class="chip" id="t-open" aria-pressed="${state.openOnly}">🕘営業中だけ</button>`,
     `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
     `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>`,
@@ -376,12 +377,18 @@ function renderSpotList() {
   const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length && state.maxMin == null ? '・グルメなどは起点から60km以内' : ''}${loadingCells}${noCells}${isoStatus()}</p>
     ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}${cats}${list.length ? mapToggle() : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
-  box.innerHTML = head + (list.length ? (state.spotMap ? '<div id="spot-map"></div>' : list.slice(0, state.limit).map(spotCard).join('') + more)
+  const g = state.gacha && list.find((s) => s.id === state.gacha);
+  const gacha = g ? `<div class="gacha"><p class="status">🎲 おまかせで選びました（${list.length.toLocaleString()}件から）</p>${spotCard(g)}
+    <div class="actions"><button type="button" class="btn primary" id="gacha-again">もう一回</button><button type="button" class="btn" id="gacha-close">閉じる</button></div></div>` : '';
+  box.innerHTML = head + gacha + (list.length ? (state.spotMap ? '<div id="spot-map"></div>' : list.slice(0, state.limit).map(spotCard).join('') + more)
     : `<p class="empty">${failed ? 'スポットのデータを読み込めていません。電波の良い場所で開き直してください。'
       : !DATA.osmLoaded ? 'スポットを読み込み中…' : '条件に合うスポットがありません。条件を広げてみてください。'}</p>`);
   if (more && !state.spotMap) $('#more').onclick = () => { state.limit += 300; renderSpotList(); };
   const tw = $('#t-walkin'); if (tw) tw.onclick = () => { buzz(); state.walkinOnly = !state.walkinOnly; renderSpotList(); };
   const tc = $('#t-chain'); if (tc) tc.onclick = () => { buzz(); state.showChains = !state.showChains; renderSpotList(); };
+  $('#t-gacha').onclick = () => { buzz(); spin(list); };
+  const ga = $('#gacha-again'); if (ga) ga.onclick = () => { buzz(); spin(list); };
+  const gc = $('#gacha-close'); if (gc) gc.onclick = () => { state.gacha = null; renderSpotList(); };
   $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
   $('#t-iso').onclick = () => { buzz(); state.isoOn = !state.isoOn; state.limit = 300; renderSpotList(); };
   $('#t-season').onclick = () => { buzz(); state.seasonOnly = !state.seasonOnly; state.limit = 300; renderSpotList(); };
@@ -418,6 +425,18 @@ function locate(m) {
     hereMarker = L.circleMarker(ll, { radius: 8, weight: 3, color: '#fff', fillColor: '#1a73e8', fillOpacity: 1 }).bindTooltip('現在地').addTo(m);
     m.setView(ll, Math.max(m.getZoom(), 14));
   }, () => alert('現在地を取得できませんでした（位置情報の許可を確認してください）。'), { enableHighAccuracy: true, timeout: 10000 });
+}
+
+// おまかせ: 前回と違う 1 か所を選ぶ（★厳選・公式サイトのある所を少し出やすく）
+function spin(list) {
+  if (!list.length) { alert('条件に合うスポットがありません。条件を広げてください。'); return; }
+  const pool = list.length > 1 ? list.filter((s) => s.id !== state.gacha) : list;
+  const w = pool.map((s) => (s.tier === 0 ? 4 : s.tier === 1 ? 2 : 1));
+  let r = Math.random() * w.reduce((a, b) => a + b, 0), i = 0;
+  while ((r -= w[i]) > 0) i++;
+  state.gacha = pool[i].id;
+  renderSpotList();
+  const el = document.querySelector('.gacha'); if (el) el.scrollIntoView({ block: 'start', behavior: 'smooth' });
 }
 
 // ---- 今から行ける範囲（実際の道のりで、移動時間内に着ける範囲。Valhalla の到達圏） ----
@@ -1067,7 +1086,8 @@ function renderTouring() {
       <div class="row"><label for="depart" class="label">出発</label><input type="datetime-local" id="depart" value="${esc(departValue())}"></div>
       <p class="status" id="eta">${etaText()}</p>
       <div class="actions"><button type="button" class="btn" id="rt-rain">☔ルート上の雨</button><button type="button" class="btn" id="rt-elev">⛰標高</button>
-        <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button></div>
+        <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button>
+        <button type="button" class="btn" id="rt-onsen">♨帰りに寄れる温泉</button></div>
       <div class="actions"><button type="button" class="btn" id="rt-save-map">📥ルート沿いの地図を保存（圏外用）</button></div>
       <p class="status" id="rt-save-msg"></p>
       <div id="rt-out"></div>
@@ -1126,6 +1146,7 @@ function renderTouring() {
     $('#rt-rain').onclick = () => { buzz(); routeRain(); };
     $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
+    $('#rt-onsen').onclick = () => { buzz(); routeOnsen(); };
   }
   $('#dir-rain').onclick = () => { buzz(); dirRain(); };
   $('#trk-toggle').onclick = () => { buzz(); toggleTrack(); };
@@ -1308,6 +1329,25 @@ async function routeElevation() {
         <polyline points="0,100 ${poly} 300,100" class="elev-fill"/><polyline points="${poly}" class="elev-line"/></svg>
       <p class="hint">左が出発、右が${Math.round(total)}km地点。標高: Open-Meteo（Copernicus DEM）</p>`;
   } catch { out.innerHTML = '<p class="hint">標高を取得できませんでした（圏外の可能性があります）。</p>'; }
+}
+// 帰り道に寄れる温泉（ルートから3km以内・家に近い順）。片道のルートは「帰り始める時刻」から着く時刻を見積もる
+function routeOnsen(backTime) {
+  const out = $('#rt-out');
+  const dest = currentDest(), loop = !!(dest && dest.loop);
+  const day = new Date(departMs());
+  const bt = backTime || tour.backTime || '15:00';
+  const [h, m] = bt.split(':').map(Number);
+  const backMs = new Date(day.getFullYear(), day.getMonth(), day.getDate(), h, m).getTime();
+  const pool = DATA.spots.concat(DATA.osm, poiSpotList());
+  const xs = Lib.onsenHome(pool, tour.route.line, tour.route.min, { loop, departMs: departMs(), backMs }).slice(0, 12);
+  out.innerHTML = `<h4>♨帰りに寄れる温泉（ルートから3km以内・家に近い順）</h4>
+    ${loop ? '' : `<label>目的地を出る時刻 <input type="time" id="back-time" value="${esc(bt)}"></label>`}
+    ${xs.length ? `<ul class="rel">${xs.map((x) => `<li><a ${gm(x)}>${esc(x.name)}</a>
+      <span class="status">家まで約${Math.round(x.homeKm)}km・道から${x.offKm.toFixed(1)}km・着くのは${hm(x.at)}ごろ${x.open === true ? ' <span class="badge open">その時刻は営業中</span>' : x.open === false ? ' <span class="badge closed">その時刻は営業時間外</span>' : ''}${x.note ? '・' + esc(x.note) : ''}</span></li>`).join('')}</ul>`
+      : '<p class="hint">ルートから3km以内に温泉が見つかりませんでした。</p>'}
+    <p class="hint">営業時間がわかる温泉だけ「営業中」を表示しています。最終受付は公式サイトで確認してください。</p>`;
+  const bi = $('#back-time'); if (bi) bi.onchange = (e) => { tour.backTime = e.target.value || '15:00'; routeOnsen(tour.backTime); };
+  fillAddr(out);
 }
 async function routePhotos() {
   const out = $('#rt-out'); out.innerHTML = '<p class="hint">ルート沿いの写真を探しています…</p>';
