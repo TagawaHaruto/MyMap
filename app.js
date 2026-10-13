@@ -1063,7 +1063,7 @@ async function requestUpdate(force = false) {
   const st = DATA.status;
   if (!force && !Lib.isStale(st && st.updated_at, Date.now(), DATA.cfg.staleHours)) return;
   const token = store.get('token');
-  if (!token) { setUpdateMsg('データが古くなっています。設定タブでトークンを登録すると自動で更新できます。'); return; }
+  if (!token) return; // トークンのない端末（家族など）には何も出さない。データは持ち主の端末か週 1 回の収集で更新される
   const prev = st && st.updated_at;
   if (!force && Date.now() - (store.get('lastDispatch') || 0) < 10 * 60e3) { pollStatus(prev); return; }
   // 持ち主とリポジトリ名は公開 URL（<owner>.github.io/<repo>/）から求める。config に書いてあればそちらを使う
@@ -1847,6 +1847,7 @@ function renderSettings() {
   $('#view').innerHTML = `<h2>表示</h2>
     <label class="check"><input type="checkbox" id="set-outdoor" ${document.documentElement.hasAttribute('data-outdoor') ? 'checked' : ''}>屋外モード（日なた・グローブ向けに大きく太く表示）</label>
     <p class="hint">画面上の「☀屋外」でも切り替えられます。ツーリングタブを開くと自動でオンになります。</p>
+    ${installHtml()}
     <h2>起点</h2>
     <p class="status">今の起点：<strong>${esc(DATA.cfg.origin.name)}</strong>（移動時間・ルートはここから計算）</p>
     <div class="actions"><button type="button" class="btn" id="origin-here">現在地を起点にする</button>
@@ -1886,6 +1887,7 @@ function renderSettings() {
   $('#token-save').onclick = () => { const v = $('#token').value.trim(); if (v) { store.set('token', v); renderSettings(); } };
   $('#token-del').onclick = () => { store.set('token', null); renderSettings(); };
   $('#update-now').onclick = () => { buzz(); requestUpdate(true); };
+  bindInstall();
   $('#gkey-save').onclick = () => { const v = $('#gkey').value.trim(); if (v) { store.set('gkey', v); renderSettings(); } };
   $('#gkey-del').onclick = () => { store.set('gkey', null); renderSettings(); };
   $('#origin-here').onclick = () => {
@@ -1928,6 +1930,74 @@ function drawVisitedMap() {
   for (const r of recs) L.circleMarker([r.lat, r.lon], { radius: 7, weight: 2, color: '#fff', fillColor: '#2f9e44', fillOpacity: 0.95 })
     .bindPopup(`<strong>✓ ${esc(r.name)}</strong>${r.at ? `<br>${new Date(r.at).toLocaleDateString('ja-JP')}に記録` : ''}`).addTo(visitedMap);
   visitedMap.fitBounds(L.latLngBounds(recs.map((r) => [r.lat, r.lon])).pad(0.2), { maxZoom: 12 });
+}
+
+// ---- アプリの入れ方（ほかの人・ほかの端末） ----
+// Android の Chrome などは「インストール」の確認画面をアプリから出せる（beforeinstallprompt）
+let installEvt = null;
+window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installEvt = e; renderInstallBanner(); if (state.tab === 'settings') renderSettings(); });
+window.addEventListener('appinstalled', () => { installEvt = null; store.set('installDismissed', true); renderInstallBanner(); });
+const isStandalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+const appUrl = () => `${location.origin}${location.pathname.replace(/index\.html$/, '')}`;
+const INSTALL_STEPS = {
+  'ios-safari': '画面下の <strong>共有ボタン（□に↑）</strong> → 下に少し動かして <strong>「ホーム画面に追加」</strong> → 右上の <strong>「追加」</strong>',
+  'ios-other': 'この画面は LINE などのアプリの中か、Safari 以外のブラウザです。右下などの <strong>「Safari で開く」</strong>（またはリンクを長押しして「Safari で開く」）にしてから、共有ボタン → 「ホーム画面に追加」。iOS 16.4 以降は Chrome の共有ボタンからも追加できます',
+  android: '右上の <strong>︙（メニュー）</strong> → <strong>「アプリをインストール」</strong>（または「ホーム画面に追加」）',
+  'android-inapp': 'この画面は LINE などのアプリの中です。右上の︙から <strong>「ブラウザで開く」</strong>（Chrome）にしてから、︙ → 「アプリをインストール」',
+  desktop: 'Chrome / Edge の場合、アドレスバーの右にある <strong>インストールのアイコン（⊕ や □↓）</strong>、またはメニュー → 「アプリをインストール」。スマホへは下の QR コードで',
+};
+function renderInstallBanner() {
+  const el = $('#install-banner'); if (!el) return;
+  const pf = Lib.platformOf(navigator.userAgent, isStandalone());
+  // スマホで、まだホーム画面に入れていない、閉じていない人にだけ
+  if (pf === 'installed' || pf === 'desktop' || store.get('installDismissed')) { el.hidden = true; return; }
+  el.hidden = false;
+  el.innerHTML = `<p><strong>📲 ホーム画面に追加すると、アプリのように使えます</strong>（無料・登録不要。圏外でも前に見たデータを表示）</p>
+    ${installEvt ? '<div class="actions"><button type="button" class="btn primary" id="install-go">ホーム画面に追加する</button></div>' : `<p class="hint">${INSTALL_STEPS[pf]}</p>`}
+    <div class="actions"><button type="button" class="btn" id="install-later">あとで</button><button type="button" class="btn" id="install-never">今後は出さない</button></div>`;
+  const go = $('#install-go'); if (go) go.onclick = async () => { buzz(); installEvt.prompt(); await installEvt.userChoice.catch(() => null); installEvt = null; renderInstallBanner(); };
+  $('#install-later').onclick = () => { el.hidden = true; };
+  $('#install-never').onclick = () => { store.set('installDismissed', true); el.hidden = true; };
+}
+// QR コード（cdnjs の qrcode-generator を設定タブを開いたときだけ読み込む。圏外なら URL だけ）
+let qrLib = null;
+function loadQr() {
+  if (qrLib) return qrLib;
+  qrLib = new Promise((ok, ng) => {
+    const sc = document.createElement('script');
+    sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js';
+    sc.onload = () => ok(window.qrcode); sc.onerror = () => { qrLib = null; ng(new Error('qr')); };
+    document.head.appendChild(sc);
+  });
+  return qrLib;
+}
+async function drawQr(el, text) {
+  try {
+    const qrcode = await loadQr();
+    const q = qrcode(0, 'M'); q.addData(text); q.make();
+    el.innerHTML = q.createSvgTag({ cellSize: 5, margin: 3, scalable: true });
+  } catch { el.innerHTML = '<p class="hint">QR コードを表示できませんでした（圏外の可能性）。下のリンクを送ってください。</p>'; }
+}
+function installHtml() {
+  const pf = Lib.platformOf(navigator.userAgent, isStandalone());
+  return `<h2>ほかの端末・家族に入れる</h2>
+    <p class="hint">このアプリはアプリストアではなく、<strong>リンクを開いて「ホーム画面に追加」</strong>するだけで入ります（無料・登録不要・Android / iPhone / パソコン）。お気に入り・行った記録・プランは端末ごとに別々です（お気に入りは「お気に入りの共有」で送れます）。</p>
+    <div class="install-share"><div id="install-qr" class="qr" aria-label="このアプリの QR コード"></div>
+      <div><p><a href="${esc(appUrl())}">${esc(appUrl())}</a></p>
+      <div class="actions"><button type="button" class="btn primary" id="install-share">リンクを送る（LINE など）</button><button type="button" class="btn" id="install-copy">リンクをコピー</button></div>
+      ${installEvt ? '<div class="actions"><button type="button" class="btn" id="install-here">この端末にインストール</button></div>' : ''}
+      <p class="status">この端末：${pf === 'installed' ? '✓ ホーム画面のアプリとして開いています' : 'ブラウザで開いています'}</p></div></div>
+    <details><summary>端末ごとの入れ方</summary><dl class="install-steps">
+      <dt>iPhone / iPad</dt><dd>リンクを <strong>Safari</strong> で開く → ${INSTALL_STEPS['ios-safari']}。LINE などで開いた場合は、まず「Safari で開く」</dd>
+      <dt>Android</dt><dd>リンクを <strong>Chrome</strong> で開く → ${INSTALL_STEPS.android}。LINE などで開いた場合は、まず「ブラウザで開く」</dd>
+      <dt>パソコン</dt><dd>${INSTALL_STEPS.desktop}</dd>
+      <dt>入れたあと</dt><dd>位置情報（現在地・近くの○○・走行記録）を使うときに許可を求められます。トークン・API キーの設定は不要です（データの更新は持ち主の設定で自動）</dd></dl></details>`;
+}
+function bindInstall() {
+  drawQr($('#install-qr'), appUrl());
+  $('#install-share').onclick = () => shareText('MyMap 休日おでかけ', '休日のおでかけ先・グルメ・ツーリングルートを探せるアプリ。開いて「ホーム画面に追加」で使えます。', appUrl());
+  $('#install-copy').onclick = async () => { try { await navigator.clipboard.writeText(appUrl()); alert('コピーしました。'); } catch { prompt('このリンクをコピーしてください', appUrl()); } };
+  const ih = $('#install-here'); if (ih) ih.onclick = async () => { installEvt.prompt(); await installEvt.userChoice.catch(() => null); installEvt = null; renderSettings(); };
 }
 
 // ---- タブと全体描画 ----
@@ -1984,6 +2054,7 @@ async function init() {
     getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
     getJSON('data/scenic_roads.json', [])]);
   renderAll();
+  renderInstallBanner();
   loadWeather();
   requestUpdate();
   [DATA.pois, DATA.events] = await Promise.all([getJSON('data/pois.json', []), getJSON('data/events.json', [])]);

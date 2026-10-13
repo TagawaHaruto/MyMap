@@ -523,4 +523,14 @@ assert.deepStrictEqual(Lib.launchParams('?tab=touring'), { tab: 'touring', q: ''
 assert.deepStrictEqual(Lib.launchParams('?q=%E8%BF%91%E3%81%8F%E3%81%AE%E9%A3%B2%E9%A3%9F%E5%BA%97&gacha=1'), { tab: null, q: '近くの飲食店', gacha: true });
 assert.strictEqual(Lib.launchParams('?tab=evil').tab, null);
 
+// ---- 入れ方の案内 ----
+const IPH = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1';
+assert.strictEqual(Lib.platformOf(IPH, false), 'ios-safari');
+assert.strictEqual(Lib.platformOf(IPH.replace('Version/18.0', 'CriOS/130.0'), false), 'ios-other');
+assert.strictEqual(Lib.platformOf(IPH + ' Line/14.0', false), 'ios-other');
+assert.strictEqual(Lib.platformOf('Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 Chrome/130.0 Mobile Safari/537.36', false), 'android');
+assert.strictEqual(Lib.platformOf('Mozilla/5.0 (Linux; Android 14; Pixel 8; wv) AppleWebKit/537.36 Line/14.0', false), 'android-inapp');
+assert.strictEqual(Lib.platformOf('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0', false), 'desktop');
+assert.strictEqual(Lib.platformOf(IPH, true), 'installed');
+
 console.log('lib: ALL PASS');
