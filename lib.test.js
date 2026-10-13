@@ -543,4 +543,15 @@ assert.strictEqual(Lib.courseType({ id: 'osm:way:4', name: 'Dパークウェイ'
 assert.strictEqual(Lib.courseType({ id: 'osm:way:5', name: 'E湖畔道路', note: '海沿い・湖畔の道' }), 'water');
 assert.strictEqual(Lib.courseType({ id: 'osm:way:6', name: 'F周遊', note: '景色の道' }), 'scenic');
 
+// ---- 交通費 ----
+assert.strictEqual(Lib.fuelCost(100, 15, 170), 1130);
+assert.strictEqual(Lib.fuelCost(0, 15, 170), 0);
+assert.strictEqual(Lib.tollEstimate(91.6), 2640); // 調布→箱根（実際は ETC で 2,600 円前後）
+assert.strictEqual(Lib.tollEstimate(91.6, 'light'), 2150);
+assert.strictEqual(Lib.tollEstimate(0.2), 0);
+assert.strictEqual(Math.round(Lib.tollKmOf([{ maneuvers: [{ length: 10, toll: true }, { length: 5 }] }, { maneuvers: [{ length: 2.5, toll: true }] }]) * 10) / 10, 12.5);
+assert.strictEqual(Lib.trainFare(2), 150);
+assert.strictEqual(Lib.trainFare(30), 680); // 37.5km → 38km → 35〜40km の欄
+assert.strictEqual(Lib.yen(1234.4), '1,234円');
+
 console.log('lib: ALL PASS');

@@ -814,6 +814,29 @@ const Lib = (() => {
     }
     return out;
   }
+  // ---- 交通費の目安 ----
+  const round10 = (y) => Math.round(y / 10) * 10;
+  // ガソリン代（円）= 距離 ÷ 燃費 × 単価
+  const fuelCost = (km, kmPerL, yenPerL) => (km > 0 && kmPerL > 0 ? round10(km / kmPerL * yenPerL) : 0);
+  // 高速料金の目安: NEXCO の普通区間の式（ターミナルチャージ 150 円＋ 24.6 円/km、消費税 10%）。軽自動車・二輪は距離の分が 0.8 倍。
+  // 首都高・大都市近郊区間・割引（ETC 休日割引など）は反映しない
+  function tollEstimate(km, cls = 'normal') {
+    if (!(km > 0.5)) return 0;
+    return round10((150 + 24.6 * km * (cls === 'light' ? 0.8 : 1)) * 1.1);
+  }
+  // ルートの有料区間の距離（Valhalla の maneuvers の toll）
+  const tollKmOf = (legs) => (legs || []).flatMap((l) => l.maneuvers || []).reduce((a, m) => a + (m.toll ? m.length || 0 : 0), 0);
+  // 電車の運賃の目安: JR（幹線）の普通運賃表で。営業キロは直線距離の 1.25 倍とみなす
+  const JR_FARE = [[3, 150], [6, 190], [10, 200], [15, 240], [20, 330], [25, 420], [30, 510], [35, 590], [40, 680], [45, 770], [50, 860],
+    [60, 990], [70, 1170], [80, 1340], [90, 1520], [100, 1690], [120, 1980], [140, 2310], [160, 2640], [180, 3080], [200, 3410],
+    [220, 3740], [240, 4070], [260, 4510], [280, 4840], [300, 5170], [330, 5720], [360, 6050], [400, 6600]];
+  function trainFare(straightKm) {
+    const km = Math.max(1, Math.ceil(straightKm * 1.25));
+    const row = JR_FARE.find(([max]) => km <= max);
+    return row ? row[1] : round10(6600 + (km - 400) * 16.2);
+  }
+  const yen = (n) => `${Math.round(n).toLocaleString()}円`;
+
   // ドライブコースの種類（地図の色分け用）
   const COURSE_TYPES = {
     pick: ['★おすすめ（厳選）', '#d6336c'], skyline: ['スカイライン・観光道路', '#1c7ed6'], toge: ['峠道', '#2f9e44'],
@@ -969,7 +992,7 @@ const Lib = (() => {
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
-    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType };
+    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;
