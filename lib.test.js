@@ -449,4 +449,22 @@ const ov = Lib.lessVisitedDirs([{ lat: 35.75, lon: 139.54 }, { lat: 35.75, lon: 
 assert.strictEqual(ov[ov.length - 1].dir, 'N');
 assert.strictEqual(ov[0].count, 0);
 
+// ---- 日帰りプランの編集: 行き先の追加・帰宅したい時刻・近い順 ----
+const pst = Lib.autoPlanStops(tgt, ppool, pcfg, 'car', 9 * 60, at('2026-10-12T09:00'));
+assert.deepStrictEqual(pst.map((x) => x.kind), ['main', 'lunch', 'extra']);
+const sch = Lib.schedulePlan(pst, pcfg, 'car', 9 * 60, 15 * 60);
+assert.strictEqual(sch.steps[sch.steps.length - 1].what, '調布駅に帰着');
+assert.strictEqual(typeof sch.overMin, 'number');
+assert.ok(/^\d{1,2}:\d{2}$/.test(sch.lastLeave));
+const added = pst.concat([{ place: { id: 'z', name: '追加の場所', lat: 35.66, lon: 139.50 }, stay: 30, kind: 'extra' }]);
+const sch2 = Lib.schedulePlan(added, pcfg, 'car', 9 * 60, 15 * 60);
+assert.ok(sch2.endMin > sch.endMin - 1 && sch2.steps.length === sch.steps.length + 1);
+assert.strictEqual(Lib.schedulePlan(pst, pcfg, 'car', 9 * 60).overMin, null);
+// 昼食は 11:30 より前にしない
+const early = Lib.schedulePlan([{ place: ppool[1], stay: 60, kind: 'lunch' }], pcfg, 'car', 8 * 60);
+assert.strictEqual(early.steps[1].time, '11:30');
+// 近い順: 起点（調布）から近い順に
+const ord = Lib.orderStops([{ place: { name: '遠', lat: 35.9, lon: 139.0 } }, { place: { name: '近', lat: 35.66, lon: 139.55 } }], pcfg.origin);
+assert.deepStrictEqual(ord.map((x) => x.place.name), ['近', '遠']);
+
 console.log('lib: ALL PASS');

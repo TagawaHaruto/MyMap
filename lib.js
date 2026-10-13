@@ -435,37 +435,54 @@ const Lib = (() => {
   // ---- 日帰りプラン: 出発 → 目的地（見学）→ 近くで昼食 → もう 1 か所（温泉か近くの見どころ）→ 帰着 ----
   const STAY_MIN = { museum: 120, play: 180, garden: 90, onsen: 90, temple: 60, scenic: 60, shopping: 120, factory: 90, experience: 120, vehicle: 120 };
   const stayOf = (s) => Math.max(45, ...(s.genres || []).map((g) => STAY_MIN[g] || 60));
-  function dayPlan(spot, pool, cfg, mode, departMin, date = new Date()) {
+  // 自動で選ぶ行き先: 目的地 → 近くで昼食（1.5km 以内・昼に営業中か不明・チェーン以外）→ 温泉（15km 以内）か近くの見どころ（3km 以内）
+  function autoPlanStops(spot, pool, cfg, mode, departMin, date = new Date()) {
     const move = (a, b) => travelMinutes(haversineKm(a, b), mode, cfg);
-    const fmt = (m) => `${Math.floor(m / 60) % 24}:${String(Math.round(m % 60)).padStart(2, '0')}`;
-    const steps = [];
-    let t = departMin;
-    steps.push({ time: fmt(t), what: `${cfg.origin.name}を出発` });
-    t += move(cfg.origin, spot);
-    steps.push({ time: fmt(t), what: `${spot.name}に到着`, place: spot, stay: stayOf(spot) });
-    t += stayOf(spot);
+    const stops = [{ place: spot, stay: stayOf(spot), kind: 'main' }];
+    const t = departMin + move(cfg.origin, spot) + stayOf(spot);
     const lunchAt = new Date(date); lunchAt.setHours(Math.floor(Math.max(t, 690) / 60), Math.max(t, 690) % 60, 0, 0);
     const near = (xs, km) => xs.map((x) => ({ x, d: haversineKm(spot, x) })).filter((o) => o.d <= km && o.x.id !== spot.id).sort((a, b) => a.d - b.d);
     const lunch = near(pool.filter((x) => (x.genres || []).includes('food') && !x.chain && openState(x.oh, lunchAt) !== false), 1.5)
       .sort((a, b) => (openState(b.x.oh, lunchAt) === true) - (openState(a.x.oh, lunchAt) === true) || a.d - b.d)[0];
-    if (lunch) {
-      t = Math.max(t, 690); // 昼食は 11:30 以降
-      steps.push({ time: fmt(t), what: `昼食: ${lunch.x.name}`, place: lunch.x, stay: 60 });
-      t += 60;
-    }
+    if (lunch) stops.push({ place: lunch.x, stay: 60, kind: 'lunch' });
     const second = near(pool.filter((x) => (x.genres || []).includes('onsen')), 15)[0]
       || near(pool.filter((x) => !(x.genres || []).includes('food') && (x.genres || []).some((g) => g !== 'lodging')), 3)[0];
-    let last = spot;
-    if (second) {
-      t += move(spot, second.x);
-      steps.push({ time: fmt(t), what: `${second.x.name}へ`, place: second.x, stay: stayOf(second.x) });
-      t += stayOf(second.x);
-      last = second.x;
-    }
-    t += move(last, cfg.origin);
-    steps.push({ time: fmt(t), what: `${cfg.origin.name}に帰着` });
-    return steps;
+    if (second) stops.push({ place: second.x, stay: stayOf(second.x), kind: 'extra' });
+    return stops;
   }
+  // 行き先の並びから時刻を出す。昼食は 11:30 より前にしない。homeMin（帰宅したい時刻）があれば、遅れ・余裕の分
+  const fmtHM = (m) => `${Math.floor(m / 60) % 24}:${String(Math.round(m % 60)).padStart(2, '0')}`;
+  function schedulePlan(stops, cfg, mode, departMin, homeMin = null) {
+    const move = (a, b) => travelMinutes(haversineKm(a, b), mode, cfg);
+    const steps = [{ time: fmtHM(departMin), what: `${cfg.origin.name}を出発` }];
+    let t = departMin, prev = cfg.origin;
+    stops.forEach((st, i) => {
+      t += move(prev, st.place);
+      if (st.kind === 'lunch') t = Math.max(t, 690);
+      steps.push({ time: fmtHM(t), what: st.kind === 'lunch' ? `昼食: ${st.place.name}` : i === 0 ? `${st.place.name}に到着` : `${st.place.name}へ`,
+        place: st.place, stay: st.stay, index: i, kind: st.kind, at: t });
+      t += st.stay;
+      prev = st.place;
+    });
+    t += move(prev, cfg.origin);
+    steps.push({ time: fmtHM(t), what: `${cfg.origin.name}に帰着` });
+    // 帰宅したい時刻に間に合わせるには、最後の場所を何時に出ればよいか
+    const lastLeave = homeMin == null ? null : homeMin - move(prev, cfg.origin);
+    return { steps, endMin: t, overMin: homeMin == null ? null : t - homeMin, lastLeave: lastLeave == null ? null : fmtHM(lastLeave) };
+  }
+  // 近い順に並べ替え（起点から、いちばん近い所へ順に）。昼食は動かさない位置に置いたまま
+  function orderStops(stops, origin) {
+    const rest = [...stops], out = [];
+    let cur = origin;
+    while (rest.length) {
+      let k = 0;
+      rest.forEach((s, i) => { if (haversineKm(cur, s.place) < haversineKm(cur, rest[k].place)) k = i; });
+      out.push(rest[k]); cur = rest[k].place; rest.splice(k, 1);
+    }
+    return out;
+  }
+  const dayPlan = (spot, pool, cfg, mode, departMin, date = new Date()) =>
+    schedulePlan(autoPlanStops(spot, pool, cfg, mode, departMin, date), cfg, mode, departMin).steps;
 
   // ---- 行った場所の記録: 都県ごとの数 ----
   function visitedStats(records) {
@@ -803,7 +820,7 @@ const Lib = (() => {
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
-    dayPlan, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
+    dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs };

@@ -298,24 +298,94 @@ async function shareText(title, text, url) {
   } catch { /* 共有をやめたとき */ }
 }
 const planState = { depart: store.get('planDepart') || '09:00' };
-async function renderPlan(el, s) {
-  el.innerHTML = '<p class="hint">プランを作成中…</p>';
-  await ensureCells(['food'], s, 2);
-  const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food'], s, 2));
-  const [h, m] = planState.depart.split(':').map(Number);
-  const steps = Lib.dayPlan(s, pool, DATA.cfg, state.mode, h * 60 + m);
-  const places = steps.filter((x) => x.place).map((x) => x.place);
-  const text = steps.map((x) => `${x.time} ${x.what}`).join('\n');
+// 日帰りプラン: 自動で作った行き先を、追加・削除・並べ替え・滞在時間の変更・帰宅したい時刻で調整できる
+const PLANS = new Map(); // スポットの id → { stops, home }
+const STAY_CHOICES = [15, 30, 45, 60, 90, 120, 150, 180, 240];
+const toMin = (hm) => { const [h, m] = String(hm).split(':').map(Number); return h * 60 + m; };
+async function planPool(s) {
+  await ensureCells(['food', 'heritage', 'local'], s, 2);
+  return DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food', 'heritage', 'local'], s, 2));
+}
+async function renderPlan(el, s, reset = false) {
+  if (!PLANS.has(s.id) || reset) {
+    el.innerHTML = '<p class="hint">プランを作成中…</p>';
+    const pool = await planPool(s);
+    PLANS.set(s.id, { stops: Lib.autoPlanStops(s, pool, DATA.cfg, state.mode, toMin(planState.depart)), home: store.get('planHome') || '' });
+  }
+  const p = PLANS.get(s.id);
+  const sch = Lib.schedulePlan(p.stops, DATA.cfg, state.mode, toMin(planState.depart), p.home ? toMin(p.home) : null);
+  const places = p.stops.map((x) => x.place);
+  const text = sch.steps.map((x) => `${x.time} ${x.what}`).join('\n');
+  const last = p.stops.length - 1;
   el.innerHTML = `<h4>日帰りプラン（${esc(MODES[state.mode])}・移動時間は概算）</h4>
-    <label>出発 <input type="time" class="plan-depart" value="${esc(planState.depart)}"></label>
-    <ol class="plan-steps">${steps.map((x) => `<li><strong>${esc(x.time)}</strong> ${x.place ? `<a ${gm(x.place)}>${esc(x.what)}</a>` : esc(x.what)}${x.stay ? `<span class="status">（${x.stay}分）</span>` : ''}</li>`).join('')}</ol>
+    <div class="plan-times"><label>出発 <input type="time" class="plan-depart" value="${esc(planState.depart)}"></label>
+      <label>帰宅したい時刻 <input type="time" class="plan-home" value="${esc(p.home)}"></label></div>
+    ${sch.overMin == null ? '' : sch.overMin > 0
+    ? `<p class="notice">⚠ 帰宅が希望より<strong>約${Math.round(sch.overMin)}分遅れます</strong>。行き先を減らすか、滞在時間を短くしてください（最後の場所を ${esc(sch.lastLeave)} までに出れば間に合います）。</p>
+      <div class="actions"><button type="button" class="btn plan-fit">時間内に収める（後ろの行き先から外す）</button></div>`
+    : `<p class="status">✓ 帰宅したい時刻まで約${Math.round(-sch.overMin)}分の余裕があります（最後の場所は ${esc(sch.lastLeave)} までに出れば間に合います）。</p>`}
+    <ol class="plan-steps">${sch.steps.map((x) => x.place == null ? `<li><strong>${esc(x.time)}</strong> ${esc(x.what)}</li>` : `<li>
+      <strong>${esc(x.time)}</strong> <a ${gm(x.place)}>${esc(x.what)}</a>
+      <span class="plan-edit"><select data-stay="${x.index}" aria-label="滞在時間">${STAY_CHOICES.concat(STAY_CHOICES.includes(x.stay) ? [] : [x.stay]).sort((a, b) => a - b)
+        .map((m) => `<option value="${m}" ${m === x.stay ? 'selected' : ''}>${m < 60 ? m + '分' : (m / 60) + '時間'}</option>`).join('')}</select>
+        <button type="button" class="icon" data-up="${x.index}" ${x.index === 0 ? 'disabled' : ''} aria-label="前へ">↑</button>
+        <button type="button" class="icon" data-down="${x.index}" ${x.index === last ? 'disabled' : ''} aria-label="後へ">↓</button>
+        <button type="button" class="icon" data-del="${x.index}" aria-label="外す">✕</button></span></li>`).join('')}</ol>
+    <details class="plan-add" ${p.adding ? 'open' : ''}><summary>＋行き先を追加</summary>
+      <input type="search" class="plan-q" placeholder="名前・料理で探す（例：温泉、ラーメン、道の駅）" aria-label="追加する行き先を探す" value="${esc(p.q || '')}">
+      <div class="plan-results"></div>
+      <p class="hint">近くのおすすめ</p><div class="chips wrap plan-sugg"></div></details>
     <div class="actions"><a class="btn primary" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, DATA.cfg.origin, places, GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">Googleマップで1日の経路</a>
-      <button type="button" class="btn plan-share">プランを共有</button></div>
-    <p class="hint">昼食は目的地から1.5km以内で昼に営業している（または営業時間不明の）チェーン以外の店、もう1か所は15km以内の温泉か3km以内の見どころから選んでいます。</p>`;
-  el.querySelector('.plan-depart').onchange = (e) => { planState.depart = e.target.value || '09:00'; store.set('planDepart', planState.depart); renderPlan(el, s); };
+      <button type="button" class="btn plan-order">近い順に並べ替え</button>
+      <button type="button" class="btn plan-share">プランを共有</button>
+      <button type="button" class="btn plan-reset">最初から作り直す</button></div>
+    <p class="hint">最初の案は、昼食を目的地から1.5km以内（昼に営業中か営業時間不明・チェーン以外）、もう1か所を15km以内の温泉か3km以内の見どころから選んでいます。</p>`;
+  const redraw = () => renderPlan(el, s);
+  el.querySelector('.plan-depart').onchange = (e) => { planState.depart = e.target.value || '09:00'; store.set('planDepart', planState.depart); redraw(); };
+  el.querySelector('.plan-home').onchange = (e) => { p.home = e.target.value; store.set('planHome', p.home); redraw(); };
+  el.querySelectorAll('[data-stay]').forEach((x) => { x.onchange = () => { p.stops[+x.dataset.stay].stay = +x.value; redraw(); }; });
+  el.querySelectorAll('[data-up]').forEach((b) => { b.onclick = () => { const i = +b.dataset.up; [p.stops[i - 1], p.stops[i]] = [p.stops[i], p.stops[i - 1]]; buzz(); redraw(); }; });
+  el.querySelectorAll('[data-down]').forEach((b) => { b.onclick = () => { const i = +b.dataset.down; [p.stops[i + 1], p.stops[i]] = [p.stops[i], p.stops[i + 1]]; buzz(); redraw(); }; });
+  el.querySelectorAll('[data-del]').forEach((b) => { b.onclick = () => { p.stops.splice(+b.dataset.del, 1); buzz(); redraw(); }; });
+  const fit = el.querySelector('.plan-fit');
+  if (fit) fit.onclick = () => {
+    const home = toMin(p.home), over = () => Lib.schedulePlan(p.stops, DATA.cfg, state.mode, toMin(planState.depart), home).overMin;
+    while (p.stops.length > 1 && over() > 0) p.stops.pop();
+    // それでも遅れるときは、残った場所の滞在時間を短くする
+    for (const st of p.stops) while (over() > 0 && st.stay > 30) st.stay = STAY_CHOICES.filter((m) => m < st.stay).pop() || 15;
+    buzz(); redraw();
+  };
+  el.querySelector('.plan-order').onclick = () => { p.stops = Lib.orderStops(p.stops, DATA.cfg.origin); buzz(); redraw(); };
+  el.querySelector('.plan-reset').onclick = () => { buzz(); renderPlan(el, s, true); };
   el.querySelector('.plan-share').onclick = () => shareText(`${s.name} 日帰りプラン`, text, '');
+  const add = (x) => { p.stops.push({ place: x, stay: stayGuess(x), kind: (x.genres || []).includes('food') ? 'meal' : 'extra' }); p.q = ''; buzz(); redraw(); };
+  const details = el.querySelector('.plan-add');
+  details.addEventListener('toggle', () => { p.adding = details.open; });
+  const pool = await planPool(s);
+  const inPlan = new Set(p.stops.map((x) => x.place.id));
+  // 近くのおすすめ（似たスポット・周辺・食事から、まだプランにないもの）
+  const rel = Lib.relatedSpots(s, pool, { limit: 4, chains: state.showChains });
+  const sugg = rel.nearby.concat(rel.food, rel.similar).filter((x) => !inPlan.has(x.id)).slice(0, 8);
+  const sg = el.querySelector('.plan-sugg');
+  sg.innerHTML = sugg.map((x, i) => `<button type="button" class="chip" data-sugg="${i}">＋${esc(x.name)}</button>`).join('') || '<span class="hint">近くに候補が見つかりませんでした。</span>';
+  sg.querySelectorAll('[data-sugg]').forEach((b) => { b.onclick = () => add(sugg[+b.dataset.sugg]); });
+  // 名前で探して追加（目的地に近い順）
+  const q = el.querySelector('.plan-q'), res = el.querySelector('.plan-results');
+  const search = () => {
+    p.q = q.value;
+    const hits = q.value.trim() ? Lib.searchSpots(pool, q.value, DATA.cfg, state.favs, state.mode, 300)
+      .filter((x) => !inPlan.has(x.id)).map((x) => ({ x, d: Lib.haversineKm(s, x) })).sort((a, b) => a.d - b.d).slice(0, 6) : [];
+    res.innerHTML = hits.map(({ x, d }, i) => `<button type="button" class="card dq-item" data-hit="${i}"><strong>＋ ${esc(x.name)}</strong>
+      <span class="status">${(x.genres || []).map((g) => icon(GENRES[g] || '・')).join('')} 目的地から${d < 1 ? Math.round(d * 1000) + 'm' : d.toFixed(1) + 'km'}${x.note ? '・' + esc(x.note) : ''}</span></button>`).join('')
+      || (q.value.trim() ? '<p class="hint">見つかりませんでした（目的地の近く2km以内のグルメなどと、観光スポットから探しています）。</p>' : '');
+    res.querySelectorAll('[data-hit]').forEach((b) => { b.onclick = () => add(hits[+b.dataset.hit].x); });
+  };
+  q.oninput = search;
+  if (p.q) search();
   fillAddr(el);
 }
+// 追加した場所の滞在時間の目安（食事は 60 分、それ以外は種類から）
+const stayGuess = (x) => ((x.genres || []).includes('food') ? 60 : (x.genres || []).includes('onsen') ? 90 : (x.genres || []).some((g) => ['museum', 'play', 'experience'].includes(g)) ? 120 : 60);
 async function renderNearby(el, s, kind) {
   el.innerHTML = `<p class="hint">${esc(Lib.NEARBY_KINDS[kind][0])}を探しています…</p>`;
   try {
