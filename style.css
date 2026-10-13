@@ -233,3 +233,11 @@ body:not([data-tab="spots"]) #search-slot { display: none; }
 :root:not([data-outdoor]) .filters .label { font-size: 0.66rem; }
 details.more { margin: 4px 0; }
 details.more summary { cursor: pointer; color: var(--fg-sub); font-size: var(--font-size-14); }
+.plan-times { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0; }
+.plan-steps li { margin: 2px 0; }
+.plan-edit { display: inline-flex; gap: 4px; align-items: center; margin-left: 4px; vertical-align: middle; }
+.plan-edit .icon { min-height: 32px; min-width: 32px; padding: 0 6px; }
+.plan-edit select { min-height: 32px; font: inherit; font-size: var(--font-size-14); }
+details.plan-add { margin: 6px 0; }
+details.plan-add summary { cursor: pointer; font-weight: var(--font-weight-700); color: var(--key); }
+.plan-q { width: 100%; box-sizing: border-box; margin: 6px 0; }
