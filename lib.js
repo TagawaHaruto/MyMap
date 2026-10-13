@@ -814,6 +814,16 @@ const Lib = (() => {
     }
     return out;
   }
+  // 入れ方の案内に使う端末の種類
+  function platformOf(ua, standalone) {
+    if (standalone) return 'installed';
+    const u = String(ua || '');
+    const ios = /iPhone|iPad|iPod/.test(u) || (/Macintosh/.test(u) && /Mobile/.test(u));
+    if (ios) return /CriOS|FxiOS|EdgiOS|Line\/|FBAN|Instagram/.test(u) ? 'ios-other' : 'ios-safari';
+    if (/Android/.test(u)) return /Line\/|FBAN|Instagram|; wv\)/.test(u) ? 'android-inapp' : 'android';
+    return 'desktop';
+  }
+
   // ホーム画面のショートカットなどで開いたときの指定（?tab=touring / ?q=近くの飲食店 / ?gacha=1）
   function launchParams(search) {
     const p = new URLSearchParams(search || '');
@@ -941,7 +951,7 @@ const Lib = (() => {
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
-    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams };
+    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

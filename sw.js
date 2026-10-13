@@ -6,7 +6,7 @@ const CACHE = 'mymap-v4';
 const TILES = 'mymap-tiles';
 const SHELL = ['./', 'index.html', 'app.js', 'lib.js', 'style.css', 'config.json', 'manifest.webmanifest', 'icon.svg',
   'icons/apple-touch-icon.png', 'icons/icon-192.png', 'icons/icon-512.png'];
-const CDN = ['https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/', 'https://cdn.jsdelivr.net/npm/@digital-go-jp/design-tokens@2.0.1/',
+const CDN = ['https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/', 'https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/', 'https://cdn.jsdelivr.net/npm/@digital-go-jp/design-tokens@2.0.1/',
   'https://fonts.googleapis.com/', 'https://fonts.gstatic.com/'];
 self.addEventListener('install', (e) => e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL.map((u) => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())));
 self.addEventListener('activate', (e) => e.waitUntil(
