@@ -223,25 +223,34 @@ function spotCard(s) {
       <div class="head-btns">${infoButton(s)}${s.poi ? '' : `<button type="button" class="icon fav" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>`}</div></div>
     <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${'walkin' in s ? (s.walkin ? '・<strong>当日参加OK</strong>' : '・要予約') : ''}${openBadge(s)}${seasonBadge(s)}</p>
     ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
-    <div class="info" hidden>
-      ${detailLine(s)}
+    <div class="info" hidden></div></article>`;
+}
+// 「▼詳しく」の中身（開いたときに作る。一覧の 1 枚ごとに作ると、300 件で部品が 1 万個を超えて重くなるため）
+function infoShell(s) {
+  const sns = Lib.snsLinks(s);
+  return `${detailLine(s)}
+    <div class="actions">
+      <a class="btn" ${gm(s, 'dir')}>地図で経路</a>
+      <a class="btn" ${gm(s)}>写真・口コミ</a>
+      <button type="button" class="btn" data-plan="${esc(s.id)}">日帰りプラン</button>
+      ${s.poi ? '' : `<button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
+    </div>
+    <details class="more"><summary>その他（周辺を探す・共有・SNS・公式など）</summary>
       <div class="actions">
-        <a class="btn" ${gm(s, 'dir')}>地図で経路</a>
-        <a class="btn" href="${esc(Lib.streetViewUrl(s))}" target="_blank" rel="noopener">ストリートビュー</a>
+        ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
         ${s.tel ? `<a class="btn" href="tel:${esc(s.tel.replace(/[^\d+]/g, ''))}">📞電話</a>` : ''}
+        <a class="btn" href="${esc(Lib.streetViewUrl(s))}" target="_blank" rel="noopener">ストリートビュー</a>
         <button type="button" class="btn" data-share="${esc(s.id)}">共有</button>
-        <button type="button" class="btn" data-plan="${esc(s.id)}">日帰りプラン</button>
         ${s.poi ? '' : `<a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a>
         <a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X</a>`}
-        ${s.url ? `<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${s.url.includes('wikipedia.org') ? 'Wikipedia' : '公式'}</a>` : ''}
-        ${s.poi ? '' : `<button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
       </div>
-      <div class="plan"></div>
+      <p class="hint">周辺を探す（2km以内）</p>
       <div class="chips wrap" aria-label="周辺を探す">${Object.entries(Lib.NEARBY_KINDS).map(([k, [label]]) =>
         `<button type="button" class="chip" data-nb="${k}" data-nb-for="${esc(s.id)}">${label}</button>`).join('')}</div>
-      <div class="nearby"></div>
-      <div class="info-body"></div>
-    </div></article>`;
+    </details>
+    <div class="nearby"></div>
+    <div class="plan"></div>
+    <div class="info-body"></div>`;
 }
 // 日の出・日の入りの時刻と方角、ダイヤモンド富士（見える場所なら）、混みやすさの目安
 const hmOf = (d) => `${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`;
@@ -330,9 +339,9 @@ document.addEventListener('click', (e) => {
 
 function renderSpots() {
   // 検索欄は作り直さない（入力中にほかの更新が来てもフォーカスを失わないように）
+  if (!$('#spot-list')) $('#view').innerHTML = '<div id="spot-list"></div>';
   if (!$('#q')) {
-    $('#view').innerHTML = `<input id="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="名前で探す（例：じんだいじ、JAXA）" aria-label="名前で探す">
-      <div id="spot-list"></div>`;
+    $('#search-slot').innerHTML = `<input id="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="名前・料理で探す（例：じんだいじ、ラーメン）" aria-label="名前で探す">`;
     $('#q').value = state.q;
     let frame = 0;
     $('#q').addEventListener('input', (e) => {
@@ -641,7 +650,6 @@ function infoHtml(s, v) {
     parts.push('<p class="hint">写真は見つかりませんでした（設定タブで Google の API キーを入れると、Google マップの写真も出せます）。</p>');
   }
   if (v.failed) parts.push('<p class="hint">一部を読み込めませんでした（圏外の可能性があります）。電波の良い場所でもう一度開いてください。</p>');
-  parts.push(`<div class="actions"><a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a></div>`);
   return parts.join('');
 }
 document.addEventListener('click', async (e) => {
@@ -655,12 +663,15 @@ document.addEventListener('click', async (e) => {
   box.hidden = !open;
   if (!open || box.dataset.loaded) return;
   const s = INFO_ITEMS.get(b.dataset.info); if (!s) return;
+  const isCard = !!b.closest('article.card');
+  if (isCard && !box.dataset.built) { box.innerHTML = infoShell(s); box.dataset.built = '1'; }
   const body = box.querySelector('.info-body') || box; // スポットのカードはボタン類を残して、写真と説明だけ入れる
   body.innerHTML = '<p class="hint">読み込み中…</p>';
   const v = await loadInfo(s);
   body.innerHTML = '<div class="gphotos"></div>' + infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}${extraInfo(s)}<div class="related"></div>`;
   fillGooglePhotos(body.querySelector('.gphotos'), s);
   if (!v.failed) box.dataset.loaded = '1';
+  if (!isCard) body.insertAdjacentHTML('beforeend', `<div class="actions"><a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a></div>`);
   fillRelated(body.querySelector('.related'), s);
   fillAddr(box);
 });
@@ -1091,22 +1102,30 @@ function renderTouring() {
     <select id="dest"><option value="">選んでください</option>
       <optgroup label="目的地まで走る">${DATA.touring.map((t) =>
         `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</optgroup>
-      ${DATA.roads.length ? `<optgroup label="おすすめの道を走る（調布に戻る周回）">${roadsByDist.map((r) =>
+      ${DATA.roads.length ? `<optgroup label="おすすめの道を走る（近い20本・ほかは下の検索か地図で）">${roadsByDist.slice(0, 20).concat(
+        road && !roadsByDist.slice(0, 20).includes(road) ? [road] : []).map((r) =>
         `<option value="road:${esc(r.id)}" ${r.id === tour.roadId ? 'selected' : ''}>${esc(r.name)}${r.toll ? '（有料）' : ''}</option>`).join('')}</optgroup>` : ''}
       ${tour.custom ? `<option selected>${esc(tour.custom.name)}</option>` : ''}</select>
     <div class="dest-search"><input id="dq" type="search" enterkeyhint="search" autocomplete="off" placeholder="目的地を検索（例：じんだいじ、河口湖、箱根町）" aria-label="目的地を検索">
       <button type="button" class="btn" id="dq-go">検索</button></div>
     <div id="dq-results"></div>
-    <p class="hint">選ぶ・検索する・地図を動かして中央の＋を合わせ「中心を目的地に」を押す（または長押し）の、どれでも指定できます</p>
+    <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
+    <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
+      <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
+    <p class="hint">目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定</p>
     ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}</p>`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
+    <details class="tools" id="tour-opts" ${store.get('tourOptsOpen') ? 'open' : ''}><summary>⚙走り方・立ち寄りの範囲（${optSummary()}）</summary>
     <fieldset class="opts"><legend><strong>走り方</strong></legend>
       <label class="check"><input type="checkbox" data-opt="noToll" ${tour.opts.noToll ? 'checked' : ''}>有料道路を使わない</label>
       <label class="check"><input type="checkbox" data-opt="fewHighways" ${tour.opts.fewHighways ? 'checked' : ''}>高速道路をなるべく使わない</label>
       <label class="check"><input type="checkbox" data-opt="bike" ${tour.opts.bike ? 'checked' : ''}>バイク向け（幹線を避け、地方の道を好む）</label>
     </fieldset>
-    <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label>
+    <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
+    <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label></details>
+    <label class="check"><input type="checkbox" id="show-courses" ${tour.showCourses ? 'checked' : ''}>ドライブコース（${(DATA.roads.length + DATA.courses.length).toLocaleString()}本）と峠（${DATA.passes.length.toLocaleString()}か所）を地図に表示</label>
+    ${tour.showCourses ? curvyHtml() : ''}
     <details class="tools"><summary>🧭方面別の雨・🏍走行記録・閉鎖中の道</summary>
       <div class="actions"><button type="button" class="btn" id="dir-rain">🧭方面別の雨（出発日の9〜17時）</button></div><div id="dir-out"></div>
       <h4>🏍走行記録（GPS）</h4><p class="status" id="trk-msg">${trackText()}</p>
@@ -1115,12 +1134,6 @@ function renderTouring() {
         <button type="button" class="btn" id="trk-clear" ${track.pts.length ? '' : 'disabled'}>記録を消す</button></div>
       <p class="hint">記録中は画面をつけたままにしてください（画面が消えると止まる端末があります）。記録は端末の中にだけ保存します。</p>
       ${closedListHtml()}</details>
-    <label class="check"><input type="checkbox" id="show-courses" ${tour.showCourses ? 'checked' : ''}>ドライブコース（${(DATA.roads.length + DATA.courses.length).toLocaleString()}本）と峠（${DATA.passes.length.toLocaleString()}か所）を地図に表示</label>
-    ${tour.showCourses ? curvyHtml() : ''}
-    <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
-    <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
-    <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
-      <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
     ${tour.error ? `<p class="notice">${esc(tour.error)}</p>` : ''}
     ${tour.route && (tour.restored || offline) ? `<p class="notice">${offline ? '📴 圏外のため、' : ''}${fmtStamp(tour.route.at || 0)} に検索して保存したルートを表示しています${offline ? '' : '（再検索で更新）'}。</p>` : ''}
     ${routeStale() ? '<p class="notice">⚠ 走り方を変えました。「ルート候補を探す」で探し直してください（このままナビを開くと、ルートを固定する地点なしで Google マップに渡します）。</p>' : ''}
@@ -1200,6 +1213,7 @@ function renderTouring() {
   $('#trk-clear').onclick = () => { if (confirm('走行記録を消しますか？')) { track.pts = []; saveTrack(); tour.key = ''; renderTouring(); } };
   const sm = $('#rt-save-map'); if (sm) sm.onclick = () => { buzz(); saveRouteTiles(); };
   bindCourseBtns($('#curvy'));
+  $('#tour-opts').addEventListener('toggle', (e) => store.set('tourOptsOpen', e.target.open));
   $('#show-courses').onchange = (e) => { tour.showCourses = e.target.checked; store.set('showCourses', tour.showCourses); renderTouring(); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
@@ -1427,6 +1441,15 @@ async function routePhotos() {
   }; });
 }
 
+// 走り方の設定を 1 行で（畳んだ見出しに出す）
+function optSummary() {
+  const xs = [];
+  if (tour.opts.noToll) xs.push('有料なし');
+  if (tour.opts.fewHighways) xs.push('高速少なめ');
+  if (tour.opts.bike) xs.push('バイク向け');
+  xs.push(`立ち寄り${tour.radius}km`);
+  return xs.join('・');
+}
 // カーブの多いコース（起点から150km以内・上位20）
 function curvyHtml() {
   const xs = DATA.courses.filter((r) => r.curv && Lib.haversineKm(DATA.cfg.origin, { lat: r.points[0][0], lon: r.points[0][1] }) <= 150)
@@ -1670,6 +1693,7 @@ const RENDER = { spots: renderSpots, events: renderEvents, touring: renderTourin
 function goTab(t) {
   // ツーリングタブを開いたら屋外モードを自動でオン（手動で切った後も、次に開いたときは再びオン）
   if (t === 'touring' && state.tab !== 'touring') setOutdoor(true, false); // 自動の ON は保存しない（手動の設定を上書きしない）
+  if (t !== 'touring' && state.tab === 'touring') setOutdoor(!!store.get('outdoor'), false); // ほかのタブに戻ったら自分の設定に戻す
   state.tab = t; store.set('tab', t); window.scrollTo(0, 0); renderAll();
 }
 document.querySelector('.tabs').onclick = (e) => {
@@ -1680,7 +1704,7 @@ function renderAll() {
   document.body.dataset.tab = state.tab;
   renderFilters(); renderWeather(); renderRecommend(); renderLoadMsg();
   document.querySelectorAll('.tabs [data-tab]').forEach((b) => b.setAttribute('aria-selected', b.dataset.tab === state.tab));
-  if (state.tab !== 'spots' && $('#q')) $('#view').innerHTML = ''; // 検索欄は スポット タブ専用
+  if (state.tab !== 'spots' && $('#spot-list')) $('#view').innerHTML = ''; // 一覧は スポット タブ専用（検索欄は CSS で隠す）
   (RENDER[state.tab] || renderSpots)();
   keepAwake(state.tab === 'touring' && tour.awake);
 }
@@ -1691,7 +1715,7 @@ async function init() {
   setOutdoor(outdoor ?? matchMedia('(prefers-contrast: more)').matches, outdoor != null);
   if (state.tab === 'touring') setOutdoor(true, false);
   $('#filters').open = !!store.get('filtersOpen');
-  $('#rec').open = store.get('recOpen') !== false;
+  $('#rec').open = store.get('recOpen') === true;
   DATA.cfg = await getJSON('config.json', null);
   if (!DATA.cfg) { renderLoadMsg(); $('#view').innerHTML = '<p class="empty">config.json を読み込めません。電波の良い場所で開き直してください。</p>'; return; }
   CFG_ORIGIN = DATA.cfg.origin;

@@ -222,3 +222,14 @@ details.tools summary, details#curvy summary { font-weight: var(--font-weight-70
 .gacha .card { border: 0; padding: 4px 2px; }
 .newdir { margin: 10px 0 4px; font-size: var(--font-size-16); }
 .gphotos .photos { margin-bottom: 6px; }
+/* 検索欄（スポットタブだけ・一番上） */
+#search-slot { padding: 8px 16px 0; }
+#search-slot input { width: 100%; box-sizing: border-box; }
+body:not([data-tab="spots"]) #search-slot { display: none; }
+/* 絞り込み欄を詰める（屋外モードでは大きいまま） */
+:root:not([data-outdoor]) .filters .row { margin: 2px 0; gap: 6px; }
+:root:not([data-outdoor]) .filters .chips { gap: 4px; }
+:root:not([data-outdoor]) .filters .chip { min-height: 32px; padding: 0 9px; font-size: 0.66rem; }
+:root:not([data-outdoor]) .filters .label { font-size: 0.66rem; }
+details.more { margin: 4px 0; }
+details.more summary { cursor: pointer; color: var(--fg-sub); font-size: var(--font-size-14); }
