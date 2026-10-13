@@ -292,6 +292,10 @@ function extraInfo(s) {
     const df = Lib.diamondFuji(s).slice(0, 4);
     if (df.length) parts.push(`🗻ダイヤモンド富士（富士山が見える場所なら・予測）: ${df.map((x) => `${x.at.getMonth() + 1}/${x.at.getDate()} ${hmOf(x.at)} ${x.kind}`).join('、')}`);
   }
+  {
+    const km = Lib.haversineKm(DATA.cfg.origin, s), cc = costCfg();
+    parts.push(`💴${esc(DATA.cfg.origin.name)}から往復の交通費の目安：電車 約${Lib.yen(Lib.trainFare(km) * 2)}（JR の運賃で概算）・車のガソリン 約${Lib.yen(Lib.fuelCost(km * 1.3 * 2, cc.car, cc.price))}（高速代は別。ツーリングでルートを出すと計算）`);
+  }
   const wk = nextWeekendNoon(), c = Lib.crowdLevel(s, wk);
   parts.push(`👥混みやすさの目安（${wk.getMonth() + 1}/${wk.getDate()}の昼）: <strong>${c.label}</strong>${c.reasons.length ? `（${esc(c.reasons.join('・'))}）` : ''}`);
   return `<p class="hint">${parts.join('<br>')}</p>`;
@@ -356,6 +360,7 @@ async function renderPlan(el, s, reset = false) {
         <button type="button" class="icon" data-up="${x.index}" ${x.index === 0 ? 'disabled' : ''} aria-label="前へ">↑</button>
         <button type="button" class="icon" data-down="${x.index}" ${x.index === last ? 'disabled' : ''} aria-label="後へ">↓</button>
         <button type="button" class="icon" data-del="${x.index}" aria-label="外す">✕</button></span></li>`).join('')}</ol>
+    <p class="status">${planCostText(p.stops)}</p>
     <details class="plan-add" ${p.adding ? 'open' : ''}><summary>＋行き先を追加</summary>
       <input type="search" class="plan-q" placeholder="名前・料理で探す（例：温泉、ラーメン、道の駅）" aria-label="追加する行き先を探す" value="${esc(p.q || '')}">
       <div class="plan-results"></div>
@@ -414,6 +419,17 @@ async function renderPlan(el, s, reset = false) {
   if (p.q) search();
   fillAddr(el);
 }
+// 日帰りプランの 1 日の交通費の目安（区間ごとの直線距離から。車は道のりを直線の 1.3 倍とみなす）
+function planCostText(stops) {
+  const pts = [DATA.cfg.origin, ...stops.map((x) => x.place), DATA.cfg.origin];
+  const legs = pts.slice(1).map((p, i) => Lib.haversineKm(pts[i], p)).filter((d) => d > 0.3);
+  const cc = costCfg();
+  if (state.mode === 'train') return `💴 1日の交通費の目安：電車 約${Lib.yen(legs.reduce((a, d) => a + Lib.trainFare(d), 0))}（${legs.length}区間・JR の運賃で概算。近い区間は歩きの場合も）`;
+  if (state.mode === 'bicycle') return '💴 交通費：自転車なので 0 円';
+  const bike = state.mode === 'bike', km = legs.reduce((a, d) => a + d, 0) * 1.3;
+  return `💴 1日の交通費の目安：ガソリン 約${Lib.yen(Lib.fuelCost(km, bike ? cc.bike : cc.car, cc.price))}（約${Math.round(km)}km・高速代は別。ツーリングでルートを出すと高速料金も計算）`;
+}
+
 // ---- 保存した日帰りプラン（端末の中に最大 30 件） ----
 // 場所は表示と時刻の計算に使う項目だけを残す（保存領域を節約）
 const slim = (x) => { const o = {}; for (const k of ['id', 'name', 'lat', 'lon', 'genres', 'note', 'oh', 'chain', 'url', 'pref', 'indoor', 'kana', 'op', 'wp']) if (x[k] != null) o[k] = x[k]; return o; };
@@ -1223,7 +1239,7 @@ async function valhalla(points, opts, alternates = 0) {
   const costing = opts.bike ? 'motorcycle' : 'auto';
   const co = { use_tolls: opts.noToll ? 0 : 0.5, use_highways: opts.fewHighways ? 0 : 1, ...(opts.bike ? { use_trails: 0.8 } : {}) };
   const body = { locations: points.map((p, i) => ({ lat: p.lat, lon: p.lon, type: i === 0 || i === points.length - 1 ? 'break' : 'through' })),
-    costing, costing_options: { [costing]: co }, directions_type: 'none', units: 'kilometers', ...(alternates ? { alternates } : {}) };
+    costing, costing_options: { [costing]: co }, directions_type: 'maneuvers', units: 'kilometers', ...(alternates ? { alternates } : {}) };
   const r = await getRoute('https://valhalla1.openstreetmap.de/route', { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' } });
   if (r.status === 429) throw fail('ルートサーバーが混雑しています。少し待ってから再検索してください。');
   if (r.status >= 500) throw fail(`ルートサーバーが一時的に使えません（${r.status}）。`);
@@ -1231,7 +1247,8 @@ async function valhalla(points, opts, alternates = 0) {
   if (!r.ok || !j.trip) throw fail('この地点までのルートが見つかりませんでした。');
   const toRoute = (trip) => ({
     line: trip.legs.flatMap((leg, i) => Lib.decodePolyline(leg.shape, 6).slice(i ? 1 : 0)),
-    km: trip.summary.length, min: trip.summary.time / 60, toll: !!trip.summary.has_toll, highway: !!trip.summary.has_highway, engine: 'Valhalla' });
+    km: trip.summary.length, min: trip.summary.time / 60, toll: !!trip.summary.has_toll, highway: !!trip.summary.has_highway, engine: 'Valhalla',
+    tollKm: Math.round(Lib.tollKmOf(trip.legs) * 10) / 10 });
   return [toRoute(j.trip), ...(j.alternates || []).map((a) => toRoute(a.trip))];
 }
 
@@ -1469,6 +1486,7 @@ function renderTouring() {
       <p class="hint">ナビは Google マップのアプリで開いてください（ブラウザ版の Google マップは経由地が 3 件までしか使えません）。</p>
       <div class="row"><label for="depart" class="label">出発</label><input type="datetime-local" id="depart" value="${esc(departValue())}"></div>
       <p class="status" id="eta">${etaText()}</p>
+      <p class="status">${routeCostText(tour.route, !!(dest && dest.loop), !!tour.opts.bike)}</p>
       <div class="actions"><button type="button" class="btn" id="rt-rain">☔ルート上の雨</button><button type="button" class="btn" id="rt-elev">⛰標高</button>
         <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button>
         <button type="button" class="btn" id="rt-onsen">♨帰りに寄れる温泉</button></div>
@@ -1971,6 +1989,7 @@ function renderSettings() {
     <p class="status">今の起点：<strong>${esc(DATA.cfg.origin.name)}</strong>（移動時間・ルートはここから計算）</p>
     <div class="actions"><button type="button" class="btn" id="origin-here">現在地を起点にする</button>
       ${store.get('origin') ? `<button type="button" class="btn" id="origin-reset">${esc(CFG_ORIGIN.name)}に戻す</button>` : ''}</div>
+    ${costSettingsHtml()}
     <h2>行った場所の記録</h2>${visitedHtml()}
     <h2>お気に入りの共有</h2>
     <p class="hint">⭐お気に入り（${state.favs.size}件）を 1 本のリンクにして家族に送れます。相手がリンクを開くと、その端末のお気に入りに追加されます。</p>
@@ -2008,6 +2027,7 @@ function renderSettings() {
   $('#token-del').onclick = () => { store.set('token', null); renderSettings(); };
   $('#update-now').onclick = () => { buzz(); requestUpdate(true); };
   bindInstall();
+  bindCostSettings();
   $('#gkey-save').onclick = () => { const v = $('#gkey').value.trim(); if (v) { store.set('gkey', v); renderSettings(); } };
   $('#gkey-del').onclick = () => { store.set('gkey', null); renderSettings(); };
   $('#origin-here').onclick = () => {
@@ -2118,6 +2138,33 @@ function bindInstall() {
   $('#install-share').onclick = () => shareText('MyMap 休日おでかけ', '休日のおでかけ先・グルメ・ツーリングルートを探せるアプリ。開いて「ホーム画面に追加」で使えます。', appUrl());
   $('#install-copy').onclick = async () => { try { await navigator.clipboard.writeText(appUrl()); alert('コピーしました。'); } catch { prompt('このリンクをコピーしてください', appUrl()); } };
   const ih = $('#install-here'); if (ih) ih.onclick = async () => { installEvt.prompt(); await installEvt.userChoice.catch(() => null); installEvt = null; renderSettings(); };
+}
+
+// ---- 交通費の設定（端末に保存） ----
+const COST_DEFAULT = { car: 15, bike: 30, price: 170 };
+const costCfg = () => ({ ...COST_DEFAULT, ...(store.get('cost') || {}) });
+// ルートの交通費（片道・周回はそのまま）。バイク向けなら二輪の燃費と軽・二輪の高速料金
+function routeCostText(rt, loop, bike) {
+  const c = costCfg(), kmpl = bike ? c.bike : c.car;
+  const fuel = Lib.fuelCost(rt.km, kmpl, c.price);
+  const toll = rt.tollKm != null ? Lib.tollEstimate(rt.tollKm, bike ? 'light' : 'normal') : null;
+  const one = fuel + (toll || 0), times = loop ? 1 : 2;
+  return `💴 交通費の目安：ガソリン ${Lib.yen(fuel)}（${bike ? 'バイク' : '車'} ${kmpl}km/L・${c.price}円/L）`
+    + (toll == null ? '・高速料金はこの経路では計算できません' : toll ? `・高速 約${Lib.yen(toll)}（有料区間 約${Math.round(rt.tollKm)}km・${bike ? '軽・二輪' : '普通車'}）` : '・高速料金なし')
+    + `${loop ? '' : `／往復 約${Lib.yen(one * times)}（帰りも同じ道として）`}`;
+}
+function costSettingsHtml() {
+  const c = costCfg();
+  return `<h2>交通費の計算</h2>
+    <div class="cost-form"><label>車の燃費 <input type="number" inputmode="decimal" min="1" max="60" step="0.5" id="cost-car" value="${c.car}"> km/L</label>
+      <label>バイクの燃費 <input type="number" inputmode="decimal" min="1" max="80" step="0.5" id="cost-bike" value="${c.bike}"> km/L</label>
+      <label>ガソリン単価 <input type="number" inputmode="numeric" min="50" max="400" step="1" id="cost-price" value="${c.price}"> 円/L</label></div>
+    <p class="hint">ツーリングのルートと日帰りプラン・「詳しく」に、ガソリン代・高速料金・電車の運賃の目安を出します。高速料金は NEXCO の普通区間の料金の式で概算（首都高・大都市近郊区間・ETC 割引は反映しません）、電車は JR の運賃表で直線距離から概算です。正確な額は Google マップの経路で確認してください。</p>`;
+}
+function bindCostSettings() {
+  for (const k of ['car', 'bike', 'price']) {
+    $(`#cost-${k}`).onchange = (e) => { const v = Number(e.target.value); if (v > 0) { store.set('cost', { ...costCfg(), [k]: v }); tour.key = ''; } };
+  }
 }
 
 // ---- タブと全体描画 ----
