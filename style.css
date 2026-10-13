@@ -220,3 +220,5 @@ details.tools summary, details#curvy summary { font-weight: var(--font-weight-70
 :root:not([data-outdoor]) #spot-list .actions { margin: 2px 0 4px; }
 .gacha { border: 3px solid var(--key); border-radius: 10px; padding: 8px; margin: 6px 0 10px; }
 .gacha .card { border: 0; padding: 4px 2px; }
+.newdir { margin: 10px 0 4px; font-size: var(--font-size-16); }
+.gphotos .photos { margin-bottom: 6px; }

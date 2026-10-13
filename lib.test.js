@@ -434,4 +434,19 @@ assert.strictEqual(oh1[1].open, false); // 目的地の近く: 15:04 着で、15
 const oh2 = Lib.onsenHome(onsens, hline, 90, { loop: true, departMs: back, backMs: back });
 assert.deepStrictEqual(oh2.map((x) => x.id), ['b']); // 周回は後半だけ
 
+// ---- 写真・まだ行っていない方面 ----
+assert.ok(Lib.commonsSearchUrl('深大寺').includes('gsrsearch=%E6%B7%B1%E5%A4%A7%E5%AF%BA'));
+const sp = { name: '深大寺', lat: 35.67, lon: 139.55 };
+assert.strictEqual(JSON.parse(Lib.placesBody(sp)).locationBias.circle.center.latitude, 35.67);
+const pj = { places: [{ location: { latitude: 35.671, longitude: 139.551 }, googleMapsUri: 'https://maps.google.com/?cid=1',
+  photos: [{ name: 'places/X/photos/Y', authorAttributions: [{ displayName: '山田', uri: 'https://u' }] }] }] };
+const pp = Lib.parsePlacesPhotos(pj, sp, 'K');
+assert.strictEqual(pp.photos[0].thumb, 'https://places.googleapis.com/v1/places/X/photos/Y/media?maxWidthPx=480&key=K');
+assert.strictEqual(pp.photos[0].artist, '山田');
+assert.strictEqual(Lib.parsePlacesPhotos({ places: [{ location: { latitude: 36.5, longitude: 139.5 }, photos: [] }] }, sp, 'K'), null); // 遠い同名
+assert.strictEqual(Lib.parsePlacesPhotos({}, sp, 'K'), null);
+const ov = Lib.lessVisitedDirs([{ lat: 35.75, lon: 139.54 }, { lat: 35.75, lon: 139.55 }, { lat: 35.65, lon: 139.30 }], { lat: 35.65, lon: 139.54 }, 1);
+assert.strictEqual(ov[ov.length - 1].dir, 'N');
+assert.strictEqual(ov[0].count, 0);
+
 console.log('lib: ALL PASS');

@@ -666,6 +666,30 @@ const Lib = (() => {
     return out.sort((a, b) => a.homeKm - b.homeKm).map((x) => ({ ...x, open: openState(x.oh, new Date(x.at)) }));
   }
 
+  // Wikimedia Commons を施設名で探す（付近の写真より関係のある写真が出やすい）
+  const commonsSearchUrl = (name, limit = 4) => 'https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({
+    action: 'query', format: 'json', origin: '*', generator: 'search', gsrnamespace: '6', gsrsearch: name, gsrlimit: String(limit),
+    prop: 'imageinfo', iiprop: 'url|extmetadata', iiurlwidth: '480' }).toString();
+  // Google マップの写真（Places API (New)・利用者が自分の API キーを設定したときだけ）
+  const PLACES_URL = 'https://places.googleapis.com/v1/places:searchText';
+  const placesBody = (s) => JSON.stringify({ textQuery: s.name, languageCode: 'ja', maxResultCount: 1,
+    locationBias: { circle: { center: { latitude: s.lat, longitude: s.lon }, radius: 1000 } } });
+  // 2km より離れた候補は同じ名前の別の場所として使わない
+  function parsePlacesPhotos(j, s, key, limit = 4) {
+    const p = j && j.places && j.places[0];
+    if (!p || !p.location || haversineKm(s, { lat: p.location.latitude, lon: p.location.longitude }) > 2) return null;
+    return { page: p.googleMapsUri || '', photos: (p.photos || []).slice(0, limit).map((ph) => ({
+      thumb: `https://places.googleapis.com/v1/${ph.name}/media?maxWidthPx=480&key=${encodeURIComponent(key)}`,
+      artist: ((ph.authorAttributions || [])[0] || {}).displayName || '', artistUri: ((ph.authorAttributions || [])[0] || {}).uri || '' })) };
+  }
+  // 行った記録の少ない方面（少ない順。同じ数は seed で入れ替える）
+  function lessVisitedDirs(records, origin, seed = 0) {
+    const n = Object.fromEntries(DIRS.map((d) => [d, 0]));
+    for (const r of records) n[direction(origin, r)]++;
+    const rnd = mulberry32(seed);
+    return DIRS.map((d) => ({ dir: d, count: n[d], r: rnd() })).sort((a, b) => a.count - b.count || a.r - b.r);
+  }
+
   const gsiSearchUrl = (q) => `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(q)}`;
   function parseGsi(j, limit = 8) {
     const out = [];
@@ -781,7 +805,8 @@ const Lib = (() => {
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
     dayPlan, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
-    jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome };
+    jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
+    commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

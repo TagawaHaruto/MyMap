@@ -497,6 +497,28 @@ function spotPopup(s) {
     ${s.note ? `<p>${esc(s.note)}</p>` : ''}
     <div class="actions"><a class="btn" ${gm(s, 'dir')}>経路</a><a class="btn" ${gm(s)}>写真・口コミ</a></div></div>`;
 }
+// ---- Google マップの写真（設定タブで API キーを入れたときだけ。規約に沿って写真は端末に保存しない） ----
+async function googlePhotos(s) {
+  const key = store.get('gkey');
+  if (!key || s.lat == null) return null;
+  const r = await fetch(Lib.PLACES_URL, { method: 'POST', body: Lib.placesBody(s), signal: timeoutSignal(8000),
+    headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': key, 'X-Goog-FieldMask': 'places.location,places.photos,places.googleMapsUri' } });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return Lib.parsePlacesPhotos(await r.json(), s, key);
+}
+async function fillGooglePhotos(el, s) {
+  if (!el || !store.get('gkey')) return;
+  el.innerHTML = '<p class="hint">Google マップの写真を読み込み中…</p>';
+  try {
+    const g = await googlePhotos(s);
+    el.innerHTML = g && g.photos.length ? `<div class="photos">${g.photos.map((p) => `<a href="${esc(g.page || p.artistUri)}" target="_blank" rel="noopener">
+      <img src="${esc(p.thumb)}" alt="${esc(s.name)}の写真" loading="lazy"><span class="credit">${p.artist ? '撮影: ' + esc(p.artist) + ' / ' : ''}Google マップ</span></a>`).join('')}</div>`
+      : '<p class="hint">Google マップにこの場所の写真は見つかりませんでした。</p>';
+  } catch (err) {
+    el.innerHTML = `<p class="hint">Google マップの写真を読み込めませんでした（${/HTTP 4/.test(err.message) ? 'API キーと、Places API (New) が有効になっているかを確認してください' : '圏外か混雑の可能性'}）。</p>`;
+  }
+}
+
 // ---- スポットの説明と写真（Wikipedia の要約、なければ Wikimedia Commons の付近の写真） ----
 const INFO_ITEMS = new Map(); // 画面に出ている id → スポット
 const INFO_CACHE_MAX = 200;
@@ -520,16 +542,23 @@ async function fetchJSON(url) {
 }
 async function loadInfo(s) {
   const cached = infoCache()[s.id];
-  if (cached) return cached;
+  if (cached && cached.ver === 2) return cached; // 写真の探し方を変えたので、古い保存分は取り直す
   const ref = Lib.wikiRef(s);
   let summary = null, photos = [], failed = false;
   if (ref) {
     try { summary = Lib.parseSummary(await fetchJSON(Lib.summaryUrl(ref))); } catch (err) { if (!/HTTP 404/.test(err.message)) failed = true; }
   }
   if (!summary || !summary.thumb) {
-    try { photos = Lib.parseCommons(await fetchJSON(Lib.commonsNearbyUrl(s.lat, s.lon, 300, 3))); } catch { failed = true; }
+    // まず施設名で（関係のある写真）、少なければ 1km 以内で撮られた写真も
+    try { photos = Lib.parseCommons(await fetchJSON(Lib.commonsSearchUrl(s.name, 4))).map((p) => ({ ...p, byName: true })); } catch { failed = true; }
+    if (photos.length < 2) {
+      try {
+        const seen = new Set(photos.map((p) => p.page));
+        photos = photos.concat(Lib.parseCommons(await fetchJSON(Lib.commonsNearbyUrl(s.lat, s.lon, 1000, 4))).filter((p) => !seen.has(p.page)));
+      } catch { failed = true; }
+    }
   }
-  const v = { summary, photos };
+  const v = { summary, photos, ver: 2 };
   if (!failed) saveInfo(s.id, v); // 圏外などで取れなかったときは保存しない（次に開いたときに取り直す）
   return { ...v, failed };
 }
@@ -605,11 +634,11 @@ function infoHtml(s, v) {
     parts.push('<p class="hint">この場所の説明はまだありません。</p>');
   }
   if (v.photos && v.photos.length) {
-    parts.push(`<p class="credit"><strong>付近の写真</strong>（約300m以内で撮られたもの。関係のない写真が含まれることがあります）</p><div class="photos">`
+    parts.push(`<p class="credit"><strong>${v.photos[0].byName ? '写真' : '付近の写真'}</strong>（Wikimedia Commons。${v.photos.some((p) => !p.byName) ? '付近の写真は約1km以内で撮られたもので、関係のない写真が含まれることがあります' : '名前で探した写真です'}）</p><div class="photos">`
       + v.photos.map((p) => `<a href="${esc(p.page)}" target="_blank" rel="noopener"><img src="${esc(p.thumb)}" alt="付近の写真" loading="lazy">
         <span class="credit">${p.artist ? '撮影: ' + esc(p.artist) + ' / ' : ''}${esc(p.license) || 'ライセンスはリンク先'}</span></a>`).join('') + '</div>');
-  } else if (!(v.summary && v.summary.thumb)) {
-    parts.push('<p class="hint">写真は見つかりませんでした。</p>');
+  } else if (!(v.summary && v.summary.thumb) && !store.get('gkey')) {
+    parts.push('<p class="hint">写真は見つかりませんでした（設定タブで Google の API キーを入れると、Google マップの写真も出せます）。</p>');
   }
   if (v.failed) parts.push('<p class="hint">一部を読み込めませんでした（圏外の可能性があります）。電波の良い場所でもう一度開いてください。</p>');
   parts.push(`<div class="actions"><a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a></div>`);
@@ -629,7 +658,8 @@ document.addEventListener('click', async (e) => {
   const body = box.querySelector('.info-body') || box; // スポットのカードはボタン類を残して、写真と説明だけ入れる
   body.innerHTML = '<p class="hint">読み込み中…</p>';
   const v = await loadInfo(s);
-  body.innerHTML = infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}${extraInfo(s)}<div class="related"></div>`;
+  body.innerHTML = '<div class="gphotos"></div>' + infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}${extraInfo(s)}<div class="related"></div>`;
+  fillGooglePhotos(body.querySelector('.gphotos'), s);
   if (!v.failed) box.dataset.loaded = '1';
   fillRelated(body.querySelector('.related'), s);
   fillAddr(box);
@@ -651,9 +681,25 @@ function renderRecommend() {
   const cands = Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set() }, DATA.cfg);
   const ctx = { favGenres: state.favGenres, rainy: rainy(), visited: state.visited };
   const rec = Lib.pickRecommendations(cands, ctx, Lib.weekSeed(new Date()));
-  $('#recommend').innerHTML = weatherPlanHtml(cands) + rec.map(spotCard).join('');
+  $('#recommend').innerHTML = weatherPlanHtml(cands) + rec.map(spotCard).join('') + newDirHtml(rec);
   $('#rec').hidden = !rec.length;
   if (!WPLAN.loaded) loadWeatherPlan();
+}
+// まだ行っていない（行った記録の少ない）方面から 2 方面、各 2 か所。週ごとに入れ替わる
+function newDirHtml(shown) {
+  const recs = visitedRecords();
+  const skip = new Set(shown.map((s) => s.id).concat([...state.visited]));
+  const seed = Lib.weekSeed(new Date());
+  const out = [];
+  for (const d of Lib.lessVisitedDirs(recs, DATA.cfg.origin, seed)) {
+    const cands = Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set(), dirs: new Set([d.dir]) }, DATA.cfg).filter((s) => !skip.has(s.id));
+    const xs = Lib.pickRecommendations(cands, { favGenres: state.favGenres, rainy: rainy(), visited: state.visited }, seed + out.length).slice(0, 2);
+    if (!xs.length) continue;
+    xs.forEach((s) => skip.add(s.id));
+    out.push(`<h4 class="newdir">🧭まだ${d.count ? 'あまり' : ''}行っていない「${esc(dirName(d.dir))}」方面${d.count ? `（行った記録 ${d.count}か所）` : ''}</h4>${xs.map(spotCard).join('')}`);
+    if (out.length >= 2) break;
+  }
+  return out.length ? `<div class="newdirs">${out.join('')}<p class="hint">「▼詳しく」→「行った」を押すと、行った記録の少ない方面を優先して提案します。</p></div>` : '';
 }
 // 週末の午前・午後の降水確率を見て、晴れの時間は屋外、雨の時間は屋内のスポットを当てる
 const WPLAN = { loaded: false, days: null };
@@ -1269,9 +1315,20 @@ function drawMap(dest, stops) {
       const m = L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false }).addTo(map)
         .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, maxHeight: 240, autoPanPaddingTopLeft: [16, 112], autoPanPaddingBottomRight: [16, 40] });
       m.on('popupopen', async () => {
-        if (!infoCache()[s.id]) {
+        if (!infoCache()[s.id] || infoCache()[s.id].ver !== 2) {
           const v = await loadInfo(s);
           if (m.isPopupOpen()) { m.setPopupContent(popupHtml(s, v)); refitPopup(m); }
+        }
+        const v = infoCache()[s.id];
+        if (store.get('gkey') && !(v && v.summary && v.summary.thumb)) {
+          try {
+            const g = await googlePhotos(s);
+            const pe = m.getPopup() && m.getPopup().getElement();
+            if (g && g.photos[0] && pe && !pe.querySelector('.pop-img')) {
+              pe.querySelector('.pop strong').insertAdjacentHTML('afterend', `<img class="pop-img" src="${esc(g.photos[0].thumb)}" alt=""><div class="credit">${g.photos[0].artist ? '撮影: ' + esc(g.photos[0].artist) + ' / ' : ''}Google マップ</div>`);
+              refitPopup(m);
+            }
+          } catch { /* 写真なしのまま */ }
         }
         const el = m.getPopup() && m.getPopup().getElement();
         if (el) fillAddr(el);
@@ -1534,6 +1591,17 @@ function renderSettings() {
     <p class="hint">⭐お気に入り（${state.favs.size}件）を 1 本のリンクにして家族に送れます。相手がリンクを開くと、その端末のお気に入りに追加されます。</p>
     <div class="actions"><button type="button" class="btn" id="fav-share" ${state.favs.size ? '' : 'disabled'}>⭐お気に入りを共有</button></div>
     <h2>好きなジャンル</h2><p class="hint">今週末のおすすめに優先して出します。</p><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>
+    <h2>Google マップの写真（任意）</h2>
+    <p class="hint">Wikipedia・Wikimedia Commons で写真が見つからない場所も多いので、ご自身の Google の API キー（Places API (New)）を入れると「▼詳しく」と地図の吹き出しに Google マップの写真を出します。キーはこの端末の中にだけ保存します。</p>
+    <details><summary>キーの作り方（クレジットカードの登録が必要。個人で使う程度なら無料枠の範囲）</summary><ol class="hint">
+      <li>Google Cloud コンソール（console.cloud.google.com）でプロジェクトを作り、お支払い（請求先アカウント）を設定</li>
+      <li>「API とサービス」→「ライブラリ」で <strong>Places API (New)</strong> を有効にする</li>
+      <li>「認証情報」→「API キーを作成」</li>
+      <li>キーの制限：アプリケーションの制限は「ウェブサイト」で <code>${esc(location.origin)}/*</code>、API の制限は「Places API (New)」だけ</li>
+      <li>念のため「お支払い」→「予算とアラート」で少額の予算アラートを設定（無料枠を超えると課金されます）</li></ol></details>
+    <p class="status">状態：${store.get('gkey') ? '登録済み' : '未登録'}</p>
+    <input id="gkey" type="password" autocomplete="off" placeholder="AIza..." aria-label="Google の API キー">
+    <div class="actions"><button type="button" class="btn primary" id="gkey-save">保存</button><button type="button" class="btn" id="gkey-del">削除</button></div>
     <h2>データの自動更新（管理者向け）</h2>
     <p>GitHub の Fine-grained トークン（対象リポジトリ：このアプリのリポジトリだけ／権限：Actions の Read and write だけ）を貼ってください。トークンはこの端末の中にだけ保存されます。</p>
     <p class="status">状態：${has ? '登録済み' : '未登録'}</p>
@@ -1553,6 +1621,8 @@ function renderSettings() {
   $('#token-save').onclick = () => { const v = $('#token').value.trim(); if (v) { store.set('token', v); renderSettings(); } };
   $('#token-del').onclick = () => { store.set('token', null); renderSettings(); };
   $('#update-now').onclick = () => { buzz(); requestUpdate(true); };
+  $('#gkey-save').onclick = () => { const v = $('#gkey').value.trim(); if (v) { store.set('gkey', v); renderSettings(); } };
+  $('#gkey-del').onclick = () => { store.set('gkey', null); renderSettings(); };
   $('#origin-here').onclick = () => {
     if (!navigator.geolocation) { alert('この端末では現在地を使えません。'); return; }
     navigator.geolocation.getCurrentPosition((p) => {
