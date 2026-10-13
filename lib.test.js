@@ -533,4 +533,14 @@ assert.strictEqual(Lib.platformOf('Mozilla/5.0 (Linux; Android 14; Pixel 8; wv) 
 assert.strictEqual(Lib.platformOf('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/130.0', false), 'desktop');
 assert.strictEqual(Lib.platformOf(IPH, true), 'installed');
 
+// ---- ドライブコースの種類 ----
+assert.strictEqual(Lib.courseType({ id: 'okutama', name: '奥多摩周遊道路' }), 'pick');
+assert.strictEqual(Lib.courseType({ id: 'osm:node:1', name: '雁坂峠', pass: true }), 'pass');
+assert.strictEqual(Lib.courseType({ id: 'osm:way:1', name: '林道A線', note: '林道（未舗装の区間がないか確認を）' }), 'rindo');
+assert.strictEqual(Lib.courseType({ id: 'osm:way:2', name: 'Bスカイライン', toll: true }), 'toll');
+assert.strictEqual(Lib.courseType({ id: 'osm:way:3', name: 'C峠線', note: '峠道（約5km）' }), 'toge');
+assert.strictEqual(Lib.courseType({ id: 'osm:way:4', name: 'Dパークウェイ', note: 'スカイライン・観光道路' }), 'skyline');
+assert.strictEqual(Lib.courseType({ id: 'osm:way:5', name: 'E湖畔道路', note: '海沿い・湖畔の道' }), 'water');
+assert.strictEqual(Lib.courseType({ id: 'osm:way:6', name: 'F周遊', note: '景色の道' }), 'scenic');
+
 console.log('lib: ALL PASS');
