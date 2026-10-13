@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []),
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -341,7 +341,8 @@ async function renderPlan(el, s, reset = false) {
     <div class="actions"><a class="btn primary" href="${esc(Lib.gmapsDirUrl(DATA.cfg.origin, DATA.cfg.origin, places, GMAP_MODE[state.mode]))}" target="_blank" rel="noopener">Googleマップで1日の経路</a>
       <button type="button" class="btn plan-order">近い順に並べ替え</button>
       <button type="button" class="btn plan-share">プランを共有</button>
-      <button type="button" class="btn plan-reset">最初から作り直す</button></div>
+      <button type="button" class="btn plan-reset">最初から作り直す</button>
+      <button type="button" class="btn primary plan-save">${p.savedId ? '保存を上書き' : '💾 このプランを保存'}</button></div>
     <p class="hint">最初の案は、昼食を目的地から1.5km以内（昼に営業中か営業時間不明・チェーン以外）、もう1か所を15km以内の温泉か3km以内の見どころから選んでいます。</p>`;
   const redraw = () => renderPlan(el, s);
   el.querySelector('.plan-depart').onchange = (e) => { planState.depart = e.target.value || '09:00'; store.set('planDepart', planState.depart); redraw(); };
@@ -361,6 +362,7 @@ async function renderPlan(el, s, reset = false) {
   el.querySelector('.plan-order').onclick = () => { p.stops = Lib.orderStops(p.stops, DATA.cfg.origin); buzz(); redraw(); };
   el.querySelector('.plan-reset').onclick = () => { buzz(); renderPlan(el, s, true); };
   el.querySelector('.plan-share').onclick = () => shareText(`${s.name} 日帰りプラン`, text, '');
+  el.querySelector('.plan-save').onclick = () => { savePlan(s, p); buzz(); redraw(); };
   const add = (x) => { p.stops.push({ place: x, stay: stayGuess(x), kind: (x.genres || []).includes('food') ? 'meal' : 'extra' }); p.q = ''; buzz(); redraw(); };
   const details = el.querySelector('.plan-add');
   details.addEventListener('toggle', () => { p.adding = details.open; });
@@ -390,6 +392,49 @@ async function renderPlan(el, s, reset = false) {
   if (p.q) search();
   fillAddr(el);
 }
+// ---- 保存した日帰りプラン（端末の中に最大 30 件） ----
+// 場所は表示と時刻の計算に使う項目だけを残す（保存領域を節約）
+const slim = (x) => { const o = {}; for (const k of ['id', 'name', 'lat', 'lon', 'genres', 'note', 'oh', 'chain', 'url', 'pref', 'indoor', 'kana', 'op', 'wp']) if (x[k] != null) o[k] = x[k]; return o; };
+const savedPlans = () => store.get('plans') || [];
+function savePlan(s, p) {
+  const list = savedPlans();
+  const today = new Date();
+  const name = p.savedId ? (list.find((x) => x.id === p.savedId) || {}).name
+    : prompt('プランの名前', `${s.name}（${today.getMonth() + 1}/${today.getDate()}）`);
+  if (!name) return;
+  const rec = { id: p.savedId || `plan-${Date.now()}`, name: String(name).slice(0, 40), at: Date.now(), spot: slim(s), depart: planState.depart, home: p.home,
+    mode: state.mode, stops: p.stops.map((x) => ({ place: slim(x.place), stay: x.stay, kind: x.kind })) };
+  const rest = list.filter((x) => x.id !== rec.id);
+  store.set('plans', [rec, ...rest].slice(0, 30));
+  p.savedId = rec.id;
+  alert(`「${rec.name}」を保存しました。スポット一覧の上の「📋保存したプラン」から開けます。`);
+}
+function openSavedPlan(id, el) {
+  const rec = savedPlans().find((x) => x.id === id); if (!rec) return;
+  PLANS.set(rec.spot.id, { stops: rec.stops.map((x) => ({ ...x })), home: rec.home || '', savedId: rec.id });
+  planState.depart = rec.depart || planState.depart;
+  INFO_ITEMS.set(rec.spot.id, rec.spot);
+  renderPlan(el, rec.spot);
+}
+function renderPlansView(box) {
+  const list = savedPlans();
+  box.innerHTML = `<div class="actions"><button type="button" class="btn" id="plans-close">← 一覧に戻る</button></div>
+    <h3>📋 保存した日帰りプラン（${list.length}件）</h3>
+    ${list.length ? list.map((r) => `<article class="card"><strong>${esc(r.name)}</strong>
+      <p class="meta">${new Date(r.at).toLocaleDateString('ja-JP')}に保存・${r.stops.length}か所・出発${esc(r.depart || '')}${r.home ? `・帰宅${esc(r.home)}` : ''}</p>
+      <p class="note">${r.stops.map((x) => esc(x.place.name)).join(' → ')}</p>
+      <div class="actions"><button type="button" class="btn primary" data-plan-open="${esc(r.id)}">開く・編集</button>
+        <button type="button" class="btn" data-plan-del="${esc(r.id)}">削除</button></div>
+      <div class="plan" data-plan-box="${esc(r.id)}"></div></article>`).join('')
+      : '<p class="hint">まだありません。スポットの「▼詳しく」→「日帰りプラン」→「💾 このプランを保存」で保存できます。</p>'}`;
+  $('#plans-close').onclick = () => { state.plansView = false; renderSpotList(); };
+  box.querySelectorAll('[data-plan-open]').forEach((b) => { b.onclick = () => { buzz(); openSavedPlan(b.dataset.planOpen, box.querySelector(`[data-plan-box="${b.dataset.planOpen}"]`)); }; });
+  box.querySelectorAll('[data-plan-del]').forEach((b) => { b.onclick = () => {
+    if (!confirm('このプランを削除しますか？')) return;
+    store.set('plans', savedPlans().filter((x) => x.id !== b.dataset.planDel)); renderPlansView(box);
+  }; });
+}
+
 // 追加した場所の滞在時間の目安（食事は 60 分、それ以外は種類から）
 const stayGuess = (x) => ((x.genres || []).includes('food') ? 60 : (x.genres || []).includes('onsen') ? 90 : (x.genres || []).some((g) => ['museum', 'play', 'experience'].includes(g)) ? 120 : 60);
 async function renderNearby(el, s, kind) {
@@ -423,12 +468,17 @@ function renderSpots() {
     $('#q').addEventListener('input', (e) => {
       state.q = e.target.value; state.limit = 300;
       cancelAnimationFrame(frame); frame = requestAnimationFrame(renderSpotList);
+      suggest(e.target.value);
     });
+    $('#search-slot').insertAdjacentHTML('beforeend', '<div id="q-sugg" class="sugg" role="listbox" hidden></div>');
+    $('#q').addEventListener('focus', (e) => suggest(e.target.value));
+    $('#q').addEventListener('blur', () => setTimeout(() => { const b = $('#q-sugg'); if (b) b.hidden = true; }, 200));
   }
   renderSpotList();
 }
 function renderSpotList() {
   const box = $('#spot-list'); if (!box) return;
+  if (state.plansView) { renderPlansView(box); return; }
   if (state.q.trim()) {
     // 「近くの○○」は現在地（取れなければ起点）のまわりを探す
     const nq = Lib.nearQuery(state.q);
@@ -455,6 +505,7 @@ function renderSpotList() {
   const groups = selectedGroups();
   const toggles = [
     `<button type="button" class="chip" id="t-gacha">🎲おまかせ</button>`,
+    `<button type="button" class="chip" id="t-plans">📋保存したプラン${savedPlans().length ? `（${savedPlans().length}）` : ''}</button>`,
     `<button type="button" class="chip" id="t-open" aria-pressed="${state.openOnly}">🕘営業中だけ</button>`,
     `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
     `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>`,
@@ -478,6 +529,8 @@ function renderSpotList() {
   const tw = $('#t-walkin'); if (tw) tw.onclick = () => { buzz(); state.walkinOnly = !state.walkinOnly; renderSpotList(); };
   const tc = $('#t-chain'); if (tc) tc.onclick = () => { buzz(); state.showChains = !state.showChains; renderSpotList(); };
   $('#t-gacha').onclick = () => { buzz(); spin(list); };
+  $('#t-plans').onclick = () => { buzz(); state.plansView = true; renderSpotList(); window.scrollTo(0, 0); };
+  if (state.pendingGacha && DATA.osmLoaded && list.length) { state.pendingGacha = false; spin(list); }
   const ga = $('#gacha-again'); if (ga) ga.onclick = () => { buzz(); spin(list); };
   const gc = $('#gacha-close'); if (gc) gc.onclick = () => { state.gacha = null; renderSpotList(); };
   $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
@@ -529,6 +582,41 @@ function spin(list) {
   renderSpotList();
   const el = document.querySelector('.gacha'); if (el) el.scrollIntoView({ block: 'start', behavior: 'smooth' });
 }
+
+// ---- 検索の入力補完: アプリの中の候補（すぐ）＋ OpenPOI の候補（入力が止まって 0.3 秒後） ----
+let suggTimer = 0;
+const SUGG = new Map();
+function suggest(q) {
+  const box = $('#q-sugg'); if (!box) return;
+  const t = String(q || '').trim();
+  if (!t) { box.hidden = true; return; }
+  const local = Lib.localSuggest(t, DATA.spots.concat(DATA.osm), 6);
+  const draw = (net) => {
+    if (String($('#q').value).trim() !== t) return;
+    const words = [...new Set(local.concat(net ? net.words : []))].slice(0, 6);
+    const places = net ? net.places.filter((x) => !words.includes(x)).slice(0, 4) : [];
+    box.innerHTML = words.map((w) => `<button type="button" class="sugg-item" data-sugg-q="${esc(w)}">🔍 ${esc(w)}</button>`).join('')
+      + places.map((w) => `<button type="button" class="sugg-item" data-sugg-q="${esc(w)}">🌐 ${esc(w)}</button>`).join('');
+    box.hidden = !(words.length + places.length) || document.activeElement !== $('#q');
+  };
+  draw(SUGG.get(t));
+  clearTimeout(suggTimer);
+  if (t.length < 2 || SUGG.has(t) || navigator.onLine === false) return;
+  suggTimer = setTimeout(async () => {
+    try {
+      const r = await fetch(Lib.openPoiSuggestUrl(t, DATA.cfg.origin), { signal: timeoutSignal(5000) });
+      if (r.ok) { SUGG.set(t, Lib.parseSuggest(await r.json())); draw(SUGG.get(t)); }
+    } catch { /* 候補はアプリの中の分だけ */ }
+  }, 300);
+}
+document.addEventListener('mousedown', (e) => { if (e.target.closest('.sugg-item')) e.preventDefault(); }); // 押す前に入力欄のフォーカスが外れないように
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-sugg-q]'); if (!b) return;
+  buzz();
+  const q = $('#q'); q.value = b.dataset.suggQ; state.q = q.value; state.limit = 300;
+  $('#q-sugg').hidden = true; q.blur();
+  renderSpotList();
+});
 
 // ---- 「近くの○○」: 現在地（位置情報が使えなければ起点）から 3km 以内を、アプリ内のデータと OpenPOI で近い順に ----
 const HERE = { p: null, at: 0, asking: false, denied: false };
@@ -1873,6 +1961,14 @@ async function init() {
   DATA.cfg = await getJSON('config.json', null);
   if (!DATA.cfg) { renderLoadMsg(); $('#view').innerHTML = '<p class="empty">config.json を読み込めません。電波の良い場所で開き直してください。</p>'; return; }
   CFG_ORIGIN = DATA.cfg.origin;
+  // ホーム画面のショートカットから開いたとき
+  const lp = Lib.launchParams(location.search);
+  if (lp.tab || lp.q || lp.gacha) {
+    if (lp.tab && lp.tab !== state.tab) { if (lp.tab === 'touring') setOutdoor(true, false); state.tab = lp.tab; }
+    if (lp.q) { state.tab = 'spots'; state.q = lp.q; }
+    if (lp.gacha) { state.tab = 'spots'; state.pendingGacha = true; }
+    history.replaceState(null, '', location.pathname);
+  }
   // 共有されたお気に入りのリンク（#favs=id,id,...）
   const fm = location.hash.match(/^#favs=(.+)$/);
   if (fm) {

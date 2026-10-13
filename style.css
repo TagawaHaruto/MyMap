@@ -241,3 +241,9 @@ details.more summary { cursor: pointer; color: var(--fg-sub); font-size: var(--f
 details.plan-add { margin: 6px 0; }
 details.plan-add summary { cursor: pointer; font-weight: var(--font-weight-700); color: var(--key); }
 .plan-q { width: 100%; box-sizing: border-box; margin: 6px 0; }
+/* 検索の入力補完 */
+#search-slot { position: relative; }
+.sugg { position: absolute; left: 16px; right: 16px; z-index: 1000; background: var(--bg); border: var(--bw) solid var(--line); border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18); max-height: 60vh; overflow-y: auto; }
+.sugg-item { display: block; width: 100%; text-align: left; padding: 10px 12px; border: 0; border-bottom: 1px solid var(--line); background: none; color: var(--fg); font: inherit; cursor: pointer; }
+.sugg-item:last-child { border-bottom: 0; }
