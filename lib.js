@@ -738,6 +738,56 @@ const Lib = (() => {
     }
     return out;
   }
+  // 「近くの飲食店」「近くのラーメン」「温泉 近く」「周辺のカフェ」→ { word: '飲食店' }。近くの検索でなければ null
+  function nearQuery(q) {
+    const t = String(q || '').trim();
+    const m = t.match(/^(?:近くの|近くで|近所の|周辺の|付近の|この辺の|そばの)\s*(.+)$/) || t.match(/^(.+?)\s*(?:近く|周辺|付近|の近く)$/);
+    return m && m[1].trim() ? { word: m[1].trim() } : null;
+  }
+  // 「飲食店」「ご飯」などは飲食すべて
+  const ANY_FOOD = new Set(['飲食店', '飲食', 'ご飯', 'ごはん', '食事', 'グルメ', 'レストラン', 'ランチ', 'ディナー', '食べ物', 'お店']);
+  const isAnyFood = (w) => ANY_FOOD.has(String(w).trim());
+  // 近くの検索: 手元のデータ（items）から center の km 以内で、word に合うもの（飲食店なら飲食すべて）を近い順に
+  function nearSearch(items, word, center, km, limit = 100) {
+    const keys = isAnyFood(word) ? null : searchKeys(word);
+    const out = [];
+    for (const s of items) {
+      if (s.lat == null) continue;
+      const d = haversineKm(center, s);
+      if (d > km) continue;
+      if (keys ? !matchKeys(s, keys) : !(s.genres || []).includes('food')) continue;
+      out.push({ ...s, distKm: d });
+    }
+    const seen = new Set();
+    return out.sort((a, b) => a.distKm - b.distKm).filter((s) => {
+      const k = `${norm(s.name)}@${s.lat.toFixed(3)},${s.lon.toFixed(3)}`;
+      if (seen.has(k)) return false;
+      seen.add(k); return true;
+    }).slice(0, limit);
+  }
+  // OpenPOI に送る言葉（「飲食店」などは「レストラン」に）
+  const netWord = (w) => (isAnyFood(w) ? 'レストラン' : w);
+
+  // ---- Wikipedia を施設名で探す（wikipedia タグのない場所の写真・説明用）。位置が 3km 以内の記事だけを使う ----
+  const wikiSearchUrl = (s, lang = 'ja') => `https://${lang}.wikipedia.org/w/api.php?` + new URLSearchParams({
+    action: 'query', format: 'json', origin: '*', generator: 'search', gsrsearch: s.name, gsrlimit: '5',
+    prop: 'pageimages|coordinates|extracts|info', piprop: 'thumbnail', pithumbsize: '480', exintro: '1', explaintext: '1',
+    exsentences: '3', inprop: 'url', colimit: '5' }).toString();
+  function parseWikiSearch(j, s) {
+    const pages = Object.values((j && j.query && j.query.pages) || {}).sort((a, b) => (a.index || 0) - (b.index || 0));
+    for (const p of pages) {
+      const c = (p.coordinates || [])[0];
+      const near = c && haversineKm(s, { lat: c.lat, lon: c.lon }) <= 3;
+      const sameName = norm(p.title).replace(/\(.*?\)|（.*?）/g, '') === norm(s.name);
+      if (!(near || (sameName && !c)) || !p.extract) continue;
+      // 記事名が施設名を含む（または逆）なら施設そのものの記事。そうでなければ付近の関連する記事として扱う
+      const a = norm(p.title).replace(/\(.*?\)|（.*?）/g, ''), b = norm(s.name);
+      return { text: shortExtract(p.extract), thumb: httpsOnly(p.thumbnail && p.thumbnail.source), page: httpsOnly(p.fullurl), byName: true,
+        title: p.title, same: a.includes(b) || b.includes(a) };
+    }
+    return null;
+  }
+
   // 手元のデータと同じ場所（同じ名前で 300m 以内）は除く
   const notInLocal = (xs, local) => xs.filter((x) => !local.some((s) => norm(s.name) === norm(x.name) && haversineKm(s, x) < 0.3));
 
@@ -857,7 +907,8 @@ const Lib = (() => {
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
-    commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal };
+    commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
+    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

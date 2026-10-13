@@ -156,6 +156,9 @@ function poiSpotList() {
   if (poiVer !== DATA.ver) { poiSpots = DATA.pois.map(poiAsSpot); poiVer = DATA.ver; }
   return poiSpots;
 }
+// グルメなど（件数の多い升目のデータ）を読み込む範囲は最大 15km（通信量を抑える。遠くは検索欄で OpenPOI から探す）
+const CELL_KM_MAX = 15;
+const cellKm = () => Math.min(loadKm(), CELL_KM_MAX);
 // ---- 升目ごとのデータ（飲食・史跡・宿・お土産・遊び） ----
 const CELL_DATA = new Map(); // 'グループ/升目' → 項目
 const cellLoading = new Set();
@@ -195,8 +198,8 @@ function spotCandidates() {
   const groups = selectedGroups();
   let cellsPart = [];
   if (groups.length) {
-    ensureCells(groups, DATA.cfg.origin, loadKm()).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
-    cellsPart = cellItems(groups, DATA.cfg.origin, loadKm());
+    ensureCells(groups, DATA.cfg.origin, cellKm()).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
+    cellsPart = cellItems(groups, DATA.cfg.origin, cellKm());
   }
   let all = DATA.spots.concat(DATA.osm, extra, cellsPart);
   if (!state.showChains) all = all.filter((s) => !s.chain);
@@ -427,16 +430,18 @@ function renderSpots() {
 function renderSpotList() {
   const box = $('#spot-list'); if (!box) return;
   if (state.q.trim()) {
-    // グルメ・史跡・宿・お土産なども、移動時間の範囲（制限なしは 60km）の分を読み込んで探す
-    const groups = ['food', 'heritage', 'local'];
-    ensureCells(groups, DATA.cfg.origin, loadKm()).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
-    const all = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(groups, DATA.cfg.origin, loadKm()).filter((s) => state.showChains || !s.chain));
+    // 「近くの○○」は現在地（取れなければ起点）のまわりを探す
+    const nq = Lib.nearQuery(state.q);
+    if (nq) { renderNearList(box, nq.word); return; }
+    // 手元のデータは観光スポット・厳選と、すでに読み込んだグルメなどだけ（検索のために升目を読み込まない＝通信量を抑える）。
+    // グルメなどの全件は OpenPOI で探す
+    const all = DATA.spots.concat(DATA.osm, poiSpotList(), [...CELL_DATA.values()].flat().filter((s) => state.showChains || !s.chain));
     const hits = Lib.searchSpots(all, state.q, DATA.cfg, state.favs, state.mode, 300);
     // OpenPOI API（ネットの施設検索）でも探す。手元のデータにない場所だけ、下にまとめて出す
     const net = openPoiFor(state.q, DATA.cfg.origin, Math.min(loadKm(), 60));
     const netHits = (net.items ? Lib.notInLocal(net.items, hits) : []).map((x) => withMinutes(x)).sort((a, b) => a.minutes - b.minutes);
     setCount(null);
-    box.innerHTML = `<p class="status">「${esc(state.q.trim())}」の検索結果 ${hits.length}件（近い順・上位300件。グルメなどは${state.maxMin == null ? '起点から60km' : '移動時間の範囲'}以内${cellLoading.size ? '・読み込み中…' : ''}）</p>`
+    box.innerHTML = `<p class="status">「${esc(state.q.trim())}」の検索結果 ${hits.length}件（アプリ内のデータ・近い順）。お店などはネットの検索結果（下）も。「近くの○○」で現在地のまわりを探せます</p>`
       + mapToggle()
       + (!hits.length ? '<p class="empty">見つかりませんでした。ひらがなや別の呼び方でも試してください。</p>'
         : state.spotMap ? '<div id="spot-map"></div>' : hits.slice(0, 100).map(spotCard).join(''))
@@ -460,7 +465,7 @@ function renderSpotList() {
     `<button type="button" class="chip" data-foodcat="${esc(label)}" aria-pressed="${state.foodCat === label}">${esc(label)}</button>`).join('')}</div>` : '';
   const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';
   const noCells = groups.length && !cellIndex ? '・グルメなどのデータはまだ収集されていません' : '';
-  const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length && state.maxMin == null ? '・グルメなどは起点から60km以内' : ''}${loadingCells}${noCells}${isoStatus()}</p>
+  const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length ? `・グルメなどは起点から${Math.round(cellKm())}km以内（遠くは検索欄で探せます）` : ''}${loadingCells}${noCells}${isoStatus()}</p>
     ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}${cats}${list.length ? mapToggle() : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
   const g = state.gacha && list.find((s) => s.id === state.gacha);
@@ -525,8 +530,40 @@ function spin(list) {
   const el = document.querySelector('.gacha'); if (el) el.scrollIntoView({ block: 'start', behavior: 'smooth' });
 }
 
+// ---- 「近くの○○」: 現在地（位置情報が使えなければ起点）から 3km 以内を、アプリ内のデータと OpenPOI で近い順に ----
+const HERE = { p: null, at: 0, asking: false, denied: false };
+function hereOrOrigin() {
+  if (HERE.p && Date.now() - HERE.at < 5 * 60e3) return { ...HERE.p, here: true };
+  if (!HERE.asking && !HERE.denied && navigator.geolocation) {
+    HERE.asking = true;
+    navigator.geolocation.getCurrentPosition((pos) => {
+      HERE.p = { name: '現在地', lat: pos.coords.latitude, lon: pos.coords.longitude }; HERE.at = Date.now(); HERE.asking = false;
+      if (state.tab === 'spots') renderSpotList();
+    }, () => { HERE.asking = false; HERE.denied = true; if (state.tab === 'spots') renderSpotList(); }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 120000 });
+  }
+  return { ...DATA.cfg.origin, here: false };
+}
+const NEAR_KM = 3;
+function renderNearList(box, word) {
+  const c = hereOrOrigin();
+  ensureCells(['food', 'heritage', 'local'], c, NEAR_KM).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
+  const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food', 'heritage', 'local'], c, NEAR_KM).filter((s) => state.showChains || !s.chain));
+  const local = Lib.nearSearch(pool, word, c, NEAR_KM);
+  const net = openPoiFor(Lib.netWord(word), c, NEAR_KM);
+  const netItems = net.items ? Lib.notInLocal(net.items, local).map((x) => ({ ...x, distKm: Lib.haversineKm(c, x) })).filter((x) => x.distKm <= NEAR_KM) : [];
+  const all = local.concat(netItems).sort((a, b) => a.distKm - b.distKm).map((x) => ({ ...withMinutes(x), tier: x.op ? 2 : Lib.tierOf(x, state.favs) }));
+  setCount(null);
+  const where = c.here ? '現在地' : `${esc(DATA.cfg.origin.name)}（現在地を使えないため起点）`;
+  box.innerHTML = `<p class="status">📍${where}から${NEAR_KM}km以内の「${esc(word)}」${all.length}件（近い順）${HERE.asking ? '・現在地を取得中…' : ''}${net.busy ? '・ネットでも探しています…' : ''}</p>`
+    + mapToggle()
+    + (!all.length ? (net.busy || cellLoading.size ? '<p class="hint">探しています…</p>' : '<p class="empty">見つかりませんでした。別の言葉（例：ラーメン、カフェ、コンビニ、温泉）でも試してください。</p>')
+      : state.spotMap ? '<div id="spot-map"></div>' : all.slice(0, 100).map((s) => spotCard({ ...s, note: `${s.distKm < 1 ? Math.round(s.distKm * 1000) + 'm' : s.distKm.toFixed(1) + 'km'}${s.op ? '・🌐' : ''}${s.note ? '・' + s.note : ''}` })).join(''))
+    + (netItems.length ? '<p class="credit">施設データの一部：<a href="https://openpoiapi.com/attribution.html" target="_blank" rel="noopener">OpenPOI API 出典・ライセンス</a></p>' : '');
+  bindMapToggle(all);
+}
+
 // ---- OpenPOI API: 入力が止まってから 0.6 秒後に 1 回だけ問い合わせる（同じ語・範囲は覚えておく） ----
-const OPOI = new Map(); // 'q|lat,lon|km' → { busy, items, error }
+const OPOI = new Map(); // 'q|lat,lon|km' → { busy, items, error }（現在地は 100m 単位で同じとみなす）
 let opoiTimer = 0;
 function openPoiFor(q, p, km, onDone = () => { if (state.tab === 'spots') renderSpotList(); }) {
   const t = String(q).trim();
@@ -660,13 +697,16 @@ async function fetchJSON(url) {
 }
 async function loadInfo(s) {
   const cached = infoCache()[s.id];
-  if (cached && cached.ver === 2) return cached; // 写真の探し方を変えたので、古い保存分は取り直す
+  if (cached && cached.ver === 4) return cached; // 写真の探し方を変えたので、古い保存分は取り直す
   const ref = Lib.wikiRef(s);
   let summary = null, photos = [], failed = false;
   if (ref) {
     try { summary = Lib.parseSummary(await fetchJSON(Lib.summaryUrl(ref))); } catch (err) { if (!/HTTP 404/.test(err.message)) failed = true; }
   }
-  if (!summary || !summary.thumb) {
+  if (!summary && s.lat != null) {
+    try { summary = Lib.parseWikiSearch(await fetchJSON(Lib.wikiSearchUrl(s)), s); } catch { failed = true; }
+  }
+  if (!summary || !summary.thumb || (summary.byName && !summary.same)) {
     // まず施設名で（関係のある写真）、少なければ 1km 以内で撮られた写真も
     try { photos = Lib.parseCommons(await fetchJSON(Lib.commonsSearchUrl(s.name, 4))).map((p) => ({ ...p, byName: true })); } catch { failed = true; }
     if (photos.length < 2) {
@@ -676,14 +716,14 @@ async function loadInfo(s) {
       } catch { failed = true; }
     }
   }
-  const v = { summary, photos, ver: 2 };
+  const v = { summary, photos, ver: 4 };
   if (!failed) saveInfo(s.id, v); // 圏外などで取れなかったときは保存しない（次に開いたときに取り直す）
   return { ...v, failed };
 }
 // 地図の吹き出し: 名前・距離・写真 1 枚・説明・立ち寄りの追加ボタン
 function popupHtml(s, v) {
   const picked = tour.picked.has(s.id);
-  const img = v && v.summary && v.summary.thumb ? { src: v.summary.thumb, credit: '写真: Wikipedia', page: v.summary.page }
+  const img = v && v.summary && v.summary.thumb ? { src: v.summary.thumb, credit: v.summary.byName && !v.summary.same ? `写真: Wikipedia「${v.summary.title}」（付近）` : '写真: Wikipedia', page: v.summary.page }
     : v && v.photos && v.photos.length ? { src: v.photos[0].thumb, credit: `付近の写真${v.photos[0].artist ? '・撮影: ' + v.photos[0].artist : ''}（${v.photos[0].license || 'ライセンスはリンク先'}）`, page: v.photos[0].page } : null;
   const text = v && v.summary ? v.summary.text : s.note || '';
   return `<div class="pop">
@@ -745,7 +785,9 @@ async function fillRelated(el, s) {
 function infoHtml(s, v) {
   const parts = [];
   if (v.summary) {
-    if (v.summary.thumb) parts.push(`<img class="info-img" src="${esc(v.summary.thumb)}" alt="${esc(s.name)}の写真" loading="lazy">`);
+    const rel = v.summary.byName && !v.summary.same; // 施設そのものではなく、付近の関連する記事
+    if (rel) parts.push(`<p class="credit"><strong>関連する記事：${esc(v.summary.title)}</strong>（この場所の付近・この場所そのものの記事ではありません）</p>`);
+    if (v.summary.thumb) parts.push(`<img class="info-img" src="${esc(v.summary.thumb)}" alt="${esc(rel ? v.summary.title : s.name)}の写真" loading="lazy">`);
     parts.push(`<p>${esc(v.summary.text)}</p>`);
     if (v.summary.page) parts.push(`<p class="credit">出典: <a href="${esc(v.summary.page)}" target="_blank" rel="noopener">Wikipedia</a>（文章 CC BY-SA）${v.summary.thumb ? '・写真は記事のページで撮影者とライセンスを確認できます' : ''}</p>`);
   } else if (!isCurated(s)) {
@@ -1388,7 +1430,10 @@ function renderDestResults() {
   const places = (dqState.places || []).map((p) => ({ ...p, sub: '地名・住所' }));
   const roads = Lib.searchSpots(courseSearchItems(), q, DATA.cfg, state.favs, 'car', 6)
     .map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, roadId: x.pass ? null : x.id, sub: `${x.pass ? '⛰ 峠' : '🛣 ドライブコース（周回）'} ${fmtMin(x.minutes)}` }));
-  dqState.items = roads.concat(spots, places);
+  const net = openPoiFor(q, DATA.cfg.origin, 60, () => { if (state.tab === 'touring') renderDestResults(); });
+  const netPlaces = (net.items ? Lib.notInLocal(net.items, DATA.spots.concat(DATA.osm)) : []).slice(0, 6)
+    .map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, sub: `🌐 ${x.note || 'OpenPOI'}` }));
+  dqState.items = roads.concat(spots, netPlaces, places);
   box.innerHTML = `<div class="dq-list">${dqState.items.map((x, i) => `<button type="button" class="card dq-item" data-dq="${i}">
       <strong>${esc(x.name)}</strong><span class="status">${esc(x.sub)}</span></button>`).join('')}</div>
     ${dqState.busy ? '<p class="hint">地名・住所を検索中…</p>' : dqState.error ? `<p class="hint">${esc(dqState.error)}</p>`
@@ -1438,7 +1483,7 @@ function drawMap(dest, stops) {
       const m = L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false }).addTo(map)
         .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, maxHeight: 240, autoPanPaddingTopLeft: [16, 112], autoPanPaddingBottomRight: [16, 40] });
       m.on('popupopen', async () => {
-        if (!infoCache()[s.id] || infoCache()[s.id].ver !== 2) {
+        if (!infoCache()[s.id] || infoCache()[s.id].ver !== 4) {
           const v = await loadInfo(s);
           if (m.isPopupOpen()) { m.setPopupContent(popupHtml(s, v)); refitPopup(m); }
         }
