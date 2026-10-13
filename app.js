@@ -559,17 +559,61 @@ function baseLayers(m, credit = '') {
     return b;
   } });
   new Locate().addTo(m);
+  // 現在地を追いかけ中なら、作り直した地図にも青い点を出す
+  if (LOC.watch != null && LOC.last) { LOC.maps.add(m); m.once('unload', () => LOC.maps.delete(m)); m.whenReady(() => drawHere(m)); }
 }
-let hereMarker = null;
+// 現在地ボタン（Google マップのように）: 押すと青い点と精度の円を出して現在地へ移動し、そのまま位置を追いかける。
+// もう一度押すと現在地へ戻る。青い点を押すと「ここから出発（起点にする）」
+const LOC = { watch: null, last: null, maps: new Set() };
+function hereHtml() {
+  const isHere = String((store.get('origin') || {}).name || '').startsWith('現在地');
+  return `<div class="pop"><strong>📍 現在地</strong>
+    <p class="status">${LOC.last ? `誤差 約${Math.round(LOC.last.acc)}m` : ''}${isHere ? `・今の起点：${esc(DATA.cfg.origin.name)}` : ''}</p>
+    <div class="actions"><button type="button" class="btn primary" data-here-origin>ここから出発（起点にする）</button>
+      ${isHere ? `<button type="button" class="btn" data-here-reset>${esc(CFG_ORIGIN.name)}に戻す</button>` : ''}</div>
+    <p class="hint">移動時間・ルート・日帰りプランが、ここからの計算になります</p></div>`;
+}
+function bindHere(el) {
+  if (!el) return;
+  const o = el.querySelector('[data-here-origin]');
+  if (o) o.onclick = () => {
+    const h = new Date();
+    setOrigin({ name: `現在地（${h.getHours()}:${String(h.getMinutes()).padStart(2, '0')}）`, lat: +LOC.last.lat.toFixed(5), lon: +LOC.last.lon.toFixed(5) });
+  };
+  const r = el.querySelector('[data-here-reset]');
+  if (r) r.onclick = () => setOrigin(null);
+}
+// その地図の青い点を今の位置に（なければ作る）
+function drawHere(m) {
+  const ll = [LOC.last.lat, LOC.last.lon];
+  if (!m._here) {
+    m._here = {
+      acc: L.circle(ll, { radius: LOC.last.acc, weight: 1, color: '#1a73e8', fillColor: '#1a73e8', fillOpacity: 0.12, interactive: false }).addTo(m),
+      dot: L.circleMarker(ll, { radius: 9, weight: 3, color: '#fff', fillColor: '#1a73e8', fillOpacity: 1, bubblingMouseEvents: false })
+        .bindPopup(hereHtml, { maxWidth: 260 }).on('popupopen', (e) => bindHere(e.popup.getElement())).addTo(m),
+    };
+  } else { m._here.acc.setLatLng(ll).setRadius(LOC.last.acc); m._here.dot.setLatLng(ll); }
+}
 function locate(m) {
   if (!navigator.geolocation) { alert('この端末では現在地を使えません。'); return; }
-  navigator.geolocation.getCurrentPosition((p) => {
-    const ll = [p.coords.latitude, p.coords.longitude];
-    if (hereMarker) hereMarker.remove();
-    hereMarker = L.circleMarker(ll, { radius: 8, weight: 3, color: '#fff', fillColor: '#1a73e8', fillOpacity: 1 }).bindTooltip('現在地').addTo(m);
-    m.setView(ll, Math.max(m.getZoom(), 14));
-  }, () => alert('現在地を取得できませんでした（位置情報の許可を確認してください）。'), { enableHighAccuracy: true, timeout: 10000 });
+  LOC.maps.add(m);
+  m.once('unload', () => LOC.maps.delete(m));
+  const goHere = () => { drawHere(m); m.setView([LOC.last.lat, LOC.last.lon], Math.max(m.getZoom(), 15)); m._here.dot.openPopup(); };
+  if (LOC.last && LOC.watch != null) { goHere(); return; } // 追いかけ中なら現在地へ戻るだけ
+  let first = true;
+  LOC.watch = navigator.geolocation.watchPosition((p) => {
+    LOC.last = { lat: p.coords.latitude, lon: p.coords.longitude, acc: p.coords.accuracy || 30 };
+    for (const mm of LOC.maps) drawHere(mm);
+    if (first) { first = false; goHere(); }
+  }, () => {
+    navigator.geolocation.clearWatch(LOC.watch); LOC.watch = null;
+    alert('現在地を取得できませんでした（位置情報の許可を確認してください）。');
+  }, { enableHighAccuracy: true, maximumAge: 5000, timeout: 15000 });
 }
+// 画面を離れたら位置の追いかけを止める（電池の節約。戻ったら ◎ でまた始める）
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden && LOC.watch != null) { navigator.geolocation.clearWatch(LOC.watch); LOC.watch = null; }
+});
 
 // おまかせ: 前回と違う 1 か所を選ぶ（★厳選・公式サイトのある所を少し出やすく）
 function spin(list) {
