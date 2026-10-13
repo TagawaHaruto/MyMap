@@ -255,3 +255,10 @@ details.plan-add summary { cursor: pointer; font-weight: var(--font-weight-700);
 .qr svg { width: 100%; height: 100%; display: block; }
 .install-steps dt { font-weight: var(--font-weight-700); margin-top: 6px; }
 .install-steps dd { margin: 0 0 4px 0; font-size: var(--font-size-14); }
+/* ドライブコースの凡例 */
+.swatch { display: inline-block; width: 18px; height: 6px; border-radius: 3px; background: var(--c); margin-right: 6px; vertical-align: middle; }
+.swatch.dash { background: repeating-linear-gradient(90deg, var(--c) 0 5px, transparent 5px 9px); }
+.swatch.dot { width: 10px; height: 10px; border-radius: 50%; }
+.course-legend .chip[aria-pressed="false"] { opacity: 0.55; }
+.course-legend .chip[aria-pressed="false"]::before { content: ""; margin: 0; }
+:root:not([data-outdoor]) .course-legend .chip { min-height: 34px; padding: 0 9px; font-size: 0.66rem; }

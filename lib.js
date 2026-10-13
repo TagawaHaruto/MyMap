@@ -814,6 +814,24 @@ const Lib = (() => {
     }
     return out;
   }
+  // ドライブコースの種類（地図の色分け用）
+  const COURSE_TYPES = {
+    pick: ['★おすすめ（厳選）', '#d6336c'], skyline: ['スカイライン・観光道路', '#1c7ed6'], toge: ['峠道', '#2f9e44'],
+    water: ['海沿い・湖畔', '#0c8599'], kogen: ['高原', '#74b816'], toll: ['有料道路', '#c92a2a'], rindo: ['林道', '#8d6e63'],
+    scenic: ['そのほかの景色の道', '#7048e8'], pass: ['峠（地点）', '#f08c00'] };
+  function courseType(r) {
+    if (r.pass) return 'pass';
+    if (!String(r.id).startsWith('osm:')) return 'pick';
+    const n = `${r.name} ${r.note || ''}`;
+    if (r.toll) return 'toll';
+    if (/林道/.test(n)) return 'rindo';
+    if (/峠/.test(n)) return 'toge';
+    if (/スカイライン|パークウェイ|ターンパイク|観光道路|ライン/.test(n)) return 'skyline';
+    if (/海|湖|シーサイド|浜/.test(n)) return 'water';
+    if (/高原/.test(n)) return 'kogen';
+    return 'scenic';
+  }
+
   // 入れ方の案内に使う端末の種類
   function platformOf(ua, standalone) {
     if (standalone) return 'installed';
@@ -951,7 +969,7 @@ const Lib = (() => {
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
-    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf };
+    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

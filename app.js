@@ -138,7 +138,7 @@ function renderFilters() {
   const parts = [MODES[state.mode], state.maxMin == null ? '時間制限なし' : `${time}以内`,
     state.prefs.size ? [...state.prefs].join('/') : '全都県',
     state.dirs.size ? [...state.dirs].map((d) => DIR_NAMES[d]).join('/') : '全方面'];
-  if (state.tab !== 'events') parts.push(state.genres.size ? [...state.genres].map((g) => icon(GENRES[g])).join('') : '全種類');
+  if (state.tab !== 'events') parts.push(state.genres.size ? [...state.genres].map((g) => icon(GENRES[g])).join('') : '観光・遊びなど');
   $('#f-sum').textContent = parts.join('・');
 }
 const setCount = (n) => { $('#f-count').textContent = n == null ? '' : `（${n.toLocaleString()}件）`; };
@@ -159,6 +159,25 @@ function poiSpotList() {
 // グルメなど（件数の多い升目のデータ）を読み込む範囲は最大 15km（通信量を抑える。遠くは検索欄で OpenPOI から探す）
 const CELL_KM_MAX = 15;
 const cellKm = () => Math.min(loadKm(), CELL_KM_MAX);
+// 「種類」を選んでいないとき（観光・遊びなど）の一覧には、件数の多いグルメなどは混ぜない。
+// その代わりに、範囲内にあるグルメなどの件数を出して、押すと加えられるようにする
+const HIDDEN_GROUPS = [['food', '🍴グルメ'], ['heritage', '🏯史跡・🏨宿'], ['outdoor', '🛍お土産・⚽遊び']];
+function hiddenGroupsHtml() {
+  if (!cellIndex) return '';
+  const cells = Lib.cellsInRadius(DATA.cfg.origin, cellKm());
+  const count = (g) => cells.reduce((a, c) => a + ((cellIndex[g] && cellIndex[g][c]) || 0), 0);
+  const items = [['food', count('food')], ['heritage', count('heritage')], ['outdoor', count('local')]].filter(([, n]) => n);
+  if (!items.length) return '';
+  return `<p class="hint">この一覧は観光・遊び・体験など（グルメなどは含みません）。範囲内にはほかに ${items.map(([g, n]) =>
+    `<button type="button" class="chip" data-add-genre="${g}">${HIDDEN_GROUPS.find((x) => x[0] === g)[1]} 約${n.toLocaleString()}件</button>`).join(' ')} があります（押すとその種類の一覧を表示）。</p>`;
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-add-genre]'); if (!b) return;
+  buzz();
+  const g = b.dataset.addGenre;
+  (g === 'outdoor' ? ['souvenir', 'outdoor'] : g === 'heritage' ? ['heritage', 'lodging'] : [g]).forEach((x) => state.genres.add(x));
+  saveFilters(); state.limit = 300; renderAll();
+});
 // ---- 升目ごとのデータ（飲食・史跡・宿・お土産・遊び） ----
 const CELL_DATA = new Map(); // 'グループ/升目' → 項目
 const cellLoading = new Set();
@@ -516,7 +535,8 @@ function renderSpotList() {
     `<button type="button" class="chip" data-foodcat="${esc(label)}" aria-pressed="${state.foodCat === label}">${esc(label)}</button>`).join('')}</div>` : '';
   const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';
   const noCells = groups.length && !cellIndex ? '・グルメなどのデータはまだ収集されていません' : '';
-  const head = `<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length ? `・グルメなどは起点から${Math.round(cellKm())}km以内（遠くは検索欄で探せます）` : ''}${loadingCells}${noCells}${isoStatus()}</p>
+  const hiddenHint = state.genres.size || state.q ? '' : hiddenGroupsHtml();
+  const head = `${hiddenHint}<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length ? `・グルメなどは起点から${Math.round(cellKm())}km以内（遠くは検索欄で探せます）` : ''}${loadingCells}${noCells}${isoStatus()}</p>
     ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}${cats}${list.length ? mapToggle() : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
   const g = state.gacha && list.find((s) => s.id === state.gacha);
@@ -1072,6 +1092,16 @@ function eventCard(e, from) {
       <a class="btn" href="https://x.com/search?q=${encodeURIComponent(e.title)}" target="_blank" rel="noopener">Xで検索</a>
     </div></article>`;
 }
+function dataTotalsHtml() {
+  const sum = (g) => (cellIndex && cellIndex[g] ? Object.values(cellIndex[g]).reduce((a, b) => a + b, 0) : 0);
+  const rows = [['厳選スポット（工場見学・体験・季節の見頃など）', DATA.spots.length], ['観光スポット（博物館・寺社・温泉・体験など）', DATA.osm.length],
+    ['立ち寄り候補（道の駅・温泉・展望台・滝など）', DATA.pois.length], ['🍴グルメ', sum('food')], ['🏯史跡・🏨宿', sum('heritage')], ['🛍お土産・⚽遊び・キャンプ', sum('local')],
+    ['ドライブコース（厳選＋自動収集）', DATA.roads.length + DATA.courses.length], ['峠', DATA.passes.length]];
+  const total = rows.slice(0, 6).reduce((a, [, n]) => a + n, 0);
+  return `<p class="status">スポット 合計 <strong>約${total.toLocaleString()}件</strong>（起点から約${DATA.cfg.poiRadiusKm}km圏）＋ネットの施設検索 OpenPOI（全国 約337万件）</p>
+    <ul class="rel">${rows.map(([k, n]) => `<li>${k}：${n.toLocaleString()}</li>`).join('')}</ul>
+    <p class="hint">一覧の件数（絞り込みの横の数字）は、移動手段・時間・種類などの条件に合う件数です。グルメなどは「種類」で選んだときだけ、起点から${CELL_KM_MAX}km以内を表示します。</p>`;
+}
 function statusHtml() {
   const st = DATA.status;
   if (!st || !st.updated_at) return `<p class="status">${FAILED.has('data/status.json') ? '収集状況を読み込めませんでした。' : 'イベントはまだ収集されていません。'}</p>`;
@@ -1368,7 +1398,7 @@ const curvOf = (c) => (c.curvStars = c.curvStars || Lib.curvStars(Lib.curviness(
 function renderTouring() {
   const dest = currentDest();
   const key = JSON.stringify([tour.destId, tour.custom, tour.roadId, tour.route && tour.route.at, tour.sel, tour.radius, tour.error, tour.busy, DATA.ver,
-    !!DATA.touring.length, DATA.roads.length, DATA.courses.length, tour.showCourses, navigator.onLine, tour.restored, tour.opts]);
+    !!DATA.touring.length, DATA.roads.length, DATA.courses.length, tour.showCourses, store.get('courseTypes'), navigator.onLine, tour.restored, tour.opts]);
   // 変化がなければ作り直さない（地図のズームと位置、スクロール位置を保つ）
   if (key === tour.key && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
@@ -1408,7 +1438,7 @@ function renderTouring() {
     <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
     <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label></details>
     <label class="check"><input type="checkbox" id="show-courses" ${tour.showCourses ? 'checked' : ''}>ドライブコース（${(DATA.roads.length + DATA.courses.length).toLocaleString()}本）と峠（${DATA.passes.length.toLocaleString()}か所）を地図に表示</label>
-    ${tour.showCourses ? curvyHtml() : ''}
+    ${tour.showCourses ? courseLegendHtml() + curvyHtml() : ''}
     <details class="tools"><summary>🧭方面別の雨・🏍走行記録・閉鎖中の道</summary>
       <div class="actions"><button type="button" class="btn" id="dir-rain">🧭方面別の雨（出発日の9〜17時）</button></div><div id="dir-out"></div>
       <h4>🏍走行記録（GPS）</h4><p class="status" id="trk-msg">${trackText()}</p>
@@ -1496,6 +1526,7 @@ function renderTouring() {
   $('#trk-clear').onclick = () => { if (confirm('走行記録を消しますか？')) { track.pts = []; saveTrack(); tour.key = ''; renderTouring(); } };
   const sm = $('#rt-save-map'); if (sm) sm.onclick = () => { buzz(); saveRouteTiles(); };
   bindCourseBtns($('#curvy'));
+  bindCourseLegend();
   $('#tour-opts').addEventListener('toggle', (e) => store.set('tourOptsOpen', e.target.open));
   $('#show-courses').onchange = (e) => { tour.showCourses = e.target.checked; store.set('showCourses', tour.showCourses); renderTouring(); };
   $('#route-go').onclick = async () => {
@@ -1844,7 +1875,9 @@ async function saveRouteTiles() {
 // ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
 function courseHtml(r) {
   const closedNow = (r.closedMonths || []).includes(thisMonth());
+  const [tLabel, tColor] = Lib.COURSE_TYPES[Lib.courseType(r)];
   return `<div class="pop"><strong>${r.pass ? '⛰' : '🛣'} ${esc(r.name)}</strong>
+    <span class="status"><span class="swatch" style="--c:${tColor}"></span>${esc(tLabel)}${r.curv ? `・カーブ${'★'.repeat(Lib.curvStars(r.curv))}` : ''}${r.km ? `・約${Math.round(r.km)}km` : ''}</span>
     <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}</p>
     <div class="actions">${r.pass ? `<button type="button" class="btn primary" data-pass-go="${esc(r.id)}">ここを目的地に</button>`
       : `<button type="button" class="btn primary" data-course-go="${esc(r.id)}">このコースを走る（周回）</button>`}</div></div>`;
@@ -1860,12 +1893,39 @@ function bindCourseBtns(el) {
     if (p) { buzz(); setCustomDest(p.points[0][0], p.points[0][1], p.name); }
   }; });
 }
+// 種類ごとに色を分け、見せる種類を選べるように。厳選は太く、線は押しやすいように少し太め（押せる幅はさらに広い）
+const courseTypesOn = () => new Set(store.get('courseTypes') || Object.keys(Lib.COURSE_TYPES));
 function drawCourses() {
+  const on = courseTypesOn();
   const add = (layer, r) => layer.bindPopup(() => courseHtml(r), { maxWidth: 260 })
     .on('popupopen', (e) => bindCourseBtns(e.popup.getElement())).addTo(map);
-  for (const r of DATA.courses) add(L.polyline(r.points, { color: '#e8590c', weight: 4, opacity: 0.6 }), r);
-  for (const r of DATA.roads) add(L.polyline(r.points, { color: '#e8590c', weight: 7, opacity: 0.85 }), r);
-  for (const p of DATA.passes) add(L.circleMarker(p.points[0], { radius: 5, weight: 2, color: '#fff', fillColor: '#7048e8', fillOpacity: 0.9 }), p);
+  for (const r of DATA.courses.concat(DATA.roads)) {
+    const t = Lib.courseType(r); if (!on.has(t)) continue;
+    const color = Lib.COURSE_TYPES[t][1], pick = t === 'pick';
+    const line = L.polyline(r.points, { color, weight: pick ? 7 : 5, opacity: pick ? 0.95 : 0.8, dashArray: t === 'rindo' ? '6 6' : null });
+    line.on('mouseover', () => line.setStyle({ weight: pick ? 10 : 8 })).on('mouseout', () => line.setStyle({ weight: pick ? 7 : 5 }));
+    add(line, r);
+  }
+  if (on.has('pass')) for (const p of DATA.passes) add(L.circleMarker(p.points[0], { radius: 6, weight: 2, color: '#fff', fillColor: Lib.COURSE_TYPES.pass[1], fillOpacity: 0.95 }), p);
+}
+// 凡例（押すとその種類を出す・隠す）。本数つき
+function courseLegendHtml() {
+  const on = courseTypesOn(), n = {};
+  for (const r of DATA.courses.concat(DATA.roads, DATA.passes)) { const t = Lib.courseType(r); n[t] = (n[t] || 0) + 1; }
+  return `<div class="chips wrap course-legend" aria-label="ドライブコースの種類">${Object.entries(Lib.COURSE_TYPES).filter(([t]) => n[t]).map(([t, [label, color]]) =>
+    `<button type="button" class="chip" data-ctype="${t}" aria-pressed="${on.has(t)}"><span class="swatch${t === 'rindo' ? ' dash' : ''}${t === 'pass' ? ' dot' : ''}" style="--c:${color}"></span>${esc(label)}（${n[t].toLocaleString()}）</button>`).join('')}
+    <button type="button" class="chip" data-ctype="__pick">★おすすめだけ</button><button type="button" class="chip" data-ctype="__all">すべて</button></div>`;
+}
+function bindCourseLegend() {
+  document.querySelectorAll('[data-ctype]').forEach((b) => { b.onclick = () => {
+    buzz();
+    const t = b.dataset.ctype;
+    let on = courseTypesOn();
+    if (t === '__all') on = new Set(Object.keys(Lib.COURSE_TYPES));
+    else if (t === '__pick') on = new Set(['pick']);
+    else if (on.has(t)) on.delete(t); else on.add(t);
+    store.set('courseTypes', [...on]); tour.key = ''; renderTouring();
+  }; });
 }
 
 // ---- 画面を消さない（ツーリングタブを開いている間だけ） ----
@@ -1921,6 +1981,7 @@ function renderSettings() {
       <button type="button" class="btn" id="token-del">削除</button>
       <button type="button" class="btn" id="update-now">今すぐ更新</button>
     </div>
+    <h2>収録しているデータ</h2>${dataTotalsHtml()}
     <h2>収集状況</h2>${statusHtml()}`;
   const el = $('#fav-genres');
   el.innerHTML = Object.entries(GENRES).map(([g, l]) => `<button type="button" class="chip" data-g="${g}" aria-pressed="${state.favGenres.has(g)}">${l}</button>`).join('');
