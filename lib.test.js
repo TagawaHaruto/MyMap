@@ -510,4 +510,17 @@ assert.strictEqual(Lib.parseWikiSearch(ws, { name: '深大寺そば 玉乃屋', 
 assert.strictEqual(Lib.parseWikiSearch(ws, { name: '神代植物公園', lat: 35.67, lon: 139.548 }).same, false); // 付近の関連する記事
 assert.strictEqual(Lib.parseWikiSearch({ query: { pages: { 1: ws.query.pages[1] } } }, { name: '深大寺', lat: 35.67, lon: 139.548 }), null);
 
+// ---- 入力補完・起動時の指定 ----
+assert.deepStrictEqual(Lib.parseSuggest({ vocabulary: [{ type: 'category', label: 'ラーメン', query: 'ラーメン' }], results: [{ name: '麺屋A' }, { x: 1 }] }),
+  { words: ['ラーメン'], places: ['麺屋A'] });
+assert.deepStrictEqual(Lib.parseSuggest(null), { words: [], places: [] });
+assert.ok(new URL(Lib.openPoiSuggestUrl('らーめ', { lat: 35.65, lon: 139.54 })).searchParams.get('center') === '139.5400,35.6500');
+assert.deepStrictEqual(Lib.localSuggest('近くのカ', []), ['近くのカフェ']);
+assert.ok(Lib.localSuggest('らーめ', []).includes('ラーメン'));
+assert.deepStrictEqual(Lib.localSuggest('じんだ', [{ name: '深大寺', kana: 'じんだいじ' }]), ['深大寺']);
+assert.deepStrictEqual(Lib.localSuggest('', []), []);
+assert.deepStrictEqual(Lib.launchParams('?tab=touring'), { tab: 'touring', q: '', gacha: false });
+assert.deepStrictEqual(Lib.launchParams('?q=%E8%BF%91%E3%81%8F%E3%81%AE%E9%A3%B2%E9%A3%9F%E5%BA%97&gacha=1'), { tab: null, q: '近くの飲食店', gacha: true });
+assert.strictEqual(Lib.launchParams('?tab=evil').tab, null);
+
 console.log('lib: ALL PASS');

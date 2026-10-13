@@ -788,6 +788,39 @@ const Lib = (() => {
     return null;
   }
 
+  // 入力補完: OpenPOI の /v1/suggest（言葉の候補 vocabulary と施設 results）
+  const openPoiSuggestUrl = (q, p) => 'https://api.openpoiapi.com/v1/suggest?' + new URLSearchParams({ q: String(q).trim(), limit: '8',
+    ...(p ? { center: `${p.lon.toFixed(4)},${p.lat.toFixed(4)}`, radius: '10000' } : {}) });
+  function parseSuggest(j) {
+    const words = (j && Array.isArray(j.vocabulary) ? j.vocabulary : []).map((v) => v && (v.query || v.label)).filter((x) => typeof x === 'string' && x);
+    const places = (j && Array.isArray(j.results) ? j.results : []).map((r) => r && r.name).filter((x) => typeof x === 'string' && x);
+    return { words, places };
+  }
+  // アプリの中だけで出せる候補: 料理のジャンル・「近くの○○」・名前の前方一致
+  const NEAR_WORDS = ['飲食店', 'カフェ', 'ラーメン', 'コンビニ', '温泉', '公園', '駐車場', 'ガソリンスタンド'];
+  function localSuggest(q, items, limit = 8) {
+    const t = String(q || '').trim(), k = norm(t);
+    if (!k) return [];
+    const out = [];
+    const add = (x) => { if (x && !out.includes(x) && out.length < limit) out.push(x); };
+    if ('近くの'.startsWith(t) || t.startsWith('近く')) {
+      const rest = t.replace(/^近くの?/, '');
+      NEAR_WORDS.filter((w) => !rest || norm(w).startsWith(norm(rest))).forEach((w) => add(`近くの${w}`));
+    }
+    for (const [label, words] of FOOD_CATS) if ([label, ...words].some((w) => norm(w).startsWith(k))) add(label);
+    for (const s of items) {
+      if (out.length >= limit) break;
+      if (norm(s.name).startsWith(k) || (s.kana && norm(s.kana).startsWith(k))) add(s.name);
+    }
+    return out;
+  }
+  // ホーム画面のショートカットなどで開いたときの指定（?tab=touring / ?q=近くの飲食店 / ?gacha=1）
+  function launchParams(search) {
+    const p = new URLSearchParams(search || '');
+    const tab = ['spots', 'events', 'touring', 'settings'].includes(p.get('tab')) ? p.get('tab') : null;
+    return { tab, q: (p.get('q') || '').slice(0, 50), gacha: p.get('gacha') === '1' };
+  }
+
   // 手元のデータと同じ場所（同じ名前で 300m 以内）は除く
   const notInLocal = (xs, local) => xs.filter((x) => !local.some((s) => norm(s.name) === norm(x.name) && haversineKm(s, x) < 0.3));
 
@@ -908,7 +941,7 @@ const Lib = (() => {
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
-    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch };
+    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;
