@@ -20,7 +20,7 @@ const Lib = (() => {
   // 一覧の段: 0=厳選・⭐、1=公式サイトか Wikipedia がある、2=その他（自動収集の名前だけの場所など）
   function tierOf(s, favs) {
     if (favs && favs.has(s.id)) return 0;
-    if (!s.poi && !String(s.id).startsWith('osm:')) return 0;
+    if (!s.poi && !s.op && !String(s.id).startsWith('osm:')) return 0;
     return s.url || s.wp ? 1 : 2;
   }
   const byTier = (a, b) => a.tier - b.tier || a.minutes - b.minutes;
@@ -707,6 +707,40 @@ const Lib = (() => {
     return DIRS.map((d) => ({ dir: d, count: n[d], r: rnd() })).sort((a, b) => a.count - b.count || a.r - b.r);
   }
 
+  // ---- OpenPOI API（日本全国 約337万件・キー不要。Overture Maps と食品営業許可のオープンデータ） ----
+  // 範囲は半径（最大 10km）か矩形。km が 10 を超えるときは矩形で
+  function openPoiUrl(q, p, km, limit = 50) {
+    const params = new URLSearchParams({ q: String(q).trim(), limit: String(Math.min(200, Math.max(1, limit))) });
+    if (km <= 10) {
+      params.set('center', `${p.lon.toFixed(5)},${p.lat.toFixed(5)}`);
+      params.set('radius', String(Math.max(1, Math.round(km * 1000))));
+    } else {
+      const dlat = km / 111, dlon = km / (111 * Math.cos(p.lat * RAD));
+      params.set('bbox', [p.lon - dlon, p.lat - dlat, p.lon + dlon, p.lat + dlat].map((v) => v.toFixed(4)).join(','));
+    }
+    return `https://api.openpoiapi.com/v1/search?${params}`;
+  }
+  const FOOD_RE = /restaurant|cafe|coffee|food|bakery|ramen|noodle|sushi|izakaya|bar|diner|pizza|burger|curry|steak|yakiniku|soba|udon|bistro|dessert|食品|飲食|営業許可/i;
+  const OP_GENRE = [[/hot_spring|onsen|spa|bath|sauna|温泉|銭湯/i, 'onsen'], [/museum|gallery|美術|博物/i, 'museum'], [/park|garden|公園|庭園/i, 'garden'],
+    [/temple|shrine|寺|神社/i, 'temple'], [/shopping|mall|store|shop|market|商店|販売/i, 'shopping'], [/amusement|zoo|aquarium|theme|playground/i, 'play'],
+    [/hotel|inn|lodging|旅館|宿/i, 'lodging'], [/viewpoint|scenic|展望/i, 'scenic']];
+  function parseOpenPoi(j) {
+    const out = [];
+    for (const r of (j && Array.isArray(j.results) ? j.results : [])) {
+      if (!r || typeof r.name !== 'string' || !r.name || typeof r.lat !== 'number' || typeof r.lng !== 'number') continue;
+      const cat = typeof r.category === 'string' && r.category !== 'unknown' ? r.category : '';
+      const src = typeof r.source === 'string' ? r.source : '';
+      const g = FOOD_RE.test(`${cat} ${src}`) ? 'food' : (OP_GENRE.find(([re]) => re.test(cat)) || [0, 'sightseeing'])[1];
+      out.push({ id: `op:${r.name}@${r.lat.toFixed(5)},${r.lng.toFixed(5)}`, name: r.name, kana: r.name_kana || undefined,
+        lat: r.lat, lon: r.lng, genres: [g], indoor: g === 'food' || g === 'museum' || g === 'shopping', url: '',
+        note: [cat.replace(/_/g, ' '), r.address].filter(Boolean).join('・'), op: true,
+        attributions: Array.isArray(r.attributions) ? r.attributions : [] });
+    }
+    return out;
+  }
+  // 手元のデータと同じ場所（同じ名前で 300m 以内）は除く
+  const notInLocal = (xs, local) => xs.filter((x) => !local.some((s) => norm(s.name) === norm(x.name) && haversineKm(s, x) < 0.3));
+
   const gsiSearchUrl = (q) => `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(q)}`;
   function parseGsi(j, limit = 8) {
     const out = [];
@@ -823,7 +857,7 @@ const Lib = (() => {
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
-    commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs };
+    commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

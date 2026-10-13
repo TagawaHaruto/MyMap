@@ -467,4 +467,22 @@ assert.strictEqual(early.steps[1].time, '11:30');
 const ord = Lib.orderStops([{ place: { name: '遠', lat: 35.9, lon: 139.0 } }, { place: { name: '近', lat: 35.66, lon: 139.55 } }], pcfg.origin);
 assert.deepStrictEqual(ord.map((x) => x.place.name), ['近', '遠']);
 
+// ---- OpenPOI API ----
+const ou = new URL(Lib.openPoiUrl('ラーメン', { lat: 35.6518, lon: 139.544 }, 3, 30));
+assert.deepStrictEqual([ou.searchParams.get('q'), ou.searchParams.get('center'), ou.searchParams.get('radius'), ou.searchParams.get('limit')], ['ラーメン', '139.54400,35.65180', '3000', '30']);
+const ob = new URL(Lib.openPoiUrl('温泉', { lat: 35.65, lon: 139.54 }, 60, 500));
+assert.ok(ob.searchParams.get('bbox') && !ob.searchParams.get('center') && ob.searchParams.get('limit') === '200');
+const oj = { results: [
+  { name: '麺屋テスト', name_kana: 'めんやてすと', address: '東京都調布市布田1', category: 'ramen_restaurant', source: 'Overture Maps', lat: 35.652, lng: 139.545, licenses: ['CDLA-Permissive-2.0'], attributions: ['© OpenStreetMap'] },
+  { name: '食堂B', category: 'unknown', source: '食品営業許可（調布市）', lat: 35.66, lng: 139.55 },
+  { name: '湯の郷', category: 'hot_spring', source: 'Overture Maps', lat: 35.7, lng: 139.4 },
+  { name: '座標なし', lat: null, lng: null }] };
+const ops = Lib.parseOpenPoi(oj);
+assert.deepStrictEqual(ops.map((x) => [x.name, x.genres[0]]), [['麺屋テスト', 'food'], ['食堂B', 'food'], ['湯の郷', 'onsen']]);
+assert.strictEqual(ops[0].note, 'ramen restaurant・東京都調布市布田1');
+assert.strictEqual(ops[0].lon, 139.545);
+assert.deepStrictEqual(Lib.parseOpenPoi({}), []);
+assert.strictEqual(Lib.tierOf(ops[0], new Set()), 2); // ネットの施設は厳選扱いにしない
+assert.deepStrictEqual(Lib.notInLocal(ops, [{ name: '麺屋テスト', lat: 35.6521, lon: 139.5451 }]).map((x) => x.name), ['食堂B', '湯の郷']);
+
 console.log('lib: ALL PASS');

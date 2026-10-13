@@ -211,7 +211,7 @@ function spotCandidates() {
   if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
 }
-const isCurated = (s) => !s.poi && !String(s.id).startsWith('osm:');
+const isCurated = (s) => !s.poi && !s.op && !String(s.id).startsWith('osm:');
 const parkText = (s) => (s.parking ? [s.parking.car ? '🅿車' : '', s.parking.bike ? '🅿二輪' : ''].filter(Boolean).join(' ') : '');
 function spotCard(s) {
   const sns = Lib.snsLinks(s);
@@ -373,10 +373,13 @@ async function renderPlan(el, s, reset = false) {
   const q = el.querySelector('.plan-q'), res = el.querySelector('.plan-results');
   const search = () => {
     p.q = q.value;
-    const hits = q.value.trim() ? Lib.searchSpots(pool, q.value, DATA.cfg, state.favs, state.mode, 300)
-      .filter((x) => !inPlan.has(x.id)).map((x) => ({ x, d: Lib.haversineKm(s, x) })).sort((a, b) => a.d - b.d).slice(0, 6) : [];
+    const local = q.value.trim() ? Lib.searchSpots(pool, q.value, DATA.cfg, state.favs, state.mode, 300) : [];
+    const net = q.value.trim() ? openPoiFor(q.value, s, 10, () => { if (el.isConnected && el.querySelector('.plan-q') === q) search(); }) : {};
+    const hits = local.concat(net.items ? Lib.notInLocal(net.items, local) : [])
+      .filter((x) => !inPlan.has(x.id)).map((x) => ({ x, d: Lib.haversineKm(s, x) })).sort((a, b) => a.d - b.d).slice(0, 8);
     res.innerHTML = hits.map(({ x, d }, i) => `<button type="button" class="card dq-item" data-hit="${i}"><strong>＋ ${esc(x.name)}</strong>
-      <span class="status">${(x.genres || []).map((g) => icon(GENRES[g] || '・')).join('')} 目的地から${d < 1 ? Math.round(d * 1000) + 'm' : d.toFixed(1) + 'km'}${x.note ? '・' + esc(x.note) : ''}</span></button>`).join('')
+      <span class="status">${(x.genres || []).map((g) => icon(GENRES[g] || '・')).join('')} 目的地から${d < 1 ? Math.round(d * 1000) + 'm' : d.toFixed(1) + 'km'}${x.op ? '・🌐OpenPOI' : ''}${x.note ? '・' + esc(x.note) : ''}</span></button>`).join('')
+      + (net.busy ? '<p class="hint">🌐 ネットでも探しています（OpenPOI）…</p>' : '')
       || (q.value.trim() ? '<p class="hint">見つかりませんでした（目的地の近く2km以内のグルメなどと、観光スポットから探しています）。</p>' : '');
     res.querySelectorAll('[data-hit]').forEach((b) => { b.onclick = () => add(hits[+b.dataset.hit].x); });
   };
@@ -429,12 +432,16 @@ function renderSpotList() {
     ensureCells(groups, DATA.cfg.origin, loadKm()).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
     const all = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(groups, DATA.cfg.origin, loadKm()).filter((s) => state.showChains || !s.chain));
     const hits = Lib.searchSpots(all, state.q, DATA.cfg, state.favs, state.mode, 300);
+    // OpenPOI API（ネットの施設検索）でも探す。手元のデータにない場所だけ、下にまとめて出す
+    const net = openPoiFor(state.q, DATA.cfg.origin, Math.min(loadKm(), 60));
+    const netHits = (net.items ? Lib.notInLocal(net.items, hits) : []).map((x) => withMinutes(x)).sort((a, b) => a.minutes - b.minutes);
     setCount(null);
     box.innerHTML = `<p class="status">「${esc(state.q.trim())}」の検索結果 ${hits.length}件（近い順・上位300件。グルメなどは${state.maxMin == null ? '起点から60km' : '移動時間の範囲'}以内${cellLoading.size ? '・読み込み中…' : ''}）</p>`
       + mapToggle()
       + (!hits.length ? '<p class="empty">見つかりませんでした。ひらがなや別の呼び方でも試してください。</p>'
-        : state.spotMap ? '<div id="spot-map"></div>' : hits.slice(0, 100).map(spotCard).join(''));
-    bindMapToggle(hits);
+        : state.spotMap ? '<div id="spot-map"></div>' : hits.slice(0, 100).map(spotCard).join(''))
+      + netSection(net, netHits);
+    bindMapToggle(state.spotMap ? hits.concat(netHits) : hits);
     return;
   }
   const list = Lib.filterSpots(spotCandidates(), filterState(), DATA.cfg);
@@ -516,6 +523,38 @@ function spin(list) {
   state.gacha = pool[i].id;
   renderSpotList();
   const el = document.querySelector('.gacha'); if (el) el.scrollIntoView({ block: 'start', behavior: 'smooth' });
+}
+
+// ---- OpenPOI API: 入力が止まってから 0.6 秒後に 1 回だけ問い合わせる（同じ語・範囲は覚えておく） ----
+const OPOI = new Map(); // 'q|lat,lon|km' → { busy, items, error }
+let opoiTimer = 0;
+function openPoiFor(q, p, km, onDone = () => { if (state.tab === 'spots') renderSpotList(); }) {
+  const t = String(q).trim();
+  if (t.length < 2 || navigator.onLine === false) return {};
+  const key = `${t}|${p.lat.toFixed(3)},${p.lon.toFixed(3)}|${Math.round(km)}`;
+  if (OPOI.has(key)) return OPOI.get(key);
+  const v = { busy: true };
+  clearTimeout(opoiTimer);
+  opoiTimer = setTimeout(async () => {
+    OPOI.set(key, v);
+    try {
+      const r = await fetch(Lib.openPoiUrl(t, p, km, 100), { signal: timeoutSignal(10000) });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      v.items = Lib.parseOpenPoi(await r.json());
+    } catch { v.error = true; }
+    v.busy = false;
+    onDone();
+  }, 600);
+  return v;
+}
+const withMinutes = (x) => ({ ...x, minutes: Lib.travelMinutes(Lib.haversineKm(DATA.cfg.origin, x), state.mode, DATA.cfg), tier: 2 });
+function netSection(net, xs) {
+  if (!net || (!net.busy && !net.items && !net.error)) return '';
+  const credit = '<p class="credit">施設データ：<a href="https://openpoiapi.com/attribution.html" target="_blank" rel="noopener">OpenPOI API（Overture Maps・食品営業許可のオープンデータ）出典・ライセンス</a></p>';
+  if (net.busy) return '<h4 class="newdir">🌐 ネットでも探しています（OpenPOI）…</h4>';
+  if (net.error) return '<p class="hint">ネットの施設検索（OpenPOI）に接続できませんでした。</p>';
+  return `<h4 class="newdir">🌐 ネットで見つかった施設（OpenPOI・${xs.length}件・近い順）</h4>`
+    + (xs.length ? xs.slice(0, 50).map(spotCard).join('') : '<p class="hint">手元のデータにない施設は見つかりませんでした。</p>') + credit;
 }
 
 // ---- 今から行ける範囲（実際の道のりで、移動時間内に着ける範囲。Valhalla の到達圏） ----

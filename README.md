@@ -5,6 +5,7 @@
 ## できること
 - **スポット**（観光スポット・体験・グルメ・史跡・宿・お土産・遊び。範囲は `config.json` の `poiRadiusKm`）：移動手段（電車・車・バイク・自転車）と時間、都県、方面（北・西など）、ジャンルで絞り込み。★厳選と⭐お気に入りを先頭に表示
 - **名前で検索**：ひらがな・カタカナ・全角半角の違いを無視（例：「じんだいじ」で深大寺）。「ラーメン」「ハンバーグ」「カフェ」など料理のジャンルでも探せる
+- **ネットの施設検索（OpenPOI API）**：検索欄と日帰りプランの「行き先を追加」で、手元のデータにない施設も日本全国約337万件（Overture Maps・食品営業許可のオープンデータ）から探す。キー不要・無料
 - **地図で見る**：一覧・検索結果を地図に点で表示（押すと経路・写真・口コミ）
 - **営業中の表示**：営業時間がわかる所は「営業中／営業時間外」を表示。「🕘営業中だけ」で絞り込み
 - **今が見頃**：桜・紅葉・花などの見頃の月を表示。「🌸今が見頃」で絞り込み
@@ -76,7 +77,7 @@
 - `data/osm_spots.json`・`data/pois.json`・`data/cells/`（グルメなどを約 25km 四方の升目ごとに分けたもの）：OpenStreetMap から週 1 回自動収集。料金や駐車場の情報はありません。これらは `gh-pages` にだけ置かれます。
 - `data/events.json`・`data/status.json`：自動生成。手で編集しないでください。
 - `data/prefectures.json`：都県の判定用の境界（OpenStreetMap を簡略化したもの）。関東周辺の 10 都県のみ（それより外は「その他」）。
-- 出典：地図・スポットの一部 © OpenStreetMap contributors（ODbL）／ルート Valhalla (FOSSGIS)・OSRM／天気 Open-Meteo／住所・目的地の検索 国土地理院（`data/muni.json` は市区町村コード表）／説明・写真 Wikipedia・Wikimedia Commons（各ページのライセンス）。
+- 出典：地図・スポットの一部 © OpenStreetMap contributors（ODbL）／ルート Valhalla (FOSSGIS)・OSRM／天気 Open-Meteo／ネットの施設検索 OpenPOI API（https://openpoiapi.com/attribution.html）／住所・目的地の検索 国土地理院（`data/muni.json` は市区町村コード表）／説明・写真 Wikipedia・Wikimedia Commons（各ページのライセンス）。
 - 移動時間は直線距離からの概算です。ずれる場合は `config.json` の `speedsKmh` を調整してください。
 
 ## 開発
