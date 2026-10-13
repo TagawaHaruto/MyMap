@@ -485,4 +485,29 @@ assert.deepStrictEqual(Lib.parseOpenPoi({}), []);
 assert.strictEqual(Lib.tierOf(ops[0], new Set()), 2); // ネットの施設は厳選扱いにしない
 assert.deepStrictEqual(Lib.notInLocal(ops, [{ name: '麺屋テスト', lat: 35.6521, lon: 139.5451 }]).map((x) => x.name), ['食堂B', '湯の郷']);
 
+// ---- 近くの検索・Wikipedia を名前で探す ----
+assert.deepStrictEqual(Lib.nearQuery('近くの飲食店'), { word: '飲食店' });
+assert.deepStrictEqual(Lib.nearQuery('周辺のカフェ'), { word: 'カフェ' });
+assert.deepStrictEqual(Lib.nearQuery('温泉 近く'), { word: '温泉' });
+assert.deepStrictEqual(Lib.nearQuery('駅の近く'), { word: '駅' });
+assert.strictEqual(Lib.nearQuery('深大寺'), null);
+assert.strictEqual(Lib.nearQuery('近くの'), null);
+const nearPool = [
+  { id: 'n1', name: '麺屋A', note: 'ラーメン', lat: 35.652, lon: 139.545, genres: ['food'] },
+  { id: 'n2', name: 'カフェB', note: 'カフェ', lat: 35.655, lon: 139.545, genres: ['food'] },
+  { id: 'n3', name: '遠いラーメン', note: 'ラーメン', lat: 35.9, lon: 139.5, genres: ['food'] },
+  { id: 'n4', name: '博物館C', lat: 35.651, lon: 139.544, genres: ['museum'] }];
+const here = { lat: 35.6518, lon: 139.544 };
+assert.deepStrictEqual(Lib.nearSearch(nearPool, '飲食店', here, 3).map((x) => x.id), ['n1', 'n2']);
+assert.deepStrictEqual(Lib.nearSearch(nearPool, 'ラーメン', here, 3).map((x) => x.id), ['n1']);
+assert.strictEqual(Lib.netWord('ご飯'), 'レストラン');
+const ws = { query: { pages: {
+  1: { index: 1, title: '別の寺', coordinates: [{ lat: 34.0, lon: 135.0 }], extract: '関西の寺。' },
+  2: { index: 2, title: '深大寺', coordinates: [{ lat: 35.6703, lon: 139.5485 }], extract: '深大寺は調布市の寺院。', thumbnail: { source: 'https://upload.wikimedia.org/a.jpg' }, fullurl: 'https://ja.wikipedia.org/wiki/x' } } } };
+const wr = Lib.parseWikiSearch(ws, { name: '深大寺', lat: 35.67, lon: 139.548 });
+assert.deepStrictEqual([wr.thumb, wr.page, wr.same], ['https://upload.wikimedia.org/a.jpg', 'https://ja.wikipedia.org/wiki/x', true]);
+assert.strictEqual(Lib.parseWikiSearch(ws, { name: '深大寺そば 玉乃屋', lat: 35.67, lon: 139.548 }).same, true);
+assert.strictEqual(Lib.parseWikiSearch(ws, { name: '神代植物公園', lat: 35.67, lon: 139.548 }).same, false); // 付近の関連する記事
+assert.strictEqual(Lib.parseWikiSearch({ query: { pages: { 1: ws.query.pages[1] } } }, { name: '深大寺', lat: 35.67, lon: 139.548 }), null);
+
 console.log('lib: ALL PASS');
