@@ -262,3 +262,11 @@ details.plan-add summary { cursor: pointer; font-weight: var(--font-weight-700);
 .course-legend .chip[aria-pressed="false"] { opacity: 0.55; }
 .course-legend .chip[aria-pressed="false"]::before { content: ""; margin: 0; }
 :root:not([data-outdoor]) .course-legend .chip { min-height: 34px; padding: 0 9px; font-size: 0.66rem; }
+/* 地図の点（絵文字のピン） */
+.pin { position: relative; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%;
+  background: #fff; border: 2px solid #3d5afe; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); font-size: 17px; line-height: 1; }
+.pin.top { border: 3px solid #d4a000; }
+.pin.picked { border: 3px solid var(--key); background: #e8edff; transform: scale(1.15); }
+.pin b { position: absolute; right: -6px; top: -6px; min-width: 18px; height: 18px; padding: 0 3px; border-radius: 9px; background: var(--key); color: #fff;
+  font-size: 12px; line-height: 18px; text-align: center; font-family: var(--font-family-sans); }
+.pin.pass { width: 24px; height: 24px; font-size: 14px; border-color: #f08c00; }

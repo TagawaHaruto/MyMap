@@ -31,7 +31,7 @@ const buzz = () => { try { navigator.vibrate?.(15); } catch { /* 振動できな
 const saved = store.get('filters') || {};
 const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
-  prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []),
+  prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []), allTypes: !!saved.allTypes,
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
   showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
@@ -50,7 +50,7 @@ const noticeRe = () => {
 const filterState = () => ({ mode: state.mode, maxMin: isoGeom() ? null : state.maxMin, prefs: state.prefs, genres: state.genres, dirs: state.dirs,
   favs: state.favs, rainy: rainy(), exclude: state.showNotices ? null : noticeRe() });
 function saveFilters() {
-  store.set('filters', { mode: state.mode, maxMin: state.maxMin, prefs: [...state.prefs], genres: [...state.genres], dirs: [...state.dirs] });
+  store.set('filters', { mode: state.mode, maxMin: state.maxMin, prefs: [...state.prefs], genres: [...state.genres], dirs: [...state.dirs], allTypes: state.allTypes });
 }
 const icon = (label) => [...label][0]; // 先頭の絵文字（コードポイント単位）
 const fmtMin = (m) => (m == null ? '' : m < 60 ? `約${m}分` : `約${Math.floor(m / 60)}時間${m % 60 ? (m % 60) + '分' : ''}`);
@@ -133,12 +133,15 @@ function renderFilters() {
   chips($('#f-time'), TIMES, (v) => v === state.maxMin, (v) => { state.maxMin = v; });
   chips($('#f-pref'), PREFS.map((p) => [p, p]), (v) => state.prefs.has(v), (v) => toggle(state.prefs, v));
   chips($('#f-dir'), Lib.DIRS.map((d) => [d, dirName(d)]), (v) => state.dirs.has(v), (v) => toggle(state.dirs, v));
-  chips($('#f-genre'), Object.entries(GENRES), (v) => state.genres.has(v), (v) => toggle(state.genres, v));
+  // 先頭の「すべて」は、グルメ・史跡・宿・お土産・遊びも含めた全部（ほかの種類を押すと外れる）
+  chips($('#f-genre'), [['__all', '🌐すべて（グルメ等も）']].concat(Object.entries(GENRES)),
+    (v) => (v === '__all' ? state.allTypes : !state.allTypes && state.genres.has(v)),
+    (v) => { if (v === '__all') { state.allTypes = !state.allTypes; state.genres.clear(); } else { state.allTypes = false; toggle(state.genres, v); } });
   const time = TIMES.find(([v]) => v === state.maxMin)[1];
   const parts = [MODES[state.mode], state.maxMin == null ? '時間制限なし' : `${time}以内`,
     state.prefs.size ? [...state.prefs].join('/') : '全都県',
     state.dirs.size ? [...state.dirs].map((d) => DIR_NAMES[d]).join('/') : '全方面'];
-  if (state.tab !== 'events') parts.push(state.genres.size ? [...state.genres].map((g) => icon(GENRES[g])).join('') : '観光・遊びなど');
+  if (state.tab !== 'events') parts.push(state.allTypes ? 'すべての種類' : state.genres.size ? [...state.genres].map((g) => icon(GENRES[g])).join('') : '観光・遊びなど');
   $('#f-sum').textContent = parts.join('・');
 }
 const setCount = (n) => { $('#f-count').textContent = n == null ? '' : `（${n.toLocaleString()}件）`; };
@@ -168,7 +171,7 @@ function hiddenGroupsHtml() {
   const count = (g) => cells.reduce((a, c) => a + ((cellIndex[g] && cellIndex[g][c]) || 0), 0);
   const items = [['food', count('food')], ['heritage', count('heritage')], ['outdoor', count('local')]].filter(([, n]) => n);
   if (!items.length) return '';
-  return `<p class="hint">この一覧は観光・遊び・体験など（グルメなどは含みません）。範囲内にはほかに ${items.map(([g, n]) =>
+  return `<p class="hint">この一覧は観光・遊び・体験など（グルメなどは含みません。全部見るときは種類の「🌐すべて」）。範囲内にはほかに ${items.map(([g, n]) =>
     `<button type="button" class="chip" data-add-genre="${g}">${HIDDEN_GROUPS.find((x) => x[0] === g)[1]} 約${n.toLocaleString()}件</button>`).join(' ')} があります（押すとその種類の一覧を表示）。</p>`;
 }
 document.addEventListener('click', (e) => {
@@ -207,7 +210,7 @@ function cellItems(groups, center, km) {
   for (const g of groups) for (const cid of Lib.cellsInRadius(center, km)) { const xs = CELL_DATA.get(`${g}/${cid}`); if (xs) out.push(...xs); }
   return out;
 }
-const selectedGroups = () => [...new Set([...state.genres].map((g) => GROUP_OF[g]).filter(Boolean))];
+const selectedGroups = () => (state.allTypes ? ['food', 'heritage', 'local'] : [...new Set([...state.genres].map((g) => GROUP_OF[g]).filter(Boolean))]);
 
 function spotCandidates() {
   // 絶景を選んだときだけ滝・山・湖などの POI を混ぜる（展望台は osm_spots 側にある）
@@ -535,7 +538,7 @@ function renderSpotList() {
     `<button type="button" class="chip" data-foodcat="${esc(label)}" aria-pressed="${state.foodCat === label}">${esc(label)}</button>`).join('')}</div>` : '';
   const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';
   const noCells = groups.length && !cellIndex ? '・グルメなどのデータはまだ収集されていません' : '';
-  const hiddenHint = state.genres.size || state.q ? '' : hiddenGroupsHtml();
+  const hiddenHint = state.genres.size || state.allTypes || state.q ? '' : hiddenGroupsHtml();
   const head = `${hiddenHint}<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length ? `・グルメなどは起点から${Math.round(cellKm())}km以内（遠くは検索欄で探せます）` : ''}${loadingCells}${noCells}${isoStatus()}</p>
     ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}${cats}${list.length ? mapToggle() : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
@@ -773,6 +776,24 @@ const isoStatus = () => {
   return g === 'loading' || !g ? '・道のりで判定中…' : g === 'fail' ? '・道のりの判定に失敗（直線距離で表示）' : `・実際の道のりで${state.maxMin}分以内`;
 };
 
+// ---- 地図の点: 種類の絵文字（🏯⛩♨🍴など）のピン。★厳選・⭐は金色の縁、選んだ立ち寄りは番号つき ----
+const KIND_EMOJI = { michinoeki: '🚏', onsen: '♨', viewpoint: '🔭', scenic: '🏞' };
+function emojiOf(s) {
+  if (s.kind && KIND_EMOJI[s.kind]) return KIND_EMOJI[s.kind];
+  const g = (s.genres || []).find((x) => GENRES[x]);
+  return g ? icon(GENRES[g]) : '📍';
+}
+const ICONS = new Map(); // 同じ見た目のアイコンは使い回す（数千個でも軽く）
+function pinIcon(s, opts = {}) {
+  const top = opts.top ?? s.tier === 0, num = opts.num || 0;
+  const key = `${emojiOf(s)}|${top}|${num}|${!!opts.picked}`;
+  if (!ICONS.has(key)) {
+    ICONS.set(key, L.divIcon({ className: '', iconSize: [32, 32], iconAnchor: [16, 16], popupAnchor: [0, -14],
+      html: `<span class="pin${top ? ' top' : ''}${opts.picked ? ' picked' : ''}">${emojiOf(s)}${num ? `<b>${num}</b>` : ''}</span>` }));
+  }
+  return ICONS.get(key);
+}
+
 // ---- 候補を地図で見る（一覧・検索結果の上位 2,000 件。★厳選・⭐は大きい点） ----
 let spotMap = null;
 const SPOT_MAP_MAX = 2000;
@@ -789,9 +810,7 @@ function bindMapToggle(list) {
   if (g) L.geoJSON(g, { style: { color: '#1a73e8', weight: 2, fillOpacity: 0.08 }, interactive: false }).addTo(spotMap);
   const shown = list.slice(0, SPOT_MAP_MAX);
   for (const s of shown) {
-    const top = s.tier === 0;
-    L.circleMarker([s.lat, s.lon], { radius: top ? 8 : 6, weight: 2, color: '#fff', fillOpacity: 0.9,
-      fillColor: top ? '#d4a000' : s.genres.includes('food') ? '#c4302b' : '#0055ad' })
+    L.marker([s.lat, s.lon], { icon: pinIcon(s), title: s.name, riseOnHover: true })
       .bindPopup(() => spotPopup(s), { maxWidth: 260 })
       .on('popupopen', (e) => fillAddr(e.popup.getElement()))
       .addTo(spotMap);
@@ -1362,18 +1381,11 @@ function updateTourSelection() {
   styleMarkers();
 }
 function styleMarkers() {
-  const key = keyColor();
   let i = 0;
   for (const s of getStops()) {
     const m = markers.get(s.id); if (!m) continue;
-    if (tour.picked.has(s.id)) {
-      i++;
-      m.setStyle({ radius: 11, color: '#fff', weight: 3, fillColor: key, fillOpacity: 1 });
-      m.unbindTooltip().bindTooltip(String(i), { permanent: true, direction: 'center', className: 'num' });
-    } else {
-      m.setStyle({ radius: 8, color: '#000', weight: 2, fillColor: '#fff', fillOpacity: 1 });
-      m.unbindTooltip();
-    }
+    if (tour.picked.has(s.id)) { i++; m.setIcon(pinIcon(s, { top: false, picked: true, num: i })); m.setZIndexOffset(1000); }
+    else { m.setIcon(pinIcon(s, { top: false })); m.setZIndexOffset(0); }
   }
 }
 function saveGpx() {
@@ -1643,7 +1655,7 @@ function drawMap(dest, stops) {
     L.polyline(latlngs, { color: '#fff', weight: 12, opacity: 1, bubblingMouseEvents: false }).addTo(map);
     const line = L.polyline(latlngs, { color: keyColor(), weight: 7, opacity: 1, bubblingMouseEvents: false }).addTo(map);
     stops.forEach((s) => {
-      const m = L.circleMarker([s.lat, s.lon], { bubblingMouseEvents: false }).addTo(map)
+      const m = L.marker([s.lat, s.lon], { icon: pinIcon(s, { top: false }), title: s.name, bubblingMouseEvents: false, riseOnHover: true }).addTo(map)
         .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, maxHeight: 240, autoPanPaddingTopLeft: [16, 112], autoPanPaddingBottomRight: [16, 40] });
       m.on('popupopen', async () => {
         if (!infoCache()[s.id] || infoCache()[s.id].ver !== 4) {
@@ -1906,7 +1918,10 @@ function drawCourses() {
     line.on('mouseover', () => line.setStyle({ weight: pick ? 10 : 8 })).on('mouseout', () => line.setStyle({ weight: pick ? 7 : 5 }));
     add(line, r);
   }
-  if (on.has('pass')) for (const p of DATA.passes) add(L.circleMarker(p.points[0], { radius: 6, weight: 2, color: '#fff', fillColor: Lib.COURSE_TYPES.pass[1], fillOpacity: 0.95 }), p);
+  if (on.has('pass')) {
+    const passIcon = L.divIcon({ className: '', iconSize: [26, 26], iconAnchor: [13, 13], html: '<span class="pin pass">⛰</span>' });
+    for (const p of DATA.passes) add(L.marker(p.points[0], { icon: passIcon, title: p.name }), p);
+  }
 }
 // 凡例（押すとその種類を出す・隠す）。本数つき
 function courseLegendHtml() {
