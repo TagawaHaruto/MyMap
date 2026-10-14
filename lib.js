@@ -797,7 +797,7 @@ const Lib = (() => {
     return { words, places };
   }
   // アプリの中だけで出せる候補: 料理のジャンル・「近くの○○」・名前の前方一致
-  const NEAR_WORDS = ['飲食店', 'カフェ', 'ラーメン', 'コンビニ', '温泉', '公園', '駐車場', 'ガソリンスタンド'];
+  const NEAR_WORDS = ['飲食店', 'カフェ', 'ラーメン', 'コンビニ', '温泉', '公園', '駐車場', 'バイク駐車場', 'ガソリンスタンド'];
   function localSuggest(q, items, limit = 8) {
     const t = String(q || '').trim(), k = norm(t);
     if (!k) return [];
@@ -814,6 +814,40 @@ const Lib = (() => {
     }
     return out;
   }
+  // ---- 駐車場（OpenStreetMap からその場で）: 車の駐車場・バイク専用・二輪も止められる駐輪場・バイク可の駐車場 ----
+  // 車は m、バイク（数が少ない）は mb まで探す
+  const parkingQuery = (p, m = 600, mb = 1500) => 'data=' + encodeURIComponent(`[out:json][timeout:25];(`
+    + `nwr["amenity"="parking"](around:${m},${p.lat},${p.lon});`
+    + `nwr["amenity"="parking"]["motorcycle"~"^(yes|designated|permissive)$"](around:${mb},${p.lat},${p.lon});`
+    + `nwr["amenity"="motorcycle_parking"](around:${mb},${p.lat},${p.lon});`
+    + `nwr["amenity"="bicycle_parking"]["motorcycle"~"^(yes|designated|permissive)$"](around:${mb},${p.lat},${p.lon});`
+    + `);out center tags 120;`);
+  const YES = /^(yes|designated|permissive)$/;
+  // その施設の駐車場らしいか: 100m 以内で、利用者用（access=customers）か名前にその施設名を含む
+  const coreName = (n) => norm(n).replace(/[（(].*?[)）]/g, '').replace(/駐車場|パーキング|第[一二三四五1-9]|p$/g, '');
+  function parseParking(json, p) {
+    const car = [], bike = [];
+    for (const e of (json && json.elements) || []) {
+      const t = e.tags || {}, c = e.lat != null ? e : e.center || {};
+      if (c.lat == null || /^(private|no)$/.test(t.access || '')) continue;
+      const d = haversineKm(p, c);
+      const name = t.name || t.operator || '';
+      const capMoto = +(t['capacity:motorcycle'] || 0);
+      const own = d <= 0.1 && (t.access === 'customers' || (!!name && !!p.name && (coreName(name).includes(coreName(p.name)) || coreName(p.name).includes(coreName(name)))));
+      const x = { name, lat: c.lat, lon: c.lon, distKm: d, own, oh: t.opening_hours, access: t.access || '',
+        fee: t.fee === 'yes' ? '有料' : t.fee === 'no' ? '無料' : '', capacity: +(t.capacity || 0) || null, capMoto: capMoto || null,
+        kind: t.amenity === 'motorcycle_parking' ? 'バイク専用' : t.amenity === 'bicycle_parking' ? '駐輪場（二輪も可）'
+          : t.parking === 'multi-storey' ? '立体駐車場' : t.parking === 'underground' ? '地下駐車場' : '駐車場',
+        motoNo: t.motorcycle === 'no' };
+      if (t.amenity === 'parking' && d <= 0.65) car.push(x);
+      if (t.amenity !== 'parking' || YES.test(t.motorcycle || '') || capMoto > 0) bike.push({ ...x, motoOk: true });
+    }
+    const byOwnThenDist = (a, b) => (b.own - a.own) || a.distKm - b.distKm;
+    return { car: car.sort(byOwnThenDist), bike: bike.sort(byOwnThenDist) };
+  }
+  const isParkingWord = (w) => /駐車|駐輪|パーキング|parking/i.test(String(w));
+  const isBikeWord = (w) => /バイク|二輪|オートバイ|原付|モーターサイクル|駐輪/.test(String(w));
+
   // ---- 交通費の目安 ----
   const round10 = (y) => Math.round(y / 10) * 10;
   // ガソリン代（円）= 距離 ÷ 燃費 × 単価
@@ -992,7 +1026,8 @@ const Lib = (() => {
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
-    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen };
+    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen,
+    parkingQuery, parseParking, isParkingWord, isBikeWord };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;
