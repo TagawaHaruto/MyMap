@@ -109,6 +109,14 @@ function renderLoadMsg() {
 }
 
 // ---- 屋外モード（日なた・グローブ向け表示） ----
+// 画面のデザイン: 'stylish'（スタイリッシュ・既定）か 'standard'（デジタル庁デザインシステムに沿った標準）
+function setTheme(t, save = true) {
+  document.documentElement.dataset.theme = t;
+  if (save) store.set('theme', t);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = t === 'stylish' ? '#1e1b4b' : '#264af4';
+}
+setTheme(store.get('theme') || 'stylish', false);
 function setOutdoor(on, save = true) {
   document.documentElement.toggleAttribute('data-outdoor', on);
   $('#outdoor').setAttribute('aria-pressed', on);
@@ -1982,7 +1990,10 @@ function renderSettings() {
   const prevToken = $('#token'), typed = prevToken ? prevToken.value : '', focused = document.activeElement === prevToken;
   const has = !!store.get('token');
   $('#view').innerHTML = `<h2>表示</h2>
-    <label class="check"><input type="checkbox" id="set-outdoor" ${document.documentElement.hasAttribute('data-outdoor') ? 'checked' : ''}>屋外モード（日なた・グローブ向けに大きく太く表示）</label>
+    <fieldset class="opts"><legend><strong>画面のデザイン</strong></legend>
+      <label class="check"><input type="radio" name="theme" value="stylish" ${document.documentElement.dataset.theme === 'stylish' ? 'checked' : ''}>スタイリッシュ（グラデーション・丸みのあるカード。端末がダークモードなら暗い配色）</label>
+      <label class="check"><input type="radio" name="theme" value="standard" ${document.documentElement.dataset.theme !== 'stylish' ? 'checked' : ''}>標準（デジタル庁デザインシステムに沿った、はっきりした表示）</label></fieldset>
+    <label class="check"><input type="checkbox" id="set-outdoor" ${document.documentElement.hasAttribute('data-outdoor') ? 'checked' : ''}>屋外モード（日なた・グローブ向けに大きく太く表示。屋外モード中は標準の配色）</label>
     <p class="hint">画面上の「☀屋外」でも切り替えられます。ツーリングタブを開くと自動でオンになります。</p>
     ${installHtml()}
     <h2>起点</h2>
@@ -2021,6 +2032,7 @@ function renderSettings() {
   el.innerHTML = Object.entries(GENRES).map(([g, l]) => `<button type="button" class="chip" data-g="${g}" aria-pressed="${state.favGenres.has(g)}">${l}</button>`).join('');
   el.onclick = (e) => { const b = e.target.closest('.chip'); if (b) { buzz(); toggle(state.favGenres, b.dataset.g); store.set('favGenres', [...state.favGenres]); renderAll(); } };
   $('#set-outdoor').onchange = (e) => setOutdoor(e.target.checked);
+  document.querySelectorAll('input[name="theme"]').forEach((r) => { r.onchange = () => { buzz(); setTheme(r.value); }; });
   if (typed) $('#token').value = typed;
   if (focused) $('#token').focus();
   $('#token-save').onclick = () => { const v = $('#token').value.trim(); if (v) { store.set('token', v); renderSettings(); } };

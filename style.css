@@ -272,3 +272,66 @@ details.plan-add summary { cursor: pointer; font-weight: var(--font-weight-700);
 .pin.pass { width: 24px; height: 24px; font-size: 14px; border-color: #f08c00; }
 .cost-form { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 .cost-form input { width: 5.5em; font: inherit; padding: 4px 6px; }
+
+/* =====================================================================
+   スタイリッシュ（設定タブで「標準」に戻せる）。屋外モードのときは使わない（読みやすさ優先）
+   ===================================================================== */
+:root[data-theme="stylish"]:not([data-outdoor]) {
+  --bg: #ffffff; --bg-page: #f3f5fa; --bg-sub: #f7f8fc; --fg: #141a2e; --fg-sub: #5b6478; --line: #e3e7f0;
+  --key: #4f46e5; --key-bg: #eef2ff; --accent: #06b6d4; --chip: #eef1f8;
+  --grad: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #06b6d4 100%);
+  --shadow: 0 2px 10px rgba(20, 26, 46, 0.07), 0 1px 2px rgba(20, 26, 46, 0.05);
+  --radius: 16px;
+}
+:root[data-theme="stylish"]:not([data-outdoor]) body { background: var(--bg-page); letter-spacing: 0.01em; }
+:root[data-theme="stylish"]:not([data-outdoor]) .bar {
+  position: sticky; top: 0; z-index: 1050; border: 0; color: #fff; padding: 10px 14px;
+  background: linear-gradient(120deg, #0f172a 0%, #312e81 55%, #4f46e5 100%); box-shadow: 0 4px 16px rgba(15, 23, 42, 0.25); }
+:root[data-theme="stylish"]:not([data-outdoor]) .bar h1 { font-weight: 800; letter-spacing: 0.06em; }
+:root[data-theme="stylish"]:not([data-outdoor]) .weather {
+  border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 999px; background: rgba(255, 255, 255, 0.14); color: #fff; }
+:root[data-theme="stylish"]:not([data-outdoor]) .weather[aria-pressed="true"] { background: #06b6d4; border-color: #06b6d4; }
+:root[data-theme="stylish"]:not([data-outdoor]) #search-slot { padding: 10px 12px 0; }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(input[type="search"], input[type="password"], select) {
+  border: 1px solid var(--line); border-radius: 14px; background: var(--bg); box-shadow: var(--shadow); padding: 0 14px; }
+:root[data-theme="stylish"]:not([data-outdoor]) #q { min-height: 48px; border: 0; box-shadow: 0 4px 18px rgba(79, 70, 229, 0.14); }
+:root[data-theme="stylish"]:not([data-outdoor]) #q:focus { outline: 2px solid var(--key); }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(.filters, .recommend) {
+  margin: 10px 12px 0; padding: 0 14px; border: 0; border-radius: var(--radius); background: var(--bg); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) main { padding: 10px 12px 32px; gap: 10px; }
+:root[data-theme="stylish"]:not([data-outdoor]) .card { border: 0; border-radius: var(--radius); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) .card.spot { padding: 8px 12px; }
+:root[data-theme="stylish"]:not([data-outdoor]) .card.spot h3 { font-weight: 700; }
+:root[data-theme="stylish"]:not([data-outdoor]) .chip { border: 0; border-radius: 999px; background: var(--chip); color: var(--fg); }
+:root[data-theme="stylish"]:not([data-outdoor]) .chip[aria-pressed="true"] { background: var(--grad); color: #fff; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(.btn, .icon) { border: 1px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--key); }
+:root[data-theme="stylish"]:not([data-outdoor]) .btn.primary { border: 0; background: var(--grad); color: #fff; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); }
+:root[data-theme="stylish"]:not([data-outdoor]) .icon[aria-pressed="true"] { border: 0; background: var(--grad); color: #fff; }
+:root[data-theme="stylish"]:not([data-outdoor]) .badge { border-radius: 999px; padding: 0 8px; }
+:root[data-theme="stylish"]:not([data-outdoor]) .notice { border: 0; border-radius: 12px; background: var(--key-bg); }
+:root[data-theme="stylish"]:not([data-outdoor]) h2 { font-weight: 800; letter-spacing: 0.02em; }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(#map, #spot-map, #visited-map) { border: 0; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs {
+  background: rgba(255, 255, 255, 0.82); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid rgba(20, 26, 46, 0.06); }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button { border-top: 0; }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button span { padding: 2px 16px; border-radius: 999px; transition: background 0.2s; }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button[aria-selected="true"] { color: var(--key); }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button[aria-selected="true"] span { background: var(--key-bg); }
+:root[data-theme="stylish"]:not([data-outdoor]) .install-banner { border: 0; border-radius: var(--radius); background: var(--key-bg); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) .gacha { border: 0; border-radius: var(--radius); background: linear-gradient(135deg, #eef2ff, #ecfeff); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) .pin { border-color: #6366f1; }
+:root[data-theme="stylish"]:not([data-outdoor]) .pin.top { border-color: #f59e0b; }
+:root[data-theme="stylish"]:not([data-outdoor]) .sugg { border: 0; border-radius: 14px; }
+/* 端末がダークモードのときは、スタイリッシュも暗い配色に */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="stylish"]:not([data-outdoor]) {
+    --bg: #161b2e; --bg-page: #0b0f1c; --bg-sub: #1b2136; --fg: #e8ebf4; --fg-sub: #a3abc0; --line: #2a3150;
+    --key: #a5b4fc; --key-bg: #1f2550; --chip: #1f253d; --shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+    color-scheme: dark; }
+  :root[data-theme="stylish"]:not([data-outdoor]) .tabs { background: rgba(14, 18, 34, 0.85); border-top-color: rgba(255, 255, 255, 0.06); }
+  :root[data-theme="stylish"]:not([data-outdoor]) :is(.leaflet-popup-content-wrapper, .leaflet-popup-tip) { background: var(--bg); color: var(--fg); }
+  :root[data-theme="stylish"]:not([data-outdoor]) .pin { background: #1f253d; }
+  :root[data-theme="stylish"]:not([data-outdoor]) .gacha { background: linear-gradient(135deg, #1f2550, #0e2a33); }
+  :root[data-theme="stylish"]:not([data-outdoor]) .qr { background: #fff; }
+}
+:root:not([data-outdoor]) .hint .chip { min-height: 30px; padding: 0 10px; font-size: 0.66rem; vertical-align: middle; }
