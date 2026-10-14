@@ -554,4 +554,20 @@ assert.strictEqual(Lib.trainFare(2), 150);
 assert.strictEqual(Lib.trainFare(30), 680); // 37.5km → 38km → 35〜40km の欄
 assert.strictEqual(Lib.yen(1234.4), '1,234円');
 
+// ---- 駐車場 ----
+assert.ok(decodeURIComponent(Lib.parkingQuery({ lat: 35, lon: 139 }, 500, 1500)).includes('nwr["amenity"="motorcycle_parking"](around:1500,35,139)'));
+const pk = Lib.parseParking({ elements: [
+  { type: 'way', center: { lat: 35.0005, lon: 139.0 }, tags: { amenity: 'parking', name: '深大寺 駐車場', fee: 'yes', capacity: '30' } },
+  { type: 'node', lat: 35.003, lon: 139.0, tags: { amenity: 'parking', motorcycle: 'yes', name: 'タイムズ' } },
+  { type: 'node', lat: 35.001, lon: 139.0, tags: { amenity: 'motorcycle_parking', fee: 'no', capacity: '10' } },
+  { type: 'node', lat: 35.002, lon: 139.0, tags: { amenity: 'bicycle_parking', motorcycle: 'yes' } },
+  { type: 'node', lat: 35.0004, lon: 139.0, tags: { amenity: 'parking', access: 'private', name: '月極' } },
+  { type: 'node', lat: 35.0008, lon: 139.0, tags: { amenity: 'parking', access: 'customers', motorcycle: 'no' } },
+] }, { name: '深大寺', lat: 35.0, lon: 139.0 });
+assert.deepStrictEqual(pk.car.map((x) => [x.name, x.own]), [['深大寺 駐車場', true], ['', true], ['タイムズ', false]]);
+assert.deepStrictEqual(pk.bike.map((x) => x.kind), ['バイク専用', '駐輪場（二輪も可）', '駐車場']);
+assert.strictEqual(pk.car[0].fee, '有料');
+assert.strictEqual(pk.car[1].motoNo, true);
+assert.ok(Lib.isParkingWord('バイク駐車場') && Lib.isBikeWord('バイク駐車場') && !Lib.isBikeWord('駐車場'));
+
 console.log('lib: ALL PASS');

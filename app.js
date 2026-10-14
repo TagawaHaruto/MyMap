@@ -266,6 +266,7 @@ function infoShell(s) {
       <a class="btn" ${gm(s, 'dir')}>地図で経路</a>
       <a class="btn" ${gm(s)}>写真・口コミ</a>
       <button type="button" class="btn" data-plan="${esc(s.id)}">日帰りプラン</button>
+      <button type="button" class="btn" data-park="${esc(s.id)}">🅿駐車場</button>
       ${s.poi ? '' : `<button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
     </div>
     <details class="more"><summary>その他（周辺を探す・共有・SNS・公式など）</summary>
@@ -483,13 +484,66 @@ function renderPlansView(box) {
 
 // 追加した場所の滞在時間の目安（食事は 60 分、それ以外は種類から）
 const stayGuess = (x) => ((x.genres || []).includes('food') ? 60 : (x.genres || []).includes('onsen') ? 90 : (x.genres || []).some((g) => ['museum', 'play', 'experience'].includes(g)) ? 120 : 60);
+// Overpass（OpenStreetMap の検索）: 混雑（429・504 など）のときは別のサーバーで試す
+const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
+async function overpass(body) {
+  let last = null;
+  for (const url of OVERPASS) {
+    try {
+      const r = await fetch(url, { method: 'POST', body, headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: timeoutSignal(15000) });
+      if (r.ok) { const j = await r.json(); if (!j.remark || !/runtime error/i.test(j.remark)) return j; }
+      last = new Error(`HTTP ${r.status}`);
+    } catch (err) { last = err; }
+  }
+  throw last || new Error('overpass');
+}
+// ---- 駐車場: その施設の駐車場（100m 以内の利用者用・同じ名前）と、周辺 600m の車・バイクの駐車場 ----
+const PARK = new Map(); // 地点 → 結果（同じ場所は取り直さない）
+async function fetchParking(p, m = 600) {
+  const key = `${p.lat.toFixed(4)},${p.lon.toFixed(4)},${m}`;
+  if (PARK.has(key)) return PARK.get(key);
+  const v = Lib.parseParking(await overpass(Lib.parkingQuery(p, m)), p);
+  PARK.set(key, v);
+  return v;
+}
+const distTxt = (d) => (d < 1 ? `${Math.round(d * 1000)}m` : `${d.toFixed(1)}km`);
+function parkRow(x, bike) {
+  const info = [x.kind, x.fee, x.capacity ? `${x.capacity}台` : '', bike && x.capMoto ? `二輪${x.capMoto}台` : '', !bike && x.motoNo ? 'バイク不可' : '',
+    x.access === 'customers' ? '利用者用' : ''].filter(Boolean).join('・');
+  return `<li>${x.own ? '<span class="badge open">この施設の駐車場かも</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
+    <span class="status">${distTxt(x.distKm)}${info ? '・' + esc(info) : ''}${x.oh ? '・' + esc(Lib.ohText(x.oh)) : ''}${openBadge(x)}</span></li>`;
+}
+async function renderParking(el, s, only) {
+  if (!el) return;
+  const curated = s.parking ? `<p class="status">登録済みの情報：${s.parking.car ? '🚗車の駐車場あり' : '🚗車の駐車場なし（または不明）'}・${s.parking.bike ? '🏍二輪を止められる' : '🏍二輪は不明'}</p>` : '';
+  el.innerHTML = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は600m・バイクは1.5km以内）</h4>${curated}<p class="hint">探しています…</p>`;
+  const gmLinks = `<div class="actions"><a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('バイク 駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップでバイク駐車場</a>
+    <a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップで駐車場</a></div>`;
+  try {
+    const v = await fetchParking(s);
+    const own = v.car.concat(v.bike).filter((x) => x.own);
+    const sec = (title, xs, bike) => `<h4>${title}（${xs.length}件・近い順）</h4>` + (xs.length ? `<ul class="rel">${xs.slice(0, 8).map((x) => parkRow(x, bike)).join('')}</ul>`
+      : `<p class="hint">見つかりませんでした（OpenStreetMap に登録がない場合もあります）。</p>`);
+    el.innerHTML = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は600m・バイクは1.5km以内）</h4>${curated}
+      <p class="status">${own.length ? '✓ この施設の駐車場らしい所があります（下の「この施設の駐車場かも」）' : 'この施設専用の駐車場は見つかりませんでした（周辺の駐車場を確認してください）'}</p>
+      ${only !== 'car' ? sec('🏍 バイクを止められる所', v.bike, true) : ''}
+      ${only !== 'bike' ? sec('🚗 車の駐車場', v.car, false) : ''}
+      <p class="hint">OpenStreetMap の情報です。バイクは「バイク専用」「二輪も可の駐輪場」「バイク可と登録された駐車場」だけを出しています（ほかの駐車場も止められる場合があります）。満空・料金の詳細は現地や公式で確認してください。</p>${gmLinks}`;
+    fillAddr(el);
+  } catch {
+    el.innerHTML = `<h4>🅿 駐車場</h4>${curated}<p class="hint">探せませんでした（混雑か圏外の可能性）。少し待ってもう一度押すか、Google マップで確認してください。</p>${gmLinks}`;
+  }
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-park]'); if (!b) return;
+  const s = INFO_ITEMS.get(b.dataset.park); if (!s) return;
+  buzz(); renderParking(b.closest('.info').querySelector('.nearby'), s);
+});
+
 async function renderNearby(el, s, kind) {
   el.innerHTML = `<p class="hint">${esc(Lib.NEARBY_KINDS[kind][0])}を探しています…</p>`;
   try {
-    const r = await fetch('https://overpass-api.de/api/interpreter', { method: 'POST', body: Lib.nearbyQuery(s, kind),
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: timeoutSignal(30000) });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const xs = Lib.parseNearby(await r.json(), s).slice(0, 6);
+    const xs = Lib.parseNearby(await overpass(Lib.nearbyQuery(s, kind)), s).slice(0, 6);
     el.innerHTML = `<h4>${esc(Lib.NEARBY_KINDS[kind][0])}（2km以内・近い順）</h4>` + (xs.length ? `<ul class="rel">${xs.map((x) => `<li>
       <a ${gm(x)}>${esc(x.name)}</a> <span class="status">${x.distKm < 1 ? Math.round(x.distKm * 1000) + 'm' : x.distKm.toFixed(1) + 'km'}${openBadge(x)}</span></li>`).join('')}</ul>`
       : '<p class="hint">見つかりませんでした（OpenStreetMap に登録がない場合もあります）。</p>');
@@ -725,6 +779,13 @@ function hereOrOrigin() {
 const NEAR_KM = 3;
 function renderNearList(box, word) {
   const c = hereOrOrigin();
+  if (Lib.isParkingWord(word)) {
+    setCount(null);
+    const where = c.here ? '現在地' : `${esc(DATA.cfg.origin.name)}（現在地を使えないため起点）`;
+    box.innerHTML = `<p class="status">📍${where}のまわりの駐車場${HERE.asking ? '・現在地を取得中…' : ''}</p><div class="nearby"></div>`;
+    renderParking(box.querySelector('.nearby'), { ...c, name: c.here ? '現在地' : DATA.cfg.origin.name }, Lib.isBikeWord(word) ? 'bike' : null);
+    return;
+  }
   ensureCells(['food', 'heritage', 'local'], c, NEAR_KM).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
   const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food', 'heritage', 'local'], c, NEAR_KM).filter((s) => state.showChains || !s.chain));
   const local = Lib.nearSearch(pool, word, c, NEAR_KM);
@@ -930,6 +991,7 @@ function popupHtml(s, v) {
     ${v && v.summary && v.summary.page ? `<div class="credit">出典: <a href="${esc(v.summary.page)}" target="_blank" rel="noopener">Wikipedia</a></div>` : ''}
     <a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a>
     <button type="button" class="btn ${picked ? '' : 'primary'} pop-pick" data-popup-pick="${esc(s.id)}">${picked ? '立ち寄りから外す' : '立ち寄りに追加'}</button>
+    <button type="button" class="btn pop-park" data-pop-park="${esc(s.id)}">🅿 駐車場を見る</button>
   </div>`;
 }
 // 画像が読み込まれて吹き出しの大きさが変わったら、地図の中に収め直す
@@ -950,6 +1012,13 @@ function togglePick(id, on) {
   saveTour(); updateTourSelection();
   return true;
 }
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-pop-park]'); if (!b) return;
+  const s = getStops().find((x) => x.id === b.dataset.popPark); if (!s) return;
+  buzz(); if (map) map.closePopup();
+  const out = $('#rt-out'); if (!out) return;
+  renderParking(out, s, tour.opts.bike ? 'bike' : null); out.scrollIntoView({ block: 'start', behavior: 'smooth' });
+});
 document.addEventListener('click', (e) => {
   const b = e.target.closest('[data-popup-pick]'); if (!b) return;
   buzz();
@@ -1497,7 +1566,8 @@ function renderTouring() {
       <p class="status">${routeCostText(tour.route, !!(dest && dest.loop), !!tour.opts.bike)}</p>
       <div class="actions"><button type="button" class="btn" id="rt-rain">☔ルート上の雨</button><button type="button" class="btn" id="rt-elev">⛰標高</button>
         <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button>
-        <button type="button" class="btn" id="rt-onsen">♨帰りに寄れる温泉</button></div>
+        <button type="button" class="btn" id="rt-onsen">♨帰りに寄れる温泉</button>
+        <button type="button" class="btn" id="rt-park">🅿目的地の駐車場</button></div>
       <div class="actions"><button type="button" class="btn" id="rt-save-map">📥ルート沿いの地図を保存（圏外用）</button></div>
       <p class="status" id="rt-save-msg"></p>
       <div id="rt-out"></div>
@@ -1557,6 +1627,11 @@ function renderTouring() {
     $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
     $('#rt-onsen').onclick = () => { buzz(); routeOnsen(); };
+    $('#rt-park').onclick = () => {
+      buzz();
+      const d = currentDest(); if (!d) return;
+      renderParking($('#rt-out'), { name: d.loop ? d.road.name : d.name, lat: d.lat, lon: d.lon, parking: d.parking }, tour.opts.bike ? 'bike' : null);
+    };
   }
   $('#dir-rain').onclick = () => { buzz(); dirRain(); };
   $('#trk-toggle').onclick = () => { buzz(); toggleTrack(); };
