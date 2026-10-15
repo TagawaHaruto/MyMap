@@ -580,4 +580,15 @@ const mb = Lib.mergeBikeSpots(mp, 1.5, [
 assert.deepStrictEqual(mb.map((x) => x.name), ['B', 'A', 'タイムズのB', '道の駅X']);
 assert.ok(Lib.MOTO_NAME_RE.test('タイムズのB 調布') && !Lib.MOTO_NAME_RE.test('タイムズ調布'));
 
+// ---- データの更新 ----
+assert.deepStrictEqual(Lib.pendingParts({ spots_error: null, cells_error: 'lodging: TimeoutError', moto_error: 'x' }), ['cells', 'moto']);
+assert.deepStrictEqual(Lib.pendingParts(null), []);
+const nowMs = Date.parse('2026-10-15T10:00:00Z');
+assert.deepStrictEqual(Lib.runState({ workflow_runs: [{ status: 'in_progress', run_started_at: '2026-10-15T09:30:00Z' }] }, nowMs).state, 'running');
+assert.strictEqual(Lib.runState({ workflow_runs: [{ status: 'in_progress', run_started_at: '2026-10-15T09:30:00Z' }] }, nowMs).startedMin, 30);
+assert.strictEqual(Lib.runState({ workflow_runs: [{ status: 'completed', conclusion: 'success', created_at: '2026-10-15T08:00:00Z' }] }, nowMs).state, 'done');
+assert.strictEqual(Lib.runState({ workflow_runs: [{ status: 'completed', conclusion: 'failure', created_at: '2026-10-15T08:00:00Z' }] }, nowMs).state, 'failed');
+assert.strictEqual(Lib.runState({ workflow_runs: [{ status: 'queued', created_at: '2026-10-15T09:59:00Z' }] }, nowMs).state, 'queued');
+assert.strictEqual(Lib.runState({}).state, null);
+
 console.log('lib: ALL PASS');
