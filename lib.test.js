@@ -570,4 +570,14 @@ assert.strictEqual(pk.car[0].fee, '有料');
 assert.strictEqual(pk.car[1].motoNo, true);
 assert.ok(Lib.isParkingWord('バイク駐車場') && Lib.isBikeWord('バイク駐車場') && !Lib.isBikeWord('駐車場'));
 
+// ---- バイクを止められる場所をまとめる ----
+const mp = { lat: 35.0, lon: 139.0 };
+const mb = Lib.mergeBikeSpots(mp, 1.5, [
+  ['OSM', [{ name: 'A', lat: 35.001, lon: 139.0, type: 'バイク専用' }, { name: '遠い', lat: 35.05, lon: 139.0 }]],
+  ['live', [{ name: 'A重複', lat: 35.0011, lon: 139.0 }, { name: 'B', lat: 35.003, lon: 139.0, own: true }]],
+  ['OpenPOI', [{ name: 'タイムズのB', lat: 35.002, lon: 139.0 }]],
+  ['道の駅', [{ name: '道の駅X', lat: 35.0005, lon: 139.0, likely: true }]]]);
+assert.deepStrictEqual(mb.map((x) => x.name), ['B', 'A', 'タイムズのB', '道の駅X']);
+assert.ok(Lib.MOTO_NAME_RE.test('タイムズのB 調布') && !Lib.MOTO_NAME_RE.test('タイムズ調布'));
+
 console.log('lib: ALL PASS');

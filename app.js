@@ -508,10 +508,28 @@ async function fetchParking(p, m = 600) {
 }
 const distTxt = (d) => (d < 1 ? `${Math.round(d * 1000)}m` : `${d.toFixed(1)}km`);
 function parkRow(x, bike) {
-  const info = [x.kind, x.fee, x.capacity ? `${x.capacity}台` : '', bike && x.capMoto ? `二輪${x.capMoto}台` : '', !bike && x.motoNo ? 'バイク不可' : '',
-    x.access === 'customers' ? '利用者用' : ''].filter(Boolean).join('・');
-  return `<li>${x.own ? '<span class="badge open">この施設の駐車場かも</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
+  const info = [x.kind || x.type, x.fee, x.capacity ? `${x.capacity}台` : '', bike && (x.capMoto || x.cap) ? `二輪${x.capMoto || x.cap}台` : '', !bike && x.motoNo ? 'バイク不可' : '',
+    x.moped ? '原付だけの可能性' : '', x.access === 'customers' ? '利用者用' : '', bike && x.src === 'OpenPOI' ? '🌐OpenPOI' : ''].filter(Boolean).join('・');
+  return `<li>${x.own ? '<span class="badge open">この施設の駐車場かも</span> ' : ''}${x.likely ? '<span class="badge closed">たいてい止められる</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
     <span class="status">${distTxt(x.distKm)}${info ? '・' + esc(info) : ''}${x.oh ? '・' + esc(Lib.ohText(x.oh)) : ''}${openBadge(x)}</span></li>`;
+}
+// 前もって集めたバイクを止められる場所（data/moto.json）。初めて使うときに 1 回だけ読む
+let MOTO = null;
+async function motoData() {
+  if (!MOTO) { MOTO = await getJSON('data/moto.json', []); FAILED.delete('data/moto.json'); }
+  return MOTO;
+}
+// OpenPOI で名前に「バイク」「二輪」などを含む駐車場（2km 以内）
+async function openPoiBike(p) {
+  if (navigator.onLine === false) return [];
+  const out = [];
+  for (const q of ['バイク 駐車場', '二輪 駐車場']) {
+    try {
+      const r = await fetch(Lib.openPoiUrl(q, p, 2, 50), { signal: timeoutSignal(8000) });
+      if (r.ok) out.push(...Lib.parseOpenPoi(await r.json()).filter((x) => Lib.MOTO_NAME_RE.test(x.name)).map((x) => ({ ...x, type: 'バイク駐車場（OpenPOI）' })));
+    } catch { /* ネットの分はなしで */ }
+  }
+  return out;
 }
 async function renderParking(el, s, only) {
   if (!el) return;
@@ -519,8 +537,15 @@ async function renderParking(el, s, only) {
   el.innerHTML = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は600m・バイクは1.5km以内）</h4>${curated}<p class="hint">探しています…</p>`;
   const gmLinks = `<div class="actions"><a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('バイク 駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップでバイク駐車場</a>
     <a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップで駐車場</a></div>`;
-  try {
-    const v = await fetchParking(s);
+  // バイク: 前もって集めた分・OpenPOI・道の駅はその場の検索が混雑していても出す
+  const [moto, opBike] = await Promise.all([motoData(), openPoiBike(s)]);
+  const michi = DATA.pois.filter((x) => x.kind === 'michinoeki').map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, type: '道の駅', likely: true }));
+  let v = null;
+  try { v = await fetchParking(s); } catch { v = null; }
+  const bikeAll = Lib.mergeBikeSpots(s, 1.5, [['OSM', moto.map((x) => ({ ...x, kind: x.type }))], ['live', v ? v.bike : []], ['OpenPOI', opBike], ['道の駅', michi]]);
+  if (!v) v = { car: [], bike: [], failed: true };
+  v = { ...v, bike: bikeAll };
+  {
     const own = v.car.concat(v.bike).filter((x) => x.own);
     const sec = (title, xs, bike) => `<h4>${title}（${xs.length}件・近い順）</h4>` + (xs.length ? `<ul class="rel">${xs.slice(0, 8).map((x) => parkRow(x, bike)).join('')}</ul>`
       : `<p class="hint">見つかりませんでした（OpenStreetMap に登録がない場合もあります）。</p>`);
@@ -528,10 +553,9 @@ async function renderParking(el, s, only) {
       <p class="status">${own.length ? '✓ この施設の駐車場らしい所があります（下の「この施設の駐車場かも」）' : 'この施設専用の駐車場は見つかりませんでした（周辺の駐車場を確認してください）'}</p>
       ${only !== 'car' ? sec('🏍 バイクを止められる所', v.bike, true) : ''}
       ${only !== 'bike' ? sec('🚗 車の駐車場', v.car, false) : ''}
-      <p class="hint">OpenStreetMap の情報です。バイクは「バイク専用」「二輪も可の駐輪場」「バイク可と登録された駐車場」だけを出しています（ほかの駐車場も止められる場合があります）。満空・料金の詳細は現地や公式で確認してください。</p>${gmLinks}`;
+      ${v.failed ? '<p class="hint">⚠ 車の駐車場は今は探せませんでした（検索サーバーの混雑か圏外）。バイクは前もって集めた情報から出しています。</p>' : ''}
+      <p class="hint">バイクは OpenStreetMap（バイク専用・二輪可の駐輪場・バイク可の駐車場・名前に「バイク」「二輪」を含む所。週 1 回まとめて収集）、OpenPOI、道の駅・SA・PA（「たいてい止められる」）から。ほかの駐車場も止められる場合があります。満空・料金は現地や公式で確認してください。</p>${gmLinks}`;
     fillAddr(el);
-  } catch {
-    el.innerHTML = `<h4>🅿 駐車場</h4>${curated}<p class="hint">探せませんでした（混雑か圏外の可能性）。少し待ってもう一度押すか、Google マップで確認してください。</p>${gmLinks}`;
   }
 }
 document.addEventListener('click', (e) => {

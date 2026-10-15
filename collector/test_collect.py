@@ -1,5 +1,6 @@
 """collect.py のテスト。python -m unittest discover -s collector -v"""
 import datetime as dt
+import json
 import os
 import re
 import sys
@@ -310,6 +311,21 @@ class OsmSpotTest(unittest.TestCase):
         self.assertEqual(collect.done_kinds(st, 'spots', 300), {})
         st['spots_ver'] = collect.DATA_VER
         self.assertIn('museum', collect.done_kinds(st, 'spots', 300))
+
+    def test_parse_moto(self):
+        text = json.dumps({'elements': [
+            {'type': 'node', 'id': 1, 'lat': 35.6, 'lon': 139.5, 'tags': {'amenity': 'motorcycle_parking', 'capacity': '12', 'fee': 'yes'}},
+            {'type': 'way', 'id': 2, 'center': {'lat': 35.61, 'lon': 139.51}, 'tags': {'amenity': 'bicycle_parking', 'moped': 'yes', 'name': '駅前駐輪場'}},
+            {'type': 'node', 'id': 3, 'lat': 35.62, 'lon': 139.52, 'tags': {'amenity': 'parking', 'access': 'private', 'motorcycle': 'yes'}},
+            {'type': 'node', 'id': 4, 'lat': 35.63, 'lon': 139.53, 'tags': {'amenity': 'parking', 'motorcycle': 'no', 'name': 'バイク不可'}},
+        ]})
+        xs = collect.parse_moto(text, 'moto_tagged')
+        self.assertEqual([x['id'] for x in xs], ['osm:node:1', 'osm:way:2'])
+        self.assertEqual((xs[0]['type'], xs[0]['cap'], xs[0]['fee']), ('バイク専用', 12, '有料'))
+        self.assertEqual((xs[1]['type'], xs[1].get('moped')), ('駐輪場（二輪可）', True))
+        sa = collect.parse_moto(json.dumps({'elements': [{'type': 'way', 'id': 9, 'center': {'lat': 35.5, 'lon': 139.0},
+                                                         'tags': {'highway': 'services', 'name': '海老名SA'}}]}), 'rest_area')
+        self.assertEqual((sa[0]['type'], sa[0]['likely']), ('SA・PA', True))
 
     def test_done_kinds_from_old_status(self):
         st = {'cells_ver': collect.DATA_VER, 'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],

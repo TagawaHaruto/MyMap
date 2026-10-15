@@ -635,6 +635,61 @@ def build_roads(parts, curated=(), k=6):
     return roads
 
 
+# ---- バイクを止められる場所（週 1 回まとめて集め、アプリはその場で検索しなくても出せるように） ----
+MOTO_NAME = 'バイク|二輪|オートバイ|原付|モーターサイクル|ﾊﾞｲｸ|タイムズのB|モトパーク|バイクパーク'
+MOTO_QUERIES = [
+    ('moto_dedicated', 'nwr["amenity"="motorcycle_parking"]'),
+    ('moto_tagged', ['nwr["amenity"~"^(parking|bicycle_parking)$"]["motorcycle"~"^(yes|designated|permissive)$"]',
+                     'nwr["amenity"~"^(parking|bicycle_parking)$"]["moped"~"^(yes|designated)$"]',
+                     'nwr["amenity"~"^(parking|bicycle_parking)$"]["capacity:motorcycle"]']),
+    ('moto_named', f'nwr["amenity"~"^(parking|bicycle_parking|motorcycle_parking)$"]["name"~"{MOTO_NAME}"]'),
+    ('rest_area', 'nwr["highway"~"^(services|rest_area)$"]["name"]'),  # 高速の SA・PA（たいてい二輪の区画がある）
+]
+
+
+def parse_moto(text, kind):
+    """バイクを止められる場所。私有（access=private/no）は除く。SA・PA は「たいてい止められる」として likely。"""
+    out = []
+    for el in overpass_elements(text):
+        t = el.get('tags', {})
+        pos = el if 'lat' in el else el.get('center')
+        if not pos or t.get('access') in ('private', 'no') or t.get('motorcycle') == 'no':
+            continue
+        am = t.get('amenity')
+        label = ('SA・PA' if kind == 'rest_area' else 'バイク専用' if am == 'motorcycle_parking'
+                 else '駐輪場（二輪可）' if am == 'bicycle_parking' else '駐車場（二輪可）')
+        x = {'id': f"osm:{el['type']}:{el['id']}", 'name': t.get('name') or t.get('operator') or '', 'lat': round(pos['lat'], 5),
+             'lon': round(pos['lon'], 5), 'type': label, 'k': kind}
+        if kind == 'rest_area':
+            x['likely'] = True
+        if t.get('fee') in ('yes', 'no'):
+            x['fee'] = '有料' if t['fee'] == 'yes' else '無料'
+        cap = t.get('capacity:motorcycle') or (t.get('capacity') if am == 'motorcycle_parking' else '')
+        if str(cap).isdigit():
+            x['cap'] = int(cap)
+        if t.get('moped') in ('yes', 'designated') and t.get('motorcycle') not in ('yes', 'designated'):
+            x['moped'] = True  # 原付だけの可能性
+        if t.get('opening_hours'):
+            x['oh'] = t['opening_hours'][:80]
+        out.append(x)
+    return out
+
+
+def refresh_moto(cfg, status, fetch, now, old, sleep=time.sleep):
+    """バイクを止められる場所を種類ごとに週 1 回取り直す。同じ場所（同じ id）は 1 件に。取り直さないときは None。"""
+    q, bb = dict(MOTO_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
+    got = refresh_kinds('moto', list(q), cfg, status, now, old, lambda kind: overpass_kind(
+        q[kind], bb, splits(cfg), lambda text: parse_moto(text, kind), fetch, sleep), sleep)
+    if got is None:
+        return None
+    seen, out = set(), []
+    for x in got:
+        if x['id'] not in seen:
+            seen.add(x['id'])
+            out.append(x)
+    return out
+
+
 def refresh_roads(cfg, status, fetch, now, old, curated=(), sleep=time.sleep):
     """ドライブコースを種類ごとに週 1 回取り直す。取り直さないときは None。"""
     q, bb = dict(ROAD_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
@@ -914,6 +969,10 @@ def main():
     if roads is not None:
         save(os.path.join(DATA, 'roads_osm.json'), roads, compact=True)
         print(f'roads: {len(roads)}')
+    moto = refresh_moto(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'moto.json'), []))
+    if moto is not None:
+        save(os.path.join(DATA, 'moto.json'), moto, compact=True)
+        print(f'moto: {len(moto)}')
     spots = refresh_spots(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'osm_spots.json'), []), curated)
     if spots is not None:
         save(os.path.join(DATA, 'osm_spots.json'), spots, compact=True)

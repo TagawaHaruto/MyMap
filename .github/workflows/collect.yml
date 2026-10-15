@@ -22,7 +22,7 @@ jobs:
           if git fetch --depth=1 origin gh-pages 2>/dev/null; then
             mkdir -p prev && git archive FETCH_HEAD data | tar -x -C prev
             # 自動生成のデータだけ前回分を使う（手作業のデータは main のもの）
-            for f in events.json pois.json status.json osm_spots.json roads_osm.json; do
+            for f in events.json pois.json status.json osm_spots.json roads_osm.json moto.json; do
               if [ -f "prev/data/$f" ]; then cp "prev/data/$f" "data/$f"; fi
             done
             if [ -d prev/data/cells ]; then rm -rf data/cells && cp -r prev/data/cells data/cells; fi
