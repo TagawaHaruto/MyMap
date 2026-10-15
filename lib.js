@@ -867,6 +867,19 @@ const Lib = (() => {
   const isParkingWord = (w) => /駐車|駐輪|パーキング|parking/i.test(String(w));
   const isBikeWord = (w) => /バイク|二輪|オートバイ|原付|モーターサイクル|駐輪/.test(String(w));
 
+  // ---- データの更新（アプリから GitHub Actions に収集を依頼） ----
+  const COLLECT_PARTS = { pois: '立ち寄り候補', spots: '観光スポット', cells: 'グルメ・史跡など', roads: 'ドライブコース', moto: 'バイク駐車場' };
+  // 前回の収集で取れなかった・時間切れの種類（次の依頼で取り直す）
+  const pendingParts = (st) => Object.keys(COLLECT_PARTS).filter((k) => st && st[`${k}_error`]);
+  // 最新の実行（workflow_runs[0]）→ { state: 'queued'|'running'|'done'|'failed'|null, startedMin }
+  function runState(j, now = Date.now()) {
+    const r = j && Array.isArray(j.workflow_runs) ? j.workflow_runs[0] : null;
+    if (!r) return { state: null };
+    const started = Date.parse(r.run_started_at || r.created_at);
+    const state = r.status === 'completed' ? (r.conclusion === 'success' ? 'done' : 'failed') : r.status === 'queued' || r.status === 'waiting' || r.status === 'pending' ? 'queued' : 'running';
+    return { state, startedMin: Math.max(0, Math.round((now - started) / 60e3)), at: r.updated_at };
+  }
+
   // ---- 交通費の目安 ----
   const round10 = (y) => Math.round(y / 10) * 10;
   // ガソリン代（円）= 距離 ÷ 燃費 × 単価
@@ -1046,7 +1059,7 @@ const Lib = (() => {
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
     nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen,
-    parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE };
+    parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE, COLLECT_PARTS, pendingParts, runState };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

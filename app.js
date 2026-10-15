@@ -1269,44 +1269,123 @@ function renderEvents() {
 
 // ---- データ更新の依頼（方式 C：古いときだけ GitHub Actions を起動。トークンは端末内のみ） ----
 function setUpdateMsg(text) { const el = $('#update-msg'); el.hidden = !text; el.textContent = text || ''; }
-async function requestUpdate(force = false) {
-  const st = DATA.status;
-  if (!force && !Lib.isStale(st && st.updated_at, Date.now(), DATA.cfg.staleHours)) return;
-  const token = store.get('token');
-  if (!token) return; // トークンのない端末（家族など）には何も出さない。データは持ち主の端末か週 1 回の収集で更新される
-  const prev = st && st.updated_at;
-  if (!force && Date.now() - (store.get('lastDispatch') || 0) < 10 * 60e3) { pollStatus(prev); return; }
-  // 持ち主とリポジトリ名は公開 URL（<owner>.github.io/<repo>/）から求める。config に書いてあればそちらを使う
+// ---- データの更新: トークンを登録した端末は、アプリを開いたときに自動で GitHub Actions に収集を依頼し、終わるまで見守る ----
+const ghRepo = () => {
   const { workflow, branch } = DATA.cfg.github;
-  const owner = DATA.cfg.github.owner || location.hostname.split('.')[0];
-  const repo = DATA.cfg.github.repo || location.pathname.split('/')[1];
-  try {
-    const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`, {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
-      body: JSON.stringify({ ref: branch || 'main' }),
-    });
-    if (!r.ok) { setUpdateMsg(`更新の依頼に失敗しました（${r.status}）。トークンの権限と有効期限を確認してください。`); return; }
-  } catch {
-    setUpdateMsg('更新の依頼を送れませんでした（通信エラー）。'); return;
-  }
-  store.set('lastDispatch', Date.now());
-  pollStatus(prev);
+  return { owner: DATA.cfg.github.owner || location.hostname.split('.')[0], repo: DATA.cfg.github.repo || location.pathname.split('/')[1], workflow, branch: branch || 'main' };
+};
+async function gh(path, token, init = {}) {
+  const { owner, repo } = ghRepo();
+  return fetch(`https://api.github.com/repos/${owner}/${repo}${path}`, { ...init,
+    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', ...(init.headers || {}) }, signal: timeoutSignal(15000) });
 }
-async function pollStatus(prev) {
-  setUpdateMsg('データを更新中です…（数分かかります。前回のデータを表示しています）');
-  for (let i = 0; i < 20; i++) { // 30 秒ごとに最大 10 分
-    await new Promise((ok) => setTimeout(ok, 30e3));
-    const st = await getJSON('data/status.json', null, 'no-store');
-    if (st && st.updated_at && st.updated_at !== prev) {
-      DATA.status = st;
-      [DATA.events, DATA.pois, DATA.osm] = await Promise.all([getJSON('data/events.json', DATA.events),
-        getJSON('data/pois.json', DATA.pois), getJSON('data/osm_spots.json', DATA.osm)]);
-      DATA.ver++; tour.stops = null;
-      setUpdateMsg(''); renderAll(); return;
-    }
+const UPD = { watching: false, state: null, msg: '' };
+async function latestRun(token) {
+  const r = await gh(`/actions/workflows/${ghRepo().workflow}/runs?per_page=1`, token);
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  return Lib.runState(await r.json());
+}
+// 依頼が必要か: データが古い（staleHours）か、前回の収集で取れなかった種類が残っていて前回の依頼から 3 時間以上たった
+function needsUpdate() {
+  const st = DATA.status;
+  if (Lib.isStale(st && st.updated_at, Date.now(), DATA.cfg.staleHours)) return true;
+  return Lib.pendingParts(st).length > 0 && Date.now() - (store.get('lastDispatch') || 0) > 3 * 3600e3;
+}
+async function requestUpdate(force = false) {
+  const token = store.get('token');
+  if (!token) return; // トークンのない端末（家族など）には何も出さない
+  try {
+    const run = await latestRun(token);
+    if (run.state === 'running' || run.state === 'queued') { watchUpdate(); return; } // すでに収集中
+    if (!force && !needsUpdate()) return;
+    const { workflow, branch } = ghRepo();
+    const r = await gh(`/actions/workflows/${workflow}/dispatches`, token, { method: 'POST', body: JSON.stringify({ ref: branch }) });
+    if (!r.ok) { setUpdateMsg(`更新の依頼に失敗しました（${r.status}）。設定タブの「データの更新」でトークンを確認してください。`); return; }
+    store.set('lastDispatch', Date.now());
+    watchUpdate();
+  } catch {
+    if (force) setUpdateMsg('更新の依頼を送れませんでした（通信エラー）。');
   }
-  setUpdateMsg('更新に時間がかかっています。しばらくしてから開き直してください。');
+}
+// 収集が終わるまで 1 分ごとに様子を見る（アプリを開いている間だけ）。終わったら新しいデータを読み直す
+async function watchUpdate() {
+  if (UPD.watching) return;
+  UPD.watching = true;
+  const token = store.get('token'), prev = DATA.status && DATA.status.updated_at;
+  for (let i = 0; i < 200; i++) {
+    let run = null;
+    try { run = await latestRun(token); } catch { /* 通信が戻るまで待つ */ }
+    if (run && (run.state === 'running' || run.state === 'queued')) {
+      UPD.state = run;
+      setUpdateMsg(run.state === 'queued' ? '🔄 データの更新を待っています…' : `🔄 データを更新中です（開始から${run.startedMin}分・ふだん1〜2時間）。そのまま使えます。`);
+      if (state.tab === 'settings') renderSettings();
+    } else if (run) {
+      UPD.state = run;
+      const st = await getJSON('data/status.json', null, 'no-store');
+      if (st && st.updated_at && st.updated_at !== prev) { await reloadData(st); break; }
+      if (run.state === 'failed') { setUpdateMsg('⚠ データの更新に失敗しました。時間をおいて設定タブの「今すぐ更新」を押してください。'); break; }
+      setUpdateMsg('🔄 新しいデータを公開しています…（数分）'); // 収集は終わり、公開ページの作り直し待ち
+    }
+    await new Promise((ok) => setTimeout(ok, 60e3));
+  }
+  UPD.watching = false;
+  if (state.tab === 'settings') renderSettings();
+}
+async function reloadData(st) {
+  DATA.status = st;
+  [DATA.events, DATA.pois, DATA.osm] = await Promise.all([getJSON('data/events.json', DATA.events), getJSON('data/pois.json', DATA.pois), getJSON('data/osm_spots.json', DATA.osm)]);
+  const ro = await getJSON('data/roads_osm.json', null);
+  if (ro) { DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2); DATA.passes = ro.filter((r) => r.pass); }
+  cellIndex = await getJSON('data/cells/index.json', cellIndex);
+  CELL_DATA.clear(); MOTO = null; PARK.clear();
+  DATA.ver++; tour.stops = null;
+  const left = Lib.pendingParts(st);
+  setUpdateMsg(left.length ? `✓ データを更新しました（${left.map((k) => Lib.COLLECT_PARTS[k]).join('・')}は時間切れのため、次に開いたときに続きを集めます）` : '✓ データを更新しました');
+  setTimeout(() => setUpdateMsg(''), 8000);
+  renderAll();
+}
+// 設定タブ: 更新の状況とトークンの登録
+function updateHtml() {
+  const st = DATA.status, has = !!store.get('token'), left = Lib.pendingParts(st);
+  const when = st && st.updated_at ? st.updated_at.slice(0, 16).replace('T', ' ') : '未取得';
+  const run = UPD.state;
+  return `<h2>データの更新</h2>
+    <p class="status">最終更新：${esc(when)}${left.length ? `／前回取れなかった種類：${left.map((k) => Lib.COLLECT_PARTS[k]).join('・')}` : ''}</p>
+    ${run && (run.state === 'running' || run.state === 'queued') ? `<p class="notice">🔄 更新中（開始から${run.startedMin || 0}分・ふだん1〜2時間）。終わると自動で新しいデータに切り替わります。</p>` : ''}
+    ${has ? `<p class="status">✓ トークン登録済み：アプリを開いたとき、データが${DATA.cfg.staleHours}時間より古いか、前回取れなかった種類があれば自動で更新を頼みます。GitHub での操作は不要です。</p>`
+      : `<p class="hint">トークンを一度登録すると、<strong>アプリを開くだけで自動で更新</strong>されます（GitHub に行く必要がなくなります）。家族の端末には不要です。</p>`}
+    <div class="actions"><button type="button" class="btn primary" id="update-now" ${has ? '' : 'disabled'}>今すぐ更新</button>
+      ${has ? '<button type="button" class="btn" id="token-check">トークンを確認</button><button type="button" class="btn" id="token-del">トークンを削除</button>' : ''}</div>
+    <p class="status" id="token-msg"></p>
+    <details ${has ? '' : 'open'}><summary>トークンの登録（最初の 1 回だけ）</summary><ol class="hint">
+      <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub のトークン作成ページ</a>を開く（GitHub にログイン）</li>
+      <li>Token name に「MyMap」、Expiration は「366 days」など長めに</li>
+      <li>Repository access を「Only select repositories」にして、<strong>${esc(ghRepo().repo)}</strong> を選ぶ</li>
+      <li>Permissions の「Repository permissions」→ <strong>Actions を「Read and write」</strong>（ほかは変えない）</li>
+      <li>「Generate token」を押し、表示された <code>github_pat_…</code> をコピーして下に貼り、「登録」</li></ol>
+      <input id="token" type="password" autocomplete="off" placeholder="github_pat_..." aria-label="GitHub トークン">
+      <div class="actions"><button type="button" class="btn primary" id="token-save">登録</button></div>
+      <p class="hint">トークンはこの端末の中にだけ保存され、GitHub への更新の依頼にだけ使います。期限が切れたら同じ手順で作り直してください。</p></details>`;
+}
+function bindUpdate() {
+  const msg = (t) => { const m = $('#token-msg'); if (m) m.textContent = t; };
+  $('#token-save').onclick = async () => {
+    const v = $('#token').value.trim(); if (!v) return;
+    msg('確認しています…');
+    try {
+      const r = await gh(`/actions/workflows/${ghRepo().workflow}/runs?per_page=1`, v);
+      if (!r.ok) { msg(`このトークンでは使えません（${r.status}）。リポジトリの選択と Actions の権限を確認してください。`); return; }
+      store.set('token', v); buzz(); renderSettings(); msg('✓ 登録しました。必要なときは自動で更新を頼みます。');
+      requestUpdate();
+    } catch { msg('確認できませんでした（通信エラー）。'); }
+  };
+  const ck = $('#token-check'); if (ck) ck.onclick = async () => {
+    msg('確認しています…');
+    try { const run = await latestRun(store.get('token')); msg(`✓ 使えます（前回の収集：${({ done: '成功', failed: '失敗', running: '実行中', queued: '待ち' })[run.state] || 'なし'}）`); }
+    catch (e) { msg(`使えません（${e.message}）。期限切れなら作り直してください。`); }
+  };
+  const del = $('#token-del'); if (del) del.onclick = () => { if (confirm('トークンを削除しますか？（自動の更新が止まります）')) { store.set('token', null); renderSettings(); } };
+  $('#update-now').onclick = () => { buzz(); requestUpdate(true); };
 }
 
 // ---- ツーリング（ルート：Valhalla・OSRM の公開サーバー／地図：OSM。どれも登録不要） ----
@@ -2087,7 +2166,6 @@ window.addEventListener('offline', () => renderAll());
 function renderSettings() {
   setCount(null);
   const prevToken = $('#token'), typed = prevToken ? prevToken.value : '', focused = document.activeElement === prevToken;
-  const has = !!store.get('token');
   $('#view').innerHTML = `<h2>表示</h2>
     <fieldset class="opts"><legend><strong>画面のデザイン</strong></legend>
       <label class="check"><input type="radio" name="theme" value="stylish" ${document.documentElement.dataset.theme === 'stylish' ? 'checked' : ''}>スタイリッシュ（グラデーション・丸みのあるカード。端末がダークモードなら暗い配色）</label>
@@ -2116,15 +2194,7 @@ function renderSettings() {
     <p class="status">状態：${store.get('gkey') ? '登録済み' : '未登録'}</p>
     <input id="gkey" type="password" autocomplete="off" placeholder="AIza..." aria-label="Google の API キー">
     <div class="actions"><button type="button" class="btn primary" id="gkey-save">保存</button><button type="button" class="btn" id="gkey-del">削除</button></div>
-    <h2>データの自動更新（管理者向け）</h2>
-    <p>GitHub の Fine-grained トークン（対象リポジトリ：このアプリのリポジトリだけ／権限：Actions の Read and write だけ）を貼ってください。トークンはこの端末の中にだけ保存されます。</p>
-    <p class="status">状態：${has ? '登録済み' : '未登録'}</p>
-    <input id="token" type="password" autocomplete="off" placeholder="github_pat_..." aria-label="GitHub トークン">
-    <div class="actions">
-      <button type="button" class="btn primary" id="token-save">保存</button>
-      <button type="button" class="btn" id="token-del">削除</button>
-      <button type="button" class="btn" id="update-now">今すぐ更新</button>
-    </div>
+    ${updateHtml()}
     <h2>収録しているデータ</h2>${dataTotalsHtml()}
     <h2>収集状況</h2>${statusHtml()}`;
   const el = $('#fav-genres');
@@ -2134,9 +2204,7 @@ function renderSettings() {
   document.querySelectorAll('input[name="theme"]').forEach((r) => { r.onchange = () => { buzz(); setTheme(r.value); }; });
   if (typed) $('#token').value = typed;
   if (focused) $('#token').focus();
-  $('#token-save').onclick = () => { const v = $('#token').value.trim(); if (v) { store.set('token', v); renderSettings(); } };
-  $('#token-del').onclick = () => { store.set('token', null); renderSettings(); };
-  $('#update-now').onclick = () => { buzz(); requestUpdate(true); };
+  bindUpdate();
   bindInstall();
   bindCostSettings();
   $('#gkey-save').onclick = () => { const v = $('#gkey').value.trim(); if (v) { store.set('gkey', v); renderSettings(); } };
