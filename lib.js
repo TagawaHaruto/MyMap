@@ -845,6 +845,25 @@ const Lib = (() => {
     const byOwnThenDist = (a, b) => (b.own - a.own) || a.distKm - b.distKm;
     return { car: car.sort(byOwnThenDist), bike: bike.sort(byOwnThenDist) };
   }
+  // バイクを止められる場所をまとめる: 前もって集めたデータ（moto）＋その場の検索（live）＋OpenPOI の名前＋道の駅。
+  // 40m 以内の重なりは 1 件に（確かな情報を優先）。likely（道の駅・SA・PA）は「たいてい止められる」
+  const MOTO_NAME_RE = /バイク|二輪|オートバイ|原付|モーターサイクル|ﾊﾞｲｸ|タイムズのB|モトパーク|バイクパーク/;
+  function mergeBikeSpots(p, km, sources) {
+    const all = [];
+    for (const [src, xs] of sources) {
+      for (const x of xs || []) {
+        if (x.lat == null) continue;
+        const d = haversineKm(p, x);
+        if (d > km) continue;
+        all.push({ ...x, distKm: d, src });
+      }
+    }
+    const rank = (x) => (x.likely ? 2 : x.src === 'OpenPOI' ? 1 : 0);
+    all.sort((a, b) => rank(a) - rank(b) || a.distKm - b.distKm);
+    const out = [];
+    for (const x of all) if (!out.some((y) => haversineKm(x, y) < 0.04)) out.push(x);
+    return out.sort((a, b) => (!!b.own - !!a.own) || (!!a.likely - !!b.likely) || a.distKm - b.distKm);
+  }
   const isParkingWord = (w) => /駐車|駐輪|パーキング|parking/i.test(String(w));
   const isBikeWord = (w) => /バイク|二輪|オートバイ|原付|モーターサイクル|駐輪/.test(String(w));
 
@@ -1027,7 +1046,7 @@ const Lib = (() => {
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
     nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen,
-    parkingQuery, parseParking, isParkingWord, isBikeWord };
+    parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;
