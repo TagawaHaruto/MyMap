@@ -344,6 +344,24 @@ class OsmSpotTest(unittest.TestCase):
             with open(os.path.join(d, 'park', 'index.json'), encoding='utf-8') as f:
                 self.assertEqual(sum(json.load(f).values()), 2)
 
+    def test_annotate_parking(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            collect.save_park(d, [{'la': 35.6500, 'lo': 139.5400, 'a': 1},              # 利用者用（店のすぐ隣）
+                                  {'la': 35.7004, 'lo': 139.5000, 'n': 'ガスト府中店 駐車場'},  # 店名つき
+                                  {'la': 35.7509, 'lo': 139.5000}])                          # 名前なし（90m）
+            collect.save(os.path.join(d, 'osm_spots.json'), [
+                {'name': 'A食堂', 'lat': 35.6503, 'lon': 139.5400},
+                {'name': 'ガスト府中店', 'lat': 35.7000, 'lon': 139.5000},
+                {'name': 'C商店', 'lat': 35.7501, 'lon': 139.5000},
+                {'name': 'D', 'lat': 35.8, 'lon': 139.5, 'pk': 2}], compact=True)
+            os.makedirs(os.path.join(d, 'cells', 'food'))
+            collect.save(os.path.join(d, 'cells', 'food', '142_558.json'), [{'name': 'E', 'lat': 35.65, 'lon': 139.5401}], compact=True)
+            self.assertEqual(collect.annotate_parking(d), 4)
+            xs = collect.load(os.path.join(d, 'osm_spots.json'), [])
+            self.assertEqual([x.get('pk') for x in xs], [2, 2, 1, None])
+            self.assertEqual(collect.load(os.path.join(d, 'cells', 'food', '142_558.json'), [])[0]['pk'], 2)
+
     def test_done_kinds_from_old_status(self):
         st = {'cells_ver': collect.DATA_VER, 'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],
               'cells_error': 'cafe: HTTPError: 504 / bigpark: HTTPError: 504'}

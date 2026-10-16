@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []), allTypes: !!saved.allTypes,
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false, parkOnly: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -241,11 +241,15 @@ function spotCandidates() {
     if (g) all = all.filter((s) => Lib.inGeometry(s, g));
   }
   if (state.openOnly) { const now = new Date(); all = all.filter((s) => Lib.openState(s.oh, now) === true); }
+  if (state.parkOnly) all = all.filter(hasParking);
   if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
 }
 const isCurated = (s) => !s.poi && !s.op && !String(s.id).startsWith('osm:');
-const parkText = (s) => (s.parking ? [s.parking.car ? '🅿車' : '', s.parking.bike ? '🅿二輪' : ''].filter(Boolean).join(' ') : '');
+// 駐車場の目安: 厳選は登録済みの情報、そのほかは収集時に近くの駐車場から推定した pk（2: 専用がありそう・1: 近くにある）
+const parkText = (s) => (s.parking ? [s.parking.car ? '🅿車' : '', s.parking.bike ? '🅿二輪' : ''].filter(Boolean).join(' ')
+  : s.pk === 2 ? '🅿駐車場あり（推定）' : s.pk === 1 ? '🅿近くに駐車場' : '');
+const hasParking = (s) => (s.parking ? !!s.parking.car : !!s.pk) || s.kind === 'michinoeki';
 function spotCard(s) {
   const sns = Lib.snsLinks(s);
   const icons = s.genres.map((g) => icon(GENRES[g] || '・')).join('');
@@ -668,6 +672,7 @@ function renderSpotList() {
     `<button type="button" class="chip" id="t-gacha">🎲おまかせ</button>`,
     `<button type="button" class="chip" id="t-plans">📋保存したプラン${savedPlans().length ? `（${savedPlans().length}）` : ''}</button>`,
     `<button type="button" class="chip" id="t-open" aria-pressed="${state.openOnly}">🕘営業中だけ</button>`,
+    `<button type="button" class="chip" id="t-park" aria-pressed="${state.parkOnly}">🅿駐車場あり</button>`,
     `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
     `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>`,
     (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
@@ -695,6 +700,7 @@ function renderSpotList() {
   if (state.pendingGacha && DATA.osmLoaded && list.length) { state.pendingGacha = false; spin(list); }
   const ga = $('#gacha-again'); if (ga) ga.onclick = () => { buzz(); spin(list); };
   const gc = $('#gacha-close'); if (gc) gc.onclick = () => { state.gacha = null; renderSpotList(); };
+  $('#t-park').onclick = () => { buzz(); state.parkOnly = !state.parkOnly; state.limit = 300; renderSpotList(); };
   $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
   $('#t-iso').onclick = () => { buzz(); state.isoOn = !state.isoOn; state.limit = 300; renderSpotList(); };
   $('#t-season').onclick = () => { buzz(); state.seasonOnly = !state.seasonOnly; state.limit = 300; renderSpotList(); };
