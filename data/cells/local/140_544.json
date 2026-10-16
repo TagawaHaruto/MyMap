@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5915738786","name":"魚宗","lat":35.01475,"lon":136.22667,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5915746499","name":"小川屋","lat":35.01311,"lon":136.24724,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:700860543","name":"森製茶","lat":35.11337,"lon":136.23116,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1415087267","name":"おかずやさん","lat":35.24436,"lon":136.24986,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1466356244","name":"ポッポキュート","lat":35.24355,"lon":136.24947,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1466356247","name":"mamaikuko","lat":35.24324,"lon":136.24969,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:628526486","name":"湖東体育館","lat":35.12874,"lon":136.24468,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:628526502","name":"湖東プール","lat":35.12826,"lon":136.24586,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:628526509","name":"体育館","lat":35.12946,"lon":136.24791,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:628983529","name":"名神八日市カントリー倶楽部","lat":35.07311,"lon":136.21099,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:644408306","name":"体育館","lat":35.1305,"lon":136.225,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:674027458","name":"日野町Ｂ＆Ｇ海洋センター","lat":35.02899,"lon":136.2397,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

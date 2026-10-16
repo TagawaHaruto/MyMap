@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4105493143","name":"菖蒲ヶ浜キャンプ場","lat":36.75159,"lon":139.45098,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8742073956","name":"丸沼高原オートキャンプ場","lat":36.81386,"lon":139.33723,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9992417322","name":"湯元キャンプ場","lat":36.80371,"lon":139.41921,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11467329042","name":"尾瀬沼キャンプ場","lat":36.92592,"lon":139.31782,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:408666477","name":"菅沼キャンプ村","lat":36.82274,"lon":139.37997,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:461651047","name":"七入オートキャンプ場","lat":36.98451,"lon":139.34696,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:461657907","name":"尾瀬よなご平キャンプ場","lat":36.98973,"lon":139.35462,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

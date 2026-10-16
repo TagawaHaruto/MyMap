@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:500297670","name":"尾瀬高原オートキャンプ場","lat":36.79618,"lon":139.23669,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"http://lodgechatty.net/ozecamp.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0278-58-2436"},
+{"id":"osm:way:501198604","name":"山ノ鼻キャンプ場","lat":36.91547,"lon":139.19724,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:515718207","name":"ほたか牧場キャンプ場","lat":36.80944,"lon":139.19011,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"https://hotakabokujo-camp.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0278-58-3757"},
+{"id":"osm:way:1191194320","name":"川場谷野営場","lat":36.77122,"lon":139.15311,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1191194874","name":"自然の森野営場","lat":36.84791,"lon":139.17318,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

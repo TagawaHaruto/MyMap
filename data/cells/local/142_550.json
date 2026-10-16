@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:717167972","name":"馬籠館","lat":35.52425,"lon":137.56565,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:632357324","name":"大桑村村民体育館","lat":35.70021,"lon":137.69256,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:633680649","name":"上松B＆G海洋センター","lat":35.74722,"lon":137.71332,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13257920502","name":"ties Camping Ground Nagiso","lat":35.61673,"lon":137.62183,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:866148556","name":"せいなの森キャンプ場","lat":35.51077,"lon":137.66522,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.seinanomori.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:879152514","name":"大平キャンプ場","lat":35.56324,"lon":137.70131,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1034927393","name":"子野の里 中山道いこいの場","lat":35.50513,"lon":137.51732,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:3642001369","name":"阿寺渓谷キャンプ場","lat":35.66534,"lon":137.62917,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11195227195","name":"阿寺渓谷キャンプ場","lat":35.7019,"lon":137.57975,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

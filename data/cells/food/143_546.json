@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:6501505458","name":"スカイハイ","lat":35.89882,"lon":136.65398,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12093448145","name":"親方","lat":35.97801,"lon":136.5023,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12093448392","name":"真邑","lat":35.98747,"lon":136.50994,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12093448397","name":"コメダ珈琲店","lat":35.98698,"lon":136.5099,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","chain":true},
+{"id":"osm:node:12093448398","name":"とっど","lat":35.98872,"lon":136.51344,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

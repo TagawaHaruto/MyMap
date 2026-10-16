@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:9030078279","name":"かみかわ物産直売所","lat":37.6156,"lon":139.44737,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:451814299","name":"阿賀町スポーツ施設三川B&G海洋センター","lat":37.68972,"lon":139.38037,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:451815564","name":"阿賀町スポーツ施設津川B&G海洋センター","lat":37.67221,"lon":139.44843,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:687877579","name":"角神湖畔青少年旅行村","lat":37.70838,"lon":139.46474,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

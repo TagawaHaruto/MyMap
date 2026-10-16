@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:6002062441","name":"鮎美屋","lat":36.76476,"lon":140.40133,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6002062443","name":"よねや","lat":36.76404,"lon":140.40006,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6002062453","name":"双葉","lat":36.76461,"lon":140.40125,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6002062463","name":"新滝","lat":36.76447,"lon":140.40086,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6002062472","name":"滝見屋","lat":36.76484,"lon":140.40444,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10089627900","name":"奥久慈膳所 ゆうゆう","lat":36.78155,"lon":140.31832,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12901478454","name":"たきもと","lat":36.76531,"lon":140.40179,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12901478471","name":"昔屋","lat":36.76452,"lon":140.40103,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:582396354","name":"滝見茶屋","lat":36.76383,"lon":140.40489,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:804476143","name":"屋台ラーメン醤家","lat":36.81782,"lon":140.36993,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:10119531319","name":"Daigo Cafe","lat":36.77129,"lon":140.35442,"pref":"茨城","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:466545860","name":"お菓子の麻呂宇土","lat":36.78965,"lon":140.36147,"pref":"茨城","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

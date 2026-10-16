@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:12473348958","name":"Cafe 02glee","lat":36.25844,"lon":136.22668,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Tu-Su 09:00-sunset","tel":"+81 80 9349 0222"},
+{"id":"osm:node:14040472853","name":"シフォンケーキの店 森のプチリス","lat":36.27081,"lon":136.22378,"pref":"その他","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","oh":"Tu-We 10:30-17:30; Fr-Su 10:30-17:30","tel":"+81 80 2655 9741"}
+]

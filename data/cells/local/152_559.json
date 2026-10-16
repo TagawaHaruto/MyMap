@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:13708248171","name":"めざみの里観光物産館","lat":38.02601,"lon":139.9941,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 238 86 3939"},
+{"id":"osm:node:4409008330","name":"白い森オートキャンプ場","lat":38.16185,"lon":139.78624,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

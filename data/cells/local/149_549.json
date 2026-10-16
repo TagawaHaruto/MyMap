@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1168986053","name":"ギフト館イマイ","lat":37.43436,"lon":137.25768,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:591945996","name":"体育館","lat":37.34191,"lon":137.25143,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4826903222","name":"鉢ヶ崎オートキャンプ場","lat":37.44399,"lon":137.32838,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

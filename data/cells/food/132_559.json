@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:5100726344","name":"銀八","lat":33.11031,"lon":139.79011,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:5100726649","name":"アカコッコ","lat":33.11652,"lon":139.78305,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5102176210","name":"八島","lat":33.10728,"lon":139.78363,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5102215909","name":"あそこ寿司","lat":33.12049,"lon":139.80197,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:5103426759","name":"梁山泊","lat":33.1206,"lon":139.80299,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:5103426784","name":"生蕎麦 千両","lat":33.07078,"lon":139.79689,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5112336663","name":"名代一休庵","lat":33.10989,"lon":139.78958,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9594455055","name":"いそざきえん","lat":33.07056,"lon":139.79638,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12745982904","name":"POSEIDON","lat":33.11304,"lon":139.76052,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:13730681749","name":"Steak Charlie","lat":33.11857,"lon":139.8025,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"ステーキ","g":"food","k":"restaurant"},
+{"id":"osm:way:1069937439","name":"PIZZA PARADISO","lat":33.11816,"lon":139.75635,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"ピザ","g":"food","k":"restaurant"},
+{"id":"osm:way:1072686401","name":"かず","lat":33.12063,"lon":139.80027,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"韓国料理","g":"food","k":"restaurant"},
+{"id":"osm:way:1376644484","name":"CiaoBella八丈太鼓カフェ","lat":33.10559,"lon":139.79052,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:way:1444402026","name":"やたい村","lat":33.12895,"lon":139.80447,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"韓国料理","g":"food","k":"restaurant"},
+{"id":"osm:node:5126397015","name":"八丈島ジャージーカフェ","lat":33.10866,"lon":139.78867,"pref":"東京","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12690646162","name":"Pamon","lat":33.12431,"lon":139.79498,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1072686305","name":"JOY","lat":33.12047,"lon":139.79747,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1446417588","name":"hachi","lat":33.10776,"lon":139.78722,"pref":"東京","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

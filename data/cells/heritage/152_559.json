@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5116628332","name":"民宿さいとう","lat":38.15246,"lon":139.77976,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5119184921","name":"がまの屋温泉 いいで旅館","lat":38.04261,"lon":139.99288,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5285335312","name":"美和","lat":38.1891,"lon":139.80117,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12347218501","name":"Slow Village","lat":38.06302,"lon":139.99175,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

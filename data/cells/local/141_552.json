@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4907562890","name":"百閒洞露営地","lat":35.45345,"lon":138.12738,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8607325403","name":"面平キャンプ","lat":35.376,"lon":138.08955,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.mstb.jp/sangakubunka/campsite","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:826341206","name":"大平高原流星オートキャンプ場","lat":35.44759,"lon":138.00481,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://www.shirabiso.com/camp/ryuseicamp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:847996892","name":"しらびそ高原 山岳オートキャンプ場","lat":35.43217,"lon":138.02643,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

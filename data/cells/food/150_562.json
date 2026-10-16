@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:14041201440","name":"TomSlice","lat":37.66744,"lon":140.6065,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ピザ","g":"food","k":"restaurant"},
+{"id":"osm:node:14041201451","name":"あじせん 楓亭","lat":37.66576,"lon":140.58944,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:14041201452","name":"だいまる","lat":37.66583,"lon":140.59251,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4308106342","name":"なでしこ直売所","lat":37.6832,"lon":140.6581,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:14041201443","name":"幸楽苑","lat":37.66719,"lon":140.57575,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true}
+]

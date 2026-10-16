@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:5909239736","name":"栄村直売所かたくり","lat":36.98853,"lon":138.58094,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5909239737","name":"物産館またたび","lat":36.98852,"lon":138.58141,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12069444273","name":"たかはし","lat":36.95132,"lon":138.6667,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12069444295","name":"わらび","lat":36.95139,"lon":138.66628,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:586026020","name":"笹小舎","lat":36.97419,"lon":138.74972,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6038746786","name":"七ツ釜キャンプ場","lat":36.97184,"lon":138.71058,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:303787658","name":"カヤの平高原キャンプ場","lat":36.83264,"lon":138.5,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:641153516","name":"清田山キャンプ場","lat":36.99025,"lon":138.71854,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:641153524","name":"重地大池自然観察公園","lat":36.99991,"lon":138.7095,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:979359119","name":"キャンピアグリーン","lat":36.9654,"lon":138.6934,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:346124444","name":"ほっともっと","lat":37.89869,"lon":138.99438,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:338734558","name":"メイワサンピア","lat":37.80981,"lon":138.87679,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:377985421","name":"pool factory","lat":37.88149,"lon":138.97504,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:420049052","name":"新潟ドーム","lat":37.86718,"lon":138.99054,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:16062144","name":"西総合スポーツセンター","lat":37.87913,"lon":138.95338,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"https://niigata-kaikou.jp/facility/442","note":"遊び・スポーツ","g":"local","k":"activity","oh":"Mo-Sa 09:00-21:00; Su 09:00-17:00"},
+{"id":"osm:way:520001774","name":"角田浜キャンプ場","lat":37.79805,"lon":138.82823,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

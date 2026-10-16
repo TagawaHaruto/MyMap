@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5646953822","name":"いわき市遠野オートキャンプ場","lat":37.05411,"lon":140.69101,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7788451185","name":"三株高原キャンプ場","lat":37.02683,"lon":140.59159,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8573149641","name":"芝山自然公園","lat":37.15623,"lon":140.61216,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1265585599","name":"農産物直売所 風羽里","lat":36.26868,"lon":136.22909,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:relation:10744327","name":"芦原GC","lat":36.2821,"lon":136.23907,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

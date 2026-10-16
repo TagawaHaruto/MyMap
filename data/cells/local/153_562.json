@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:8756931123","name":"青野木ライディングクラブ","lat":38.28958,"lon":140.7216,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 22 391 3522"},
+{"id":"osm:node:13192031969","name":"宮城広瀬温水プール","lat":38.27429,"lon":140.73968,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1213543375","name":"グレート仙台カントリー倶楽部","lat":38.25939,"lon":140.71021,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5209444725","name":"作並渓流釣り場","lat":38.34948,"lon":140.60009,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8023580985","name":"立石沢","lat":38.28384,"lon":140.53859,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8023669085","name":"五合目","lat":38.29028,"lon":140.53687,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8023705885","name":"7合目","lat":38.29431,"lon":140.53068,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8712620168","name":"二口キャンプ場","lat":38.27322,"lon":140.54405,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9049917352","name":"ドロキャン新川","lat":38.30062,"lon":140.6583,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"http://drone-camp-nikkawa.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 22 797 6180"}
+]

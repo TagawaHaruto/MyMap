@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:6859731708","name":"シャディ サラダ館 海山店","lat":34.11249,"lon":136.22391,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756317","name":"大紀商店","lat":34.10856,"lon":136.23336,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756324","name":"魚貞","lat":34.10939,"lon":136.24183,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756394","name":"兵後魚店","lat":34.10928,"lon":136.22428,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859759095","name":"松永鮮魚店","lat":34.10703,"lon":136.24037,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"}
+]

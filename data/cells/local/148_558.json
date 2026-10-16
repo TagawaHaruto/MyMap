@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3283246274","name":"しらかば公園キャンプ場","lat":37.05396,"lon":139.52378,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:3585979193","name":"うさぎの森オートキャンプ場","lat":37.14781,"lon":139.71767,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:420049708","name":"ナラ入沢渓流釣りキャンプ場","lat":37.02838,"lon":139.7324,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

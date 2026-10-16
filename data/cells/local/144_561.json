@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:1758106100","name":"山口屋","lat":36.19078,"lon":140.27819,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1758108931","name":"飯田屋","lat":36.19075,"lon":140.27876,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4865443786","name":"花木センター野菜直売所","lat":36.2395,"lon":140.32753,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:315413517","name":"ホットモット","lat":36.10954,"lon":140.40217,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:105672386","name":"PGM石岡ゴルフクラブ","lat":36.20939,"lon":140.36932,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426085936","name":"美浦ゴルフ倶楽部","lat":36.0179,"lon":140.34922,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426273080","name":"ワンウエイゴルフクラブ","lat":36.09074,"lon":140.26615,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426273081","name":"富士OGMゴルフクラブ出島コース","lat":36.10446,"lon":140.34249,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426287810","name":"かすみがうらOGMゴルフクラブ","lat":36.08927,"lon":140.36232,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426287811","name":"造ゴルフ倶楽部 若海コース【PGM】","lat":36.12883,"lon":140.42875,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426287812","name":"玉造ゴルフ倶楽部 捻木コース","lat":36.13271,"lon":140.40971,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426287813","name":"霞ヶ浦カントリー倶楽部【PGM】","lat":36.14287,"lon":140.43279,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426287814","name":"白帆カントリークラブ","lat":36.13121,"lon":140.46101,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426287815","name":"ダイヤグリーン倶楽部","lat":36.1508,"lon":140.45447,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1056580065","name":"鉾田グリーンGC","lat":36.21497,"lon":140.45516,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

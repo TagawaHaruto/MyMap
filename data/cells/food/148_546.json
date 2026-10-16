@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11513605139","name":"レストラン松本","lat":37.1577,"lon":136.71823,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:13754453520","name":"ロードパーク 女の浦","lat":37.0911,"lon":136.72793,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1237713349","name":"ファーマーズレストラン香能の丘","lat":37.1597,"lon":136.68902,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

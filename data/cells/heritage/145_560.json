@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:2210761162","name":"新治郡衙跡","lat":36.34188,"lon":140.04463,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:新治郡衙跡"},
+{"id":"osm:node:2210761163","name":"新治廃寺","lat":36.34454,"lon":140.04217,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2480055492","name":"神宮寺塚古墳","lat":36.42904,"lon":140.05535,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2488166217","name":"真壁城","lat":36.27505,"lon":140.10968,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:真壁城"},
+{"id":"osm:node:7731160791","name":"羽黒山城跡","lat":36.35805,"lon":140.16739,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7731160792","name":"棟峰城跡","lat":36.36076,"lon":140.1692,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7731196889","name":"桜川遺蹟碑","lat":36.38643,"lon":140.15457,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7731196891","name":"ダイダラ坊の背負い石","lat":36.3926,"lon":140.15407,"pref":"茨城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8379960389","name":"逆川改修記念碑","lat":36.48132,"lon":140.16401,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:407956954","name":"桜町陣屋跡　国指定史跡","lat":36.40819,"lon":140.01454,"pref":"栃木","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:765755094","name":"おみやげのゆめ","lat":35.80915,"lon":137.25056,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7236633202","name":"おんたけ森きちオートキャンプ場","lat":35.8067,"lon":137.44984,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10293204904","name":"乗政キャンプ場","lat":35.80968,"lon":137.30339,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

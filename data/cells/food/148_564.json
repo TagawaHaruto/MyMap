@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:6435859568","name":"アルパインローズ","lat":37.24472,"lon":141.00284,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6511200199","name":"結のはじまり","lat":37.24843,"lon":141.00276,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6435859528","name":"Cafe Amazon","lat":37.24486,"lon":141.00285,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

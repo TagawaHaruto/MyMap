@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4408330965","name":"小浜城跡","lat":37.56421,"lon":140.51215,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4412971671","name":"宮森城跡","lat":37.54727,"lon":140.50566,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4412971672","name":"宮森家祖大内氏城跡","lat":37.5473,"lon":140.50564,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4412971676","name":"腹切石","lat":37.54856,"lon":140.50693,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4413017824","name":"宮森家祖大内氏城跡","lat":37.5644,"lon":140.51234,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4413017828","name":"政宗公御手植","lat":37.56439,"lon":140.5123,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:443213309","name":"宮森城址","lat":37.54748,"lon":140.50609,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:宮森城"},
+{"id":"osm:way:443763648","name":"小浜城本丸跡","lat":37.5641,"lon":140.51202,"pref":"その他","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:小浜城 (陸奥国)"}
+]

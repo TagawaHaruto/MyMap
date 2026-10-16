@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:161885522","name":"大日小屋","lat":35.88149,"lon":138.60193,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:161885524","name":"富士見平","lat":35.8821,"lon":138.58742,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:472096026","name":"みずがき山自然公園","lat":35.89635,"lon":138.57379,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"みず がき やま しぜん こうえん","tel":"+81 551-45-0277"},
+{"id":"osm:way:571903208","name":"中央広場","lat":35.90781,"lon":138.64088,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:571903210","name":"廻り目平キャンプ場","lat":35.90792,"lon":138.6403,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://w2.avis.ne.jp/~mawarime/","note":"キャンプ・野外","g":"local","k":"camp","oh":"07:00-20:00","tel":"+81-267-99-2428"},
+{"id":"osm:way:571903216","name":"貸しテント場","lat":35.90801,"lon":138.63967,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:819890027","name":"みずがき山森の農園キャンプ場","lat":35.89447,"lon":138.5709,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1252172198","name":"立原高原キャンプ場","lat":35.99978,"lon":138.569,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

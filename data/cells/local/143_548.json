@@ -1,0 +1,6 @@
+[
+{"id":"osm:relation:18248989","name":"朝霧スポーツ公園","lat":35.88851,"lon":137.20673,"pref":"その他","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6408645489","name":"老谷の森 川のほとりのキャンプ場","lat":35.95788,"lon":137.11887,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"https://oitaninomori.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:6485507515","name":"めいほうキャンプ場","lat":35.84606,"lon":137.03053,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:684109966","name":"老谷の森 川のほとりのキャンプ場","lat":35.9587,"lon":137.11825,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

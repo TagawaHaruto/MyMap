@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:684040173","name":"SADO二ツ亀ビューホテル","lat":38.32887,"lon":138.48686,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1181397649","name":"中嶋屋旅館","lat":38.28937,"lon":138.44359,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1181397660","name":"はやし荘","lat":38.28949,"lon":138.44452,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1181397793","name":"たにぐち荘","lat":38.261,"lon":138.43729,"pref":"その他","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1181397795","name":"外海府ユースホステル","lat":38.26056,"lon":138.4372,"pref":"その他","genres":["lodging"],"indoor":true,"url":"https://sotokaifu.jp/","note":"宿","g":"heritage","k":"lodging"}
+]

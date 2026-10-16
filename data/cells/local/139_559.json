@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6717381333","name":"亀屋本店","lat":34.99622,"lon":139.86286,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6717381341","name":"大幸園","lat":34.99609,"lon":139.86375,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6717381348","name":"川名","lat":34.99583,"lon":139.86432,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7236245923","name":"白浜豆腐BAITEN TATEYAMA","lat":34.99279,"lon":139.86524,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Th-Su 11:00-18:00"},
+{"id":"osm:way:725763317","name":"JAグリーン","lat":34.99053,"lon":139.88323,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:746031517","name":"木村ピーナッツ","lat":34.97895,"lon":139.86906,"pref":"千葉","genres":["souvenir"],"indoor":true,"url":"https://kimura-honpo.com/shop.html","note":"直売所","g":"local","k":"souvenir","tel":"+81-470-23-4823"},
+{"id":"osm:node:7743868983","name":"海のマルシェたてやま","lat":34.98945,"lon":139.85437,"pref":"千葉","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:9379774117","name":"ななうら横丁","lat":34.93186,"lon":139.94548,"pref":"千葉","genres":["souvenir"],"indoor":false,"url":"https://nponanaura.wixsite.com/nponanaura","note":"市場","g":"local","k":"market","oh":"Mo-Sa 09:00-17:00; Fr,Su,PH off"},
+{"id":"osm:node:1883400394","name":"館山ゴルフ倶楽部","lat":34.99982,"lon":139.89065,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:2309294139","name":"神戸ゴルフ練習場","lat":34.95701,"lon":139.84914,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:697254994","name":"房州カントリークラブ【アコーディア・ゴルフ】","lat":34.94898,"lon":139.85091,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:14397219","name":"館山カントリークラブ","lat":34.95112,"lon":139.80426,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://tateyama-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81-470-29-1111"},
+{"id":"osm:node:9105835964","name":"キャンプマナビス","lat":34.91503,"lon":139.82768,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://campmanavis.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9869766481","name":"キャンプマナビス 海サイト","lat":34.91336,"lon":139.82572,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://campmanavis.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9920254626","name":"THE CAMP","lat":34.93444,"lon":139.82612,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://www.senrinokaze.jp/camp/index.html","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:733598529","name":"DOG DEPT GARDEN CAMP 安房白浜","lat":34.90992,"lon":139.82968,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://dogdeptminamiboso.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81-470-29-3914"},
+{"id":"osm:way:1153497935","name":"富崎館キャンプ場","lat":34.92087,"lon":139.82641,"pref":"千葉","genres":["outdoor"],"indoor":false,"url":"https://www.tomisakikan.net/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

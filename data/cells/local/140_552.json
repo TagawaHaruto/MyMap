@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5197433898","name":"杉本屋","lat":35.10847,"lon":138.1383,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5288731260","name":"長島園寸又峡店","lat":35.17566,"lon":138.1191,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5288746109","name":"白樺屋","lat":35.17551,"lon":138.11889,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5288748336","name":"手作りの店さとう","lat":35.1757,"lon":138.11827,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5288757560","name":"晴耕雨読cafe","lat":35.17475,"lon":138.12009,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5288791113","name":"川根物産","lat":35.10834,"lon":138.13816,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5288901585","name":"澤本園","lat":35.10076,"lon":138.12969,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5288911787","name":"田畑茶店","lat":35.10865,"lon":138.1384,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6239155526","name":"長島園","lat":35.10806,"lon":138.14149,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6239168098","name":"川根本町本川根B&G海洋センター","lat":35.10289,"lon":138.14037,"pref":"静岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6239168100","name":"B&G海洋センタープール","lat":35.10287,"lon":138.14064,"pref":"静岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:716013314","name":"富士スタジアムゴルフ倶楽部 南コース","lat":34.86541,"lon":136.2354,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:716014092","name":"富士スタジアムゴルフ倶楽部 北コース","lat":34.87512,"lon":136.22678,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:717000559","name":"ルート25GC","lat":34.81277,"lon":136.23788,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

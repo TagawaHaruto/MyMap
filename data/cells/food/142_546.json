@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5390829753","name":"摘み草料理かたつむり","lat":35.56012,"lon":136.70605,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5390829755","name":"ニュー伊自良湖荘","lat":35.56697,"lon":136.70025,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6028883188","name":"たなか","lat":35.6352,"lon":136.6143,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:585370512","name":"早川屋","lat":35.50362,"lon":136.6978,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:585370519","name":"ひろ","lat":35.50315,"lon":136.69985,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:587482712","name":"魚博","lat":35.52346,"lon":136.73338,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:587490857","name":"レストランレインボーハウス","lat":35.52309,"lon":136.73684,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:934656570","name":"御食事処 富岡屋","lat":35.53455,"lon":136.60786,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:relation:12623882","name":"季節料理 立花屋","lat":35.53463,"lon":136.60844,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:6028883195","name":"亜紀","lat":35.63445,"lon":136.61541,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:585412082","name":"カフェ フルーリール","lat":35.50546,"lon":136.69774,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:587587848","name":"アルカジア","lat":35.51605,"lon":136.73904,"pref":"その他","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

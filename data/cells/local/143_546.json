@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:11297734270","name":"道の駅九頭竜","lat":35.90466,"lon":136.66233,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81 779 78 2300"},
+{"id":"osm:node:11327784606","name":"荒島マルシェ","lat":35.97174,"lon":136.55256,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7792090286","name":"勝原園地","lat":35.97279,"lon":136.59548,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:692532109","name":"キャンプ場","lat":35.89767,"lon":136.65181,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:692532110","name":"オートキャンプ場","lat":35.89842,"lon":136.65025,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:956202806","name":"RVパーク","lat":35.97347,"lon":136.55209,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4924053314","name":"みちくさショップ","lat":36.26571,"lon":137.69045,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7916868443","name":"新穂高温泉駅 売店","lat":36.28575,"lon":137.57521,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1281064873","name":"徳沢キャンプ場","lat":36.26528,"lon":137.69002,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1281064891","name":"横尾キャンプ場","lat":36.29302,"lon":137.69844,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1281064991","name":"涸沢野営場","lat":36.2944,"lon":137.66265,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:2293285488","name":"小梨平キャンプ場","lat":36.25058,"lon":137.64038,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4440389671","name":"ババ平キャンプ場","lat":36.32344,"lon":137.67572,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7913116424","name":"合掌の森中尾キャンプ場","lat":36.25958,"lon":137.57299,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1383089315","name":"太郎平キャンプ場","lat":36.45316,"lon":137.52537,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4976789017","name":"下郷産農林産物直売所","lat":37.20366,"lon":139.91622,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:310366070","name":"まちの駅「南会津ふるさと物産館」","lat":37.20524,"lon":139.77739,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1175246851","name":"お不動様直売所","lat":37.22328,"lon":139.89553,"pref":"その他","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:424730099","name":"那須ゴルフ倶楽部","lat":37.0962,"lon":139.99284,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:627084962","name":"那須ハイランドゴルフクラブ","lat":37.07162,"lon":139.94176,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:627978954","name":"戸田ゴルフ練習場","lat":37.02776,"lon":139.97731,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5585708325","name":"こころのもりキャンプ場","lat":37.05808,"lon":139.75068,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"http://kokoronomori.blog61.fc2.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10158310449","name":"大川ふるさと公園キャンプ場","lat":37.2435,"lon":139.85607,"pref":"その他","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:626600540","name":"メープル那須高原キャンプグランド","lat":37.06945,"lon":139.98453,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:637420323","name":"休暇村那須キャンプ場","lat":37.11751,"lon":139.99581,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:656621265","name":"那須高原アウトドアパーク リバーガーデン","lat":37.04237,"lon":139.98149,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]
