@@ -765,6 +765,67 @@ def save_park(root, items):
     return len(items)
 
 
+def park_core(name):
+    """駐車場名と店名を比べる用: 空白・かっこ・「駐車場」「パーキング」「第1」などを除く。"""
+    return re.sub(r'[（(].*?[)）]|\s|駐車場|パーキング|第[一二三四五六七八九1-9]+|[pPＰ]$', '', name or '')
+
+
+def parking_level(item, buckets):
+    """お店のまわりの駐車場から「専用の駐車場がありそう」(2)・「近くに駐車場」(1)・不明(0)。
+    専用: 60m 以内の利用者用（access=customers）か、150m 以内に店名を含む名前の駐車場。近く: 100m 以内に駐車場。"""
+    lat, lon, name = item['lat'], item['lon'], park_core(item.get('name'))
+    level = 0
+    by, bx = round(lat * 100), round(lon * 100)
+    for dy in (-1, 0, 1):
+        for dx in (-1, 0, 1):
+            for p in buckets.get((by + dy, bx + dx), ()):
+                d = km_ll([lat, lon], [p['la'], p['lo']])
+                if d > 0.15:
+                    continue
+                pn = park_core(p.get('n'))
+                if (d <= 0.06 and p.get('a')) or (len(name) >= 2 and pn and (name in pn or (len(pn) >= 2 and pn in name))):
+                    return 2
+                if d <= 0.1:
+                    level = 1
+    return level
+
+
+def annotate_parking(root):
+    """観光スポット（osm_spots.json）とグルメなど（cells）に pk（駐車場の目安）を書き込む。駐車場のデータがなければ何もしない。"""
+    park = load_park(root)
+    if not park:
+        return 0
+    buckets = {}
+    for p in park:
+        buckets.setdefault((round(p['la'] * 100), round(p['lo'] * 100)), []).append(p)
+
+    def mark(xs):
+        n = 0
+        for x in xs:
+            lv = parking_level(x, buckets)
+            if lv:
+                x['pk'] = lv
+                n += 1
+            else:
+                x.pop('pk', None)
+        return n
+    total = 0
+    path = os.path.join(root, 'osm_spots.json')
+    if os.path.exists(path):
+        xs = load(path, [])
+        total += mark(xs)
+        save(path, xs, compact=True)
+    base = os.path.join(root, 'cells')
+    for group in os.listdir(base) if os.path.isdir(base) else []:
+        gdir = os.path.join(base, group)
+        for fn in os.listdir(gdir) if os.path.isdir(gdir) else []:
+            if fn.endswith('.json'):
+                xs = load(os.path.join(gdir, fn), [])
+                total += mark(xs)
+                save(os.path.join(gdir, fn), xs, compact=True)
+    return total
+
+
 def refresh_roads(cfg, status, fetch, now, old, curated=(), sleep=time.sleep):
     """ドライブコースを種類ごとに週 1 回取り直す。取り直さないときは None。"""
     q, bb = dict(ROAD_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
@@ -1058,6 +1119,7 @@ def main():
     cells = refresh_cells(cfg, status, fetch, dt.datetime.now(JST), load_cells(DATA))
     if cells is not None:
         print(f'cells: {save_cells(DATA, cells)}')
+    print(f'parking marks: {annotate_parking(DATA)}')
     status['updated_at'] = now_iso()
     save(os.path.join(DATA, 'status.json'), status)
     print(f'events: {len(events)}')
