@@ -864,6 +864,29 @@ const Lib = (() => {
     for (const x of all) if (!out.some((y) => haversineKm(x, y) < 0.04)) out.push(x);
     return out.sort((a, b) => (!!b.own - !!a.own) || (!!a.likely - !!b.likely) || a.distKm - b.distKm);
   }
+  // 前もって集めた車の駐車場（小さい形）→ 表示用
+  const parkFromCell = (x) => ({ name: x.n || '', lat: x.la, lon: x.lo, fee: x.f === 1 ? '有料' : x.f === 0 ? '無料' : '', capacity: x.c || null,
+    capMoto: x.cm || null, motoNo: x.m === 0, motoOk: x.m === 1 || x.cm > 0, access: x.a ? 'customers' : '',
+    kind: x.t === 'ms' ? '立体駐車場' : x.t === 'ug' ? '地下駐車場' : '駐車場' });
+  // コインパーキング（多くは二輪不可）の名前
+  const COIN_RE = /タイムズ(?!のB)|リパーク|名鉄協商|NPC|コインパーキング|パラカ|ナビパーク|トラストパーク|エコロパーク|D-Parking|ザ・パーク|リメイク|PMO|ユアー/;
+  // バイクも止められるかもしれない（未確認）: 二輪不可でなく、コインパーキングでなく、利用者用か 50 台以上
+  const maybeMoto = (x) => !x.motoNo && !x.motoOk && !COIN_RE.test(x.name || '') && (x.access === 'customers' || (x.capacity || 0) >= 50);
+  // その施設の駐車場らしいか（100m 以内で利用者用か同じ名前）
+  function markOwn(xs, p) {
+    for (const x of xs) {
+      const d = haversineKm(p, x);
+      x.distKm = d;
+      x.own = d <= 0.1 && (x.access === 'customers' || (!!x.name && !!p.name && (coreName(x.name).includes(coreName(p.name)) || coreName(p.name).includes(coreName(x.name)))));
+    }
+    return xs;
+  }
+  // 40m 以内の重なりは 1 件に（先に入れたものを優先）
+  function dedupeNear(xs, m = 0.04) {
+    const out = [];
+    for (const x of xs) if (!out.some((y) => haversineKm(x, y) < m)) out.push(x);
+    return out;
+  }
   const isParkingWord = (w) => /駐車|駐輪|パーキング|parking/i.test(String(w));
   const isBikeWord = (w) => /バイク|二輪|オートバイ|原付|モーターサイクル|駐輪/.test(String(w));
 
@@ -1059,7 +1082,7 @@ const Lib = (() => {
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
     nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen,
-    parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE, COLLECT_PARTS, pendingParts, runState };
+    parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE, parkFromCell, COIN_RE, maybeMoto, markOwn, dedupeNear, COLLECT_PARTS, pendingParts, runState };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

@@ -591,4 +591,16 @@ assert.strictEqual(Lib.runState({ workflow_runs: [{ status: 'completed', conclus
 assert.strictEqual(Lib.runState({ workflow_runs: [{ status: 'queued', created_at: '2026-10-15T09:59:00Z' }] }, nowMs).state, 'queued');
 assert.strictEqual(Lib.runState({}).state, null);
 
+// ---- 前もって集めた駐車場 ----
+const pc = Lib.parkFromCell({ la: 35.0, lo: 139.0, n: 'A', f: 1, c: 60, a: 1 });
+assert.deepStrictEqual([pc.fee, pc.capacity, pc.access, pc.kind], ['有料', 60, 'customers', '駐車場']);
+assert.strictEqual(Lib.maybeMoto(pc), true);
+assert.strictEqual(Lib.maybeMoto(Lib.parkFromCell({ la: 35, lo: 139, n: 'タイムズ調布', c: 80 })), false); // コインパーキング
+assert.strictEqual(Lib.maybeMoto(Lib.parkFromCell({ la: 35, lo: 139, n: 'タイムズのB調布', c: 80 })), true);
+assert.strictEqual(Lib.maybeMoto(Lib.parkFromCell({ la: 35, lo: 139, c: 10 })), false); // 小さい
+assert.strictEqual(Lib.maybeMoto(Lib.parkFromCell({ la: 35, lo: 139, c: 100, m: 0 })), false); // 二輪不可
+const own = Lib.markOwn([Lib.parkFromCell({ la: 35.0005, lo: 139.0, n: '深大寺駐車場' })], { name: '深大寺', lat: 35.0, lon: 139.0 });
+assert.strictEqual(own[0].own, true);
+assert.strictEqual(Lib.dedupeNear([{ lat: 35, lon: 139 }, { lat: 35.0001, lon: 139 }, { lat: 35.01, lon: 139 }]).length, 2);
+
 console.log('lib: ALL PASS');

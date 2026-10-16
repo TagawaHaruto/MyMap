@@ -26,6 +26,7 @@ jobs:
               if [ -f "prev/data/$f" ]; then cp "prev/data/$f" "data/$f"; fi
             done
             if [ -d prev/data/cells ]; then rm -rf data/cells && cp -r prev/data/cells data/cells; fi
+            if [ -d prev/data/park ]; then rm -rf data/park && cp -r prev/data/park data/park; fi
           else
             echo "gh-pages がまだないので、空のデータから始めます"
           fi
