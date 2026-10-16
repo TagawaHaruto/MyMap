@@ -690,6 +690,81 @@ def refresh_moto(cfg, status, fetch, now, old, sleep=time.sleep):
     return out
 
 
+# ---- 車の駐車場（起点から 150km 圏・週 1 回）。件数が多いので升目ごとの小さい形で data/park/<升目>.json に ----
+PARK_KM = 150
+PARK_QUERIES = [('parking', 'nwr["amenity"="parking"]["access"!~"^(private|no)$"]')]
+
+
+def parse_parking(text, kind):
+    """駐車場を小さい形に: la/lo 位置、n 名前、f 料金(1 有料/0 無料)、c 台数、cm 二輪台数、m 二輪(1 可/0 不可)、a 利用者用、t 種類、k 種類（収集の区別）。"""
+    out = []
+    for el in overpass_elements(text):
+        t = el.get('tags', {})
+        pos = el if 'lat' in el else el.get('center')
+        if not pos or t.get('access') in ('private', 'no'):
+            continue
+        x = {'la': round(pos['lat'], 5), 'lo': round(pos['lon'], 5), 'k': kind}
+        name = t.get('name') or t.get('operator')
+        if name:
+            x['n'] = name[:40]
+        if t.get('fee') in ('yes', 'no'):
+            x['f'] = 1 if t['fee'] == 'yes' else 0
+        for src, dst in (('capacity', 'c'), ('capacity:motorcycle', 'cm')):
+            if str(t.get(src, '')).isdigit():
+                x[dst] = int(t[src])
+        if t.get('motorcycle') in ('yes', 'designated', 'permissive', 'no'):
+            x['m'] = 0 if t['motorcycle'] == 'no' else 1
+        if t.get('access') == 'customers':
+            x['a'] = 1
+        if t.get('parking') in ('multi-storey', 'underground'):
+            x['t'] = 'ms' if t['parking'] == 'multi-storey' else 'ug'
+        out.append(x)
+    return out
+
+
+PARK_BANDS = 5  # 南北に 5 つの帯に分け、帯ごとに取れたかを記録する（制限時間で止まっても、次の実行で続きから）
+
+
+def refresh_parking(cfg, status, fetch, now, old, sleep=time.sleep):
+    """起点から PARK_KM 圏の駐車場を週 1 回。帯（約 60km × 300km）ごとに、約 30km 四方に分けて問い合わせる。"""
+    pcfg = {**cfg, 'poiRadiusKm': min(cfg['poiRadiusKm'], PARK_KM)}
+    stmt = dict(PARK_QUERIES)['parking']
+    cells = grid(bbox(cfg['origin'], pcfg['poiRadiusKm']), PARK_BANDS)
+    kinds = [f'park_{i}' for i in range(PARK_BANDS)]
+
+    def fetch_kind(kind):
+        i, got = int(kind.split('_')[1]), []
+        for part in cells[i * PARK_BANDS:(i + 1) * PARK_BANDS]:
+            got += overpass_kind(stmt, part, 2, lambda text: parse_parking(text, kind), fetch, sleep)
+        return got
+    return refresh_kinds('park', kinds, pcfg, status, now, old, fetch_kind, sleep)
+
+
+def load_park(root):
+    out = []
+    base = os.path.join(root, 'park')
+    for name in os.listdir(base) if os.path.isdir(base) else []:
+        if name.endswith('.json') and name != 'index.json':
+            out += load(os.path.join(base, name), [])
+    return out
+
+
+def save_park(root, items):
+    """升目ごとに保存（消えた升目のファイルは残さない）。index.json は {升目: 件数}。"""
+    import shutil
+    base = os.path.join(root, 'park')
+    if os.path.isdir(base):
+        shutil.rmtree(base)
+    os.makedirs(base)
+    by = {}
+    for x in items:
+        by.setdefault(cell_id(x['la'], x['lo']), []).append(x)
+    for cid, xs in by.items():
+        save(os.path.join(base, f'{cid}.json'), xs, compact=True)
+    save(os.path.join(base, 'index.json'), {cid: len(xs) for cid, xs in by.items()})
+    return len(items)
+
+
 def refresh_roads(cfg, status, fetch, now, old, curated=(), sleep=time.sleep):
     """ドライブコースを種類ごとに週 1 回取り直す。取り直さないときは None。"""
     q, bb = dict(ROAD_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
@@ -969,6 +1044,9 @@ def main():
     if roads is not None:
         save(os.path.join(DATA, 'roads_osm.json'), roads, compact=True)
         print(f'roads: {len(roads)}')
+    park = refresh_parking(cfg, status, fetch, dt.datetime.now(JST), load_park(DATA))
+    if park is not None:
+        print(f'parking: {save_park(DATA, park)}')
     moto = refresh_moto(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'moto.json'), []))
     if moto is not None:
         save(os.path.join(DATA, 'moto.json'), moto, compact=True)

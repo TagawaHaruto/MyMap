@@ -502,7 +502,7 @@ const PARK = new Map(); // 地点 → 結果（同じ場所は取り直さない
 async function fetchParking(p, m = 600) {
   const key = `${p.lat.toFixed(4)},${p.lon.toFixed(4)},${m}`;
   if (PARK.has(key)) return PARK.get(key);
-  const v = Lib.parseParking(await overpass(Lib.parkingQuery(p, m)), p);
+  const v = Lib.parseParking(await overpass(Lib.parkingQuery(p, m, BIKE_KM * 1000)), p);
   PARK.set(key, v);
   return v;
 }
@@ -531,32 +531,69 @@ async function openPoiBike(p) {
   }
   return out;
 }
+// 前もって集めた車の駐車場（data/park/<升目>.json）。その場所のまわりの升目だけ読む
+let PARK_INDEX;
+const PARK_CELLS = new Map();
+async function parkNear(p, km) {
+  if (PARK_INDEX === undefined) { PARK_INDEX = await getJSON('data/park/index.json', null); FAILED.delete('data/park/index.json'); }
+  if (!PARK_INDEX) return [];
+  const ids = Lib.cellsInRadius(p, km).filter((id) => PARK_INDEX[id]);
+  await Promise.all(ids.filter((id) => !PARK_CELLS.has(id)).map(async (id) => PARK_CELLS.set(id, await getJSON(`data/park/${id}.json`, []))));
+  return ids.flatMap((id) => PARK_CELLS.get(id) || []).map(Lib.parkFromCell).filter((x) => Lib.haversineKm(p, x) <= km);
+}
+// OpenPOI で「駐車場」「パーキング」（1km 以内）
+async function openPoiCar(p) {
+  if (navigator.onLine === false) return [];
+  const out = [];
+  for (const q of ['駐車場', 'パーキング']) {
+    try {
+      const r = await fetch(Lib.openPoiUrl(q, p, 1, 100), { signal: timeoutSignal(8000) });
+      if (r.ok) out.push(...Lib.parseOpenPoi(await r.json()).filter((x) => /駐車|パーキング|parking/i.test(x.name)).map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, kind: '駐車場（OpenPOI）', src: 'OpenPOI' })));
+    } catch { /* ネットの分はなしで */ }
+  }
+  return out;
+}
+const CAR_KM = 1, BIKE_KM = 3, PARK_SHOW = 20;
 async function renderParking(el, s, only) {
   if (!el) return;
   const curated = s.parking ? `<p class="status">登録済みの情報：${s.parking.car ? '🚗車の駐車場あり' : '🚗車の駐車場なし（または不明）'}・${s.parking.bike ? '🏍二輪を止められる' : '🏍二輪は不明'}</p>` : '';
-  el.innerHTML = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は600m・バイクは1.5km以内）</h4>${curated}<p class="hint">探しています…</p>`;
+  const title = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は${CAR_KM}km・バイクは${BIKE_KM}km以内）</h4>${curated}`;
+  el.innerHTML = `${title}<p class="hint">探しています…</p>`;
   const gmLinks = `<div class="actions"><a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('バイク 駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップでバイク駐車場</a>
     <a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップで駐車場</a></div>`;
-  // バイク: 前もって集めた分・OpenPOI・道の駅はその場の検索が混雑していても出す
-  const [moto, opBike] = await Promise.all([motoData(), openPoiBike(s)]);
   const michi = DATA.pois.filter((x) => x.kind === 'michinoeki').map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, type: '道の駅', likely: true }));
-  let v = null;
-  try { v = await fetchParking(s); } catch { v = null; }
-  const bikeAll = Lib.mergeBikeSpots(s, 1.5, [['OSM', moto.map((x) => ({ ...x, kind: x.type }))], ['live', v ? v.bike : []], ['OpenPOI', opBike], ['道の駅', michi]]);
-  if (!v) v = { car: [], bike: [], failed: true };
-  v = { ...v, bike: bikeAll };
-  {
-    const own = v.car.concat(v.bike).filter((x) => x.own);
-    const sec = (title, xs, bike) => `<h4>${title}（${xs.length}件・近い順）</h4>` + (xs.length ? `<ul class="rel">${xs.slice(0, 8).map((x) => parkRow(x, bike)).join('')}</ul>`
-      : `<p class="hint">見つかりませんでした（OpenStreetMap に登録がない場合もあります）。</p>`);
-    el.innerHTML = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は600m・バイクは1.5km以内）</h4>${curated}
-      <p class="status">${own.length ? '✓ この施設の駐車場らしい所があります（下の「この施設の駐車場かも」）' : 'この施設専用の駐車場は見つかりませんでした（周辺の駐車場を確認してください）'}</p>
-      ${only !== 'car' ? sec('🏍 バイクを止められる所', v.bike, true) : ''}
-      ${only !== 'bike' ? sec('🚗 車の駐車場', v.car, false) : ''}
-      ${v.failed ? '<p class="hint">⚠ 車の駐車場は今は探せませんでした（検索サーバーの混雑か圏外）。バイクは前もって集めた情報から出しています。</p>' : ''}
-      <p class="hint">バイクは OpenStreetMap（バイク専用・二輪可の駐輪場・バイク可の駐車場・名前に「バイク」「二輪」を含む所。週 1 回まとめて収集）、OpenPOI、道の駅・SA・PA（「たいてい止められる」）から。ほかの駐車場も止められる場合があります。満空・料金は現地や公式で確認してください。</p>${gmLinks}`;
+  const shown = { car: PARK_SHOW, bike: PARK_SHOW, maybe: 8 };
+  let live = null, liveState = 'loading', got = null;
+  // 前もって集めた分・OpenPOI はすぐ出し、その場の検索（OpenStreetMap）は届いたら足す
+  const draw = () => {
+    if (!el.isConnected || !got) return;
+    const [moto, opBike, localCar, opCar] = got;
+    const car = Lib.dedupeNear(Lib.markOwn(localCar.concat(live ? live.car : [], opCar).filter((x) => Lib.haversineKm(s, x) <= CAR_KM), s))
+      .sort((a, b) => (b.own - a.own) || a.distKm - b.distKm);
+    const bike = Lib.mergeBikeSpots(s, BIKE_KM, [['OSM', moto.map((x) => ({ ...x, kind: x.type }))], ['live', live ? live.bike : []],
+      ['OSM', car.filter((x) => x.motoOk).map((x) => ({ ...x, kind: `${x.kind}（二輪可）` }))], ['OpenPOI', opBike], ['道の駅', michi]]);
+    const bikeSet = new Set(bike.map((x) => `${x.lat.toFixed(4)},${x.lon.toFixed(4)}`));
+    const maybe = car.filter((x) => Lib.maybeMoto(x) && !bikeSet.has(`${x.lat.toFixed(4)},${x.lon.toFixed(4)}`));
+    const own = car.concat(bike).filter((x) => x.own);
+    const sec = (key, head, xs, bike2, empty) => `<h4>${head}（${xs.length}件・近い順）</h4>` + (xs.length
+      ? `<ul class="rel">${xs.slice(0, shown[key]).map((x) => parkRow(x, bike2)).join('')}</ul>${xs.length > shown[key] ? `<button type="button" class="btn" data-park-more="${key}">もっと見る（残り${xs.length - shown[key]}件）</button>` : ''}`
+      : `<p class="hint">${empty}</p>`);
+    el.innerHTML = `${title}
+      <p class="status">${own.length ? '✓ この施設の駐車場らしい所があります（「この施設の駐車場かも」）' : 'この施設専用の駐車場は見つかりませんでした（周辺の駐車場を確認してください）'}</p>
+      ${only !== 'car' ? sec('bike', '🏍 バイクを止められる所', bike, true, '見つかりませんでした（OpenStreetMap に登録が少ないため）。下の「止められるかもしれない所」や Google マップも確認してください。') : ''}
+      ${only !== 'car' && maybe.length ? sec('maybe', '🏍 バイクも止められるかもしれない所（未確認）', maybe, true, '') + '<p class="hint">施設の利用者用や 50 台以上の駐車場で、二輪の可否が登録されていない所です（コインパーキングは二輪不可が多いので除外）。止める前に現地の表示を確認してください。</p>' : ''}
+      ${only !== 'bike' ? sec('car', '🚗 車の駐車場', car, false, '見つかりませんでした。') : ''}
+      ${liveState === 'loading' ? '<p class="hint">🔄 OpenStreetMap でも探しています…</p>' : liveState === 'failed' ? '<p class="hint">⚠ その場の検索は混雑のためできませんでした（前もって集めた情報で表示しています）。</p>' : ''}
+      <p class="hint">情報元：OpenStreetMap（週 1 回まとめて収集＋その場の検索）、OpenPOI、道の駅・SA・PA（「たいてい止められる」）。満空・料金・二輪の可否は現地や公式で確認してください。</p>${gmLinks}`;
+    el.querySelectorAll('[data-park-more]').forEach((b) => { b.onclick = () => { shown[b.dataset.parkMore] += 30; draw(); }; });
     fillAddr(el);
-  }
+  };
+  const [localCar] = await Promise.all([parkNear(s, Math.max(CAR_KM, 1.2))]);
+  const [moto, opBike, opCar] = await Promise.all([motoData(), openPoiBike(s), openPoiCar(s)]);
+  got = [moto, opBike, localCar, opCar];
+  draw();
+  try { live = await fetchParking(s); liveState = 'done'; } catch { liveState = 'failed'; }
+  draw();
 }
 document.addEventListener('click', (e) => {
   const b = e.target.closest('[data-park]'); if (!b) return;

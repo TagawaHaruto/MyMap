@@ -327,6 +327,23 @@ class OsmSpotTest(unittest.TestCase):
                                                          'tags': {'highway': 'services', 'name': '海老名SA'}}]}), 'rest_area')
         self.assertEqual((sa[0]['type'], sa[0]['likely']), ('SA・PA', True))
 
+    def test_parse_and_save_parking(self):
+        import tempfile
+        text = json.dumps({'elements': [
+            {'type': 'way', 'id': 1, 'center': {'lat': 35.65, 'lon': 139.54}, 'tags': {'amenity': 'parking', 'name': '深大寺駐車場', 'fee': 'yes', 'capacity': '40', 'motorcycle': 'yes'}},
+            {'type': 'node', 'id': 2, 'lat': 35.66, 'lon': 139.55, 'tags': {'amenity': 'parking', 'access': 'customers', 'parking': 'multi-storey'}},
+            {'type': 'node', 'id': 3, 'lat': 35.67, 'lon': 139.56, 'tags': {'amenity': 'parking', 'access': 'private'}},
+        ]})
+        xs = collect.parse_parking(text, 'parking')
+        self.assertEqual(xs[0], {'la': 35.65, 'lo': 139.54, 'k': 'parking', 'n': '深大寺駐車場', 'f': 1, 'c': 40, 'm': 1})
+        self.assertEqual((xs[1]['a'], xs[1]['t']), (1, 'ms'))
+        self.assertEqual(len(xs), 2)
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(collect.save_park(d, xs), 2)
+            self.assertEqual(len(collect.load_park(d)), 2)
+            with open(os.path.join(d, 'park', 'index.json'), encoding='utf-8') as f:
+                self.assertEqual(sum(json.load(f).values()), 2)
+
     def test_done_kinds_from_old_status(self):
         st = {'cells_ver': collect.DATA_VER, 'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],
               'cells_error': 'cafe: HTTPError: 504 / bigpark: HTTPError: 504'}
