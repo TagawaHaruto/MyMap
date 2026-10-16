@@ -357,10 +357,11 @@ class OsmSpotTest(unittest.TestCase):
                 {'name': 'D', 'lat': 35.8, 'lon': 139.5, 'pk': 2}], compact=True)
             os.makedirs(os.path.join(d, 'cells', 'food'))
             collect.save(os.path.join(d, 'cells', 'food', '142_558.json'), [{'name': 'E', 'lat': 35.65, 'lon': 139.5401}], compact=True)
-            self.assertEqual(collect.annotate_parking(d), 4)
+            # 名前で確かめられたガスト府中店だけ（すぐ隣の利用者用・名前なしの駐車場からは推定しない）
+            self.assertEqual(collect.annotate_parking(d), 1)
             xs = collect.load(os.path.join(d, 'osm_spots.json'), [])
-            self.assertEqual([x.get('pk') for x in xs], [2, 2, 1, None])
-            self.assertEqual(collect.load(os.path.join(d, 'cells', 'food', '142_558.json'), [])[0]['pk'], 2)
+            self.assertEqual([x.get('pk') for x in xs], [None, 2, None, None])
+            self.assertNotIn('pk', collect.load(os.path.join(d, 'cells', 'food', '142_558.json'), [])[0])
 
     def test_done_kinds_from_old_status(self):
         st = {'cells_ver': collect.DATA_VER, 'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],

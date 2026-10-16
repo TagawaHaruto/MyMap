@@ -564,7 +564,7 @@ const pk = Lib.parseParking({ elements: [
   { type: 'node', lat: 35.0004, lon: 139.0, tags: { amenity: 'parking', access: 'private', name: '月極' } },
   { type: 'node', lat: 35.0008, lon: 139.0, tags: { amenity: 'parking', access: 'customers', motorcycle: 'no' } },
 ] }, { name: '深大寺', lat: 35.0, lon: 139.0 });
-assert.deepStrictEqual(pk.car.map((x) => [x.name, x.own]), [['深大寺 駐車場', true], ['', true], ['タイムズ', false]]);
+assert.deepStrictEqual(pk.car.map((x) => [x.name, x.own]), [['深大寺 駐車場', true], ['', false], ['タイムズ', false]]); // 名前が一致した所だけ
 assert.deepStrictEqual(pk.bike.map((x) => x.kind), ['バイク専用', '駐輪場（二輪も可）', '駐車場']);
 assert.strictEqual(pk.car[0].fee, '有料');
 assert.strictEqual(pk.car[1].motoNo, true);
@@ -602,5 +602,13 @@ assert.strictEqual(Lib.maybeMoto(Lib.parkFromCell({ la: 35, lo: 139, c: 100, m: 
 const own = Lib.markOwn([Lib.parkFromCell({ la: 35.0005, lo: 139.0, n: '深大寺駐車場' })], { name: '深大寺', lat: 35.0, lon: 139.0 });
 assert.strictEqual(own[0].own, true);
 assert.strictEqual(Lib.dedupeNear([{ lat: 35, lon: 139 }, { lat: 35.0001, lon: 139 }, { lat: 35.01, lon: 139 }]).length, 2);
+
+// ---- Google マップの駐車場情報 ----
+assert.deepStrictEqual(Lib.parkingOptionsText({ freeParkingLot: true, paidStreetParking: true }), { has: true, text: '無料駐車場・有料の路上駐車（パーキングメーター）あり' });
+assert.deepStrictEqual(Lib.parkingOptionsText({ freeParkingLot: false, paidParkingLot: false }), { has: false, text: '駐車場なし' });
+assert.strictEqual(Lib.parkingOptionsText(null), null);
+assert.strictEqual(Lib.parkingOptionsText({}), null);
+const ppk = Lib.parsePlacesPhotos({ places: [{ location: { latitude: 35.671, longitude: 139.551 }, parkingOptions: { freeParkingLot: true } }] }, { lat: 35.67, lon: 139.55 }, 'K');
+assert.deepStrictEqual(ppk.parking, { freeParkingLot: true });
 
 console.log('lib: ALL PASS');

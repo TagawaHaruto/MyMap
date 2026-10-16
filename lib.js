@@ -695,9 +695,18 @@ const Lib = (() => {
   function parsePlacesPhotos(j, s, key, limit = 4) {
     const p = j && j.places && j.places[0];
     if (!p || !p.location || haversineKm(s, { lat: p.location.latitude, lon: p.location.longitude }) > 2) return null;
-    return { page: p.googleMapsUri || '', photos: (p.photos || []).slice(0, limit).map((ph) => ({
+    return { page: p.googleMapsUri || '', parking: p.parkingOptions || null, photos: (p.photos || []).slice(0, limit).map((ph) => ({
       thumb: `https://places.googleapis.com/v1/${ph.name}/media?maxWidthPx=480&key=${encodeURIComponent(key)}`,
       artist: ((ph.authorAttributions || [])[0] || {}).displayName || '', artistUri: ((ph.authorAttributions || [])[0] || {}).uri || '' })) };
+  }
+  // Google マップの駐車場情報（parkingOptions）→ 文。情報がなければ null。すべて false なら「なし」
+  const PARK_OPT = [['freeParkingLot', '無料駐車場'], ['paidParkingLot', '有料駐車場'], ['freeGarageParking', '無料の立体・屋内駐車場'],
+    ['paidGarageParking', '有料の立体・屋内駐車場'], ['freeStreetParking', '無料の路上駐車'], ['paidStreetParking', '有料の路上駐車（パーキングメーター）'], ['valetParking', 'バレーパーキング']];
+  function parkingOptionsText(po) {
+    if (!po || typeof po !== 'object' || !Object.keys(po).length) return null;
+    const yes = PARK_OPT.filter(([k]) => po[k] === true).map(([, t]) => t);
+    if (yes.length) return { has: true, text: `${yes.join('・')}あり` };
+    return PARK_OPT.some(([k]) => po[k] === false) ? { has: false, text: '駐車場なし' } : null;
   }
   // 行った記録の少ない方面（少ない順。同じ数は seed で入れ替える）
   function lessVisitedDirs(records, origin, seed = 0) {
@@ -833,7 +842,7 @@ const Lib = (() => {
       const d = haversineKm(p, c);
       const name = t.name || t.operator || '';
       const capMoto = +(t['capacity:motorcycle'] || 0);
-      const own = d <= 0.1 && (t.access === 'customers' || (!!name && !!p.name && (coreName(name).includes(coreName(p.name)) || coreName(p.name).includes(coreName(name)))));
+      const own = d <= 0.15 && !!name && !!p.name && coreName(p.name).length >= 2 && (coreName(name).includes(coreName(p.name)) || (coreName(name).length >= 2 && coreName(p.name).includes(coreName(name))));
       const x = { name, lat: c.lat, lon: c.lon, distKm: d, own, oh: t.opening_hours, access: t.access || '',
         fee: t.fee === 'yes' ? '有料' : t.fee === 'no' ? '無料' : '', capacity: +(t.capacity || 0) || null, capMoto: capMoto || null,
         kind: t.amenity === 'motorcycle_parking' ? 'バイク専用' : t.amenity === 'bicycle_parking' ? '駐輪場（二輪も可）'
@@ -877,7 +886,7 @@ const Lib = (() => {
     for (const x of xs) {
       const d = haversineKm(p, x);
       x.distKm = d;
-      x.own = d <= 0.1 && (x.access === 'customers' || (!!x.name && !!p.name && (coreName(x.name).includes(coreName(p.name)) || coreName(p.name).includes(coreName(x.name)))));
+      x.own = d <= 0.15 && !!x.name && !!p.name && coreName(p.name).length >= 2 && (coreName(x.name).includes(coreName(p.name)) || (coreName(x.name).length >= 2 && coreName(p.name).includes(coreName(x.name))));
     }
     return xs;
   }
@@ -1080,7 +1089,7 @@ const Lib = (() => {
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
-    commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
+    commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, parkingOptionsText, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
     nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen,
     parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE, parkFromCell, COIN_RE, maybeMoto, markOwn, dedupeNear, COLLECT_PARTS, pendingParts, runState };
 })();
