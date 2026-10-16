@@ -611,4 +611,11 @@ assert.strictEqual(Lib.parkingOptionsText({}), null);
 const ppk = Lib.parsePlacesPhotos({ places: [{ location: { latitude: 35.671, longitude: 139.551 }, parkingOptions: { freeParkingLot: true } }] }, { lat: 35.67, lon: 139.55 }, 'K');
 assert.deepStrictEqual(ppk.parking, { freeParkingLot: true });
 
+// ---- 公式のバイク駐車場 ----
+const om = Lib.officialMoto({ name: '区営A', lat: 35.0012, lon: 139.0, moto: true, moped: true, fee: '100円/時', hours: '24時間', capacity: 20, muni: '中央区', src: '区営二輪車駐車場一覧', srcUrl: 'https://x' });
+assert.deepStrictEqual([om.kind, om.cap, om.official, om.moped], ['公式・自動二輪可', 20, true, false]);
+assert.strictEqual(Lib.officialMoto({ name: 'B', lat: 35, lon: 139, moto: false, moped: true }).kind, '公式・原付のみ');
+const mb2 = Lib.mergeBikeSpots({ lat: 35, lon: 139 }, 3, [['OSM', [{ name: 'OSMの同じ所', lat: 35.0012, lon: 139.0 }]], ['公式', [om]]]);
+assert.deepStrictEqual(mb2.map((x) => x.name), ['区営A']); // 重なったら公式を残す
+
 console.log('lib: ALL PASS');
