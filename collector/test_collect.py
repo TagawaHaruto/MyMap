@@ -344,6 +344,15 @@ class OsmSpotTest(unittest.TestCase):
             with open(os.path.join(d, 'park', 'index.json'), encoding='utf-8') as f:
                 self.assertEqual(sum(json.load(f).values()), 2)
 
+    def test_merge_fsq_parking(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            collect.save_park(d, [{'la': 35.65, 'lo': 139.54, 'k': 'park_0'}, {'la': 35.9, 'lo': 139.5, 'k': 'fsq', 'n': '古い'}])
+            collect.save(os.path.join(d, 'park_fsq.json'), [{'la': 35.6501, 'lo': 139.54, 'n': '重複'}, {'la': 35.7, 'lo': 139.6, 'n': 'タイムズX'}], compact=True)
+            self.assertEqual(collect.merge_fsq_parking(d), 1)
+            names = sorted(p.get('n', '') for p in collect.load_park(d))
+            self.assertEqual(names, ['', 'タイムズX'])  # 古い fsq は入れ替え、OSM と重なる分は足さない
+
     def test_annotate_parking(self):
         import tempfile
         with tempfile.TemporaryDirectory() as d:

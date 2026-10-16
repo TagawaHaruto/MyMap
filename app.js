@@ -518,14 +518,18 @@ async function fetchParking(p, m = 600) {
 const distTxt = (d) => (d < 1 ? `${Math.round(d * 1000)}m` : `${d.toFixed(1)}km`);
 function parkRow(x, bike) {
   const info = [x.kind || x.type, x.fee, x.capacity ? `${x.capacity}台` : '', bike && (x.capMoto || x.cap) ? `二輪${x.capMoto || x.cap}台` : '', !bike && x.motoNo ? 'バイク不可' : '',
-    x.moped ? '原付だけの可能性' : '', x.access === 'customers' ? '利用者用' : '', bike && x.src === 'OpenPOI' ? '🌐OpenPOI' : ''].filter(Boolean).join('・');
-  return `<li>${x.own ? '<span class="badge open">この施設の駐車場（名前が一致）</span> ' : ''}${x.likely ? '<span class="badge closed">たいてい止められる</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
-    <span class="status">${distTxt(x.distKm)}${info ? '・' + esc(info) : ''}${x.oh ? '・' + esc(Lib.ohText(x.oh)) : ''}${openBadge(x)}</span></li>`;
+    x.moped && !x.official ? '原付だけの可能性' : '', x.access === 'customers' ? '利用者用' : '', bike && x.src === 'OpenPOI' ? '🌐OpenPOI' : '', x.hours ? `利用時間 ${x.hours}` : ''].filter(Boolean).join('・');
+  return `<li>${x.official ? '<span class="badge open">公式</span> ' : ''}${x.own ? '<span class="badge open">この施設の駐車場（名前が一致）</span> ' : ''}${x.likely ? '<span class="badge closed">たいてい止められる</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
+    <span class="status">${distTxt(x.distKm)}${info ? '・' + esc(info) : ''}${x.oh ? '・' + esc(Lib.ohText(x.oh)) : ''}${openBadge(x)}${x.srcName ? `・出典：${x.srcUrl ? `<a href="${esc(x.srcUrl)}" target="_blank" rel="noopener">${esc(x.srcName)}</a>` : esc(x.srcName)}` : ''}</span></li>`;
 }
 // 前もって集めたバイクを止められる場所（data/moto.json）。初めて使うときに 1 回だけ読む
 let MOTO = null;
 async function motoData() {
-  if (!MOTO) { MOTO = await getJSON('data/moto.json', []); FAILED.delete('data/moto.json'); }
+  if (!MOTO) {
+    const [osm, official] = await Promise.all([getJSON('data/moto.json', []), getJSON('data/moto_official.json', [])]);
+    FAILED.delete('data/moto.json'); FAILED.delete('data/moto_official.json');
+    MOTO = official.map(Lib.officialMoto).concat(osm.map((x) => ({ ...x, kind: x.type })));
+  }
   return MOTO;
 }
 // OpenPOI で名前に「バイク」「二輪」などを含む駐車場（2km 以内）
@@ -578,7 +582,7 @@ async function renderParking(el, s, only) {
     const [moto, opBike, localCar, opCar] = got;
     const car = Lib.dedupeNear(Lib.markOwn(localCar.concat(live ? live.car : [], opCar).filter((x) => Lib.haversineKm(s, x) <= CAR_KM), s))
       .sort((a, b) => (b.own - a.own) || a.distKm - b.distKm);
-    const bike = Lib.mergeBikeSpots(s, BIKE_KM, [['OSM', moto.map((x) => ({ ...x, kind: x.type }))], ['live', live ? live.bike : []],
+    const bike = Lib.mergeBikeSpots(s, BIKE_KM, [['OSM', moto], ['live', live ? live.bike : []],
       ['OSM', car.filter((x) => x.motoOk).map((x) => ({ ...x, kind: `${x.kind}（二輪可）` }))], ['OpenPOI', opBike], ['道の駅', michi]]);
     const bikeSet = new Set(bike.map((x) => `${x.lat.toFixed(4)},${x.lon.toFixed(4)}`));
     const maybe = car.filter((x) => Lib.maybeMoto(x) && !bikeSet.has(`${x.lat.toFixed(4)},${x.lon.toFixed(4)}`));
@@ -592,7 +596,7 @@ async function renderParking(el, s, only) {
       ${only !== 'car' && maybe.length ? `<details class="more"><summary>参考：二輪の可否が登録されていない大きな駐車場（${maybe.length}件・未確認）</summary>${sec('maybe', '🏍 二輪の可否が未確認の駐車場', maybe, true, '')}<p class="hint">施設の利用者用や 50 台以上の駐車場で、二輪を止められるかは分かりません（コインパーキングは除外）。止める前に現地の表示を確認してください。</p></details>` : ''}
       ${only !== 'bike' ? sec('car', '🚗 車の駐車場', car, false, '見つかりませんでした。') : ''}
       ${liveState === 'loading' ? '<p class="hint">🔄 OpenStreetMap でも探しています…</p>' : liveState === 'failed' ? '<p class="hint">⚠ その場の検索は混雑のためできませんでした（前もって集めた情報で表示しています）。</p>' : ''}
-      <p class="hint">情報元：OpenStreetMap（週 1 回まとめて収集＋その場の検索）、OpenPOI、道の駅・SA・PA（「たいてい止められる」）。満空・料金・二輪の可否は現地や公式で確認してください。</p>${gmLinks}`;
+      <p class="hint">情報元：自治体の公式データ（「公式」の印）、OpenStreetMap（週 1 回まとめて収集＋その場の検索）、<a href="licenses/FSQ-OS-Places-NOTICE.txt" target="_blank" rel="noopener">Foursquare OS Places（Apache-2.0・2025年2月版）</a>、OpenPOI、道の駅・SA・PA（「たいてい止められる」）。満空・料金・二輪の可否は現地や公式で確認してください。</p>${gmLinks}`;
     el.querySelectorAll('[data-park-more]').forEach((b) => { b.onclick = () => { shown[b.dataset.parkMore] += 30; draw(); }; });
     fillAddr(el);
   };

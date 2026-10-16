@@ -867,16 +867,16 @@ const Lib = (() => {
         all.push({ ...x, distKm: d, src });
       }
     }
-    const rank = (x) => (x.likely ? 2 : x.src === 'OpenPOI' ? 1 : 0);
+    const rank = (x) => (x.official ? -1 : x.likely ? 2 : x.src === 'OpenPOI' ? 1 : 0);
     all.sort((a, b) => rank(a) - rank(b) || a.distKm - b.distKm);
     const out = [];
     for (const x of all) if (!out.some((y) => haversineKm(x, y) < 0.04)) out.push(x);
-    return out.sort((a, b) => (!!b.own - !!a.own) || (!!a.likely - !!b.likely) || a.distKm - b.distKm);
+    return out.sort((a, b) => (!!b.own - !!a.own) || (!!a.likely - !!b.likely) || (!!b.official - !!a.official) * (Math.abs(a.distKm - b.distKm) < 0.3) || a.distKm - b.distKm);
   }
   // 前もって集めた車の駐車場（小さい形）→ 表示用
   const parkFromCell = (x) => ({ name: x.n || '', lat: x.la, lon: x.lo, fee: x.f === 1 ? '有料' : x.f === 0 ? '無料' : '', capacity: x.c || null,
     capMoto: x.cm || null, motoNo: x.m === 0, motoOk: x.m === 1 || x.cm > 0, access: x.a ? 'customers' : '',
-    kind: x.t === 'ms' ? '立体駐車場' : x.t === 'ug' ? '地下駐車場' : '駐車場' });
+    kind: x.t === 'ms' ? '立体駐車場' : x.t === 'ug' ? '地下駐車場' : x.k === 'fsq' ? '駐車場（Foursquare）' : '駐車場' });
   // コインパーキング（多くは二輪不可）の名前
   const COIN_RE = /タイムズ(?!のB)|リパーク|名鉄協商|NPC|コインパーキング|パラカ|ナビパーク|トラストパーク|エコロパーク|D-Parking|ザ・パーク|リメイク|PMO|ユアー/;
   // バイクも止められるかもしれない（未確認）: 二輪不可でなく、コインパーキングでなく、利用者用か 50 台以上
@@ -896,6 +896,10 @@ const Lib = (() => {
     for (const x of xs) if (!out.some((y) => haversineKm(x, y) < m)) out.push(x);
     return out;
   }
+  // 自治体・都道府県の公式データ（data/moto_official.json）→ バイク欄の形に
+  const officialMoto = (x) => ({ name: x.name, lat: x.lat, lon: x.lon, official: true, moped: x.moped && !x.moto,
+    kind: x.moto ? '公式・自動二輪可' : '公式・原付のみ', fee: x.fee || '', hours: x.hours || '', cap: x.capacity || null,
+    srcName: [x.muni, x.src].filter(Boolean).join(' '), srcUrl: x.srcUrl || '' });
   const isParkingWord = (w) => /駐車|駐輪|パーキング|parking/i.test(String(w));
   const isBikeWord = (w) => /バイク|二輪|オートバイ|原付|モーターサイクル|駐輪/.test(String(w));
 
@@ -1091,7 +1095,7 @@ const Lib = (() => {
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, parkingOptionsText, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
     nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen,
-    parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE, parkFromCell, COIN_RE, maybeMoto, markOwn, dedupeNear, COLLECT_PARTS, pendingParts, runState };
+    parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE, parkFromCell, COIN_RE, maybeMoto, markOwn, dedupeNear, officialMoto, COLLECT_PARTS, pendingParts, runState };
 })();
 
 if (typeof module !== 'undefined') module.exports = Lib;

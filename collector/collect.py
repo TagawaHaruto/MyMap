@@ -765,6 +765,26 @@ def save_park(root, items):
     return len(items)
 
 
+def merge_fsq_parking(root):
+    """Foursquare OS Places の駐車場（data/park_fsq.json。Apache-2.0）を駐車場の升目に足す。
+    OpenStreetMap の駐車場から 30m 以内のものは重複として足さない。毎回やり直す（k=fsq を入れ替え）。"""
+    fsq = load(os.path.join(root, 'park_fsq.json'), [])
+    if not fsq:
+        return 0
+    osm = [p for p in load_park(root) if p.get('k') != 'fsq']
+    buckets = {}
+    for p in osm:
+        buckets.setdefault((round(p['la'] * 100), round(p['lo'] * 100)), []).append(p)
+
+    def dup(x):
+        by, bx = round(x['la'] * 100), round(x['lo'] * 100)
+        return any(km_ll([x['la'], x['lo']], [p['la'], p['lo']]) < 0.03
+                   for dy in (-1, 0, 1) for dx in (-1, 0, 1) for p in buckets.get((by + dy, bx + dx), ()))
+    added = [{**x, 'k': 'fsq'} for x in fsq if not dup(x)]
+    save_park(root, osm + added)
+    return len(added)
+
+
 def park_core(name):
     """駐車場名と店名を比べる用: 空白・かっこ・「駐車場」「パーキング」「第1」などを除く。"""
     return re.sub(r'[（(].*?[)）]|\s|駐車場|パーキング|第[一二三四五六七八九1-9]+|[pPＰ]$', '', name or '')
@@ -1115,6 +1135,7 @@ def main():
     cells = refresh_cells(cfg, status, fetch, dt.datetime.now(JST), load_cells(DATA))
     if cells is not None:
         print(f'cells: {save_cells(DATA, cells)}')
+    print(f'foursquare parking added: {merge_fsq_parking(DATA)}')
     print(f'parking marks: {annotate_parking(DATA)}')
     status['updated_at'] = now_iso()
     save(os.path.join(DATA, 'status.json'), status)
