@@ -247,9 +247,14 @@ function spotCandidates() {
 }
 const isCurated = (s) => !s.poi && !s.op && !String(s.id).startsWith('osm:');
 // 駐車場の目安: 厳選は登録済みの情報、そのほかは収集時に近くの駐車場から推定した pk（2: 専用がありそう・1: 近くにある）
-const parkText = (s) => (s.parking ? [s.parking.car ? '🅿車' : '', s.parking.bike ? '🅿二輪' : ''].filter(Boolean).join(' ')
-  : s.pk === 2 ? '🅿駐車場あり（推定）' : s.pk === 1 ? '🅿近くに駐車場' : '');
-const hasParking = (s) => (s.parking ? !!s.parking.car : !!s.pk) || s.kind === 'michinoeki';
+// 駐車場: 確かな情報だけ（厳選の登録・名前で確かめられた専用駐車場 pk=2・この起動中に Google マップから取れた情報）。推定はしない
+const parkText = (s) => {
+  if (s.parking) return [s.parking.car ? '🅿車' : '', s.parking.bike ? '🅿二輪' : ''].filter(Boolean).join(' ');
+  const g = GPARK.get(s.id);
+  if (g) return g.has ? '🅿あり（Google）' : '🅿なし（Google）';
+  return s.pk === 2 ? '🅿専用駐車場あり' : '';
+};
+const hasParking = (s) => (s.parking ? !!s.parking.car : GPARK.has(s.id) ? GPARK.get(s.id).has : s.pk === 2) || s.kind === 'michinoeki';
 function spotCard(s) {
   const sns = Lib.snsLinks(s);
   const icons = s.genres.map((g) => icon(GENRES[g] || '・')).join('');
@@ -514,7 +519,7 @@ const distTxt = (d) => (d < 1 ? `${Math.round(d * 1000)}m` : `${d.toFixed(1)}km`
 function parkRow(x, bike) {
   const info = [x.kind || x.type, x.fee, x.capacity ? `${x.capacity}台` : '', bike && (x.capMoto || x.cap) ? `二輪${x.capMoto || x.cap}台` : '', !bike && x.motoNo ? 'バイク不可' : '',
     x.moped ? '原付だけの可能性' : '', x.access === 'customers' ? '利用者用' : '', bike && x.src === 'OpenPOI' ? '🌐OpenPOI' : ''].filter(Boolean).join('・');
-  return `<li>${x.own ? '<span class="badge open">この施設の駐車場かも</span> ' : ''}${x.likely ? '<span class="badge closed">たいてい止められる</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
+  return `<li>${x.own ? '<span class="badge open">この施設の駐車場（名前が一致）</span> ' : ''}${x.likely ? '<span class="badge closed">たいてい止められる</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
     <span class="status">${distTxt(x.distKm)}${info ? '・' + esc(info) : ''}${x.oh ? '・' + esc(Lib.ohText(x.oh)) : ''}${openBadge(x)}</span></li>`;
 }
 // 前もって集めたバイクを止められる場所（data/moto.json）。初めて使うときに 1 回だけ読む
@@ -560,8 +565,7 @@ async function openPoiCar(p) {
 const CAR_KM = 1, BIKE_KM = 3, PARK_SHOW = 20;
 async function renderParking(el, s, only) {
   if (!el) return;
-  const curated = s.parking ? `<p class="status">登録済みの情報：${s.parking.car ? '🚗車の駐車場あり' : '🚗車の駐車場なし（または不明）'}・${s.parking.bike ? '🏍二輪を止められる' : '🏍二輪は不明'}</p>` : '';
-  const title = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は${CAR_KM}km・バイクは${BIKE_KM}km以内）</h4>${curated}`;
+  const title = `<h4>🅿 駐車場（${esc(s.name)}の周辺。車は${CAR_KM}km・バイクは${BIKE_KM}km以内）</h4>`;
   el.innerHTML = `${title}<p class="hint">探しています…</p>`;
   const gmLinks = `<div class="actions"><a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('バイク 駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップでバイク駐車場</a>
     <a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップで駐車場</a></div>`;
@@ -583,15 +587,22 @@ async function renderParking(el, s, only) {
       ? `<ul class="rel">${xs.slice(0, shown[key]).map((x) => parkRow(x, bike2)).join('')}</ul>${xs.length > shown[key] ? `<button type="button" class="btn" data-park-more="${key}">もっと見る（残り${xs.length - shown[key]}件）</button>` : ''}`
       : `<p class="hint">${empty}</p>`);
     el.innerHTML = `${title}
-      <p class="status">${own.length ? '✓ この施設の駐車場らしい所があります（「この施設の駐車場かも」）' : 'この施設専用の駐車場は見つかりませんでした（周辺の駐車場を確認してください）'}</p>
+      ${sureHtml}
       ${only !== 'car' ? sec('bike', '🏍 バイクを止められる所', bike, true, '見つかりませんでした（OpenStreetMap に登録が少ないため）。下の「止められるかもしれない所」や Google マップも確認してください。') : ''}
-      ${only !== 'car' && maybe.length ? sec('maybe', '🏍 バイクも止められるかもしれない所（未確認）', maybe, true, '') + '<p class="hint">施設の利用者用や 50 台以上の駐車場で、二輪の可否が登録されていない所です（コインパーキングは二輪不可が多いので除外）。止める前に現地の表示を確認してください。</p>' : ''}
+      ${only !== 'car' && maybe.length ? `<details class="more"><summary>参考：二輪の可否が登録されていない大きな駐車場（${maybe.length}件・未確認）</summary>${sec('maybe', '🏍 二輪の可否が未確認の駐車場', maybe, true, '')}<p class="hint">施設の利用者用や 50 台以上の駐車場で、二輪を止められるかは分かりません（コインパーキングは除外）。止める前に現地の表示を確認してください。</p></details>` : ''}
       ${only !== 'bike' ? sec('car', '🚗 車の駐車場', car, false, '見つかりませんでした。') : ''}
       ${liveState === 'loading' ? '<p class="hint">🔄 OpenStreetMap でも探しています…</p>' : liveState === 'failed' ? '<p class="hint">⚠ その場の検索は混雑のためできませんでした（前もって集めた情報で表示しています）。</p>' : ''}
       <p class="hint">情報元：OpenStreetMap（週 1 回まとめて収集＋その場の検索）、OpenPOI、道の駅・SA・PA（「たいてい止められる」）。満空・料金・二輪の可否は現地や公式で確認してください。</p>${gmLinks}`;
     el.querySelectorAll('[data-park-more]').forEach((b) => { b.onclick = () => { shown[b.dataset.parkMore] += 30; draw(); }; });
     fillAddr(el);
   };
+  // お店の駐車場（確かな情報）: 厳選の登録・駐車場の名前・Google マップ
+  let gp = GPARK.get(s.id) || null;
+  if (!gp && store.get('gkey') && s.lat != null) { try { const g = await googlePhotos(s); gp = g && Lib.parkingOptionsText(g.parking); if (gp) GPARK.set(s.id, gp); } catch { /* なしで */ } }
+  const sure = [s.parking ? `登録済み：${s.parking.car ? '🚗車の駐車場あり' : '🚗車の駐車場なし'}${s.parking.bike ? '・🏍二輪を止められる' : ''}` : '',
+    s.pk === 2 ? '駐車場の名前にこの施設の名前が入った駐車場があります（OpenStreetMap）' : '',
+    gp ? `Google マップ：${gp.text}` : ''].filter(Boolean);
+  const sureHtml = `<p class="status"><strong>この施設の駐車場：</strong>${sure.length ? esc(sure.join('／')) : '確かな情報がありません'}${!store.get('gkey') ? '（設定タブで Google の API キーを入れると、Google マップの駐車場情報も出せます）' : ''}</p>`;
   const [localCar] = await Promise.all([parkNear(s, Math.max(CAR_KM, 1.2))]);
   const [moto, opBike, opCar] = await Promise.all([motoData(), openPoiBike(s), openPoiCar(s)]);
   got = [moto, opBike, localCar, opCar];
@@ -980,18 +991,22 @@ async function googlePhotos(s) {
   const key = store.get('gkey');
   if (!key || s.lat == null) return null;
   const r = await fetch(Lib.PLACES_URL, { method: 'POST', body: Lib.placesBody(s), signal: timeoutSignal(8000),
-    headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': key, 'X-Goog-FieldMask': 'places.location,places.photos,places.googleMapsUri' } });
+    headers: { 'Content-Type': 'application/json', 'X-Goog-Api-Key': key, 'X-Goog-FieldMask': 'places.location,places.photos,places.googleMapsUri,places.parkingOptions' } });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return Lib.parsePlacesPhotos(await r.json(), s, key);
 }
+const GPARK = new Map(); // この起動中に Google マップから取れた駐車場情報（規約に沿って端末には保存しない）
 async function fillGooglePhotos(el, s) {
   if (!el || !store.get('gkey')) return;
   el.innerHTML = '<p class="hint">Google マップの写真を読み込み中…</p>';
   try {
     const g = await googlePhotos(s);
-    el.innerHTML = g && g.photos.length ? `<div class="photos">${g.photos.map((p) => `<a href="${esc(g.page || p.artistUri)}" target="_blank" rel="noopener">
+    const pk = g && Lib.parkingOptionsText(g.parking);
+    const pkHtml = pk ? `<p class="status"><strong>🅿 ${esc(pk.text)}</strong>（Google マップの情報）</p>` : '';
+    el.innerHTML = pkHtml + (g && g.photos.length ? `<div class="photos">${g.photos.map((p) => `<a href="${esc(g.page || p.artistUri)}" target="_blank" rel="noopener">
       <img src="${esc(p.thumb)}" alt="${esc(s.name)}の写真" loading="lazy"><span class="credit">${p.artist ? '撮影: ' + esc(p.artist) + ' / ' : ''}Google マップ</span></a>`).join('')}</div>`
-      : '<p class="hint">Google マップにこの場所の写真は見つかりませんでした。</p>';
+      : '<p class="hint">Google マップにこの場所の写真は見つかりませんでした。</p>');
+    if (pk) { GPARK.set(s.id, pk); const meta = el.closest('article.card') && el.closest('article.card').querySelector('.meta'); if (meta && !meta.querySelector('.gpark')) meta.insertAdjacentHTML('beforeend', `<span class="gpark">・🅿${pk.has ? 'あり' : 'なし'}（Google）</span>`); }
   } catch (err) {
     el.innerHTML = `<p class="hint">Google マップの写真を読み込めませんでした（${/HTTP 4/.test(err.message) ? 'API キーと、Places API (New) が有効になっているかを確認してください' : '圏外か混雑の可能性'}）。</p>`;
   }

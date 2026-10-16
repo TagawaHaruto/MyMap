@@ -771,23 +771,19 @@ def park_core(name):
 
 
 def parking_level(item, buckets):
-    """お店のまわりの駐車場から「専用の駐車場がありそう」(2)・「近くに駐車場」(1)・不明(0)。
-    専用: 60m 以内の利用者用（access=customers）か、150m 以内に店名を含む名前の駐車場。近く: 100m 以内に駐車場。"""
+    """お店の専用駐車場が「名前で確かめられる」とき 2、それ以外は 0（推定はしない）。
+    150m 以内に、店名を含む名前の駐車場（例: 「ガスト府中店 駐車場」）があるときだけ。店名は 2 文字以上。"""
     lat, lon, name = item['lat'], item['lon'], park_core(item.get('name'))
-    level = 0
+    if len(name) < 2:
+        return 0
     by, bx = round(lat * 100), round(lon * 100)
     for dy in (-1, 0, 1):
         for dx in (-1, 0, 1):
             for p in buckets.get((by + dy, bx + dx), ()):
-                d = km_ll([lat, lon], [p['la'], p['lo']])
-                if d > 0.15:
-                    continue
                 pn = park_core(p.get('n'))
-                if (d <= 0.06 and p.get('a')) or (len(name) >= 2 and pn and (name in pn or (len(pn) >= 2 and pn in name))):
+                if len(pn) >= 2 and (name in pn or pn in name) and km_ll([lat, lon], [p['la'], p['lo']]) <= 0.15:
                     return 2
-                if d <= 0.1:
-                    level = 1
-    return level
+    return 0
 
 
 def annotate_parking(root):
