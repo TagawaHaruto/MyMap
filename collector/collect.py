@@ -155,6 +155,8 @@ POI_QUERIES = [
     ('scenic', ['nwr["waterway"="waterfall"]["name"]["wikipedia"]',
                 'nwr["natural"~"^(peak|valley|gorge|beach|cape)$"]["name"]["wikipedia"]',
                 'nwr["natural"="water"]["water"="lake"]["name"]["wikipedia"]']),
+    # 24 時間営業のガソリンスタンド（深夜のツーリング・ドライブ用）。名前がなくてもブランド名で出す
+    ('fuel24', ['nwr["amenity"="fuel"]["opening_hours"~"^(24/7|Mo-Su 00:00-24:00)$"]']),
 ]
 
 
@@ -280,12 +282,14 @@ def overpass_kind(stmts, bb, n, parse, fetch, sleep, tries=3, out='center tags')
 
 
 def poi_kind(t):
-    name = t.get('name', '')
+    name = t.get('name') or ''
     if name.startswith('道の駅'):
         bus = t.get('highway') == 'bus_stop' or 'public_transport' in t or name.endswith(('入口', '前'))
         return None if bus else 'michinoeki'
     if t.get('amenity') == 'public_bath':
         return 'onsen'
+    if t.get('amenity') == 'fuel':
+        return 'fuel24'
     if t.get('tourism') == 'viewpoint':
         return 'viewpoint'
     if not t.get('wikipedia'):
@@ -326,6 +330,21 @@ def parse_overpass(text):
         t = el.get('tags', {})
         kind = poi_kind(t)
         pos = el if 'lat' in el else el.get('center')
+        if kind == 'fuel24':  # 同じブランド名が多いので、名前と位置で 1 件に
+            if not pos:
+                continue
+            name = t.get('name') or t.get('brand') or t.get('operator') or 'ガソリンスタンド'
+            key = (kind, name, round(pos['lat'], 3), round(pos['lon'], 3))
+            if key in seen:
+                continue
+            seen.add(key)
+            x = {'name': name[:40], 'lat': round(pos['lat'], 5), 'lon': round(pos['lon'], 5), 'kind': kind, 'oh': '24/7'}
+            if t.get('self_service') in ('yes', 'no'):
+                x['self'] = 1 if t['self_service'] == 'yes' else 0
+            if t.get('brand') and t['brand'] not in name:
+                x['brand'] = t['brand'][:20]
+            out.append(x)
+            continue
         if not kind or not pos or not t.get('name') or (kind, t['name']) in seen:  # 同名（建物と駐車場など）は 1 件に
             continue
         seen.add((kind, t['name']))

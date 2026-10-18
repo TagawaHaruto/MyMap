@@ -676,4 +676,8 @@ assert.strictEqual(Lib.roadNightView({ note: '夜景が美しい' }), true);
 assert.ok(/^hsl\(\d+, \d+%, \d+%\)$/.test(Lib.routeShade('#d6336c', 'a')));
 assert.notStrictEqual(Lib.routeShade('#d6336c', 'road-1'), Lib.routeShade('#d6336c', 'road-2'));
 
+assert.deepStrictEqual(Lib.tollSpans([{ maneuvers: [{ length: 2 }, { toll: true, length: 3 }, { toll: true, length: 1 }, { length: 1 }, { toll: true, length: 2 }] }]), [[2, 6], [7, 9]]);
+assert.strictEqual(Lib.inSpans(5, [[2, 6]]), true);
+assert.strictEqual(Lib.inSpans(6.5, [[2, 6]]), false);
+
 console.log('lib: ALL PASS');

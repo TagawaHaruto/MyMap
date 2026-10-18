@@ -1108,6 +1108,18 @@ const Lib = (() => {
     return round10((150 + 24.6 * km * (cls === 'light' ? 0.8 : 1)) * 1.1);
   }
   // ルートの有料区間の距離（Valhalla の maneuvers の toll）
+  // 有料区間（高速道路など）の範囲 [[始まりの km, 終わりの km]]（出発から。Valhalla の案内ごとの距離を足して）
+  function tollSpans(legs) {
+    const out = [];
+    let km = 0;
+    for (const m of (legs || []).flatMap((l) => l.maneuvers || [])) {
+      const len = m.length || 0;
+      if (m.toll) { const last = out[out.length - 1]; if (last && Math.abs(last[1] - km) < 1e-6) last[1] = km + len; else out.push([km, km + len]); }
+      km += len;
+    }
+    return out.map(([a, b]) => [Math.round(a * 100) / 100, Math.round(b * 100) / 100]);
+  }
+  const inSpans = (km, spans) => (spans || []).some(([a, b]) => km >= a && km <= b);
   const tollKmOf = (legs) => (legs || []).flatMap((l) => l.maneuvers || []).reduce((a, m) => a + (m.toll ? m.length || 0 : 0), 0);
   // 電車の運賃の目安: JR（幹線）の普通運賃表で。営業キロは直線距離の 1.25 倍とみなす
   const JR_FARE = [[3, 150], [6, 190], [10, 200], [15, 240], [20, 330], [25, 420], [30, 510], [35, 590], [40, 680], [45, 770], [50, 860],
@@ -1276,7 +1288,7 @@ const Lib = (() => {
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
     commonsSearchUrl, PLACES_URL, placesBody, parsePlacesPhotos, parkingOptionsText, lessVisitedDirs, openPoiUrl, parseOpenPoi, notInLocal,
-    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, trainFare, yen,
+    nearQuery, isAnyFood, nearSearch, netWord, wikiSearchUrl, parseWikiSearch, openPoiSuggestUrl, parseSuggest, localSuggest, launchParams, platformOf, COURSE_TYPES, courseType, fuelCost, tollEstimate, tollKmOf, tollSpans, inSpans, trainFare, yen,
     parkingQuery, parseParking, isParkingWord, isBikeWord, mergeBikeSpots, MOTO_NAME_RE, parkFromCell, COIN_RE, maybeMoto, markOwn, dedupeNear, officialMoto, COLLECT_PARTS, pendingParts, runState };
 })();
 
