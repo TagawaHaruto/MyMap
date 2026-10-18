@@ -1755,7 +1755,7 @@ function renderTouring() {
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
     <p class="hint">目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定</p>
-    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}</p>`
+    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}</p>${courseSources(road)}`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
     <details class="tools" id="tour-opts" ${store.get('tourOptsOpen') ? 'open' : ''}><summary>⚙走り方・立ち寄りの範囲（${optSummary()}）</summary>
@@ -2300,12 +2300,15 @@ function renderJctGuide() {
 }
 
 // ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
+// 出典（調べたページ）へのリンク
+const courseSources = (r) => ((r.sources || []).length ? `<p class="hint">出典：${r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join('、')}</p>` : '');
 function courseHtml(r) {
   const closedNow = (r.closedMonths || []).includes(thisMonth());
   const [tLabel, tColor] = Lib.COURSE_TYPES[Lib.courseType(r)];
   return `<div class="pop"><strong>${r.pass ? '⛰' : '🛣'} ${esc(r.name)}</strong>
     <span class="status"><span class="swatch" style="--c:${tColor}"></span>${esc(tLabel)}${r.curv ? `・カーブ${'★'.repeat(Lib.curvStars(r.curv))}` : ''}${r.km ? `・約${Math.round(r.km)}km` : ''}</span>
-    <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}</p>
+    <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}${(r.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}</p>
+    ${courseSources(r)}
     <div class="actions">${r.pass ? `<button type="button" class="btn primary" data-pass-go="${esc(r.id)}">ここを目的地に</button>`
       : `<button type="button" class="btn primary" data-course-go="${esc(r.id)}">このコースを走る（周回）</button>`}</div></div>`;
 }
