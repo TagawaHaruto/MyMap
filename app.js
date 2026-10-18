@@ -1,6 +1,6 @@
 // MyMap 画面ロジック。純粋な計算は lib.js（Lib）に置く。
 const GENRES = { play: '🎡遊び', sightseeing: '📷観光', shopping: '🛍買い物', vehicle: '🚗乗り物', museum: '🏛博物館',
-  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', simulator: '🎮シミュレーター', factory: '🏭工場見学', experience: '🎨体験',
+  garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', viewpoint: '🔭展望台', nightview: '🌃夜景', simulator: '🎮シミュレーター', factory: '🏭工場見学', experience: '🎨体験',
   food: '🍴グルメ', heritage: '🏯史跡', lodging: '🏨宿', souvenir: '🛍お土産・直売', outdoor: '⚽遊び・アウトドア' };
 // これらのジャンルは件数が多いので、升目ごとのファイルを選んだときだけ読み込む（data/cells/<グループ>/<升目>.json）
 const GROUP_OF = { food: 'food', heritage: 'heritage', lodging: 'heritage', souvenir: 'local', outdoor: 'local' };
@@ -31,7 +31,7 @@ const buzz = () => { try { navigator.vibrate?.(15); } catch { /* 振動できな
 const saved = store.get('filters') || {};
 const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
-  prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []), allTypes: !!saved.allTypes,
+  prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []), allTypes: !!saved.allTypes, band: saved.band || '',
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
   showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false, parkOnly: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
@@ -50,7 +50,7 @@ const noticeRe = () => {
 const filterState = () => ({ mode: state.mode, maxMin: isoGeom() ? null : state.maxMin, prefs: state.prefs, genres: state.genres, dirs: state.dirs,
   favs: state.favs, rainy: rainy(), exclude: state.showNotices ? null : noticeRe() });
 function saveFilters() {
-  store.set('filters', { mode: state.mode, maxMin: state.maxMin, prefs: [...state.prefs], genres: [...state.genres], dirs: [...state.dirs], allTypes: state.allTypes });
+  store.set('filters', { mode: state.mode, maxMin: state.maxMin, prefs: [...state.prefs], genres: [...state.genres], dirs: [...state.dirs], allTypes: state.allTypes, band: state.band });
 }
 const icon = (label) => [...label][0]; // 先頭の絵文字（コードポイント単位）
 const fmtMin = (m) => (m == null ? '' : m < 60 ? `約${m}分` : `約${Math.floor(m / 60)}時間${m % 60 ? (m % 60) + '分' : ''}`);
@@ -139,6 +139,7 @@ const toggle = (set, v) => (set.has(v) ? set.delete(v) : set.add(v));
 function renderFilters() {
   chips($('#f-mode'), Object.entries(MODES), (v) => v === state.mode, (v) => { state.mode = v; });
   chips($('#f-time'), TIMES, (v) => v === state.maxMin, (v) => { state.maxMin = v; });
+  chips($('#f-band'), [['', 'いつでも']].concat(Object.entries(Lib.TIME_BANDS).map(([k, [label]]) => [k, label])), (v) => v === state.band, (v) => { state.band = v; });
   chips($('#f-pref'), PREFS.map((p) => [p, p]), (v) => state.prefs.has(v), (v) => toggle(state.prefs, v));
   chips($('#f-dir'), Lib.DIRS.map((d) => [d, dirName(d)]), (v) => state.dirs.has(v), (v) => toggle(state.dirs, v));
   // 先頭の「すべて」は、グルメ・史跡・宿・お土産・遊びも含めた全部（ほかの種類を押すと外れる）
@@ -149,6 +150,7 @@ function renderFilters() {
   const parts = [MODES[state.mode], state.maxMin == null ? '時間制限なし' : `${time}以内`,
     state.prefs.size ? [...state.prefs].join('/') : '全都県',
     state.dirs.size ? [...state.dirs].map((d) => DIR_NAMES[d]).join('/') : '全方面'];
+  if (state.band) parts.push(Lib.TIME_BANDS[state.band][0]);
   if (state.tab !== 'events') parts.push(state.allTypes ? 'すべての種類' : state.genres.size ? [...state.genres].map((g) => icon(GENRES[g])).join('') : '観光・遊びなど');
   $('#f-sum').textContent = parts.join('・');
 }
@@ -159,7 +161,7 @@ $('#rec').addEventListener('toggle', (e) => store.set('recOpen', e.target.open))
 // ---- スポット ----
 function poiAsSpot(p) {
   return { id: `poi:${p.kind}:${p.name}:${p.lat}`, name: p.name, lat: p.lat, lon: p.lon, pref: null,
-    genres: SCENIC_KINDS.includes(p.kind) ? ['scenic'] : p.kind === 'onsen' ? ['onsen'] : ['sightseeing'],
+    genres: p.kind === 'viewpoint' ? ['viewpoint'] : SCENIC_KINDS.includes(p.kind) ? ['scenic'] : p.kind === 'onsen' ? ['onsen'] : ['sightseeing'],
     indoor: false, fee: '', parking: null, tags: [], url: p.wikipedia || '', note: POI_KIND[p.kind] || '', poi: true, kind: p.kind };
 }
 let poiSpots = null, poiVer = -1;
@@ -231,7 +233,10 @@ function spotCandidates() {
     ensureCells(groups, DATA.cfg.origin, cellKm()).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
     cellsPart = cellItems(groups, DATA.cfg.origin, cellKm());
   }
-  let all = DATA.spots.concat(DATA.osm, extra, cellsPart);
+  // 夜・深夜は道の駅も（駐車場とトイレは 24 時間使える）
+  const night = state.band === 'night' || state.band === 'late';
+  const michi = night ? poiSpotList().filter((p) => p.kind === 'michinoeki') : [];
+  let all = DATA.spots.concat(DATA.osm, extra, cellsPart, michi);
   if (!state.showChains) all = all.filter((s) => !s.chain);
   if (state.walkinOnly && (state.genres.has('factory') || state.genres.has('experience'))) all = all.filter((s) => s.walkin === true);
   if (state.foodCat && groups.includes('food')) all = all.filter((s) => !s.genres.includes('food') || Lib.inFoodCat(s, state.foodCat));
@@ -241,6 +246,7 @@ function spotCandidates() {
     if (g) all = all.filter((s) => Lib.inGeometry(s, g));
   }
   if (state.openOnly) { const now = new Date(); all = all.filter((s) => Lib.openState(s.oh, now) === true); }
+  if (state.band) { const day = new Date(); all = all.filter((s) => Lib.timeBandState(s, state.band, day)); }
   if (state.parkOnly) all = all.filter(hasParking);
   if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
@@ -320,7 +326,12 @@ function extraInfo(s) {
 }
 
 // 営業中か（営業時間がわかるものだけ）・季節の見頃・営業時間などの 1 行
+const BAND_NOTE = { open: '営業時間内', h24: '駐車場・トイレは24時間', outdoor: '屋外（夜間の閉鎖・駐車場の時間は現地で確認）' };
 function openBadge(s) {
+  if (state.band && state.tab === 'spots') {
+    const b = Lib.timeBandState(s, state.band);
+    if (BAND_NOTE[b]) return ` <span class="badge ${b === 'open' || b === 'h24' ? 'open' : 'season'}">${icon(Lib.TIME_BANDS[state.band][0])}${BAND_NOTE[b]}</span>`;
+  }
   const o = s.oh ? Lib.openState(s.oh) : null;
   return o === true ? ' <span class="badge open">営業中</span>' : o === false ? ' <span class="badge closed">営業時間外</span>' : '';
 }
@@ -1396,6 +1407,7 @@ async function watchUpdate() {
 async function reloadData(st) {
   DATA.status = st;
   [DATA.events, DATA.pois, DATA.osm] = await Promise.all([getJSON('data/events.json', DATA.events), getJSON('data/pois.json', DATA.pois), getJSON('data/osm_spots.json', DATA.osm)]);
+  DATA.osm.forEach(Lib.refineGenres);
   const ro = await getJSON('data/roads_osm.json', null);
   if (ro) { DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2); DATA.passes = ro.filter((r) => r.pass); }
   cellIndex = await getJSON('data/cells/index.json', cellIndex);
@@ -1464,6 +1476,8 @@ const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.cus
   cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
 const fail = (msg) => Object.assign(new Error(msg), { mine: true });
+// 自分で登録したルート（Google マップの経路リンクから。端末の中にだけ保存）
+const myRoutes = () => store.get('myRoutes') || [];
 const roadById = (id) => DATA.roads.find((r) => r.id === id) || DATA.courses.find((r) => r.id === id) || null;
 const thisMonth = () => new Date().getMonth() + 1;
 
@@ -1480,8 +1494,10 @@ async function getRoute(url, init) {
 async function valhalla(points, opts, alternates = 0) {
   const costing = opts.bike ? 'motorcycle' : 'auto';
   const co = { use_tolls: opts.noToll ? 0 : 0.5, use_highways: opts.fewHighways ? 0 : 1, ...(opts.bike ? { use_trails: 0.8 } : {}) };
-  const body = { locations: points.map((p, i) => ({ lat: p.lat, lon: p.lon, type: i === 0 || i === points.length - 1 ? 'break' : 'through' })),
-    costing, costing_options: { [costing]: co }, directions_type: 'maneuvers', units: 'kilometers', ...(alternates ? { alternates } : {}) };
+  const body = { locations: points.map((p, i) => ({ lat: p.lat, lon: p.lon, type: i === 0 || i === points.length - 1 ? 'break' : 'through',
+    ...(p.hw ? { search_filter: { min_road_class: 'motorway' }, radius: 300 } : {}), ...(p.heading != null ? { heading: p.heading, heading_tolerance: 60 } : {}) })),
+    costing, costing_options: { [costing]: co }, units: 'kilometers', language: 'ja-JP', ...(alternates ? { alternates } : {}) };
+  const jcts = await jctList();
   const r = await getRoute('https://valhalla1.openstreetmap.de/route', { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' } });
   if (r.status === 429) throw fail('ルートサーバーが混雑しています。少し待ってから再検索してください。');
   if (r.status >= 500) throw fail(`ルートサーバーが一時的に使えません（${r.status}）。`);
@@ -1490,8 +1506,29 @@ async function valhalla(points, opts, alternates = 0) {
   const toRoute = (trip) => ({
     line: trip.legs.flatMap((leg, i) => Lib.decodePolyline(leg.shape, 6).slice(i ? 1 : 0)),
     km: trip.summary.length, min: trip.summary.time / 60, toll: !!trip.summary.has_toll, highway: !!trip.summary.has_highway, engine: 'Valhalla',
-    tollKm: Math.round(Lib.tollKmOf(trip.legs) * 10) / 10 });
+    tollKm: Math.round(Lib.tollKmOf(trip.legs) * 10) / 10, guide: Lib.jctGuide(trip.legs, jcts) });
   return [toRoute(j.trip), ...(j.alternates || []).map((a) => toRoute(a.trip))];
+}
+
+// JCT の名前（OpenStreetMap。分岐の案内に付ける）
+let JCTS = null;
+async function jctList() {
+  if (!JCTS) { JCTS = await getJSON('data/jct.json', []); FAILED.delete('data/jct.json'); }
+  return JCTS;
+}
+// Google マップに渡す「迷わない」地点: ルートの上で、半径 12m 以内が高速道路の本線だけの所（下や横の一般道・ランプに吸い寄せられない）
+async function safePins(line, road, k) {
+  const lat = road.hw.map((p) => p[0]), lon = road.hw.map((p) => p[1]);
+  const box = [Math.min(...lat) - 0.01, Math.min(...lon) - 0.01, Math.max(...lat) + 0.01, Math.max(...lon) + 0.01];
+  const cand = Lib.samplesIn(line, box, 40);
+  if (!cand.length) return [];
+  try {
+    const r = await fetch('https://valhalla1.openstreetmap.de/locate', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: timeoutSignal(15000),
+      body: JSON.stringify({ locations: cand.map((p) => ({ lat: p.lat, lon: p.lon, radius: 12 })), costing: 'auto', verbose: true }) });
+    const j = r.ok ? await r.json() : [];
+    const ok = cand.filter((p, i) => Array.isArray(j) && j[i] && Lib.safeSpot(j[i].edges, p.heading));
+    return Lib.spreadPick(ok, k).map((p) => ({ lat: +p.lat.toFixed(6), lon: +p.lon.toFixed(6) }));
+  } catch { return []; }
 }
 
 // OSRM（予備）: 回避の指定はできない
@@ -1518,6 +1555,9 @@ const roadFix = (points) => (points.length <= 4 ? points
   : [points[0], points[Math.round((points.length - 1) / 3)], points[Math.round(2 * (points.length - 1) / 3)], points[points.length - 1]])
   .map(([lat, lon]) => ({ lat, lon }));
 
+// 高速道路のコースの案内用の点（一周するコースでも始点には戻らない）
+const hwFix = (road) => Lib.coursePoints(road).slice(0, MAX_WAYPOINTS - 2).map(({ lat, lon }) => ({ lat, lon }));
+
 // 1 回の検索で候補を最大 5 本作る: 標準（＋別ルート）、コースの経由地なし、おすすめの道を寄り道として通すもの
 async function fetchCandidates(dest) {
   const o = DATA.cfg.origin, optsKey = JSON.stringify(tour.opts);
@@ -1529,8 +1569,15 @@ async function fetchCandidates(dest) {
   let note = '';
   try {
     const std = await valhalla(main, tour.opts, main.length === 2 ? 2 : 0);
-    const baseLabel = dest.loop ? `${dest.road.name}を周回` : course.length ? 'おすすめのコース' : '標準';
+    const baseLabel = dest.loop ? `${dest.road.name}を周回` : dest.mine ? '登録したルート' : course.length ? 'おすすめのコース' : '標準';
     std.forEach((rt, i) => out.push({ ...rt, label: i ? `別ルート${i}` : baseLabel, via: dest.loop ? [dest.road.id] : [], fixed: i ? [] : baseFix }));
+    if (dest.loop && Array.isArray(dest.road.hw) && out[0]) {
+      const pins = await safePins(out[0].line, dest.road, MAX_WAYPOINTS - 2);
+      out[0].fixed = pins.length >= 3 ? pins : hwFix(dest.road);
+      out[0].hwPins = pins.length;
+      // Google マップに渡す地点だけで引いた距離（Google マップの表示と比べる目安）
+      try { await pause(); out[0].gmKm = (await valhalla([o, ...out[0].fixed, o], tour.opts, 0))[0].km; } catch { /* なければルートの距離で */ }
+    }
     if (!dest.loop) {
       if (course.length) {
         // コースの経由地がある目的地でも、経由地なしの候補と比べられるように
@@ -1576,13 +1623,13 @@ const currentDest = () => {
     const pts = Lib.loopPoints(DATA.cfg.origin, road);
     return { id: 'road:' + road.id, name: `${road.name}（周回）`, lat: pts[1].lat, lon: pts[1].lon, loop: true, road, note: road.note, tags: road.tags };
   }
-  return tour.custom || DATA.touring.find((t) => t.id === tour.destId) || null;
+  return tour.custom || DATA.touring.concat(myRoutes()).find((t) => t.id === tour.destId) || null;
 };
 // Google マップへ渡す経由地のうち、決まって使うもの（コースの経由地・周回する道の入口と出口）
 function fixedWaypoints() {
   const dest = currentDest(); if (!dest) return [];
   if (tour.route && tour.route.fixed) return tour.route.fixed; // 選んだ候補が通る道・コース
-  if (dest.loop) return roadFix(dest.road.points);
+  if (dest.loop) return Array.isArray(dest.road.hw) ? hwFix(dest.road) : roadFix(dest.road.points);
   return (dest.waypoints || []).map(([lat, lon]) => ({ lat, lon }));
 }
 // 候補を作ったあとで走り方を変えたか
@@ -1608,7 +1655,7 @@ function navUrl() {
   const fixed = fixedWaypoints().map((p) => ({ ...p, along: along(p) }));
   // 残りの枠でルート上の地点を等間隔に足し、Google マップが別の道（有料道路など）を選ばないようにする。
   // 走り方を変えた後は古いルートに沿わせない
-  const pins = routeStale() ? [] : Lib.pinWaypoints(line, Math.min(4, MAX_WAYPOINTS - fixed.length - picked.length)).map((p) => ({ ...p, along: along(p) }));
+  const pins = routeStale() || (dest.loop && Array.isArray(dest.road.hw)) ? [] : Lib.pinWaypoints(line, Math.min(4, MAX_WAYPOINTS - fixed.length - picked.length)).map((p) => ({ ...p, along: along(p) }));
   const wps = [...fixed, ...picked, ...pins].sort((a, b) => a.along - b.along);
   return Lib.gmapsDirUrl(DATA.cfg.origin, dest.loop ? DATA.cfg.origin : dest, wps, 'driving');
 }
@@ -1669,7 +1716,7 @@ const curvOf = (c) => (c.curvStars = c.curvStars || Lib.curvStars(Lib.curviness(
 function renderTouring() {
   const dest = currentDest();
   const key = JSON.stringify([tour.destId, tour.custom, tour.roadId, tour.route && tour.route.at, tour.sel, tour.radius, tour.error, tour.busy, DATA.ver,
-    !!DATA.touring.length, DATA.roads.length, DATA.courses.length, tour.showCourses, store.get('courseTypes'), navigator.onLine, tour.restored, tour.opts]);
+    !!DATA.touring.length, DATA.roads.length, DATA.courses.length, tour.showCourses, store.get('courseTypes'), store.get('nightRoads'), myRoutes().length, navigator.onLine, tour.restored, tour.opts]);
   // 変化がなければ作り直さない（地図のズームと位置、スクロール位置を保つ）
   if (key === tour.key && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
@@ -1689,10 +1736,21 @@ function renderTouring() {
       ${DATA.roads.length ? `<optgroup label="おすすめの道を走る（近い20本・ほかは下の検索か地図で）">${roadsByDist.slice(0, 20).concat(
         road && !roadsByDist.slice(0, 20).includes(road) ? [road] : []).map((r) =>
         `<option value="road:${esc(r.id)}" ${r.id === tour.roadId ? 'selected' : ''}>${esc(r.name)}${r.toll ? '（有料）' : ''}</option>`).join('')}</optgroup>` : ''}
+      ${myRoutes().length ? `<optgroup label="登録したルート">${myRoutes().map((t) =>
+        `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>📌${esc(t.name)}</option>`).join('')}</optgroup>` : ''}
       ${tour.custom ? `<option selected>${esc(tour.custom.name)}</option>` : ''}</select>
     <div class="dest-search"><input id="dq" type="search" enterkeyhint="search" autocomplete="off" placeholder="目的地を検索（例：じんだいじ、河口湖、箱根町）" aria-label="目的地を検索">
       <button type="button" class="btn" id="dq-go">検索</button></div>
     <div id="dq-results"></div>
+    <details class="tools" id="my-route" ${store.get('myRouteOpen') ? 'open' : ''}><summary>📌Google マップのルートを登録（${myRoutes().length}件）</summary>
+      <p class="hint">Google マップで経路（経由地つき）を作り、「共有」→「リンクをコピー」して貼り付けてください。登録したルートは上の「目的地」から選べます（この端末の中にだけ保存）。</p>
+      <textarea id="mr-url" rows="2" placeholder="https://maps.app.goo.gl/… を貼り付け"></textarea>
+      <input id="mr-name" type="text" placeholder="名前（空なら「出発地 → 目的地」）" aria-label="ルートの名前">
+      <div class="actions"><button type="button" class="btn primary" id="mr-add">登録する</button></div>
+      <p class="status" id="mr-msg"></p>
+      ${myRoutes().length ? `<ul class="rel">${myRoutes().map((t) => `<li>📌${esc(t.name)}（${t.stops.length}地点）
+        <button type="button" class="btn" data-mr-go="${esc(t.id)}">走る</button><button type="button" class="btn" data-mr-del="${esc(t.id)}">削除</button></li>`).join('')}</ul>` : ''}
+    </details>
     <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
@@ -1732,7 +1790,11 @@ function renderTouring() {
       <div class="actions"><button type="button" class="btn" id="rt-rain">☔ルート上の雨</button><button type="button" class="btn" id="rt-elev">⛰標高</button>
         <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button>
         <button type="button" class="btn" id="rt-onsen">♨帰りに寄れる温泉</button>
-        <button type="button" class="btn" id="rt-park">🅿目的地の駐車場</button></div>
+        <button type="button" class="btn" id="rt-park">🅿目的地の駐車場</button>
+        ${(tour.route.guide || []).length ? `<button type="button" class="btn${dest && dest.loop && dest.road.hw ? ' primary' : ''}" id="rt-jct">🔀分岐（JCT）の案内（${tour.route.guide.length}か所）</button>` : ''}</div>
+      ${dest && dest.loop && dest.road.hw ? `<p class="notice">🛣 高速道路のコースです。分岐で迷わないよう「🔀分岐（JCT）の案内」を走る前に確認してください。
+        Google マップには${tour.route.hwPins ? '、下の一般道や反対車線と重ならない高速道路の上の地点' : '高速道路の上の地点'}を経由地として渡します。
+        Google マップで表示された距離が<strong>約${Math.round(tour.route.gmKm || tour.route.km)}km</strong>前後なら同じルートです（大きく違うときは、途中で高速を降りるルートになっています）。</p>` : ''}
       <div class="actions"><button type="button" class="btn" id="rt-save-map">📥ルート沿いの地図を保存（圏外用）</button></div>
       <p class="status" id="rt-save-msg"></p>
       <div id="rt-out"></div>
@@ -1778,6 +1840,15 @@ function renderTouring() {
   dq.addEventListener('blur', () => { dqState.focused = false; });
   dq.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); searchPlaces(); } });
   $('#dq-go').onclick = () => { buzz(); searchPlaces(); };
+  $('#my-route').addEventListener('toggle', (e) => store.set('myRouteOpen', e.target.open));
+  $('#mr-add').onclick = () => { buzz(); addMyRoute(); };
+  document.querySelectorAll('[data-mr-go]').forEach((b) => { b.onclick = () => { buzz(); setDest(() => { tour.custom = null; tour.roadId = null; tour.destId = b.dataset.mrGo; }); }; });
+  document.querySelectorAll('[data-mr-del]').forEach((b) => { b.onclick = () => {
+    const r = myRoutes().find((t) => t.id === b.dataset.mrDel);
+    if (!r || !confirm(`「${r.name}」を削除しますか？`)) return;
+    store.set('myRoutes', myRoutes().filter((t) => t.id !== r.id));
+    if (tour.destId === r.id) setDest(() => { tour.destId = null; }); else { tour.key = ''; renderTouring(); }
+  }; });
   const pc = $('#pick-center');
   if (pc) pc.onclick = () => { if (!map) return; buzz(); const ce = map.getCenter(); setCustomDest(ce.lat, ce.lng); };
   document.querySelectorAll('[data-opt]').forEach((cb) => {
@@ -1792,6 +1863,7 @@ function renderTouring() {
     $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
     $('#rt-onsen').onclick = () => { buzz(); routeOnsen(); };
+    if ($('#rt-jct')) $('#rt-jct').onclick = () => { buzz(); renderJctGuide(); };
     $('#rt-park').onclick = () => {
       buzz();
       const d = currentDest(); if (!d) return;
@@ -1838,6 +1910,44 @@ function renderTouring() {
 }
 
 // 目的地を変える。保存したルートがあるときは消えてよいか確かめる（圏外では取り直せないため）
+// 短縮リンク（maps.app.goo.gl）は、ブラウザからは転送先を読めないため、外部の中継（allorigins）で展開する
+async function expandMapsLink(text) {
+  if (!Lib.isShortMapsUrl(text)) return text;
+  const short = text.match(/https?:\/\/\S+/)[0];
+  const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(short)}`, { signal: timeoutSignal(20000) });
+  const j = r.ok ? await r.json() : {};
+  return (j.status && j.status.url) || '';
+}
+async function addMyRoute() {
+  const msg = $('#mr-msg'), text = $('#mr-url').value.trim();
+  if (!text) { msg.textContent = 'リンクを貼り付けてください。'; return; }
+  msg.textContent = '読み取っています…';
+  let pts = null;
+  try { pts = Lib.parseGmapsRoute(await expandMapsLink(text)); } catch { /* 下で案内 */ }
+  if (!pts) {
+    msg.textContent = Lib.isShortMapsUrl(text)
+      ? '短縮リンクを展開できませんでした（中継サービスが混雑している可能性）。パソコンのブラウザでリンクを開き、アドレス欄の長い URL を貼り付けると登録できます。'
+      : 'Google マップの経路のリンクとして読み取れませんでした。';
+    return;
+  }
+  // 座標のない地点は住所（なければ名前）で国土地理院の検索から
+  for (const p of pts.filter((x) => x.lat == null)) {
+    try {
+      const r = await fetch(Lib.gsiSearchUrl(p.addr || p.name), { signal: timeoutSignal(8000) });
+      const hit = r.ok ? Lib.parseGsi(await r.json(), 1)[0] : null;
+      if (hit) Object.assign(p, { lat: hit.lat, lon: hit.lon });
+    } catch { /* その地点は飛ばす */ }
+  }
+  const missing = pts.filter((x) => x.lat == null).map((x) => x.name);
+  const rt = Lib.routeFromPlaces(pts, MAX_WAYPOINTS - 2);
+  if (!rt) { msg.textContent = '地点の位置が分かりませんでした。'; return; }
+  const name = $('#mr-name').value.trim() || rt.name;
+  const item = { ...rt, id: `my:${Date.now()}`, name, mine: true };
+  store.set('myRoutes', [...myRoutes(), item]);
+  setDest(() => { tour.custom = null; tour.roadId = null; tour.destId = item.id; });
+  const m = $('#mr-msg');
+  if (m) m.textContent = `「${name}」を登録しました（${rt.stops.length}地点）。${rt.cut ? `経由地が多いため ${rt.cut} 地点を間引きました。` : ''}${missing.length ? `位置が分からず飛ばした地点：${missing.join('、')}` : ''}「ルート候補を探す」で道を確認できます。`;
+}
 function setDest(apply) {
   if (tour.route && !confirm(navigator.onLine === false
     ? '圏外のため、目的地を変えると保存したルートを取り直せません。変更しますか？' : '目的地を変えると、今のルートと選んだ立ち寄りが消えます。変更しますか？')) return false;
@@ -2150,6 +2260,19 @@ async function saveRouteTiles() {
   if (msg) msg.textContent = `保存しました（${done - fail}枚）。圏外では地図の右上で「地理院地図」を選ぶと表示されます（圏外で開いたときは自動で切り替えます）。`;
 }
 
+// ---- 分岐（JCT・出口）の案内: 走る順に「どこで・どちらへ」。押すと地図でその場所へ ----
+function renderJctGuide() {
+  const out = $('#rt-out'), g = (tour.route && tour.route.guide) || [];
+  if (!out) return;
+  out.innerHTML = `<h4>🔀 分岐（JCT・出口）の案内（${g.length}か所・走る順）</h4>
+    <ol class="jct-list">${g.map((x, i) => `<li><button type="button" class="linklike" data-jct="${i}"><strong>${x.km}km</strong>${x.jct ? `・<strong>${esc(x.jct)}</strong>` : ''}</button>：${esc(x.text || '分岐')}</li>`).join('')}</ol>
+    <p class="hint">案内は OpenStreetMap の標識の情報から作っています（Valhalla）。実際の標識・車線の表示を優先してください。押すと地図でその場所を表示します。</p>`;
+  out.querySelectorAll('[data-jct]').forEach((b) => { b.onclick = () => {
+    const x = g[+b.dataset.jct];
+    if (map && x.lat != null) { map.setView([x.lat, x.lon], 16); $('#map').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  }; });
+}
+
 // ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
 function courseHtml(r) {
   const closedNow = (r.closedMonths || []).includes(thisMonth());
@@ -2173,16 +2296,24 @@ function bindCourseBtns(el) {
 }
 // 種類ごとに色を分け、見せる種類を選べるように。厳選は太く、線は押しやすいように少し太め（押せる幅はさらに広い）
 const courseTypesOn = () => new Set(store.get('courseTypes') || Object.keys(Lib.COURSE_TYPES));
+// 1 本ずつ少しずつ色を変え、両端に白い丸を付けて、どこからどこまでが 1 本か分かるように
+const nightRoads = () => store.get('nightRoads') === true;
+const shownRoads = () => DATA.courses.concat(DATA.roads).filter((r) => !nightRoads() || !Lib.roadNightClosed(r));
 function drawCourses() {
   const on = courseTypesOn();
   const add = (layer, r) => layer.bindPopup(() => courseHtml(r), { maxWidth: 260 })
     .on('popupopen', (e) => bindCourseBtns(e.popup.getElement())).addTo(map);
-  for (const r of DATA.courses.concat(DATA.roads)) {
+  const ends = L.canvas({ padding: 0.3 });
+  for (const r of shownRoads()) {
     const t = Lib.courseType(r); if (!on.has(t)) continue;
-    const color = Lib.COURSE_TYPES[t][1], pick = t === 'pick';
-    const line = L.polyline(r.points, { color, weight: pick ? 7 : 5, opacity: pick ? 0.95 : 0.8, dashArray: t === 'rindo' ? '6 6' : null });
-    line.on('mouseover', () => line.setStyle({ weight: pick ? 10 : 8 })).on('mouseout', () => line.setStyle({ weight: pick ? 7 : 5 }));
+    const color = Lib.routeShade(Lib.COURSE_TYPES[t][1], r.id), pick = t === 'pick', glow = nightRoads() && Lib.roadNightView(r);
+    const w = pick || glow ? 7 : 5;
+    const line = L.polyline(r.points, { color, weight: w, opacity: pick ? 0.95 : 0.8, dashArray: t === 'rindo' ? '6 6' : null });
+    line.on('mouseover', () => line.setStyle({ weight: w + 3 })).on('mouseout', () => line.setStyle({ weight: w }));
     add(line, r);
+    for (const p of [r.points[0], r.points[r.points.length - 1]]) {
+      L.circleMarker(p, { renderer: ends, radius: pick ? 4 : 3, color, weight: 2, fillColor: '#fff', fillOpacity: 1, interactive: false }).addTo(map);
+    }
   }
   if (on.has('pass')) {
     const passIcon = L.divIcon({ className: '', iconSize: [26, 26], iconAnchor: [13, 13], html: '<span class="pin pass">⛰</span>' });
@@ -2192,16 +2323,19 @@ function drawCourses() {
 // 凡例（押すとその種類を出す・隠す）。本数つき
 function courseLegendHtml() {
   const on = courseTypesOn(), n = {};
-  for (const r of DATA.courses.concat(DATA.roads, DATA.passes)) { const t = Lib.courseType(r); n[t] = (n[t] || 0) + 1; }
+  for (const r of shownRoads().concat(DATA.passes)) { const t = Lib.courseType(r); n[t] = (n[t] || 0) + 1; }
   return `<div class="chips wrap course-legend" aria-label="ドライブコースの種類">${Object.entries(Lib.COURSE_TYPES).filter(([t]) => n[t]).map(([t, [label, color]]) =>
     `<button type="button" class="chip" data-ctype="${t}" aria-pressed="${on.has(t)}"><span class="swatch${t === 'rindo' ? ' dash' : ''}${t === 'pass' ? ' dot' : ''}" style="--c:${color}"></span>${esc(label)}（${n[t].toLocaleString()}）</button>`).join('')}
-    <button type="button" class="chip" data-ctype="__pick">★おすすめだけ</button><button type="button" class="chip" data-ctype="__all">すべて</button></div>`;
+    <button type="button" class="chip" data-ctype="__pick">★おすすめだけ</button><button type="button" class="chip" data-ctype="__all">すべて</button>
+    <button type="button" class="chip" data-ctype="__night" aria-pressed="${nightRoads()}">🌙夜も走れる道だけ</button></div>
+    ${nightRoads() ? '<p class="hint">夜間通行止めと分かっている道を外し、夜景の道を太く表示しています（自動収集の道は夜間の規制の情報がないので、現地の表示を確認してください）。両端の白い丸がコースの始まりと終わりです。</p>' : '<p class="hint">線は 1 本ずつ少しずつ色を変えています。両端の白い丸がコースの始まりと終わりです。</p>'}`;
 }
 function bindCourseLegend() {
   document.querySelectorAll('[data-ctype]').forEach((b) => { b.onclick = () => {
     buzz();
     const t = b.dataset.ctype;
     let on = courseTypesOn();
+    if (t === '__night') { store.set('nightRoads', !nightRoads()); tour.key = ''; renderTouring(); return; }
     if (t === '__all') on = new Set(Object.keys(Lib.COURSE_TYPES));
     else if (t === '__pick') on = new Set(['pick']);
     else if (on.has(t)) on.delete(t); else on.add(t);
@@ -2461,6 +2595,7 @@ async function init() {
   [DATA.spots, DATA.touring, DATA.status, DATA.roads] = await Promise.all([
     getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
     getJSON('data/scenic_roads.json', [])]);
+  DATA.spots.forEach(Lib.refineGenres);
   renderAll();
   renderInstallBanner();
   loadWeather();
@@ -2477,6 +2612,7 @@ async function init() {
   renderAll();
   // 自動収集スポットは大きい（数 MB）ので最後に読み込む
   DATA.osm = await getJSON('data/osm_spots.json', []);
+  DATA.osm.forEach(Lib.refineGenres);
   DATA.osmLoaded = true;
   renderAll();
 }
