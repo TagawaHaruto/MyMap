@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []), allTypes: !!saved.allTypes, band: saved.band || '',
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false, parkOnly: false,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false, parkOnly: false, quickOnly: false, nightPlay: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -248,6 +248,9 @@ function spotCandidates() {
   if (state.openOnly) { const now = new Date(); all = all.filter((s) => Lib.openState(s.oh, now) === true); }
   if (state.band) { const day = new Date(); all = all.filter((s) => Lib.timeBandState(s, state.band, day)); }
   if (state.parkOnly) all = all.filter(hasParking);
+  // 調べて追加した「ちょっとお出かけ」「夜も遊べる」（夜景・展望台も夜に楽しめるものとして含める）
+  if (state.quickOnly) all = all.filter((s) => (s.tags || []).includes('ちょっとお出かけ'));
+  if (state.nightPlay) all = all.filter((s) => (s.tags || []).includes('夜も遊べる') || (s.genres || []).includes('nightview'));
   if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
 }
@@ -699,6 +702,8 @@ function renderSpotList() {
     `<button type="button" class="chip" id="t-plans">📋保存したプラン${savedPlans().length ? `（${savedPlans().length}）` : ''}</button>`,
     `<button type="button" class="chip" id="t-open" aria-pressed="${state.openOnly}">🕘営業中だけ</button>`,
     `<button type="button" class="chip" id="t-park" aria-pressed="${state.parkOnly}">🅿駐車場あり</button>`,
+    `<button type="button" class="chip" id="t-quick" aria-pressed="${state.quickOnly}">☕ちょっとお出かけ</button>`,
+    `<button type="button" class="chip" id="t-night" aria-pressed="${state.nightPlay}">🌙夜も遊べる</button>`,
     `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
     `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>`,
     (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
@@ -726,6 +731,10 @@ function renderSpotList() {
   if (state.pendingGacha && DATA.osmLoaded && list.length) { state.pendingGacha = false; spin(list); }
   const ga = $('#gacha-again'); if (ga) ga.onclick = () => { buzz(); spin(list); };
   const gc = $('#gacha-close'); if (gc) gc.onclick = () => { state.gacha = null; renderSpotList(); };
+  // それ自体が種類のようなものなので、押したら「種類」の選択は外す（重ねると 0 件になりやすい）
+  const asCategory = (on) => { if (on && (state.genres.size || state.allTypes)) { state.genres.clear(); state.allTypes = false; saveFilters(); renderFilters(); } };
+  $('#t-quick').onclick = () => { buzz(); state.quickOnly = !state.quickOnly; asCategory(state.quickOnly); state.limit = 300; renderSpotList(); };
+  $('#t-night').onclick = () => { buzz(); state.nightPlay = !state.nightPlay; asCategory(state.nightPlay); state.limit = 300; renderSpotList(); };
   $('#t-park').onclick = () => { buzz(); state.parkOnly = !state.parkOnly; state.limit = 300; renderSpotList(); };
   $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
   $('#t-iso').onclick = () => { buzz(); state.isoOn = !state.isoOn; state.limit = 300; renderSpotList(); };
@@ -1755,7 +1764,7 @@ function renderTouring() {
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
     <p class="hint">目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定</p>
-    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}</p>${courseSources(road)}`
+    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(road)}${road.noBike && tour.opts.bike ? '<br>⚠ <strong>「バイク向け」で探していますが、このコースはバイクでは走れません。</strong>' : ''}</p>${courseSources(road)}`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
     <details class="tools" id="tour-opts" ${store.get('tourOptsOpen') ? 'open' : ''}><summary>⚙走り方・立ち寄りの範囲（${optSummary()}）</summary>
@@ -2301,13 +2310,15 @@ function renderJctGuide() {
 
 // ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
 // 出典（調べたページ）へのリンク
+// 二輪が通れない道（車で走るコース）
+const noBikeHtml = (r) => (r.noBike ? `<br>🚫 <strong>二輪通行不可（車で走るコース）</strong>：${esc(r.noBike)}` : '');
 const courseSources = (r) => ((r.sources || []).length ? `<p class="hint">出典：${r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join('、')}</p>` : '');
 function courseHtml(r) {
   const closedNow = (r.closedMonths || []).includes(thisMonth());
   const [tLabel, tColor] = Lib.COURSE_TYPES[Lib.courseType(r)];
   return `<div class="pop"><strong>${r.pass ? '⛰' : '🛣'} ${esc(r.name)}</strong>
     <span class="status"><span class="swatch" style="--c:${tColor}"></span>${esc(tLabel)}${r.curv ? `・カーブ${'★'.repeat(Lib.curvStars(r.curv))}` : ''}${r.km ? `・約${Math.round(r.km)}km` : ''}</span>
-    <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}${(r.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}</p>
+    <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}${(r.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(r)}</p>
     ${courseSources(r)}
     <div class="actions">${r.pass ? `<button type="button" class="btn primary" data-pass-go="${esc(r.id)}">ここを目的地に</button>`
       : `<button type="button" class="btn primary" data-course-go="${esc(r.id)}">このコースを走る（周回）</button>`}</div></div>`;
