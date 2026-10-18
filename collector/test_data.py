@@ -4,7 +4,7 @@ import os
 import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-GENRES = {'play', 'sightseeing', 'shopping', 'vehicle', 'museum', 'garden', 'temple', 'onsen', 'scenic', 'simulator', 'factory', 'food', 'heritage', 'lodging', 'souvenir', 'outdoor', 'experience'}
+GENRES = {'play', 'sightseeing', 'shopping', 'vehicle', 'museum', 'garden', 'temple', 'onsen', 'scenic', 'simulator', 'factory', 'food', 'heritage', 'lodging', 'souvenir', 'outdoor', 'experience', 'viewpoint', 'nightview'}
 PREFS = {'東京', '神奈川', '埼玉', '千葉', '山梨', '群馬', '栃木', '茨城', '静岡', '長野', '新潟'}
 TYPES = {'eventjs', 'daylist', 'doorkeeper', 'nextdata'}
 
@@ -31,8 +31,9 @@ class DataTest(unittest.TestCase):
                 self.assertIn(s['pref'], PREFS)
                 self.assertTrue(s['genres'] and set(s['genres']) <= GENRES, s['genres'])
                 self.assertIsInstance(s['indoor'], bool)
-                self.assertEqual(set(s['parking']), {'car', 'bike'})
-                self.assertTrue(s['url'].startswith('https://'))
+                # 駐車場が確かでないものは null（推定で書かない）。URL は分からなければ空
+                self.assertTrue(s['parking'] is None or set(s['parking']) == {'car', 'bike'})
+                self.assertTrue(s['url'] == '' or s['url'].startswith('https://'))
 
     def test_simulator_spots(self):
         sims = [s for s in load('data/spots.json') if 'simulator' in s['genres']]
