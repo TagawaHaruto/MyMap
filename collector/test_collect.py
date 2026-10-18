@@ -125,6 +125,18 @@ class FlowTest(unittest.TestCase):
 
 
 class PoiTest(unittest.TestCase):
+    def test_parse_fuel24(self):
+        text = json.dumps({'elements': [
+            {'type': 'node', 'id': 1, 'lat': 35.6, 'lon': 139.5, 'tags': {'amenity': 'fuel', 'brand': 'ENEOS', 'opening_hours': '24/7', 'self_service': 'yes'}},
+            {'type': 'node', 'id': 2, 'lat': 35.7, 'lon': 139.5, 'tags': {'amenity': 'fuel', 'name': 'ENEOS', 'opening_hours': '24/7'}},
+            {'type': 'way', 'id': 3, 'center': {'lat': 35.70001, 'lon': 139.5}, 'tags': {'amenity': 'fuel', 'name': 'ENEOS', 'opening_hours': '24/7'}},
+            {'type': 'node', 'id': 4, 'lat': 35.8, 'lon': 139.5, 'tags': {'amenity': 'fuel', 'name': '出光 X店', 'brand': '出光', 'opening_hours': '24/7'}},
+        ]})
+        xs = collect.parse_overpass(text)
+        self.assertEqual([(x['name'], x['lat'], x.get('self')) for x in xs], [('ENEOS', 35.6, 1), ('ENEOS', 35.7, None), ('出光 X店', 35.8, None)])
+        self.assertTrue(all(x['kind'] == 'fuel24' and x['oh'] == '24/7' for x in xs))
+        self.assertNotIn('brand', xs[2])
+
     def test_parse_overpass(self):
         pois = collect.parse_overpass(fx('overpass.json'))
         got = {(p['kind'], p['name']) for p in pois}
@@ -137,7 +149,7 @@ class PoiTest(unittest.TestCase):
         self.assertIsNone(next(p for p in pois if p['kind'] == 'onsen')['wikipedia'])
 
     def test_poi_queries_are_split_by_kind(self):
-        self.assertEqual([k for k, _ in collect.POI_QUERIES], ['michinoeki', 'onsen', 'viewpoint', 'scenic'])
+        self.assertEqual([k for k, _ in collect.POI_QUERIES], ['michinoeki', 'onsen', 'viewpoint', 'scenic', 'fuel24'])
         q = collect.overpass_body(collect.POI_QUERIES[3][1], '(34.299,137.877,37.001,141.203)').decode()
         self.assertIn(urllib.parse.quote('(34.299,137.877,37.001,141.203)'), q)
         for word in ('waterfall', 'peak', 'lake', 'beach'):

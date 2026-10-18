@@ -166,7 +166,7 @@ function poiAsSpot(p) {
 }
 let poiSpots = null, poiVer = -1;
 function poiSpotList() {
-  if (poiVer !== DATA.ver) { poiSpots = DATA.pois.map(poiAsSpot); poiVer = DATA.ver; }
+  if (poiVer !== DATA.ver) { poiSpots = DATA.pois.filter((p) => p.kind !== 'fuel24').map(poiAsSpot); poiVer = DATA.ver; } // ガソリンスタンドは行き先にしない
   return poiSpots;
 }
 // グルメなど（件数の多い升目のデータ）を読み込む範囲は最大 15km（通信量を抑える。遠くは検索欄で OpenPOI から探す）
@@ -1304,7 +1304,7 @@ function eventCard(e, from) {
 function dataTotalsHtml() {
   const sum = (g) => (cellIndex && cellIndex[g] ? Object.values(cellIndex[g]).reduce((a, b) => a + b, 0) : 0);
   const rows = [['厳選スポット（工場見学・体験・季節の見頃など）', DATA.spots.length], ['観光スポット（博物館・寺社・温泉・体験など）', DATA.osm.length],
-    ['立ち寄り候補（道の駅・温泉・展望台・滝など）', DATA.pois.length], ['🍴グルメ', sum('food')], ['🏯史跡・🏨宿', sum('heritage')], ['🛍お土産・⚽遊び・キャンプ', sum('local')],
+    ['立ち寄り候補（道の駅・温泉・展望台・滝など）', DATA.pois.filter((p) => p.kind !== 'fuel24').length], ['⛽24時間営業のガソリンスタンド', DATA.pois.filter((p) => p.kind === 'fuel24').length], ['🍴グルメ', sum('food')], ['🏯史跡・🏨宿', sum('heritage')], ['🛍お土産・⚽遊び・キャンプ', sum('local')],
     ['ドライブコース（厳選＋自動収集）', DATA.roads.length + DATA.courses.length], ['峠', DATA.passes.length]];
   const total = rows.slice(0, 6).reduce((a, [, n]) => a + n, 0);
   return `<p class="status">スポット 合計 <strong>約${total.toLocaleString()}件</strong>（起点から約${DATA.cfg.poiRadiusKm}km圏）＋ネットの施設検索 OpenPOI（全国 約337万件）</p>
@@ -1506,7 +1506,7 @@ async function valhalla(points, opts, alternates = 0) {
   const toRoute = (trip) => ({
     line: trip.legs.flatMap((leg, i) => Lib.decodePolyline(leg.shape, 6).slice(i ? 1 : 0)),
     km: trip.summary.length, min: trip.summary.time / 60, toll: !!trip.summary.has_toll, highway: !!trip.summary.has_highway, engine: 'Valhalla',
-    tollKm: Math.round(Lib.tollKmOf(trip.legs) * 10) / 10, guide: Lib.jctGuide(trip.legs, jcts) });
+    tollKm: Math.round(Lib.tollKmOf(trip.legs) * 10) / 10, guide: Lib.jctGuide(trip.legs, jcts), tollSpans: Lib.tollSpans(trip.legs) });
   return [toRoute(j.trip), ...(j.alternates || []).map((a) => toRoute(a.trip))];
 }
 
@@ -1791,6 +1791,7 @@ function renderTouring() {
         <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button>
         <button type="button" class="btn" id="rt-onsen">♨帰りに寄れる温泉</button>
         <button type="button" class="btn" id="rt-park">🅿目的地の駐車場</button>
+        <button type="button" class="btn" id="rt-fuel">⛽24時間ガソリンスタンド</button>
         ${(tour.route.guide || []).length ? `<button type="button" class="btn${dest && dest.loop && dest.road.hw ? ' primary' : ''}" id="rt-jct">🔀分岐（JCT）の案内（${tour.route.guide.length}か所）</button>` : ''}</div>
       ${dest && dest.loop && dest.road.hw ? `<p class="notice">🛣 高速道路のコースです。分岐で迷わないよう「🔀分岐（JCT）の案内」を走る前に確認してください。
         Google マップには${tour.route.hwPins ? '、下の一般道や反対車線と重ならない高速道路の上の地点' : '高速道路の上の地点'}を経由地として渡します。
@@ -1864,6 +1865,7 @@ function renderTouring() {
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
     $('#rt-onsen').onclick = () => { buzz(); routeOnsen(); };
     if ($('#rt-jct')) $('#rt-jct').onclick = () => { buzz(); renderJctGuide(); };
+    $('#rt-fuel').onclick = () => { buzz(); routeFuel(); };
     $('#rt-park').onclick = () => {
       buzz();
       const d = currentDest(); if (!d) return;
@@ -2123,6 +2125,30 @@ function routeOnsen(backTime) {
       : '<p class="hint">ルートから3km以内に温泉が見つかりませんでした。</p>'}
     <p class="hint">営業時間がわかる温泉だけ「営業中」を表示しています。最終受付は公式サイトで確認してください。</p>`;
   const bi = $('#back-time'); if (bi) bi.onchange = (e) => { tour.backTime = e.target.value || '15:00'; routeOnsen(tour.backTime); };
+  fillAddr(out);
+}
+// ---- ルート沿い（1km 以内）の 24 時間営業のガソリンスタンド: 走る順に、通過する時刻の目安つき。地図にも ⛽ ----
+let fuelLayer = null;
+function routeFuel() {
+  const out = $('#rt-out'), rt = tour.route;
+  const all = DATA.pois.filter((p) => p.kind === 'fuel24');
+  const xs = Lib.stopsAlongRoute(all, rt.line, 1);
+  const lineKm = Lib.distToRoute({ lat: rt.line[rt.line.length - 1][1], lon: rt.line[rt.line.length - 1][0] }, rt.line).along || rt.km;
+  const at = (x) => departMs() + rt.min * 60e3 * Math.min(1, x.alongKm / lineKm);
+  if (fuelLayer) fuelLayer.remove();
+  if (map) {
+    const ic = L.divIcon({ className: '', iconSize: [26, 26], iconAnchor: [13, 13], html: '<span class="pin">⛽</span>' });
+    fuelLayer = L.layerGroup(xs.map((x) => L.marker([x.lat, x.lon], { icon: ic, title: x.name })
+      .bindPopup(`<div class="pop"><strong>⛽ ${esc(x.name)}</strong><span class="status">24時間営業${x.self === 1 ? '・セルフ' : x.self === 0 ? '・フルサービス' : ''}</span>
+        <div class="actions"><a class="btn" ${gm(x)}>写真・口コミ</a></div></div>`))).addTo(map);
+  }
+  // 有料区間（高速道路）を走っている所の近くは、下や横の一般道のスタンド（SA・PA 以外は一度降りる）
+  const onHw = (x) => Lib.inSpans(x.alongKm * rt.km / lineKm, rt.tollSpans);
+  out.innerHTML = `<h4>⛽24時間営業のガソリンスタンド（ルートから1km以内・${xs.length}か所・走る順）</h4>`
+    + (xs.length ? `<ul class="rel">${xs.map((x) => `<li><strong>${Math.round(x.alongKm)}km</strong>・<a ${gm(x)}>${esc(x.name)}</a>
+      <span class="status">${x.brand ? esc(x.brand) + '・' : ''}${x.self === 1 ? 'セルフ・' : x.self === 0 ? 'フルサービス・' : ''}道から${x.offKm < 0.1 ? '0.1km未満' : x.offKm.toFixed(1) + 'km'}・${hm(at(x))}ごろ通過</span>${onHw(x) ? ' <span class="badge warn">🛣高速を走行中の区間（SA・PA 以外は一度降りて給油）</span>' : ''}</li>`).join('')}</ul>`
+      : `<p class="hint">${all.length ? 'ルートから1km以内に見つかりませんでした。' : 'まだ収集されていません（次の自動更新で集めます）。'}</p>`)
+    + '<p class="hint">OpenStreetMap で「24時間営業」と登録されている所です。営業時間が変わっていることがあるので、深夜は早めに給油してください。「🛣高速を走行中の区間」の印は、その付近ではルートが有料道路を走っているという意味です（印がない所は一般道から寄れます。ルートが OSRM のときは印が付きません）。</p>';
   fillAddr(out);
 }
 async function routePhotos() {
