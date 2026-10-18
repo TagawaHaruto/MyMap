@@ -33,7 +33,7 @@ const state = {
   mode: saved.mode || 'train', maxMin: saved.maxMin === undefined ? 60 : saved.maxMin,
   prefs: new Set(saved.prefs || []), genres: new Set(saved.genres || []), dirs: new Set(saved.dirs || []), allTypes: !!saved.allTypes, band: saved.band || '',
   q: '', limit: 300, rainOverride: null, weatherRainy: false, tab: store.get('tab') || 'spots', period: 'weekend',
-  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false, parkOnly: false,
+  showNotices: false, showChains: false, walkinOnly: false, foodCat: '', spotMap: false, openOnly: false, seasonOnly: false, isoOn: false, gacha: null, plansView: false, parkOnly: false, quickOnly: false, nightPlay: false,
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
@@ -248,6 +248,9 @@ function spotCandidates() {
   if (state.openOnly) { const now = new Date(); all = all.filter((s) => Lib.openState(s.oh, now) === true); }
   if (state.band) { const day = new Date(); all = all.filter((s) => Lib.timeBandState(s, state.band, day)); }
   if (state.parkOnly) all = all.filter(hasParking);
+  // 調べて追加した「ちょっとお出かけ」「夜も遊べる」（夜景・展望台も夜に楽しめるものとして含める）
+  if (state.quickOnly) all = all.filter((s) => (s.tags || []).includes('ちょっとお出かけ'));
+  if (state.nightPlay) all = all.filter((s) => (s.tags || []).includes('夜も遊べる') || (s.genres || []).includes('nightview'));
   if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
 }
@@ -699,6 +702,8 @@ function renderSpotList() {
     `<button type="button" class="chip" id="t-plans">📋保存したプラン${savedPlans().length ? `（${savedPlans().length}）` : ''}</button>`,
     `<button type="button" class="chip" id="t-open" aria-pressed="${state.openOnly}">🕘営業中だけ</button>`,
     `<button type="button" class="chip" id="t-park" aria-pressed="${state.parkOnly}">🅿駐車場あり</button>`,
+    `<button type="button" class="chip" id="t-quick" aria-pressed="${state.quickOnly}">☕ちょっとお出かけ</button>`,
+    `<button type="button" class="chip" id="t-night" aria-pressed="${state.nightPlay}">🌙夜も遊べる</button>`,
     `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
     `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>`,
     (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
@@ -726,6 +731,10 @@ function renderSpotList() {
   if (state.pendingGacha && DATA.osmLoaded && list.length) { state.pendingGacha = false; spin(list); }
   const ga = $('#gacha-again'); if (ga) ga.onclick = () => { buzz(); spin(list); };
   const gc = $('#gacha-close'); if (gc) gc.onclick = () => { state.gacha = null; renderSpotList(); };
+  // それ自体が種類のようなものなので、押したら「種類」の選択は外す（重ねると 0 件になりやすい）
+  const asCategory = (on) => { if (on && (state.genres.size || state.allTypes)) { state.genres.clear(); state.allTypes = false; saveFilters(); renderFilters(); } };
+  $('#t-quick').onclick = () => { buzz(); state.quickOnly = !state.quickOnly; asCategory(state.quickOnly); state.limit = 300; renderSpotList(); };
+  $('#t-night').onclick = () => { buzz(); state.nightPlay = !state.nightPlay; asCategory(state.nightPlay); state.limit = 300; renderSpotList(); };
   $('#t-park').onclick = () => { buzz(); state.parkOnly = !state.parkOnly; state.limit = 300; renderSpotList(); };
   $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
   $('#t-iso').onclick = () => { buzz(); state.isoOn = !state.isoOn; state.limit = 300; renderSpotList(); };
