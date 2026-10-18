@@ -619,4 +619,61 @@ assert.strictEqual(Lib.officialMoto({ name: 'C', lat: 35, lon: 139, moto: true, 
 const mb2 = Lib.mergeBikeSpots({ lat: 35, lon: 139 }, 3, [['OSM', [{ name: 'OSMの同じ所', lat: 35.0012, lon: 139.0 }]], ['公式', [om]]]);
 assert.deepStrictEqual(mb2.map((x) => x.name), ['区営A']); // 重なったら公式を残す
 
+// ---- Google マップの経路リンク ----
+const tok = (lat, lon) => { const b = Buffer.alloc(10); b[0] = 0x15; b.writeInt32LE(Math.round(lat * 1e6), 1); b[5] = 0x1d; b.writeInt32LE(Math.round(lon * 1e6), 6); return b.toString('base64'); };
+assert.deepStrictEqual(Lib.geocodeToken(tok(35.5, 139.25)), { lat: 35.5, lon: 139.25 });
+assert.strictEqual(Lib.geocodeToken('xx'), null);
+const gurl = `https://maps.google.com/?geocode=${tok(35.9, 139.6)};${tok(36.3, 139.5)};${tok(36.9, 139.8)}&daddr=${encodeURIComponent('道の駅 A、〒327-0313 栃木県佐野市')}+to:${encodeURIComponent('B峠')}&saddr=${encodeURIComponent('C SA')}&dirflg=d`;
+const gp = Lib.parseGmapsRoute(`共有: ${gurl}`);
+assert.deepStrictEqual(gp.map((p) => [p.name, p.lat, p.lon]), [['C SA', 35.9, 139.6], ['道の駅 A', 36.3, 139.5], ['B峠', 36.9, 139.8]]);
+assert.strictEqual(gp[1].addr, '栃木県佐野市');
+const gr = Lib.routeFromPlaces(gp, 7);
+assert.deepStrictEqual([gr.name, gr.lat, gr.waypoints], ['C SA → B峠', 36.9, [[35.9, 139.6], [36.3, 139.5]]]);
+assert.strictEqual(Lib.routeFromPlaces([{ name: 'a', lat: 1, lon: 1 }, { name: 'b', lat: 2, lon: 2 }, { name: 'c', lat: 3, lon: 3 }, { name: 'd', lat: 4, lon: 4 }], 2).cut, 1);
+const gd = Lib.parseGmapsRoute('https://www.google.com/maps/dir/%E8%93%AE%E7%94%B0SA/35.1,139.2/%E5%8F%A4%E5%B3%B0/@35,139,9z/data=!4m10!1m5!1m1!1s0x1:0x2!2m2!1d139.66!2d35.99!1m0!1m5!1m1!1s0x3:0x4!2m2!1d139.5!2d36.65');
+assert.deepStrictEqual(gd.map((p) => [p.name, p.lat, p.lon]), [['蓮田SA', 35.99, 139.66], ['35.1000,139.2000', 35.1, 139.2], ['古峰', 36.65, 139.5]]);
+assert.deepStrictEqual(Lib.parseGmapsRoute('https://www.google.com/maps/place/X/@35.5,139.5,15z').map((p) => [p.name, p.lat]), [['X', 35.5]]);
+assert.strictEqual(Lib.parseGmapsRoute('こんにちは'), null);
+assert.strictEqual(Lib.isShortMapsUrl('見て https://maps.app.goo.gl/abc?g_st=il'), true);
+// ---- 高速道路のコース・分岐の案内 ----
+const hwRoad = { points: [[35, 139]], hw: [[35.0, 139.0], [35.0, 139.1], [35.1, 139.1], [35.0, 139.0]] };
+const cp = Lib.coursePoints(hwRoad);
+assert.strictEqual(cp.length, 3); // 一周するコースは始点に戻らない
+assert.ok(cp.every((p) => p.hw) && Math.abs(cp[0].heading - 90) < 1);
+assert.strictEqual(Lib.loopPoints({ lat: 1, lon: 1 }, { points: [[2, 2], [3, 3]] }).length, 4);
+assert.strictEqual(Lib.jaOnly('右方向です。その先C1/首都高速都心環状線、神田橋/箱崎/Kandabashi/Hakozaki方面です。'), '右方向です。その先C1/首都高速都心環状線、神田橋/箱崎方面です。');
+assert.strictEqual(Lib.jaOnly('左方向です。その先4/首都高速4号新宿線/Route 4 Shinjuku Lineです。'), '左方向です。その先4/首都高速4号新宿線です。');
+const legs = [{ shape: '', maneuvers: [{ type: 1, length: 2 }, { type: 24, toll: true, instruction: '左方向です。', length: 1, begin_shape_index: 0 }, { type: 4, length: 0 }] }];
+assert.deepStrictEqual(Lib.jctGuide(legs).map((x) => [x.km, x.text]), [[2, '左方向です。']]);
+assert.strictEqual(Lib.safeSpot([{ heading: 92, edge: { classification: { classification: 'motorway', use: 'road' } } }], 90), true);
+assert.strictEqual(Lib.safeSpot([{ heading: 92, edge: { classification: { classification: 'motorway', use: 'road' } } }, { heading: 270, edge: { classification: { classification: 'motorway', use: 'road' } } }], 90), true); // 反対車線は可
+assert.strictEqual(Lib.safeSpot([{ heading: 270, edge: { classification: { classification: 'motorway', use: 'road' } } }], 90), false); // 反対車線だけ
+assert.strictEqual(Lib.safeSpot([{ heading: 90, edge: { classification: { classification: 'motorway', use: 'ramp' } } }], 90), false); // ランプ
+assert.strictEqual(Lib.safeSpot([{ heading: 90, edge: { classification: { classification: 'primary', use: 'road' } } }], 90), false); // 一般道
+assert.strictEqual(Lib.safeSpot([], 90), false);
+const sm = Lib.samplesIn([[139.0, 35.0], [139.1, 35.0], [139.2, 35.0]], [34.9, 139.05, 35.1, 139.25], 4);
+assert.ok(sm.length >= 3 && sm.every((p) => p.lon >= 139.05));
+assert.deepStrictEqual(Lib.spreadPick([1, 2, 3, 4, 5], 3), [1, 3, 5]);
+// ---- 種類・時間帯・コースの色 ----
+assert.deepStrictEqual(Lib.refineGenres({ name: '東京タワー', genres: ['sightseeing', 'scenic'], tags: ['夜景'] }).genres, ['viewpoint', 'nightview']);
+assert.deepStrictEqual(Lib.refineGenres({ name: 'X', note: '展望台', genres: ['scenic'] }).genres, ['viewpoint']);
+assert.deepStrictEqual(Lib.refineGenres({ name: '深大寺', genres: ['temple'] }).genres, ['temple']);
+const d0 = new Date(2026, 9, 17);
+assert.strictEqual(Lib.timeBandState({ genres: ['viewpoint'], indoor: false }, 'late', d0), 'outdoor');
+assert.strictEqual(Lib.timeBandState({ genres: ['museum'], indoor: true }, 'late', d0), null);
+assert.strictEqual(Lib.timeBandState({ genres: ['museum'], indoor: true }, 'day', d0), 'ok');
+assert.strictEqual(Lib.timeBandState({ genres: ['food'], oh: 'Mo-Su 11:00-02:00' }, 'late', d0), 'open');
+assert.strictEqual(Lib.timeBandState({ genres: ['food'], oh: 'Mo-Su 11:00-15:00' }, 'night', d0), null);
+assert.strictEqual(Lib.timeBandState({ genres: ['nightview'], indoor: true }, 'night', d0), 'ok');
+assert.strictEqual(Lib.timeBandState({ kind: 'michinoeki', genres: ['sightseeing'] }, 'late', d0), 'h24');
+assert.strictEqual(Lib.timeBandState({ kind: 'peak', genres: ['scenic'] }, 'late', d0), null);
+assert.strictEqual(Lib.timeBandState({ genres: ['scenic', 'garden'], indoor: false }, 'late', d0), null); // 庭園・並木は出さない
+assert.strictEqual(Lib.timeBandState({ kind: 'lake', genres: ['scenic'] }, 'late', d0), 'outdoor');
+assert.strictEqual(Lib.timeBandState({ genres: ['viewpoint'], fee: '大人300円' }, 'late', d0), null);
+assert.strictEqual(Lib.roadNightClosed({ closed: '夜間通行止め（19時〜翌8時）' }), true);
+assert.strictEqual(Lib.roadNightClosed({ closed: '冬季閉鎖', note: '夜景が美しい' }), false);
+assert.strictEqual(Lib.roadNightView({ note: '夜景が美しい' }), true);
+assert.ok(/^hsl\(\d+, \d+%, \d+%\)$/.test(Lib.routeShade('#d6336c', 'a')));
+assert.notStrictEqual(Lib.routeShade('#d6336c', 'road-1'), Lib.routeShade('#d6336c', 'road-2'));
+
 console.log('lib: ALL PASS');

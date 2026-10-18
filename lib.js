@@ -302,7 +302,188 @@ const Lib = (() => {
   }
 
   // おすすめの道を走って戻る周回: データの並び（走る向き）のまま入る。一方通行の道を逆走させないため
-  const loopPoints = (origin, road) => [origin, ...road.points.map(pt), origin];
+  // 高速道路のコース: road.hw は高速道路の上に合わせた案内用の点（JCT の近くは避けてある）。
+  // ルート検索では高速道路だけに合わせ（hw）、進む向き（heading）も渡す。一般道や反対車線に吸い寄せられて、降りて乗り直すのを防ぐ
+  function coursePoints(road) {
+    if (!Array.isArray(road.hw)) return road.points.map(pt);
+    let pts = road.hw.map(pt);
+    // 一周するコース（始点＝終点）は最後の点を除く。帰り道で入口の近くを通るので、始点に戻るともう一周してしまう。
+    // データの最初の点は「起点から入ってすぐの点」にしておく
+    if (pts.length > 2 && haversineKm(pts[0], pts[pts.length - 1]) < 0.05) pts = pts.slice(0, -1);
+    return pts.map((p, i) => ({ ...p, hw: true, heading: Math.round(bearing(pts[i - 1] || p, pts[i + 1] || p)) }));
+  }
+  const loopPoints = (origin, road) => [origin, ...coursePoints(road), origin];
+
+  // ---- 分岐（JCT・出口）の案内: Valhalla の案内文から、高速の分岐・出口・合流だけを走る順に ----
+  // 「神田橋/箱崎/Kandabashi/Hakozaki方面」→「神田橋/箱崎方面」（英語の併記を消す）
+  const jaOnly = (s) => String(s || '').replace(/\/[A-Za-z][^、。/]*?(?=[、。/]|方面|です|$)/g, '');
+  const FORK_TYPES = new Set([18, 19, 20, 21, 22, 23, 24, 25, 37, 38]);
+  // legs: Valhalla の trip.legs（instructions つき）、jcts: [[名前, lat, lon]]（近くの JCT の名前を付ける）
+  function jctGuide(legs, jcts = []) {
+    const out = [];
+    let km = 0;
+    for (const leg of legs || []) {
+      const shape = leg.shape ? decodePolyline(leg.shape, 6) : [];
+      for (const m of leg.maneuvers || []) {
+        if (FORK_TYPES.has(m.type) && (m.toll || m.highway || /首都高|高速|自動車道|道路|JCT|IC/.test((m.street_names || []).join('')))) {
+          const at = shape[m.begin_shape_index], p = at ? { lat: at[1], lon: at[0] } : null;
+          const near = p ? jcts.map(([name, lat, lon]) => [name, haversineKm(p, { lat, lon })]).filter(([, d]) => d < 0.6).sort((a, b) => a[1] - b[1])[0] : null;
+          out.push({ km: Math.round(km * 10) / 10, jct: near ? near[0] : '', text: jaOnly(m.instruction), lat: p && p.lat, lon: p && p.lon });
+        }
+        km += m.length || 0;
+      }
+    }
+    return out;
+  }
+
+  // ---- Google マップに渡す「迷わない」地点: ほかの道（下の一般道・反対車線）が近くにない高速道路の上 ----
+  // ルートのうち box（[南, 西, 北, 東]）に入る部分から、等間隔に n 点（進む向きつき）
+  function samplesIn(line, box, n) {
+    const inBox = ([lon, lat]) => !box || (lat >= box[0] && lat <= box[2] && lon >= box[1] && lon <= box[3]);
+    const cum = [0];
+    for (let i = 1; i < line.length; i++) cum.push(cum[i - 1] + haversineKm(pt([line[i - 1][1], line[i - 1][0]]), pt([line[i][1], line[i][0]])));
+    const idx = line.map((_, i) => i).filter((i) => i > 0 && inBox(line[i]));
+    if (!idx.length) return [];
+    const a = cum[idx[0]], b = cum[idx[idx.length - 1]], out = [];
+    for (let j = 0; j < n; j++) {
+      const target = a + (b - a) * (j + 0.5) / n;
+      const i = Math.max(1, cum.findIndex((d) => d >= target));
+      const p = { lat: line[i][1], lon: line[i][0] }, q = { lat: line[i - 1][1], lon: line[i - 1][0] };
+      if (inBox(line[i])) out.push({ ...p, heading: bearing(q, p), along: cum[i] });
+    }
+    return out;
+  }
+  // /locate の結果（その点から半径内の道）: 高速道路の本線だけ（一般道・ランプがない）で、走る向きの本線があれば「迷わない」。
+  // 反対車線は Google マップでも遠い方なので許す
+  const angleDiff = (a, b) => Math.abs(((a - b + 540) % 360) - 180);
+  const safeSpot = (edges, heading) => !!edges && edges.length > 0 && edges.every((e) => {
+    const c = e.edge && e.edge.classification;
+    return c && c.classification === 'motorway' && c.use === 'road';
+  }) && edges.some((e) => angleDiff(e.heading, heading) < 45);
+  // 等間隔に近い順に k 点を選ぶ
+  function spreadPick(xs, k) {
+    if (xs.length <= k) return xs;
+    return Array.from({ length: k }, (_, j) => xs[Math.round((xs.length - 1) * j / Math.max(k - 1, 1))]);
+  }
+
+  // ---- Google マップの経路リンク → 地点の並び [{ name, addr, lat, lon }]。読めなければ null ----
+  // 「geocode=」の中身は地点ごとの小さなバイナリ（緯度・経度を 100 万倍した整数）
+  function geocodeToken(tok) {
+    try {
+      const s = atob(tok.replace(/-/g, '+').replace(/_/g, '/'));
+      const b = Uint8Array.from(s, (c) => c.charCodeAt(0)), dv = new DataView(b.buffer);
+      if (b.length < 10 || b[0] !== 0x15 || b[5] !== 0x1d) return null;
+      return { lat: dv.getInt32(1, true) / 1e6, lon: dv.getInt32(6, true) / 1e6 };
+    } catch { return null; }
+  }
+  const LL_RE = /^\s*(-?\d{1,2}\.\d+)\s*,\s*(-?\d{1,3}\.\d+)\s*$/;
+  function placeOf(text) {
+    const t = String(text || '').trim();
+    const m = t.match(LL_RE);
+    if (m) return { name: `${(+m[1]).toFixed(4)},${(+m[2]).toFixed(4)}`, addr: '', lat: +m[1], lon: +m[2] };
+    const [name, ...rest] = t.split(/、〒\d{3}-\d{4}\s*|、/);
+    return { name: name.trim(), addr: rest.join(' ').trim() };
+  }
+  function parseGmapsRoute(text) {
+    const m = String(text || '').match(/https?:\/\/[^\s"'<>]+/);
+    if (!m) return null;
+    let u;
+    try { u = new URL(m[0]); } catch { return null; }
+    for (let i = 0; i < 3 && u.searchParams.get('continue'); i++) { try { u = new URL(u.searchParams.get('continue')); } catch { break; } } // 同意画面を経由した URL
+    const sp = u.searchParams;
+    if (sp.get('daddr')) { // maps.google.com/?saddr=A&daddr=B+to:C&geocode=...
+      const names = [sp.get('saddr'), ...sp.get('daddr').split(/\s+to:/)].filter((x) => x != null && x.trim());
+      const geo = (sp.get('geocode') || '').split(';');
+      const pts = names.map((n, i) => ({ ...placeOf(n), ...(geo.length === names.length ? geocodeToken(geo[i]) || {} : {}) }));
+      return pts.length ? pts : null;
+    }
+    if (sp.get('api') === '1' && sp.get('destination')) { // maps/dir/?api=1&origin=&destination=&waypoints=a|b
+      const pts = [sp.get('origin'), ...(sp.get('waypoints') || '').split('|'), sp.get('destination')].filter((x) => x && x.trim()).map(placeOf);
+      return pts.length ? pts : null;
+    }
+    const dir = u.pathname.match(/\/maps\/dir\/(.+)/);
+    if (dir) { // /maps/dir/A/B/@lat,lon,z/data=...!1d<lon>!2d<lat>...
+      const segs = dir[1].split('/').filter((s) => s && !s.startsWith('@') && !s.startsWith('data='))
+        .map((s) => decodeURIComponent(s.replace(/\+/g, ' ')));
+      const ll = [...decodeURIComponent(u.href).matchAll(/!1d(-?\d+\.\d+)!2d(-?\d+\.\d+)/g)].map((x) => ({ lon: +x[1], lat: +x[2] }));
+      const named = segs.filter((s) => !LL_RE.test(s)).length;
+      let k = 0;
+      const pts = segs.map((s) => { const p = placeOf(s); return p.lat != null ? p : { ...p, ...(ll.length === named ? ll[k++] : {}) }; });
+      return pts.length ? pts : null;
+    }
+    const at = u.href.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/) || u.href.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
+    if (at) { // 1 か所（/maps/place/名前/@lat,lon）
+      const name = (u.pathname.match(/\/place\/([^/]+)/) || [])[1];
+      return [{ name: name ? decodeURIComponent(name.replace(/\+/g, ' ')) : '地点', addr: '', lat: +at[1], lon: +at[2] }];
+    }
+    const q = sp.get('q') || sp.get('ll');
+    if (q && LL_RE.test(q)) return [placeOf(q)];
+    return null;
+  }
+  const isShortMapsUrl = (t) => /https?:\/\/(maps\.app\.goo\.gl|goo\.gl\/maps)\//.test(String(t || ''));
+  // 登録用: 地点の並び → 目的地（最後の地点）と経由地（それより前。多すぎるときは間引く）
+  function routeFromPlaces(pts, maxVia) {
+    const ok = pts.filter((p) => p.lat != null);
+    if (!ok.length) return null;
+    const dest = ok[ok.length - 1];
+    let via = ok.slice(0, -1);
+    if (via.length > maxVia) via = spreadPick(via, maxVia);
+    return { name: ok.length > 1 ? `${ok[0].name} → ${dest.name}` : dest.name, lat: +dest.lat.toFixed(5), lon: +dest.lon.toFixed(5),
+      waypoints: via.map((p) => [+p.lat.toFixed(5), +p.lon.toFixed(5)]), stops: ok.map((p) => p.name), cut: ok.length - 1 - via.length };
+  }
+
+  // ---- 種類の整理: 展望台・夜景は「観光」「絶景」とまとめずに、それぞれの種類にする ----
+  const VIEW_RE = /展望|スカイツリー|東京タワー|マリンタワー|ポートタワー|シーキャンドル|スカイガーデン|シティビュー/;
+  function refineGenres(s) {
+    if (!s || !Array.isArray(s.genres)) return s;
+    const night = (s.tags || []).includes('夜景') || /夜景/.test(`${s.name} ${s.note || ''}`);
+    const view = s.kind === 'viewpoint' || s.note === '展望台' || VIEW_RE.test(s.name || '');
+    if (!night && !view) return s;
+    const g = s.genres.filter((x) => x !== 'sightseeing' && x !== 'scenic');
+    if (view && !g.includes('viewpoint')) g.push('viewpoint');
+    if (night && !g.includes('nightview')) g.push('nightview');
+    s.genres = g;
+    return s;
+  }
+
+  // ---- 時間帯で絞り込む ----
+  const TIME_BANDS = { morning: ['🌅朝（6〜10時）', [6, 7, 8, 9]], day: ['☀昼（10〜16時）', [10, 12, 14, 15]],
+    evening: ['🌇夕方（16〜19時）', [16, 17, 18]], night: ['🌙夜（19〜24時）', [19, 20, 21, 22, 23]], late: ['🌌深夜（0〜5時）', [0, 1, 2, 3, 4]] };
+  const OPEN_AIR = new Set(['viewpoint', 'nightview']);
+  // 営業時間があればそれで判定（その時間帯のどこかで開いていれば OK）。
+  // 営業時間が分からない所: 昼間はそのまま出す。夜・深夜は、屋外の展望台・夜景・湖・海岸と道の駅（駐車場とトイレは 24 時間）だけ。
+  // 「絶景」の庭園・並木などは閉まる所が多いので出さない。入場料のかかる所も出さない
+  // 屋内の夜景（展望室など）は夜だけ（深夜は閉まっている所がほとんど）
+  function timeBandState(s, band, day = new Date()) {
+    const b = TIME_BANDS[band];
+    if (!b) return 'ok';
+    const st = b[1].map((h) => openState(s.oh, new Date(day.getFullYear(), day.getMonth(), day.getDate(), h, 30)));
+    if (st.includes(true)) return 'open';
+    if (st.includes(false)) return null;
+    if (band !== 'night' && band !== 'late') return 'ok';
+    if (s.kind === 'michinoeki') return 'h24';
+    if (['peak', 'waterfall', 'gorge'].includes(s.kind)) return null;
+    if (s.indoor === true) return band === 'night' && (s.genres || []).includes('nightview') ? 'ok' : null;
+    if (/円/.test(s.fee || '')) return null;
+    return (s.genres || []).some((g) => OPEN_AIR.has(g)) || ['lake', 'coast'].includes(s.kind) ? 'outdoor' : null;
+  }
+  // 道: 夜間通行止めの道を外す・夜景の道
+  const roadNightClosed = (r) => /夜間(の)?(通行止|閉鎖)|夜間.{0,12}通行止/.test(`${r.closed || ''} ${r.note || ''}`);
+  const roadNightView = (r) => /夜景|夜の|夜は|ライトアップ/.test(`${r.note || ''} ${r.name || ''}`);
+
+  // ---- コースの線の色: 同じ種類でも 1 本ずつ少しずつ色を変えて、区切りが分かるように ----
+  function routeShade(hex, key) {
+    const n = parseInt(String(hex).slice(1), 16);
+    let r = (n >> 16) / 255, g = ((n >> 8) & 255) / 255, b = (n & 255) / 255;
+    const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l0 = (mx + mn) / 2, d = mx - mn;
+    let h = 0;
+    const s0 = d ? d / (1 - Math.abs(2 * l0 - 1)) : 0;
+    if (d) h = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
+    let hash = 0;
+    for (const ch of String(key)) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+    const hue = (h * 60 + ((hash % 7) - 3) * 12 + 360) % 360, light = Math.min(0.66, Math.max(0.26, l0 + (((hash >> 3) % 5) - 2) * 0.09));
+    return `hsl(${Math.round(hue)}, ${Math.round(s0 * 100)}%, ${Math.round(light * 100)}%)`;
+  }
 
   const xmlEsc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
   // GPX 1.1（線 = trk、立ち寄り = wpt）。地図アプリ（OsmAnd など）でそのまま読める
@@ -1086,7 +1267,8 @@ const Lib = (() => {
   return { haversineKm, travelMinutes, prefGroup, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
-    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, toGpx,
+    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, jaOnly, jctGuide, samplesIn, safeSpot, spreadPick, toGpx,
+    geocodeToken, parseGmapsRoute, isShortMapsUrl, routeFromPlaces, refineGenres, TIME_BANDS, timeBandState, roadNightClosed, roadNightView, routeShade,
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
