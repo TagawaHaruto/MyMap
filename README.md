@@ -103,6 +103,7 @@
 
 ## データについて
 - `data/spots.json`・`data/touring.json`・`data/scenic_roads.json`：手作業で選んだスポット・ツーリング目的地・おすすめの道。自由に追加・編集できます。
+  おすすめの道（302本）のうち 90 本は、2026年10月に自治体・道路管理者などの公開情報を調べて追加したもので、各コースに出典（`sources`）と注意事項（`alerts`。通行止めなどの年月つき）があります。線は通過点をルート検索で実際の道に沿わせて確かめています。
 - `data/osm_spots.json`・`data/pois.json`・`data/cells/`（グルメなどを約 25km 四方の升目ごとに分けたもの）：OpenStreetMap から週 1 回自動収集。料金や駐車場の情報はありません。これらは `gh-pages` にだけ置かれます。
 - `data/events.json`・`data/status.json`：自動生成。手で編集しないでください。
 - `data/jct.json`：分岐の案内に付ける JCT の名前と位置（OpenStreetMap）。`data/scenic_roads.json` の `hw` は高速道路のコースの案内用の点（高速道路の上・JCT から離れた所）
