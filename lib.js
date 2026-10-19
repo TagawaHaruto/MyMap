@@ -304,20 +304,65 @@ const Lib = (() => {
   // おすすめの道を走って戻る周回: データの並び（走る向き）のまま入る。一方通行の道を逆走させないため
   // 高速道路のコース: road.hw は高速道路の上に合わせた案内用の点（JCT の近くは避けてある）。
   // ルート検索では高速道路だけに合わせ（hw）、進む向き（heading）も渡す。一般道や反対車線に吸い寄せられて、降りて乗り直すのを防ぐ
-  function coursePoints(road) {
-    if (Array.isArray(road.parts)) return road.parts.flatMap(coursePoints); // つなげたコース: 選んだ順に
+  // keepClose: 一周するコースでも始点へ戻る点を残す（つなげたとき、次のコースへ行く前に一周を終えるため）
+  function coursePoints(road, keepClose = false) {
+    if (Array.isArray(road.parts)) return capPoints(road.parts.map((p, i) => coursePoints(p, keepClose || i < road.parts.length - 1)), MAX_VIA); // つなげたコース: 選んだ順に
     if (!Array.isArray(road.hw)) return road.points.map(pt);
+    // hw の 3 つ目は、確かめたルートでその点を走る向き（度）。なければ前後の点から推定
+    const hdg = (p, i, pts) => (road.hw[i] && road.hw[i].length > 2 ? road.hw[i][2] : Math.round(bearing(pts[i - 1] || p, pts[i + 1] || p)));
     let pts = road.hw.map(pt);
+    if (keepClose) return pts.map((p, i) => ({ ...p, hw: true, heading: hdg(p, i, pts) }));
     // 一周するコース（始点＝終点）は最後の点を除く。帰り道で入口の近くを通るので、始点に戻るともう一周してしまう。
     // データの最初の点は「起点から入ってすぐの点」にしておく
     if (pts.length > 2 && haversineKm(pts[0], pts[pts.length - 1]) < 0.05) pts = pts.slice(0, -1);
-    return pts.map((p, i) => ({ ...p, hw: true, heading: Math.round(bearing(pts[i - 1] || p, pts[i + 1] || p)) }));
+    return pts.map((p, i) => ({ ...p, hw: true, heading: hdg(p, i, pts) }));
   }
-  const loopPoints = (origin, road) => [origin, ...coursePoints(road), origin];
-  // 複数のコースを 1 本につなげる（選んだ順に走って起点へ戻る）。どれも高速のコースなら hw もつなげる
-  function chainRoad(parts) {
+  const MAX_VIA = 8; // ルート検索（Valhalla）に渡せる点は起点・終点を含めて 10 まで
+  // コースごとの点の並び → 合わせて max 以下に（点の多いコースの真ん中から減らす。各コースの最初と最後は残す）
+  function capPoints(lists, max) {
+    const ls = lists.map((l) => [...l]);
+    while (ls.reduce((a, l) => a + l.length, 0) > max) {
+      const l = ls.filter((x) => x.length > 2).sort((a, b) => b.length - a.length)[0];
+      if (!l) break;
+      l.splice(Math.floor(l.length / 2), 1);
+    }
+    return ls.flat();
+  }
+  const loopPoints = (origin, road) => [origin, ...(road.outerPts || coursePoints(road)), origin];
+  // つなげたコースの「外周」: 各コースの確かめた案内用の点（向きつき）のうち、ほかのコースと同じ道（80m 以内で同じ向きか逆向きの道）にある点を外し、
+  // 残りを全体の中心のまわりに dir（'cw' 時計回り / 'ccw' 反時計回り）の順に並べる。逆向きに走る点は向きを反対に（反対車線に合わせる）。
+  // 起点に一番近い点は外し（入口と出口はその近く）、その次の点から回る。parts: [[{lat, lon, heading}]]、lines: 各コースの線 [[lon, lat]]
+  function outerFromPoints(parts, lines, dir, origin) {
+    const angle = (a, b) => Math.abs(((a - b + 540) % 360) - 180);
+    const dirAt = (p, ln) => {
+      let best = null;
+      for (let k = 1; k < ln.length; k++) {
+        const d = distToRoute(p, [ln[k - 1], ln[k]]).km;
+        if (!best || d < best.d) best = { d, h: bearing({ lat: ln[k - 1][1], lon: ln[k - 1][0] }, { lat: ln[k][1], lon: ln[k][0] }) };
+      }
+      return best;
+    };
+    const kept = parts.flatMap((pts, i) => pts.filter((p) => !lines.some((ln, j) => {
+      if (j === i) return false;
+      const b = dirAt(p, ln);
+      return b && b.d < 0.08 && (angle(b.h, p.heading) < 40 || angle(b.h, p.heading) > 140);
+    })));
+    if (kept.length < 3 || kept.length === parts.flat().length) return null; // 重なりがない・点が足りない
+    const cy = kept.reduce((s, p) => s + p.lat, 0) / kept.length, cx = kept.reduce((s, p) => s + p.lon, 0) / kept.length, k0 = Math.cos(cy * Math.PI / 180);
+    const th = (p) => Math.atan2(p.lat - cy, (p.lon - cx) * k0);
+    const sorted = [...kept].sort((a, b) => (dir === 'ccw' ? th(a) - th(b) : th(b) - th(a))).map((p) => {
+      const t = th(p), want = (Math.atan2(dir === 'ccw' ? -Math.sin(t) : Math.sin(t), dir === 'ccw' ? Math.cos(t) : -Math.cos(t)) * 180 / Math.PI + 360) % 360;
+      return { ...p, heading: angle(p.heading, want) > 90 ? (p.heading + 180) % 360 : p.heading };
+    });
+    const n = sorted.reduce((b, p, i) => (haversineKm(origin, p) < haversineKm(origin, sorted[b]) ? i : b), 0);
+    return [...sorted.slice(n + 1), ...sorted.slice(0, n)];
+  }
+  const CHAIN_MODES = { seq: '順に1本ずつ一周', cw: '外周を時計回り', ccw: '外周を反時計回り' };
+  function chainRoad(parts, mode = 'seq') {
     const uniq = (xs) => [...new Set(xs.filter(Boolean))];
-    return { id: 'chain:' + parts.map((p) => p.id).join('+'), name: parts.map((p) => p.name.replace(/（.*?）/g, '')).join(' → '), parts,
+    const base = parts.map((p) => p.name.replace(/（.*?）/g, '')).join(mode === 'seq' ? ' → ' : '＋');
+    return { id: 'chain:' + parts.map((p) => p.id).join('+') + (mode === 'seq' ? '' : '@' + mode), mode,
+      name: mode === 'seq' ? base : `${base}（${CHAIN_MODES[mode]}）`, parts,
       points: parts.flatMap((p) => p.points), ...(parts.every((p) => Array.isArray(p.hw)) ? { hw: parts.flatMap((p) => p.hw) } : {}),
       toll: parts.some((p) => p.toll), fee: uniq(parts.map((p) => p.fee)).join('／'), note: parts.map((p) => p.name).join(' → ') + ' を続けて走ります。',
       closed: uniq(parts.map((p) => p.closed)).join('／'), closedMonths: uniq(parts.flatMap((p) => p.closedMonths || [])),
@@ -1289,7 +1334,7 @@ const Lib = (() => {
   return { haversineKm, travelMinutes, prefGroup, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
-    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, jaOnly, jctGuide, samplesIn, safeSpot, spreadPick, toGpx,
+    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, spreadPick, toGpx,
     geocodeToken, parseGmapsRoute, isShortMapsUrl, routeFromPlaces, refineGenres, TIME_BANDS, timeBandState, roadNightClosed, roadNightView, routeShade,
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
