@@ -536,7 +536,7 @@ ROAD_QUERIES = [
     ('pass', 'node["mountain_pass"="yes"]["name"]'),
 ]
 ROAD_MIN_KM = 2
-ROADS_VER = 3  # ドライブコースの決め方を変えたら上げる（3: 最短 2km）
+ROADS_VER = 4  # ドライブコースの決め方を変えたら上げる（3: 最短 2km、4: 300m 以上離れた断片へは飛ばない）
 
 
 def km_ll(a, b):
@@ -626,6 +626,9 @@ def build_roads(parts, curated=(), k=6):
             path, rest = [], list(g)
             while rest:
                 s = min(rest, key=lambda s: min(km_ll(cur, s['coords'][0]), km_ll(cur, s['coords'][-1])))
+                # 300m 以上離れた断片へは飛ばない（枝道や離れた同名の道に飛ぶと、ルートが行って戻る形になるため）
+                if path and min(km_ll(cur, s['coords'][0]), km_ll(cur, s['coords'][-1])) > 0.3:
+                    break
                 rest.remove(s)
                 cs = s['coords'] if km_ll(cur, s['coords'][0]) <= km_ll(cur, s['coords'][-1]) else s['coords'][::-1]
                 path += cs
