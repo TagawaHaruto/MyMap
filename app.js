@@ -2343,7 +2343,6 @@ function drawCourses() {
   const on = courseTypesOn();
   const add = (layer, r) => layer.bindPopup(() => courseHtml(r), { maxWidth: 260 })
     .on('popupopen', (e) => bindCourseBtns(e.popup.getElement())).addTo(map);
-  const ends = L.canvas({ padding: 0.3 });
   for (const r of shownRoads()) {
     const t = Lib.courseType(r); if (!on.has(t)) continue;
     const color = Lib.routeShade(Lib.COURSE_TYPES[t][1], r.id), pick = t === 'pick', glow = nightRoads() && Lib.roadNightView(r);
@@ -2352,7 +2351,8 @@ function drawCourses() {
     line.on('mouseover', () => line.setStyle({ weight: w + 3 })).on('mouseout', () => line.setStyle({ weight: w }));
     add(line, r);
     for (const p of [r.points[0], r.points[r.points.length - 1]]) {
-      L.circleMarker(p, { renderer: ends, radius: pick ? 4 : 3, color, weight: 2, fillColor: '#fff', fillOpacity: 1, interactive: false }).addTo(map);
+      // 地図と同じキャンバスに描く（別のキャンバスを重ねると、その下のコースの線が押せなくなる）
+      L.circleMarker(p, { radius: pick ? 4 : 3, color, weight: 2, fillColor: '#fff', fillOpacity: 1, interactive: false }).addTo(map);
     }
   }
   if (on.has('pass')) {
