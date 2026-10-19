@@ -688,9 +688,22 @@ assert.strictEqual(ch.id, 'chain:a+b');
 assert.strictEqual(ch.name, 'C1一周 → 夜景周回');
 assert.strictEqual(ch.fee, '300円');
 assert.deepStrictEqual(ch.alerts, ['x']);
-assert.strictEqual(Lib.coursePoints(ch).length, 4); // 2 + 2（どちらも一周なので始点には戻らない）
+assert.strictEqual(Lib.coursePoints(ch).length, 5); // 1 本目は一周を終える（3 点）＋ 2 本目は始点に戻らない（2 点）
 assert.ok(Array.isArray(ch.hw));
 assert.strictEqual(Lib.chainRoad([ca, { id: 'c', name: 'c', points: [[1, 1], [2, 2], [3, 3]] }]).hw, undefined); // 一般道が混ざると hw なし
-assert.strictEqual(Lib.loopPoints({ lat: 0, lon: 0 }, ch).length, 6);
+assert.strictEqual(Lib.loopPoints({ lat: 0, lon: 0 }, ch).length, 7);
+assert.strictEqual(Lib.chainRoad([ca, cb], 'cw').id, 'chain:a+b@cw');
+assert.ok(Lib.chainRoad([ca, cb], 'cw').name.endsWith('（外周を時計回り）'));
+assert.strictEqual(Lib.capPoints([[1, 2, 3, 4, 5, 6], [7, 8, 9]], 6).length, 6);
+assert.deepStrictEqual(Lib.capPoints([[1, 2, 3, 4, 5, 6], [7, 8, 9]], 6).filter((x) => [1, 6, 7, 9].includes(x)), [1, 6, 7, 9]); // 各コースの最初と最後は残る
+// 外周: 辺を 1 本共有する 2 つの四角（左は時計回り、右は反時計回りに走るコース）。共有した辺の点は外れ、残りが外周の順に並ぶ
+const sqL = (x0) => [[x0, 0], [x0 + 0.1, 0], [x0 + 0.1, 0.1], [x0, 0.1], [x0, 0]].flatMap(([x, y], k, a) => (k ? Array.from({ length: 10 }, (_, s) => [a[k - 1][0] + (x - a[k - 1][0]) * (s + 1) / 10, a[k - 1][1] + (y - a[k - 1][1]) * (s + 1) / 10]) : [[x, y]]));
+const left = [{ lat: 0.05, lon: 0, heading: 0 }, { lat: 0.1, lon: 0.05, heading: 90 }, { lat: 0.05, lon: 0.1, heading: 180 }, { lat: 0, lon: 0.05, heading: 270 }]; // 時計回り
+const right = [{ lat: 0, lon: 0.15, heading: 90 }, { lat: 0.05, lon: 0.2, heading: 0 }, { lat: 0.1, lon: 0.15, heading: 270 }, { lat: 0.05, lon: 0.1, heading: 180 }]; // 反時計回り（最後の点は左と共有の辺）
+const oc = Lib.outerFromPoints([left, right], [sqL(0), sqL(0.1)], 'ccw', { lat: 0.05, lon: -1 });
+assert.ok(!oc.some((p) => p.lon === 0.1)); // 共有した辺の点は外れる
+assert.strictEqual(oc.length, 5); // 6 点のうち起点に一番近い (0.05, 0) を外す
+assert.deepStrictEqual(oc.map((p) => [p.lat, p.lon, Math.round(p.heading)]), [[0, 0.05, 90], [0, 0.15, 90], [0.05, 0.2, 0], [0.1, 0.15, 270], [0.1, 0.05, 270]]); // 反時計回り。左の点は向きを反対に
+assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.lon + 5 }))], [sqL(0), sqL(5.1)], 'ccw', { lat: 0, lon: -1 }), null); // 重ならないコース
 
 console.log('lib: ALL PASS');

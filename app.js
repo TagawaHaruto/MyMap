@@ -1491,9 +1491,10 @@ const roadById1 = (id) => DATA.roads.find((r) => r.id === id) || DATA.courses.fi
 // 'chain:a+b+c' は複数のコースを続けて走る（Lib.chainRoad）
 const roadById = (id) => {
   if (!String(id).startsWith('chain:')) return roadById1(id);
-  const parts = id.slice(6).split('+').map(roadById1).filter(Boolean);
+  const [ids, mode] = id.slice(6).split('@');
+  const parts = ids.split('+').map(roadById1).filter(Boolean);
   if (!parts.length) return null;
-  const r = Lib.chainRoad(parts), n = (store.get('savedChains') || []).find((c) => c.id === id);
+  const r = Lib.chainRoad(parts, mode || 'seq'), n = (store.get('savedChains') || []).find((c) => c.id === id);
   return n ? { ...r, name: n.name } : r;
 };
 const thisMonth = () => new Date().getMonth() + 1;
@@ -1576,8 +1577,24 @@ const roadFix = (points) => (points.length <= 4 ? points
 const hwFix = (road) => Lib.coursePoints(road).slice(0, MAX_WAYPOINTS - 2).map(({ lat, lon }) => ({ lat, lon }));
 
 // 1 回の検索で候補を最大 5 本作る: 標準（＋別ルート）、コースの経由地なし、おすすめの道を寄り道として通すもの
+// 外周: 各コースの線を引いて、重なる道にある案内用の点を外し、残りの点を外周の順に並べる（Lib.outerFromPoints）
+async function outerPoints(road) {
+  const lines = [], parts = [];
+  for (const p of road.parts) {
+    const pts = Lib.coursePoints(p, true);
+    if (pts.length < 2) continue;
+    const [rt] = await valhalla(pts, tour.opts, 0);
+    lines.push(rt.line.filter((q, i) => i % 3 === 0 || i === rt.line.length - 1)); // 計算を軽く
+    parts.push(Lib.coursePoints(p));
+    await new Promise((ok) => setTimeout(ok, 800));
+  }
+  const pts = Lib.outerFromPoints(parts, lines, road.mode, DATA.cfg.origin);
+  if (!pts) throw fail('このコースどうしは重なっていないため、外周を作れませんでした。「順に1本ずつ一周」で探してください。');
+  return pts.slice(0, 8).map((p) => ({ ...p, ...(Array.isArray(road.hw) ? { hw: true } : {}) }));
+}
 async function fetchCandidates(dest) {
   const o = DATA.cfg.origin, optsKey = JSON.stringify(tour.opts);
+  if (dest.loop && dest.road.parts && dest.road.mode !== 'seq' && !dest.road.outerPts) dest.road.outerPts = await outerPoints(dest.road);
   const course = (dest.waypoints || []).map(([lat, lon]) => ({ lat, lon }));
   const main = dest.loop ? Lib.loopPoints(o, dest.road) : [o, ...course, dest];
   const baseFix = dest.loop ? (dest.road.parts ? fixedWaypointsFor(dest) : roadFix(dest.road.points)) : course;
@@ -1651,6 +1668,7 @@ function fixedWaypoints() {
   return (dest.waypoints || []).map(([lat, lon]) => ({ lat, lon }));
 }
 function fixedWaypointsFor(dest) {
+  if (dest.road.outerPts) return dest.road.outerPts.slice(0, MAX_WAYPOINTS - 2).map(({ lat, lon }) => ({ lat, lon })); // 外周
   if (dest.road.parts && !Array.isArray(dest.road.hw)) return Lib.spreadPick(dest.road.parts.flatMap((p) => roadFix(p.points)), MAX_WAYPOINTS - 2);
   return Array.isArray(dest.road.hw) ? hwFix(dest.road) : roadFix(dest.road.points);
 }
@@ -1706,6 +1724,7 @@ function updateTourSelection() {
     nav.toggleAttribute('aria-disabled', !!waiting);
   }
   const lim = $('#limit-msg'); if (lim) lim.hidden = !full;
+  const sp = $('#stops-picked'); if (sp) sp.textContent = n ? `・${n}件選択中` : '';
   styleMarkers();
 }
 function styleMarkers() {
@@ -1870,20 +1889,22 @@ function renderTouring() {
         ${(tour.route.guide || []).length ? `<button type="button" class="btn${dest && dest.loop && dest.road.hw ? ' primary' : ''}" id="rt-jct">🔀分岐（JCT）の案内（${tour.route.guide.length}か所）</button>` : ''}</div>
       ${dest && dest.loop && dest.road.hw ? `<p class="notice">🛣 高速道路のコースです。分岐で迷わないよう「🔀分岐（JCT）の案内」を走る前に確認してください。
         Google マップには${tour.route.hwPins ? '、下の一般道や反対車線と重ならない高速道路の上の地点' : '高速道路の上の地点'}を経由地として渡します。
-        Google マップで表示された距離が<strong>約${Math.round(tour.route.gmKm || tour.route.km)}km</strong>前後なら同じルートです（大きく違うときは、途中で高速を降りるルートになっています）。</p>` : ''}
+        Google マップで表示された距離が<strong>約${Math.round(tour.route.gmKm || tour.route.km)}km</strong>前後なら同じルートです（大きく違うときは、途中で高速を降りるルートになっています）。</p>${(tour.route.tollSpans || []).length > 1 ? `<p class="notice">⚠ <strong>このルートは途中で一度高速を降りて乗り直します</strong>（コースの向きどうしがうまくつながらないため）。つなげたコースなら「走り方」で外周を選ぶと、降りずに回れることがあります。</p>` : ''}` : ''}
       <div class="actions"><button type="button" class="btn" id="rt-save-map">📥ルート沿いの地図を保存（圏外用）</button></div>
       <p class="status" id="rt-save-msg"></p>
       <div id="rt-out"></div>
       ${closedHtml()}` : ''}
-    ${tour.route ? `<h2>立ち寄り候補（${stops.length}件・走る順）</h2>
+    ${tour.route ? `<details class="stops-box" id="stops-box" ${store.get('stopsOpen') ? 'open' : ''}>
+      <summary>🛍立ち寄り候補（${stops.length}件・走る順）<span id="stops-picked"></span></summary>
+      <p class="hint">名前を押すと地図でその場所を強調します。□で選ぶと、Google マップに経由地として渡します。</p>
       <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
-      <label class="card stop"><input type="checkbox" data-stop="${esc(s.id)}" ${tour.picked.has(s.id) ? 'checked' : ''}>
+      <div class="card stop" data-focus="${esc(s.id)}"><input type="checkbox" data-stop="${esc(s.id)}" ${tour.picked.has(s.id) ? 'checked' : ''} aria-label="${esc(s.name)}を経由地に選ぶ">
         <span class="km">${Math.round(s.alongKm)}<small>km</small></span>
         <span class="name">${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}${parkText(s) ? ` <strong>${parkText(s)}</strong>` : ''}
-          <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span>${infoButton(s)}</span></label>
+          <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span>${infoButton(s)}</span></div>
       <div class="info stop-info" hidden></div>`).join('')
-        : '<p class="empty">この範囲に立ち寄り候補はありません。範囲を広げてみてください。</p>') : ''}
+        : '<p class="empty">この範囲に立ち寄り候補はありません。範囲を広げてみてください。</p>') + '</details>' : ''}
     ${dest ? `<div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a>
       ${tour.route ? '<button type="button" class="btn" id="gpx">GPXで保存</button>' : ''}</div>` : ''}`;
   placeTourMap(dest);
@@ -1980,6 +2001,13 @@ function renderTouring() {
   };
   const g = $('#gpx'); if (g) g.onclick = () => { buzz(); saveGpx(); };
   // チェックの変更では地図も一覧も作り直さない（マーカーとナビボタンだけ更新）
+  const sb = $('#stops-box'); if (sb) sb.addEventListener('toggle', () => store.set('stopsOpen', sb.open));
+  // 立ち寄り候補の行を押す（□・ボタン以外）→ 地図のアイコンを強調
+  $('#view').onclick = (e) => {
+    const row = e.target.closest('[data-focus]');
+    if (!row || e.target.closest('input, button, a, .info')) return;
+    buzz(); focusStop(row.dataset.focus);
+  };
   $('#view').onchange = (e) => {
     const cb = e.target.closest('[data-stop]'); if (!cb) return;
     buzz();
@@ -2414,8 +2442,29 @@ function bindCourseBtns(el) {
     if (p) { buzz(); setCustomDest(p.points[0][0], p.points[0][1], p.name); }
   }; });
 }
+// 立ち寄り候補を地図で強調（アイコンを大きく・前に、地図をその場所へ。全画面ならパネルの上に見えるように）
+let focusedStop = null;
+function focusStop(id) {
+  const m = markers.get(id); if (!m || !map) return;
+  if (focusedStop && focusedStop !== m) { focusedStop.setZIndexOffset(0); const el = focusedStop.getElement(); if (el) el.classList.remove('pin-hi'); }
+  focusedStop = m;
+  m.setZIndexOffset(2000);
+  const el = m.getElement(); if (el) el.classList.add('pin-hi');
+  document.querySelectorAll('.stop.is-focused').forEach((r) => r.classList.remove('is-focused'));
+  const row = document.querySelector(`.stop[data-focus="${CSS.escape(id)}"]`); if (row) row.classList.add('is-focused');
+  if (document.body.classList.contains('tour-full')) {
+    if (sheetSnap === 'high') setSheet('half');
+    map.setView(m.getLatLng(), Math.max(map.getZoom(), 12), { animate: false });
+    map.panBy([0, Math.round(sheetPx() / 2)], { animate: false });
+  } else {
+    map.setView(m.getLatLng(), Math.max(map.getZoom(), 12));
+    $('#map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
 // ---- 複数のコースをつなげる: 一覧（順番の入れ替え・外す）と「この順で走る」 ----
 const chainDraft = () => (store.get('chainDraft') || []).filter((id) => roadById1(id));
+const chainMode = () => store.get('chainMode') || 'seq';
+const chainId = () => 'chain:' + chainDraft().join('+') + (chainMode() === 'seq' ? '' : '@' + chainMode());
 const savedChains = () => (store.get('savedChains') || []).filter((c) => roadById(c.id));
 const chainName = (id) => (savedChains().find((c) => c.id === id) || {}).name;
 function renderChainBox() {
@@ -2427,7 +2476,10 @@ function renderChainBox() {
       <button type="button" class="btn" data-sc-edit="${i}">並べ直す</button><button type="button" class="icon" data-sc-del="${i}" aria-label="削除">✕</button></span></li>`).join('')}</ul></details>` : '';
   const bindSaved = () => {
     el.querySelectorAll('[data-sc-go]').forEach((b) => { b.onclick = () => { buzz(); const c = savedChains()[+b.dataset.scGo]; setDest(() => { tour.custom = null; tour.roadId = c.id; tour.destId = null; }); }; });
-    el.querySelectorAll('[data-sc-edit]').forEach((b) => { b.onclick = () => { buzz(); const c = savedChains()[+b.dataset.scEdit]; store.set('chainDraft', c.id.slice(6).split('+')); renderChainBox(); }; });
+    el.querySelectorAll('[data-sc-edit]').forEach((b) => { b.onclick = () => {
+      buzz(); const c = savedChains()[+b.dataset.scEdit], [ids, mode] = c.id.slice(6).split('@');
+      store.set('chainDraft', ids.split('+')); store.set('chainMode', mode || 'seq'); renderChainBox();
+    }; });
     el.querySelectorAll('[data-sc-del]').forEach((b) => { b.onclick = () => {
       buzz(); const c = savedChains()[+b.dataset.scDel];
       if (!confirm(`「${c.name}」を削除しますか？`)) return;
@@ -2440,6 +2492,9 @@ function renderChainBox() {
       <span class="chain-btns"><button type="button" class="icon" data-ch-up="${i}" ${i ? '' : 'disabled'} aria-label="上へ">▲</button>
       <button type="button" class="icon" data-ch-down="${i}" ${i < d.length - 1 ? '' : 'disabled'} aria-label="下へ">▼</button>
       <button type="button" class="icon" data-ch-del="${i}" aria-label="外す">✕</button></span></li>`).join('')}</ol>
+    ${d.length >= 2 ? `<fieldset class="chain-mode"><legend>走り方</legend>${Object.entries(Lib.CHAIN_MODES).map(([k, label]) =>
+      `<label class="check"><input type="radio" name="chain-mode" value="${k}" ${chainMode() === k ? 'checked' : ''}>${label}</label>`).join('')}
+      <p class="hint">「順に1本ずつ一周」は 1 本目を一周してから次へ。「外周」は重なる真ん中の道を通らず、全体の外側をぐるっと回ります。</p></fieldset>` : ''}
     <div class="actions"><button type="button" class="btn primary" id="chain-go" ${d.length >= 2 ? '' : 'disabled'}>${d.length >= 2 ? 'この順で続けて走る' : 'もう1本以上つなげてください'}</button>
       <button type="button" class="btn" id="chain-clear">一覧を空にする</button></div>
     ${d.length >= 2 ? `<div class="chain-save"><input id="chain-name" type="text" placeholder="名前（例：首都高ナイト周回）" aria-label="つなぎコースの名前">
@@ -2448,7 +2503,7 @@ function renderChainBox() {
   bindSaved();
   if ($('#chain-save')) $('#chain-save').onclick = () => {
     buzz();
-    const id = 'chain:' + chainDraft().join('+'), name = $('#chain-name').value.trim() || roadById(id).name;
+    const id = chainId(), name = $('#chain-name').value.trim() || roadById(id).name;
     store.set('savedChains', [...savedChains().filter((c) => c.id !== id), { id, name }]);
     renderChainBox();
     const m = $('#chain-msg'); if (m) m.textContent = `「${name}」を保存しました。上の「目的地」からも選べます。`;
@@ -2458,7 +2513,8 @@ function renderChainBox() {
   el.querySelectorAll('[data-ch-down]').forEach((b) => { b.onclick = () => { buzz(); move(+b.dataset.chDown, +b.dataset.chDown + 1); }; });
   el.querySelectorAll('[data-ch-del]').forEach((b) => { b.onclick = () => { buzz(); const x = chainDraft(); x.splice(+b.dataset.chDel, 1); store.set('chainDraft', x); renderChainBox(); }; });
   $('#chain-clear').onclick = () => { buzz(); store.set('chainDraft', []); renderChainBox(); };
-  $('#chain-go').onclick = () => { buzz(); const id = 'chain:' + chainDraft().join('+'); setDest(() => { tour.custom = null; tour.roadId = id; tour.destId = null; }); };
+  el.querySelectorAll('[name="chain-mode"]').forEach((r) => { r.onchange = () => { store.set('chainMode', r.value); }; });
+  $('#chain-go').onclick = () => { buzz(); setDest(() => { tour.custom = null; tour.roadId = chainId(); tour.destId = null; }); };
 }
 // 押したコースの説明は地図の下に出す（吹き出しだと小さい画面で地図が隠れるため）。選んだ線は太くして前に
 let courseSel = null;
