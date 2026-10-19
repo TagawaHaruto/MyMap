@@ -37,7 +37,7 @@ const state = {
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
-const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], courses: [], passes: [], ver: 0, eventsLoaded: false, osmLoaded: false };
+const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], courses: [], passes: [], issues: { courses: {}, auto: {} }, ver: 0, eventsLoaded: false, osmLoaded: false };
 const FAILED = new Set();
 
 const rainy = () => (state.rainOverride ?? state.weatherRainy);
@@ -1418,7 +1418,7 @@ async function reloadData(st) {
   [DATA.events, DATA.pois, DATA.osm] = await Promise.all([getJSON('data/events.json', DATA.events), getJSON('data/pois.json', DATA.pois), getJSON('data/osm_spots.json', DATA.osm)]);
   DATA.osm.forEach(Lib.refineGenres);
   const ro = await getJSON('data/roads_osm.json', null);
-  if (ro) { DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2); DATA.passes = ro.filter((r) => r.pass); }
+  if (ro) { DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2 && DATA.issues.auto[r.id] !== 'hide'); DATA.passes = ro.filter((r) => r.pass); }
   cellIndex = await getJSON('data/cells/index.json', cellIndex);
   CELL_DATA.clear(); MOTO = null; PARK.clear();
   DATA.ver++; tour.stops = null;
@@ -1511,7 +1511,8 @@ async function getRoute(url, init) {
 // Valhalla（FOSSGIS の公開サーバー）: 有料道路の回避・高速の好み・バイク向け・別ルート候補に対応
 async function valhalla(points, opts, alternates = 0) {
   const costing = opts.bike ? 'motorcycle' : 'auto';
-  const co = { use_tolls: opts.noToll ? 0 : 0.5, use_highways: opts.fewHighways ? 0 : 1, ...(opts.bike ? { use_trails: 0.8 } : {}) };
+  // フェリーは使わない（海の上の点をフェリー航路に合わせて、遠くまで渡るルートになるのを防ぐ）
+  const co = { use_tolls: opts.noToll ? 0 : 0.5, use_highways: opts.fewHighways ? 0 : 1, use_ferry: 0, ...(opts.bike ? { use_trails: 0.8 } : {}) };
   const body = { locations: points.map((p, i) => ({ lat: p.lat, lon: p.lon, type: i === 0 || i === points.length - 1 ? 'break' : 'through',
     ...(p.hw ? { search_filter: { min_road_class: 'motorway' }, radius: 300 } : {}), ...(p.heading != null ? { heading: p.heading, heading_tolerance: 60 } : {}) })),
     costing, costing_options: { [costing]: co }, units: 'kilometers', language: 'ja-JP', ...(alternates ? { alternates } : {}) };
@@ -1849,7 +1850,7 @@ function renderTouring() {
     <div id="course-info" class="course-info" hidden></div>
     <div id="chain-box" class="chain-box" hidden></div>
     <p class="hint">目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定</p>
-    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(road)}${road.noBike && tour.opts.bike ? '<br>⚠ <strong>「バイク向け」で探していますが、このコースはバイクでは走れません。</strong>' : ''}</p>${courseSources(road)}`
+    ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(road)}${routeIssueHtml(road)}${road.noBike && tour.opts.bike ? '<br>⚠ <strong>「バイク向け」で探していますが、このコースはバイクでは走れません。</strong>' : ''}</p>${courseSources(road)}`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
     <details class="tools" id="tour-opts" ${store.get('tourOptsOpen') ? 'open' : ''}><summary>⚙走り方・立ち寄りの範囲（${optSummary()}）</summary>
@@ -2409,6 +2410,12 @@ function renderJctGuide() {
 // ---- ドライブコースと峠を地図に（厳選は太線、自動収集は細線、峠は紫の点）。押すと説明と「このコースを走る」 ----
 // 出典（調べたページ）へのリンク
 // 二輪が通れない道（車で走るコース）
+// 全コースを確かめて、ルートに往復・Uターンが残ったコースの注意
+const routeIssue = (r) => {
+  if (r.parts) return r.parts.map(routeIssue).find(Boolean) || '';
+  return DATA.issues.courses[r.id] || (DATA.issues.auto[r.id] === 'back' ? 'この自動収集のコースは、ルート検索で一部を往復（Uターン）する区間があります（毎週の更新で直ることがあります）。' : '');
+};
+const routeIssueHtml = (r) => (routeIssue(r) ? `<br>↩ ${esc(routeIssue(r))}` : '');
 const noBikeHtml = (r) => (r.noBike ? `<br>🚫 <strong>二輪通行不可（車で走るコース）</strong>：${esc(r.noBike)}` : '');
 const courseSources = (r) => ((r.sources || []).length ? `<p class="hint">出典：${r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join('、')}</p>` : '');
 function courseHtml(r) {
@@ -2416,7 +2423,7 @@ function courseHtml(r) {
   const [tLabel, tColor] = Lib.COURSE_TYPES[Lib.courseType(r)];
   return `<div class="pop"><strong>${r.pass ? '⛰' : '🛣'} ${esc(r.name)}</strong>
     <span class="status"><span class="swatch" style="--c:${tColor}"></span>${esc(tLabel)}${r.curv ? `・カーブ${'★'.repeat(Lib.curvStars(r.curv))}` : ''}${r.km ? `・約${Math.round(r.km)}km` : ''}</span>
-    <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}${(r.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(r)}</p>
+    <p>${r.toll ? '<strong>有料</strong>・' : ''}${esc(r.note || '')}${r.closed ? `<br>⚠ ${esc(r.closed)}` : ''}${closedNow ? '<br>⚠ <strong>今月は通行止め・閉鎖の期間です</strong>' : ''}${(r.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(r)}${routeIssueHtml(r)}</p>
     ${courseSources(r)}
     <div class="actions">${r.pass ? `<button type="button" class="btn primary" data-pass-go="${esc(r.id)}">ここを目的地に</button>`
       : `<button type="button" class="btn primary" data-course-go="${esc(r.id)}">このコースを走る（周回）</button>
@@ -2841,6 +2848,7 @@ async function init() {
   [DATA.spots, DATA.touring, DATA.status, DATA.roads] = await Promise.all([
     getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
     getJSON('data/scenic_roads.json', [])]);
+  DATA.issues = await getJSON('data/route_issues.json', DATA.issues); // 全コースのルート検索で確かめた結果（往復・Uターンが残るコース）
   DATA.spots.forEach(Lib.refineGenres);
   renderAll();
   renderInstallBanner();
@@ -2852,7 +2860,7 @@ async function init() {
   FAILED.delete('data/cells/index.json'); // まだ収集していないとき（404）は失敗扱いにしない
   const ro = await getJSON('data/roads_osm.json', []);
   FAILED.delete('data/roads_osm.json');
-  DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2);
+  DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2 && DATA.issues.auto[r.id] !== 'hide'); // ルートが引けないと確かめたものは出さない
   DATA.passes = ro.filter((r) => r.pass);
   DATA.ver++;
   renderAll();
