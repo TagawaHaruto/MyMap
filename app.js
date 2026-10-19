@@ -1139,13 +1139,15 @@ async function fillRelated(el, s) {
   const draw = () => {
     const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food', 'heritage', 'local'], s, 2));
     const rel = Lib.relatedSpots(s, pool, { limit: 5, chains: state.showChains });
-    const list = (title, xs) => (xs.length ? `<h4>${title}</h4><ul class="rel">${xs.map((x) => `<li>
+    // 押すと開く一覧（開いたままにすると長くなるので、最初は閉じておく。描き直しても開閉は保つ）
+    const open = new Set([...el.querySelectorAll('details[open]')].map((d) => d.dataset.k));
+    const list = (k, title, xs, empty = '') => (xs.length || empty ? `<details class="rel-box" data-k="${k}" ${open.has(k) ? 'open' : ''}><summary>${title}（${xs.length}件）</summary>
+      ${xs.length ? `<ul class="rel">${xs.map((x) => `<li>
       <a ${gm(x)}>${(x.genres || []).map((g) => icon(GENRES[g] || '・')).join('')} ${esc(x.name)}</a>
-      <span class="status">${x.distKm < 1 ? Math.round(x.distKm * 1000) + 'm' : x.distKm.toFixed(1) + 'km'}${x.note ? '・' + esc(x.note) : ''}</span></li>`).join('')}</ul>` : '');
-    el.innerHTML = list('似たスポット', rel.similar) + list('周辺のスポット（2km以内）', rel.nearby)
-      + list('近くのカフェ・食事（1km以内）', rel.food)
-      + (!rel.food.length && cellIndex ? '<p class="hint">1km以内のカフェ・食事は見つかりませんでした。</p>' : '')
-      + (!cellIndex ? '<p class="hint">カフェ・食事のデータはまだ収集されていません。</p>' : '');
+      <span class="status">${x.distKm < 1 ? Math.round(x.distKm * 1000) + 'm' : x.distKm.toFixed(1) + 'km'}${x.note ? '・' + esc(x.note) : ''}</span></li>`).join('')}</ul>` : `<p class="hint">${empty}</p>`}</details>` : '');
+    el.innerHTML = list('s', '似たスポット', rel.similar) + list('n', '周辺のスポット（2km以内）', rel.nearby)
+      + list('f', '近くのカフェ・食事（1km以内）', rel.food,
+        !cellIndex ? 'カフェ・食事のデータはまだ収集されていません。' : '1km以内のカフェ・食事は見つかりませんでした。');
   };
   draw();
   if (await ensureCells(['food', 'heritage', 'local'], s, 2)) draw();
@@ -1676,7 +1678,11 @@ function fixedWaypointsFor(dest) {
 // 候補を作ったあとで走り方を変えたか
 const routeStale = () => !!(tour.route && tour.route.opts && tour.route.opts !== JSON.stringify(tour.opts));
 const MIN_PINS = 2; // ルート固定用に最低限残す枠
-const room = () => Math.max(0, MAX_WAYPOINTS - fixedWaypoints().length - MIN_PINS);
+const MIN_STOPS = 3; // コースの点が多くても、立ち寄りはこの件数まで選べる（選んだ分だけコースの点を間引く）
+const room = () => Math.max(MIN_STOPS, MAX_WAYPOINTS - fixedWaypoints().length - MIN_PINS);
+// 立ち寄りと合わせて上限に収まるよう、コースの点を等間隔に間引く
+const fixedFor = (nPicked) => Lib.spreadPick(fixedWaypoints(), MAX_WAYPOINTS - nPicked);
+const thinned = () => fixedFor(pickedCount()).length < fixedWaypoints().length;
 function getStops() {
   if (!tour.route) return [];
   if (!tour.stops) {
@@ -1693,7 +1699,7 @@ function navUrl() {
   // 並べる順はすべて同じ物差し（distToRoute の進行距離）で測る
   const along = (p) => Lib.distToRoute(p, line).along;
   const picked = getStops().filter((s) => tour.picked.has(s.id)).slice(0, room()).map((s) => ({ ...s, along: s.alongKm }));
-  const fixed = fixedWaypoints().map((p) => ({ ...p, along: along(p) }));
+  const fixed = fixedFor(picked.length).map((p) => ({ ...p, along: along(p) }));
   // 残りの枠でルート上の地点を等間隔に足し、Google マップが別の道（有料道路など）を選ばないようにする。
   // 走り方を変えた後は古いルートに沿わせない
   const pins = routeStale() || (dest.loop && Array.isArray(dest.road.hw)) ? [] : Lib.pinWaypoints(line, Math.min(4, MAX_WAYPOINTS - fixed.length - picked.length)).map((p) => ({ ...p, along: along(p) }));
@@ -1715,6 +1721,7 @@ function updateTourSelection() {
     row.classList.toggle('is-picked', cb.checked);
     row.classList.toggle('is-disabled', cb.disabled);
   });
+  const tm = $('#thin-msg'); if (tm) tm.hidden = !thinned();
   const nav = $('#nav');
   if (nav) {
     const waiting = tour.route && !DATA.eventsLoaded; // 道の駅などの読み込み前に押すと経由地が抜けるため
@@ -1898,12 +1905,13 @@ function renderTouring() {
     ${tour.route ? `<details class="stops-box" id="stops-box" ${store.get('stopsOpen') ? 'open' : ''}>
       <summary>🛍立ち寄り候補（${stops.length}件・走る順）<span id="stops-picked"></span></summary>
       <p class="hint">名前を押すと地図でその場所を強調します。□で選ぶと、Google マップに経由地として渡します。</p>
-      <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>`
+      <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>
+      <p id="thin-msg" class="notice" hidden>⚠ 立ち寄りを入れた分、コースを固定する経由地を減らしています。Google マップで道がコースから外れていないか確かめてください。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
       <div class="card stop" data-focus="${esc(s.id)}"><input type="checkbox" data-stop="${esc(s.id)}" ${tour.picked.has(s.id) ? 'checked' : ''} aria-label="${esc(s.name)}を経由地に選ぶ">
         <span class="km">${Math.round(s.alongKm)}<small>km</small></span>
-        <span class="name">${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}${parkText(s) ? ` <strong>${parkText(s)}</strong>` : ''}
-          <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span>${infoButton(s)}</span></div>
+        <span class="name"><span class="nm">${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}${parkText(s) ? ` <strong>${parkText(s)}</strong>` : ''}</span>
+          <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span></span>${infoButton(s)}</div>
       <div class="info stop-info" hidden></div>`).join('')
         : '<p class="empty">この範囲に立ち寄り候補はありません。範囲を広げてみてください。</p>') + '</details>' : ''}
     ${dest ? `<div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a>
@@ -1997,18 +2005,19 @@ function renderTouring() {
     if (state.tab === 'touring') renderTouring(); // 検索中に別のタブへ移っていたら描かない
   };
   $('#view').onclick = (e) => {
-    const b = e.target.closest('[data-cand]'); if (!b || +b.dataset.cand === tour.sel) return; // 選択中をもう一度押しても何も変えない
-    buzz(); tour.sel = +b.dataset.cand; tour.stops = null; tour.picked.clear(); saveTour(); renderTouring();
-  };
-  const g = $('#gpx'); if (g) g.onclick = () => { buzz(); saveGpx(); };
-  // チェックの変更では地図も一覧も作り直さない（マーカーとナビボタンだけ更新）
-  const sb = $('#stops-box'); if (sb) sb.addEventListener('toggle', () => store.set('stopsOpen', sb.open));
-  // 立ち寄り候補の行を押す（□・ボタン以外）→ 地図のアイコンを強調
-  $('#view').onclick = (e) => {
+    const b = e.target.closest('[data-cand]');
+    if (b) { // 選択中をもう一度押しても何も変えない
+      if (+b.dataset.cand !== tour.sel) { buzz(); tour.sel = +b.dataset.cand; tour.stops = null; tour.picked.clear(); saveTour(); renderTouring(); }
+      return;
+    }
+    // 立ち寄り候補の行を押す（□・ボタン以外）→ 地図のアイコンを強調
     const row = e.target.closest('[data-focus]');
     if (!row || e.target.closest('input, button, a, .info')) return;
     buzz(); focusStop(row.dataset.focus);
   };
+  const g = $('#gpx'); if (g) g.onclick = () => { buzz(); saveGpx(); };
+  // チェックの変更では地図も一覧も作り直さない（マーカーとナビボタンだけ更新）
+  const sb = $('#stops-box'); if (sb) sb.addEventListener('toggle', () => store.set('stopsOpen', sb.open));
   $('#view').onchange = (e) => {
     const cb = e.target.closest('[data-stop]'); if (!cb) return;
     buzz();
