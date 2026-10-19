@@ -1763,6 +1763,7 @@ function renderTouring() {
     <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button></div>
+    <div id="course-info" class="course-info" hidden></div>
     <p class="hint">目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定</p>
     ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(road)}${road.noBike && tour.opts.bike ? '<br>⚠ <strong>「バイク向け」で探していますが、このコースはバイクでは走れません。</strong>' : ''}</p>${courseSources(road)}`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
@@ -2334,21 +2335,39 @@ function bindCourseBtns(el) {
     if (p) { buzz(); setCustomDest(p.points[0][0], p.points[0][1], p.name); }
   }; });
 }
+// 押したコースの説明は地図の下に出す（吹き出しだと小さい画面で地図が隠れるため）。選んだ線は太くして前に
+let courseSel = null;
+function clearCourseSel() {
+  if (courseSel && courseSel.layer.setStyle) courseSel.layer.setStyle(courseSel.style);
+  courseSel = null;
+}
+function showCourse(r, layer) {
+  const el = $('#course-info'); if (!el) return;
+  clearCourseSel();
+  courseSel = { layer, style: { weight: layer.options.weight, opacity: layer.options.opacity } };
+  if (layer.setStyle) { layer.setStyle({ weight: layer.options.weight + 5, opacity: 1 }); layer.bringToFront(); }
+  el.innerHTML = `<button type="button" class="icon course-close" aria-label="説明を閉じる">✕</button>${courseHtml(r)}`;
+  el.hidden = false;
+  el.querySelector('.course-close').onclick = () => { buzz(); el.hidden = true; clearCourseSel(); };
+  bindCourseBtns(el);
+  const b = el.getBoundingClientRect();
+  if (b.bottom > innerHeight) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+}
 // 種類ごとに色を分け、見せる種類を選べるように。厳選は太く、線は押しやすいように少し太め（押せる幅はさらに広い）
 const courseTypesOn = () => new Set(store.get('courseTypes') || Object.keys(Lib.COURSE_TYPES));
 // 1 本ずつ少しずつ色を変え、両端に白い丸を付けて、どこからどこまでが 1 本か分かるように
 const nightRoads = () => store.get('nightRoads') === true;
 const shownRoads = () => DATA.courses.concat(DATA.roads).filter((r) => !nightRoads() || !Lib.roadNightClosed(r));
 function drawCourses() {
+  courseSel = null; // 地図を作り直したら選択も消える
   const on = courseTypesOn();
-  const add = (layer, r) => layer.bindPopup(() => courseHtml(r), { maxWidth: 260 })
-    .on('popupopen', (e) => bindCourseBtns(e.popup.getElement())).addTo(map);
+  const add = (layer, r) => layer.on('click', (e) => { L.DomEvent.stopPropagation(e); showCourse(r, layer); }).addTo(map);
   for (const r of shownRoads()) {
     const t = Lib.courseType(r); if (!on.has(t)) continue;
     const color = Lib.routeShade(Lib.COURSE_TYPES[t][1], r.id), pick = t === 'pick', glow = nightRoads() && Lib.roadNightView(r);
     const w = pick || glow ? 7 : 5;
     const line = L.polyline(r.points, { color, weight: w, opacity: pick ? 0.95 : 0.8, dashArray: t === 'rindo' ? '6 6' : null });
-    line.on('mouseover', () => line.setStyle({ weight: w + 3 })).on('mouseout', () => line.setStyle({ weight: w }));
+    line.on('mouseover', () => line.setStyle({ weight: w + 3 })).on('mouseout', () => { if (!courseSel || courseSel.layer !== line) line.setStyle({ weight: w }); });
     add(line, r);
     for (const p of [r.points[0], r.points[r.points.length - 1]]) {
       // 地図と同じキャンバスに描く（別のキャンバスを重ねると、その下のコースの線が押せなくなる）
