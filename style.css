@@ -343,3 +343,7 @@ textarea { padding: 8px; min-height: 0; resize: vertical; }
 
 .course-info { position: relative; margin-top: 8px; padding: 10px 54px 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
 .course-info .course-close { position: absolute; top: 4px; right: 4px; }
+.chain-box { margin-top: 8px; padding: 10px 12px; border: 2px solid var(--key); border-radius: 8px; background: var(--bg); display: grid; gap: 6px; }
+.chain-list { margin: 0; padding-left: 1.4em; display: grid; gap: 4px; }
+.chain-list li > span:first-child { overflow-wrap: anywhere; }
+.chain-btns { display: inline-flex; gap: 4px; margin-left: 6px; vertical-align: middle; }

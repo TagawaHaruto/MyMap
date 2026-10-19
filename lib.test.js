@@ -680,4 +680,17 @@ assert.deepStrictEqual(Lib.tollSpans([{ maneuvers: [{ length: 2 }, { toll: true,
 assert.strictEqual(Lib.inSpans(5, [[2, 6]]), true);
 assert.strictEqual(Lib.inSpans(6.5, [[2, 6]]), false);
 
+// ---- コースをつなげる ----
+const ca = { id: 'a', name: 'C1一周（都心）', points: [[35, 139], [35.1, 139.1], [35.2, 139]], hw: [[35, 139], [35.1, 139.1], [35, 139]], toll: true, fee: '300円', closedMonths: [] };
+const cb = { id: 'b', name: '夜景周回', points: [[35.3, 139], [35.4, 139]], hw: [[35.3, 139], [35.4, 139.1], [35.3, 139]], toll: true, fee: '300円', alerts: ['x'] };
+const ch = Lib.chainRoad([ca, cb]);
+assert.strictEqual(ch.id, 'chain:a+b');
+assert.strictEqual(ch.name, 'C1一周 → 夜景周回');
+assert.strictEqual(ch.fee, '300円');
+assert.deepStrictEqual(ch.alerts, ['x']);
+assert.strictEqual(Lib.coursePoints(ch).length, 4); // 2 + 2（どちらも一周なので始点には戻らない）
+assert.ok(Array.isArray(ch.hw));
+assert.strictEqual(Lib.chainRoad([ca, { id: 'c', name: 'c', points: [[1, 1], [2, 2], [3, 3]] }]).hw, undefined); // 一般道が混ざると hw なし
+assert.strictEqual(Lib.loopPoints({ lat: 0, lon: 0 }, ch).length, 6);
+
 console.log('lib: ALL PASS');
