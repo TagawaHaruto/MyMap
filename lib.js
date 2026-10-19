@@ -305,6 +305,7 @@ const Lib = (() => {
   // 高速道路のコース: road.hw は高速道路の上に合わせた案内用の点（JCT の近くは避けてある）。
   // ルート検索では高速道路だけに合わせ（hw）、進む向き（heading）も渡す。一般道や反対車線に吸い寄せられて、降りて乗り直すのを防ぐ
   function coursePoints(road) {
+    if (Array.isArray(road.parts)) return road.parts.flatMap(coursePoints); // つなげたコース: 選んだ順に
     if (!Array.isArray(road.hw)) return road.points.map(pt);
     let pts = road.hw.map(pt);
     // 一周するコース（始点＝終点）は最後の点を除く。帰り道で入口の近くを通るので、始点に戻るともう一周してしまう。
@@ -313,6 +314,15 @@ const Lib = (() => {
     return pts.map((p, i) => ({ ...p, hw: true, heading: Math.round(bearing(pts[i - 1] || p, pts[i + 1] || p)) }));
   }
   const loopPoints = (origin, road) => [origin, ...coursePoints(road), origin];
+  // 複数のコースを 1 本につなげる（選んだ順に走って起点へ戻る）。どれも高速のコースなら hw もつなげる
+  function chainRoad(parts) {
+    const uniq = (xs) => [...new Set(xs.filter(Boolean))];
+    return { id: 'chain:' + parts.map((p) => p.id).join('+'), name: parts.map((p) => p.name.replace(/（.*?）/g, '')).join(' → '), parts,
+      points: parts.flatMap((p) => p.points), ...(parts.every((p) => Array.isArray(p.hw)) ? { hw: parts.flatMap((p) => p.hw) } : {}),
+      toll: parts.some((p) => p.toll), fee: uniq(parts.map((p) => p.fee)).join('／'), note: parts.map((p) => p.name).join(' → ') + ' を続けて走ります。',
+      closed: uniq(parts.map((p) => p.closed)).join('／'), closedMonths: uniq(parts.flatMap((p) => p.closedMonths || [])),
+      alerts: uniq(parts.flatMap((p) => p.alerts || [])), noBike: uniq(parts.map((p) => p.noBike)).join('／'), tags: [] };
+  }
 
   // ---- 分岐（JCT・出口）の案内: Valhalla の案内文から、高速の分岐・出口・合流だけを走る順に ----
   // 「神田橋/箱崎/Kandabashi/Hakozaki方面」→「神田橋/箱崎方面」（英語の併記を消す）
@@ -1279,7 +1289,7 @@ const Lib = (() => {
   return { haversineKm, travelMinutes, prefGroup, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
-    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, jaOnly, jctGuide, samplesIn, safeSpot, spreadPick, toGpx,
+    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, jaOnly, jctGuide, samplesIn, safeSpot, spreadPick, toGpx,
     geocodeToken, parseGmapsRoute, isShortMapsUrl, routeFromPlaces, refineGenres, TIME_BANDS, timeBandState, roadNightClosed, roadNightView, routeShade,
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
