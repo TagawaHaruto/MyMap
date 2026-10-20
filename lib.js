@@ -1185,7 +1185,9 @@ const Lib = (() => {
     let km = 0;
     for (const m of (legs || []).flatMap((l) => l.maneuvers || [])) {
       const len = m.length || 0;
-      if (m.toll) { const last = out[out.length - 1]; if (last && Math.abs(last[1] - km) < 1e-6) last[1] = km + len; else out.push([km, km + len]); }
+      const last = out[out.length - 1], joined = last && Math.abs(last[1] - km) < 1e-6;
+      // 無料の自動車専用道路（KK線など）をはさんでも、一般道へ降りていなければ同じ区間として続ける
+      if (m.toll || (m.highway && joined)) { if (joined) last[1] = km + len; else out.push([km, km + len]); }
       km += len;
     }
     return out.map(([a, b]) => [Math.round(a * 100) / 100, Math.round(b * 100) / 100]);
