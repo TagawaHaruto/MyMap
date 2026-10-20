@@ -37,7 +37,7 @@ const state = {
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
-const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], courses: [], passes: [], issues: { courses: {}, auto: {} }, ver: 0, eventsLoaded: false, osmLoaded: false };
+const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], courses: [], passes: [], sx: null, issues: { courses: {}, auto: {} }, ver: 0, eventsLoaded: false, osmLoaded: false };
 const FAILED = new Set();
 
 const rainy = () => (state.rainOverride ?? state.weatherRainy);
@@ -1491,7 +1491,19 @@ const fail = (msg) => Object.assign(new Error(msg), { mine: true });
 const myRoutes = () => store.get('myRoutes') || [];
 const roadById1 = (id) => DATA.roads.find((r) => r.id === id) || DATA.courses.find((r) => r.id === id) || null;
 // 'chain:a+b+c' は複数のコースを続けて走る（Lib.chainRoad）
+// 'sx:区間+区間' は首都高の区間（data/shutoko_net.json）を選んでつないだルート。案内点は各区間の正しい車線の上の点
+const sxSeg = (id) => (DATA.sx && DATA.sx.segs.find((s) => s.id === id)) || null;
+const sxNode = (k) => DATA.sx.nodes[k].name;
+const sxName = (s) => `${s.route}（${sxNode(s.from)}→${sxNode(s.to)}）`;
+function sxRoad(id) {
+  const segs = id.slice(3).split('+').map(sxSeg);
+  if (!segs.length || segs.some((s) => !s)) return null;
+  const via = [segs[0].from, ...segs.map((s) => s.to)].map((k) => sxNode(k).replace(/JCT$/, ''));
+  return { id, name: `首都高 組み立てルート（${via.join('→')}）`, hw: segs.map((s) => s.pin), points: segs.map((s) => [s.pin[0], s.pin[1]]),
+    toll: true, fee: '', note: `首都高の区間を選んでつないだルート：${segs.map(sxName).join('、')}`, tags: [], closed: '', closedMonths: [] };
+}
 const roadById = (id) => {
+  if (String(id).startsWith('sx:')) return sxRoad(id);
   if (!String(id).startsWith('chain:')) return roadById1(id);
   const [ids, mode] = id.slice(6).split('@');
   const parts = ids.split('+').map(roadById1).filter(Boolean);
@@ -1872,6 +1884,7 @@ function renderTouring() {
       ${tourFull() ? '' : '<button type="button" class="btn map-full-btn" id="to-full" title="地図を全画面に">⤢ 全画面</button>'}</div>
     <div id="course-info" class="course-info" hidden></div>
     <div id="chain-box" class="chain-box" hidden></div>
+    <details class="tools" id="sx-box" ${store.get('sxOpen') ? 'open' : ''}><summary>🛣首都高ルートを組み立てる</summary><div id="sx-body"></div></details>
     <p class="hint">目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定</p>
     ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(road)}${routeIssueHtml(road)}${road.noBike && tour.opts.bike ? '<br>⚠ <strong>「バイク向け」で探していますが、このコースはバイクでは走れません。</strong>' : ''}</p>${courseSources(road)}`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
@@ -1969,6 +1982,8 @@ function renderTouring() {
   $('#my-route').addEventListener('toggle', (e) => store.set('myRouteOpen', e.target.open));
   if ($('#to-full')) $('#to-full').onclick = () => { buzz(); store.set('tourFull', true); setOutdoor(!!store.get('outdoor'), false); tour.key = ''; renderTouring(); };
   renderChainBox();
+  renderSxBox();
+  $('#sx-box').addEventListener('toggle', (e) => store.set('sxOpen', e.target.open));
   $('#mr-add').onclick = () => { buzz(); addMyRoute(); };
   document.querySelectorAll('[data-mr-go]').forEach((b) => { b.onclick = () => { buzz(); setDest(() => { tour.custom = null; tour.roadId = null; tour.destId = b.dataset.mrGo; }); }; });
   document.querySelectorAll('[data-mr-del]').forEach((b) => { b.onclick = () => {
@@ -2496,6 +2511,34 @@ function focusStop(id) {
     $('#map').scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 }
+// ---- 首都高ルートを組み立てる: 区間を選ぶと、その先の JCT で降りずに直接つながる区間だけを次の候補に出す ----
+const SX_MAX = 8; // ルート検索に渡せる経由地の数まで
+const sxDraft = () => (store.get('sxDraft') || []).filter(sxSeg);
+function renderSxBox() {
+  const el = $('#sx-body'); if (!el) return;
+  if (!DATA.sx) { el.innerHTML = '<p class="hint">首都高の区間データを読み込めませんでした（電波の良い場所で開き直してください）。</p>'; return; }
+  const d = sxDraft(), last = d.length ? sxSeg(d[d.length - 1]) : null;
+  const opts = last ? (DATA.sx.next[last.id] || []).map(sxSeg).filter(Boolean) : [];
+  const groups = {};
+  for (const s of DATA.sx.segs) (groups[s.route] = groups[s.route] || []).push(s);
+  const optBtn = (s) => `<button type="button" class="btn sx-opt" data-sx-add="${esc(s.id)}">${esc(s.route)}<small>${esc(sxNode(s.to))}方面</small></button>`;
+  el.innerHTML = `${d.length ? `<ol class="chain-list">${d.map((id) => `<li>${esc(sxName(sxSeg(id)))}</li>`).join('')}</ol>` : ''}
+    ${!last ? `<p class="hint">走り始める区間（路線と向き）を選んでください。次からは、その先の JCT で高速を降りずに直接つながる区間だけが出ます。</p>
+      <select id="sx-start" aria-label="走り始める区間"><option value="">走り始める区間を選ぶ</option>${Object.entries(groups).map(([route, xs]) =>
+        `<optgroup label="${esc(route)}">${xs.map((s) => `<option value="${esc(s.id)}">${esc(sxNode(s.from))} → ${esc(sxNode(s.to))}</option>`).join('')}</optgroup>`).join('')}</select>`
+      : d.length >= SX_MAX ? `<p class="hint">${SX_MAX}区間までつなげられます。</p>`
+      : opts.length ? `<p class="hint"><strong>${esc(sxNode(last.to))}</strong>から次に進む区間：</p><div class="sx-opts">${opts.map(optBtn).join('')}</div>`
+      : `<p class="hint">${esc(sxNode(last.to))}から先は、この一覧の首都高の区間につながりません（ここで首都高を出て、家へ向かいます）。</p>`}
+    <div class="actions"><button type="button" class="btn primary" id="sx-go" ${d.length ? '' : 'disabled'}>このルートで走る</button>
+      <button type="button" class="btn" id="sx-back" ${d.length ? '' : 'disabled'}>1つ戻す</button><button type="button" class="btn" id="sx-clear" ${d.length ? '' : 'disabled'}>やり直す</button></div>
+    <p class="hint">JCT で直接つながるかは、ルート検索で前もって確かめています。Google マップに渡す経由地は自動で選ぶので、ナビの前に Google マップの距離がアプリと同じくらいか確かめてください。</p>`;
+  const set = (x) => { store.set('sxDraft', x); renderSxBox(); };
+  const st = $('#sx-start'); if (st) st.onchange = () => { if (st.value) { buzz(); set([st.value]); } };
+  el.querySelectorAll('[data-sx-add]').forEach((b) => { b.onclick = () => { buzz(); set([...sxDraft(), b.dataset.sxAdd]); }; });
+  $('#sx-back').onclick = () => { buzz(); set(sxDraft().slice(0, -1)); };
+  $('#sx-clear').onclick = () => { buzz(); set([]); };
+  $('#sx-go').onclick = () => { buzz(); const ids = sxDraft(); setDest(() => { tour.custom = null; tour.roadId = 'sx:' + ids.join('+'); tour.destId = null; }); };
+}
 // ---- 複数のコースをつなげる: 一覧（順番の入れ替え・外す）と「この順で走る」 ----
 const chainDraft = () => (store.get('chainDraft') || []).filter((id) => roadById1(id));
 const chainMode = () => store.get('chainMode') || 'seq';
@@ -2874,9 +2917,9 @@ async function init() {
   }
   if (store.get('origin')) DATA.cfg.origin = store.get('origin');
   // 先にスポットを出し、イベントなどは後から読み込む
-  [DATA.spots, DATA.touring, DATA.status, DATA.roads] = await Promise.all([
+  [DATA.spots, DATA.touring, DATA.status, DATA.roads, DATA.sx] = await Promise.all([
     getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
-    getJSON('data/scenic_roads.json', [])]);
+    getJSON('data/scenic_roads.json', []), getJSON('data/shutoko_net.json', null)]);
   DATA.issues = await getJSON('data/route_issues.json', DATA.issues); // 全コースのルート検索で確かめた結果（往復・Uターンが残るコース）
   DATA.spots.forEach(Lib.refineGenres);
   renderAll();

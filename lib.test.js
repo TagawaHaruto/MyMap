@@ -725,3 +725,5 @@ console.log('lib: ALL PASS');
 // JCT の分かれ道（同じ向きの高速のランプ）の横も避ける（江北JCT の川口線）
 assert.strictEqual(Lib.rampFree([{ heading: 60, distance: 0, edge: { classification: { classification: 'motorway', use: 'road' } } },
   { heading: 55, distance: 20, edge: { classification: { classification: 'motorway', use: 'ramp' } } }], 60), false);
+// 有料区間のあいだの無料の自動車専用道路は、降りたことにしない
+assert.deepStrictEqual(Lib.tollSpans([{ maneuvers: [{ toll: true, length: 3 }, { highway: true, length: 1 }, { toll: true, length: 2 }, { length: 1 }, { toll: true, length: 1 }] }]), [[0, 6], [7, 8]]);
