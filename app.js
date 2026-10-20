@@ -1545,10 +1545,13 @@ async function safePins(line, road, k) {
   if (!cand.length) return [];
   try {
     const r = await fetch('https://valhalla1.openstreetmap.de/locate', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: timeoutSignal(15000),
-      body: JSON.stringify({ locations: cand.map((p) => ({ lat: p.lat, lon: p.lon, radius: 12 })), costing: 'auto', verbose: true }) });
+      body: JSON.stringify({ locations: cand.map((p) => ({ lat: p.lat, lon: p.lon, radius: 60 })), costing: 'auto', verbose: true }) });
     const j = r.ok ? await r.json() : [];
-    const ok = cand.filter((p, i) => Array.isArray(j) && j[i] && Lib.safeSpot(j[i].edges, p.heading));
-    return Lib.spreadPick(ok, k).map((p) => ({ lat: +p.lat.toFixed(6), lon: +p.lon.toFixed(6) }));
+    const near = (es) => (es || []).filter((e) => (e.distance || 0) <= 12);
+    const ok = cand.map((p, i) => ({ p, es: Array.isArray(j) && j[i] ? j[i].edges : null })).filter((x) => x.es && Lib.safeSpot(near(x.es), x.p.heading));
+    // 出入口のランプの横は避ける。避けると 2 点も残らない道（一般道と並ぶ湾岸線など）は、これまでどおり本線の上の点を使う
+    const strict = ok.filter((x) => Lib.rampFree(x.es, x.p.heading));
+    return Lib.spreadPick((strict.length >= 2 ? strict : ok).map((x) => x.p), k).map((p) => ({ lat: +p.lat.toFixed(6), lon: +p.lon.toFixed(6) }));
   } catch { return []; }
 }
 
@@ -1774,6 +1777,7 @@ const sheetPx = () => (document.body.classList.contains('tour-full') ? SHEET[she
 function placeTourMap(dest) {
   const full = tourFull() && state.tab === 'touring';
   document.body.classList.toggle('tour-full', full);
+  if (!full) document.body.classList.remove('drawer-open');
   const box = $('#map-full'), top = $('#tour-top');
   box.innerHTML = '';
   top.hidden = !full;
@@ -1785,9 +1789,13 @@ function placeTourMap(dest) {
   top.innerHTML = `<div class="tt-main"><strong>${dest ? esc(dest.loop ? dest.road.name : dest.name) : '目的地を選んでください'}</strong>
       <span>${rt ? `約${Math.round(rt.km)}km・${fmtMin(Math.round(rt.min))}${rt.toll ? '・有料あり' : ''}` : dest ? '「ルート候補を探す」で道を引きます' : '下のパネルで選ぶか、地図のコースを押す'}</span></div>
     ${rt ? '<button type="button" class="btn primary" id="tt-nav">ナビ</button>' : ''}
-    <button type="button" class="icon" id="tt-layout" title="通常の表示に戻す" aria-label="通常の表示に戻す">☰</button>`;
+    <button type="button" class="icon" id="tt-menu" aria-label="走り方・立ち寄りの範囲・ドライブコースの表示" aria-expanded="${document.body.classList.contains('drawer-open')}">☰</button>`;
   if ($('#tt-nav')) $('#tt-nav').onclick = () => { buzz(); const n = $('#nav'); if (n) n.click(); };
-  $('#tt-layout').onclick = () => { buzz(); store.set('tourFull', false); setOutdoor(true, false); tour.key = ''; renderTouring(); window.scrollTo(0, 0); };
+  // ☰: 横から設定のパネル（走り方・立ち寄りの範囲・ドライブコースの表示）を出す
+  const drawer = (on) => { document.body.classList.toggle('drawer-open', on); $('#tt-menu').setAttribute('aria-expanded', on); };
+  $('#tt-menu').onclick = () => { buzz(); drawer(!document.body.classList.contains('drawer-open')); };
+  $('#dr-close').onclick = () => { buzz(); drawer(false); };
+  $('#dr-normal').onclick = () => { buzz(); drawer(false); store.set('tourFull', false); setOutdoor(!!store.get('outdoor'), false); tour.key = ''; renderTouring(); window.scrollTo(0, 0); };
   bindSheetHandle();
 }
 // パネルのつまみ: 上下にドラッグ（離すと近い高さに止まる）・押すと 低い → 半分 → 高い と切り替え
@@ -1860,7 +1868,9 @@ function renderTouring() {
     ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(road)}${routeIssueHtml(road)}${road.noBike && tour.opts.bike ? '<br>⚠ <strong>「バイク向け」で探していますが、このコースはバイクでは走れません。</strong>' : ''}</p>${courseSources(road)}`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
-    <details class="tools" id="tour-opts" ${store.get('tourOptsOpen') ? 'open' : ''}><summary>⚙走り方・立ち寄りの範囲（${optSummary()}）</summary>
+    <div class="tour-drawer" id="tour-drawer">${tourFull() ? `<div class="drawer-head"><strong>表示と走り方</strong>
+      <button type="button" class="btn" id="dr-normal">通常表示に戻す</button><button type="button" class="icon" id="dr-close" aria-label="閉じる">✕</button></div>` : ''}
+    <details class="tools" id="tour-opts" ${tourFull() || store.get('tourOptsOpen') ? 'open' : ''}><summary>⚙走り方・立ち寄りの範囲（${optSummary()}）</summary>
     <fieldset class="opts"><legend><strong>走り方</strong></legend>
       <label class="check"><input type="checkbox" data-opt="noToll" ${tour.opts.noToll ? 'checked' : ''}>有料道路を使わない</label>
       <label class="check"><input type="checkbox" data-opt="fewHighways" ${tour.opts.fewHighways ? 'checked' : ''}>高速道路をなるべく使わない</label>
@@ -1869,7 +1879,8 @@ function renderTouring() {
     <div class="row"><span class="label">立寄</span><div id="radius" class="chips"></div></div>
     <label class="check"><input type="checkbox" id="awake" ${tour.awake ? 'checked' : ''}>このタブを開いている間は画面を消さない</label></details>
     <label class="check"><input type="checkbox" id="show-courses" ${tour.showCourses ? 'checked' : ''}>ドライブコース（${(DATA.roads.length + DATA.courses.length).toLocaleString()}本）と峠（${DATA.passes.length.toLocaleString()}か所）を地図に表示</label>
-    ${tour.showCourses ? courseLegendHtml() + curvyHtml() : ''}
+    ${tour.showCourses ? courseLegendHtml() : ''}</div>
+    ${tour.showCourses ? curvyHtml() : ''}
     <details class="tools"><summary>🧭方面別の雨・🏍走行記録・閉鎖中の道</summary>
       <div class="actions"><button type="button" class="btn" id="dir-rain">🧭方面別の雨（出発日の9〜17時）</button></div><div id="dir-out"></div>
       <h4>🏍走行記録（GPS）</h4><p class="status" id="trk-msg">${trackText()}</p>
@@ -2568,10 +2579,11 @@ function drawCourses() {
     const t = Lib.courseType(r); if (!on.has(t)) continue;
     const color = Lib.routeShade(Lib.COURSE_TYPES[t][1], r.id), pick = t === 'pick', glow = nightRoads() && Lib.roadNightView(r);
     const w = pick || glow ? 7 : 5;
-    const line = L.polyline(r.points, { color, weight: w, opacity: pick ? 0.95 : 0.8, dashArray: t === 'rindo' ? '6 6' : null });
+    const ll = r.line || r.points;
+    const line = L.polyline(ll, { color, weight: w, opacity: pick ? 0.95 : 0.8, dashArray: t === 'rindo' ? '6 6' : null });
     line.on('mouseover', () => line.setStyle({ weight: w + 3 })).on('mouseout', () => { if (!courseSel || courseSel.layer !== line) line.setStyle({ weight: w }); });
     add(line, r);
-    for (const p of [r.points[0], r.points[r.points.length - 1]]) {
+    for (const p of [ll[0], ll[ll.length - 1]]) {
       // 地図と同じキャンバスに描く（別のキャンバスを重ねると、その下のコースの線が押せなくなる）
       L.circleMarker(p, { radius: pick ? 4 : 3, color, weight: 2, fillColor: '#fff', fillOpacity: 1, interactive: false }).addTo(map);
     }
@@ -2817,7 +2829,7 @@ document.querySelector('.tabs').onclick = (e) => {
 };
 function renderAll() {
   document.body.dataset.tab = state.tab;
-  if (state.tab !== 'touring') { document.body.classList.remove('tour-full'); $('#tour-top').hidden = true; }
+  if (state.tab !== 'touring') { document.body.classList.remove('tour-full', 'drawer-open'); $('#tour-top').hidden = true; }
   renderFilters(); renderWeather(); renderRecommend(); renderLoadMsg();
   document.querySelectorAll('.tabs [data-tab]').forEach((b) => b.setAttribute('aria-selected', b.dataset.tab === state.tab));
   if (state.tab !== 'spots' && $('#spot-list')) $('#view').innerHTML = ''; // 一覧は スポット タブ専用（検索欄は CSS で隠す）
@@ -2863,7 +2875,10 @@ async function init() {
   renderInstallBanner();
   loadWeather();
   requestUpdate();
-  [DATA.pois, DATA.events] = await Promise.all([getJSON('data/pois.json', []), getJSON('data/events.json', [])]);
+  let lines;
+  [DATA.pois, DATA.events, lines] = await Promise.all([getJSON('data/pois.json', []), getJSON('data/events.json', []), getJSON('data/course_lines.json', {})]);
+  // 地図に描くコースの線は、コースの点を直線で結ばず、実際に道を通した形（ルート検索で作ったもの）にする
+  for (const r of DATA.roads) if (lines[r.id]) r.line = Lib.decodePolyline(lines[r.id], 5).map(([lon, lat]) => [lat, lon]);
   DATA.eventsLoaded = true; DATA.ver++; tour.stops = null;
   cellIndex = await getJSON('data/cells/index.json', null);
   FAILED.delete('data/cells/index.json'); // まだ収集していないとき（404）は失敗扱いにしない
