@@ -1541,7 +1541,7 @@ async function jctList() {
 async function safePins(line, road, k) {
   const pts = road.hw || road.points, lat = pts.map((p) => p[0]), lon = pts.map((p) => p[1]);
   const box = [Math.min(...lat) - 0.01, Math.min(...lon) - 0.01, Math.max(...lat) + 0.01, Math.max(...lon) + 0.01];
-  const cand = Lib.samplesIn(line, box, 40);
+  const cand = Lib.samplesIn(line, box, 120);
   if (!cand.length) return [];
   try {
     const r = await fetch('https://valhalla1.openstreetmap.de/locate', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: timeoutSignal(15000),
@@ -1550,8 +1550,11 @@ async function safePins(line, road, k) {
     const near = (es) => (es || []).filter((e) => (e.distance || 0) <= 12);
     const ok = cand.map((p, i) => ({ p, es: Array.isArray(j) && j[i] ? j[i].edges : null })).filter((x) => x.es && Lib.safeSpot(near(x.es), x.p.heading));
     // 出入口のランプの横は避ける。避けると 2 点も残らない道（一般道と並ぶ湾岸線など）は、これまでどおり本線の上の点を使う
-    const strict = ok.filter((x) => Lib.rampFree(x.es, x.p.heading));
-    return Lib.spreadPick((strict.length >= 2 ? strict : ok).map((x) => x.p), k).map((p) => ({ lat: +p.lat.toFixed(6), lon: +p.lon.toFixed(6) }));
+    // 地上の道の下を通るトンネル（山手トンネルなど）の中も避ける。Google マップは経由地を上の一般道に合わせることがある
+    const strict = ok.filter((x) => Lib.rampFree(x.es, x.p.heading)
+      && !(x.es.some((e) => (e.distance || 0) <= 12 && e.edge.tunnel) && x.es.some((e) => e.edge.classification.classification !== 'motorway')));
+    // コースの最初から最後まで均等に（候補の並び順ではなく、走る距離で間をあける。抜けた区間は Google マップが近道を選ぶ）
+    return Lib.spreadAlong((strict.length >= 2 ? strict : ok).map((x) => x.p), k).map((p) => ({ lat: +p.lat.toFixed(6), lon: +p.lon.toFixed(6) }));
   } catch { return []; }
 }
 
@@ -1612,9 +1615,11 @@ async function fetchCandidates(dest) {
     const baseLabel = dest.loop ? `${dest.road.name}を周回` : dest.mine ? '登録したルート' : course.length ? 'おすすめのコース' : '標準';
     std.forEach((rt, i) => out.push({ ...rt, label: i ? `別ルート${i}` : baseLabel, via: dest.loop ? [dest.road.id] : [], fixed: i ? [] : baseFix }));
     if (dest.loop && Array.isArray(dest.road.hw) && out[0]) {
-      const pins = await safePins(out[0].line, dest.road, MAX_WAYPOINTS - 2);
-      out[0].fixed = pins.length >= 3 ? pins : hwFix(dest.road);
+      // Google マップで実際に経路を開いて、途中で高速を降りないと確かめた経由地があればそれを使う（data の gpins）
+      const pins = dest.road.gpins ? dest.road.gpins.map(([lat, lon]) => ({ lat, lon })) : await safePins(out[0].line, dest.road, MAX_WAYPOINTS - 2);
+      out[0].fixed = pins.length >= 3 || dest.road.gpins ? pins : hwFix(dest.road);
       out[0].hwPins = pins.length;
+      out[0].gVerified = !!dest.road.gpins;
       // Google マップに渡す地点だけで引いた距離（Google マップの表示と比べる目安）
       try { await pause(); out[0].gmKm = (await valhalla([o, ...out[0].fixed, o], tour.opts, 0))[0].km; } catch { /* なければルートの距離で */ }
     }
@@ -1780,9 +1785,12 @@ function placeTourMap(dest) {
   if (!full) document.body.classList.remove('drawer-open');
   const box = $('#map-full'), top = $('#tour-top');
   box.innerHTML = '';
+  document.querySelectorAll('body > .tour-drawer').forEach((e) => e.remove()); // 前に描いた分
   top.hidden = !full;
   if (!full) return;
   box.appendChild($('#view .map-wrap'));
+  // 設定のパネルは下のパネルの外へ（中に置くと iPhone では下のパネルの枠の中しか見えない）
+  document.body.appendChild($('#view #tour-drawer'));
   setSheet(null);
   $('#view').insertAdjacentHTML('afterbegin', '<div class="sheet-handle" role="button" tabindex="0" aria-label="パネルの高さを変える（ドラッグか、押して切り替え）"><span></span></div>');
   const rt = tour.route;
@@ -1907,8 +1915,8 @@ function renderTouring() {
         <button type="button" class="btn" id="rt-fuel">⛽24時間ガソリンスタンド</button>
         ${(tour.route.guide || []).length ? `<button type="button" class="btn${dest && dest.loop && dest.road.hw ? ' primary' : ''}" id="rt-jct">🔀分岐（JCT）の案内（${tour.route.guide.length}か所）</button>` : ''}</div>
       ${dest && dest.loop && dest.road.hw ? `<p class="notice">🛣 高速道路のコースです。分岐で迷わないよう「🔀分岐（JCT）の案内」を走る前に確認してください。
-        Google マップには${tour.route.hwPins ? '、下の一般道や反対車線と重ならない高速道路の上の地点' : '高速道路の上の地点'}を経由地として渡します。
-        Google マップで表示された距離が<strong>約${Math.round(tour.route.gmKm || tour.route.km)}km</strong>前後なら同じルートです（大きく違うときは、途中で高速を降りるルートになっています）。</p>${(tour.route.tollSpans || []).length > 1 ? `<p class="notice">⚠ <strong>このルートは途中で一度高速を降りて乗り直します</strong>（コースの向きどうしがうまくつながらないため）。つなげたコースなら「走り方」で外周を選ぶと、降りずに回れることがあります。</p>` : ''}` : ''}
+        Google マップには${tour.route.gVerified ? '、Google マップで経路を開いて途中で高速を降りないことを確かめた地点（調布駅発着で確認）' : tour.route.hwPins ? '、下の一般道や反対車線と重ならない高速道路の上の地点' : '高速道路の上の地点'}を経由地として渡します。
+        Google マップで表示された距離が<strong>約${Math.round((tour.route.gVerified && !store.get('origin') && dest.road.gkm) || tour.route.gmKm || tour.route.km)}km</strong>前後なら同じルートです（大きく違うときは、途中で高速を降りるルートになっています）。</p>${(tour.route.tollSpans || []).length > 1 ? `<p class="notice">⚠ <strong>このルートは途中で一度高速を降りて乗り直します</strong>（コースの向きどうしがうまくつながらないため）。つなげたコースなら「走り方」で外周を選ぶと、降りずに回れることがあります。</p>` : ''}` : ''}
       <div class="actions"><button type="button" class="btn" id="rt-save-map">📥ルート沿いの地図を保存（圏外用）</button></div>
       <p class="status" id="rt-save-msg"></p>
       <div id="rt-out"></div>

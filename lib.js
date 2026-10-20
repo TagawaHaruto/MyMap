@@ -415,10 +415,22 @@ const Lib = (() => {
     const c = e.edge && e.edge.classification;
     return c && c.classification === 'motorway' && c.use === 'road';
   }) && edges.some((e) => angleDiff(e.heading, heading) < 45);
-  // 60m 以内に、同じ向きの一般道のランプ（高速の出入口など）がない。Google マップは経由地をそちらに合わせて、
-  // いったん高速を降りて乗り直すルートにすることがある（例: 大井JCT の横の中環大井南入口）
+  // 60m 以内に、同じ向きのランプ（出入口や JCT の分かれ道）がない。Google マップは経由地をそちらに合わせて、
+  // いったん高速を降りて乗り直す（大井JCT の横の中環大井南入口）・別の路線へ出て U ターンする（江北JCT の川口線）ルートにした
   const rampFree = (edges, heading) => !(edges || []).some((e) => (e.distance || 0) <= 60 && e.edge && e.edge.classification
-    && e.edge.classification.classification !== 'motorway' && e.edge.classification.use === 'ramp' && angleDiff(e.heading, heading) < 40);
+    && e.edge.classification.use === 'ramp' && angleDiff(e.heading, heading) < 40);
+  // 走る距離（along）が最初から最後まで均等になるように k 点を選ぶ（候補が一部に固まっていても、離れた所の候補を落とさない）
+  function spreadAlong(xs, k) {
+    if (xs.length <= k) return xs;
+    const a = Math.min(...xs.map((x) => x.along)), b = Math.max(...xs.map((x) => x.along)), used = new Set();
+    for (let j = 0; j < k; j++) {
+      const t = a + (b - a) * j / Math.max(k - 1, 1);
+      let best = -1;
+      xs.forEach((x, i) => { if (!used.has(i) && (best < 0 || Math.abs(x.along - t) < Math.abs(xs[best].along - t))) best = i; });
+      used.add(best);
+    }
+    return [...used].sort((i, j) => xs[i].along - xs[j].along).map((i) => xs[i]);
+  }
   // 等間隔に近い順に k 点を選ぶ
   function spreadPick(xs, k) {
     if (xs.length <= k) return xs;
@@ -1338,7 +1350,7 @@ const Lib = (() => {
   return { haversineKm, travelMinutes, prefGroup, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
-    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, rampFree, spreadPick, toGpx,
+    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, rampFree, spreadAlong, spreadPick, toGpx,
     geocodeToken, parseGmapsRoute, isShortMapsUrl, routeFromPlaces, refineGenres, TIME_BANDS, timeBandState, roadNightClosed, roadNightView, routeShade,
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,

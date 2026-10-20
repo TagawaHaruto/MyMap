@@ -716,3 +716,12 @@ console.log('lib: ALL PASS');
   assert.strictEqual(Lib.rampFree([mw, ramp(1, 80)], 5), true); // 離れていれば可
   assert.strictEqual(Lib.rampFree([mw], 5), true);
 }
+// 経由地は走る距離で均等に（候補が前半に固まっていても、後半の候補を残す）
+{
+  const xs = [0, 1, 2, 3, 4, 5, 6, 30].map((along) => ({ along }));
+  assert.deepStrictEqual(Lib.spreadAlong(xs, 3).map((x) => x.along), [0, 6, 30]);
+  assert.deepStrictEqual(Lib.spreadAlong(xs.slice(0, 2), 3).map((x) => x.along), [0, 1]);
+}
+// JCT の分かれ道（同じ向きの高速のランプ）の横も避ける（江北JCT の川口線）
+assert.strictEqual(Lib.rampFree([{ heading: 60, distance: 0, edge: { classification: { classification: 'motorway', use: 'road' } } },
+  { heading: 55, distance: 20, edge: { classification: { classification: 'motorway', use: 'ramp' } } }], 60), false);
