@@ -707,3 +707,12 @@ assert.deepStrictEqual(oc.map((p) => [p.lat, p.lon, Math.round(p.heading)]), [[0
 assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.lon + 5 }))], [sqL(0), sqL(5.1)], 'ccw', { lat: 0, lon: -1 }), null); // 重ならないコース
 
 console.log('lib: ALL PASS');
+// 経由地の横に同じ向きの一般道のランプ（出入口）があれば避ける
+{
+  const mw = { heading: 5, distance: 0, edge: { classification: { classification: 'motorway', use: 'road' } } };
+  const ramp = (h, d) => ({ heading: h, distance: d, edge: { classification: { classification: 'primary', use: 'ramp' } } });
+  assert.strictEqual(Lib.rampFree([mw, ramp(1, 42)], 5), false); // 中環大井南入口の横
+  assert.strictEqual(Lib.rampFree([mw, ramp(186, 42)], 5), true); // 反対向きのランプは可
+  assert.strictEqual(Lib.rampFree([mw, ramp(1, 80)], 5), true); // 離れていれば可
+  assert.strictEqual(Lib.rampFree([mw], 5), true);
+}

@@ -415,6 +415,10 @@ const Lib = (() => {
     const c = e.edge && e.edge.classification;
     return c && c.classification === 'motorway' && c.use === 'road';
   }) && edges.some((e) => angleDiff(e.heading, heading) < 45);
+  // 60m 以内に、同じ向きの一般道のランプ（高速の出入口など）がない。Google マップは経由地をそちらに合わせて、
+  // いったん高速を降りて乗り直すルートにすることがある（例: 大井JCT の横の中環大井南入口）
+  const rampFree = (edges, heading) => !(edges || []).some((e) => (e.distance || 0) <= 60 && e.edge && e.edge.classification
+    && e.edge.classification.classification !== 'motorway' && e.edge.classification.use === 'ramp' && angleDiff(e.heading, heading) < 40);
   // 等間隔に近い順に k 点を選ぶ
   function spreadPick(xs, k) {
     if (xs.length <= k) return xs;
@@ -1334,7 +1338,7 @@ const Lib = (() => {
   return { haversineKm, travelMinutes, prefGroup, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
-    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, spreadPick, toGpx,
+    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, rampFree, spreadPick, toGpx,
     geocodeToken, parseGmapsRoute, isShortMapsUrl, routeFromPlaces, refineGenres, TIME_BANDS, timeBandState, roadNightClosed, roadNightView, routeShade,
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,

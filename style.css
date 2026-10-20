@@ -392,3 +392,18 @@ body.tour-full #view .stop .info-btn { min-height: 30px; font-size: 0.75rem; }
 .pin-hi .pin { transform: scale(1.7); box-shadow: 0 0 0 4px var(--key), 0 2px 8px rgb(0 0 0 / 0.4); }
 .chain-mode { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; margin: 0; display: grid; gap: 2px; }
 .chain-mode legend { font-weight: var(--font-weight-700); padding: 0 4px; }
+/* 全画面の地図: ☰ で右から出る設定のパネル（通常の表示では、ふつうに一覧の中に並ぶ） */
+.drawer-head { display: none; }
+body.tour-full #view .tour-drawer { position: fixed; z-index: 3; top: calc(64px + env(safe-area-inset-top)); right: 0; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom));
+  width: min(320px, 88vw); overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 6px 12px 12px; background: var(--bg);
+  border-radius: 14px 0 0 14px; box-shadow: -4px 0 16px rgb(0 0 0 / 0.2); transform: translateX(105%); visibility: hidden; transition: transform 0.18s ease-out, visibility 0.18s; }
+body.tour-full.drawer-open #view .tour-drawer { transform: none; visibility: visible; }
+body.tour-full #view .tour-drawer .drawer-head { display: flex; align-items: center; gap: 6px; }
+body.tour-full #view .tour-drawer .drawer-head strong { flex: 1; }
+body.tour-full #view .tour-drawer > * + * { margin-top: 4px; }
+body.tour-full #view .tour-drawer #tour-opts > summary { display: none; }
+body.tour-full #view .tour-drawer .opts { padding: 0 8px 4px; }
+body.tour-full #view .tour-drawer label.check { min-height: 32px; gap: 8px; font-size: 0.82rem; }
+body.tour-full #view .tour-drawer label.check input { width: 20px; height: 20px; min-height: 0; }
+body.tour-full #view .tour-drawer .chip { min-height: 30px; padding: 0 8px; font-size: 0.75rem; }
+body.tour-full #view .tour-drawer .hint { display: none; }
