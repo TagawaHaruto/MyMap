@@ -43,7 +43,10 @@ const Lib = (() => {
       if (f.prefs.size && s.pref && !f.prefs.has(prefGroup(s.pref))) continue;
       if (f.genres.size && !s.genres.some((g) => f.genres.has(g))) continue;
       if (f.dirs && f.dirs.size && !f.dirs.has(direction(cfg.origin, s))) continue;
-      const minutes = travelMinutes(haversineKm(cfg.origin, s), f.mode, cfg);
+      const km = haversineKm(cfg.origin, s);
+      // 「時間制限なし」は、データを読み込む範囲（起点から poiRadiusKm）まで。全国で使うとき、関東の厳選スポットが遠くの地方の一覧に出ないように
+      if (f.maxMin == null && cfg.poiRadiusKm && km > cfg.poiRadiusKm) continue;
+      const minutes = travelMinutes(km, f.mode, cfg);
       if (f.maxMin != null && minutes > f.maxMin) continue;
       out.push({ ...s, minutes, tier: tierOf(s, f.favs) });
     }

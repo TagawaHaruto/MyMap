@@ -1300,12 +1300,19 @@ document.addEventListener('click', (e) => {
 });
 
 // ---- 今週末のおすすめ ----
+// おすすめの元: ★厳選（関東）。起点から 100km 以内に厳選が少ない地方では、100km 以内の厳選と、
+// 公式サイトか Wikipedia のある観光スポット（OpenStreetMap）から選ぶ（遠くの関東の厳選ばかり勧めないように）
+function recPool() {
+  const near = DATA.spots.filter((s) => Lib.haversineKm(DATA.cfg.origin, s) <= 100);
+  return near.length >= 30 ? DATA.spots : near.concat(DATA.osm.filter((s) => (s.url || s.wp) && Lib.haversineKm(DATA.cfg.origin, s) <= 100));
+}
 function renderRecommend() {
-  const cands = Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set() }, DATA.cfg);
+  const pool = recPool();
+  const cands = Lib.filterSpots(pool, { ...filterState(), genres: new Set() }, DATA.cfg);
   const ctx = { favGenres: state.favGenres, rainy: rainy(), visited: state.visited };
   const rec = Lib.pickRecommendations(cands, ctx, Lib.weekSeed(new Date()));
   // 週末プランは時間帯ごとの天気で屋内・屋外を選ぶので、雨の日モードの絞り込み（屋内だけ）をかけない候補から
-  const planCands = rainy() ? Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set(), rainy: false }, DATA.cfg) : cands;
+  const planCands = rainy() ? Lib.filterSpots(pool, { ...filterState(), genres: new Set(), rainy: false }, DATA.cfg) : cands;
   $('#recommend').innerHTML = weatherPlanHtml(planCands) + rec.map(spotCard).join('') + newDirHtml(rec);
   $('#rec').hidden = !rec.length;
   if (!WPLAN.loaded) loadWeatherPlan();
@@ -1317,7 +1324,7 @@ function newDirHtml(shown) {
   const seed = Lib.weekSeed(new Date());
   const out = [];
   for (const d of Lib.lessVisitedDirs(recs, DATA.cfg.origin, seed)) {
-    const cands = Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set(), dirs: new Set([d.dir]) }, DATA.cfg).filter((s) => !skip.has(s.id));
+    const cands = Lib.filterSpots(recPool(), { ...filterState(), genres: new Set(), dirs: new Set([d.dir]) }, DATA.cfg).filter((s) => !skip.has(s.id));
     const xs = Lib.pickRecommendations(cands, { favGenres: state.favGenres, rainy: rainy(), visited: state.visited }, seed + out.length).slice(0, 2);
     if (!xs.length) continue;
     xs.forEach((s) => skip.add(s.id));
@@ -1578,6 +1585,8 @@ let map = null, markers = new Map();
 if (typeof L !== 'undefined' && L.Canvas) { const redraw = L.Canvas.prototype._redraw; L.Canvas.prototype._redraw = function () { if (this._ctx) redraw.call(this); }; }
 // 同じく、ズームの途中で地図を片づけると、ズームの続きの処理が消えた地図に届いてエラーになる。片づけた後は位置を 0 として扱う
 if (typeof L !== 'undefined' && L.Map) { const pos = L.Map.prototype._getMapPanePos; L.Map.prototype._getMapPanePos = function () { return this._mapPane ? pos.call(this) : L.point(0, 0); }; }
+// ホイールでの拡大縮小は少し遅れて実行されるので、その間に地図を片づけると、消えた地図の表示位置を直そうとしてエラーになる。片づけた後は何もしない
+if (typeof L !== 'undefined' && L.Map) { const rv = L.Map.prototype._resetView; L.Map.prototype._resetView = function (...a) { return this._mapPane ? rv.apply(this, a) : this; }; }
 const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
   cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart, kept: tour.kept.filter((m) => tour.picked.has(m.id)) });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';

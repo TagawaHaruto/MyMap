@@ -331,6 +331,14 @@ Lib.setMainPrefs(['大阪', '京都']);
 assert.strictEqual(Lib.prefGroup('京都'), '京都');
 assert.strictEqual(Lib.prefGroup('東京'), 'その他');
 Lib.setMainPrefs(['東京', '神奈川', '埼玉', '千葉', '山梨']);
+// 時間制限なしでも、起点から poiRadiusKm より遠い所（全国で使うときの、ほかの地方の厳選スポット）は出さない
+{
+  const c = { origin: { lat: 43.07, lon: 141.35 }, speedsKmh: { car: 25 }, poiRadiusKm: 300, trainOverheadMin: 10 };
+  const xs = [{ id: 'sap', lat: 43.0, lon: 141.4, genres: ['play'] }, { id: 'tokyo', lat: 35.65, lon: 139.54, genres: ['play'] }];
+  const f0 = { rainy: false, prefs: new Set(), genres: new Set(), dirs: null, mode: 'car', maxMin: null, favs: new Set() };
+  assert.deepStrictEqual(Lib.filterSpots(xs, f0, c).map((s) => s.id), ['sap']);
+  assert.deepStrictEqual(Lib.filterSpots(xs, f0, { ...c, poiRadiusKm: undefined }).map((s) => s.id).sort(), ['sap', 'tokyo']);
+}
 
 // 関連スポット: 似たもの（同じジャンル・近い順）、周辺（2km 以内・近い順）、飲食（1km 以内）
 const base = { id: 'b', name: '基準', lat: 35.65, lon: 139.55, genres: ['museum'] };

@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import osm_pbf  # noqa: E402
 
 try:
-    import osmium  # noqa: F401
+    import osmium  # noqa: F401  (pyosmium があるかだけ確かめる)
     HAVE_OSMIUM = True
 except ImportError:
     HAVE_OSMIUM = False
