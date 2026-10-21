@@ -1306,14 +1306,19 @@ function recPool() {
   const near = DATA.spots.filter((s) => Lib.haversineKm(DATA.cfg.origin, s) <= 100);
   return near.length >= 30 ? DATA.spots : near.concat(DATA.osm.filter((s) => (s.url || s.wp) && Lib.haversineKm(DATA.cfg.origin, s) <= 100));
 }
+// 「🔄ほかの提案」を押すたびに選び直す（週ごとの種に足す）
+const REC = { shift: 0 };
+const recSeed = () => Lib.weekSeed(new Date()) + REC.shift * 7919;
 function renderRecommend() {
   const pool = recPool();
   const cands = Lib.filterSpots(pool, { ...filterState(), genres: new Set() }, DATA.cfg);
   const ctx = { favGenres: state.favGenres, rainy: rainy(), visited: state.visited };
-  const rec = Lib.pickRecommendations(cands, ctx, Lib.weekSeed(new Date()));
+  const rec = Lib.pickRecommendations(cands, ctx, recSeed(), 4);
   // 週末プランは時間帯ごとの天気で屋内・屋外を選ぶので、雨の日モードの絞り込み（屋内だけ）をかけない候補から
   const planCands = rainy() ? Lib.filterSpots(pool, { ...filterState(), genres: new Set(), rainy: false }, DATA.cfg) : cands;
-  $('#recommend').innerHTML = weatherPlanHtml(planCands) + rec.map(spotCard).join('') + newDirHtml(rec);
+  $('#recommend').innerHTML = `<div class="actions"><button type="button" class="btn" id="rec-more">🔄ほかの提案</button></div>`
+    + weatherPlanHtml(planCands) + rec.map(spotCard).join('') + newDirHtml(rec);
+  $('#rec-more').onclick = () => { buzz(); REC.shift++; renderRecommend(); };
   $('#rec').hidden = !rec.length;
   if (!WPLAN.loaded) loadWeatherPlan();
 }
@@ -1321,7 +1326,7 @@ function renderRecommend() {
 function newDirHtml(shown) {
   const recs = visitedRecords();
   const skip = new Set(shown.map((s) => s.id).concat([...state.visited]));
-  const seed = Lib.weekSeed(new Date());
+  const seed = recSeed();
   const out = [];
   for (const d of Lib.lessVisitedDirs(recs, DATA.cfg.origin, seed)) {
     const cands = Lib.filterSpots(recPool(), { ...filterState(), genres: new Set(), dirs: new Set([d.dir]) }, DATA.cfg).filter((s) => !skip.has(s.id));
@@ -1343,25 +1348,31 @@ async function loadWeatherPlan() {
     const h = (await r.json()).hourly;
     WPLAN.days = Lib.weekend(new Date()).map((key) => {
       const day = new Date(`${key}T00:00:00`), max = (a, b) => Math.max(...h.time.map((t, i) => (t.startsWith(key) && +t.slice(11, 13) >= a && +t.slice(11, 13) < b ? h.precipitation_probability[i] : -1)));
-      return { day, am: max(9, 12), pm: max(12, 17) };
+      return { day, am: max(9, 12), pm: max(12, 17), night: max(17, 22) };
     }).filter((d) => d.am >= 0);
   } catch { WPLAN.days = null; }
   renderRecommend();
 }
+// 週末の時間帯ごとに 3 か所ずつ（晴れは屋外・雨は屋内）。夜は夜景・夜も遊べる所があれば
 function weatherPlanHtml(cands) {
   if (!WPLAN.days || !WPLAN.days.length) return '';
-  const used = new Set(), seed = Lib.weekSeed(new Date());
-  const pick = (wet, k) => {
-    const xs = Lib.pickRecommendations(cands.filter((s) => !used.has(s.id) && (wet ? s.indoor : !s.indoor)),
-      { favGenres: state.favGenres, rainy: wet, visited: state.visited }, seed + k);
-    if (xs[0]) used.add(xs[0].id);
-    return xs[0];
+  const used = new Set(), seed = recSeed();
+  const isNight = (s) => (s.genres || []).includes('nightview') || (s.tags || []).includes('夜も遊べる');
+  const pick = (xs, wet, k) => {
+    const got = Lib.pickRecommendations(xs.filter((s) => !used.has(s.id) && (wet ? s.indoor : true)),
+      { favGenres: state.favGenres, rainy: wet, visited: state.visited }, seed + k, 3);
+    got.forEach((s) => used.add(s.id));
+    return got;
   };
-  const slot = (label, p, k) => { const wet = p >= 50, s = pick(wet, k);
-    return `<li>${label} ${wet ? '☔' : '☀'}${p}% → ${s ? `<a ${gm(s)}>${esc(s.name)}</a>${wet ? '（屋内）' : ''}` : '—'}</li>`; };
+  const slot = (label, p, k, night) => {
+    const wet = p >= 50;
+    const xs = night ? pick(cands.filter(isNight), wet, k) : pick(cands.filter((s) => (wet ? s.indoor : !s.indoor) && !isNight(s)), wet, k);
+    if (night && !xs.length) return '';
+    return `<li>${label} ${wet ? '☔' : '☀'}${p}% → ${xs.length ? xs.map((s) => `<a ${gm(s)}>${esc(s.name)}</a>`).join('／') : '—'}${wet && xs.length ? '（屋内）' : ''}</li>`;
+  };
   return `<div class="wplan"><strong>天気で選んだ週末プラン</strong><ul>${WPLAN.days.map((d, i) => `<li>${d.day.getMonth() + 1}/${d.day.getDate()}（${'日月火水木金土'[d.day.getDay()]}）<ul>
-    ${slot('午前', d.am, i * 2)}${slot('午後', d.pm, i * 2 + 1)}</ul></li>`).join('')}</ul>
-    <details class="help"><summary aria-label="説明を見る">i</summary>降水確率50%以上の時間は屋内のスポットにしています（天気: Open-Meteo）。</details></div>`;
+    ${slot('午前', d.am, i * 3)}${slot('午後', d.pm, i * 3 + 1)}${d.night >= 0 ? slot('夜', d.night, i * 3 + 2, true) : ''}</ul></li>`).join('')}</ul>
+    <details class="help"><summary aria-label="説明を見る">i</summary>時間帯ごとに 3 か所ずつ選んでいます。降水確率50%以上の時間は屋内のスポットです。夜は夜景や夜も遊べる所です（天気: Open-Meteo）。「🔄ほかの提案」で選び直せます。</details></div>`;
 }
 
 // ---- 天気（Open-Meteo, 登録不要） ----
