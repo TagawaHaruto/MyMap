@@ -652,7 +652,8 @@ assert.deepStrictEqual(ppk.parking, { freeParkingLot: true });
 
 // ---- 公式のバイク駐車場 ----
 const om = Lib.officialMoto({ name: '区営A', lat: 35.0012, lon: 139.0, moto: true, moped: true, fee: '100円/時', hours: '24時間', capacity: 20, muni: '中央区', src: '区営二輪車駐車場一覧', srcUrl: 'https://x' });
-assert.deepStrictEqual([om.kind, om.cap, om.official, om.moped], ['公式・自動二輪可', 20, true, false]);
+assert.deepStrictEqual([om.kind, om.cap, om.official, om.moped, om.addr], ['公式・自動二輪可', 20, true, false, '']);
+assert.strictEqual(Lib.officialMoto({ name: 'D', lat: 43, lon: 141, moto: true, addr: '札幌市中央区南1条西2丁目' }).addr, '札幌市中央区南1条西2丁目');
 assert.strictEqual(Lib.officialMoto({ name: 'B', lat: 35, lon: 139, moto: false, moped: true }).kind, '公式・原付のみ');
 assert.strictEqual(Lib.officialMoto({ name: 'C', lat: 35, lon: 139, moto: true, moped: true, ccUnknown: true }).kind, '公式・二輪可（排気量の制限は現地で確認）');
 const mb2 = Lib.mergeBikeSpots({ lat: 35, lon: 139 }, 3, [['OSM', [{ name: 'OSMの同じ所', lat: 35.0012, lon: 139.0 }]], ['公式', [om]]]);
