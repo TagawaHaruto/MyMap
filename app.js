@@ -103,7 +103,8 @@ function renderLoadMsg() {
   const el = $('#load-msg');
   el.hidden = !FAILED.size;
   if (FAILED.size) {
-    el.innerHTML = '一部のデータを読み込めませんでした。電波の良い場所で開き直してください。<button type="button" class="btn" id="reload">再読み込み</button>';
+    el.innerHTML = navigator.onLine === false ? '圏外です。前に読み込んだデータを表示しています（最新の情報は電波のある場所で）。<button type="button" class="btn" id="reload">再読み込み</button>'
+      : '一部のデータを読み込めませんでした。電波の良い場所で開き直してください。<button type="button" class="btn" id="reload">再読み込み</button>';
     $('#reload').onclick = () => location.reload();
   }
 }
@@ -706,7 +707,7 @@ function renderSpotList() {
     `<button type="button" class="chip" id="t-quick" aria-pressed="${state.quickOnly}">☕ちょっとお出かけ</button>`,
     `<button type="button" class="chip" id="t-night" aria-pressed="${state.nightPlay}">🌙夜も遊べる</button>`,
     `<button type="button" class="chip" id="t-season" aria-pressed="${state.seasonOnly}">🌸今が見頃</button>`,
-    `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>`,
+    state.mode !== 'train' ? `<button type="button" class="chip" id="t-iso" aria-pressed="${state.isoOn}">⏱今から行ける（道のりで判定）</button>` : '', // 道のりの判定は車・バイク・自転車だけ
     (state.genres.has('factory') || state.genres.has('experience')) ? `<button type="button" class="chip" id="t-walkin" aria-pressed="${state.walkinOnly}">当日参加OKだけ</button>` : '',
     groups.includes('food') ? `<button type="button" class="chip" id="t-chain" aria-pressed="${state.showChains}">チェーン店も表示</button>` : '',
   ].join('');
@@ -1857,7 +1858,8 @@ function renderTouring() {
   const key = JSON.stringify([tour.destId, tour.custom, tour.roadId, tour.route && tour.route.at, tour.sel, tour.radius, tour.error, tour.busy, DATA.ver,
     !!DATA.touring.length, DATA.roads.length, DATA.courses.length, tour.showCourses, store.get('courseTypes'), store.get('nightRoads'), myRoutes().length, savedChains().length, tourFull(), navigator.onLine, tour.restored, tour.opts]);
   // 変化がなければ作り直さない（地図のズームと位置、スクロール位置を保つ）
-  if (key === tour.key && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
+  // （全画面では地図がパネルの外 #map-full にあるので、#map の有無ではなくパネルの中身で判断する。別のタブから戻ると空のままだった）
+  if (key === tour.key && $('#view #dest') && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
   const stops = getStops();
   const offline = navigator.onLine === false;
@@ -2896,7 +2898,7 @@ document.querySelector('.tabs').onclick = (e) => {
 };
 function renderAll() {
   document.body.dataset.tab = state.tab;
-  if (state.tab !== 'touring') { document.body.classList.remove('tour-full', 'drawer-open'); $('#tour-top').hidden = true; }
+  if (state.tab !== 'touring') { document.body.classList.remove('tour-full', 'drawer-open'); $('#tour-top').hidden = true; document.querySelectorAll('body > .tour-drawer').forEach((e) => e.remove()); }
   renderFilters(); renderWeather(); renderRecommend(); renderLoadMsg();
   document.querySelectorAll('.tabs [data-tab]').forEach((b) => b.setAttribute('aria-selected', b.dataset.tab === state.tab));
   if (state.tab !== 'spots' && $('#spot-list')) $('#view').innerHTML = ''; // 一覧は スポット タブ専用（検索欄は CSS で隠す）
