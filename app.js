@@ -2580,7 +2580,8 @@ function renderChainBox() {
     el.querySelectorAll('[data-sc-del]').forEach((b) => { b.onclick = () => {
       buzz(); const c = savedChains()[+b.dataset.scDel];
       if (!confirm(`「${c.name}」を削除しますか？`)) return;
-      store.set('savedChains', savedChains().filter((x) => x !== c)); renderChainBox();
+      store.set('savedChains', savedChains().filter((x) => x.id !== c.id)); // 読むたびに別のオブジェクトになるので id で比べる（消えなかった）
+      refreshDestOptions(); renderChainBox();
     }; });
   };
   if (!d.length) { el.innerHTML = savedHtml; bindSaved(); return; }
@@ -2602,7 +2603,7 @@ function renderChainBox() {
     buzz();
     const id = chainId(), name = $('#chain-name').value.trim() || roadById(id).name;
     store.set('savedChains', [...savedChains().filter((c) => c.id !== id), { id, name }]);
-    renderChainBox();
+    refreshDestOptions(); renderChainBox();
     const m = $('#chain-msg'); if (m) m.textContent = `「${name}」を保存しました。上の「目的地」からも選べます。`;
   };
   const move = (i, j) => { const x = chainDraft(); [x[i], x[j]] = [x[j], x[i]]; store.set('chainDraft', x); renderChainBox(); };
@@ -2612,6 +2613,15 @@ function renderChainBox() {
   $('#chain-clear').onclick = () => { buzz(); store.set('chainDraft', []); renderChainBox(); };
   el.querySelectorAll('[name="chain-mode"]').forEach((r) => { r.onchange = () => { store.set('chainMode', r.value); }; });
   $('#chain-go').onclick = () => { buzz(); setDest(() => { tour.custom = null; tour.roadId = chainId(); tour.destId = null; }); };
+}
+// 「目的地」の選択肢の「保存したつなぎコース」を今の保存内容に合わせる（パネル全体は作り直さない）
+function refreshDestOptions() {
+  const sel = $('#dest'); if (!sel) return;
+  let og = [...sel.querySelectorAll('optgroup')].find((g) => g.label === '保存したつなぎコース');
+  const saved = savedChains();
+  if (!saved.length) { if (og) og.remove(); return; }
+  if (!og) { og = document.createElement('optgroup'); og.label = '保存したつなぎコース'; const after = [...sel.querySelectorAll('optgroup')].find((g) => g.label === '登録したルート'); sel.insertBefore(og, after || null); }
+  og.innerHTML = saved.map((c) => `<option value="road:${esc(c.id)}" ${c.id === tour.roadId ? 'selected' : ''}>🔗${esc(c.name)}</option>`).join('');
 }
 // 押したコースの説明は地図の下に出す（吹き出しだと小さい画面で地図が隠れるため）。選んだ線は太くして前に
 let courseSel = null;
