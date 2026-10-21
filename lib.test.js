@@ -523,6 +523,11 @@ assert.deepStrictEqual(Lib.notInLocal(ops, [{ name: '麺屋テスト', lat: 35.6
 assert.deepStrictEqual(Lib.nearQuery('近くの飲食店'), { word: '飲食店' });
 assert.deepStrictEqual(Lib.nearQuery('周辺のカフェ'), { word: 'カフェ' });
 assert.deepStrictEqual(Lib.nearQuery('温泉 近く'), { word: '温泉' });
+// 駐車場を探す言葉だけなら、近くの駐車場（名前に「駐車場」を含むスポットを探さない）
+assert.deepStrictEqual(Lib.nearQuery('駐車場'), { word: '駐車場' });
+assert.deepStrictEqual(Lib.nearQuery('バイク 駐車場'), { word: 'バイク駐車場' });
+assert.deepStrictEqual(Lib.nearQuery('駐輪場'), { word: '駐輪場' });
+assert.strictEqual(Lib.nearQuery('深大寺 駐車場'), null);
 assert.deepStrictEqual(Lib.nearQuery('駅の近く'), { word: '駅' });
 assert.strictEqual(Lib.nearQuery('深大寺'), null);
 assert.strictEqual(Lib.nearQuery('近くの'), null);
