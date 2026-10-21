@@ -114,7 +114,7 @@
 - `data/route_issues.json`：全コースを起点からルート検索して確かめた結果（2026年10月19日）。コースの中で往復・Uターンが残るコースは注意を表示し、ルートが引けない自動収集のコースは地図に出さない
 - `data/jct.json`：分岐の案内に付ける JCT の名前と位置（OpenStreetMap。関東の分。全国の分は `data/area/jct/` に自動で作る）。`data/scenic_roads.json` の `hw` は高速道路のコースの案内用の点（高速道路の上・JCT から離れた所）
 - `data/prefectures.json`：関東周辺の 10 都県の境界（OpenStreetMap を簡略化したもの）。都道府県の判定方法（約 1km の升目に塗り分けて引く）を厳選スポットで確かめるテストだけに使う。収集では全国の境界を毎回 OpenStreetMap から作る。
-- バイク駐車場の公式データ：東京都内の区市（中央区・品川区・八王子市・調布市・町田市・杉並区など 20 区市）のオープンデータ（CC BY 4.0。`data/moto_official.json`、各件に出典）
+- バイク駐車場の公式データ：全国の自治体のオープンデータ（東京都内 20 区市・札幌市・仙台市・新潟市・金沢市・浜松市・大阪市・堺市・広島市・長崎市・熊本市・大分市など 66 団体、1,467件。CC BY 4.0 / CC BY 2.1 JP / 公共データ利用規約 第1.0版。`data/moto_official.json`、各件に出典。作り方とデータセットの一覧は `tools/moto_official/NOTES.md`）。番地のない住所から位置を補った所は、実際の場所から数百 m ずれることがあります
 - 駐車場の一部：Foursquare OS Places（© Foursquare Labs, Inc.・Apache-2.0・2025年2月版。`data/park_fsq.json` は名前と位置だけに加工。`licenses/` に NOTICE と Apache License）
 - 出典：地図・スポットの一部 © OpenStreetMap contributors（ODbL）／ルート Valhalla (FOSSGIS)・OSRM／天気 Open-Meteo／ネットの施設検索 OpenPOI API（https://openpoiapi.com/attribution.html）／住所・目的地の検索 国土地理院（`data/muni.json` は市区町村コード表）／説明・写真 Wikipedia・Wikimedia Commons（各ページのライセンス）。
 - 移動時間は直線距離からの概算です。ずれる場合は `config.json` の `speedsKmh` を調整してください。
