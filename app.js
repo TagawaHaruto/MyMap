@@ -983,9 +983,9 @@ function pinIcon(s, opts = {}) {
   return ICONS.get(key);
 }
 
-// ---- 候補を地図で見る（一覧・検索結果の上位 2,000 件。★厳選・⭐は大きい点） ----
+// ---- 候補を地図で見る（一覧・検索結果の全件。近いピンは数字の丸にまとめ、寄ると分かれる） ----
 let spotMap = null;
-const SPOT_MAP_MAX = 2000;
+const SPOT_MAP_MAX = 60000; // グルメなども含めた「すべて」でも全部入る数
 const mapToggle = () => `<div class="actions"><button type="button" class="btn" id="t-map">${state.spotMap ? '☰ 一覧で見る' : '🗺 地図で見る'}</button></div>`;
 function bindMapToggle(list) {
   const t = $('#t-map'); if (t) t.onclick = () => { buzz(); state.spotMap = !state.spotMap; renderSpotList(); };
@@ -1000,21 +1000,32 @@ function bindMapToggle(list) {
   const shown = list.slice(0, SPOT_MAP_MAX);
   const mk = (s) => L.marker([s.lat, s.lon], { icon: pinIcon(s), title: s.name, riseOnHover: true })
     .bindPopup(() => spotPopup(s), { maxWidth: 260 }).on('popupopen', (e) => fillAddr(e.popup.getElement()));
-  // 引いた地図では★厳選と⭐お気に入りだけ（全部出すと重なって読めない）。ズーム12以上で、見えている範囲の全部を出す
-  const top = shown.filter((s) => isCurated(s) || state.favs.has(s.id)), topLayer = L.layerGroup(top.map(mk)).addTo(spotMap);
-  const rest = shown.filter((s) => !isCurated(s) && !state.favs.has(s.id)), restLayer = L.layerGroup().addTo(spotMap);
+  const top = shown.filter((s) => isCurated(s) || state.favs.has(s.id));
   const note = L.control({ position: 'bottomleft' });
-  note.onAdd = () => { const d = L.DomUtil.create('div', 'map-note'); d.textContent = `★厳選・⭐のみ表示（寄るとほか${rest.length.toLocaleString()}件も）`; return d; };
-  const refresh = () => {
-    restLayer.clearLayers();
-    if (spotMap.getZoom() < 12) { if (rest.length) note.addTo(spotMap); return; }
-    note.remove();
-    const b = spotMap.getBounds().pad(0.2);
-    rest.filter((s) => b.contains([s.lat, s.lon])).slice(0, 400).forEach((s) => restLayer.addLayer(mk(s)));
-  };
-  spotMap.on('moveend zoomend', refresh);
+  if (L.markerClusterGroup) {
+    // 全件を出す。近いピンは数字の丸にまとめ（押すと寄る）、ズーム16からは全部ばらして出す。重なった所は押すと広がる
+    const cluster = L.markerClusterGroup({ chunkedLoading: true, maxClusterRadius: 45, disableClusteringAtZoom: 16, spiderfyOnMaxZoom: true, showCoverageOnHover: false,
+      iconCreateFunction: (c) => { const n = c.getChildCount(); return L.divIcon({ className: '', iconSize: [40, 40], html: `<span class="cluster${n >= 100 ? ' big' : ''}">${n >= 1000 ? Math.round(n / 100) / 10 + '千' : n}</span>` }); } });
+    cluster.addLayers(shown.map(mk));
+    spotMap.addLayer(cluster);
+    note.onAdd = () => { const d = L.DomUtil.create('div', 'map-note'); d.textContent = `${shown.length.toLocaleString()}件すべて表示（数字の丸を押すと寄ります）`; return d; };
+    note.addTo(spotMap);
+  } else {
+    // まとめる部品が読めないとき（初めての圏外など）: 引いた地図では★厳選と⭐だけ、ズーム12以上で見えている範囲の全部
+    L.layerGroup(top.map(mk)).addTo(spotMap);
+    const rest = shown.filter((s) => !isCurated(s) && !state.favs.has(s.id)), restLayer = L.layerGroup().addTo(spotMap);
+    note.onAdd = () => { const d = L.DomUtil.create('div', 'map-note'); d.textContent = `★厳選・⭐のみ表示（寄るとほか${rest.length.toLocaleString()}件も）`; return d; };
+    const refresh = () => {
+      restLayer.clearLayers();
+      if (spotMap.getZoom() < 12) { if (rest.length) note.addTo(spotMap); return; }
+      note.remove();
+      const b = spotMap.getBounds().pad(0.2);
+      rest.filter((s) => b.contains([s.lat, s.lon])).slice(0, 400).forEach((s) => restLayer.addLayer(mk(s)));
+    };
+    spotMap.on('moveend zoomend', refresh);
+    refresh();
+  }
   if (shown.length) spotMap.fitBounds(L.latLngBounds((top.length ? top : shown).map((s) => [s.lat, s.lon])).pad(0.05), { maxZoom: 14 });
-  refresh();
 }
 function spotPopup(s) {
   return `<div class="pop"><strong>${isCurated(s) ? '★ ' : ''}${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}</strong>
@@ -1499,6 +1510,8 @@ Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour
 let map = null, markers = new Map();
 // 地図を作り直した直後、片づけたキャンバスへ Leaflet の描画が 1 回届いてエラーになる（Leaflet 1.9 の既知の癖）。キャンバスが無ければ描かない
 if (typeof L !== 'undefined' && L.Canvas) { const redraw = L.Canvas.prototype._redraw; L.Canvas.prototype._redraw = function () { if (this._ctx) redraw.call(this); }; }
+// 同じく、ズームの途中で地図を片づけると、ズームの続きの処理が消えた地図に届いてエラーになる。片づけた後は位置を 0 として扱う
+if (typeof L !== 'undefined' && L.Map) { const pos = L.Map.prototype._getMapPanePos; L.Map.prototype._getMapPanePos = function () { return this._mapPane ? pos.call(this) : L.point(0, 0); }; }
 const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
   cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';

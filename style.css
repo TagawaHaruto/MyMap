@@ -426,3 +426,7 @@ body.tour-full #view .help[open] { font-size: 0.78rem; }
 .map-note { background: var(--bg); color: var(--fg-sub); font-size: var(--font-size-14); padding: 2px 8px; border-radius: 6px; border: 1px solid var(--line); }
 .row .help { margin-left: 4px; }
 label[for="dest"] { display: inline; }
+/* スポットの地図: 近いピンをまとめた数字の丸 */
+.cluster { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--key); color: #fff; font: 700 13px/1 var(--font-family-sans);
+  border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.35); }
+.cluster.big { width: 46px; height: 46px; margin: -3px; font-size: 14px; }
