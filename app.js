@@ -739,7 +739,7 @@ function renderSpotList() {
   $('#t-night').onclick = () => { buzz(); state.nightPlay = !state.nightPlay; asCategory(state.nightPlay); state.limit = 300; renderSpotList(); };
   $('#t-park').onclick = () => { buzz(); state.parkOnly = !state.parkOnly; state.limit = 300; renderSpotList(); };
   $('#t-open').onclick = () => { buzz(); state.openOnly = !state.openOnly; state.limit = 300; renderSpotList(); };
-  $('#t-iso').onclick = () => { buzz(); state.isoOn = !state.isoOn; state.limit = 300; renderSpotList(); };
+  const ti = $('#t-iso'); if (ti) ti.onclick = () => { buzz(); state.isoOn = !state.isoOn; state.limit = 300; renderSpotList(); }; // 電車では出さない
   $('#t-season').onclick = () => { buzz(); state.seasonOnly = !state.seasonOnly; state.limit = 300; renderSpotList(); };
   box.querySelectorAll('[data-foodcat]').forEach((b) => { b.onclick = () => {
     buzz(); state.foodCat = state.foodCat === b.dataset.foodcat ? '' : b.dataset.foodcat; state.limit = 300; renderSpotList();
