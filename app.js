@@ -2949,6 +2949,7 @@ window.addEventListener('offline', () => renderAll());
 
 // ---- 設定 ----
 function renderSettings() {
+  if (!DATA.cfg) return;
   setCount(null);
   const prevToken = $('#token'), typed = prevToken ? prevToken.value : '', focused = document.activeElement === prevToken;
   $('#view').innerHTML = `<h2>表示</h2>
@@ -3166,6 +3167,7 @@ document.querySelector('.tabs').onclick = (e) => {
   buzz(); goTab(b.dataset.tab);
 };
 function renderAll() {
+  if (!DATA.cfg) return; // config.json を読めなかった（圏外で開いた）ときは、その案内を出したままにする
   document.body.dataset.tab = state.tab;
   if (state.tab !== 'touring') {
     document.body.classList.remove('tour-full', 'drawer-open'); $('#tour-top').hidden = true; document.querySelectorAll('body > .tour-drawer').forEach((e) => e.remove());
