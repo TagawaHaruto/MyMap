@@ -334,7 +334,7 @@ function spotCard(s) {
   return `<article class="card spot">
     <div class="spot-head"><h3>${isCurated(s) ? '<span title="厳選スポット">★</span> ' : ''}${icons} ${esc(s.name)}</h3>
       <div class="head-btns">${infoButton(s)}${s.poi ? '' : `<button type="button" class="icon fav" data-fav="${esc(s.id)}" aria-pressed="${state.favs.has(s.id)}" aria-label="お気に入り">⭐</button>`}</div></div>
-    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${'walkin' in s ? (s.walkin ? '・<strong>当日参加OK</strong>' : '・要予約') : ''}${openBadge(s)}${seasonBadge(s)}</p>
+    <p class="meta">${s.indoor ? '<span class="badge rain">☔雨OK</span> ' : ''}${icon(MODES[state.mode])}<strong>${fmtMin(s.minutes)}</strong>${s.fee ? '・' + esc(s.fee) : ''}${park ? '・' + park : ''}${state.visited.has(s.id) ? '・✓行った' : ''}${s.walkin === true ? '・<strong>当日参加OK</strong>' : s.walkin === false ? '・要予約' : ''}${openBadge(s)}${seasonBadge(s)}</p>
     ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}
     <div class="info" hidden></div></article>`;
 }
@@ -1095,7 +1095,7 @@ function bindMapToggle(list) {
 function spotPopup(s) {
   INFO_ITEMS.set(s.id, s); // 「ここを目的地にする」で使う
   return `<div class="pop"><strong>${isCurated(s) ? '★ ' : ''}${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}</strong>
-    <p class="meta">${icon(MODES[state.mode])}${fmtMin(s.minutes)}${s.indoor ? '・☔雨OK' : ''}${'walkin' in s ? (s.walkin ? '・当日参加OK' : '・要予約') : ''}</p>
+    <p class="meta">${icon(MODES[state.mode])}${fmtMin(s.minutes)}${s.indoor ? '・☔雨OK' : ''}${s.walkin === true ? '・当日参加OK' : s.walkin === false ? '・要予約' : ''}</p>
     ${s.note ? `<p>${esc(s.note)}</p>` : ''}
     <div class="actions"><a class="btn" ${gm(s, 'dir')}>経路</a><a class="btn" ${gm(s)}>写真・口コミ</a></div>
     <button type="button" class="btn primary" data-spot-dest="${esc(s.id)}">🏍ここを目的地にする</button></div>`;
