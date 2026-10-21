@@ -430,7 +430,3 @@ label[for="dest"] { display: inline; }
 .cluster { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--key); color: #fff; font: 700 13px/1 var(--font-family-sans);
   border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.35); }
 .cluster.big { width: 46px; height: 46px; margin: -3px; font-size: 14px; }
-/* ルート沿いのごはん屋さん: 1 件を 2 行に収め、「＋寄る」は右に置く（縦に長くしない） */
-.rel li.meal { display: flex; align-items: center; gap: 8px; }
-.rel li.meal > div { flex: 1; min-width: 0; }
-.rel li.meal .btn { flex: none; min-height: 36px; padding: 0 10px; }
