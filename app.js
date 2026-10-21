@@ -123,7 +123,7 @@ function setOutdoor(on, save = true) {
   $('#outdoor').setAttribute('aria-pressed', on);
   const cb = $('#set-outdoor'); if (cb) cb.checked = on;
   if (save) store.set('outdoor', on);
-  if (map) setTimeout(() => map.invalidateSize(), 0);
+  if (map) setTimeout(() => { if (map && map.getContainer().isConnected) map.invalidateSize(); }, 0); // 別のタブへ移って地図が消えた後は触らない
 }
 $('#outdoor').onclick = () => { buzz(); setOutdoor(!document.documentElement.hasAttribute('data-outdoor')); };
 
@@ -2922,7 +2922,11 @@ document.querySelector('.tabs').onclick = (e) => {
 };
 function renderAll() {
   document.body.dataset.tab = state.tab;
-  if (state.tab !== 'touring') { document.body.classList.remove('tour-full', 'drawer-open'); $('#tour-top').hidden = true; document.querySelectorAll('body > .tour-drawer').forEach((e) => e.remove()); }
+  if (state.tab !== 'touring') {
+    document.body.classList.remove('tour-full', 'drawer-open'); $('#tour-top').hidden = true; document.querySelectorAll('body > .tour-drawer').forEach((e) => e.remove());
+    // 通常の表示では地図がパネルの中にあり、下で消える。地図のオブジェクトだけ残ると、あとで動かしたときにエラーになる
+    if (map && $('#view #map')) { try { map.remove(); } catch { /* 既に消えている */ } map = null; }
+  }
   renderFilters(); renderWeather(); renderRecommend(); renderLoadMsg();
   document.querySelectorAll('.tabs [data-tab]').forEach((b) => b.setAttribute('aria-selected', b.dataset.tab === state.tab));
   if (state.tab !== 'spots' && $('#spot-list')) $('#view').innerHTML = ''; // 一覧は スポット タブ専用（検索欄は CSS で隠す）
