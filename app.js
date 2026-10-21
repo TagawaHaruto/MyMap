@@ -204,7 +204,7 @@ document.addEventListener('click', (e) => {
 // （全国分を一度に読むと重いため。起点を変えたら読み直す。まだ全国の収集をしていないときは、関東だけの頃の 1 ファイルを読む）
 const AREA_LEGACY = { pois: 'data/pois.json', spots: 'data/osm_spots.json', roads: 'data/roads_osm.json', moto: 'data/moto.json' };
 let areaIndexP = null;
-async function loadArea(kind) {
+async function loadArea(kind, center = DATA.cfg.origin, km = DATA.cfg.poiRadiusKm) {
   if (!areaIndexP) {
     areaIndexP = fetch('data/area/index.json', { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : r.status === 404 ? null : Promise.reject(new Error(`HTTP ${r.status}`))))
@@ -214,7 +214,7 @@ async function loadArea(kind) {
   try { index = await areaIndexP; FAILED.delete('data/area/index.json'); } catch { FAILED.add('data/area/index.json'); renderLoadMsg(); return []; }
   if (!index) { if (!AREA_LEGACY[kind]) return []; const xs = await getJSON(AREA_LEGACY[kind], []); FAILED.delete(AREA_LEGACY[kind]); return xs; }
   const have = index[kind] || {};
-  const cids = Lib.cellsInRadius(DATA.cfg.origin, DATA.cfg.poiRadiusKm, 1).filter((c) => have[c]);
+  const cids = Lib.cellsInRadius(center, km, 1).filter((c) => have[c]);
   return (await Promise.all(cids.map((c) => getJSON(`data/area/${kind}/${c}.json`, [])))).flat();
 }
 const setRoads = (ro) => {
@@ -223,29 +223,35 @@ const setRoads = (ro) => {
 };
 // 絞り込みの都道府県: 起点から 150km 以内に多いものを上から 5 つ（全国どこでも、近くの都道府県で絞り込めるように）
 const DEFAULT_PREFS = ['東京', '神奈川', '埼玉', '千葉', '山梨'];
+const setPrefs = (main) => { Lib.setMainPrefs(main); PREFS = main.concat('その他'); };
+const originKey = (o) => `${o.lat},${o.lon}`;
 function updateMainPrefs() {
-  if (!store.get('origin')) {
-    Lib.setMainPrefs(DEFAULT_PREFS); PREFS = DEFAULT_PREFS.concat('その他');
-    return;
+  const o = store.get('origin');
+  if (!o) setPrefs(DEFAULT_PREFS);
+  else {
+    const n = {};
+    for (const s of DATA.spots.concat(DATA.osm)) {
+      if (s.pref && s.pref !== 'その他' && Lib.haversineKm(DATA.cfg.origin, s) <= 150) n[s.pref] = (n[s.pref] || 0) + 1;
+    }
+    const main = Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([p]) => p);
+    // 覚えておき、次に開いたときは読み込みの前から同じチップにする（init）
+    if (main.length) { setPrefs(main); store.set('mainPrefs', { at: originKey(o), list: main }); }
   }
-  const n = {};
-  for (const s of DATA.spots.concat(DATA.osm)) {
-    if (s.pref && s.pref !== 'その他' && Lib.haversineKm(DATA.cfg.origin, s) <= 150) n[s.pref] = (n[s.pref] || 0) + 1;
-  }
-  const main = Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([p]) => p);
-  if (!main.length) return;
-  Lib.setMainPrefs(main);
-  PREFS = main.concat('その他');
+  // 今のチップにない都道府県の絞り込みは外す（残すと、見えないチップで絞り込まれたまま一覧が空になる）
+  const n0 = state.prefs.size;
   for (const p of [...state.prefs]) if (!PREFS.includes(p)) state.prefs.delete(p);
+  if (state.prefs.size !== n0) saveFilters();
 }
 // 起点を変えたとき・データを更新したとき: 地方ごとのデータを読み直す
 let areaSeq = 0;
-async function reloadArea() {
+async function reloadArea(keepOnFail = false) {
   const seq = ++areaSeq;
   const [pois, osm, ro] = await Promise.all([loadArea('pois'), loadArea('spots'), loadArea('roads')]);
   if (seq !== areaSeq) return; // 読み込む間に起点をもう一度変えたときは、後の分だけ使う
+  // データの更新で読み直すときは、一時的な通信の失敗で今のデータを欠けたものに置き換えない（読み込みの失敗の案内は出る）
+  if (keepOnFail && [...FAILED].some((u) => u.startsWith('data/area/'))) { DATA.osmLoaded = true; return; }
   DATA.pois = pois; DATA.osm = osm; osm.forEach(Lib.refineGenres); setRoads(ro);
-  MOTO = null; JCTS = null; updateMainPrefs();
+  JCTS = null; updateMainPrefs();
   DATA.osmLoaded = true; DATA.ver++; tour.stops = null; // 起動時の読み込みの途中で呼ばれたときは、起動時の側は使わずに終わるため、ここで読み終わりにする
 }
 
@@ -599,19 +605,17 @@ function parkRow(x, bike) {
   return `<li>${x.official ? '<span class="badge open">公式</span> ' : ''}${x.own ? '<span class="badge open">この施設の駐車場（名前が一致）</span> ' : ''}${x.likely ? '<span class="badge closed">たいてい止められる</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
     <span class="status">${distTxt(x.distKm)}${info ? '・' + esc(info) : ''}${x.oh ? '・' + esc(Lib.ohText(x.oh)) : ''}${openBadge(x)}${x.srcName ? `・出典：${x.srcUrl ? `<a href="${esc(x.srcUrl)}" target="_blank" rel="noopener">${esc(x.srcName)}</a>` : esc(x.srcName)}` : ''}</span></li>`;
 }
-// 前もって集めたバイクを止められる場所（data/moto.json）。初めて使うときに 1 回だけ読む
+// 前もって集めたバイクを止められる場所。公式データ（全国 1 ファイル）は初めて使うときに 1 回だけ、
+// 自動収集の分（data/area/moto）は調べる地点のまわりの升目を読む（起点から遠い旅先で探しても出るように）
 let MOTO = null;
-async function motoData() {
-  if (!MOTO) {
-    const seq = areaSeq;
-    const [osm, official] = await Promise.all([loadArea('moto'), getJSON('data/moto_official.json', [])]);
-    FAILED.delete('data/moto_official.json');
-    const all = official.map(Lib.officialMoto).concat(osm.map((x) => ({ ...x, kind: x.type })));
-    if (seq !== areaSeq) return all; // 起点を変えた後なら覚えない（次に呼ばれたときに新しい地方で読み直す）
-    MOTO = all;
-  }
-  return MOTO;
+async function motoData(p) {
+  const [osm, official] = await Promise.all([loadArea('moto', p, BIKE_KM),
+    MOTO || getJSON('data/moto_official.json', []).then((xs) => { FAILED.delete('data/moto_official.json'); return (MOTO = xs.map(Lib.officialMoto)); })]);
+  return official.concat(osm.map((x) => ({ ...x, kind: x.type })));
 }
+// 道の駅（立ち寄り候補のデータ）。起点から読み込んだ範囲の外なら、その地点のまわりを読む
+const michiNear = async (p) => (Lib.haversineKm(DATA.cfg.origin, p) + BIKE_KM <= DATA.cfg.poiRadiusKm ? DATA.pois : await loadArea('pois', p, BIKE_KM))
+  .filter((x) => x.kind === 'michinoeki').map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, type: '道の駅', likely: true }));
 // OpenPOI で名前に「バイク」「二輪」などを含む駐車場（2km 以内）
 async function openPoiBike(p) {
   if (navigator.onLine === false) return [];
@@ -653,13 +657,12 @@ async function renderParking(el, s, only) {
   el.innerHTML = `${title}<p class="hint">探しています…</p>`;
   const gmLinks = `<div class="actions"><a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('バイク 駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップでバイク駐車場</a>
     <a class="btn" href="${esc(`https://www.google.com/maps/search/${encodeURIComponent('駐車場')}/@${s.lat},${s.lon},16z`)}" target="_blank" rel="noopener">Googleマップで駐車場</a></div>`;
-  const michi = DATA.pois.filter((x) => x.kind === 'michinoeki').map((x) => ({ name: x.name, lat: x.lat, lon: x.lon, type: '道の駅', likely: true }));
   const shown = { car: PARK_SHOW, bike: PARK_SHOW, maybe: 8 };
   let live = null, liveState = 'loading', got = null;
   // 前もって集めた分・OpenPOI はすぐ出し、その場の検索（OpenStreetMap）は届いたら足す
   const draw = () => {
     if (!el.isConnected || !got) return;
-    const [moto, opBike, localCar, opCar] = got;
+    const [moto, opBike, localCar, opCar, michi] = got;
     const car = Lib.dedupeNear(Lib.markOwn(localCar.concat(live ? live.car : [], opCar).filter((x) => Lib.haversineKm(s, x) <= CAR_KM), s))
       .sort((a, b) => (b.own - a.own) || a.distKm - b.distKm);
     const bike = Lib.mergeBikeSpots(s, BIKE_KM, [['OSM', moto], ['live', live ? live.bike : []],
@@ -688,8 +691,8 @@ async function renderParking(el, s, only) {
     gp ? `Google マップ：${gp.text}` : ''].filter(Boolean);
   const sureHtml = `<p class="status"><strong>この施設の駐車場：</strong>${sure.length ? esc(sure.join('／')) : '確かな情報がありません'}${!store.get('gkey') ? '（設定タブで Google の API キーを入れると、Google マップの駐車場情報も出せます）' : ''}</p>`;
   const [localCar] = await Promise.all([parkNear(s, Math.max(CAR_KM, 1.2))]);
-  const [moto, opBike, opCar] = await Promise.all([motoData(), openPoiBike(s), openPoiCar(s)]);
-  got = [moto, opBike, localCar, opCar];
+  const [moto, opBike, opCar, michi] = await Promise.all([motoData(s), openPoiBike(s), openPoiCar(s), michiNear(s)]);
+  got = [moto, opBike, localCar, opCar, michi];
   draw();
   try { live = await fetchParking(s); liveState = 'done'; } catch { liveState = 'failed'; }
   draw();
@@ -1416,7 +1419,8 @@ async function loadWeather() {
     if (DATA.cfg.origin !== o) return;
     // 同じ週末・同じ起点の予報を前に取れていれば、それを「前回取得」として出す
     const w = store.get('weather');
-    if (w && w.sat === sat && (!w.at || w.at === at)) { state.weatherRainy = w.rainy; btn.dataset.text = `${w.text}（前回取得）`; } else btn.dataset.text = '天気を取得できません';
+    // 起点を覚える前の保存分（at なし）は既定の起点（調布）のもの
+    if (w && w.sat === sat && (w.at ? w.at === at : !store.get('origin'))) { state.weatherRainy = w.rainy; btn.dataset.text = `${w.text}（前回取得）`; } else btn.dataset.text = '天気を取得できません';
   }
   renderAll();
 }
@@ -1552,7 +1556,7 @@ async function reloadData(st) {
   DATA.status = st;
   DATA.events = await getJSON('data/events.json', DATA.events);
   areaIndexP = null; // 地方ごとのデータの目録も読み直す
-  await reloadArea();
+  await reloadArea(true);
   cellIndex = await getJSON('data/cells/index.json', cellIndex);
   CELL_DATA.clear(); MOTO = null; PARK.clear();
   DATA.ver++; tour.stops = null;
@@ -3016,15 +3020,19 @@ function renderSettings() {
   // 駅名・地名で探して起点にする（国土地理院の地名検索）
   $('#origin-form').onsubmit = async (e) => {
     e.preventDefault();
-    const q = $('#origin-q').value.trim(), box = $('#origin-results'); if (!q) return;
-    box.innerHTML = '<p class="hint">探しています…</p>';
+    const q = $('#origin-q').value.trim(); if (!q) return;
+    $('#origin-results').innerHTML = '<p class="hint">探しています…</p>';
+    let box = null;
+    // 検索の間に設定タブが作り直される（起点を変えたあとの読み込みが終わったときなど）ので、書き込む先は検索のあとで取り直す
+    const target = () => { box = $('#origin-results'); if (box && !$('#origin-q').value) $('#origin-q').value = q; return box; };
     try {
       const r = await fetch(Lib.gsiSearchUrl(q), { signal: timeoutSignal(8000) });
       const xs = r.ok ? Lib.parseGsi(await r.json(), 6) : [];
+      if (!target()) return; // 設定タブを離れた
       box.innerHTML = xs.length ? `<div class="actions">${xs.map((x, i) => `<button type="button" class="btn" data-origin-pick="${i}">${esc(x.name)}</button>`).join('')}</div>`
         : '<p class="hint">見つかりませんでした。別の書き方（例：「〇〇駅」「〇〇市」）でも試してください。</p>';
       box.querySelectorAll('[data-origin-pick]').forEach((b) => { b.onclick = () => setOrigin(xs[+b.dataset.originPick]); });
-    } catch { box.innerHTML = '<p class="hint">検索できませんでした（圏外の可能性があります）。</p>'; }
+    } catch { if (target()) box.innerHTML = '<p class="hint">検索できませんでした（圏外の可能性があります）。</p>'; }
   };
   $('#fav-share').onclick = () => {
     const url = `${location.origin}${location.pathname}#favs=${encodeURIComponent([...state.favs].join(','))}`;
@@ -3217,7 +3225,11 @@ async function init() {
     }
     history.replaceState(null, '', location.pathname);
   }
-  if (store.get('origin')) DATA.cfg.origin = store.get('origin');
+  if (store.get('origin')) {
+    DATA.cfg.origin = store.get('origin');
+    const mp = store.get('mainPrefs');
+    if (mp && mp.at === originKey(DATA.cfg.origin)) setPrefs(mp.list);
+  }
   // 先にスポットを出し、イベントなどは後から読み込む
   [DATA.spots, DATA.touring, DATA.status, DATA.roads, DATA.sx] = await Promise.all([
     getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
