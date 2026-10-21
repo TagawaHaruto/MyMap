@@ -643,8 +643,10 @@ assert.ok(cp.every((p) => p.hw) && Math.abs(cp[0].heading - 90) < 1);
 assert.strictEqual(Lib.loopPoints({ lat: 1, lon: 1 }, { points: [[2, 2], [3, 3]] }).length, 4);
 assert.strictEqual(Lib.jaOnly('右方向です。その先C1/首都高速都心環状線、神田橋/箱崎/Kandabashi/Hakozaki方面です。'), '右方向です。その先C1/首都高速都心環状線、神田橋/箱崎方面です。');
 assert.strictEqual(Lib.jaOnly('左方向です。その先4/首都高速4号新宿線/Route 4 Shinjuku Lineです。'), '左方向です。その先4/首都高速4号新宿線です。');
-const legs = [{ shape: '', maneuvers: [{ type: 1, length: 2 }, { type: 24, toll: true, instruction: '左方向です。', length: 1, begin_shape_index: 0 }, { type: 4, length: 0 }] }];
-assert.deepStrictEqual(Lib.jctGuide(legs).map((x) => [x.km, x.text]), [[2, '左方向です。']]);
+const legs = [{ shape: '', maneuvers: [{ type: 1, length: 2 }, { type: 24, toll: true, instruction: '左方向です。', length: 1, begin_shape_index: 0 },
+  { type: 24, toll: true, instruction: '右方向です。その先E20、新宿方面です。', length: 1, begin_shape_index: 0 }, { type: 4, length: 0 }] }];
+// JCT 名も行き先もない案内は出さない
+assert.deepStrictEqual(Lib.jctGuide(legs).map((x) => [x.km, x.text]), [[3, '右方向です。その先E20、新宿方面です。']]);
 assert.strictEqual(Lib.safeSpot([{ heading: 92, edge: { classification: { classification: 'motorway', use: 'road' } } }], 90), true);
 assert.strictEqual(Lib.safeSpot([{ heading: 92, edge: { classification: { classification: 'motorway', use: 'road' } } }, { heading: 270, edge: { classification: { classification: 'motorway', use: 'road' } } }], 90), true); // 反対車線は可
 assert.strictEqual(Lib.safeSpot([{ heading: 270, edge: { classification: { classification: 'motorway', use: 'road' } } }], 90), false); // 反対車線だけ
