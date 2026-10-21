@@ -59,6 +59,8 @@ details.status > summary { min-height: var(--tap); display: flex; align-items: c
 .filters[open] { padding-bottom: 8px; }
 .row { min-width: 0; display: flex; gap: 8px; align-items: center; margin-top: 4px; }
 .row .label { white-space: nowrap; }
+.row > .btn { flex: none; white-space: nowrap; } /* 入力欄の横のボタン（「探す」など）が縦に折れないように */
+.row > input[type=search] { flex: 1; min-width: 0; }
 .label { flex: 0 0 2.5em; color: var(--fg-sub); font-size: var(--font-size-14); }
 .chips { min-width: 0; display: flex; gap: var(--gap); overflow-x: auto; padding: 2px 0; scrollbar-width: none; }
 .chip { flex: 0 0 auto; min-height: var(--tap); padding: 0 12px; border: var(--bw) solid var(--line); border-radius: 22px; background: var(--bg); color: var(--fg); font: inherit; font-size: var(--font-size-14); }

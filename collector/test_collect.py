@@ -487,6 +487,12 @@ class BuildOsmTest(unittest.TestCase):
                 collect.collect_osm(status, NOW, [], [], root=d, pbf=os.path.join(d, 'missing.osm.pbf'))
         self.assertIsNone(status.get('osm_at'))
 
+    def test_check_counts(self):
+        collect.check_counts(None, {'cells': 10})                           # 初回は比べない
+        collect.check_counts({'cells': 400000, 'pois': 500}, {'cells': 380000, 'pois': 10})  # 少ない種類（1000 未満）は見ない
+        with self.assertRaises(RuntimeError):
+            collect.check_counts({'cells': 400000, 'spots': 38000}, {'cells': 150000, 'spots': 38000})
+
     def test_collect_osm_skips_when_fresh(self):
         status = {'osm_at': '2026-10-05T00:00:00+09:00', 'osm_ver': collect.OSM_VER}
         self.assertFalse(collect.collect_osm(status, NOW, [], [], root='/nonexistent', pbf='/nonexistent.pbf'))
