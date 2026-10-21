@@ -1,7 +1,9 @@
 // MyMap の純粋関数。画面にもネットにも依存しない（node lib.test.js で検証）。
 const Lib = (() => {
   const rad = (d) => d * Math.PI / 180;
-  const MAIN_PREFS = ['東京', '神奈川', '埼玉', '千葉', '山梨'];
+  // 絞り込みに出す都道府県（ほかは「その他」）。全国で使えるよう、アプリが起点の近くに多いものに入れ替える（setMainPrefs）
+  let MAIN_PREFS = ['東京', '神奈川', '埼玉', '千葉', '山梨'];
+  const setMainPrefs = (list) => { MAIN_PREFS = list; };
 
   function haversineKm(a, b) {
     const dLat = rad(b.lat - a.lat), dLon = rad(b.lon - a.lon);
@@ -41,7 +43,10 @@ const Lib = (() => {
       if (f.prefs.size && s.pref && !f.prefs.has(prefGroup(s.pref))) continue;
       if (f.genres.size && !s.genres.some((g) => f.genres.has(g))) continue;
       if (f.dirs && f.dirs.size && !f.dirs.has(direction(cfg.origin, s))) continue;
-      const minutes = travelMinutes(haversineKm(cfg.origin, s), f.mode, cfg);
+      const km = haversineKm(cfg.origin, s);
+      // 「時間制限なし」は、データを読み込む範囲（起点から poiRadiusKm）まで。全国で使うとき、関東の厳選スポットが遠くの地方の一覧に出ないように
+      if (f.maxMin == null && cfg.poiRadiusKm && km > cfg.poiRadiusKm) continue;
+      const minutes = travelMinutes(km, f.mode, cfg);
       if (f.maxMin != null && minutes > f.maxMin) continue;
       out.push({ ...s, minutes, tier: tierOf(s, f.favs) });
     }
@@ -1336,14 +1341,14 @@ const Lib = (() => {
   // ---- 約10万件のデータ: 0.25 度（約25km）四方の升目に分けて、必要な分だけ読み込む ----
   const CELL = 4; // 1 度あたりの升目の数
   const cellId = (lat, lon) => `${Math.floor(lat * CELL)}_${Math.floor(lon * CELL)}`;
-  // 半径 km の円に少しでもかかる升目
-  function cellsInRadius(o, km) {
+  // 半径 km の円に少しでもかかる升目（per は 1 度あたりの升目の数。グルメなどは 4、地方ごとのデータは 1）
+  function cellsInRadius(o, km, per = CELL) {
     const dlat = km / 111, dlon = km / (111 * Math.cos(rad(o.lat)));
     const out = [];
-    for (let y = Math.floor((o.lat - dlat) * CELL); y <= Math.floor((o.lat + dlat) * CELL); y++) {
-      for (let x = Math.floor((o.lon - dlon) * CELL); x <= Math.floor((o.lon + dlon) * CELL); x++) {
+    for (let y = Math.floor((o.lat - dlat) * per); y <= Math.floor((o.lat + dlat) * per); y++) {
+      for (let x = Math.floor((o.lon - dlon) * per); x <= Math.floor((o.lon + dlon) * per); x++) {
         // 升目の中で起点にいちばん近い点までの距離
-        const lat = Math.min(Math.max(o.lat, y / CELL), (y + 1) / CELL), lon = Math.min(Math.max(o.lon, x / CELL), (x + 1) / CELL);
+        const lat = Math.min(Math.max(o.lat, y / per), (y + 1) / per), lon = Math.min(Math.max(o.lon, x / per), (x + 1) / per);
         if (haversineKm(o, { lat, lon }) <= km) out.push(`${y}_${x}`);
       }
     }
@@ -1388,7 +1393,7 @@ const Lib = (() => {
 
   const isStale = (iso, nowMs, hours) => !iso || nowMs - Date.parse(iso) > hours * 3600e3;
 
-  return { haversineKm, travelMinutes, prefGroup, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
+  return { haversineKm, travelMinutes, prefGroup, setMainPrefs, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
     decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, rampFree, spreadAlong, spreadPick, splitLegs, toGpx,

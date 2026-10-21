@@ -321,6 +321,24 @@ assert.strictEqual(Lib.cellId(-0.1, -0.1), '-1_-1');
 const cs = Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 10);
 assert(cs.includes('142_558') && cs.includes('142_557') && !cs.includes('140_558'), cs.join(','));
 assert.strictEqual(Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 0).length, 1);
+// 地方ごとのデータ（1 度四方）: 調布から 300km は関東〜東北南部・中部。大阪から 300km に調布の升目は入らない
+const big = Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 300, 1);
+assert(big.includes('35_139') && big.includes('37_140') && big.includes('34_138') && !big.includes('34_135'), big.join(' '));
+assert(!Lib.cellsInRadius({ lat: 34.70, lon: 135.50 }, 300, 1).includes('35_139'));
+assert.deepStrictEqual(Lib.cellsInRadius({ lat: 35.5, lon: 139.5 }, 0, 1), ['35_139']);
+// 都道府県の絞り込みは起点の近くに多いものに入れ替えられる
+Lib.setMainPrefs(['大阪', '京都']);
+assert.strictEqual(Lib.prefGroup('京都'), '京都');
+assert.strictEqual(Lib.prefGroup('東京'), 'その他');
+Lib.setMainPrefs(['東京', '神奈川', '埼玉', '千葉', '山梨']);
+// 時間制限なしでも、起点から poiRadiusKm より遠い所（全国で使うときの、ほかの地方の厳選スポット）は出さない
+{
+  const c = { origin: { lat: 43.07, lon: 141.35 }, speedsKmh: { car: 25 }, poiRadiusKm: 300, trainOverheadMin: 10 };
+  const xs = [{ id: 'sap', lat: 43.0, lon: 141.4, genres: ['play'] }, { id: 'tokyo', lat: 35.65, lon: 139.54, genres: ['play'] }];
+  const f0 = { rainy: false, prefs: new Set(), genres: new Set(), dirs: null, mode: 'car', maxMin: null, favs: new Set() };
+  assert.deepStrictEqual(Lib.filterSpots(xs, f0, c).map((s) => s.id), ['sap']);
+  assert.deepStrictEqual(Lib.filterSpots(xs, f0, { ...c, poiRadiusKm: undefined }).map((s) => s.id).sort(), ['sap', 'tokyo']);
+}
 
 // 関連スポット: 似たもの（同じジャンル・近い順）、周辺（2km 以内・近い順）、飲食（1km 以内）
 const base = { id: 'b', name: '基準', lat: 35.65, lon: 139.55, genres: ['museum'] };
