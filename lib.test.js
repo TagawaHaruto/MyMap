@@ -321,6 +321,16 @@ assert.strictEqual(Lib.cellId(-0.1, -0.1), '-1_-1');
 const cs = Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 10);
 assert(cs.includes('142_558') && cs.includes('142_557') && !cs.includes('140_558'), cs.join(','));
 assert.strictEqual(Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 0).length, 1);
+// 地方ごとのデータ（1 度四方）: 調布から 300km は関東〜東北南部・中部。大阪から 300km に調布の升目は入らない
+const big = Lib.cellsInRadius({ lat: 35.6518, lon: 139.544 }, 300, 1);
+assert(big.includes('35_139') && big.includes('37_140') && big.includes('34_138') && !big.includes('34_135'), big.join(' '));
+assert(!Lib.cellsInRadius({ lat: 34.70, lon: 135.50 }, 300, 1).includes('35_139'));
+assert.deepStrictEqual(Lib.cellsInRadius({ lat: 35.5, lon: 139.5 }, 0, 1), ['35_139']);
+// 都道府県の絞り込みは起点の近くに多いものに入れ替えられる
+Lib.setMainPrefs(['大阪', '京都']);
+assert.strictEqual(Lib.prefGroup('京都'), '京都');
+assert.strictEqual(Lib.prefGroup('東京'), 'その他');
+Lib.setMainPrefs(['東京', '神奈川', '埼玉', '千葉', '山梨']);
 
 // 関連スポット: 似たもの（同じジャンル・近い順）、周辺（2km 以内・近い順）、飲食（1km 以内）
 const base = { id: 'b', name: '基準', lat: 35.65, lon: 139.55, genres: ['museum'] };

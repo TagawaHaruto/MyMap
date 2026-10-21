@@ -1,7 +1,8 @@
-"""MyMap 収集スクリプト（Python 標準ライブラリのみ）。
+"""MyMap 収集スクリプト。
 
-使い方: python collector/collect.py
-config.json の sources を順に取得し、data/events.json と data/status.json を更新する。
+使い方: python collector/collect.py（OpenStreetMap の処理に pyosmium が要る: pip install osmium）
+config.json の sources のイベントを取得し、週 1 回は全国の OpenStreetMap データから立ち寄り候補・スポット・
+グルメなどを作り直して data/ に書き出す。MYMAP_PBF に .osm.pbf のパスを入れると、ダウンロードせずにそれを使う（試験用）。
 """
 import datetime as dt
 import json
@@ -139,15 +140,7 @@ def parse_nextdata(text, src, today):
 PARSERS = {'eventjs': parse_eventjs, 'daylist': parse_daylist, 'doorkeeper': parse_doorkeeper, 'nextdata': parse_nextdata}
 
 
-# ---- 立ち寄り候補・絶景（OpenStreetMap / Overpass） ----
-
-def bbox(origin, radius_km):
-    dlat = radius_km / 111
-    dlon = radius_km / (111 * math.cos(math.radians(origin['lat'])))
-    return f"({origin['lat'] - dlat:.3f},{origin['lon'] - dlon:.3f},{origin['lat'] + dlat:.3f},{origin['lon'] + dlon:.3f})"
-
-
-# 種類ごとに分けて取得する（全部まとめると Overpass がタイムアウトするため）
+# ---- 立ち寄り候補・絶景（OpenStreetMap）。条件は Overpass の文の形で書き、osm_pbf が解釈する ----
 POI_QUERIES = [
     ('michinoeki', ['nwr["name"~"^道の駅"]']),
     ('onsen', ['nwr["amenity"="public_bath"]["bath:type"="onsen"]["name"]']),
@@ -158,40 +151,6 @@ POI_QUERIES = [
     # 24 時間営業のガソリンスタンド（深夜のツーリング・ドライブ用）。名前がなくてもブランド名で出す
     ('fuel24', ['nwr["amenity"="fuel"]["opening_hours"~"^(24/7|Mo-Su 00:00-24:00)$"]']),
 ]
-
-
-def overpass_body(stmts, bb, out='center tags'):
-    stmts = [stmts] if isinstance(stmts, str) else stmts
-    q = '[out:json][timeout:180];(' + ''.join(s + bb + ';' for s in stmts) + f');out {out};'
-    return urllib.parse.urlencode({'data': q}).encode()
-
-
-def overpass_try(body, parse, fetch, sleep):
-    """混雑やタイムアウトは別サーバーで再試行。全サーバーで失敗したら最後の例外を投げる。"""
-    for n, url in enumerate(OVERPASS_URLS):
-        try:
-            return parse(fetch(url, data=body, timeout=240))
-        except Exception:
-            if n + 1 == len(OVERPASS_URLS):
-                raise
-            sleep(30)
-
-
-def grid(bb, n):
-    """'(s,w,n,e)' を n×n に分ける（範囲が広いときの時間切れ対策）。"""
-    s, w, no, e = (float(x) for x in bb.strip('()').split(','))
-    ys = [s + (no - s) * i / n for i in range(n + 1)]
-    xs = [w + (e - w) * i / n for i in range(n + 1)]
-    return [f'({ys[i]:.3f},{xs[j]:.3f},{ys[i + 1]:.3f},{xs[j + 1]:.3f})' for i in range(n) for j in range(n)]
-
-
-def splits(cfg, per_km=150):
-    """半径 per_km ごとに 1 辺を 1 つ分ける（150km なら 1、300km なら 2）。"""
-    return max(1, math.ceil(cfg['poiRadiusKm'] / per_km))
-
-
-# 収集する項目を増やしたら上げる（前回分が 1 週間以内でも全部取り直す）。2: 営業時間・電話・車いす
-DATA_VER = 2
 
 
 def extra_tags(t):
@@ -205,80 +164,6 @@ def extra_tags(t):
     if t.get('wheelchair') in ('yes', 'limited', 'no'):
         out['wc'] = t['wheelchair']
     return out
-
-
-def done_kinds(status, name, radius, ver=DATA_VER):
-    """取得済みの種類 → 取得日時。範囲や収集する項目を変えたときは空（全部取り直す）。"""
-    if status.get(f'{name}_ver', 1) != ver:
-        return {}
-    if status.get(f'{name}_radius') == radius:
-        return dict(status.get(f'{name}_done') or {})
-    sig, at = status.get(f'{name}_sig'), status.get(f'{name}_at')
-    if sig and sig[0] == radius and at:  # 旧形式（全種類まとめて記録）から: エラーのなかった種類は取得済み
-        err = status.get(f'{name}_error') or ''
-        return {k: at for k in sig[1:] if not re.search(f'(^| / ){re.escape(k)}: ', err)}
-    return {}
-
-
-def refresh_kinds(name, kinds, cfg, status, now, old, fetch_kind, sleep, ver=DATA_VER):
-    """種類ごとに週 1 回取り直す。成功した種類だけ取得済みにし、失敗した種類は前回分を残して
-    最後にもう一度、それでもだめなら次の実行で取り直す。全種類が取得済みなら None。"""
-    radius = cfg['poiRadiusKm']
-    done = done_kinds(status, name, radius, ver)
-    fresh = {k for k, at in done.items() if k in kinds and now - dt.datetime.fromisoformat(at) < dt.timedelta(days=7)}
-    todo = [k for k in kinds if k not in fresh]
-    if not todo:
-        return None
-    out = [x for x in old if x.get('k') in fresh]
-    errors = {}
-    first = True
-    for rnd in range(2):
-        if rnd:
-            if not errors:
-                break
-            sleep(120)  # 混雑（504 など）が収まるのを待つ
-            todo, errors = list(errors), {}
-        for kind in todo:
-            if not first:
-                sleep(5)  # Overpass への配慮
-            first = False
-            try:
-                out += fetch_kind(kind)
-                done[kind] = now.isoformat(timespec='seconds')
-            except Exception as err:
-                errors[kind] = f'{kind}: {type(err).__name__}: {err}'[:160]
-    for kind in errors:
-        out += [x for x in old if x.get('k') == kind]
-    status[f'{name}_at'], status[f'{name}_radius'], status[f'{name}_ver'] = now.isoformat(timespec='seconds'), radius, ver
-    status[f'{name}_done'] = {k: v for k, v in done.items() if k in kinds}
-    status.pop(f'{name}_sig', None)
-    status[f'{name}_error'] = ' / '.join(errors.values()) or None
-    if errors:
-        print(f"[{name}] {status[f'{name}_error']}", file=sys.stderr)
-    return out
-
-
-# Actions の制限時間（180 分）で打ち切られると何も公開されないので、この時刻を過ぎたら新しい問い合わせをしない
-# （残りの種類は前回分を使い、次の実行で取り直す）
-DEADLINE = time.time() + 150 * 60
-
-
-def overpass_kind(stmts, bb, n, parse, fetch, sleep, tries=3, out='center tags'):
-    """1 種類を n×n に分けて取得。分けた 1 つずつ、混雑で失敗したら待って最大 tries 回まで試す。"""
-    got = []
-    for i, part in enumerate(grid(bb, n)):
-        for t in range(tries):
-            if time.time() > DEADLINE:
-                raise TimeoutError('収集の制限時間を過ぎたので次の実行で取得')
-            if i or t:
-                sleep(5 if not t else 60 * t)
-            try:
-                got += overpass_try(overpass_body(stmts, part, out), parse, fetch, sleep)
-                break
-            except Exception:
-                if t + 1 == tries:
-                    raise
-    return got
 
 
 def poi_kind(t):
@@ -316,7 +201,10 @@ def wiki_url(tag):
 
 
 def overpass_elements(text):
-    """Overpass は実行時エラー（タイムアウト等）でも 200 と空の結果を返すので、remark を見て例外にする。"""
+    """要素のリスト（osm_pbf の結果）はそのまま。Overpass の JSON は、実行時エラー（タイムアウト等）でも
+    200 と空の結果を返すので、remark を見て例外にする。"""
+    if isinstance(text, list):
+        return text
     data = json.loads(text)
     remark = data.get('remark') or ''
     if 'error' in remark.lower():
@@ -345,23 +233,19 @@ def parse_overpass(text):
                 x['brand'] = t['brand'][:20]
             out.append(x)
             continue
-        if not kind or not pos or not t.get('name') or (kind, t['name']) in seen:  # 同名（建物と駐車場など）は 1 件に
+        if not kind or not pos or not t.get('name'):
             continue
-        seen.add((kind, t['name']))
+        # 同じ名前で 1km ほどの範囲（建物と駐車場など）は 1 件に。全国では同じ名前の別の場所（「展望台」など）が多いので位置も見る
+        key = (kind, t['name'], round(pos['lat'], 2), round(pos['lon'], 2))
+        if key in seen:
+            continue
+        seen.add(key)
         out.append({'name': t['name'], 'lat': pos['lat'], 'lon': pos['lon'], 'kind': kind,
                     'wikipedia': wiki_url(t.get('wikipedia')), **extra_tags(t)})
     return out
 
 
-def refresh_pois(cfg, status, fetch, now, old=(), sleep=time.sleep):
-    """種類ごとに週 1 回取り直す（失敗した種類は次の実行で）。取り直さないときは None。"""
-    q, bb = dict(POI_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
-    return refresh_kinds('pois', list(q), cfg, status, now, old, lambda kind: overpass_kind(
-        q[kind], bb, splits(cfg), lambda text: [dict(p, k=kind) for p in parse_overpass(text)], fetch, sleep), sleep)
-
 # ---- 自動収集スポット（OpenStreetMap。厳選リストとは別ファイル） ----
-
-# 種類ごとに分けて取得する（1 回にまとめると Overpass が 504 を返すため）
 SPOT_QUERIES = [
     ('museum', 'nwr["tourism"~"^(museum|gallery)$"]["name"]'),
     ('attraction', 'nwr["tourism"="attraction"]["name"]'),
@@ -381,59 +265,19 @@ SPOT_QUERIES = [
 ]
 FARM_WORDS = re.compile('狩|摘み|観光農園|体験農園|果樹園|ぶどう園|いちご園|ブルーベリー|牧場')
 CRAFT = {'pottery': '陶芸体験', 'glassblower': 'ガラス工房', 'handicraft': '工芸体験'}
-# 混雑（429/504）時は別の公開サーバーで再試行する
-OVERPASS_URLS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter',
-                 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
 VEHICLE_WORDS = re.compile('鉄道|電車|機関車|航空|飛行|宇宙|ロケット|自動車|クルマ|モーター|バイク|オートバイ|船|交通|乗り物')
-# 都県の付与に使う主要 5 都県（ISO3166-2 → 表示名）。これ以外は「その他」
-# addr:province の表記ゆれ用（周辺県も area 失敗時の手がかりとして残す）
-PROVINCES = ('東京', '神奈川', '埼玉', '千葉', '山梨', '群馬', '栃木', '茨城', '静岡', '長野')
+
+
+PREFS = ('北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 東京 神奈川 新潟 富山 石川 福井 山梨 長野 岐阜 静岡 愛知 三重 '
+         '滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄').split()
 PROVINCE_ROMAJI = {'tokyo': '東京', 'kanagawa': '神奈川', 'saitama': '埼玉', 'chiba': '千葉', 'yamanashi': '山梨'}
 
 
 def norm_province(v):
-    """addr:province → 都県名。他言語や番地の誤入力など、知らない値は None。"""
+    """都道府県名（境界の name や addr:province）→ 表示名（「東京都」→「東京」、北海道はそのまま）。知らない値は None。"""
     v = (v or '').strip()
-    name = re.sub('[都府県]$', '', v)
-    return name if name in PROVINCES else PROVINCE_ROMAJI.get(v.lower())
-
-
-def prep_prefectures(prefs):
-    """都県の境界（外周リングの配列）に外接矩形を添えて、判定を速くする。"""
-    out = []
-    for p in prefs:
-        rings = []
-        for ring in p['rings']:
-            xs, ys = [pt[0] for pt in ring], [pt[1] for pt in ring]
-            rings.append((ring, (min(xs), min(ys), max(xs), max(ys))))
-        out.append((p['name'], rings))
-    return out
-
-
-def _in_ring(x, y, ring):
-    inside, j = False, len(ring) - 1
-    for i in range(len(ring)):
-        xi, yi = ring[i]
-        xj, yj = ring[j]
-        if (yi > y) != (yj > y) and x < (xj - xi) * (y - yi) / (yj - yi) + xi:
-            inside = not inside
-        j = i
-    return inside
-
-
-def pref_of(lat, lon, prepared):
-    """点が入っている都県名。どの境界にも入らなければ None。"""
-    for name, rings in prepared:
-        for ring, (x0, y0, x1, y1) in rings:
-            if x0 <= lon <= x1 and y0 <= lat <= y1 and _in_ring(lon, lat, ring):
-                return name
-    return None
-
-
-def load_prefectures():
-    # data/prefectures.json は OSM の都県境界を簡略化したもの（通信せずに判定できるよう同梱）
-    data = load(os.path.join(DATA, 'prefectures.json'), {})
-    return data.get('prefectures', []) if isinstance(data, dict) else data
+    name = v if v == '北海道' else re.sub('[都府県]$', '', v)
+    return name if name in PREFS else PROVINCE_ROMAJI.get(v.lower())
 
 
 def osm_genre(t):
@@ -510,25 +354,6 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
     return out
 
 
-def refresh_spots(cfg, status, fetch, now, old, exclude_names, sleep=time.sleep, prefectures=None):
-    """種類ごとに週 1 回取り直す（範囲や種類を変えたときはすぐ）。失敗した種類は前回分を残す。取り直さないときは None。"""
-    q, bb, seen = dict(SPOT_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm']), set()
-
-    def fetch_kind(kind):
-        local = set(seen)  # 途中で失敗したときに、取れた分を「取得済み」にしない
-        got = overpass_kind(q[kind], bb, splits(cfg), lambda text: parse_osm_spots(text, exclude_names, kind, local), fetch, sleep)
-        seen.update(local)
-        return got
-    out = refresh_kinds('spots', list(q), cfg, status, now, old, fetch_kind, sleep)
-    if out is None:
-        return None
-    # 都県は同梱の境界データで判定する（Overpass に都県ごとの重い問い合わせを送らない）。境界外は addr:province を使う
-    prepared = prep_prefectures(load_prefectures() if prefectures is None else prefectures)
-    for s in out:
-        s['pref'] = pref_of(s['lat'], s['lon'], prepared) or s.get('pref') or 'その他'  # 境界データ（10 都県）の外
-    return out
-
-
 # ---- ドライブコース（OpenStreetMap）: 名前付きの観光道路（同じ名前の断片をつないで 1 本に）と峠 ----
 ROAD_WORDS = 'スカイライン|パークウェイ|ターンパイク|ライン$|有料道路|峠|林道|シーサイド|湖畔|高原|観光道路|周遊|ロード$'
 ROAD_QUERIES = [
@@ -536,7 +361,6 @@ ROAD_QUERIES = [
     ('pass', 'node["mountain_pass"="yes"]["name"]'),
 ]
 ROAD_MIN_KM = 2
-ROADS_VER = 4  # ドライブコースの決め方を変えたら上げる（3: 最短 2km、4: 300m 以上離れた断片へは飛ばない）
 
 
 def km_ll(a, b):
@@ -697,23 +521,6 @@ def parse_moto(text, kind):
     return out
 
 
-def refresh_moto(cfg, status, fetch, now, old, sleep=time.sleep):
-    """バイクを止められる場所を種類ごとに週 1 回取り直す。同じ場所（同じ id）は 1 件に。取り直さないときは None。"""
-    q, bb = dict(MOTO_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
-    got = refresh_kinds('moto', list(q), cfg, status, now, old, lambda kind: overpass_kind(
-        q[kind], bb, splits(cfg), lambda text: parse_moto(text, kind), fetch, sleep), sleep)
-    if got is None:
-        return None
-    seen, out = set(), []
-    for x in got:
-        if x['id'] not in seen:
-            seen.add(x['id'])
-            out.append(x)
-    return out
-
-
-# ---- 車の駐車場（起点から 150km 圏・週 1 回）。件数が多いので升目ごとの小さい形で data/park/<升目>.json に ----
-PARK_KM = 150
 PARK_QUERIES = [('parking', 'nwr["amenity"="parking"]["access"!~"^(private|no)$"]')]
 
 
@@ -742,24 +549,6 @@ def parse_parking(text, kind):
             x['t'] = 'ms' if t['parking'] == 'multi-storey' else 'ug'
         out.append(x)
     return out
-
-
-PARK_BANDS = 5  # 南北に 5 つの帯に分け、帯ごとに取れたかを記録する（制限時間で止まっても、次の実行で続きから）
-
-
-def refresh_parking(cfg, status, fetch, now, old, sleep=time.sleep):
-    """起点から PARK_KM 圏の駐車場を週 1 回。帯（約 60km × 300km）ごとに、約 30km 四方に分けて問い合わせる。"""
-    pcfg = {**cfg, 'poiRadiusKm': min(cfg['poiRadiusKm'], PARK_KM)}
-    stmt = dict(PARK_QUERIES)['parking']
-    cells = grid(bbox(cfg['origin'], pcfg['poiRadiusKm']), PARK_BANDS)
-    kinds = [f'park_{i}' for i in range(PARK_BANDS)]
-
-    def fetch_kind(kind):
-        i, got = int(kind.split('_')[1]), []
-        for part in cells[i * PARK_BANDS:(i + 1) * PARK_BANDS]:
-            got += overpass_kind(stmt, part, 2, lambda text: parse_parking(text, kind), fetch, sleep)
-        return got
-    return refresh_kinds('park', kinds, pcfg, status, now, old, fetch_kind, sleep)
 
 
 def load_park(root):
@@ -848,30 +637,14 @@ def annotate_parking(root):
                 x.pop('pk', None)
         return n
     total = 0
-    path = os.path.join(root, 'osm_spots.json')
-    if os.path.exists(path):
-        xs = load(path, [])
-        total += mark(xs)
-        save(path, xs, compact=True)
-    base = os.path.join(root, 'cells')
-    for group in os.listdir(base) if os.path.isdir(base) else []:
-        gdir = os.path.join(base, group)
-        for fn in os.listdir(gdir) if os.path.isdir(gdir) else []:
-            if fn.endswith('.json'):
-                xs = load(os.path.join(gdir, fn), [])
-                total += mark(xs)
-                save(os.path.join(gdir, fn), xs, compact=True)
+    for base in (os.path.join(root, 'area', 'spots'), os.path.join(root, 'cells')):
+        for d, _, files in os.walk(base):
+            for fn in sorted(files):
+                if fn.endswith('.json') and fn != 'index.json':
+                    xs = load(os.path.join(d, fn), [])
+                    total += mark(xs)
+                    save(os.path.join(d, fn), xs, compact=True)
     return total
-
-
-def refresh_roads(cfg, status, fetch, now, old, curated=(), sleep=time.sleep):
-    """ドライブコースを種類ごとに週 1 回取り直す。取り直さないときは None。"""
-    q, bb = dict(ROAD_QUERIES), bbox(cfg['origin'], cfg['poiRadiusKm'])
-
-    def fetch_kind(kind):
-        got = overpass_kind(q[kind], bb, splits(cfg), lambda text: parse_road_parts(text, kind), fetch, sleep, out='geom' if kind == 'road' else 'body')
-        return build_roads(got, curated) if kind == 'road' else got
-    return refresh_kinds('roads', list(q), cfg, status, now, old, fetch_kind, sleep, ROADS_VER)
 
 
 # ---- 約10万件のデータ（飲食・史跡・宿・お土産・遊び）: 0.25 度四方の升目ごとのファイルに分ける ----
@@ -988,41 +761,6 @@ def parse_group_items(text, seen, kind=None):
     return out
 
 
-def refresh_cells(cfg, status, fetch, now, old, sleep=time.sleep):
-    """週 1 回だけ取り直し、{グループ: {升目: [項目]}} を返す。失敗した種類は前回分を残す。取り直さないときは None。"""
-    q = {kind: (stmt, split) for kind, _, stmt, split in CELL_QUERIES}
-    bb, seen = bbox(cfg['origin'], cfg['poiRadiusKm']), set()
-
-    def fetch_kind(kind):
-        stmt, split = q[kind]
-        local = set(seen)
-        got = overpass_kind(stmt, bb, splits(cfg, 75 if split else 150), lambda text: parse_group_items(text, local, kind), fetch, sleep)
-        seen.update(local)
-        return got
-    items = refresh_kinds('cells', list(q), cfg, status, now, old, fetch_kind, sleep)
-    if items is None:
-        return None
-    prepared = prep_prefectures(load_prefectures())
-    cells = {}
-    for x in items:
-        x['pref'] = pref_of(x['lat'], x['lon'], prepared) or x.get('pref') or 'その他'  # 境界データ（10 都県）の外
-        cells.setdefault(x['g'], {}).setdefault(cell_id(x['lat'], x['lon']), []).append(x)
-    return cells
-
-
-def load_cells(root):
-    """前回の升目ファイルをすべて読み込む（失敗した種類を前回分で埋めるため）。"""
-    out = []
-    base = os.path.join(root, 'cells')
-    for group in os.listdir(base) if os.path.isdir(base) else []:
-        gdir = os.path.join(base, group)
-        if os.path.isdir(gdir):
-            for name in os.listdir(gdir):
-                if name.endswith('.json'):
-                    out += load(os.path.join(gdir, name), [])
-    return out
-
-
 def save_cells(root, cells):
     import shutil
     base = os.path.join(root, 'cells')
@@ -1036,6 +774,164 @@ def save_cells(root, cells):
             index.setdefault(group, {})[cid] = len(xs)
     save(os.path.join(base, 'index.json'), index)
     return sum(sum(v.values()) for v in index.values())
+
+
+# ---- 全国の OpenStreetMap データ（Geofabrik の日本全体の .osm.pbf）から、上の全種類を週 1 回まとめて作る ----
+OSM_PBF_URL = 'https://download.geofabrik.de/asia/japan-latest.osm.pbf'
+OSM_VER = 1  # 作り方を変えたら上げる（1 週間以内でも作り直す）
+OSM_PARTS = ('pois', 'spots', 'cells', 'roads', 'moto')  # アプリの COLLECT_PARTS（取れなかった部分の表示）と同じ
+PREF_STMT = 'rel["boundary"="administrative"]["admin_level"="4"]'
+# 高速道路の分岐（JCT）の名前: ルートの分岐の案内に付ける
+JCT_STMT = 'node["highway"="motorway_junction"]["name"~"JCT|ジャンクション"]'
+# 要素に残すタグ（全国分を持つので、使うものだけ）
+KEEP_TAGS = {'name', 'amenity', 'shop', 'tourism', 'leisure', 'historic', 'natural', 'waterway', 'water', 'landuse', 'craft', 'sport',
+             'highway', 'public_transport', 'bath:type', 'religion', 'cuisine', 'brand', 'brand:wikidata', 'operator', 'website',
+             'wikipedia', 'opening_hours', 'phone', 'contact:phone', 'wheelchair', 'addr:province', 'name:ja-Hira', 'name:ja_kana',
+             'name:ja-Hrkt', 'self_service', 'access', 'fee', 'capacity', 'capacity:motorcycle', 'motorcycle', 'moped', 'parking',
+             'toll', 'ele', 'mountain_pass'}
+
+
+def osm_queries():
+    """[(データ:種類, 条件)]。osm_pbf.Kinds に渡す。"""
+    return ([(f'pois:{k}', q) for k, q in POI_QUERIES] + [(f'spots:{k}', q) for k, q in SPOT_QUERIES]
+            + [(f'roads:{k}', q) for k, q in ROAD_QUERIES] + [(f'moto:{k}', q) for k, q in MOTO_QUERIES]
+            + [(f'park:{k}', q) for k, q in PARK_QUERIES] + [(f'cells:{k}', q) for k, _, q, _ in CELL_QUERIES]
+            + [('pref', PREF_STMT), ('jct', JCT_STMT)])
+
+
+def area_id(lat, lon):
+    """地方ごとのファイルの升目（1 度四方）。lib.js の cellsInRadius(o, km, 1) と同じ。"""
+    return f'{math.floor(lat)}_{math.floor(lon)}'
+
+
+def near_curated(curated):
+    """厳選スポットと同じ名前で 2km 以内のものか（全国では同じ名前の別の場所が多いので、名前だけでは除かない）。"""
+    by = {}
+    for c in curated:
+        if c.get('name') and c.get('lat') is not None:
+            by.setdefault(c['name'], []).append([c['lat'], c['lon']])
+    return lambda s: any(km_ll([s['lat'], s['lon']], q) < 2 for q in by.get(s['name'], ()))
+
+
+def build_osm(els, curated_spots=(), curated_roads=()):
+    """{データ:種類: [要素]} → 各データ。読み書き・通信はしない（試験しやすいように）。
+    pois / spots / roads / moto は項目のリスト、park は駐車場のリスト、cells は {グループ: {升目: [項目]}}。"""
+    from osm_pbf import PrefIndex
+    get = lambda name: els.get(name, [])  # noqa: E731
+    prefs = PrefIndex([{'name': norm_province(e['tags'].get('name')), 'rings': e['rings']}
+                       for e in get('pref') if e.get('rings') and norm_province(e['tags'].get('name'))])
+
+    def with_pref(xs):
+        for x in xs:
+            x['pref'] = prefs.get(x['lat'], x['lon']) or x.get('pref') or 'その他'
+        return xs
+    pois = [dict(p, k=k) for k, _ in POI_QUERIES for p in parse_overpass(get(f'pois:{k}'))]
+    seen, is_curated = set(), near_curated(curated_spots)
+    spots = with_pref([s for k, _ in SPOT_QUERIES for s in parse_osm_spots(get(f'spots:{k}'), kind=k, seen=seen) if not is_curated(s)])
+    roads = build_roads(parse_road_parts(get('roads:road'), 'road'), curated_roads) + parse_road_parts(get('roads:pass'), 'pass')
+    moto, ids = [], set()
+    for k, _ in MOTO_QUERIES:
+        for x in parse_moto(get(f'moto:{k}'), k):
+            if x['id'] not in ids:
+                ids.add(x['id'])
+                moto.append(x)
+    park = [x for k, _ in PARK_QUERIES for x in parse_parking(get(f'park:{k}'), k)]
+    jct, names = [], set()
+    for e in get('jct'):
+        name = e['tags']['name'].replace('ジャンクション', 'JCT')
+        key = (name, round(e['lat'], 2), round(e['lon'], 2))  # 上下線の分岐は 1 件に
+        if key not in names:
+            names.add(key)
+            jct.append({'name': name, 'lat': round(e['lat'], 5), 'lon': round(e['lon'], 5)})
+    seen, cells = set(), {}
+    for k, _, _, _ in CELL_QUERIES:
+        for x in with_pref(parse_group_items(get(f'cells:{k}'), seen, k)):
+            cells.setdefault(x['g'], {}).setdefault(cell_id(x['lat'], x['lon']), []).append(x)
+    return {'pois': pois, 'spots': spots, 'roads': roads, 'moto': moto, 'park': park, 'cells': cells, 'jct': jct,
+            'prefs': [n for n in prefs.names if n]}
+
+
+def save_area(root, items):
+    """{種類: [項目]} → data/area/<種類>/<1 度の升目>.json と data/area/index.json（{種類: {升目: 件数}}）。
+    ドライブコースは始点の升目。アプリは起点から poiRadiusKm 以内の升目だけ読む。"""
+    import shutil
+    base = os.path.join(root, 'area')
+    if os.path.isdir(base):
+        shutil.rmtree(base)  # 消えた升目のファイルを残さない
+    index = {}
+    for kind, xs in items.items():
+        by = {}
+        for x in xs:
+            lat, lon = (x['lat'], x['lon']) if 'lat' in x else x['points'][0]
+            by.setdefault(area_id(lat, lon), []).append(x)
+        os.makedirs(os.path.join(base, kind))
+        for cid, part in by.items():
+            save(os.path.join(base, kind, f'{cid}.json'), part, compact=True)
+        index[kind] = {cid: len(part) for cid, part in by.items()}
+    save(os.path.join(base, 'index.json'), index)
+    return {kind: len(xs) for kind, xs in items.items()}
+
+
+def load_area(root, kind):
+    out = []
+    base = os.path.join(root, 'area', kind)
+    for name in sorted(os.listdir(base)) if os.path.isdir(base) else []:
+        if name.endswith('.json'):
+            out += load(os.path.join(base, name), [])
+    return out
+
+
+def download(url, path):
+    """大きいファイルを少しずつ保存する（2.5GB を一度に読み込まない）。途中で切れたら例外。"""
+    import shutil
+    req = urllib.request.Request(url, headers={'User-Agent': 'MyMap-collector'})
+    with urllib.request.urlopen(req, timeout=120) as r, open(path + '.part', 'wb') as f:
+        size = int(r.headers.get('Content-Length') or 0)
+        shutil.copyfileobj(r, f, 16 * 2 ** 20)
+    if size and os.path.getsize(path + '.part') != size:
+        raise OSError(f'ダウンロードが途中で切れました（{os.path.getsize(path + ".part")}/{size}）')
+    os.replace(path + '.part', path)
+    return path
+
+
+def osm_due(status, now):
+    at = status.get('osm_at')
+    return status.get('osm_ver') != OSM_VER or not at or now - dt.datetime.fromisoformat(at) >= dt.timedelta(days=7)
+
+
+def collect_osm(status, now, curated_spots, curated_roads, root=DATA, pbf=None):
+    """週 1 回（作り方を変えたときはすぐ）、全国の .osm.pbf をダウンロードして全データを作り直す。作ったら True。"""
+    import tempfile
+    import osm_pbf
+    if not osm_due(status, now):
+        return False
+    tmp = os.environ.get('RUNNER_TEMP') or tempfile.gettempdir()
+    pbf = pbf or os.environ.get('MYMAP_PBF') or download(OSM_PBF_URL, os.path.join(tmp, 'japan-latest.osm.pbf'))
+    sel = os.path.join(tmp, 'mymap-selected.osm.pbf')
+    kinds = osm_pbf.Kinds(osm_queries())
+    t0 = time.time()
+    n = osm_pbf.select(pbf, sel, kinds)
+    print(f'osm: {n} elements selected in {round(time.time() - t0)}s')
+    els = osm_pbf.elements(sel, kinds, KEEP_TAGS, geometry=('roads:road',), rings=('pref',))
+    print(f'osm: elements read in {round(time.time() - t0)}s')
+    out = build_osm(els, curated_spots, curated_roads)
+    del els
+    counts = save_area(root, {k: out[k] for k in ('pois', 'spots', 'roads', 'moto', 'jct')})
+    counts['park'] = save_park(root, out['park'])
+    counts['cells'] = save_cells(root, out['cells'])
+    for old in ('pois.json', 'osm_spots.json', 'roads_osm.json', 'moto.json'):  # 関東だけの頃の 1 ファイルの形（アプリは area を優先）
+        if os.path.exists(os.path.join(root, old)):
+            os.remove(os.path.join(root, old))
+    # 境界の形が壊れていて組み立てられなかった都道府県は、addr:province か「その他」になる（記録して気づけるように）
+    missing = [p for p in PREFS if p not in out['prefs']]
+    if missing:
+        print(f'[osm] 境界を組み立てられなかった都道府県: {missing}', file=sys.stderr)
+    status.update({'osm_at': now.isoformat(timespec='seconds'), 'osm_ver': OSM_VER, 'osm_counts': counts, 'osm_error': None,
+                   'osm_pref_missing': missing or None})
+    for part in OSM_PARTS:
+        status[f'{part}_error'] = None
+    print(f'osm: {counts} in {round(time.time() - t0)}s')
+    return True
 
 
 # ---- 取得と集約 ----
@@ -1163,33 +1059,17 @@ def main():
     fetch = make_fetch(cfg)
     events = collect_events(cfg, today, old, status, fetch)
     save(os.path.join(DATA, 'events.json'), events)
-    pois = refresh_pois(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'pois.json'), []))
-    if pois is not None:
-        save(os.path.join(DATA, 'pois.json'), pois)
-        print(f'pois: {len(pois)}')
-    curated = {s['name'] for s in load(os.path.join(DATA, 'spots.json'), [])}
-    # 件数の多いグルメなど（升目）は最後に（制限時間で打ち切られても、ほかの種類が先にそろうように）
-    roads = refresh_roads(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'roads_osm.json'), []),
-                          load(os.path.join(DATA, 'scenic_roads.json'), []))
-    if roads is not None:
-        save(os.path.join(DATA, 'roads_osm.json'), roads, compact=True)
-        print(f'roads: {len(roads)}')
-    park = refresh_parking(cfg, status, fetch, dt.datetime.now(JST), load_park(DATA))
-    if park is not None:
-        print(f'parking: {save_park(DATA, park)}')
-    moto = refresh_moto(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'moto.json'), []))
-    if moto is not None:
-        save(os.path.join(DATA, 'moto.json'), moto, compact=True)
-        print(f'moto: {len(moto)}')
-    spots = refresh_spots(cfg, status, fetch, dt.datetime.now(JST), load(os.path.join(DATA, 'osm_spots.json'), []), curated)
-    if spots is not None:
-        save(os.path.join(DATA, 'osm_spots.json'), spots, compact=True)
-        print(f'osm spots: {len(spots)}')
-    cells = refresh_cells(cfg, status, fetch, dt.datetime.now(JST), load_cells(DATA))
-    if cells is not None:
-        print(f'cells: {save_cells(DATA, cells)}')
-    print(f'foursquare parking added: {merge_fsq_parking(DATA)}')
-    print(f'parking marks: {annotate_parking(DATA)}')
+    # OpenStreetMap（全国）は週 1 回。失敗してもイベントは保存し、アプリに「取れなかった部分」として出す（次の依頼で取り直す）
+    try:
+        if collect_osm(status, dt.datetime.now(JST), load(os.path.join(DATA, 'spots.json'), []), load(os.path.join(DATA, 'scenic_roads.json'), [])):
+            print(f'foursquare parking added: {merge_fsq_parking(DATA)}')
+            print(f'parking marks: {annotate_parking(DATA)}')
+    except Exception as err:  # noqa: BLE001
+        msg = f'{type(err).__name__}: {err}'[:200]
+        status['osm_error'] = msg
+        for part in OSM_PARTS:
+            status[f'{part}_error'] = msg
+        print(f'[osm] {msg}', file=sys.stderr)
     status['updated_at'] = now_iso()
     save(os.path.join(DATA, 'status.json'), status)
     print(f'events: {len(events)}')

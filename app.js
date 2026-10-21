@@ -10,7 +10,7 @@ const ALL_GROUPS = ['food', 'heritage', 'local', 'play', 'temple', 'hobby'];
 const MODES = { train: '🚃電車', car: '🚗車', bike: '🏍バイク', bicycle: '🚲自転車' };
 const GMAP_MODE = { train: 'transit', car: 'driving', bike: 'driving', bicycle: 'bicycling' };
 const TIMES = [[30, '30分'], [60, '60分'], [90, '90分'], [120, '2時間'], [180, '3時間'], [240, '4時間'], [300, '5時間'], [null, '制限なし']];
-const PREFS = ['東京', '神奈川', '埼玉', '千葉', '山梨', 'その他'];
+let PREFS = ['東京', '神奈川', '埼玉', '千葉', '山梨', 'その他']; // 起点の近くに多い都道府県に入れ替える（updateMainPrefs）
 const DIR_NAMES = { N: '北', NE: '北東', E: '東', SE: '南東', S: '南', SW: '南西', W: '西', NW: '北西' };
 const POI_KIND = { michinoeki: '道の駅', onsen: '温泉', viewpoint: '展望台', waterfall: '滝', peak: '山', gorge: '渓谷', lake: '湖', coast: '海岸' };
 const SCENIC_KINDS = ['viewpoint', 'waterfall', 'peak', 'gorge', 'lake', 'coast'];
@@ -57,7 +57,8 @@ function saveFilters() {
 }
 const icon = (label) => [...label][0]; // 先頭の絵文字（コードポイント単位）
 const fmtMin = (m) => (m == null ? '' : m < 60 ? `約${m}分` : `約${Math.floor(m / 60)}時間${m % 60 ? (m % 60) + '分' : ''}`);
-const dirName = (d) => (DATA.cfg && DATA.cfg.directionLabels && DATA.cfg.directionLabels[d]) || DIR_NAMES[d];
+// 方面の呼び名（「北・秩父」など）は config の起点（調布）向けなので、起点を変えたら「北」「北東」などにする
+const dirName = (d) => (DATA.cfg && !store.get('origin') && DATA.cfg.directionLabels && DATA.cfg.directionLabels[d]) || DIR_NAMES[d];
 const fmtStamp = (ms) => { const d = new Date(ms); return `${d.getMonth() + 1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`; };
 
 // 週 1 回しか変わらないデータは 'no-cache'（ETag で再検証し、変わっていなければ 304 でほぼ通信しない）
@@ -199,6 +200,42 @@ document.addEventListener('click', (e) => {
   HIDDEN_GROUPS[+b.dataset.addGenre][2].forEach((x) => state.genres.add(x));
   saveFilters(); state.limit = 300; renderAll();
 });
+// ---- 地方ごとのデータ（全国。1 度四方の升目 data/area/<種類>/<升目>.json）: 起点から poiRadiusKm 以内だけ読む ----
+// （全国分を一度に読むと重いため。起点を変えたら読み直す。まだ全国の収集をしていないときは、関東だけの頃の 1 ファイルを読む）
+const AREA_LEGACY = { pois: 'data/pois.json', spots: 'data/osm_spots.json', roads: 'data/roads_osm.json', moto: 'data/moto.json' };
+let areaIndexP = null;
+async function loadArea(kind) {
+  if (!areaIndexP) areaIndexP = getJSON('data/area/index.json', null).then((x) => { FAILED.delete('data/area/index.json'); return x; });
+  const index = await areaIndexP;
+  if (!index) { if (!AREA_LEGACY[kind]) return []; const xs = await getJSON(AREA_LEGACY[kind], []); FAILED.delete(AREA_LEGACY[kind]); return xs; }
+  const have = index[kind] || {};
+  const cids = Lib.cellsInRadius(DATA.cfg.origin, DATA.cfg.poiRadiusKm, 1).filter((c) => have[c]);
+  return (await Promise.all(cids.map((c) => getJSON(`data/area/${kind}/${c}.json`, [])))).flat();
+}
+const setRoads = (ro) => {
+  DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2 && DATA.issues.auto[r.id] !== 'hide'); // ルートが引けないと確かめたものは出さない
+  DATA.passes = ro.filter((r) => r.pass);
+};
+// 絞り込みの都道府県: 起点から 150km 以内に多いものを上から 5 つ（全国どこでも、近くの都道府県で絞り込めるように）
+function updateMainPrefs() {
+  const n = {};
+  for (const s of DATA.spots.concat(DATA.osm)) {
+    if (s.pref && s.pref !== 'その他' && Lib.haversineKm(DATA.cfg.origin, s) <= 150) n[s.pref] = (n[s.pref] || 0) + 1;
+  }
+  const main = Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([p]) => p);
+  if (!main.length) return;
+  Lib.setMainPrefs(main);
+  PREFS = main.concat('その他');
+  for (const p of [...state.prefs]) if (!PREFS.includes(p)) state.prefs.delete(p);
+}
+// 起点を変えたとき・データを更新したとき: 地方ごとのデータを読み直す
+async function reloadArea() {
+  const [pois, osm, ro] = await Promise.all([loadArea('pois'), loadArea('spots'), loadArea('roads')]);
+  DATA.pois = pois; DATA.osm = osm; osm.forEach(Lib.refineGenres); setRoads(ro);
+  MOTO = null; JCTS = null; updateMainPrefs();
+  DATA.ver++; tour.stops = null;
+}
+
 // ---- 升目ごとのデータ（飲食・史跡・宿・お土産・遊び） ----
 const CELL_DATA = new Map(); // 'グループ/升目' → 項目
 const cellLoading = new Map(); // 読み込み中の 'グループ/升目' → 読み込みの Promise
@@ -552,8 +589,8 @@ function parkRow(x, bike) {
 let MOTO = null;
 async function motoData() {
   if (!MOTO) {
-    const [osm, official] = await Promise.all([getJSON('data/moto.json', []), getJSON('data/moto_official.json', [])]);
-    FAILED.delete('data/moto.json'); FAILED.delete('data/moto_official.json');
+    const [osm, official] = await Promise.all([loadArea('moto'), getJSON('data/moto_official.json', [])]);
+    FAILED.delete('data/moto_official.json');
     MOTO = official.map(Lib.officialMoto).concat(osm.map((x) => ({ ...x, kind: x.type })));
   }
   return MOTO;
@@ -1468,10 +1505,9 @@ async function watchUpdate() {
 }
 async function reloadData(st) {
   DATA.status = st;
-  [DATA.events, DATA.pois, DATA.osm] = await Promise.all([getJSON('data/events.json', DATA.events), getJSON('data/pois.json', DATA.pois), getJSON('data/osm_spots.json', DATA.osm)]);
-  DATA.osm.forEach(Lib.refineGenres);
-  const ro = await getJSON('data/roads_osm.json', null);
-  if (ro) { DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2 && DATA.issues.auto[r.id] !== 'hide'); DATA.passes = ro.filter((r) => r.pass); }
+  DATA.events = await getJSON('data/events.json', DATA.events);
+  areaIndexP = null; // 地方ごとのデータの目録も読み直す
+  await reloadArea();
   cellIndex = await getJSON('data/cells/index.json', cellIndex);
   CELL_DATA.clear(); MOTO = null; PARK.clear();
   DATA.ver++; tour.stops = null;
@@ -1601,7 +1637,12 @@ async function valhalla(points, opts, alternates = 0) {
 // JCT の名前（OpenStreetMap。分岐の案内に付ける）
 let JCTS = null;
 async function jctList() {
-  if (!JCTS) { JCTS = await getJSON('data/jct.json', []); FAILED.delete('data/jct.json'); }
+  if (!JCTS) {
+    // 手で集めた関東の分＋全国の収集（起点から poiRadiusKm 以内）
+    const [own, area] = await Promise.all([getJSON('data/jct.json', []), loadArea('jct').catch(() => [])]);
+    FAILED.delete('data/jct.json');
+    JCTS = own.concat(area.map((x) => [x.name, x.lat, x.lon]));
+  }
   return JCTS;
 }
 // Google マップに渡す「迷わない」地点: ルートの上で、半径 12m 以内が高速道路の本線だけの所（下や横の一般道・ランプに吸い寄せられない）
@@ -1984,7 +2025,7 @@ function renderTouring() {
   $('#view').innerHTML = `
     <label for="dest"><strong>目的地</strong></label> <details class="help"><summary aria-label="説明を見る">i</summary>目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定できます。</details>
     <select id="dest"><option value="">選んでください</option>
-      <optgroup label="目的地まで走る">${DATA.touring.map((t) =>
+      <optgroup label="目的地まで走る">${DATA.touring.filter((t) => t.id === tour.destId || Lib.haversineKm(DATA.cfg.origin, t) <= DATA.cfg.poiRadiusKm).map((t) =>
         `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</optgroup>
       ${DATA.roads.length ? `<optgroup label="おすすめの道を走る（近い20本・ほかは下の検索か地図で）">${roadsByDist.slice(0, 20).concat(
         road && !roadsByDist.slice(0, 20).includes(road) && !chainName(road.id) ? [road] : []).map((r) =>
@@ -2922,6 +2963,8 @@ function setOrigin(o) {
   DATA.cfg.origin = o || CFG_ORIGIN;
   tour.cands = null; tour.stops = null; tour.key = ''; DATA.ver++;
   buzz(); renderAll();
+  // 遠くへ移したときは、その地方のデータに読み替える（全国のデータから起点の近くだけ読んでいるため）
+  reloadArea().then(() => { DATA.osmLoaded = true; renderAll(); });
 }
 function visitedRecords() {
   const meta = store.get('visitedMeta') || {};
@@ -3105,21 +3148,19 @@ async function init() {
   loadWeather();
   requestUpdate();
   let lines;
-  [DATA.pois, DATA.events, lines] = await Promise.all([getJSON('data/pois.json', []), getJSON('data/events.json', []), getJSON('data/course_lines.json', {})]);
+  [DATA.pois, DATA.events, lines] = await Promise.all([loadArea('pois'), getJSON('data/events.json', []), getJSON('data/course_lines.json', {})]);
   // 地図に描くコースの線は、コースの点を直線で結ばず、実際に道を通した形（ルート検索で作ったもの）にする
   for (const r of DATA.roads) if (lines[r.id]) r.line = Lib.decodePolyline(lines[r.id], 5).map(([lon, lat]) => [lat, lon]);
   DATA.eventsLoaded = true; DATA.ver++; tour.stops = null;
   cellIndex = await getJSON('data/cells/index.json', null);
   FAILED.delete('data/cells/index.json'); // まだ収集していないとき（404）は失敗扱いにしない
-  const ro = await getJSON('data/roads_osm.json', []);
-  FAILED.delete('data/roads_osm.json');
-  DATA.courses = ro.filter((r) => !r.pass && r.points.length >= 2 && DATA.issues.auto[r.id] !== 'hide'); // ルートが引けないと確かめたものは出さない
-  DATA.passes = ro.filter((r) => r.pass);
+  setRoads(await loadArea('roads'));
   DATA.ver++; tour.stops = null; // 升目の目録がそろったので、立ち寄りのカフェ・ごはんを読み込める
   renderAll();
   // 自動収集スポットは大きい（数 MB）ので最後に読み込む
-  DATA.osm = await getJSON('data/osm_spots.json', []);
+  DATA.osm = await loadArea('spots');
   DATA.osm.forEach(Lib.refineGenres);
+  updateMainPrefs();
   DATA.osmLoaded = true; DATA.ver++; tour.stops = null; // 立ち寄りの観光名所・温泉・展望台にも使う
   renderAll();
 }

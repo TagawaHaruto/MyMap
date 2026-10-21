@@ -5,7 +5,8 @@ import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GENRES = {'play', 'sightseeing', 'shopping', 'vehicle', 'museum', 'garden', 'temple', 'onsen', 'scenic', 'simulator', 'factory', 'food', 'heritage', 'lodging', 'souvenir', 'outdoor', 'experience', 'viewpoint', 'nightview'}
-PREFS = {'東京', '神奈川', '埼玉', '千葉', '山梨', '群馬', '栃木', '茨城', '静岡', '長野', '新潟'}
+PREFS = set('北海道 青森 岩手 宮城 秋田 山形 福島 茨城 栃木 群馬 埼玉 千葉 東京 神奈川 新潟 富山 石川 福井 山梨 長野 岐阜 静岡 愛知 三重 '
+            '滋賀 京都 大阪 兵庫 奈良 和歌山 鳥取 島根 岡山 広島 山口 徳島 香川 愛媛 高知 福岡 佐賀 長崎 熊本 大分 宮崎 鹿児島 沖縄'.split())
 TYPES = {'eventjs', 'daylist', 'doorkeeper', 'nextdata'}
 
 
@@ -14,8 +15,8 @@ def load(name):
         return json.load(f)
 
 
-def in_area(lat, lon):  # 起点（調布）から約 300km の範囲（config の poiRadiusKm）
-    return 32.9 <= lat <= 38.4 and 136.2 <= lon <= 142.9
+def in_area(lat, lon):  # 日本の範囲（データは全国。手作業のデータも全国に置ける）
+    return 20.0 <= lat <= 46.0 and 122.0 <= lon <= 154.0
 
 
 class DataTest(unittest.TestCase):
@@ -41,13 +42,14 @@ class DataTest(unittest.TestCase):
         self.assertTrue(all('vehicle' in s['genres'] for s in sims))
 
     def test_prefecture_boundaries_match_curated(self):
-        # 同梱の都県境界で判定した都県が、手で確かめた厳選スポットの都県と一致すること
+        # 都道府県の境界を約 1km の升目に塗り分けて引く方法（全国の収集で使う）で、手で確かめた厳選スポットの都県と一致すること
+        # （data/prefectures.json は関東周辺 10 都県の境界。この確認のためだけに置いている）
         import sys
         sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-        import collect
-        prepared = collect.prep_prefectures(load('data/prefectures.json')['prefectures'])
+        import osm_pbf
+        index = osm_pbf.PrefIndex(load('data/prefectures.json')['prefectures'])
         spots = load('data/spots.json')
-        agree = sum(1 for s in spots if collect.pref_of(s['lat'], s['lon'], prepared) == s['pref'])
+        agree = sum(1 for s in spots if index.get(s['lat'], s['lon']) == s['pref'])
         self.assertGreaterEqual(agree / len(spots), 0.98, f'{agree}/{len(spots)}')
 
     def test_scenic_roads(self):

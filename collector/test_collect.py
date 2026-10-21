@@ -148,21 +148,6 @@ class PoiTest(unittest.TestCase):
         self.assertEqual(lake['wikipedia'], 'https://ja.wikipedia.org/wiki/' + urllib.parse.quote('奥多摩湖'))
         self.assertIsNone(next(p for p in pois if p['kind'] == 'onsen')['wikipedia'])
 
-    def test_poi_queries_are_split_by_kind(self):
-        self.assertEqual([k for k, _ in collect.POI_QUERIES], ['michinoeki', 'onsen', 'viewpoint', 'scenic', 'fuel24'])
-        q = collect.overpass_body(collect.POI_QUERIES[3][1], '(34.299,137.877,37.001,141.203)').decode()
-        self.assertIn(urllib.parse.quote('(34.299,137.877,37.001,141.203)'), q)
-        for word in ('waterfall', 'peak', 'lake', 'beach'):
-            self.assertIn(word, q)
-        self.assertEqual(collect.bbox({'lat': 35.65, 'lon': 139.54}, 150), '(34.299,137.877,37.001,141.203)')
-
-    def test_refresh_pois_skips_when_fresh(self):
-        status = {'pois_radius': 150, 'pois_ver': collect.DATA_VER, 'pois_done': {k: '2026-10-05T00:00:00+09:00' for k, _ in collect.POI_QUERIES}}
-        calls = []
-        collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
-                             lambda *a, **k: calls.append(a), dt.datetime(2026, 10, 8, tzinfo=collect.JST))
-        self.assertEqual(calls, [])
-
 
 class ReviewFixTest(unittest.TestCase):
     def test_unnamed_onsen_is_skipped(self):
@@ -241,44 +226,6 @@ class OsmSpotTest(unittest.TestCase):
         self.assertEqual(by['某寺']['kana'], 'ボウジ')
         self.assertNotIn('kana', by['某水族館'])
 
-    def test_refresh_spots_keeps_old_entries_of_failed_queries(self):
-        old = [{'id': 'osm:node:99', 'name': '旧', 'lat': 35.0, 'lon': 139.0, 'k': 'bath'}]
-        calls = []
-
-        urls = []
-
-        def fake_fetch(url, data=None, timeout=60):
-            calls.append(data)
-            urls.append(url)
-            if b'ISO3166' in data:  # 都県 area の問い合わせ（全種類の文を含むので先に返す）
-                return '{"elements": []}'
-            if b'public_bath' in data:
-                raise OSError('504')
-            return fx('overpass_spots.json')
-
-        status = {}
-        spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status, fake_fetch,
-                                      dt.datetime(2026, 10, 8, tzinfo=collect.JST), old, set(), sleep=lambda s: None)
-        # 失敗した種類は別サーバーで再試行し、最後にもう一度だけ試す。失敗した種類は取得済みにしない（次の実行で取り直す）
-        self.assertEqual(len(calls), len(collect.SPOT_QUERIES) - 1 + 2 * 3 * len(collect.OVERPASS_URLS))  # 2 回目の試行 × 区画ごと 3 回 × サーバー
-        self.assertNotIn('bath', status['spots_done'])
-        self.assertIn('museum', status['spots_done'])
-        self.assertEqual(len({u for u in urls if u}), len(collect.OVERPASS_URLS))
-        self.assertIn('旧', [s['name'] for s in spots])
-        self.assertIn('bath', status['spots_error'])
-        self.assertIsNotNone(status['spots_at'])
-
-    def test_overpass_kind_retries_each_tile(self):
-        calls, waits = [], []
-
-        def fetch(url, data=None, timeout=None):
-            calls.append(data)
-            if len(calls) <= len(collect.OVERPASS_URLS):  # 最初の区画は全サーバーで 1 回失敗
-                raise OSError('504')
-            return '{"elements": []}'
-        got = collect.overpass_kind('nwr["amenity"="cafe"]["name"]', '(34.0,138.0,36.0,140.0)', 2, lambda t: [1], fetch, waits.append)
-        self.assertEqual(got, [1, 1, 1, 1])
-        self.assertIn(60, waits)
 
     def test_build_roads_joins_parts_in_order(self):
         # 同じ名前の 3 断片（1 つは逆向き）→ 1 本。短い道・厳選と同じ道は除く
@@ -318,11 +265,13 @@ class OsmSpotTest(unittest.TestCase):
         self.assertEqual(collect.extra_tags({'opening_hours': 'Mo-Fr 09:00-17:00', 'contact:phone': '+81 42-000-0000;03-1', 'wheelchair': 'yes'}),
                          {'oh': 'Mo-Fr 09:00-17:00', 'tel': '+81 42-000-0000', 'wc': 'yes'})
         self.assertEqual(collect.extra_tags({'wheelchair': 'designated'}), {})
-        # 収集する項目を増やした（版が違う）ときは、1 週間以内でも取り直す
-        st = {'spots_radius': 300, 'spots_ver': collect.DATA_VER - 1, 'spots_done': {'museum': '2026-10-09T00:00:00+09:00'}}
-        self.assertEqual(collect.done_kinds(st, 'spots', 300), {})
-        st['spots_ver'] = collect.DATA_VER
-        self.assertIn('museum', collect.done_kinds(st, 'spots', 300))
+        # OpenStreetMap は週 1 回。作り方を変えた（版が違う）ときは、1 週間以内でも作り直す
+        now = dt.datetime(2026, 10, 8, tzinfo=collect.JST)
+        st = {'osm_at': '2026-10-05T00:00:00+09:00', 'osm_ver': collect.OSM_VER}
+        self.assertFalse(collect.osm_due(st, now))
+        self.assertTrue(collect.osm_due({**st, 'osm_at': '2026-09-30T00:00:00+09:00'}, now))
+        self.assertTrue(collect.osm_due({**st, 'osm_ver': collect.OSM_VER - 1}, now))
+        self.assertTrue(collect.osm_due({}, now))
 
     def test_parse_moto(self):
         text = json.dumps({'elements': [
@@ -371,7 +320,8 @@ class OsmSpotTest(unittest.TestCase):
             collect.save_park(d, [{'la': 35.6500, 'lo': 139.5400, 'a': 1},              # 利用者用（店のすぐ隣）
                                   {'la': 35.7004, 'lo': 139.5000, 'n': 'ガスト府中店 駐車場'},  # 店名つき
                                   {'la': 35.7509, 'lo': 139.5000}])                          # 名前なし（90m）
-            collect.save(os.path.join(d, 'osm_spots.json'), [
+            os.makedirs(os.path.join(d, 'area', 'spots'))
+            collect.save(os.path.join(d, 'area', 'spots', '35_139.json'), [
                 {'name': 'A食堂', 'lat': 35.6503, 'lon': 139.5400},
                 {'name': 'ガスト府中店', 'lat': 35.7000, 'lon': 139.5000},
                 {'name': 'C商店', 'lat': 35.7501, 'lon': 139.5000},
@@ -380,25 +330,9 @@ class OsmSpotTest(unittest.TestCase):
             collect.save(os.path.join(d, 'cells', 'food', '142_558.json'), [{'name': 'E', 'lat': 35.65, 'lon': 139.5401}], compact=True)
             # 名前で確かめられたガスト府中店だけ（すぐ隣の利用者用・名前なしの駐車場からは推定しない）
             self.assertEqual(collect.annotate_parking(d), 1)
-            xs = collect.load(os.path.join(d, 'osm_spots.json'), [])
+            xs = collect.load(os.path.join(d, 'area', 'spots', '35_139.json'), [])
             self.assertEqual([x.get('pk') for x in xs], [None, 2, None, None])
             self.assertNotIn('pk', collect.load(os.path.join(d, 'cells', 'food', '142_558.json'), [])[0])
-
-    def test_done_kinds_from_old_status(self):
-        st = {'cells_ver': collect.DATA_VER, 'cells_at': '2026-10-09T12:00:00+09:00', 'cells_sig': [300, 'cafe', 'park', 'bigpark'],
-              'cells_error': 'cafe: HTTPError: 504 / bigpark: HTTPError: 504'}
-        self.assertEqual(collect.done_kinds(st, 'cells', 300), {'park': '2026-10-09T12:00:00+09:00'})
-        self.assertEqual(collect.done_kinds(st, 'cells', 150), {})
-
-    def test_refresh_spots_skips_when_fresh(self):
-        status = {'spots_radius': 150, 'spots_ver': collect.DATA_VER, 'spots_done': {k: '2026-10-05T00:00:00+09:00' for k, _ in collect.SPOT_QUERIES}}
-        got = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
-                                    lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set())
-        self.assertIsNone(got)
-        # 種類や範囲を変えた直後は、1 週間たっていなくても取り直す
-        status['spots_radius'] = 300
-        self.assertIsNotNone(collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
-                                                   lambda *a, **k: 1 / 0, dt.datetime(2026, 10, 8, tzinfo=collect.JST), [], set(), sleep=lambda s: None))
 
 
 class OverpassRemarkTest(unittest.TestCase):
@@ -409,31 +343,6 @@ class OverpassRemarkTest(unittest.TestCase):
             collect.parse_overpass(self.TIMEOUT)
         with self.assertRaises(RuntimeError):
             collect.parse_osm_spots(self.TIMEOUT)
-
-    def test_refresh_pois_keeps_old_kind_on_runtime_error(self):
-        old = [{'name': '旧道の駅', 'lat': 35.5, 'lon': 139.0, 'kind': 'michinoeki', 'wikipedia': None, 'k': 'michinoeki'}]
-        status = {}
-        pois = collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
-                                    lambda *a, **k: self.TIMEOUT, dt.datetime(2026, 10, 8, tzinfo=collect.JST),
-                                    old, sleep=lambda s: None)
-        self.assertEqual([p['name'] for p in pois], ['旧道の駅'])
-        self.assertIn('timed out', status['pois_error'])
-
-    def test_refresh_pois_tags_kind_group(self):
-        pois = collect.refresh_pois({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, {},
-                                    lambda *a, **k: fx('overpass.json'), dt.datetime(2026, 10, 8, tzinfo=collect.JST),
-                                    [], sleep=lambda s: None)
-        self.assertIn(('michinoeki', '道の駅どうし'), {(p['kind'], p['name']) for p in pois})
-        self.assertTrue(all(p['k'] for p in pois))
-
-    def test_refresh_spots_keeps_old_kind_on_runtime_error(self):
-        old = [{'id': 'osm:node:1', 'name': '旧博物館', 'lat': 35.0, 'lon': 139.0, 'k': 'museum'}]
-        status = {}
-        spots = collect.refresh_spots({'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}, status,
-                                      lambda *a, **k: self.TIMEOUT, dt.datetime(2026, 10, 8, tzinfo=collect.JST),
-                                      old, set(), sleep=lambda s: None)
-        self.assertEqual([s['name'] for s in spots], ['旧博物館'])
-        self.assertIn('museum', status['spots_error'])
 
 
 CFG = {'origin': {'lat': 35.65, 'lon': 139.54}, 'poiRadiusKm': 150}
@@ -451,34 +360,11 @@ class PrefTest(unittest.TestCase):
             ('東京都', '東京'), (' 神奈川県 ', '神奈川'), ('埼玉', '埼玉'), ('千葉県', '千葉'), ('山梨県', '山梨'),
             ('群馬県', '群馬'), ('栃木県', '栃木'), ('茨城県', '茨城'), ('静岡県', '静岡'), ('長野県', '長野'),
             ('Tokyo', '東京'), ('KANAGAWA', '神奈川'), ('saitama', '埼玉'), (' Chiba ', '千葉'), ('Yamanashi', '山梨'),
-            ('长野县', None), ('1231', None), ('京都府', None), ('Tokyo-to', None), ('', None), (None, None),
+            ('京都府', '京都'), ('北海道', '北海道'), ('大阪府', '大阪'), ('沖縄県', '沖縄'), ('鹿児島', '鹿児島'),
+            ('长野县', None), ('1231', None), ('Tokyo-to', None), ('東京市', None), ('', None), (None, None),
         ]:
             with self.subTest(raw=raw):
                 self.assertEqual(collect.norm_province(raw), want)
-
-    def test_pref_of_point_in_polygon(self):
-        prefs = collect.prep_prefectures(SQUARES)
-        self.assertEqual(collect.pref_of(35.7, 139.6, prefs), '東京')
-        self.assertEqual(collect.pref_of(35.4, 139.6, prefs), '神奈川')
-        self.assertIsNone(collect.pref_of(36.5, 139.6, prefs))
-        self.assertIsNone(collect.pref_of(35.7, 139.6, []))
-
-    def test_refresh_spots_assigns_pref_without_network(self):
-        calls = []
-
-        def fetch(url, data=None, timeout=60):
-            calls.append(url)
-            return fx('overpass_spots.json')
-
-        status = {}
-        spots = collect.refresh_spots(CFG, status, fetch, NOW, [], set(), sleep=lambda s: None, prefectures=SQUARES)
-        by = {s['name']: s['pref'] for s in spots}
-        self.assertEqual(by['東京国立博物館'], '東京')   # 境界の内側
-        self.assertEqual(by['某寺'], '東京')             # addr:province（神奈川）より境界の判定を優先
-        self.assertEqual(by['某水族館'], '東京')
-        self.assertEqual(by['某展望台'], 'その他')           # 境界の外で addr:province もない → その他
-        self.assertEqual(len(calls), len(collect.SPOT_QUERIES))  # 都県のための問い合わせはしない
-        self.assertIsNone(status['spots_error'])
 
 
 class IndoorTest(unittest.TestCase):
@@ -537,34 +423,74 @@ class CellTest(unittest.TestCase):
         self.assertEqual((by['調布古書店']['g'], by['調布古書店']['genres'], by['調布古書店']['note']), ('hobby', ['shopping'], '本屋'))
         self.assertEqual({s['g'] for s in items}, {'food', 'heritage', 'local', 'play', 'temple', 'hobby'})
 
-    def test_split_bbox_into_grid(self):
-        q = collect.grid('(34.0,138.0,36.0,140.0)', 2)
-        self.assertEqual(q, ['(34.000,138.000,35.000,139.000)', '(34.000,139.000,35.000,140.000)',
-                             '(35.000,138.000,36.000,139.000)', '(35.000,139.000,36.000,140.000)'])
-        self.assertEqual(len(collect.grid('(34.0,138.0,36.0,140.0)', 4)), 16)
-        self.assertEqual([collect.splits({'poiRadiusKm': r}) for r in (150, 300)], [1, 2])
-        self.assertEqual(collect.splits({'poiRadiusKm': 300}, 75), 4)
 
-    def test_refresh_cells_groups_and_keeps_old_on_failure(self):
-        old = [{'id': 'osm:node:900', 'name': '旧カフェ', 'lat': 35.6, 'lon': 139.5, 'genres': ['food'], 'g': 'food', 'k': 'cafe'}]
-        calls = []
+def els_of(text):
+    return json.loads(text)['elements']
 
-        def fetch(url, data=None, timeout=60):
-            body = urllib.parse.unquote_plus(data.decode())
-            calls.append(body)
-            if '"cafe"' in body:
-                raise OSError('504')
-            return fx('overpass_cells.json')
 
+class BuildOsmTest(unittest.TestCase):
+    """全国の .osm.pbf から取り出した要素（Overpass と同じ形）→ 各データ。"""
+
+    def test_build_and_save(self):
+        import tempfile
+        cafe = {'type': 'node', 'id': 900, 'lat': 35.6, 'lon': 139.5, 'tags': {'amenity': 'cafe', 'name': 'カフェ'}}
+        els = {
+            'pois:michinoeki': [{'type': 'node', 'id': 1, 'lat': 35.5, 'lon': 139.0, 'tags': {'name': '道の駅どうし'}}],
+            # 同じ名前の展望台でも、離れていれば別の場所（全国では「展望台」が多い）
+            'pois:viewpoint': [{'type': 'node', 'id': 2, 'lat': 35.5, 'lon': 139.1, 'tags': {'tourism': 'viewpoint', 'name': '展望台'}},
+                               {'type': 'node', 'id': 3, 'lat': 43.0, 'lon': 141.3, 'tags': {'tourism': 'viewpoint', 'name': '展望台'}}],
+            'spots:museum': els_of(fx('overpass_spots.json')),
+            'spots:temple': [{'type': 'node', 'id': 77, 'lat': 34.0, 'lon': 135.0, 'tags': {'amenity': 'place_of_worship', 'name': '深大寺', 'wikipedia': 'ja:x'}}],
+            'roads:pass': [{'type': 'node', 'id': 5, 'lat': 35.5, 'lon': 138.9, 'tags': {'name': '雁坂峠', 'mountain_pass': 'yes'}}],
+            'moto:moto_dedicated': [{'type': 'node', 'id': 6, 'lat': 35.6, 'lon': 139.5, 'tags': {'amenity': 'motorcycle_parking'}}],
+            'moto:moto_named': [{'type': 'node', 'id': 6, 'lat': 35.6, 'lon': 139.5, 'tags': {'amenity': 'motorcycle_parking', 'name': 'バイク'}}],
+            'park:parking': [{'type': 'node', 'id': 7, 'lat': 35.6, 'lon': 139.5, 'tags': {'amenity': 'parking'}}],
+            'jct': [{'type': 'node', 'id': 10, 'lat': 35.63357, 'lon': 139.78156, 'tags': {'name': '有明ジャンクション'}},
+                    {'type': 'node', 'id': 11, 'lat': 35.63401, 'lon': 139.78201, 'tags': {'name': '有明ジャンクション'}}],  # 上下線
+            'cells:restaurant': els_of(fx('overpass_cells.json')),
+            'cells:cafe': els_of(fx('overpass_cells.json')) + [cafe],  # 同じ要素が複数の種類に出ても 1 件
+            'pref': [{'type': 'relation', 'id': 8, 'tags': {'name': name}, 'rings': sq[0]['rings']}
+                     for name, sq in (('東京都', SQUARES[:1]), ('神奈川県', SQUARES[1:]))],
+        }
+        curated = [{'name': '深大寺', 'lat': 35.67, 'lon': 139.55}]  # 厳選と同じ名前でも、遠くの別の場所は残す
+        out = collect.build_osm(els, curated, [])
+        self.assertEqual(sorted((p['k'], p['lat']) for p in out['pois'] if p['k'] == 'viewpoint'), [('viewpoint', 35.5), ('viewpoint', 43.0)])
+        self.assertEqual({p['k'] for p in out['pois']}, {'michinoeki', 'viewpoint'})
+        by = {s['name']: s for s in out['spots']}
+        self.assertEqual(by['東京国立博物館']['pref'], '東京')   # 境界の内側
+        self.assertEqual(by['某寺']['pref'], '東京')             # addr:province（神奈川）より境界の判定を優先
+        self.assertEqual(by['某展望台']['pref'], 'その他')       # 境界の外で addr:province もない
+        self.assertIn('深大寺', by)
+        self.assertEqual(by['東京国立博物館']['k'], 'museum')
+        self.assertEqual([r['name'] for r in out['roads']], ['雁坂峠'])
+        self.assertEqual([x['id'] for x in out['moto']], ['osm:node:6'])
+        self.assertEqual(len(out['park']), 1)
+        self.assertEqual(out['jct'], [{'name': '有明JCT', 'lat': 35.63357, 'lon': 139.78156}])
+        food = [x['name'] for v in out['cells']['food'].values() for x in v]
+        self.assertEqual(food.count('深大寺そば 玉乃屋'), 1)
+        self.assertIn('カフェ', food)
+        self.assertEqual(out['cells']['food'][collect.cell_id(35.66, 139.55)][0]['pref'], '東京')
+        with tempfile.TemporaryDirectory() as d:
+            counts = collect.save_area(d, {k: out[k] for k in ('pois', 'spots', 'roads', 'moto')})
+            self.assertEqual(counts['pois'], len(out['pois']))
+            index = collect.load(os.path.join(d, 'area', 'index.json'), {})
+            self.assertEqual(index['pois'], {'35_139': 2, '43_141': 1})
+            self.assertEqual(index['roads'], {'35_138': 1})  # ドライブコースは始点の升目
+            self.assertEqual(len(collect.load_area(d, 'pois')), 3)
+            collect.save_area(d, {'pois': out['pois'][:1]})  # 作り直すと前の升目は残さない
+            self.assertEqual(collect.load(os.path.join(d, 'area', 'index.json'), {}), {'pois': {'35_139': 1}})
+
+    def test_collect_osm_failure_marks_parts(self):
+        import tempfile
         status = {}
-        cells = collect.refresh_cells(CFG, status, fetch, NOW, old, sleep=lambda s: None)
-        self.assertIn('旧カフェ', [x['name'] for x in cells['food'][collect.cell_id(35.6, 139.5)]])
-        self.assertIn('cafe', status['cells_error'])
-        self.assertIsNotNone(status['cells_at'])
-        # 同じ要素が複数の問い合わせに出ても 1 件
-        food_names = [x['name'] for v in cells['food'].values() for x in v]
-        self.assertEqual(food_names.count('深大寺そば 玉乃屋'), 1)
-        self.assertIsNone(collect.refresh_cells(CFG, {'cells_radius': 150, 'cells_ver': collect.DATA_VER, 'cells_done': {q[0]: '2026-10-05T00:00:00+09:00' for q in collect.CELL_QUERIES}}, fetch, NOW, [], sleep=lambda s: None))
+        with tempfile.TemporaryDirectory() as d:
+            with self.assertRaises(Exception):
+                collect.collect_osm(status, NOW, [], [], root=d, pbf=os.path.join(d, 'missing.osm.pbf'))
+        self.assertIsNone(status.get('osm_at'))
+
+    def test_collect_osm_skips_when_fresh(self):
+        status = {'osm_at': '2026-10-05T00:00:00+09:00', 'osm_ver': collect.OSM_VER}
+        self.assertFalse(collect.collect_osm(status, NOW, [], [], root='/nonexistent', pbf='/nonexistent.pbf'))
 
 
 if __name__ == '__main__':

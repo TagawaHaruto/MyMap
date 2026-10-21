@@ -1,6 +1,7 @@
 # 定期実行はしない。アプリ（または Actions タブ）からの依頼と、main への変更のときだけ動く。
 # 公開するサイトは「main のアプリ＋最新のデータ」を組み立て、gh-pages ブランチに 1 コミットだけで上書きする
-# （約10万件のデータを main の履歴に積まないため。Pages の Source は gh-pages / root）。
+# （全国で約100万件・約200MB のデータを main の履歴に積まないため。Pages の Source は gh-pages / root）。
+# OpenStreetMap のデータは週 1 回、Geofabrik の日本全体のファイル（約2.6GB）を Actions の中でダウンロードして作る。
 name: collect
 on:
   workflow_dispatch:
@@ -27,9 +28,12 @@ jobs:
             done
             if [ -d prev/data/cells ]; then rm -rf data/cells && cp -r prev/data/cells data/cells; fi
             if [ -d prev/data/park ]; then rm -rf data/park && cp -r prev/data/park data/park; fi
+            if [ -d prev/data/area ]; then rm -rf data/area && cp -r prev/data/area data/area; fi
           else
             echo "gh-pages がまだないので、空のデータから始めます"
           fi
+      - name: Install pyosmium
+        run: python3 -m pip install --quiet osmium
       - name: Test
         run: python3 -m unittest discover -s collector -v
       - name: Collect
