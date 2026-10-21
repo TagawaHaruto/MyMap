@@ -229,8 +229,11 @@ function updateMainPrefs() {
   for (const p of [...state.prefs]) if (!PREFS.includes(p)) state.prefs.delete(p);
 }
 // 起点を変えたとき・データを更新したとき: 地方ごとのデータを読み直す
+let areaSeq = 0;
 async function reloadArea() {
+  const seq = ++areaSeq;
   const [pois, osm, ro] = await Promise.all([loadArea('pois'), loadArea('spots'), loadArea('roads')]);
+  if (seq !== areaSeq) return; // 読み込む間に起点をもう一度変えたときは、後の分だけ使う
   DATA.pois = pois; DATA.osm = osm; osm.forEach(Lib.refineGenres); setRoads(ro);
   MOTO = null; JCTS = null; updateMainPrefs();
   DATA.ver++; tour.stops = null;
@@ -1431,6 +1434,7 @@ function renderEvents() {
   setCount(list.length);
   $('#view').innerHTML = `<div id="periods" class="chips"></div>
     <p class="status">${list.length}件・${sortBy === 'date' ? '開始日の早い順（開催中の長期展示は最後）' : 'その日だけ／短期のものを先頭に表示'}${rainy() ? '（雨の日モード：屋外を除外）' : ''}${list.length > 300 ? '・先頭300件を表示' : ''}</p>
+    ${Lib.haversineKm(DATA.cfg.origin, CFG_ORIGIN || DATA.cfg.origin) > 100 ? '<p class="hint">イベントは今のところ、調布のまわりの自治体などの情報だけです（スポット・グルメ・ツーリングは全国で使えます）。</p>' : ''}
     ${hidden || state.showNotices ? `<button type="button" class="btn" id="notices">${state.showNotices ? '募集・講座などの告知を隠す' : `募集・講座などの告知${hidden}件を非表示中（表示する）`}</button>` : ''}
     ${list.length ? list.slice(0, 300).map((e) => eventCard(e, from)).join('')
       : `<p class="empty">${evFailed ? 'イベントのデータを読み込めませんでした。電波の良い場所で開き直してください。' : 'この期間・条件のイベントはありません。'}</p>`}
@@ -2019,15 +2023,18 @@ function renderTouring() {
   const sns = dest && !tour.custom ? Lib.snsLinks({ name: dest.loop ? dest.road.name : dest.name, tags: dest.tags }) : null;
   const road = dest && dest.loop ? dest.road : null;
   const closedNow = road && (road.closedMonths || []).includes(thisMonth());
-  const roadsByDist = [...DATA.roads].sort((a, b) => Lib.haversineKm(DATA.cfg.origin, { lat: a.points[0][0], lon: a.points[0][1] })
-    - Lib.haversineKm(DATA.cfg.origin, { lat: b.points[0][0], lon: b.points[0][1] }));
+  // 近い順。厳選のコース（関東）が 150km 以内に少ないとき（全国のほかの地方）は、自動で集めた景色の道で補う
+  const roadKm = (r) => Lib.haversineKm(DATA.cfg.origin, { lat: r.points[0][0], lon: r.points[0][1] });
+  const byKm = (xs) => xs.map((r) => [roadKm(r), r]).sort((a, b) => a[0] - b[0]).map(([, r]) => r);
+  const nearOwn = byKm(DATA.roads).filter((r) => roadKm(r) <= 150);
+  const roadsByDist = nearOwn.length >= 20 ? byKm(DATA.roads) : nearOwn.concat(byKm(DATA.courses).slice(0, 20 - nearOwn.length));
   const viaRoads = tour.route ? (tour.route.via || []).map(roadById).filter(Boolean) : [];
   $('#view').innerHTML = `
     <label for="dest"><strong>目的地</strong></label> <details class="help"><summary aria-label="説明を見る">i</summary>目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定できます。</details>
     <select id="dest"><option value="">選んでください</option>
       <optgroup label="目的地まで走る">${DATA.touring.filter((t) => t.id === tour.destId || Lib.haversineKm(DATA.cfg.origin, t) <= DATA.cfg.poiRadiusKm).map((t) =>
         `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</optgroup>
-      ${DATA.roads.length ? `<optgroup label="おすすめの道を走る（近い20本・ほかは下の検索か地図で）">${roadsByDist.slice(0, 20).concat(
+      ${roadsByDist.length ? `<optgroup label="おすすめの道を走る（近い20本・ほかは下の検索か地図で）">${roadsByDist.slice(0, 20).concat(
         road && !roadsByDist.slice(0, 20).includes(road) && !chainName(road.id) ? [road] : []).map((r) =>
         `<option value="road:${esc(r.id)}" ${r.id === tour.roadId ? 'selected' : ''}>${esc(r.name)}${r.toll ? '（有料）' : ''}</option>`).join('')}</optgroup>` : ''}
       ${savedChains().length ? `<optgroup label="保存したつなぎコース">${savedChains().map((c) =>
@@ -2912,6 +2919,10 @@ function renderSettings() {
     <p class="status">今の起点：<strong>${esc(DATA.cfg.origin.name)}</strong>（移動時間・ルートはここから計算）</p>
     <div class="actions"><button type="button" class="btn" id="origin-here">現在地を起点にする</button>
       ${store.get('origin') ? `<button type="button" class="btn" id="origin-reset">${esc(CFG_ORIGIN.name)}に戻す</button>` : ''}</div>
+    <form class="row" id="origin-form"><input type="search" id="origin-q" placeholder="駅名・地名で探す（例：大阪駅、札幌市）" aria-label="起点にする場所">
+      <button type="submit" class="btn">探す</button></form>
+    <div id="origin-results"></div>
+    <details class="help"><summary aria-label="説明を見る">i</summary>全国で使えます。旅行先など、ほかの場所から出かける予定を立てるときは、その場所を起点にしてください（その地方のスポットやグルメを読み込み直します）。</details>
     ${costSettingsHtml()}
     <h2>行った場所の記録</h2>${visitedHtml()}
     <h2>お気に入りの共有</h2>
@@ -2951,6 +2962,19 @@ function renderSettings() {
     }, () => alert('現在地を取得できませんでした（位置情報の許可を確認してください）。'), { enableHighAccuracy: true, timeout: 10000 });
   };
   const or = $('#origin-reset'); if (or) or.onclick = () => setOrigin(null);
+  // 駅名・地名で探して起点にする（国土地理院の地名検索）
+  $('#origin-form').onsubmit = async (e) => {
+    e.preventDefault();
+    const q = $('#origin-q').value.trim(), box = $('#origin-results'); if (!q) return;
+    box.innerHTML = '<p class="hint">探しています…</p>';
+    try {
+      const r = await fetch(Lib.gsiSearchUrl(q), { signal: timeoutSignal(8000) });
+      const xs = r.ok ? Lib.parseGsi(await r.json(), 6) : [];
+      box.innerHTML = xs.length ? `<div class="actions">${xs.map((x, i) => `<button type="button" class="btn" data-origin-pick="${i}">${esc(x.name)}</button>`).join('')}</div>`
+        : '<p class="hint">見つかりませんでした。別の書き方（例：「〇〇駅」「〇〇市」）でも試してください。</p>';
+      box.querySelectorAll('[data-origin-pick]').forEach((b) => { b.onclick = () => setOrigin(xs[+b.dataset.originPick]); });
+    } catch { box.innerHTML = '<p class="hint">検索できませんでした（圏外の可能性があります）。</p>'; }
+  };
   $('#fav-share').onclick = () => {
     const url = `${location.origin}${location.pathname}#favs=${encodeURIComponent([...state.favs].join(','))}`;
     shareText('MyMap のお気に入り', `おでかけ候補 ${state.favs.size}件`, url);

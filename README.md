@@ -1,6 +1,6 @@
 # MyMap — 休日おでかけ検索
 
-起点（初期設定：調布駅）から半径 300km（関東・甲信越・東海・南東北の一部）の遊び場・観光地・乗り物スポット・博物館・植物園・寺社・温泉・絶景・ショッピング・イベント・ツーリングルートを探せるスマホ用 Web アプリ（PWA）です。AI や有料サービスは使わず、無料で動きます。
+起点（初期設定：調布駅。設定で全国どこにでも変えられます）から半径 300km の遊び場・観光地・乗り物スポット・博物館・植物園・寺社・温泉・絶景・ショッピング・イベント・ツーリングルートを探せるスマホ用 Web アプリ（PWA）です。AI や有料サービスは使わず、無料で動きます。
 
 ## できること
 - **スポット**（観光スポット・体験・グルメ・史跡・宿・お土産・遊び。範囲は `config.json` の `poiRadiusKm`）：移動手段（電車・車・バイク・自転車）と時間、都県、方面（北・西など）、ジャンルで絞り込み。★厳選と⭐お気に入りを先頭に表示
@@ -103,16 +103,17 @@
    - `sources`：イベントの収集元。地元の自治体サイトの `/event.js` があれば `"type": "eventjs"` で 1 行追加できます。
    - `directionLabels`：方面の表示名（例 `"W": "西（奥多摩・山梨）"`）。
 3. **Settings → Actions → General → Workflow permissions** を「Read and write permissions」にする。
-4. 上の「スマホで使う」の 2〜4 を行い、**Actions タブ → collect → Run workflow** で初回のデータ収集を行う（5〜15 分）。
+4. 上の「スマホで使う」の 2〜4 を行い、**Actions タブ → collect → Run workflow** で初回のデータ収集を行う（全国の地図データを処理するので 30〜60 分ほど）。
 
 ## データについて
 - `data/spots.json`・`data/touring.json`・`data/scenic_roads.json`：手作業で選んだスポット・ツーリング目的地・おすすめの道。自由に追加・編集できます。
   おすすめの道（302本）のうち 90 本は、2026年10月に自治体・道路管理者などの公開情報を調べて追加したもので、各コースに出典（`sources`）と注意事項（`alerts`。通行止めなどの年月つき）があります。線は通過点をルート検索で実際の道に沿わせて確かめています。
-- `data/osm_spots.json`・`data/pois.json`・`data/cells/`（グルメなどを約 25km 四方の升目ごとに分けたもの）：OpenStreetMap から週 1 回自動収集。料金や駐車場の情報はありません。これらは `gh-pages` にだけ置かれます。
+- `data/area/`（観光スポット・立ち寄り候補・ドライブコース・バイク駐車場・JCT を 1 度四方の升目ごとに分けたもの）・`data/cells/`（グルメなどを約 25km 四方の升目ごとに）・`data/park/`（駐車場）：全国の OpenStreetMap データ（Geofabrik の日本全体のファイル）から週 1 回自動で作ります（`collector/osm_pbf.py`。pyosmium が要る）。アプリは起点から 300km 以内の分だけ読み込みます。料金や駐車場の情報はありません。これらは `gh-pages` にだけ置かれます。
+- 全国で同じように使えるのは、OpenStreetMap から自動で作るデータと、ルート・天気などのネットの機能です。★厳選スポット・おすすめの道（Google マップで確かめた高速道路のコースを含む）・首都高のルートの組み立て・イベント・バイク駐車場の公式データは、関東（主に調布のまわり）の分だけです。
 - `data/events.json`・`data/status.json`：自動生成。手で編集しないでください。
 - `data/route_issues.json`：全コースを起点からルート検索して確かめた結果（2026年10月19日）。コースの中で往復・Uターンが残るコースは注意を表示し、ルートが引けない自動収集のコースは地図に出さない
-- `data/jct.json`：分岐の案内に付ける JCT の名前と位置（OpenStreetMap）。`data/scenic_roads.json` の `hw` は高速道路のコースの案内用の点（高速道路の上・JCT から離れた所）
-- `data/prefectures.json`：都県の判定用の境界（OpenStreetMap を簡略化したもの）。関東周辺の 10 都県のみ（それより外は「その他」）。
+- `data/jct.json`：分岐の案内に付ける JCT の名前と位置（OpenStreetMap。関東の分。全国の分は `data/area/jct/` に自動で作る）。`data/scenic_roads.json` の `hw` は高速道路のコースの案内用の点（高速道路の上・JCT から離れた所）
+- `data/prefectures.json`：関東周辺の 10 都県の境界（OpenStreetMap を簡略化したもの）。都道府県の判定方法（約 1km の升目に塗り分けて引く）を厳選スポットで確かめるテストだけに使う。収集では全国の境界を毎回 OpenStreetMap から作る。
 - バイク駐車場の公式データ：東京都内の区市（中央区・品川区・八王子市・調布市・町田市・杉並区など 20 区市）のオープンデータ（CC BY 4.0。`data/moto_official.json`、各件に出典）
 - 駐車場の一部：Foursquare OS Places（© Foursquare Labs, Inc.・Apache-2.0・2025年2月版。`data/park_fsq.json` は名前と位置だけに加工。`licenses/` に NOTICE と Apache License）
 - 出典：地図・スポットの一部 © OpenStreetMap contributors（ODbL）／ルート Valhalla (FOSSGIS)・OSRM／天気 Open-Meteo／ネットの施設検索 OpenPOI API（https://openpoiapi.com/attribution.html）／住所・目的地の検索 国土地理院（`data/muni.json` は市区町村コード表）／説明・写真 Wikipedia・Wikimedia Commons（各ページのライセンス）。
