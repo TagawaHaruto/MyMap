@@ -926,7 +926,8 @@ def collect_osm(status, now, curated_spots, curated_roads, root=DATA, pbf=None):
     del els
     counts = {k: len(out[k]) for k in ('pois', 'spots', 'roads', 'moto', 'jct', 'park')}
     counts['cells'] = sum(len(xs) for by in out['cells'].values() for xs in by.values())
-    check_counts(status.get('osm_counts'), counts)
+    # 作り方を変えた（OSM_VER を上げた）ときは、件数が大きく変わってもよいので比べない
+    check_counts(status.get('osm_counts') if status.get('osm_ver') == OSM_VER else None, counts)
     # 新しいデータは別の場所に全部作ってから入れ替える（途中で止まっても、公開中のデータを中途半端にしない）
     import shutil
     stage = os.path.join(root, '.osm_new')
