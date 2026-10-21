@@ -32,6 +32,9 @@ jobs:
           else
             echo "gh-pages がまだないので、空のデータから始めます"
           fi
+      - uses: actions/setup-python@v5  # システムの Python には pip で入れられないことがあるため
+        with:
+          python-version: '3.12'
       - name: Install pyosmium
         run: python3 -m pip install --quiet osmium
       - name: Test
