@@ -788,7 +788,7 @@ KEEP_TAGS = {'name', 'amenity', 'shop', 'tourism', 'leisure', 'historic', 'natur
              'highway', 'public_transport', 'bath:type', 'religion', 'cuisine', 'brand', 'brand:wikidata', 'operator', 'website',
              'wikipedia', 'opening_hours', 'phone', 'contact:phone', 'wheelchair', 'addr:province', 'name:ja-Hira', 'name:ja_kana',
              'name:ja-Hrkt', 'self_service', 'access', 'fee', 'capacity', 'capacity:motorcycle', 'motorcycle', 'moped', 'parking',
-             'toll', 'ele', 'mountain_pass'}
+             'toll', 'ele', 'mountain_pass', 'museum'}
 
 
 def osm_queries():
@@ -894,6 +894,14 @@ def download(url, path):
     return path
 
 
+def check_counts(old, new, ratio=0.5, floor=1000):
+    """前回より極端に少ない種類があれば例外（元データやライブラリの異常で、公開中のデータを空に近いもので上書きしないため）。"""
+    low = [f'{k}: {new.get(k, 0)}件（前回 {v}件）' for k, v in (old or {}).items()
+           if isinstance(v, int) and v >= floor and new.get(k, 0) < v * ratio]
+    if low:
+        raise RuntimeError('前回の半分未満になったので書き込まない: ' + ' / '.join(low))
+
+
 def osm_due(status, now):
     at = status.get('osm_at')
     return status.get('osm_ver') != OSM_VER or not at or now - dt.datetime.fromisoformat(at) >= dt.timedelta(days=7)
@@ -916,9 +924,23 @@ def collect_osm(status, now, curated_spots, curated_roads, root=DATA, pbf=None):
     print(f'osm: elements read in {round(time.time() - t0)}s')
     out = build_osm(els, curated_spots, curated_roads)
     del els
-    counts = save_area(root, {k: out[k] for k in ('pois', 'spots', 'roads', 'moto', 'jct')})
-    counts['park'] = save_park(root, out['park'])
-    counts['cells'] = save_cells(root, out['cells'])
+    counts = {k: len(out[k]) for k in ('pois', 'spots', 'roads', 'moto', 'jct', 'park')}
+    counts['cells'] = sum(len(xs) for by in out['cells'].values() for xs in by.values())
+    check_counts(status.get('osm_counts'), counts)
+    # 新しいデータは別の場所に全部作ってから入れ替える（途中で止まっても、公開中のデータを中途半端にしない）
+    import shutil
+    stage = os.path.join(root, '.osm_new')
+    if os.path.isdir(stage):
+        shutil.rmtree(stage)
+    os.makedirs(stage)
+    save_area(stage, {k: out[k] for k in ('pois', 'spots', 'roads', 'moto', 'jct')})
+    save_park(stage, out['park'])
+    save_cells(stage, out['cells'])
+    for d in ('area', 'park', 'cells'):
+        if os.path.isdir(os.path.join(root, d)):
+            shutil.rmtree(os.path.join(root, d))
+        os.replace(os.path.join(stage, d), os.path.join(root, d))
+    shutil.rmtree(stage)
     for old in ('pois.json', 'osm_spots.json', 'roads_osm.json', 'moto.json'):  # 関東だけの頃の 1 ファイルの形（アプリは area を優先）
         if os.path.exists(os.path.join(root, old)):
             os.remove(os.path.join(root, old))

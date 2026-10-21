@@ -205,8 +205,13 @@ document.addEventListener('click', (e) => {
 const AREA_LEGACY = { pois: 'data/pois.json', spots: 'data/osm_spots.json', roads: 'data/roads_osm.json', moto: 'data/moto.json' };
 let areaIndexP = null;
 async function loadArea(kind) {
-  if (!areaIndexP) areaIndexP = getJSON('data/area/index.json', null).then((x) => { FAILED.delete('data/area/index.json'); return x; });
-  const index = await areaIndexP;
+  if (!areaIndexP) {
+    areaIndexP = fetch('data/area/index.json', { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : r.status === 404 ? null : Promise.reject(new Error(`HTTP ${r.status}`))))
+      .catch((e) => { areaIndexP = null; throw e; });
+  }
+  let index;
+  try { index = await areaIndexP; FAILED.delete('data/area/index.json'); } catch { FAILED.add('data/area/index.json'); renderLoadMsg(); return []; }
   if (!index) { if (!AREA_LEGACY[kind]) return []; const xs = await getJSON(AREA_LEGACY[kind], []); FAILED.delete(AREA_LEGACY[kind]); return xs; }
   const have = index[kind] || {};
   const cids = Lib.cellsInRadius(DATA.cfg.origin, DATA.cfg.poiRadiusKm, 1).filter((c) => have[c]);
@@ -217,7 +222,12 @@ const setRoads = (ro) => {
   DATA.passes = ro.filter((r) => r.pass);
 };
 // 絞り込みの都道府県: 起点から 150km 以内に多いものを上から 5 つ（全国どこでも、近くの都道府県で絞り込めるように）
+const DEFAULT_PREFS = ['東京', '神奈川', '埼玉', '千葉', '山梨'];
 function updateMainPrefs() {
+  if (!store.get('origin')) {
+    Lib.setMainPrefs(DEFAULT_PREFS); PREFS = DEFAULT_PREFS.concat('その他');
+    return;
+  }
   const n = {};
   for (const s of DATA.spots.concat(DATA.osm)) {
     if (s.pref && s.pref !== 'その他' && Lib.haversineKm(DATA.cfg.origin, s) <= 150) n[s.pref] = (n[s.pref] || 0) + 1;
@@ -236,7 +246,7 @@ async function reloadArea() {
   if (seq !== areaSeq) return; // 読み込む間に起点をもう一度変えたときは、後の分だけ使う
   DATA.pois = pois; DATA.osm = osm; osm.forEach(Lib.refineGenres); setRoads(ro);
   MOTO = null; JCTS = null; updateMainPrefs();
-  DATA.ver++; tour.stops = null;
+  DATA.osmLoaded = true; DATA.ver++; tour.stops = null; // 起動時の読み込みの途中で呼ばれたときは、起動時の側は使わずに終わるため、ここで読み終わりにする
 }
 
 // ---- 升目ごとのデータ（飲食・史跡・宿・お土産・遊び） ----
@@ -592,9 +602,12 @@ function parkRow(x, bike) {
 let MOTO = null;
 async function motoData() {
   if (!MOTO) {
+    const seq = areaSeq;
     const [osm, official] = await Promise.all([loadArea('moto'), getJSON('data/moto_official.json', [])]);
     FAILED.delete('data/moto_official.json');
-    MOTO = official.map(Lib.officialMoto).concat(osm.map((x) => ({ ...x, kind: x.type })));
+    const all = official.map(Lib.officialMoto).concat(osm.map((x) => ({ ...x, kind: x.type })));
+    if (seq !== areaSeq) return all; // 起点を変えた後なら覚えない（次に呼ばれたときに新しい地方で読み直す）
+    MOTO = all;
   }
   return MOTO;
 }
@@ -1667,9 +1680,12 @@ let JCTS = null;
 async function jctList() {
   if (!JCTS) {
     // 手で集めた関東の分＋全国の収集（起点から poiRadiusKm 以内）
+    const seq = areaSeq;
     const [own, area] = await Promise.all([getJSON('data/jct.json', []), loadArea('jct').catch(() => [])]);
     FAILED.delete('data/jct.json');
-    JCTS = own.concat(area.map((x) => [x.name, x.lat, x.lon]));
+    const all = own.concat(area.map((x) => [x.name, x.lat, x.lon]));
+    if (seq !== areaSeq) return all;
+    JCTS = all;
   }
   return JCTS;
 }
@@ -1868,14 +1884,14 @@ function getStops() {
   return tour.stops;
 }
 // ルート沿いの飲食の升目を読み込み、そろったら立ち寄り候補を作り直す
-let stopCellsBusy = false;
+// （同じ升目を何度も読みに行かないのは ensureCellIds が防ぐ。読み込み中に別のタブへ移ったりルート候補を替えたりしても、
+// そのルートのまま読み終わったら候補を作り直す。タブが違えば、戻ったときに作り直した一覧が出る）
 function loadStopCells(cids) {
-  if (stopCellsBusy) return;
   const rt = tour.route;
-  stopCellsBusy = true;
   ensureCellIds(['food'], cids).then((changed) => {
-    stopCellsBusy = false;
-    if (changed && tour.route === rt && state.tab === 'touring') { tour.stops = null; tour.key = ''; renderTouring(); }
+    if (!changed || tour.route !== rt) return;
+    tour.stops = null; tour.key = '';
+    if (state.tab === 'touring') renderTouring();
   });
 }
 // 一覧と地図に出す分。選んだものは全部、ほかは種類ごとに上限まで、ルート全体から均等に選ぶ
@@ -1928,7 +1944,7 @@ function updateTourSelection() {
   });
   const nav = $('#nav');
   if (nav) {
-    const waiting = tour.route && !DATA.eventsLoaded; // 道の駅などの読み込み前に押すと経由地が抜けるため
+    const waiting = tour.route && (!DATA.eventsLoaded || !DATA.osmLoaded); // 道の駅・観光名所などの読み込み前に押すと経由地が抜けるため
     const d = currentDest();
     const legs = tour.route && !waiting ? navLegs() : null;
     nav.href = waiting ? '#' : legs ? legs[0].url
@@ -2033,6 +2049,8 @@ function bindSheetHandle() {
 addEventListener('resize', () => { if (document.body.classList.contains('tour-full')) setSheet(null); });
 function renderTouring() {
   const dest = currentDest();
+  // 保存してあったルートの目的地が、今の地方のデータにない（起点を変えた・自動で集めた道が範囲の外）ときは、ルートも出さない
+  if (!dest && tour.cands && DATA.osmLoaded) { tour.cands = null; tour.stops = null; tour.picked.clear(); saveTour(); }
   const key = JSON.stringify([tour.destId, tour.custom, tour.roadId, tour.route && tour.route.at, tour.sel, tour.radius, tour.error, tour.busy, DATA.ver,
     !!DATA.touring.length, DATA.roads.length, DATA.courses.length, tour.showCourses, store.get('courseTypes'), store.get('nightRoads'), myRoutes().length, savedChains().length, tourFull(), navigator.onLine, tour.restored, tour.opts,
     store.get('stopKinds'), tour.foodCat, tour.stopsAll]);
@@ -2236,7 +2254,7 @@ function renderTouring() {
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
     // 地図で指定した地点は id がいつも 'custom' なので、地点そのものと走り方で同じ検索かを見分ける
-    const sig = () => JSON.stringify([tour.destId, tour.roadId, tour.custom, tour.opts]);
+    const sig = () => JSON.stringify([tour.destId, tour.roadId, tour.custom, tour.opts, DATA.cfg.origin]);
     const d = currentDest(), at = sig();
     try {
       const cands = await fetchCandidates(d);
@@ -3010,10 +3028,13 @@ let CFG_ORIGIN = null; // config.json の起点（現在地にしたあと戻す
 function setOrigin(o) {
   store.set('origin', o);
   DATA.cfg.origin = o || CFG_ORIGIN;
-  tour.cands = null; tour.stops = null; tour.key = ''; DATA.ver++;
+  // 出発地が変わると、引いたルートと選んだ立ち寄りは使えない（保存も消す。消さないと開き直したときに前の地方のルートが出る）
+  tour.cands = null; tour.stops = null; tour.key = ''; tour.picked.clear(); tour.kept = []; DATA.ver++;
+  saveTour();
   buzz(); renderAll();
   // 遠くへ移したときは、その地方のデータに読み替える（全国のデータから起点の近くだけ読んでいるため）
-  reloadArea().then(() => { DATA.osmLoaded = true; renderAll(); });
+  DATA.osmLoaded = false;
+  reloadArea().then(renderAll);
 }
 function visitedRecords() {
   const meta = store.get('visitedMeta') || {};
@@ -3196,18 +3217,23 @@ async function init() {
   renderInstallBanner();
   loadWeather();
   requestUpdate();
-  let lines;
-  [DATA.pois, DATA.events, lines] = await Promise.all([loadArea('pois'), getJSON('data/events.json', []), getJSON('data/course_lines.json', {})]);
+  let lines, pois;
+  const seq0 = areaSeq; // 読み込む間に起点を変えたら（reloadArea が新しい地方を読む）、ここで読んだ分は使わない
+  [pois, DATA.events, lines] = await Promise.all([loadArea('pois'), getJSON('data/events.json', []), getJSON('data/course_lines.json', {})]);
+  if (seq0 === areaSeq) DATA.pois = pois;
   // 地図に描くコースの線は、コースの点を直線で結ばず、実際に道を通した形（ルート検索で作ったもの）にする
   for (const r of DATA.roads) if (lines[r.id]) r.line = Lib.decodePolyline(lines[r.id], 5).map(([lon, lat]) => [lat, lon]);
   DATA.eventsLoaded = true; DATA.ver++; tour.stops = null;
   cellIndex = await getJSON('data/cells/index.json', null);
   FAILED.delete('data/cells/index.json'); // まだ収集していないとき（404）は失敗扱いにしない
-  setRoads(await loadArea('roads'));
+  const ro = await loadArea('roads');
+  if (seq0 === areaSeq) setRoads(ro);
   DATA.ver++; tour.stops = null; // 升目の目録がそろったので、立ち寄りのカフェ・ごはんを読み込める
   renderAll();
   // 自動収集スポットは大きい（数 MB）ので最後に読み込む
-  DATA.osm = await loadArea('spots');
+  const osm = await loadArea('spots');
+  if (seq0 !== areaSeq) return; // 起点を変えた・データを更新した読み直しのほうで osmLoaded にする
+  DATA.osm = osm;
   DATA.osm.forEach(Lib.refineGenres);
   updateMainPrefs();
   DATA.osmLoaded = true; DATA.ver++; tour.stops = null; // 立ち寄りの観光名所・温泉・展望台にも使う
