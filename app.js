@@ -1497,6 +1497,8 @@ const tour = { destId: savedTour.destId || null, custom: savedTour.custom || nul
 tour.restored = !!tour.cands;
 Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour.sel]) || null });
 let map = null, markers = new Map();
+// 地図を作り直した直後、片づけたキャンバスへ Leaflet の描画が 1 回届いてエラーになる（Leaflet 1.9 の既知の癖）。キャンバスが無ければ描かない
+if (typeof L !== 'undefined' && L.Canvas) { const redraw = L.Canvas.prototype._redraw; L.Canvas.prototype._redraw = function () { if (this._ctx) redraw.call(this); }; }
 const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
   cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
@@ -1861,6 +1863,8 @@ function renderTouring() {
   // （全画面では地図がパネルの外 #map-full にあるので、#map の有無ではなくパネルの中身で判断する。別のタブから戻ると空のままだった）
   if (key === tour.key && $('#view #dest') && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
+  // 地図は、入れ物（#map）を作り直す前に片づける（後から片づけると、Leaflet の描画が消えたキャンバスに届いてエラーになる）
+  if (map) { try { map.remove(); } catch { /* 既に消えている */ } map = null; }
   const stops = getStops();
   const offline = navigator.onLine === false;
   const sns = dest && !tour.custom ? Lib.snsLinks({ name: dest.loop ? dest.road.name : dest.name, tags: dest.tags }) : null;
@@ -2580,7 +2584,8 @@ function renderChainBox() {
     el.querySelectorAll('[data-sc-del]').forEach((b) => { b.onclick = () => {
       buzz(); const c = savedChains()[+b.dataset.scDel];
       if (!confirm(`「${c.name}」を削除しますか？`)) return;
-      store.set('savedChains', savedChains().filter((x) => x !== c)); renderChainBox();
+      store.set('savedChains', savedChains().filter((x) => x.id !== c.id)); // 読むたびに別のオブジェクトになるので id で比べる（消えなかった）
+      refreshDestOptions(); renderChainBox();
     }; });
   };
   if (!d.length) { el.innerHTML = savedHtml; bindSaved(); return; }
@@ -2602,7 +2607,7 @@ function renderChainBox() {
     buzz();
     const id = chainId(), name = $('#chain-name').value.trim() || roadById(id).name;
     store.set('savedChains', [...savedChains().filter((c) => c.id !== id), { id, name }]);
-    renderChainBox();
+    refreshDestOptions(); renderChainBox();
     const m = $('#chain-msg'); if (m) m.textContent = `「${name}」を保存しました。上の「目的地」からも選べます。`;
   };
   const move = (i, j) => { const x = chainDraft(); [x[i], x[j]] = [x[j], x[i]]; store.set('chainDraft', x); renderChainBox(); };
@@ -2612,6 +2617,15 @@ function renderChainBox() {
   $('#chain-clear').onclick = () => { buzz(); store.set('chainDraft', []); renderChainBox(); };
   el.querySelectorAll('[name="chain-mode"]').forEach((r) => { r.onchange = () => { store.set('chainMode', r.value); }; });
   $('#chain-go').onclick = () => { buzz(); setDest(() => { tour.custom = null; tour.roadId = chainId(); tour.destId = null; }); };
+}
+// 「目的地」の選択肢の「保存したつなぎコース」を今の保存内容に合わせる（パネル全体は作り直さない）
+function refreshDestOptions() {
+  const sel = $('#dest'); if (!sel) return;
+  let og = [...sel.querySelectorAll('optgroup')].find((g) => g.label === '保存したつなぎコース');
+  const saved = savedChains();
+  if (!saved.length) { if (og) og.remove(); return; }
+  if (!og) { og = document.createElement('optgroup'); og.label = '保存したつなぎコース'; const after = [...sel.querySelectorAll('optgroup')].find((g) => g.label === '登録したルート'); sel.insertBefore(og, after || null); }
+  og.innerHTML = saved.map((c) => `<option value="road:${esc(c.id)}" ${c.id === tour.roadId ? 'selected' : ''}>🔗${esc(c.name)}</option>`).join('');
 }
 // 押したコースの説明は地図の下に出す（吹き出しだと小さい画面で地図が隠れるため）。選んだ線は太くして前に
 let courseSel = null;
