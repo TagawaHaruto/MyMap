@@ -2076,7 +2076,8 @@ function renderTouring() {
   $('#view').innerHTML = `
     <label for="dest"><strong>目的地</strong></label> <details class="help"><summary aria-label="説明を見る">i</summary>目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定できます。</details>
     <select id="dest"><option value="">選んでください</option>
-      <optgroup label="目的地まで走る">${DATA.touring.filter((t) => t.id === tour.destId || Lib.haversineKm(DATA.cfg.origin, t) <= DATA.cfg.poiRadiusKm).map((t) =>
+      <optgroup label="目的地まで走る">${DATA.touring.map((t) => [Lib.haversineKm(DATA.cfg.origin, t), t]).filter(([km, t]) => t.id === tour.destId || km <= DATA.cfg.poiRadiusKm)
+        .sort((a, b) => a[0] - b[0]).map(([, t]) =>
         `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</optgroup>
       ${roadsByDist.length ? `<optgroup label="おすすめの道を走る（近い20本・ほかは下の検索か地図で）">${roadsByDist.slice(0, 20).concat(
         road && !roadsByDist.slice(0, 20).includes(road) && !chainName(road.id) ? [road] : []).map((r) =>
