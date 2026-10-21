@@ -1360,15 +1360,18 @@ function newDirHtml(shown) {
 const WPLAN = { loaded: false, days: null };
 async function loadWeatherPlan() {
   WPLAN.loaded = true;
-  const { lat, lon } = DATA.cfg.origin;
+  const o = DATA.cfg.origin, { lat, lon } = o;
+  let days = null;
   try {
     const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&hourly=precipitation_probability&timezone=Asia%2FTokyo&forecast_days=10`, { signal: timeoutSignal(8000) });
     const h = (await r.json()).hourly;
-    WPLAN.days = Lib.weekend(new Date()).map((key) => {
+    days = Lib.weekend(new Date()).map((key) => {
       const day = new Date(`${key}T00:00:00`), max = (a, b) => Math.max(...h.time.map((t, i) => (t.startsWith(key) && +t.slice(11, 13) >= a && +t.slice(11, 13) < b ? h.precipitation_probability[i] : -1)));
       return { day, am: max(9, 12), pm: max(12, 17), night: max(17, 22) };
     }).filter((d) => d.am >= 0);
-  } catch { WPLAN.days = null; }
+  } catch { /* 取れなければプランを出さない */ }
+  if (DATA.cfg.origin !== o) return; // 取得中に起点を変えた（新しい起点の分は setOrigin のあとで取り直す）
+  WPLAN.days = days;
   renderRecommend();
 }
 // 週末の時間帯ごとに 3 か所ずつ（晴れは屋外・雨は屋内）。夜は夜景・夜も遊べる所があれば
@@ -1395,7 +1398,7 @@ function weatherPlanHtml(cands) {
 
 // ---- 天気（Open-Meteo, 登録不要） ----
 async function loadWeather() {
-  const { lat, lon } = DATA.cfg.origin;
+  const o = DATA.cfg.origin, { lat, lon } = o, at = `${lat},${lon}`;
   const btn = $('#weather');
   const [sat, sun] = Lib.weekend(new Date());
   try {
@@ -1403,15 +1406,17 @@ async function loadWeather() {
       { signal: timeoutSignal(8000) });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const j = await r.json();
+    if (DATA.cfg.origin !== o) return; // 取得中に起点を変えた
     const pick = (d) => j.daily.precipitation_probability_max[j.daily.time.indexOf(d)];
     const ps = [['土', pick(sat)], ['日', pick(sun)]].filter(([, p]) => p != null);
     state.weatherRainy = ps.some(([, p]) => p >= DATA.cfg.rainThreshold);
     btn.dataset.text = ps.map(([d, p]) => `${d}${p >= DATA.cfg.rainThreshold ? '☔' : '☀'}${p}%`).join(' ');
-    store.set('weather', { text: btn.dataset.text, rainy: state.weatherRainy, sat });
+    store.set('weather', { text: btn.dataset.text, rainy: state.weatherRainy, sat, at });
   } catch {
-    // 同じ週末の予報を前に取れていれば、それを「前回取得」として出す
+    if (DATA.cfg.origin !== o) return;
+    // 同じ週末・同じ起点の予報を前に取れていれば、それを「前回取得」として出す
     const w = store.get('weather');
-    if (w && w.sat === sat) { state.weatherRainy = w.rainy; btn.dataset.text = `${w.text}（前回取得）`; } else btn.dataset.text = '天気を取得できません';
+    if (w && w.sat === sat && (!w.at || w.at === at)) { state.weatherRainy = w.rainy; btn.dataset.text = `${w.text}（前回取得）`; } else btn.dataset.text = '天気を取得できません';
   }
   renderAll();
 }
@@ -3034,6 +3039,8 @@ function setOrigin(o) {
   // 出発地が変わると、引いたルートと選んだ立ち寄りは使えない（保存も消す。消さないと開き直したときに前の地方のルートが出る）
   tour.cands = null; tour.stops = null; tour.key = ''; tour.picked.clear(); tour.kept = []; DATA.ver++;
   saveTour();
+  // 天気も新しい起点で取り直す（週末プランは renderAll → renderRecommend が取りに行く）
+  state.weatherRainy = false; $('#weather').dataset.text = ''; WPLAN.loaded = false; WPLAN.days = null; loadWeather();
   buzz(); renderAll();
   // 遠くへ移したときは、その地方のデータに読み替える（全国のデータから起点の近くだけ読んでいるため）
   DATA.osmLoaded = false;
