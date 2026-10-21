@@ -1299,6 +1299,10 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Google マップで確かめたコースの出発地（gfrom。書いていないものは config の起点＝調布駅で確かめた）と、今の起点がそこか
+const gFrom = (road) => road.gfrom || CFG_ORIGIN || DATA.cfg.origin;
+const atGFrom = (road) => Lib.haversineKm(DATA.cfg.origin, gFrom(road)) < 1;
+
 // ---- 今週末のおすすめ ----
 // おすすめの元: ★厳選（関東）。起点から 100km 以内に厳選が少ない地方では、100km 以内の厳選と、
 // 公式サイトか Wikipedia のある観光スポット（OpenStreetMap）から選ぶ（遠くの関東の厳選ばかり勧めないように）
@@ -2047,7 +2051,8 @@ function renderTouring() {
   const roadKm = (r) => Lib.haversineKm(DATA.cfg.origin, { lat: r.points[0][0], lon: r.points[0][1] });
   const byKm = (xs) => xs.map((r) => [roadKm(r), r]).sort((a, b) => a[0] - b[0]).map(([, r]) => r);
   const nearOwn = byKm(DATA.roads).filter((r) => roadKm(r) <= 150);
-  const roadsByDist = nearOwn.length >= 20 ? byKm(DATA.roads) : nearOwn.concat(byKm(DATA.courses).slice(0, 20 - nearOwn.length));
+  const names = new Set(nearOwn.map((r) => r.name)); // 自動で集めた道は、同じ名前の別の区間が並ばないように
+  const roadsByDist = nearOwn.length >= 20 ? byKm(DATA.roads) : nearOwn.concat(byKm(DATA.courses).filter((r) => !names.has(r.name) && names.add(r.name)).slice(0, 20 - nearOwn.length));
   const viaRoads = tour.route ? (tour.route.via || []).map(roadById).filter(Boolean) : [];
   $('#view').innerHTML = `
     <label for="dest"><strong>目的地</strong></label> <details class="help"><summary aria-label="説明を見る">i</summary>目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定できます。</details>
@@ -2122,8 +2127,8 @@ function renderTouring() {
         <button type="button" class="btn" id="rt-fuel">⛽24時間ガソリンスタンド</button>
         ${(tour.route.guide || []).length ? `<button type="button" class="btn${dest && dest.loop && dest.road.hw ? ' primary' : ''}" id="rt-jct">🔀分岐（JCT）の案内（${tour.route.guide.length}か所）</button>` : ''}</div>
       ${dest && dest.loop && dest.road.hw ? `<p class="notice">🛣 高速道路のコースです。分岐で迷わないよう「🔀分岐（JCT）の案内」を走る前に確認してください。
-        Google マップには${tour.route.gVerified ? '、Google マップで経路を開いて途中で高速を降りないことを確かめた地点（調布駅発着で確認）' : tour.route.hwPins ? '、下の一般道や反対車線と重ならない高速道路の上の地点' : '高速道路の上の地点'}を経由地として渡します。
-        Google マップで表示された距離が<strong>約${Math.round((tour.route.gVerified && !store.get('origin') && dest.road.gkm) || tour.route.gmKm || tour.route.km)}km</strong>前後なら同じルートです（大きく違うときは、途中で高速を降りるルートになっています）。</p>${(tour.route.tollSpans || []).length > 1 ? `<p class="notice">⚠ <strong>このルートは途中で一度高速を降りて乗り直します</strong>（コースの向きどうしがうまくつながらないため）。つなげたコースなら「走り方」で外周を選ぶと、降りずに回れることがあります。</p>` : ''}` : ''}
+        Google マップには${tour.route.gVerified ? `、Google マップで経路を開いて途中で高速を降りないことを確かめた地点（${esc(gFrom(dest.road).name)}発着で確認）` : tour.route.hwPins ? '、下の一般道や反対車線と重ならない高速道路の上の地点' : '高速道路の上の地点'}を経由地として渡します。
+        Google マップで表示された距離が<strong>約${Math.round((tour.route.gVerified && atGFrom(dest.road) && dest.road.gkm) || tour.route.gmKm || tour.route.km)}km</strong>前後なら同じルートです（大きく違うときは、途中で高速を降りるルートになっています）。</p>${(tour.route.tollSpans || []).length > 1 ? `<p class="notice">⚠ <strong>このルートは途中で一度高速を降りて乗り直します</strong>（コースの向きどうしがうまくつながらないため）。つなげたコースなら「走り方」で外周を選ぶと、降りずに回れることがあります。</p>` : ''}` : ''}
       <div class="actions"><button type="button" class="btn" id="rt-save-map">📥ルート沿いの地図を保存（圏外用）</button></div>
       <p class="status" id="rt-save-msg"></p>
       <div id="rt-out"></div>
