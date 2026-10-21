@@ -1497,6 +1497,8 @@ const tour = { destId: savedTour.destId || null, custom: savedTour.custom || nul
 tour.restored = !!tour.cands;
 Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour.sel]) || null });
 let map = null, markers = new Map();
+// 地図を作り直した直後、片づけたキャンバスへ Leaflet の描画が 1 回届いてエラーになる（Leaflet 1.9 の既知の癖）。キャンバスが無ければ描かない
+if (typeof L !== 'undefined' && L.Canvas) { const redraw = L.Canvas.prototype._redraw; L.Canvas.prototype._redraw = function () { if (this._ctx) redraw.call(this); }; }
 const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
   cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
@@ -1861,6 +1863,8 @@ function renderTouring() {
   // （全画面では地図がパネルの外 #map-full にあるので、#map の有無ではなくパネルの中身で判断する。別のタブから戻ると空のままだった）
   if (key === tour.key && $('#view #dest') && $('#map')) { if (map) map.invalidateSize(); updateTourSelection(); return; }
   tour.key = key;
+  // 地図は、入れ物（#map）を作り直す前に片づける（後から片づけると、Leaflet の描画が消えたキャンバスに届いてエラーになる）
+  if (map) { try { map.remove(); } catch { /* 既に消えている */ } map = null; }
   const stops = getStops();
   const offline = navigator.onLine === false;
   const sns = dest && !tour.custom ? Lib.snsLinks({ name: dest.loop ? dest.road.name : dest.name, tags: dest.tags }) : null;
