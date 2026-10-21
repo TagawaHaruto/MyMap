@@ -876,23 +876,40 @@ def refresh_roads(cfg, status, fetch, now, old, curated=(), sleep=time.sleep):
 
 # ---- 約10万件のデータ（飲食・史跡・宿・お土産・遊び）: 0.25 度四方の升目ごとのファイルに分ける ----
 CELL = 4  # 1 度あたりの升目の数（lib.js の cellId と同じ）
+SPORTS = {'fitness_centre': 'ジム', 'swimming_pool': 'プール', 'stadium': 'スタジアム', 'sports_hall': '体育館',
+          'pitch': 'グラウンド・コート', 'track': '陸上トラック', 'dance': 'ダンス'}
+AMUSE = {'karaoke_box': 'カラオケ', 'cinema': '映画館', 'theatre': '劇場・ホール', 'arts_centre': 'アートセンター', 'music_venue': 'ライブハウス'}
+HOBBY = {'books': '本屋', 'games': 'ゲーム', 'video_games': 'ゲーム', 'toys': 'おもちゃ', 'anime': 'アニメ・漫画', 'music': 'CD・レコード',
+         'musical_instrument': '楽器', 'outdoor': 'アウトドア用品', 'sports': 'スポーツ用品', 'bicycle': '自転車', 'motorcycle': 'バイク用品',
+         'hobby': 'ホビー・模型', 'model': 'ホビー・模型', 'craft': '手芸・画材', 'art': '画材・アート', 'frame': '画材・アート',
+         'camera': 'カメラ', 'second_hand': '古着・リサイクル', 'antiques': '骨董', 'collector': 'コレクション', 'fishing': '釣具'}
+RELIGION = {'shinto': '神社', 'buddhist': '寺', 'christian': '教会'}
 # (種類, グループ, Overpass の条件, 細かく分けるか: 半径 75km ごとに 1 辺を分ける)。件数の多い種類は分けないと時間切れになる
 CELL_QUERIES = [
     ('restaurant', 'food', 'nwr["amenity"="restaurant"]["name"]', True),
     ('cafe', 'food', 'nwr["amenity"="cafe"]["name"]', True),
     ('fastfood', 'food', 'nwr["amenity"="fast_food"]["name"]', True),
-    ('sweets', 'food', 'nwr["shop"~"^(bakery|confectionery|pastry)$"]["name"]', True),
+    ('sweets', 'food', ['nwr["shop"~"^(bakery|confectionery|pastry)$"]["name"]', 'nwr["amenity"="ice_cream"]["name"]'], True),
+    ('pub', 'food', 'nwr["amenity"~"^(pub|biergarten)$"]["name"]', True),
     ('historic', 'heritage', 'nwr["historic"~"^(castle|ruins|archaeological_site|monument|memorial|fort|manor|city_gate|tomb|building)$"]["name"]', True),
     ('lodging', 'heritage', 'nwr["tourism"~"^(hotel|guest_house|hostel|motel)$"]["name"]', False),
     ('souvenir', 'local', 'nwr["shop"~"^(gift|farm|seafood|wine|deli|tea|cheese)$"]["name"]', False),
     ('market', 'local', 'nwr["amenity"="marketplace"]["name"]', False),
     ('activity', 'local', 'nwr["leisure"~"^(sports_centre|fishing|bowling_alley|marina|horse_riding|ice_rink|golf_course)$"]["name"]', False),
     ('camp', 'local', 'nwr["tourism"~"^(camp_site|caravan_site|picnic_site)$"]["name"]', False),
+    # 近所の遊び・寺社・趣味のお店（Wikipedia のある公園・寺社は osm_spots 側にあるので除く）
+    ('park', 'play', 'nwr["leisure"~"^(park|playground)$"]["name"][!"wikipedia"]', True),
+    ('sports', 'play', f'nwr["leisure"~"^({"|".join(SPORTS)})$"]["name"]', True),
+    ('amuse', 'play', f'nwr["amenity"~"^({"|".join(AMUSE)})$"]["name"]', False),
+    ('worship', 'temple', 'nwr["amenity"="place_of_worship"]["name"][!"wikipedia"]', True),
+    ('hobby', 'hobby', f'nwr["shop"~"^({"|".join(HOBBY)})$"]["name"]', True),
 ]
 CUISINE = {'soba': 'そば', 'udon': 'うどん', 'ramen': 'ラーメン', 'sushi': '寿司', 'japanese': '和食', 'italian': 'イタリアン',
            'chinese': '中華', 'french': 'フレンチ', 'indian': 'カレー', 'curry': 'カレー', 'yakiniku': '焼肉', 'barbecue': '焼肉',
            'pizza': 'ピザ', 'steak_house': 'ステーキ', 'seafood': '海鮮', 'tempura': '天ぷら', 'tonkatsu': 'とんかつ',
-           'okonomiyaki': 'お好み焼き', 'korean': '韓国料理', 'burger': 'ハンバーガー', 'coffee_shop': 'カフェ'}
+           'okonomiyaki': 'お好み焼き', 'korean': '韓国料理', 'burger': 'ハンバーガー', 'coffee_shop': 'カフェ',
+           'izakaya': '居酒屋', 'yakitori': '焼き鳥', 'noodle': '麺類', 'donburi': '丼', 'teishoku': '定食', 'unagi': 'うなぎ',
+           'gyoza': '餃子', 'thai': 'タイ料理', 'vietnamese': 'ベトナム料理', 'spanish': 'スペイン料理', 'mexican': 'メキシコ料理'}
 HISTORIC = {'castle': '城跡', 'ruins': '遺跡', 'archaeological_site': '遺跡', 'monument': '記念碑', 'memorial': '記念碑',
             'fort': '砦跡', 'manor': '屋敷', 'city_gate': '門', 'tomb': '古墳・墓所', 'building': '歴史的建造物'}
 INDOOR_LEISURE = ('sports_centre', 'bowling_alley', 'ice_rink')
@@ -914,6 +931,10 @@ def group_genre(t):
         return 'food', ['food'], True, 'ファストフード'
     if shop in ('bakery', 'confectionery', 'pastry'):
         return 'food', ['food', 'shopping'], True, 'パン・お菓子'
+    if amen == 'ice_cream':
+        return 'food', ['food'], True, 'アイス'
+    if amen in ('pub', 'biergarten'):
+        return 'food', ['food'], True, '居酒屋'
     if t.get('historic') in HISTORIC:
         return 'heritage', ['heritage'], False, HISTORIC[t['historic']]
     if tour in ('hotel', 'guest_house', 'hostel', 'motel'):
@@ -926,6 +947,16 @@ def group_genre(t):
         return 'local', ['outdoor'], leis in INDOOR_LEISURE, '遊び・スポーツ'
     if tour in ('camp_site', 'caravan_site', 'picnic_site'):
         return 'local', ['outdoor'], False, 'キャンプ・野外'
+    if leis in ('park', 'playground'):
+        return 'play', ['play'], False, '公園' if leis == 'park' else '遊び場'
+    if leis in SPORTS:
+        return 'play', ['outdoor', 'play'], leis in ('fitness_centre', 'sports_hall', 'dance'), SPORTS[leis]
+    if amen in AMUSE:
+        return 'play', ['play'], True, AMUSE[amen]
+    if amen == 'place_of_worship':
+        return 'temple', ['temple'], False, RELIGION.get(t.get('religion'), '寺社・教会')
+    if shop in HOBBY:
+        return 'hobby', ['shopping'], True, HOBBY[shop]
     return None
 
 
@@ -950,7 +981,7 @@ def parse_group_items(text, seen, kind=None):
         kana = t.get('name:ja-Hira') or t.get('name:ja_kana') or t.get('name:ja-Hrkt')
         if kana:
             item['kana'] = kana
-        if t.get('brand') or t.get('brand:wikidata'):  # チェーン店（画面では既定で隠す）
+        if g[0] == 'food' and (t.get('brand') or t.get('brand:wikidata')):  # チェーンの飲食店（画面では既定で隠す）
             item['chain'] = True
         item.update(extra_tags(t))
         out.append(item)

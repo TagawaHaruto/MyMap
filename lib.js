@@ -76,6 +76,7 @@ const Lib = (() => {
     ['カフェ', ['カフェ', '喫茶', '珈琲', 'コーヒー', 'cafe', 'coffee']],
     ['パン・スイーツ', ['パン・', 'ベーカリー', 'ブーランジェリー', 'ケーキ', '菓子', 'スイーツ', 'パティスリー', 'ドーナツ', 'ジェラート', 'bakery']],
     ['ハンバーガー', ['バーガー', 'burger']],
+    ['居酒屋', ['居酒屋', '酒場', '炉端', '焼き鳥', '焼鳥', 'やきとり', '串焼', 'izakaya']],
   ];
   const FOOD_KEYS = new Map(FOOD_CATS.map(([label, words]) => [label, words.map(norm)]));
   const FOOD_NOT = { 'そば・うどん': [norm('中華そば')] }; // 「そば」で中華そば（ラーメン）を出さない
@@ -141,33 +142,54 @@ const Lib = (() => {
   }
 
   // 経路（GeoJSON の [lon,lat] 配列）までの最短距離 km と、出発点からそこまでの進行距離 km
+  // 線の始点の緯度で平面に直す（どの点から測っても同じ物差しになり、stopsAlongRoute と同じ値になる）
+  const routeXY = (line) => { const k = Math.cos(rad(line[0][1])); return line.map(([lon, lat]) => [lon * k * 111.32, lat * 110.57]); };
+  function segDist(px, py, a, b) {
+    const dx = b[0] - a[0], dy = b[1] - a[1], len2 = dx * dx + dy * dy;
+    const t = len2 ? Math.max(0, Math.min(1, ((px - a[0]) * dx + (py - a[1]) * dy) / len2)) : 0;
+    return [Math.hypot(px - (a[0] + t * dx), py - (a[1] + t * dy)), t * Math.sqrt(len2)];
+  }
   function distToRoute(p, line) {
-    const k = Math.cos(rad(p.lat));
-    const xy = ([lon, lat]) => [lon * k * 111.32, lat * 110.57];
-    const [px, py] = xy([p.lon, p.lat]);
+    if (line.length < 2) return { km: Infinity, along: 0 };
+    const xy = routeXY(line), k = Math.cos(rad(line[0][1])), px = p.lon * k * 111.32, py = p.lat * 110.57;
     let best = { km: Infinity, along: 0 }, acc = 0;
-    for (let i = 0; i + 1 < line.length; i++) {
-      const [ax, ay] = xy(line[i]), [bx, by] = xy(line[i + 1]);
-      const dx = bx - ax, dy = by - ay, len2 = dx * dx + dy * dy, len = Math.sqrt(len2);
-      const t = len2 ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / len2)) : 0;
-      const d = Math.hypot(px - (ax + t * dx), py - (ay + t * dy));
-      if (d < best.km) best = { km: d, along: acc + t * len };
-      acc += len;
+    for (let i = 0; i + 1 < xy.length; i++) {
+      const [d, along] = segDist(px, py, xy[i], xy[i + 1]);
+      if (d < best.km) best = { km: d, along: acc + along };
+      acc += Math.hypot(xy[i + 1][0] - xy[i][0], xy[i + 1][1] - xy[i][1]);
     }
     return best;
   }
 
-  // ponytail: 全候補×全線分の総当たり。重くなったら線を間引くか bbox で前絞りする
+  // ルートから maxKm 以内の候補（走る順）。候補×全線分の総当たりは数万件で数秒かかるので、
+  // 線分を約 1km 四方の升目（maxKm だけ広げた範囲）に登録し、候補と同じ升目の線分とだけ測る（結果は総当たりと同じ）
   function stopsAlongRoute(items, line, maxKm) {
-    // 経路の外接矩形＋余白の外にある候補は、距離計算の前に除く（結果は同じで数倍速い）
-    const pad = maxKm / 90 + 0.001;
-    let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
-    for (const [lon, lat] of line) { x0 = Math.min(x0, lon); x1 = Math.max(x1, lon); y0 = Math.min(y0, lat); y1 = Math.max(y1, lat); }
-    return items
-      .filter((s) => s.lon >= x0 - pad && s.lon <= x1 + pad && s.lat >= y0 - pad && s.lat <= y1 + pad)
-      .map((s) => { const r = distToRoute(s, line); return { ...s, offKm: r.km, alongKm: r.along }; })
-      .filter((s) => s.offKm <= maxKm)
-      .sort((a, b) => a.alongKm - b.alongKm);
+    if (line.length < 2) return [];
+    const xy = routeXY(line), k = Math.cos(rad(line[0][1])), G = 0.9; // 升目の大きさ（km）
+    const cell = (x, y) => Math.floor(y / G) * 1e6 + Math.floor(x / G);
+    const grid = new Map(), acc = [0];
+    for (let i = 0; i + 1 < xy.length; i++) {
+      const [ax, ay] = xy[i], [bx, by] = xy[i + 1];
+      acc.push(acc[i] + Math.hypot(bx - ax, by - ay));
+      for (let y = Math.floor((Math.min(ay, by) - maxKm) / G); y <= Math.floor((Math.max(ay, by) + maxKm) / G); y++) {
+        for (let x = Math.floor((Math.min(ax, bx) - maxKm) / G); x <= Math.floor((Math.max(ax, bx) + maxKm) / G); x++) {
+          const key = y * 1e6 + x, a = grid.get(key);
+          if (a) a.push(i); else grid.set(key, [i]);
+        }
+      }
+    }
+    const out = [];
+    for (const s of items) {
+      const px = s.lon * k * 111.32, py = s.lat * 110.57, segs = grid.get(cell(px, py));
+      if (!segs) continue;
+      let best = Infinity, along = 0;
+      for (const i of segs) { // 番号の小さい順なので、同じ距離のときは distToRoute と同じ線分を選ぶ
+        const [d, a] = segDist(px, py, xy[i], xy[i + 1]);
+        if (d < best) { best = d; along = acc[i] + a; }
+      }
+      if (best <= maxKm) out.push({ ...s, offKm: best, alongKm: along });
+    }
+    return out.sort((a, b) => a.alongKm - b.alongKm);
   }
 
   function mulberry32(a) {
