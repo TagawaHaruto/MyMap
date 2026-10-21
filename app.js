@@ -423,7 +423,7 @@ async function renderPlan(el, s, reset = false) {
   el.querySelector('.plan-order').onclick = () => { p.stops = Lib.orderStops(p.stops, DATA.cfg.origin); buzz(); redraw(); };
   el.querySelector('.plan-reset').onclick = () => { buzz(); renderPlan(el, s, true); };
   el.querySelector('.plan-share').onclick = () => shareText(`${s.name} 日帰りプラン`, text, '');
-  el.querySelector('.plan-save').onclick = () => { savePlan(s, p); buzz(); redraw(); };
+  el.querySelector('.plan-save').onclick = () => { savePlan(s, p); buzz(); redraw(); const c = $('#t-plans'); if (c) c.textContent = `📋保存したプラン（${savedPlans().length}）`; };
   const add = (x) => { p.stops.push({ place: x, stay: stayGuess(x), kind: (x.genres || []).includes('food') ? 'meal' : 'extra' }); p.q = ''; buzz(); redraw(); };
   const details = el.querySelector('.plan-add');
   details.addEventListener('toggle', () => { p.adding = details.open; });
