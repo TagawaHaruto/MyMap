@@ -1028,10 +1028,12 @@ function bindMapToggle(list) {
   if (shown.length) spotMap.fitBounds(L.latLngBounds((top.length ? top : shown).map((s) => [s.lat, s.lon])).pad(0.05), { maxZoom: 14 });
 }
 function spotPopup(s) {
+  INFO_ITEMS.set(s.id, s); // 「ここを目的地にする」で使う
   return `<div class="pop"><strong>${isCurated(s) ? '★ ' : ''}${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}</strong>
     <p class="meta">${icon(MODES[state.mode])}${fmtMin(s.minutes)}${s.indoor ? '・☔雨OK' : ''}${'walkin' in s ? (s.walkin ? '・当日参加OK' : '・要予約') : ''}</p>
     ${s.note ? `<p>${esc(s.note)}</p>` : ''}
-    <div class="actions"><a class="btn" ${gm(s, 'dir')}>経路</a><a class="btn" ${gm(s)}>写真・口コミ</a></div></div>`;
+    <div class="actions"><a class="btn" ${gm(s, 'dir')}>経路</a><a class="btn" ${gm(s)}>写真・口コミ</a></div>
+    <button type="button" class="btn primary" data-spot-dest="${esc(s.id)}">🏍ここを目的地にする</button></div>`;
 }
 // ---- Google マップの写真（設定タブで API キーを入れたときだけ。規約に沿って写真は端末に保存しない） ----
 async function googlePhotos(s) {
@@ -1121,8 +1123,19 @@ function popupHtml(s, v) {
     <a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a>
     <button type="button" class="btn ${picked ? '' : 'primary'} pop-pick" data-popup-pick="${esc(s.id)}">${picked ? '立ち寄りから外す' : '立ち寄りに追加'}</button>
     <button type="button" class="btn pop-park" data-pop-park="${esc(s.id)}">🅿 駐車場を見る</button>
+    <button type="button" class="btn" data-spot-dest="${esc(s.id)}">🏁ここを目的地にする</button>
   </div>`;
 }
+// 地図の吹き出しの「ここを目的地にする」: ツーリングタブで、そのスポットまでのルートを探す
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-spot-dest]'); if (!b) return;
+  const s = INFO_ITEMS.get(b.dataset.spotDest) || getStops().find((x) => x.id === b.dataset.spotDest); if (!s) return;
+  buzz();
+  if (spotMap) spotMap.closePopup();
+  if (map) map.closePopup();
+  if (state.tab !== 'touring') goTab('touring');
+  if (setCustomDest(s.lat, s.lon, s.name) && navigator.onLine !== false) { const g = $('#route-go'); if (g && !g.disabled) g.click(); }
+});
 // 画像が読み込まれて吹き出しの大きさが変わったら、地図の中に収め直す
 function refitPopup(m) {
   const el = m.getPopup() && m.getPopup().getElement();
