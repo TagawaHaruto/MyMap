@@ -594,7 +594,8 @@ async function fetchParking(p, m = 600) {
 const distTxt = (d) => (d < 1 ? `${Math.round(d * 1000)}m` : `${d.toFixed(1)}km`);
 function parkRow(x, bike) {
   const info = [x.kind || x.type, x.fee, x.capacity ? `${x.capacity}台` : '', bike && (x.capMoto || x.cap) ? `二輪${x.capMoto || x.cap}台` : '', !bike && x.motoNo ? 'バイク不可' : '',
-    x.moped && !x.official ? '原付だけの可能性' : '', x.access === 'customers' ? '利用者用' : '', bike && x.src === 'OpenPOI' ? '🌐OpenPOI' : '', x.hours ? `利用時間 ${x.hours}` : ''].filter(Boolean).join('・');
+    x.moped && !x.official ? '原付だけの可能性' : '', x.access === 'customers' ? '利用者用' : '', bike && x.src === 'OpenPOI' ? '🌐OpenPOI' : '', x.hours ? `利用時間 ${x.hours}` : '',
+    x.addr ? `住所 ${x.addr}` : ''].filter(Boolean).join('・'); // 公式データの一部（札幌市など）は座標がなく住所の町丁目の代表点なので、住所で確かめられるように
   return `<li>${x.official ? '<span class="badge open">公式</span> ' : ''}${x.own ? '<span class="badge open">この施設の駐車場（名前が一致）</span> ' : ''}${x.likely ? '<span class="badge closed">たいてい止められる</span> ' : ''}<a ${gm({ name: x.name || (bike ? 'バイク駐車場' : '駐車場'), lat: x.lat, lon: x.lon }, 'dir')}>${esc(x.name || (bike ? '（名前なし）バイクを止められる場所' : '（名前なし）駐車場'))}</a>
     <span class="status">${distTxt(x.distKm)}${info ? '・' + esc(info) : ''}${x.oh ? '・' + esc(Lib.ohText(x.oh)) : ''}${openBadge(x)}${x.srcName ? `・出典：${x.srcUrl ? `<a href="${esc(x.srcUrl)}" target="_blank" rel="noopener">${esc(x.srcName)}</a>` : esc(x.srcName)}` : ''}</span></li>`;
 }

@@ -1196,7 +1196,7 @@ const Lib = (() => {
   }
   // 自治体・都道府県の公式データ（data/moto_official.json）→ バイク欄の形に
   const officialMoto = (x) => ({ name: x.name, lat: x.lat, lon: x.lon, official: true, moped: x.moped && !x.moto,
-    kind: !x.moto ? '公式・原付のみ' : x.ccUnknown ? '公式・二輪可（排気量の制限は現地で確認）' : '公式・自動二輪可', fee: x.fee || '', hours: x.hours || '', cap: x.capacity || null,
+    kind: !x.moto ? '公式・原付のみ' : x.ccUnknown ? '公式・二輪可（排気量の制限は現地で確認）' : '公式・自動二輪可', fee: x.fee || '', hours: x.hours || '', cap: x.capacity || null, addr: x.addr || '',
     srcName: [x.muni, x.src, x.license].filter(Boolean).join(' '), srcUrl: x.srcUrl || '' });
   const isParkingWord = (w) => /駐車|駐輪|パーキング|parking/i.test(String(w));
   const isBikeWord = (w) => /バイク|二輪|オートバイ|原付|モーターサイクル|駐輪/.test(String(w));
