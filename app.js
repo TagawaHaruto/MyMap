@@ -1713,12 +1713,9 @@ function fixedWaypointsFor(dest) {
 }
 // 候補を作ったあとで走り方を変えたか
 const routeStale = () => !!(tour.route && tour.route.opts && tour.route.opts !== JSON.stringify(tour.opts));
-const MIN_PINS = 2; // ルート固定用に最低限残す枠
-const MIN_STOPS = 3; // コースの点が多くても、立ち寄りはこの件数まで選べる（選んだ分だけコースの点を間引く）
-const room = () => Math.max(MIN_STOPS, MAX_WAYPOINTS - fixedWaypoints().length - MIN_PINS);
-// 立ち寄りと合わせて上限に収まるよう、コースの点を等間隔に間引く
-const fixedFor = (nPicked) => Lib.spreadPick(fixedWaypoints(), MAX_WAYPOINTS - nPicked);
-const thinned = () => fixedFor(pickedCount()).length < fixedWaypoints().length;
+// 立ち寄りの上限。コースを固定する点と合わせて Google マップの 9 件を超える分は、ナビを立ち寄りの所で区切って複数のリンクにする
+const MAX_STOPS = 10;
+const room = () => MAX_STOPS;
 function getStops() {
   if (!tour.route) return [];
   if (!tour.stops) {
@@ -1730,18 +1727,28 @@ function getStops() {
   }
   return tour.stops;
 }
-function navUrl() {
+// Google マップへ渡すナビのリンク。経由地（コースを固定する点＋立ち寄り）が 9 件を超えるときは、立ち寄りの所で区切って複数にする
+function navLegs() {
   const dest = currentDest(), line = tour.route.line;
   // 並べる順はすべて同じ物差し（distToRoute の進行距離）で測る
   const along = (p) => Lib.distToRoute(p, line).along;
-  const picked = getStops().filter((s) => tour.picked.has(s.id)).slice(0, room()).map((s) => ({ ...s, along: s.alongKm }));
-  const fixed = fixedFor(picked.length).map((p) => ({ ...p, along: along(p) }));
+  const picked = getStops().filter((s) => tour.picked.has(s.id)).slice(0, room()).map((s) => ({ ...s, along: s.alongKm, stop: true }));
+  const fixed = fixedWaypoints().map((p) => ({ ...p, along: along(p) }));
   // 残りの枠でルート上の地点を等間隔に足し、Google マップが別の道（有料道路など）を選ばないようにする。
   // 走り方を変えた後は古いルートに沿わせない
-  const pins = routeStale() || (dest.loop && Array.isArray(dest.road.hw)) ? [] : Lib.pinWaypoints(line, Math.min(4, MAX_WAYPOINTS - fixed.length - picked.length)).map((p) => ({ ...p, along: along(p) }));
+  const spare = MAX_WAYPOINTS - fixed.length - picked.length;
+  const pins = routeStale() || (dest.loop && Array.isArray(dest.road.hw)) || spare <= 0 ? [] : Lib.pinWaypoints(line, Math.min(4, spare)).map((p) => ({ ...p, along: along(p) }));
   const wps = [...fixed, ...picked, ...pins].sort((a, b) => a.along - b.along);
-  return Lib.gmapsDirUrl(DATA.cfg.origin, dest.loop ? DATA.cfg.origin : dest, wps, 'driving');
+  const end = dest.loop ? DATA.cfg.origin : dest;
+  let from = DATA.cfg.origin;
+  return Lib.splitLegs(wps, MAX_WAYPOINTS).map((leg) => {
+    const to = leg.end || end;
+    const out = { url: Lib.gmapsDirUrl(from, to, leg.waypoints, 'driving'), to: leg.end ? leg.end.name || '次の地点' : dest.loop ? esc(DATA.cfg.origin.name) + 'へ帰る' : dest.name };
+    from = to;
+    return out;
+  });
 }
+const navUrl = () => navLegs()[0].url;
 function pickedCount() { return getStops().filter((s) => tour.picked.has(s.id)).length; }
 function updateTourSelection() {
   // 旧版で選んだ立ち寄りが今の上限を超えていたら、走る順に上限まで残す
@@ -1757,15 +1764,22 @@ function updateTourSelection() {
     row.classList.toggle('is-picked', cb.checked);
     row.classList.toggle('is-disabled', cb.disabled);
   });
-  const tm = $('#thin-msg'); if (tm) tm.hidden = !thinned();
   const nav = $('#nav');
   if (nav) {
     const waiting = tour.route && !DATA.eventsLoaded; // 道の駅などの読み込み前に押すと経由地が抜けるため
     const d = currentDest();
-    nav.href = waiting ? '#' : tour.route ? navUrl()
+    const legs = tour.route && !waiting ? navLegs() : null;
+    nav.href = waiting ? '#' : legs ? legs[0].url
       : Lib.gmapsDirUrl(DATA.cfg.origin, d.loop ? DATA.cfg.origin : d, fixedWaypoints(), 'driving'); // ルート未検索でも周回・コースの道を渡す
-    nav.textContent = waiting ? '立ち寄り候補を読み込み中…' : `ナビ開始（立ち寄り ${n}/${room()}）`;
+    nav.textContent = waiting ? '立ち寄り候補を読み込み中…' : legs && legs.length > 1 ? `ナビ開始 1/${legs.length}（${legs[0].to}まで）` : `ナビ開始（立ち寄り ${n}/${room()}）`;
     nav.toggleAttribute('aria-disabled', !!waiting);
+    // 2 つ目以降のナビ（前のナビの目的地＝立ち寄り先に着いたら開く）
+    const more = $('#nav-legs');
+    if (more) {
+      more.hidden = !(legs && legs.length > 1);
+      more.innerHTML = legs && legs.length > 1 ? `<p class="notice">経由地が 9 件を超えるため、ナビを ${legs.length} つに分けています。立ち寄り先に着いたら次のナビを開いてください。</p>`
+        + legs.slice(1).map((l, i) => `<a class="btn" target="_blank" rel="noopener" href="${esc(l.url)}">ナビ ${i + 2}/${legs.length}（${esc(legs[i].to)} → ${esc(l.to)}）</a>`).join('') : '';
+    }
   }
   const lim = $('#limit-msg'); if (lim) lim.hidden = !full;
   const sp = $('#stops-picked'); if (sp) sp.textContent = n ? `・${n}件選択中` : '';
@@ -1955,8 +1969,7 @@ function renderTouring() {
     ${tour.route ? `<details class="stops-box" id="stops-box" ${store.get('stopsOpen') ? 'open' : ''}>
       <summary>🛍立ち寄り候補（${stops.length}件・走る順）<span id="stops-picked"></span></summary>
       <details class="help"><summary aria-label="説明を見る">i</summary>名前を押すと地図でその場所を強調します。□で選ぶと、Google マップに経由地として渡します。</details>
-      <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>
-      <p id="thin-msg" class="notice" hidden>⚠ 立ち寄りを入れた分、コースを固定する経由地を減らしています。Google マップで道がコースから外れていないか確かめてください。</p>`
+      <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます。ほかを外すと選べます。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
       <div class="card stop" data-focus="${esc(s.id)}"><input type="checkbox" data-stop="${esc(s.id)}" ${tour.picked.has(s.id) ? 'checked' : ''} aria-label="${esc(s.name)}を経由地に選ぶ">
         <span class="km">${Math.round(s.alongKm)}<small>km</small></span>
@@ -1964,7 +1977,7 @@ function renderTouring() {
           <span class="sub">道から${s.offKm.toFixed(1)}km${s.note ? '・' + esc(s.note) : ''}</span></span>${infoButton(s)}</div>
       <div class="info stop-info" hidden></div>`).join('')
         : '<p class="empty">この範囲に立ち寄り候補はありません。範囲を広げてみてください。</p>') + '</details>' : ''}
-    ${dest ? `<div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a>
+    ${dest ? `<div id="nav-legs" class="actions" hidden></div><div class="tour-bar"><a class="btn primary" id="nav" target="_blank" rel="noopener" href="#">ナビ開始</a>
       ${tour.route ? '<button type="button" class="btn" id="gpx">GPXで保存</button>' : ''}</div>` : ''}`;
   placeTourMap(dest);
 

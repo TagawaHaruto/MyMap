@@ -729,3 +729,14 @@ assert.strictEqual(Lib.rampFree([{ heading: 60, distance: 0, edge: { classificat
   { heading: 55, distance: 20, edge: { classification: { classification: 'motorway', use: 'ramp' } } }], 60), false);
 // 有料区間のあいだの無料の自動車専用道路は、降りたことにしない
 assert.deepStrictEqual(Lib.tollSpans([{ maneuvers: [{ toll: true, length: 3 }, { highway: true, length: 1 }, { toll: true, length: 2 }, { length: 1 }, { toll: true, length: 1 }] }]), [[0, 6], [7, 8]]);
+// 経由地が 9 件を超えるナビは、立ち寄りの所で区切る
+{
+  const w = (i, stop) => ({ i, stop });
+  const xs = [w(0), w(1), w(2), w(3, true), w(4), w(5), w(6), w(7), w(8, true), w(9), w(10), w(11)];
+  const legs = Lib.splitLegs(xs, 9);
+  assert.deepStrictEqual(legs.map((l) => [l.waypoints.map((x) => x.i), l.end && l.end.i]), [[[0, 1, 2, 3, 4, 5, 6, 7], 8], [[9, 10, 11], null]]);
+  const noStop = Lib.splitLegs(xs.map((x) => w(x.i)), 9); // 立ち寄りがなければ 9 件＋目的地で区切る
+  assert.deepStrictEqual(noStop.map((l) => [l.waypoints.length, l.end && l.end.i]), [[9, 9], [2, null]]);
+  assert.deepStrictEqual(Lib.splitLegs(xs.slice(0, 9), 9), [{ waypoints: xs.slice(0, 9), end: null }]); // 9 件までは 1 つ
+  assert.ok(Lib.splitLegs(xs.slice(0, 9), 9)[0].waypoints.length <= 9 && legs.every((l) => l.waypoints.length <= 9));
+}
