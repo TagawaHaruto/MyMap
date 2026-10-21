@@ -151,7 +151,7 @@ function renderFilters() {
     state.prefs.size ? [...state.prefs].join('/') : '全都県',
     state.dirs.size ? [...state.dirs].map((d) => DIR_NAMES[d]).join('/') : '全方面'];
   if (state.band) parts.push(Lib.TIME_BANDS[state.band][0]);
-  if (state.tab !== 'events') parts.push(state.allTypes ? 'すべての種類' : state.genres.size ? [...state.genres].map((g) => icon(GENRES[g])).join('') : '観光・遊びなど');
+  if (state.tab !== 'events') parts.push(state.allTypes ? 'すべての種類' : state.genres.size ? [...state.genres].map((g) => GENRES[g]).join('/') : '観光・遊びなど');
   $('#f-sum').textContent = parts.join('・');
 }
 const setCount = (n) => { $('#f-count').textContent = n == null ? '' : `（${n.toLocaleString()}件）`; };
@@ -181,8 +181,9 @@ function hiddenGroupsHtml() {
   const count = (g) => cells.reduce((a, c) => a + ((cellIndex[g] && cellIndex[g][c]) || 0), 0);
   const items = [['food', count('food')], ['heritage', count('heritage')], ['outdoor', count('local')]].filter(([, n]) => n);
   if (!items.length) return '';
-  return `<p class="hint">この一覧は観光・遊び・体験など（グルメなどは含みません。全部見るときは種類の「🌐すべて」）。範囲内にはほかに ${items.map(([g, n]) =>
-    `<button type="button" class="chip" data-add-genre="${g}">${HIDDEN_GROUPS.find((x) => x[0] === g)[1]} 約${n.toLocaleString()}件</button>`).join(' ')} があります（押すとその種類の一覧を表示）。</p>`;
+  return `<p class="hint">ほかに：${items.map(([g, n]) =>
+    `<button type="button" class="chip" data-add-genre="${g}">${HIDDEN_GROUPS.find((x) => x[0] === g)[1]} 約${n.toLocaleString()}件</button>`).join(' ')}
+    <details class="help"><summary aria-label="説明を見る">i</summary>この一覧は観光・遊び・体験などです（グルメなどは含みません）。上の種類の数を押すとその種類の一覧を、種類の「🌐すべて」を選ぶと全部を表示します。</details></p>`;
 }
 document.addEventListener('click', (e) => {
   const b = e.target.closest('[data-add-genre]'); if (!b) return;
@@ -402,7 +403,7 @@ async function renderPlan(el, s, reset = false) {
       <button type="button" class="btn plan-share">プランを共有</button>
       <button type="button" class="btn plan-reset">最初から作り直す</button>
       <button type="button" class="btn primary plan-save">${p.savedId ? '保存を上書き' : '💾 このプランを保存'}</button></div>
-    <p class="hint">最初の案は、昼食を目的地から1.5km以内（昼に営業中か営業時間不明・チェーン以外）、もう1か所を15km以内の温泉か3km以内の見どころから選んでいます。</p>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>最初の案は、昼食を目的地から1.5km以内（昼に営業中か営業時間不明・チェーン以外）、もう1か所を15km以内の温泉か3km以内の見どころから選んでいます。</details>`;
   const redraw = () => renderPlan(el, s);
   el.querySelector('.plan-depart').onchange = (e) => { planState.depart = e.target.value || '09:00'; store.set('planDepart', planState.depart); redraw(); };
   el.querySelector('.plan-home').onchange = (e) => { p.home = e.target.value; store.set('planHome', p.home); redraw(); };
@@ -607,10 +608,10 @@ async function renderParking(el, s, only) {
     el.innerHTML = `${title}
       ${sureHtml}
       ${only !== 'car' ? sec('bike', '🏍 バイクを止められる所', bike, true, '見つかりませんでした（OpenStreetMap に登録が少ないため）。下の「止められるかもしれない所」や Google マップも確認してください。') : ''}
-      ${only !== 'car' && maybe.length ? `<details class="more"><summary>参考：二輪の可否が登録されていない大きな駐車場（${maybe.length}件・未確認）</summary>${sec('maybe', '🏍 二輪の可否が未確認の駐車場', maybe, true, '')}<p class="hint">施設の利用者用や 50 台以上の駐車場で、二輪を止められるかは分かりません（コインパーキングは除外）。止める前に現地の表示を確認してください。</p></details>` : ''}
+      ${only !== 'car' && maybe.length ? `<details class="more"><summary>参考：二輪の可否が登録されていない大きな駐車場（${maybe.length}件・未確認）</summary>${sec('maybe', '🏍 二輪の可否が未確認の駐車場', maybe, true, '')}<details class="help"><summary aria-label="説明を見る">i</summary>施設の利用者用や 50 台以上の駐車場で、二輪を止められるかは分かりません（コインパーキングは除外）。止める前に現地の表示を確認してください。</details></details>` : ''}
       ${only !== 'bike' ? sec('car', '🚗 車の駐車場', car, false, '見つかりませんでした。') : ''}
       ${liveState === 'loading' ? '<p class="hint">🔄 OpenStreetMap でも探しています…</p>' : liveState === 'failed' ? '<p class="hint">⚠ その場の検索は混雑のためできませんでした（前もって集めた情報で表示しています）。</p>' : ''}
-      <p class="hint">情報元：自治体の公式データ（「公式」の印）、OpenStreetMap（週 1 回まとめて収集＋その場の検索）、<a href="licenses/FSQ-OS-Places-NOTICE.txt" target="_blank" rel="noopener">Foursquare OS Places（Apache-2.0・2025年2月版）</a>、OpenPOI、道の駅・SA・PA（「たいてい止められる」）。満空・料金・二輪の可否は現地や公式で確認してください。</p>${gmLinks}`;
+      <details class="help"><summary aria-label="説明を見る">i</summary>情報元：自治体の公式データ（「公式」の印）、OpenStreetMap（週 1 回まとめて収集＋その場の検索）、<a href="licenses/FSQ-OS-Places-NOTICE.txt" target="_blank" rel="noopener">Foursquare OS Places（Apache-2.0・2025年2月版）</a>、OpenPOI、道の駅・SA・PA（「たいてい止められる」）。満空・料金・二輪の可否は現地や公式で確認してください。</details>${gmLinks}`;
     el.querySelectorAll('[data-park-more]').forEach((b) => { b.onclick = () => { shown[b.dataset.parkMore] += 30; draw(); }; });
     fillAddr(el);
   };
@@ -774,7 +775,7 @@ function hereHtml() {
     <p class="status">${LOC.last ? `誤差 約${Math.round(LOC.last.acc)}m` : ''}${isHere ? `・今の起点：${esc(DATA.cfg.origin.name)}` : ''}</p>
     <div class="actions"><button type="button" class="btn primary" data-here-origin>ここから出発（起点にする）</button>
       ${isHere ? `<button type="button" class="btn" data-here-reset>${esc(CFG_ORIGIN.name)}に戻す</button>` : ''}</div>
-    <p class="hint">移動時間・ルート・日帰りプランが、ここからの計算になります</p></div>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>移動時間・ルート・日帰りプランが、ここからの計算になります</details></div>`;
 }
 function bindHere(el) {
   if (!el) return;
@@ -996,13 +997,23 @@ function bindMapToggle(list) {
   const g = isoGeom();
   if (g) L.geoJSON(g, { style: { color: '#1a73e8', weight: 2, fillOpacity: 0.08 }, interactive: false }).addTo(spotMap);
   const shown = list.slice(0, SPOT_MAP_MAX);
-  for (const s of shown) {
-    L.marker([s.lat, s.lon], { icon: pinIcon(s), title: s.name, riseOnHover: true })
-      .bindPopup(() => spotPopup(s), { maxWidth: 260 })
-      .on('popupopen', (e) => fillAddr(e.popup.getElement()))
-      .addTo(spotMap);
-  }
-  if (shown.length) spotMap.fitBounds(L.latLngBounds(shown.map((s) => [s.lat, s.lon])).pad(0.05), { maxZoom: 14 });
+  const mk = (s) => L.marker([s.lat, s.lon], { icon: pinIcon(s), title: s.name, riseOnHover: true })
+    .bindPopup(() => spotPopup(s), { maxWidth: 260 }).on('popupopen', (e) => fillAddr(e.popup.getElement()));
+  // 引いた地図では★厳選と⭐お気に入りだけ（全部出すと重なって読めない）。ズーム12以上で、見えている範囲の全部を出す
+  const top = shown.filter((s) => isCurated(s) || state.favs.has(s.id)), topLayer = L.layerGroup(top.map(mk)).addTo(spotMap);
+  const rest = shown.filter((s) => !isCurated(s) && !state.favs.has(s.id)), restLayer = L.layerGroup().addTo(spotMap);
+  const note = L.control({ position: 'bottomleft' });
+  note.onAdd = () => { const d = L.DomUtil.create('div', 'map-note'); d.textContent = `★厳選・⭐のみ表示（寄るとほか${rest.length.toLocaleString()}件も）`; return d; };
+  const refresh = () => {
+    restLayer.clearLayers();
+    if (spotMap.getZoom() < 12) { if (rest.length) note.addTo(spotMap); return; }
+    note.remove();
+    const b = spotMap.getBounds().pad(0.2);
+    rest.filter((s) => b.contains([s.lat, s.lon])).slice(0, 400).forEach((s) => restLayer.addLayer(mk(s)));
+  };
+  spotMap.on('moveend zoomend', refresh);
+  if (shown.length) spotMap.fitBounds(L.latLngBounds((top.length ? top : shown).map((s) => [s.lat, s.lon])).pad(0.05), { maxZoom: 14 });
+  refresh();
 }
 function spotPopup(s) {
   return `<div class="pop"><strong>${isCurated(s) ? '★ ' : ''}${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}</strong>
@@ -1215,7 +1226,9 @@ function renderRecommend() {
   const cands = Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set() }, DATA.cfg);
   const ctx = { favGenres: state.favGenres, rainy: rainy(), visited: state.visited };
   const rec = Lib.pickRecommendations(cands, ctx, Lib.weekSeed(new Date()));
-  $('#recommend').innerHTML = weatherPlanHtml(cands) + rec.map(spotCard).join('') + newDirHtml(rec);
+  // 週末プランは時間帯ごとの天気で屋内・屋外を選ぶので、雨の日モードの絞り込み（屋内だけ）をかけない候補から
+  const planCands = rainy() ? Lib.filterSpots(DATA.spots, { ...filterState(), genres: new Set(), rainy: false }, DATA.cfg) : cands;
+  $('#recommend').innerHTML = weatherPlanHtml(planCands) + rec.map(spotCard).join('') + newDirHtml(rec);
   $('#rec').hidden = !rec.length;
   if (!WPLAN.loaded) loadWeatherPlan();
 }
@@ -1233,7 +1246,7 @@ function newDirHtml(shown) {
     out.push(`<h4 class="newdir">🧭まだ${d.count ? 'あまり' : ''}行っていない「${esc(dirName(d.dir))}」方面${d.count ? `（行った記録 ${d.count}か所）` : ''}</h4>${xs.map(spotCard).join('')}`);
     if (out.length >= 2) break;
   }
-  return out.length ? `<div class="newdirs">${out.join('')}<p class="hint">「▼詳しく」→「行った」を押すと、行った記録の少ない方面を優先して提案します。</p></div>` : '';
+  return out.length ? `<div class="newdirs">${out.join('')}<details class="help"><summary aria-label="説明を見る">i</summary>「▼詳しく」→「行った」を押すと、行った記録の少ない方面を優先して提案します。</details></div>` : '';
 }
 // 週末の午前・午後の降水確率を見て、晴れの時間は屋外、雨の時間は屋内のスポットを当てる
 const WPLAN = { loaded: false, days: null };
@@ -1263,7 +1276,7 @@ function weatherPlanHtml(cands) {
     return `<li>${label} ${wet ? '☔' : '☀'}${p}% → ${s ? `<a ${gm(s)}>${esc(s.name)}</a>${wet ? '（屋内）' : ''}` : '—'}</li>`; };
   return `<div class="wplan"><strong>天気で選んだ週末プラン</strong><ul>${WPLAN.days.map((d, i) => `<li>${d.day.getMonth() + 1}/${d.day.getDate()}（${'日月火水木金土'[d.day.getDay()]}）<ul>
     ${slot('午前', d.am, i * 2)}${slot('午後', d.pm, i * 2 + 1)}</ul></li>`).join('')}</ul>
-    <p class="hint">降水確率50%以上の時間は屋内のスポットにしています（天気: Open-Meteo）。</p></div>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>降水確率50%以上の時間は屋内のスポットにしています（天気: Open-Meteo）。</details></div>`;
 }
 
 // ---- 天気（Open-Meteo, 登録不要） ----
@@ -1320,7 +1333,7 @@ function dataTotalsHtml() {
   const total = rows.slice(0, 6).reduce((a, [, n]) => a + n, 0);
   return `<p class="status">スポット 合計 <strong>約${total.toLocaleString()}件</strong>（起点から約${DATA.cfg.poiRadiusKm}km圏）＋ネットの施設検索 OpenPOI（全国 約337万件）</p>
     <ul class="rel">${rows.map(([k, n]) => `<li>${k}：${n.toLocaleString()}</li>`).join('')}</ul>
-    <p class="hint">一覧の件数（絞り込みの横の数字）は、移動手段・時間・種類などの条件に合う件数です。グルメなどは「種類」で選んだときだけ、起点から${CELL_KM_MAX}km以内を表示します。</p>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>一覧の件数（絞り込みの横の数字）は、移動手段・時間・種類などの条件に合う件数です。グルメなどは「種類」で選んだときだけ、起点から${CELL_KM_MAX}km以内を表示します。</details>`;
 }
 function statusHtml() {
   const st = DATA.status;
@@ -1438,7 +1451,7 @@ function updateHtml() {
     <p class="status">最終更新：${esc(when)}${left.length ? `／前回取れなかった種類：${left.map((k) => Lib.COLLECT_PARTS[k]).join('・')}` : ''}</p>
     ${run && (run.state === 'running' || run.state === 'queued') ? `<p class="notice">🔄 更新中（開始から${run.startedMin || 0}分・ふだん1〜2時間）。終わると自動で新しいデータに切り替わります。</p>` : ''}
     ${has ? `<p class="status">✓ トークン登録済み：アプリを開いたとき、データが${DATA.cfg.staleHours}時間より古いか、前回取れなかった種類があれば自動で更新を頼みます。GitHub での操作は不要です。</p>`
-      : `<p class="hint">トークンを一度登録すると、<strong>アプリを開くだけで自動で更新</strong>されます（GitHub に行く必要がなくなります）。家族の端末には不要です。</p>`}
+      : `<details class="help"><summary aria-label="説明を見る">i</summary>トークンを一度登録すると、<strong>アプリを開くだけで自動で更新</strong>されます（GitHub に行く必要がなくなります）。家族の端末には不要です。</details>`}
     <div class="actions"><button type="button" class="btn primary" id="update-now" ${has ? '' : 'disabled'}>今すぐ更新</button>
       ${has ? '<button type="button" class="btn" id="token-check">トークンを確認</button><button type="button" class="btn" id="token-del">トークンを削除</button>' : ''}</div>
     <p class="status" id="token-msg"></p>
@@ -1450,7 +1463,7 @@ function updateHtml() {
       <li>「Generate token」を押し、表示された <code>github_pat_…</code> をコピーして下に貼り、「登録」</li></ol>
       <input id="token" type="password" autocomplete="off" placeholder="github_pat_..." aria-label="GitHub トークン">
       <div class="actions"><button type="button" class="btn primary" id="token-save">登録</button></div>
-      <p class="hint">トークンはこの端末の中にだけ保存され、GitHub への更新の依頼にだけ使います。期限が切れたら同じ手順で作り直してください。</p></details>`;
+      <details class="help"><summary aria-label="説明を見る">i</summary>トークンはこの端末の中にだけ保存され、GitHub への更新の依頼にだけ使います。期限が切れたら同じ手順で作り直してください。</details></details>`;
 }
 function bindUpdate() {
   const msg = (t) => { const m = $('#token-msg'); if (m) m.textContent = t; };
@@ -1784,6 +1797,7 @@ const curvOf = (c) => (c.curvStars = c.curvStars || Lib.curvStars(Lib.curviness(
 
 // ---- 地図を全画面にして、ほかの情報は下から引き出すパネルに（Google マップのアプリのように）。上にはルートの要約 ----
 const tourFull = () => store.get('tourFull') !== false;
+store.set('tourFull', true); // 「通常表示に戻す」はそのときだけ。次に開いたときは全画面に戻る
 const SHEET = { low: () => 132, half: () => Math.round(innerHeight * 0.5), high: () => innerHeight - 64 - (document.querySelector('.tabs').offsetHeight || 56) };
 let sheetSnap = store.get('sheetSnap') || 'half';
 function setSheet(snap, px) {
@@ -1854,7 +1868,7 @@ function renderTouring() {
     - Lib.haversineKm(DATA.cfg.origin, { lat: b.points[0][0], lon: b.points[0][1] }));
   const viaRoads = tour.route ? (tour.route.via || []).map(roadById).filter(Boolean) : [];
   $('#view').innerHTML = `
-    <label for="dest"><strong>目的地</strong></label>
+    <label for="dest"><strong>目的地</strong></label> <details class="help"><summary aria-label="説明を見る">i</summary>目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定できます。</details>
     <select id="dest"><option value="">選んでください</option>
       <optgroup label="目的地まで走る">${DATA.touring.map((t) =>
         `<option value="${esc(t.id)}" ${t.id === tour.destId && !tour.custom && !tour.roadId ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}</optgroup>
@@ -1870,7 +1884,7 @@ function renderTouring() {
       <button type="button" class="btn" id="dq-go">検索</button></div>
     <div id="dq-results"></div>
     <details class="tools" id="my-route" ${store.get('myRouteOpen') ? 'open' : ''}><summary>📌Google マップのルートを登録（${myRoutes().length}件）</summary>
-      <p class="hint">Google マップで経路（経由地つき）を作り、「共有」→「リンクをコピー」して貼り付けてください。登録したルートは上の「目的地」から選べます（この端末の中にだけ保存）。</p>
+      <details class="help"><summary aria-label="説明を見る">i</summary>Google マップで経路（経由地つき）を作り、「共有」→「リンクをコピー」して貼り付けてください。登録したルートは上の「目的地」から選べます（この端末の中にだけ保存）。</details>
       <textarea id="mr-url" rows="2" placeholder="https://maps.app.goo.gl/… を貼り付け"></textarea>
       <input id="mr-name" type="text" placeholder="名前（空なら「出発地 → 目的地」）" aria-label="ルートの名前">
       <div class="actions"><button type="button" class="btn primary" id="mr-add">登録する</button></div>
@@ -1885,7 +1899,6 @@ function renderTouring() {
     <div id="course-info" class="course-info" hidden></div>
     <div id="chain-box" class="chain-box" hidden></div>
     <details class="tools" id="sx-box" ${store.get('sxOpen') ? 'open' : ''}><summary>🛣首都高ルートを組み立てる</summary><div id="sx-body"></div></details>
-    <p class="hint">目的地は、選ぶ・検索する・地図を長押し（または中央の＋を合わせて「中心を目的地に」）で指定</p>
     ${road ? `<p class="notice">${closedNow ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${road.toll ? `有料道路（${road.fee ? esc(road.fee) : '料金は公式サイトで確認'}）。` : ''}${esc(road.note)}${road.closed ? `<br>⚠ ${esc(road.closed)}` : ''}${(road.alerts || []).map((a) => `<br>⚠ <strong>${esc(a)}</strong>`).join('')}${noBikeHtml(road)}${routeIssueHtml(road)}${road.noBike && tour.opts.bike ? '<br>⚠ <strong>「バイク向け」で探していますが、このコースはバイクでは走れません。</strong>' : ''}</p>${courseSources(road)}`
       : dest && dest.note ? `<p class="notice">⚠ ${esc(dest.note)}</p>` : ''}
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
@@ -1908,16 +1921,15 @@ function renderTouring() {
       <div class="actions"><button type="button" class="btn ${track.on ? '' : 'primary'}" id="trk-toggle">${track.on ? '⏹記録を止める' : '⏺記録を始める'}</button>
         <button type="button" class="btn" id="trk-gpx" ${track.pts.length > 1 ? '' : 'disabled'}>記録をGPXで保存</button>
         <button type="button" class="btn" id="trk-clear" ${track.pts.length ? '' : 'disabled'}>記録を消す</button></div>
-      <p class="hint">記録中は画面をつけたままにしてください（画面が消えると止まる端末があります）。記録は端末の中にだけ保存します。</p>
+      <details class="help"><summary aria-label="説明を見る">i</summary>記録中は画面をつけたままにしてください（画面が消えると止まる端末があります）。記録は端末の中にだけ保存します。</details>
       ${closedListHtml()}</details>
     ${tour.error ? `<p class="notice">${esc(tour.error)}</p>` : ''}
     ${tour.route && (tour.restored || offline) ? `<p class="notice">${offline ? '📴 圏外のため、' : ''}${fmtStamp(tour.route.at || 0)} に検索して保存したルートを表示しています${offline ? '' : '（再検索で更新）'}。</p>` : ''}
     ${routeStale() ? '<p class="notice">⚠ 走り方を変えました。「ルート候補を探す」で探し直してください（このままナビを開くと、ルートを固定する地点なしで Google マップに渡します）。</p>' : ''}
     ${tour.cands && tour.cands.length ? `<h2>ルート候補（${tour.cands.length}本${tour.cands.length > 1 ? '・押して切り替え' : ''}）</h2><div class="cands">${tour.cands.map(candCard).join('')}</div>` : ''}
-    ${tour.route ? `<p class="route-sum">${esc(tour.route.label)}：約${Math.round(tour.route.km)}km・${fmtMin(Math.round(tour.route.min))}</p>
-      <p class="hint">${esc(tour.route.engine || 'OSRM')} による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}${tour.opts.noToll || tour.opts.fewHighways ? '。Google マップでは「ルートオプション」でも同じ設定にしてください' : ''}</p>
-      ${dest && !dest.loop ? viaRoads.map((r) => `<p class="notice">「${esc(r.name)}」${(r.closedMonths || []).includes(thisMonth()) ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${r.toll ? `有料道路（${r.fee ? esc(r.fee) : '料金は公式サイトで確認'}）。` : ''}${r.closed ? `⚠ ${esc(r.closed)}` : ''}</p>`).join('') : ''}
-      <p class="hint">ナビは Google マップのアプリで開いてください（ブラウザ版の Google マップは経由地が 3 件までしか使えません）。</p>
+    ${tour.route ? `${dest && !dest.loop ? viaRoads.map((r) => `<p class="notice">「${esc(r.name)}」${(r.closedMonths || []).includes(thisMonth()) ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${r.toll ? `有料道路（${r.fee ? esc(r.fee) : '料金は公式サイトで確認'}）。` : ''}${r.closed ? `⚠ ${esc(r.closed)}` : ''}</p>`).join('') : ''}
+      <div class="row"><span class="label">ルート</span><span class="status">${esc(tour.route.engine || 'OSRM')} による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}</span>
+        <details class="help"><summary aria-label="説明を見る">i</summary>${tour.opts.noToll || tour.opts.fewHighways ? 'Google マップでは「ルートオプション」でも同じ設定にしてください。' : ''}ナビは Google マップのアプリで開いてください（ブラウザ版の Google マップは経由地が 3 件までしか使えません）。</details></div>
       <div class="row"><label for="depart" class="label">出発</label><input type="datetime-local" id="depart" value="${esc(departValue())}"></div>
       <p class="status" id="eta">${etaText()}</p>
       <p class="status">${routeCostText(tour.route, !!(dest && dest.loop), !!tour.opts.bike)}</p>
@@ -1936,7 +1948,7 @@ function renderTouring() {
       ${closedHtml()}` : ''}
     ${tour.route ? `<details class="stops-box" id="stops-box" ${store.get('stopsOpen') ? 'open' : ''}>
       <summary>🛍立ち寄り候補（${stops.length}件・走る順）<span id="stops-picked"></span></summary>
-      <p class="hint">名前を押すと地図でその場所を強調します。□で選ぶと、Google マップに経由地として渡します。</p>
+      <details class="help"><summary aria-label="説明を見る">i</summary>名前を押すと地図でその場所を強調します。□で選ぶと、Google マップに経由地として渡します。</details>
       <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます（残りの経由地はルートを固定するために使います）。ほかを外すと選べます。</p>
       <p id="thin-msg" class="notice" hidden>⚠ 立ち寄りを入れた分、コースを固定する経由地を減らしています。Google マップで道がコースから外れていないか確かめてください。</p>`
       + (stops.length ? stops.slice(0, 100).map((s) => `
@@ -2036,7 +2048,11 @@ function renderTouring() {
       if (sig() === at) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
     }
     tour.busy = false;
-    if (state.tab === 'touring') renderTouring(); // 検索中に別のタブへ移っていたら描かない
+    if (state.tab !== 'touring') return; // 検索中に別のタブへ移っていたら描かない
+    renderTouring();
+    // 結果（ルート候補）が見えるところまで送る。全画面ではパネルの中を、通常の表示では画面を
+    const c = $('#view .cands') || (tour.error && $('#view .notice'));
+    if (c) { if (document.body.classList.contains('tour-full')) { if (sheetSnap === 'low') setSheet('half'); $('#view').scrollTo({ top: c.offsetTop - 44, behavior: 'smooth' }); } else c.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
   };
   $('#view').onclick = (e) => {
     const b = e.target.closest('[data-cand]');
@@ -2141,7 +2157,7 @@ function renderDestResults() {
       <strong>${esc(x.name)}</strong><span class="status">${esc(x.sub)}</span></button>`).join('')}</div>
     ${dqState.busy ? '<p class="hint">地名・住所を検索中…</p>' : dqState.error ? `<p class="hint">${esc(dqState.error)}</p>`
       : dqState.places ? (places.length ? '' : '<p class="hint">地名・住所では見つかりませんでした。</p>')
-      : '<p class="hint">見つからないときは「検索」を押すと、地名・住所（国土地理院）でも探します。</p>'}`;
+      : '<details class="help"><summary aria-label="説明を見る">i</summary>見つからないときは「検索」を押すと、地名・住所（国土地理院）でも探します。</details>'}`;
 }
 async function searchPlaces() {
   const q = dqState.q.trim(); if (!q || dqState.busy) return;
@@ -2274,7 +2290,7 @@ function routeOnsen(backTime) {
     ${xs.length ? `<ul class="rel">${xs.map((x) => `<li><a ${gm(x)}>${esc(x.name)}</a>
       <span class="status">家まで約${Math.round(x.homeKm)}km・道から${x.offKm.toFixed(1)}km・着くのは${hm(x.at)}ごろ${x.open === true ? ' <span class="badge open">その時刻は営業中</span>' : x.open === false ? ' <span class="badge closed">その時刻は営業時間外</span>' : ''}${x.note ? '・' + esc(x.note) : ''}</span></li>`).join('')}</ul>`
       : '<p class="hint">ルートから3km以内に温泉が見つかりませんでした。</p>'}
-    <p class="hint">営業時間がわかる温泉だけ「営業中」を表示しています。最終受付は公式サイトで確認してください。</p>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>営業時間がわかる温泉だけ「営業中」を表示しています。最終受付は公式サイトで確認してください。</details>`;
   const bi = $('#back-time'); if (bi) bi.onchange = (e) => { tour.backTime = e.target.value || '15:00'; routeOnsen(tour.backTime); };
   fillAddr(out);
 }
@@ -2299,7 +2315,7 @@ function routeFuel() {
     + (xs.length ? `<ul class="rel">${xs.map((x) => `<li><strong>${Math.round(x.alongKm)}km</strong>・<a ${gm(x)}>${esc(x.name)}</a>
       <span class="status">${x.brand ? esc(x.brand) + '・' : ''}${x.self === 1 ? 'セルフ・' : x.self === 0 ? 'フルサービス・' : ''}道から${x.offKm < 0.1 ? '0.1km未満' : x.offKm.toFixed(1) + 'km'}・${hm(at(x))}ごろ通過</span>${onHw(x) ? ' <span class="badge warn">🛣高速を走行中の区間（SA・PA 以外は一度降りて給油）</span>' : ''}</li>`).join('')}</ul>`
       : `<p class="hint">${all.length ? 'ルートから1km以内に見つかりませんでした。' : 'まだ収集されていません（次の自動更新で集めます）。'}</p>`)
-    + '<p class="hint">OpenStreetMap で「24時間営業」と登録されている所です。営業時間が変わっていることがあるので、深夜は早めに給油してください。「🛣高速を走行中の区間」の印は、その付近ではルートが有料道路を走っているという意味です（印がない所は一般道から寄れます。ルートが OSRM のときは印が付きません）。</p>';
+    + '<details class="help"><summary aria-label="説明を見る">i</summary>OpenStreetMap で「24時間営業」と登録されている所です。営業時間が変わっていることがあるので、深夜は早めに給油してください。「🛣高速を走行中の区間」の印は、その付近ではルートが有料道路を走っているという意味です（印がない所は一般道から寄れます。ルートが OSRM のときは印が付きません）。</details>';
   fillAddr(out);
 }
 async function routePhotos() {
@@ -2316,7 +2332,7 @@ async function routePhotos() {
   out.innerHTML = `<h4>📷ルート沿いの写真（${photos.length}枚・押すと地図でその付近へ）</h4>` + (photos.length ? `<div class="rt-photos">${photos.map((ph, i) => `
     <figure><button type="button" class="ph" data-ph="${i}"><img src="${esc(ph.thumb)}" alt="${Math.round(ph.km)}km付近の写真" loading="lazy"></button>
       <figcaption>${Math.round(ph.km)}km付近・<a href="${esc(ph.page)}" target="_blank" rel="noopener">${esc(ph.artist || '撮影者')}</a>（${esc(ph.license || 'ライセンスはリンク先')}）</figcaption></figure>`).join('')}</div>`
-    : '<p class="hint">写真が見つかりませんでした。</p>') + '<p class="hint">写真: Wikimedia Commons（ルート上の地点から3km以内）</p>';
+    : '<details class="help"><summary aria-label="説明を見る">i</summary>写真が見つかりませんでした。</details>') + '<p class="hint">写真: Wikimedia Commons（ルート上の地点から3km以内）</p>';
   out.querySelectorAll('[data-ph]').forEach((b) => { b.onclick = () => {
     const ph = photos[+b.dataset.ph];
     if (map) { map.setView([ph.lat, ph.lon], 13); L.popup().setLatLng([ph.lat, ph.lon]).setContent(`<img class="pop-img" src="${esc(ph.thumb)}" alt="">`).openOn(map); $('#map').scrollIntoView({ block: 'center' }); }
@@ -2339,7 +2355,7 @@ function curvyHtml() {
   if (!xs.length) return '';
   return `<details id="curvy"><summary>🌀カーブの多いコース（150km以内の上位${xs.length}本）</summary><ul class="rel">${xs.map((r) => `<li>
     <button type="button" class="btn" data-course-go="${esc(r.id)}">走る</button> ${'★'.repeat(Lib.curvStars(r.curv))} ${esc(r.name)}<span class="status">${esc(r.note || '')}</span></li>`).join('')}</ul>
-    <p class="hint">林道は狭い・未舗装の区間があることがあります。路面と通行止めは事前に確認してください。</p></details>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>林道は狭い・未舗装の区間があることがあります。路面と通行止めは事前に確認してください。</details></details>`;
 }
 // 出発する月に閉鎖・通行止めの道をルートが通るか
 function closedHtml() {
@@ -2367,7 +2383,7 @@ async function dirRain() {
       return { ...p, prob: v }; }).sort((a, b) => a.prob - b.prob);
     if (rows[0].prob < 0) { out.innerHTML = '<p class="hint">出発日が予報の範囲外です（10日先まで）。</p>'; return; }
     out.innerHTML = `<p class="status">${day.slice(5).replace('-', '/')} の日中、雨が少なそうなのは <strong>${esc(dirName(rows[0].dir))}</strong> 方面です。</p>
-      <ul class="rel">${rows.map((x) => `<li>${esc(dirName(x.dir))}：${x.prob >= 50 ? '☔' : '☀'}${x.prob}%</li>`).join('')}</ul><p class="hint">起点から約70km先の地点の予報（Open-Meteo）</p>`;
+      <ul class="rel">${rows.map((x) => `<li>${esc(dirName(x.dir))}：${x.prob >= 50 ? '☔' : '☀'}${x.prob}%</li>`).join('')}</ul><details class="help"><summary aria-label="説明を見る">i</summary>起点から約70km先の地点の予報（Open-Meteo）</details>`;
   } catch { out.innerHTML = '<p class="hint">天気を取得できませんでした（圏外の可能性があります）。</p>'; }
 }
 
@@ -2443,7 +2459,7 @@ function renderJctGuide() {
   if (!out) return;
   out.innerHTML = `<h4>🔀 分岐（JCT・出口）の案内（${g.length}か所・走る順）</h4>
     <ol class="jct-list">${g.map((x, i) => `<li><button type="button" class="linklike" data-jct="${i}"><strong>${x.km}km</strong>${x.jct ? `・<strong>${esc(x.jct)}</strong>` : ''}</button>：${esc(x.text || '分岐')}</li>`).join('')}</ol>
-    <p class="hint">案内は OpenStreetMap の標識の情報から作っています（Valhalla）。実際の標識・車線の表示を優先してください。押すと地図でその場所を表示します。</p>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>案内は OpenStreetMap の標識の情報から作っています（Valhalla）。実際の標識・車線の表示を優先してください。押すと地図でその場所を表示します。</details>`;
   out.querySelectorAll('[data-jct]').forEach((b) => { b.onclick = () => {
     const x = g[+b.dataset.jct];
     if (map && x.lat != null) { map.setView([x.lat, x.lon], 16); $('#map').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
@@ -2523,7 +2539,7 @@ function renderSxBox() {
   for (const s of DATA.sx.segs) (groups[s.route] = groups[s.route] || []).push(s);
   const optBtn = (s) => `<button type="button" class="btn sx-opt" data-sx-add="${esc(s.id)}">${esc(s.route)}<small>${esc(sxNode(s.to))}方面</small></button>`;
   el.innerHTML = `${d.length ? `<ol class="chain-list">${d.map((id) => `<li>${esc(sxName(sxSeg(id)))}</li>`).join('')}</ol>` : ''}
-    ${!last ? `<p class="hint">走り始める区間（路線と向き）を選んでください。次からは、その先の JCT で高速を降りずに直接つながる区間だけが出ます。</p>
+    ${!last ? `<details class="help"><summary aria-label="説明を見る">i</summary>走り始める区間（路線と向き）を選んでください。次からは、その先の JCT で高速を降りずに直接つながる区間だけが出ます。</details>
       <select id="sx-start" aria-label="走り始める区間"><option value="">走り始める区間を選ぶ</option>${Object.entries(groups).map(([route, xs]) =>
         `<optgroup label="${esc(route)}">${xs.map((s) => `<option value="${esc(s.id)}">${esc(sxNode(s.from))} → ${esc(sxNode(s.to))}</option>`).join('')}</optgroup>`).join('')}</select>`
       : d.length >= SX_MAX ? `<p class="hint">${SX_MAX}区間までつなげられます。</p>`
@@ -2531,7 +2547,7 @@ function renderSxBox() {
       : `<p class="hint">${esc(sxNode(last.to))}から先は、この一覧の首都高の区間につながりません（ここで首都高を出て、家へ向かいます）。</p>`}
     <div class="actions"><button type="button" class="btn primary" id="sx-go" ${d.length ? '' : 'disabled'}>このルートで走る</button>
       <button type="button" class="btn" id="sx-back" ${d.length ? '' : 'disabled'}>1つ戻す</button><button type="button" class="btn" id="sx-clear" ${d.length ? '' : 'disabled'}>やり直す</button></div>
-    <p class="hint">JCT で直接つながるかは、ルート検索で前もって確かめています。Google マップに渡す経由地は自動で選ぶので、ナビの前に Google マップの距離がアプリと同じくらいか確かめてください。</p>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>JCT で直接つながるかは、ルート検索で前もって確かめています。Google マップに渡す経由地は自動で選ぶので、ナビの前に Google マップの距離がアプリと同じくらいか確かめてください。</details>`;
   const set = (x) => { store.set('sxDraft', x); renderSxBox(); };
   const st = $('#sx-start'); if (st) st.onchange = () => { if (st.value) { buzz(); set([st.value]); } };
   el.querySelectorAll('[data-sx-add]').forEach((b) => { b.onclick = () => { buzz(); set([...sxDraft(), b.dataset.sxAdd]); }; });
@@ -2572,12 +2588,12 @@ function renderChainBox() {
       <button type="button" class="icon" data-ch-del="${i}" aria-label="外す">✕</button></span></li>`).join('')}</ol>
     ${d.length >= 2 ? `<fieldset class="chain-mode"><legend>走り方</legend>${Object.entries(Lib.CHAIN_MODES).map(([k, label]) =>
       `<label class="check"><input type="radio" name="chain-mode" value="${k}" ${chainMode() === k ? 'checked' : ''}>${label}</label>`).join('')}
-      <p class="hint">「順に1本ずつ一周」は 1 本目を一周してから次へ。「外周」は重なる真ん中の道を通らず、全体の外側をぐるっと回ります。</p></fieldset>` : ''}
+      <details class="help"><summary aria-label="説明を見る">i</summary>「順に1本ずつ一周」は 1 本目を一周してから次へ。「外周」は重なる真ん中の道を通らず、全体の外側をぐるっと回ります。</details></fieldset>` : ''}
     <div class="actions"><button type="button" class="btn primary" id="chain-go" ${d.length >= 2 ? '' : 'disabled'}>${d.length >= 2 ? 'この順で続けて走る' : 'もう1本以上つなげてください'}</button>
       <button type="button" class="btn" id="chain-clear">一覧を空にする</button></div>
     ${d.length >= 2 ? `<div class="chain-save"><input id="chain-name" type="text" placeholder="名前（例：首都高ナイト周回）" aria-label="つなぎコースの名前">
       <button type="button" class="btn" id="chain-save">💾保存</button></div><p class="status" id="chain-msg"></p>` : ''}
-    <p class="hint">地図のコースを押して「🔗つなげる」で足せます。起点から1本目へ行き、順に走って起点へ戻ります。</p>${savedHtml}`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>地図のコースを押して「🔗つなげる」で足せます。起点から1本目へ行き、順に走って起点へ戻ります。</details>${savedHtml}`;
   bindSaved();
   if ($('#chain-save')) $('#chain-save').onclick = () => {
     buzz();
@@ -2652,7 +2668,7 @@ function courseLegendHtml() {
     `<button type="button" class="chip" data-ctype="${t}" aria-pressed="${on.has(t)}"><span class="swatch${t === 'rindo' ? ' dash' : ''}${t === 'pass' ? ' dot' : ''}" style="--c:${color}"></span>${esc(label)}（${n[t].toLocaleString()}）</button>`).join('')}
     <button type="button" class="chip" data-ctype="__pick">★おすすめだけ</button><button type="button" class="chip" data-ctype="__all">すべて</button>
     <button type="button" class="chip" data-ctype="__night" aria-pressed="${nightRoads()}">🌙夜も走れる道だけ</button></div>
-    ${nightRoads() ? '<p class="hint">夜間通行止めと分かっている道を外し、夜景の道を太く表示しています（自動収集の道は夜間の規制の情報がないので、現地の表示を確認してください）。両端の白い丸がコースの始まりと終わりです。</p>' : '<p class="hint">線は 1 本ずつ少しずつ色を変えています。両端の白い丸がコースの始まりと終わりです。</p>'}`;
+    ${nightRoads() ? '<details class="help"><summary aria-label="説明を見る">i</summary>夜間通行止めと分かっている道を外し、夜景の道を太く表示しています（自動収集の道は夜間の規制の情報がないので、現地の表示を確認してください）。両端の白い丸がコースの始まりと終わりです。</details>' : '<p class="hint">線は 1 本ずつ少しずつ色を変えています。両端の白い丸がコースの始まりと終わりです。</p>'}`;
 }
 function bindCourseLegend() {
   document.querySelectorAll('[data-ctype]').forEach((b) => { b.onclick = () => {
@@ -2691,7 +2707,7 @@ function renderSettings() {
       <label class="check"><input type="radio" name="theme" value="stylish" ${document.documentElement.dataset.theme === 'stylish' ? 'checked' : ''}>スタイリッシュ（グラデーション・丸みのあるカード。端末がダークモードなら暗い配色）</label>
       <label class="check"><input type="radio" name="theme" value="standard" ${document.documentElement.dataset.theme !== 'stylish' ? 'checked' : ''}>標準（デジタル庁デザインシステムに沿った、はっきりした表示）</label></fieldset>
     <label class="check"><input type="checkbox" id="set-outdoor" ${document.documentElement.hasAttribute('data-outdoor') ? 'checked' : ''}>屋外モード（日なた・グローブ向けに大きく太く表示。屋外モード中は標準の配色）</label>
-    <p class="hint">画面上の「☀屋外」でも切り替えられます。ツーリングタブを開くと自動でオンになります。</p>
+    <details class="help"><summary aria-label="説明を見る">i</summary>画面上の「☀屋外」でも切り替えられます。ツーリングタブを開くと自動でオンになります。</details>
     ${installHtml()}
     <h2>起点</h2>
     <p class="status">今の起点：<strong>${esc(DATA.cfg.origin.name)}</strong>（移動時間・ルートはここから計算）</p>
@@ -2702,9 +2718,9 @@ function renderSettings() {
     <h2>お気に入りの共有</h2>
     <p class="hint">⭐お気に入り（${state.favs.size}件）を 1 本のリンクにして家族に送れます。相手がリンクを開くと、その端末のお気に入りに追加されます。</p>
     <div class="actions"><button type="button" class="btn" id="fav-share" ${state.favs.size ? '' : 'disabled'}>⭐お気に入りを共有</button></div>
-    <h2>好きなジャンル</h2><p class="hint">今週末のおすすめに優先して出します。</p><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>
+    <h2>好きなジャンル</h2><details class="help"><summary aria-label="説明を見る">i</summary>今週末のおすすめに優先して出します。</details><div id="fav-genres" class="chips" style="flex-wrap:wrap"></div>
     <h2>Google マップの写真（任意）</h2>
-    <p class="hint">Wikipedia・Wikimedia Commons で写真が見つからない場所も多いので、ご自身の Google の API キー（Places API (New)）を入れると「▼詳しく」と地図の吹き出しに Google マップの写真を出します。キーはこの端末の中にだけ保存します。</p>
+    <details class="help"><summary aria-label="説明を見る">i</summary>Wikipedia・Wikimedia Commons で写真が見つからない場所も多いので、ご自身の Google の API キー（Places API (New)）を入れると「▼詳しく」と地図の吹き出しに Google マップの写真を出します。キーはこの端末の中にだけ保存します。</details>
     <details><summary>キーの作り方（クレジットカードの登録が必要。個人で使う程度なら無料枠の範囲）</summary><ol class="hint">
       <li>Google Cloud コンソール（console.cloud.google.com）でプロジェクトを作り、お支払い（請求先アカウント）を設定</li>
       <li>「API とサービス」→「ライブラリ」で <strong>Places API (New)</strong> を有効にする</li>
@@ -2756,7 +2772,7 @@ function visitedRecords() {
 }
 function visitedHtml() {
   const recs = visitedRecords();
-  if (!recs.length) return '<p class="hint">スポットの「▼詳しく」→「行った」を押すと、ここに地図と都県ごとの数が出ます。</p>';
+  if (!recs.length) return '<details class="help"><summary aria-label="説明を見る">i</summary>スポットの「▼詳しく」→「行った」を押すと、ここに地図と都県ごとの数が出ます。</details>';
   return `<p class="status">${recs.length}か所：${Lib.visitedStats(recs).map(([p, n]) => `${esc(p)} ${n}`).join('・')}</p><div id="visited-map"></div>`;
 }
 let visitedMap = null;
@@ -2858,7 +2874,7 @@ function costSettingsHtml() {
     <div class="cost-form"><label>車の燃費 <input type="number" inputmode="decimal" min="1" max="60" step="0.5" id="cost-car" value="${c.car}"> km/L</label>
       <label>バイクの燃費 <input type="number" inputmode="decimal" min="1" max="80" step="0.5" id="cost-bike" value="${c.bike}"> km/L</label>
       <label>ガソリン単価 <input type="number" inputmode="numeric" min="50" max="400" step="1" id="cost-price" value="${c.price}"> 円/L</label></div>
-    <p class="hint">ツーリングのルートと日帰りプラン・「詳しく」に、ガソリン代・高速料金・電車の運賃の目安を出します。高速料金は NEXCO の普通区間の料金の式で概算（首都高・大都市近郊区間・ETC 割引は反映しません）、電車は JR の運賃表で直線距離から概算です。正確な額は Google マップの経路で確認してください。</p>`;
+    <details class="help"><summary aria-label="説明を見る">i</summary>ツーリングのルートと日帰りプラン・「詳しく」に、ガソリン代・高速料金・電車の運賃の目安を出します。高速料金は NEXCO の普通区間の料金の式で概算（首都高・大都市近郊区間・ETC 割引は反映しません）、電車は JR の運賃表で直線距離から概算です。正確な額は Google マップの経路で確認してください。</details>`;
 }
 function bindCostSettings() {
   for (const k of ['car', 'bike', 'price']) {
