@@ -433,6 +433,21 @@ const Lib = (() => {
     }
     return [...used].sort((i, j) => xs[i].along - xs[j].along).map((i) => xs[i]);
   }
+  // 経由地が max 件を超えるとき、ナビを分ける。各区間は、その区間に入る最後の立ち寄り（stop: true）で区切る
+  // （高速の上の点を「目的地」にすると、走りながら次のナビを開くことになるため）。立ち寄りがなければ入るだけ入れて区切る
+  function splitLegs(wps, max) {
+    const legs = [];
+    let rest = wps;
+    while (rest.length > max) {
+      const head = rest.slice(0, max + 1); // 経由地 max 件＋目的地 1 件
+      let cut = head.length - 1;
+      for (let i = head.length - 1; i >= 0; i--) if (head[i].stop) { cut = i; break; }
+      legs.push({ waypoints: rest.slice(0, cut), end: rest[cut] });
+      rest = rest.slice(cut + 1);
+    }
+    legs.push({ waypoints: rest, end: null });
+    return legs;
+  }
   // 等間隔に近い順に k 点を選ぶ
   function spreadPick(xs, k) {
     if (xs.length <= k) return xs;
@@ -1354,7 +1369,7 @@ const Lib = (() => {
   return { haversineKm, travelMinutes, prefGroup, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
-    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, rampFree, spreadAlong, spreadPick, toGpx,
+    decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, rampFree, spreadAlong, spreadPick, splitLegs, toGpx,
     geocodeToken, parseGmapsRoute, isShortMapsUrl, routeFromPlaces, refineGenres, TIME_BANDS, timeBandState, roadNightClosed, roadNightView, routeShade,
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
