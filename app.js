@@ -3,7 +3,10 @@ const GENRES = { play: '🎡遊び', sightseeing: '📷観光', shopping: '🛍�
   garden: '🌿植物園', temple: '⛩寺社', onsen: '♨温泉', scenic: '🏔絶景', viewpoint: '🔭展望台', nightview: '🌃夜景', simulator: '🎮シミュレーター', factory: '🏭工場見学', experience: '🎨体験',
   food: '🍴グルメ', heritage: '🏯史跡', lodging: '🏨宿', souvenir: '🛍お土産・直売', outdoor: '⚽遊び・アウトドア' };
 // これらのジャンルは件数が多いので、升目ごとのファイルを選んだときだけ読み込む（data/cells/<グループ>/<升目>.json）
-const GROUP_OF = { food: 'food', heritage: 'heritage', lodging: 'heritage', souvenir: 'local', outdoor: 'local' };
+// ジャンル → そのジャンルの項目が入っているグループ（play: 公園・スポーツ・カラオケなど、temple: 寺社、hobby: 趣味のお店）
+const GROUP_OF = { food: ['food'], heritage: ['heritage'], lodging: ['heritage'], souvenir: ['local'], outdoor: ['local', 'play'],
+  play: ['play'], temple: ['temple'], shopping: ['hobby'] };
+const ALL_GROUPS = ['food', 'heritage', 'local', 'play', 'temple', 'hobby'];
 const MODES = { train: '🚃電車', car: '🚗車', bike: '🏍バイク', bicycle: '🚲自転車' };
 const GMAP_MODE = { train: 'transit', car: 'driving', bike: 'driving', bicycle: 'bicycling' };
 const TIMES = [[30, '30分'], [60, '60分'], [90, '90分'], [120, '2時間'], [180, '3時間'], [240, '4時間'], [300, '5時間'], [null, '制限なし']];
@@ -175,27 +178,29 @@ const CELL_KM_MAX = 15;
 const cellKm = () => Math.min(loadKm(), CELL_KM_MAX);
 // 「種類」を選んでいないとき（観光・遊びなど）の一覧には、件数の多いグルメなどは混ぜない。
 // その代わりに、範囲内にあるグルメなどの件数を出して、押すと加えられるようにする
-const HIDDEN_GROUPS = [['food', '🍴グルメ'], ['heritage', '🏯史跡・🏨宿'], ['outdoor', '🛍お土産・⚽遊び']];
+// [表示名, 数えるグループ, 押したときに選ぶ種類]
+const HIDDEN_GROUPS = [['🍴グルメ', ['food'], ['food']], ['🏯史跡・🏨宿', ['heritage'], ['heritage', 'lodging']],
+  ['🌳公園・🎤カラオケ・スポーツ', ['play'], ['play']], ['⛩神社・お寺', ['temple'], ['temple']],
+  ['📚趣味のお店', ['hobby'], ['shopping']], ['🛍お土産・⛺キャンプ', ['local'], ['souvenir', 'outdoor']]];
 function hiddenGroupsHtml() {
   if (!cellIndex) return '';
   const cells = Lib.cellsInRadius(DATA.cfg.origin, cellKm());
   const count = (g) => cells.reduce((a, c) => a + ((cellIndex[g] && cellIndex[g][c]) || 0), 0);
-  const items = [['food', count('food')], ['heritage', count('heritage')], ['outdoor', count('local')]].filter(([, n]) => n);
+  const items = HIDDEN_GROUPS.map(([label, groups], i) => [i, label, groups.reduce((a, g) => a + count(g), 0)]).filter(([, , n]) => n);
   if (!items.length) return '';
-  return `<p class="hint">ほかに：${items.map(([g, n]) =>
-    `<button type="button" class="chip" data-add-genre="${g}">${HIDDEN_GROUPS.find((x) => x[0] === g)[1]} 約${n.toLocaleString()}件</button>`).join(' ')}
-    <details class="help"><summary aria-label="説明を見る">i</summary>この一覧は観光・遊び・体験などです（グルメなどは含みません）。上の種類の数を押すとその種類の一覧を、種類の「🌐すべて」を選ぶと全部を表示します。</details></p>`;
+  return `<p class="hint">ほかに：${items.map(([i, label, n]) =>
+    `<button type="button" class="chip" data-add-genre="${i}">${label} 約${n.toLocaleString()}件</button>`).join(' ')}
+    <details class="help"><summary aria-label="説明を見る">i</summary>この一覧は観光・遊び・体験などの名所です（グルメや近所の公園などは件数が多いので含みません）。上の種類の数を押すとその種類の一覧を、種類の「🌐すべて」を選ぶと全部を表示します。</details></p>`;
 }
 document.addEventListener('click', (e) => {
   const b = e.target.closest('[data-add-genre]'); if (!b) return;
   buzz();
-  const g = b.dataset.addGenre;
-  (g === 'outdoor' ? ['souvenir', 'outdoor'] : g === 'heritage' ? ['heritage', 'lodging'] : [g]).forEach((x) => state.genres.add(x));
+  HIDDEN_GROUPS[+b.dataset.addGenre][2].forEach((x) => state.genres.add(x));
   saveFilters(); state.limit = 300; renderAll();
 });
 // ---- 升目ごとのデータ（飲食・史跡・宿・お土産・遊び） ----
 const CELL_DATA = new Map(); // 'グループ/升目' → 項目
-const cellLoading = new Set();
+const cellLoading = new Map(); // 読み込み中の 'グループ/升目' → 読み込みの Promise
 let cellIndex = null;
 // 読み込む範囲（km）: 移動時間から求めた半径。制限なしは 60km まで
 function loadKm() {
@@ -203,26 +208,30 @@ function loadKm() {
   const min = state.maxMin - (state.mode === 'train' ? DATA.cfg.trainOverheadMin : 0);
   return Math.min(DATA.cfg.poiRadiusKm, Math.max(0, min) / 60 * DATA.cfg.speedsKmh[state.mode] + 2);
 }
-async function ensureCells(groups, center, km) {
+function ensureCells(groups, center, km) { return ensureCellIds(groups, Lib.cellsInRadius(center, km)); }
+// 読み込みが終わるまで待つ（別の画面が読み込み中の升目も待つ。待たないと、ルート沿いのごはん屋さんが 0 件になる）。新しく揃ったら true
+async function ensureCellIds(groups, cids) {
   if (!cellIndex) return false;
-  const need = [];
+  const wait = [];
   for (const g of groups) {
-    for (const cid of Lib.cellsInRadius(center, km)) {
+    for (const cid of cids) {
       const key = `${g}/${cid}`;
-      if (cellIndex[g] && cellIndex[g][cid] && !CELL_DATA.has(key) && !cellLoading.has(key)) need.push(key);
+      if (!cellIndex[g] || !cellIndex[g][cid] || CELL_DATA.has(key)) continue;
+      if (!cellLoading.has(key)) cellLoading.set(key, getJSON(`data/cells/${key}.json`, []).then((xs) => { CELL_DATA.set(key, xs); cellLoading.delete(key); }));
+      wait.push(cellLoading.get(key));
     }
   }
-  if (!need.length) return false;
-  need.forEach((k) => cellLoading.add(k));
-  await Promise.all(need.map(async (k) => { CELL_DATA.set(k, await getJSON(`data/cells/${k}.json`, [])); cellLoading.delete(k); }));
+  if (!wait.length) return false;
+  await Promise.all(wait);
   return true;
 }
-function cellItems(groups, center, km) {
+function cellItems(groups, center, km) { return cellItemsIn(groups, Lib.cellsInRadius(center, km)); }
+function cellItemsIn(groups, cids) {
   const out = [];
-  for (const g of groups) for (const cid of Lib.cellsInRadius(center, km)) { const xs = CELL_DATA.get(`${g}/${cid}`); if (xs) out.push(...xs); }
+  for (const g of groups) for (const cid of cids) { const xs = CELL_DATA.get(`${g}/${cid}`); if (xs) out.push(...xs); }
   return out;
 }
-const selectedGroups = () => (state.allTypes ? ['food', 'heritage', 'local'] : [...new Set([...state.genres].map((g) => GROUP_OF[g]).filter(Boolean))]);
+const selectedGroups = () => (state.allTypes ? ALL_GROUPS : [...new Set([...state.genres].flatMap((g) => GROUP_OF[g] || []))]);
 
 function spotCandidates() {
   // 絶景を選んだときだけ滝・山・湖などの POI を混ぜる（展望台は osm_spots 側にある）
@@ -890,8 +899,8 @@ function renderNearList(box, word) {
     renderParking(box.querySelector('.nearby'), { ...c, name: c.here ? '現在地' : DATA.cfg.origin.name }, Lib.isBikeWord(word) ? 'bike' : null);
     return;
   }
-  ensureCells(['food', 'heritage', 'local'], c, NEAR_KM).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
-  const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(['food', 'heritage', 'local'], c, NEAR_KM).filter((s) => state.showChains || !s.chain));
+  ensureCells(ALL_GROUPS, c, NEAR_KM).then((changed) => { if (changed && state.tab === 'spots') renderSpotList(); });
+  const pool = DATA.spots.concat(DATA.osm, poiSpotList(), cellItems(ALL_GROUPS, c, NEAR_KM).filter((s) => state.showChains || !s.chain));
   const local = Lib.nearSearch(pool, word, c, NEAR_KM);
   const net = openPoiFor(Lib.netWord(word), c, NEAR_KM);
   const netItems = net.items ? Lib.notInLocal(net.items, local).map((x) => ({ ...x, distKm: Lib.haversineKm(c, x) })).filter((x) => x.distKm <= NEAR_KM) : [];
@@ -1008,7 +1017,7 @@ function bindMapToggle(list) {
       iconCreateFunction: (c) => { const n = c.getChildCount(); return L.divIcon({ className: '', iconSize: [40, 40], html: `<span class="cluster${n >= 100 ? ' big' : ''}">${n >= 1000 ? Math.round(n / 100) / 10 + '千' : n}</span>` }); } });
     cluster.addLayers(shown.map(mk));
     spotMap.addLayer(cluster);
-    note.onAdd = () => { const d = L.DomUtil.create('div', 'map-note'); d.textContent = `${shown.length.toLocaleString()}件すべて表示（数字の丸を押すと寄ります）`; return d; };
+    note.onAdd = () => { const d = L.DomUtil.create('div', 'map-note'); d.textContent = list.length > shown.length ? `${shown.length.toLocaleString()}件を表示（全${list.length.toLocaleString()}件のうち★厳選と近い順。数字の丸を押すと寄ります）` : `${shown.length.toLocaleString()}件すべて表示（数字の丸を押すと寄ります）`; return d; };
     note.addTo(spotMap);
   } else {
     // まとめる部品が読めないとき（初めての圏外など）: 引いた地図では★厳選と⭐だけ、ズーム12以上で見えている範囲の全部
@@ -1516,7 +1525,7 @@ const savedTour = store.get('tour') || {};
 const tour = { destId: savedTour.destId || null, custom: savedTour.custom || null, roadId: savedTour.roadId || null,
   opts: { noToll: false, fewHighways: !!savedTour.avoid, bike: false, ...(savedTour.opts || {}) }, radius: savedTour.radius || 3,
   cands: savedTour.cands || (savedTour.route ? [{ ...savedTour.route, label: 'ルート' }] : null), sel: savedTour.sel || 0,
-  picked: new Set(savedTour.picked || []), error: '', busy: false, awake: store.get('awake') !== false, stops: null, key: '',
+  picked: new Set(savedTour.picked || []), meals: savedTour.meals || [], foodCat: '', foodAll: false, error: '', busy: false, awake: store.get('awake') !== false, stops: null, key: '',
   showCourses: store.get('showCourses') === true, depart: savedTour.depart || '' };
 tour.restored = !!tour.cands;
 Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour.sel]) || null });
@@ -1526,7 +1535,7 @@ if (typeof L !== 'undefined' && L.Canvas) { const redraw = L.Canvas.prototype._r
 // 同じく、ズームの途中で地図を片づけると、ズームの続きの処理が消えた地図に届いてエラーになる。片づけた後は位置を 0 として扱う
 if (typeof L !== 'undefined' && L.Map) { const pos = L.Map.prototype._getMapPanePos; L.Map.prototype._getMapPanePos = function () { return this._mapPane ? pos.call(this) : L.point(0, 0); }; }
 const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
-  cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart });
+  cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart, meals: tour.meals.filter((m) => tour.picked.has(m.id)) });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
 const fail = (msg) => Object.assign(new Error(msg), { mine: true });
 // 自分で登録したルート（Google マップの経路リンクから。端末の中にだけ保存）
@@ -1746,7 +1755,8 @@ function getStops() {
   if (!tour.route) return [];
   if (!tour.stops) {
     // 山頂は車・バイクで寄れないことが多いので除く
-    const items = DATA.spots.concat(poiSpotList().filter((p) => p.kind !== 'peak'));
+    // 「ルート沿いのごはん屋さん」から加えたお店は、選んでいる間だけ候補に入れる
+    const items = DATA.spots.concat(poiSpotList().filter((p) => p.kind !== 'peak'), tour.meals.filter((m) => tour.picked.has(m.id)));
     const seen = new Set();
     tour.stops = Lib.stopsAlongRoute(items, tour.route.line, tour.radius)
       .filter((s) => s.alongKm > 1 && !seen.has(s.id) && seen.add(s.id));
@@ -1981,6 +1991,7 @@ function renderTouring() {
       <p class="status">${routeCostText(tour.route, !!(dest && dest.loop), !!tour.opts.bike)}</p>
       <div class="actions"><button type="button" class="btn" id="rt-rain">☔ルート上の雨</button><button type="button" class="btn" id="rt-elev">⛰標高</button>
         <button type="button" class="btn" id="rt-photo">📷ルート沿いの写真</button>
+        <button type="button" class="btn" id="rt-food">🍴ルート沿いのごはん屋さん</button>
         <button type="button" class="btn" id="rt-onsen">♨帰りに寄れる温泉</button>
         <button type="button" class="btn" id="rt-park">🅿目的地の駐車場</button>
         <button type="button" class="btn" id="rt-fuel">⛽24時間ガソリンスタンド</button>
@@ -2063,6 +2074,7 @@ function renderTouring() {
     $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
     $('#rt-onsen').onclick = () => { buzz(); routeOnsen(); };
+    $('#rt-food').onclick = () => { buzz(); tour.foodAll = false; routeFood(); };
     if ($('#rt-jct')) $('#rt-jct').onclick = () => { buzz(); renderJctGuide(); };
     $('#rt-fuel').onclick = () => { buzz(); routeFuel(); };
     $('#rt-park').onclick = () => {
@@ -2361,6 +2373,61 @@ function routeFuel() {
       <span class="status">${x.brand ? esc(x.brand) + '・' : ''}${x.self === 1 ? 'セルフ・' : x.self === 0 ? 'フルサービス・' : ''}道から${x.offKm < 0.1 ? '0.1km未満' : x.offKm.toFixed(1) + 'km'}・${hm(at(x))}ごろ通過</span>${onHw(x) ? ' <span class="badge warn">🛣高速を走行中の区間（SA・PA 以外は一度降りて給油）</span>' : ''}</li>`).join('')}</ul>`
       : `<p class="hint">${all.length ? 'ルートから1km以内に見つかりませんでした。' : 'まだ収集されていません（次の自動更新で集めます）。'}</p>`)
     + '<details class="help"><summary aria-label="説明を見る">i</summary>OpenStreetMap で「24時間営業」と登録されている所です。営業時間が変わっていることがあるので、深夜は早めに給油してください。「🛣高速を走行中の区間」の印は、その付近ではルートが有料道路を走っているという意味です（印がない所は一般道から寄れます。ルートが OSRM のときは印が付きません）。</details>';
+  fillAddr(out);
+}
+// ---- ルート沿い（500m 以内）のごはん屋さん: 走る順に、着く時刻とその時刻に営業中か。チェーン店は除く。「＋寄る」で立ち寄りに加える ----
+const FOOD_KM = 0.5;
+// ルートから km 以内にかかる升目（2km ごとの点から km+1 の範囲。頂点の間が長い直線でも升目を取りこぼさない）
+function routeCells(line, km) {
+  const set = new Set();
+  for (let i = 0; i < line.length; i++) {
+    const [lon, lat] = line[i], next = line[i + 1];
+    const n = next ? Math.max(1, Math.ceil(Lib.haversineKm({ lat, lon }, { lat: next[1], lon: next[0] }) / 2)) : 1;
+    for (let j = 0; j < n; j++) {
+      const p = next ? { lat: lat + (next[1] - lat) * j / n, lon: lon + (next[0] - lon) * j / n } : { lat, lon };
+      Lib.cellsInRadius(p, km + 1).forEach((c) => set.add(c));
+    }
+  }
+  return [...set];
+}
+async function routeFood() {
+  const out = $('#rt-out'), rt = tour.route;
+  if (!cellIndex || !cellIndex.food) { out.innerHTML = '<p class="hint">ごはん屋さんのデータはまだ収集されていません。</p>'; return; }
+  const cids = routeCells(rt.line, FOOD_KM);
+  if (cids.some((c) => cellIndex.food[c] && !CELL_DATA.has(`food/${c}`))) out.innerHTML = '<p class="hint">ルート沿いのごはん屋さんを探しています…</p>';
+  await ensureCellIds(['food'], cids);
+  if (tour.route !== rt || !out.isConnected) return; // 探している間にルートや画面が変わった
+  const all = Lib.stopsAlongRoute(cellItemsIn(['food'], cids).filter((s) => !s.chain), rt.line, FOOD_KM).filter((s) => s.alongKm > 1);
+  const xs = tour.foodCat ? all.filter((s) => Lib.inFoodCat(s, tour.foodCat)) : all;
+  const lineKm = Lib.distToRoute({ lat: rt.line[rt.line.length - 1][1], lon: rt.line[rt.line.length - 1][0] }, rt.line).along || rt.km;
+  const at = (x) => departMs() + rt.min * 60e3 * Math.min(1, x.alongKm / lineKm);
+  const onHw = (x) => Lib.inSpans(x.alongKm * rt.km / lineKm, rt.tollSpans);
+  // 出発地の近くのお店で埋まらないよう、ふだんはルート全体から均等に MAX 件を選ぶ
+  const MAX = 30;
+  const shown = tour.foodAll ? xs.slice(0, 300) : Lib.spreadAlong(xs.map((x) => ({ ...x, along: x.alongKm })), MAX);
+  out.innerHTML = `<h4>🍴ルート沿いのごはん屋さん（ルートから500m以内・${xs.length.toLocaleString()}件・走る順）</h4>
+    <div class="row"><label for="rf-cat" class="label">料理</label><select id="rf-cat">${[['', 'すべて']].concat(Lib.FOOD_CATS.map(([l]) => [l, l])).map(([v, l]) =>
+      `<option value="${esc(v)}" ${(tour.foodCat || '') === v ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select></div>`
+    + (xs.length ? `<ul class="rel">${shown.map((x) => {
+      const t = at(x), open = Lib.openState(x.oh, new Date(t)), picked = tour.picked.has(x.id);
+      return `<li class="meal"><div><strong>${Math.round(x.alongKm)}km</strong>・<a ${gm(x)}>${esc(x.name)}</a>
+      <span class="status">${x.note ? esc(x.note) + '・' : ''}道から${x.offKm < 0.1 ? '0.1km未満' : x.offKm.toFixed(1) + 'km'}・${hm(t)}ごろ${open === true ? ' <span class="badge open">その時刻は営業中</span>' : open === false ? ' <span class="badge closed">その時刻は営業時間外</span>' : ''}</span>${onHw(x) ? ' <span class="badge warn">🛣高速を走行中の区間（SA・PA 以外は一度降りる）</span>' : ''}</div>
+      <button type="button" class="btn" data-meal="${esc(x.id)}" ${picked ? 'disabled' : ''}>${picked ? '✓追加済み' : '＋寄る'}</button></li>`;
+    }).join('')}</ul>${shown.length < xs.length ? `<p class="hint">ルート全体から${shown.length}件を選んで表示しています。<button type="button" class="btn" id="rf-all">${xs.length > 300 ? '走る順に300件' : `すべて（${xs.length}件）`}表示</button></p>` : ''}`
+      : `<p class="hint">ルートから500m以内に${tour.foodCat ? `「${esc(tour.foodCat)}」の` : ''}お店が見つかりませんでした。</p>`)
+    + '<details class="help"><summary aria-label="説明を見る">i</summary>OpenStreetMap に登録されている飲食店です（チェーン店は除いています）。味の評価は入っていないので、名前を押して Google マップの口コミや写真で確かめてください。「＋寄る」を押すと立ち寄りに加わり、ナビの経由地になります。営業時間は登録されているお店だけ表示しています。</details>';
+  $('#rf-cat').onchange = (e) => { tour.foodCat = e.target.value; tour.foodAll = false; routeFood(); };
+  const ra = $('#rf-all'); if (ra) ra.onclick = () => { buzz(); tour.foodAll = true; routeFood(); };
+  const byId = new Map(shown.map((x) => [x.id, x]));
+  out.querySelectorAll('[data-meal]').forEach((b) => { b.onclick = () => {
+    buzz();
+    if (pickedCount() >= room()) { b.textContent = `立ち寄りは${room()}件までです`; return; }
+    const x = byId.get(b.dataset.meal);
+    tour.meals = tour.meals.filter((m) => m.id !== x.id).concat({ id: x.id, name: x.name, lat: x.lat, lon: x.lon, genres: x.genres, note: x.note, oh: x.oh, url: x.url, indoor: x.indoor, pref: x.pref });
+    tour.picked.add(x.id); tour.stops = null; saveTour();
+    tour.key = ''; renderTouring(); // 立ち寄り一覧と地図のピンに加える
+    routeFood().then(() => { const o = $('#rt-out'); if (o) o.scrollIntoView({ block: 'start' }); });
+  }; });
   fillAddr(out);
 }
 async function routePhotos() {

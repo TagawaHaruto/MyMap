@@ -8,5 +8,12 @@
   {"type": "node", "id": 107, "lat": 35.50, "lon": 139.00, "tags": {"name": "道志の湯宿", "tourism": "guest_house"}},
   {"type": "node", "id": 108, "lat": 35.30, "lon": 139.10, "tags": {"name": "朝採り直売所", "shop": "farm"}},
   {"type": "node", "id": 109, "lat": 35.31, "lon": 139.11, "tags": {"name": "相模湖ボウル", "leisure": "bowling_alley"}},
-  {"type": "node", "id": 110, "lat": 35.32, "lon": 139.12, "tags": {"name": "湖畔キャンプ場", "tourism": "camp_site"}}
+  {"type": "node", "id": 110, "lat": 35.32, "lon": 139.12, "tags": {"name": "湖畔キャンプ場", "tourism": "camp_site"}},
+  {"type": "node", "id": 111, "lat": 35.65, "lon": 139.54, "tags": {"name": "炉端 ゆう", "amenity": "pub"}},
+  {"type": "node", "id": 112, "lat": 35.64, "lon": 139.53, "tags": {"name": "ジェラート工房", "amenity": "ice_cream"}},
+  {"type": "way", "id": 113, "center": {"lat": 35.66, "lon": 139.57}, "tags": {"name": "多摩川児童公園", "leisure": "park"}},
+  {"type": "node", "id": 114, "lat": 35.65, "lon": 139.55, "tags": {"name": "カラオケ館 調布店", "amenity": "karaoke_box", "brand": "カラオケ館"}},
+  {"type": "way", "id": 115, "center": {"lat": 35.63, "lon": 139.52}, "tags": {"name": "布多天神社", "amenity": "place_of_worship", "religion": "shinto"}},
+  {"type": "node", "id": 116, "lat": 35.65, "lon": 139.545, "tags": {"name": "調布古書店", "shop": "books"}},
+  {"type": "node", "id": 117, "lat": 35.66, "lon": 139.53, "tags": {"name": "調布市民プール", "leisure": "swimming_pool"}}
 ]}

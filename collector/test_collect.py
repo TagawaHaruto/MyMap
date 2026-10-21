@@ -517,7 +517,7 @@ class CellTest(unittest.TestCase):
         seen = set()
         items = collect.parse_group_items(fx('overpass_cells.json'), seen)
         by = {s['name']: s for s in items}
-        self.assertEqual(len(items), 8)                  # 名前なし 1 件・近くの同名 1 件を除く
+        self.assertEqual(len(items), 15)                 # 名前なし 1 件・近くの同名 1 件を除く
         self.assertEqual((by['深大寺そば 玉乃屋']['genres'], by['深大寺そば 玉乃屋']['note']), (['food'], 'そば'))
         self.assertIs(by['マクドナルド 調布店']['chain'], True)
         self.assertNotIn('chain', by['森のカフェ'])
@@ -527,7 +527,15 @@ class CellTest(unittest.TestCase):
         self.assertEqual((by['朝採り直売所']['genres'], by['朝採り直売所']['indoor']), (['souvenir'], True))
         self.assertEqual((by['相模湖ボウル']['genres'], by['相模湖ボウル']['indoor']), (['outdoor'], True))
         self.assertEqual((by['湖畔キャンプ場']['genres'], by['湖畔キャンプ場']['indoor']), (['outdoor'], False))
-        self.assertEqual({s['g'] for s in items}, {'food', 'heritage', 'local'})
+        self.assertEqual((by['炉端 ゆう']['g'], by['炉端 ゆう']['note']), ('food', '居酒屋'))
+        self.assertEqual((by['ジェラート工房']['g'], by['ジェラート工房']['note']), ('food', 'アイス'))
+        self.assertEqual((by['多摩川児童公園']['g'], by['多摩川児童公園']['genres'], by['多摩川児童公園']['note']), ('play', ['play'], '公園'))
+        self.assertEqual((by['カラオケ館 調布店']['g'], by['カラオケ館 調布店']['note'], by['カラオケ館 調布店']['indoor']), ('play', 'カラオケ', True))
+        self.assertNotIn('chain', by['カラオケ館 調布店'])  # 隠すチェーン店は飲食だけ（カラオケや映画館はチェーンが普通）
+        self.assertEqual((by['調布市民プール']['g'], by['調布市民プール']['genres']), ('play', ['outdoor', 'play']))
+        self.assertEqual((by['布多天神社']['g'], by['布多天神社']['genres'], by['布多天神社']['note']), ('temple', ['temple'], '神社'))
+        self.assertEqual((by['調布古書店']['g'], by['調布古書店']['genres'], by['調布古書店']['note']), ('hobby', ['shopping'], '本屋'))
+        self.assertEqual({s['g'] for s in items}, {'food', 'heritage', 'local', 'play', 'temple', 'hobby'})
 
     def test_split_bbox_into_grid(self):
         q = collect.grid('(34.0,138.0,36.0,140.0)', 2)

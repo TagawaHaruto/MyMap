@@ -152,6 +152,22 @@ const near = [{ id: 'n', lat: 35.66, lon: 139.58 }, { id: 'm', lat: 35.651, lon:
 assert.deepStrictEqual(ids(Lib.stopsAlongRoute(near.concat(many), line, 3)).filter((x) => x === 'n' || x === 'm'), ['m', 'n']);
 const brute = near.concat(many).map((s) => ({ s, r: Lib.distToRoute(s, line) })).filter((x) => x.r.km <= 3).length;
 assert.strictEqual(Lib.stopsAlongRoute(near.concat(many), line, 3).length, brute);
+// 升目で前絞りしても、全線分と測った結果（距離・進行距離）と同じ。曲がりくねった線・長い線分・升目の境目の点でも
+{
+  let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+  const wig = [[139.40, 35.60]];
+  for (let i = 0; i < 400; i++) { const [x, y] = wig[wig.length - 1]; wig.push([x + 0.002 + rnd() * 0.004, y + (rnd() - 0.5) * 0.006]); }
+  wig.push([139.40 + 0.0 + 2.0, 35.62]); // 約 180km の長い 1 本
+  const pts = Array.from({ length: 3000 }, (_, i) => ({ id: 'p' + i, lat: 35.55 + rnd() * 0.15, lon: 139.38 + rnd() * 2.1 }));
+  pts.push({ id: 'edge', lat: 35.61, lon: 139.41 });
+  for (const km of [0.3, 1, 3, 5]) {
+    const want = pts.map((s) => ({ s, r: Lib.distToRoute(s, wig) })).filter((x) => x.r.km <= km)
+      .sort((a, b) => a.r.along - b.r.along).map((x) => [x.s.id, x.r.km.toFixed(9), x.r.along.toFixed(9)]);
+    const got = Lib.stopsAlongRoute(pts, wig, km).map((s) => [s.id, s.offKm.toFixed(9), s.alongKm.toFixed(9)]);
+    assert.deepStrictEqual(got, want, `maxKm ${km}`);
+    assert(got.length > 10, `maxKm ${km} は候補がある: ${got.length}`);
+  }
+}
 
 // Google マップ: origin 省略で現在地から案内
 const g2 = Lib.gmapsDirUrl(null, { lat: 35.7, lon: 139.0 });
