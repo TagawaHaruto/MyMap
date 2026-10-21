@@ -2494,7 +2494,8 @@ function bindCourseBtns(el) {
   if (!el) return;
   el.querySelectorAll('[data-course-go]').forEach((b) => { b.onclick = () => {
     buzz(); const id = b.dataset.courseGo;
-    setDest(() => { tour.custom = null; tour.roadId = id; tour.destId = null; });
+    // コースを選んだらそのままルートを探す（「ルート候補を探す」を探して押す手間をなくす）
+    if (setDest(() => { tour.custom = null; tour.roadId = id; tour.destId = null; }) && navigator.onLine !== false) { const g = $('#route-go'); if (g && !g.disabled) g.click(); }
   }; });
   el.querySelectorAll('[data-course-add]').forEach((b) => { b.onclick = () => {
     buzz(); const id = b.dataset.courseAdd, d = chainDraft();
@@ -2659,7 +2660,16 @@ function drawCourses() {
   }
   if (on.has('pass')) {
     const passIcon = L.divIcon({ className: '', iconSize: [26, 26], iconAnchor: [13, 13], html: '<span class="pin pass">⛰</span>' });
-    for (const p of DATA.passes) add(L.marker(p.points[0], { icon: passIcon, title: p.name }), p);
+    // 峠は数が多い（600か所超）ので、引いた地図では出さず、ズーム11以上で見えている範囲だけ
+    const layer = L.layerGroup().addTo(map);
+    const refresh = () => {
+      layer.clearLayers();
+      if (map.getZoom() < 11) return;
+      const b = map.getBounds().pad(0.2);
+      for (const p of DATA.passes) if (b.contains(p.points[0])) layer.addLayer(L.marker(p.points[0], { icon: passIcon, title: p.name }).on('click', (e) => { L.DomEvent.stopPropagation(e); showCourse(p, e.target); }));
+    };
+    map.on('moveend zoomend', refresh);
+    refresh();
   }
 }
 // 凡例（押すとその種類を出す・隠す）。本数つき

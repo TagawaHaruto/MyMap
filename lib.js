@@ -383,7 +383,9 @@ const Lib = (() => {
         if (FORK_TYPES.has(m.type) && (m.toll || m.highway || /首都高|高速|自動車道|道路|JCT|IC/.test((m.street_names || []).join('')))) {
           const at = shape[m.begin_shape_index], p = at ? { lat: at[1], lon: at[0] } : null;
           const near = p ? jcts.map(([name, lat, lon]) => [name, haversineKm(p, { lat, lon })]).filter(([, d]) => d < 0.6).sort((a, b) => a[1] - b[1])[0] : null;
-          out.push({ km: Math.round(km * 10) / 10, jct: near ? near[0] : '', text: jaOnly(m.instruction), lat: p && p.lat, lon: p && p.lon });
+          const text = jaOnly(m.instruction);
+          // JCT 名も行き先もない「分岐です。」だけの案内は出さない（家の近くの出入口のランプで出て、役に立たない）
+          if (near || /。.+/.test(text.replace(/。$/, ''))) out.push({ km: Math.round(km * 10) / 10, jct: near ? near[0] : '', text, lat: p && p.lat, lon: p && p.lon });
         }
         km += m.length || 0;
       }
