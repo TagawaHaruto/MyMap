@@ -1907,11 +1907,15 @@ function loadStopCells(cids) {
 // 一覧と地図に出す分。選んだものは全部、ほかは種類ごとに上限まで、ルート全体から均等に選ぶ
 // （出発地の近くだけで埋まらないように。カフェ・ごはんを足しても、道の駅などに枠を取られて出ないことがないように）
 const STOP_SHOW = 100, MANY_SHOW = 30;
+// 街なかの銭湯（OpenStreetMap で温泉の印がない入浴施設）。大阪・東京などのルートでは何十件も並び、道の駅や展望を押し出すので別枠にする
+const isSento = (s) => s.note === '銭湯・入浴施設';
+const SENTO_SHOW = 10;
 function shownStops() {
   const all = getStops(), k = tour.stopsAll ? 5 : 1;
   const spread = (xs, n) => (xs.length <= n ? xs : Lib.spreadAlong(xs.map((s) => ({ ...s, along: s.alongKm })), n));
   const out = all.filter((s) => tour.picked.has(s.id)), rest = all.filter((s) => !tour.picked.has(s.id));
-  out.push(...spread(rest.filter((s) => !MANY_KINDS.has(stopKindOf(s))), STOP_SHOW * k));
+  out.push(...spread(rest.filter((s) => !MANY_KINDS.has(stopKindOf(s)) && !isSento(s)), STOP_SHOW * k));
+  out.push(...spread(rest.filter(isSento), SENTO_SHOW * k));
   for (const kind of MANY_KINDS) out.push(...spread(rest.filter((s) => stopKindOf(s) === kind), MANY_SHOW * k));
   return out.sort((a, b) => a.alongKm - b.alongKm);
 }
