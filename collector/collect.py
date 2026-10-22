@@ -879,11 +879,13 @@ def area_id(lat, lon):
 
 def near_curated(curated):
     """厳選スポットと同じ名前で 2km 以内のものか（全国では同じ名前の別の場所が多いので、名前だけでは除かない）。"""
+    # 厳選は「夢元さぎり湯（登別温泉）」のように温泉地などを括弧で足していることがあるので、括弧と空白を除いて比べる
+    key = lambda n: re.sub(r'[（(][^）)]*[）)]|\s', '', n)
     by = {}
     for c in curated:
         if c.get('name') and c.get('lat') is not None:
-            by.setdefault(c['name'], []).append([c['lat'], c['lon']])
-    return lambda s: any(km_ll([s['lat'], s['lon']], q) < 2 for q in by.get(s['name'], ()))
+            by.setdefault(key(c['name']), []).append([c['lat'], c['lon']])
+    return lambda s: any(km_ll([s['lat'], s['lon']], q) < 2 for q in by.get(key(s['name']), ()))
 
 
 def build_osm(els, curated_spots=(), curated_roads=()):

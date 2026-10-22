@@ -226,6 +226,13 @@ class OsmSpotTest(unittest.TestCase):
         self.assertEqual(collect.name_kana({'name:en': 'Nobeha No Yu'}), 'のべはのゆ')
         self.assertEqual(collect.show_name('温泉銭湯;夢元さぎり湯'), '温泉銭湯 夢元さぎり湯')
 
+    def test_near_curated(self):
+        # 厳選の名前の括弧（温泉地など）を除いて比べる。遠い同名は別の場所
+        near = collect.near_curated([{'name': '湯都ピア浜脇（浜脇温泉）', 'lat': 33.268, 'lon': 131.497}])
+        self.assertTrue(near({'name': '湯都ピア浜脇', 'lat': 33.2685, 'lon': 131.4972}))
+        self.assertFalse(near({'name': '湯都ピア浜脇', 'lat': 35.0, 'lon': 139.0}))
+        self.assertFalse(near({'name': '浜脇温泉', 'lat': 33.268, 'lon': 131.497}))
+
     def test_parse_osm_spots(self):
         spots = collect.parse_osm_spots(fx('overpass_spots.json'), exclude_names={'深大寺'})
         by = {s['name']: s for s in spots}
