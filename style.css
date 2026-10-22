@@ -432,3 +432,48 @@ label[for="dest"] { display: inline; }
 .cluster { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--key); color: #fff; font: 700 13px/1 var(--font-family-sans);
   border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.35); }
 .cluster.big { width: 46px; height: 46px; margin: -3px; font-size: 14px; }
+/* 雨雲レーダー（ツーリングの地図の上。Yahoo!天気のように下の時刻のバーでずらして見る） */
+.map-radar { position: absolute; right: 8px; top: 52px; z-index: 600; min-height: 36px; font-size: 0.8rem; font-weight: var(--font-weight-700); background: var(--bg); }
+.map-radar[aria-pressed="true"] { background: var(--key); color: #fff; border-color: var(--key); }
+body.tour-full .map-full .map-radar { top: calc(108px + env(safe-area-inset-top)); right: 58px; }
+/* 半透明にして、バーの下の地図（雨雲）も透けて見えるように */
+.radar-bar { position: absolute; left: 8px; right: 8px; bottom: 22px; z-index: 650; padding: 4px 8px 2px; border-radius: 12px;
+  background: var(--bg); background: color-mix(in srgb, var(--bg) 78%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.25); font-size: 0.8rem; }
+body.tour-full .map-full .radar-bar { bottom: calc(var(--sheet-h, 50vh) + 8px); }
+.radar-bar .hint { margin: 4px 32px 4px 0; }
+.radar-top { display: flex; align-items: center; gap: 8px; }
+.radar-time { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; }
+.radar-time strong { font-size: 1.1rem; white-space: nowrap; }
+.radar-time small { margin-left: 4px; font-size: 0.72rem; font-weight: normal; color: var(--fg-sub); }
+.radar-time .rel { font-size: 0.78rem; font-weight: var(--font-weight-700); color: var(--key); }
+.radar-bar .radar-play { flex: none; width: 36px; height: 36px; min-height: 36px; border-radius: 50%; border: 0; background: var(--key); color: #fff; font-size: 0.95rem; }
+.radar-bar .radar-plan-btn { flex: none; min-height: 34px; padding: 0 8px; font-size: 0.75rem; }
+.radar-bar .radar-x { flex: none; min-height: 32px; min-width: 32px; }
+.radar-bar > .radar-x { position: absolute; right: 6px; top: 4px; }
+.radar-track { position: relative; padding-bottom: 13px; }
+.radar-track input[type=range] { -webkit-appearance: none; appearance: none; display: block; width: 100%; height: 24px; margin: 0; padding: 0; background: transparent; border: 0; }
+.radar-track input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: linear-gradient(90deg, #adb5bd var(--past), #4dabf7 var(--past)); }
+.radar-track input[type=range]::-moz-range-track { height: 6px; border-radius: 3px; background: linear-gradient(90deg, #adb5bd var(--past), #4dabf7 var(--past)); }
+.radar-track input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; margin-top: -8px; border-radius: 50%; background: var(--key); border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.4); }
+.radar-track input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: var(--key); border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.4); }
+.radar-ticks { position: absolute; left: 11px; right: 11px; bottom: 0; height: 14px; }
+.radar-ticks span { position: absolute; transform: translateX(-50%); font-size: 0.65rem; line-height: 14px; color: var(--fg-sub); white-space: nowrap; }
+.radar-ticks span.now { color: var(--key); font-weight: var(--font-weight-700); }
+.radar-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; column-gap: 8px; }
+.radar-legend { display: flex; align-items: center; gap: 1px; font-size: 0.58rem; color: var(--fg-sub); }
+.radar-legend span { display: inline-block; width: 10px; height: 7px; margin-left: 3px; border: 1px solid rgb(0 0 0 / 0.15); }
+.radar-legend em { margin-left: 4px; font-style: normal; }
+.radar-here { margin: 0; font-size: 0.74rem; }
+.radar-here:empty { display: none; }
+.radar-rider { font-size: 26px; line-height: 30px; text-align: center; filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px #fff); }
+.radar-plan:empty { display: none; }
+.rplan { display: grid; gap: 4px; }
+.rplan .rp { display: grid; grid-template-columns: auto auto 1fr auto; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; text-align: left; font: inherit;
+  border: var(--bw) solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); cursor: pointer; }
+.rplan .rp[aria-pressed="true"] { border-color: var(--key); box-shadow: inset 0 0 0 1px var(--key); }
+.rplan .rp-dot { width: 12px; height: 12px; border-radius: 50%; }
+.rplan .rp small { color: var(--fg-sub); white-space: nowrap; }
+.radar-sum { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; margin: 0 0 2px; padding: 3px 8px; border: 0; border-radius: 8px;
+  background: color-mix(in srgb, var(--key) 12%, transparent); color: var(--fg); font: inherit; font-size: 0.78rem; font-weight: var(--font-weight-700); text-align: left; cursor: pointer; }
+.radar-sum span { flex: none; color: var(--key); font-size: 0.72rem; }

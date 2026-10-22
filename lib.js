@@ -722,6 +722,82 @@ const Lib = (() => {
   const ohText = (oh) => String(oh || '').replace(/\b(Mo|Tu|We|Th|Fr|Sa|Su|PH)\b/g, (d) => OH_JA[d])
     .replace(/\boff\b|\bclosed\b/gi, '休み').replace(/24\/7/, '24時間').replace(/;\s*/g, '／');
 
+  // ---- 雨雲（気象庁の高解像度降水ナウキャスト・降水短時間予報の地図タイル。出典: 気象庁ホームページ） ----
+  const JMA_TILE = 'https://www.jma.go.jp/bosai/jmatile/data';
+  const JMA_TIMES = ['nowc/targetTimes_N1.json', 'nowc/targetTimes_N2.json', 'rasrf/targetTimes.json'].map((p) => `${JMA_TILE}/${p}`);
+  const jmaMs = (s) => Date.UTC(+s.slice(0, 4), +s.slice(4, 6) - 1, +s.slice(6, 8), +s.slice(8, 10), +s.slice(10, 12), +s.slice(12, 14) || 0); // UTC の「20261022052000」
+  // 時刻順のコマ。実況（過去 pastMin 分・5 分ごと）→ ナウキャストの予報（1 時間先まで 5 分ごと）→ 降水短時間予報（15 時間先まで 1 時間ごと）。
+  // from〜to はそのコマが表す時間（ナウキャストはその時刻の前後 2.5 分、降水短時間予報は validtime までの 1 時間の雨量）
+  function jmaFrames(n1, n2, rasrf, pastMin = 60) {
+    const out = [];
+    const nowT = (n1 || []).reduce((m, x) => Math.max(m, jmaMs(x.validtime)), 0);
+    const nowc = (x, kind) => {
+      const t = jmaMs(x.validtime);
+      out.push({ t, from: t - 150e3, to: t + 150e3, kind, url: `${JMA_TILE}/nowc/${x.basetime}/none/${x.validtime}/surf/hrpns/{z}/{x}/{y}.png` });
+    };
+    for (const x of n1 || []) if (jmaMs(x.validtime) >= nowT - pastMin * 60e3) nowc(x, jmaMs(x.validtime) === nowT ? 'now' : 'past');
+    for (const x of n2 || []) nowc(x, 'nowcast');
+    // 1〜6 時間先は 10 分ごとに出る「immed」、7 時間先からは毎正時の「none」。それぞれ一番新しいものだけ使う
+    const fc = (rasrf || []).filter((x) => (x.elements || []).includes('rasrf') && x.validtime > x.basetime);
+    const end = out.reduce((m, f) => Math.max(m, f.to), nowT);
+    const seen = new Set();
+    for (const member of ['immed', 'none']) {
+      const xs = fc.filter((x) => x.member === member);
+      const base = xs.reduce((m, x) => (x.basetime > m ? x.basetime : m), '');
+      for (const x of xs) {
+        const t = jmaMs(x.validtime);
+        if (x.basetime !== base || t <= end || seen.has(t)) continue;
+        seen.add(t);
+        out.push({ t, from: t - 3600e3, to: t, kind: 'fcst', url: `${JMA_TILE}/rasrf/${x.basetime}/${member}/${x.validtime}/surf/rasrf/{z}/{x}/{y}.png` });
+      }
+    }
+    return out.sort((a, b) => a.t - b.t);
+  }
+  // 時刻 t の雨を表すコマ（重なるときは短い時間のコマ＝ナウキャストを優先）。範囲の外は null
+  function frameAt(frames, t) {
+    let best = null;
+    for (const f of frames) if (t >= f.from && t <= f.to && (!best || f.to - f.from < best.to - best.from)) best = f;
+    return best;
+  }
+  // タイルの色 → 雨の強さの段階（0=なし、1=1mm未満、2=1〜5mm … 8=80mm以上。ナウキャストは 1 時間あたり、降水短時間予報は 1 時間の雨量）
+  const RAIN_COLORS = [[242, 242, 255], [160, 210, 255], [33, 140, 255], [0, 65, 255], [250, 245, 0], [255, 153, 0], [255, 40, 0], [180, 0, 104]];
+  const RAIN_LABELS = ['なし', '1mm未満', '1〜5mm', '5〜10mm', '10〜20mm', '20〜30mm', '30〜50mm', '50〜80mm', '80mm以上'];
+  function rainLevel(r, g, b, a) {
+    if (a < 128) return 0;
+    let best = 0, bd = Infinity;
+    RAIN_COLORS.forEach(([R, G, B], i) => { const d = (r - R) ** 2 + (g - G) ** 2 + (b - B) ** 2; if (d < bd) { bd = d; best = i + 1; } });
+    return bd < 3000 ? best : 0;
+  }
+  // 緯度経度 → 地図タイル（256 画素）の番号と画素の位置
+  function tilePixel(lat, lon, z) {
+    const n = 2 ** z, x = (lon + 180) / 360 * n, s = Math.sin(lat * RAD);
+    const y = (0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI)) * n;
+    return { x: Math.floor(x), y: Math.floor(y), px: Math.min(255, Math.floor((x % 1) * 256)), py: Math.min(255, Math.floor((y % 1) * 256)) };
+  }
+  // ルートを出発 departMs から totalMin 分で走るときの、時刻 t の位置（距離に比例して進むとみなす）。走っていない時刻は null
+  function routeAt(line, totalMin, departMs, t) {
+    if (!line || line.length < 2 || t < departMs || t > departMs + totalMin * 60e3) return null;
+    const cum = [0];
+    for (let i = 1; i < line.length; i++) cum.push(cum[i - 1] + haversineKm(pt([line[i - 1][1], line[i - 1][0]]), pt([line[i][1], line[i][0]])));
+    const want = cum[cum.length - 1] * (t - departMs) / (totalMin * 60e3 || 1);
+    const i = Math.max(1, cum.findIndex((d) => d >= want));
+    const f = cum[i] > cum[i - 1] ? (want - cum[i - 1]) / (cum[i] - cum[i - 1]) : 0;
+    return { lat: line[i - 1][1] + (line[i][1] - line[i - 1][1]) * f, lon: line[i - 1][0] + (line[i][0] - line[i - 1][0]) * f, km: want };
+  }
+  // 出発時刻の候補（今の次の stepMin 分区切りから、予報の終わり lastMs の stepMin 分前まで）
+  function departOptions(nowMs, lastMs, stepMin = 30, max = 30) {
+    const step = stepMin * 60e3, out = [];
+    for (let t = Math.ceil(nowMs / step) * step; t <= lastMs - step && out.length < max; t += step) out.push(t);
+    return out;
+  }
+  // 地点ごとの雨の段階（予報の範囲外は null）→ 雨に当たるか。1mm/h 以上を「雨」、1mm 未満を「ぱらつく」とみなす
+  function rainVerdict(levels) {
+    const known = levels.filter((v) => v != null);
+    const wet = levels.map((v, i) => [v, i]).filter(([v]) => v >= 2);
+    return { max: known.length ? Math.max(...known) : null, wet: wet.length, drizzle: levels.filter((v) => v === 1).length,
+      unknown: levels.length - known.length, firstWet: wet.length ? wet[0][1] : -1 };
+  }
+
   // ---- 季節の見頃（厳選スポットの best: [{ what, months }]） ----
   const seasonNow = (s, month) => (s.best || []).filter((b) => b.months.includes(month));
   const seasonText = (best) => (best || []).map((b) => `${b.what} ${b.months.length > 1 ? `${b.months[0]}〜${b.months[b.months.length - 1]}` : b.months[0]}月`).join('・');
@@ -1431,6 +1507,7 @@ const Lib = (() => {
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
+    JMA_TIMES, jmaFrames, frameAt, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict,
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
