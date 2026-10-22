@@ -198,6 +198,34 @@ class OsmSpotTest(unittest.TestCase):
         self.assertEqual(collect.osm_genre({'name': '某いちご狩り園', 'landuse': 'farmland'})[0], ['experience', 'outdoor'])
         self.assertIsNone(collect.osm_genre({'name': '田んぼ', 'landuse': 'farmland'}))
 
+    def test_onsen_genre(self):
+        # 入浴施設の印がない温泉も拾う。温泉の入らない宿・サウナは対象外
+        g = lambda name, **t: collect.osm_genre({'name': name, **t})
+        self.assertEqual(g('ことぶき温泉', leisure='hot_spring')[0], ['onsen'])
+        self.assertEqual(g('海地獄', natural='hot_spring')[:1], (['onsen', 'scenic'],))
+        self.assertEqual(g('鉄輪むし湯', natural='spring')[0], ['onsen'])
+        self.assertEqual(g('鶴の湯温泉', tourism='hotel')[2], '温泉宿（日帰り入浴は要確認）')
+        self.assertEqual(g('明礬温泉', tourism='attraction')[0], ['onsen', 'sightseeing'])
+        self.assertEqual(g('駒の湯温泉', leisure='sauna')[0], ['onsen'])
+        self.assertIsNone(g('駅前ホテル', tourism='hotel'))
+        self.assertIsNone(g('サウナ北欧', leisure='sauna'))
+        self.assertEqual(g('東京タワー', tourism='attraction')[0], ['sightseeing'])
+
+    def test_romaji_kana(self):
+        r = collect.romaji_to_kana
+        self.assertEqual(r('Nobeha No Yu Tsuruhashi'), 'のべはのゆつるはし')
+        self.assertEqual(r('Dōgo Onsen Honkan'), 'どうごおんせんほんかん')
+        self.assertEqual(r('Kinosaki Onsen'), 'きのさきおんせん')
+        self.assertEqual(r('Shin-Yokohama'), 'しんよこはま')  # ō は「おう」にする（大久保の「おお」とは区別できない）
+        self.assertEqual(r('Hakkōda'), 'はっこうだ')
+        self.assertEqual(r('Ryokan Chōjūkan'), 'りょかんちょうじゅうかん')
+        self.assertIsNone(r('Beppu Tower'))   # 英語の名前は読みにしない
+        self.assertIsNone(r('Starbucks'))
+        self.assertIsNone(r(None))
+        self.assertEqual(collect.name_kana({'name:ja-Hira': 'あさまおんせん', 'name:en': 'Asama Onsen'}), 'あさまおんせん')
+        self.assertEqual(collect.name_kana({'name:en': 'Nobeha No Yu'}), 'のべはのゆ')
+        self.assertEqual(collect.show_name('温泉銭湯;夢元さぎり湯'), '温泉銭湯 夢元さぎり湯')
+
     def test_parse_osm_spots(self):
         spots = collect.parse_osm_spots(fx('overpass_spots.json'), exclude_names={'深大寺'})
         by = {s['name']: s for s in spots}
