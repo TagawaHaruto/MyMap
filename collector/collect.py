@@ -258,6 +258,10 @@ SPOT_QUERIES = [
     ('shop', 'nwr["shop"~"^(mall|department_store)$"]["name"]'),
     ('play', 'nwr["leisure"~"^(water_park|amusement_arcade|trampoline_park|miniature_golf)$"]["name"]'),
     ('planetarium', 'nwr["amenity"="planetarium"]["name"]'),
+    # 温泉: 入浴施設の印（public_bath）がない温泉もある（温泉の印・源泉や地獄・名前に温泉の入ったサウナや宿として登録）
+    ('onsen', ['nwr["leisure"="hot_spring"]["name"]', 'nwr["amenity"="spa"]["name"]',
+               'nwr["natural"~"^(hot_spring|spring)$"]["name"~"温泉|湯|地獄"]', 'nwr["leisure"="sauna"]["name"~"温泉|の湯"]',
+               'nwr["tourism"~"^(hotel|guest_house|hostel|motel)$"]["name"~"温泉"]']),
     # 体験: 脱出ゲーム・カート/サーキット・ボルダリング・陶芸/ガラス工房・果物狩り/牧場
     ('experience', ['nwr["leisure"="escape_game"]["name"]', 'nwr["sport"~"karting|motor|climbing"]["name"]',
                     'nwr["craft"~"^(pottery|glassblower|handicraft)$"]["name"]',
@@ -282,8 +286,18 @@ def norm_province(v):
 
 def osm_genre(t):
     """タグ → (genres, 屋内か, 種類の表示名)。対象外は None。"""
-    tour, leis, amen = t.get('tourism'), t.get('leisure'), t.get('amenity')
-    if tour in ('museum', 'gallery'):
+    tour, leis, amen, name = t.get('tourism'), t.get('leisure'), t.get('amenity'), t.get('name', '')
+    if leis == 'hot_spring' or amen == 'spa':
+        g = (['onsen'], True, '温泉')
+    elif t.get('natural') in ('hot_spring', 'spring') and re.search('温泉|湯|地獄', name):
+        g = (['onsen', 'scenic'], False, '地獄（源泉の見学）') if '地獄' in name else (['onsen'], False, '温泉')
+    elif leis == 'sauna' and re.search('温泉|の湯', name):
+        g = (['onsen'], True, '入浴施設（サウナ）')
+    elif tour in ('hotel', 'guest_house', 'hostel', 'motel') and '温泉' in name:
+        g = (['onsen'], True, '温泉宿（日帰り入浴は要確認）')
+    elif tour == 'attraction' and '温泉' in name:
+        g = (['onsen', 'sightseeing'], False, '温泉')
+    elif tour in ('museum', 'gallery'):
         g = (['museum'], True, '美術館' if tour == 'gallery' else '博物館')
     elif amen == 'planetarium':
         g = (['museum'], True, 'プラネタリウム')
@@ -328,6 +342,65 @@ def osm_genre(t):
     return g
 
 
+# ローマ字（name:ja_rm・name:ja-Latn・name:en）→ ひらがな。読み（name:ja-Hira など）のない施設もひらがなで探せるように
+ROMAJI = {}
+for _row, _kana in (('', 'あいうえお'), ('k', 'かきくけこ'), ('g', 'がぎぐげご'), ('s', 'さしすせそ'), ('z', 'ざじずぜぞ'), ('t', 'たちつてと'),
+                    ('d', 'だぢづでど'), ('n', 'なにぬねの'), ('h', 'はひふへほ'), ('b', 'ばびぶべぼ'), ('p', 'ぱぴぷぺぽ'), ('m', 'まみむめも'),
+                    ('r', 'らりるれろ')):
+    ROMAJI.update({_row + v: k for v, k in zip('aiueo', _kana)})
+ROMAJI.update({'ya': 'や', 'yu': 'ゆ', 'yo': 'よ', 'wa': 'わ', 'wo': 'を', 'shi': 'し', 'chi': 'ち', 'tsu': 'つ', 'fu': 'ふ', 'ji': 'じ',
+               'she': 'しぇ', 'je': 'じぇ', 'che': 'ちぇ', 'fa': 'ふぁ', 'fi': 'ふぃ', 'fe': 'ふぇ', 'fo': 'ふぉ'})
+for _c, _k in (('ky', 'き'), ('gy', 'ぎ'), ('sh', 'し'), ('sy', 'し'), ('j', 'じ'), ('zy', 'じ'), ('ch', 'ち'), ('ty', 'ち'), ('ny', 'に'),
+               ('hy', 'ひ'), ('by', 'び'), ('py', 'ぴ'), ('my', 'み'), ('ry', 'り')):
+    ROMAJI.update({_c + v: _k + s for v, s in (('a', 'ゃ'), ('u', 'ゅ'), ('o', 'ょ'))})
+LONG_VOWELS = (('ā', 'aa'), ('ī', 'ii'), ('ū', 'uu'), ('ē', 'ei'), ('ō', 'ou'), ('â', 'aa'), ('î', 'ii'), ('û', 'uu'), ('ê', 'ei'), ('ô', 'ou'))
+
+
+def romaji_to_kana(s):
+    """全部が日本語の音として読めたときだけひらがなにする（"Nobeha No Yu" → のべはのゆ。"Beppu Tower" のような英語は None）。"""
+    if not s:
+        return None
+    s = s.lower()
+    for a, b in LONG_VOWELS:
+        s = s.replace(a, b)
+    out = []
+    for w in re.split(r"[\s\-'’.,・()]+", s):
+        if not w:
+            continue
+        if not re.fullmatch('[a-z]+', w):
+            return None
+        i = 0
+        while i < len(w):
+            c = w[i]
+            if c == 'n' and (i + 1 == len(w) or w[i + 1] not in 'aiueoy'):
+                out.append('ん')
+                i += 1
+            elif (c == w[i + 1:i + 2] and c not in 'aiueon') or (c == 't' and w[i + 1:i + 3] == 'ch'):
+                out.append('っ')  # 促音（tt・kk・pp・ss・tch）
+                i += 1
+            else:
+                for n in (3, 2, 1):
+                    k = ROMAJI.get(w[i:i + n])
+                    if k:
+                        out.append(k)
+                        i += n
+                        break
+                else:
+                    return None
+    return ''.join(out) or None
+
+
+def show_name(name):
+    """OpenStreetMap で複数の値を区切る「;」は空白に（「温泉銭湯;夢元さぎり湯」→「温泉銭湯 夢元さぎり湯」）。"""
+    return ' '.join(x.strip() for x in name.split(';') if x.strip())
+
+
+def name_kana(t):
+    """名前の読み（ひらがな・カタカナ）。読みのタグがなければローマ字の名前から。"""
+    return (t.get('name:ja-Hira') or t.get('name:ja_kana') or t.get('name:ja-Hrkt')
+            or romaji_to_kana(t.get('name:ja_rm') or t.get('name:ja-Latn')) or romaji_to_kana(t.get('name:en')))
+
+
 def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
     seen = set() if seen is None else seen
     out = []
@@ -342,11 +415,11 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
             continue
         seen.add(key)
         site = t.get('website', '')
-        spot = {'id': f"osm:{el['type']}:{el['id']}", 'name': t['name'], 'lat': round(pos['lat'], 5),
+        spot = {'id': f"osm:{el['type']}:{el['id']}", 'name': show_name(t['name']), 'lat': round(pos['lat'], 5),
                 'lon': round(pos['lon'], 5), 'pref': norm_province(t.get('addr:province')), 'genres': g[0], 'indoor': g[1],
                 'url': site if site.startswith(('http://', 'https://')) else wiki_url(t.get('wikipedia')) or '',
                 'note': g[2], 'k': kind}
-        kana = t.get('name:ja-Hira') or t.get('name:ja_kana') or t.get('name:ja-Hrkt')
+        kana = name_kana(t)
         if kana:  # 読みでの名前検索用（ないものはファイルを小さくするため付けない）
             spot['kana'] = kana
         spot.update(extra_tags(t))
@@ -746,12 +819,12 @@ def parse_group_items(text, seen, kind=None):
             continue
         seen.add(key)
         site = t.get('website', '')
-        item = {'id': f"osm:{el['type']}:{el['id']}", 'name': t['name'], 'lat': round(pos['lat'], 5), 'lon': round(pos['lon'], 5),
+        item = {'id': f"osm:{el['type']}:{el['id']}", 'name': show_name(t['name']), 'lat': round(pos['lat'], 5), 'lon': round(pos['lon'], 5),
                 'pref': norm_province(t.get('addr:province')), 'genres': g[1], 'indoor': g[2],
                 'url': site if site.startswith(('http://', 'https://')) else '', 'note': g[3], 'g': g[0], 'k': kind}
         if t.get('wikipedia') and ':' in t['wikipedia']:
             item['wp'] = t['wikipedia']
-        kana = t.get('name:ja-Hira') or t.get('name:ja_kana') or t.get('name:ja-Hrkt')
+        kana = name_kana(t)
         if kana:
             item['kana'] = kana
         if g[0] == 'food' and (t.get('brand') or t.get('brand:wikidata')):  # チェーンの飲食店（画面では既定で隠す）
@@ -778,7 +851,7 @@ def save_cells(root, cells):
 
 # ---- 全国の OpenStreetMap データ（Geofabrik の日本全体の .osm.pbf）から、上の全種類を週 1 回まとめて作る ----
 OSM_PBF_URL = 'https://download.geofabrik.de/asia/japan-latest.osm.pbf'
-OSM_VER = 1  # 作り方を変えたら上げる（1 週間以内でも作り直す）
+OSM_VER = 2  # 作り方を変えたら上げる（1 週間以内でも作り直す）。2: 温泉の印・源泉・温泉宿なども温泉に、ローマ字の名前から読み
 OSM_PARTS = ('pois', 'spots', 'cells', 'roads', 'moto')  # アプリの COLLECT_PARTS（取れなかった部分の表示）と同じ
 PREF_STMT = 'rel["boundary"="administrative"]["admin_level"="4"]'
 # 高速道路の分岐（JCT）の名前: ルートの分岐の案内に付ける
@@ -788,7 +861,7 @@ KEEP_TAGS = {'name', 'amenity', 'shop', 'tourism', 'leisure', 'historic', 'natur
              'highway', 'public_transport', 'bath:type', 'religion', 'cuisine', 'brand', 'brand:wikidata', 'operator', 'website',
              'wikipedia', 'opening_hours', 'phone', 'contact:phone', 'wheelchair', 'addr:province', 'name:ja-Hira', 'name:ja_kana',
              'name:ja-Hrkt', 'self_service', 'access', 'fee', 'capacity', 'capacity:motorcycle', 'motorcycle', 'moped', 'parking',
-             'toll', 'ele', 'mountain_pass', 'museum'}
+             'toll', 'ele', 'mountain_pass', 'museum', 'name:en', 'name:ja_rm', 'name:ja-Latn'}
 
 
 def osm_queries():

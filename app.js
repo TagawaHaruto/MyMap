@@ -40,7 +40,7 @@ const state = {
   favGenres: new Set(store.get('favGenres') || ['vehicle', 'museum', 'garden', 'temple', 'onsen']),
   favs: new Set(store.get('favs') || []), visited: new Set(store.get('visited') || []),
 };
-const DATA = { cfg: null, spots: [], osm: [], pois: [], events: [], status: null, touring: [], roads: [], courses: [], passes: [], sx: null, issues: { courses: {}, auto: {} }, ver: 0, eventsLoaded: false, osmLoaded: false };
+const DATA = { cfg: null, spots: [], osm: [], onsen: [], pois: [], events: [], status: null, touring: [], roads: [], courses: [], passes: [], sx: null, issues: { courses: {}, auto: {} }, ver: 0, eventsLoaded: false, osmLoaded: false };
 const FAILED = new Set();
 
 const rainy = () => (state.rainOverride ?? state.weatherRainy);
@@ -242,6 +242,8 @@ function updateMainPrefs() {
   for (const p of [...state.prefs]) if (!PREFS.includes(p)) state.prefs.delete(p);
   if (state.prefs.size !== n0) saveFilters();
 }
+// 地方ごとの観光スポットに全国の温泉地を足す（地図データに同じ名前の温泉が近くにあれば、そちらだけ）
+const withOnsen = (osm) => osm.concat(Lib.dropSameName(DATA.onsen, osm));
 // 起点を変えたとき・データを更新したとき: 地方ごとのデータを読み直す
 let areaSeq = 0;
 async function reloadArea(keepOnFail = false) {
@@ -250,7 +252,7 @@ async function reloadArea(keepOnFail = false) {
   if (seq !== areaSeq) return; // 読み込む間に起点をもう一度変えたときは、後の分だけ使う
   // データの更新で読み直すときは、一時的な通信の失敗で今のデータを欠けたものに置き換えない（読み込みの失敗の案内は出る）
   if (keepOnFail && [...FAILED].some((u) => u.startsWith('data/area/'))) { DATA.osmLoaded = true; return; }
-  DATA.pois = pois; DATA.osm = osm; osm.forEach(Lib.refineGenres); setRoads(ro);
+  DATA.pois = pois; osm.forEach(Lib.refineGenres); DATA.osm = withOnsen(osm); setRoads(ro);
   JCTS = null; updateMainPrefs();
   DATA.osmLoaded = true; DATA.ver++; tour.stops = null; // 起動時の読み込みの途中で呼ばれたときは、起動時の側は使わずに終わるため、ここで読み終わりにする
 }
@@ -322,7 +324,7 @@ function spotCandidates() {
   if (state.seasonOnly) { const m = thisMonth(); all = all.filter((s) => Lib.seasonNow(s, m).length); }
   return all;
 }
-const isCurated = (s) => !s.poi && !s.op && !String(s.id).startsWith('osm:');
+const isCurated = Lib.isCurated;
 // 駐車場の目安: 厳選は登録済みの情報、そのほかは収集時に近くの駐車場から推定した pk（2: 専用がありそう・1: 近くにある）
 // 駐車場: 確かな情報だけ（厳選の登録・名前で確かめられた専用駐車場 pk=2・この起動中に Google マップから取れた情報）。推定はしない
 const parkText = (s) => {
@@ -3235,11 +3237,15 @@ async function init() {
     if (mp && mp.at === originKey(DATA.cfg.origin)) setPrefs(mp.list);
   }
   // 先にスポットを出し、イベントなどは後から読み込む
-  [DATA.spots, DATA.touring, DATA.status, DATA.roads, DATA.sx] = await Promise.all([
+  let onsen;
+  [DATA.spots, DATA.touring, DATA.status, DATA.roads, DATA.sx, onsen] = await Promise.all([
     getJSON('data/spots.json', []), getJSON('data/touring.json', []), getJSON('data/status.json', null, 'no-store'),
-    getJSON('data/scenic_roads.json', []), getJSON('data/shutoko_net.json', null)]);
+    getJSON('data/scenic_roads.json', []), getJSON('data/shutoko_net.json', null), getJSON('data/onsen_areas.json', [])]);
   DATA.issues = await getJSON('data/route_issues.json', DATA.issues); // 全コースのルート検索で確かめた結果（往復・Uターンが残るコース）
   DATA.spots.forEach(Lib.refineGenres);
+  // 全国の温泉地（小さいので全部読む）。★厳選と同じ場所は除く。地方ごとのデータ（DATA.osm）に足して、一覧・検索・立ち寄りに出す
+  DATA.onsen = Lib.dropSameName(onsen.map(Lib.onsenSpot), DATA.spots);
+  DATA.osm = withOnsen([]);
   renderAll();
   renderInstallBanner();
   loadWeather();
@@ -3260,8 +3266,8 @@ async function init() {
   // 自動収集スポットは大きい（数 MB）ので最後に読み込む
   const osm = await loadArea('spots');
   if (seq0 !== areaSeq) return; // 起点を変えた・データを更新した読み直しのほうで osmLoaded にする
-  DATA.osm = osm;
-  DATA.osm.forEach(Lib.refineGenres);
+  osm.forEach(Lib.refineGenres);
+  DATA.osm = withOnsen(osm);
   updateMainPrefs();
   DATA.osmLoaded = true; DATA.ver++; tour.stops = null; // 立ち寄りの観光名所・温泉・展望台にも使う
   renderAll();

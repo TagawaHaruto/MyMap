@@ -748,6 +748,30 @@ assert.strictEqual(oc.length, 5); // 6 点のうち起点に一番近い (0.05, 
 assert.deepStrictEqual(oc.map((p) => [p.lat, p.lon, Math.round(p.heading)]), [[0, 0.05, 90], [0, 0.15, 90], [0.05, 0.2, 0], [0.1, 0.15, 270], [0.1, 0.05, 270]]); // 反時計回り。左の点は向きを反対に
 assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.lon + 5 }))], [sqL(0), sqL(5.1)], 'ccw', { lat: 0, lon: -1 }), null); // 重ならないコース
 
+// 温泉地（Wikidata）: ★厳選にしない。読み（ひらがな）でも温泉地の名前でも探せ、温泉地に当たればその中の入浴施設も出る
+{
+  const beppu = Lib.onsenSpot({ id: 'wd-Q1', name: '別府温泉', kana: 'べっぷおんせん', lat: 33.2803, lon: 131.5, pref: '大分', area: true, wp: '別府温泉' });
+  assert.deepStrictEqual([beppu.id, beppu.genres, beppu.wp, beppu.onsenArea, Lib.isCurated(beppu)], ['wd:Q1', ['onsen', 'sightseeing'], 'ja:別府温泉', true, false]);
+  assert.ok(Lib.isCurated({ id: 'oita-takegawara' }) && !Lib.isCurated({ id: 'osm:node:1' }));
+  const take = { id: 'osm:way:1', name: '竹瓦温泉', lat: 33.2791, lon: 131.5045, genres: ['onsen'] };
+  const far = { id: 'osm:way:2', name: '亀川温泉', lat: 33.33, lon: 131.49, genres: ['onsen'] };
+  const muse = { id: 'osm:way:3', name: '別府市美術館', lat: 33.28, lon: 131.501, genres: ['museum'] };
+  const o = { ...cfg, origin: { lat: 33.2, lon: 131.6 } };
+  const names = (q) => Lib.searchSpots([beppu, take, far, muse], q, o, new Set(), 'car').map((s) => s.name).sort();
+  assert.deepStrictEqual(names('別府温泉'), ['別府温泉', '竹瓦温泉']); // 2km の外の亀川・温泉でない美術館は出さない
+  assert.deepStrictEqual(names('べっぷおんせん'), ['別府温泉', '竹瓦温泉']);
+  assert.deepStrictEqual(names('ベップオンセン'), ['別府温泉', '竹瓦温泉']); // カタカナでも
+  assert.deepStrictEqual(names('別府'), ['別府市美術館', '別府温泉', '竹瓦温泉']);
+  assert.strictEqual(Lib.searchSpots([take, beppu], '別府温泉', o, new Set(), 'car')[0].name, '別府温泉'); // 温泉地が先頭
+  // ひらがなと漢字を混ぜた「のべはの湯」も、ローマ字の名前から作った読み（のべはのゆつるはし）に当たる
+  const nobeha = { id: 'osm:way:9', name: '延羽の湯', kana: 'のべはのゆつるはし', lat: 34.6657, lon: 135.536, genres: ['onsen'] };
+  assert.deepStrictEqual(['のべはの湯', 'のべはのゆ', '延羽の湯', 'ノベハノユ'].map((q) => Lib.searchSpots([nobeha], q, o, new Set(), 'car').length), [1, 1, 1, 1]);
+  // 同じ名前で 3km 以内の重複は除く（遠い同名の温泉は別の場所なので残す）
+  const kuro = Lib.onsenSpot({ id: 'wd-Q2', name: '黒川温泉', lat: 33.078, lon: 131.141, pref: '熊本', area: true });
+  const kuro2 = Lib.onsenSpot({ id: 'wd-Q3', name: '黒川温泉', lat: 38.1, lon: 139.9, pref: '山形', area: true });
+  assert.deepStrictEqual(Lib.dropSameName([kuro, kuro2], [{ id: 'kumamoto-kurokawa-onsen', name: '黒川温泉', lat: 33.0757, lon: 131.1418 }]).map((s) => s.pref), ['山形']);
+}
+
 console.log('lib: ALL PASS');
 // 経由地の横に同じ向きの一般道のランプ（出入口）があれば避ける
 {

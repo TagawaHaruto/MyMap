@@ -19,10 +19,12 @@ const Lib = (() => {
 
   const prefGroup = (p) => (p == null ? null : MAIN_PREFS.includes(p) ? p : 'その他');
 
+  // 手作業で確かめた★厳選か（自動で集めた OpenStreetMap・Wikidata の温泉地・立ち寄り候補・OpenPOI 以外）
+  const isCurated = (s) => !s.poi && !s.op && !/^(osm|wd):/.test(String(s.id));
   // 一覧の段: 0=厳選・⭐、1=公式サイトか Wikipedia がある、2=その他（自動収集の名前だけの場所など）
   function tierOf(s, favs) {
     if (favs && favs.has(s.id)) return 0;
-    if (!s.poi && !s.op && !String(s.id).startsWith('osm:')) return 0;
+    if (isCurated(s)) return 0;
     return s.url || s.wp ? 1 : 2;
   }
   const byTier = (a, b) => a.tier - b.tier || a.minutes - b.minutes;
@@ -86,10 +88,14 @@ const Lib = (() => {
   const FOOD_KEYS = new Map(FOOD_CATS.map(([label, words]) => [label, words.map(norm)]));
   const FOOD_NOT = { 'そば・うどん': [norm('中華そば')] }; // 「そば」で中華そば（ラーメン）を出さない
   // 検索語 → 探す文字列の一覧（ジャンル名・その呼び方なら全部の呼び方）
+  // 「のべはの湯」のように、ひらがなと漢字を混ぜて打ったときも読み（kana）に当たるよう、温泉の決まった言葉だけ読みにした形でも探す
+  const KANJI_READ = [['温泉', 'おんせん'], ['湯', 'ゆ']];
   function searchKeys(q) {
     const k = norm(q);
     for (const [label, keys] of FOOD_KEYS) if (norm(label) === k || keys.includes(k)) return Object.assign([...keys], { label });
-    return k ? [k] : [];
+    if (!k) return [];
+    const alt = KANJI_READ.reduce((s, [a, b]) => s.split(a).join(b), k);
+    return alt !== k ? [k, alt] : [k];
   }
   const matchKeys = (s, keys) => {
     let h = haystack(s);
@@ -101,10 +107,20 @@ const Lib = (() => {
   function searchSpots(items, q, cfg, favs, mode, limit = 50) {
     const keys = searchKeys(q);
     if (!keys.length) return [];
-    const out = [];
+    const out = [], hit = new Set();
     for (const s of items) {
       if (!matchKeys(s, keys)) continue;
-      out.push({ ...s, minutes: travelMinutes(haversineKm(cfg.origin, s), mode, cfg), tier: tierOf(s, favs) });
+      hit.add(s);
+      // 名前で当たった温泉地（「別府温泉」で別府温泉）は一番上に。その中の施設はその下に並ぶ
+      out.push({ ...s, minutes: travelMinutes(haversineKm(cfg.origin, s), mode, cfg), tier: s.onsenArea ? -1 : tierOf(s, favs) });
+    }
+    // 温泉地（「別府温泉」など）に当たったら、その中の入浴施設も出す（施設の名前に温泉地の名前が入っていないことが多い）
+    const areas = out.filter((s) => s.onsenArea).slice(0, 3);
+    if (areas.length) {
+      for (const s of items) {
+        if (hit.has(s) || s.onsenArea || !(s.genres || []).includes('onsen') || !areas.some((a) => haversineKm(a, s) <= ONSEN_AREA_KM)) continue;
+        out.push({ ...s, minutes: travelMinutes(haversineKm(cfg.origin, s), mode, cfg), tier: tierOf(s, favs) });
+      }
     }
     // 同じ場所が厳選・自動収集・立ち寄り候補に重複していても 1 件にする（約 1km 以内の同名）
     const seen = new Set();
@@ -114,6 +130,18 @@ const Lib = (() => {
       seen.add(k);
       return true;
     }).slice(0, limit);
+  }
+
+  // ---- 温泉地・温泉（data/onsen_areas.json。Wikidata〔CC0〕の温泉、読みは Wikidata か日本語版 Wikipedia の冒頭） ----
+  const ONSEN_AREA_KM = 2; // 温泉地の名前で探したとき、その中とみなす入浴施設の範囲
+  const onsenSpot = (x) => ({ id: `wd:${x.id.replace(/^wd-/, '')}`, name: x.name, kana: x.kana, lat: x.lat, lon: x.lon, pref: x.pref,
+    genres: x.area ? ['onsen', 'sightseeing'] : ['onsen'], indoor: false, url: '', wp: x.wp ? `ja:${x.wp}` : undefined,
+    note: x.area ? '温泉地' : '温泉', onsenArea: !!x.area });
+  // extra のうち、base に同じ名前（表記ゆれを除く）で km 以内のものがあるものを除く（★厳選や地図データと同じ場所を 2 回出さない）
+  function dropSameName(extra, base, km = 3) {
+    const by = new Map();
+    for (const s of base) { const k = norm(s.name); if (!by.has(k)) by.set(k, []); by.get(k).push(s); }
+    return extra.filter((x) => !(by.get(norm(x.name)) || []).some((s) => haversineKm(s, x) <= km));
   }
 
   const spanDays = (e) => Math.round((Date.parse(e.end) - Date.parse(e.start)) / 864e5) + 1;
@@ -1395,7 +1423,7 @@ const Lib = (() => {
 
   const isStale = (iso, nowMs, hours) => !iso || nowMs - Date.parse(iso) > hours * 3600e3;
 
-  return { haversineKm, travelMinutes, prefGroup, setMainPrefs, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
+  return { haversineKm, travelMinutes, prefGroup, setMainPrefs, isCurated, onsenSpot, dropSameName, ONSEN_AREA_KM, filterSpots, filterEvents, distToRoute, stopsAlongRoute,
     weekSeed, pickRecommendations, snsLinks, gmapsDirUrl, ymd, weekend, periodRange, isStale,
     tierOf, direction, DIRS, norm, searchSpots, spanDays,
     decodePolyline, scenicScore, scenicStars, detourRoads, pinWaypoints, loopPoints, coursePoints, chainRoad, CHAIN_MODES, outerFromPoints, capPoints, jaOnly, jctGuide, samplesIn, safeSpot, rampFree, spreadAlong, spreadPick, splitLegs, toGpx,
