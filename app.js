@@ -1617,7 +1617,7 @@ const tour = { destId: savedTour.destId || null, custom: savedTour.custom || nul
   opts: { noToll: false, fewHighways: !!savedTour.avoid, bike: false, ...(savedTour.opts || {}) }, radius: savedTour.radius || 3,
   cands: savedTour.cands || (savedTour.route ? [{ ...savedTour.route, label: 'ルート' }] : null), sel: savedTour.sel || 0,
   picked: new Set(savedTour.picked || []), kept: savedTour.kept || savedTour.meals || [], foodCat: '', stopsAll: false, error: '', busy: false, awake: store.get('awake') !== false, stops: null, key: '',
-  showCourses: store.get('showCourses') === true, depart: savedTour.depart || '' };
+  showCourses: store.get('showCourses') === true, depart: savedTour.depart || '', rainAt: savedTour.rainAt || 0, rainMsg: '', rainBusy: false };
 tour.restored = !!tour.cands;
 Object.defineProperty(tour, 'route', { get: () => (tour.cands && tour.cands[tour.sel]) || null });
 let map = null, markers = new Map();
@@ -1628,7 +1628,7 @@ if (typeof L !== 'undefined' && L.Map) { const pos = L.Map.prototype._getMapPane
 // ホイールでの拡大縮小は少し遅れて実行されるので、その間に地図を片づけると、消えた地図の表示位置を直そうとしてエラーになる。片づけた後は何もしない
 if (typeof L !== 'undefined' && L.Map) { const rv = L.Map.prototype._resetView; L.Map.prototype._resetView = function (...a) { return this._mapPane ? rv.apply(this, a) : this; }; }
 const saveTour = () => store.set('tour', { destId: tour.destId, custom: tour.custom, roadId: tour.roadId, opts: tour.opts, radius: tour.radius,
-  cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart, kept: tour.kept.filter((m) => tour.picked.has(m.id)) });
+  cands: tour.cands, sel: tour.sel, picked: [...tour.picked], depart: tour.depart, kept: tour.kept.filter((m) => tour.picked.has(m.id)), rainAt: tour.rainAt || 0 });
 const keyColor = () => getComputedStyle(document.documentElement).getPropertyValue('--key').trim() || '#0017c1';
 const fail = (msg) => Object.assign(new Error(msg), { mine: true });
 // 自分で登録したルート（Google マップの経路リンクから。端末の中にだけ保存）
@@ -2005,7 +2005,8 @@ const candCard = (c, i) => `<button type="button" class="card cand" data-cand="$
   <span class="cand-time">${fmtMin(Math.round(c.min))}・${Math.round(c.km)}km</span>
   <span class="cand-sub">${c.toll === true ? '<span class="badge warn">有料あり</span>' : c.toll === false ? '有料なし' : ''}
     ・景色 ${'★'.repeat(c.stars)}${'☆'.repeat(5 - c.stars)}（展望台など${c.spots}か所${c.roadKm >= 1 ? `・おすすめの道${Math.round(c.roadKm)}km` : ''}）
-    ・カーブ ${'★'.repeat(curvOf(c))}${'☆'.repeat(5 - curvOf(c))}</span></button>`;
+    ・カーブ ${'★'.repeat(curvOf(c))}${'☆'.repeat(5 - curvOf(c))}</span>
+  ${c.rain ? `<span class="cand-rain">${c.rainBest ? '<span class="badge open">☂雨が少ない</span> ' : ''}${rainText(c.rain)}</span>` : ''}</button>`;
 const curvOf = (c) => (c.curvStars = c.curvStars || Lib.curvStars(Lib.curviness(c.line)));
 
 // ---- 地図を全画面にして、ほかの情報は下から引き出すパネルに（Google マップのアプリのように）。上にはルートの要約 ----
@@ -2155,7 +2156,11 @@ function renderTouring() {
     ${tour.error ? `<p class="notice">${esc(tour.error)}</p>` : ''}
     ${tour.route && (tour.restored || offline) ? `<p class="notice">${offline ? '📴 圏外のため、' : ''}${fmtStamp(tour.route.at || 0)} に検索して保存したルートを表示しています${offline ? '' : '（再検索で更新）'}。</p>` : ''}
     ${routeStale() ? '<p class="notice">⚠ 走り方を変えました。「ルート候補を探す」で探し直してください（このままナビを開くと、ルートを固定する地点なしで Google マップに渡します）。</p>' : ''}
-    ${tour.cands && tour.cands.length ? `<h2>ルート候補（${tour.cands.length}本${tour.cands.length > 1 ? '・押して切り替え' : ''}）</h2><div class="cands">${tour.cands.map(candCard).join('')}</div>` : ''}
+    ${tour.cands && tour.cands.length ? `<h2>ルート候補（${tour.cands.length}本${tour.cands.length > 1 ? '・押して切り替え' : ''}）</h2>
+      <div class="actions"><button type="button" class="btn" id="rain-route" ${tour.rainBusy ? 'disabled' : ''}>☂雨に合いにくいルートを探す</button></div>
+      <p class="status" id="rain-msg" aria-live="polite">${esc(tour.rainMsg || '')}</p>
+      ${tour.rainAt && tour.cands.some((c) => c.rain) && Math.abs(tour.rainAt - departMs()) > 60e3 ? `<p class="notice">雨は ${hhmm(tour.rainAt)} に出発したときのものです。出発時刻を変えたので、もう一度「☂雨に合いにくいルートを探す」を押してください。</p>` : ''}
+      <div class="cands">${tour.cands.map(candCard).join('')}</div>` : ''}
     ${tour.route ? `${dest && !dest.loop ? viaRoads.map((r) => `<p class="notice">「${esc(r.name)}」${(r.closedMonths || []).includes(thisMonth()) ? '⚠ <strong>今月は通行止め・閉鎖の期間です。</strong>' : ''}${r.toll ? `有料道路（${r.fee ? esc(r.fee) : '料金は公式サイトで確認'}）。` : ''}${r.closed ? `⚠ ${esc(r.closed)}` : ''}</p>`).join('') : ''}
       <div class="row"><span class="label">ルート</span><span class="status">${esc(tour.route.engine || 'OSRM')} による推定${tour.route.note ? '。' + esc(tour.route.note) : ''}</span>
         <details class="help"><summary aria-label="説明を見る">i</summary>${tour.opts.noToll || tour.opts.fewHighways ? 'Google マップでは「ルートオプション」でも同じ設定にしてください。' : ''}ナビは Google マップのアプリで開いてください（ブラウザ版の Google マップは経由地が 3 件までしか使えません）。</details></div>
@@ -2253,7 +2258,10 @@ function renderTouring() {
   $('#awake').onchange = (e) => { tour.awake = e.target.checked; store.set('awake', tour.awake); keepAwake(tour.awake); };
   const dp = $('#depart');
   if (dp) {
-    dp.onchange = (e) => { tour.depart = e.target.value; saveTour(); $('#eta').textContent = etaText(); if (RADAR.on) showRadarFrame(); };
+    dp.onchange = (e) => {
+      tour.depart = e.target.value; saveTour(); $('#eta').textContent = etaText(); if (RADAR.on) showRadarFrame();
+      const rm = $('#rain-msg'); if (rm && tour.cands && tour.cands.some((c) => c.rain)) rm.textContent = '出発時刻を変えたので、候補の雨はもう一度「☂雨に合いにくいルートを探す」で調べ直してください。';
+    };
     $('#rt-rain').onclick = () => { buzz(); routeRain(); };
     $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
@@ -2275,6 +2283,7 @@ function renderTouring() {
   bindCourseLegend();
   $('#tour-opts').addEventListener('toggle', (e) => store.set('tourOptsOpen', e.target.open));
   $('#show-courses').onchange = (e) => { tour.showCourses = e.target.checked; store.set('showCourses', tour.showCourses); renderTouring(); };
+  const rr = $('#rain-route'); if (rr) rr.onclick = () => { buzz(); rainRoutes(); };
   $('#route-go').onclick = async () => {
     buzz(); tour.error = ''; tour.busy = true; renderTouring();
     // 地図で指定した地点は id がいつも 'custom' なので、地点そのものと走り方で同じ検索かを見分ける
@@ -2282,7 +2291,7 @@ function renderTouring() {
     const d = currentDest(), at = sig();
     try {
       const cands = await fetchCandidates(d);
-      if (sig() === at) { tour.cands = cands; tour.sel = 0; tour.restored = false; tour.stops = null; tour.picked.clear(); saveTour(); }
+      if (sig() === at) { tour.cands = cands; tour.sel = 0; tour.restored = false; tour.stops = null; tour.picked.clear(); tour.rainMsg = ''; tour.rainAt = 0; saveTour(); }
       else tour.error = '検索中に目的地か走り方が変わったため、結果を使いませんでした。もう一度探してください。';
     } catch (err) {
       if (sig() === at) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
@@ -2716,6 +2725,72 @@ async function radarPlan() {
   RADAR.busy = false;
   const o = $('#radar-plan'); if (o) o.innerHTML = RADAR.planHtml;
   renderRadarBar();
+}
+
+// ---- 雨に合いにくいルート: ルート候補ごとに、出発時刻に走ったときの雨（雨雲レーダー）を調べる。標準のルートが雨に当たるなら、
+// 雨の区間の左右へ回る迂回ルートも探して候補に足し、いちばん雨の少ない候補を選ぶ ----
+async function routeRainOf(c, depart, fr) {
+  const n = Math.max(20, Math.min(120, Math.round(c.km / 2)));
+  const pts = Lib.routeSamples(c.line, c.min, depart, n);
+  const levels = await Promise.all(pts.map((p) => { const f = Lib.frameAt(fr, p.at); return f ? rainLevelAt(f, p.lat, p.lon) : null; }));
+  const v = Lib.rainVerdict(levels);
+  return { wetKm: v.wet ? Math.max(1, Math.round(v.wet * c.km / n)) : 0, max: v.max, unknown: v.unknown, n, at: depart,
+    wetPts: pts.filter((p, i) => levels[i] >= 2).map(({ lat, lon }) => ({ lat, lon })) };
+}
+const rainText = (r) => (!r ? '' : r.max == null ? '雨の予報の範囲外' : r.wetKm ? `☔ 雨の区間 約${r.wetKm}km（最大 ${Lib.RAIN_LABELS[r.max]}）`
+  : `${r.max === 1 ? '🌂 ぱらつく程度' : '☀ 雨なし'}${r.unknown ? '（後半は予報の範囲外）' : ''}`);
+async function rainRoutes() {
+  const d = currentDest();
+  if (!tour.cands || !d || tour.rainBusy) return;
+  const msg = (t) => { tour.rainMsg = t; const el = $('#rain-msg'); if (el) el.textContent = t; };
+  tour.rainBusy = true; msg('☂ ルート候補ごとに雨を調べています…');
+  const sig = () => JSON.stringify([tour.destId, tour.roadId, tour.custom, tour.opts, DATA.cfg.origin, tour.cands.length]);
+  const at = sig();
+  try {
+    const fr = await radarFrames(), dep = departMs();
+    if (dep > fr[fr.length - 1].to - 30 * 60e3) throw fail(`雨雲の予報は ${hhmm(fr[fr.length - 1].to)} までです。出発時刻を早めると調べられます。`);
+    if (dep < fr[0].from) throw fail('出発時刻が過ぎています。出発時刻を今より後にしてください。');
+    for (const c of tour.cands) c.rain = await routeRainOf(c, dep, fr);
+    let best = Math.min(...tour.cands.map((c) => c.rain.wetKm));
+    const std = tour.cands[0], added = [];
+    let why = d.loop ? '周回コースなので回り道は探していません。' : '';
+    if (best > 0 && !d.loop) {
+      const vias = Lib.rainDetourVias(std.rain.wetPts, DATA.cfg.origin, d);
+      if (!vias.length) why = '雨は出発地か目的地のそばなので、回り道では避けられません。';
+      for (let k = 0; k < vias.length; k++) {
+        const v = vias[k];
+        msg(`☂ 雨を避ける回り道を探しています…（${k + 1}/${vias.length}・${v.side}側へ約${v.d}km）`);
+        await new Promise((ok) => setTimeout(ok, 800)); // 公開のルートサーバーへの配慮
+        try {
+          const [rt] = await valhalla([DATA.cfg.origin, { lat: v.lat, lon: v.lon }, d], tour.opts);
+          if (rt.min > std.min * 1.6 + 20) continue; // 遠回りすぎる
+          if (tour.cands.concat(added).some((c) => Math.abs(c.km - rt.km) < Math.max(0.5, rt.km * 0.01) && Math.abs(c.min - rt.min) < 2)) continue; // ほぼ同じルート
+          rt.rain = await routeRainOf(rt, dep, fr);
+          if (rt.rain.wetKm >= best) continue;
+          // Google マップには、道の上に置き直した経由地を渡す（回り道を通るように）
+          added.push({ ...rt, label: `☂雨を避ける（${v.side}側を回る）`, via: [], fixed: [Lib.nearestOnLine(rt.line, v)], note: std.note, opts: std.opts });
+        } catch { /* 引けなければ次の経由地へ */ }
+      }
+    }
+    if (sig() !== at) throw fail('調べている間にルート候補が変わったため、結果を使いませんでした。');
+    if (added.length) {
+      tour.cands.push(...added.sort((a, b) => a.rain.wetKm - b.rain.wetKm || a.min - b.min).slice(0, 2));
+      const scores = tour.cands.map((c) => Lib.scenicScore(c.line, scenicPoints(), DATA.roads));
+      const stars = Lib.scenicStars(scores), fastest = Math.min(...tour.cands.map((c) => c.min));
+      tour.cands.forEach((c, i) => Object.assign(c, scores[i], { stars: stars[i], fastest: c.min === fastest, at: c.at || Date.now() }));
+    }
+    best = Math.min(...tour.cands.map((c) => c.rain.wetKm));
+    const bi = tour.cands.map((c, i) => [c.rain.wetKm, c.min, i]).sort((a, b) => a[0] - b[0] || a[1] - b[1])[0][2];
+    tour.cands.forEach((c, i) => { c.rainBest = i === bi; delete c.rain.wetPts; }); // 保存を小さく
+    const b = tour.cands[bi];
+    const plus = (c) => (c.min - std.min >= 1 ? `標準より +${Math.round(c.min - std.min)}分` : '標準と同じくらいの時間');
+    msg(best === 0 ? `☀ ${hhmm(dep)} に出発なら「${b.label}」で雨に合わなそうです${bi === 0 ? '' : `（${plus(b)}。標準は ${rainText(std.rain)}）`}。`
+      : bi !== 0 && b.rain.wetKm < std.rain.wetKm ? `☂ 「${b.label}」なら雨の区間 約${b.rain.wetKm}km（標準は約${std.rain.wetKm}km）・${plus(b)}。`
+        : `☔ どのルートでも雨の区間があります（いちばん少なくて約${best}km）。${why}出発時刻をずらすと避けられるかもしれません（🌧雨雲 →「🕒雨に合わない出発時刻」）。`);
+    if (bi !== tour.sel) { tour.sel = bi; tour.stops = null; tour.picked.clear(); }
+    tour.rainAt = dep; saveTour();
+  } catch (err) { msg(err.mine ? err.message : '雨雲かルートを読み込めませんでした（圏外の可能性があります）。'); }
+  tour.rainBusy = false; tour.key = ''; renderTouring();
 }
 
 // 出発時刻（未設定なら次の正時）と到着予定
