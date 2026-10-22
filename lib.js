@@ -790,6 +790,32 @@ const Lib = (() => {
     for (let t = Math.ceil(nowMs / step) * step; t <= lastMs - step && out.length < max; t += step) out.push(t);
     return out;
   }
+  // 雨の区間を避ける経由地: ルートのうち雨に当たる地点（出発地・目的地から 5km 以内は回り道では避けられないので除く）の真ん中から、
+  // 雨の区間の向きに直角に、左右へ offsets km ずらした点。side は回る側の方角
+  const DIR8 = ['北', '北東', '東', '南東', '南', '南西', '西', '北西'];
+  function rainDetourVias(wetPts, from, to, offsets = [15, 35]) {
+    const xs = wetPts.filter((p) => haversineKm(p, from) > 5 && haversineKm(p, to) > 5);
+    if (!xs.length) return [];
+    const c = { lat: xs.reduce((s, p) => s + p.lat, 0) / xs.length, lon: xs.reduce((s, p) => s + p.lon, 0) / xs.length };
+    const a = xs.length > 1 ? xs[0] : from, b = xs.length > 1 ? xs[xs.length - 1] : to; // 雨の区間の向き（1 点だけならルート全体の向き）
+    const kx = Math.cos(c.lat * RAD) * 111, ky = 111;
+    let dx = (b.lon - a.lon) * kx, dy = (b.lat - a.lat) * ky;
+    const len = Math.hypot(dx, dy) || 1; dx /= len; dy /= len;
+    const out = [];
+    for (const d of offsets) {
+      for (const s of [1, -1]) {
+        const px = -dy * s, py = dx * s; // 進む向きの左（s=1）と右
+        out.push({ lat: c.lat + py * d / ky, lon: c.lon + px * d / kx, d, side: DIR8[Math.round((((Math.atan2(px, py) / RAD) + 360) % 360) / 45) % 8] });
+      }
+    }
+    return out;
+  }
+  // 線の上で、地点 p に一番近い点（[lon, lat] の並び → { lat, lon }）。経由地を道の上に置き直すため
+  function nearestOnLine(line, p) {
+    let best = null, bd = Infinity;
+    for (const [lon, lat] of line) { const d = (lat - p.lat) ** 2 + ((lon - p.lon) * Math.cos(p.lat * RAD)) ** 2; if (d < bd) { bd = d; best = { lat, lon }; } }
+    return best;
+  }
   // 地点ごとの雨の段階（予報の範囲外は null）→ 雨に当たるか。1mm/h 以上を「雨」、1mm 未満を「ぱらつく」とみなす
   function rainVerdict(levels) {
     const known = levels.filter((v) => v != null);
@@ -1507,7 +1533,7 @@ const Lib = (() => {
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
-    JMA_TIMES, jmaFrames, frameAt, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict,
+    JMA_TIMES, jmaFrames, frameAt, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict, rainDetourVias, nearestOnLine,
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,

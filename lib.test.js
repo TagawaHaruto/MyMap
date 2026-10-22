@@ -814,6 +814,16 @@ assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.l
   const v = Lib.rainVerdict([0, 1, 3, null, 2, 0]);
   assert.deepStrictEqual(v, { max: 3, wet: 2, drizzle: 1, unknown: 1, firstWet: 2 });
   assert.deepStrictEqual(Lib.rainVerdict([0, 0]).wet, 0);
+  // 雨を避ける経由地: 東へ進むルートの雨の区間から、北（左）と南（右）へずらす。出発地・目的地の近くの雨は避けられないので数えない
+  const from = { lat: 35, lon: 139 }, to = { lat: 35, lon: 140 };
+  const wet = [{ lat: 35, lon: 139.4 }, { lat: 35, lon: 139.5 }, { lat: 35, lon: 139.6 }, { lat: 35, lon: 139.01 }];
+  const vs = Lib.rainDetourVias(wet, from, to, [15]);
+  assert.deepStrictEqual(vs.map((v) => v.side), ['北', '南']);
+  assert.ok(Math.abs(vs[0].lat - (35 + 15 / 111)) < 1e-6 && Math.abs(vs[0].lon - 139.5) < 1e-6, JSON.stringify(vs[0]));
+  assert.ok(Math.abs(vs[1].lat - (35 - 15 / 111)) < 1e-6);
+  assert.deepStrictEqual(Lib.rainDetourVias([{ lat: 35, lon: 139.02 }, { lat: 35, lon: 139.99 }], from, to), []); // 出発地・目的地の雨だけ
+  assert.deepStrictEqual(Lib.rainDetourVias([{ lat: 35.5, lon: 139.5 }], from, to, [10]).map((v) => v.side), ['北', '南']); // 1 点ならルート全体の向き
+  assert.deepStrictEqual(Lib.nearestOnLine([[139, 35], [139.5, 35.2], [140, 35]], { lat: 35.21, lon: 139.48 }), { lat: 35.2, lon: 139.5 });
 }
 
 console.log('lib: ALL PASS');
