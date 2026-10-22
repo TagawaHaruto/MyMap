@@ -3171,6 +3171,7 @@ function focusStop(id) {
 // ---- 首都高ルートを組み立てる: 区間を選ぶと、その先の JCT で降りずに直接つながる区間だけを次の候補に出す ----
 const SX_MAX = 8; // ルート検索に渡せる経由地の数まで
 const sxDraft = () => (store.get('sxDraft') || []).filter(sxSeg);
+let sxMsg = ''; // 「一周にする」の結果
 function renderSxBox() {
   const el = $('#sx-body'); if (!el) return;
   if (!DATA.sx) { el.innerHTML = '<p class="hint">首都高の区間データを読み込めませんでした（電波の良い場所で開き直してください）。</p>'; return; }
@@ -3186,10 +3187,24 @@ function renderSxBox() {
       : d.length >= SX_MAX ? `<p class="hint">${SX_MAX}区間までつなげられます。</p>`
       : opts.length ? `<p class="hint"><strong>${esc(sxNode(last.to))}</strong>から次に進む区間：</p><div class="sx-opts">${opts.map(optBtn).join('')}</div>`
       : `<p class="hint">${esc(sxNode(last.to))}から先は、この一覧の首都高の区間につながりません（ここで首都高を出て、家へ向かいます）。</p>`}
+    ${d.length > 1 && last.to === sxSeg(d[0]).from ? `<p class="status">✓ 一周になっています（${esc(sxNode(last.to))}に戻ります）</p>`
+    : d.length && d.length < SX_MAX ? '<div class="actions"><button type="button" class="btn" id="sx-loop">🔄一周になるようにつなぐ</button></div>' : ''}
+    ${sxMsg ? `<p class="status" aria-live="polite">${esc(sxMsg)}</p>` : ''}
     <div class="actions"><button type="button" class="btn primary" id="sx-go" ${d.length ? '' : 'disabled'}>このルートで走る</button>
       <button type="button" class="btn" id="sx-back" ${d.length ? '' : 'disabled'}>1つ戻す</button><button type="button" class="btn" id="sx-clear" ${d.length ? '' : 'disabled'}>やり直す</button></div>
     <details class="help"><summary aria-label="説明を見る">i</summary>JCT で直接つながるかは、ルート検索で前もって確かめています。Google マップに渡す経由地は自動で選ぶので、ナビの前に Google マップの距離がアプリと同じくらいか確かめてください。</details>`;
-  const set = (x) => { store.set('sxDraft', x); renderSxBox(); };
+  const set = (x, msg = '') => { sxMsg = msg; store.set('sxDraft', x); renderSxBox(); };
+  // 一周になるように: 最後の区間から、降りずにつながる区間で最初の JCT まで一番短く戻る区間を足す
+  const lp = $('#sx-loop');
+  if (lp) lp.onclick = () => {
+    buzz();
+    const cur = sxDraft(), r = Lib.sxCloseLoop(DATA.sx, cur, SX_MAX);
+    if (r) { set([...cur, ...r.add], `🔄 ${r.add.length}区間（約${r.km}km）を足して、${sxNode(sxSeg(cur[0]).from)}に戻る一周にしました。`); return; }
+    const far = Lib.sxCloseLoop(DATA.sx, cur, 40);
+    sxMsg = far ? `首都高だけで戻るには、あと${far.add.length}区間（約${far.km}km）が要り、${SX_MAX}区間を超えます。「1つ戻す」で区間を減らしてから試してください（${sxNode(sxSeg(cur[cur.length - 1]).to)}からは近くで折り返せません）。`
+      : '首都高の区間だけでは、最初の JCT に戻れません。';
+    renderSxBox();
+  };
   const st = $('#sx-start'); if (st) st.onchange = () => { if (st.value) { buzz(); set([st.value]); } };
   el.querySelectorAll('[data-sx-add]').forEach((b) => { b.onclick = () => { buzz(); set([...sxDraft(), b.dataset.sxAdd]); }; });
   $('#sx-back').onclick = () => { buzz(); set(sxDraft().slice(0, -1)); };
