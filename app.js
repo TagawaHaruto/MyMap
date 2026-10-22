@@ -766,7 +766,10 @@ function renderSpotList() {
     bindMapToggle(state.spotMap ? hits.concat(netHits) : hits);
     return;
   }
-  const list = Lib.filterSpots(spotCandidates(), filterState(), DATA.cfg);
+  const cands = spotCandidates();
+  let list = Lib.filterSpots(cands, filterState(), DATA.cfg), rainAll = false;
+  // 雨の日モード（屋内だけ）で 1 件もないときは、屋外も出す（深夜の夜景・展望台は屋外がほとんどで、屋内の展望室は閉まっているため）
+  if (!list.length && rainy()) { const l2 = Lib.filterSpots(cands, { ...filterState(), rainy: false }, DATA.cfg); if (l2.length) { list = l2; rainAll = true; } }
   setCount(list.length);
   const failed = FAILED.has('data/spots.json');
   const groups = selectedGroups();
@@ -787,7 +790,7 @@ function renderSpotList() {
   const loadingCells = groups.length && cellLoading.size ? '・データを読み込み中…' : '';
   const noCells = groups.length && !cellIndex ? '・グルメなどのデータはまだ収集されていません' : '';
   const hiddenHint = state.genres.size || state.allTypes || state.q ? '' : hiddenGroupsHtml();
-  const head = `${hiddenHint}<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length ? `・グルメなどは起点から${Math.round(cellKm())}km以内（遠くは検索欄で探せます）` : ''}${loadingCells}${noCells}${isoStatus()}</p>
+  const head = `${hiddenHint}<p class="status">${list.length.toLocaleString()}件・★厳選と⭐を先頭に表示${rainAll ? '（☔雨の日モードですが、屋内に当てはまる所がないので屋外も出しています）' : rainy() ? '（雨の日モード：屋内のみ）' : ''}${groups.length ? `・グルメなどは起点から${Math.round(cellKm())}km以内（遠くは検索欄で探せます）` : ''}${loadingCells}${noCells}${isoStatus()}</p>
     ${toggles ? `<div class="chips wrap">${toggles}</div>` : ''}${cats}${list.length ? mapToggle() : ''}`;
   const more = list.length > state.limit ? `<button type="button" class="btn" id="more">もっと見る（残り${(list.length - state.limit).toLocaleString()}件）</button>` : '';
   const g = state.gacha && list.find((s) => s.id === state.gacha);
@@ -2061,21 +2064,33 @@ function placeTourMap(dest) {
 }
 // パネルのつまみ: 上下にドラッグ（離すと近い高さに止まる）・押すと 低い → 半分 → 高い と切り替え
 function bindSheetHandle() {
-  const h = $('#view .sheet-handle'); if (!h) return;
-  let startY = null, startH = 0, moved = false;
-  h.onpointerdown = (e) => { startY = e.clientY; startH = SHEET[sheetSnap](); moved = false; h.setPointerCapture(e.pointerId); };
+  const h = $('#view .sheet-handle'), v = $('#view'); if (!h || !v) return;
+  // 指に遅れずについてくるように: 動かしている間はアニメーションを止め、パネル（と雨雲のバー）の高さだけを描画の度に 1 回変える
+  // （ページ全体の --sheet-h を毎回変えると、画面全体の計算し直しで遅れる）。離したら近い高さへ滑らかに止める
+  let startY = null, startH = 0, cur = 0, moved = false, raf = 0;
+  const place = () => {
+    raf = 0; v.style.height = `${cur}px`;
+    const rb = $('#radar-bar'); if (rb) rb.style.bottom = `${cur + 8}px`;
+  };
+  const end = (e) => {
+    if (startY == null) return;
+    startY = null; if (raf) { cancelAnimationFrame(raf); place(); }
+    const snap = !moved ? SHEET_NEXT[sheetSnap] : Object.keys(SHEET).sort((a, b) => Math.abs(SHEET[a]() - cur) - Math.abs(SHEET[b]() - cur))[0];
+    v.classList.remove('sheet-drag'); document.body.classList.remove('sheet-dragging');
+    requestAnimationFrame(() => { v.style.height = ''; const rb = $('#radar-bar'); if (rb) rb.style.bottom = ''; setSheet(snap); });
+    if (e && h.hasPointerCapture && h.hasPointerCapture(e.pointerId)) h.releasePointerCapture(e.pointerId);
+  };
+  h.onpointerdown = (e) => {
+    startY = e.clientY; startH = cur = v.getBoundingClientRect().height; moved = false;
+    h.setPointerCapture(e.pointerId); v.classList.add('sheet-drag'); document.body.classList.add('sheet-dragging');
+  };
   h.onpointermove = (e) => {
     if (startY == null) return;
     const dy = startY - e.clientY; if (Math.abs(dy) > 6) moved = true;
-    setSheet(null, Math.max(SHEET.min(), Math.min(SHEET.high(), startH + dy)));
+    cur = Math.max(SHEET.min(), Math.min(SHEET.high(), startH + dy));
+    if (!raf) raf = requestAnimationFrame(place);
   };
-  h.onpointerup = (e) => {
-    if (startY == null) return;
-    const now = startH + (startY - e.clientY); startY = null;
-    if (!moved) { setSheet(SHEET_NEXT[sheetSnap]); return; }
-    const best = Object.keys(SHEET).sort((a, b) => Math.abs(SHEET[a]() - now) - Math.abs(SHEET[b]() - now))[0];
-    setSheet(best);
-  };
+  h.onpointerup = end; h.onpointercancel = end;
   h.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSheet(SHEET_NEXT[sheetSnap]); } };
 }
 addEventListener('resize', () => { if (document.body.classList.contains('tour-full')) setSheet(null); });
