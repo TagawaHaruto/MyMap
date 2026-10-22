@@ -1985,8 +1985,12 @@ function styleMarkers() {
   let i = 0;
   for (const s of getStops()) {
     const m = markers.get(s.id); if (!m) continue;
-    if (tour.picked.has(s.id)) { i++; m.setIcon(pinIcon(s, { top: false, picked: true, num: i })); m.setZIndexOffset(1000); }
+    const on = tour.picked.has(s.id);
+    if (on) { i++; m.setIcon(pinIcon(s, { top: false, picked: true, num: i })); m.setZIndexOffset(1000); }
     else { m.setIcon(pinIcon(s, { top: false })); m.setZIndexOffset(0); }
+    // 選んだ立ち寄りはルートの線より上に（ほかはルートの下）
+    const pane = on ? 'pickPane' : 'markerPane';
+    if (m.options.pane !== pane && m._map && m._map.getPane('pickPane')) { const mm = m._map; m.remove(); m.options.pane = pane; m.addTo(mm); }
   }
 }
 function saveGpx() {
@@ -2439,17 +2443,25 @@ function drawMap(dest, stops) {
   markers = new Map(); RADAR.layer = RADAR.rider = null; // 前の地図の雨雲は地図と一緒に消えた
   map = L.map('map', { renderer: L.canvas({ tolerance: 8 }) }).setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 9);
   baseLayers(map, ' / ルート: Valhalla (FOSSGIS)・OSRM');
-  L.marker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { bubblingMouseEvents: false }).addTo(map).bindPopup(esc(DATA.cfg.origin.name));
-  if (dest) L.marker([dest.lat, dest.lon], { bubblingMouseEvents: false }).addTo(map).bindPopup(esc(dest.name));
+  // 重なり順: 立ち寄りのアイコン（markerPane 600）＜ ルートの線（610。押せない）＜ 選んだ立ち寄り・出発地・目的地（640）。
+  // アイコンがあってもルートが途切れて見えないように
+  const rp = map.createPane('routePane'); rp.style.zIndex = 610; rp.style.pointerEvents = 'none';
+  map.createPane('pickPane').style.zIndex = 640;
+  L.marker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { pane: 'pickPane', bubblingMouseEvents: false }).addTo(map).bindPopup(esc(DATA.cfg.origin.name));
+  if (dest) L.marker([dest.lat, dest.lon], { pane: 'pickPane', bubblingMouseEvents: false }).addTo(map).bindPopup(esc(dest.name));
+  // 地図を引いて見ているときは、選んでいないアイコンを小さく（道が見えるように）。寄ると元の大きさ
+  const zoomCls = () => { const z = map.getZoom(), c = map.getContainer(); c.classList.toggle('zoom-far', z <= 9); c.classList.toggle('zoom-mid', z >= 10 && z <= 11); };
+  map.on('zoomend', zoomCls); zoomCls();
   if (tour.route) {
     // ほかの候補は細い灰色の破線で比べられるように
     (tour.cands || []).forEach((c, i) => {
       if (i !== tour.sel) L.polyline(c.line.map(([lon, lat]) => [lat, lon]), { color: '#666', weight: 4, opacity: 0.8, dashArray: '6 8', bubblingMouseEvents: false }).addTo(map);
     });
     const latlngs = tour.route.line.map(([lon, lat]) => [lat, lon]);
-    // 白い縁取りの上に濃い線を重ね、色の多い地図の上でも浮き上がらせる
-    L.polyline(latlngs, { color: '#fff', weight: 12, opacity: 1, bubblingMouseEvents: false }).addTo(map);
-    const line = L.polyline(latlngs, { color: keyColor(), weight: 7, opacity: 1, bubblingMouseEvents: false }).addTo(map);
+    // 白い縁取りの上に濃い線を重ね、色の多い地図の上でも浮き上がらせる（立ち寄りのアイコンより上の層に）
+    const rr = L.canvas({ pane: 'routePane' });
+    L.polyline(latlngs, { color: '#fff', weight: 11, opacity: 0.95, renderer: rr, interactive: false }).addTo(map);
+    const line = L.polyline(latlngs, { color: keyColor(), weight: 6, opacity: 1, renderer: rr, interactive: false }).addTo(map);
     stops.forEach((s) => {
       const m = L.marker([s.lat, s.lon], { icon: pinIcon(s, { top: false }), title: s.name, bubblingMouseEvents: false, riseOnHover: true }).addTo(map)
         .bindPopup(() => popupHtml(s, infoCache()[s.id] || null), { maxWidth: 280, minWidth: 220, maxHeight: 240, autoPanPaddingTopLeft: [16, 112], autoPanPaddingBottomRight: [16, 40] });
@@ -2629,7 +2641,7 @@ function showRadarFrame() {
   RADAR.layer.addTo(map);
   const p = tour.route && Lib.routeAt(tour.route.line, tour.route.min, departMs(), riderTime(f));
   if (RADAR.rider && RADAR.rider._map) RADAR.rider.remove();
-  RADAR.rider = p ? L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'radar-rider', html: '🏍', iconSize: [30, 30] }), interactive: false, zIndexOffset: 1000 }).addTo(map) : null;
+  RADAR.rider = p ? L.marker([p.lat, p.lon], { pane: map.getPane('pickPane') ? 'pickPane' : 'markerPane', icon: L.divIcon({ className: 'radar-rider', html: '🏍', iconSize: [30, 30] }), interactive: false, zIndexOffset: 1000 }).addTo(map) : null;
   updateRadarText();
 }
 let radarDrag = 0;
