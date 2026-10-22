@@ -589,6 +589,43 @@ const Lib = (() => {
     return s;
   }
 
+  // ---- 首都高ルートの組み立て: 一周になるように、最後の区間から最初の区間の入口の JCT まで、降りずにつながる区間で一番短く戻る ----
+  // sx: data/shutoko_net.json（segs・next・nodes）。ids: 選んだ区間。max: つなげる区間の上限。
+  // 戻り値: { add: 足す区間, km } ／ すでに一周なら { add: [], km: 0, closed: true } ／ max 以内で戻れなければ null
+  function sxCloseLoop(sx, ids, max = 8) {
+    const seg = new Map(sx.segs.map((s) => [s.id, s]));
+    const first = seg.get(ids[0]), last = seg.get(ids[ids.length - 1]);
+    if (!first || !last) return null;
+    const len = (s) => haversineKm(sx.nodes[s.from], sx.nodes[s.to]);
+    // 最初の区間へそのまま入れる終わり方（本当の一周）を優先し、なければ最初の JCT に戻るだけでもよい
+    const into = (s) => s.to === first.from && (sx.next[s.id] || []).includes(first.id);
+    const back = (s) => s.to === first.from;
+    if (ids.length > 1 && back(last)) return { add: [], km: 0, closed: true };
+    const room = max - ids.length;
+    for (const goal of [into, back]) {
+      // 区間を頂点にした最短経路（Dijkstra。区間は 82 本なので単純な配列で十分）
+      const dist = new Map([[last.id, 0]]), prev = new Map(), steps = new Map([[last.id, 0]]), done = new Set();
+      for (;;) {
+        let cur = null;
+        for (const [id, d] of dist) if (!done.has(id) && (cur === null || d < dist.get(cur))) cur = id;
+        if (cur === null) break;
+        done.add(cur);
+        if (cur !== last.id && goal(seg.get(cur))) {
+          const add = [];
+          for (let x = cur; x !== last.id; x = prev.get(x)) add.unshift(x);
+          return { add, km: Math.round(dist.get(cur) * 10) / 10 };
+        }
+        if (steps.get(cur) >= room) continue;
+        for (const nx of sx.next[cur] || []) {
+          const s = seg.get(nx); if (!s) continue;
+          const d = dist.get(cur) + len(s);
+          if (!dist.has(nx) || d < dist.get(nx)) { dist.set(nx, d); prev.set(nx, cur); steps.set(nx, steps.get(cur) + 1); }
+        }
+      }
+    }
+    return null;
+  }
+
   // ---- 時間帯で絞り込む ----
   const TIME_BANDS = { morning: ['🌅朝（6〜10時）', [6, 7, 8, 9]], day: ['☀昼（10〜16時）', [10, 12, 14, 15]],
     evening: ['🌇夕方（16〜19時）', [16, 17, 18]], night: ['🌙夜（19〜24時）', [19, 20, 21, 22, 23]], late: ['🌌深夜（0〜5時）', [0, 1, 2, 3, 4]] };
@@ -1534,7 +1571,7 @@ const Lib = (() => {
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
-    JMA_TIMES, jmaFrames, frameAt, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict, rainDetourVias, nearestOnLine,
+    sxCloseLoop, JMA_TIMES, jmaFrames, frameAt, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict, rainDetourVias, nearestOnLine,
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,

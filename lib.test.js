@@ -833,6 +833,19 @@ assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.l
   assert.deepStrictEqual([Lib.timeBandState(deck, 'late'), Lib.timeBandState(deck, 'night'), Lib.timeBandState(hill, 'late')], [null, 'outdoor', 'outdoor']);
 }
 
+// 首都高: 一周になるように、降りずにつながる区間で最初の JCT まで一番短く戻る。上限を超えるなら null
+{
+  const nodes = { A: { lat: 35, lon: 139 }, B: { lat: 35, lon: 139.1 }, C: { lat: 35.1, lon: 139.1 }, D: { lat: 35.1, lon: 139 }, E: { lat: 35.5, lon: 139.5 } };
+  const segs = [['AB', 'A', 'B'], ['BC', 'B', 'C'], ['CD', 'C', 'D'], ['DA', 'D', 'A'], ['BE', 'B', 'E'], ['EA', 'E', 'A']].map(([id, from, to]) => ({ id, from, to }));
+  const next = { AB: ['BC', 'BE'], BC: ['CD'], CD: ['DA'], DA: ['AB'], BE: ['EA'], EA: [] };
+  const sx = { nodes, segs, next };
+  assert.deepStrictEqual(Lib.sxCloseLoop(sx, ['AB'], 8).add, ['BC', 'CD', 'DA']); // 遠回りの E 経由（最初の区間へ入れない）より、最初の区間へ戻る輪
+  assert.deepStrictEqual(Lib.sxCloseLoop(sx, ['AB', 'BE'], 8).add, ['EA']); // 最初の区間へ入れる終わり方がなければ、最初の JCT に戻るだけ
+  assert.deepStrictEqual(Lib.sxCloseLoop(sx, ['AB', 'BC', 'CD', 'DA'], 8), { add: [], km: 0, closed: true });
+  assert.deepStrictEqual(Lib.sxCloseLoop(sx, ['AB'], 3).add, ['BE', 'EA']); // 3 区間までだと輪は入らないので、最初の JCT に戻るだけの道
+  assert.strictEqual(Lib.sxCloseLoop(sx, ['AB'], 2), null); // 2 区間までには戻れない
+}
+
 console.log('lib: ALL PASS');
 // 経由地の横に同じ向きの一般道のランプ（出入口）があれば避ける
 {
