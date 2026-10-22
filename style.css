@@ -273,11 +273,16 @@ details.plan-add summary { cursor: pointer; font-weight: var(--font-weight-700);
 .pin { position: relative; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%;
   background: #fff; border: 2px solid #3d5afe; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); font-size: 17px; line-height: 1; }
 .pin.top { border: 3px solid #d4a000; }
-/* ツーリングの地図: 引いて見ているときは、選んでいない立ち寄りのアイコンを小さく（ルートと道が見えるように。押せる範囲は同じ） */
+/* ツーリングの地図: 引いて見ているときは、選んでいない立ち寄りのアイコンを少し小さく（道が見えるように。押せる範囲は同じ）。
+   ルートに重なるアイコンは横へずらす（app.js の layoutPins） */
 .pin { transform: scale(var(--pin-s, 1)); transition: transform 0.15s; }
-#map.zoom-mid .leaflet-marker-pane { --pin-s: 0.75; }
-#map.zoom-far .leaflet-marker-pane { --pin-s: 0.55; }
+#map.zoom-mid .leaflet-marker-pane { --pin-s: 0.85; }
+#map.zoom-far .leaflet-marker-pane { --pin-s: 0.7; }
 #map.zoom-far .leaflet-marker-pane .pin { opacity: 0.92; }
+/* ルートに重なるので横へずらしたアイコン: 本当の位置の点と、そこからの細い線 */
+.pin-stem { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+.pin-stem line { stroke: #333; stroke-width: 1.5; }
+.pin-stem circle { fill: #fff; stroke: #333; stroke-width: 1.5; }
 .pin.picked { border: 3px solid var(--key); background: #e8edff; transform: scale(1.15); }
 .pin b { position: absolute; right: -6px; top: -6px; min-width: 18px; height: 18px; padding: 0 3px; border-radius: 9px; background: var(--key); color: #fff;
   font-size: 12px; line-height: 18px; text-align: center; font-family: var(--font-family-sans); }

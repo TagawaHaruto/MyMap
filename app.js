@@ -1045,11 +1045,15 @@ function emojiOf(s) {
 const ICONS = new Map(); // 同じ見た目のアイコンは使い回す（数千個でも軽く）
 function pinIcon(s, opts = {}) {
   const top = opts.top ?? s.tier === 0, num = opts.num || 0;
-  const key = `${emojiOf(s)}|${top}|${num}|${!!opts.picked}`;
-  if (!ICONS.has(key)) {
-    ICONS.set(key, L.divIcon({ className: '', iconSize: [32, 32], iconAnchor: [16, 16], popupAnchor: [0, -14],
-      html: `<span class="pin${top ? ' top' : ''}${opts.picked ? ' picked' : ''}">${emojiOf(s)}${num ? `<b>${num}</b>` : ''}</span>` }));
+  const html = `<span class="pin${top ? ' top' : ''}${opts.picked ? ' picked' : ''}">${emojiOf(s)}${num ? `<b>${num}</b>` : ''}</span>`;
+  // ずらしたアイコン（ルートに重ならないように）: 本当の位置に小さな点、そこからアイコンまで細い線
+  if (opts.dx || opts.dy) {
+    const x = -opts.dx, y = -opts.dy;
+    return L.divIcon({ className: '', iconSize: [32, 32], iconAnchor: [16 + x, 16 + y], popupAnchor: [0, -14],
+      html: `<svg class="pin-stem" width="32" height="32" aria-hidden="true"><line x1="16" y1="16" x2="${16 + x}" y2="${16 + y}"/><circle cx="${16 + x}" cy="${16 + y}" r="3.5"/></svg>${html}` });
   }
+  const key = `${emojiOf(s)}|${top}|${num}|${!!opts.picked}`;
+  if (!ICONS.has(key)) ICONS.set(key, L.divIcon({ className: '', iconSize: [32, 32], iconAnchor: [16, 16], popupAnchor: [0, -14], html }));
   return ICONS.get(key);
 }
 
@@ -1986,12 +1990,13 @@ function styleMarkers() {
   for (const s of getStops()) {
     const m = markers.get(s.id); if (!m) continue;
     const on = tour.picked.has(s.id);
-    if (on) { i++; m.setIcon(pinIcon(s, { top: false, picked: true, num: i })); m.setZIndexOffset(1000); }
-    else { m.setIcon(pinIcon(s, { top: false })); m.setZIndexOffset(0); }
-    // 選んだ立ち寄りはルートの線より上に（ほかはルートの下）
+    if (on) { i++; m.pinOpts = [s, { top: false, picked: true, num: i }]; m.setZIndexOffset(1000); }
+    else { m.pinOpts = [s, { top: false }]; m.setZIndexOffset(0); }
+    // 選んだ立ち寄りはほかのアイコンより上に
     const pane = on ? 'pickPane' : 'markerPane';
     if (m.options.pane !== pane && m._map && m._map.getPane('pickPane')) { const mm = m._map; m.remove(); m.options.pane = pane; m.addTo(mm); }
   }
+  layoutPins();
 }
 function saveGpx() {
   const dest = currentDest();
@@ -2435,6 +2440,38 @@ document.addEventListener('click', (e) => {
 });
 
 const radarPx = () => { const b = RADAR.on && $('#radar-bar'); return b ? b.offsetHeight + 8 : 0; };
+// ツーリングの地図: ルートの線に重なる立ち寄りのアイコンを、ルートと直角に横へずらす（本当の位置は点と細い線で示す）。
+// 重なるかは画面の上の距離で決まるので、ズームを変えるたびに置き直す
+function layoutPins() {
+  if (!map || !tour.route || !markers.size) return;
+  const z = map.getZoom(), sc = z <= 9 ? 0.7 : z <= 11 ? 0.85 : 1; // style.css の --pin-s と同じ
+  const pts = tour.route.line.map(([lon, lat]) => map.latLngToLayerPoint([lat, lon]));
+  for (const m of markers.values()) {
+    if (!m.pinOpts) continue;
+    const [s, opts] = m.pinOpts, p = map.latLngToLayerPoint(m.getLatLng());
+    const R = (opts.picked ? 17 : 15 * sc) + 7; // アイコンの半径＋ルートの線の太さの半分＋すき間
+    let best = null; // 一番近い線分の点と向き
+    for (let i = 0; i + 1 < pts.length; i++) {
+      const a = pts[i], b = pts[i + 1], vx = b.x - a.x, vy = b.y - a.y, l2 = vx * vx + vy * vy;
+      const t = l2 ? Math.max(0, Math.min(1, ((p.x - a.x) * vx + (p.y - a.y) * vy) / l2)) : 0;
+      const cx = a.x + vx * t, cy = a.y + vy * t, d = Math.hypot(p.x - cx, p.y - cy);
+      if (!best || d < best.d) best = { d, cx, cy, vx, vy };
+    }
+    let dx = 0, dy = 0;
+    if (best && best.d < R) {
+      const len = Math.hypot(best.vx, best.vy) || 1;
+      let nx = -best.vy / len, ny = best.vx / len; // 線に直角
+      if (best.d > 0.5 ? nx * (p.x - best.cx) + ny * (p.y - best.cy) < 0 : ny > 0) { nx = -nx; ny = -ny; } // その場所がある側へ（線の上なら上側へ）
+      dx = Math.round(best.cx + nx * (R + 2) - p.x); dy = Math.round(best.cy + ny * (R + 2) - p.y);
+    }
+    if (m.pinShift !== `${dx},${dy}` || m.pinIconOpts !== opts) {
+      m.pinShift = `${dx},${dy}`; m.pinIconOpts = opts;
+      const hi = m.getElement() && m.getElement().classList.contains('pin-hi');
+      m.setIcon(pinIcon(s, { ...opts, dx, dy }));
+      if (hi && m.getElement()) m.getElement().classList.add('pin-hi');
+    }
+  }
+}
 const fitPad = () => (document.body.classList.contains('tour-full') ? { paddingTopLeft: [16, 72], paddingBottomRight: [16, sheetPx() + radarPx() + 16] }
   : { paddingTopLeft: [16, 16], paddingBottomRight: [16, radarPx() + 16] });
 function drawMap(dest, stops) {
@@ -2443,9 +2480,9 @@ function drawMap(dest, stops) {
   markers = new Map(); RADAR.layer = RADAR.rider = null; // 前の地図の雨雲は地図と一緒に消えた
   map = L.map('map', { renderer: L.canvas({ tolerance: 8 }) }).setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 9);
   baseLayers(map, ' / ルート: Valhalla (FOSSGIS)・OSRM');
-  // 重なり順: 立ち寄りのアイコン（markerPane 600）＜ ルートの線（610。押せない）＜ 選んだ立ち寄り・出発地・目的地（640）。
-  // アイコンがあってもルートが途切れて見えないように
-  const rp = map.createPane('routePane'); rp.style.zIndex = 610; rp.style.pointerEvents = 'none';
+  // 重なり順: ほかの線（400）＜ ルートの線（450。押せない）＜ 立ち寄りのアイコン（600）＜ 選んだ立ち寄り・出発地・目的地（640）。
+  // ルートに重なるアイコンは、横へずらして本当の位置を点と線で示す（layoutPins）
+  const rp = map.createPane('routePane'); rp.style.zIndex = 450; rp.style.pointerEvents = 'none';
   map.createPane('pickPane').style.zIndex = 640;
   L.marker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { pane: 'pickPane', bubblingMouseEvents: false }).addTo(map).bindPopup(esc(DATA.cfg.origin.name));
   if (dest) L.marker([dest.lat, dest.lon], { pane: 'pickPane', bubblingMouseEvents: false }).addTo(map).bindPopup(esc(dest.name));
@@ -2458,7 +2495,7 @@ function drawMap(dest, stops) {
       if (i !== tour.sel) L.polyline(c.line.map(([lon, lat]) => [lat, lon]), { color: '#666', weight: 4, opacity: 0.8, dashArray: '6 8', bubblingMouseEvents: false }).addTo(map);
     });
     const latlngs = tour.route.line.map(([lon, lat]) => [lat, lon]);
-    // 白い縁取りの上に濃い線を重ね、色の多い地図の上でも浮き上がらせる（立ち寄りのアイコンより上の層に）
+    // 白い縁取りの上に濃い線を重ね、色の多い地図の上でも浮き上がらせる
     const rr = L.canvas({ pane: 'routePane' });
     L.polyline(latlngs, { color: '#fff', weight: 11, opacity: 0.95, renderer: rr, interactive: false }).addTo(map);
     const line = L.polyline(latlngs, { color: keyColor(), weight: 6, opacity: 1, renderer: rr, interactive: false }).addTo(map);
@@ -2484,9 +2521,11 @@ function drawMap(dest, stops) {
         const el = m.getPopup() && m.getPopup().getElement();
         if (el) fillAddr(el);
       });
+      m.pinOpts = [s, { top: false }];
       markers.set(s.id, m);
     });
     map.fitBounds(line.getBounds(), fitPad());
+    map.on('zoomend', layoutPins); map.whenReady(layoutPins);
   } else if (dest && dest.loop) {
     map.fitBounds(L.latLngBounds(dest.road.points.concat([[DATA.cfg.origin.lat, DATA.cfg.origin.lon]])), fitPad());
   }
