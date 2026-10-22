@@ -2011,7 +2011,9 @@ const curvOf = (c) => (c.curvStars = c.curvStars || Lib.curvStars(Lib.curviness(
 // ---- 地図を全画面にして、ほかの情報は下から引き出すパネルに（Google マップのアプリのように）。上にはルートの要約 ----
 const tourFull = () => store.get('tourFull') !== false;
 store.set('tourFull', true); // 「通常表示に戻す」はそのときだけ。次に開いたときは全画面に戻る
-const SHEET = { low: () => 132, half: () => Math.round(innerHeight * 0.5), high: () => innerHeight - 64 - (document.querySelector('.tabs').offsetHeight || 56) };
+// パネルの高さ。min はつまみだけ（地図をほぼ全画面で見る。雨雲を見るときなど）
+const SHEET = { min: () => 34, low: () => 132, half: () => Math.round(innerHeight * 0.5), high: () => innerHeight - 64 - (document.querySelector('.tabs').offsetHeight || 56) };
+const SHEET_NEXT = { min: 'low', low: 'half', half: 'high', high: 'min' };
 let sheetSnap = store.get('sheetSnap') || 'half';
 function setSheet(snap, px) {
   if (snap) { sheetSnap = snap; store.set('sheetSnap', snap); }
@@ -2053,16 +2055,16 @@ function bindSheetHandle() {
   h.onpointermove = (e) => {
     if (startY == null) return;
     const dy = startY - e.clientY; if (Math.abs(dy) > 6) moved = true;
-    setSheet(null, Math.max(SHEET.low(), Math.min(SHEET.high(), startH + dy)));
+    setSheet(null, Math.max(SHEET.min(), Math.min(SHEET.high(), startH + dy)));
   };
   h.onpointerup = (e) => {
     if (startY == null) return;
     const now = startH + (startY - e.clientY); startY = null;
-    if (!moved) { setSheet({ low: 'half', half: 'high', high: 'low' }[sheetSnap]); return; }
+    if (!moved) { setSheet(SHEET_NEXT[sheetSnap]); return; }
     const best = Object.keys(SHEET).sort((a, b) => Math.abs(SHEET[a]() - now) - Math.abs(SHEET[b]() - now))[0];
     setSheet(best);
   };
-  h.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSheet({ low: 'half', half: 'high', high: 'low' }[sheetSnap]); } };
+  h.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSheet(SHEET_NEXT[sheetSnap]); } };
 }
 addEventListener('resize', () => { if (document.body.classList.contains('tour-full')) setSheet(null); });
 function renderTouring() {
@@ -2119,7 +2121,10 @@ function renderTouring() {
     <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button></div>
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button>
+      <button type="button" class="btn map-radar" id="radar-toggle" aria-pressed="${RADAR.on}" title="雨雲レーダー（気象庁）">🌧雨雲</button>
+      <div class="radar-bar" id="radar-bar" hidden></div>
       ${tourFull() ? '' : '<button type="button" class="btn map-full-btn" id="to-full" title="地図を全画面に">⤢ 全画面</button>'}</div>
+    <div id="radar-plan" class="radar-plan">${RADAR.on ? RADAR.planHtml : ''}</div>
     <div id="course-info" class="course-info" hidden></div>
     <div id="chain-box" class="chain-box" hidden></div>
     <details class="tools" id="sx-box" ${store.get('sxOpen') ? 'open' : ''}><summary>🛣首都高ルートを組み立てる</summary><div id="sx-body"></div></details>
@@ -2248,7 +2253,7 @@ function renderTouring() {
   $('#awake').onchange = (e) => { tour.awake = e.target.checked; store.set('awake', tour.awake); keepAwake(tour.awake); };
   const dp = $('#depart');
   if (dp) {
-    dp.onchange = (e) => { tour.depart = e.target.value; saveTour(); $('#eta').textContent = etaText(); };
+    dp.onchange = (e) => { tour.depart = e.target.value; saveTour(); $('#eta').textContent = etaText(); if (RADAR.on) showRadarFrame(); };
     $('#rt-rain').onclick = () => { buzz(); routeRain(); };
     $('#rt-elev').onclick = () => { buzz(); routeElevation(); };
     $('#rt-photo').onclick = () => { buzz(); routePhotos(); };
@@ -2287,7 +2292,7 @@ function renderTouring() {
     renderTouring();
     // 結果（ルート候補）が見えるところまで送る。全画面ではパネルの中を、通常の表示では画面を
     const c = $('#view .cands') || (tour.error && $('#view .notice'));
-    if (c) { if (document.body.classList.contains('tour-full')) { if (sheetSnap === 'low') setSheet('half'); $('#view').scrollTo({ top: c.offsetTop - 44, behavior: 'smooth' }); } else c.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
+    if (c) { if (document.body.classList.contains('tour-full')) { if (sheetSnap === 'low' || sheetSnap === 'min') setSheet('half'); $('#view').scrollTo({ top: c.offsetTop - 44, behavior: 'smooth' }); } else c.scrollIntoView({ block: 'start', behavior: 'smooth' }); }
   };
   $('#view').onclick = (e) => {
     const b = e.target.closest('[data-cand]');
@@ -2416,11 +2421,13 @@ document.addEventListener('click', (e) => {
   if (!ok) Object.assign(dqState, prev); // 変更をやめたら入力を戻す
 });
 
-const fitPad = () => (document.body.classList.contains('tour-full') ? { paddingTopLeft: [16, 72], paddingBottomRight: [16, sheetPx() + 16] } : { padding: [16, 16] });
+const radarPx = () => { const b = RADAR.on && $('#radar-bar'); return b ? b.offsetHeight + 8 : 0; };
+const fitPad = () => (document.body.classList.contains('tour-full') ? { paddingTopLeft: [16, 72], paddingBottomRight: [16, sheetPx() + radarPx() + 16] }
+  : { paddingTopLeft: [16, 16], paddingBottomRight: [16, radarPx() + 16] });
 function drawMap(dest, stops) {
   if (typeof L === 'undefined') { $('#map').textContent = '地図を読み込めませんでした（圏外の可能性があります）。'; return; }
   if (map) map.remove();
-  markers = new Map();
+  markers = new Map(); RADAR.layer = RADAR.rider = null; // 前の地図の雨雲は地図と一緒に消えた
   map = L.map('map', { renderer: L.canvas({ tolerance: 8 }) }).setView([DATA.cfg.origin.lat, DATA.cfg.origin.lon], 9);
   baseLayers(map, ' / ルート: Valhalla (FOSSGIS)・OSRM');
   L.marker([DATA.cfg.origin.lat, DATA.cfg.origin.lon], { bubblingMouseEvents: false }).addTo(map).bindPopup(esc(DATA.cfg.origin.name));
@@ -2467,6 +2474,248 @@ function drawMap(dest, stops) {
   // 誤操作を防ぐため、目的地の指定は長押し（スマホでは contextmenu として届く）か「中心を目的地に」ボタンだけ。
   // 長押し中（指が触れている間）に地図を作り直すと iPhone で次のタップが効かなくなることがあるので、少し遅らせる
   map.on('contextmenu', (e) => { buzz(); setTimeout(() => setCustomDest(e.latlng.lat, e.latlng.lng), 350); });
+  renderRadarBar();
+  if (RADAR.on) showRadarFrame();
+}
+
+// ---- 雨雲レーダー（気象庁の高解像度降水ナウキャスト・降水短時間予報）: ツーリングの地図に雨雲を重ね、下の時刻のバーでずらして見る。
+// ルートがあれば、その時刻に走っている所（🏍）と、何時に出れば雨に合わないかも出す ----
+const RADAR = { on: false, frames: null, at: 0, idx: 0, layer: null, rider: null, timer: null, err: '', planHtml: '', planSum: '', busy: false };
+const RTILES = new Map(); // タイルの URL → 画素（の Promise）。雨の強さを読むため
+async function radarFrames() {
+  if (RADAR.frames && Date.now() - RADAR.at < 5 * 60e3) return RADAR.frames;
+  const [n1, n2, rs] = await Promise.all(Lib.JMA_TIMES.map((u) => fetch(u, { cache: 'no-store', signal: timeoutSignal(10000) })
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))));
+  const prev = RADAR.frames && RADAR.frames[RADAR.idx];
+  RADAR.frames = Lib.jmaFrames(n1, n2, rs, 60); RADAR.at = Date.now(); RTILES.clear();
+  // 選んでいた時刻をできるだけ保つ（初めては、ルートの出発時刻が予報の範囲なら出発時刻、なければ現在）
+  const want = prev ? prev.t : tour.route ? departMs() : Date.now();
+  const f = Lib.frameAt(RADAR.frames, want) || RADAR.frames.find((x) => x.kind === 'now');
+  RADAR.idx = Math.max(0, RADAR.frames.indexOf(f));
+  return RADAR.frames;
+}
+function radarTile(url) {
+  if (!RTILES.has(url)) {
+    RTILES.set(url, new Promise((ok) => {
+      const img = new Image(); img.crossOrigin = 'anonymous';
+      img.onload = () => {
+        try { const c = document.createElement('canvas'); c.width = c.height = 256; const g = c.getContext('2d', { willReadFrequently: true }); g.drawImage(img, 0, 0); ok(g.getImageData(0, 0, 256, 256).data); } catch { ok(null); }
+      };
+      img.onerror = () => ok(null);
+      img.src = url;
+    }));
+  }
+  return RTILES.get(url);
+}
+// その地点の雨の強さの段階（Lib.RAIN_LABELS）。まわり 1 画素（約 0.6km）も見て、ルートのすぐ横の雨も拾う。読めなければ null
+async function rainLevelAt(f, lat, lon, z = 8) {
+  const p = Lib.tilePixel(lat, lon, z);
+  const d = await radarTile(f.url.replace('{z}', z).replace('{x}', p.x).replace('{y}', p.y));
+  if (!d) return null;
+  let lv = 0;
+  for (let dy = -1; dy <= 1; dy++) {
+    for (let dx = -1; dx <= 1; dx++) {
+      const i = (Math.min(255, Math.max(0, p.py + dy)) * 256 + Math.min(255, Math.max(0, p.px + dx))) * 4;
+      lv = Math.max(lv, Lib.rainLevel(d[i], d[i + 1], d[i + 2], d[i + 3]));
+    }
+  }
+  return lv;
+}
+const hhmm = (ms) => { const d = new Date(ms); return `${d.toDateString() === new Date().toDateString() ? '' : '翌'}${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`; };
+// そのコマの時刻に走っている所を見る時刻。1 時間の予報のコマは、その 1 時間のうち走っている時間（なければ真ん中）
+function riderTime(f) {
+  if (f.kind !== 'fcst' || !tour.route) return f.t;
+  const a = Math.max(departMs(), f.from), b = Math.min(departMs() + tour.route.min * 60e3, f.to);
+  return a <= b ? Math.min(Math.max((f.from + f.to) / 2, a), b) : (f.from + f.to) / 2;
+}
+const relText = (ms) => {
+  const m = Math.round((ms - Date.now()) / 60e3), a = Math.abs(m);
+  return a < 3 ? '現在' : `${m < 0 ? '-' : '+'}${a >= 60 ? `${Math.floor(a / 60)}時間${a % 60 ? (a % 60) + '分' : ''}` : `${a}分`}`;
+};
+function radarLabel(f) {
+  return f.kind === 'fcst' ? `${hhmm(f.from)}〜${hhmm(f.to)}<small>予報（1時間の雨量）</small>`
+    : `${hhmm(f.t)}<small>${f.kind === 'past' ? '実況' : f.kind === 'now' ? '実況（最新）' : '予報'}</small>`;
+}
+// 時刻のバー（Yahoo!天気の雨雲レーダーのように、再生・つまみ・「現在」と「+1時間」などの目盛り）
+function radarBarHtml() {
+  if (RADAR.err) return `<p class="hint">${esc(RADAR.err)}</p><button type="button" class="icon radar-x" data-radar="off" aria-label="雨雲を閉じる">✕</button>`;
+  const fr = RADAR.frames;
+  if (!fr) return '<p class="hint">雨雲を読み込んでいます…</p>';
+  const n = fr.length - 1, nowI = fr.findIndex((f) => f.kind === 'now');
+  const pos = (i) => `${(i / Math.max(1, n)) * 100}%`;
+  // 目盛り: 左端（1時間前）・現在・1・3・6・9・12・15時間後（それぞれに一番近いコマの位置）
+  const ticks = [[0, `-${Math.round((fr[nowI].t - fr[0].t) / 3600e3)}h`], [nowI, '現在']];
+  for (const h of [1, 3, 6, 9, 12, 15]) {
+    let best = -1;
+    fr.forEach((f, i) => { if (i > nowI && (best < 0 || Math.abs(f.t - fr[nowI].t - h * 3600e3) < Math.abs(fr[best].t - fr[nowI].t - h * 3600e3))) best = i; });
+    if (best > 0 && Math.abs(fr[best].t - fr[nowI].t - h * 3600e3) < 45 * 60e3 && !ticks.some(([i]) => i === best)) ticks.push([best, `+${h}h`]);
+  }
+  // 前の目盛りに近すぎて文字が重なるものは省く（バーの幅の 7% 未満。「現在」は残す）
+  ticks.sort((a, b) => a[0] - b[0]);
+  for (let k = 1; k < ticks.length; k++) if (ticks[k][1] !== '現在' && (ticks[k][0] - ticks[k - 1][0]) / Math.max(1, n) < 0.07) ticks.splice(k--, 1);
+  const pastEnd = pos(nowI);
+  return `<div class="radar-top"><button type="button" class="icon radar-play" data-radar="play" aria-label="${RADAR.timer ? '止める' : '再生'}">${RADAR.timer ? '⏸' : '▶'}</button>
+      <div class="radar-time" id="radar-time" aria-live="polite"></div>
+      ${tour.route ? '<button type="button" class="btn radar-plan-btn" data-radar="plan">🕒雨に合わない出発時刻</button>' : ''}
+      <button type="button" class="icon radar-x" data-radar="off" aria-label="雨雲を閉じる">✕</button></div>
+    <div class="radar-track" style="--past:${pastEnd}">
+      <input type="range" id="radar-range" min="0" max="${n}" step="1" value="${RADAR.idx}" aria-label="雨雲の時刻">
+      <div class="radar-ticks" aria-hidden="true">${ticks.map(([i, l]) => `<span style="left:${pos(i)}"${l === '現在' ? ' class="now"' : ''}>${l}</span>`).join('')}</div></div>
+    ${RADAR.planSum ? `<button type="button" class="radar-sum" data-radar="list">${esc(RADAR.planSum)} <span>一覧 ▸</span></button>` : ''}
+    <div class="radar-foot"><p class="radar-here" id="radar-here"></p>
+      <div class="radar-legend" aria-label="雨の強さ（mm/時）">${Lib.RAIN_COLORS.slice(1).map(([r, g, b], i) => `<span style="background:rgb(${r},${g},${b})"></span>${[1, 5, 10, 20, 30, 50, 80][i]}`).join('')}<em>mm/h 気象庁</em></div></div>`;
+}
+function renderRadarBar() {
+  const el = $('#radar-bar'); if (!el) return;
+  el.hidden = !RADAR.on;
+  if (!RADAR.on) return;
+  el.innerHTML = radarBarHtml();
+  updateRadarText();
+}
+// 選んだ時刻の表示と、その時刻に走っている所の雨
+async function updateRadarText() {
+  const f = RADAR.frames && RADAR.frames[RADAR.idx];
+  const tm = $('#radar-time'), here = $('#radar-here');
+  if (!f || !tm) return;
+  tm.innerHTML = `<strong>${radarLabel(f)}</strong><span class="rel">${relText(f.t)}</span>`;
+  const r = $('#radar-range'); if (r && +r.value !== RADAR.idx) r.value = RADAR.idx;
+  if (!here) return;
+  if (!tour.route) { here.textContent = ''; return; }
+  const p = Lib.routeAt(tour.route.line, tour.route.min, departMs(), riderTime(f));
+  if (!p) { here.textContent = f.to < departMs() ? `出発（${hhmm(departMs())}）より前の時刻です。` : `到着（${hhmm(departMs() + tour.route.min * 60e3)}）より後の時刻です。`; return; }
+  here.textContent = `🏍 この時刻は出発から約${Math.round(p.km)}kmの所…`;
+  const lv = await rainLevelAt(f, p.lat, p.lon);
+  if (RADAR.frames[RADAR.idx] !== f || !$('#radar-here')) return;
+  $('#radar-here').textContent = `🏍 この時刻は出発から約${Math.round(p.km)}kmの所：${lv == null ? '雨雲を読めませんでした' : lv === 0 ? '雨なし' : `☔ ${Lib.RAIN_LABELS[lv]}`}`;
+}
+// 気象庁の雨雲タイルは偶数のズーム（4・6・8・10）にしかない（奇数は空の画像）。奇数のズームや 10 より拡大したときは、
+// 上の偶数ズームのタイルを切り出して拡大する
+let RadarLayer = null;
+const radarLayer = (opts) => {
+  if (!RadarLayer) {
+    RadarLayer = L.GridLayer.extend({
+      createTile(c, done) {
+        const tile = document.createElement('canvas'); tile.width = tile.height = 256;
+        const nz = Math.min(10, c.z - (c.z % 2)), k = 2 ** (c.z - nz), s = 256 / k;
+        const img = new Image(); img.crossOrigin = 'anonymous';
+        img.onload = () => { const g = tile.getContext('2d'); g.imageSmoothingEnabled = false; g.drawImage(img, (c.x % k) * s, (c.y % k) * s, s, s, 0, 0, 256, 256); done(null, tile); };
+        img.onerror = () => done(null, tile);
+        img.src = this.options.url.replace('{z}', nz).replace('{x}', Math.floor(c.x / k)).replace('{y}', Math.floor(c.y / k));
+        return tile;
+      },
+    });
+  }
+  return new RadarLayer(opts);
+};
+// 地図に選んだ時刻の雨雲と、その時刻に走っている所（🏍）を出す
+function showRadarFrame() {
+  if (!map || !RADAR.on || !RADAR.frames) return;
+  const f = RADAR.frames[RADAR.idx]; if (!f) return;
+  const old = RADAR.layer;
+  RADAR.layer = radarLayer({ url: f.url, opacity: 0.65, minZoom: 4, maxZoom: 18, zIndex: 450, className: 'radar-tiles',
+    attribution: '雨雲: <a href="https://www.jma.go.jp/bosai/nowc/" target="_blank" rel="noopener">気象庁</a>' });
+  // 新しいコマが読み込めてから前のコマを消す（ちらつかないように）
+  const drop = () => { if (old && old !== RADAR.layer && old._map) old.remove(); };
+  RADAR.layer.once('load', drop); setTimeout(drop, 1500);
+  RADAR.layer.addTo(map);
+  const p = tour.route && Lib.routeAt(tour.route.line, tour.route.min, departMs(), riderTime(f));
+  if (RADAR.rider && RADAR.rider._map) RADAR.rider.remove();
+  RADAR.rider = p ? L.marker([p.lat, p.lon], { icon: L.divIcon({ className: 'radar-rider', html: '🏍', iconSize: [30, 30] }), interactive: false, zIndexOffset: 1000 }).addTo(map) : null;
+  updateRadarText();
+}
+let radarDrag = 0;
+async function radarOn(on) {
+  RADAR.on = on; RADAR.err = '';
+  clearInterval(RADAR.timer); RADAR.timer = null;
+  const b = $('#radar-toggle'); if (b) b.setAttribute('aria-pressed', on);
+  if (!on) { if (RADAR.layer && RADAR.layer._map) RADAR.layer.remove(); if (RADAR.rider && RADAR.rider._map) RADAR.rider.remove(); RADAR.layer = RADAR.rider = null; renderRadarBar(); return; }
+  // 全画面のときは下のパネルをつまみだけにして、地図をほぼ全画面で見せる（つまみを引けば戻せる）
+  if (document.body.classList.contains('tour-full') && sheetSnap !== 'min') setSheet('min');
+  renderRadarBar();
+  try { await radarFrames(); } catch { RADAR.err = '雨雲を読み込めませんでした（圏外の可能性があります）。'; }
+  renderRadarBar(); showRadarFrame();
+  // ルートが下のパネル・時刻のバーに隠れない所に収まるように
+  if (map && tour.route) map.fitBounds(L.latLngBounds(tour.route.line.map(([lon, lat]) => [lat, lon])), fitPad());
+}
+function radarStep(i) {
+  RADAR.idx = Math.max(0, Math.min(RADAR.frames.length - 1, i));
+  updateRadarText();
+  clearTimeout(radarDrag); radarDrag = setTimeout(showRadarFrame, 120); // つまみを動かしている間は少し待ってから読み込む
+}
+document.addEventListener('input', (e) => { if (e.target.id === 'radar-range' && RADAR.frames) radarStep(+e.target.value); });
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-radar], #radar-toggle'); if (!b) return;
+  buzz();
+  const act = b.id === 'radar-toggle' ? (RADAR.on ? 'off' : 'on') : b.dataset.radar;
+  if (act === 'on' || act === 'off') radarOn(act === 'on');
+  else if (act === 'play' && RADAR.frames) {
+    if (RADAR.timer) { clearInterval(RADAR.timer); RADAR.timer = null; } else {
+      if (RADAR.idx >= RADAR.frames.length - 1) RADAR.idx = 0;
+      RADAR.timer = setInterval(() => {
+        if (!RADAR.on || !$('#radar-bar') || RADAR.idx >= RADAR.frames.length - 1) { clearInterval(RADAR.timer); RADAR.timer = null; renderRadarBar(); return; }
+        RADAR.idx++; updateRadarText(); showRadarFrame();
+      }, 800);
+    }
+    renderRadarBar();
+  } else if (act === 'plan') radarPlan();
+  else if (act === 'list') showRadarPlan();
+  else if (act === 'dep') {
+    // 一覧で選んだ出発時刻にする（地図の時刻もその出発に合わせる）
+    const t = +b.dataset.t, d = new Date(t);
+    tour.depart = `${Lib.ymd(d)}T${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+    saveTour();
+    const dp = $('#depart'); if (dp) dp.value = tour.depart;
+    const eta = $('#eta'); if (eta) eta.textContent = etaText();
+    document.querySelectorAll('.rplan [data-radar="dep"]').forEach((x) => x.setAttribute('aria-pressed', x === b));
+    const f = Lib.frameAt(RADAR.frames, t); if (f) radarStep(RADAR.frames.indexOf(f));
+  }
+});
+// 出発時刻の一覧を見せる（全画面では下のパネルを半分まで上げて一覧の所へ）
+function showRadarPlan() {
+  const out = $('#radar-plan'); if (!out) return;
+  if (document.body.classList.contains('tour-full') && (sheetSnap === 'min' || sheetSnap === 'low')) setSheet('half');
+  setTimeout(() => out.scrollIntoView({ block: 'start', behavior: 'smooth' }), 50);
+}
+// 何時に出れば雨に合わないか: 今から 30 分ごとの出発で、ルート上の地点を通る時刻の雨雲（ナウキャスト・降水短時間予報）を見る
+async function radarPlan() {
+  const out = $('#radar-plan'); if (!out || !tour.route || RADAR.busy) return;
+  RADAR.busy = true;
+  out.innerHTML = '<p class="hint">🕒 出発時刻ごとに、ルート上の雨雲を調べています…</p>';
+  RADAR.planSum = '🕒 調べています…'; renderRadarBar();
+  try {
+    const fr = await radarFrames();
+    const last = fr[fr.length - 1].to, rt = tour.route;
+    const opts = Lib.departOptions(Date.now(), last, 30, 30);
+    const n = Math.max(20, Math.min(120, Math.round(rt.km / 2))); // 約 2km ごと
+    const rows = [];
+    for (const d of opts) {
+      const pts = Lib.routeSamples(rt.line, rt.min, d, n);
+      const levels = await Promise.all(pts.map((p) => { const f = Lib.frameAt(fr, p.at); return f ? rainLevelAt(f, p.lat, p.lon) : null; }));
+      const v = Lib.rainVerdict(levels);
+      rows.push({ d, v, first: v.firstWet >= 0 ? pts[v.firstWet] : null, lastKnown: pts.filter((p, i) => levels[i] != null).pop() });
+      out.innerHTML = `<p class="hint">🕒 調べています…（${rows.length}/${opts.length}）</p>`;
+    }
+    const ok = rows.filter((r) => r.v.wet === 0 && r.v.unknown === 0); // 全区間が予報の範囲内で、雨なし（ぱらつく程度は含める）
+    const runs = []; // 雨に合わない出発時刻を「15:00〜16:30」のようにまとめる
+    for (const r of ok) { const l = runs[runs.length - 1]; if (l && r.d - l[1] === 1800e3) l[1] = r.d; else runs.push([r.d, r.d]); }
+    const dot = (lv) => (lv == null ? '#ccc' : lv === 0 ? '#2f9e44' : `rgb(${Lib.RAIN_COLORS[lv - 1].join(',')})`);
+    RADAR.planSum = !rows.length ? '🕒 予報の範囲に収まる出発時刻がありません'
+      : ok.length ? `✓ 雨に合わない出発: ${runs.slice(0, 2).map(([a, b]) => (a === b ? hhmm(a) : `${hhmm(a)}〜${hhmm(b)}`)).join('・')}${runs.length > 2 ? '…' : ''}`
+        : '☔ どの時刻に出ても、どこかで雨に合いそう';
+    RADAR.planHtml = `<h4>🕒何時に出れば雨に合わない？（${esc(currentDest() ? currentDest().name : 'ルート')}・約${Math.round(rt.km)}km・${fmtMin(Math.round(rt.min))}）</h4>
+      ${!rows.length ? '<p class="notice">雨雲の予報（15時間先まで）の中に収まる出発時刻がありません（ルートが長いため）。</p>'
+    : ok.length ? `<p class="status">✓ 雨に合わずに走れそうな出発: <strong>${runs.map(([a, b]) => (a === b ? hhmm(a) : `${hhmm(a)}〜${hhmm(b)}`)).join('・')}</strong>（いちばん早いのは ${hhmm(ok[0].d)}）</p>`
+      : '<p class="notice">☔ 今から15時間の間は、どの時刻に出てもルートのどこかで雨に合いそうです。雨の少ない時刻を選ぶか、カッパの用意を。</p>'}
+      <div class="rplan">${rows.map((r) => `<button type="button" class="rp" data-radar="dep" data-t="${r.d}" aria-pressed="${Math.abs(r.d - departMs()) < 60e3}">
+        <span class="rp-dot" style="background:${dot(r.v.wet ? r.v.max : r.v.max == null ? null : 0)}"></span><strong>${hhmm(r.d)}</strong>
+        <span>${r.v.max == null ? '予報の範囲外' : r.v.wet ? `☔ ${hhmm(r.first.at)}ごろ ${Math.round(r.first.km)}km付近から雨（最大 ${Lib.RAIN_LABELS[r.v.max]}・雨の区間 約${Math.max(1, Math.round(r.v.wet * rt.km / n))}km）`
+    : r.v.drizzle ? '🌂 ぱらつく程度（1mm未満）' : '✓ 雨なし'}${r.v.unknown && r.v.max != null ? `（${hhmm(r.lastKnown.at)}より後は予報の範囲外）` : ''}</span>
+        <small>着 ${hhmm(r.d + rt.min * 60e3)}</small></button>`).join('')}</div>
+      <details class="help"><summary aria-label="説明を見る">i</summary>気象庁の高解像度降水ナウキャスト（1時間先まで5分ごと）と降水短時間予報（15時間先まで1時間ごと）の雨雲で、ルート上の約${(rt.km / n).toFixed(1)}kmごとの地点を通る時刻の雨を見ています（1mm/時以上を「雨」）。休憩・立ち寄りの時間は含みません。予報なので外れることがあります。押すとその時刻を出発にし、地図の雨雲もその時刻にします。</details>`;
+  } catch { RADAR.planHtml = '<p class="hint">雨雲を読み込めませんでした（圏外の可能性があります）。</p>'; RADAR.planSum = ''; }
+  RADAR.busy = false;
+  const o = $('#radar-plan'); if (o) o.innerHTML = RADAR.planHtml;
+  renderRadarBar();
 }
 
 // 出発時刻（未設定なら次の正時）と到着予定
@@ -2885,7 +3134,7 @@ function showCourse(r, layer) {
   el.querySelector('.course-close').onclick = () => { buzz(); el.hidden = true; clearCourseSel(); };
   bindCourseBtns(el);
   if (document.body.classList.contains('tour-full')) {
-    if (sheetSnap === 'low') setSheet('half');
+    if (sheetSnap === 'low' || sheetSnap === 'min') setSheet('half');
     const v = $('#view'); v.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' });
     return;
   }

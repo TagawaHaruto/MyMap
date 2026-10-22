@@ -772,6 +772,50 @@ assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.l
   assert.deepStrictEqual(Lib.dropSameName([kuro, kuro2], [{ id: 'kumamoto-kurokawa-onsen', name: '黒川温泉', lat: 33.0757, lon: 131.1418 }]).map((s) => s.pref), ['山形']);
 }
 
+// 雨雲（気象庁）: 実況→ナウキャスト→降水短時間予報の順のコマ、時刻に合うコマ、色→雨の強さ、出発時刻の判定
+{
+  const n1 = ['20261022052000', '20261022051500', '20261022041500'].map((v) => ({ basetime: v, validtime: v }));
+  const n2 = [{ basetime: '20261022052000', validtime: '20261022052500' }, { basetime: '20261022052000', validtime: '20261022062000' }];
+  const rs = [
+    { basetime: '20261022051000', validtime: '20261022051000', member: 'immed', elements: ['rasrf'] }, // 解析値（使わない）
+    { basetime: '20261022051000', validtime: '20261022061000', member: 'immed', elements: ['rasrf'] }, // ナウキャストと重なる
+    { basetime: '20261022051000', validtime: '20261022071000', member: 'immed', elements: ['rasrf'] },
+    { basetime: '20261022050000', validtime: '20261022071000', member: 'immed', elements: ['rasrf'] }, // 古い発表
+    { basetime: '20261022050000', validtime: '20261022120000', member: 'none', elements: ['rasrf'] },
+    { basetime: '20261022050000', validtime: '20261022120000', member: 'none', elements: ['sjfcstmap'] },
+  ];
+  const fr = Lib.jmaFrames(n1, n2, rs, 60);
+  const utc = (h, m) => Date.UTC(2026, 9, 22, h, m);
+  assert.deepStrictEqual(fr.map((f) => [f.kind, new Date(f.t).toISOString().slice(11, 16)]),
+    [['past', '05:15'], ['now', '05:20'], ['nowcast', '05:25'], ['nowcast', '06:20'], ['fcst', '07:10'], ['fcst', '12:00']]); // 1 時間より前の実況は使わない
+  assert.ok(fr[4].url.includes('/rasrf/20261022051000/immed/20261022071000/surf/rasrf/{z}/{x}/{y}.png'));
+  assert.ok(fr[1].url.endsWith('/nowc/20261022052000/none/20261022052000/surf/hrpns/{z}/{x}/{y}.png'));
+  assert.strictEqual(Lib.frameAt(fr, utc(5, 21)).kind, 'now');
+  assert.strictEqual(Lib.frameAt(fr, utc(6, 21)).kind, 'nowcast'); // ナウキャストと降水短時間予報が重なる時刻はナウキャスト
+  assert.strictEqual(Lib.frameAt(fr, utc(6, 40)).t, utc(7, 10)); // 6:10〜7:10 の 1 時間の雨量のコマ
+  assert.strictEqual(Lib.frameAt(fr, utc(9, 0)), null); // 予報の間（7:10〜11:00）はコマがない
+  assert.strictEqual(Lib.frameAt(fr, utc(13, 0)), null);
+  // 色（気象庁の凡例そのまま）→ 段階。透明・地図の色はなし
+  assert.deepStrictEqual(Lib.RAIN_COLORS.map(([r, g, b]) => Lib.rainLevel(r, g, b, 255)), [1, 2, 3, 4, 5, 6, 7, 8]);
+  assert.deepStrictEqual([Lib.rainLevel(160, 210, 255, 0), Lib.rainLevel(30, 30, 30, 255), Lib.rainLevel(158, 208, 253, 255)], [0, 0, 2]);
+  // タイルの画素: 東京駅付近は z=8 で (227, 100)
+  const tp = Lib.tilePixel(35.6812, 139.7671, 8);
+  assert.deepStrictEqual([tp.x, tp.y], [227, 100]);
+  assert.ok(tp.px >= 0 && tp.px < 256 && tp.py >= 0 && tp.py < 256);
+  // ルート上の位置: 出発から半分の時間でちょうど真ん中、走っていない時刻は null
+  const ln = [[139, 35], [139.2, 35]];
+  const mid = Lib.routeAt(ln, 60, 0, 30 * 60e3);
+  assert.ok(Math.abs(mid.lon - 139.1) < 1e-6 && Math.abs(mid.lat - 35) < 1e-9);
+  assert.strictEqual(Lib.routeAt(ln, 60, 0, -1), null);
+  assert.strictEqual(Lib.routeAt(ln, 60, 0, 61 * 60e3), null);
+  // 出発時刻の候補: 次の 30 分区切りから、予報の終わりの 30 分前まで
+  const opts = Lib.departOptions(utc(5, 22), utc(8, 0), 30);
+  assert.deepStrictEqual(opts.map((t) => new Date(t).toISOString().slice(11, 16)), ['05:30', '06:00', '06:30', '07:00', '07:30']);
+  const v = Lib.rainVerdict([0, 1, 3, null, 2, 0]);
+  assert.deepStrictEqual(v, { max: 3, wet: 2, drizzle: 1, unknown: 1, firstWet: 2 });
+  assert.deepStrictEqual(Lib.rainVerdict([0, 0]).wet, 0);
+}
+
 console.log('lib: ALL PASS');
 // 経由地の横に同じ向きの一般道のランプ（出入口）があれば避ける
 {
