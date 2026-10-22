@@ -604,6 +604,7 @@ const Lib = (() => {
     if (st.includes(true)) return 'open';
     if (st.includes(false)) return null;
     if (band !== 'night' && band !== 'late') return 'ok';
+    if (band === 'late' && s.lateClosed) return null; // 屋上庭園・展望デッキなど、営業時間は分からないが深夜は閉まる所（厳選の lateClosed）
     if (s.kind === 'michinoeki') return 'h24';
     if (['peak', 'waterfall', 'gorge'].includes(s.kind)) return null;
     if (s.indoor === true) return band === 'night' && (s.genres || []).includes('nightview') ? 'ok' : null;

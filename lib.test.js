@@ -826,6 +826,13 @@ assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.l
   assert.deepStrictEqual(Lib.nearestOnLine([[139, 35], [139.5, 35.2], [140, 35]], { lat: 35.21, lon: 139.48 }), { lat: 35.2, lon: 139.5 });
 }
 
+// 深夜: 営業時間の分からない屋外の展望台は出す。深夜は閉まると分かっている所（lateClosed）は出さない。夜（19〜24時）は出す
+{
+  const deck = { genres: ['viewpoint', 'nightview'], indoor: false, lateClosed: true };
+  const hill = { genres: ['viewpoint'], indoor: false };
+  assert.deepStrictEqual([Lib.timeBandState(deck, 'late'), Lib.timeBandState(deck, 'night'), Lib.timeBandState(hill, 'late')], [null, 'outdoor', 'outdoor']);
+}
+
 console.log('lib: ALL PASS');
 // 経由地の横に同じ向きの一般道のランプ（出入口）があれば避ける
 {

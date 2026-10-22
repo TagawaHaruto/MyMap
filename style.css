@@ -378,7 +378,10 @@ body.tour-full #view .chain-btns :is(.icon, .btn) { min-height: 30px; min-width:
 body.tour-full #view { display: block; position: fixed; left: 0; right: 0; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom)); z-index: 1050; height: var(--sheet-h, 50vh);
   overflow-y: auto; overscroll-behavior: contain; background: var(--bg); border-radius: 14px 14px 0 0; box-shadow: 0 -4px 16px rgb(0 0 0 / 0.18);
   padding: 0 12px 16px; font-size: 0.86rem; gap: 6px; transition: height 0.15s ease-out; }
-body.tour-full #view .sheet-handle { position: sticky; top: 0; z-index: 2; display: grid; place-items: center; height: 26px; margin: 0 -12px; background: var(--bg); cursor: grab; touch-action: none; }
+body.tour-full #view .sheet-handle { position: sticky; top: 0; z-index: 2; display: grid; place-items: center; height: 30px; margin: 0 -12px; background: var(--bg); cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
+body.tour-full #view.sheet-drag { transition: none; } /* 動かしている間は指にそのままついてくる */
+body.tour-full .map-full .radar-bar { transition: bottom 0.15s ease-out; }
+body.sheet-dragging .map-full .radar-bar { transition: none; }
 body.tour-full #view .sheet-handle span { width: 44px; height: 5px; border-radius: 3px; background: var(--line); }
 body.tour-full #view :is(.btn, select, input, .chip) { min-height: 36px; font-size: 0.82rem; padding-top: 2px; padding-bottom: 2px; }
 body.tour-full #view :is(h2, h4) { font-size: 0.95rem; margin: 4px 0; }
