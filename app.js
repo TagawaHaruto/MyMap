@@ -1909,8 +1909,10 @@ function loadStopCells(cids) {
 // 一覧と地図に出す分。選んだものは全部、ほかは種類ごとに上限まで、ルート全体から均等に選ぶ
 // （出発地の近くだけで埋まらないように。カフェ・ごはんを足しても、道の駅などに枠を取られて出ないことがないように）
 const STOP_SHOW = 100, MANY_SHOW = 30;
-// 街なかの銭湯（OpenStreetMap で温泉の印がない入浴施設）。大阪・東京などのルートでは何十件も並び、道の駅や展望を押し出すので別枠にする
-const isSento = (s) => s.note === '銭湯・入浴施設';
+// 街なかの銭湯（OpenStreetMap で温泉の印がない入浴施設）・サウナ・温泉宿（日帰り入浴できるか分からない）。大阪・東京・箱根などの
+// ルートでは何十件も並び、道の駅や展望を押し出すので別枠にする（温泉の印がある所・温泉地・★は今までどおり）
+const MINOR_BATHS = new Set(['銭湯・入浴施設', '入浴施設（サウナ）', '温泉宿（日帰り入浴は要確認）']);
+const isSento = (s) => MINOR_BATHS.has(s.note);
 const SENTO_SHOW = 10;
 function shownStops() {
   const all = getStops(), k = tour.stopsAll ? 5 : 1;
