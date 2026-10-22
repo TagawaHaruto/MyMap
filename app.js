@@ -352,7 +352,7 @@ function infoShell(s) {
   return `${detailLine(s)}
     <div class="actions">
       <a class="btn" ${gm(s, 'dir')}>地図で経路</a>
-      <a class="btn" ${gm(s)}>写真・口コミ</a>
+      <a class="btn" ${gm(s)}>写真・口コミ・GoogleMapで確認</a>
       <button type="button" class="btn" data-plan="${esc(s.id)}">日帰りプラン</button>
       <button type="button" class="btn" data-park="${esc(s.id)}">🅿駐車場</button>
       ${s.poi ? '' : `<button type="button" class="icon" data-visited="${esc(s.id)}" aria-pressed="${state.visited.has(s.id)}">行った</button>`}
@@ -1106,7 +1106,7 @@ function spotPopup(s) {
   return `<div class="pop"><strong>${isCurated(s) ? '★ ' : ''}${s.genres.map((g) => icon(GENRES[g] || '・')).join('')} ${esc(s.name)}</strong>
     <p class="meta">${icon(MODES[state.mode])}${fmtMin(s.minutes)}${s.indoor ? '・☔雨OK' : ''}${s.walkin === true ? '・当日参加OK' : s.walkin === false ? '・要予約' : ''}</p>
     ${s.note ? `<p>${esc(s.note)}</p>` : ''}
-    <div class="actions"><a class="btn" ${gm(s, 'dir')}>経路</a><a class="btn" ${gm(s)}>写真・口コミ</a></div>
+    <div class="actions"><a class="btn" ${gm(s, 'dir')}>経路</a><a class="btn" ${gm(s)}>写真・口コミ・GoogleMapで確認</a></div>
     <button type="button" class="btn primary" data-spot-dest="${esc(s.id)}">🏍ここを目的地にする</button></div>`;
 }
 // ---- Google マップの写真（設定タブで API キーを入れたときだけ。規約に沿って写真は端末に保存しない） ----
@@ -1194,7 +1194,7 @@ function popupHtml(s, v) {
     ${text ? `<p>${esc(text)}</p>` : ''}
     ${!v ? '<p class="hint">写真と説明を読み込み中…</p>' : v.failed ? '<p class="hint">写真と説明を読み込めませんでした（圏外の可能性）。</p>' : ''}
     ${v && v.summary && v.summary.page ? `<div class="credit">出典: <a href="${esc(v.summary.page)}" target="_blank" rel="noopener">Wikipedia</a></div>` : ''}
-    <a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a>
+    <a class="btn" ${gm(s)}>写真・口コミ・GoogleMapで確認</a>
     <button type="button" class="btn ${picked ? '' : 'primary'} pop-pick" data-popup-pick="${esc(s.id)}">${picked ? '立ち寄りから外す' : '立ち寄りに追加'}</button>
     <button type="button" class="btn pop-park" data-pop-park="${esc(s.id)}">🅿 駐車場を見る</button>
     <button type="button" class="btn" data-spot-dest="${esc(s.id)}">🏁ここを目的地にする</button>
@@ -1306,7 +1306,7 @@ document.addEventListener('click', async (e) => {
   body.innerHTML = '<div class="gphotos"></div>' + infoHtml(s, v) + `${s.booking ? `<p class="hint">予約: ${esc(s.booking)}</p>` : ''}${extraInfo(s)}<div class="related"></div>`;
   fillGooglePhotos(body.querySelector('.gphotos'), s);
   if (!v.failed) box.dataset.loaded = '1';
-  if (!isCard) body.insertAdjacentHTML('beforeend', `<div class="actions"><a class="btn" ${gm(s)}>Googleマップで写真・口コミを見る</a></div>`);
+  if (!isCard) body.insertAdjacentHTML('beforeend', `<div class="actions"><a class="btn" ${gm(s)}>写真・口コミ・GoogleMapで確認</a></div>`);
   fillRelated(body.querySelector('.related'), s);
   fillAddr(box);
 });
@@ -2194,7 +2194,7 @@ function renderTouring() {
       <div class="chips wrap" id="stop-kinds" aria-label="立ち寄り候補の種類"></div>
       ${kinds.has('food') ? `<div class="row"><label for="stop-cat" class="label">料理</label><select id="stop-cat">${[['', 'すべて']].concat(Lib.FOOD_CATS.map(([l]) => [l, l])).map(([v, l]) =>
         `<option value="${esc(v)}" ${(tour.foodCat || '') === v ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select></div>` : ''}
-      <details class="help"><summary aria-label="説明を見る">i</summary>上の種類を押すと、出す候補を切り替えられます。カフェ・ごはん・24時間GSは、ルートから1km以内のお店です（ごはんはチェーン店を除きます。味の評価は入っていないので、▼詳しくの「写真・口コミ」で確かめてください）。名前を押すと地図でその場所を強調します。□で選ぶと、Google マップに経由地として渡します。</details>
+      <details class="help"><summary aria-label="説明を見る">i</summary>上の種類を押すと、出す候補を切り替えられます。カフェ・ごはん・24時間GSは、ルートから1km以内のお店です（ごはんはチェーン店を除きます。味の評価は入っていないので、▼詳しくの「写真・口コミ・GoogleMapで確認」で確かめてください）。名前を押すと地図でその場所を強調します。□で選ぶと、Google マップに経由地として渡します。</details>
       ${(kinds.has('cafe') || kinds.has('food')) && [...cellLoading.keys()].some((k) => k.startsWith('food/')) ? '<p class="hint">カフェ・ごはん屋さんを読み込み中…</p>' : ''}
       ${shown.length < stops.length ? `<p class="hint">${stops.length.toLocaleString()}件のうち${shown.length}件を、種類ごとにルート全体から均等に選んで表示しています（選んだものは全部）。${tour.stopsAll ? '' : '<button type="button" class="btn" id="stops-all">もっと表示</button>'}</p>` : ''}
       <p id="limit-msg" class="notice" hidden>立ち寄りは${room()}件まで選べます。ほかを外すと選べます。</p>`
@@ -2917,7 +2917,7 @@ function routeFuel() {
     const ic = L.divIcon({ className: '', iconSize: [26, 26], iconAnchor: [13, 13], html: '<span class="pin">⛽</span>' });
     fuelLayer = L.layerGroup(xs.map((x) => L.marker([x.lat, x.lon], { icon: ic, title: x.name })
       .bindPopup(`<div class="pop"><strong>⛽ ${esc(x.name)}</strong><span class="status">24時間営業${x.self === 1 ? '・セルフ' : x.self === 0 ? '・フルサービス' : ''}</span>
-        <div class="actions"><a class="btn" ${gm(x)}>写真・口コミ</a></div></div>`))).addTo(map);
+        <div class="actions"><a class="btn" ${gm(x)}>写真・口コミ・GoogleMapで確認</a></div></div>`))).addTo(map);
   }
   // 有料区間（高速道路）を走っている所の近くは、下や横の一般道のスタンド（SA・PA 以外は一度降りる）
   const onHw = (x) => Lib.inSpans(x.alongKm * rt.km / lineKm, rt.tollSpans);
