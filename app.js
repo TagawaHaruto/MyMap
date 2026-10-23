@@ -2571,7 +2571,7 @@ async function radarFrames() {
     const b = tour.route ? tour.route.line.reduce((a, [lon, lat]) => [Math.min(a[0], lat), Math.min(a[1], lon), Math.max(a[2], lat), Math.max(a[3], lon)], [90, 180, -90, -180])
       : map ? [map.getBounds().getSouth(), map.getBounds().getWest(), map.getBounds().getNorth(), map.getBounds().getEast()] : null;
     if (b) {
-      const m = 0.25, grid = Lib.gridPoints([b[0] - m, b[1] - m, b[2] + m, b[3] + m], 14);
+      const m = 0.45, grid = Lib.gridPoints([b[0] - m, b[1] - m, b[2] + m, b[3] + m], 16); // 雨を避ける回り道（左右 35km）も入る広さ
       const r = await fetch(Lib.modelUrl(grid.pts, 74), { signal: timeoutSignal(15000) });
       if (r.ok) model = Lib.modelFrames(await r.json(), grid, jma.length ? jma[jma.length - 1].to : Date.now());
     }
@@ -2869,7 +2869,7 @@ async function rainRoutes() {
           if (rt.min > std.min * 1.6 + 20) continue; // 遠回りすぎる
           if (tour.cands.concat(added).some((c) => Math.abs(c.km - rt.km) < Math.max(0.5, rt.km * 0.01) && Math.abs(c.min - rt.min) < 2)) continue; // ほぼ同じルート
           rt.rain = await routeRainOf(rt, dep, fr);
-          if (rt.rain.wetKm >= best) continue;
+          if (rt.rain.wetKm >= best || rt.rain.unknown > rt.rain.n * 0.1) continue; // 予報の範囲の外を通る回り道は比べられない
           // Google マップには、道の上に置き直した経由地を渡す（回り道を通るように）
           added.push({ ...rt, label: `☂雨を避ける（${v.side}側を回る）`, via: [], fixed: [Lib.nearestOnLine(rt.line, v)], note: std.note, opts: std.opts });
         } catch { /* 引けなければ次の経由地へ */ }
@@ -2890,6 +2890,7 @@ async function rainRoutes() {
     msg(best === 0 ? `☀ ${hhmm(dep)} に出発なら「${b.label}」で雨に合わなそうです${bi === 0 ? '' : `（${plus(b)}。標準は ${rainText(std.rain)}）`}。`
       : bi !== 0 && b.rain.wetKm < std.rain.wetKm ? `☂ 「${b.label}」なら雨の区間 約${b.rain.wetKm}km（標準は約${std.rain.wetKm}km）・${plus(b)}。`
         : `☔ どのルートでも雨の区間があります（いちばん少なくて約${best}km）。${why}出発時刻をずらすと避けられるかもしれません（🌧雨雲 →「🕒雨に合わない出発時刻」）。`);
+    msg(`${tour.rainMsg}（予報の信頼度 ${Lib.rainTrust(dep + b.min * 60e3)}）`);
     if (bi !== tour.sel) { tour.sel = bi; tour.stops = null; tour.picked.clear(); }
     tour.rainAt = dep; saveTour();
   } catch (err) { msg(err.mine ? err.message : '雨雲かルートを読み込めませんでした（圏外の可能性があります）。'); }
