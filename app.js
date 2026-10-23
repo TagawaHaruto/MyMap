@@ -1999,6 +1999,7 @@ function updateTourSelection() {
   const sp = $('#stops-picked'); if (sp) sp.textContent = n ? `・${n}件選択中` : '';
   styleMarkers();
 }
+const stopsOnMap = () => store.get('stopsOnMap') !== false;
 function styleMarkers() {
   let i = 0;
   for (const s of getStops()) {
@@ -2006,9 +2007,11 @@ function styleMarkers() {
     const on = tour.picked.has(s.id);
     if (on) { i++; m.pinOpts = [s, { top: false, picked: true, num: i }]; m.setZIndexOffset(1000); }
     else { m.pinOpts = [s, { top: false }]; m.setZIndexOffset(0); }
-    // 選んだ立ち寄りはほかのアイコンより上に
-    const pane = on ? 'pickPane' : 'markerPane';
-    if (m.options.pane !== pane && m._map && m._map.getPane('pickPane')) { const mm = m._map; m.remove(); m.options.pane = pane; m.addTo(mm); }
+    // 選んだ立ち寄りはほかのアイコンより上に。☰の「立ち寄りを地図に出す」を外したら、選んだものだけ出す
+    const pane = on ? 'pickPane' : 'markerPane', show = on || stopsOnMap();
+    if (!map || !map.getPane('pickPane')) continue;
+    if (m.options.pane !== pane || !show) { if (m._map) m.remove(); m.options.pane = pane; }
+    if (show && !m._map) m.addTo(map);
   }
   layoutPins();
 }
@@ -2161,7 +2164,7 @@ function renderTouring() {
     </details>
     <div class="actions"><button type="button" class="btn primary" id="route-go" ${dest && !tour.busy ? '' : 'disabled'}>${tour.busy ? '検索中…（候補を比べています）' : dest ? 'ルート候補を探す' : '目的地を選ぶと押せます'}</button>
       ${dest && !dest.loop ? `<button type="button" class="btn" id="route-back" ${tour.busy ? 'disabled' : ''}>${isBack(dest) ? '⇄ 行きに戻す' : '⇄ 帰り道にする（目的地→現在地）'}</button>` : ''}</div>
-    ${isBack(dest) ? `<p class="status">🏠 帰り道：${esc(dest.name)} から ${esc(tour.back.name)} まで</p>` : ''}
+    ${isBack(dest) ? `<p class="status">🏠 帰り道：${esc(dest.name)} から ${esc(tour.back.name)} まで。帰りに寄る所は下の「🛍立ち寄り候補」で選べます（行きに選んだ分は⇄で行きに戻すと復元します）</p>` : ''}
     <div class="map-wrap"><div id="map"></div><span class="crosshair" aria-hidden="true">＋</span>
       <button type="button" class="btn map-pick" id="pick-center">中心を目的地に</button>
       <button type="button" class="btn map-radar" id="radar-toggle" aria-pressed="${RADAR.on}" title="雨雲レーダー（気象庁）">🌧雨雲</button>
@@ -2176,6 +2179,7 @@ function renderTouring() {
     ${sns ? `<div class="actions"><a class="btn" href="${esc(sns.x)}" target="_blank" rel="noopener">#X で最新情報</a><a class="btn" href="${esc(sns.instagram)}" target="_blank" rel="noopener">#Instagram</a></div>` : ''}
     <div class="tour-drawer" id="tour-drawer">${tourFull() ? `<div class="drawer-head"><strong>表示と走り方</strong>
       <button type="button" class="btn" id="dr-normal">通常表示に戻す</button><button type="button" class="icon" id="dr-close" aria-label="閉じる">✕</button></div>` : ''}
+    ${tour.route ? `<label class="check"><input type="checkbox" id="stops-on-map" ${stopsOnMap() ? 'checked' : ''}>立ち寄り候補のアイコンを地図に表示（外しても選んだものは出ます）</label>` : ''}
     <details class="tools" id="tour-opts" ${tourFull() || store.get('tourOptsOpen') ? 'open' : ''}><summary>⚙走り方・立ち寄りの範囲（${optSummary()}）</summary>
     <fieldset class="opts"><legend><strong>走り方</strong></legend>
       <label class="check"><input type="checkbox" data-opt="noToll" ${tour.opts.noToll ? 'checked' : ''}>有料道路を使わない</label>
@@ -2324,6 +2328,7 @@ function renderTouring() {
   bindCourseBtns($('#curvy'));
   bindCourseLegend();
   $('#tour-opts').addEventListener('toggle', (e) => store.set('tourOptsOpen', e.target.open));
+  const som = $('#stops-on-map'); if (som) som.onchange = (e) => { buzz(); store.set('stopsOnMap', e.target.checked); styleMarkers(); };
   $('#show-courses').onchange = (e) => { tour.showCourses = e.target.checked; store.set('showCourses', tour.showCourses); renderTouring(); };
   const rr = $('#rain-route'); if (rr) rr.onclick = () => { buzz(); rainRoutes(); };
   // 出発地を変える（ルートは探し直し。目的地はそのまま）
@@ -2354,6 +2359,7 @@ function renderTouring() {
   const rb = $('#route-back');
   if (rb) rb.onclick = async () => {
     buzz();
+    tour.pickMemo = { ...tour.pickMemo, [tour.back ? 'back' : 'go']: [...tour.picked] }; // 行きと帰りで選んだ立ち寄りを別々に覚える
     if (tour.back) tour.back = null;
     else {
       rb.disabled = true; rb.textContent = '現在地を調べています…';
@@ -2373,7 +2379,13 @@ function renderTouring() {
     const d = currentDest(), at = sig();
     try {
       const cands = await fetchCandidates(d);
-      if (sig() === at) { tour.cands = cands; tour.sel = 0; tour.restored = false; tour.stops = null; tour.picked.clear(); tour.rainMsg = ''; tour.rainAt = 0; saveTour(); }
+      if (sig() === at) {
+        tour.cands = cands; tour.sel = 0; tour.restored = false; tour.stops = null; tour.picked.clear(); tour.rainMsg = ''; tour.rainAt = 0;
+        // ⇄で切り替える前にこの向きで選んでいた立ち寄りのうち、新しいルート沿いにあるものを選び直す
+        const memo = (tour.pickMemo || {})[tour.back ? 'back' : 'go'] || [];
+        if (memo.length) { memo.forEach((id) => tour.picked.add(id)); tour.stops = null; const on = new Set(getStops().map((s) => s.id)); memo.forEach((id) => on.has(id) || tour.picked.delete(id)); tour.stops = null; }
+        saveTour();
+      }
       else tour.error = '検索中に目的地か走り方が変わったため、結果を使いませんでした。もう一度探してください。';
     } catch (err) {
       if (sig() === at) tour.error = err.mine ? err.message : 'ルートを取得できませんでした。Google マップのボタンから確認してください。';
@@ -2451,7 +2463,7 @@ function setDest(apply) {
   if (tour.route && !confirm(navigator.onLine === false
     ? '圏外のため、目的地を変えると保存したルートを取り直せません。変更しますか？' : '目的地を変えると、今のルートと選んだ立ち寄りが消えます。変更しますか？')) return false;
   apply();
-  tour.cands = null; tour.sel = 0; tour.stops = null; tour.restored = false; tour.picked.clear(); tour.error = ''; tour.back = null; // 目的地を変えたら行きに戻す
+  tour.cands = null; tour.sel = 0; tour.stops = null; tour.restored = false; tour.picked.clear(); tour.error = ''; tour.back = null; tour.pickMemo = null; // 目的地を変えたら行きに戻す
   saveTour(); renderTouring();
   return true;
 }
