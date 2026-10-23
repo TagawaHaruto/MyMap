@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:6017214801","name":"DINO STORE","lat":36.08301,"lon":136.50682,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6017214802","name":"RAPTOR","lat":36.08373,"lon":136.50687,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3599706793","name":"クロスカントリーセンターかもしか","lat":36.1544,"lon":136.60261,"pref":"石川","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285746938","name":"芳野原オートキャンプ場","lat":36.07265,"lon":136.54287,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286831598","name":"スキージャム勝山","lat":36.07267,"lon":136.55572,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0779-87-6109","pk":2},
+{"id":"osm:node:14286878819","name":"市ノ瀬野営場","lat":36.11453,"lon":136.70009,"pref":"石川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"076-259-2121"},
+{"id":"osm:node:14286894370","name":"小池公園","lat":36.00653,"lon":136.65795,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-3153-4050"},
+{"id":"osm:node:14287658010","name":"ぎゃわずランド","lat":36.10924,"lon":136.58629,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"https://kaeruya-lcc-2.jimdosite.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-5474-0420"}
+]

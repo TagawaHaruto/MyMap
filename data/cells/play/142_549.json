@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5024155009","name":"中川原水辺公園","lat":35.63983,"lon":137.31788,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:687039992","name":"苗木公園","lat":35.52691,"lon":137.46145,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:687156633","name":"やんたに公園","lat":35.70029,"lon":137.38416,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:687246423","name":"福崎公園","lat":35.70955,"lon":137.37292,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686651460","name":"テニス４面","lat":35.60995,"lon":137.49772,"pref":"岐阜","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:5024155131","name":"はなのき会館","lat":35.64517,"lon":137.32001,"pref":"岐阜","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"},
+{"id":"osm:way:687156636","name":"かしも明治座","lat":35.7006,"lon":137.38391,"pref":"岐阜","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse","wp":"ja:かしも明治座"},
+{"id":"osm:way:1336986064","name":"白雲座","lat":35.70506,"lon":137.28953,"pref":"岐阜","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse","wp":"ja:白雲座"}
+]

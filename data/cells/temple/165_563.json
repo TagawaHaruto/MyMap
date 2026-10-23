@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:548811560","name":"東伝寺","lat":41.4883,"lon":140.99309,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:548811564","name":"光月寺","lat":41.48859,"lon":140.99339,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:548811572","name":"大石神社","lat":41.48696,"lon":140.997,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:653556287","name":"箭根森八幡宮","lat":41.43141,"lon":140.86449,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1253625702","name":"薬師山","lat":41.43511,"lon":140.87605,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

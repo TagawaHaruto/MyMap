@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:8807391327","name":"美乃久鮨し店","lat":41.6771,"lon":140.43625,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8807391328","name":"どうなんde's","lat":41.6778,"lon":140.43526,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:4678039623","name":"その","lat":41.69228,"lon":140.45176,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:2457649777","name":"おかめ","lat":41.67723,"lon":140.43619,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:2457644451","name":"北じま","lat":41.67719,"lon":140.43524,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:882285784","name":"正覚寺","lat":34.46728,"lon":136.02962,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:1911379117","name":"金剛寺","lat":34.2876,"lon":136.0066,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2382449975","name":"高角神社 (Takatsuno Shrine)","lat":34.42888,"lon":136.08836,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3839017112","name":"日ノ前神社","lat":34.44543,"lon":136.03173,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ひのまえじんじゃ"},
+{"id":"osm:node:4586776286","name":"天一神社","lat":34.39811,"lon":136.0306,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4636661529","name":"安能寺","lat":34.4905,"lon":136.16675,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4802917087","name":"宝蔵寺","lat":34.42369,"lon":136.03887,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4802917088","name":"八坂神社","lat":34.42384,"lon":136.03855,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4829870121","name":"大年神社","lat":34.26462,"lon":136.03743,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4829900922","name":"清谷神社","lat":34.27856,"lon":136.03835,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7451099455","name":"平野川水分神社上社","lat":34.44767,"lon":136.06443,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7451102206","name":"瀧野天冠山白馬寺","lat":34.46286,"lon":136.05906,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:7451102448","name":"日張山青蓮寺","lat":34.45094,"lon":136.00668,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:440101857","name":"金比羅神社","lat":34.48406,"lon":136.04359,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1077018335","name":"天開山 泰運寺","lat":34.43363,"lon":136.15205,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

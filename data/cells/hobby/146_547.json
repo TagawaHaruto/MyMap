@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2850056055","name":"よねざわ","lat":36.51765,"lon":136.90346,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:2850058010","name":"岸","lat":36.51782,"lon":136.90389,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2850058012","name":"森崎モータース","lat":36.51276,"lon":136.90166,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2850276981","name":"ブックオフ","lat":36.65005,"lon":136.96269,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2850276987","name":"サイクルセンター 清登","lat":36.65275,"lon":136.9651,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"きよと"},
+{"id":"osm:node:5166589271","name":"ウノ","lat":36.55453,"lon":136.87539,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"うの"},
+{"id":"osm:node:5262914501","name":"アルペン イータウンとなみ店","lat":36.63338,"lon":136.95511,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5262915595","name":"2nd STREET砺波店","lat":36.63123,"lon":136.96187,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5262915600","name":"ブックマーケット砺波店","lat":36.63154,"lon":136.9619,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5330513537","name":"ポケモンセンター","lat":36.68908,"lon":136.88171,"pref":"富山","genres":["shopping"],"indoor":true,"url":"https://www.pokemon.co.jp/gp/store/oyabe/","note":"アニメ・漫画","g":"hobby","k":"hobby","oh":"10:00-20:00","tel":"0766-67-7741"},
+{"id":"osm:node:10956710507","name":"サイクルフレンド太田","lat":36.67542,"lon":136.86665,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:425854887","name":"ファミリーブックス","lat":36.56326,"lon":136.8685,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"09:00-22:00"},
+{"id":"osm:way:546754775","name":"太陽スポーツ 砺波店","lat":36.65905,"lon":136.97107,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

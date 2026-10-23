@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:7749923883","name":"菅江真澄歌碑","lat":40.33286,"lon":140.21918,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8148136130","name":"馬ヶ相染神 外野神社跡","lat":40.25504,"lon":140.05007,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8148583745","name":"磐平泉館跡","lat":40.2591,"lon":140.05451,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8506881786","name":"山神社之碑","lat":40.33879,"lon":140.03779,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11007193845","name":"八峰町指定天然記念物「旦那のいちょう」","lat":40.32803,"lon":140.08675,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:837197480","name":"あきた白神温泉ホテル","lat":40.32831,"lon":140.02743,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

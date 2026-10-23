@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:11822661378","name":"黄帝社","lat":34.64906,"lon":131.60878,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11829063591","name":"御山神社","lat":34.58008,"lon":131.55928,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11829271531","name":"三穂神社","lat":34.6218,"lon":131.60122,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11829271532","name":"法隆寺","lat":34.62149,"lon":131.60136,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11829271536","name":"大薀寺","lat":34.61661,"lon":131.60528,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11829271537","name":"浄蓮寺","lat":34.61518,"lon":131.60703,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13681933225","name":"鏡山神社","lat":34.61677,"lon":131.578,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1492479724","name":"紹孝寺","lat":34.61594,"lon":131.60152,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1493038330","name":"松崎神社","lat":34.6154,"lon":131.60591,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1493038333","name":"松崎八幡宮","lat":34.61547,"lon":131.60614,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

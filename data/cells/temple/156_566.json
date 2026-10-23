@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1280994462","name":"正徳寺","lat":39.00282,"lon":141.68105,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3079638272","name":"大船渡カトリック教会","lat":39.07211,"lon":141.71763,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:3669785772","name":"八幡神社","lat":39.05912,"lon":141.71737,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3694518548","name":"西光寺","lat":39.07077,"lon":141.71325,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3694518549","name":"新山神社","lat":39.07322,"lon":141.71116,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7233496333","name":"大船山 本増寺","lat":39.0561,"lon":141.71496,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10649595367","name":"Uka Shrine","lat":39.14383,"lon":141.69111,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10652024793","name":"Kotohira Shrine","lat":39.13317,"lon":141.69118,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:157121174","name":"長谷山観音寺","lat":39.02958,"lon":141.59316,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:157123312","name":"天照御祖神社","lat":39.02716,"lon":141.58776,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:362713513","name":"加茂神社","lat":39.05906,"lon":141.71782,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:362713534","name":"熊野神社","lat":39.05872,"lon":141.71774,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:614163510","name":"八幡神社","lat":39.02001,"lon":141.62902,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:614163514","name":"天照御祖神社","lat":39.0189,"lon":141.62947,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:631756222","name":"浄土寺","lat":39.02031,"lon":141.63111,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:841746725","name":"創価学会","lat":39.1209,"lon":141.7265,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:903013311","name":"諏訪神社","lat":39.00845,"lon":141.61441,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:985067967","name":"玉山神社","lat":39.06637,"lon":141.62948,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

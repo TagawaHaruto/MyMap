@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:13525595401","name":"Red Pine forest","lat":31.95308,"lon":130.85054,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:431456388","name":"春山緑地公園","lat":31.79052,"lon":130.78553,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:432913160","name":"姫城中央公園","lat":31.77131,"lon":130.75685,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:540278262","name":"生駒高原","lat":31.97938,"lon":130.90604,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:542675620","name":"えびの高原　北展望","lat":31.95738,"lon":130.86879,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:558269694","name":"北前公園","lat":31.76036,"lon":130.99053,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:622276058","name":"こがのもりコミュニティ広場","lat":31.75216,"lon":130.75708,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:645965484","name":"霧島アートの森","lat":31.9406,"lon":130.78127,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:675921178","name":"えのき公園","lat":31.80995,"lon":130.75638,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:787061125","name":"竹中池公園","lat":31.99727,"lon":130.75368,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:869104679","name":"日当山温泉公園","lat":31.76738,"lon":130.75407,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1082927602","name":"永田平公園","lat":31.98463,"lon":130.97917,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1411755130","name":"台明寺渓谷公園","lat":31.7771,"lon":130.81784,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1362260550","name":"イベント広場","lat":31.86465,"lon":130.85129,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2982156753","name":"丸荒","lat":38.71731,"lon":141.52123,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4162463596","name":"中華 タナカ","lat":38.71746,"lon":141.51845,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4744753768","name":"レストラン神割","lat":38.63427,"lon":141.52791,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4830043208","name":"食飲笑 うたつがね","lat":38.71722,"lon":141.52102,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5168645524","name":"南三陸 竜巳や","lat":38.71907,"lon":141.53073,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant","tel":"+81 226 25 9377"},
+{"id":"osm:node:5168645525","name":"串カツいじり","lat":38.7232,"lon":141.53529,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5168645624","name":"飛上","lat":38.71883,"lon":141.53043,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","tel":"+81 226 36 3326"},
+{"id":"osm:node:4830043205","name":"むすびや","lat":38.71733,"lon":141.52131,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

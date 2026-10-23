@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4269211956","name":"ひらたない荘","lat":42.13433,"lon":140.00584,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4269211988","name":"見市温泉旅館","lat":42.15531,"lon":140.04107,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4269238751","name":"民宿きむら荘","lat":42.12159,"lon":140.01001,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:427734688","name":"温泉ホテル八雲遊楽亭熊石ひらたない荘","lat":42.1345,"lon":140.00597,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:427922979","name":"八雲温泉おぼこ荘","lat":42.1865,"lon":140.12352,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

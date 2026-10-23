@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3104884100","name":"恵比須神社","lat":43.26493,"lon":140.63918,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9570296508","name":"禅源寺","lat":43.26355,"lon":140.6367,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:730416414","name":"厳島神社","lat":43.26791,"lon":140.63804,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:730416454","name":"寶海寺","lat":43.26696,"lon":140.63594,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:730419704","name":"恵美須神社","lat":43.26494,"lon":140.63919,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:730422461","name":"正隆寺","lat":43.26317,"lon":140.63735,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:730422466","name":"願雄寺","lat":43.26283,"lon":140.6384,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

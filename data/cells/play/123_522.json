@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:1391517008","name":"灯台守広場","lat":30.99648,"lon":130.66057,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1391517010","name":"展望広場","lat":30.99689,"lon":130.65938,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1391517014","name":"休憩広場","lat":30.99737,"lon":130.65981,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1391517016","name":"トンネル出口広場","lat":30.99958,"lon":130.66158,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1391517017","name":"エントランス広場","lat":30.99951,"lon":130.66367,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1392256116","name":"北緯31度線展望広場","lat":30.99957,"lon":130.66535,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

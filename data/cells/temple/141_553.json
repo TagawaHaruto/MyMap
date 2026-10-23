@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:3468598845","name":"湯之神社","lat":35.30604,"lon":138.33717,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4348068104","name":"稲荷大明神","lat":35.28217,"lon":138.33117,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6019112571","name":"啓慎院","lat":35.37648,"lon":138.35771,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6741264242","name":"円実寺","lat":35.37923,"lon":138.44553,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12106047748","name":"開道石割稲荷","lat":35.3708,"lon":138.427,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"かいどいしわりいなり"},
+{"id":"osm:node:12106047814","name":"願満堂","lat":35.38584,"lon":138.40754,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"がんまんど"},
+{"id":"osm:node:12106048365","name":"朝日之祖師堂","lat":35.38533,"lon":138.43534,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:216606494","name":"総門","lat":35.36925,"lon":138.42655,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

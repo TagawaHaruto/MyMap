@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:975311337","name":"青雲橋公園","lat":32.66156,"lon":131.3892,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1113410873","name":"ETOランド","lat":32.56698,"lon":131.46962,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:207832670","name":"高千穂町武道館","lat":32.71387,"lon":131.30271,"pref":"宮崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4297403825","name":"瀬棚郷土館","lat":42.45297,"lon":139.85505,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:way:330702302","name":"奥尻島津波館","lat":42.05423,"lon":139.44964,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:3377941663","name":"佐藤義則野球展示室","lat":42.15287,"lon":139.51919,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:7730232085","name":"狩場山登山口","lat":42.59443,"lon":139.95631,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:7732003385","name":"遊楽部岳登山口","lat":42.26829,"lon":139.99819,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:13747293202","name":"立象山展望台","lat":42.45663,"lon":139.85203,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:13747449401","name":"北海道最西端（舟隠）","lat":42.31188,"lon":139.76959,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:831080776","name":"法華寺","lat":42.22553,"lon":139.82452,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E6%B3%95%E8%8F%AF%E5%AF%BA_%28%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%9B%E3%81%9F%E3%81%AA%E7%94%BA%29","note":"寺社","k":"temple"},
+{"id":"osm:node:5727041325","name":"臼別温泉 湯とぴあ臼別","lat":42.22966,"lon":139.91853,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"https://ja.wikipedia.org/wiki/%E8%87%BC%E5%88%A5%E6%B8%A9%E6%B3%89","note":"銭湯・入浴施設","k":"bath","oh":"Tu-Su 07:00-19:00; Mo off"},
+{"id":"osm:node:6422746271","name":"せたな町公営温泉浴場 やすらぎ館","lat":42.4477,"lon":139.85247,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"","note":"銭湯・入浴施設","k":"bath"},
+{"id":"osm:way:330693734","name":"神威脇温泉保養所","lat":42.17158,"lon":139.41059,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"","note":"銭湯・入浴施設","k":"bath","pk":2},
+{"id":"osm:node:4899782490","name":"温泉ホテルきたひやま","lat":42.41523,"lon":139.88034,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"","note":"温泉宿（日帰り入浴は要確認）","k":"onsen"},
+{"id":"osm:node:5727067421","name":"貝取澗温泉","lat":42.18884,"lon":139.89821,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"http://awabisanso.com","note":"入浴施設（サウナ）","k":"onsen","oh":"Mo-Su 06:30-20:00","tel":"0139845522"}
+]

@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:9651089203","name":"忠魂碑","lat":40.2985,"lon":140.46221,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9651089204","name":"山瀬村役場跡碑","lat":40.29736,"lon":140.4624,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9679419312","name":"岩瀬一里塚跡","lat":40.27248,"lon":140.45854,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9702276753","name":"竣工記念碑","lat":40.25405,"lon":140.41079,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9705037929","name":"長坂一里塚","lat":40.26678,"lon":140.42385,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:797967068","name":"ビジネスホテル長栄閣","lat":40.27971,"lon":140.45425,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1041878940","name":"旧田村鉄工所","lat":40.27387,"lon":140.47003,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:450185781","name":"和みの湯","lat":40.30716,"lon":140.29376,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1041875863","name":"民宿かすみ荘","lat":40.28188,"lon":140.45949,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1041875864","name":"こまや旅館","lat":40.28195,"lon":140.45903,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1157693730","name":"工房&農家民宿 ブナの森","lat":40.27038,"lon":140.25926,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1157693734","name":"農家民宿 陶","lat":40.27103,"lon":140.25676,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1157693735","name":"農家民宿 さんこの宿","lat":40.27146,"lon":140.25663,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1157693736","name":"農家民宿 のっこの家","lat":40.2718,"lon":140.25606,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1157693737","name":"貸し田舎 南白神ベース","lat":40.27145,"lon":140.256,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1157693738","name":"農家民宿 和らぎ荘","lat":40.27226,"lon":140.25412,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1157705216","name":"民宿だまっこ屋","lat":40.30738,"lon":140.28641,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

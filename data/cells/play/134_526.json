@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:6616528751","name":"西村記念公園","lat":33.72334,"lon":131.64074,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:6616601261","name":"灯台公園","lat":33.73066,"lon":131.70004,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:6616602256","name":"南海浜公園","lat":33.72281,"lon":131.64886,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:493793908","name":"ソニー潮の香公園","lat":33.5382,"lon":131.73899,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:493793909","name":"夢咲公園","lat":33.54492,"lon":131.73977,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:705117197","name":"総合運動公園","lat":33.67726,"lon":131.60311,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:705740271","name":"総合グラウンド","lat":33.59118,"lon":131.72101,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:705763237","name":"弥生のムラ安国寺集落遺跡公園","lat":33.56576,"lon":131.71522,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1147830235","name":"くにみ海浜公園","lat":33.68162,"lon":131.60626,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1245261225","name":"姫島運動公園","lat":33.72198,"lon":131.65461,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1311783633","name":"マネーき猫公園","lat":33.60304,"lon":131.714,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1311783634","name":"羽田海岸りんりんパーク","lat":33.60788,"lon":131.70369,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:734357597","name":"戴星学園運動場","lat":33.5656,"lon":131.52231,"pref":"大分","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:734357598","name":"戴星学園テニスコート","lat":33.56572,"lon":131.5229,"pref":"大分","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:438161892","name":"くにさき総合文化センター","lat":33.56285,"lon":131.73176,"pref":"大分","genres":["play"],"indoor":true,"url":"","note":"アートセンター","g":"play","k":"amuse","wc":"yes"}
+]

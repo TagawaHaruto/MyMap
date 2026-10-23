@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5517920554","name":"天水分神社","lat":34.24488,"lon":135.85926,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:358849766","name":"正法寺","lat":34.00511,"lon":135.95226,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:358894091","name":"住吉神社","lat":34.01067,"lon":135.94907,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:358905213","name":"金光教","lat":34.00201,"lon":135.95471,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:359092069","name":"池神社","lat":34.03245,"lon":135.95679,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:359678264","name":"天理教 眞分教会","lat":34.02592,"lon":135.95698,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:361425634","name":"稲荷","lat":34.00074,"lon":135.95318,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:361813559","name":"天理教 北佐分教会","lat":34.0058,"lon":135.96684,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:361985132","name":"神道日天教元教会","lat":34.01166,"lon":135.97826,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:361989797","name":"竜岩寺","lat":34.01437,"lon":135.97869,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:362694868","name":"曹洞宗普門寺 児島天龍","lat":34.0379,"lon":135.96289,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:362702184","name":"天理教 池原分教会","lat":34.04104,"lon":135.96044,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:363242654","name":"明神池拝所","lat":34.03267,"lon":135.95699,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:588454485","name":"弥山神社","lat":34.17999,"lon":135.9094,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1422711538","name":"永豊寺","lat":34.19634,"lon":135.8183,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

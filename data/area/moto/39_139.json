@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:7239204003","name":"","lat":39.27356,"lon":139.91702,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:7239204014","name":"","lat":39.26462,"lon":139.91165,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:435104755","name":"道の駅象潟","lat":39.22021,"lon":139.90051,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:612290322","name":"道の駅おが","lat":39.88191,"lon":139.84818,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:775979819","name":"サンセットビュー","lat":39.32363,"lon":139.98723,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:792126126","name":"門前駐車場","lat":39.86462,"lon":139.75434,"type":"SA・PA","k":"rest_area","likely":true}
+]

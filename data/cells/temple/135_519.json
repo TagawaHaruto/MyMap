@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4142162280","name":"男岳神社","lat":33.8375,"lon":129.75117,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4160817221","name":"高御祖神社","lat":33.79095,"lon":129.75637,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4160817222","name":"竜蔵寺","lat":33.79162,"lon":129.75654,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4160817226","name":"椿山神社","lat":33.81333,"lon":129.75084,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

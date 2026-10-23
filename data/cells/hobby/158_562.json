@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2598309150","name":"カネエイ書店","lat":39.59341,"lon":140.56376,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3984032663","name":"ブックイン105","lat":39.58842,"lon":140.57236,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7454305829","name":"佐藤景書店","lat":39.59225,"lon":140.56323,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7454305852","name":"蒲生スポーツ","lat":39.59475,"lon":140.56391,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12367707103","name":"未来屋書店","lat":39.55166,"lon":140.5512,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みらいやしょてん"}
+]

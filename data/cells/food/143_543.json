@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:14031368902","name":"海の幸 食処 えちぜん","lat":35.94261,"lon":135.98883,"pref":"福井","genres":["food"],"indoor":true,"url":"https://kani-echizen.jp","note":"海鮮","g":"food","k":"restaurant","oh":"Mo,We-Su 10:30-17:00; Tu off","tel":"+81 77-8371-020","wc":"no"},
+{"id":"osm:node:14031392134","name":"いこい食堂","lat":35.92919,"lon":135.99855,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"11:00-21:00","tel":"+81 77-8371-074","wc":"no"},
+{"id":"osm:way:688081314","name":"ガレットカフェHAZE","lat":35.98227,"lon":135.96103,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

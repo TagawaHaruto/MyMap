@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2460030752","name":"津和野城","lat":34.46002,"lon":131.76417,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:津和野城"},
+{"id":"osm:node:2798035408","name":"平家屋敷跡","lat":34.31217,"lon":131.89533,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5435064718","name":"徳川夢声の句碑","lat":34.46603,"lon":131.77261,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6439968277","name":"史蹟 津和野城阯","lat":34.46097,"lon":131.7641,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6467572648","name":"火災守護の石灯篭","lat":34.46634,"lon":131.77282,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6576966647","name":"石見ひとはなライン","lat":34.39513,"lon":131.8817,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6577711433","name":"真田土地改良事業竣工記念碑","lat":34.39964,"lon":131.88647,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6578762176","name":"故 堀一子翁頌徳碑","lat":34.38818,"lon":131.88735,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:563383893","name":"多胡家老旧宅","lat":34.46665,"lon":131.77249,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic","pk":2},
+{"id":"osm:way:689427184","name":"乙女峠資料館","lat":34.46743,"lon":131.77387,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4287105293","name":"松の湯","lat":34.42934,"lon":131.89568,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:node:5214181205","name":"Roadside Hotel","lat":34.35198,"lon":131.93388,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5422241113","name":"たかせがわ","lat":34.47149,"lon":131.77371,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5424373110","name":"かめりあ","lat":34.47028,"lon":131.77351,"pref":"島根","genres":["lodging"],"indoor":true,"url":"https://www.e-camellia.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5434592702","name":"わた屋","lat":34.46859,"lon":131.77317,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6313305286","name":"原田屋旅館","lat":34.43799,"lon":131.86435,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"はらだやりょかん"},
+{"id":"osm:node:14287489755","name":"ゴギの郷ログハウス村","lat":34.45054,"lon":131.96494,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0856-78-1740"},
+{"id":"osm:node:14287489767","name":"高尻川リバーサイドログハウス村","lat":34.42488,"lon":131.93343,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0856-78-1131"},
+{"id":"osm:way:341975759","name":"Somanosato yokomichi","lat":34.48792,"lon":131.92384,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:647124261","name":"津和野ホテル","lat":34.47649,"lon":131.77704,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

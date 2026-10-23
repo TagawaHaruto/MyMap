@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:11652392211","name":"安芸駅ぢばさん市場","lat":33.50437,"lon":133.90636,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:11640550681","name":"安芸漁港","lat":33.50015,"lon":133.88732,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:149843444","name":"土佐カントリークラブ","lat":33.52745,"lon":133.77737,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:土佐カントリークラブ"},
+{"id":"osm:way:406772850","name":"Kochi黒潮カントリークラブ","lat":33.53613,"lon":133.78602,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:Kochi黒潮カントリークラブ"},
+{"id":"osm:way:1567803836","name":"安芸市多目的体育館 安芸ドーム","lat":33.50361,"lon":133.89126,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4734251031","name":"Free camp","lat":33.51382,"lon":133.83542,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","oh":"24/7"},
+{"id":"osm:node:13628868701","name":"無料キャンプ","lat":33.51732,"lon":133.80521,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","oh":"24/7"},
+{"id":"osm:node:14287545617","name":"日ノ御子河川公園キャンプ場","lat":33.65869,"lon":133.77967,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://www.rufdip.com/%E6%97%A5%E3%83%8E%E5%BE%A1%E5%AD%90%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97%E5%A0%B4","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-59-2500"},
+{"id":"osm:node:14287571164","name":"ヤ･シイパーク","lat":33.53454,"lon":133.75287,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287578027","name":"ONIWA","lat":33.51926,"lon":133.77751,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://oniwa-kochi.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-37-9997"},
+{"id":"osm:node:14287582614","name":"羽尾大釜荘","lat":33.59232,"lon":133.83417,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-54-0345"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3081653943","name":"トマム山壮","lat":43.04476,"lon":142.65206,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:440469193","name":"落合八幡神社","lat":43.1234,"lon":142.66732,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:620756769","name":"トマム神社","lat":43.04075,"lon":142.65516,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:851569022","name":"北落合神社","lat":43.18844,"lon":142.66071,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

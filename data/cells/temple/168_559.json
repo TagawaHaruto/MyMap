@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:427922944","name":"門昌庵","lat":42.12963,"lon":139.98925,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:427922963","name":"観音寺","lat":42.13659,"lon":139.9335,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:830605169","name":"長磯稲荷神社","lat":42.14139,"lon":139.91896,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:830613674","name":"黒龍大明神","lat":42.15311,"lon":139.91672,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:830620887","name":"開真寺","lat":42.21435,"lon":139.874,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:830630198","name":"平浜稲荷神社","lat":42.2197,"lon":139.86063,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:830636337","name":"稲荷神社","lat":42.22163,"lon":139.84588,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:831080786","name":"広福寺","lat":42.22567,"lon":139.82277,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:831112030","name":"大乗寺","lat":42.22664,"lon":139.82028,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:831112072","name":"常願寺","lat":42.2278,"lon":139.81848,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:831118162","name":"上浦稲荷神社","lat":42.22871,"lon":139.81583,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

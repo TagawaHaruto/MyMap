@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:3931513657","name":"ラッキー食堂","lat":45.10404,"lon":141.77644,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"no"},
+{"id":"osm:node:4354961598","name":"ポロ","lat":45.04088,"lon":141.86105,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"10:00-17:00"},
+{"id":"osm:node:4398384990","name":"来々軒","lat":45.10368,"lon":141.77523,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:4398429289","name":"丸勝亭","lat":45.10055,"lon":141.77705,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4398431589","name":"珍宝亭","lat":45.10344,"lon":141.7777,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4401910790","name":"菜味季","lat":45.01562,"lon":141.84622,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4401926390","name":"福禄寿し","lat":45.015,"lon":141.8466,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:5656777545","name":"味彩","lat":45.07375,"lon":141.84021,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"あじさい","oh":"Mo-Fr 11:00-14:00,16:00-20:00; Sa,Su,PH 11:00-20:00"},
+{"id":"osm:node:2097821387","name":"喫茶すてーしょん","lat":45.10453,"lon":141.77255,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:3521051693","name":"わが家","lat":45.10393,"lon":141.77603,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:3523122793","name":"フェルム","lat":45.10598,"lon":141.7768,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"We-Mo 11:00-18:00"},
+{"id":"osm:node:4401908093","name":"極楽とんぼ","lat":45.01552,"lon":141.84658,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4401924890","name":"ラストチャンス","lat":45.0151,"lon":141.84663,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4398429789","name":"夢工房","lat":45.10077,"lon":141.77695,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:578457082","name":"すずパンCafe","lat":45.07401,"lon":141.83665,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:4401886490","name":"匠","lat":45.01508,"lon":141.8467,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:4401926190","name":"アルファ","lat":45.0157,"lon":141.84656,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:4401927989","name":"まるじ","lat":45.01564,"lon":141.84657,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:461680762","name":"遊来","lat":45.10215,"lon":141.77663,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:580408495","name":"和風スナック赤坂","lat":45.07496,"lon":141.83843,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:855663622","name":"のんべえ","lat":45.01484,"lon":141.84788,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

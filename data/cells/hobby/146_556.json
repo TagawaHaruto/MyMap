@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11662344900","name":"小林自転車店","lat":36.64798,"lon":139.05458,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:292613716","name":"文真堂書店 上原店","lat":36.65083,"lon":139.06349,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1254544290","name":"小林自転車","lat":36.64795,"lon":139.05462,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5326680318","name":"市房神社","lat":32.31475,"lon":131.08571,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7040701817","name":"栂尾神社拝殿","lat":32.40528,"lon":131.24259,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7054802179","name":"栂尾神社本殿","lat":32.40492,"lon":131.24324,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7070556875","name":"弘法大師 上椎葉巡礼所 三十三番","lat":32.46651,"lon":131.15663,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:397563947","name":"潮神社（おっぱい神社）","lat":32.26939,"lon":131.00154,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:397564038","name":"塞神社","lat":32.26898,"lon":131.00105,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:397565784","name":"ハナグリ神社","lat":32.28963,"lon":131.01288,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4728619749","name":"開基100年記念モニュメント","lat":44.02114,"lon":143.76887,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6298457621","name":"開基八十周年・開町六十周年記念碑","lat":44.01667,"lon":143.77741,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6920079074","name":"10号竪穴住居","lat":44.12567,"lon":143.97704,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6920079075","name":"8・12号竪穴住居","lat":44.12586,"lon":143.97659,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6920079076","name":"6号竪穴住居","lat":44.12651,"lon":143.97605,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6920079077","name":"3号竪穴住居","lat":44.12546,"lon":143.97447,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6920079078","name":"4号竪穴住居","lat":44.1249,"lon":143.97398,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6920079079","name":"5号竪穴住居","lat":44.12487,"lon":143.97395,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9126890515","name":"明法寺跡石碑","lat":44.01667,"lon":143.77082,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12218700196","name":"芳川寛治翁之碑","lat":44.00393,"lon":143.96604,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:473862611","name":"サロマ湖鶴雅リゾート","lat":44.12483,"lon":143.97096,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.s-tsuruga.com/","note":"宿","g":"heritage","k":"lodging","kana":"さろまこつるがりぞーと","tel":"+81 152 54 2000"},
+{"id":"osm:way:473862876","name":"船長の家","lat":44.1258,"lon":143.97261,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.sentyounoie.jp/","note":"宿","g":"heritage","k":"lodging","kana":"せんちょうのいえ","tel":"+81 152 54 1111"},
+{"id":"osm:way:474152001","name":"サロマ湖畔ユースホステル","lat":44.08879,"lon":143.92819,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://saromakohan-yh.o.oo7.jp/","note":"宿","g":"heritage","k":"lodging","wp":"ja:サロマ湖畔ユースホステル","kana":"さろまこはんゆーすほすてる","tel":"+81 1587 6 2515"},
+{"id":"osm:way:494684739","name":"北海道立青少年体験活動支援施設ネイパル北見","lat":44.12139,"lon":143.97132,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:665319506","name":"旅荘ピラオロ荘","lat":44.09582,"lon":143.80244,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

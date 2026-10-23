@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:781278790","name":"落石水産物地方卸売市場","lat":43.18235,"lon":145.50905,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:1188773361","name":"落石地区スケートリンク","lat":43.19433,"lon":145.52011,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

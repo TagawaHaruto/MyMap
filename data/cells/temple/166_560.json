@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:1928874709","name":"荒神神社","lat":41.50303,"lon":140.01694,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/02/02025.html","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6078277330","name":"清部八幡神社","lat":41.52339,"lon":140.00554,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/02/02020.html","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:801450002","name":"清涼寺","lat":41.52445,"lon":140.00407,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

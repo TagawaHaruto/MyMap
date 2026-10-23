@@ -1,0 +1,8 @@
+[
+{"name":"道の駅 遣唐使ふるさと館","lat":32.738347899999994,"lon":128.68999495,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"高浜海水浴場","lat":32.7080312,"lon":128.6616063,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"鬼岳","lat":32.6568613,"lon":128.8456991,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"大瀬崎灯台","lat":32.6127291,"lon":128.5999791,"kind":"viewpoint","wikipedia":"https://ja.wikipedia.org/wiki/%E5%A4%A7%E7%80%AC%E5%9F%BC%E7%81%AF%E5%8F%B0","k":"viewpoint"},
+{"name":"鬼岳展望台","lat":32.6617281,"lon":128.8438808,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"鬼岳","lat":32.6565831,"lon":128.8489253,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E9%AC%BC%E5%B2%B3","k":"scenic"}
+]

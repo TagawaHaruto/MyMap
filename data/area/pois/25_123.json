@@ -1,0 +1,14 @@
+[
+{"name":"和蘭曲/东龙尾","lat":25.7395898,"lon":123.4749523,"kind":"coast","wikipedia":"https://zh.wikipedia.org/wiki/%E4%B8%9C%E9%BE%99%E5%B0%BE","k":"scenic"},
+{"name":"安藤岬/西龙尾","lat":25.7383229,"lon":123.4735025,"kind":"coast","wikipedia":"https://zh.wikipedia.org/wiki/%E8%A5%BF%E9%BE%99%E5%B0%BE","k":"scenic"},
+{"name":"東岬/东钓角","lat":25.7434396,"lon":123.4930881,"kind":"coast","wikipedia":"https://zh.wikipedia.org/wiki/%E4%B8%9C%E9%92%93%E8%A7%92","k":"scenic"},
+{"name":"西岬/西钓角","lat":25.7377402,"lon":123.458482,"kind":"coast","wikipedia":"https://zh.wikipedia.org/wiki/%E8%A5%BF%E9%92%93%E8%A7%92","k":"scenic"},
+{"name":"奈良原岳/高华峰","lat":25.7427471,"lon":123.4713858,"kind":"peak","wikipedia":"https://zh.wikipedia.org/wiki/%E9%AB%98%E5%8D%8E%E5%B3%B0","k":"scenic"},
+{"name":"北岬/北钓角","lat":25.7513696,"lon":123.4767481,"kind":"coast","wikipedia":"https://zh.wikipedia.org/wiki/%E5%8C%97%E9%92%93%E8%A7%92","k":"scenic"},
+{"name":"鹰峰/鷹峰","lat":25.7322088,"lon":123.5407301,"kind":"peak","wikipedia":"https://zh.wikipedia.org/wiki/%E9%B9%B0%E5%B3%B0_%28%E5%8C%97%E5%B0%8F%E5%B2%9B%29","k":"scenic"},
+{"name":"狮峰/獅峰","lat":25.729464,"lon":123.5413496,"kind":"peak","wikipedia":"https://zh.wikipedia.org/wiki/%E7%8B%AE%E5%B3%B0","k":"scenic"},
+{"name":"三尊岩/孔明石","lat":25.7321858,"lon":123.5388271,"kind":"peak","wikipedia":"https://zh.wikipedia.org/wiki/%E5%AD%94%E6%98%8E%E7%9F%B3","k":"scenic"},
+{"name":"莲花石/蓮花石","lat":25.7336661,"lon":123.540916,"kind":"peak","wikipedia":"https://zh.wikipedia.org/wiki/%E8%8E%B2%E8%8A%B1%E7%9F%B3","k":"scenic"},
+{"name":"拳头岭/拳頭嶺","lat":25.7235437,"lon":123.548343,"kind":"peak","wikipedia":"https://zh.wikipedia.org/wiki/%E6%8B%B3%E5%A4%B4%E5%B2%AD","k":"scenic"},
+{"name":"新田立岩/拇指峰","lat":25.7218295,"lon":123.5546344,"kind":"peak","wikipedia":"https://zh.wikipedia.org/wiki/%E6%8B%87%E6%8C%87%E5%B3%B0","k":"scenic"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2971578598","name":"国道231号開通記念碑","lat":43.73174,"lon":141.33635,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11311205911","name":"荘内藩ハママシケ陣屋の門","lat":43.58831,"lon":141.39171,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11311206777","name":"日本海","lat":43.58612,"lon":141.38768,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.hamamasu.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81133793034"}
+]

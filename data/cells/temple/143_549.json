@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:3098698903","name":"金剛堂","lat":35.895,"lon":137.49878,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"こんごど"},
+{"id":"osm:node:6332890251","name":"稲荷神社","lat":35.75052,"lon":137.33619,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6335536393","name":"牧水無神社","lat":35.75574,"lon":137.333,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6341264495","name":"山の神様","lat":35.77725,"lon":137.36012,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7236693935","name":"八王子神社","lat":35.81214,"lon":137.45276,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10920897407","name":"観音峠（かんのんとうげ）","lat":35.82405,"lon":137.28348,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13042458155","name":"御嶽神社遥拝所社務所","lat":35.87743,"lon":137.49781,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:305231214","name":"御岳神社","lat":35.88872,"lon":137.48253,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:305489897","name":"御嶽神社 頂上奥社","lat":35.89285,"lon":137.48037,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:676162551","name":"大杉地蔵尊","lat":35.75227,"lon":137.3343,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:766683380","name":"かえる神社","lat":35.80821,"lon":137.25055,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:6185464121","name":"中新開跡","lat":35.00407,"lon":132.20382,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6185475164","name":"忠魂碑","lat":35.00243,"lon":132.2061,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6185485986","name":"旧露国イ号殉職者慰霊碑","lat":35.00439,"lon":132.2015,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7227202762","name":"災害保存太鼓","lat":35.00865,"lon":132.22714,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6512233743","name":"スーパーホテル江津駅前","lat":35.01448,"lon":132.22325,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

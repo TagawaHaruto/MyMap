@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5432864734","name":"藤枝自転車店","lat":41.52717,"lon":140.90463,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:548277841","name":"高橋書店","lat":41.52857,"lon":140.90687,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

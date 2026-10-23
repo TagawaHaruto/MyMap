@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4171954627","name":"角牟礼城跡","lat":33.30972,"lon":131.15431,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8613730967","name":"村上田長翁頌徳碑","lat":33.34132,"lon":131.17321,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9722606648","name":"絆","lat":33.42158,"lon":131.03639,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14025275602","name":"伐株山城","lat":33.26575,"lon":131.13826,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025276102","name":"野田城","lat":33.28119,"lon":131.12354,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025276202","name":"長野城","lat":33.26442,"lon":131.16436,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025276203","name":"角牟礼城","lat":33.30977,"lon":131.15428,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025276204","name":"古後城","lat":33.30238,"lon":131.14124,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025343602","name":"平田城","lat":33.47326,"lon":131.14491,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025347101","name":"長岩城","lat":33.49462,"lon":131.04587,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14130580801","name":"森藩陣屋跡","lat":33.30333,"lon":131.1581,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14172653802","name":"日出生城","lat":33.34145,"lon":131.24605,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:way:509638276","name":"湯の香荘","lat":33.25472,"lon":131.02959,"pref":"大分","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ゆのかそ","tel":"+81 973 57 2043"}
+]

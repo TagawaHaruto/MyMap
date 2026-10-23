@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:727940937","name":"茂岩末広児童公園","lat":42.7945,"lon":143.50642,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:727954764","name":"ポケットパーク","lat":42.80167,"lon":143.50609,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:727962393","name":"JOYパークとよころ","lat":42.80283,"lon":143.50644,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:743178671","name":"中央広場","lat":42.80979,"lon":143.6555,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:743180934","name":"緑町児童公園","lat":42.80833,"lon":143.65373,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:743197861","name":"南町児童公園","lat":42.80411,"lon":143.6591,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:743205675","name":"光南児童公園","lat":42.79941,"lon":143.65152,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:742790495","name":"浦幌町総合スポーツセンター","lat":42.81517,"lon":143.65451,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

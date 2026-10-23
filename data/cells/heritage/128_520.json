@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:8686190461","name":"久玉城跡","lat":32.22098,"lon":130.03296,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1413211246","name":"寺島宗則記念館","lat":32.08477,"lon":130.19121,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:333041936","name":"ロックスイン阿久根","lat":32.01536,"lon":130.19436,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:920931467","name":"えびす屋","lat":32.18852,"lon":130.10372,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:939119000","name":"天草市宿泊施設 やすらぎ荘","lat":32.247,"lon":130.05344,"pref":"熊本","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1413189689","name":"ペンション海","lat":32.1076,"lon":130.1388,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

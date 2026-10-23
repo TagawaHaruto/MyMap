@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4080775324","name":"村中水産直売店","lat":35.52246,"lon":133.97363,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:590883209","name":"長和瀬漁港","lat":35.52307,"lon":133.97122,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:590883602","name":"青谷漁港","lat":35.52426,"lon":133.9954,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

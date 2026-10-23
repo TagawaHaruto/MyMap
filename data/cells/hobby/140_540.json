@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:7262739201","name":"森本書房","lat":35.07162,"lon":135.22488,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9896452785","name":"オーディン篠山店","lat":35.06386,"lon":135.19272,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:9896546599","name":"サカイ","lat":35.0662,"lon":135.19389,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9896546600","name":"オジマスポーツ","lat":35.06588,"lon":135.19373,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9896682328","name":"フィッシング丹南","lat":35.06219,"lon":135.17484,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:9907686366","name":"徳岡塾","lat":35.23337,"lon":135.01618,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12475123677","name":"丸岡堂","lat":35.05636,"lon":135.17629,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:way:370449615","name":"尚古堂","lat":35.07187,"lon":135.22439,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:way:370605005","name":"西山釣具店","lat":35.07164,"lon":135.22858,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:relation:5503941","name":"森本書房","lat":35.07144,"lon":135.22494,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4589171995","name":"榧の木","lat":33.53707,"lon":131.52815,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"かやのき"},
+{"id":"osm:node:6640644120","name":"ジョイフル","lat":33.5524,"lon":131.734,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:7749942285","name":"国東飯店","lat":33.56112,"lon":131.7372,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7749945785","name":"お店の名前","lat":33.56172,"lon":131.73719,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

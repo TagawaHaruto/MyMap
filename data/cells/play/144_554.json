@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:552378579","name":"サンスポーツランド","lat":36.23852,"lon":138.68641,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:552581514","name":"農村公園","lat":36.22732,"lon":138.6767,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1217664434","name":"慰霊の園","lat":36.08594,"lon":138.73818,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:487919693","name":"川舞台","lat":36.0878,"lon":138.72459,"pref":"群馬","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:14285913289","name":"龍神村 奥・小又川バンガロー","lat":33.95318,"lon":135.57471,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285920934","name":"近露オートキャンプ場","lat":33.81882,"lon":135.61178,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287522827","name":"Sam's camp","lat":33.79897,"lon":135.52621,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287522830","name":"熊野の郷古道ケ丘","lat":33.7852,"lon":135.50859,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0739-64-1640"},
+{"id":"osm:node:14287528330","name":"小又川キャンプガーデン","lat":33.94623,"lon":135.5713,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287563771","name":"森林公園丹生ヤマセミの郷","lat":33.90239,"lon":135.57975,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0739-78-2616"},
+{"id":"osm:way:1244071326","name":"アイリスパーク","lat":33.82072,"lon":135.61266,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://irispark.jp","note":"キャンプ・野外","g":"local","k":"camp"}
+]

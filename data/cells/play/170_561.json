@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:249335084","name":"ふれあい公園","lat":42.50638,"lon":140.3717,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:595526224","name":"歌才ブナ林駐車公園","lat":42.6598,"lon":140.31883,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:726582642","name":"山村広場","lat":42.65676,"lon":140.30434,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:762132166","name":"みなみ児童公園","lat":42.50726,"lon":140.36879,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:726582636","name":"町営野球場","lat":42.65594,"lon":140.30579,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:464397303","name":"かに源","lat":44.01958,"lon":144.24814,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:409245722","name":"番外地食堂かにや","lat":44.01356,"lon":144.2347,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:473818015","name":"炉ばた","lat":44.11607,"lon":144.06795,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:473818070","name":"焼肉ところ","lat":44.12224,"lon":144.06985,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:473818082","name":"松すし","lat":44.12127,"lon":144.07086,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:473818350","name":"鮨の安さん","lat":44.12246,"lon":144.07108,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:473845130","name":"レストハウスところ","lat":44.11989,"lon":144.05463,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant","kana":"れすとはうすところ","tel":"+81 152 54 2339"},
+{"id":"osm:way:473845331","name":"たべものや","lat":44.12144,"lon":144.05293,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:473818386","name":"しゃべりたい","lat":44.12265,"lon":144.07411,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:473845626","name":"せぞん","lat":44.11708,"lon":144.06485,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

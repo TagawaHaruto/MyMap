@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4564984590","name":"Mikoto Sports","lat":38.65299,"lon":141.28133,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4583706894","name":"戸村輪業商会","lat":38.51477,"lon":141.31202,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","tel":"+81 225 62 3147"},
+{"id":"osm:node:6979152500","name":"マルカノー釣具","lat":38.6885,"lon":141.4371,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"https://www.marukano.website/","note":"釣具","g":"hobby","k":"hobby","oh":"Mo-Fr 08:00-19:00; Sa-Su,PH 04:00-19:00","tel":"+81 226 46 3421"},
+{"id":"osm:node:8377446919","name":"秋山自転車店","lat":38.72685,"lon":141.27145,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:8447572317","name":"つり具のおおとり","lat":38.5452,"lon":141.2664,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8451526425","name":"佐藤モータース","lat":38.54796,"lon":141.40874,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8639331720","name":"diving service グラントスカルピン南三陸","lat":38.68385,"lon":141.45125,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8670166119","name":"佐藤輪業商会","lat":38.7017,"lon":141.40487,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"さとうりんぎょうしょうかい","tel":"+81 226 46 3447"},
+{"id":"osm:node:13363625740","name":"クラフトショップ もくもくハウス","lat":38.61986,"lon":141.32496,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby","tel":"+81 225 69 2341"}
+]

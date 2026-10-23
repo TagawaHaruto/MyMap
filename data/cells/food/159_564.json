@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4712686625","name":"炭火焼BBQレストラン","lat":39.7517,"lon":141.01546,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"11:00-15:00 open \"季節により変動\""},
+{"id":"osm:node:5731882978","name":"レストラン石神の丘","lat":39.9682,"lon":141.2136,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9196809755","name":"奈良屋","lat":39.96983,"lon":141.22239,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"ならや"},
+{"id":"osm:node:12709185643","name":"山麓館","lat":39.75092,"lon":141.01593,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:13977348180","name":"安曇野巣子店","lat":39.77051,"lon":141.13074,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:14072074809","name":"そば真","lat":39.76826,"lon":141.10446,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant","tel":"+81-19-688-7900"},
+{"id":"osm:node:14221214148","name":"中華そば なると","lat":39.77075,"lon":141.10609,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:559112023","name":"牧場館","lat":39.75127,"lon":141.01948,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:637193430","name":"又三郎","lat":39.75374,"lon":141.16357,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:637713832","name":"すし太郎","lat":39.75333,"lon":141.16511,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:637713854","name":"太助寿し","lat":39.7508,"lon":141.16565,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:767839235","name":"宝介","lat":39.93543,"lon":141.09534,"pref":"岩手","genres":["food"],"indoor":true,"url":"https://www.collagekids.nl/dim7jyoukamachicomiwate/","note":"和食","g":"food","k":"restaurant","kana":"ほすけ","oh":"Mo,We-Sa 11:00-23:00; Tu 11:00-15:00; Su 11:00-22:00","tel":"+81 195-74-2132"},
+{"id":"osm:way:998623424","name":"官兵衛","lat":39.96656,"lon":141.22036,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1527203448","name":"焼肉ハウスOK牧場","lat":39.85778,"lon":141.10914,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:14069917576","name":"ぱとら","lat":39.75886,"lon":141.10084,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"11:30-16:00","tel":"+81-19-687-1057"},
+{"id":"osm:way:559112008","name":"星と自然観","lat":39.75286,"lon":141.02246,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:584810237","name":"軽食コーナー","lat":39.75097,"lon":141.01812,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:584810240","name":"ミルク館","lat":39.75206,"lon":141.01585,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1037153829","name":"サイロ喫茶","lat":39.75174,"lon":141.01953,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1189078660","name":"松葉屋","lat":39.97588,"lon":141.22287,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13977348179","name":"すき家","lat":39.77125,"lon":141.13014,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true}
+]

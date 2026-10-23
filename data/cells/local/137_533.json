@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4937820922","name":"仙酔島感謝の塩工房","lat":34.38025,"lon":133.39536,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6937129826","name":"おみやげ街道福山","lat":34.48942,"lon":133.36272,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11448987615","name":"阿藻珍味","lat":34.4428,"lon":133.25912,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11449022318","name":"虎屋","lat":34.44663,"lon":133.25913,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12353309060","name":"福山城内お土産処","lat":34.49097,"lon":133.36126,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:00-17:00"},
+{"id":"osm:node:13351145853","name":"阿藻珍味","lat":34.4892,"lon":133.36214,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"https://amochinmi.co.jp/shop/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-84-925-5394"},
+{"id":"osm:node:13495925828","name":"サンリオ","lat":34.48757,"lon":133.36374,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13495925830","name":"福寿園","lat":34.48745,"lon":133.36389,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:425913271","name":"せと鮮魚店","lat":34.47107,"lon":133.31681,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:307441260","name":"広島県東部花き地方卸売市場","lat":34.47292,"lon":133.30917,"pref":"広島","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:390577558","name":"福山地方卸売市場","lat":34.49545,"lon":133.40196,"pref":"広島","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:12594351240","name":"松永コミュニティセンター","lat":34.44769,"lon":133.25972,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13495925803","name":"キャッスルボウル福山","lat":34.48837,"lon":133.38814,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13513691659","name":"SWING24/7","lat":34.49858,"lon":133.3985,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://swing24-fukuyama-zaou.com/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81-84-982-7101"},
+{"id":"osm:way:60720769","name":"JFE瀬戸内海ゴルフ倶楽部 (JFE Setonaikai Golf Club)","lat":34.47582,"lon":133.46983,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:JFE瀬戸内海ゴルフ倶楽部"},
+{"id":"osm:way:60720948","name":"松永カントリークラブ (Matsunaga Country Club)","lat":34.47976,"lon":133.26292,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:305101173","name":"瀬戸ゴルフ","lat":34.4564,"lon":133.32568,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:674079931","name":"松永ベイボウル","lat":34.44179,"lon":133.26084,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1537846430","name":"ベラビスタマリーナ","lat":34.39111,"lon":133.28508,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287485125","name":"Island Camp 百島","lat":34.38208,"lon":133.2624,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://momoshima-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0848-38-9176"},
+{"id":"osm:node:14287489769","name":"ファミリーパークキャンプ場","lat":34.42377,"lon":133.3746,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"084-926-2649"}
+]

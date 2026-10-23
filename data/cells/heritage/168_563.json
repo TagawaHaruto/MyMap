@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2416379059","name":"旧大沼第二発電所","lat":42.03386,"lon":140.77412,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5660250170","name":"旧大沼第三発電所","lat":42.03264,"lon":140.81675,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5670146554","name":"旧大沼第二発電所","lat":42.03195,"lon":140.75056,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5827262930","name":"歌碑","lat":42.02891,"lon":140.83074,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2080203758","name":"旅館 こにし","lat":42.03383,"lon":140.82077,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2080203759","name":"旅館 倉敷","lat":42.03144,"lon":140.82124,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2080203779","name":"温泉旅館 鹿の湯","lat":42.0305,"lon":140.82556,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"おんせんりょかんしかのゆ"},
+{"id":"osm:node:2080203780","name":"鹿部ロイヤルホテル","lat":42.07223,"lon":140.77195,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.daiwaresort.jp/shikabe/","note":"宿","g":"heritage","k":"lodging","tel":"+81 1372 7 3201"}
+]

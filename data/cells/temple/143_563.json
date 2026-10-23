@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:1917054899","name":"圓養院","lat":35.75721,"lon":140.77293,"pref":"千葉","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3331986774","name":"王国会館　神栖市波崎会衆","lat":35.78967,"lon":140.76766,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:754182342","name":"大鳥神社","lat":35.78913,"lon":140.75452,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:760138264","name":"厳島神社","lat":35.77574,"lon":140.77592,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:807425143","name":"金比羅神社","lat":35.83883,"lon":140.75781,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1112637271","name":"益田神社","lat":35.76909,"lon":140.80391,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1112640412","name":"日乃本八幡神社","lat":35.77002,"lon":140.80389,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1174504372","name":"稲荷神社","lat":35.81592,"lon":140.76668,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

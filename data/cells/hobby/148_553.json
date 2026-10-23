@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:562733725","name":"オフハウス","lat":37.15369,"lon":138.25464,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:562733743","name":"蔦屋書店 上越インター店","lat":37.15242,"lon":138.25435,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:562741331","name":"セカンドストリート","lat":37.14804,"lon":138.25913,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1266672259","name":"スポーツデポ","lat":37.15784,"lon":138.25702,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

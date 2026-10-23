@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:3191084007","name":"日本海鮮魚センター 新井店","lat":37.02738,"lon":138.22697,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"http://www.nfcnet.co.jp/shopping/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5759771730","name":"おみやげコーナー","lat":37.1136,"lon":138.00385,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5765887041","name":"磯貝鮮魚店","lat":37.11325,"lon":138.0031,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"https://ichiyama-isogaisengyo.com","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 08:00-17:30","tel":"+81 255664953"},
+{"id":"osm:node:5830866044","name":"さかなや魚勢","lat":37.16236,"lon":138.21704,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13228905005","name":"食彩鮮魚市場","lat":37.16339,"lon":138.08688,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14134174004","name":"フィールド妙高","lat":37.02542,"lon":138.22841,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:560510242","name":"上越レジャーランボウル","lat":37.16401,"lon":138.24899,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13751797649","name":"荒崎キャンプ場","lat":37.11315,"lon":138.00762,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://www.itoigawa-kanko.net/camp/arasaki_campsite/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14282136757","name":"KOMEKOME FIELD","lat":37.09393,"lon":138.02474,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-520-9772"},
+{"id":"osm:node:14286479033","name":"DelMare","lat":37.16548,"lon":138.20721,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://www.niigata-glamping.com/camp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286482365","name":"南葉高原キャンプ場","lat":37.07153,"lon":138.20001,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-524-9046"},
+{"id":"osm:node:14287673703","name":"ごちキャンプ場","lat":37.16452,"lon":138.21044,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://gochi-camp.com","note":"キャンプ・野外","g":"local","k":"camp"}
+]

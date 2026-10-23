@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11214231050","name":"千歳八幡神社","lat":40.89124,"lon":141.2733,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12691210393","name":"戸鎖八幡神宮","lat":40.93536,"lon":141.29922,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:601310490","name":"千歳平神社本堂","lat":40.88951,"lon":141.28735,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

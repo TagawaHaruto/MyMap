@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:425872694","name":"ふくろうの里 虹ヶ丘公園 パークゴルフ場","lat":43.46263,"lon":144.67476,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14289691265","name":"多和平キャンプ場","lat":43.43615,"lon":144.58883,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"015-486-2806"},
+{"id":"osm:node:14289691266","name":"グリーンヒル多和キャンプ場","lat":43.43591,"lon":144.5896,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"015-486-2806"},
+{"id":"osm:way:290669091","name":"虹別オートキャンプ場","lat":43.45888,"lon":144.6935,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"にじべつあうと"}
+]

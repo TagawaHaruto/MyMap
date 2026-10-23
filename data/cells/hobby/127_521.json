@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3044338524","name":"TSUTAYA","lat":31.81104,"lon":130.3081,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:5466004392","name":"ヒマラヤスポーツ&ゴルフ 薩摩川内店","lat":31.8288,"lon":130.30718,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5466004393","name":"GEO","lat":31.82909,"lon":130.30685,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:568039616","name":"ブックオフ","lat":31.83617,"lon":130.28858,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

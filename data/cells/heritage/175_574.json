@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5714228075","name":"八方台の由来","lat":43.75863,"lon":143.60468,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5923683544","name":"慰霊之碑","lat":43.98258,"lon":143.70498,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7598056279","name":"金華小学校跡","lat":43.80389,"lon":143.56845,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7598056280","name":"常紋トンネル工事殉難者追悼碑","lat":43.80389,"lon":143.56829,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7598081365","name":"上金華小学校跡","lat":43.81468,"lon":143.5208,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9891516876","name":"殉職者の碑","lat":43.87874,"lon":143.71991,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9895416339","name":"生野駅跡地","lat":43.96022,"lon":143.53305,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11307159869","name":"常紋信号場","lat":43.83648,"lon":143.54739,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5160508442","name":"シピリカ","lat":43.75171,"lon":143.50414,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:480648310","name":"北見温泉ポンユ三光荘","lat":43.78683,"lon":143.64167,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:481071534","name":"旅館ルベシベ荘","lat":43.78121,"lon":143.62516,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://rubeshibesou.com/","note":"宿","g":"heritage","k":"lodging","kana":"りょかんるべしべそう"},
+{"id":"osm:way:570790153","name":"キララン清里","lat":43.86003,"lon":143.50744,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:650663966","name":"温根湯ホテル","lat":43.75986,"lon":143.50706,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.onneyu-hotel.jp/","note":"宿","g":"heritage","k":"lodging","kana":"おんねゆほてる","tel":"+81 157 45 2211"},
+{"id":"osm:way:650663975","name":"大江本家","lat":43.75982,"lon":143.5093,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://oehonke.com/","note":"宿","g":"heritage","k":"lodging","kana":"おおえほんけ","tel":"+81 157 45 2511","pk":2}
+]

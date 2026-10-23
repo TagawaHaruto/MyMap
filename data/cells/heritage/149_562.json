@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:14286401027","name":"ホップガーデンロッジ","lat":37.4328,"lon":140.72657,"pref":"福島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"022-397-8735"},
+{"id":"osm:way:1197584373","name":"桃源舎","lat":37.39279,"lon":140.56291,"pref":"福島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1378289857","name":"旅館西田屋支店","lat":37.27564,"lon":140.63579,"pref":"福島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

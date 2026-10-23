@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4741215630","name":"ホテルラビ","lat":37.96583,"lon":140.61614,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 224 26 1858"},
+{"id":"osm:node:5114987231","name":"旅館しんゆ","lat":37.99067,"lon":140.56648,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"りょかんしんゆ","tel":"+81 224 29 2321"},
+{"id":"osm:node:5114990122","name":"河鹿荘","lat":37.9821,"lon":140.56213,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かじかそ","tel":"+81 224 29 2226"},
+{"id":"osm:node:5466288954","name":"ベネシアンホテル白石蔵王","lat":37.99639,"lon":140.63343,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://venezian.jp","note":"宿","g":"heritage","k":"lodging","tel":"+81 224 25 3111"},
+{"id":"osm:node:8242290022","name":"白石湯沢温泉 やくせん","lat":37.93983,"lon":140.52299,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://yakusen.jp","note":"宿","g":"heritage","k":"lodging","kana":"やくせん","tel":"+81 224 29 2620"},
+{"id":"osm:node:14099416317","name":"国見STAY 風道","lat":37.87301,"lon":140.54712,"pref":"福島","genres":["lodging"],"indoor":true,"url":"https://www.michinoeki923.com/stay/","note":"宿","g":"heritage","k":"lodging","tel":"+81 24 585 2132"}
+]

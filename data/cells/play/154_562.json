@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:13765468913","name":"Yakurai Garden","lat":38.57373,"lon":140.71915,"pref":"宮城","genres":["play"],"indoor":false,"url":"https://www.yakurai-garden.com/","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1172955960","name":"鳴子公園","lat":38.73632,"lon":140.69831,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1173833711","name":"江合川緑地公園","lat":38.74218,"lon":140.71314,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1174222942","name":"鳴子江合川河川公園","lat":38.74196,"lon":140.74261,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1008816678","name":"陶芸の里スポーツ公園野球場","lat":38.61443,"lon":140.74629,"pref":"宮城","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1008816679","name":"陶芸の里スポーツ公園陸上競技場","lat":38.61384,"lon":140.74853,"pref":"宮城","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1008816680","name":"陶芸の里スポーツ公園加美町総合体育館","lat":38.61285,"lon":140.74794,"pref":"宮城","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

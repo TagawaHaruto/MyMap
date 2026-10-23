@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5344842222","name":"新垣食堂","lat":24.5104,"lon":124.28334,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5344876222","name":"明石食堂","lat":24.53949,"lon":124.30021,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5665696297","name":"beef burger","lat":24.5573,"lon":124.28743,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant"}
+]

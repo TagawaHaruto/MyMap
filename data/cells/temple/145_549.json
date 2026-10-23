@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5850926098","name":"白山神社","lat":36.31869,"lon":137.26582,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5851462616","name":"津島神社","lat":36.29634,"lon":137.25293,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5851462617","name":"安養寺","lat":36.29544,"lon":137.25328,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5851926245","name":"大津神社","lat":36.3346,"lon":137.29427,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6436452074","name":"東町白山神社","lat":36.33523,"lon":137.30129,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

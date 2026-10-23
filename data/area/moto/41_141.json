@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:11224911262","name":"道の駅よこはま　菜の花プラザ","lat":41.08376,"lon":141.25691,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:11224956478","name":"トラベルプラザ　サンシャイン","lat":41.12432,"lon":141.25968,"type":"SA・PA","k":"rest_area","likely":true,"oh":"08:30-18:00"},
+{"id":"osm:node:13132993649","name":"陸奥横浜休憩所","lat":41.08659,"lon":141.24957,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:13132993650","name":"JR陸奥横浜駅　駅舎","lat":41.08615,"lon":141.24958,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:13132993659","name":"駅舎内イベントスペース","lat":41.08622,"lon":141.24957,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433827939","name":"道の駅よこはま 菜の花プラザ","lat":41.0837,"lon":141.25723,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433827941","name":"道の駅よこはま","lat":41.08376,"lon":141.25704,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:456807022","name":"道の駅なとわ・えさん","lat":41.77953,"lon":141.10153,"type":"SA・PA","k":"rest_area","likely":true}
+]

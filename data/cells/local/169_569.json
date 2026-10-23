@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:10555829912","name":"ギフト館 よこの","lat":42.33886,"lon":142.36508,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ぎふとかん よこの","oh":"Mo-Sa 10:00-19:00; Su,PH 10:00-18:00","tel":"+81 146-42-6002"},
+{"id":"osm:way:592218967","name":"山田鮮魚店","lat":42.33601,"lon":142.36678,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"やまだせんぎょてん","tel":"+81-146-42-4010"},
+{"id":"osm:way:838577081","name":"池田水産","lat":42.2718,"lon":142.48441,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:840566077","name":"中井水産","lat":42.34176,"lon":142.34394,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-146-42-3179"},
+{"id":"osm:way:1066835985","name":"日高軽種馬農業協同組合 北海道市場","lat":42.35101,"lon":142.38592,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"https://www.hba.or.jp/","note":"市場","g":"local","k":"market","wp":"ja:日高軽種馬農業協同組合","kana":"ひだか けいしゅば のうぎょう きょうどうくみあい ほっかいどうしじょう"},
+{"id":"osm:way:1084625440","name":"丸静 魚菜卸売市場","lat":42.34425,"lon":142.36952,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","tel":"+81-146-42-1721"},
+{"id":"osm:way:592218575","name":"静内温水プール","lat":42.33547,"lon":142.36361,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"しずないおんすいぷーる","tel":"+81 146-42-6322","pk":2},
+{"id":"osm:way:719053952","name":"町民スポーツセンター","lat":42.36399,"lon":142.31019,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1163784618","name":"静内川右岸緑地公園 パークゴルフ場","lat":42.34486,"lon":142.3843,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1219653441","name":"ライディングヒルズ静内","lat":42.33089,"lon":142.37798,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.shinhidaka-hokkaido.jp/hotnews/category/181.html","note":"遊び・スポーツ","g":"local","k":"activity","kana":"らいでぃんぐひるずしずない","oh":"10:00-16:30; Mo off; Dec 31-Jan 06 off","tel":"+81-146-42-1131"},
+{"id":"osm:way:1227512866","name":"西泊津ヒルズパーク  パークゴルフ場","lat":42.35649,"lon":142.3322,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.niikappu.jp/sangyo/kanko/asobu/golf.html","note":"遊び・スポーツ","g":"local","k":"activity","kana":"にしはくつひるずぱーく ぱーくごるふじょう"},
+{"id":"osm:way:1227512867","name":"にいかっぷホロシリ乗馬クラブ","lat":42.35709,"lon":142.33328,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://horoshiri.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"にいかっぷほろしりじょうばくらぶ","tel":"+81-146-47-3351"},
+{"id":"osm:way:1382239831","name":"静内ゴルフガーデン","lat":42.33428,"lon":142.38246,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.tayu-group.jp/golf.html","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81-146-42-7190","pk":2},
+{"id":"osm:node:9096841572","name":"判官館 森林公園キャンプ場","lat":42.37054,"lon":142.3039,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10672225488","name":"緑のふるさと 温泉の森キャンプ場","lat":42.3236,"lon":142.42835,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.shizunai-onsen.jp/camp.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0146-44-2111"},
+{"id":"osm:node:14284414829","name":"グランピングガーデン日高 鹿の郷","lat":42.30828,"lon":142.45567,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0146442886"}
+]

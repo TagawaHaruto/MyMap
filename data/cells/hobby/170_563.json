@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3079994922","name":"Takayanagi","lat":42.56487,"lon":140.81807,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:3079994932","name":"こばやしマリン","lat":42.54488,"lon":140.76789,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3080036748","name":"Book Stationery","lat":42.55013,"lon":140.764,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:826360939","name":"宮田書店","lat":42.55067,"lon":140.76135,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

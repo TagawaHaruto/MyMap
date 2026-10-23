@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:9718680308","name":"南レク馬瀬山公園","lat":32.95045,"lon":132.54992,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13512418185","name":"南レク城辺公園","lat":32.95298,"lon":132.5844,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:389367888","name":"雲ヶ辻公園","lat":32.79948,"lon":132.63097,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:552953320","name":"海風公園","lat":32.9248,"lon":132.70431,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:905449639","name":"南レク御荘公園","lat":32.96434,"lon":132.55177,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:905877893","name":"大森山公園","lat":32.95182,"lon":132.58202,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1011842220","name":"咸陽島公園","lat":32.91613,"lon":132.68848,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1058275710","name":"南レク馬瀬山公園","lat":32.95119,"lon":132.54805,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1120875023","name":"元気盛森公園","lat":32.91701,"lon":132.6897,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1526050471","name":"三浦街区公園","lat":32.93575,"lon":132.72879,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:492223420","name":"補助グラウンド","lat":32.92813,"lon":132.69351,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:492223426","name":"宿毛市野球場","lat":32.92863,"lon":132.69261,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","wp":"ja:宿毛市野球場"},
+{"id":"osm:way:501977793","name":"愛南町あけぼのグラウンド","lat":32.96665,"lon":132.6582,"pref":"愛媛","genres":["outdoor","play"],"indoor":false,"url":"http://www.ua-sports.jp/shisetsu/no16.html","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:553649303","name":"スポーツクラブすくも","lat":32.92864,"lon":132.70152,"pref":"高知","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:way:1042168027","name":"南宇和高校第二グラウンド","lat":32.96029,"lon":132.56873,"pref":"愛媛","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

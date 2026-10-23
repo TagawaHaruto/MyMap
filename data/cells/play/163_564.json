@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:7826015637","name":"清水川遊園地","lat":40.92748,"lon":141.01406,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12094351286","name":"八戸町森林公園","lat":40.78865,"lon":141.0738,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:547384065","name":"みどりの大地とロマンの森公園","lat":40.78404,"lon":141.20481,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704231940","name":"常夜燈公園","lat":40.87192,"lon":141.11876,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704231945","name":"野辺地潮騒公園","lat":40.87229,"lon":141.11401,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704231967","name":"野辺地海浜公園","lat":40.87505,"lon":141.13615,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704232588","name":"愛宕公園","lat":40.86167,"lon":141.13401,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704233761","name":"馬門児童公園","lat":40.87649,"lon":141.0965,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704233777","name":"野辺地町運動公園","lat":40.85662,"lon":141.10444,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:799348452","name":"北総合運動公園","lat":40.77732,"lon":141.23746,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1211724078","name":"千曳農村公園","lat":40.81149,"lon":141.13206,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5965562060","name":"歌津小太郎","lat":38.71989,"lon":141.53137,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5965562061","name":"南三陸直売所　みなさん館","lat":38.72026,"lon":141.53177,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8452007119","name":"マルホ生出商店","lat":38.53269,"lon":141.50761,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1222691013","name":"平成の森","lat":38.71977,"lon":141.53535,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0226-36-3115"},
+{"id":"osm:way:481556878","name":"神割崎キャンプ場","lat":38.63499,"lon":141.52758,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wp":"ja:神割崎キャンプ場"}
+]

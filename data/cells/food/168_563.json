@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:2080203703","name":"かもめ","lat":42.0293,"lon":140.82965,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"かもめ"},
+{"id":"osm:node:2080203704","name":"さすが家","lat":42.02837,"lon":140.8319,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"さすがや"},
+{"id":"osm:node:2080203708","name":"やぶ政","lat":42.03101,"lon":140.82512,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2080203741","name":"ラーメン未来亭","lat":42.0407,"lon":140.81453,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2080203751","name":"大寿し","lat":42.03269,"lon":140.82189,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:2080203755","name":"太田食堂","lat":42.03071,"lon":140.8241,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:2080203773","name":"菊水食堂","lat":42.03065,"lon":140.82426,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2080203777","name":"食事処 いぎし","lat":42.05715,"lon":140.80045,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2080203778","name":"食事処 遊（ゆとり）","lat":42.05784,"lon":140.80019,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:5774706144","name":"浜のかあさん","lat":42.02863,"lon":140.83071,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5774706146","name":"しかべの魚屋","lat":42.02858,"lon":140.83067,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2080203706","name":"たこ焼き まいど","lat":42.03287,"lon":140.82122,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:2080203750","name":"夢紀行","lat":42.06808,"lon":140.78976,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:1337348742","name":"ムックル","lat":42.06942,"lon":140.78431,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1007214244","name":"Sun Day Shoebill(サンデーシュービル)","lat":42.0716,"lon":140.77622,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

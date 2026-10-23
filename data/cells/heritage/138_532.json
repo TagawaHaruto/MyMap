@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:9103354450","name":"権現第９号古墳","lat":34.59707,"lon":133.2464,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354494","name":"向田古墳","lat":34.59601,"lon":133.24899,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354495","name":"権現第13号古墳","lat":34.59911,"lon":133.24959,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354498","name":"権現第12号古墳","lat":34.5987,"lon":133.24897,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354499","name":"権現第3号古墳","lat":34.59836,"lon":133.24939,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354500","name":"権現第2号古墳","lat":34.59776,"lon":133.24949,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354501","name":"権現第4号古墳","lat":34.59758,"lon":133.24822,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354502","name":"権現第7号古墳","lat":34.59788,"lon":133.24734,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354503","name":"権現第6号古墳","lat":34.59783,"lon":133.24766,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354504","name":"権現第8号古墳","lat":34.59745,"lon":133.24771,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354505","name":"権現第5号古墳","lat":34.59746,"lon":133.24797,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354506","name":"権現第10号古墳","lat":34.59717,"lon":133.24556,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354507","name":"権現第11号古墳","lat":34.59735,"lon":133.24497,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9103354508","name":"芋平遺跡","lat":34.59666,"lon":133.24607,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11685858178","name":"忠霊塔","lat":34.58056,"lon":133.23133,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:relation:9605066","name":"天然温泉尾道ふれあいの里","lat":34.51309,"lon":133.1293,"pref":"広島","genres":["lodging"],"indoor":true,"url":"https://onomichi-radon-onsen.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 848 77 0177"}
+]

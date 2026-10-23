@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6340477553","name":"舞鶴自然文化園","lat":35.53748,"lon":135.39618,"pref":"京都","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:559771484","name":"舞鶴親海公園","lat":35.51435,"lon":135.34409,"pref":"京都","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:559784355","name":"引揚記念公園","lat":35.50976,"lon":135.39588,"pref":"京都","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:956558133","name":"伊根浦公園","lat":35.67573,"lon":135.28766,"pref":"京都","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1112831703","name":"舟屋の里公園","lat":35.67551,"lon":135.2921,"pref":"京都","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ふなや の さと こうえん"},
+{"id":"osm:way:1135571811","name":"由良オリーブもみじ公園","lat":35.50294,"lon":135.28266,"pref":"京都","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1156794863","name":"空山展望台公園","lat":35.55118,"lon":135.42359,"pref":"京都","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

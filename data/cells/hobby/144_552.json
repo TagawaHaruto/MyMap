@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2771475191","name":"モンベル","lat":36.00435,"lon":138.12858,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","wp":"ja:モンベル","oh":"Mo-Su 10:00-21:00","tel":"0266-71-1577"},
+{"id":"osm:node:4511673689","name":"ブックオフ","lat":36.01154,"lon":138.17403,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6255133688","name":"ブックオフ","lat":36.06302,"lon":138.06182,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8006822565","name":"PLUM Shop","lat":36.00966,"lon":138.13963,"pref":"長野","genres":["shopping"],"indoor":true,"url":"https://www.pmoa.co.jp/","note":"ホビー・模型","g":"hobby","k":"hobby","tel":"0266-78-6466"},
+{"id":"osm:node:8907537913","name":"釣具の上州屋","lat":36.06604,"lon":138.0725,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","tel":"+81-266-27-3400"},
+{"id":"osm:node:12323607073","name":"Hygge","lat":36.10492,"lon":138.23997,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12468503586","name":"笠原書店","lat":36.06481,"lon":138.05238,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12948711707","name":"平安堂","lat":36.01358,"lon":138.12759,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:274786457","name":"アルペン","lat":36.00342,"lon":138.13033,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","wp":"ja:アルペン (企業)","oh":"Mo-Su 10:00-20:00","tel":"0266-82-2112"}
+]

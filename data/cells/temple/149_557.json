@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:720452962","name":"三石神社 縁結び石","lat":37.3494,"lon":139.30939,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:859533627","name":"地蔵尊","lat":37.34946,"lon":139.31909,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:859644359","name":"冨士神社","lat":37.27656,"lon":139.46197,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:859766607","name":"若宮八幡神社","lat":37.33598,"lon":139.30505,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:859813670","name":"弘法大師 薬師如来 子安地蔵","lat":37.32251,"lon":139.29471,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:862181619","name":"只見キリスト教会","lat":37.34241,"lon":139.30979,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:1429602895","name":"泪石","lat":37.34898,"lon":139.3093,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1429602901","name":"一の岩","lat":37.34899,"lon":139.30962,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3078075574","name":"鮭立の磨崖仏","lat":37.36441,"lon":139.44452,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:10845616756","name":"見取神社","lat":37.32077,"lon":139.28883,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:198706804","name":"龍巌山長福寺(chofukuji)","lat":37.34226,"lon":139.30818,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:198706862","name":"滝神社","lat":37.35061,"lon":139.31374,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:232449002","name":"若宮八幡神社","lat":37.31232,"lon":139.28312,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:384461708","name":"龍泉寺","lat":37.34219,"lon":139.47829,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:384461759","name":"若宮神社","lat":37.34047,"lon":139.48352,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

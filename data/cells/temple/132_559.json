@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4352573477","name":"浅間神社","lat":33.14093,"lon":139.76477,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4436333167","name":"八幡神社","lat":33.10837,"lon":139.80259,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4437101561","name":"三島神社(樫立）","lat":33.07387,"lon":139.79028,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:561260153","name":"天照皇大神宮","lat":33.121,"lon":139.80288,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:561260154","name":"天照皇大神宮","lat":33.1107,"lon":139.79152,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:561263948","name":"優婆夷宝明神社","lat":33.09969,"lon":139.78074,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"うばいほうめいじんじゃ"}
+]

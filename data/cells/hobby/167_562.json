@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:2518699570","name":"つり具天狗屋","lat":41.82075,"lon":140.69217,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2518990366","name":"Eikodo","lat":41.81944,"lon":140.6986,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2666356073","name":"スポーツデポ函館梁川店","lat":41.78992,"lon":140.74588,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","wc":"no"},
+{"id":"osm:node:2668135622","name":"スーパースポーツゼビオ","lat":41.81817,"lon":140.74108,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5688040527","name":"畑中文武堂","lat":41.77743,"lon":140.73418,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8336739761","name":"釣具の二番","lat":41.79311,"lon":140.73256,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:11322949472","name":"トイザらス","lat":41.82479,"lon":140.73721,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:11909649550","name":"Chill nova","lat":41.77165,"lon":140.73172,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:12941994001","name":"BOOKOFF 函館昭和店","lat":41.8199,"lon":140.74296,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/shop/shop20303.html","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-21:00"},
+{"id":"osm:node:13784537828","name":"文教堂函館昭和店","lat":41.81893,"lon":140.74234,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:261020586","name":"ブックマーケット函館美原店","lat":41.82229,"lon":140.74101,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","wc":"yes"},
+{"id":"osm:way:261021005","name":"函館 蔦屋書店","lat":41.83066,"lon":140.73568,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"07:00-01:00","wc":"yes"},
+{"id":"osm:way:261176763","name":"カクタ商会","lat":41.77947,"lon":140.73624,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","kana":"かくたしょかい","tel":"+81 138 41 8444"},
+{"id":"osm:way:585465726","name":"岩崎自転車商会","lat":41.76928,"lon":140.72982,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

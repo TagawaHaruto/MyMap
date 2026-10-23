@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:5470097657","name":"想影公園","lat":36.81961,"lon":137.57653,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5485254099","name":"Hakanoki Natural Park 墓ノ木自然公園","lat":36.87077,"lon":137.54155,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5903409979","name":"棚山ファミリーランド","lat":36.88619,"lon":137.57041,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:542810805","name":"沼の保公園","lat":36.95334,"lon":137.56423,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:543329491","name":"Unazuki Park 宇奈月公園","lat":36.81791,"lon":137.58067,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:564375567","name":"入善町中央公園","lat":36.92199,"lon":137.50559,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:568591490","name":"音沢親水公園","lat":36.8352,"lon":137.56632,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:592280210","name":"ふれあい農村公園","lat":36.87284,"lon":137.50279,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:633848232","name":"うちやま公園","lat":36.85068,"lon":137.5585,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:679395017","name":"Kagetsu Park 花月公園","lat":36.93784,"lon":137.50274,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:705883598","name":"舟見山自然公園（舟見城址）","lat":36.88218,"lon":137.55952,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:705884185","name":"遊びの広場","lat":36.88161,"lon":137.56018,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1046969657","name":"栃屋農村公園","lat":36.86494,"lon":137.50113,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1093744023","name":"東山公園","lat":36.86251,"lon":137.52759,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5485193260","name":"Nakanokuchi Ryokuchi Park 中ノ口緑地公園","lat":36.86931,"lon":137.54536,"pref":"富山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:11563605385","name":"わくわくドーム","lat":36.92359,"lon":137.506,"pref":"富山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:541593537","name":"Baseball Field 町営小丸山グラウンド","lat":36.95848,"lon":137.57302,"pref":"富山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:542904902","name":"Ogawaonsen Golf Center 小川ゴルフセンター","lat":36.9574,"lon":137.57302,"pref":"富山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

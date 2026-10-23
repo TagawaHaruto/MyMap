@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:13800492459","name":"縄文の女神","lat":38.69128,"lon":140.3129,"pref":"山形","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5050130728","name":"加登屋旅館","lat":38.6063,"lon":140.4051,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かとやりょかん","tel":"+81 237 22 0020"},
+{"id":"osm:node:5050137330","name":"ビジネスホテルおもたか","lat":38.60569,"lon":140.40401,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 237 23 3050"},
+{"id":"osm:node:5050434345","name":"Friendly Apartments","lat":38.60142,"lon":140.40985,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5050453041","name":"ビジネスホテルすがはら","lat":38.60349,"lon":140.40001,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 237 22 0639"},
+{"id":"osm:node:5052752022","name":"伊藤屋旅館 舟形駅前","lat":38.6918,"lon":140.31707,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"いとやりょかん","tel":"+81 233 32 2255"},
+{"id":"osm:node:5057859727","name":"雪国旅荘","lat":38.51833,"lon":140.38889,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 237 55 5145"},
+{"id":"osm:way:526671668","name":"あいかも会館 ゆざ温泉","lat":38.52623,"lon":140.37694,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

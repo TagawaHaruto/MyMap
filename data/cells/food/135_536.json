@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2617207549","name":"山の家　奥槍戸","lat":33.83431,"lon":134.08674,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4470896289","name":"こやだいら観光ステーション れいわ","lat":33.9314,"lon":134.20616,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11327988131","name":"まつうら","lat":33.86811,"lon":134.08945,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"まつうら"},
+{"id":"osm:way:312529228","name":"丸石パークランド","lat":33.85404,"lon":134.04471,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 883 88 2768"},
+{"id":"osm:way:313338350","name":"一家屋","lat":33.77118,"lon":134.19666,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:708241045","name":"おお峰食堂","lat":33.94261,"lon":134.22705,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1095559314","name":"山の家 奥槍戸","lat":33.83427,"lon":134.08669,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1430518274","name":"高ノ瀬渓レストハウス 平の里","lat":33.77827,"lon":134.08387,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

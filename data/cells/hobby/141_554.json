@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5085316754","name":"スポーツデポ","lat":35.48973,"lon":138.74166,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5085316755","name":"GOLF5","lat":35.49006,"lon":138.74167,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:14115330330","name":"モンベルフレンドショップ　富士山みはらし店","lat":35.39448,"lon":138.73331,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"}
+]

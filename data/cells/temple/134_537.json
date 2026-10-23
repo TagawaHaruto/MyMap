@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:601359579","name":"甲浦八幡宮","lat":33.54729,"lon":134.28771,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11400122769","name":"Meitokuji 明徳寺(東洋大師)","lat":33.51042,"lon":134.27383,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"めいとくじ"},
+{"id":"osm:node:11627123070","name":"熊野神社","lat":33.54773,"lon":134.30057,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11633177676","name":"高良神社","lat":33.54673,"lon":134.28854,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11636162358","name":"妙見宮","lat":33.54525,"lon":134.29468,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11768528003","name":"八坂神社","lat":33.56923,"lon":134.30096,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11860265930","name":"天神社","lat":33.6703,"lon":134.42365,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11869158094","name":"打越寺","lat":33.71636,"lon":134.48498,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:313656068","name":"般若心経塔","lat":33.64809,"lon":134.38526,"pref":"徳島","genres":["temple"],"indoor":false,"url":"http://www.sabadaishihonbou.jp/","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:313656069","name":"護真堂","lat":33.64708,"lon":134.38542,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:313656073","name":"観音洞・不動洞入口","lat":33.64779,"lon":134.38524,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:323167873","name":"大山神社","lat":33.66342,"lon":134.35874,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:324932044","name":"城満寺","lat":33.61152,"lon":134.31689,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:325353264","name":"波切不動尊","lat":33.5964,"lon":134.32502,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1251020231","name":"万福寺","lat":33.54902,"lon":134.29668,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1251527167","name":"琴平神社","lat":33.54313,"lon":134.28902,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1251558718","name":"五社神社","lat":33.54458,"lon":134.29094,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1252821155","name":"西山神社","lat":33.52548,"lon":134.27875,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

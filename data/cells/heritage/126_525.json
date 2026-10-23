@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:1143976898","name":"飫肥城","lat":31.62901,"lon":131.35038,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:飫肥城"},
+{"id":"osm:node:4021797675","name":"飫肥城","lat":31.62756,"lon":131.35182,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","kana":"おびじょ"},
+{"id":"osm:node:4021928241","name":"河野禮三郎顕彰之碑","lat":31.62807,"lon":131.35141,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5919752549","name":"四半的由来","lat":31.62666,"lon":131.35116,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5919877207","name":"小村寿太郎侯","lat":31.62951,"lon":131.35409,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5919877211","name":"小倉處平顕彰之碑","lat":31.62951,"lon":131.35416,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5919877216","name":"振徳堂碑","lat":31.62933,"lon":131.35434,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5919918510","name":"酒谷川の歌","lat":31.63009,"lon":131.36111,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5919599377","name":"ゲストハウス アキ","lat":31.58877,"lon":131.39685,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7092127475","name":"合歓のはな","lat":31.72231,"lon":131.37106,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14111806085","name":"エプロン亭","lat":31.73198,"lon":131.46343,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14287620707","name":"大島アドベンチャーキャビン・コテージ","lat":31.53005,"lon":131.41224,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:11225148316","name":"ウェルネスはらっぱる","lat":41.28291,"lon":141.17667,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:11225159062","name":"大平マリーナ緑地","lat":41.28051,"lon":141.1713,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:11226309005","name":"田名部川河川公園","lat":41.28896,"lon":141.18895,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:547524140","name":"海峡いさりび公園","lat":41.4703,"lon":141.0887,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:547914982","name":"大畑中央公園","lat":41.4107,"lon":141.15997,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:549061466","name":"中島児童公園","lat":41.40588,"lon":141.16935,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:586295011","name":"早掛沼公園","lat":41.31497,"lon":141.22318,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:586958038","name":"金谷公園","lat":41.29516,"lon":141.20046,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:587271819","name":"むつ運動公園","lat":41.29315,"lon":141.17351,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1155370842","name":"宇田児童公園","lat":41.25623,"lon":141.14411,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1155955865","name":"新町児童公園","lat":41.28962,"lon":141.20984,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1155956338","name":"代官山公園","lat":41.29614,"lon":141.21003,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1156002097","name":"文京児童公園","lat":41.28602,"lon":141.16886,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1211717917","name":"むつ市イベント広場","lat":41.29759,"lon":141.21705,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1211718637","name":"柳町児童公園","lat":41.29723,"lon":141.21573,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1211718640","name":"むつ北児童公園","lat":41.2994,"lon":141.21299,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:19589990","name":"水源池公園","lat":41.25879,"lon":141.13883,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"すいげんちこうえん"},
+{"id":"osm:node:11225148318","name":"ウェルネスパーク　克雪ドーム","lat":41.28123,"lon":141.17444,"pref":"青森","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:11225159037","name":"むつマエダアリーナ","lat":41.28144,"lon":141.17292,"pref":"青森","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:11225104978","name":"カラオケ合衆国　むつ店","lat":41.28187,"lon":141.19184,"pref":"青森","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"},
+{"id":"osm:way:804886693","name":"下北文化会館","lat":41.29552,"lon":141.19778,"pref":"青森","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

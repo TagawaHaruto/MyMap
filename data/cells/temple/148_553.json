@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2972703497","name":"専敬寺","lat":37.09842,"lon":138.45147,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5375743174","name":"覺真寺","lat":37.17441,"lon":138.25328,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5380862512","name":"春日神社","lat":37.17458,"lon":138.25148,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:409031947","name":"白山神社","lat":37.15404,"lon":138.44771,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1264710045","name":"三宮神社","lat":37.22452,"lon":138.34457,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1265743233","name":"養福寺","lat":37.12036,"lon":138.26241,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1265981856","name":"諏訪社","lat":37.19154,"lon":138.31279,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1265987293","name":"羽黒神社","lat":37.18916,"lon":138.29026,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1266335076","name":"善正寺","lat":37.15474,"lon":138.26348,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1266759009","name":"神明宮","lat":37.1469,"lon":138.27198,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1280456286","name":"神明宮","lat":37.14049,"lon":138.25176,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1449565981","name":"八幡社","lat":37.06115,"lon":138.30375,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

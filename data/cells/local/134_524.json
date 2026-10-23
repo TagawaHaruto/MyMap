@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:212723772","name":"中津市市民プール","lat":33.60655,"lon":131.18727,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:212725204","name":"中津体育センター","lat":33.59756,"lon":131.18709,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:212725424","name":"中津東体育館","lat":33.58848,"lon":131.23852,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:212726759","name":"ダイハツ九州アリーナ","lat":33.56362,"lon":131.21086,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:中津市総合体育館"},
+{"id":"osm:way:212726761","name":"勤労者ふれあいスポーツセンター","lat":33.59323,"lon":131.19295,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:772359838","name":"周防灘CC","lat":33.61385,"lon":131.05541,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:917545220","name":"米山テニスコート","lat":33.60809,"lon":131.21472,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287502395","name":"KOKONOEオートキャンプ場","lat":33.72228,"lon":131.02239,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287571150","name":"大池公園高台キャンプ場KIRARI","lat":33.55695,"lon":131.16683,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://takadaicamp-kirari.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287571163","name":"四季の山荘「求菩提」 求菩提キャンプ場","lat":33.5351,"lon":131.0175,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0979-88-3063"},
+{"id":"osm:node:14287578029","name":"野営箭山","lat":33.5122,"lon":131.2141,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-6755-6604"},
+{"id":"osm:node:14287578036","name":"バルンバルンの森（洞門キャンプ場）","lat":33.5004,"lon":131.1638,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"http://barunbarun.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0979-52-3020"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:591733488","name":"なんでもリサイクル ビッグバン","lat":42.3416,"lon":142.35917,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","kana":"なんでもりさいくる びっぐばん","oh":"Mo-Su, PH 10:00-20:00","tel":"+81 146-42-3196"},
+{"id":"osm:way:591745485","name":"新雪荘","lat":42.3403,"lon":142.36429,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.rakuten.co.jp/s-sportsstore/","note":"スポーツ用品","g":"hobby","k":"hobby","kana":"しんせつそう","oh":"Mo-Sa 10:00-15:00","tel":"+81-146-49-0844"},
+{"id":"osm:way:1251890254","name":"えびすや釣具店","lat":42.34315,"lon":142.34046,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","kana":"えびすや つりぐてん","oh":"Mo,We-Su 08:30-20:00; Tu off","tel":"+81-146-43-3600","pk":2}
+]

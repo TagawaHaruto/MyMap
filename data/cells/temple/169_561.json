@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:432052779","name":"八雲神社","lat":42.25217,"lon":140.26214,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:642853533","name":"創価学会","lat":42.25186,"lon":140.266,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:761642056","name":"円通寺","lat":42.43917,"lon":140.32351,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:761642057","name":"国縫神社","lat":42.43908,"lon":140.32311,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:6136205003","name":"丸石サイクル","lat":36.65682,"lon":140.09726,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6136208431","name":"山田輪店","lat":36.65764,"lon":140.09576,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6136208436","name":"日の出書店","lat":36.65811,"lon":140.09527,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7178753936","name":"マルコ書店","lat":36.65556,"lon":140.15393,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13985720925","name":"宇賀神サイクル","lat":36.54894,"lon":140.06172,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

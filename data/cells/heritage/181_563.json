@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:326853996","name":"FIELD INN 星観荘","lat":45.45599,"lon":140.97122,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://seikanso.my.coocan.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ふぃーるどいんせいかんそう","tel":"+81 163 87 2818"},
+{"id":"osm:way:596104205","name":"民宿スコトン岬","lat":45.46345,"lon":140.96826,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.rebun.jp/stay/","note":"宿","g":"heritage","k":"lodging","kana":"みんしゅくすことんみさき","tel":"+81 163 87 2878","wc":"no"}
+]

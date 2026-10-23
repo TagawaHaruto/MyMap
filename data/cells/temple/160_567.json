@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:3235711358","name":"諏訪神社","lat":40.18761,"lon":141.7984,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6416374004","name":"八幡宮","lat":40.1896,"lon":141.75975,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:559086809","name":"愛宕神社","lat":40.11222,"lon":141.816,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:596936637","name":"長福寺","lat":40.18943,"lon":141.76304,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:677796896","name":"久慈カトリック教会","lat":40.19128,"lon":141.76844,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:678334065","name":"巽山稲荷神社社務所","lat":40.18882,"lon":141.76723,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:678334068","name":"巽山稲荷神社","lat":40.1886,"lon":141.76729,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:678414411","name":"津島神社","lat":40.1889,"lon":141.76404,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:679768458","name":"東光寺","lat":40.19035,"lon":141.76271,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:682050142","name":"愛宕神社","lat":40.18999,"lon":141.7618,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:682050153","name":"大神宮","lat":40.19097,"lon":141.76149,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:682067026","name":"稲荷神社","lat":40.19131,"lon":141.75903,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:827537459","name":"創価学会","lat":40.18594,"lon":141.77517,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

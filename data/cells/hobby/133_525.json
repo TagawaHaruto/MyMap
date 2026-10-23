@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6229727154","name":"はりまや","lat":33.44056,"lon":131.35323,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13027452618","name":"カードショップルミナス","lat":33.31253,"lon":131.49917,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:way:364631294","name":"明林堂書店鶴見店","lat":33.30187,"lon":131.47681,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:425804576","name":"丸石サイクル","lat":33.32436,"lon":131.49353,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

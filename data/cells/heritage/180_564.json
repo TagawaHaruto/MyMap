@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4376696390","name":"なごり荘","lat":45.1859,"lon":141.13697,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4376697490","name":"えびす荘","lat":45.18651,"lon":141.13754,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4376939389","name":"北国グランドホテル","lat":45.24681,"lon":141.21794,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4376939390","name":"旅館夢海","lat":45.24427,"lon":141.22534,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8606614817","name":"花りしり","lat":45.24496,"lon":141.21779,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:416894993","name":"ホテル利尻","lat":45.18519,"lon":141.13386,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://hotel.rishiri.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-0163-84-2001"},
+{"id":"osm:way:441408236","name":"ホテルあや瀬","lat":45.2453,"lon":141.22096,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

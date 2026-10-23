@@ -1,0 +1,23 @@
+[
+{"id":"osm:way:569684302","name":"阿伝ふれあい公園","lat":28.30568,"lon":129.98599,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:569687034","name":"湾港緑地公園","lat":28.32752,"lon":129.93761,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:569688007","name":"ハンカンメー公園","lat":28.32617,"lon":129.96859,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:569690077","name":"空港臨海公園","lat":28.32123,"lon":129.92311,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"https://www.town.kikai.lg.jp/kankou/shisetsu/kanko/002.html","note":"公園","g":"play","k":"park","oh":"24/7"},
+{"id":"osm:way:569690326","name":"金久公園","lat":28.2832,"lon":129.94603,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:569968906","name":"中西公園","lat":28.29072,"lon":129.97032,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:570675370","name":"メンハナ公園","lat":28.31188,"lon":129.93294,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:570675895","name":"荒木漁村公園","lat":28.2965,"lon":129.91955,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:581224951","name":"手久津久ムンマタ農村公園","lat":28.2854,"lon":129.93597,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:581225153","name":"手久津久サンセットパーク","lat":28.29253,"lon":129.93173,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:585425842","name":"トゥヌムトゥ公園","lat":28.31324,"lon":129.9621,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:588809967","name":"官舎公園","lat":28.31634,"lon":129.94282,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:622494085","name":"コーラル団地公園","lat":28.31263,"lon":129.92853,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:622494255","name":"役場広場","lat":28.3172,"lon":129.93933,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1307467201","name":"荒木遊歩道休憩所","lat":28.30833,"lon":129.91522,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1307467219","name":"荒木うりばま","lat":28.29707,"lon":129.91651,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1412120035","name":"百之台国立公園","lat":28.31952,"lon":129.9855,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1536372554","name":"浦原農村公園","lat":28.28443,"lon":129.96821,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1536388698","name":"こーえんはな公園","lat":28.28411,"lon":129.9629,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1536871249","name":"鳥の山公園","lat":28.33224,"lon":129.97903,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1537451918","name":"七島鼻 (ポイント211)","lat":28.29992,"lon":129.97365,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

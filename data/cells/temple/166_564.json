@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4522512853","name":"大宣寺","lat":41.7174,"lon":141.00509,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4522512882","name":"法泉寺","lat":41.71825,"lon":141.00489,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4522512893","name":"大隆寺","lat":41.71839,"lon":141.00549,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4522512936","name":"宮川神社","lat":41.72034,"lon":141.00771,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4530407779","name":"原木稲荷神社","lat":41.72922,"lon":141.0357,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4530408514","name":"高岸寺","lat":41.74418,"lon":141.07169,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4530408529","name":"尻岸内八幡神社","lat":41.74604,"lon":141.07351,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

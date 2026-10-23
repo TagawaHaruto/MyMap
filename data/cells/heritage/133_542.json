@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4893347322","name":"徳本上人名号碑","lat":33.48508,"lon":135.73877,"pref":"和歌山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10312948839","name":"有田村道路元標","lat":33.48645,"lon":135.73693,"pref":"和歌山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6840125413","name":"えびす","lat":33.499,"lon":135.6607,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"https://oyadoebisu.com/","note":"宿","g":"heritage","k":"lodging","kana":"えびす","tel":"+81 739 67 0215"},
+{"id":"osm:node:6840135699","name":"民宿 久美丸","lat":33.49031,"lon":135.68337,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"くみまる","tel":"+81 735 67 0288"}
+]

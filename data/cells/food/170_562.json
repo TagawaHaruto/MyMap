@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3080036766","name":"ナミヘイ (Namihei)","lat":42.58163,"lon":140.71728,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ピザ","g":"food","k":"restaurant"},
+{"id":"osm:node:3104849318","name":"なみへい","lat":42.58164,"lon":140.71727,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ピザ","g":"food","k":"restaurant","kana":"なみへい"},
+{"id":"osm:node:3079574068","name":"ニューロビンス","lat":42.58548,"lon":140.70807,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"にゅーろびんす"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5164491442","name":"士幌町総合運動公園","lat":43.16832,"lon":143.23569,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5170375349","name":"士幌町農村公園","lat":43.15794,"lon":143.24192,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5170644031","name":"士幌鉄道記念公園","lat":43.16224,"lon":143.24745,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:320970404","name":"豊岡見晴し台駐車公園","lat":43.24722,"lon":143.22328,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:749950770","name":"瓜幕駅舎記念公園","lat":43.16518,"lon":143.02556,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5164491115","name":"士幌町総合研修センター","lat":43.16932,"lon":143.23889,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"}
+]

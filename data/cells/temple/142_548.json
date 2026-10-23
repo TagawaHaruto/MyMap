@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4516614715","name":"葛牧白山神社","lat":35.61344,"lon":137.18013,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4525369961","name":"広島安産神社","lat":35.61204,"lon":137.17514,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6174799019","name":"長福寺","lat":35.65912,"lon":137.16017,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6174799158","name":"鎮守山観音堂","lat":35.65894,"lon":137.15769,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6697377064","name":"福寿稲荷","lat":35.58425,"lon":137.19534,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7133710921","name":"中ノ保城跡・忠魂碑","lat":35.73817,"lon":137.01052,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:7804215250","name":"天神神社","lat":35.50281,"lon":137.0755,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7804215257","name":"県主神社","lat":35.50754,"lon":137.0771,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:453669238","name":"河岐神社","lat":35.58013,"lon":137.18757,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:723527750","name":"白山神社","lat":35.52686,"lon":137.11772,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:724371766","name":"岩屋不動明王","lat":35.52339,"lon":137.11737,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1466749599","name":"正眼寺","lat":35.50403,"lon":137.00794,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

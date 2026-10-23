@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4513828346","name":"みつえ青少年旅行村 オートサイト 【Cゾーン】","lat":34.46732,"lon":136.18973,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4513828352","name":"みつえ青少年旅行村 オートサイト【Aゾーン】","lat":34.46943,"lon":136.19268,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4802917090","name":"高見公園キャンプ場","lat":34.42233,"lon":136.01852,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"https://takami-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0746-44-0288"},
+{"id":"osm:node:14287478984","name":"BōttoBaseMitsue","lat":34.47582,"lon":136.16684,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287478991","name":"みつえ青少年旅行村 キャンプ場","lat":34.46865,"lon":136.19101,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"https://mitsue.life/services/village/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0745-95-3088"},
+{"id":"osm:node:14287484500","name":"トレーラーキャンプ「pot」","lat":34.48116,"lon":136.16612,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287485147","name":"キャンプスタイルのボルダリングソーコかわせみ","lat":34.28546,"lon":136.20323,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://www.rocaroca.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287485152","name":"大杉谷林間キャンプ村","lat":34.27594,"lon":136.1966,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://www.oosugicamp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"078-778-5454"}
+]

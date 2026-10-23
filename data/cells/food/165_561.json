@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3013666933","name":"お食事処たっぴ","lat":41.25763,"lon":140.34422,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:8357401259","name":"海峡味処 紫陽花","lat":41.25385,"lon":140.34665,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"あじさい","oh":"Mo-Su 09:00-17:00"},
+{"id":"osm:node:8357401265","name":"食事処 海峡","lat":41.25724,"lon":140.34754,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"かいきょ","oh":"Mo-Su 11:30-15:00,18:00-21:00"},
+{"id":"osm:way:569678286","name":"竜飛崎レストハウス","lat":41.25686,"lon":140.34233,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"}
+]

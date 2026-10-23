@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:1212431077","name":"上越市大潟体育センター","lat":37.2252,"lon":138.33646,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1267362340","name":"じょうえつ海の駅 マリーナ上越 泊地","lat":37.17813,"lon":138.25731,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1276733282","name":"上越市高田スポーツセンター","lat":37.10656,"lon":138.25713,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6174822892","name":"大池いこいの森キャンプ場","lat":37.17475,"lon":138.36593,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286479025","name":"大潟キャンプ場","lat":37.23264,"lon":138.32914,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-534-6444"},
+{"id":"osm:node:14286482369","name":"キューピットバレイキャンプサイト","lat":37.05248,"lon":138.48837,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://yukidaruma-kogen.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-593-2041"},
+{"id":"osm:node:14286485913","name":"光ヶ原高原キャンプ場","lat":37.00479,"lon":138.3858,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0255-78-4832"},
+{"id":"osm:node:14286485916","name":"グリーンパル光原荘","lat":37.00257,"lon":138.38908,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0255-78-4832"}
+]

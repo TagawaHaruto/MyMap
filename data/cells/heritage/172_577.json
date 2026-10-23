@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5634179144","name":"鬼武久・幸子","lat":43.0192,"lon":144.39695,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5948511450","name":"北斗遺跡","lat":43.06727,"lon":144.32818,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10184593556","name":"日本釧路種","lat":43.00968,"lon":144.2729,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5125407329","name":"ピュア","lat":43.02365,"lon":144.33106,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5125416307","name":"ホテル愛","lat":43.01893,"lon":144.37598,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5125419385","name":"ホテル 鶴","lat":43.00035,"lon":144.38889,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5154652084","name":"ホテル・ラ・フィネス","lat":43.01825,"lon":144.32741,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5163615431","name":"Kushiro shitsugen Touro Youth Hostel","lat":43.15108,"lon":144.4965,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5534106625","name":"鶴居どさんこ牧場","lat":43.19856,"lon":144.38773,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6728848014","name":"ビジネスホテル桶谷","lat":43.01267,"lon":144.35767,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6755469398","name":"民宿　鳥取","lat":43.01293,"lon":144.35488,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 154-51-3559"},
+{"id":"osm:node:6768632970","name":"ホテル　マーシュランド","lat":43.01392,"lon":144.34745,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.hotel-marshland.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 154-51-5557"},
+{"id":"osm:node:11930241450","name":"Hotel Marshland ホテルマーシュランド","lat":43.01392,"lon":144.34745,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:721797984","name":"Tsurui Northern Village Hotel Taito","lat":43.23124,"lon":144.3222,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"つるいのーざんびれっじほてるたいと","tel":"+81 154-64 - 3111"},
+{"id":"osm:way:1159315875","name":"つるいむら湿原温泉ホテル","lat":43.23403,"lon":144.32444,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

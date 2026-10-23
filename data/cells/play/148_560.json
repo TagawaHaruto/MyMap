@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:6257365938","name":"つつじ山公園","lat":37.10538,"lon":140.03562,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:345639353","name":"那須町中央運動公園","lat":37.02186,"lon":140.11112,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:347278672","name":"白河市白河駅前イベント広場","lat":37.12981,"lon":140.21188,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:353477191","name":"関の森公園 わんぱく広場","lat":37.0439,"lon":140.23026,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:353479588","name":"関の森公園","lat":37.04429,"lon":140.23061,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:421562579","name":"城山公園","lat":37.13209,"lon":140.21333,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"しろやまこうえん"},
+{"id":"osm:way:422420950","name":"余笹川ふれあい公園","lat":37.01766,"lon":140.11336,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:484342787","name":"いこいの広場","lat":37.01878,"lon":140.12134,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:616856849","name":"ロックガーデン","lat":37.0783,"lon":140.00058,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:618194067","name":"キッズラグーン","lat":37.13004,"lon":140.03699,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:618387057","name":"エルドラド","lat":37.12187,"lon":140.05784,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:690978110","name":"散策の森","lat":37.04917,"lon":140.02515,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:713189870","name":"こごみ苑","lat":37.04875,"lon":140.02245,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:976366377","name":"成沢川岸公園","lat":37.05604,"lon":140.15754,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:646726726","name":"フットサ&テニス蹴ル打ツ那須","lat":37.08506,"lon":140.01171,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:671747691","name":"人見トレーニングファーム","lat":37.02678,"lon":140.05992,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:672809356","name":"貴悦牧場","lat":37.07704,"lon":140.06265,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:818687863","name":"アーチェリー場","lat":37.16341,"lon":140.08791,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:971046364","name":"かつみバレエスクール","lat":37.01622,"lon":140.12292,"pref":"栃木","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:node:6038653183","name":"弦楽亭","lat":37.06785,"lon":140.0445,"pref":"栃木","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

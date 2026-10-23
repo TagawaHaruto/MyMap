@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4584375494","name":"松浦居食屋みくに","lat":33.34224,"lon":129.70491,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8128022986","name":"サンパーク吉井","lat":33.2653,"lon":129.69051,"pref":"長崎","genres":["food"],"indoor":true,"url":"http://www.sun-park.or.jp/","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13798337703","name":"九頭ラーメン","lat":33.36759,"lon":129.55253,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13798338701","name":"めしところ一楽","lat":33.36833,"lon":129.55282,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:433855294","name":"ジョイフル","lat":33.34053,"lon":129.70989,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true,"oh":"24/7"},
+{"id":"osm:way:448804265","name":"変竹林","lat":33.34118,"lon":129.70716,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"11:00-18:00"},
+{"id":"osm:node:13798342801","name":"ライダーズカフェGG","lat":33.35767,"lon":129.57674,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:460956430","name":"小料理みゆき","lat":33.34376,"lon":129.70725,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

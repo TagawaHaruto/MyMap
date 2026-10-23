@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:5802910155","name":"王家","lat":33.7361,"lon":136.01527,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Tu-Su 12:00-19:00","tel":"+81 735 32 2624"},
+{"id":"osm:node:5802910256","name":"道頓堀寿司","lat":33.73541,"lon":136.01324,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802910355","name":"焼肉うみ","lat":33.73548,"lon":136.01495,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802910455","name":"とんこつ なか尾","lat":33.73617,"lon":136.01602,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802910456","name":"焼肉 奥田家","lat":33.73503,"lon":136.01184,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802910554","name":"鵜殿駅","lat":33.73605,"lon":136.01577,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant","kana":"うどのえき","tel":"+81 735 32 0644"},
+{"id":"osm:node:5802910655","name":"お食事処 うえの","lat":33.73564,"lon":136.01519,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802911253","name":"ちろりん村","lat":33.73529,"lon":136.01328,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802911256","name":"秀丸","lat":33.73661,"lon":136.01655,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802911454","name":"すずめ庵","lat":33.7372,"lon":136.01804,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6853148191","name":"味処 根平","lat":33.71553,"lon":136.00002,"pref":"和歌山","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5802910257","name":"ひふみ","lat":33.73526,"lon":136.01283,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5802910260","name":"喫茶アポロ","lat":33.73512,"lon":136.00739,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5802910262","name":"癒しの喫茶 カラオケかよ","lat":33.7388,"lon":136.01948,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5802910753","name":"Deco Cafe","lat":33.73627,"lon":136.0155,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5802910853","name":"ユー","lat":33.73533,"lon":136.01473,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"よう"},
+{"id":"osm:node:6853275206","name":"メルシー","lat":33.741,"lon":136.00423,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5802910157","name":"みるきぃ ぴんく","lat":33.7361,"lon":136.00837,"pref":"三重","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:5802910959","name":"フレッシュベーカリー ぷちーる","lat":33.73702,"lon":136.01644,"pref":"三重","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6853147888","name":"切畑屋伊作製菓舗","lat":33.72344,"lon":136.00098,"pref":"和歌山","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6853147890","name":"スナック ようこ","lat":33.71917,"lon":136.00249,"pref":"和歌山","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

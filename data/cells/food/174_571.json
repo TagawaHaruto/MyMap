@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4349445605","name":"喫茶軽食ツリーバード","lat":43.72651,"lon":142.94668,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4349446099","name":"ラーメンハウス登山軒","lat":43.7269,"lon":142.94622,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12592908964","name":"Sanroku Station Restaurant","lat":43.65309,"lon":142.79861,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://asahidake.hokkaido.jp/en/#SHOP","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 11:00-15:00","tel":"0166-68-9109"},
+{"id":"osm:node:13018597001","name":"食堂","lat":43.71109,"lon":142.94025,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:437411333","name":"大雪山食堂","lat":43.72664,"lon":142.94671,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 11:00-15:00,17:30-20:30"}
+]

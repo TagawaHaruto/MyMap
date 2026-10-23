@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:427922942","name":"パークゴルフ場","lat":42.13281,"lon":140.00406,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:403649091","name":"熊石青少年旅行村","lat":42.13097,"lon":140.00538,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

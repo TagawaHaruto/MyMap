@@ -1,0 +1,9 @@
+[
+{"name":"道の駅　なみえ　館内案内","lat":37.4964124,"lon":141.0002683,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"展望台","lat":37.2653308,"lon":141.014915,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"展望ホール","lat":37.2450777,"lon":141.0029575,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"展望デッキ","lat":37.65724,"lon":141.016768,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"見晴台","lat":37.4648713,"lon":141.0309223,"kind":"viewpoint","wikipedia":null,"oh":"09:00-16:00; Sa, Su, PH off","k":"viewpoint"},
+{"name":"海のテラス","lat":37.4580139,"lon":141.0265902,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"みるーる天神","lat":37.26637685,"lon":141.01244205,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:9030078279","name":"かみかわ物産直売所","lat":37.6156,"lon":139.44737,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:451814299","name":"阿賀町スポーツ施設三川B&G海洋センター","lat":37.68972,"lon":139.38037,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:451815564","name":"阿賀町スポーツ施設津川B&G海洋センター","lat":37.67221,"lon":139.44843,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14282136759","name":"三川温泉キャンプフィールド","lat":37.72058,"lon":139.38904,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286371238","name":"角神湖畔青少年旅行村","lat":37.70803,"lon":139.46547,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0254-92-4186"},
+{"id":"osm:node:14286378307","name":"五泉市チャレンジランド杉川","lat":37.63398,"lon":139.25018,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0250-55-6543"}
+]

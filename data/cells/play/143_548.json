@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4871770802","name":"飛騨川公園噴水","lat":35.88895,"lon":137.21042,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:499883579","name":"下呂温泉合掌村","lat":35.80805,"lon":137.24985,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:499883580","name":"雨情公園","lat":35.81049,"lon":137.24832,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:499883581","name":"飛騨川公園","lat":35.8884,"lon":137.2101,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:603232914","name":"しらさぎ緑地公園２","lat":35.80697,"lon":137.2407,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:656892340","name":"しらさぎ緑地公園１","lat":35.80939,"lon":137.23963,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686886249","name":"パスカル清見","lat":35.94198,"lon":137.08346,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:687267737","name":"松ヶ瀬公園","lat":35.86813,"lon":137.2148,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:691205176","name":"道の駅 明宝 磨墨の里公園","lat":35.84499,"lon":137.02853,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:766394065","name":"合掌の里","lat":35.80848,"lon":137.24977,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:766394066","name":"歳時記の森","lat":35.80757,"lon":137.24992,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:777216063","name":"岩陰公園","lat":35.75569,"lon":137.1573,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:499885313","name":"朝霧体育館","lat":35.88723,"lon":137.20735,"pref":"岐阜","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

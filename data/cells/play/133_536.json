@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:1631268189","name":"六本松児童遊園","lat":33.41248,"lon":134.03166,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:690472361","name":"二十三志公園","lat":33.43031,"lon":134.01691,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1313777183","name":"県立室戸広域公園","lat":33.28993,"lon":134.1723,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1313777513","name":"中央公園","lat":33.286,"lon":134.15839,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:616617238","name":"室戸広域公園野球場","lat":33.28826,"lon":134.17139,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","wp":"ja:室戸広域公園野球場"},
+{"id":"osm:way:1203425311","name":"室戸勤労者体育センター","lat":33.29175,"lon":134.15538,"pref":"高知","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports","wp":"ja:室戸勤労者体育センター"},
+{"id":"osm:way:1203425312","name":"高知県立室戸体育館","lat":33.28675,"lon":134.15965,"pref":"高知","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports","wp":"ja:高知県立室戸体育館"},
+{"id":"osm:way:1256880346","name":"田野町体育センター","lat":33.42704,"lon":134.01151,"pref":"高知","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1256880490","name":"中芸広域体育館 結いの丘ドーム","lat":33.44068,"lon":134.0053,"pref":"高知","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports","wp":"ja:中芸広域体育館"},
+{"id":"osm:node:12147873531","name":"夢ひろば","lat":33.29109,"lon":134.15806,"pref":"高知","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6740365086","name":"","lat":44.29385,"lon":142.18799,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:562502836","name":"道の駅ピンネシリ","lat":44.87729,"lon":142.21313,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562504274","name":"道の駅 おといねっぷ","lat":44.72913,"lon":142.25768,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562505887","name":"道の駅 なかがわ","lat":44.80144,"lon":142.06704,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562507538","name":"道の駅びふか","lat":44.55824,"lon":142.32007,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562508304","name":"道の駅もち米の里☆なよろ","lat":44.2869,"lon":142.41401,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562508900","name":"道の駅 絵本の里けんぶち","lat":44.09418,"lon":142.39134,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562510764","name":"道の駅 森と湖の里ほろかない","lat":44.1151,"lon":142.13876,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562511860","name":"道の駅にしおこっぺ花夢","lat":44.33601,"lon":142.86816,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:939143215","name":"道の駅 羊のまち 侍・しべつ","lat":44.17634,"lon":142.3927,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1094539988","name":"道の駅 マリーンアイランド岡島","lat":44.87818,"lon":142.63131,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1157747268","name":"三笠パーキング","lat":44.00998,"lon":142.42773,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1563980678","name":"道の駅 おうむ","lat":44.58312,"lon":142.95957,"type":"SA・PA","k":"rest_area","likely":true}
+]

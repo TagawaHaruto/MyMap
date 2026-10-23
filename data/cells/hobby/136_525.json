@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2498497258","name":"好古亭","lat":34.1599,"lon":131.4598,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2498750528","name":"博宝堂","lat":34.1684,"lon":131.44963,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:9593547804","name":"ナカムラサイクル","lat":34.153,"lon":131.46458,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:316660338","name":"サイクルベースあさひ","lat":34.16279,"lon":131.45434,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:328131156","name":"都濃自転車店","lat":34.16408,"lon":131.45785,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:391866310","name":"釣具のポイント 山口小郡店","lat":34.08753,"lon":131.39448,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:391866625","name":"ヒマラヤスポーツ&ゴルフ 小郡店","lat":34.08666,"lon":131.39982,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:394832095","name":"ヤマダサイクル","lat":34.15411,"lon":131.4466,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:409217322","name":"文榮堂山口大学前店","lat":34.15164,"lon":131.46618,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:409228536","name":"キャスト山口店","lat":34.16071,"lon":131.46881,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:412988446","name":"明屋書店","lat":34.16097,"lon":131.48851,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:465818532","name":"ブックオフ","lat":34.16974,"lon":131.47532,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"10:30-20:00","tel":"+81839212009","pk":2},
+{"id":"osm:way:465881159","name":"スポーツデポ","lat":34.16492,"lon":131.48431,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:465967697","name":"明林堂書店吉敷店","lat":34.1633,"lon":131.44399,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:466007942","name":"明屋書店小郡店","lat":34.10228,"lon":131.39461,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:477271554","name":"カメラのキタムラ　バイパス吉敷店","lat":34.16366,"lon":131.44304,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"カメラ","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:561681897","name":"文榮堂","lat":34.17629,"lon":131.47657,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:561705108","name":"レノファ山口FCアンテナショップ","lat":34.17577,"lon":131.47624,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:561705153","name":"三好屋楽器店","lat":34.17712,"lon":131.47731,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:705886286","name":"山口ポインター","lat":34.16814,"lon":131.46235,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

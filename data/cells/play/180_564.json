@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:8620989941","name":"沓形港緑地公園","lat":45.18719,"lon":141.13147,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:8621083934","name":"利尻町森林公園","lat":45.17973,"lon":141.14339,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:416878728","name":"沓形岬公園","lat":45.18615,"lon":141.1299,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:416888890","name":"仙法志御崎公園","lat":45.10043,"lon":141.22862,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:441434244","name":"利尻富士町総合体育館","lat":45.24935,"lon":141.21533,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

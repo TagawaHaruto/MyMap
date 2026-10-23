@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:583234246","name":"川湯神社","lat":43.63882,"lon":144.43636,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:787369747","name":"創価学会","lat":43.51653,"lon":144.42555,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:788321316","name":"美留和神社","lat":43.55624,"lon":144.43227,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:788341510","name":"慈光寺","lat":43.63995,"lon":144.44571,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

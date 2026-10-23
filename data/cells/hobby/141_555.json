@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2087967414","name":"ブックオフ","lat":35.48687,"lon":138.78533,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2088008884","name":"レッドバロン","lat":35.48166,"lon":138.80997,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2365460791","name":"オフハウス","lat":35.48916,"lon":138.76413,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:2375789091","name":"GEO","lat":35.4913,"lon":138.76308,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5081435915","name":"TRAIL RUN TEST CENTER","lat":35.45623,"lon":138.80592,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5081506760","name":"オマタモータース","lat":35.46965,"lon":138.80025,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5081506762","name":"ゴリラーズ","lat":35.47104,"lon":138.79806,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5082784506","name":"加藤書店","lat":35.30258,"lon":138.92843,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5085419548","name":"YSP富士吉田","lat":35.46417,"lon":138.80205,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5085419563","name":"なぎさ","lat":35.42903,"lon":138.85232,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5103149537","name":"愛国屋","lat":35.33153,"lon":138.94345,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5527619335","name":"みよしや","lat":35.36218,"lon":138.8662,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5794878998","name":"ボスコ・モト","lat":35.34824,"lon":138.95012,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5891213670","name":"ポケモンストア","lat":35.30697,"lon":138.96708,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"https://www.pokemon.co.jp/gp/store/gotemba/","note":"ホビー・模型","g":"hobby","k":"hobby","oh":"10:00-20:00","tel":"0550-88-8988"},
+{"id":"osm:node:9225754751","name":"L.L.Bean","lat":35.30691,"lon":138.96601,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13072308661","name":"ブックスQ","lat":35.48354,"lon":138.79604,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13153854528","name":"ホビーオフ","lat":35.30287,"lon":138.92897,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13153854529","name":"ハードオフ","lat":35.30297,"lon":138.929,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:638723677","name":"ひまわりBOOKS 御殿場店","lat":35.29967,"lon":138.93756,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:639215010","name":"ブックオフ","lat":35.30107,"lon":138.93989,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:836670287","name":"富士見つり堀","lat":35.46034,"lon":138.80555,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

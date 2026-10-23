@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:547586908","name":"海峡の里スポーツ公園","lat":41.48893,"lon":140.98491,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1156004393","name":"材木防災公園","lat":41.4689,"lon":140.89029,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:589005660","name":"歌舞伎の館","lat":41.32774,"lon":140.8133,"pref":"青森","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

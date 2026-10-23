@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6165418822","name":"大昌寺","lat":34.22316,"lon":136.29669,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6859759099","name":"地蔵院","lat":34.21088,"lon":136.33918,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6859759107","name":"日本基督教団 紀伊長島教会","lat":34.20763,"lon":136.33913,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:6859759108","name":"養海院","lat":34.20805,"lon":136.3421,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8226460161","name":"天理教九鬼宮布教所","lat":34.01369,"lon":136.2557,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:8226460163","name":"天理教九鬼分教会","lat":34.01431,"lon":136.25532,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:8226460324","name":"若宮八幡神社","lat":34.01657,"lon":136.25437,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9112747922","name":"二郷神社","lat":34.21437,"lon":136.33387,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10937770861","name":"岬神社","lat":34.01063,"lon":136.25802,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:767934312","name":"山門","lat":34.01357,"lon":136.25461,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

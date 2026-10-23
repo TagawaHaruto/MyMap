@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:8622225424","name":"宇川牛発祥地","lat":35.76525,"lon":135.19477,"pref":"京都","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8622768894","name":"地蔵","lat":35.76413,"lon":135.20139,"pref":"京都","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11359684823","name":"下宇川村道路元標","lat":35.75681,"lon":135.17355,"pref":"京都","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11361075683","name":"塩谷四郎之碑","lat":35.75935,"lon":135.17493,"pref":"京都","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11364557679","name":"一里塚","lat":35.75071,"lon":135.13939,"pref":"京都","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11364557680","name":"丹後半島 犬ケ岬","lat":35.75068,"lon":135.13939,"pref":"京都","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8622768895","name":"民宿 太保","lat":35.76321,"lon":135.20286,"pref":"京都","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

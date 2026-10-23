@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:2302485675","name":"かまぼこ海産物直売所","lat":34.3927,"lon":131.19984,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2302485676","name":"かまぼこ直売所","lat":34.39257,"lon":131.19985,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2306269760","name":"ほっともっと","lat":34.37668,"lon":131.18525,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ほっともっと","tel":"+81 837 22 6438"},
+{"id":"osm:node:2306269788","name":"山九大留直売店","lat":34.37863,"lon":131.18767,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10253559769","name":"俵山​農産物​加工​センター​企業​組合","lat":34.28294,"lon":131.11178,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:6252709159","name":"ながと総合体育館","lat":34.37797,"lon":131.19679,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:467609138","name":"山口レインボーヒルズ豊田湖ＧＣ","lat":34.25487,"lon":131.12523,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:668009261","name":"グラウンドゴルフ場","lat":34.35721,"lon":131.17981,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14284382480","name":"青海島キャンプ村","lat":34.42714,"lon":131.22228,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0837-26-1357"},
+{"id":"osm:node:14284382484","name":"NGS野営場","lat":34.33693,"lon":131.02309,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4344-0819"},
+{"id":"osm:node:14285906713","name":"青海島高山オートキャンプ場","lat":34.41708,"lon":131.17581,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287485110","name":"川尻大浜キャンプ場","lat":34.41302,"lon":131.01005,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0837-32-1183"},
+{"id":"osm:way:666681419","name":"千畳敷高原キャンプ場","lat":34.41415,"lon":131.09011,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:668253935","name":"小田大浜キャンプ場","lat":34.41142,"lon":131.0142,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"https://ob-kawashiri.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 83-734-1363"},
+{"id":"osm:way:669605234","name":"オートキャンプ場","lat":34.37408,"lon":131.01841,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:672554506","name":"二位ノ浜キャンプ場","lat":34.40888,"lon":131.11394,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

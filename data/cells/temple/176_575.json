@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:473862724","name":"栄浦神社","lat":44.12821,"lon":143.97305,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:474004444","name":"正法寺","lat":44.01748,"lon":143.7791,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:474043046","name":"宗忠神社 黒住教佐呂間教会所","lat":44.01582,"lon":143.76966,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:474043055","name":"佐呂間神社","lat":44.01686,"lon":143.77006,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"さろまじんじゃ"},
+{"id":"osm:way:474124604","name":"光明寺","lat":44.01778,"lon":143.78499,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"こうみょうじ"},
+{"id":"osm:way:474151240","name":"西光寺","lat":44.04828,"lon":143.90807,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"せいこうじ"},
+{"id":"osm:way:474151245","name":"仁倉八幡神社","lat":44.04633,"lon":143.90755,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"にくらはちまんじんじゃ"},
+{"id":"osm:way:474152028","name":"眞光禅寺","lat":44.08007,"lon":143.93133,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:474152040","name":"浜佐呂間神社","lat":44.08102,"lon":143.93137,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"はまさろまじんじゃ"},
+{"id":"osm:way:507877155","name":"鐺沸神社","lat":44.12949,"lon":143.99314,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"とうふつじんじゃ"},
+{"id":"osm:way:664744159","name":"幌岩神社","lat":44.09255,"lon":143.8917,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ほろいわじんじゃ"},
+{"id":"osm:way:908936101","name":"富武士神社","lat":44.07314,"lon":143.79483,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:987415574","name":"日本キリスト教会佐呂間教会","lat":44.01545,"lon":143.76577,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://peraichi.com/landing_pages/view/saromachurch","note":"教会","g":"temple","k":"worship","kana":"にほんきりすときょうかい さろまきょうかい","tel":"+81 1587 2 3629"},
+{"id":"osm:way:1320384774","name":"富丘神社","lat":44.07036,"lon":143.99579,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

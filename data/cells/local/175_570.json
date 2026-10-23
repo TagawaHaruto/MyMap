@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:936541130","name":"旭川国際カントリークラブ","lat":43.91403,"lon":142.59444,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.aicc.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"あさひかわこくさいかんとりーくらぶ","tel":"+81 1658 6 5211"},
+{"id":"osm:node:10767801134","name":"きのこの里あいべつオートキャンプ場","lat":43.88142,"lon":142.6683,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

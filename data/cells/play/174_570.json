@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:7809943731","name":"聖台ダム公園","lat":43.61437,"lon":142.52137,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13046895483","name":"旧瑞穂神社跡地","lat":43.73568,"lon":142.62934,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:438356345","name":"羽衣公園","lat":43.69849,"lon":142.51349,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"はごろもこうえん"},
+{"id":"osm:way:471137282","name":"大雪遊水公園","lat":43.66807,"lon":142.56647,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:473320583","name":"東神楽森林公園","lat":43.67182,"lon":142.53862,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ひがしかぐらしんりんこうえん"},
+{"id":"osm:way:479032933","name":"富山神社","lat":43.72629,"lon":142.5376,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:983125617","name":"新区画運動公園","lat":43.6028,"lon":142.51339,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1154224176","name":"ビルケの森","lat":43.50535,"lon":142.59575,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"びるけのもり"},
+{"id":"osm:way:1340976478","name":"東川ゆめ公園","lat":43.70216,"lon":142.51665,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1419541008","name":"記念坂公園","lat":43.74589,"lon":142.57521,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1419541010","name":"旧第一小学校遊具","lat":43.7466,"lon":142.57551,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1419541012","name":"旭川市21世紀の森 せせらぎ広場","lat":43.71533,"lon":142.65751,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1419616125","name":"旭川市21世紀の森 水辺広場","lat":43.7174,"lon":142.67946,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1419616126","name":"キトウシ森林公園","lat":43.72877,"lon":142.53375,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:506685421","name":"東川町民グラウンド","lat":43.70295,"lon":142.50721,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1419541013","name":"旭川市21世紀の森　せせらぎ広場　サッカー場","lat":43.71633,"lon":142.65381,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

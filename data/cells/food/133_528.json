@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:6421053087","name":"マリーナ亭","lat":33.38725,"lon":132.12356,"pref":"愛媛","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12709583673","name":"しらす食堂","lat":33.39077,"lon":132.11717,"pref":"愛媛","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:node:12709583672","name":"カフェ 木と樹","lat":33.39107,"lon":132.11732,"pref":"愛媛","genres":["food"],"indoor":true,"url":"https://ki-to-ki.com/","note":"カフェ","g":"food","k":"cafe"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:1657200935","name":"宇目町讃歌","lat":32.84359,"lon":131.61738,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9024757441","name":"初代駅長功労記念碑","lat":32.78603,"lon":131.70701,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14025397002","name":"水ヶ谷焼窯跡","lat":32.77923,"lon":131.63769,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025400201","name":"城ノ越古城","lat":32.80289,"lon":131.65133,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025400202","name":"駒鳴砦","lat":32.83343,"lon":131.63576,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025404401","name":"蔵小野砦","lat":32.83148,"lon":131.64597,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025404801","name":"朝日岳城","lat":32.8524,"lon":131.70133,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025428401","name":"松尾城","lat":32.972,"lon":131.614,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14287526981","name":"里の旅リゾート ロッジきよかわ","lat":32.96277,"lon":131.52035,"pref":"大分","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0974-35-3601"},
+{"id":"osm:way:1116136607","name":"旅館 三国家","lat":32.98005,"lon":131.58579,"pref":"大分","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

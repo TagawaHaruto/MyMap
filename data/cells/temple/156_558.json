@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4269822383","name":"圓福院","lat":39.19022,"lon":139.54934,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4269823006","name":"高森神社","lat":39.20016,"lon":139.55684,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4269823016","name":"多宝寺","lat":39.20452,"lon":139.55537,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:627503622","name":"遠賀美神社","lat":39.18524,"lon":139.54629,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:628284971","name":"明神の社","lat":39.18447,"lon":139.54268,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:628291924","name":"観音堂","lat":39.19433,"lon":139.55346,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:628295759","name":"八幡神社","lat":39.20757,"lon":139.5508,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

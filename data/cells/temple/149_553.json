@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:452354841","name":"妙泉寺","lat":37.32191,"lon":138.45834,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1210668913","name":"真言宗　多聞寺","lat":37.33419,"lon":138.46473,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1210681693","name":"鉢崎神社","lat":37.3213,"lon":138.43836,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1210681697","name":"真言宗　蓮光院","lat":37.3204,"lon":138.43846,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1210681700","name":"日蓮宗　妙興寺","lat":37.31944,"lon":138.43782,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1211176095","name":"見織神社","lat":37.26396,"lon":138.38684,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1262418549","name":"称名寺","lat":37.27798,"lon":138.39073,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1262418550","name":"浄善寺（本堂　国登録文化財）","lat":37.27758,"lon":138.39046,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1262426550","name":"浄福寺","lat":37.27848,"lon":138.39225,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

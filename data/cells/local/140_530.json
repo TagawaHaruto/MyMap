@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:11887216897","name":"カヌーの里おおちオートキャンプ場","lat":35.06887,"lon":132.59678,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"https://hpdsp.jp/utopia-iwami/page1","note":"キャンプ・野外","g":"local","k":"camp","tel":"0855-75-1860"},
+{"id":"osm:node:14287384439","name":"さひめ湖キャンプ場","lat":35.18038,"lon":132.58686,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0854-86-0727"},
+{"id":"osm:node:14287396898","name":"GLANSCAPE大山隠岐国立公園Sanbe,Shimane","lat":35.12921,"lon":132.602,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"03-6757-8200"},
+{"id":"osm:node:14287449501","name":"石見ワイナリー ゴールデンユートピアおおち 四季の杜","lat":35.07832,"lon":132.59181,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0855-75-1670"},
+{"id":"osm:node:14289699446","name":"目田森林公園","lat":35.2446,"lon":132.7123,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0853-84-0805"},
+{"id":"osm:way:1275087480","name":"三瓶山北の原キャンプ場","lat":35.1558,"lon":132.61969,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"https://www.nature-sanbe.jp/camp/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

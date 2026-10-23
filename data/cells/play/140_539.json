@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2513532825","name":"みちくさ公園","lat":35.18198,"lon":134.99182,"pref":"兵庫","genres":["play"],"indoor":false,"url":"http://buono-nakano.blogspot.com","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:11775147580","name":"渓流谷の遊歩道 なか・やちよの森公園","lat":35.0214,"lon":134.90007,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:11775147582","name":"渓流の広場","lat":35.022,"lon":134.90053,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:11775147588","name":"翠公園","lat":35.03775,"lon":134.90801,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:57501634","name":"北播磨余暇村公園","lat":35.07745,"lon":134.92395,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:586157619","name":"多々良木公園","lat":35.24064,"lon":134.82667,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:8277867","name":"あさご芸術の森彫刻公園","lat":35.23936,"lon":134.82621,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:588025192","name":"ささゆり広場","lat":35.2441,"lon":134.79678,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1415665066","name":"大山小学校跡地広場","lat":35.10387,"lon":134.77946,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1433918880","name":"中央公園","lat":35.05641,"lon":134.92076,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:586182565","name":"あさごふれあいプールくじら","lat":35.24439,"lon":134.79695,"pref":"兵庫","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:way:870453118","name":"町民グラウンド","lat":35.07356,"lon":134.78118,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:586182538","name":"ささゆりホール","lat":35.24327,"lon":134.79575,"pref":"兵庫","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

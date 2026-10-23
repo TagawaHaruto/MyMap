@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:6437513242","name":"八幡神社","lat":35.7995,"lon":136.90213,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6437513250","name":"恩善寺","lat":35.80662,"lon":136.90698,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6437513276","name":"聖徳太子堂","lat":35.81696,"lon":136.90029,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6437535769","name":"稲荷神社","lat":35.85632,"lon":136.86135,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6484965036","name":"円周寺","lat":35.97354,"lon":136.76952,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:585997755","name":"悟竹院","lat":35.75146,"lon":136.95952,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:621983901","name":"白照神社","lat":35.86825,"lon":136.86336,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:621983914","name":"神明神社","lat":35.88439,"lon":136.85228,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:621983920","name":"円覚寺","lat":35.8823,"lon":136.85023,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:777279900","name":"威徳寺","lat":35.97416,"lon":136.77219,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"0575-86-3030"},
+{"id":"osm:way:777279907","name":"石徹白大師堂","lat":35.9764,"lon":136.77378,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"http://itoshiro.net/map/map0302.html","note":"寺","g":"temple","k":"worship"}
+]

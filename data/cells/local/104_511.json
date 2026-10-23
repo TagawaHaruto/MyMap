@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2043307394","name":"工房アマム","lat":26.17055,"lon":127.82566,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 11:00-17:00"},
+{"id":"osm:node:6906582262","name":"PINK CROUD 95%","lat":26.18304,"lon":127.77475,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8692246346","name":"唐揚げ専門 たけ田商店","lat":26.24677,"lon":127.77019,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9417414770","name":"呉屋ストアー","lat":26.22245,"lon":127.75153,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ごやすとあー"},
+{"id":"osm:node:11846963988","name":"okinawaマリンブルー津堅島店","lat":26.24395,"lon":127.93904,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"080-6493-2108"},
+{"id":"osm:way:483769558","name":"南城市地域物産館","lat":26.16905,"lon":127.82727,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:603741906","name":"ヨシ鮮魚店","lat":26.126,"lon":127.76095,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:603983351","name":"金城鮮魚店","lat":26.12729,"lon":127.7605,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:737655687","name":"島袋刺身屋","lat":26.18089,"lon":127.77525,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:991640376","name":"板馬養殖センター","lat":26.18896,"lon":127.81716,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5533279093","name":"ファーマーズマーケット与那原あがりはま市場","lat":26.20416,"lon":127.76074,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","oh":"Mo-Su 09:00-18:00"},
+{"id":"osm:way:1052435676","name":"JAファーマーズマーケット西原 うんたま市場","lat":26.22339,"lon":127.75726,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","oh":"Mo-Su 09:00-18:00"},
+{"id":"osm:way:1052435679","name":"西原さわふじマルシェ","lat":26.22332,"lon":127.75744,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:5885018537","name":"与那原マリーナ","lat":26.20532,"lon":127.76863,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"よなばるまりな"},
+{"id":"osm:node:9646592132","name":"マリンタウンゴルフ","lat":26.19685,"lon":127.75924,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://www.mtg-okinawa.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:189138987","name":"琉球ゴルフ倶楽部","lat":26.14932,"lon":127.78108,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:琉球ゴルフ倶楽部"},
+{"id":"osm:way:189138989","name":"西原グリーンセンター","lat":26.23607,"lon":127.76832,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://www.nishiharagc.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:708902635","name":"守礼カントリークラブ","lat":26.17874,"lon":127.81069,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://shurei-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"098-947-3411"},
+{"id":"osm:node:14285525253","name":"エイトポイントリゾート沖縄","lat":26.16154,"lon":127.79959,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"06-6586-9663"},
+{"id":"osm:node:14285999557","name":"あざまサンサンビーチキャンプ場","lat":26.17668,"lon":127.829,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1298076664","name":"NEOS アウトドアパーク南城","lat":26.14808,"lon":127.80457,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://neos-outdoor-park.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"098-987-6311"}
+]

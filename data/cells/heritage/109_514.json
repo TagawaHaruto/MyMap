@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:13922168338","name":"西郷隆盛上陸の地碑","lat":27.41478,"lon":128.64298,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13951125308","name":"和泊町戦没者慰霊之塔","lat":27.38999,"lon":128.61252,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13951125309","name":"日本復帰記念碑","lat":27.39005,"lon":128.61268,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13953781669","name":"志喜屋武当のウブス","lat":27.36587,"lon":128.52407,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"砦跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13961803860","name":"世之主の城跡","lat":27.38649,"lon":128.61407,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13963694058","name":"えらぶテッポウユリ発祥の地 碑","lat":27.40466,"lon":128.66555,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13984393504","name":"アーニマガヤトゥール墓","lat":27.37804,"lon":128.60455,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:13985399563","name":"新城花窪ニャート墓","lat":27.39436,"lon":128.5746,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:1531143979","name":"九本柱の高倉","lat":27.36393,"lon":128.53383,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1531872198","name":"世之主の墓","lat":27.38338,"lon":128.61212,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:1531872199","name":"チュラドゥール","lat":27.38264,"lon":128.61193,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:relation:21017145","name":"屋者琉球式墳墓","lat":27.35361,"lon":128.60005,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"}
+]

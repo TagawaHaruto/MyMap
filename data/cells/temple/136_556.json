@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4271717288","name":"日向神社","lat":34.20378,"lon":139.15376,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4271720289","name":"竜神様","lat":34.20899,"lon":139.13161,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:4271720290","name":"那智堂","lat":34.21828,"lon":139.14373,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4271720291","name":"観音堂","lat":34.22672,"lon":139.17013,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4271720292","name":"つづき堂","lat":34.22832,"lon":139.15689,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6664701870","name":"ほうそう神様","lat":34.20769,"lon":139.13734,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6665242138","name":"与種神社","lat":34.20451,"lon":139.13795,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:709073211","name":"阿波命神社","lat":34.22845,"lon":139.13967,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あわのみことじんじゃ"},
+{"id":"osm:way:709073215","name":"物忌奈命神社","lat":34.20842,"lon":139.13445,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:709137330","name":"琴平宮","lat":34.20539,"lon":139.13485,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:709819016","name":"廿三夜様","lat":34.20645,"lon":139.1348,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

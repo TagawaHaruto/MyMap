@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:14287570083","name":"下阿蘇キャンプ場","lat":32.7062,"lon":131.82131,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-45-2992"},
+{"id":"osm:node:14287570085","name":"下阿蘇ビーチリゾート『浜木綿（はまゆう）村』（海辺のキャンプ場「ソレイユ・ルヴァン」）","lat":32.68414,"lon":131.80194,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"http://michinoeki-kitaura.com/cms/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-45-3811"},
+{"id":"osm:node:14287595152","name":"波当津海水浴場","lat":32.74754,"lon":131.86745,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0972-42-1111"},
+{"id":"osm:node:14287608191","name":"須美江家族旅行村","lat":32.66289,"lon":131.76115,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"http://sunbeach-sumie.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-43-0201"}
+]

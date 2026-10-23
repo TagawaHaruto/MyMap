@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3719549890","name":"べんがら屋","lat":34.86198,"lon":133.46857,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7937775096","name":"なごし","lat":34.8996,"lon":133.27392,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13068151060","name":"特産館","lat":34.96343,"lon":133.47061,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:13068151061","name":"グリーンセンター","lat":34.96317,"lon":133.47105,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:3759834253","name":"久保井野キャンプ場","lat":34.94482,"lon":133.47296,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287449613","name":"西山高原キャンプ場","lat":34.84602,"lon":133.36274,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0866-45-3633"},
+{"id":"osm:node:14287463090","name":"荒戸山キャンプ場","lat":34.91533,"lon":133.39653,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0867-96-2003"},
+{"id":"osm:node:14287467388","name":"吹屋ふれあいの森","lat":34.86154,"lon":133.46954,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-3703-3150"},
+{"id":"osm:node:14287476477","name":"TAKIBIYA camp field","lat":34.79435,"lon":133.28116,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-1444-7525"}
+]

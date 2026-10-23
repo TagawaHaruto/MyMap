@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4674135971","name":"パスカル","lat":35.1957,"lon":132.99639,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1292554787","name":"割烹すぎ原","lat":35.16594,"lon":132.84896,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:7932570828","name":"ふじのや","lat":35.03617,"lon":132.91291,"pref":"広島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","tel":"+81 824 86 2129"}
+]

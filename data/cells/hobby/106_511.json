@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4887069208","name":"キャンドルショップ cotan","lat":26.69073,"lon":127.98097,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:4887119501","name":"ペンションサーフハウス","lat":26.68081,"lon":127.97688,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5310666248","name":"ヤンバルサイクル","lat":26.59103,"lon":127.9813,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"http://yanbarucycle.com/","note":"自転車","g":"hobby","k":"hobby","kana":"やんばるさいくる"},
+{"id":"osm:node:5885017102","name":"与那自転車店","lat":26.68005,"lon":127.97963,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7293659303","name":"Recycle Mart","lat":26.5828,"lon":127.98431,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549027823","name":"スポーツヒマラヤ イオン名護店","lat":26.60988,"lon":127.98538,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10596200333","name":"宮脇書店","lat":26.60973,"lon":127.98522,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:452363465","name":"ROCK屋","lat":26.59198,"lon":127.97841,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:455591999","name":"宮脇書店","lat":26.60531,"lon":127.9785,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん","oh":"Mo-Su 10:00-22:00"},
+{"id":"osm:way:1136697826","name":"マンガ倉庫","lat":26.60835,"lon":127.97034,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-22:00"},
+{"id":"osm:way:1210138310","name":"太洋つりぐ店","lat":26.71022,"lon":127.80302,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

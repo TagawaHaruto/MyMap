@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:3104884037","name":"正信寺","lat":42.16151,"lon":142.77832,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:248664998","name":"創価学会","lat":42.18393,"lon":142.76688,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:248665026","name":"浦河神社","lat":42.16362,"lon":142.77572,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://urakawajinja.jimdofree.com/","note":"神社","g":"temple","k":"worship","kana":"うらかわじんじゃ","tel":"+81-146-22-2175"},
+{"id":"osm:way:464963045","name":"智教寺","lat":42.12862,"lon":142.91993,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ちきょうじ","tel":"+81-146-36-2235","pk":2},
+{"id":"osm:way:464963057","name":"法敬寺","lat":42.12942,"lon":142.91967,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hongwanji.or.jp/","note":"寺","g":"temple","k":"worship","kana":"ほうきょうじ","tel":"+81-146-36-2226"},
+{"id":"osm:way:464963058","name":"様似住吉神社","lat":42.12946,"lon":142.91856,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","tel":"+81-1463-6-2421"},
+{"id":"osm:way:464963065","name":"等澍院","lat":42.12962,"lon":142.91916,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"とうじゅいん","tel":"+81-146-36-2263"},
+{"id":"osm:way:465003294","name":"天満天神","lat":42.16128,"lon":142.95218,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:465003454","name":"岡田八幡神社","lat":42.16559,"lon":142.9498,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:849070646","name":"西舎神社","lat":42.1795,"lon":142.84924,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:849070657","name":"東幌別八幡神社","lat":42.15061,"lon":142.85685,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:849070659","name":"エホバの証人の王国会館浦河郡浦河町","lat":42.17005,"lon":142.85733,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:887753711","name":"野深神社","lat":42.24881,"lon":142.7573,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:893216675","name":"向別稲荷神社","lat":42.21764,"lon":142.79838,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1530970083","name":"白龍神社","lat":42.24891,"lon":142.75746,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

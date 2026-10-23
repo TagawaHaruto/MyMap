@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1058456919","name":"樺山神社","lat":43.32396,"lon":141.61336,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1123885101","name":"開拓神社","lat":43.30164,"lon":141.64888,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1124738113","name":"北漸寺","lat":43.33323,"lon":141.67197,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1257325649","name":"伊夜日子神社","lat":43.33569,"lon":141.63729,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

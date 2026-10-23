@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4928109302","name":"白馬村放課後児童クラブ","lat":36.69856,"lon":137.86225,"pref":"長野","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:421480638","name":"サンサンパーク白馬","lat":36.64815,"lon":137.86444,"pref":"長野","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:1352852381","name":"kids ski area (paid)","lat":36.59821,"lon":137.8237,"pref":"長野","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:node:14053724144","name":"小熊山パラグライダー場","lat":36.57144,"lon":137.82265,"pref":"長野","genres":["outdoor","play"],"indoor":false,"url":"https://kizakiko.net/","note":"グラウンド・コート","g":"play","k":"sports","tel":"+81 90-3081-3709"},
+{"id":"osm:way:268040484","name":"白馬ジャンプ競技場","lat":36.69525,"lon":137.83562,"pref":"長野","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports","wp":"ja:白馬ジャンプ競技場","kana":"はくばじゃんぷきょうぎじょう"},
+{"id":"osm:way:487401366","name":"パラグライダー場","lat":36.57139,"lon":137.82251,"pref":"長野","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:586733450","name":"もりくらの壁","lat":36.50749,"lon":137.79886,"pref":"長野","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:682901820","name":"屋内ゲートボール場","lat":36.6124,"lon":137.94411,"pref":"長野","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:965483366","name":"大洞グラウンド","lat":36.66027,"lon":137.98816,"pref":"長野","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:965483709","name":"テニスコート","lat":36.65821,"lon":137.98719,"pref":"長野","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:979564734","name":"美麻大塩ゲートボール場","lat":36.53464,"lon":137.89167,"pref":"長野","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1197873121","name":"大町市文化会館","lat":36.51825,"lon":137.8564,"pref":"長野","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

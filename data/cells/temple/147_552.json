@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:5057731121","name":"九頭竜社","lat":36.76539,"lon":138.06219,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5217932421","name":"戸隠神社奥社","lat":36.76566,"lon":138.06247,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7"},
+{"id":"osm:node:10959192248","name":"佐軍神社","lat":36.75252,"lon":138.24851,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:675098263","name":"宇賀神社","lat":36.83262,"lon":138.21603,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:802318042","name":"天神社","lat":36.85574,"lon":138.1939,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:802333389","name":"天神社","lat":36.86199,"lon":138.20176,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:802335439","name":"熊坂神社","lat":36.86068,"lon":138.20685,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:802370389","name":"八幡宮","lat":36.86847,"lon":138.17656,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1104014608","name":"関山神社","lat":36.93377,"lon":138.21349,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1220168781","name":"諏訪神社","lat":36.99115,"lon":138.20652,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

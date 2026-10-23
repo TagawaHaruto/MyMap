@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5033598783","name":"麺屋 一ふじ","lat":44.72923,"lon":142.25781,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6458778450","name":"レストハウスあうる","lat":44.55916,"lon":142.32011,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7983388406","name":"常盤軒","lat":44.72906,"lon":142.25996,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:709537193","name":"お食事処　咲来","lat":44.68831,"lon":142.26675,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:856219494","name":"SUZUKI PUMPKIN","lat":44.53632,"lon":142.32496,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

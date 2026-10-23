@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5406680639","name":"書店はちのへ","lat":40.49938,"lon":141.44548,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5421931634","name":"イリヤモータース","lat":40.49395,"lon":141.49867,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5447319034","name":"モトガレージ たなか","lat":40.47119,"lon":141.39103,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5447547138","name":"テルイスポーツ","lat":40.39162,"lon":141.26647,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5449463045","name":"文海堂","lat":40.37675,"lon":141.25403,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5449463050","name":"小笠原精輪舎","lat":40.37652,"lon":141.25259,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6634517085","name":"ミウラ電波模型店","lat":40.47451,"lon":141.4547,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","oh":"Mo, We-Fr 10:00-19:00; Sa-Su 09:00-19:00","tel":"0178-20-9192"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:14286007111","name":"体験型キャンプ場GO-HIGHTAKA","lat":33.19699,"lon":132.41506,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0895-63-0163"},
+{"id":"osm:node:14287595769","name":"グリーンパークすのかわオートキャンプ場","lat":33.04378,"lon":132.48733,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0895-85-1000"},
+{"id":"osm:node:14287595772","name":"須ノ川公園キャンプ場","lat":33.04216,"lon":132.4867,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0895-85-0200"},
+{"id":"osm:node:14287596502","name":"南レクオートキャンプ場","lat":33.13206,"lon":132.49915,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0895-32-6211"},
+{"id":"osm:node:14287596606","name":"日振島日崎海水浴場","lat":33.1522,"lon":132.30546,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0895-65-0235"}
+]

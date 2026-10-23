@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:3063185038","name":"ほーらい館","lat":27.67335,"lon":128.93482,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1540936690","name":"大原カントリークラブ","lat":27.74087,"lon":128.97916,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

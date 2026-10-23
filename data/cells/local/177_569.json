@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:645963539","name":"旭町ふれあいステーション","lat":44.48246,"lon":142.34583,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:856428397","name":"ちえぶん旬菜","lat":44.43187,"lon":142.40204,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:501732405","name":"サンピラー交流館","lat":44.37372,"lon":142.47397,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.nayoro.co.jp/sunpillarpark/01sunpillar-kouryukan.html","note":"遊び・スポーツ","g":"local","k":"activity","oh":"Apr 09:00-17:00; May-Oct 09:00-18:00; Nov-Mar 10:00-22:00","wc":"yes"},
+{"id":"osm:way:759365248","name":"スポーツセンター","lat":44.3426,"lon":142.45205,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

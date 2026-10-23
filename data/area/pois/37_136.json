@@ -1,0 +1,20 @@
+[
+{"name":"道の駅ころ柿の里しか","lat":37.0071382,"lon":136.7800301,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅とぎ海街道","lat":37.1403678,"lon":136.7249026,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%A8%E3%81%8E%E6%B5%B7%E8%A1%97%E9%81%93","k":"michinoeki"},
+{"name":"道の駅赤神","lat":37.2481769,"lon":136.7095351,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E8%B5%A4%E7%A5%9E","k":"michinoeki"},
+{"name":"道の駅能登食祭市場","lat":37.0487507,"lon":136.9687393,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅　のと里山空港","lat":37.2954028,"lon":136.9574416,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅千枚田ポケットパーク","lat":37.4241695,"lon":136.9976022,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E5%8D%83%E6%9E%9A%E7%94%B0%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%91%E3%83%BC%E3%82%AF","k":"michinoeki"},
+{"name":"道の駅「あなみず」","lat":37.2282399,"lon":136.9046335,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅あなみず","lat":37.2282282,"lon":136.9046193,"kind":"michinoeki","wikipedia":null,"oh":"09:00-17:30","k":"michinoeki"},
+{"name":"道の駅のとじま","lat":37.1373004,"lon":136.99827805,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%AE%E3%81%A8%E3%81%98%E3%81%BE","k":"michinoeki"},
+{"name":"道の駅 とぎ海街道","lat":37.1401874,"lon":136.72483799999998,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅輪島 ふらっと訪夢","lat":37.38921755,"lon":136.90639335,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E8%BC%AA%E5%B3%B6","k":"michinoeki"},
+{"name":"とぎ温泉 ますほの湯","lat":37.1530323,"lon":136.7012098,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"別所岳スカイデッキ「能登ゆめてらす」","lat":37.1785739,"lon":136.8571813,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"パノラマ展望台","lat":37.1357324,"lon":136.8988767,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"千枚田展望台","lat":37.4244139,"lon":136.9980059,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"和みの鐘","lat":37.0872289,"lon":136.9112155,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"高爪山","lat":37.2071375,"lon":136.7247717,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E9%AB%98%E7%88%AA%E5%B1%B1","k":"scenic"},
+{"name":"高洲山","lat":37.386407,"lon":136.9613171,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E9%AB%98%E6%B4%B2%E5%B1%B1","k":"scenic"}
+]

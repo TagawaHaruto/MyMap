@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:475762894","name":"上野公園","lat":34.85606,"lon":133.02554,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475766385","name":"国営備北丘陵公園 つどいの里","lat":34.84317,"lon":133.00866,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475767264","name":"国営備北丘陵公園 みのりの里","lat":34.84705,"lon":133.00275,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475767693","name":"国営備北丘陵公園 大芝生広場","lat":34.83844,"lon":133.00323,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:801658205","name":"牧農村公園","lat":34.76863,"lon":133.19208,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:439638256","name":"運動場","lat":34.97648,"lon":133.02896,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:588561135","name":"庄原さくら球場","lat":34.84034,"lon":133.01396,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

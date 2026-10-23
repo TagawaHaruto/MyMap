@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5038255930","name":"ホテル都屋","lat":38.77869,"lon":139.74993,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 235 75 2101"},
+{"id":"osm:node:5038255932","name":"愉海亭みやじま","lat":38.7779,"lon":139.74922,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://www.yukaitei-miyajima.com/","note":"宿","g":"heritage","k":"lodging","kana":"ゆかいていみやじま","tel":"+81 235 75 2311"},
+{"id":"osm:node:5038261025","name":"ホテル亀や","lat":38.77712,"lon":139.74978,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://www.kameya-net.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 235 75 2301"}
+]

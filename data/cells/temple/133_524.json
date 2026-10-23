@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:6762918271","name":"宝八幡宮","lat":33.27428,"lon":131.19112,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11968697738","name":"唐杉天満宮","lat":33.26215,"lon":131.14721,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:14027814209","name":"古羅漢","lat":33.48109,"lon":131.18097,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:14027817706","name":"羅漢寺","lat":33.48152,"lon":131.18667,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:14040664301","name":"檜原山正平寺","lat":33.49019,"lon":131.0957,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

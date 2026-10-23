@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3079572066","name":"豊浦神社","lat":42.58155,"lon":140.71274,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:701912524","name":"西教寺","lat":42.58514,"lon":140.71052,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:702057219","name":"北海寺","lat":42.58481,"lon":140.71014,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:826853029","name":"新高野山亮昌寺","lat":42.55919,"lon":140.74951,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

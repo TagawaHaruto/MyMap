@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:1777909512","name":"青野神社","lat":35.15533,"lon":134.36213,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6311052534","name":"瑠璃寺","lat":35.10344,"lon":134.4251,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6311052536","name":"奥の院","lat":35.10503,"lon":134.41767,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8976833590","name":"八幡神社","lat":35.15202,"lon":134.44573,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8976833591","name":"西蓮寺","lat":35.15384,"lon":134.44585,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8976833592","name":"正福寺","lat":35.15429,"lon":134.44465,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8976833593","name":"天理教播種分教会","lat":35.153,"lon":134.44453,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:8976833594","name":"長永寺","lat":35.1527,"lon":134.44424,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8976833611","name":"河呂大森神社","lat":35.15989,"lon":134.44781,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8976833612","name":"千草大森神社","lat":35.1595,"lon":134.44769,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:14205289896","name":"出会お大師堂","lat":35.16693,"lon":134.33731,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:171779995","name":"白應山 宝妙寺","lat":35.13257,"lon":134.34161,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:388361715","name":"福原神社","lat":35.23017,"lon":134.29979,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:388362103","name":"奥神社","lat":35.21629,"lon":134.27128,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:573132084","name":"若西神社","lat":35.02651,"lon":134.49253,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1086844288","name":"常徳寺","lat":35.00635,"lon":134.36206,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1086884859","name":"佐用チャペル","lat":35.02578,"lon":134.37081,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

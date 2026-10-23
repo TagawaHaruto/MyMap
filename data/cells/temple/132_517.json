@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2931026504","name":"恵比寿神社","lat":33.19279,"lon":129.35482,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2931026505","name":"浪切不動","lat":33.19235,"lon":129.354,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6453495951","name":"志々伎神社 上宮","lat":33.17519,"lon":129.3727,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

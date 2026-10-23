@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:14286978594","name":"徳山レイクサイドテラス","lat":35.69186,"lon":136.48503,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287059074","name":"藤橋キャンピングベース","lat":35.63773,"lon":136.48483,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://fujihashicamp.business.site/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-1183-8652"},
+{"id":"osm:node:14287118447","name":"揖斐高原キャンピングフィールドAFUREPPA","lat":35.53784,"lon":136.43038,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287123133","name":"長者の里キャンプ場","lat":35.51715,"lon":136.45298,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0585-58-3111"}
+]

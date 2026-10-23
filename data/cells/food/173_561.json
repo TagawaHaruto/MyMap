@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3086102769","name":"みさき","lat":43.3556,"lon":140.46473,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"みさき"},
+{"id":"osm:node:3104849307","name":"鱗晃","lat":43.37122,"lon":140.4768,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5603039970","name":"うに膳屋","lat":43.3659,"lon":140.47162,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5603039981","name":"お食事処　中村屋","lat":43.35491,"lon":140.46505,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.nakamuraya.co","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 09:00-15:00","tel":"0135-45-6500"},
+{"id":"osm:node:6481290045","name":"食堂うしお","lat":43.32992,"lon":140.36571,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7821837576","name":"生うに丼のなぎさ","lat":43.32985,"lon":140.39609,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:269896568","name":"カムイ番屋","lat":43.32804,"lon":140.35749,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"yes"},
+{"id":"osm:way:271001617","name":"海鮮味処 御宿 新生","lat":43.32816,"lon":140.3787,"pref":"北海道","genres":["food"],"indoor":true,"url":"http://www.syakotan.com/","note":"海鮮","g":"food","k":"restaurant","tel":"+81 135 46 5050"},
+{"id":"osm:way:271001685","name":"浜寿し","lat":43.328,"lon":140.38074,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"はまずし","tel":"81 135 46 5334"},
+{"id":"osm:way:271001707","name":"海のや","lat":43.32862,"lon":140.37903,"pref":"北海道","genres":["food"],"indoor":true,"url":"http://uminoya.net/shakotan/index.html","note":"海鮮","g":"food","k":"restaurant","kana":"うみのや","tel":"+81 135 48 2333"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4895239068","name":"せたな町運動公園","lat":42.41152,"lon":139.87437,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:4896324879","name":"豊岡上団地公園","lat":42.42012,"lon":139.86709,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9042320010","name":"浮島公園","lat":42.39919,"lon":139.89812,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:498034505","name":"真駒内ダム公園","lat":42.47931,"lon":139.90688,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:498035300","name":"狩場葬苑","lat":42.43789,"lon":139.90043,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:498041712","name":"さけ観察広場","lat":42.41874,"lon":139.87862,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:498043088","name":"きたひやまグリーンパークゴルフ場","lat":42.42669,"lon":139.88295,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:498257616","name":"川添団地公園","lat":42.4104,"lon":139.87618,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:715194106","name":"みのり公園","lat":42.41516,"lon":139.87307,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:715640346","name":"真駒内神社公園","lat":42.41438,"lon":139.88225,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1482778527","name":"せたな漁火公園","lat":42.45257,"lon":139.84846,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

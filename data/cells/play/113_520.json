@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:569686073","name":"塩道長浜公園","lat":28.33973,"lon":130.00656,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:569966208","name":"ムチャカナ公園","lat":28.36633,"lon":130.00923,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"https://www.town.kikai.lg.jp/kankou/shisetsu/kanko/027.html","note":"公園","g":"play","k":"park","tel":"+81 997-65-3683"},
+{"id":"osm:way:569967642","name":"小野津漁港公園","lat":28.36582,"lon":130.00012,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:589353353","name":"天神通り公園","lat":28.36181,"lon":130.02907,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

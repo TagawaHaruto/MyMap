@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2193607299","name":"文精堂","lat":31.38846,"lon":130.84974,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","wc":"yes"},
+{"id":"osm:node:2247459869","name":"ホビーショップ ヒロボー","lat":31.39994,"lon":130.87347,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"ホビー・模型","g":"hobby","k":"hobby"},
+{"id":"osm:node:2247465580","name":"BOOK MARKET","lat":31.4023,"lon":130.87053,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2272290359","name":"寿スポーツ","lat":31.39222,"lon":130.86599,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2582307680","name":"BOOKS misumi","lat":31.38655,"lon":130.87192,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-24:00","tel":"+81-994-40-3130","wc":"yes"},
+{"id":"osm:node:3360636693","name":"フィッシング２２０","lat":31.38852,"lon":130.892,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 994-40-4602","wc":"limited"},
+{"id":"osm:node:3688873044","name":"小竹オート","lat":31.34613,"lon":130.95051,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","kana":"コタケオート","tel":"0994065-2662"},
+{"id":"osm:node:3697994059","name":"田畑釣具店","lat":31.34796,"lon":130.9421,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","tel":"0994-65-2062"},
+{"id":"osm:node:6202483786","name":"鹿児島FunRide","lat":31.37298,"lon":130.77991,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"かごしまふんりで"},
+{"id":"osm:way:307800370","name":"バイクフォーラム","lat":31.39167,"lon":130.85244,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","tel":"+81-994-40-5622"},
+{"id":"osm:way:388734110","name":"明林堂書店","lat":31.39997,"lon":130.87415,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-22:00","tel":"+81-994-43-3983","wc":"yes"},
+{"id":"osm:way:435010517","name":"ハードオフ","lat":31.40191,"lon":130.87469,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/kyushu/kagoshima/hardoff/201356/","note":"古着・リサイクル","g":"hobby","k":"hobby","kana":"はどおふ","tel":"+81-994-45-7113"},
+{"id":"osm:way:1131613074","name":"ヒマラヤスポーツ&ゴルフ 鹿屋バイパス店","lat":31.39698,"lon":130.89178,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

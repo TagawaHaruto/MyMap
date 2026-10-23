@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:12769430817","name":"透雲寺","lat":42.28896,"lon":140.15465,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:717004292","name":"普濟寺","lat":42.42938,"lon":140.00518,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:717004319","name":"教願寺","lat":42.4302,"lon":140.00665,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:717010269","name":"隆憧寺","lat":42.43026,"lon":140.01065,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:717020285","name":"参集所","lat":42.43062,"lon":140.01142,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:717020286","name":"今金八幡宮","lat":42.43068,"lon":140.01165,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:717020288","name":"今金八幡宮社務所","lat":42.43023,"lon":140.01152,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:717461702","name":"法林寺","lat":42.43021,"lon":140.01403,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:718263183","name":"氷川神社","lat":42.42157,"lon":140.06835,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1379002985","name":"大関神社","lat":42.2901,"lon":140.1528,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

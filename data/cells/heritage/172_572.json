@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5093661956","name":"士幌小屋チセ・フレップ","lat":43.24189,"lon":143.12951,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:node:5170375324","name":"きくや旅館","lat":43.16245,"lon":143.24522,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5170401834","name":"士幌旅館","lat":43.16687,"lon":143.24607,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

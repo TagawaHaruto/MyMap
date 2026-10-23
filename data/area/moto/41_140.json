@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:387161044","name":"道の駅たいらだて","lat":41.1751,"lon":140.64103,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433838317","name":"道の駅十三湖高原","lat":41.04542,"lon":140.38439,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:437342500","name":"道の駅わきのさわ","lat":41.16785,"lon":140.80507,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:439633260","name":"道の駅かわうち湖","lat":41.27044,"lon":140.88836,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:439633838","name":"道の駅かわうち湖","lat":41.27037,"lon":140.88839,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:439666031","name":"道の駅いまべつ","lat":41.14561,"lon":140.51399,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:458759376","name":"道の駅縄文ロマン南かやべ","lat":41.92766,"lon":140.94503,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:493277762","name":"道の駅北前船松前","lat":41.42633,"lon":140.10643,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:559137412","name":"道の駅みんまや","lat":41.25355,"lon":140.34669,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561538626","name":"道の駅 横綱の里ふくしま","lat":41.4795,"lon":140.25572,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561540110","name":"道の駅 上ノ国もんじゅ","lat":41.80845,"lon":140.09498,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561541010","name":"道の駅あっさぶ","lat":41.91672,"lon":140.21622,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562441110","name":"道の駅しりうち","lat":41.60123,"lon":140.33677,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:589813571","name":"道の駅江差","lat":41.89479,"lon":140.13923,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:658462853","name":"道の駅こどまり","lat":41.1457,"lon":140.32078,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1094399470","name":"道の駅 なないろ・ななえ","lat":41.92567,"lon":140.65737,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1106745895","name":"道の駅みそぎの郷 きこない","lat":41.67779,"lon":140.43546,"type":"SA・PA","k":"rest_area","likely":true}
+]

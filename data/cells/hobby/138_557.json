@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2120254024","name":"丸市釣漁具店","lat":34.74726,"lon":139.35644,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:2120267792","name":"成瀬書店","lat":34.74961,"lon":139.35618,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"178"},
+{"id":"osm:node:5015736146","name":"利島ダイビング＆ドルフィンスイムサービス","lat":34.53137,"lon":139.27906,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

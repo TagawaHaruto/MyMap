@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:7236197894","name":"熊野神社","lat":37.00355,"lon":140.68842,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11056733533","name":"Entsuji 円通寺","lat":37.01016,"lon":140.74852,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12735911391","name":"稲荷神社","lat":37.09371,"lon":140.55078,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12736008144","name":"西光寺","lat":37.0989,"lon":140.52446,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12747631675","name":"愛宕神社","lat":37.09339,"lon":140.55231,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12747631676","name":"永倉神社","lat":37.08348,"lon":140.56311,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:962689923","name":"神社","lat":37.23711,"lon":140.57148,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1377161773","name":"広覚寺","lat":37.10073,"lon":140.56757,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1377164292","name":"亀堂院","lat":37.09139,"lon":140.54644,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1379099682","name":"龍台寺","lat":37.09375,"lon":140.55537,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

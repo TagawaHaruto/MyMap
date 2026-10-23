@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:7982700984","name":"北海道命名の地","lat":44.7412,"lon":142.18337,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:262314949","name":"中川町エコミュージアムセンター 宿泊研修棟","lat":44.74461,"lon":142.03512,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://city.hokkai.or.jp/~kubinaga/","note":"宿","g":"heritage","k":"lodging","pk":2}
+]

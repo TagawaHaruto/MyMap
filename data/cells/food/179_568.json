@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2679743107","name":"匠舎","lat":44.80142,"lon":142.06706,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:305400362","name":"問寒別駅前　地域コミュニティ食堂　demonde","lat":44.91288,"lon":142.02631,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:423481848","name":"レストランささき","lat":44.80981,"lon":142.07342,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:423482282","name":"十一","lat":44.81103,"lon":142.07308,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:423482331","name":"きまま","lat":44.81527,"lon":142.0735,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2506772370","name":"B-RISE","lat":35.4492,"lon":134.25715,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4360725415","name":"津ノ井リサイクルサービス","lat":35.46116,"lon":134.25058,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4360726858","name":"ハンマープライス.JP","lat":35.46112,"lon":134.25058,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:398452490","name":"鳥取ブックセンター 郡家店","lat":35.41638,"lon":134.25639,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

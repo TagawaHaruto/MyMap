@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:862895137","name":"小野沼公園","lat":43.48598,"lon":145.00634,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:904014947","name":"豊原公園","lat":43.43494,"lon":145.01715,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1462715958","name":"ふれあい野球場","lat":43.38386,"lon":145.10929,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

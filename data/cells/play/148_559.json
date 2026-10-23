@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:3112293674","name":"チビッコ広場","lat":37.19878,"lon":139.76031,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:node:4073729606","name":"戸田調整池","lat":37.02143,"lon":139.97113,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:317436576","name":"下郷町大川ふるさと公園","lat":37.24576,"lon":139.85775,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:626582655","name":"那須疏水公園","lat":37.03801,"lon":139.98523,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:637364008","name":"大丸園地","lat":37.12121,"lon":139.98445,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1101692156","name":"田島公園","lat":37.21126,"lon":139.78571,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1101692157","name":"田島公園","lat":37.21043,"lon":139.78218,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1110930884","name":"養鱒公園","lat":37.20782,"lon":139.84529,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1111206211","name":"観音沼森林公園","lat":37.19116,"lon":139.91932,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:15916290","name":"長田農林公園","lat":37.19584,"lon":139.75241,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:3112293673","name":"びわのかげ総合運動公園","lat":37.19941,"lon":139.75975,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:305368173","name":"多目的広場","lat":37.20137,"lon":139.76086,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:relation:4071681","name":"多目的競技場","lat":37.1983,"lon":139.75853,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"}
+]

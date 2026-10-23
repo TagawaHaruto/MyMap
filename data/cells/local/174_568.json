@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:1484528417","name":"AKABIRAベース","lat":43.57948,"lon":142.03746,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2476388933","name":"そらぷちキャンプ場","lat":43.63161,"lon":142.00027,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wc":"yes"},
+{"id":"osm:node:8109945938","name":"エルム高原オートキャンプ場","lat":43.59209,"lon":142.04871,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10019781305","name":"ザランタン芦別","lat":43.55249,"lon":142.23661,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14284414819","name":"まあぶ公園キャンプサイト（アグリ工房まあぶ敷地内）","lat":43.68605,"lon":142.08795,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286024379","name":"そらぷちキッズキャンプ","lat":43.61905,"lon":142.0133,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0125-75-3200"},
+{"id":"osm:node:14286024380","name":"芦別市豊岡農村公園","lat":43.61677,"lon":142.16239,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0124-22-2111"},
+{"id":"osm:node:14286024386","name":"かもい岳ビレッヂ","lat":43.52161,"lon":142.02069,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0125-42-5733"}
+]

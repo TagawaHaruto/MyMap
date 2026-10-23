@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5450598871","name":"定山渓スポーツ公園","lat":42.96314,"lon":141.16098,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:163958362","name":"定山渓錦台公園","lat":42.97145,"lon":141.16851,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"じょうざんけいにしきだいこうえん"},
+{"id":"osm:way:163961931","name":"とよたき公園","lat":42.95353,"lon":141.23763,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"とよたきこうえん"},
+{"id":"osm:way:438350928","name":"やまびこ公園","lat":42.95119,"lon":141.15212,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:442689364","name":"豊滝くわがた公園","lat":42.95258,"lon":141.23367,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"とよたきくわがたこうえん"},
+{"id":"osm:way:442689366","name":"小金湯さくらの森","lat":42.96302,"lon":141.21773,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://mit-ueki.com/koganeyu_shisetu.html","note":"公園","g":"play","k":"park","kana":"こがねゆさくらのもり"},
+{"id":"osm:way:442691527","name":"定山渓ひまわり公園","lat":42.96917,"lon":141.1717,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"じょうざんけいひまわりこうえん"},
+{"id":"osm:way:442867498","name":"定山渓大橋公園","lat":42.96892,"lon":141.16559,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"じょうざんけいおうはしこうえん"},
+{"id":"osm:way:442867512","name":"定山渓岩戸公園","lat":42.96699,"lon":141.16072,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"じょうざんけいいわどこうえん"},
+{"id":"osm:way:442869548","name":"三笠緑地","lat":42.97071,"lon":141.16129,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"みかさりょくち"},
+{"id":"osm:way:442869840","name":"定山渓ダム下流園地","lat":42.98358,"lon":141.15609,"pref":"北海道","genres":["play"],"indoor":false,"url":"http://www2.wagamachi-guide.com/sapporo_koen/","note":"公園","g":"play","k":"park","kana":"じょうざんけいだむかりゅうえんち"},
+{"id":"osm:way:1027619716","name":"スノーワールド喜茂別コース","lat":42.81345,"lon":141.00616,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1213790007","name":"二見公園","lat":42.96456,"lon":141.15959,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://jozankei.jp/spot/1116/","note":"公園","g":"play","k":"park","kana":"ふたみこえん"},
+{"id":"osm:way:1213794794","name":"定山源泉公園","lat":42.965,"lon":141.16319,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://jozankei.jp/spot/66/","note":"公園","g":"play","k":"park","kana":"じょざんけいげんせんこえん","oh":"07:00-21:00"},
+{"id":"osm:way:429226849","name":"定山渓スポーツ公園","lat":42.9636,"lon":141.16147,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

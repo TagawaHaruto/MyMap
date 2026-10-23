@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:3088467365","name":"慰霊碑","lat":34.04482,"lon":135.78777,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3088467366","name":"紀伊半島大水害警戒碑","lat":34.03954,"lon":135.78994,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4829909822","name":"黒木御所跡","lat":34.10359,"lon":135.76433,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8008046630","name":"天川村出身戦没者慰霊銘碑","lat":34.24228,"lon":135.8546,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033074","name":"故宇智吉野郡長玉置高良君遭難地碑","lat":34.10615,"lon":135.77433,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033076","name":"警戒碑","lat":34.09965,"lon":135.76093,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033082","name":"紀伊半島大水害警戒碑","lat":34.12646,"lon":135.7732,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033091","name":"慰霊碑","lat":34.16698,"lon":135.75766,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033092","name":"柳谷部落遭難之碑","lat":34.16816,"lon":135.7586,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033094","name":"明治22年水害碑","lat":34.17044,"lon":135.7567,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033095","name":"紀伊半島大水害水害警戒碑","lat":34.16737,"lon":135.75734,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10312948728","name":"下北山村道路元標","lat":34.00488,"lon":135.95499,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7023033537","name":"小仲坊","lat":34.09659,"lon":135.92491,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8008046620","name":"天川村山風荘","lat":34.24222,"lon":135.85382,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13408485336","name":"Misenkan","lat":34.24536,"lon":135.85593,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"https://misenkan.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81747630018"},
+{"id":"osm:node:14284382490","name":"バンガロー 貨車＆ログ","lat":34.23927,"lon":135.852,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0747-63-0345"},
+{"id":"osm:node:14287509775","name":"春さくらコテージ","lat":34.21371,"lon":135.83104,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0747-65-0203"},
+{"id":"osm:node:14287563791","name":"コテージやまとや","lat":34.19477,"lon":135.81943,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14287563794","name":"天川村キャンプ場 コテージいずもと","lat":34.19205,"lon":135.79718,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"080-8341-9817"}
+]

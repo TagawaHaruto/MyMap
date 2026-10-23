@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:13011043193","name":"オベリスク","lat":32.61928,"lon":128.61374,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11816052441","name":"はまべ","lat":32.603,"lon":128.65576,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"はまべ"}
+]

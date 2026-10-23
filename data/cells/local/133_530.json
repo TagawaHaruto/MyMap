@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:7553461094","name":"河合太刀魚巻店","lat":33.27585,"lon":132.54092,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7553533250","name":"駒屋","lat":33.27681,"lon":132.54141,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7555880219","name":"河野鮮魚","lat":33.27817,"lon":132.54046,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7996865275","name":"百姓百品","lat":33.37813,"lon":132.64477,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1330413361","name":"農産物直売コーナー","lat":33.28598,"lon":132.59607,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:2631970547","name":"宇和島カントリー倶楽部","lat":33.30517,"lon":132.58058,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1322138483","name":"広見体育センター","lat":33.25593,"lon":132.68449,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4967148121","name":"野村ダムロッジ","lat":33.35618,"lon":132.61919,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11564088770","name":"キャンプ場","lat":33.30759,"lon":132.59346,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12963701277","name":"グリズリーBBQ&CAMP","lat":33.26564,"lon":132.5517,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"https://grizzly-grizzly.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287575920","name":"竜沢寺緑地公園","lat":33.37719,"lon":132.70726,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0894-82-0150"},
+{"id":"osm:node:14287585570","name":"宇和ふれあいの森林施設","lat":33.36124,"lon":132.51026,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0894-62-4414"},
+{"id":"osm:node:14287585572","name":"ユートピア宇和 游の里温泉","lat":33.35835,"lon":132.61717,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"http://yutopiauwa.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0894-67-0077"}
+]

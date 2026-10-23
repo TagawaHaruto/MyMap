@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:3710276016","name":"GIANT","lat":34.06462,"lon":132.9935,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:8201863074","name":"スポーツオーソリティ","lat":34.04311,"lon":132.9611,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8201901025","name":"宮脇書店","lat":34.04297,"lon":132.96188,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:node:8202511961","name":"たかはし商会","lat":34.06609,"lon":132.99861,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8290529860","name":"原田書房","lat":34.05998,"lon":132.99298,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10584338087","name":"イオンバイク","lat":34.04382,"lon":132.96207,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"あえおんびけ"},
+{"id":"osm:node:11883582213","name":"i.i.imabari! Cycle Station","lat":34.0648,"lon":132.99358,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"https://shimanami-cycle.or.jp/recommend/274/","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:12367152753","name":"宮脇書店","lat":34.0563,"lon":132.9802,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:659536275","name":"B-House","lat":34.05516,"lon":132.99721,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:806303040","name":"明屋書店 今治本店","lat":34.05195,"lon":132.98073,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:806303044","name":"ブックオフ","lat":34.0504,"lon":132.98293,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:806303045","name":"オフハウス","lat":34.0501,"lon":132.98302,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:806424879","name":"キナミスポーツ","lat":34.06141,"lon":132.99503,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:879861556","name":"明屋書店 今治別宮町店","lat":34.0742,"lon":132.99132,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

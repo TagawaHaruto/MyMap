@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2703613278","name":"ジャンボヨーク","lat":33.50368,"lon":130.75425,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4430072852","name":"井手口道場","lat":33.58859,"lon":130.81471,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4430079295","name":"井手口グラウンド","lat":33.58839,"lon":130.81458,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8407033023","name":"スエミツスイミングスクール","lat":33.73293,"lon":130.9635,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:620793916","name":"嘉穂CC","lat":33.61074,"lon":130.7525,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:770798296","name":"鷹羽ロイヤルCC","lat":33.60402,"lon":130.84117,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:772359827","name":"京都CC","lat":33.65269,"lon":130.96677,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:772359831","name":"勝山御所CC","lat":33.67941,"lon":130.92477,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:984591925","name":"みやこ町豊津体育館","lat":33.67061,"lon":130.97454,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1428775571","name":"みやこ町犀川プール","lat":33.64751,"lon":130.94028,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285920950","name":"ラピュタファーム","lat":33.57571,"lon":130.82694,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0947-47-4000"},
+{"id":"osm:node:14287502398","name":"7世代CAMP","lat":33.71376,"lon":130.75116,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://www.7sedai.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287534803","name":"カワラテラス","lat":33.70168,"lon":130.87013,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-6170-3244"},
+{"id":"osm:node:14287545625","name":"大任町自然の森キャンプ場","lat":33.63553,"lon":130.83928,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0947-63-4850"},
+{"id":"osm:node:14287571161","name":"牧の原キャンプ場","lat":33.5361,"lon":130.97644,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0930-54-0111"},
+{"id":"osm:node:14287578020","name":"グランピングKAWASAKI懐かしの森","lat":33.53031,"lon":130.81296,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0947-73-3030"},
+{"id":"osm:node:14287578031","name":"じゃぶち森のビレッジ","lat":33.5095,"lon":130.95624,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"http://www.town.miyako.lg.jp/kannkoumachidukuri3/silyou/jabuti/jabuchi_camp_1.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0930-45-7011"},
+{"id":"osm:node:14287578035","name":"sleepy cafe nico","lat":33.50162,"lon":130.75218,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"http://nico-apple.com/nico/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287582606","name":"源じいの森","lat":33.61728,"lon":130.89683,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://www.genjii.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0947-62-2911"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5500345235","name":"輪島教会","lat":37.39442,"lon":136.90368,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:5536923122","name":"総持寺","lat":37.28672,"lon":136.7701,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:576485524","name":"住吉神社","lat":37.39787,"lon":136.8975,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:585927944","name":"稲荷神社","lat":37.39426,"lon":136.90662,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:585927947","name":"秋葉社","lat":37.3947,"lon":136.90606,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:585927948","name":"金比羅社","lat":37.39471,"lon":136.90596,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:585927952","name":"子安社","lat":37.39432,"lon":136.90599,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

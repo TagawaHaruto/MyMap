@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:363069957","name":"佐渡市陸上競技場","lat":37.97152,"lon":138.34987,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:363069962","name":"真野体育館","lat":37.96978,"lon":138.34776,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:453046573","name":"赤泊港","lat":37.8666,"lon":138.41237,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1356573011","name":"ときの郷ゴルフクラブ","lat":37.91836,"lon":138.30793,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5017651045","name":"松ヶ崎ヒストリーパーク","lat":37.92037,"lon":138.49973,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285406042","name":"潮津の里キャンプサイト","lat":37.94543,"lon":138.32346,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286275028","name":"爪の沢キャンプ場","lat":37.92357,"lon":138.43214,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0259-87-2494"},
+{"id":"osm:node:14286275033","name":"素浜キャンプ場","lat":37.84824,"lon":138.2713,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0259-86-2363"}
+]

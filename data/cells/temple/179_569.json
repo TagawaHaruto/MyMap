@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:12117192688","name":"専念寺","lat":44.97196,"lon":142.2866,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117207572","name":"中頓別神社","lat":44.97215,"lon":142.29903,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12117220785","name":"護国山 大法寺","lat":44.97061,"lon":142.28879,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117230413","name":"日炤寺","lat":44.97088,"lon":142.28823,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117260393","name":"曹洞宗開禅寺","lat":44.96927,"lon":142.29496,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117283045","name":"聖福寺","lat":44.97051,"lon":142.28962,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4344275269","name":"二宮神社","lat":34.06052,"lon":139.54482,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4344275270","name":"海蔵寺","lat":34.06067,"lon":139.54517,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4344275279","name":"御祭神社","lat":34.1122,"lon":139.50067,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4344283095","name":"椎取神社","lat":34.10742,"lon":139.55772,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11992394643","name":"坪田観音（旧蹟 伊波耶観音神社）","lat":34.06624,"lon":139.54066,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11998145573","name":"飯王子神社・酒王子神社","lat":34.1234,"lon":139.53003,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11998319828","name":"椎取神社 本殿","lat":34.10693,"lon":139.557,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

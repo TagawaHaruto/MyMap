@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2970986024","name":"南の池記念公園","lat":40.00441,"lon":139.95246,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:2971012210","name":"生態系公園","lat":40.01402,"lon":139.96451,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:702669425","name":"緑地公園","lat":40.20815,"lon":139.99843,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:736882533","name":"エナジアムパーク","lat":40.19021,"lon":139.99597,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:739109731","name":"生態系公園","lat":40.01519,"lon":139.96383,"pref":"秋田","genres":["play"],"indoor":false,"url":"https://seitaikeipark.jp","note":"公園","g":"play","k":"park","oh":"Tu-Su 09:00-17:00","tel":"0185-45-3106"},
+{"id":"osm:way:746056188","name":"村民運動公園","lat":40.02823,"lon":139.96291,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:754580564","name":"ゆめっぴぃ","lat":40.09603,"lon":139.97885,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:754599444","name":"釜谷農村公園","lat":40.09954,"lon":139.96488,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:754599445","name":"大口団地公園","lat":40.09419,"lon":139.98451,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:754599459","name":"大口公園","lat":40.09833,"lon":139.97786,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:448300357","name":"村民野球場","lat":40.02914,"lon":139.96091,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:743814686","name":"ステージ","lat":40.19151,"lon":139.99613,"pref":"秋田","genres":["outdoor","play"],"indoor":true,"url":"","note":"ダンス","g":"play","k":"sports"},
+{"id":"osm:way:750885745","name":"大潟村ラグビー場","lat":40.02953,"lon":139.95705,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

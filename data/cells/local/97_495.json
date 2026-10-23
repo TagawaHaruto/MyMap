@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2520521416","name":"しょうとく庵","lat":24.41881,"lon":123.7987,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"http://www.kanpira.com/shotoku-an.htm","note":"お土産・特産品","g":"local","k":"souvenir","kana":"しょとくあん","tel":"+81-980-85-6513"},
+{"id":"osm:node:12329676478","name":"ショップじゅごん","lat":24.27184,"lon":123.8828,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"08:30-17:30"},
+{"id":"osm:node:13733843899","name":"ゆりみ","lat":24.41818,"lon":123.79986,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"08:45-16:30"},
+{"id":"osm:node:13736894320","name":"A Picture Book","lat":24.42952,"lon":123.78855,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"https://iriomote-zukan.com","note":"お土産・特産品","g":"local","k":"souvenir","oh":"10:00-17:00","tel":"+81 98-0848-065"},
+{"id":"osm:node:13739128297","name":"ヤマネコ商店","lat":24.27253,"lon":123.88315,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13739128298","name":"みなとのやおや","lat":24.2725,"lon":123.88322,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"みなとやおや","oh":"09:00-11:30,13:30-17:35"},
+{"id":"osm:node:13739197404","name":"Matsurika Craft & Arts Shop","lat":24.27103,"lon":123.87997,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"10:00-18:00","tel":"+81 90-7585-3934"},
+{"id":"osm:way:450517946","name":"リゾナーレ小浜島CC","lat":24.33004,"lon":123.99612,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:2518143389","name":"ミトレアキャンプ場","lat":24.40502,"lon":123.80738,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286058903","name":"三匹の猫キャンプサイト","lat":24.42953,"lon":123.78326,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287613569","name":"イルンティ フタデムラ","lat":24.39501,"lon":123.75503,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:relation:18906902","name":"星の砂キャンプ場","lat":24.43541,"lon":123.7775,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"http://www.hoshinosuna.ne.jp/camp.html","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1395376103","name":"南風見田キャンプ場","lat":24.27359,"lon":123.8328,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://www.haimidakyanpu.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81-90-9781-0940"}
+]

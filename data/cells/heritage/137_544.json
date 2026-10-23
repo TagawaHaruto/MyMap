@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4824793921","name":"三之公行宮跡(カクシ平)","lat":34.2765,"lon":136.09605,"pref":"奈良","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6243618787","name":"林道開通記念碑","lat":34.43835,"lon":136.20195,"pref":"三重","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1911377259","name":"朝日館","lat":34.28655,"lon":136.00242,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あさひかん"},
+{"id":"osm:node:4802917089","name":"あまご池　高見山荘","lat":34.42326,"lon":136.04486,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4824783624","name":"入之波温泉 山鳩湯","lat":34.26211,"lon":136.0406,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4829870221","name":"山鳩湯","lat":34.2621,"lon":136.04049,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4829891522","name":"山鳩湯","lat":34.26203,"lon":136.04055,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6098187538","name":"ふるさと村","lat":34.3764,"lon":136.01946,"pref":"奈良","genres":["lodging"],"indoor":true,"url":"https://furusato-mura.jp/","note":"宿","g":"heritage","k":"lodging","tel":"0746-43-0413"},
+{"id":"osm:node:11005475706","name":"わんわんパラダイス","lat":34.37812,"lon":136.22395,"pref":"三重","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14287496175","name":"松阪わんわんパラダイス森のホテルスメール","lat":34.37769,"lon":136.22402,"pref":"三重","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0598-45-0003"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:11307159871","name":"奥白滝駅跡","lat":43.87428,"lon":143.08398,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13760645698","name":"合気道開祖植芝盛平翁ゆかりの地","lat":43.87654,"lon":143.15467,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13760645799","name":"三和小・中学校跡","lat":43.87704,"lon":143.13508,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13760645800","name":"滝の上駅逓跡","lat":43.87933,"lon":143.12504,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13760645902","name":"奥白滝開拓記念碑","lat":43.87589,"lon":143.08302,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

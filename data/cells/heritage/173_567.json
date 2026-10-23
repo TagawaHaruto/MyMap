@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:7454123127","name":"旧沼東小学校","lat":43.31943,"lon":141.9514,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:12892372497","name":"Railway car","lat":43.48052,"lon":141.98981,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12892372498","name":"Railway car","lat":43.48044,"lon":141.98971,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13227890558","name":"幌内線 弥生駅跡","lat":43.25675,"lon":141.94293,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:弥生駅 (北海道)"},
+{"id":"osm:node:13227890976","name":"幌内線 幾春別駅跡","lat":43.26089,"lon":141.95684,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:幾春別駅"},
+{"id":"osm:node:13666737201","name":"直線道路日本一モニュメント","lat":43.30041,"lon":141.8511,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14028078752","name":"幾春別炭鉱錦抗","lat":43.26128,"lon":141.96754,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:719547429","name":"旧三井砂川炭鉱中央立坑櫓","lat":43.47778,"lon":141.99332,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:797016205","name":"我路簡易郵便局","lat":43.32503,"lon":141.94248,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2476059440","name":"ピパの湯ゆ〜りん館","lat":43.34348,"lon":141.89307,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:node:5171067917","name":"北海道の移住支援、格安長期滞在シェアハウスかみすなライフ（上砂川町就業・観光体験等宿泊施設）","lat":43.48061,"lon":141.95175,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6771188916","name":"砂川パークホテル","lat":43.49388,"lon":141.90913,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:431800522","name":"浦臼町自然保養村センター","lat":43.45029,"lon":141.83586,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:551078495","name":"美唄ホテルスエヒロ","lat":43.33133,"lon":141.85673,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:551431163","name":"だるま屋旅館","lat":43.33008,"lon":141.8581,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:551442257","name":"的場旅館","lat":43.32806,"lon":141.85886,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1540922564","name":"神泉閣","lat":43.2572,"lon":141.97156,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"しんせんかく"}
+]

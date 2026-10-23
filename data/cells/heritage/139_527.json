@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:8463033043","name":"五十八年山陰豪雨災害追悼之碑","lat":34.77328,"lon":131.91535,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033044","name":"静流の鐘塔","lat":34.78771,"lon":131.95685,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4919829821","name":"荒磯館","lat":34.75758,"lon":131.88921,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

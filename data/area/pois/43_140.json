@@ -1,0 +1,22 @@
+[
+{"name":"道の駅あかいがわ","lat":43.051424,"lon":140.8444188,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅オスコイ！かもえない","lat":43.1653789,"lon":140.38527345,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 オスコイ！かもえない","lat":43.1653705,"lon":140.38561750000002,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%82%AA%E3%82%B9%E3%82%B3%E3%82%A4%21%E3%81%8B%E3%82%82%E3%81%88%E3%81%AA%E3%81%84","k":"michinoeki"},
+{"name":"道の駅 スペース・アップルよいち","lat":43.18910665,"lon":140.78864495,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%83%BB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB%E3%82%88%E3%81%84%E3%81%A1","k":"michinoeki"},
+{"name":"道の駅　ふるびらたらこミュージアム","lat":43.265186,"lon":140.6389122,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"岬の湯;しゃこたん","lat":43.338604950000004,"lon":140.45436095,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"ふるびら温泉 しおかぜ","lat":43.2835387,"lon":140.6364343,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"茂岩温泉","lat":43.11338725,"lon":140.4523859,"kind":"onsen","wikipedia":null,"tel":"+81-135-75-2106","k":"onsen"},
+{"name":"電磁台","lat":43.3300613,"lon":140.3546679,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"展望台","lat":43.3301158,"lon":140.3579051,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"積丹岬灯台展望台","lat":43.3733258,"lon":140.4820179,"kind":"viewpoint","wikipedia":null,"wc":"yes","k":"viewpoint"},
+{"name":"旭展望台","lat":43.1970028,"lon":140.9846182,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"神威岬","lat":43.3334985,"lon":140.3467643,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"島武意海岸展望台","lat":43.3721469,"lon":140.4777425,"kind":"viewpoint","wikipedia":null,"wc":"yes","k":"viewpoint"},
+{"name":"あんない展望公園","lat":43.2423312,"lon":140.332648,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"蘭島海水浴場","lat":43.1990644,"lon":140.8517463,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"冷水峠 カルデラ展望所","lat":43.1177232,"lon":140.8208318,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"女郎子岩展望台","lat":43.3696082,"lon":140.4983661,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"天狗山","lat":43.1684092,"lon":140.9698141,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%8B%97%E5%B1%B1_%28%E5%B0%8F%E6%A8%BD%E5%B8%82%29","k":"scenic"},
+{"name":"シリパ岬","lat":43.2266132,"lon":140.7724641,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AA%E3%83%91%E5%B2%AC","k":"scenic"}
+]

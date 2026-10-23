@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:6587010765","name":"真庭花水木店","lat":35.00946,"lon":133.73024,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"08:00-20:00","tel":"+81 867 52 2132"},
+{"id":"osm:way:548116653","name":"勝山農産物直売所　健康の里","lat":35.0763,"lon":133.68727,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:573286866","name":"勝山温水プール 水夢","lat":35.08331,"lon":133.70566,"pref":"岡山","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:672208890","name":"サンフォレストゴルフクラブ","lat":35.07645,"lon":133.66169,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"https://www.sanforest.jp/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 867 44 5500"},
+{"id":"osm:node:4941411621","name":"勝山運動公園キャンプ場","lat":35.0831,"lon":133.67036,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287372341","name":"田浪キャンプ場","lat":35.22229,"lon":133.52505,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"http://www.vill.shinjo.okayama.jp/index.php?id=148","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1010-7876"},
+{"id":"osm:node:14287381080","name":"クリエイト菅谷 キャンプ＆リゾート","lat":35.15269,"lon":133.606,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"http://c-sugedani.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287405198","name":"自然公園大佐山","lat":35.0821,"lon":133.54048,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0867-98-3461"},
+{"id":"osm:node:14287440917","name":"自然公園大佐山大佐ファミリーパーク","lat":35.04478,"lon":133.55158,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0867-98-3461"},
+{"id":"osm:node:14287449504","name":"大佐山オートキャンプ場","lat":35.07533,"lon":133.55028,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287461417","name":"北房もみじ公園","lat":35.00221,"lon":133.60013,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

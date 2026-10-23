@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:14143851109","name":"信正寺","lat":44.80946,"lon":142.07393,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:14145680398","name":"中川神社","lat":44.81651,"lon":142.0583,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:361198504","name":"金毘羅神社","lat":44.76488,"lon":142.05525,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:423482914","name":"大悟寺","lat":44.8086,"lon":142.07279,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:423483024","name":"天理教北誉分教会","lat":44.80814,"lon":142.07244,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:423483051","name":"極楽寺","lat":44.81734,"lon":142.06154,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:842522735","name":"駒形神社","lat":44.89489,"lon":142.00426,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855650528","name":"中問寒神社","lat":44.96675,"lon":142.05533,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855650529","name":"問寒別神社","lat":44.9211,"lon":142.01139,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:856015786","name":"歌内神社","lat":44.8832,"lon":142.05153,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:856015787","name":"国府神社","lat":44.87563,"lon":142.04378,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

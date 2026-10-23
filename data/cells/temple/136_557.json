@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4344275271","name":"若宮神社","lat":34.06074,"lon":139.48385,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4344275274","name":"火戸寄神社","lat":34.07468,"lon":139.48147,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4344275278","name":"后神社","lat":34.10018,"lon":139.48967,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4487022588","name":"差出神社","lat":34.06758,"lon":139.48252,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6203959843","name":"八十司神社","lat":34.07011,"lon":139.48344,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11994595277","name":"荒島神社","lat":34.07071,"lon":139.48137,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11994595314","name":"西之御門宮","lat":34.05443,"lon":139.48194,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:452682420","name":"富賀神社","lat":34.05568,"lon":139.48507,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"とがじんじゃ"}
+]

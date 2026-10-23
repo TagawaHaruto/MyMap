@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:264407690","name":"きらっせ弁当","lat":35.77558,"lon":140.78132,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14279487997","name":"波崎シーサイドキャンプ場","lat":35.77969,"lon":140.80649,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://hss-camp.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286866952","name":"ARANAMIオートキャンプ場","lat":35.7623,"lon":140.79171,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

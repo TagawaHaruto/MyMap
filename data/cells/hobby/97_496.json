@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5885100298","name":"GEO石垣店","lat":24.33551,"lon":124.18064,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7294450285","name":"タウンパルやまだ","lat":24.33962,"lon":124.15849,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11893567169","name":"Ponte","lat":24.36498,"lon":124.11393,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"https://ponte-glass.com","note":"手芸・画材","g":"hobby","k":"hobby","kana":"ぽんて","oh":"Mo-Su 10:00-18:00; We off","tel":"+81-980-82-4620"},
+{"id":"osm:way:195925809","name":"BOOKSきょうはん","lat":24.33739,"lon":124.18196,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

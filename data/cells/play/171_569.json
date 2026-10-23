@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:680635064","name":"国設占冠村スキー場","lat":42.97325,"lon":142.39506,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13030566462","name":"日高の森広場サッカー場","lat":42.87571,"lon":142.44543,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

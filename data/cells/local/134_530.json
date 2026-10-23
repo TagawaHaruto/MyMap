@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4946461821","name":"フレスポ大洲(大型購物中心)","lat":33.53143,"lon":132.57729,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"24/7"},
+{"id":"osm:node:4947996621","name":"大洲まちの駅あさもや","lat":33.5066,"lon":132.54674,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:00-18:00"},
+{"id":"osm:node:4948031921","name":"大森和蝋燭屋","lat":33.55391,"lon":132.6531,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"We-Th, Sa-Mo 09:00-12:00, 13:00-17:00"},
+{"id":"osm:node:4949862122","name":"森文醸造株式会社-醬油味噌","lat":33.55363,"lon":132.65387,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"もりぶん","oh":"Mo-Su 08:00-17:00"},
+{"id":"osm:node:4949865321","name":"（株）五十崎社中 工房- 和紙","lat":33.53526,"lon":132.66623,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:00-17:00"},
+{"id":"osm:way:298558545","name":"愛媛ゴルフ倶楽部","lat":33.56582,"lon":132.64553,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:576709088","name":"水上ゴルフ場","lat":33.50322,"lon":132.52272,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5276492023","name":"えひめ森林公園キャンプ場","lat":33.74742,"lon":132.73983,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287545610","name":"ふたみ潮風ふれあい公園キャンプ場","lat":33.68337,"lon":132.63143,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"089-986-1559"},
+{"id":"osm:node:14287545619","name":"秦皇山森林公園","lat":33.65645,"lon":132.72526,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"089-967-0819"},
+{"id":"osm:node:14287571155","name":"知清公園キャンプ場","lat":33.55227,"lon":132.65678,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287578034","name":"大洲家族旅行村オートキャンプ場","lat":33.50439,"lon":132.56204,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0893-23-2384"}
+]

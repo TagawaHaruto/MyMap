@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:12190168943","name":"JA高知県 みどり市","lat":33.21234,"lon":133.13853,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1317150405","name":"はやと鮮魚店","lat":33.21153,"lon":133.1354,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:297205423","name":"土佐西南大規模公園体育館","lat":33.01523,"lon":133.00321,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:516532517","name":"窪川小学校体育館","lat":33.21164,"lon":133.13366,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:555587670","name":"窪川勤労者体育センター","lat":33.21595,"lon":133.12609,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1472718129","name":"土佐ユートピアカントリークラブ","lat":33.04788,"lon":133.03534,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11377109969","name":"入野松原キャンプ場","lat":33.03049,"lon":133.02311,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"http://iwk.ne.jp","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11531835669","name":"浮津キャンプ場","lat":33.03785,"lon":133.03993,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://kuroshio-kanko.net/info/ukitsucampjyo/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81880430881"},
+{"id":"osm:node:13649940801","name":"Free camp","lat":33.21187,"lon":133.1278,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","oh":"24/7"}
+]

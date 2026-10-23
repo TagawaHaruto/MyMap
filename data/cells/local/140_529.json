@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5538860187","name":"三彦市","lat":35.04519,"lon":132.29926,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:11505563653","name":"銀山みやげ","lat":35.20101,"lon":132.49976,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mar-Nov Su-Sa,PH 08:30-16:30; Dec-Feb Su-Sa,PH 10:00-15:00; Dec Sa[-1]-Jan Mo[1] off"},
+{"id":"osm:node:14287372350","name":"弥栄(いやさか)キャンプ場","lat":35.20397,"lon":132.47244,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-7139-0186"},
+{"id":"osm:node:14287438363","name":"菰沢公園オートキャンプ場","lat":35.0266,"lon":132.27913,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"https://gotsu-kanko.jp/kankou/camp/komosawacamp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0855-55-1188"},
+{"id":"osm:way:669451350","name":"櫛島キャンプ場","lat":35.10174,"lon":132.34092,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

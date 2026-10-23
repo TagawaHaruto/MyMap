@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4279354890","name":"くったり溫泉湖旅舍","lat":43.1596,"lon":142.90893,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4402109704","name":"清水イン勝造","lat":43.0134,"lon":142.88889,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 156 62 4855"},
+{"id":"osm:way:256270820","name":"Club Med Sahoro","lat":43.16989,"lon":142.81013,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:327569031","name":"サホロリゾートホテル","lat":43.16684,"lon":142.8133,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:552282540","name":"Shintoku Onsen Hotel","lat":43.07347,"lon":142.84997,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

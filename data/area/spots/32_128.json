@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:1423798273","name":"五島観光歴史資料館","lat":32.69394,"lon":128.84694,"pref":"長崎","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:way:734662407","name":"堂崎天主堂","lat":32.75587,"lon":128.83725,"pref":"長崎","genres":["museum"],"indoor":true,"url":"https://ja.wikipedia.org/wiki/%E5%A0%82%E5%B4%8E%E5%A4%A9%E4%B8%BB%E5%A0%82","note":"博物館","k":"museum"},
+{"id":"osm:node:4787585814","name":"ガッパ岩","lat":32.75349,"lon":128.97122,"pref":"長崎","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:4787585816","name":"長刀石","lat":32.75627,"lon":128.98403,"pref":"長崎","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:4787586427","name":"ヒシャゴ岩","lat":32.78597,"lon":128.99925,"pref":"長崎","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:13011043193","name":"オベリスク","lat":32.61928,"lon":128.61374,"pref":"長崎","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:6326615994","name":"高浜海水浴場","lat":32.70803,"lon":128.66161,"pref":"長崎","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:6326615996","name":"鬼岳","lat":32.65686,"lon":128.8457,"pref":"長崎","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:6326626486","name":"大瀬崎灯台","lat":32.61273,"lon":128.59998,"pref":"長崎","genres":["scenic"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E5%A4%A7%E7%80%AC%E5%9F%BC%E7%81%AF%E5%8F%B0","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:11036496665","name":"鬼岳展望台","lat":32.66173,"lon":128.84388,"pref":"長崎","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"}
+]

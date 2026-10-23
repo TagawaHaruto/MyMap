@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2192276588","name":"上宮神社","lat":31.98383,"lon":130.36708,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12706282657","name":"熊野神社","lat":31.82408,"lon":130.43769,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12706282659","name":"源正寺","lat":31.80251,"lon":130.43325,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:292012398","name":"現王神社","lat":31.93392,"lon":130.31311,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:304766630","name":"大宮神社","lat":31.79688,"lon":130.44162,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:568028822","name":"八坂神社","lat":31.82164,"lon":130.30179,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1018918741","name":"龍音山真光寺","lat":31.8186,"lon":130.30962,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1411748499","name":"泰平寺","lat":31.8243,"lon":130.30547,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

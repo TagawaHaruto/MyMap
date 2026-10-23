@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5552678683","name":"マリモの唄","lat":43.43851,"lon":144.10214,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5552678686","name":"石川啄木歌碑","lat":43.43866,"lon":144.1032,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4201261652","name":"温泉 民宿桐 Minshuku Kiri","lat":43.43405,"lon":144.09111,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www10.plala.or.jp/kiriminsyuku/","note":"宿","g":"heritage","k":"lodging","tel":"+81 154-67-2755"},
+{"id":"osm:node:6669803188","name":"山水荘ホテル","lat":43.43339,"lon":144.09996,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11927637867","name":"ホテル御前水","lat":43.43411,"lon":144.09296,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430715740","name":"New Akan Hotel","lat":43.4334,"lon":144.0969,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 154-67-2121"},
+{"id":"osm:way:430715745","name":"シャングリラ","lat":43.43377,"lon":144.09586,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430715747","name":"あかん鶴雅別荘鄙の座","lat":43.43316,"lon":144.09778,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あかんつるがべっそうひなのざ"},
+{"id":"osm:way:430715752","name":"阿寒の森鶴雅リゾート花ゆう香","lat":43.43383,"lon":144.09896,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あかんのもりつるがりぞーとはなゆうか"},
+{"id":"osm:way:430715761","name":"ホテル阿寒湖荘","lat":43.43481,"lon":144.0994,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:578883739","name":"トゥラノ","lat":43.43338,"lon":144.09813,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:582072673","name":"あかん遊久の里鶴雅","lat":43.43473,"lon":144.09081,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あかんゆくのさとつるが","wc":"yes"},
+{"id":"osm:way:582072674","name":"あかん湖鶴雅ウイングス","lat":43.43438,"lon":144.09182,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あかんこつるがういんぐす"},
+{"id":"osm:way:1172436963","name":"ラビスタ阿寒川","lat":43.42179,"lon":144.14373,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.hotespa.net/hotels/akangawa/","note":"宿","g":"heritage","k":"lodging","kana":"らびすたあかんがわ","tel":"154-67-5566"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:13046895440","name":"百年記念碑","lat":43.74584,"lon":142.57466,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13046895475","name":"地神碑","lat":43.73558,"lon":142.62942,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2479924079","name":"森のゆ 花神楽","lat":43.66921,"lon":142.54536,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:node:3080110113","name":"Resort house bibi","lat":43.51945,"lon":142.56988,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3080110116","name":"お宿のXX","lat":43.53725,"lon":142.54409,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4477527110","name":"マ・メゾンP2","lat":43.69247,"lon":142.51791,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4477527123","name":"ペンションととり","lat":43.69249,"lon":142.51948,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4487634583","name":"ＶＩＬＬＡニセウコロコロ","lat":43.68925,"lon":142.54287,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4487766297","name":"旅人宿ゆう","lat":43.68907,"lon":142.58045,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:450845965","name":"コンドミニアム　あんどん","lat":43.69382,"lon":142.51512,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1419745939","name":"mizuki","lat":43.74134,"lon":142.50117,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

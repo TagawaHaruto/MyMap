@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:1109618682","name":"延岡魚市場","lat":32.58858,"lon":131.67769,"pref":"宮崎","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:560603822","name":"サンボウル","lat":32.57389,"lon":131.67019,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1108560806","name":"さざんぴあ","lat":32.55811,"lon":131.67641,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1109470299","name":"ヒートスイミング","lat":32.602,"lon":131.67973,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:2949948197","name":"鹿川キャンプ場","lat":32.70595,"lon":131.50142,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14289685295","name":"祝子川キャンプ場","lat":32.72961,"lon":131.55953,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-20-1130"}
+]

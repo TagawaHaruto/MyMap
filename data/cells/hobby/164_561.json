@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:671741857","name":"小鹿つり具・エサ店","lat":41.18285,"lon":140.47724,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:671741902","name":"鳴海ホンダモータース","lat":41.18257,"lon":140.47735,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:671742584","name":"福井モータース","lat":41.18227,"lon":140.47825,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

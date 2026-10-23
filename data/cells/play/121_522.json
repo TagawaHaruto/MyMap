@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:429217794","name":"なごりの松原","lat":30.43018,"lon":130.56939,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:7265023","name":"屋久島総合自然公","lat":30.41156,"lon":130.54679,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1158320647","name":"健康の森公園","lat":30.31619,"lon":130.64377,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","oh":"24/7"},
+{"id":"osm:way:1376390891","name":"若宮公園","lat":30.31629,"lon":130.65383,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12171632165","name":"サザンクロス","lat":30.42457,"lon":130.57254,"pref":"鹿児島","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"}
+]

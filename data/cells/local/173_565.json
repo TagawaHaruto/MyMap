@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:646454566","name":"太平洋クラブ 札幌コース","lat":43.27615,"lon":141.44619,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1459413715","name":"シェイクスピアカントリークラブ","lat":43.26045,"lon":141.46586,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.skp-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:シェイクスピアカントリークラブ","kana":"しぇいくすぴあかんとりーくらぶ","tel":"+81 133 66 3300"},
+{"id":"osm:way:1459947830","name":"ロイヤルシップ札幌ゴルフ倶楽部","lat":43.28146,"lon":141.42001,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://royalship.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ろいやるしっぷさっぽろごるふくらぶ","tel":"+81 133 66 3366"},
+{"id":"osm:way:1459963466","name":"シャトレーゼカントリークラブ マサリカップ","lat":43.31254,"lon":141.46596,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://masari.chateraisegolf.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"しゃとれーぜかんとりーくらぶ まさりかっぷ","tel":"+81 133 77 2555"},
+{"id":"osm:way:1459963467","name":"シャトレーゼカントリークラブ石狩","lat":43.30742,"lon":141.44611,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://ishikari.chateraisegolf.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"しゃとれーぜかんとりーくらぶいしかり","tel":"+81 133 77 2316"},
+{"id":"osm:node:6740364692","name":"厚田キャンプ場","lat":43.40748,"lon":141.44965,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12024118905","name":"えいとキャンプ場","lat":43.25926,"lon":141.43127,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12025132285","name":"濃昼キャンプ場","lat":43.47749,"lon":141.3918,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286024391","name":"厚田ビーチセンター","lat":43.39602,"lon":141.43113,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0133-78-2950"},
+{"id":"osm:node:14286108239","name":"望来浜中央海水浴場キャンプ場","lat":43.31624,"lon":141.41571,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0133-77-2431"},
+{"id":"osm:node:14286108242","name":"石狩浜海水浴場","lat":43.25933,"lon":141.3603,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0133-62-5554"}
+]

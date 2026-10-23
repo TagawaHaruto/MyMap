@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4208197492","name":"ぶるぅーめぇーる","lat":27.88741,"lon":128.96803,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4208235590","name":"島料理 畦","lat":27.84927,"lon":128.96082,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4226272989","name":"カフェ＆グランピング Ohana","lat":27.85804,"lon":128.96765,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4234770690","name":"ラーメン 成り上がり","lat":27.82475,"lon":128.95794,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","tel":"+81 99 784 0078"},
+{"id":"osm:way:1546198824","name":"茶処あがりまた","lat":27.79098,"lon":128.93991,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

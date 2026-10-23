@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3930561399","name":"大衆菜食料理サッタヤード","lat":33.39449,"lon":131.11366,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6433536990","name":"お食事処 青の郷","lat":33.49558,"lon":131.17372,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6546303443","name":"楓乃木","lat":33.37783,"lon":131.16474,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13242147587","name":"桜滝KITCHEN","lat":33.25471,"lon":131.02194,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4920614222","name":"豆岳珈琲","lat":33.38927,"lon":131.11486,"pref":"大分","genres":["food"],"indoor":true,"url":"http://mametake.com/top","note":"カフェ","g":"food","k":"cafe","oh":"We-Su 10:00-19:00","tel":"0979-56-2508"},
+{"id":"osm:node:9759314312","name":"耶馬の森","lat":33.49331,"lon":131.1687,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:9759314313","name":"蔵","lat":33.4922,"lon":131.16792,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

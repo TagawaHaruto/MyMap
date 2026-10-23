@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:8573581922","name":"宝鏡山円大寺","lat":43.67717,"lon":143.58695,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8573581923","name":"真光寺","lat":43.68136,"lon":143.59568,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8573586095","name":"置戸神社","lat":43.67702,"lon":143.59734,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8573586096","name":"三吉神社","lat":43.67662,"lon":143.59682,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8573586937","name":"即成寺","lat":43.67579,"lon":143.58496,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:401759152","name":"万徳寺","lat":43.63579,"lon":143.50771,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:401759153","name":"勝山神社","lat":43.63689,"lon":143.50494,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:466046522","name":"隆光寺","lat":43.7263,"lon":143.74068,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:466046525","name":"本光寺","lat":43.72624,"lon":143.73934,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:466046533","name":"常照寺","lat":43.72794,"lon":143.7427,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:466046535","name":"くんねっぷホープチャペル","lat":43.72886,"lon":143.74109,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:466046558","name":"妙徳寺","lat":43.72653,"lon":143.747,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:467199123","name":"最勝寺","lat":43.72721,"lon":143.73195,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:467199133","name":"訓子府神社","lat":43.72521,"lon":143.73672,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:643787353","name":"秋田神社","lat":43.73755,"lon":143.61877,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

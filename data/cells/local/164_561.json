@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:8171405683","name":"卓立水産","lat":41.13125,"lon":140.30171,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5549483039","name":"義経海浜公園キャンプ場","lat":41.20221,"lon":140.43008,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12065906635","name":"脇元海辺ふれあいゾーン","lat":41.09699,"lon":140.313,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177350","name":"中の島ブリッジパーク","lat":41.04739,"lon":140.33341,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0173-62-2775"},
+{"id":"osm:way:1302399486","name":"折腰内オートキャンプ場","lat":41.14441,"lon":140.31907,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

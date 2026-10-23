@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:1152900697","name":"不動西児童遊園","lat":33.42894,"lon":133.99252,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1154741191","name":"淌涛児童遊園","lat":33.42694,"lon":133.99981,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1165397675","name":"不動児童遊園","lat":33.43141,"lon":133.98782,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1254078950","name":"東山森林公園","lat":33.4889,"lon":133.94718,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1254901116","name":"はまゆう児童遊園","lat":33.43942,"lon":133.974,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:node:11665437937","name":"安田町文化センター","lat":33.44321,"lon":133.98397,"pref":"高知","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

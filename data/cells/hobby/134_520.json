@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2326695720","name":"BIKE SHOP Rize","lat":33.59451,"lon":130.22783,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9502556356","name":"積文館書店","lat":33.56033,"lon":130.20802,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10742012084","name":"ツタヤ","lat":33.56996,"lon":130.23691,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12881221536","name":"TSUTAYA","lat":33.59416,"lon":130.22962,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-21:00"},
+{"id":"osm:way:329401911","name":"書店","lat":33.59443,"lon":130.21637,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:704251114","name":"つり具のまるきん福岡糸島店","lat":33.51682,"lon":130.15593,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"https://marukin-net.co.jp/","note":"釣具","g":"hobby","k":"hobby","wp":"ja:つり具のまるきん","oh":"24/7","tel":"+81-92-325-8088","wc":"yes"},
+{"id":"osm:way:1155070644","name":"サイクルベースあさひ","lat":33.56441,"lon":130.22222,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1338758630","name":"Bookoff plus Fukuoka Itoshima","lat":33.56068,"lon":130.20507,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"10:00-20:00"}
+]

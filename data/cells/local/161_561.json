@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:439879749","name":"大太鼓の里ぶっさん館","lat":40.25173,"lon":140.37558,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1054661059","name":"たけのこ館","lat":40.28003,"lon":140.45807,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:8337822030","name":"町営スキー場","lat":40.32287,"lon":140.29099,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:740286531","name":"清水岱公園体育館","lat":40.27905,"lon":140.25038,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:875636756","name":"町民体育館","lat":40.27772,"lon":140.2628,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:975939010","name":"岩野目体育館","lat":40.31172,"lon":140.40673,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4471113735","name":"くるみ台野営場","lat":40.40741,"lon":140.2919,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286211434","name":"大館市五色湖緑地公園キャンプ場","lat":40.37138,"lon":140.46883,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0186-53-2010"},
+{"id":"osm:way:769234286","name":"田代オートキャンプ場","lat":40.29222,"lon":140.4498,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0186-54-0555"}
+]

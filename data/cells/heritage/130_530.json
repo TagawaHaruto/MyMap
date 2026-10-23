@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:1458404069","name":"おきのしま旅館","lat":32.73935,"lon":132.54757,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1458406942","name":"高見旅館","lat":32.73875,"lon":132.54947,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1458447891","name":"民宿初福荘","lat":32.71898,"lon":132.55056,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1458447893","name":"民宿黒潮","lat":32.71456,"lon":132.5509,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1458447909","name":"島一旅館","lat":32.71288,"lon":132.55022,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

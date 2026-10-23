@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6434928309","name":"曲豆穣石碑","lat":35.17123,"lon":133.11883,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6435048360","name":"灯篭","lat":35.16996,"lon":133.10495,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6435995641","name":"国道314号 全面改修達成","lat":35.18541,"lon":133.07835,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6435999743","name":"豊穣之碑","lat":35.18558,"lon":133.0744,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6439934161","name":"神話の国奥出雲町","lat":35.19851,"lon":133.18383,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6439934162","name":"阿毘縁の供養塔","lat":35.19957,"lon":133.18514,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6440313611","name":"天叢雲の郷","lat":35.18877,"lon":133.15489,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6440382774","name":"頌徳碑","lat":35.18328,"lon":133.15275,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6440413746","name":"忠魂碑","lat":35.18245,"lon":133.13442,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463027015","name":"農業構造改善圃場整備記念碑東城広域農道持丸工区記念碑","lat":35.04638,"lon":133.23083,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:492303898","name":"未来之碑","lat":35.15825,"lon":133.01823,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14287405184","name":"三国ロッジ","lat":35.09695,"lon":133.12813,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:611200536","name":"飯田旅館","lat":35.17829,"lon":133.09096,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:611200545","name":"ふくろや旅館","lat":35.17783,"lon":133.09197,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:612671165","name":"福屋旅館","lat":35.17863,"lon":133.09088,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1169934197","name":"玉峰山荘","lat":35.22395,"lon":133.08563,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1262157761","name":"民宿たなべ","lat":35.18327,"lon":133.17678,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:1742918914","name":"つけもの工房西野屋","lat":37.05707,"lon":140.89126,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"にしのや"},
+{"id":"osm:node:1746589525","name":"丸仙","lat":37.05568,"lon":140.88748,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1746602141","name":"丸屋茶舗","lat":37.05552,"lon":140.88835,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2008222904","name":"SEKIHARA","lat":37.05567,"lon":140.88951,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6432694396","name":"大川魚店","lat":37.10751,"lon":140.99321,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12800320411","name":"モノバス","lat":37.05797,"lon":140.89171,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1070814402","name":"JA福島さくら　新鮮やさい館　好間店","lat":37.06073,"lon":140.85956,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1127981078","name":"坂本魚屋","lat":37.03684,"lon":140.85649,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2973044417","name":"築地ケ丘体育館","lat":37.21225,"lon":140.99678,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:2973044425","name":"広野町体育館","lat":37.21275,"lon":140.99339,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4348604515","name":"ジョイフィット いわき内郷","lat":37.04729,"lon":140.86476,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:110035072","name":"塩屋崎カントリークラブ","lat":37.00352,"lon":140.95756,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:112002158","name":"平体育館","lat":37.05483,"lon":140.89998,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"limited"},
+{"id":"osm:way:327084487","name":"体育館","lat":37.0185,"lon":140.91967,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:770978932","name":"いわき平競輪場","lat":37.04541,"lon":140.89131,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14281990820","name":"ハッシュ村","lat":37.12765,"lon":140.79357,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://www.xn--xckxa9azfy034a.jp/event","note":"キャンプ・野外","g":"local","k":"camp","tel":"0246-38-9855"},
+{"id":"osm:node:14286479038","name":"いわきオートキャンプ場 DAN～煖～","lat":37.14844,"lon":140.86264,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://www.dan-camp.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286482359","name":"夏井川渓谷キャンプ場","lat":37.13474,"lon":140.85698,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0246-22-7480"},
+{"id":"osm:node:14286482362","name":"ワンダーファーム キャンプフィールド","lat":37.12445,"lon":140.94671,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0246-38-8853"},
+{"id":"osm:node:14286485912","name":"湯の岳山荘","lat":37.01378,"lon":140.80295,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0246-44-3273"},
+{"id":"osm:node:14287673704","name":"TOHNO ASUKAI CAMP SITE","lat":37.01185,"lon":140.75444,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-6017-3059"}
+]

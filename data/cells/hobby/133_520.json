@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2586785383","name":"双輪商会","lat":33.28733,"lon":130.11092,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3393361793","name":"積文館","lat":33.27726,"lon":130.21453,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:332721297","name":"グリーンウッド","lat":33.29695,"lon":130.19941,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

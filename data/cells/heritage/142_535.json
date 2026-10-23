@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6325318197","name":"橋津古墳群","lat":35.50227,"lon":133.87996,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:橋津古墳群"},
+{"id":"osm:way:1307980478","name":"橋津10号墳","lat":35.50151,"lon":133.88305,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980479","name":"橋津9号墳","lat":35.50289,"lon":133.88329,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980480","name":"橋津8号墳","lat":35.50457,"lon":133.88202,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980481","name":"橋津7号墳","lat":35.50518,"lon":133.88108,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980482","name":"橋津6号墳","lat":35.50509,"lon":133.88084,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980483","name":"橋津3号墳","lat":35.50397,"lon":133.87769,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980485","name":"橋津1号墳","lat":35.50375,"lon":133.87723,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980486","name":"橋津2号墳","lat":35.50398,"lon":133.87735,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980488","name":"橋津4号墳","lat":35.50427,"lon":133.87861,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307980489","name":"橋津5号墳","lat":35.50437,"lon":133.87948,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307984742","name":"橋津藩倉","lat":35.5011,"lon":133.87681,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic","kana":"はしずはんそう"},
+{"id":"osm:way:1307984743","name":"橋津藩倉","lat":35.50162,"lon":133.87696,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic","kana":"はしずはんそう"}
+]

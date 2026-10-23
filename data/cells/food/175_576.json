@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5199446523","name":"ラーメン山岡家","lat":43.81871,"lon":144.11644,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","kana":"らめんやまおかや","chain":true},
+{"id":"osm:node:5603040329","name":"焼肉割烹田村","lat":43.8265,"lon":144.10538,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6989693413","name":"網走監獄食堂","lat":43.99661,"lon":144.22858,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 11:00-14:30"},
+{"id":"osm:node:11936413477","name":"一心","lat":43.88092,"lon":144.15655,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:11963924819","name":"ラーメン寳龍","lat":43.82046,"lon":144.11575,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:11991143031","name":"浅草軒","lat":43.83484,"lon":144.10608,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:11991143032","name":"そばのかね久","lat":43.835,"lon":144.10605,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:14205482701","name":"らー麺 こーるまん","lat":43.95576,"lon":144.21711,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:477667894","name":"びほろさんぱち","lat":43.8179,"lon":144.11957,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:488250846","name":"らーめん海風堂","lat":43.90698,"lon":144.17127,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"11:00-20:30","tel":"+81 152 77 3119"},
+{"id":"osm:node:5207877738","name":"北の珈琲工房 時計台","lat":43.8221,"lon":144.10312,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5199450121","name":"回転寿司 すし若丸","lat":43.8186,"lon":144.11703,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:11963924759","name":"ほっともっと","lat":43.82122,"lon":144.11008,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ほっともっと","chain":true},
+{"id":"osm:way:1040667730","name":"点香苑","lat":43.83833,"lon":144.10255,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"てんこうえん","oh":"Tu-Su 11:00+","tel":"+81 152 73 5644"},
+{"id":"osm:way:488301578","name":"Rimo","lat":43.95617,"lon":144.21811,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://risunomori.com/","note":"アイス","g":"food","k":"sweets","kana":"りも","tel":"+81 152 48 3053"},
+{"id":"osm:node:11963924689","name":"つぼ八","lat":43.82342,"lon":144.10352,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub","kana":"つぼはち","chain":true},
+{"id":"osm:node:11963924710","name":"海鮮じょっぱり亭","lat":43.82342,"lon":144.1051,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4838816434","name":"ホテル恵風","lat":41.81434,"lon":141.18069,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9121648776","name":"石田温泉","lat":41.79034,"lon":141.15065,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.ishidaonsen.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:565112451","name":"恵山温泉旅館","lat":41.79488,"lon":141.15291,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.n43.net/esan/","note":"宿","g":"heritage","k":"lodging"}
+]

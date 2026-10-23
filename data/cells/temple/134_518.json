@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:8152621517","name":"天満神社","lat":33.72112,"lon":129.64707,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8152621518","name":"原島神社","lat":33.721,"lon":129.64685,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:454633453","name":"獄山神社","lat":33.74111,"lon":129.71656,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

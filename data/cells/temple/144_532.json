@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5589045765","name":"諏訪神社","lat":36.09513,"lon":133.09426,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5623800304","name":"御倉神社","lat":36.10066,"lon":133.07638,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5706060340","name":"東神社","lat":36.1,"lon":133.10548,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:665606477","name":"西方寺","lat":36.09986,"lon":133.07672,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1217222345","name":"黒木神社","lat":36.11123,"lon":133.04519,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1379008230","name":"本殿","lat":36.11831,"lon":133.07206,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

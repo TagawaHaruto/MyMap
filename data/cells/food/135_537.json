@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:3669617870","name":"カフェ・オニヴァ","lat":33.96734,"lon":134.34665,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6477720769","name":"ゆり野","lat":33.83848,"lon":134.49604,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10807206740","name":"田舎寿し　なか山","lat":33.93012,"lon":134.4975,"pref":"徳島","genres":["food"],"indoor":true,"url":"https://www.topics.or.jp/articles/-/271890","note":"寿司","g":"food","k":"restaurant","tel":"+81 885 42 3847"},
+{"id":"osm:node:14086721802","name":"山びこ","lat":33.96836,"lon":134.34391,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant","kana":"やまびこ"},
+{"id":"osm:way:313336401","name":"農村レストラン　いづりは","lat":33.8467,"lon":134.32883,"pref":"徳島","genres":["food"],"indoor":true,"url":"http://wwwa.njctv.ne.jp/njcs0077/","note":"飲食店","g":"food","k":"restaurant","tel":"+81 884 65 2018"},
+{"id":"osm:way:1299239455","name":"粟カフェ","lat":33.97477,"lon":134.37074,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1299239456","name":"茶房 松葉庵 麟角","lat":33.978,"lon":134.37346,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"restaurant"},
+{"id":"osm:way:1356386435","name":"田舎寿し なか山","lat":33.93012,"lon":134.49751,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:5601395422","name":"Cafe Brompton (cafe & folding bike hire)","lat":33.93908,"lon":134.27317,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8599462631","name":"Café Namaste","lat":33.95839,"lon":134.27953,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Tu-Sa 12:00-16:30"},
+{"id":"osm:node:10845053395","name":"勝浦流イタリアンカフェSalotto","lat":33.93065,"lon":134.49546,"pref":"徳島","genres":["food"],"indoor":true,"url":"https://salotto.cafe/","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1039029905","name":"観月茶屋","lat":33.92565,"lon":134.27263,"pref":"徳島","genres":["food"],"indoor":true,"url":"https://gakujin-no-mori.net/gakujin06.html","note":"カフェ","g":"food","k":"cafe","tel":"+81 88 677 1147"},
+{"id":"osm:way:1552208614","name":"風の駅さかもと","lat":33.93232,"lon":134.44364,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:2619768910","name":"ごしょ","lat":33.78701,"lon":134.29751,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:8378054399","name":"水難溺死者供養之碑","lat":43.02945,"lon":141.81095,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13204586433","name":"幌内線萱野駅跡","lat":43.22942,"lon":141.8254,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13204586617","name":"幌内線記念之碑","lat":43.22087,"lon":141.8005,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:栄町駅 (北海道岩見沢市)"},
+{"id":"osm:way:605908000","name":"内務卿 山田顕義の書","lat":43.24766,"lon":141.84009,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2366568940","name":"岩見沢ホテル4条","lat":43.20176,"lon":141.76263,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5866578285","name":"NEW川忠","lat":43.19969,"lon":141.76403,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5866580585","name":"中村旅館","lat":43.20176,"lon":141.76716,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5982837837","name":"リトルロックヒルズ","lat":43.14887,"lon":141.83255,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://iwamizawa-kankou.jp/little-rock-hills/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6573555635","name":"秋田屋旅館","lat":43.20213,"lon":141.75737,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13204586432","name":"ライダーハウス旧萱野駅","lat":43.22938,"lon":141.82568,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://sites.google.com/view/rh-kayano-eki","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:327023735","name":"ホテルマウントレースイ","lat":43.05118,"lon":141.9681,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:544542154","name":"ホテルパラダイスヒルズ","lat":43.05788,"lon":141.79789,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://hotel-parahill.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:relation:11655262","name":"くりやま旅館","lat":43.059,"lon":141.78033,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"くりやまりょかん"},
+{"id":"osm:way:550391499","name":"平安閣","lat":43.20411,"lon":141.76863,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:550391511","name":"ホテル サンプラザ","lat":43.20357,"lon":141.76785,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:550848957","name":"雨煙別小学校コカ・コーラ環境ハウス","lat":43.07015,"lon":141.81228,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:597292300","name":"湯の元温泉旅館","lat":43.24782,"lon":141.99019,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:850769924","name":"ゆうばりホテルシューパロ","lat":43.05948,"lon":141.97711,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1517880486","name":"メープルロッジ","lat":43.15562,"lon":141.93189,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.maplelodge.or.jp/","note":"宿","g":"heritage","k":"lodging"}
+]

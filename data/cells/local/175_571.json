@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:13189862397","name":"ガーデンショップ","lat":43.79844,"lon":142.82162,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://www.daisetsu-asahigaoka.jp/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13190514221","name":"Kamikawa Kitchen","lat":43.84915,"lon":142.77181,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://kamikawa-kitchen.com/","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Th-Mo 10:00-16:00","tel":"+81-1658-7-7201"},
+{"id":"osm:node:13190599827","name":"Anshindo","lat":43.84963,"lon":142.76891,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://efc.hokkaido.jp/anshindo","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Th-Mo 07:30-22:00; Tu-We 10:00-22:00"},
+{"id":"osm:node:6687160886","name":"層雲峡オートキャンプ場","lat":43.7721,"lon":142.90238,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10767804358","name":"上川ファミリーオートキャンプ村","lat":43.8425,"lon":142.7783,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286040974","name":"オートキャンプ ライダーハウスち炉りん村","lat":43.82734,"lon":142.81126,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"01658-2-1114"}
+]

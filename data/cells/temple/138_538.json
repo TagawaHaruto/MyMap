@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:12801613730","name":"宮浦神社","lat":34.67685,"lon":134.5338,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12801699143","name":"海神社","lat":34.67829,"lon":134.53676,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12801703125","name":"家島神社","lat":34.67915,"lon":134.5454,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12801720907","name":"天理教家嶋分教会","lat":34.67215,"lon":134.53389,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12801723015","name":"万体地蔵苑","lat":34.67495,"lon":134.54192,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12801766491","name":"真浦神社","lat":34.67747,"lon":134.52667,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13067864610","name":"真浦区大師堂","lat":34.67845,"lon":134.52656,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13067941036","name":"徳號寺","lat":34.67652,"lon":134.5268,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13067973747","name":"真宗大谷派 圓満山 特號寺","lat":34.67627,"lon":134.52646,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13341599157","name":"桜丸大神","lat":34.67155,"lon":134.53338,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13341657617","name":"長円寺","lat":34.67696,"lon":134.53466,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13341686505","name":"破風の井戸","lat":34.67067,"lon":134.53381,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13341686506","name":"赤坂清水","lat":34.67071,"lon":134.53383,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:302415838","name":"恵美酒神社","lat":34.65456,"lon":134.51201,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

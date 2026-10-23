@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:13937860801","name":"Golf field","lat":43.48132,"lon":144.4545,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5110934325","name":"RECAMP摩周","lat":43.47922,"lon":144.45096,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10682150445","name":"OkuShumbetsu CampField","lat":43.46118,"lon":144.40931,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:10158501773","name":"常龍寺","lat":42.8898,"lon":143.92834,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:427627322","name":"音別神社","lat":42.88393,"lon":143.92224,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:745542330","name":"太子寺","lat":42.80943,"lon":143.8123,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

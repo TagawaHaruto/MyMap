@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12709202353","name":"森で遊ぼう！","lat":31.24754,"lon":130.43227,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12709202356","name":"イソヒヨコーヒー","lat":31.24753,"lon":130.43317,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12728231484","name":"AB-cafe","lat":31.24768,"lon":130.43337,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

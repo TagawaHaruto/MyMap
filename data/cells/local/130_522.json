@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:824706995","name":"押方茶舗","lat":32.56958,"lon":130.6586,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1191948139","name":"JAグリーンくまもと　緑のシンフォニー北部店","lat":32.56337,"lon":130.64927,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1366109827","name":"ひかわ市場","lat":32.58304,"lon":130.66448,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1370764747","name":"橋本茶舗","lat":32.55438,"lon":130.68346,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1374626314","name":"直売出あい市場","lat":32.54707,"lon":130.67731,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1374626317","name":"ＪＡかあちゃん市場","lat":32.54736,"lon":130.67792,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1389977421","name":"生活市場・べじっ太ハウス","lat":32.55126,"lon":130.64253,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:455953766","name":"ワールドカントリー倶楽部","lat":32.57032,"lon":130.71766,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:772117460","name":"不知火カントリークラブ","lat":32.64931,"lon":130.62073,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:784716193","name":"和田船溜","lat":32.62834,"lon":130.6043,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:823248928","name":"ボルダリングスペース CRACKER","lat":32.56129,"lon":130.65083,"pref":"熊本","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285932619","name":"立神峡里地公園キャンプ場","lat":32.55005,"lon":130.70848,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"http://tategami-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0965-62-1543","pk":2},
+{"id":"osm:node:14287570087","name":"立岡自然公園キャンプ場","lat":32.67702,"lon":130.69434,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0964-22-1119"},
+{"id":"osm:node:14287608189","name":"城南天然温泉かたるの森キャンプ場","lat":32.6669,"lon":130.7335,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287608194","name":"県立豊野少年自然の家どんぐり村キャンプ場","lat":32.64929,"lon":130.73733,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0964-45-3855"},
+{"id":"osm:node:14287608195","name":"三角おれんじファームキャンプ場","lat":32.64004,"lon":130.50471,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0964-53-0841"},
+{"id":"osm:node:14287608196","name":"サイハテキャンプ","lat":32.63772,"lon":130.53271,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1372234907","name":"宮原少年自然の森キャンプ場","lat":32.55146,"lon":130.68278,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

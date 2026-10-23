@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2684639729","name":"三保の松原　一ふじ","lat":34.99492,"lon":138.52241,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2684655777","name":"いちまる","lat":34.99497,"lon":138.52203,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2684655778","name":"いちまる水産","lat":34.99492,"lon":138.52205,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6420685635","name":"知久屋","lat":34.99815,"lon":138.5157,"pref":"静岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4400648911","name":"泰隆丸","lat":34.99263,"lon":138.50398,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

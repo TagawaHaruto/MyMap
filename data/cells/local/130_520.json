@@ -1,0 +1,22 @@
+[
+{"id":"osm:way:1359727213","name":"黒瀬海産","lat":32.51433,"lon":130.03702,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7854181731","name":"苓北町温泉プール","lat":32.50315,"lon":130.05626,"pref":"熊本","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:632003566","name":"南有馬体育館","lat":32.63502,"lon":130.24444,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:647554046","name":"南有馬運動公園プール","lat":32.63524,"lon":130.24277,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1120989992","name":"口之津体育館","lat":32.61319,"lon":130.1866,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1120989993","name":"口之津プール","lat":32.61342,"lon":130.18614,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1123500843","name":"南島原市加津佐Ｂ＆Ｇ海洋センター","lat":32.63714,"lon":130.17726,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1123500848","name":"加津佐弓道場","lat":32.63706,"lon":130.17856,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1127394714","name":"南島原市多目的運動広場 Arrivo! 南島原","lat":32.64224,"lon":130.24986,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"https://arrivo-minamishimabara.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6764088990","name":"国崎公園キャンプ場","lat":32.68816,"lon":130.12632,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","oh":"24/7","tel":"0957883111"},
+{"id":"osm:node:8639442181","name":"黒崎海水浴場キャンプ場","lat":32.51246,"lon":130.19532,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10269026575","name":"野田浜海水浴場キャンプ場","lat":32.62643,"lon":130.15493,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10723527634","name":"白浜海水浴場キャンプ場","lat":32.60975,"lon":130.17498,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285932617","name":"エコパーク論所原","lat":32.70379,"lon":130.241,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0957-65-7056"},
+{"id":"osm:node:14287625998","name":"ユメール キャンプ場","lat":32.55131,"lon":130.11287,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287626000","name":"黒崎キャンプ場","lat":32.51154,"lon":130.19581,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0969-32-1111"},
+{"id":"osm:way:931237861","name":"白岩崎キャンプ場","lat":32.52119,"lon":130.02633,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:931900083","name":"若宮公園キャンプ場","lat":32.53829,"lon":130.19136,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:931900092","name":"亀島公園キャンプ場","lat":32.54013,"lon":130.19562,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1122826145","name":"かづさオートキャンプ場","lat":32.62592,"lon":130.1574,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

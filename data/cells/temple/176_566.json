@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:730990907","name":"小平神社","lat":44.01336,"lon":141.66425,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:973369408","name":"恵嶺寺","lat":44.23906,"lon":141.72769,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:973371063","name":"九重神社","lat":44.24031,"lon":141.7217,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:974171024","name":"力昼稲荷神社","lat":44.22839,"lon":141.6601,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:974171057","name":"長泉寺","lat":44.22727,"lon":141.66204,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

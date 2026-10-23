@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4001730424","name":"こおげフレンドセンター","lat":35.42577,"lon":134.26174,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4030196639","name":"野菜畑","lat":35.44175,"lon":134.25802,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4582262861","name":"フルーツ総合センター","lat":35.36647,"lon":134.33966,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:7146261674","name":"いせき","lat":35.41244,"lon":134.25107,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:461653795","name":"物産館みかど","lat":35.38443,"lon":134.28935,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"http://www.koge-mikado.com/","note":"直売所","g":"local","k":"souvenir","tel":"+81 858 72 3730"},
+{"id":"osm:way:462709523","name":"はっとうフルーツ観光園","lat":35.36076,"lon":134.33666,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:2371439701","name":"鳥取市若葉台スポーツセンター","lat":35.44295,"lon":134.25662,"pref":"鳥取","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4369112415","name":"わかさ温水プール","lat":35.34151,"lon":134.39765,"pref":"鳥取","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4560357603","name":"大御門体育センター","lat":35.38862,"lon":134.28428,"pref":"鳥取","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10728585241","name":"体育館","lat":35.44827,"lon":134.26379,"pref":"鳥取","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:458220737","name":"郡家ゴルフ倶楽部","lat":35.40737,"lon":134.27097,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:618457922","name":"若葉台フットボールセンター2","lat":35.45008,"lon":134.26836,"pref":"鳥取","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:654842394","name":"若葉台スポーツセンター","lat":35.45185,"lon":134.26208,"pref":"鳥取","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:670032916","name":"日本海ゴルフ倶楽部","lat":35.48721,"lon":134.32602,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4585080918","name":"八東ふる里の森 バンガロー","lat":35.41716,"lon":134.43382,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"https://www.hattofurusato.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285437365","name":"八東ふる里の森","lat":35.41643,"lon":134.43373,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287131970","name":"岩美町立町民いこいの里","lat":35.49446,"lon":134.35433,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0857-72-3366"},
+{"id":"osm:node:14287270092","name":"船岡竹林公園","lat":35.37256,"lon":134.26678,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0858-73-8100"},
+{"id":"osm:node:14287292620","name":"安徳の里姫路公園","lat":35.42873,"lon":134.38548,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0858-74-0302"},
+{"id":"osm:node:14287293034","name":"わかさ氷ノ山キャンパーズヴィレッジ","lat":35.35827,"lon":134.49493,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-3350-4240"},
+{"id":"osm:way:388187557","name":"智頭町営芦津キャンプ場","lat":35.27614,"lon":134.3142,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2160496531","name":"西御料地神社 (Nishigoryochi Shrine)","lat":43.73163,"lon":142.36597,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4455210916","name":"好蔵寺","lat":43.70987,"lon":142.48649,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5921341289","name":"雨紛神社","lat":43.71855,"lon":142.35071,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5925461964","name":"観音台神社","lat":43.74206,"lon":142.33482,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:245772135","name":"聖台寺","lat":43.7221,"lon":142.37795,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:448172520","name":"東川寺","lat":43.70345,"lon":142.49897,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:525607123","name":"神楽神社","lat":43.6799,"lon":142.39946,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

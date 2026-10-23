@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:559703154","name":"池田神社","lat":42.92699,"lon":143.45448,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:727958719","name":"放光寺","lat":42.80687,"lon":143.49941,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:728234697","name":"男山八幡神社　牛首別神社","lat":42.78739,"lon":143.49371,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:964867540","name":"美川神社","lat":42.75557,"lon":143.29632,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

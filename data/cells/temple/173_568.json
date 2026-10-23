@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:935670237","name":"西林寺","lat":43.49942,"lon":142.19131,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:936237051","name":"大本寺","lat":43.47918,"lon":142.17245,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:936237052","name":"真勝寺","lat":43.47902,"lon":142.17266,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:936246993","name":"禅法事","lat":43.45443,"lon":142.16424,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:939598384","name":"頼覚山大興寺","lat":43.45052,"lon":142.16233,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:939598387","name":"頼城神社","lat":43.45128,"lon":142.16293,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:941200627","name":"野花南神社","lat":43.47975,"lon":142.24282,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:941675294","name":"浄徳寺","lat":43.4909,"lon":142.2147,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:941679820","name":"北本願寺","lat":43.4916,"lon":142.21336,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:941679858","name":"龍澤寺","lat":43.49096,"lon":142.2125,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:941697717","name":"西京時","lat":43.4927,"lon":142.20926,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:941697720","name":"善祥蜜寺","lat":43.49233,"lon":142.2088,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:941722495","name":"上芦別神社","lat":43.49249,"lon":142.20563,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

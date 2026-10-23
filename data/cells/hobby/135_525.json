@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:9035376717","name":"明屋書店","lat":33.97305,"lon":131.33435,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549081510","name":"ヒマラヤスポーツ フジグラン宇部店","lat":33.93028,"lon":131.25522,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:548874086","name":"宮脇書店","lat":33.94914,"lon":131.26517,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:549154617","name":"サイクリング・サロン・ヒロシゲ","lat":33.9508,"lon":131.25897,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:561275505","name":"イトオ楽器店","lat":33.94951,"lon":131.25944,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:561432831","name":"エコタウン宇部","lat":33.93342,"lon":131.25765,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:561555006","name":"ハックルベリー","lat":33.97211,"lon":131.26458,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"}
+]

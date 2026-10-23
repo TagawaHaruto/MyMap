@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1498586696","name":"Sea Side Curry House","lat":32.77962,"lon":132.96009,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant"},
+{"id":"osm:node:2569457803","name":"足摺黒潮市場","lat":32.7773,"lon":132.96048,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:node:5537454025","name":"四万十屋","lat":32.97115,"lon":132.95086,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 10:00-16:00"},
+{"id":"osm:node:8506196246","name":"レストラン スワロー","lat":32.95798,"lon":132.79471,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8506196247","name":"レストラン一風","lat":32.9647,"lon":132.81765,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8506196248","name":"レストラン ひいらぎ","lat":32.97428,"lon":132.86184,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10814153703","name":"Cafe Sora","lat":32.96011,"lon":132.99302,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10823504505","name":"千里","lat":32.78916,"lon":132.86646,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11532181369","name":"憩いの広場 やまびこカフェ","lat":32.91302,"lon":132.84487,"pref":"高知","genres":["food"],"indoor":true,"url":"http://mihara-yamabiko.com/doc/04-tokusanhin.html#a01","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Sa 11:30-13:30","tel":"+81880317839"},
+{"id":"osm:node:12916616775","name":"北京","lat":32.78004,"lon":132.95133,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","oh":"11:00-14:00","tel":"+81 880 82 1963"},
+{"id":"osm:way:262658176","name":"大文字レスト喫茶","lat":32.93848,"lon":132.96906,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10819497798","name":"Luce Café and Dining","lat":32.90343,"lon":132.93506,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:10821758013","name":"ヴィレッジカフェ　ナギの木","lat":32.92501,"lon":132.9131,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1472722745","name":"コメダ珈琲店","lat":32.98015,"lon":132.92564,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","chain":true},
+{"id":"osm:node:5335310628","name":"マクドナルド","lat":32.97955,"lon":132.92083,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:661651682","name":"たこ焼き　竹葉","lat":32.99203,"lon":132.93341,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:1472722746","name":"スシロー","lat":32.98015,"lon":132.92528,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すしろ","chain":true},
+{"id":"osm:node:1801742481","name":"パティスリーfuu","lat":32.9756,"lon":132.96491,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

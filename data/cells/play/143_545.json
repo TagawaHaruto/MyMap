@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:13352617719","name":"大手門広場","lat":35.98464,"lon":136.48578,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:550333660","name":"小次郎公園","lat":35.92211,"lon":136.26976,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:637494805","name":"宝慶寺いこいの森","lat":35.9131,"lon":136.46696,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704757050","name":"弥生公園","lat":35.9789,"lon":136.49682,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704757051","name":"神明公園","lat":35.98134,"lon":136.49685,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1084587362","name":"三角公園","lat":35.98686,"lon":136.49803,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1084976915","name":"有終公園","lat":35.98029,"lon":136.48897,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1302418881","name":"奥越ふれあい公園","lat":35.96557,"lon":136.49582,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1302419829","name":"義景公園","lat":35.98104,"lon":136.48572,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1302988291","name":"山王公園","lat":35.98345,"lon":136.49357,"pref":"福井","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686199170","name":"下地区グラウンド","lat":35.91935,"lon":136.35253,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1302418883","name":"奥越ふれあい公園 テニスコート","lat":35.96353,"lon":136.49525,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1302418884","name":"奥越ふれあい公園 テニスコート","lat":35.96301,"lon":136.49542,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:relation:18405518","name":"奥越ふれあい公園 陸上競技場","lat":35.96426,"lon":136.49701,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports","wp":"ja:奥越ふれあい公園陸上競技場"}
+]

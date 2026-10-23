@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:305811261","name":"奥日高","lat":33.95073,"lon":135.56076,"pref":"和歌山","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"11:00-22:00"},
+{"id":"osm:node:11247011997","name":"Cabero","lat":33.81459,"lon":135.60626,"pref":"和歌山","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11299858719","name":"とがの木茶室","lat":33.82826,"lon":135.63455,"pref":"和歌山","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11810297467","name":"箸折茶屋 Hashiori","lat":33.81455,"lon":135.60606,"pref":"和歌山","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"はしおりじゃや"}
+]

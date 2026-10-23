@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4247866953","name":"道の駅萩しーまーと","lat":34.42624,"lon":131.41452,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4247874303","name":"ふじたやそば店","lat":34.41433,"lon":131.40036,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ふじたやそばてん"},
+{"id":"osm:node:5787099553","name":"DonDon","lat":34.41568,"lon":131.40692,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5788468553","name":"San Marco","lat":34.41723,"lon":131.39647,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:6831883442","name":"萩博物館 レストラン","lat":34.41308,"lon":131.39053,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1443029712","name":"ジョイフル","lat":34.41785,"lon":131.40407,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true,"oh":"24/7","tel":"+81-838-24-1065"},
+{"id":"osm:node:3835307284","name":"喫茶松田","lat":34.41439,"lon":131.38819,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:559105584","name":"豆子郎","lat":34.41558,"lon":131.3894,"pref":"山口","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:945017255","name":"しこくや","lat":34.42129,"lon":131.25593,"pref":"山口","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

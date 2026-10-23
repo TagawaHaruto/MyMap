@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:581051764","name":"旧樺戸集治監本庁舎","lat":43.33876,"lon":141.66928,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1546226436","name":"旧樺戸集治監石油庫","lat":43.33886,"lon":141.66862,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:10890289886","name":"北村温泉ホテル","lat":43.26018,"lon":141.6981,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1350668612","name":"はな工房","lat":43.34173,"lon":141.68052,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

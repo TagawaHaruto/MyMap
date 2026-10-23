@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5038255935","name":"やきとり高橋","lat":38.77563,"lon":139.74868,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:804906037","name":"美好食堂","lat":38.76207,"lon":139.72941,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

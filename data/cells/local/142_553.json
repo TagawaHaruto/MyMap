@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4138810808","name":"ほっともっと韮崎中田店","lat":35.74746,"lon":138.43863,"pref":"山梨","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:622708708","name":"魚甚","lat":35.55733,"lon":138.48813,"pref":"山梨","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14155772483","name":"RIKUSAKUエビ釣り堀（陸作）","lat":35.69705,"lon":138.49278,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://ebituri-restaurant.rikusaku.com","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:169788673","name":"アーバン・バッティングスタジアム","lat":35.64707,"lon":138.49617,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:552494263","name":"スポルトコスモボウル","lat":35.61559,"lon":138.46583,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:757846349","name":"八田河川敷グラウンド","lat":35.65899,"lon":138.49854,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1143835222","name":"ダイトースターレーン","lat":35.679,"lon":138.49557,"pref":"山梨","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12732607882","name":"大柳川渓流キャンプ場","lat":35.50439,"lon":138.39879,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://ooyanagawa-camp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14155815617","name":"RIKUSAKU(陸作)キャンプ&BBQ場","lat":35.69732,"lon":138.49262,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://ebituri-restaurant.rikusaku.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 55-1458-037"},
+{"id":"osm:node:14284281512","name":"WESTRIVER automobile camp-site (ウエストリバーオートキャンプ場)","lat":35.65282,"lon":138.40584,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://www.westriver-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"055-285-6611"},
+{"id":"osm:node:14284281530","name":"リトルノースキャンピンググラウンド","lat":35.57557,"lon":138.41539,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://littlenorth.net","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285591266","name":"RVパークLuxway 南アルプス","lat":35.666,"lon":138.47853,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286934760","name":"fumotto de Camp","lat":35.61307,"lon":138.48189,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://fumotto.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"055-225-3366"},
+{"id":"osm:node:14286934766","name":"おそとのてらす 南アルプス","lat":35.60551,"lon":138.42819,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://osotono-terrace.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286934776","name":"Hirabayashi Camping","lat":35.58104,"lon":138.40305,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://hirabayashi-camping.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286955221","name":"青木鉱泉小武川キャンプ場","lat":35.72635,"lon":138.41426,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4822-5454"},
+{"id":"osm:node:14287059077","name":"南アルプス36～アウトドアの宿 Od-inn～","lat":35.63624,"lon":138.36608,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://salps36.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287059080","name":"芦安キャンプサイトNo.2","lat":35.63175,"lon":138.36174,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://www.campsiteno2.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287072718","name":"白根御池小屋","lat":35.63777,"lon":138.37133,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-3201-7683"},
+{"id":"osm:node:14287084560","name":"LIBERTY CAMP場","lat":35.56738,"lon":138.39417,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287084572","name":"市川公園MTBフィールド","lat":35.55251,"lon":138.4977,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://www.minamialpsmtb.com/ichikawaparkmtb","note":"キャンプ・野外","g":"local","k":"camp","tel":"055-225-3091"}
+]

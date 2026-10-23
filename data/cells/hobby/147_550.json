@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5234874515","name":"Meibundo 明文堂書店朝日店","lat":36.94738,"lon":137.56336,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5404041833","name":"Tsutaya・明文堂新入善店","lat":36.93964,"lon":137.5159,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5599774052","name":"佐渡モータース","lat":36.95563,"lon":137.55116,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:452583140","name":"明文堂書店外商センター","lat":36.9482,"lon":137.56302,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:542790168","name":"Toy Store ドンキー","lat":36.95671,"lon":137.55914,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"}
+]

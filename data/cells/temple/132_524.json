@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:8267338137","name":"宇津尾権現","lat":33.17878,"lon":131.03488,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"うつおごんげ"},
+{"id":"osm:node:8270409909","name":"杖立温泉神社","lat":33.18075,"lon":131.03613,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8356257825","name":"薬師堂","lat":33.18453,"lon":131.03236,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"やくしど"},
+{"id":"osm:node:8707962083","name":"鉾納社","lat":33.1265,"lon":131.03732,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9061318121","name":"満山神社","lat":33.07765,"lon":131.09544,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9061328648","name":"立護山満願寺","lat":33.07607,"lon":131.09602,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:515679505","name":"杖立皇大神宮","lat":33.1846,"lon":131.03349,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:889593560","name":"杖立薬師堂","lat":33.1833,"lon":131.03241,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:899316029","name":"杖立稲荷神社","lat":33.1819,"lon":131.03526,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:948317119","name":"山田昆布店","lat":40.29021,"lon":140.5614,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1046219632","name":"こがけ魚菜店","lat":40.49027,"lon":140.62261,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:743585931","name":"朝市","lat":40.28771,"lon":140.55871,"pref":"秋田","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:457413420","name":"ニプロハチ公ドーム(大館樹海ドーム)","lat":40.29264,"lon":140.58673,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:463203108","name":"タクミアリーナ(大館市樹海体育館)","lat":40.29349,"lon":140.59227,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:729226033","name":"城西体育館","lat":40.27274,"lon":140.53439,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:832286161","name":"釈迦内体育館","lat":40.30089,"lon":140.57266,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:939984652","name":"花岡体育館","lat":40.32198,"lon":140.54873,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:956216278","name":"雪沢体育館","lat":40.29132,"lon":140.69029,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:958342260","name":"北星ボウルアネックス","lat":40.28409,"lon":140.57631,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:967909984","name":"今井篤記念体育館","lat":40.27712,"lon":140.53295,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

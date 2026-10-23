@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:1426869593","name":"石垣書店","lat":35.1032,"lon":139.07873,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:1488574065","name":"SERIZAWA","lat":35.09682,"lon":139.07247,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"せりざわ"},
+{"id":"osm:node:1489518884","name":"開運堂","lat":35.0979,"lon":139.07387,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:3027308233","name":"Kobayashi","lat":35.24394,"lon":139.06034,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:3591668231","name":"ブルー・アース","lat":35.09448,"lon":139.07231,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","kana":"ブルーアース","tel":"0557-83-0818"},
+{"id":"osm:node:3591686977","name":"亀一堂","lat":35.09425,"lon":139.07287,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:6438701244","name":"山木つり具店","lat":35.19072,"lon":139.02693,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:12676458566","name":"STRIDE LAB 小田原","lat":35.2483,"lon":139.15916,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12720822801","name":"頓珍漢　リサイクルショップ","lat":35.15012,"lon":139.1095,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12850681001","name":"アールディオ","lat":35.14716,"lon":139.1123,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","tel":"63-0202"},
+{"id":"osm:node:13004002002","name":"THE NORTH FACE 箱根","lat":35.23241,"lon":139.10062,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:353381772","name":"nagisArt","lat":35.09457,"lon":139.07471,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"}
+]

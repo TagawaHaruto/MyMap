@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5271095970","name":"野間神社","lat":30.532,"lon":130.96065,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5271095981","name":"西光寺","lat":30.53264,"lon":130.96045,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

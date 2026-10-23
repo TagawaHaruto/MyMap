@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12958871904","name":"中屋書店","lat":35.14913,"lon":140.31428,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12958903455","name":"モトモーリ","lat":35.15078,"lon":140.31321,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:12995199813","name":"Costa","lat":35.14598,"lon":140.29182,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

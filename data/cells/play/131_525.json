@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:430048445","name":"岡城公園","lat":32.96862,"lon":131.40721,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1138195250","name":"竹田市総合運動公園","lat":32.96107,"lon":131.38853,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:871823034","name":"飛田川球場","lat":32.96211,"lon":131.37707,"pref":"大分","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","kana":"ひだがわきゅうじょう"},
+{"id":"osm:way:871823037","name":"竹田市弓道場","lat":32.96241,"lon":131.37775,"pref":"大分","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

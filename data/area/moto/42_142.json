@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:846599080","name":"道の駅「自然体感しむかっぷ」","lat":42.97849,"lon":142.39778,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1110211340","name":"道の駅 夕張メロード","lat":42.93679,"lon":142.03805,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1462014111","name":"道の駅 みついし","lat":42.22067,"lon":142.63531,"type":"SA・PA","k":"rest_area","likely":true,"oh":"Apr-Sep: Mo-Su,PH 08:45-22:00; Oct-Mar: Mo-Su,PH 08:45-17:30; Dec 31-Jan 05 off"},
+{"id":"osm:way:1462029516","name":"道の駅 サラブレッドロード新冠","lat":42.36034,"lon":142.3155,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1520222897","name":"サラブレット銀座駐車公園","lat":42.37372,"lon":142.31131,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1547074416","name":"道の駅 樹海ロード日高","lat":42.87704,"lon":142.44206,"type":"SA・PA","k":"rest_area","likely":true}
+]

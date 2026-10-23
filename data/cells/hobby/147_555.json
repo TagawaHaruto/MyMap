@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3990211905","name":"タイシンスポーツ","lat":36.93994,"lon":138.80479,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3991215811","name":"snowjunk.com","lat":36.93962,"lon":138.80537,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3991245199","name":"TUNEUP/SNOW/SKATE マジェスティック","lat":36.93717,"lon":138.80762,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"+81-25-775-7413"},
+{"id":"osm:node:9979819239","name":"かぐらパウダーステーション by BLACKDIAMOND","lat":36.89392,"lon":138.77552,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11813695576","name":"ゲレスポ","lat":36.95073,"lon":138.79965,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,21 @@
+[
+{"id":"osm:way:143448426","name":"チェリーGC","lat":34.43795,"lon":132.09643,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:1831198","name":"体育館","lat":34.36956,"lon":132.19448,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:242786653","name":"吉和勤労者体育施設","lat":34.48048,"lon":132.1789,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4306827290","name":"健康村","lat":34.40645,"lon":132.03147,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4306827291","name":"寂地峡","lat":34.42947,"lon":132.05508,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:5775219153","name":"プレイパーク蛇喰","lat":34.28459,"lon":132.14112,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"http://fuji-kosan.co.jp","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12603180255","name":"岩倉ファームパークキャンプ場","lat":34.37116,"lon":132.15958,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0829-72-0449"},
+{"id":"osm:node:14287474776","name":"三倉岳県立自然公園キャンプ場","lat":34.30803,"lon":132.15741,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-56-0660"},
+{"id":"osm:node:14287478988","name":"広島市湯来交流体験センター","lat":34.47354,"lon":132.24079,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://yuki-kouryu.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287484495","name":"めがひらキャンプ場","lat":34.49836,"lon":132.14377,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"http://www.megahira.co.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0829-40-3000"},
+{"id":"osm:node:14287485143","name":"小瀬川オートキャンプ場","lat":34.28829,"lon":132.13615,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-7993-1766"},
+{"id":"osm:node:14287489762","name":"奥湯来オートキャンプ場「TERRACE KUMODE」","lat":34.4391,"lon":132.19991,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://oku-yuki.net/terrace_kumode","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-2911-0981"},
+{"id":"osm:node:14287489768","name":"健康村キャンプ場","lat":34.42479,"lon":132.05827,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-74-0423"},
+{"id":"osm:node:14287496191","name":"らかん高原憩いの広場","lat":34.35087,"lon":132.06402,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-75-2337"},
+{"id":"osm:node:14287496193","name":"羅漢山青少年旅行村","lat":34.34973,"lon":132.05431,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-74-0520"},
+{"id":"osm:node:14287496194","name":"らかん高原オートキャンプ場","lat":34.3491,"lon":132.05488,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"https://www.go-rakan.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-74-0010"},
+{"id":"osm:node:14287498865","name":"須川家族村オートキャンプ場","lat":34.34801,"lon":132.00335,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-73-0123"},
+{"id":"osm:node:14287498902","name":"もみのき森林公園キャンプ場・もみのき荘","lat":34.48019,"lon":132.1781,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0829-77-2011"},
+{"id":"osm:node:14287525674","name":"やさかキャンプ村 弥栄オートキャンプ場","lat":34.27038,"lon":132.13577,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://lakeplaza-yasaka.com/camp.php","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-95-1123"}
+]

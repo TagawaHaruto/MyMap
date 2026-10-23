@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:1907123009","name":"建部町総合スポーツセンター","lat":34.89102,"lon":133.88884,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:node:1907304137","name":"たけべの森公園　TAKEBEnoMORI PARK","lat":34.85751,"lon":133.87415,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:180543318","name":"建部町親水公園","lat":34.85829,"lon":133.90828,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:180788254","name":"岡山市日応寺自然の森スポーツ広場","lat":34.76599,"lon":133.86607,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:543105485","name":"美咲町中央運動公園","lat":34.99547,"lon":133.9512,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:555981425","name":"美咲町中央児童公園","lat":34.99459,"lon":133.94884,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:node:1907304139","name":"たけべの森公園　TAKEBEnoMORI PARK","lat":34.85724,"lon":133.87172,"pref":"岡山","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:node:1907837158","name":"温泉プール「はっぽね」","lat":34.85599,"lon":133.90748,"pref":"岡山","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:node:12550909070","name":"岡山県クレー射撃場","lat":34.80934,"lon":133.9143,"pref":"岡山","genres":["outdoor","play"],"indoor":false,"url":"https://www.enjoy-clay-shooting.com/okayama/index.html","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:183093463","name":"体育館","lat":34.85578,"lon":133.90181,"pref":"岡山","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:388242459","name":"体育館","lat":34.93361,"lon":133.96458,"pref":"岡山","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:529334253","name":"HIRAKINライズ球場","lat":34.8348,"lon":133.92799,"pref":"岡山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:864547660","name":"御津ライフル射撃場","lat":34.80011,"lon":133.97179,"pref":"岡山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

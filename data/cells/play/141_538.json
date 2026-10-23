@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:3611733690","name":"全国しゃくなげ公園","lat":35.39714,"lon":134.52206,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:4346790838","name":"ふれあい歴史公園","lat":35.4475,"lon":134.5294,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:216485278","name":"1円電車","lat":35.27945,"lon":134.66359,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:436817028","name":"小代ウォーターガーデン （花菖蒲園）","lat":35.44972,"lon":134.52692,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:461506025","name":"秋岡もみじ広場","lat":35.42274,"lon":134.52473,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:557675178","name":"トガヤマ公園","lat":35.39445,"lon":134.74746,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:585920993","name":"あゆ公園","lat":35.34131,"lon":134.66905,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:687296944","name":"関宮ふれあいパーク","lat":35.37517,"lon":134.64436,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1122826787","name":"三方氏屋敷跡","lat":35.34782,"lon":134.69262,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:399247090","name":"広井山村広場","lat":35.46484,"lon":134.55027,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:761368405","name":"全天候運動場","lat":35.40198,"lon":134.74296,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:870254953","name":"但馬ドーム","lat":35.49369,"lon":134.6868,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports","wp":"ja:兵庫県立但馬ドーム","kana":"たじまどめ"},
+{"id":"osm:way:1082451058","name":"若杉高原おおやスキー場","lat":35.28244,"lon":134.58896,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:242972797","name":"駒ケ丘公園","lat":43.32225,"lon":145.60431,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:243627024","name":"根室公園","lat":43.33242,"lon":145.58478,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ねむろこうえん"},
+{"id":"osm:way:469935567","name":"明治公園","lat":43.3357,"lon":145.59737,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.city.nemuro.hokkaido.jp/lifeinfo/kakuka/kensetsusuidoubu/toshiseibi/4/6/index.html","note":"公園","g":"play","k":"park","kana":"めいじこうえん"},
+{"id":"osm:way:469939913","name":"明治町団地公園","lat":43.33312,"lon":145.60002,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:543830335","name":"光和公園","lat":43.32477,"lon":145.58136,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:629174536","name":"鳴海公園","lat":43.33606,"lon":145.58513,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:629463031","name":"根室総合運動公園","lat":43.32123,"lon":145.57276,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:795671780","name":"根室市市民の森","lat":43.31038,"lon":145.55414,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1196375747","name":"ときわ台公園","lat":43.32963,"lon":145.58165,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ときわだいこうえん"},
+{"id":"osm:node:11141028065","name":"カラオケ歌屋","lat":43.33412,"lon":145.57936,"pref":"北海道","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"},
+{"id":"osm:way:245997929","name":"根室市総合文化会館","lat":43.33232,"lon":145.59198,"pref":"北海道","genres":["play"],"indoor":true,"url":"https://www.city.nemuro.hokkaido.jp/dcitynd.nsf/doc/bunka/top?OpenDocument","note":"劇場・ホール","g":"play","k":"amuse"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:2264091704","name":"史跡松前氏城跡館城跡","lat":41.88,"lon":140.34313,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13742755903","name":"厚沢部うずら温泉 四季の宿","lat":41.9314,"lon":140.31216,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://uzuraonsen.com/","note":"宿","g":"heritage","k":"lodging"}
+]

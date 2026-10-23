@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:10188649429","name":"道の駅　慈恩の滝くす","lat":33.26587,"lon":131.06838,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"みちのえきじおんのたきくす","tel":"+81 973 77 2260"},
+{"id":"osm:node:14286007105","name":"玖珠町 三日月の滝公園キャンプ場","lat":33.28053,"lon":131.09948,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-77-2278"},
+{"id":"osm:node:14287571019","name":"西谷温泉キャンピングパーク","lat":33.42491,"lon":131.17809,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://nishitanispa.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0979-53-2100"},
+{"id":"osm:node:14287575911","name":"奥耶馬渓憩の森キャンプ場","lat":33.39792,"lon":131.02451,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0979-62-2186"},
+{"id":"osm:node:14287575915","name":"しいたけ村勝敬庵","lat":33.38213,"lon":131.18755,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0979-55-2065"},
+{"id":"osm:node:14287575916","name":"岳切渓谷キャンプ場","lat":33.3816,"lon":131.23227,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0978-42-5111"},
+{"id":"osm:node:14287575917","name":"宇佐市岳切渓谷キャンプ場","lat":33.3802,"lon":131.23116,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://www.city.usa.oita.jp/tourist/touristspot/touristspot2/touristspot3/10172.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0978-42-6326"},
+{"id":"osm:node:14287575918","name":"耶馬渓キャンプフォレスト","lat":33.37865,"lon":131.11851,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://yabakei.co.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0979-26-7700"},
+{"id":"osm:node:14287585571","name":"錦谷温泉せせらぎの郷 華じ花","lat":33.35883,"lon":131.21055,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0979-55-2401"},
+{"id":"osm:node:14287592378","name":"パラディッソおおいた","lat":33.28985,"lon":131.05437,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287592382","name":"のぐらの野っぱら","lat":33.28304,"lon":131.22162,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287592383","name":"伐株山 憩いの森キャンプ場","lat":33.27942,"lon":131.13617,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-72-6426"},
+{"id":"osm:node:14287592384","name":"オートキャンプ竜門","lat":33.27876,"lon":131.20885,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287592386","name":"竜門の滝キャンプ場","lat":33.27485,"lon":131.2065,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-76-3308"},
+{"id":"osm:node:14287592388","name":"竜門上杉キャンプ場","lat":33.27281,"lon":131.2038,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-76-3307"},
+{"id":"osm:node:14287592391","name":"奥竜門花乃湯キャンプ場","lat":33.26412,"lon":131.19487,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-76-3537"},
+{"id":"osm:way:1179600293","name":"玖珠の杜","lat":33.32297,"lon":131.13995,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1294626687","name":"YUNOMORI CAMP SITE","lat":33.3302,"lon":131.16314,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1466143626","name":"ありが湯キャンプ場","lat":33.25476,"lon":131.15068,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

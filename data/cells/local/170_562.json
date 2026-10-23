@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2943949356","name":"豊浦ふるさとドーム","lat":42.58716,"lon":140.70186,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"とようらふるさとどーむ"},
+{"id":"osm:way:1093726239","name":"豊浦渚パークゴルフ場","lat":42.58834,"lon":140.69171,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:2943949353","name":"豊浦海浜公園","lat":42.58518,"lon":140.70285,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"とようらかいひんこえん"},
+{"id":"osm:node:2943949354","name":"Takaoka Auto Camp Site","lat":42.58702,"lon":140.69545,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10907560287","name":"大岸シーサイドキャンプ場","lat":42.5793,"lon":140.61686,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177244","name":"豊浦町森林公園","lat":42.59839,"lon":140.57282,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177246","name":"礼文華海浜公園キャンプ場","lat":42.5746,"lon":140.5929,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

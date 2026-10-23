@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:12252929572","name":"とおわ食堂","lat":33.22374,"lon":132.83544,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12285130821","name":"西土佐食堂","lat":33.17294,"lon":132.78897,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5425866922","name":"Shade Tree Coffee","lat":33.02003,"lon":132.85683,"pref":"高知","genres":["food"],"indoor":true,"url":"http://shadetree-coffee.com","note":"カフェ","g":"food","k":"cafe","oh":"Sa-Su 13:00-17:00","tel":"+81 50 5216 8614"},
+{"id":"osm:node:5423672222","name":"Bolangerie MoMA","lat":33.10235,"lon":132.96336,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","oh":"Tu, Th, Sa 11:00-16:00"},
+{"id":"osm:node:12285130820","name":"ストローベイル SANKANYA","lat":33.17295,"lon":132.78912,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

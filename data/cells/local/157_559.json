@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5167175051","name":"渡辺鮮魚店","lat":39.25742,"lon":139.91635,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5167184640","name":"桐田鮮魚店","lat":39.25665,"lon":139.91827,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5182705632","name":"山万高橋鮮魚店","lat":39.3353,"lon":139.99315,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7056748350","name":"斎藤豆腐店","lat":39.2915,"lon":139.96111,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7056707626","name":"加藤食品","lat":39.291,"lon":139.9637,"pref":"秋田","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:755464744","name":"仁賀保体育館・プール","lat":39.28645,"lon":139.96245,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14283979224","name":"99glam","lat":39.28277,"lon":139.94202,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"https://99glam.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0184-37-3514"},
+{"id":"osm:way:775979854","name":"飛くずれキャンプ場","lat":39.26557,"lon":139.91201,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wp":"ja:キャンプ場","oh":"24/7","tel":"0184-43-3230","wc":"yes"}
+]

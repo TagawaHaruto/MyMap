@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3147272096","name":"食彩館 あ助","lat":32.63242,"lon":130.8073,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:3807994911","name":"揚処　優-すぐれ","lat":32.72016,"lon":130.77052,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"11:30-20:30"},
+{"id":"osm:node:9898660636","name":"めん屋大仙","lat":32.73354,"lon":130.79855,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant","oh":"Tu-Su 11:00-15:00; Fr 11:00-15:00,18:00-21:00","tel":"096 282 2329"},
+{"id":"osm:way:375879461","name":"お食事処いしばし","lat":32.68134,"lon":130.9918,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10913939500","name":"梅乃木茶屋","lat":32.53654,"lon":130.93992,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12019775203","name":"Board game café Mereni","lat":32.64502,"lon":130.7868,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:310646619","name":"コムシロンカフェ","lat":32.62436,"lon":130.81399,"pref":"熊本","genres":["food"],"indoor":true,"url":"https://ameblo.jp/komushiron-cafe/","note":"カフェ","g":"food","k":"cafe","oh":"11:00-21:00","tel":"0964-46-3665"},
+{"id":"osm:node:5197327617","name":"ほっともっと","lat":32.65651,"lon":130.80896,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:329424554","name":"森のぱんや(Morino-Panya)","lat":32.62247,"lon":130.82538,"pref":"熊本","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","oh":"Mo-Fr 07:00-19:00; Su,PH 07:00-18:30; Tu off"},
+{"id":"osm:way:309831082","name":"杜之創庫(morino souko)","lat":32.6392,"lon":130.79308,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub","tel":"0964-46-4070"}
+]

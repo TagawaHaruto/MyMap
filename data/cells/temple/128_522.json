@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5491568885","name":"諏訪神社","lat":32.09522,"lon":130.5935,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8175996470","name":"般若寺","lat":32.03992,"lon":130.73305,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8408075837","name":"曽木瀧之神社","lat":32.0109,"lon":130.58063,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:571390493","name":"熊野神社","lat":32.09488,"lon":130.60349,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:571690709","name":"諏訪神社","lat":32.05321,"lon":130.61263,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:571690710","name":"愛宕神社","lat":32.05347,"lon":130.61223,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:571694010","name":"薬師神社","lat":32.04235,"lon":130.62859,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

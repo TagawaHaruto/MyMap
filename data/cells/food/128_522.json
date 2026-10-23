@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:4003643191","name":"ガスト","lat":32.21235,"lon":130.74139,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5493709512","name":"ジョイフル","lat":32.03948,"lon":130.6283,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:6445211985","name":"きじや","lat":32.14591,"lon":130.74059,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"きじや","oh":"Th-Tu 11:00-20:00","tel":"0966290401"},
+{"id":"osm:node:7984029897","name":"ともちゃん","lat":32.01223,"lon":130.7416,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11052115521","name":"そうめん流し","lat":32.12205,"lon":130.55681,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"no"},
+{"id":"osm:way:557850463","name":"滝のや","lat":32.01303,"lon":130.57602,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:557850964","name":"なりざわ","lat":32.01294,"lon":130.57587,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:557851580","name":"花筵","lat":32.0128,"lon":130.57564,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:823304317","name":"活魚旬菜 ほうらい茶屋 人吉","lat":32.21145,"lon":130.74423,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:823308664","name":"カレーの五朋GOHOU","lat":32.21143,"lon":130.7454,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant"},
+{"id":"osm:way:823691371","name":"焼肉なべしま","lat":32.21211,"lon":130.74716,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:823691373","name":"虎之介","lat":32.21227,"lon":130.74717,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:824168120","name":"joyful","lat":32.2286,"lon":130.72068,"pref":"熊本","genres":["food"],"indoor":true,"url":"https://www.joyfull.co.jp/shop/archives/634","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 08:00-25:00","tel":"0966-24-0712"},
+{"id":"osm:node:11052072869","name":"endroit cache","lat":32.1191,"lon":130.57188,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"11:00-15:00"},
+{"id":"osm:way:823102464","name":"永田村右衛門ROASTERY","lat":32.21029,"lon":130.74503,"pref":"熊本","genres":["food"],"indoor":true,"url":"https://nagatakohikan.wixsite.com/home","note":"カフェ","g":"food","k":"cafe","oh":"We-Mo 12:00-17:00"},
+{"id":"osm:node:2340060603","name":"すき家","lat":32.05572,"lon":130.6072,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true},
+{"id":"osm:node:4003642790","name":"マクドナルド","lat":32.21741,"lon":130.73642,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:way:823305015","name":"シャトレーゼ","lat":32.21151,"lon":130.74379,"pref":"熊本","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"ちゃてらいせ","chain":true}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:7943002148","name":"高台神社","lat":43.14871,"lon":142.41563,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:440434245","name":"南富良野町金山会館","lat":43.14903,"lon":142.41974,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:851602102","name":"子宝神社","lat":43.16045,"lon":142.49489,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:851618510","name":"金山神社","lat":43.14091,"lon":142.4139,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:851737714","name":"光圓寺","lat":43.24175,"lon":142.38366,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:851737715","name":"大本北海本苑","lat":43.24296,"lon":142.38402,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:851737739","name":"山部神社","lat":43.24616,"lon":142.38547,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:851741446","name":"天理教山部分教會","lat":43.24638,"lon":142.3834,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:914533930","name":"曹光寺","lat":43.24251,"lon":142.38291,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

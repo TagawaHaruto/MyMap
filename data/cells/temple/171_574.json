@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:727942987","name":"大正寺","lat":42.79725,"lon":143.5076,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:727943012","name":"興慶寺","lat":42.80012,"lon":143.50621,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:727954783","name":"茂岩神社","lat":42.80322,"lon":143.50306,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:727954793","name":"茂岩神社社務所","lat":42.80383,"lon":143.50285,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:742744497","name":"活平八幡神社","lat":42.98363,"lon":143.63858,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:742746005","name":"留真神社","lat":42.9199,"lon":143.66143,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:743165684","name":"浄福寺","lat":42.81192,"lon":143.65322,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:743169331","name":"浦幌神社","lat":42.80915,"lon":143.66282,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:743169332","name":"伏見稲荷神社","lat":42.80937,"lon":143.66282,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:743180954","name":"謙敬寺","lat":42.80828,"lon":143.65625,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:743189274","name":"東禅寺","lat":42.80666,"lon":143.65509,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:745572902","name":"上厚内神社跡","lat":42.8306,"lon":143.74952,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

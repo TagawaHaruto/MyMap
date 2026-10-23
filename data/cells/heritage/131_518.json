@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3763373733","name":"ホゲット石鍋製作所","lat":32.95173,"lon":129.69198,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4268116590","name":"小佐々氏墓所","lat":32.97087,"lon":129.64738,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14028193238","name":"三井池島炭鉱第一竪坑","lat":32.88544,"lon":129.60071,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:804926285","name":"シックナー","lat":32.88652,"lon":129.60172,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:804926286","name":"シックナー","lat":32.8864,"lon":129.60204,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:956223969","name":"三井池島炭鉱第一竪坑櫓","lat":32.88544,"lon":129.60071,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1436572268","name":"三井池島炭鉱第二竪坑","lat":32.88131,"lon":129.59305,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1540935329","name":"シックナー","lat":32.88598,"lon":129.6026,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:956223873","name":"池島中央会館","lat":32.88437,"lon":129.59836,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"https://www.city.nagasaki.lg.jp/uploaded/attachment/2552.pdf","note":"宿","g":"heritage","k":"lodging","tel":"+81-959-26-2030"},
+{"id":"osm:way:1441604849","name":"民宿・食事処 魚宗","lat":32.93428,"lon":129.64032,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

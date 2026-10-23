@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5271514323","name":"本家かまどや種子島店","lat":30.53636,"lon":130.95905,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1414161204","name":"岩坪鮮魚精肉店 西町店","lat":30.73335,"lon":130.9952,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1414161205","name":"丸山土産品センター","lat":30.73319,"lon":130.99502,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5268913008","name":"種子島中央体育館","lat":30.53069,"lon":130.96558,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5268913009","name":"種子島中央武道館","lat":30.53085,"lon":130.96623,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5268991712","name":"中種子町立体育館","lat":30.53501,"lon":130.95893,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:546008558","name":"体育館","lat":30.72448,"lon":130.99294,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14282820369","name":"サーフヴィラ・ナライ 種子島","lat":30.52132,"lon":130.97499,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://surf-narai.com/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

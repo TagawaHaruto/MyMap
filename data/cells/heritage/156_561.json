@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:4469429591","name":"旧湯沢商業高校グランド","lat":39.18767,"lon":140.49215,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7106447602","name":"芭蕉翁の碑","lat":39.05836,"lon":140.37443,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9417736730","name":"産婆の碑","lat":39.13026,"lon":140.32129,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9417763245","name":"上仙道小学校跡","lat":39.13613,"lon":140.3136,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13697864501","name":"深草少将","lat":39.06765,"lon":140.46048,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13697866501","name":"小野小町","lat":39.06759,"lon":140.46042,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","kana":"おのこまち"},
+{"id":"osm:node:1307373677","name":"菊池旅館","lat":39.10527,"lon":140.29094,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"きくちりょかん"},
+{"id":"osm:node:5199457646","name":"寿荘","lat":39.15818,"lon":140.48439,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5199885639","name":"旅館福本","lat":39.16623,"lon":140.48934,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5203695425","name":"ゆざわ温泉","lat":39.1662,"lon":140.49985,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7184711162","name":"遊べる進路相談室 UGO HUB","lat":39.19962,"lon":140.4017,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7184719019","name":"川原田舘","lat":39.19938,"lon":140.40859,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7417001777","name":"茅ぶき山荘・格山","lat":39.20563,"lon":140.31254,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14113985381","name":"湯沢ロイヤルホテル","lat":39.16015,"lon":140.48969,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:526465038","name":"湯ノ沢温泉日勝館","lat":39.02572,"lon":140.40807,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 0183 52-2329"},
+{"id":"osm:way:764577916","name":"湯沢グランドホテル","lat":39.16304,"lon":140.49078,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:770944580","name":"佐東旅館","lat":39.16619,"lon":140.49044,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1021134301","name":"阿専","lat":39.20488,"lon":140.3322,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

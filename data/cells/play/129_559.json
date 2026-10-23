@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:560036469","name":"休戸街かど公園","lat":32.46405,"lon":139.76778,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560217437","name":"神子の浦展望広場","lat":32.46939,"lon":139.7617,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560714110","name":"尾山展望公園","lat":32.46054,"lon":139.76286,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"おやまてんぼうこうえん"},
+{"id":"osm:way:561250726","name":"大凸部公園","lat":32.45845,"lon":139.75925,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

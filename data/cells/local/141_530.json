@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4171015136","name":"開運堂","lat":35.40052,"lon":132.68436,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1219250974","name":"園山商店","lat":35.42932,"lon":132.63087,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6328408694","name":"黒田港","lat":35.41808,"lon":132.6313,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6328408696","name":"宇龍漁港","lat":35.43195,"lon":132.64005,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6329613317","name":"中山港","lat":35.41504,"lon":132.64362,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6329613320","name":"二俣港","lat":35.40935,"lon":132.6559,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6329613323","name":"大社漁港","lat":35.40279,"lon":132.66545,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6329891111","name":"出雲西部体育館","lat":35.35546,"lon":132.69638,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285406080","name":"グランピングベースIZUMO","lat":35.32375,"lon":132.67786,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285775238","name":"出雲市うさぎ森林公園 夢の森うさぎ キャンプ村","lat":35.43933,"lon":132.69126,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"https://www.izumo-yumenomoriusagi.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287333837","name":"立久恵峡わかあゆの里キャンプ場","lat":35.29372,"lon":132.72928,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0853-45-0102"}
+]

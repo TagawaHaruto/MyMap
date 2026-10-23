@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1241901655","name":"山河公園","lat":30.24595,"lon":130.58176,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"やまんここうえん"},
+{"id":"osm:way:1324078132","name":"尾之間グラウンド","lat":30.2351,"lon":130.55559,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:444984234","name":"町民すこやかふれあいセンター","lat":30.23619,"lon":130.55693,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

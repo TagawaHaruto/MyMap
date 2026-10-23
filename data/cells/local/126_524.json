@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4757342628","name":"山形屋ギフトショップ","lat":31.7232,"lon":131.07459,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"limited"},
+{"id":"osm:node:10651913183","name":"からあげ本舗","lat":31.71523,"lon":131.06358,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13695318608","name":"トーコー","lat":31.72701,"lon":131.0594,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13907308535","name":"有限会社新地商会","lat":31.72043,"lon":131.06097,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:532466371","name":"足立鮮魚","lat":31.72696,"lon":131.10663,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1441834845","name":"（株）都城公設卸売市場","lat":31.74772,"lon":131.06241,"pref":"宮崎","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4757176436","name":"ジョイプラザ","lat":31.73446,"lon":131.10184,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6874909948","name":"末吉総合体育館","lat":31.65612,"lon":131.01565,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:488191287","name":"三股町多目的スポーツセンター","lat":31.73033,"lon":131.12367,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:758669791","name":"上米公園パークゴルフ場","lat":31.72693,"lon":131.13836,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287620705","name":"花房峡いこいの森","lat":31.62535,"lon":131.1306,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0986-78-1100"},
+{"id":"osm:node:14287640307","name":"ながたんち","lat":31.73851,"lon":131.19046,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0986-77-8760"}
+]

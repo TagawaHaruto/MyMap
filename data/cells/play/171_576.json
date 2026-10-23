@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:425690307","name":"あやめが丘公園","lat":42.95361,"lon":144.07555,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425886325","name":"西庶路錦公園","lat":42.97952,"lon":144.12661,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425886331","name":"ふれあい公園","lat":42.98349,"lon":144.13097,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425953750","name":"逍遙公園","lat":42.96201,"lon":144.07786,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425953753","name":"幸公園","lat":42.96089,"lon":144.071,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1046383485","name":"コミュニティ広場","lat":42.95672,"lon":144.06267,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1046383486","name":"橋北1区さくら公園","lat":42.95619,"lon":144.06362,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1209684740","name":"宮下公園","lat":42.98634,"lon":144.14768,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:157431610","name":"白糠スケートリンク","lat":42.95271,"lon":144.06957,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:425886333","name":"西庶路テニスコート","lat":42.98071,"lon":144.1298,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:425886335","name":"庶路スケートリンク","lat":42.98291,"lon":144.13051,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:425953747","name":"白糠テニスコート","lat":42.96103,"lon":144.07747,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:425953748","name":"白糠町温水プール","lat":42.96141,"lon":144.07906,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

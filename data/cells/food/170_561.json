@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:3104849326","name":"ピザどう","lat":42.6726,"lon":140.38032,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ぴざどう"},
+{"id":"osm:way:224818834","name":"そば屋","lat":42.5132,"lon":140.37635,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:249360462","name":"天ぷら　幹","lat":42.51337,"lon":140.37862,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:249360464","name":"食堂","lat":42.51393,"lon":140.37765,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:753337511","name":"松龍","lat":42.66935,"lon":140.31003,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:3090715805","name":"トワ・ヴェールII","lat":42.67275,"lon":140.37983,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

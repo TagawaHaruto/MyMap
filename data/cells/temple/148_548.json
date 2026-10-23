@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5890226402","name":"光顕寺","lat":37.12707,"lon":137.04564,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"こけんじ"},
+{"id":"osm:node:5890290979","name":"正願寺","lat":37.12408,"lon":137.0454,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"しょがんじ"},
+{"id":"osm:node:5890292205","name":"大宮神社","lat":37.12464,"lon":137.04288,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"おみやじんじゃ"},
+{"id":"osm:way:1237490106","name":"浄誓寺","lat":37.24533,"lon":137.07461,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1237517351","name":"住吉神社","lat":37.24006,"lon":137.07084,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

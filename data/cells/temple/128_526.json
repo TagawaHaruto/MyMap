@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3963632900","name":"岩地蔵","lat":32.06806,"lon":131.50356,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13730252002","name":"Takanabedaishi","lat":32.14452,"lon":131.52073,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:393118315","name":"紀伊神社","lat":32.07833,"lon":131.50591,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:396687826","name":"下富田神社","lat":32.05237,"lon":131.50024,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:396941339","name":"久家神社","lat":32.07852,"lon":131.50813,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:396941390","name":"水沼神社","lat":32.08086,"lon":131.51222,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","pk":2},
+{"id":"osm:way:397141785","name":"萬福禅寺 (万福寺)","lat":32.0912,"lon":131.51418,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","pk":2}
+]

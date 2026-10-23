@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5348708708","name":"朝倉城址","lat":33.54928,"lon":133.48002,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5488047073","name":"行川城址","lat":33.58495,"lon":133.45917,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6447762653","name":"紙業界之恩人 新之丞君碑","lat":33.57156,"lon":133.41055,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065869","name":"慰霊塔","lat":33.53531,"lon":133.37273,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065871","name":"宝永地震伝承碑","lat":33.53276,"lon":133.25915,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065872","name":"宝永地震伝承碑","lat":33.54011,"lon":133.2615,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065874","name":"宝永地震伝承碑","lat":33.54769,"lon":133.27685,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065875","name":"宝永地震伝承碑","lat":33.54423,"lon":133.28512,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065879","name":"昭和50年8月17日台風5号殉難者慰霊碑","lat":33.55667,"lon":133.37981,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065880","name":"災害復旧記念碑","lat":33.64585,"lon":133.33977,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:766668492","name":"川崎白雲の墓","lat":33.59755,"lon":133.41625,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:1423738244","name":"亀の井ホテル 高知（仁淀川伊野温泉）","lat":33.54481,"lon":133.4184,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11416889469","name":"温古社","lat":33.51001,"lon":133.40772,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://onkosya.amebaownd.com/","note":"宿","g":"heritage","k":"lodging","kana":"みんしゅくおんこしゃ","tel":"+81 88 821 7488"},
+{"id":"osm:node:11416936769","name":"はるのゲストハウス","lat":33.50169,"lon":133.45654,"pref":"高知","genres":["lodging"],"indoor":true,"url":"http://henro-guesthouse.com","note":"宿","g":"heritage","k":"lodging","oh":"24/7","tel":"+81 88 894 2536"},
+{"id":"osm:way:403479039","name":"オーベルジュ土佐山","lat":33.63428,"lon":133.48571,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1121944457","name":"オリエンタルプライベートスペース ラジャイスタナ","lat":33.55119,"lon":133.45926,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://www.maruwa-jp.net/rajaistana/index.html","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1472742486","name":"Sorayama Guesthouse","lat":33.62902,"lon":133.30372,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://sorayama-gh.com/","note":"宿","g":"heritage","k":"lodging","tel":"+819039758466"}
+]

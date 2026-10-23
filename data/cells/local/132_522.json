@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:692428296","name":"川の駅 船小屋 恋ぼたる物産館","lat":33.18318,"lon":130.50325,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:718377787","name":"JAふくおか八女 よらん野","lat":33.21602,"lon":130.51155,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","oh":"09:00-18:00"},
+{"id":"osm:way:727771066","name":"築山製茶農園","lat":33.2175,"lon":130.51476,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:964808428","name":"八女青果（株）","lat":33.21136,"lon":130.53552,"pref":"福岡","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:739031000","name":"BASIC FUTSAL 筑後","lat":33.22963,"lon":130.5049,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1115274631","name":"南関町Ｂ＆Ｇ海洋センタープール","lat":33.0682,"lon":130.54971,"pref":"熊本","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285918755","name":"GLAMPER’S","lat":33.06458,"lon":130.65299,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"http://www.glampers.jp/index.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"096-295-7289"},
+{"id":"osm:node:14285918757","name":"らくうの杜キャンプ場","lat":33.05442,"lon":130.66246,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285918758","name":"Liberty Pack Garage（リバティーパックガレージ）","lat":33.04566,"lon":130.57312,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287526968","name":"一本松公園キャンプ場","lat":33.0127,"lon":130.74826,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://ipponmatsu.site/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287526970","name":"果林の里","lat":33.00267,"lon":130.52756,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0968-53-8459"},
+{"id":"osm:node:14287564990","name":"YAME AROMA-CAMP","lat":33.18593,"lon":130.57177,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0943-22-4569"},
+{"id":"osm:node:14287564993","name":"筑後広域公園オートキャンプ場","lat":33.18076,"lon":130.50107,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://kouennoyado.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287593200","name":"夢たちばなビレッジキャンプ場","lat":33.1358,"lon":130.56723,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287594786","name":"奥八女焚火の森キャンプフィールド","lat":33.22456,"lon":130.73667,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://www.takibinomori.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0943-42-4305"},
+{"id":"osm:node:14287596507","name":"癒しの森 ゆ～かむ","lat":33.11632,"lon":130.70092,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://comhits2014.wixsite.com/yukamu","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287596510","name":"岳間渓谷キャンプ場","lat":33.10634,"lon":130.73648,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0968-32-2103"},
+{"id":"osm:way:762409430","name":"お牧山キャンプ場","lat":33.12706,"lon":130.55005,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

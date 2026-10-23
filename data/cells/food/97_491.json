@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2950235993","name":"あぐの木そば屋","lat":24.44862,"lon":122.97953,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:2950235994","name":"わかなそば","lat":24.44423,"lon":122.97983,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/835/","note":"飲食店","g":"food","k":"restaurant","kana":"わかなそば","oh":"11:30-14:00; Tu off","tel":"+81-980-87-3338"},
+{"id":"osm:node:2950235997","name":"サザンコール","lat":24.45355,"lon":122.94371,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/1277/","note":"飲食店","g":"food","k":"restaurant","oh":"18:00-23:00; Tu off","tel":"+81-980-87-2450"},
+{"id":"osm:node:2950236369","name":"ユキさんち","lat":24.4526,"lon":122.94471,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant"},
+{"id":"osm:node:2950236368","name":"モイストロール","lat":24.4501,"lon":122.9432,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://yngn.okinawa/food/moist-roll-cafe/","note":"カフェ","g":"food","k":"cafe","oh":"Mo-Su 10:00-17:00","tel":"+81-980-87-3130"},
+{"id":"osm:node:2950236377","name":"居酒屋まるてぃ","lat":24.45135,"lon":122.94444,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/87/","note":"居酒屋","g":"food","k":"pub","oh":"18:00-22:00; Th,Su off"},
+{"id":"osm:node:2950236378","name":"島料理 海響","lat":24.45194,"lon":122.94419,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/836/","note":"居酒屋","g":"food","k":"pub","kana":"しまりょうり いすん","oh":"Th-Tu 18:00-22:00","tel":"+81-80-5476-2230"}
+]

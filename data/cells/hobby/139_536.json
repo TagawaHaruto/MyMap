@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:13064787691","name":"つり具","lat":34.79474,"lon":134.15264,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:429319755","name":"35R / ココチ","lat":34.99288,"lon":134.1341,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:way:566840536","name":"スカイピット","lat":34.75277,"lon":134.01703,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5981600046","name":"七尾城跡","lat":34.6719,"lon":131.86388,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033039","name":"松崎の碑","lat":34.68639,"lon":131.82128,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463033040","name":"防災祈念碑","lat":34.67729,"lon":131.8606,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3043639391","name":"島田家","lat":34.67683,"lon":131.85971,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3043639393","name":"三好家","lat":34.67364,"lon":131.85551,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4571197611","name":"Masuda Green hotel morris","lat":34.67744,"lon":131.83973,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4571197612","name":"駅前ビジネスホテル","lat":34.67784,"lon":131.83877,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:299756857","name":"多田温泉","lat":34.66163,"lon":131.84847,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:823018793","name":"ペンション北斗星","lat":34.53377,"lon":131.83963,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

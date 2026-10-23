@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5283357256","name":"天堤神社","lat":36.1355,"lon":137.30398,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5908239011","name":"崇教真光青年会館","lat":36.06301,"lon":137.25875,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6489722484","name":"久々野八幡神社","lat":36.05683,"lon":137.27708,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13833693634","name":"暎芳寺","lat":36.14557,"lon":137.26097,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:490918251","name":"Gohōzan Dounin Temple","lat":36.14412,"lon":137.26493,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:759853632","name":"בית חב\"ד טאקאימה, יפן - Chabad of Takayama, Japan","lat":36.15236,"lon":137.2515,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"https://www.jewishtakayama.com","note":"寺社・教会","g":"temple","k":"worship","tel":"+81 80-4344-1770"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:10736586327","name":"恵水碑","lat":44.00757,"lon":142.41904,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10765917693","name":"恵水観音像","lat":44.00744,"lon":142.41926,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5179524406","name":"スカイラーク","lat":44.24207,"lon":142.45788,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:264861535","name":"ホテル美し乃湯温泉","lat":44.16444,"lon":142.39771,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:500414838","name":"研修館 楡","lat":44.01339,"lon":142.41959,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://wassamutaikyo.com/nire/","note":"宿","g":"heritage","k":"lodging"}
+]

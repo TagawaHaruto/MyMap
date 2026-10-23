@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:232724493","name":"厚岸漁業協同組合直売店 エーウロコ","lat":43.04963,"lon":144.85363,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:way:1445217534","name":"厚岸漁業協同組合 卸売市場","lat":43.04067,"lon":144.83996,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","tel":"+81-153-52-2101"},
+{"id":"osm:way:840032938","name":"厚岸町B&G海洋センター","lat":43.06692,"lon":144.82632,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:848313989","name":"厚岸町温水プール","lat":43.03426,"lon":144.83832,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:848669894","name":"筑紫恋キャンプ場","lat":43.01977,"lon":144.84831,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

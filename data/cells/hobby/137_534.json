@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:6968290988","name":"福武商店 住吉店","lat":34.49958,"lon":133.50497,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6968291009","name":"サトウ釣具店","lat":34.48696,"lon":133.52768,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6968291290","name":"シーポート","lat":34.4986,"lon":133.51727,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6968291502","name":"新亀玩具店","lat":34.49735,"lon":133.519,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6968291508","name":"ゴルフONO","lat":34.49825,"lon":133.52487,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11406642552","name":"澤井自転車店","lat":34.27135,"lon":133.74863,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","tel":"+81 877-32-3528","wc":"no"},
+{"id":"osm:way:286528459","name":"TSUTAYA","lat":34.49726,"lon":133.52466,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:440548568","name":"宮脇書店 笠岡店","lat":34.49066,"lon":133.52789,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

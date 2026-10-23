@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:7236966014","name":"達子森公園","lat":40.22159,"lon":140.56496,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775732271","name":"小新田農村公園","lat":40.19922,"lon":140.57561,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775732300","name":"達子森公園","lat":40.22146,"lon":140.56511,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775739842","name":"寺崎農村公園","lat":40.22073,"lon":140.54153,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775739849","name":"扇田ふれあい公園","lat":40.22625,"lon":140.58213,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775739867","name":"伊勢堂児童公園","lat":40.22262,"lon":140.58964,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:775739877","name":"市民の森","lat":40.22047,"lon":140.52102,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775739878","name":"中野農村公園","lat":40.18084,"lon":140.59136,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:775739879","name":"独鈷河川公園","lat":40.18672,"lon":140.60201,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:836706266","name":"旧末広小学校グラウンド","lat":40.23256,"lon":140.73571,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:839859040","name":"さんてつの丘 南部エリア","lat":40.21445,"lon":140.65283,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:839859041","name":"多目的広場","lat":40.21502,"lon":140.65192,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:839859042","name":"さんてつの丘 北部エリア","lat":40.21697,"lon":140.65636,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:839859043","name":"子ども広場","lat":40.21689,"lon":140.65723,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:964318406","name":"葛原農村公園","lat":40.23508,"lon":140.69701,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:970089795","name":"四季の森","lat":40.24771,"lon":140.74229,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:7236966087","name":"達子森野球場","lat":40.22141,"lon":140.56435,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:9050809718","name":"羽賀モトクロスパーク","lat":40.20062,"lon":140.54434,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:775732324","name":"健康広場","lat":40.22105,"lon":140.56549,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:775739856","name":"比内グラウンド","lat":40.22497,"lon":140.58487,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

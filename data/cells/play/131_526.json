@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6302791182","name":"石場ダムキャンプ場","lat":32.97499,"lon":131.6563,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:152957085","name":"ドッグラン","lat":32.80469,"lon":131.61084,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:153569371","name":"佐伯市宇目海洋センター","lat":32.84753,"lon":131.67853,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733420804","name":"下赤嶺児童公園","lat":32.98494,"lon":131.59622,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733422125","name":"平吹児童公園","lat":32.98064,"lon":131.58719,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1116132841","name":"ステージ","lat":32.98335,"lon":131.5833,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1148785277","name":"ふれいあい広場","lat":32.97102,"lon":131.51693,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:15523201","name":"三重総合公園","lat":32.98905,"lon":131.58605,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:10208511571","name":"カラオケわびすけ","lat":32.98087,"lon":131.58452,"pref":"大分","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"},
+{"id":"osm:way:881857039","name":"カラオケCLUB 三重町","lat":32.98379,"lon":131.59391,"pref":"大分","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"}
+]

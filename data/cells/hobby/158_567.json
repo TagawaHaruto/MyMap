@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2459994935","name":"キッズ・ウォーカー","lat":39.63586,"lon":141.92666,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2459994936","name":"タケダスポーツ","lat":39.63665,"lon":141.92812,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2464565110","name":"金のクマ 宮古本町店","lat":39.64263,"lon":141.95554,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4285220311","name":"リラパーク","lat":39.64167,"lon":141.94716,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6634516985","name":"HOBBY SHOP ささき","lat":39.64231,"lon":141.94712,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:10892764944","name":"宮古つり吉","lat":39.64523,"lon":141.94594,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

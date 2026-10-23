@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5538860184","name":"洋食 ミラノ亭","lat":35.04526,"lon":132.29901,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5538860185","name":"揚げもの茶屋","lat":35.04523,"lon":132.29902,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5538860186","name":"Maruhime","lat":35.04518,"lon":132.29902,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:433825947","name":"おおもり","lat":35.12182,"lon":132.44832,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12483907363","name":"La Pigna Cafe & Sweets","lat":35.14437,"lon":132.40221,"pref":"島根","genres":["food"],"indoor":true,"url":"https://lapigna.shop","note":"カフェ","g":"food","k":"cafe","tel":"+81 85-4883-600"},
+{"id":"osm:node:12852607931","name":"Cafe Asbach","lat":35.16987,"lon":132.4843,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12856772096","name":"喫茶・軽食 チャティ","lat":35.20338,"lon":132.49852,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:787322879","name":"琴ヶ浜の『チーナカ豆』","lat":35.13041,"lon":132.38908,"pref":"島根","genres":["food"],"indoor":true,"url":"https://www.chi-nakamame.com/","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12479756715","name":"すき家","lat":35.19694,"lon":132.4802,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:14031373294","name":"ビーチマートまるさん","lat":35.91615,"lon":135.99666,"pref":"福井","genres":["souvenir"],"indoor":false,"url":"https://town-echizen.jp","note":"市場","g":"local","k":"market","oh":"Mo-Tu,Th-Fr 09:00-17:00; We off; Sa-Su 08:30-17:00","tel":"+81 77-8371-212","wc":"limited"},
+{"id":"osm:node:14286894375","name":"くつわ池自然公園キャンプ場","lat":35.99972,"lon":135.99931,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

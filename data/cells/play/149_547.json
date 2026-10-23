@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:611738934","name":"鳳来山公園","lat":37.40062,"lon":136.89621,"pref":"石川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:625686922","name":"マリンタウンこどもの広場","lat":37.39664,"lon":136.90979,"pref":"石川","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1237710469","name":"門前町総合運動公園","lat":37.2916,"lon":136.76017,"pref":"石川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13328369657","name":"GOTCHA! WELLNESS","lat":37.39303,"lon":136.9022,"pref":"石川","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:way:575567250","name":"鴨ケ浦塩水プール","lat":37.40685,"lon":136.89794,"pref":"石川","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

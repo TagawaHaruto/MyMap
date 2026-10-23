@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:425713181","name":"頓別漁業協同組合 地方卸売市場","lat":45.13581,"lon":142.39052,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:264693923","name":"多目的アリーナ","lat":45.12487,"lon":142.35865,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:264694350","name":"クッチャロ湖キャンプ場","lat":45.12672,"lon":142.34688,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.town.hamatonbetsu.hokkaido.jp/docs/2015041400021/files/kohan-camping.pdf","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81-1634-2-4005"}
+]

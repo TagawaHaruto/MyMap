@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3746826782","name":"大徳寺","lat":32.56858,"lon":130.84593,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3767131378","name":"小崎妙見神社","lat":32.65683,"lon":130.90633,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4441995656","name":"甲佐神社","lat":32.64342,"lon":130.83429,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12389268771","name":"勢井阿蘇神社","lat":32.6413,"lon":130.93648,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:309506494","name":"若宮神社","lat":32.64466,"lon":130.79279,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:316526589","name":"善林寺","lat":32.64516,"lon":130.78911,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ぜんりんじ","tel":"0964-46-2155"},
+{"id":"osm:way:438360340","name":"佐俣阿蘇神社","lat":32.62262,"lon":130.81999,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:570395029","name":"創価学会","lat":32.64727,"lon":130.79374,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:682603465","name":"剣神社","lat":32.74698,"lon":130.77319,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

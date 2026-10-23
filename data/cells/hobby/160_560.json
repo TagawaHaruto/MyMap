@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6984201599","name":"上州屋 能代店","lat":40.18364,"lon":140.05389,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9287505207","name":"未来屋書店","lat":40.18798,"lon":140.0818,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みらいやしょてん"},
+{"id":"osm:node:11075455928","name":"TSUTAYA","lat":40.18752,"lon":140.04103,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"https://store-tsutaya.tsite.jp/store/detail?storeId=0700","note":"本屋","g":"hobby","k":"hobby","tel":"+81 185 54 6996"},
+{"id":"osm:node:12378748232","name":"スポーツエクスプレス ネクサス","lat":40.18846,"lon":140.08287,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"https://store.nexas-sports.jp/n530","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:743541038","name":"自転車のおが","lat":40.20916,"lon":140.02809,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:752583277","name":"ブックオフ","lat":40.19058,"lon":140.02313,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:752583278","name":"セカンドストリート","lat":40.19036,"lon":140.0223,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:808081895","name":"畠山書店","lat":40.21144,"lon":140.23823,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:837491212","name":"一長堂書店","lat":40.20919,"lon":140.02983,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:991630775","name":"ゲーム倉庫","lat":40.19105,"lon":140.03482,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-21:00","tel":"+81-185-74-7022"}
+]

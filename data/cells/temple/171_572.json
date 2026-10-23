@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6133954189","name":"浄土真宗本願寺派 本願寺帯広別","lat":42.92724,"lon":143.20874,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6704697951","name":"禅林寺","lat":42.90394,"lon":143.18282,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6704759222","name":"十勝山永祥寺","lat":42.92994,"lon":143.19943,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:161501051","name":"勝久寺","lat":42.8664,"lon":143.19172,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:161501179","name":"川西神社","lat":42.86122,"lon":143.18895,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:161502055","name":"光心寺","lat":42.8228,"lon":143.18144,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:161957412","name":"キリスト教会救世軍帯広小隊","lat":42.92315,"lon":143.20475,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:545316034","name":"大正山法華寺山門","lat":42.92475,"lon":143.21339,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:545316061","name":"大正山法華寺","lat":42.92506,"lon":143.21335,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:545721597","name":"帯広念法寺","lat":42.9174,"lon":143.20471,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:545721953","name":"創価学会","lat":42.91468,"lon":143.21163,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:558953508","name":"日蓮上人像","lat":42.92472,"lon":143.21318,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:648006775","name":"然別神社","lat":42.96777,"lon":143.14686,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

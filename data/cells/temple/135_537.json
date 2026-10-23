@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:270456333","name":"徳円寺","lat":33.9575,"lon":134.45719,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:419764831","name":"岩船神社","lat":33.91474,"lon":134.47769,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:419766600","name":"秋葉神社","lat":33.92196,"lon":134.43849,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2252092782","name":"御所谷八幡神社","lat":33.78965,"lon":134.29604,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2252092785","name":"大殿八幡神社","lat":33.79278,"lon":134.29892,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2252092791","name":"平谷八幡神社","lat":33.79163,"lon":134.30341,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6164121451","name":"別格03慈眼寺　本堂","lat":33.94203,"lon":134.4276,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:7477469176","name":"金比羅神社","lat":33.79104,"lon":134.29887,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7500682515","name":"八幡神社","lat":33.81045,"lon":134.2956,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8598889832","name":"初臼山不動院","lat":33.98759,"lon":134.37905,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11772743606","name":"明王寺","lat":33.96417,"lon":134.31345,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12149544747","name":"池ノ丸神社跡","lat":33.94144,"lon":134.25843,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13116190401","name":"向栄山 正光寺","lat":33.83907,"lon":134.45202,"pref":"徳島","genres":["temple"],"indoor":false,"url":"http://sikoku36fudo.org/?page_id=93","note":"寺社・教会","g":"temple","k":"worship","tel":"+81884621304"},
+{"id":"osm:node:13152068001","name":"焼山寺 奥の院 蔵王大権現","lat":33.98209,"lon":134.30403,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:13288719501","name":"黒瀧寺","lat":33.85169,"lon":134.29521,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","tel":"+81884652601"},
+{"id":"osm:node:13589143453","name":"上一宮大粟神社","lat":33.97094,"lon":134.36691,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"かみいちのみやおおあわじんじゃ"},
+{"id":"osm:node:13589143454","name":"大粟山神宮寺","lat":33.97183,"lon":134.366,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"おおあわさんじんぐじ"},
+{"id":"osm:node:13968634436","name":"妙法寺","lat":33.79349,"lon":134.30151,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

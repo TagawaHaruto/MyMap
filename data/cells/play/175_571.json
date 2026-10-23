@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:375069100","name":"南町公園","lat":43.84897,"lon":142.77088,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:375233215","name":"旭町公園","lat":43.84611,"lon":142.77679,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1477367133","name":"西町公園","lat":43.85334,"lon":142.76229,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1477373262","name":"みずほ公園","lat":43.85164,"lon":142.7557,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1477771505","name":"花園公園","lat":43.85105,"lon":142.76646,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1478555986","name":"新町公園","lat":43.85051,"lon":142.77684,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

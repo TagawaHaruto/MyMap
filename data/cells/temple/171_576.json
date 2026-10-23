@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:104445019","name":"厳島神社","lat":42.95508,"lon":144.08509,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:425886326","name":"西庶路神社","lat":42.97924,"lon":144.12577,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:542474442","name":"庶路八幡神社","lat":42.98909,"lon":144.14902,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:542474722","name":"浄然寺","lat":42.98422,"lon":144.14283,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:542753562","name":"創価学会","lat":42.97351,"lon":144.13028,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:542795784","name":"瑞光山妙雲寺","lat":42.95711,"lon":144.08168,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:542796079","name":"昭雲山瑞英寺","lat":42.955,"lon":144.08254,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:542839420","name":"昭信寺","lat":42.95493,"lon":144.07305,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12647992116","name":"Mitaniinari shrine","lat":42.56043,"lon":139.83576,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:713279568","name":"栄浜稲荷神社","lat":42.67371,"lon":139.8898,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:713284620","name":"厳島神社","lat":42.59472,"lon":139.82778,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

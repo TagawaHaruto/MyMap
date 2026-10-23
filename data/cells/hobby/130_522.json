@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:2164949058","name":"カメヤ","lat":32.68546,"lon":130.66092,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6168053567","name":"スポーツオーソリティ","lat":32.7387,"lon":130.74177,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7988307287","name":"クリエイト光","lat":32.68497,"lon":130.66071,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7990723258","name":"おもちゃのいわさき","lat":32.68657,"lon":130.66273,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:9150711720","name":"柿本商会","lat":32.50266,"lon":130.62166,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:9150711909","name":"ワークマン","lat":32.50211,"lon":130.61658,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:693561821","name":"ブックオフ","lat":32.69176,"lon":130.67357,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:693561824","name":"スポーツデポ","lat":32.69096,"lon":130.67193,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:795270851","name":"明林堂書店 松橋店","lat":32.65367,"lon":130.67689,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:824471120","name":"湯治自転車","lat":32.56423,"lon":130.62471,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:824757369","name":"肥後スポーツ","lat":32.56685,"lon":130.65627,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1364686840","name":"辛川サイクルショップ","lat":32.58145,"lon":130.66443,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1384932547","name":"荒木カメラ","lat":32.56714,"lon":130.66078,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"カメラ","g":"hobby","k":"hobby"},
+{"id":"osm:way:1390873684","name":"宮本サイクル","lat":32.56701,"lon":130.65647,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1391531296","name":"上塚釣具店","lat":32.5694,"lon":130.65811,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

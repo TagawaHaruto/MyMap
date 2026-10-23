@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6755143598","name":"誠行寺","lat":43.01373,"lon":144.35673,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"じょうぎょうじ","tel":"+81 154-51-4548"},
+{"id":"osm:node:6755160094","name":"誠行寺（じょうぎょうじ）ホール","lat":43.01324,"lon":144.35605,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6755442349","name":"鳥取百年間","lat":43.01348,"lon":144.35306,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.northerncross.co.jp/bunkashigen/parts/960.html","note":"神社","g":"temple","k":"worship","oh":"09:00-16:00","tel":"+81 154-51-2402"},
+{"id":"osm:node:6768803530","name":"日本メノナイト鳥取キリスト教会","lat":43.01664,"lon":144.34217,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","tel":"+81 154-51-2145"},
+{"id":"osm:way:532044712","name":"釧路八幡宮","lat":43.00558,"lon":144.40692,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:533373565","name":"創価学会","lat":43.01251,"lon":144.3754,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:540369967","name":"釧路神社","lat":43.05103,"lon":144.46301,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:721806248","name":"鶴居神社","lat":43.2323,"lon":144.32141,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:721817279","name":"観音寺","lat":43.23702,"lon":144.31978,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:721833879","name":"本不動尊","lat":43.23855,"lon":144.31899,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

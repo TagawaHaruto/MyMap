@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4569390127","name":"須古厳島神社","lat":28.27202,"lon":129.29714,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4577830204","name":"菅原神社","lat":28.29846,"lon":129.43768,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4579827718","name":"カトリック知名瀬教会","lat":28.37877,"lon":129.44898,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4587074048","name":"開饒神社","lat":28.35631,"lon":129.39678,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4587074078","name":"カトリック大和教会","lat":28.35642,"lon":129.39598,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4618289504","name":"東本願寺","lat":28.37865,"lon":129.49717,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4618315856","name":"カトリック古田町マリア教会","lat":28.36956,"lon":129.49937,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:451029938","name":"高千穂神社","lat":28.37507,"lon":129.48988,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","pk":2}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:9913615097","name":"杉匠","lat":30.32173,"lon":130.65589,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"http://www.sugisyou.com/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-997-46-2123"},
+{"id":"osm:node:9958183301","name":"YAKUSHIMA BLESS","lat":30.32247,"lon":130.65689,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"https://yakushimabless.jp/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-997-46-2899"},
+{"id":"osm:node:10874877717","name":"まごごろ市 ぽんたん館","lat":30.25174,"lon":130.59112,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"https://ja-gp-kagoshima.jp/stand/stand_category/%E7%A8%AE%E5%AD%90%E5%B1%8B%E4%B9%85","note":"直売所","g":"local","k":"souvenir","kana":"ぽんたんかん","oh":"Mo-Su 08:30-17:30","tel":"+81-997-47-2557"},
+{"id":"osm:node:12125893335","name":"ぷかり堂","lat":30.37877,"lon":130.66233,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"https://www.pukarido.com","note":"お土産・特産品","g":"local","k":"souvenir","tel":"Mo-Su 08:30-18:00"},
+{"id":"osm:node:12125923298","name":"くんせい屋 けい水産","lat":30.30494,"lon":130.63738,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"https://keisuisan.com","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12165102154","name":"もりの市場","lat":30.41069,"lon":130.56478,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12167582751","name":"げじべえの里","lat":30.25772,"lon":130.58151,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12252458930","name":"武田産業","lat":30.32268,"lon":130.657,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13747918436","name":"Shelly Coco Yakushima","lat":30.42327,"lon":130.57128,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"09:00-18:00 || \"Variable days open, calendar posted on door.\""},
+{"id":"osm:relation:6433674","name":"屋久島八万寿茶園","lat":30.36871,"lon":130.66124,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6054689756","name":"Ban-yamin campsite","lat":30.32011,"lon":130.66064,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285999546","name":"屋久島キャンピングパーク","lat":30.44153,"lon":130.54451,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287604216","name":"オーシャンビューキャンプ場","lat":30.42385,"lon":130.57106,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0997-42-0091"},
+{"id":"osm:way:429213319","name":"Ocean View","lat":30.4231,"lon":130.58092,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

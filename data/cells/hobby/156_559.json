@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:3851487414","name":"Booksほんま","lat":39.01034,"lon":139.90809,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5021916053","name":"Fishing吹浦","lat":39.07073,"lon":139.87721,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5166937634","name":"佐々木釣具店","lat":39.20718,"lon":139.89698,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5166966535","name":"奥山輪店","lat":39.20241,"lon":139.90308,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5166966551","name":"山海堂","lat":39.20695,"lon":139.8993,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5167009132","name":"釣キチ三太","lat":39.21347,"lon":139.90033,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12019362263","name":"モンベル","lat":39.22133,"lon":139.90119,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-19:00","tel":"+81-184-74-5313"},
+{"id":"osm:way:381946010","name":"わたらい輪店","lat":39.01753,"lon":139.90856,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:381946014","name":"ユザスポーツ","lat":39.01817,"lon":139.90875,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:928123120","name":"ピッコロ","lat":39.20558,"lon":139.90166,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","tel":"+81 184 43 2494"},
+{"id":"osm:way:928123138","name":"育英書店 象潟店","lat":39.20552,"lon":139.9007,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:935252509","name":"見留サイクル","lat":39.21024,"lon":139.89731,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

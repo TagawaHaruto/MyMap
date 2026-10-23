@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2674901532","name":"スポーツデポ","lat":34.79635,"lon":137.77924,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2688323911","name":"レッドバロン","lat":34.80918,"lon":137.80259,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2688323912","name":"谷島屋","lat":34.80921,"lon":137.80197,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2955809906","name":"海林堂","lat":34.7667,"lon":137.75423,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3409800393","name":"アートファーム","lat":34.81664,"lon":137.88644,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:3409864793","name":"BOOKS HOBUNDO","lat":34.80839,"lon":137.84172,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3477784800","name":"時游窯","lat":34.7692,"lon":137.7508,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:4130354937","name":"GOLF Partner","lat":34.77323,"lon":137.9863,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4232615271","name":"PLAYER","lat":34.8427,"lon":137.79272,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4232615272","name":"自転車館","lat":34.79006,"lon":137.78194,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4316798890","name":"天竜 谷島屋","lat":34.86462,"lon":137.81479,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4388780783","name":"ブックオフ","lat":34.7727,"lon":137.99349,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8822826219","name":"サイクルベースあさひ掛川店","lat":34.77324,"lon":137.99382,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:10895515147","name":"エルドラード森町","lat":34.82882,"lon":137.922,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13242999462","name":"タケヤ","lat":34.7921,"lon":137.78305,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:432750144","name":"アルペンアルペン 掛川店","lat":34.76323,"lon":137.96933,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:488803259","name":"シラトリ袋井国本店","lat":34.75691,"lon":137.93569,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1480513054","name":"Booksアマノ 有玉店","lat":34.76136,"lon":137.75337,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

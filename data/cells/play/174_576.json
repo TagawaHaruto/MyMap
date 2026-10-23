@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:70947258","name":"２１世紀の森","lat":43.6959,"lon":144.03457,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:485302729","name":"河岸公園","lat":43.70142,"lon":144.02697,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:487165807","name":"達美野球場","lat":43.71523,"lon":144.01815,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:487590412","name":"町営球場","lat":43.69542,"lon":144.03355,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

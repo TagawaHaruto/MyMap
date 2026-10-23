@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:936580503","name":"kita-yokodake","lat":36.08754,"lon":138.32005,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4172880967","name":"蓼科神社奥社","lat":36.1039,"lon":138.29454,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5455493772","name":"乗鞍神社","lat":36.01947,"lon":138.27259,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8896739251","name":"弁才天宮","lat":36.05249,"lon":138.45788,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:591462162","name":"桂霄寺","lat":36.1586,"lon":138.47661,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:629228412","name":"諏訪社","lat":36.16511,"lon":138.47907,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:961781196","name":"松原諏方神社 上社","lat":36.05179,"lon":138.45877,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1220450867","name":"康國寺","lat":36.22112,"lon":138.35414,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1223144329","name":"普門寺","lat":36.1753,"lon":138.45534,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1233774561","name":"遍照寺","lat":36.19143,"lon":138.4956,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1258479967","name":"松原諏訪神社 下社","lat":36.05449,"lon":138.45812,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1259610575","name":"大伴神社","lat":36.22517,"lon":138.46931,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1263414428","name":"大徳寺","lat":36.23338,"lon":138.4212,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1264418239","name":"多福寺","lat":36.23554,"lon":138.42959,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1270296359","name":"八幡神社","lat":36.24461,"lon":138.48685,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

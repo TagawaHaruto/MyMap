@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:12863724401","name":"道の駅　草津運動茶屋公園","lat":36.6148,"lon":138.59035,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:611751421","name":"浅間台公園","lat":36.61757,"lon":138.59442,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:617612080","name":"頌徳公園","lat":36.62227,"lon":138.60079,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:624744614","name":"白根山ビュースポット","lat":36.52884,"lon":138.60426,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:700180249","name":"子ども広場","lat":36.56974,"lon":138.73617,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:797795995","name":"川原湯湖畔公園","lat":36.55311,"lon":138.71375,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:797795996","name":"湯かけ広場","lat":36.54905,"lon":138.70516,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1002543879","name":"昭和公園","lat":36.62111,"lon":138.60988,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1038730520","name":"長野原町 町民広場","lat":36.548,"lon":138.6574,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1252074447","name":"西の河原公園","lat":36.62435,"lon":138.58983,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"さいのかわらこうえん","oh":"Dec-Mar Mo-Su 09:00-20:00; Apr-Nov Mo-Su 07:00-20:00"},
+{"id":"osm:way:1348394392","name":"嬬恋村運動公園","lat":36.50751,"lon":138.51667,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1434573745","name":"八ッ場林ふるさと公園","lat":36.54504,"lon":138.68285,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1125130362","name":"八ッ場屋内運動場","lat":36.54237,"lon":138.66113,"pref":"群馬","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1361042567","name":"嬬恋村総合グラウンド野球場","lat":36.53903,"lon":138.55881,"pref":"群馬","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1361042569","name":"嬬恋村総合グラウンド","lat":36.53829,"lon":138.55757,"pref":"群馬","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1202608536","name":"草津音楽の森国際 コンサートホール","lat":36.63544,"lon":138.59608,"pref":"群馬","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

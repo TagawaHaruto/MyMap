@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:3381060652","name":"産直市佐那の里","lat":33.99958,"lon":134.47362,"pref":"徳島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:313649900","name":"JAふるさと物産直売所","lat":33.99316,"lon":134.45469,"pref":"徳島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:419766602","name":"武道館","lat":33.92222,"lon":134.4386,"pref":"徳島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8323115217","name":"前川キャンプ場","lat":33.92406,"lon":134.49605,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10076789849","name":"いきものふれあい の里キャンプ場","lat":33.96869,"lon":134.41436,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://sana-fureainosato.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12836716567","name":"ネイチャーヒーリング","lat":33.97281,"lon":134.36063,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287522820","name":"わじきライン林間キャンプ村","lat":33.8389,"lon":134.48171,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0884-62-1186"},
+{"id":"osm:node:14287522829","name":"あじさいキャンプ場","lat":33.79701,"lon":134.46118,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287528325","name":"オートキャンプみやま村","lat":33.96729,"lon":134.35046,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"088-677-0406"},
+{"id":"osm:node:14287563776","name":"パンゲアフィールド","lat":33.88574,"lon":134.41816,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0885-46-0371"},
+{"id":"osm:node:14287563777","name":"グランピング Base Camp（ベースキャンプ）","lat":33.8752,"lon":134.41303,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"http://kaitakudan.net/basecamp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-2789-8577"},
+{"id":"osm:way:312714791","name":"岳人の森キャンプ場","lat":33.92546,"lon":134.27132,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://gakujin-no-mori.net/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 88 677 1147"},
+{"id":"osm:way:312715883","name":"コットンフィールドキャンプ場","lat":33.96881,"lon":134.36924,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://www.cottonfield.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 88 676 0803"},
+{"id":"osm:way:313344460","name":"那賀町鷲敷野外活動センター","lat":33.84012,"lon":134.49405,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"http://www.waziki-camping.com/yagai/index.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 62 2524"},
+{"id":"osm:way:313346756","name":"鷲敷ライン林間キャンプ村","lat":33.83831,"lon":134.48412,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"http://www.waziki-camping.com/camp/index.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 62 1186"},
+{"id":"osm:way:313351465","name":"相生森林文化公園あいあいらんど","lat":33.79647,"lon":134.44839,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"http://aiai-land.net/cottage.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 62 3116"}
+]

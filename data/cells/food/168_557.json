@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:3378084446","name":"お食事処　潮騒","lat":42.06323,"lon":139.44981,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3378084457","name":"食べ処 海老寿亭","lat":42.06068,"lon":139.4493,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

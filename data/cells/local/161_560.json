@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1159361440","name":"白神の恵 体験工房","lat":40.28003,"lon":140.2479,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:384834788","name":"能代ゴルフカントリークラブ","lat":40.28513,"lon":140.02918,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4471148210","name":"素波里園地キャンプ場","lat":40.33996,"lon":140.24571,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286211439","name":"能代市毘沙門憩いの森","lat":40.27923,"lon":140.15354,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0185-59-2120"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:11155591953","name":"仏海庵","lat":33.42343,"lon":134.22231,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic","wp":"ja:仏海庵"},
+{"id":"osm:node:1393141616","name":"星野リゾート ウトコ オーベルジュ＆スパ","lat":33.25772,"lon":134.18258,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5549153732","name":"ホテル あけのほし","lat":33.255,"lon":134.18157,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5552357722","name":"まぜの宿","lat":33.25018,"lon":134.17228,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5552567223","name":"民宿うらしま","lat":33.30034,"lon":134.12764,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"みんしゅくうえあしまむろと"},
+{"id":"osm:node:5558320721","name":"和の宿 角屋","lat":33.33171,"lon":134.09794,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://www.muroto-kadoya.com/about_kadoya.html","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10810922829","name":"しだお","lat":33.36808,"lon":134.05778,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"しだお"},
+{"id":"osm:node:10810952434","name":"民宿徳増","lat":33.36557,"lon":134.20453,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"とくますみんしゅく"},
+{"id":"osm:node:12886682767","name":"旅の宿美園","lat":33.4314,"lon":134.01078,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"たびのやどみその"},
+{"id":"osm:node:14157497101","name":"ホテル冨士","lat":33.28744,"lon":134.14931,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:655417334","name":"ファミリーロッジ旅籠屋","lat":33.29449,"lon":134.14216,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

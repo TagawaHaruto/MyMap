@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5603040025","name":"知床食堂","lat":44.01723,"lon":145.19208,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.shiretoko-syokudo.com/","note":"海鮮","g":"food","k":"restaurant","oh":"Mo-Su 08:00-20:00","tel":"0153 87 4460"},
+{"id":"osm:way:375641479","name":"潮風","lat":44.07154,"lon":145.00162,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:375641482","name":"番屋","lat":44.0706,"lon":145.00062,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:458537499","name":"紀八","lat":44.01869,"lon":145.19214,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:1485896741","name":"そば処 しずか","lat":44.02358,"lon":145.18761,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:458536944","name":"茶館","lat":44.01946,"lon":145.19308,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:458536588","name":"食事の店 みち子","lat":44.02101,"lon":145.19304,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:458536633","name":"飲みくい処番屋","lat":44.02097,"lon":145.19251,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:458536634","name":"ひろ瀬","lat":44.02103,"lon":145.19244,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:458536643","name":"浜の漁師居酒屋ひょう","lat":44.02061,"lon":145.19238,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:458536904","name":"四季の味・いわみ","lat":44.02001,"lon":145.19285,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:458536919","name":"旬菜家ゆらり","lat":44.02072,"lon":145.19172,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

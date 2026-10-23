@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:11219076055","name":"TSUTAYA","lat":34.68251,"lon":136.46635,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:447871138","name":"宮脇書店","lat":34.68479,"lon":136.46166,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:1128476565","name":"大平模型","lat":34.71949,"lon":136.49749,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:1128477259","name":"株式会社 武道 東海","lat":34.71904,"lon":136.49369,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1128477263","name":"丸山モータース","lat":34.71941,"lon":136.49331,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1210894697","name":"ミヤタスポーツ","lat":34.6842,"lon":136.46493,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

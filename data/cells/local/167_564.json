@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4838745680","name":"恵山総合体育館","lat":41.76357,"lon":141.07545,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:565913244","name":"恵山シーサイドパークゴルフ場","lat":41.78634,"lon":141.09537,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:456807020","name":"函館市海浜公園キャンプ場","lat":41.77884,"lon":141.10095,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

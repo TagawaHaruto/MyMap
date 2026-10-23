@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4394343929","name":"シンタニスポーツ","lat":33.95806,"lon":132.04656,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4408966697","name":"岡田自転車店","lat":33.95594,"lon":132.04463,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:443282677","name":"平岡自転車預り所","lat":33.95812,"lon":132.04456,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:444670077","name":"タケヤ楽器","lat":33.95368,"lon":132.0367,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:1050552740","name":"サイクルセンター ヒロシゲ","lat":33.96642,"lon":132.11251,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1050552741","name":"サイクリング・サロン・ヒロシゲ","lat":33.96641,"lon":132.11298,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

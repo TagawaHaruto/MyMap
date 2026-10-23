@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:7475830177","name":"陽光山 德賞寺","lat":35.61066,"lon":135.96437,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7475830178","name":"不許葷酒入山門","lat":35.61001,"lon":135.96362,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7475833214","name":"国吉城本丸址","lat":35.61349,"lon":135.96626,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10754846357","name":"寺川庄兵衛翁の碑","lat":35.61019,"lon":135.91003,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10754846476","name":"松原遺跡","lat":35.60993,"lon":135.93139,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:809524343","name":"阿納尻小学校校舎","lat":35.53332,"lon":135.77039,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1156494724","name":"獅子塚古墳","lat":35.6045,"lon":135.93881,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6561193686","name":"Dormito tenda","lat":35.6373,"lon":135.82074,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10756231140","name":"なが田","lat":35.59157,"lon":135.86701,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10756231141","name":"水月花","lat":35.59116,"lon":135.86786,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10756231203","name":"Pamco 湖上館","lat":35.58791,"lon":135.86411,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13827447001","name":"旅館中村屋","lat":35.71275,"lon":135.97074,"pref":"福井","genres":["lodging"],"indoor":true,"url":"https://naka-ryo.com/","note":"宿","g":"heritage","k":"lodging","tel":"0770-39-1252"},
+{"id":"osm:way:220754329","name":"ふじま屋","lat":35.61727,"lon":135.90708,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:246815186","name":"民宿きたむら","lat":35.61568,"lon":135.90625,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0770-32-0414"},
+{"id":"osm:way:247226007","name":"ザ　グランリゾート三方五湖","lat":35.61097,"lon":135.90816,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:256403517","name":"民宿なかよし家","lat":35.60866,"lon":135.92762,"pref":"福井","genres":["lodging"],"indoor":true,"url":"http://www.nakayoshiya.com","note":"宿","g":"heritage","k":"lodging","tel":"0770-32-1466","wc":"no"},
+{"id":"osm:way:256403678","name":"まつぼっくり","lat":35.60954,"lon":135.92848,"pref":"福井","genres":["lodging"],"indoor":true,"url":"https://www.matsubo.jp/","note":"宿","g":"heritage","k":"lodging","tel":"0770-32-1017","wc":"yes"},
+{"id":"osm:way:809527512","name":"国立青少年教育振興機構国立若狭湾青少年自然の家","lat":35.56087,"lon":135.81425,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1069305253","name":"ホテル湾彩","lat":35.61009,"lon":135.91177,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

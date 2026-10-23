@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:376534248","name":"オシンコシン舘","lat":44.03753,"lon":144.93401,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"おしんこしんなだしれとこはっけい"},
+{"id":"osm:node:2552263518","name":"ウトロ港","lat":44.0735,"lon":144.99257,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

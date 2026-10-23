@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:544123041","name":"久米島シーサイドパークゴルフ場","lat":26.33283,"lon":126.76444,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287634977","name":"おうじまキャンプ場（久米島）","lat":26.33705,"lon":126.82431,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://www.kume-ou-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"098-985-8600"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:1038224757","name":"八坂神社","lat":31.47627,"lon":131.10599,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3188107734","name":"伊勢神社","lat":31.47384,"lon":131.09334,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6019375889","name":"串間カトリック教会","lat":31.46087,"lon":131.23226,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:6060323340","name":"如意寺","lat":31.46572,"lon":131.23191,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12215766091","name":"オートバイ神社 ２３号","lat":31.46291,"lon":131.22725,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1411750646","name":"都萬神社","lat":31.42677,"lon":131.00969,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1411755938","name":"若一神社","lat":31.435,"lon":131.01835,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1413208046","name":"山宮神社","lat":31.48512,"lon":131.07597,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1413413173","name":"大慈寺","lat":31.47678,"lon":131.0986,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

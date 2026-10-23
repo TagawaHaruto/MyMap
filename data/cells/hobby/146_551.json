@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4140240689","name":"MTBrider’ｓLounge「HappyTrail」　Hakuba Branch","lat":36.69439,"lon":137.85807,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","oh":"12:00-20:00"},
+{"id":"osm:node:5789519439","name":"パタゴニア白馬","lat":36.69645,"lon":137.86182,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5789519734","name":"好日山荘","lat":36.69633,"lon":137.86035,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5789519747","name":"The Boarding Co","lat":36.69646,"lon":137.86299,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5789519959","name":"丸屋福島商店","lat":36.69816,"lon":137.86387,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5811894864","name":"roundAbout","lat":36.69572,"lon":137.86263,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6312722278","name":"mont-bell","lat":36.7016,"lon":137.8458,"pref":"長野","genres":["shopping"],"indoor":true,"url":"https://www.montbell.jp","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6312728444","name":"Hakuba Mountain Lounge","lat":36.70157,"lon":137.84538,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6312734271","name":"Phenix","lat":36.70175,"lon":137.84484,"pref":"長野","genres":["shopping"],"indoor":true,"url":"https://www.phenix.jp","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6312748091","name":"Woody","lat":36.70126,"lon":137.84457,"pref":"長野","genres":["shopping"],"indoor":true,"url":"https://www.rentalshop-woody.jp","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6312774600","name":"Loco Tuneup service","lat":36.69285,"lon":137.86115,"pref":"長野","genres":["shopping"],"indoor":true,"url":"http://loco-hakuba.com","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6312897485","name":"Garage902","lat":36.69114,"lon":137.84235,"pref":"長野","genres":["shopping"],"indoor":true,"url":"http://www.hakuba902.com/garage/index.html","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10719720898","name":"FOREST+","lat":36.50493,"lon":137.85958,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby","oh":"We-Sa 10:00-17:00"},
+{"id":"osm:node:11491089769","name":"Rhythm Japan Hakuba","lat":36.70095,"lon":137.84267,"pref":"長野","genres":["shopping"],"indoor":true,"url":"https://www.rhythmjapan.com/","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12434991163","name":"Sierra Rental","lat":36.73401,"lon":137.86237,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","wc":"no"},
+{"id":"osm:way:775399914","name":"山の道具 ラッピー","lat":36.68336,"lon":137.85613,"pref":"長野","genres":["shopping"],"indoor":true,"url":"http://rapie.jp","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Su 13:00-19:00"}
+]

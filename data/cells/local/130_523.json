@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3208869682","name":"御船町スポーツセンター","lat":32.71605,"lon":130.80111,"pref":"熊本","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3509865613","name":"チサンカントリークラブ御船","lat":32.73497,"lon":130.80624,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3509865745","name":"熊本益城カントリー倶楽部","lat":32.74225,"lon":130.81824,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:348336064","name":"熊本南カントリー","lat":32.67031,"lon":130.78116,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:403206252","name":"矢部サンバレーGC","lat":32.73782,"lon":130.92071,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3198723492","name":"井戸江峡キャンプ場","lat":32.65043,"lon":130.84269,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287570073","name":"リベラルカマブタオートキャンプ場","lat":32.734,"lon":130.86,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0967-82-2207"},
+{"id":"osm:node:14287608197","name":"美里の森キャンプ場 ガーデンプレイス","lat":32.63279,"lon":130.90962,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://misato-camp.com/reserve/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:337991395","name":"柏川キャンプ場","lat":32.60987,"lon":130.91505,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:337992401","name":"美里町ガーデンプレイス・家族村","lat":32.63282,"lon":130.91109,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://misato-camp.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0964-48-0158"}
+]

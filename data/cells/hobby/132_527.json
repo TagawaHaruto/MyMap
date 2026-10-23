@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4330482116","name":"明屋書店臼杵野田店","lat":33.1114,"lon":131.78086,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:691006665","name":"明屋書店","lat":33.1114,"lon":131.78085,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:754698258","name":"辻釣具店","lat":33.12012,"lon":131.80481,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

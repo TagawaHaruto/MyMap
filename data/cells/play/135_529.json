@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:1631267844","name":"久賀町中央児童遊園","lat":33.94601,"lon":132.2614,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:699382692","name":"久賀中央児童遊園","lat":33.94603,"lon":132.26137,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:699382693","name":"明治百年記念公園","lat":33.94909,"lon":132.26046,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:724499290","name":"橘オレンジ児童遊園","lat":33.89856,"lon":132.28095,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1489472702","name":"シーサイドアクアマリン","lat":33.8926,"lon":132.29129,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1506383800","name":"向津原児童公園","lat":33.94478,"lon":132.26836,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:722690789","name":"周防大島町総合体育館","lat":33.90432,"lon":132.34083,"pref":"山口","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1385609459","name":"大島防災センター防災広場","lat":33.9469,"lon":132.26166,"pref":"山口","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

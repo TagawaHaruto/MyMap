@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4843126052","name":"安具里夢神社","lat":36.61282,"lon":139.06935,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4860314045","name":"上久屋神社","lat":36.66076,"lon":139.10426,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5153799373","name":"旧赤城神社","lat":36.54727,"lon":139.18396,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5153800177","name":"小沼 神社 天龍弁財天","lat":36.53368,"lon":139.18503,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5873950146","name":"赤城稲荷大神","lat":36.55191,"lon":139.18615,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5874008108","name":"二の鳥居","lat":36.53003,"lon":139.21977,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9625892804","name":"諏訪神社","lat":36.66034,"lon":139.07318,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9663470438","name":"大宮姫神社","lat":36.50855,"lon":139.01835,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:584900965","name":"考養寺","lat":36.661,"lon":139.11155,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1046014321","name":"平等寺","lat":36.64785,"lon":139.0491,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1046014326","name":"豊川稲荷","lat":36.64962,"lon":139.04895,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1046014331","name":"智徳寺","lat":36.65413,"lon":139.04573,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1046064490","name":"舒林寺","lat":36.64401,"lon":139.05094,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1046064491","name":"光清寺","lat":36.64309,"lon":139.05,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1046064492","name":"常福寺","lat":36.64494,"lon":139.05032,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1046064502","name":"愛宕神社","lat":36.64194,"lon":139.04424,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1046064530","name":"了源寺","lat":36.64165,"lon":139.04687,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1051550237","name":"源空寺","lat":36.51459,"lon":139.01299,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1314430414","name":"滝沢不動尊","lat":36.50556,"lon":139.18828,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1472134055","name":"雙林寺","lat":36.53788,"lon":139.00864,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1496903982","name":"赤城神社","lat":36.66981,"lon":139.20943,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

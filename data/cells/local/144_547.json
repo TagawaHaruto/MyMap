@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:7636807897","name":"木曽馬牧場　ホープロッジ","lat":36.00169,"lon":136.89714,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1547000521","name":"明智ゴルフ倶楽部 荘川ゴルフ場","lat":36.01889,"lon":136.92334,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1547000522","name":"荘川高原カントリー倶楽部","lat":36.0583,"lon":136.95474,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13135526101","name":"みぼろ湖畔キャンプサイト","lat":36.07984,"lon":136.94637,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"http://camp.miboroko.jp","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14283411115","name":"ミニモンゴルキャンプ場","lat":36.0095,"lon":136.90931,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://minimongol.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0575-73-2300"},
+{"id":"osm:node:14285746944","name":"山のハコ-camp studio-","lat":36.01035,"lon":136.90642,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://yamanohaco.site/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285746945","name":"ひるがの高原キャンプ場","lat":36.01033,"lon":136.90161,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://www.hirugano-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0575-73-2331"},
+{"id":"osm:node:14286866929","name":"白山ブナの森キャンプ場","lat":36.14791,"lon":136.8227,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"http://ohjirakawa.shirakawa-go.org/","note":"キャンプ・野外","g":"local","k":"camp","tel":"05769-6-1285"},
+{"id":"osm:node:14286866931","name":"南竜ヶ馬場キャンプ場","lat":36.13607,"lon":136.77256,"pref":"石川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"076-259-2022"},
+{"id":"osm:node:14286894364","name":"ひるがの高原リゾート 翠峯苑","lat":36.03352,"lon":136.93549,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286894369","name":"ひるがの高原BASE","lat":36.01241,"lon":136.89663,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://kworks-aurora.com/base/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0568-27-7322"},
+{"id":"osm:node:14286894373","name":"ひるがの高原あぐりの丘","lat":36.00397,"lon":136.8931,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://agurinooka.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"052-753-5519"}
+]

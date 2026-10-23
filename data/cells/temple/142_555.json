@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:1215752577","name":"産屋ヶ崎神社","lat":35.51285,"lon":138.76613,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2441142862","name":"三輪神社","lat":35.51898,"lon":138.9287,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2753903560","name":"山菅神社","lat":35.64817,"lon":138.75687,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3730357647","name":"松姫神社","lat":35.68602,"lon":138.9657,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4437688606","name":"白山神社","lat":35.50832,"lon":138.77556,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7209712185","name":"本光寺","lat":35.56229,"lon":138.96326,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:7816647979","name":"子之神社","lat":35.50568,"lon":138.9922,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7922093111","name":"白川稲荷神社","lat":35.58667,"lon":138.93125,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12947207411","name":"Inamura Shrine","lat":35.58692,"lon":138.92544,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:98715842","name":"八王子神社","lat":35.50346,"lon":138.76791,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:228097533","name":"六角堂","lat":35.51294,"lon":138.7586,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ろっかくど"},
+{"id":"osm:way:243647420","name":"西光寺","lat":35.57646,"lon":138.92498,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:248181251","name":"春日神社","lat":35.62138,"lon":138.97526,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:262964313","name":"聖観音堂","lat":35.65004,"lon":138.75844,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:263936902","name":"稲村神社","lat":35.60349,"lon":138.84268,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:264037834","name":"子神社","lat":35.60256,"lon":138.85107,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ねじんじゃ"},
+{"id":"osm:way:276890086","name":"厄神社","lat":35.51837,"lon":138.84898,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:302635956","name":"佛教寺庙","lat":35.70179,"lon":138.7505,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"もんじゅいん"},
+{"id":"osm:way:667134424","name":"奥野稲村神社","lat":35.60332,"lon":138.81123,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1382989482","name":"稲村神社","lat":35.6058,"lon":138.92713,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

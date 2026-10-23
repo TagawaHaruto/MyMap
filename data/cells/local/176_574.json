@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:12770295897","name":"魚屋まつだ","lat":44.05902,"lon":143.52205,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:468004915","name":"野菜直売所ゆうゆう","lat":44.19755,"lon":143.59958,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:468384811","name":"湧鮮館","lat":44.2293,"lon":143.62407,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-1586-4-3535"},
+{"id":"osm:way:465745998","name":"えんがる温水プール","lat":44.04547,"lon":143.51883,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1422814618","name":"上湧別リバーサイドゴルフ場","lat":44.14723,"lon":143.54753,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.town.yubetsu.lg.jp/tourism/enjoy/detail.html?content=257","note":"遊び・スポーツ","g":"local","k":"activity","kana":"かみゆうべつりばーさいどごるふじょう"},
+{"id":"osm:way:592524630","name":"五箇山公園キャンプ場","lat":44.18281,"lon":143.61367,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

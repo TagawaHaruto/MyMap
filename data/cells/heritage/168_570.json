@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:12651834419","name":"三石開基百年之碑","lat":42.24529,"lon":142.58009,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:437443691","name":"みついし昆布温泉 蔵三","lat":42.22009,"lon":142.63521,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://kurazo.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-146-34-2300"}
+]

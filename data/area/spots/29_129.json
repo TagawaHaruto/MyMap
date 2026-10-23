@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:465862998","name":"十島村歴史民俗資料館","lat":29.84089,"lon":129.8682,"pref":"鹿児島","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:4528240107","name":"湯泊温泉","lat":29.22569,"lon":129.33103,"pref":"鹿児島","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:node:4561863088","name":"友の花温泉保養センター","lat":29.15355,"lon":129.20534,"pref":"鹿児島","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:way:460552910","name":"城之山牧場","lat":29.13269,"lon":129.21575,"pref":"鹿児島","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"},
+{"id":"osm:way:460552911","name":"大原牧場","lat":29.15462,"lon":129.19401,"pref":"鹿児島","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"}
+]

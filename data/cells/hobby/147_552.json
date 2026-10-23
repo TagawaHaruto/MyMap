@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:7242346712","name":"Uchida Sports Akakura","lat":36.89225,"lon":138.17729,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10136568110","name":"Dancing Snow","lat":36.8879,"lon":138.18025,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 90-1433-1247"},
+{"id":"osm:node:10214472936","name":"戸隠竹細工センター","lat":36.75708,"lon":138.07974,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:13423115901","name":"青山スポーツ　本店","lat":36.89448,"lon":138.17856,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"https://aoyamasports.sakura.ne.jp/aoyamasports/","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"Mo-Su 07:30-17:30","tel":"+81 255-87-2338"},
+{"id":"osm:way:1150872543","name":"青山スポーツ つるや店","lat":36.89356,"lon":138.17753,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"https://aoyamasports.sakura.ne.jp/aoyamasports/","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"Mo-Su 07:30-19:00","tel":"+81-255-87-3665"}
+]

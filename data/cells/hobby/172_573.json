@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2425322071","name":"市川","lat":43.23118,"lon":143.29207,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:2425322074","name":"坂井自転車","lat":43.23402,"lon":143.29229,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5542795432","name":"佐々木スポーツ","lat":43.23426,"lon":143.29317,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

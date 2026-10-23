@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4271278244","name":"釣具のポイント 日向店","lat":32.41718,"lon":131.63114,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4273067530","name":"book bank ほんだらけ","lat":32.43078,"lon":131.62965,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4274551889","name":"Dear Surf","lat":32.3796,"lon":131.62745,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"https://www.dearsurf.com/pc_top.html","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4274554089","name":"pwsサーフ","lat":32.37963,"lon":131.62807,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"https://pwssurf.jp/","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4274571089","name":"SUNRISE-SURFSHOP","lat":32.38087,"lon":131.62754,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"https://www.sunrise-surfshop.com/","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5057883524","name":"明林堂書店イオンタウン日向店","lat":32.42543,"lon":131.65224,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-22:00"}
+]

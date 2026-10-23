@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5549153628","name":"民宿 川端","lat":41.18395,"lon":140.48787,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5549483126","name":"小山内旅館","lat":41.18232,"lon":140.47915,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5549483128","name":"幸福荘","lat":41.17995,"lon":140.47313,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5549483824","name":"三厩民宿","lat":41.20361,"lon":140.42722,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8171405672","name":"津軽小泊館","lat":41.13051,"lon":140.30255,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8171405674","name":"新生館","lat":41.13064,"lon":140.30378,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:673264123","name":"今別ホテル","lat":41.18206,"lon":140.48032,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:877524712","name":"龍飛旅館","lat":41.2046,"lon":140.4266,"pref":"青森","genres":["lodging"],"indoor":true,"url":"http://tappi-kankou.com","note":"宿","g":"heritage","k":"lodging","kana":"たっぴりょかん","tel":"+81 174 37 2666"}
+]

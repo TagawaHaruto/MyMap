@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3174694050","name":"としまや","lat":35.39823,"lon":140.14813,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"としまや"},
+{"id":"osm:node:12730185802","name":"川とや","lat":35.28679,"lon":140.24664,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:12730374600","name":"石井輪業","lat":35.29201,"lon":140.24335,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13111871098","name":"ホビーオフ","lat":35.49407,"lon":140.11684,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13111871099","name":"ハードオフ","lat":35.49412,"lon":140.11691,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

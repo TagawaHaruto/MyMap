@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:362789291","name":"わんぱくランド","lat":34.04838,"lon":135.96464,"pref":"奈良","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:362796072","name":"プリン山","lat":34.03685,"lon":135.96002,"pref":"奈良","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:454519913","name":"下北山スポーツ公園","lat":34.04599,"lon":135.96517,"pref":"奈良","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:457871315","name":"平成の森野鳥公園","lat":34.04876,"lon":135.97673,"pref":"奈良","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:359032873","name":"池の平公園グラウンド","lat":34.03073,"lon":135.9554,"pref":"奈良","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"},
+{"id":"osm:way:362788892","name":"人工芝 サッカーグラウンド","lat":34.04885,"lon":135.96691,"pref":"奈良","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:362796053","name":"池郷川サッカーグラウンド","lat":34.03809,"lon":135.95921,"pref":"奈良","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:362796095","name":"グランドゴルフ場","lat":34.03966,"lon":135.95866,"pref":"奈良","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

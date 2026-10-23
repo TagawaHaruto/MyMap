@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:13626735101","name":"赤野休憩所 Akano Rest","lat":33.5138,"lon":133.83551,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","oh":"24/7","pk":2},
+{"id":"osm:way:1250387816","name":"ヤ・シィパーク","lat":33.53462,"lon":133.75241,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1251608483","name":"憩ケ丘運動公園","lat":33.52944,"lon":133.8192,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1252296710","name":"西八幡公園","lat":33.50541,"lon":133.89224,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:230399325","name":"安芸市営球場","lat":33.50573,"lon":133.89137,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","wp":"ja:安芸市営球場"},
+{"id":"osm:node:11634485193","name":"琴ヶ浜松原野外劇場","lat":33.51724,"lon":133.80395,"pref":"高知","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"},
+{"id":"osm:node:11652392971","name":"安芸市民会館","lat":33.50306,"lon":133.91174,"pref":"高知","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

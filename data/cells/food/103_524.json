@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2568407085","name":"大東そば いちごいちえ","lat":25.83288,"lon":131.23142,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2568407103","name":"食事処 光","lat":25.83196,"lon":131.2285,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7875150667","name":"焼肉 盛","lat":25.83285,"lon":131.23087,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:7875150588","name":"スナック島情","lat":25.83293,"lon":131.23112,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:7875150589","name":"居酒屋ろくさん","lat":25.83319,"lon":131.23082,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:7875150664","name":"ちょうちん","lat":25.83275,"lon":131.23098,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:12465338166","name":"ちゅら島","lat":25.83386,"lon":131.23076,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:12465354837","name":"ビアガーデン乱美","lat":25.82954,"lon":131.23089,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

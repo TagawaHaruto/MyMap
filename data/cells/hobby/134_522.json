@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:1534084181","name":"瑛","lat":33.51918,"lon":130.53107,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby","kana":"はなぶさ"},
+{"id":"osm:node:4877047492","name":"Uematsu","lat":33.62246,"lon":130.51738,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"https://www.uematsu.co.jp/","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5326540270","name":"トレモロ","lat":33.51326,"lon":130.51733,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:10713460048","name":"2輪ショップ ほーまん商会","lat":33.51378,"lon":130.52605,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10718174201","name":"旅する自転車の店 DRAISINE","lat":33.51371,"lon":130.52794,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:139103021","name":"リサイクルショップ ビック","lat":33.51267,"lon":130.52865,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:551544428","name":"HOBBY TIME","lat":33.5133,"lon":130.51824,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:552312920","name":"A BOOK 飯塚店","lat":33.61905,"lon":130.67102,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:552312928","name":"ヒマラヤスポーツ&ゴルフ 飯塚店","lat":33.62111,"lon":130.66958,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:552312937","name":"ブックオフ飯塚秋松店","lat":33.62029,"lon":130.67005,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1126688317","name":"レインボーファクトリー","lat":33.65187,"lon":130.65781,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1150580653","name":"タックルベリー 筑前筑紫野店","lat":33.50163,"lon":130.53101,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:1151127624","name":"TSUTAYA AVクラブ太宰府店","lat":33.50822,"lon":130.5088,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"https://store-tsutaya.tsite.jp/store/detail?storeId=7607","note":"本屋","g":"hobby","k":"hobby","tel":"+81-92-928-3566"},
+{"id":"osm:way:1152821085","name":"どんぐりの森","lat":33.51938,"lon":130.53307,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:1155356443","name":"BIKELAND","lat":33.5086,"lon":130.50911,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1157514932","name":"絵本の店 あっぷっぷ","lat":33.50528,"lon":130.50009,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1164863997","name":"フリーマーケット ACB","lat":33.5154,"lon":130.50412,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

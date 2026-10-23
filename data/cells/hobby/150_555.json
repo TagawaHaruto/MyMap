@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5982802214","name":"中村サイクル","lat":37.62458,"lon":138.94716,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7321694680","name":"野嶋書店","lat":37.62918,"lon":138.96328,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9567969011","name":"宮脇書店","lat":37.5393,"lon":138.88855,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:390453102","name":"上州屋","lat":37.64836,"lon":138.93667,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:464505755","name":"TSUTAYA","lat":37.61658,"lon":138.9548,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:464909134","name":"ブックオフ","lat":37.6406,"lon":138.95534,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:464909137","name":"知遊堂","lat":37.6423,"lon":138.9552,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

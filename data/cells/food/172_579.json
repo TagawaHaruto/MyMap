@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2877402301","name":"コンキリエ","lat":43.05764,"lon":144.8442,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"yes"},
+{"id":"osm:node:2877404004","name":"炙屋","lat":43.05766,"lon":144.844,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13259776982","name":"氏家待合所","lat":43.05564,"lon":144.84107,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:2879195601","name":"マエダ","lat":43.05241,"lon":144.84767,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","wc":"no"},
+{"id":"osm:node:2879273702","name":"森高牧場","lat":43.06029,"lon":144.82463,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"アイス","g":"food","k":"sweets"}
+]

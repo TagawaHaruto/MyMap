@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:13295873133","name":"本別公園","lat":43.12882,"lon":143.62692,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779504647","name":"旭一公園","lat":43.12313,"lon":143.61006,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779746295","name":"清流公園","lat":43.12894,"lon":143.60883,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779801405","name":"中央公園","lat":43.12883,"lon":143.61233,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:780123076","name":"北公園","lat":43.13199,"lon":143.61244,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:780370125","name":"ふれあい公園","lat":43.13611,"lon":143.61429,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:780856020","name":"新町公園","lat":43.13211,"lon":143.59728,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:781670639","name":"栄公園","lat":43.13588,"lon":143.6078,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:781718907","name":"総合運動公園","lat":43.12424,"lon":143.59181,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:782022787","name":"南公園","lat":43.11358,"lon":143.6002,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:782289918","name":"ちびっこ公園r","lat":43.12111,"lon":143.60963,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:782299987","name":"向陽公園","lat":43.12076,"lon":143.61645,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:422803297","name":"静山テニスコート","lat":43.13051,"lon":143.63063,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:781718905","name":"本別太陽の丘野球場","lat":43.1245,"lon":143.5931,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

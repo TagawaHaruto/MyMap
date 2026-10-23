@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:6709961189","name":"はしかみハマの駅あるでぃ～ば","lat":40.47212,"lon":141.64689,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"https://aldiva.jp/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"0178-38-3166"},
+{"id":"osm:node:6989745931","name":"ほっかほっか亭 階上店","lat":40.47817,"lon":141.57392,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7020863914","name":"つかさ","lat":40.46445,"lon":141.59995,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8485190717","name":"丸魚","lat":40.41975,"lon":141.69936,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6991766403","name":"ボルダリング・クライミングジム ノースロック","lat":40.47204,"lon":141.58652,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7021515251","name":"三広ゴルフ（株）","lat":40.4808,"lon":141.57067,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:564012430","name":"八戸カントリークラブ","lat":40.45813,"lon":141.59994,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:564012474","name":"階上ゴルフガーデン","lat":40.46212,"lon":141.60424,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:573641404","name":"階上町民体育館","lat":40.45364,"lon":141.62277,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1224875745","name":"岩手県洋野町立平内小学校","lat":40.42359,"lon":141.70047,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1224879183","name":"岩手県洋野町立宿戸保育園","lat":40.36284,"lon":141.74426,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7022665447","name":"キャンプ場","lat":40.43736,"lon":141.54314,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7022734363","name":"キャンプ場","lat":40.4383,"lon":141.54355,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7023404572","name":"つつじの森キャンプ場","lat":40.40953,"lon":141.58515,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12292930605","name":"久慈平岳キャンプ場","lat":40.3551,"lon":141.61285,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12349912769","name":"雪谷川ダムフォリストパークキャンプ場","lat":40.28818,"lon":141.51936,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286211435","name":"大和の丘森林公園","lat":40.35853,"lon":141.62116,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0194-65-2111"},
+{"id":"osm:node:14287663290","name":"久慈平岳キャンプ場","lat":40.32878,"lon":141.60686,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0194-77-2111"},
+{"id":"osm:way:625060401","name":"SakaZuki BASE cominato","lat":40.45098,"lon":141.68046,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1381816431","name":"種市海浜公園","lat":40.40014,"lon":141.71997,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://www.town.hirono.iwate.jp/doc/2022041400012/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0194-65-5555"}
+]

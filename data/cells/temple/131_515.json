@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:769122350","name":"宮原教会","lat":32.76208,"lon":128.81342,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4726058137","name":"椛島神社","lat":32.7693,"lon":128.99235,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4787443741","name":"蛭子神社","lat":32.75338,"lon":128.96921,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4787443742","name":"八坂神社","lat":32.75141,"lon":128.97165,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4787585815","name":"西蓮寺","lat":32.75315,"lon":128.97136,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4787586423","name":"山ノ神","lat":32.76426,"lon":128.98994,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6585501723","name":"頭子神社","lat":32.91623,"lon":128.9536,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6585501744","name":"日島神社","lat":32.91881,"lon":128.96091,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1519308102","name":"五輪教会","lat":32.80237,"lon":128.90328,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:1521456621","name":"牢屋の窄殉教記念聖堂","lat":32.80102,"lon":128.87785,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:6854770190","name":"明只商店","lat":34.06618,"lon":136.19805,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6854775591","name":"永田商店","lat":34.06335,"lon":136.19274,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6854820188","name":"北村魚店","lat":34.06966,"lon":136.19156,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6854831085","name":"中川魚店","lat":34.06826,"lon":136.19145,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6856824390","name":"竹本魚店","lat":34.07638,"lon":136.1937,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6856824409","name":"明只商店","lat":34.07585,"lon":136.19574,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6856837702","name":"谷魚店","lat":34.07492,"lon":136.19221,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6856839485","name":"岩崎魚店","lat":34.07813,"lon":136.19116,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859731687","name":"はし佐商店","lat":34.07463,"lon":136.19842,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","pk":2},
+{"id":"osm:node:6859731693","name":"尾鷲金盛丸","lat":34.07525,"lon":136.19914,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859731708","name":"シャディ サラダ館 海山店","lat":34.11249,"lon":136.22391,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756317","name":"大紀商店","lat":34.10856,"lon":136.23336,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756324","name":"魚貞","lat":34.10939,"lon":136.24183,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756388","name":"マルゴ松村商店","lat":34.07348,"lon":136.20009,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756394","name":"兵後魚店","lat":34.10928,"lon":136.22428,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859756493","name":"岩崎商店","lat":34.07338,"lon":136.19943,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6859759095","name":"松永鮮魚店","lat":34.10703,"lon":136.24037,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1287551858","name":"紀北青果市場","lat":34.06063,"lon":136.20861,"pref":"三重","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:14285913280","name":"キャンプinn海山","lat":34.1051,"lon":136.18954,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913283","name":"おわせむかい農園キャンプ場ミノレ","lat":34.05996,"lon":136.2172,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://www.owasemukaifarm.com/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

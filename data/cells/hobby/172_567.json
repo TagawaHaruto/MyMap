@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4890751321","name":"2nd street","lat":43.20434,"lon":141.78338,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4931638521","name":"アマゾン","lat":43.19796,"lon":141.77188,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4960713224","name":"フィッシュランド","lat":43.20292,"lon":141.78127,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:4976287821","name":"岩見沢オート","lat":43.2081,"lon":141.77618,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5080165422","name":"喜久屋書店","lat":43.20961,"lon":141.78441,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5158328721","name":"モンマ","lat":43.19831,"lon":141.77198,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5504049721","name":"辰田商会","lat":43.20957,"lon":141.7608,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:544744952","name":"くりやまクリエイターズマーケット","lat":43.05823,"lon":141.77744,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:way:556395376","name":"てる","lat":43.01194,"lon":141.78483,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:556398820","name":"小寺書店","lat":43.01225,"lon":141.7836,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

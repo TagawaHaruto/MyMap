@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:1275225573","name":"四国最南端","lat":32.72563,"lon":133.01949,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2569428189","name":"ジョン万次郎像","lat":32.72564,"lon":133.01958,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4983997423","name":"足摺パシフィックホテル花椿","lat":32.72517,"lon":133.0027,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5537156521","name":"足摺テルメ","lat":32.72726,"lon":133.0067,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://www.terume.com/sp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:9444928782","name":"金剛福寺宿坊","lat":32.72499,"lon":133.01724,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:node:11380474069","name":"民宿 田村","lat":32.72618,"lon":133.00927,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://minsyuku-tamura.net/","note":"宿","g":"heritage","k":"lodging","kana":"みんしゅくたむら","tel":"+81 880 88 0605"}
+]

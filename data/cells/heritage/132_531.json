@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:8463065885","name":"整理紀念","lat":33.01989,"lon":132.84655,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:570663726","name":"ホテル星羅四万十","lat":33.17326,"lon":132.79248,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 88-0522-225"}
+]

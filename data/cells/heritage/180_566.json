@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5778463576","name":"北緯45度通過点 モニュメント","lat":45.00226,"lon":141.68123,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:582909713","name":"あしたの城","lat":45.09518,"lon":141.65864,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

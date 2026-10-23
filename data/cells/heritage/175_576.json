@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4364689188","name":"鎖塚","lat":43.88352,"lon":144.01968,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4932595351","name":"津別町開基紀念之碑","lat":43.75361,"lon":144.06329,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4940443704","name":"つべつ玉葱発祥之地","lat":43.75392,"lon":144.05053,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8283524975","name":"第壱號越歳駅逓跡","lat":43.94066,"lon":144.11373,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12117947907","name":"一圓融合","lat":43.90897,"lon":144.17253,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12117947943","name":"女満別公園跡地","lat":43.91665,"lon":144.18038,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12117947944","name":"橋爪九十太之碑","lat":43.9173,"lon":144.18007,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4003709045","name":"天都の宿 網走観光ホテル","lat":43.99243,"lon":144.22508,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4003709046","name":"旧国鉄保養所 鉄ちゃん&鉄子の宿","lat":43.9828,"lon":144.22023,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4003709047","name":"温泉旅館もとよし","lat":43.98226,"lon":144.22073,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"もとよし"},
+{"id":"osm:node:4003709048","name":"ペンションわにの家","lat":43.98239,"lon":144.22391,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"わにのいえ"},
+{"id":"osm:node:4003709049","name":"ホテル網走湖荘","lat":43.98304,"lon":144.21877,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:ホテル網走湖荘","kana":"あばしりこそう"},
+{"id":"osm:node:4003709050","name":"北天の丘あばしり湖鶴雅リゾート","lat":43.96857,"lon":144.21108,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4788388614","name":"まいるーむ","lat":43.8843,"lon":144.00353,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5207890031","name":"旅館 青葉荘","lat":43.83628,"lon":144.10435,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12273297701","name":"ARUN Hotel","lat":43.97055,"lon":144.21524,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14286040970","name":"星空コテージオホーツク","lat":43.88444,"lon":144.00337,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://hoshizora-cottage.com/","note":"宿","g":"heritage","k":"lodging","tel":"0157-57-9070"},
+{"id":"osm:way:483451743","name":"民宿峠荘","lat":43.83376,"lon":144.10236,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:488034321","name":"湖南荘","lat":43.91679,"lon":144.17101,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"こなんそう"},
+{"id":"osm:way:1372799738","name":"湯元ホテル山水","lat":43.91554,"lon":144.16591,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://hotel-sansui.com/","note":"宿","g":"heritage","k":"lodging","kana":"ゆもとほてるさんすい","tel":"+81 152 74 2343","pk":2},
+{"id":"osm:way:1446807292","name":"ビジネスホテルARMビホロ","lat":43.82906,"lon":144.10695,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://armsystem.co.jp/business/business-hotel/","note":"宿","g":"heritage","k":"lodging","kana":"びじねすほてるあるむびほろ","tel":"+81 152 77 3931"}
+]

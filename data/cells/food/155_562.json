@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5011196349","name":"繁盛軒","lat":38.75653,"lon":140.5186,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5011196351","name":"ラ・フランス","lat":38.75762,"lon":140.51833,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5011196352","name":"西郷屋","lat":38.75737,"lon":140.51707,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:5011196357","name":"おいしいお店 たんぽぽ","lat":38.7596,"lon":140.51936,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5011210930","name":"げんまん","lat":38.75026,"lon":140.72087,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"げんまん","tel":"+81 229 83 4493"},
+{"id":"osm:node:5011210946","name":"二葉食堂","lat":38.75801,"lon":140.51869,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5011212222","name":"みさをの店","lat":38.75018,"lon":140.72062,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5011217922","name":"喰いしん坊","lat":38.75684,"lon":140.51811,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6463733104","name":"ふきのとう","lat":38.80336,"lon":140.64832,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ふきのと","tel":"+81 229 86 2033"},
+{"id":"osm:node:8670166124","name":"食事処えんどう","lat":38.79393,"lon":140.66816,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant","kana":"えんどう","tel":"+81 229 25 6069"},
+{"id":"osm:node:5011196370","name":"白樺","lat":38.76415,"lon":140.50982,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"しらかば"},
+{"id":"osm:node:6463733696","name":"四季","lat":38.8045,"lon":140.64682,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"しき"},
+{"id":"osm:node:8670210424","name":"五湯茶屋","lat":38.75009,"lon":140.71901,"pref":"宮城","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5011196354","name":"大谷菓子店","lat":38.75778,"lon":140.5162,"pref":"山形","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,9 @@
+[
+{"name":"吉見温泉センター","lat":34.0825777,"lon":130.91719625000002,"kind":"onsen","wikipedia":"https://ja.wikipedia.org/wiki/%E5%90%89%E8%A6%8B%E6%B8%A9%E6%B3%89","tel":"+81-832-86-5123","wc":"limited","k":"onsen"},
+{"name":"ぴーすふる青竜泉","lat":34.13723505,"lon":130.9387019,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"毘沙ノ鼻","lat":34.1100905,"lon":130.8623593,"kind":"viewpoint","wikipedia":"https://ja.wikipedia.org/wiki/%E6%AF%98%E6%B2%99%E3%83%8E%E9%BC%BB","k":"viewpoint"},
+{"name":"角島","lat":34.3478421,"lon":130.8954502,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"古墳展望台","lat":34.3105681,"lon":130.8878152,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"響灘厚島展望公園","lat":34.1223898,"lon":130.9405441,"kind":"viewpoint","wikipedia":null,"tel":"+81 83 772 4003","wc":"yes","k":"viewpoint"},
+{"name":"国清山展望台","lat":34.1341828,"lon":130.9391373,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"}
+]

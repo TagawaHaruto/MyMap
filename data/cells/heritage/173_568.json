@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5170643734","name":"東小学校閉校記念之碑","lat":43.4738,"lon":142.00202,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:719643488","name":"上砂川岳温泉パンケの湯","lat":43.4658,"lon":142.02188,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0125-62-2526","pk":2}
+]

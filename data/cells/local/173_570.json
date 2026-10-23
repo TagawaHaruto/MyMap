@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2109605325","name":"白銀荘前キャンプ場","lat":43.43134,"lon":142.64241,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:6564023685","name":"国設白金野営場","lat":43.4744,"lon":142.64602,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7617784791","name":"星に手のとどく丘キャンプ場","lat":43.38598,"lon":142.53383,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9989901218","name":"美瑛富士キャンプ地","lat":43.45464,"lon":142.72219,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14283565034","name":"ノースグランパー富良野","lat":43.45631,"lon":142.52332,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://northglamper.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-8943-2299"},
+{"id":"osm:node:14286024388","name":"美瑛自然の村キャンプ場","lat":43.49323,"lon":142.63979,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0166-94-3415"},
+{"id":"osm:node:14286024392","name":"星に手のとどく丘キャンプ場","lat":43.37716,"lon":142.51915,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1302-1422"}
+]

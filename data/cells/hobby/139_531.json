@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2294249064","name":"サイクルショップつじの","lat":34.80484,"lon":132.86312,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:2295452212","name":"フタバ図書TSUTAYA三次店","lat":34.80311,"lon":132.87934,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12985407841","name":"佐々木","lat":34.80862,"lon":132.84776,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:12985407919","name":"ミツヤ","lat":34.80513,"lon":132.85481,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:221162611","name":"APORITO三次","lat":34.80439,"lon":132.87829,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1364388014","name":"ユズリハモーターサイクル","lat":34.80292,"lon":132.87825,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1413007127","name":"ヨシオカ楽器","lat":34.81156,"lon":132.84646,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby","tel":"0826-2-2738"}
+]

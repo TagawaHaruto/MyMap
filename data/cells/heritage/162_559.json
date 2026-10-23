@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:9053272377","name":"鎮魂碑","lat":40.55712,"lon":139.9299,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12014507417","name":"ライダーハウス深浦","lat":40.63838,"lon":139.90045,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12082002285","name":"深浦観光ホテル","lat":40.64028,"lon":139.91482,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:974359212","name":"アオーネ白神","lat":40.55591,"lon":139.94671,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:11518918751","name":"べニールいまばり","lat":34.03515,"lon":132.97893,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13826874101","name":"Gifts","lat":34.24813,"lon":132.99636,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:806280237","name":"さいさいきて屋","lat":34.03861,"lon":132.99395,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:7875285039","name":"いまばり・みやうら海の駅","lat":34.24775,"lon":132.99338,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7970221419","name":"ゆたか海の駅","lat":34.18873,"lon":132.85283,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8256478199","name":"マコトスイミングクラブ双葉","lat":34.05844,"lon":132.99619,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:302057404","name":"松山シーサイドCC","lat":34.01457,"lon":132.82452,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:893649653","name":"桑名ボウル","lat":34.06469,"lon":132.96049,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4937644442","name":"鴨池海岸公園","lat":34.08244,"lon":132.9233,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13166651650","name":"Shimegaura Park Camping Ground","lat":34.11396,"lon":132.89735,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"https://www.oideya.gr.jp/spot-c/shimegaura","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13166680620","name":"Osumikaihin Koen Camping Ground","lat":34.14113,"lon":132.94092,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13694386461","name":"正月鼻","lat":34.19691,"lon":132.87287,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287495459","name":"大串キャンプ場","lat":34.23592,"lon":132.84651,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0846-64-3949"},
+{"id":"osm:node:14287562699","name":"大角海浜公園キャンプ場","lat":34.1183,"lon":132.96,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0898-41-7111"},
+{"id":"osm:node:14287578904","name":"七五三ヶ浦公園キャンプ場","lat":34.11405,"lon":132.90454,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0898-41-7111"}
+]

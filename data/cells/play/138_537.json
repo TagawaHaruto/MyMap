@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:254959594","name":"赤穂城跡公園","lat":34.74706,"lon":134.38804,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:801928632","name":"日生運動公園","lat":34.73969,"lon":134.29277,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1092283272","name":"東浜公園","lat":34.73852,"lon":134.40607,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12491917752","name":"赤穂バッティングセンター","lat":34.74867,"lon":134.34951,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

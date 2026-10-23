@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:12170977541","name":"真湯野営場","lat":39.00448,"lon":140.84999,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0191-39-2728"},
+{"id":"osm:node:12210008975","name":"つぶ沼キャンプ場","lat":39.11467,"lon":140.8861,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://iwatetabi.jp/spots/6578/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0197-24-2111"},
+{"id":"osm:node:14286226216","name":"北上市民夏油温泉野営場","lat":39.23871,"lon":140.95839,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0197-64-2111"},
+{"id":"osm:node:14286226217","name":"GETO CAMPFIELD","lat":39.23663,"lon":140.90628,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://getocampfield.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0197-65-9009"},
+{"id":"osm:node:14289691269","name":"つぶ沼森の家ウッディランド","lat":39.1142,"lon":140.88558,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0197-49-2030"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1658399782","name":"木浦山神社","lat":32.8246,"lon":131.54695,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9094106476","name":"岩屋神社","lat":32.97928,"lon":131.69891,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12801987002","name":"蓮城寺（内山観音）","lat":32.95613,"lon":131.58382,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1116132839","name":"上赤嶺神社","lat":32.98265,"lon":131.5824,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:558451653","name":"間木の平グリーンパーク","lat":40.43117,"lon":141.07196,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:568819919","name":"三戸町ラジコン公園","lat":40.36055,"lon":141.24724,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:586455985","name":"金ヶ沢農村公園","lat":40.46608,"lon":141.17483,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:589900914","name":"瑞山公園","lat":40.34034,"lon":141.15345,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:618545343","name":"松原公園","lat":40.3852,"lon":141.24735,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:754905126","name":"妙返川親水公園","lat":40.42519,"lon":141.05019,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:770956669","name":"獅々内川さぼう公園","lat":40.33533,"lon":141.14137,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

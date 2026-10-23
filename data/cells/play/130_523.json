@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:309495351","name":"美里町カントリーパーク","lat":32.63206,"lon":130.79963,"pref":"熊本","genres":["play"],"indoor":false,"url":"https://www.town.kumamoto-misato.lg.jp/q/aview/40/103.html","note":"公園","g":"play","k":"park","tel":"0964-46-2038"},
+{"id":"osm:way:330155420","name":"中蓮寺公園","lat":32.65202,"lon":130.79797,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:330208055","name":"金毘羅公園","lat":32.62799,"lon":130.80538,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:333404107","name":"緑川ダム広場","lat":32.62863,"lon":130.90818,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1507501005","name":"氷川ダム展望所","lat":32.56962,"lon":130.79024,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1507501006","name":"氷川ダム草谷展望所","lat":32.56607,"lon":130.7937,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:3371120947","name":"美里町町営球技場","lat":32.64636,"lon":130.79234,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:330208037","name":"美里町カントリーパークテニスコート","lat":32.63178,"lon":130.80082,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:330208038","name":"美里町カントリーパークグラウンド","lat":32.63139,"lon":130.79989,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:333212252","name":"砥用ドーム","lat":32.61654,"lon":130.86458,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:333212483","name":"砥用ドーム","lat":32.61654,"lon":130.86447,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:371055860","name":"美里町砥用Ｂ＆G海洋センター","lat":32.63138,"lon":130.9038,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:688567951","name":"ゲートボール場","lat":32.6174,"lon":130.86271,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:333192279","name":"美里町文化交流センター","lat":32.61622,"lon":130.86254,"pref":"熊本","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

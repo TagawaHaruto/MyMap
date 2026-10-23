@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5652261888","name":"當麻神社","lat":43.82955,"lon":142.52185,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5652261900","name":"円明寺","lat":43.83374,"lon":142.52217,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5652293593","name":"真弘寺","lat":43.83309,"lon":142.522,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:726611372","name":"乗福寺","lat":43.90721,"lon":142.57939,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:726611375","name":"愛別神社社務所","lat":43.90652,"lon":142.57975,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:726611376","name":"愛別神社","lat":43.90686,"lon":142.58058,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:727618723","name":"金剛寺","lat":43.90952,"lon":142.57198,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:727642313","name":"正覚寺","lat":43.90119,"lon":142.57865,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:727665310","name":"柏林寺","lat":43.89936,"lon":142.64159,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:727678272","name":"正行寺","lat":43.89388,"lon":142.65873,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:858183828","name":"創価学会","lat":43.85592,"lon":142.54948,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

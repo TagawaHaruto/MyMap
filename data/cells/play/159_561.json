@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:7416583070","name":"笑内農村公園","lat":39.93401,"lon":140.41199,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:627570640","name":"仁別国民の森","lat":39.80223,"lon":140.26082,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:753483565","name":"阿仁運動広場","lat":39.99223,"lon":140.40454,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:753495703","name":"萱草農村公園","lat":39.95803,"lon":140.41567,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:11012426","name":"本阿仁地区墓地公園","lat":39.90513,"lon":140.44779,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:813427163","name":"運動公園","lat":39.99439,"lon":140.40302,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:813427164","name":"阿仁グラウンド","lat":39.99137,"lon":140.40471,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:814154873","name":"光沢園地","lat":39.84446,"lon":140.25794,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:825883126","name":"大阿仁地区森林公園","lat":39.8608,"lon":140.4349,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:825883131","name":"峠広場","lat":39.82266,"lon":140.44617,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:825883827","name":"井出舞沢園地","lat":39.77572,"lon":140.37353,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:7416583038","name":"根子番楽伝承館（旧根子小学校体育館）","lat":39.94181,"lon":140.4006,"pref":"秋田","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:5701073691","name":"垣生城跡","lat":33.83644,"lon":132.71489,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026965","name":"豫州溺死者招魂碑","lat":33.85912,"lon":132.71877,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026966","name":"大可賀溺死者招魂碑","lat":33.85256,"lon":132.7145,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10126184131","name":"軍馬犬鳩家畜慰霊塔","lat":33.8386,"lon":132.73919,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10126184148","name":"立産森の旧跡（福水神社奥の院）","lat":33.84658,"lon":132.73105,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11142514404","name":"朝日谷2号墳","lat":33.84613,"lon":132.73886,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:11518385670","name":"港山城跡　みなとやまじょうあと　MinatoyamaJouato Minatoyama Castle Ruins","lat":33.86865,"lon":132.7109,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"https://matsuyama-sightseeing.com/spot/3-11/","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:12343992261","name":"友情のシンボル　ゴールドマイナー像の説明","lat":33.83707,"lon":132.74867,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:213563390","name":"フライブルク城","lat":33.84437,"lon":132.74102,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:way:491013502","name":"丸山墓地","lat":33.83794,"lon":132.7386,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:491013739","name":"客谷古墳群","lat":33.84052,"lon":132.73913,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4206104989","name":"Hotel Fine Garden ホテルファインガーデン","lat":33.85693,"lon":132.72936,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6140732583","name":"旅籠屋松山店","lat":33.8738,"lon":132.70883,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10845536605","name":"ほしふるテラス姫ヶ浜","lat":33.95663,"lon":132.62812,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"https://www.himegahamasou.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-89-997-0149"},
+{"id":"osm:node:13816619998","name":"ホテルファンタジアリゾート松山","lat":33.80692,"lon":132.70151,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"https://hotel-fantasiaresort.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-89-974-1919"},
+{"id":"osm:way:230495488","name":"ウェルピア伊予","lat":33.77,"lon":132.71715,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:655415602","name":"ファミリーロッジ旅籠屋松山店","lat":33.87371,"lon":132.70864,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1299033880","name":"いよ プリンスホテル","lat":33.75915,"lon":132.70235,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2}
+]

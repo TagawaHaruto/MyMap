@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:560512287","name":"体育館","lat":30.41316,"lon":130.90191,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14289685300","name":"前之浜海浜公園","lat":30.36522,"lon":130.90091,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0997-26-1111"},
+{"id":"osm:way:1382683112","name":"自然レクリエーション村","lat":30.45835,"lon":130.95845,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://town.nakatane.kagoshima.jp/tiiki/machinojoho/kanko/leisure/kaisuiyokujo.html","note":"キャンプ・野外","g":"local","k":"camp"}
+]

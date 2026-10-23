@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6501890849","name":"味処湯処 よしちょう","lat":32.72577,"lon":130.20539,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:627300945","name":"炭火焼肉屋さかい","lat":32.63194,"lon":130.24836,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1086331649","name":"名月","lat":32.52324,"lon":130.03367,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1123900178","name":"手作りの味 マル・サラ","lat":32.60469,"lon":130.17649,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:way:1131988386","name":"リンガーハット","lat":32.7256,"lon":130.20446,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","chain":true},
+{"id":"osm:way:1359859893","name":"天草洋","lat":32.5104,"lon":130.04207,"pref":"熊本","genres":["food"],"indoor":true,"url":"https://amakusanada.com/","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1465012092","name":"海鮮市場 蒸し釜や","lat":32.7259,"lon":130.20427,"pref":"長崎","genres":["food"],"indoor":true,"url":"https://musigamaya.com/","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 11:30-14:30,17:30-20:30","tel":"+81-95-775-0077"},
+{"id":"osm:node:6919288385","name":"MARINE HOUSE COCO","lat":32.62032,"lon":130.23399,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Tu-Su 09:00-20:00"},
+{"id":"osm:way:931892907","name":"プロペラプレート","lat":32.54606,"lon":130.18665,"pref":"熊本","genres":["food"],"indoor":true,"url":"https://propeller10.com/plate.html","note":"カフェ","g":"food","k":"cafe","oh":"11:30-16:00"},
+{"id":"osm:way:626203407","name":"ほっともっと","lat":32.60997,"lon":130.18467,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ほっともっと","chain":true},
+{"id":"osm:way:675919228","name":"オカモト・シェ・ダムール","lat":32.72537,"lon":130.20417,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1123093264","name":"おおむら菓子舗","lat":32.62983,"lon":130.15629,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1126688888","name":"松田屋老舗","lat":32.61173,"lon":130.18644,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1126688890","name":"本田屋かすてら本舗","lat":32.61022,"lon":130.19348,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

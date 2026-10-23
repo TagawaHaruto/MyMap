@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11161690027","name":"千歳平四十周年記念碑","lat":40.89007,"lon":141.28636,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11161690096","name":"工藤栄一留魂碑","lat":40.88987,"lon":141.28613,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11161690140","name":"弥栄平閉村記念碑","lat":40.88983,"lon":141.28624,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

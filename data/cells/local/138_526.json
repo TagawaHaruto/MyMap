@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4884230604","name":"RVパークたまがわ","lat":34.64788,"lon":131.66507,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"http://www.yutoripark-tamagawa.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0838-72-1150"},
+{"id":"osm:node:6476789660","name":"Tamagawa picnic site","lat":34.65293,"lon":131.66197,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287489831","name":"長磯海水浴場キャンプ場","lat":34.62401,"lon":131.58469,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08387-6-2219"},
+{"id":"osm:node:14287489833","name":"須佐湾エコロジーキャンプ場","lat":34.62178,"lon":131.58132,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08387-6-2727"},
+{"id":"osm:way:697909120","name":"田万川キャンプ場","lat":34.6529,"lon":131.6615,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

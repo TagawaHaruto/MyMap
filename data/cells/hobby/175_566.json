@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:9498453350","name":"三省堂書店","lat":43.92356,"lon":141.67344,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9498530881","name":"ファーストスポーツ","lat":43.93844,"lon":141.65005,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9498561593","name":"ホビーショップ時代屋","lat":43.94095,"lon":141.64056,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:9518834484","name":"富士屋商店","lat":43.85682,"lon":141.52221,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4100959590","name":"ツタヤ ゲーム館","lat":42.89486,"lon":140.7515,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:4109123191","name":"田中サイクル商会","lat":42.90249,"lon":140.75299,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","tel":"0136-22-1298"},
+{"id":"osm:node:13545515701","name":"Amuse Sports snow rental","lat":42.75075,"lon":140.90366,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:195302820","name":"ボーダーライン","lat":42.89987,"lon":140.75218,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

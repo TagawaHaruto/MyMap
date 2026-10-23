@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2522780087","name":"サイクルベースあさひ光の森店","lat":32.85846,"lon":130.78142,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:2523760155","name":"・クラブ菊陽店","lat":32.85895,"lon":130.79512,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5105056018","name":"スポーツデポ 熊本インター店","lat":32.83685,"lon":130.77938,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5105056019","name":"ゴルフ５ 熊本インター店","lat":32.83673,"lon":130.77869,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5510443218","name":"TSUTAYA","lat":32.79041,"lon":130.78151,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby","kana":"つたや"},
+{"id":"osm:node:5852199004","name":"ブックオフ","lat":32.8496,"lon":130.76093,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5852199090","name":"GEO熊本光の森店","lat":32.85777,"lon":130.78004,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"げおくまもとひかりのもり"},
+{"id":"osm:node:6702044785","name":"カガワの自転車","lat":32.77951,"lon":130.76152,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6702044786","name":"サイクルベースあさひ","lat":32.77788,"lon":130.77088,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13121509610","name":"アウトレットリサイクル TAWNタウン","lat":32.94381,"lon":130.7871,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13130710230","name":"TSUTAYA","lat":32.86308,"lon":130.81287,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13130759644","name":"トライアンフ 熊本","lat":32.86172,"lon":130.80831,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13130759645","name":"ドゥカティ熊本","lat":32.86121,"lon":130.80795,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13149951711","name":"三木誠文堂","lat":32.97699,"lon":130.80519,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-20:00"},
+{"id":"osm:way:364635003","name":"ポイント熊本インター店","lat":32.82568,"lon":130.76637,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:410706652","name":"ブックオフ","lat":32.77878,"lon":130.76039,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/shop/shop10293.html","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-21:00","tel":"096-214-0150"},
+{"id":"osm:way:410725012","name":"明林堂書店長嶺店","lat":32.80854,"lon":130.77039,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:412300736","name":"ぐるぐる倉庫　菊陽店","lat":32.86238,"lon":130.8096,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:545017886","name":"田中スポーツ店","lat":32.97772,"lon":130.80719,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:545857111","name":"サイクルベースあさひ","lat":32.80521,"lon":130.7546,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

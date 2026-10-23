@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:755573178","name":"八峰海岸ジオパーク","lat":40.40837,"lon":139.95914,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775896110","name":"大間越関所跡（福寿草公園）","lat":40.48703,"lon":139.94885,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:672719201","name":"御所の台野球場","lat":40.38725,"lon":139.98361,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

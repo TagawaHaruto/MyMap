@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:7135842430","name":"兜沼神社","lat":45.22732,"lon":141.69798,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7980680604","name":"豊里神社","lat":45.14536,"lon":141.62693,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855817059","name":"豊徳八幡神社","lat":45.10091,"lon":141.66214,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855817060","name":"稚咲内神社","lat":45.08523,"lon":141.64014,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:6440385448","name":"綿打公園","lat":35.18042,"lon":133.15774,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:610058244","name":"ちびっこ広場","lat":35.17901,"lon":133.09368,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:611200560","name":"横田公園","lat":35.17165,"lon":133.09113,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:616139729","name":"下横田公園","lat":35.17674,"lon":133.08638,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686286590","name":"ふれあい広場","lat":35.1467,"lon":133.08865,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1171580193","name":"馬木運動公園","lat":35.12479,"lon":133.03913,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1173389151","name":"日向原農村公園","lat":35.12581,"lon":133.06468,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1424333809","name":"多里山村広場","lat":35.12494,"lon":133.21406,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:611200554","name":"横田公園野球場","lat":35.17116,"lon":133.08977,"pref":"島根","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:611200556","name":"横田公園プール","lat":35.17141,"lon":133.092,"pref":"島根","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:743790581","name":"比和川河川プール","lat":35.04035,"lon":133.00571,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:931051452","name":"わくわくプール","lat":35.18385,"lon":133.17729,"pref":"島根","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1097417174","name":"広瀬勤労者体育センター","lat":35.23905,"lon":133.13167,"pref":"島根","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1097417831","name":"広瀬勤労者体育センター","lat":35.23907,"lon":133.13146,"pref":"島根","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1256744394","name":"八川運動公園野球場","lat":35.15658,"lon":133.08097,"pref":"島根","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

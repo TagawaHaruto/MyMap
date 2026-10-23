@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4269648155","name":"秋葉神社","lat":25.84536,"lon":131.25592,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12825214251","name":"金刀比羅宮","lat":25.95322,"lon":131.2869,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7","tel":"+81 9802-3-4001"},
+{"id":"osm:node:12862689611","name":"秋葉神社","lat":25.94034,"lon":131.32208,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

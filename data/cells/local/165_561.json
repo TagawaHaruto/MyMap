@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:8357401264","name":"おみやげ処 竜飛","lat":41.25718,"lon":140.34762,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8423159540","name":"名物 たっぴの母さん","lat":41.25777,"lon":140.34492,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1924603982","name":"福島港","lat":41.47611,"lon":140.26028,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6080001576","name":"福島漁港","lat":41.47663,"lon":140.25776,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6080035430","name":"浦和漁港","lat":41.49064,"lon":140.29506,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:738465574","name":"福島町民プール","lat":41.48642,"lon":140.25565,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286177348","name":"龍飛崎シーサイドパーク","lat":41.25716,"lon":140.34428,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0174-38-2741"}
+]

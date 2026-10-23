@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:2502840910","name":"れすとらん 東山","lat":34.48055,"lon":132.17781,"pref":"広島","genres":["food"],"indoor":true,"url":"https://www.mominoki.or.jp/","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5409989719","name":"お食事処みずなか","lat":34.25143,"lon":132.22751,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7054148756","name":"お好み焼きアクア","lat":34.25584,"lon":132.2306,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:132896214","name":"Ruzzo","lat":34.37224,"lon":132.15914,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant","kana":"るっぞ"},
+{"id":"osm:way:132896215","name":"ドライブイン 岩倉","lat":34.37227,"lon":132.15853,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:relation:1782644","name":"田舎茶屋 わたや","lat":34.35659,"lon":132.24487,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1433652286","name":"こんにゃく彩家 ゆき乃庵","lat":34.4743,"lon":132.23964,"pref":"広島","genres":["food"],"indoor":true,"url":"https://fujitoshi.shop35.makeshop.jp/","note":"和食","g":"food","k":"restaurant","tel":"+81 829 85 0551"},
+{"id":"osm:way:1433652313","name":"湯治BAR SOZORO","lat":34.47599,"lon":132.24178,"pref":"広島","genres":["food"],"indoor":true,"url":"https://www.instagram.com/bar.sozoro/","note":"和食","g":"food","k":"restaurant","tel":"+81 829 78 1945"},
+{"id":"osm:way:240974345","name":"カントリーショップ ミントハウス","lat":34.47875,"lon":132.12405,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:241629528","name":"コーヒーハウス イシイ","lat":34.38508,"lon":132.12943,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1432539924","name":"レトロ雑貨 ･猫屋商会","lat":34.47442,"lon":132.2444,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

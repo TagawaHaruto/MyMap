@@ -1,0 +1,19 @@
+[
+{"name":"道の駅スワン44 ねむろ","lat":43.26175175,"lon":145.43858104999998,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅スワン44ねむろ","lat":43.261697049999995,"lon":145.43843615,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%82%B9%E3%83%AF%E3%83%B344%E3%81%AD%E3%82%80%E3%82%8D","tel":"+81 153 25 3055","wc":"yes","k":"michinoeki"},
+{"name":"道の駅おだいとう","lat":43.53286445,"lon":145.23687055,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"霧多布温泉 ゆうゆ","lat":43.0769586,"lon":145.1337759,"kind":"onsen","wikipedia":"https://ja.wikipedia.org/wiki/%E9%9C%A7%E5%A4%9A%E5%B8%83%E6%B8%A9%E6%B3%89","k":"onsen"},
+{"name":"オーロラタワー","lat":43.3851334,"lon":145.8084515,"kind":"viewpoint","wikipedia":"https://ja.wikipedia.org/wiki/%E6%9C%9B%E9%83%B7%E3%81%AE%E5%A1%94","k":"viewpoint"},
+{"name":"協和駅","lat":43.5165585,"lon":145.0016749,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"野付半島ネイチャーセンター","lat":43.5899805,"lon":145.3352024,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"トドワラ","lat":43.5813138,"lon":145.3275668,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"納沙布岬","lat":43.384962,"lon":145.815887,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"霧多布岬展望台","lat":43.0834105,"lon":145.1623024,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"琵琶瀬展望台","lat":43.0453374,"lon":145.0695792,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"アゼチ岬展望台","lat":43.0685064,"lon":145.1272266,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"アゼチ岬","lat":43.0673594,"lon":145.1242872,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%BC%E3%83%81%E5%B2%AC","k":"scenic"},
+{"name":"落石岬","lat":43.158593,"lon":145.4958039,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E8%90%BD%E7%9F%B3%E5%B2%AC","k":"scenic"},
+{"name":"納沙布岬","lat":43.385295,"lon":145.8168199,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E7%B4%8D%E6%B2%99%E5%B8%83%E5%B2%AC","k":"scenic"},
+{"name":"猫山","lat":43.9163297,"lon":145.0676072,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E7%8C%AB%E5%B1%B1","k":"scenic"},
+{"name":"ENEOS","lat":43.32786,"lon":145.58681,"kind":"fuel24","oh":"24/7","k":"fuel24"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:729093376","name":"島の駅壱番館","lat":33.78539,"lon":129.75475,"pref":"長崎","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:14287502387","name":"筒城浜キャンプ場","lat":33.75838,"lon":129.79028,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0920-44-6673"}
+]

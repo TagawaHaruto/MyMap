@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4803074922","name":"特産品お土産販売","lat":36.08755,"lon":138.72446,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:487919695","name":"クラフトマンショップこかげ","lat":36.08761,"lon":138.72477,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14281243287","name":"トントゥなんもく村キャンプ場","lat":36.15185,"lon":138.60225,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0274-87-3657"},
+{"id":"osm:node:14281542734","name":"One and... Nanmoku Another BASE","lat":36.20757,"lon":138.70575,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286830177","name":"内山牧場キャンプ場","lat":36.24043,"lon":138.6097,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0267-65-2021"},
+{"id":"osm:node:14286852442","name":"山荘あらふね","lat":36.24108,"lon":138.60997,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0267-65-2022"},
+{"id":"osm:way:696064710","name":"荒船パノラマキャンプフィールド","lat":36.23853,"lon":138.60662,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://arafune-camp.net","note":"キャンプ・野外","g":"local","k":"camp","tel":"0267-65-2021"},
+{"id":"osm:way:1261398498","name":"長者の森キャンプ場","lat":36.06527,"lon":138.62934,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

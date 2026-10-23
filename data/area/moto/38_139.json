@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:425870587","name":"櫛引PA (下り)","lat":38.6435,"lon":139.82884,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:425870799","name":"櫛引PA (上り)","lat":38.64291,"lon":139.83036,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433855409","name":"道の駅月山","lat":38.58751,"lon":139.87409,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:434382341","name":"道の駅朝日","lat":38.28274,"lon":139.52296,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:435112047","name":"道の駅しょうない","lat":38.79467,"lon":139.98438,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:438370057","name":"道の駅神林","lat":38.17249,"lon":139.46122,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:438371597","name":"道の駅笹川流れ","lat":38.3751,"lon":139.45839,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:438380170","name":"道の駅あつみ","lat":38.58033,"lon":139.55865,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:653733996","name":"荒川PA (上り)","lat":38.13884,"lon":139.42395,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:654417341","name":"矢引PA (下り)","lat":38.70205,"lon":139.71948,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1071871808","name":"道の駅「いいで」","lat":38.02593,"lon":139.99382,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1136910576","name":"荒川PA (下り)","lat":38.13927,"lon":139.42374,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1156590105","name":"矢引PA (上り)","lat":38.70262,"lon":139.72093,"type":"SA・PA","k":"rest_area","likely":true}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:567842009","name":"ぱんとりー","lat":40.19048,"lon":141.76853,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:567842178","name":"大向魚店","lat":40.19085,"lon":141.76541,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:677796926","name":"外舘魚店","lat":40.19084,"lon":141.7689,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:677902734","name":"みかみ魚店","lat":40.19152,"lon":141.76685,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1303072025","name":"下安家漁港","lat":40.05607,"lon":141.85284,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1224826004","name":"岩手県久慈市立平山小学校","lat":40.218,"lon":141.7817,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12657710769","name":"普代村自然休養村緑の村","lat":40.01145,"lon":141.85451,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13067659888","name":"玉川野営場","lat":40.07818,"lon":141.83129,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286218508","name":"黒崎オートキャンプ場・黒崎キャンプ場","lat":40.01034,"lon":141.932,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0194-35-2115"}
+]

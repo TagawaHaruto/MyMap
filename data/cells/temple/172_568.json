@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:852590506","name":"本浄寺","lat":43.00143,"lon":142.00522,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:852606806","name":"妙法寺","lat":43.00418,"lon":142.00471,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:855205104","name":"照行寺","lat":43.01162,"lon":142.049,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:855212916","name":"遠明寺","lat":43.01215,"lon":142.05097,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:855212946","name":"遠幌神社","lat":43.013,"lon":142.05361,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855253550","name":"南大夕張神社","lat":43.02316,"lon":142.08091,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:10937770863","name":"三思ヶ丘公園","lat":34.01122,"lon":136.25758,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:658355592","name":"熊野灘臨海公園","lat":34.21218,"lon":136.34409,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:658396044","name":"中ノ島児童公園","lat":34.19302,"lon":136.32836,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:704144387","name":"山本児童公園","lat":34.21088,"lon":136.3332,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:704144388","name":"玉児童公園","lat":34.21097,"lon":136.3359,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:704144389","name":"井ノ島遊園地","lat":34.21063,"lon":136.33778,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:988236285","name":"築地公園","lat":34.21921,"lon":136.39881,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:998382951","name":"熊野灘臨海公園","lat":34.1986,"lon":136.36305,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:385937576","name":"古瀬川プール場","lat":34.20067,"lon":136.35637,"pref":"三重","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:385937577","name":"古瀬川プール場","lat":34.20012,"lon":136.35624,"pref":"三重","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:658381588","name":"赤羽公園","lat":34.21387,"lon":136.30425,"pref":"三重","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:658381590","name":"東長島スポーツ公園","lat":34.21183,"lon":136.33628,"pref":"三重","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

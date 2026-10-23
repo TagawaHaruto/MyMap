@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:9258973069","name":"うちだ屋 川内店","lat":31.84224,"lon":130.28067,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"https://www.uchidaya.co.jp/store/uchidaya_sendai/","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12706497304","name":"おざ樹","lat":31.8056,"lon":130.39353,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"フレンチ","g":"food","k":"restaurant"},
+{"id":"osm:node:12706497305","name":"マルニ味噌らーめん","lat":31.80777,"lon":130.38678,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:12706497312","name":"うなぎのたけひさ","lat":31.79642,"lon":130.40584,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12727113686","name":"おもと茶屋","lat":31.82298,"lon":130.43726,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:508981970","name":"ラーメン　福の神","lat":31.82465,"lon":130.29209,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:509273187","name":"寿しまどか","lat":31.83118,"lon":130.30808,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:558676538","name":"ジョイフル","lat":31.81193,"lon":130.31938,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:way:567843659","name":"焼肉なべしま","lat":31.82911,"lon":130.30845,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:568008646","name":"寺山レストラン","lat":31.82652,"lon":130.34039,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:568037115","name":"ふく福","lat":31.82677,"lon":130.30994,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:568039612","name":"金龍","lat":31.83196,"lon":130.294,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:568039613","name":"寿司じじや","lat":31.8347,"lon":130.28958,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:568039614","name":"ガスト","lat":31.83512,"lon":130.28896,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:way:568077065","name":"ジョイフル","lat":31.82481,"lon":130.30078,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:12706497311","name":"みかく亭","lat":31.82089,"lon":130.42922,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:399919870","name":"はま寿司","lat":31.83156,"lon":130.29465,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"はますし","chain":true},
+{"id":"osm:way:553461978","name":"マクドナルド","lat":31.81415,"lon":130.30619,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5195055156","name":"本堂","lat":35.39107,"lon":133.53486,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5195055157","name":"阿弥陀堂","lat":35.38872,"lon":133.53088,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6531951523","name":"大父神社","lat":35.439,"lon":133.63019,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9883524506","name":"大梁山 清元院","lat":35.4677,"lon":133.63387,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11295485609","name":"大瀧神社","lat":35.33283,"lon":133.50064,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11773415474","name":"成美神社","lat":35.49965,"lon":133.62238,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:689326414","name":"船上神社","lat":35.42755,"lon":133.59222,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:689443170","name":"羽田井神社","lat":35.47753,"lon":133.5939,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:750963500","name":"天理教 米美分教会","lat":35.30515,"lon":133.54005,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1210940081","name":"須佐之男命神社","lat":35.30698,"lon":133.50262,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1212707539","name":"宮市神社","lat":35.29002,"lon":133.50721,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1212999573","name":"貝田神社","lat":35.30204,"lon":133.50646,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1213588803","name":"御机神社","lat":35.32315,"lon":133.55634,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1264489427","name":"大森神社","lat":35.48166,"lon":133.63072,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1267667626","name":"竹寶山水月堂","lat":35.49866,"lon":133.62396,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1316109109","name":"山口神社","lat":35.29747,"lon":133.57099,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1366266750","name":"岩屋山 福正寺","lat":35.42994,"lon":133.50521,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1368030428","name":"三谷観音堂","lat":35.47941,"lon":133.59229,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1414421229","name":"高橋神社","lat":35.49112,"lon":133.57,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1414882080","name":"神田神社","lat":35.45588,"lon":133.54197,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

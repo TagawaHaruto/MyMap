@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4572953080","name":"サンフラワー・シティホテル","lat":28.14738,"lon":129.31179,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4572953081","name":"ライベストイン奄美","lat":28.1477,"lon":129.3118,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4572953082","name":"ビジネスホテルプラザせとうち","lat":28.14787,"lon":129.31025,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

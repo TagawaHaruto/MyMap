@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:9656673707","name":"","lat":33.17977,"lon":129.71526,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:12111682332","name":"","lat":33.4529,"lon":129.98174,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:892123001","name":"","lat":33.18004,"lon":129.71491,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:1178373503","name":"","lat":33.16039,"lon":129.68015,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:407222687","name":"道の駅；桃山天下市","lat":33.52832,"lon":129.87376,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:434704361","name":"道の駅鷹ら島","lat":33.43362,"lon":129.78242,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:434705041","name":"道の駅 生月大橋","lat":33.35526,"lon":129.43372,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:434705275","name":"道の駅たびら","lat":33.31806,"lon":129.60268,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:436873493","name":"道の駅さいかい","lat":33.04283,"lon":129.69605,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441598921","name":"道の駅 松浦海のふるさと館","lat":33.34829,"lon":129.70185,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443760840","name":"大村湾PA (下り)","lat":33.01748,"lon":129.94832,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443761220","name":"大村湾PA (上り)","lat":33.01701,"lon":129.94758,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443765792","name":"高畑PA (上り)","lat":33.07162,"lon":129.76602,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443766442","name":"高畑PA (下り)","lat":33.07202,"lon":129.76694,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:476875754","name":"道の駅 山内","lat":33.19168,"lon":129.95593,"type":"SA・PA","k":"rest_area","likely":true,"oh":"08:30-18:00"},
+{"id":"osm:way:704274843","name":"道の駅　伊万里","lat":33.3136,"lon":129.92918,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1041092977","name":"道の駅うれしの まるく","lat":33.10638,"lon":129.99786,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1199351701","name":"道の駅 させぼっくす99","lat":33.20144,"lon":129.67194,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1552792570","name":"道の駅彼杵の荘","lat":33.03567,"lon":129.91958,"type":"SA・PA","k":"rest_area","likely":true}
+]

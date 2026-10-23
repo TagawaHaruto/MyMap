@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12955492844","name":"金山神社","lat":45.05419,"lon":142.3552,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:425598485","name":"妙隆寺","lat":45.1274,"lon":142.367,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.nichiren.or.jp/","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:967470640","name":"宇曽丹神社","lat":45.05264,"lon":142.34869,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

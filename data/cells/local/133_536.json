@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:11684813386","name":"物産館無花果","lat":33.42477,"lon":134.0182,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12147864441","name":"室津港","lat":33.28626,"lon":134.14566,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286006795","name":"奈半利町海浜センター","lat":33.41221,"lon":134.0316,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287578038","name":"小島キャンプ場","lat":33.49813,"lon":134.10016,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-32-1221"},
+{"id":"osm:node:14287592381","name":"室戸岬夕陽ヶ丘キャンプ場","lat":33.28433,"lon":134.17666,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-22-0574"}
+]

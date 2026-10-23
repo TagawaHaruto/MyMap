@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:261538927","name":"レッドハウス","lat":39.99015,"lon":140.96325,"pref":"岩手","genres":["food"],"indoor":true,"url":"https://www.appi.co.jp/ski_contents/gelande-restaurant","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 09:30-15:00","tel":"+81 195-73-5111"},
+{"id":"osm:way:737877689","name":"Restaurant Alyeska","lat":39.77738,"lon":140.91984,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 10:30-14:30","tel":"+81 19-693-1111"},
+{"id":"osm:node:6813373070","name":"鶴の茶舍","lat":39.80477,"lon":140.77937,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7109234628","name":"カフェぶなの森Fuu","lat":39.78104,"lon":140.76221,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Mo-Su 11:00-16:00"}
+]

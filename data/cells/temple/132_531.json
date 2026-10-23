@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2713500555","name":"八坂神社","lat":33.15251,"lon":132.75529,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6102514756","name":"河内神社","lat":33.21748,"lon":132.97308,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:464730154","name":"熊野神社","lat":33.19182,"lon":132.97146,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:632201538","name":"神母神社","lat":33.02437,"lon":132.89998,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

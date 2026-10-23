@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4003662343","name":"ブックオフ","lat":43.99756,"lon":144.28595,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4003662344","name":"ひかりや書店 網走店","lat":43.99766,"lon":144.28539,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"ひかりや"},
+{"id":"osm:node:4003662345","name":"TSUTAYA","lat":43.99751,"lon":144.28553,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby","kana":"つたや"},
+{"id":"osm:node:5963242443","name":"モンベル","lat":43.93346,"lon":144.45445,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","kana":"もんべる","oh":"10:00-19:00","tel":"+81 152 67 7062","wc":"yes"},
+{"id":"osm:node:12759656619","name":"マツヤ釣具","lat":43.99944,"lon":144.28546,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","oh":"09:30-19:00"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:478563432","name":"ベルパークちっぷべつ","lat":43.76445,"lon":141.96287,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:478563434","name":"ローズガーデンちっぷべつ","lat":43.77398,"lon":141.97812,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:509355292","name":"秩父別キャンプ場","lat":43.76249,"lon":141.96313,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:972191409","name":"沼田町農村公園","lat":43.80056,"lon":141.93566,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1154920558","name":"田島公園","lat":43.8085,"lon":141.94771,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:972191404","name":"沼田町農村公園球場","lat":43.80016,"lon":141.93537,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4522478836","name":"龍神神社","lat":41.7478,"lon":140.90213,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4522478862","name":"広福寺","lat":41.74086,"lon":140.92336,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4522478879","name":"八幡神社","lat":41.74111,"lon":140.92279,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4522496156","name":"瀬田来稲荷神社","lat":41.7149,"lon":140.98074,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5152077456","name":"弁天神社","lat":41.54511,"lon":140.91333,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5297512948","name":"折戸神社奥の院　鳥居","lat":41.52259,"lon":140.94395,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:455882031","name":"釜谷神社","lat":41.73339,"lon":140.93806,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:455882036","name":"汐首神社","lat":41.71556,"lon":140.9527,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:547875276","name":"大海寺","lat":41.50406,"lon":140.96735,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:548277807","name":"円融寺","lat":41.52679,"lon":140.91465,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:548277834","name":"福蔵寺","lat":41.52744,"lon":140.90792,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:548351781","name":"折戸神社奥の院","lat":41.5204,"lon":140.941,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:548930768","name":"阿弥陀寺","lat":41.52762,"lon":140.90711,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:548930769","name":"法香寺","lat":41.52748,"lon":140.90639,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:557526703","name":"弁天神社","lat":41.55359,"lon":140.91166,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:8378029647","name":"慰霊碑","lat":42.17553,"lon":139.51612,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:330693330","name":"大須田旅館","lat":42.20438,"lon":139.54475,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

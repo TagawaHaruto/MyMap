@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:419990799","name":"石彫刻公園","lat":34.41761,"lon":131.37998,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:561525418","name":"中央公園","lat":34.41007,"lon":131.39629,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:4247876765","name":"萩市民体育館","lat":34.39694,"lon":131.39977,"pref":"山口","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

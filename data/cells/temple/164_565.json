@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11224964138","name":"横浜八幡神社","lat":41.10262,"lon":141.2518,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11224964141","name":"稲荷社","lat":41.10269,"lon":141.25196,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11225104976","name":"正一位浜平稲荷神社","lat":41.1219,"lon":141.25776,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

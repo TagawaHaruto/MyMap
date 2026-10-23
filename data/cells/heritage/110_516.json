@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:14024285051","name":"亀津海岸埋立完成記念碑","lat":27.73605,"lon":129.02144,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1540387406","name":"ホテル レクストン徳之島","lat":27.73082,"lon":129.02086,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

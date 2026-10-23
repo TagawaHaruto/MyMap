@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:488836871","name":"松前公園","lat":41.43002,"lon":140.10824,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:739712217","name":"伊能忠敬北海道測量開始記念公園","lat":41.44891,"lon":140.23889,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"いのうただたか ほっかいどうそくりょうかいし きねんこうえん"},
+{"id":"osm:node:1924577643","name":"松前町民プール","lat":41.43601,"lon":140.11237,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2981137627","name":"亀ヶ城公園","lat":37.5614,"lon":140.10379,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:252836909","name":"つどいの広場","lat":37.56513,"lon":140.08389,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:252836910","name":"つどいの広場","lat":37.56505,"lon":140.08273,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:297145436","name":"湖柳園","lat":37.53528,"lon":140.07384,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:252836942","name":"野球場","lat":37.56395,"lon":140.08376,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:252836943","name":"陸上競技場・サッカー場","lat":37.56354,"lon":140.08228,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"},
+{"id":"osm:way:252836946","name":"テニスコート","lat":37.56453,"lon":140.08461,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1246278181","name":"会津総合射撃場","lat":37.53023,"lon":140.0027,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","tel":"+81-242-94-2248"},
+{"id":"osm:way:1246278182","name":"磐梯国際クレー射撃場","lat":37.5311,"lon":140.00287,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","tel":"0242-94-2248"}
+]

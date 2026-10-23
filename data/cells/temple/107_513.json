@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:9402200972","name":"安須森御嶽","lat":26.85491,"lon":128.25813,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","kana":"あすむいうたき"},
+{"id":"osm:way:1147603817","name":"辺戸神屋","lat":26.85672,"lon":128.26284,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1148735609","name":"アサギ","lat":26.85686,"lon":128.26306,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

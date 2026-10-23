@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:3088987836","name":"キッズスペース","lat":42.16242,"lon":142.7755,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park","kana":"きっずすぺーす"},
+{"id":"osm:node:7828603507","name":"様似ダム公園","lat":42.1846,"lon":142.95616,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9081392257","name":"浦河町乗馬公園","lat":42.15046,"lon":142.83911,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.town.urakawa.hokkaido.jp/sports-culture/sports/shisetsu/jyoubakouen.html","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682828378","name":"D団地児童公園","lat":42.16842,"lon":142.79479,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682828410","name":"柏児童公園","lat":42.15924,"lon":142.79346,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:682834331","name":"常盤公園","lat":42.16545,"lon":142.78519,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682834333","name":"浦河町潮見ヶ丘公園","lat":42.16489,"lon":142.77669,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682834339","name":"みなと公園","lat":42.16656,"lon":142.77115,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682834340","name":"役場前公園","lat":42.16878,"lon":142.76867,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682835801","name":"中央児童公園","lat":42.17747,"lon":142.76022,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1271322941","name":"堺町児童公園","lat":42.17699,"lon":142.76476,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1388716284","name":"川沿団地公園","lat":42.18209,"lon":142.76618,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1427918272","name":"昌平町児童公園","lat":42.16672,"lon":142.77165,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:223940188","name":"様似町スポーツセンター","lat":42.1281,"lon":142.93269,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"http://www.samani.jp/kyouiku/sp/index2.html","note":"体育館","g":"play","k":"sports","oh":"Tu-Sa 09:00-21:00; Su 09:00-17:00; Mo off","tel":"+81-146-36-3708"},
+{"id":"osm:way:464992768","name":"様似町第2体育館","lat":42.12879,"lon":142.93211,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:682835806","name":"浦河町総合グラウンド","lat":42.17939,"lon":142.75908,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:relation:13461334","name":"調教用ダートコース","lat":42.1989,"lon":142.78212,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"}
+]

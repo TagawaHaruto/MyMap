@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2261582258","name":"楓の里","lat":35.14804,"lon":134.53979,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2261607316","name":"楓の里","lat":35.2015,"lon":134.52222,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2261621841","name":"まほろばの里","lat":35.18368,"lon":134.62916,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5324300086","name":"二葉食堂","lat":35.16165,"lon":134.5439,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5325201143","name":"やまなみレストハウス","lat":35.15909,"lon":134.54503,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5325201150","name":"たらふく","lat":35.16189,"lon":134.5404,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5335185211","name":"飯蔵","lat":35.18525,"lon":134.62383,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5361049940","name":"くつろぎレストラン","lat":35.08829,"lon":134.5882,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6832390544","name":"余田屋","lat":35.06526,"lon":134.7425,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","oh":"Th-Tu 11:00-15:00,17:00-21:00"},
+{"id":"osm:node:7368394285","name":"時のレストラン　野","lat":35.03404,"lon":134.66552,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12177684766","name":"水車公園こっとん亭","lat":35.06434,"lon":134.73465,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:12200478695","name":"そば処 交流庵","lat":35.1532,"lon":134.69043,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:node:12439999423","name":"台湾料理 豊源 山﨑店","lat":35.00198,"lon":134.54718,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13536350301","name":"ドライブインオアシス","lat":35.0661,"lon":134.57909,"pref":"兵庫","genres":["food"],"indoor":true,"url":"https://www.instagram.com/driveinoasis/","note":"飲食店","g":"food","k":"restaurant","oh":"We-Th 09:00-16:00; Fr-Su 09:00-17:00","tel":"0790-72-1220"},
+{"id":"osm:node:5324300068","name":"コーヒー・レストランケルン","lat":35.16344,"lon":134.54483,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5325201122","name":"たなかや","lat":35.15451,"lon":134.54435,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5325201123","name":"灯","lat":35.15448,"lon":134.54476,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12117735829","name":"輪","lat":35.06525,"lon":134.74203,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12117893071","name":"hanul","lat":35.06551,"lon":134.74107,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1511441703","name":"名水","lat":35.17478,"lon":134.56864,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6832349436","name":"荒木商店 ショップ荒木","lat":35.06531,"lon":134.74072,"pref":"兵庫","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

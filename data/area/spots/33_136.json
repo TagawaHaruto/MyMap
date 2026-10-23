@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:1420994250","name":"熊野市歴史民俗資料館","lat":33.87609,"lon":136.08808,"pref":"三重","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:5802912153","name":"東紀州まちかど博物館","lat":33.73379,"lon":136.00511,"pref":"三重","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:5802912254","name":"紀宝町ふるさと歴史館","lat":33.73371,"lon":136.00455,"pref":"三重","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:5275782521","name":"Starting point Matsumoto toge-pass","lat":33.89908,"lon":136.11532,"pref":"三重","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:5512389421","name":"鬼ヶ城歩道トンネル（木本隧道）","lat":33.89387,"lon":136.10976,"pref":"三重","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:5512404624","name":"松本峠登山口 木本側","lat":33.89397,"lon":136.10722,"pref":"三重","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:6157490086","name":"楯ヶ崎遊歩道 入り口","lat":33.93989,"lon":136.21392,"pref":"三重","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:way:587249227","name":"ウミガメ公園 ウミガメ水族館","lat":33.76977,"lon":136.0285,"pref":"三重","genres":["play"],"indoor":true,"url":"https://umigamekouen.com/","note":"水族館","k":"park","tel":"+81 73-5323-686","wc":"yes"},
+{"id":"osm:node:3504996107","name":"花の窟神社","lat":33.87983,"lon":136.09339,"pref":"三重","genres":["temple"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E8%8A%B1%E7%AA%9F%E7%A5%9E%E7%A4%BE","note":"寺社","k":"temple","kana":"はなのいわやじんじゃ"},
+{"id":"osm:node:4252323398","name":"産田神社","lat":33.88079,"lon":136.07964,"pref":"三重","genres":["temple"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E7%94%A3%E7%94%B0%E7%A5%9E%E7%A4%BE","note":"寺社","k":"temple"},
+{"id":"osm:node:6853147598","name":"王子神社","lat":33.71713,"lon":136.00207,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E6%B5%9C%E7%8E%8B%E5%AD%90","note":"寺社","k":"temple"},
+{"id":"osm:node:6854692800","name":"みはま湯(廃業)","lat":33.88965,"lon":136.10269,"pref":"三重","genres":["onsen"],"indoor":true,"url":"","note":"銭湯・入浴施設","k":"bath"},
+{"id":"osm:way:424636961","name":"湯浴みぼっこ","lat":33.86214,"lon":136.06006,"pref":"三重","genres":["onsen"],"indoor":true,"url":"","note":"銭湯・入浴施設","k":"bath"},
+{"id":"osm:way:285172800","name":"イオン熊野店","lat":33.88676,"lon":136.09543,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"ショッピング","k":"shop"},
+{"id":"osm:way:1231587615","name":"飛鳥熊レス村果樹園","lat":33.93876,"lon":136.08681,"pref":"三重","genres":["experience","outdoor"],"indoor":false,"url":"","note":"果物狩り・観光農園","k":"experience"}
+]

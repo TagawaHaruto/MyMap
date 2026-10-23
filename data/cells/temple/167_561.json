@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:290781668","name":"館稲荷神社","lat":41.88243,"lon":140.32781,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1002873666","name":"正禅山本覚寺","lat":41.88865,"lon":140.32449,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1002918883","name":"八雲神社","lat":41.93511,"lon":140.36525,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1002918884","name":"遠成寺","lat":41.93429,"lon":140.36487,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

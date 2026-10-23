@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4400556532","name":"上砥山神社","lat":42.96262,"lon":141.23407,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.city.sapporo.jp/minami/gaiyo/meisho/0503026.html","note":"神社","g":"temple","k":"worship","kana":"かみとやまじんじゃ"},
+{"id":"osm:node:4403591057","name":"清勝寺","lat":42.95774,"lon":141.23455,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.onishi.or.jp/otera/4-30.htm","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4403591065","name":"豊滝神社","lat":42.95814,"lon":141.23511,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/01/01079.html","note":"神社","g":"temple","k":"worship","kana":"とよたきじんじゃ"},
+{"id":"osm:node:4403591309","name":"札幌大師招福寺","lat":42.96857,"lon":141.19179,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://itp.ne.jp/shop/KN0100060500115998/","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4403653057","name":"定山渓神社","lat":42.96486,"lon":141.16717,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/01/01055.html","note":"神社","g":"temple","k":"worship","kana":"じょうざんけいじんじゃ"},
+{"id":"osm:node:4403653059","name":"定山寺","lat":42.96423,"lon":141.16577,"pref":"北海道","genres":["temple"],"indoor":false,"url":"http://www.sotozen-navi.com/detail/index_10278.html","note":"寺","g":"temple","k":"worship","kana":"じょうさんじ"},
+{"id":"osm:node:4403653060","name":"真行寺","lat":42.96427,"lon":141.16508,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://o-tani4so.jp/data/136.html","note":"寺","g":"temple","k":"worship","kana":"しんこうじ"},
+{"id":"osm:node:4403653062","name":"妙泰寺","lat":42.96394,"lon":141.16463,"pref":"北海道","genres":["temple"],"indoor":false,"url":"http://www.sougi-bon.com/jiin216/","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:930503413","name":"栄神社","lat":42.81082,"lon":141.00152,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1213800546","name":"岩戸観音堂","lat":42.96645,"lon":141.16081,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://jozankei.jp/spot/165/","note":"寺","g":"temple","k":"worship"}
+]

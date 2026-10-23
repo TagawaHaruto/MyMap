@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:919625871","name":"さいき本舗　城下堂","lat":32.95593,"lon":131.89344,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:way:932432838","name":"さいき海の市場○","lat":32.97671,"lon":131.90407,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"https://uminoichiba.jp","note":"お土産・特産品","g":"local","k":"souvenir","kana":"さいき　うみのいちば　まる","oh":"Mo-Sa 08:30-18:00","tel":"0120 167 077"},
+{"id":"osm:way:932432844","name":"鮮度壱番","lat":32.9764,"lon":131.90394,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"https://uminoichiba.jp/ichiban/","note":"お土産・特産品","g":"local","k":"souvenir","kana":"せんどいちばん","oh":"Mo-Sa 09:30-18:00","tel":"0120 413 780"},
+{"id":"osm:way:975222070","name":"こじま","lat":32.97151,"lon":131.90299,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 972 24 0805"},
+{"id":"osm:way:978727418","name":"梅田鮮魚店","lat":32.95586,"lon":131.86361,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:982373949","name":"瀬山海産","lat":32.95387,"lon":131.90267,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 972 23 3423"},
+{"id":"osm:way:543106865","name":"体育館","lat":32.95596,"lon":131.88313,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"https://kou.oita-ed.jp/saikihounan1/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 972 22 1900"},
+{"id":"osm:node:14287580157","name":"直川憩の森公園","lat":32.87107,"lon":131.78413,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://tabidoku.com/camp-naokawa/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287583984","name":"小半森林公園キャンプ場","lat":32.94923,"lon":131.75157,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0972-56-5566"},
+{"id":"osm:node:14287595139","name":"高平キャンプ場 -outdoor lab.-","lat":32.80998,"lon":131.96751,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-5527-1821"},
+{"id":"osm:node:14287604201","name":"グリーンピア大越","lat":32.89451,"lon":131.83805,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0972-22-4173"}
+]

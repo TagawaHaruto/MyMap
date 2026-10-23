@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:12801580135","name":"菅原モータース","lat":34.67686,"lon":134.52892,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12801762726","name":"福島文姫堂","lat":34.6755,"lon":134.52496,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13067901500","name":"有限会社 シバタオートバイク","lat":34.67652,"lon":134.52626,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13067914211","name":"丸ごの釣りエサ販売店","lat":34.67637,"lon":134.52598,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

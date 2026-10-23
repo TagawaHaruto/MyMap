@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:8280415718","name":"平安堂","lat":35.49864,"lon":137.8171,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8280415719","name":"スーパースポーツゼビオ","lat":35.49847,"lon":137.81767,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12030809079","name":"Briller Cycling","lat":35.43744,"lon":137.81876,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","oh":"Th-Su 13:00-19:00"},
+{"id":"osm:way:1007506738","name":"ブックオフ プラス","lat":35.49656,"lon":137.83116,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1042776444","name":"古民芸まつい","lat":35.41933,"lon":137.79588,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby","kana":"まついこみんげい","tel":"0260273880"},
+{"id":"osm:way:1103048711","name":"ハードオフ","lat":35.49799,"lon":137.8257,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4213171018","name":"Kato's Golf","lat":34.15262,"lon":132.2211,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5513750545","name":"フタバ図書 TSUTAYA","lat":34.21987,"lon":132.22184,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9235019617","name":"明屋書店","lat":34.12732,"lon":132.19983,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549075158","name":"ヒマラヤスポーツ&ゴルフ フレスタモールカジル岩国店","lat":34.17007,"lon":132.21353,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:396348115","name":"サイクルハウス ふじもと","lat":34.21458,"lon":132.22598,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:547913500","name":"ヒマラヤスポーツ ゆめタウン南岩国店","lat":34.13459,"lon":132.20192,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:616333355","name":"スポーツサイクル ウエキ","lat":34.24287,"lon":132.22056,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

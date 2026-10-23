@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:463836478","name":"Sake Shop","lat":34.26789,"lon":129.31438,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:430361236","name":"\"Ground Golf\"","lat":34.28585,"lon":129.31909,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:430361237","name":"\"Ground Golf\"","lat":34.2866,"lon":129.31906,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:431351518","name":"Kayak Centre","lat":34.29338,"lon":129.26204,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:462252610","name":"美津島体育館","lat":34.26813,"lon":129.3161,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:484294061","name":"Takashiki Marina","lat":34.28318,"lon":129.29947,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4659899690","name":"あそうべい","lat":34.3057,"lon":129.34564,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0920-54-4994"},
+{"id":"osm:node:14287474773","name":"あそうベイパークオートキャンプ場","lat":34.30905,"lon":129.35078,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0920-54-4994"},
+{"id":"osm:node:14287478996","name":"木坂御前浜園地","lat":34.45889,"lon":129.2813,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0920-83-0301"},
+{"id":"osm:node:14287485117","name":"神話の里自然公園","lat":34.39409,"lon":129.31755,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0920-58-1111"}
+]

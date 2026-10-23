@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5603040028","name":"田村精肉店","lat":43.82746,"lon":144.10582,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6983858106","name":"JAL PLAZA","lat":43.88175,"lon":144.1588,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6989693404","name":"マリン北海道監獄店","lat":43.99579,"lon":144.22801,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:30-16:30"},
+{"id":"osm:node:9790128286","name":"物産館ぽっぽ屋","lat":43.83643,"lon":144.10608,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://www.bihoro-k.com/html/poppoyainfo.html","note":"直売所","g":"local","k":"souvenir","kana":"ぶっさんかん ぽっぽや","oh":"Mo-Su 09:00-17:00; Dec 29-Jan 03 off","tel":"+81 152 73 2211"},
+{"id":"osm:node:12198105963","name":"吉村みやげ店","lat":43.99578,"lon":144.22786,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:30-16:30"},
+{"id":"osm:node:12198105965","name":"カンコーサービス","lat":43.99569,"lon":144.22793,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:30-16:30"},
+{"id":"osm:way:484021853","name":"あさひ体育センター","lat":43.81839,"lon":144.12467,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:488250854","name":"女満別武道館","lat":43.9068,"lon":144.17323,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:488250855","name":"女満別B&G海洋センター","lat":43.90671,"lon":144.17227,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"めまんべつこうえんびーあんどじーかいようせんたー"},
+{"id":"osm:way:488302113","name":"網走スポーツトレーニングフィールド","lat":43.96491,"lon":144.20606,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:7398865","name":"大正橋スケートリンク","lat":43.82385,"lon":144.08839,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:660933800","name":"スケートパーク","lat":43.86191,"lon":144.12474,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"すけーとぱーく"},
+{"id":"osm:way:720431216","name":"女満別ゴルフコース","lat":43.90073,"lon":144.21179,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"めまんべつごるふこーす"},
+{"id":"osm:way:1080055456","name":"女満別ゲートボールセンター","lat":43.912,"lon":144.17149,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5045880422","name":"美幌みどりの村森林公園キャンプ場","lat":43.83678,"lon":144.0856,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10672228475","name":"女満別湖畔公園野営場","lat":43.92013,"lon":144.17806,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10672228478","name":"女満別湖畔キャンプ場","lat":43.91648,"lon":144.16788,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:435971238","name":"北海道立オホーツク公園　てんとらんど","lat":43.98736,"lon":144.24059,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0152-45-2277"},
+{"id":"osm:way:439980781","name":"呼人浦キャンプ場","lat":43.99515,"lon":144.22237,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

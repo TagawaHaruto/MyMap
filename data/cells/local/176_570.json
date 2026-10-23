@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2676266378","name":"釣り堀","lat":44.11286,"lon":142.69531,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:289504788","name":"朝日農業者トレーニングセンター","lat":44.11362,"lon":142.59632,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.city.shibetsu.lg.jp/www/contents/1225177954125/index.html","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:2681552518","name":"岩尾内湖 白樺キャンプ場","lat":44.09633,"lon":142.72675,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4072853048","name":"日進湖畔キャンプ場","lat":44.24429,"lon":142.50367,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

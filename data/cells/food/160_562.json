@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:2457615640","name":"れすとらん 比内どり","lat":40.21961,"lon":140.58566,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7238200081","name":"大衆食堂","lat":40.22931,"lon":140.57888,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:463615341","name":"拉麺桜木屋","lat":40.23066,"lon":140.59182,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:751244557","name":"ほんだ亭","lat":40.24882,"lon":140.57465,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:839841940","name":"竹園","lat":40.2129,"lon":140.64069,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:965302037","name":"ドルフィン","lat":40.24348,"lon":140.57384,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:965302039","name":"どさんこ","lat":40.24379,"lon":140.57405,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:965958933","name":"とっと館","lat":40.21928,"lon":140.58529,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:966151548","name":"ラーメンショップ味彩","lat":40.22851,"lon":140.57855,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:973506043","name":"宝介 大館店","lat":40.21649,"lon":140.62899,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

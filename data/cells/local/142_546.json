@@ -1,0 +1,17 @@
+[
+{"id":"osm:way:934656560","name":"おみやげの店 みまつ","lat":35.53474,"lon":136.60824,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:585635450","name":"プラザ掛洞","lat":35.51862,"lon":136.69508,"pref":"岐阜","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:20066684","name":"岐阜北カントリー倶楽部","lat":35.52685,"lon":136.68804,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"http://www.gifukita-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285591273","name":"月夜谷ふれあいの里","lat":35.57915,"lon":136.53416,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"http://www.doinaka-kk.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0585-54-2081"},
+{"id":"osm:node:14286934761","name":"八ヶ滝キャンプ場","lat":35.61294,"lon":136.62471,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0581-38-3455"},
+{"id":"osm:node:14286934764","name":"グリーンプラザみやま","lat":35.60912,"lon":136.74284,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0581-55-2615"},
+{"id":"osm:node:14286955223","name":"小笠原苑キャンプ場","lat":35.72189,"lon":136.61091,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://iko-yo.net/facilities/157134","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-7950-0984"},
+{"id":"osm:node:14286955228","name":"ヒマラヤNEOキャンピングパーク","lat":35.7091,"lon":136.6707,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"058-276-7188"},
+{"id":"osm:node:14287072711","name":"殿屋敷キャンプ場","lat":35.64924,"lon":136.5916,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0581-38-2861"},
+{"id":"osm:node:14287084555","name":"金原里山キャンプ村","lat":35.57662,"lon":136.64248,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://satoyama-camp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287084558","name":"アンバイエ","lat":35.57079,"lon":136.69628,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0581-36-3222"},
+{"id":"osm:node:14287084573","name":"亀淵オートキャンプ場","lat":35.55221,"lon":136.64698,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0581-32-5778"},
+{"id":"osm:node:14287116222","name":"a laise camp すめらぎの森","lat":35.53172,"lon":136.58642,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287116223","name":"根尾川谷汲温泉オートキャンプ場","lat":35.53087,"lon":136.64898,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0585-55-2299"},
+{"id":"osm:node:14287116224","name":"Tanigumi useful village","lat":35.53085,"lon":136.64817,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://tanigumi-useful-village.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-9090-2268"}
+]

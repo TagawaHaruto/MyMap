@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4459696041","name":"今井書店","lat":35.43582,"lon":133.83721,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4477458436","name":"土井スポーツ","lat":35.45451,"lon":133.84832,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"http://doi-sports.co.jp/","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4477889697","name":"今井書店 パープルタウン店","lat":35.449,"lon":133.84741,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"http://www1.imaibooks.co.jp/book/","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 858 47 4321"},
+{"id":"osm:node:4503888796","name":"さくら工芸品工房","lat":35.4766,"lon":133.90379,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:5896269987","name":"コナン探偵社","lat":35.49808,"lon":133.7618,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://www.conanshop.com/","note":"ホビー・模型","g":"hobby","k":"hobby","oh":"09:30-17:30","tel":"+81 858 37 5500"},
+{"id":"osm:node:13111864931","name":"汽水空港","lat":35.47181,"lon":133.90357,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13666031245","name":"創作工房 中野竹藝","lat":35.43241,"lon":133.82409,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:13666031757","name":"マルイスポーツ","lat":35.43193,"lon":133.82214,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13666034323","name":"三好額縁店","lat":35.43168,"lon":133.82317,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:13666034325","name":"てぬぐい工房 らっぷ","lat":35.43166,"lon":133.82336,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"}
+]

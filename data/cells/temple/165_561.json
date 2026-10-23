@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:5766084806","name":"福島大神宮","lat":41.47727,"lon":140.2546,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/02/02040.html","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6078394080","name":"月崎神社","lat":41.48196,"lon":140.25926,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/02/02041.html","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:739460971","name":"日本キリスト教団渡島福島教会","lat":41.48408,"lon":140.25856,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:739495829","name":"福島大神宮社務所","lat":41.47776,"lon":140.25485,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:739495830","name":"川濯神社","lat":41.47771,"lon":140.25416,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:739495831","name":"法界寺","lat":41.47819,"lon":140.25405,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:739495834","name":"専徳寺","lat":41.47884,"lon":140.2545,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:739682554","name":"諦玄寺","lat":41.48218,"lon":140.25339,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:739684338","name":"妙蓮寺","lat":41.48245,"lon":140.25274,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:834757354","name":"弁財天宮","lat":41.26134,"lon":140.34511,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7"}
+]

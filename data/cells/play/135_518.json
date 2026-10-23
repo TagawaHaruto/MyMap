@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:1415429147","name":"壱岐市ふれあいグランド","lat":33.80613,"lon":129.74719,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:441105470","name":"柳田小体育館","lat":33.7668,"lon":129.70155,"pref":"長崎","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:442886882","name":"大谷体育館","lat":33.75975,"lon":129.69568,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","pk":2},
+{"id":"osm:way:443023532","name":"体育館","lat":33.75364,"lon":129.72016,"pref":"長崎","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:443023535","name":"運動場","lat":33.75354,"lon":129.72083,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:445313417","name":"大谷公園　テニスコート","lat":33.76124,"lon":129.69631,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","pk":2},
+{"id":"osm:way:449783501","name":"大谷公園　ソフトボール専用球場","lat":33.76035,"lon":129.69306,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","pk":2},
+{"id":"osm:way:449783934","name":"大谷公園 全天候型ゲートボール場","lat":33.76132,"lon":129.69535,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","pk":2},
+{"id":"osm:way:449784463","name":"大谷公園　テニスコート","lat":33.7613,"lon":129.69703,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:449809834","name":"ゲートボール場","lat":33.76168,"lon":129.6967,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

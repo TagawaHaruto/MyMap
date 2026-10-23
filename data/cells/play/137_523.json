@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4674714876","name":"大浦岳森林公園","lat":34.34011,"lon":130.94698,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:323665940","name":"阿川ほうせんぐり海浜公園","lat":34.34193,"lon":130.92843,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","tel":"+81-837-86-2640","wc":"limited"},
+{"id":"osm:way:351578081","name":"瀬崎陽の公園","lat":34.35521,"lon":130.87788,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:438503519","name":"楊貴妃の里","lat":34.40545,"lon":130.97429,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:473579631","name":"豊北総合運動公園","lat":34.29505,"lon":130.9451,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:476056939","name":"土井ヶ浜弥生パーク","lat":34.29416,"lon":130.8855,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:669623168","name":"夢崎波の公園","lat":34.35383,"lon":130.84096,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:670453722","name":"角島灯台公園","lat":34.35225,"lon":130.84133,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:670698380","name":"海士ヶ瀬公園","lat":34.34781,"lon":130.89594,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:1005453032","name":"亀山公園","lat":34.41341,"lon":130.97611,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:473579917","name":"多目的グラウンド","lat":34.2945,"lon":130.94536,"pref":"山口","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1307863054","name":"ハーフコート","lat":34.29607,"lon":130.94506,"pref":"山口","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1307864992","name":"芝グラウンド","lat":34.29477,"lon":130.94379,"pref":"山口","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1307882060","name":"豊北体育センター","lat":34.28988,"lon":130.94696,"pref":"山口","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:852230074","name":"沼ノ沢公園","lat":42.95553,"lon":142.02964,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:848762325","name":"穂別スポーツセンター","lat":42.75302,"lon":142.13758,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:848762326","name":"むかわ町穂別野球場","lat":42.75214,"lon":142.13872,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

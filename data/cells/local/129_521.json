@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:8742559641","name":"ひめんなきなっせ市場","lat":32.45031,"lon":130.41869,"pref":"熊本","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4116762475","name":"小島公園キャンプ場","lat":32.43961,"lon":130.41742,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8733756477","name":"白嶽森林公園キャンプ場","lat":32.4685,"lon":130.42061,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://www.city.kamiamakusa.kumamoto.jp/q/aview/136/160.html","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8745973948","name":"諏訪公園キャンプ場","lat":32.42333,"lon":130.40686,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285932621","name":"倉岳サニーオートキャンプ場","lat":32.39916,"lon":130.32892,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0969-64-3221"},
+{"id":"osm:node:14287631011","name":"龍ヶ岳山頂キャンプ場","lat":32.40475,"lon":130.38011,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://ryugatake-mountaintop.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-1725-0370"},
+{"id":"osm:node:14287631015","name":"御立岬公園 キャンプ場","lat":32.36344,"lon":130.49092,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0966-87-2860"},
+{"id":"osm:node:14287631017","name":"黒島無人島キャンプ場","lat":32.34987,"lon":130.35583,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0969-67-2111"}
+]

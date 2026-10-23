@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1365794021","name":"blueberry farm","lat":40.86911,"lon":141.2764,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:502055068","name":"下北スリーハンドレッドゴルフクラブ","lat":40.97915,"lon":141.32863,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12084212997","name":"わかさぎ公園　浜台キャンプ場","lat":40.82205,"lon":141.29745,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5307972527","name":"長倉書店","lat":34.97896,"lon":138.94917,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"http://nagakurashoten.com/","note":"本屋","g":"hobby","k":"hobby","tel":"+81-558-72-0713"},
+{"id":"osm:node:5466798257","name":"長屋書店","lat":34.99394,"lon":138.93894,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7802253315","name":"まつや釣具店","lat":34.77216,"lon":138.77219,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7802253337","name":"ケイズフィッシング(釣具店)","lat":34.89386,"lon":138.76959,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7802253697","name":"釣具のたかやなぎ","lat":34.7726,"lon":138.77156,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7802253908","name":"とび島丸","lat":34.88154,"lon":138.76349,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"}
+]

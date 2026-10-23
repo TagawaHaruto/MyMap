@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5500032257","name":"田結庄釣具店","lat":35.48333,"lon":134.7979,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12101749907","name":"Wind-up bird","lat":35.46468,"lon":134.92966,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","wc":"no"},
+{"id":"osm:node:12289981755","name":"本は人生のおやつです！！","lat":35.31566,"lon":134.88473,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12289981761","name":"TSUTAYA","lat":35.33569,"lon":134.86186,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:602085604","name":"浅田書店","lat":35.46337,"lon":134.87427,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"+81 0796 52 2050","pk":2},
+{"id":"osm:way:619598600","name":"高本ガラス店","lat":35.29681,"lon":134.83483,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:way:640510263","name":"中島自転車店","lat":35.46894,"lon":134.77632,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:651659229","name":"東京堂 浦野書店","lat":35.34057,"lon":134.85302,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:659469927","name":"モリタスポーツ","lat":35.40558,"lon":134.76211,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:675785083","name":"坂本屋","lat":35.46249,"lon":134.87246,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:840035084","name":"フタバヤ","lat":35.46269,"lon":134.8718,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"カメラ","g":"hobby","k":"hobby","tel":"+81 0796 52 2161"}
+]

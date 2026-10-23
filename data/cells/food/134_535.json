@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5099519322","name":"廓中ふるさと館","lat":33.51803,"lon":133.91376,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"We-Mo 09:00-17:00"},
+{"id":"osm:node:11634485273","name":"サザンクロス","lat":33.52901,"lon":133.81845,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12888076523","name":"百人一酒","lat":33.50195,"lon":133.90899,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12888076524","name":"鑫源","lat":33.50228,"lon":133.90498,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12888076528","name":"はっしゃん","lat":33.50127,"lon":133.91117,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:1657475987","name":"Yamano-Syokudo Hana","lat":33.6113,"lon":133.75507,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Th-Su 11:00-17:00","tel":"+81 887 59 4831","wc":"yes"},
+{"id":"osm:node:1665577731","name":"考える村","lat":33.54392,"lon":133.79554,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","tel":"+81 887 33 3681"},
+{"id":"osm:node:1702521038","name":"ぷー・タロ","lat":33.65243,"lon":133.76938,"pref":"高知","genres":["food"],"indoor":true,"url":"http://puu-talo.com/","note":"カフェ","g":"food","k":"cafe","tel":"+81 887 59 2349"},
+{"id":"osm:node:1702521124","name":"木香","lat":33.65302,"lon":133.77124,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"もっか"},
+{"id":"osm:node:1702521127","name":"湖畔遊","lat":33.65313,"lon":133.77203,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"こはにゅ"},
+{"id":"osm:node:1703637841","name":"ocho 8","lat":33.66402,"lon":133.81292,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1192674604","name":"小僧寿し","lat":33.50308,"lon":133.90021,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"こぞすし","chain":true}
+]

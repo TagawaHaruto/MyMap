@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5657045835","name":"隠岐汽船発祥之地","lat":36.1028,"lon":133.07652,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5657045883","name":"庚申塚","lat":36.10113,"lon":133.07856,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5657045892","name":"小泉八雲と妻セツの銅像","lat":36.10175,"lon":133.07823,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11265943949","name":"美保神社 出雲大社","lat":36.19107,"lon":133.2362,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11278407050","name":"黒木御所阯","lat":36.11119,"lon":133.04468,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11278407051","name":"建武中興発祥之地","lat":36.11122,"lon":133.04468,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11278427470","name":"後醍醐天皇行在所阯 黒木神社","lat":36.11155,"lon":133.04452,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11278572358","name":"黒木御所遺阯","lat":36.11175,"lon":133.04532,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11278577271","name":"後醍醐天皇御製","lat":36.11169,"lon":133.04532,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11278577278","name":"黒木神社碑","lat":36.11121,"lon":133.04527,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11278577315","name":"忠魂碑","lat":36.11112,"lon":133.04469,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4311370138","name":"隠岐シーサイドホテル鶴丸","lat":36.09287,"lon":133.01079,"pref":"島根","genres":["lodging"],"indoor":true,"url":"http://oki-tsurumaru.jp","note":"宿","g":"heritage","k":"lodging","tel":"+81 8514 6 1111"},
+{"id":"osm:node:4311370139","name":"リゾ隠岐ロザージュ","lat":36.07603,"lon":133.01187,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 8514 6 1000"},
+{"id":"osm:node:4756292961","name":"但馬屋","lat":36.10801,"lon":133.09871,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5589043783","name":"かつた荘","lat":36.0969,"lon":133.09813,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5589045768","name":"お泊り処 なかむら","lat":36.09486,"lon":133.09525,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5657045857","name":"芳田旅館","lat":36.10194,"lon":133.07961,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5657045903","name":"あざ美荘","lat":36.10208,"lon":133.07679,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:558182864","name":"マリンポートホテル海士","lat":36.10599,"lon":133.0751,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

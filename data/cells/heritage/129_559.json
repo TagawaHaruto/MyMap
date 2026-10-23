@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4840877722","name":"還住像","lat":32.46591,"lon":139.76314,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412163262","name":"佐々木卯之助翁之碑","lat":32.46771,"lon":139.76256,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412163449","name":"山田常道之碑","lat":32.46555,"lon":139.76332,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412163450","name":"佐々木豊太先生顕彰之碑","lat":32.46554,"lon":139.7635,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5412163452","name":"名主　佐々木初太郎之碑","lat":32.46555,"lon":139.76353,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:561525786","name":"名主屋敷跡","lat":32.46552,"lon":139.76715,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4840871821","name":"ビジネス宿　中里","lat":32.46548,"lon":139.75986,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5400375400","name":"民宿 杉の沢","lat":32.46535,"lon":139.76168,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5400755980","name":"あおがしま屋","lat":32.46462,"lon":139.76026,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5400841498","name":"民宿 マツミ荘","lat":32.46593,"lon":139.76457,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5400841510","name":"御宿 為朝","lat":32.46648,"lon":139.75951,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7777448885","name":"かいゆう丸","lat":32.46502,"lon":139.76131,"pref":"東京","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3283246274","name":"しらかば公園キャンプ場","lat":37.05396,"lon":139.52378,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:3585979193","name":"うさぎの森オートキャンプ場","lat":37.14781,"lon":139.71767,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286479031","name":"久川ふれあい広場キャンプ場","lat":37.19291,"lon":139.52606,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-76-7716"},
+{"id":"osm:node:14286482356","name":"会津sanson","lat":37.14595,"lon":139.719,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://aizu-sanson.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-66-2108"},
+{"id":"osm:node:14286482366","name":"あらかい健康キャンプ村","lat":37.07077,"lon":139.68224,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-66-2270"},
+{"id":"osm:node:14286482367","name":"しらかば公園キャンプ場","lat":37.0674,"lon":139.52799,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-78-2028"},
+{"id":"osm:way:420049708","name":"ナラ入沢渓流釣りキャンプ場","lat":37.02838,"lon":139.7324,"pref":"栃木","genres":["outdoor"],"indoor":false,"url":"https://www.narairisawa.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0288-79-0714"}
+]

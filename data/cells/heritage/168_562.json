@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:3162358083","name":"榎本武揚上陸地","lat":42.11895,"lon":140.53849,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wc":"yes"},
+{"id":"osm:node:3872281664","name":"室蘭定期航路桟橋跡","lat":42.10942,"lon":140.57642,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wc":"no"},
+{"id":"osm:node:5587952530","name":"忠魂碑","lat":42.102,"lon":140.57497,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:484186644","name":"鷲ノ木遺跡","lat":42.11586,"lon":140.52612,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:鷲ノ木遺跡"},
+{"id":"osm:way:499000294","name":"史跡砂原陣屋跡","lat":42.1241,"lon":140.6778,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:696536504","name":"魚貝碑","lat":42.11021,"lon":140.59514,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:310787030","name":"ルーストンホテル","lat":42.10831,"lon":140.57295,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:way:310787034","name":"みどり旅館","lat":42.10806,"lon":140.57239,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"no"},
+{"id":"osm:way:310802007","name":"旅館　椿","lat":42.10399,"lon":140.5788,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:312560595","name":"菊水旅館","lat":42.10526,"lon":140.57881,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:312560616","name":"ビジネスホテル　フレスコ","lat":42.1071,"lon":140.58144,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:454264118","name":"竹の家旅館","lat":42.10937,"lon":140.59339,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

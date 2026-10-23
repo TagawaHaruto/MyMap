@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2139794004","name":"Daiso","lat":32.74772,"lon":129.8266,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2140866356","name":"Daiso","lat":32.68487,"lon":129.83452,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2502717965","name":"モーターサイクル マワタリ","lat":32.73753,"lon":129.87159,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2502864489","name":"小松自転車商会","lat":32.73551,"lon":129.8718,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5923392653","name":"アニメイト","lat":32.7444,"lon":129.87716,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/nagasaki/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"11:00-20:00","tel":"095-822-2011"},
+{"id":"osm:node:6380332925","name":"紀伊國屋書店","lat":32.74638,"lon":129.86939,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549040710","name":"ヒマラヤスポーツ&ゴルフ 南長崎店","lat":32.69969,"lon":129.8485,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:14157742001","name":"BOOKSライデン","lat":32.74187,"lon":129.872,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"https://www.books-leiden.com","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 13:00-20:00"}
+]

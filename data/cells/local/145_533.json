@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:14286833430","name":"中村キャンプ場","lat":36.31747,"lon":133.30605,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08512-4-0611"},
+{"id":"osm:node:14286833442","name":"ミモザキャンプ場","lat":36.29401,"lon":133.35608,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08512-7-4326"},
+{"id":"osm:node:14286852425","name":"ジオリゾートシンフォニー","lat":36.27805,"lon":133.36531,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08512-7-4326"}
+]

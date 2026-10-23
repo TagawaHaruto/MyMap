@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:12810983707","name":"練物屋","lat":34.2559,"lon":134.7209,"pref":"兵庫","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1034419424","name":"福良マルシェ","lat":34.25579,"lon":134.72093,"pref":"兵庫","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1383685173","name":"株式会社山本商店","lat":34.27583,"lon":134.74059,"pref":"兵庫","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:14285906720","name":"RVパーク 五色浜サンセットビュー淡路島","lat":34.3586,"lon":134.74376,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285906722","name":"リアンみなと","lat":34.3276,"lon":134.71788,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"https://lienminato.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-1468-2847"},
+{"id":"osm:node:14285906724","name":"THE BOND-camp＆sauna-","lat":34.32333,"lon":134.70291,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"https://www.unreal-awaji.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285906725","name":"淡路島西海岸オートキャンプ場","lat":34.32192,"lon":134.68361,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285906727","name":"淡路島アウトドアビレッジ津井キャンプ場＆カヤックSUP体験","lat":34.31624,"lon":134.68155,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"https://kayak-sup.net/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287485145","name":"南あわじ夕日の丘丸山キャンプ場","lat":34.28584,"lon":134.66474,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"https://khills-camp.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287485149","name":"ワンともキャンプ場","lat":34.28148,"lon":134.69062,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"https://wantomo-camp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287495445","name":"伊毘うずしお村オートキャンプ場","lat":34.25549,"lon":134.67638,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0799-37-9040"},
+{"id":"osm:node:14287498866","name":"慶野松原一般キャンプ場","lat":34.34348,"lon":134.73694,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0799-36-5959"},
+{"id":"osm:node:14287498871","name":"けいのSUP＆Camp Base","lat":34.334,"lon":134.73174,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287498873","name":"ひらめキャンプ場","lat":34.33267,"lon":134.72957,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"https://www.hiramecamp.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-4475-6804"},
+{"id":"osm:node:14287525671","name":"NaGi CAMP","lat":34.27164,"lon":134.66632,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

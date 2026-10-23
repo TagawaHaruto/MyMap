@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:1446971204","name":"日本最北端の地","lat":45.52284,"lon":141.93659,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1446971205","name":"間宮林蔵","lat":45.52268,"lon":141.93648,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10864527576","name":"ラ・ペルーズ顕彰記念碑","lat":45.52135,"lon":141.93729,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10864527577","name":"あけぼの像","lat":45.52137,"lon":141.93741,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:579300067","name":"祈りの塔","lat":45.52035,"lon":141.93791,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:大韓航空機撃墜事件"},
+{"id":"osm:node:9906880683","name":"海峡","lat":45.52142,"lon":141.93928,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

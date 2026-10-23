@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5167175042","name":"佐藤自転車店","lat":39.25622,"lon":139.91885,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5167183028","name":"齊藤書店 駅前店","lat":39.255,"lon":139.91816,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5167184635","name":"サーフシーン","lat":39.25208,"lon":139.91661,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 184 38 4880"},
+{"id":"osm:node:7056707627","name":"文林堂書店","lat":39.29133,"lon":139.96319,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

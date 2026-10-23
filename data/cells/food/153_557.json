@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4382773037","name":"みやこ食堂","lat":38.46508,"lon":139.2531,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4382774097","name":"あわしまや","lat":38.46476,"lon":139.25319,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4382774336","name":"食事処・善三郎","lat":38.46417,"lon":139.25346,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6053928020","name":"Casa del Faro","lat":38.29357,"lon":139.44978,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6053928027","name":"うどん・そば喜久佐","lat":38.36473,"lon":139.45351,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6053928031","name":"民宿・食事処シーウッド","lat":38.3727,"lon":139.457,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9717189703","name":"憩","lat":38.46742,"lon":139.25473,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3552562493","name":"カフェそそど","lat":38.46798,"lon":139.25515,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6053928019","name":"芳心","lat":38.26346,"lon":139.44683,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6053928036","name":"笹川流れ観光汽船 天ぴ屋","lat":38.3826,"lon":139.45981,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6053950219","name":"ソルトアンドカフェ　笹川流れ塩工房","lat":38.44075,"lon":139.48316,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:14272949371","name":"345","lat":38.37497,"lon":139.4583,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:9719734230","name":"居酒屋めんこ","lat":38.46609,"lon":139.25297,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

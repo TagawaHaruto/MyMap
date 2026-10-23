@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:1933289026","name":"今井書店　錦町店","lat":35.4385,"lon":133.32818,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://www.imaibooks.co.jp/book/","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-22:00","tel":"+81 859 37 6700","wc":"yes"},
+{"id":"osm:node:1954280777","name":"Bookoff安倍店","lat":35.44175,"lon":133.3013,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","wc":"yes"},
+{"id":"osm:node:1954283398","name":"アルペン","lat":35.45495,"lon":133.34084,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","wc":"yes"},
+{"id":"osm:node:1955996033","name":"ブックオフ","lat":35.45501,"lon":133.33272,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"ふぁみりいまと","wc":"yes"},
+{"id":"osm:node:1959798675","name":"TSUTAYA","lat":35.4373,"lon":133.328,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby","kana":"つたや","wc":"limited"},
+{"id":"osm:node:1982447883","name":"ブックオフ","lat":35.4495,"lon":133.36451,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-21:00"},
+{"id":"osm:node:5895395222","name":"GEO","lat":35.45514,"lon":133.33936,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:5899710727","name":"アニメイト","lat":35.42265,"lon":133.33305,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/yonago/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"10:00-21:00","tel":"+81 859 37 3161"},
+{"id":"osm:node:6013358853","name":"未来屋書店","lat":35.44643,"lon":133.38362,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6013358855","name":"島村楽器","lat":35.44635,"lon":133.38406,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899849587","name":"bán xe đạp","lat":35.42344,"lon":133.32899,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899849588","name":"xe đạp","lat":35.42345,"lon":133.32891,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13666038949","name":"TSURUYA","lat":35.44544,"lon":133.32899,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:14040739927","name":"小吉文庫","lat":35.44102,"lon":133.32193,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-19:00","tel":"090-7508-7350"},
+{"id":"osm:node:14040783517","name":"本の学校今井ブックセンター","lat":35.45422,"lon":133.34787,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-21:00","tel":"0859-31-5000"},
+{"id":"osm:node:14040794786","name":"えほんやとこちゃん","lat":35.4241,"lon":133.33007,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Th-Su 10:30-18:00","tel":"0859-34-2016"},
+{"id":"osm:node:14040802950","name":"BOOK & CAFE SUGISHIMA（杉島書店）","lat":35.42484,"lon":133.33517,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Fr 09:00-19:00, Sa-Su 11:00-19:00","tel":"0859-22-2768"},
+{"id":"osm:way:1116713954","name":"Book Yard. CHAPTER 3 & COMO","lat":35.44094,"lon":133.36077,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://www.bookyard.jp/","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1124701659","name":"オフハウス","lat":35.45483,"lon":133.3337,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1131855999","name":"かめや釣具","lat":35.45282,"lon":133.34954,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://kameya-fishing.com/","note":"釣具","g":"hobby","k":"hobby"}
+]

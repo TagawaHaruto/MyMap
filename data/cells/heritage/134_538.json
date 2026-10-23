@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4988802922","name":"日和佐城跡","lat":33.72953,"lon":134.53611,"pref":"徳島","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:日和佐城"},
+{"id":"osm:node:11350962171","name":"Guest house さくら庵 / Sakura-an","lat":33.73209,"lon":134.53216,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"http://guesthousesakura-an.com","note":"宿","g":"heritage","k":"lodging","tel":"+81 80 7817 2258"},
+{"id":"osm:node:11544133470","name":"壱 THE HOSTEL","lat":33.73231,"lon":134.53222,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"https://ichithehostel.com/","note":"宿","g":"heritage","k":"lodging","tel":"+817044125317"},
+{"id":"osm:way:286614179","name":"喜久栄","lat":33.72988,"lon":134.53144,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 0159"},
+{"id":"osm:way:286616156","name":"平しげ旅館","lat":33.73006,"lon":134.53296,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 0072"},
+{"id":"osm:way:286616228","name":"ビジネスホテル．ケアンズ","lat":33.72889,"lon":134.53107,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"http://www.hotel-cairns.net/","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 1211"},
+{"id":"osm:way:286692854","name":"ふなつき旅館","lat":33.73193,"lon":134.53172,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 0168"},
+{"id":"osm:way:286692945","name":"きよ美旅館","lat":33.73221,"lon":134.53171,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 0550"},
+{"id":"osm:way:313509785","name":"ホテル白い燈台","lat":33.73721,"lon":134.54487,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"https://www.shiroitodai.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 1170"},
+{"id":"osm:way:313514339","name":"むらかみ旅館","lat":33.72735,"lon":134.5313,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 0083"},
+{"id":"osm:way:313515267","name":"弘陽荘","lat":33.73404,"lon":134.53656,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 1006"},
+{"id":"osm:way:313516316","name":"農家民宿クニ舛田","lat":33.74741,"lon":134.55739,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"https://www.kuni-masuda.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 77 2173"}
+]

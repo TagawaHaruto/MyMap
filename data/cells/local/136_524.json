@@ -1,0 +1,22 @@
+[
+{"id":"osm:way:281472217","name":"萩焼屋　Hagiyakiya","lat":34.00069,"lon":131.20274,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"https://hagiyakiya.com/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4607735889","name":"武道館","lat":34.12449,"lon":131.03294,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5255120892","name":"美祢スポーツセンター","lat":34.16542,"lon":131.2225,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:467591925","name":"レークスワンＣＣ美祢Ｃ","lat":34.18848,"lon":131.10803,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:467594846","name":"木屋川ＧＣ","lat":34.18475,"lon":131.06308,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:571943097","name":"朝陽カントリークラブ","lat":34.04337,"lon":131.18014,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:732590601","name":"下関市市民プール","lat":34.02116,"lon":131.01004,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1084129699","name":"山陽国際ゴルフクラブ","lat":34.05425,"lon":131.11024,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1173527319","name":"厚狭ゴルフ倶楽部","lat":34.03482,"lon":131.12421,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1173527320","name":"山陽グリーンゴルフコース","lat":34.03641,"lon":131.13503,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1173529409","name":"プレジデント カントリー倶楽部山陽","lat":34.07208,"lon":131.14133,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:17480730","name":"関門菊川GC","lat":34.12331,"lon":131.07539,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4607780514","name":"菊川自然活用村","lat":34.15799,"lon":131.02331,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4622067730","name":"豊田湖畔キャンプ場","lat":34.24068,"lon":131.12198,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10249349106","name":"華山キャンプ場（無料）","lat":34.17639,"lon":131.04197,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287476393","name":"物見山総合公園キャンプ場","lat":34.04776,"lon":131.17346,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0836-82-1162"},
+{"id":"osm:node:14287476394","name":"糸根地区公園キャンプ場","lat":34.03925,"lon":131.08248,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0836-76-1688"},
+{"id":"osm:node:14287476396","name":"江汐公園キャンプ場","lat":34.03438,"lon":131.19181,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0836-83-5378"},
+{"id":"osm:node:14287578911","name":"ヤマメ村","lat":34.0984,"lon":131.06831,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"083-283-2251"},
+{"id":"osm:way:1120615850","name":"華山キャンプ場","lat":34.17602,"lon":131.04177,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

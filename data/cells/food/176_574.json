@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4779288134","name":"味の時計台","lat":44.05026,"lon":143.52095,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","kana":"あじのとけいだい"},
+{"id":"osm:node:4779288138","name":"さんぱちラーメン遠軽店","lat":44.06342,"lon":143.52512,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4779307725","name":"六郷ラーメン","lat":44.02501,"lon":143.50942,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4779307730","name":"トリトン　遠軽店","lat":44.06824,"lon":143.529,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:12770295864","name":"レストラン瞰望","lat":44.06057,"lon":143.52353,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12770295898","name":"福よし","lat":44.05891,"lon":143.52175,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12770295899","name":"政寿し","lat":44.05873,"lon":143.5219,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:12770313007","name":"大宇宙","lat":44.0592,"lon":143.52339,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"おおぞら"},
+{"id":"osm:way:430678162","name":"チューリップ館","lat":44.1601,"lon":143.57955,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:467185747","name":"5deer","lat":44.14913,"lon":143.57005,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ふぁいぶでぃあ"},
+{"id":"osm:way:467185886","name":"ビーフランド","lat":44.14821,"lon":143.57061,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:467185888","name":"大衆食堂だるま軒","lat":44.14813,"lon":143.57044,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:468005007","name":"麺やおほーつく","lat":44.19695,"lon":143.60145,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1434707886","name":"パティスリーコマンス","lat":44.14925,"lon":143.57012,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:12770295863","name":"つぼ八","lat":44.06029,"lon":143.52399,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub","kana":"つぼはち","chain":true}
+]

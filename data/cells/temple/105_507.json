@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:1992350073","name":"希望が丘キリスト教会","lat":26.33592,"lon":126.81211,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:14071511863","name":"観音堂","lat":26.37699,"lon":126.77177,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1546621082","name":"兼城御嶽","lat":26.34222,"lon":126.75392,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","kana":"かねしろうたき"}
+]

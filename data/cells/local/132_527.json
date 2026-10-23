@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:766127726","name":"弁当のおおやま","lat":33.12118,"lon":131.78097,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12612871830","name":"佐賀関漁港","lat":33.24372,"lon":131.87942,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:758018854","name":"諏訪山体育館","lat":33.13292,"lon":131.79755,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

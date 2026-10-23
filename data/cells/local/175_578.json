@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:474189749","name":"斜里魚菜卸売市場","lat":43.91555,"lon":144.66267,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:474642186","name":"斜里町武道館","lat":43.90719,"lon":144.66995,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:474642191","name":"斜里町B&G海洋センター体育館","lat":43.90679,"lon":144.67116,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:474642193","name":"斜里町B&G海洋センタープール","lat":43.90659,"lon":144.67165,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:489064102","name":"清里町農業者等健康増進施設","lat":43.78538,"lon":144.53433,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:489618616","name":"清里町武道館","lat":43.82915,"lon":144.59204,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"きよさとちょうぶどうかん"},
+{"id":"osm:way:489618726","name":"清里町町民プール","lat":43.83474,"lon":144.59833,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:489618733","name":"清里トレーニングセンター","lat":43.8341,"lon":144.5985,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"Kiyosato Traning Center"},
+{"id":"osm:way:489618735","name":"清里町屋内ゲートボール場","lat":43.83365,"lon":144.59792,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"きよさとちょうおくないげーとぼーるじょう"},
+{"id":"osm:node:2587155404","name":"みどり工房しゃり　そよかぜキャンプ場","lat":43.8939,"lon":144.69093,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12159221070","name":"来運水の学校","lat":43.83476,"lon":144.6432,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:629128424","name":"清里オートキャンプ場","lat":43.79335,"lon":144.57839,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1060076611","name":"クリオネキャンプ場","lat":43.91133,"lon":144.6434,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.clionecamp.com/","note":"キャンプ・野外","g":"local","k":"camp","kana":"くりおねきゃんぷじょう","tel":"+81 80 4950 6904"}
+]

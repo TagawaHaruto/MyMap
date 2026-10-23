@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:753372361","name":"若狭小浜お魚センター","lat":35.50109,"lon":135.741,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:753372467","name":"若狭フィッシャーマンズ・ワーフ","lat":35.50023,"lon":135.7402,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10753531454","name":"小黒飯漁港","lat":35.51421,"lon":135.51034,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10753573691","name":"音海魚港","lat":35.53606,"lon":135.50812,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10753573692","name":"音海魚港","lat":35.53415,"lon":135.5166,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:861093229","name":"あかぐり海釣公園","lat":35.52599,"lon":135.66181,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10753608604","name":"赤礁崎オートキャンプ場","lat":35.53305,"lon":135.66574,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

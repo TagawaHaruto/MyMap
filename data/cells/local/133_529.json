@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5603129135","name":"アゴラマルシェ","lat":33.45852,"lon":132.41886,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7022891436","name":"みねお","lat":33.45769,"lon":132.4315,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7022910836","name":"叶かまぼこ店","lat":33.45736,"lon":132.42476,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7022918316","name":"丸栄かまぼこほんぽ","lat":33.45842,"lon":132.43506,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7022918321","name":"谷本蒲鉾店","lat":33.45872,"lon":132.43439,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7022934741","name":"八木蒲鉾","lat":33.45796,"lon":132.42369,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7023064538","name":"萩森蒲鉾店","lat":33.45831,"lon":132.41915,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7022910752","name":"駅なか浜っ子","lat":33.45809,"lon":132.43581,"pref":"愛媛","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:7023024720","name":"JAにしうわ特産センター","lat":33.46356,"lon":132.42366,"pref":"愛媛","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:7023048203","name":"八幡浜市水産物地方卸売市場","lat":33.46044,"lon":132.41941,"pref":"愛媛","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:7023088694","name":"新鮮市場","lat":33.46023,"lon":132.4241,"pref":"愛媛","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:7023046349","name":"八幡浜市民スポーツセンター","lat":33.46329,"lon":132.4218,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13707857702","name":"あけはまオートキャンプ場 きゃんぱ","lat":33.31446,"lon":132.44338,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"https://akehama.com/lodging/campa/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287571004","name":"須賀公園","lat":33.45284,"lon":132.26385,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0894-52-0111"},
+{"id":"osm:node:14287587219","name":"室鼻公園","lat":33.48378,"lon":132.33959,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0894-38-2654"}
+]

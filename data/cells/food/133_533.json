@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:3916848088","name":"萩の茶屋","lat":33.44838,"lon":133.4567,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6157980833","name":"橋本食堂","lat":33.39025,"lon":133.28353,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:6157980834","name":"まゆみの店","lat":33.39047,"lon":133.28116,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:6157986607","name":"なかがわ","lat":33.39202,"lon":133.28325,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:6157996632","name":"ばさら","lat":33.4111,"lon":133.29052,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:9412316812","name":"池浦伊勢えび料理店","lat":33.40969,"lon":133.40996,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:node:9412322717","name":"いせえび料理中平","lat":33.40943,"lon":133.41024,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:388378605","name":"大正軒","lat":33.4996,"lon":133.28733,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:731868664","name":"魚菜食堂","lat":33.38449,"lon":133.27246,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:731892234","name":"どんじゃか 須崎店","lat":33.38832,"lon":133.27887,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:814814237","name":"豚太郎 須崎糺町店","lat":33.39297,"lon":133.28277,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","pk":2},
+{"id":"osm:node:6858460264","name":"COFFEE HOUSE まーがれっと","lat":33.41144,"lon":133.29703,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:712930767","name":"すき家 須崎店","lat":33.40922,"lon":133.29616,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true},
+{"id":"osm:way:807746158","name":"モスバーガー","lat":33.40769,"lon":133.28751,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:way:710681741","name":"ベイクショップ モンブラン","lat":33.41125,"lon":133.29044,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:966944584","name":"浮橋","lat":33.40736,"lon":133.3665,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

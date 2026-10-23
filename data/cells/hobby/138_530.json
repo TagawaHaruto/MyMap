@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:1432572954","name":"木谷自転車店","lat":34.51746,"lon":132.51376,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:3038179361","name":"Hobby Zone","lat":34.51857,"lon":132.51083,"pref":"広島","genres":["shopping"],"indoor":true,"url":"http://www.hobby-zone.net/","note":"おもちゃ","g":"hobby","k":"hobby","wp":"ja:冒険王 (玩具小売)"},
+{"id":"osm:node:6634868527","name":"フタバ図書可部センター店","lat":34.52486,"lon":132.5007,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2789634699","name":"国設阿寒湖畔スキー場","lat":43.42366,"lon":144.085,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:577862400","name":"コロポックル公園","lat":43.43415,"lon":144.09039,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:577862392","name":"阿寒湖アイヌシアターイコロ","lat":43.43416,"lon":144.08902,"pref":"北海道","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

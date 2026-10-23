@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:848328850","name":"北の工房つとむ","lat":42.63693,"lon":142.15911,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://biratori-kanko.jp/enjoy/workshop-tsutomu/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-1457-2-3660"},
+{"id":"osm:way:858898765","name":"金村商店","lat":42.5188,"lon":142.03128,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:886832608","name":"貝沢民芸","lat":42.63612,"lon":142.15962,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://biratori-kanko.jp/enjoy/kaizawa-folk-crafts/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-1457-2-2584"},
+{"id":"osm:way:1287936808","name":"平取カントリー倶楽部","lat":42.58481,"lon":142.10867,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://biracc.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"びらとりかんとりーくらぶ","tel":"+81-1457-2-2834"},
+{"id":"osm:node:8246317116","name":"二風谷ファミリーランドオートキャンプ場","lat":42.64535,"lon":142.17197,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

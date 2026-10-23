@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:12108451699","name":"東経130度線モニュメント","lat":28.36612,"lon":130.00006,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12108459634","name":"望郷の碑","lat":28.36605,"lon":130.00911,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12108459635","name":"ムチャ加那の碑","lat":28.36664,"lon":130.00916,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12108459646","name":"平家上陸之地","lat":28.36394,"lon":130.03062,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13991931577","name":"「ミヤ」の跡","lat":28.35634,"lon":130.02481,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13994086978","name":"涙石","lat":28.33602,"lon":130.00178,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13991490012","name":"島っちゅ農House (小野津地域文化等宿泊体験学習施設)","lat":28.36506,"lon":130.00186,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:241898571","name":"魚河岸茂勝","lat":43.33373,"lon":145.57895,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:242978434","name":"ノサップ産商","lat":43.32916,"lon":145.60263,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"http://www.marimo.or.jp/~indian/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:243627002","name":"魚信","lat":43.33344,"lon":145.58145,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:243014672","name":"根室市温水プール","lat":43.33164,"lon":145.59293,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"http://www.nemuro-pool.hs.plala.or.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:16344706","name":"根室ゴルフクラブ","lat":43.32873,"lon":145.66567,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://nemuro-golf.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ねむろごるふくらぶ","tel":"+81 153 23 2964"}
+]

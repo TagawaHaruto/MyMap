@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5154672321","name":"ホテル カーサ","lat":44.32603,"lon":143.33876,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5154672322","name":"ホテル新生","lat":44.33273,"lon":143.35254,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11927587755","name":"Monbetsu Prince","lat":44.34746,"lon":143.35575,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:359620120","name":"紋別セントラルホテル","lat":44.34919,"lon":143.3559,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12247307996","name":"那須岳神社","lat":37.12486,"lon":139.96293,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:620515276","name":"見立神社","lat":37.0989,"lon":139.99992,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:620515277","name":"愛宕神社","lat":37.09869,"lon":139.99924,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

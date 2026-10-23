@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3552561693","name":"ばっけ屋","lat":38.46806,"lon":139.25505,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9719722513","name":"おみやげの店","lat":38.46805,"lon":139.25426,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6053950220","name":"寒川キャンプ場","lat":38.45341,"lon":139.49497,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286246531","name":"笹川キャンプ場","lat":38.38417,"lon":139.45752,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0254-77-3111"},
+{"id":"osm:node:14286246532","name":"桑川海水浴場キャンプ場","lat":38.3699,"lon":139.45401,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0254-79-2343"}
+]

@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1068039374","name":"アヤミハビル館","lat":24.45645,"lon":123.01068,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:7088079010","name":"西表野生生物保護センター","lat":24.33103,"lon":123.90889,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"https://iwcc.jp/","note":"博物館","k":"museum","oh":"10:00-17:00","tel":"+81 980-85-5581"},
+{"id":"osm:node:10043799438","name":"DiDi 与那国交流館","lat":24.46944,"lon":123.00868,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"https://yonaguni-didi.jp","note":"博物館","k":"museum","oh":"Tu-Su 09:00-17:00"},
+{"id":"osm:node:3540325397","name":"与那国島海底地形","lat":24.43604,"lon":123.01147,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E4%B8%8E%E9%82%A3%E5%9B%BD%E5%B3%B6%E6%B5%B7%E5%BA%95%E5%9C%B0%E5%BD%A2","note":"観光名所","k":"attraction"},
+{"id":"osm:node:3904365724","name":"子午線モニュメント","lat":24.39054,"lon":123.75041,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:6373647187","name":"ニシ浜","lat":24.06408,"lon":123.7614,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:9598761011","name":"人面岩","lat":24.44291,"lon":123.01383,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:10293413620","name":"古見のサキシマスオウノキ群落","lat":24.31255,"lon":123.90479,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:way:130977095","name":"立神岩","lat":24.44814,"lon":123.02606,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","kana":"たちがみいわ"},
+{"id":"osm:way:130977688","name":"軍艦岩","lat":24.45395,"lon":123.0344,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","kana":"ぐんかんいわ"},
+{"id":"osm:node:2555149423","name":"浦内川の展望台","lat":24.40202,"lon":123.775,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4227626689","name":"アリシ","lat":24.46325,"lon":123.04143,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint","pk":2},
+{"id":"osm:node:4227637447","name":"サンニヌ台展望台","lat":24.45412,"lon":123.03275,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4227638475","name":"立神岩展望台","lat":24.4508,"lon":123.02889,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:291554236","name":"東崎展望台","lat":24.46118,"lon":123.04178,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:298041305","name":"東牧場","lat":24.46117,"lon":123.03373,"pref":"沖縄","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"},
+{"id":"osm:relation:10662589","name":"パナリ牧場","lat":24.21492,"lon":123.92912,"pref":"沖縄","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"},
+{"id":"osm:way:1374665493","name":"住吉牧場","lat":24.43073,"lon":123.77511,"pref":"沖縄","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"}
+]

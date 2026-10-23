@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:1764943501","name":"元岡瓜尾貝塚","lat":33.59479,"lon":130.22534,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2326637114","name":"福岡都市計画事業　元岡土地区画整理事業　竣功記念","lat":33.59482,"lon":130.22608,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3362697694","name":"山川健次郎胸像","lat":33.59761,"lon":130.22405,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3362735893","name":"造船学教室の大錨","lat":33.59488,"lon":130.21687,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6631361202","name":"平原古墳","lat":33.54232,"lon":130.22845,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8364576365","name":"石ヶ原古墳","lat":33.59926,"lon":130.228,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065856","name":"福岡県西方沖地震復興記念碑","lat":33.68325,"lon":130.23335,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065857","name":"福岡県西方沖地震復興記念碑","lat":33.68371,"lon":130.23472,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9001995410","name":"歌碑","lat":33.68313,"lon":130.23459,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10752159339","name":"一貴山銚子塚古墳","lat":33.53654,"lon":130.16959,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:一貴山銚子塚古墳"},
+{"id":"osm:way:329399377","name":"元岡池の浦古墳","lat":33.59501,"lon":130.22091,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5273570222","name":"糸島ゲストハウス 前原宿ことのは","lat":33.55744,"lon":130.19848,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"https://itoshima-guesthouse.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10304440159","name":"深江観光ホテル","lat":33.51755,"lon":130.13406,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11185044730","name":"グローカルホテル糸島","lat":33.58384,"lon":130.21375,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"https://glocal-hotel.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-92-332-9600"},
+{"id":"osm:node:12339245102","name":"里や","lat":33.509,"lon":130.19437,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14139083401","name":"Rita HOSTEL 2F","lat":33.50009,"lon":130.07745,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 92-326-6101"},
+{"id":"osm:node:14287582620","name":"伊都 森のコテージ","lat":33.5791,"lon":130.11988,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1088154183","name":"海の家Hill Stone","lat":33.58867,"lon":130.10913,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"https://hillstonecamp.co.jp/stay/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1103238737","name":"bbb haus","lat":33.5943,"lon":130.14824,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"https://www.bbbhaus.com","note":"宿","g":"heritage","k":"lodging","tel":"+81-92-327-8020"},
+{"id":"osm:way:1155070642","name":"HOTEL AZ 福岡糸島店","lat":33.56143,"lon":130.21402,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

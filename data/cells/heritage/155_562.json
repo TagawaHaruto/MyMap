@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6463734195","name":"大月桂月 歌碑","lat":38.78266,"lon":140.70541,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1557736490","name":"秋ノ宮山荘","lat":38.95615,"lon":140.54133,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あきのみやさんそう"},
+{"id":"osm:node:2479044964","name":"リゾートパークホテルオニコウベ","lat":38.78873,"lon":140.63625,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://oni380.com/","note":"宿","g":"heritage","k":"lodging","tel":"0229-86-2011","wc":"limited"},
+{"id":"osm:node:6463733101","name":"吹上温泉 峯雲閣","lat":38.80195,"lon":140.67113,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ほうんかく","tel":"+81 229 86 2243"},
+{"id":"osm:node:6463733102","name":"鬼首鬼首 元湯旅館","lat":38.8055,"lon":140.66807,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"おにこべおんせんもとゆりょかん","tel":"+81 229 86 2238"},
+{"id":"osm:node:6463734196","name":"鬼首温泉 とどろき旅館","lat":38.79657,"lon":140.66467,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://onikobeonsen.wixsite.com","note":"宿","g":"heritage","k":"lodging","kana":"おにこべおんせんとどろきりょかん","tel":"+81 229 86 2311"},
+{"id":"osm:node:6463734197","name":"鬼首鬼首 かむろ荘","lat":38.80416,"lon":140.66735,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://Kamurosou.jimdo.com","note":"宿","g":"heritage","k":"lodging","kana":"おにこべおんせんかむろそ","tel":"+81 229 86 2301"},
+{"id":"osm:node:6463734198","name":"大新館","lat":38.80438,"lon":140.66677,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"https://www.ryokan-taishinkan.com/","note":"宿","g":"heritage","k":"lodging","kana":"たいしんかん","tel":"+81 229 86 2822"},
+{"id":"osm:node:7127540030","name":"小安山荘 よし川","lat":38.98915,"lon":140.68787,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7127540058","name":"大湯温泉「阿部旅館」","lat":38.98942,"lon":140.689,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8670210822","name":"五湯ホテル","lat":38.75037,"lon":140.71908,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 229 25 5753"},
+{"id":"osm:way:762771490","name":"泥湯温泉 旅館","lat":38.99045,"lon":140.61183,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:762771496","name":"泥湯温泉 奥山旅館","lat":38.99055,"lon":140.61154,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:836638130","name":"湯浜温泉 三浦旅館","lat":38.91789,"lon":140.73259,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://yubama.info/","note":"宿","g":"heritage","k":"lodging","tel":"090-8925－0204"}
+]

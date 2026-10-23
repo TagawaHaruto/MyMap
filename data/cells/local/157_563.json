@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6936536476","name":"産直ふるさとハウス","lat":39.49363,"lon":140.81269,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81197855441"},
+{"id":"osm:node:6981795383","name":"産直里の恵","lat":39.43357,"lon":140.75141,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81197812133"},
+{"id":"osm:node:7842273085","name":"ファームさくら","lat":39.44122,"lon":140.75366,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:6938675884","name":"西和賀町太田プール","lat":39.43435,"lon":140.75084,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+8119785337"},
+{"id":"osm:node:6942575122","name":"沢内農業者トレーニングセンター","lat":39.43644,"lon":140.75012,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81197"},
+{"id":"osm:node:7837079791","name":"湯田トレーニングセンター","lat":39.3424,"lon":140.7713,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426254158","name":"パークゴルフ場","lat":39.29657,"lon":140.84632,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:832821927","name":"きたかみカントリークラブ","lat":39.26756,"lon":140.9818,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:842132107","name":"志賀来ドーム","lat":39.39598,"lon":140.77058,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:975524208","name":"湯本屋内温泉プール","lat":39.34391,"lon":140.77218,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286226206","name":"志賀来キャンプ場","lat":39.41786,"lon":140.76077,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0197-85-2601"},
+{"id":"osm:node:14287663297","name":"焼地台公園キャンプ場","lat":39.33674,"lon":140.77229,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0197-82-2170"},
+{"id":"osm:way:965908037","name":"志賀来キャンプ場","lat":39.39802,"lon":140.76958,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0197-85-2601"}
+]

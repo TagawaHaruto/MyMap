@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:3080114647","name":"富良野チーズ工房","lat":43.32068,"lon":142.37721,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ふらのちーずこうぼう","tel":"0081167231156"},
+{"id":"osm:node:4080905326","name":"西中直売本舗","lat":43.42675,"lon":142.44524,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:4607790389","name":"ニングルテラス","lat":43.32343,"lon":142.35634,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://www.princehotels.co.jp/furano-area/summer/ningle/","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 12:00-20:45"},
+{"id":"osm:node:13008555601","name":"Domaine raison","lat":43.37156,"lon":142.39324,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://domaine-raison.com","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 10:00-17:00"},
+{"id":"osm:way:530308692","name":"ラベンダーショップもりや","lat":43.34622,"lon":142.3913,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:530784050","name":"ほっともっと","lat":43.34913,"lon":142.38487,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ほっともっと"},
+{"id":"osm:way:531006955","name":"お茶の店桑名園","lat":43.34447,"lon":142.3892,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:530759190","name":"富良野地方卸売市場","lat":43.34428,"lon":142.38022,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:1455913608","name":"富良野ゴルフコース","lat":43.33499,"lon":142.48678,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.princehotels.co.jp/golf/furano/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ふらのごるふこーす","tel":"+81 167 22 1111"},
+{"id":"osm:node:5524519029","name":"町営ラベンダー園","lat":43.41125,"lon":142.42226,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8716486547","name":"滝里町オートキャンプ場","lat":43.45122,"lon":142.313,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287644560","name":"上富良野町日の出公園オートキャンプ場","lat":43.46234,"lon":142.48421,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0167-39-4200"},
+{"id":"osm:node:14287644561","name":"中富良野森林公園キャンプ場","lat":43.41382,"lon":142.41501,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0167-44-4700"}
+]

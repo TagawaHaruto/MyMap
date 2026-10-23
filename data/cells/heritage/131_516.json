@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4787586421","name":"ヨハネ五島生誕伝説の碑","lat":32.75481,"lon":129.00174,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12134735205","name":"江口甚右衛門正利翁之像","lat":32.98395,"lon":129.11624,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12308502476","name":"原真一君之像","lat":32.98387,"lon":129.1162,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12308502479","name":"原萬一郎君之像","lat":32.98385,"lon":129.11613,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12308502494","name":"祖母君神社跡","lat":32.98433,"lon":129.11616,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12134735203","name":"し喜別館","lat":32.98377,"lon":129.11586,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12134735214","name":"有川ビーチホテル　浦","lat":32.98504,"lon":129.1148,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14287580160","name":"高井旅コテージ・ログハウス","lat":32.86357,"lon":129.06811,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"http://reharmo.com/","note":"宿","g":"heritage","k":"lodging"}
+]

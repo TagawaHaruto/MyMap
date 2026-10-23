@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:179605988","name":"慶野松原","lat":34.34485,"lon":134.7381,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:734693536","name":"緑の道しるべ　賀集公園","lat":34.28011,"lon":134.74163,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:734694782","name":"道の駅福良　休憩施設","lat":34.25556,"lon":134.72033,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:737621923","name":"波止の浜公園","lat":34.25443,"lon":134.71181,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:738384257","name":"福良児童公園","lat":34.25692,"lon":134.72193,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560622456","name":"淡路人形座","lat":34.2561,"lon":134.72001,"pref":"兵庫","genres":["play"],"indoor":true,"url":"https://awajiningyoza.com/","note":"劇場・ホール","g":"play","k":"amuse"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:10549080266","name":"ヒマラヤスポーツ フジグラン川之江店","lat":33.99373,"lon":133.57401,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11064287179","name":"宮脇書店","lat":33.9935,"lon":133.57366,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:407607166","name":"明屋書店川之江店","lat":33.99171,"lon":133.56703,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:583855126","name":"白川自転車店","lat":33.98569,"lon":133.54889,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:3920902038","name":"杉原神社","lat":33.5366,"lon":133.20908,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5610853459","name":"岩屋神社","lat":33.5346,"lon":133.20233,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5610853480","name":"田口社","lat":33.5358,"lon":133.20448,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5610853494","name":"住吉神社","lat":33.53746,"lon":133.21552,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5610853497","name":"住吉神社","lat":33.53224,"lon":133.20008,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11916896756","name":"佐婆為神社","lat":33.53008,"lon":133.13985,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:388909575","name":"横倉宮","lat":33.53488,"lon":133.20276,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:388909577","name":"横倉神社","lat":33.53657,"lon":133.2429,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:659765169","name":"大山祗神社","lat":33.57619,"lon":133.06333,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:799365769","name":"金峰神社","lat":33.58734,"lon":133.22991,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:821856446","name":"琴平神社","lat":33.66403,"lon":133.23344,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

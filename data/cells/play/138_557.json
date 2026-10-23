@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:3081361733","name":"差木地みんなの広場","lat":34.68662,"lon":139.41904,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:150332204","name":"展望広場","lat":34.73856,"lon":139.38104,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:198022823","name":"トウシキ園地","lat":34.68072,"lon":139.43874,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:202917997","name":"大島町椿公園","lat":34.73769,"lon":139.35809,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:427306232","name":"海のふるさと村キャンプファイヤ","lat":34.74527,"lon":139.44399,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:512606756","name":"なかよし公園","lat":34.53008,"lon":139.27871,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:512997309","name":"はしけと海の歴史広場","lat":34.53125,"lon":139.27774,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:512997329","name":"ウスイゴウ園地","lat":34.52209,"lon":139.28409,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:512997335","name":"南ヶ山園地","lat":34.51487,"lon":139.27662,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"みなみがやまえんち"},
+{"id":"osm:way:1007167923","name":"大島町メモリアル公園","lat":34.74591,"lon":139.36535,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1194662316","name":"クダッチ児童遊園（ゴジラ公園）","lat":34.68219,"lon":139.43457,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1194835384","name":"七福神公園","lat":34.68599,"lon":139.44139,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

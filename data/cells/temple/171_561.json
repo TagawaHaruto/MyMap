@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:729762002","name":"法龍寺","lat":42.76448,"lon":140.25223,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:740618554","name":"淀川神社","lat":42.79335,"lon":140.48876,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:740628057","name":"吉国神社","lat":42.84033,"lon":140.49419,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:740859738","name":"男山八幡神社","lat":42.84707,"lon":140.40972,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:740863855","name":"大照寺","lat":42.87942,"lon":140.36769,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:901428036","name":"地蔵寺","lat":42.97608,"lon":140.49284,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:902519704","name":"敷島内神社","lat":42.95719,"lon":140.48968,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1007892083","name":"法仙寺","lat":42.76149,"lon":140.4629,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1007896581","name":"光栄寺","lat":42.76442,"lon":140.45821,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1007896596","name":"蘭越目名八幡神社","lat":42.76249,"lon":140.45698,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

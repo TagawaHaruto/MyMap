@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4362765806","name":"室積生鮮市場","lat":33.92983,"lon":131.97113,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3601821793","name":"総合体育館","lat":33.95908,"lon":131.96324,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3981406458","name":"笠戸ドック体育館","lat":33.94838,"lon":131.84927,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4334950393","name":"勤労者体育センター","lat":33.96633,"lon":131.92101,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4358159297","name":"大和スポーツセンター","lat":33.98825,"lon":131.99861,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4362780093","name":"フィッシングパーク光","lat":33.92807,"lon":131.96429,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4373110894","name":"アネックススポーツランド","lat":33.92725,"lon":131.98578,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:443119785","name":"光ゴルフセンター","lat":33.95517,"lon":131.96521,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3981203521","name":"笠戸島家族旅行村","lat":33.96935,"lon":131.85335,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:3983270865","name":"白浜","lat":33.95283,"lon":131.8564,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4326371890","name":"虹ヶ浜キャンプ場","lat":33.97095,"lon":131.91616,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4364245996","name":"室積キャンプ場","lat":33.94293,"lon":131.96484,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

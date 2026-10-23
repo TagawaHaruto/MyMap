@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:8327551635","name":"八幡神社跡地","lat":40.40433,"lon":139.96825,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8327551667","name":"祠","lat":40.39891,"lon":139.97609,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8327551690","name":"正一位出精稲荷神社","lat":40.38061,"lon":139.99908,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:895875833","name":"神明社","lat":40.40175,"lon":139.97162,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:895875838","name":"八幡神社","lat":40.39955,"lon":139.97866,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12818246252","name":"海峡ライン","lat":41.21628,"lon":140.80799,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12818281982","name":"流汗台","lat":41.23255,"lon":140.81924,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1127284340","name":"脇野沢ユースホステル","lat":41.14089,"lon":140.81957,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:脇野沢ユースホステル"}
+]

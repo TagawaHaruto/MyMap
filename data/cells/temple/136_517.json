@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:9660134661","name":"Chojuin","lat":34.20892,"lon":129.2923,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:463804469","name":"大歳神社","lat":34.20822,"lon":129.29124,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:463810202","name":"太平寺","lat":34.20799,"lon":129.28981,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"たいへいじ","tel":"+81 920-52-3376"},
+{"id":"osm:relation:9722370","name":"天神神社","lat":34.20569,"lon":129.28895,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:483042063","name":"Neo Ebisu Shrine","lat":34.24212,"lon":129.31629,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:624169030","name":"天理教厳原分教会","lat":34.20792,"lon":129.29067,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","tel":"+81 920-52-0441"},
+{"id":"osm:way:624169039","name":"南岳稲荷神社","lat":34.20163,"lon":129.28737,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

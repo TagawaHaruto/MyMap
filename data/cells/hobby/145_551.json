@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2191772801","name":"レッドバロン","lat":36.34731,"lon":137.88436,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2518189857","name":"蔦屋書店","lat":36.48129,"lon":137.85279,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6795173585","name":"沢田商会","lat":36.30144,"lon":137.85796,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11675214088","name":"オートプラザアバ","lat":36.25828,"lon":137.98074,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:550094710","name":"ツタヤ","lat":36.30611,"lon":137.9005,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:761268586","name":"A&Fカントリー","lat":36.30297,"lon":137.92196,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"11:00-20:00","tel":"+81 50 4560 2073"}
+]

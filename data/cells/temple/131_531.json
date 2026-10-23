@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:11637195635","name":"秋吉神社","lat":32.76414,"lon":132.76629,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13045035601","name":"貴船神社（Kifune Shrine）","lat":32.94392,"lon":132.98736,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:549283428","name":"常栄神社","lat":32.98725,"lon":132.9162,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:565999074","name":"愛宕神社","lat":32.90376,"lon":132.83452,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:661651662","name":"一條神社","lat":32.99334,"lon":132.93418,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1251957083","name":"日室天神宮","lat":32.75865,"lon":132.78411,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

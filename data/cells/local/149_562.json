@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4977185102","name":"売店","lat":37.34443,"lon":140.674,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14281990824","name":"おのファミリーランドオートキャンプ場","lat":37.3267,"lon":140.58435,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"http://www.onofami.server-shared.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-5337-5365"},
+{"id":"osm:node:14285398040","name":"camp circle きずな","lat":37.33324,"lon":140.67437,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://campcircle-kizuna.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-5656-3395"},
+{"id":"osm:node:14286350487","name":"高塚高原キャンプ場","lat":37.35022,"lon":140.71523,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0240-38-2115"},
+{"id":"osm:node:14286350489","name":"ACNあぶくまキャンプランド","lat":37.32888,"lon":140.5813,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://abucam.co.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0247-73-2945"},
+{"id":"osm:node:14286350490","name":"緑とのふれあいの森公園","lat":37.31101,"lon":140.57407,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0247-72-3597"},
+{"id":"osm:node:14286401022","name":"スカイパレスときわオートキャンプ場","lat":37.47469,"lon":140.66325,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286401028","name":"ホップガーデンオートキャンプ場","lat":37.43165,"lon":140.72625,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286401029","name":"101オートキャンプ場","lat":37.42959,"lon":140.67172,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0247-77-4001"},
+{"id":"osm:node:14286479021","name":"ジュピアランドひらた","lat":37.26052,"lon":140.53788,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0247-55-3535"}
+]

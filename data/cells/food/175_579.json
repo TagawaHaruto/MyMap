@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5049867321","name":"コーヒーチップトマリ","lat":43.96058,"lon":144.83744,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5564043788","name":"Baa-Lamb Bakery","lat":43.91131,"lon":144.79892,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

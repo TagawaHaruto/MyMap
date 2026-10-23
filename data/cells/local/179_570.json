@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1544366663","name":"枝幸魚地方卸売市場","lat":44.93606,"lon":142.58637,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:2507563999","name":"ふれあいの森キャンプ場","lat":44.78023,"lon":142.50705,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.esashi.jp/tourism/page.html?id=83","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9161918424","name":"うたのぼりコテージの里","lat":44.7864,"lon":142.51976,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://greenpark.esashi.biz/page1","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:403649089","name":"ウスタイベ千畳岩キャンプ場","lat":44.96053,"lon":142.58205,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

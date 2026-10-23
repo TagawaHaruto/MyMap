@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:10756240889","name":"梅の里会館","lat":35.55983,"lon":135.86987,"pref":"福井","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:10754844771","name":"日向漁港","lat":35.61331,"lon":135.89437,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:221956643","name":"美浜町総合体育館","lat":35.60285,"lon":135.91407,"pref":"福井","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:662888474","name":"美浜町総合運動公園","lat":35.60149,"lon":135.91258,"pref":"福井","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4226448292","name":"水晶浜","lat":35.68618,"lon":135.97757,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286934765","name":"松原キャンプ場","lat":35.60821,"lon":135.92784,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0770-32-1720"},
+{"id":"osm:node:14286934773","name":"虹岳島荘・屋形船","lat":35.58919,"lon":135.89394,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0770-45-0255"},
+{"id":"osm:node:14286955231","name":"丹生白浜キャンプ場","lat":35.70339,"lon":135.97152,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0770-39-1241"},
+{"id":"osm:node:14286978597","name":"ダイヤモンドビーチ･ダイヤ浜キャンプ場","lat":35.67729,"lon":135.97357,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287084565","name":"森と暮らすどんぐり倶楽部","lat":35.56231,"lon":135.97391,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0770-32-3330"},
+{"id":"osm:node:14287084566","name":"福井県立三方青年の家","lat":35.56019,"lon":135.89436,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0770-45-0229"},
+{"id":"osm:node:14287084567","name":"伴走舎キャンプサイト","lat":35.55828,"lon":135.89869,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1179657848","name":"丹生オートキャンプ場","lat":35.70532,"lon":135.9725,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

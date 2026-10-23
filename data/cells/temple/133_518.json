@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4583422654","name":"天満宮","lat":33.36829,"lon":129.55178,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6920864399","name":"天満神社","lat":33.37254,"lon":129.55113,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7041183418","name":"鄭成功廟","lat":33.32781,"lon":129.52222,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:7365586597","name":"正宗寺","lat":33.36885,"lon":129.55,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13256237530","name":"寿福寺","lat":33.3084,"lon":129.63081,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:418971124","name":"田平天主堂","lat":33.33969,"lon":129.57717,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","tel":"0950-57-0254"},
+{"id":"osm:way:495089965","name":"西福寺","lat":33.2575,"lon":129.74222,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:621942925","name":"護国神社","lat":33.36805,"lon":129.55767,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ごこく じんじゃ"},
+{"id":"osm:way:753606048","name":"金毘羅神社","lat":33.33086,"lon":129.52015,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

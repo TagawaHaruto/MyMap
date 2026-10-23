@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:24294712","name":"ひょうたん沼公園","lat":42.07279,"lon":140.79756,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:39375097","name":"鹿部公園","lat":42.03244,"lon":140.81066,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:41303885","name":"山村広場","lat":42.04264,"lon":140.80487,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:41303881","name":"山村広場","lat":42.04355,"lon":140.80459,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:593268890","name":"XPC COMPOUND Shikabe","lat":42.0333,"lon":140.78603,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

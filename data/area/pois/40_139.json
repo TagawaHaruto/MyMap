@@ -1,0 +1,9 @@
+[
+{"name":"道の駅おおがた","lat":40.0153623,"lon":139.9515724,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅はちもり","lat":40.4212179,"lon":139.9488364,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"日本キャニオン展望所","lat":40.5580093,"lon":139.9661143,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"展望台広場","lat":40.4211998,"lon":139.9491665,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"はまなす展望台","lat":40.2089793,"lon":139.99821980000002,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"崩山","lat":40.5500436,"lon":139.9998092,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E5%B4%A9%E5%B1%B1","k":"scenic"},
+{"name":"入道崎","lat":40.0065838,"lon":139.7007,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E5%85%A5%E9%81%93%E5%B4%8E","k":"scenic"}
+]

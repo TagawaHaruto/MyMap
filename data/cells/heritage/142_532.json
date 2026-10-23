@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6326091433","name":"権現山洞窟住居跡","lat":35.54346,"lon":133.20988,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6326091435","name":"サルガ鼻洞窟住居跡","lat":35.5321,"lon":133.19542,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6327397356","name":"菅谷古墳","lat":35.54715,"lon":133.21212,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6332134534","name":"佐太講武貝塚","lat":35.51672,"lon":133.00938,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6421028904","name":"忠魂碑","lat":35.50037,"lon":133.08134,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6552983867","name":"大乗妙典塔","lat":35.5544,"lon":133.04905,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6552983868","name":"忠霊碑","lat":35.55354,"lon":133.04919,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6560821985","name":"興農大里","lat":35.56487,"lon":133.06442,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6562825856","name":"福原町竣工記念碑","lat":35.51655,"lon":133.10453,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6567832347","name":"船溜修築記念","lat":35.59704,"lon":133.0925,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10275297930","name":"慰霊碑","lat":35.58378,"lon":133.09827,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10558981252","name":"竣工記念碑","lat":35.54988,"lon":133.05689,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1015382335","name":"旅館 三保の松","lat":35.54512,"lon":133.2249,"pref":"鳥取","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3055227288","name":"味処・民宿まつや","lat":35.55076,"lon":133.22989,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"limited"},
+{"id":"osm:node:4443759291","name":"かぐら旅館","lat":35.54619,"lon":133.22667,"pref":"鳥取","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4582281827","name":"御宿　野乃","lat":35.54523,"lon":133.22359,"pref":"鳥取","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"おにゃどののさかいみなと"},
+{"id":"osm:node:6140219743","name":"旅籠屋境港店","lat":35.54238,"lon":133.24288,"pref":"鳥取","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

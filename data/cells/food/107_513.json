@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12206412824","name":"ふれあい食堂　なんと屋","lat":26.86132,"lon":128.25464,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://www.sekirinzan.com/restaurant/","note":"飲食店","g":"food","k":"restaurant","oh":"10:00-16:00"},
+{"id":"osm:node:9740542484","name":"ふしくぶカフェ","lat":26.8725,"lon":128.26326,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","wc":"yes"},
+{"id":"osm:way:248442261","name":"辺戸岬こうようパーラー","lat":26.87206,"lon":128.26359,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

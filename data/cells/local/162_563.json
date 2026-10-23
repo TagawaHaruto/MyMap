@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:14218359728","name":"青森散弾銃射撃場","lat":40.71243,"lon":140.75747,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:677249209","name":"八甲田ビューCC","lat":40.61086,"lon":140.98011,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7705885185","name":"酸ケ湯キャンプ場","lat":40.64797,"lon":140.84826,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"017-738-6566"},
+{"id":"osm:node:7722319385","name":"下湯ダム公園キャンプ場","lat":40.69132,"lon":140.78341,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177357","name":"モヤヒルズ オートキャンプ場","lat":40.73789,"lon":140.79325,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"017-764-1110"},
+{"id":"osm:node:14286211423","name":"酸ヶ湯キャンプ場","lat":40.64781,"lon":140.85097,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"017-738-6566"}
+]

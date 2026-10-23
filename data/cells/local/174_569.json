@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5219099923","name":"enjoyタバコ","lat":43.74744,"lon":142.39824,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:205323671","name":"ほっともっと 旭川旭神店 (Hotto Motto)","lat":43.73477,"lon":142.38872,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:364840296","name":"美瑛町スポーツセンター","lat":43.58376,"lon":142.47469,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:637457276","name":"フォレスト旭川カントリークラブ","lat":43.70505,"lon":142.36353,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.forest-asahikawacc.com/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81-166-75-3300"},
+{"id":"osm:way:936550860","name":"大雪山カントリークラブ","lat":43.65265,"lon":142.49723,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.taisetsuzan.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいせつざんかんとりーくらぶ","tel":"+81 166 83 2011"},
+{"id":"osm:node:2506332022","name":"神楽岡公園少年キャンプ村","lat":43.74924,"lon":142.36866,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4709993525","name":"キャンプ場","lat":43.74722,"lon":142.31678,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10803779880","name":"千代田の丘キャンプ場","lat":43.54358,"lon":142.49149,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12010786146","name":"THE FIRST BASE","lat":43.71981,"lon":142.32916,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://the-first-base.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286040982","name":"カムイの杜公園キャンプ場","lat":43.74565,"lon":142.31714,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0166-63-4045"},
+{"id":"osm:node:14287644557","name":"西神楽公園キャンプ場","lat":43.68374,"lon":142.39545,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0166-75-3669"}
+]

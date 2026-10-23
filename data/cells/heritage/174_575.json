@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:7709373083","name":"相生線 布川駅跡","lat":43.58383,"lon":143.97538,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7709436864","name":"相生線 開拓仮乗降場跡","lat":43.60326,"lon":143.97958,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:516389955","name":"湖のオーベルジュ　チミケップホテル","lat":43.63491,"lon":143.88009,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

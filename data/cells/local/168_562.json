@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:310918963","name":"高橋鮮魚店","lat":42.10709,"lon":140.57788,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1356731981","name":"砂原地方卸売市場","lat":42.12552,"lon":140.6864,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:310751187","name":"サンビレッジ森","lat":42.1005,"lon":140.57195,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"yes"},
+{"id":"osm:way:310751197","name":"森町立町民体育館","lat":42.10135,"lon":140.57135,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"limited"},
+{"id":"osm:way:383829878","name":"サニーズステーブル　丸馬場","lat":42.05109,"lon":140.61346,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:383830271","name":"サニーズステーブル　馬場","lat":42.05129,"lon":140.61391,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:383832348","name":"サニーズステーブル","lat":42.05088,"lon":140.61448,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:471291446","name":"東大沼キャンプ場","lat":42.01204,"lon":140.71581,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://town.nanae.hokkaido.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 138-67-3477"},
+{"id":"osm:node:14284414830","name":"駒ヶ岳茶房","lat":42.02945,"lon":140.62997,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14284414831","name":"fun Garden りも キャンプ場","lat":42.01517,"lon":140.64281,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://ys-kaisyo.co.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0137471512"},
+{"id":"osm:node:14284414832","name":"リブマックスリゾート函館 グリーンピア大沼キャンプ場","lat":42.00247,"lon":140.60531,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.gp-onuma.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0137452277"},
+{"id":"osm:node:14286168198","name":"緑とロックの広場","lat":42.06559,"lon":140.50332,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"01374-2-2181"}
+]

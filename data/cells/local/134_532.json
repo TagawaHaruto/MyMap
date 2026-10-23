@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:388909587","name":"越知町民総合運動場","lat":33.5265,"lon":133.24645,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:969470123","name":"旭健康増進センター","lat":33.54201,"lon":133.04708,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1954794489","name":"面河第一キャンプ場","lat":33.72626,"lon":133.10323,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1956355667","name":"小浜キャンプ場","lat":33.53959,"lon":133.23602,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-26-1164"},
+{"id":"osm:node:4193139287","name":"Camping area","lat":33.60669,"lon":133.16845,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://www.niyodo.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-20-9619"},
+{"id":"osm:node:14287571147","name":"夢の森公園キャンプ場","lat":33.56818,"lon":133.0949,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-35-1083"},
+{"id":"osm:node:14287578037","name":"星ヶ窪キャンプ場","lat":33.50017,"lon":133.13495,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-32-1041"},
+{"id":"osm:node:14287582621","name":"仁淀川町吾川スカイパーク","lat":33.5776,"lon":133.07451,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-35-1083"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:2478953435","name":"四ツ塚古墳群","lat":35.29517,"lon":133.71481,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:6325830899","name":"斎尾廃寺跡","lat":35.48147,"lon":133.71148,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:斎尾廃寺跡"},
+{"id":"osm:node:6466569801","name":"船上山行宮之碑","lat":35.42999,"lon":133.59795,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6501839153","name":"飛翔","lat":35.49616,"lon":133.64766,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6531953052","name":"念ずれば花ひらく","lat":35.43327,"lon":133.62296,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11304344757","name":"源流潤郷","lat":35.32243,"lon":133.52459,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:760955221","name":"泰久寺駅跡","lat":35.36601,"lon":133.72391,"pref":"鳥取","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:泰久寺駅"},
+{"id":"osm:node:5594037175","name":"山の宿 中の原ぎんれい","lat":35.3962,"lon":133.53422,"pref":"鳥取","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6435593028","name":"ひるぜん塩釜キャンピングヴィレッジ","lat":35.30114,"lon":133.67908,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13070061153","name":"コテージ蒜山の森 白壁のログコテージ","lat":35.26577,"lon":133.59699,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.hiruzen-no-mori.com/%E3%82%B3%E3%83%86%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7/%E7%99%BD%E5%A3%81%E3%81%AE%E3%83%AD%E3%82%B0%E3%82%B3%E3%83%86%E3%83%BC%E3%82%B8-15%E5%90%8D%E6%A7%98/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13070061154","name":"グランピングログコテージ ヴィラ","lat":35.26612,"lon":133.59756,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.morinosanpo.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13208542318","name":"フェアフィールド・バイ・マリオット 岡山蒜山高原","lat":35.27712,"lon":133.62253,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14287365303","name":"ログペンション森の散歩","lat":35.26615,"lon":133.59756,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:relation:2167620","name":"蒜山倶楽部 Nadja","lat":35.29641,"lon":133.67125,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1314312897","name":"蒜山インターホテル","lat":35.27487,"lon":133.61341,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-66-3136"}
+]

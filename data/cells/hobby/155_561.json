@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:5013407359","name":"会田輪店","lat":38.75558,"lon":140.30443,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013425339","name":"ネクサス 新庄店","lat":38.75192,"lon":140.30973,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013576825","name":"ツタヤ","lat":38.75885,"lon":140.30013,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013577125","name":"ブックユー","lat":38.75902,"lon":140.3,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013716152","name":"大泉書店","lat":38.76496,"lon":140.30001,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013716323","name":"サイクルショップ青山","lat":38.76855,"lon":140.30137,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013716535","name":"タカハシスポーツ","lat":38.76399,"lon":140.29873,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"Th-Tu 09:00-19:00"},
+{"id":"osm:node:5013716546","name":"丸井八文字屋","lat":38.7636,"lon":140.30431,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013716547","name":"田澤","lat":38.76219,"lon":140.29802,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5013725725","name":"正野自転車店","lat":38.76938,"lon":140.30132,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5016234246","name":"佐藤輪業","lat":38.75997,"lon":140.30456,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5016234327","name":"マルモトつり具店","lat":38.76022,"lon":140.30453,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5017209835","name":"ホンダウイングサイトー","lat":38.7752,"lon":140.30038,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5019023949","name":"中川輪店","lat":38.8107,"lon":140.32445,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5019613228","name":"共栄商事","lat":38.85852,"lon":140.25364,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9756989838","name":"セカンドストリート","lat":38.77419,"lon":140.30953,"pref":"山形","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

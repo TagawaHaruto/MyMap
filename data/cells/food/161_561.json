@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:10766379143","name":"予約型農家レストラン 南白神の里","lat":40.27064,"lon":140.25651,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:450185779","name":"白神山地 森のえき","lat":40.30829,"lon":140.28751,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:832860213","name":"ラーメンショップ アジキュー 鷹巣店","lat":40.252,"lon":140.38224,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:832860214","name":"らぁめん元気屋","lat":40.2526,"lon":140.38416,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:832860217","name":"うるとら","lat":40.25292,"lon":140.3845,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1041875865","name":"蔵寿司","lat":40.28236,"lon":140.45926,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1054349799","name":"ドライブイン 虎屋","lat":40.27926,"lon":140.4614,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1055751486","name":"山城屋","lat":40.27122,"lon":140.44405,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1055772608","name":"ラーメン 弁慶","lat":40.27293,"lon":140.44214,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1157377008","name":"お食事処憩","lat":40.27983,"lon":140.2605,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1157652117","name":"ちゃこ","lat":40.27876,"lon":140.26514,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1162987427","name":"カフェ岳","lat":40.26241,"lon":140.25532,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:1055751522","name":"居酒屋 琴","lat":40.27125,"lon":140.4431,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:1055772555","name":"いざかや 海","lat":40.27373,"lon":140.44398,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:1157377009","name":"居酒屋ふる里","lat":40.27952,"lon":140.26065,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:1157640834","name":"居酒屋 花道","lat":40.27648,"lon":140.26435,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:1157659899","name":"ごん太","lat":40.2819,"lon":140.26405,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5714034921","name":"豊浜トンネル崩落事故慰霊碑","lat":43.2541,"lon":140.68491,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3086081075","name":"みはらし","lat":43.29434,"lon":140.62406,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"みはらし"},
+{"id":"osm:node:3086081084","name":"中央旅館","lat":43.26579,"lon":140.63881,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ちゅうおうりょかん"},
+{"id":"osm:node:3104867026","name":"ほり旅館","lat":43.27392,"lon":140.63556,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ほりりょかん"},
+{"id":"osm:node:3104867028","name":"リフォレ積丹ユースホステル","lat":43.31588,"lon":140.54037,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://refore.eco.coocan.jp/youkoso_ji_dan_ban_daohe/Welcome.html","note":"宿","g":"heritage","k":"lodging","wp":"ja:リフォレ積丹ホステル"},
+{"id":"osm:node:5677279521","name":"美国観光","lat":43.29905,"lon":140.59944,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

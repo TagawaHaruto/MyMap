@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:6110722142","name":"津別峠","lat":43.57729,"lon":144.22446,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5207877729","name":"みぃとインつべつ","lat":43.70423,"lon":144.03578,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

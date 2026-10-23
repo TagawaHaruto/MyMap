@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4458808896","name":"釣具","lat":33.75783,"lon":129.68055,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:442879234","name":"ｹﾞｵ壱岐店","lat":33.7653,"lon":129.70014,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"ホビー・模型","g":"hobby","k":"hobby","tel":"0920-48-1611"},
+{"id":"osm:way:449799365","name":"新古屋","lat":33.76401,"lon":129.70034,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

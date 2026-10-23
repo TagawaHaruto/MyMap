@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4198087581","name":"うかいや書店","lat":35.00754,"lon":134.36399,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9958358888","name":"前田書店","lat":35.00478,"lon":134.35766,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9958358904","name":"タケダスポーツ","lat":35.00448,"lon":134.35699,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

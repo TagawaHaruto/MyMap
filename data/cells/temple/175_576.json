@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4364689389","name":"緋牛内神社","lat":43.88252,"lon":144.00181,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4969312079","name":"栄森神社","lat":43.75576,"lon":144.01106,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6989693418","name":"二見湖畔神社","lat":43.9965,"lon":144.23168,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8258623421","name":"豊富神社","lat":43.75303,"lon":144.17605,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:483757921","name":"善立寺","lat":43.82511,"lon":144.10126,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ぜんりゅうじ"},
+{"id":"osm:way:483758007","name":"本妙寺","lat":43.8249,"lon":144.09945,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ほんみょうじ"},
+{"id":"osm:way:483758022","name":"弘榮寺","lat":43.82462,"lon":144.10025,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"こうえいじ"},
+{"id":"osm:way:483758060","name":"瑞宝寺","lat":43.82563,"lon":144.10226,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ずいほうじ"},
+{"id":"osm:way:483937560","name":"カトリック美幌教会","lat":43.82815,"lon":144.10874,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.csd.or.jp/kitami","note":"教会","g":"temple","k":"worship","kana":"かとりっくびほろきょうかい","tel":"+81 152 72 1735"},
+{"id":"osm:way:484359289","name":"浄土寺","lat":43.82042,"lon":144.10002,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"じょうどじ"},
+{"id":"osm:way:484359370","name":"美幌神社","lat":43.81931,"lon":144.09894,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"びほろじんじゃ"},
+{"id":"osm:way:488033908","name":"女満別神社","lat":43.91816,"lon":144.18052,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"めまんべつじんじゃ","pk":2},
+{"id":"osm:way:488251268","name":"満照寺","lat":43.91184,"lon":144.17478,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:relation:7128215","name":"観照寺","lat":43.82333,"lon":144.10033,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"かんしょうじ"},
+{"id":"osm:relation:7128216","name":"美教寺","lat":43.82413,"lon":144.09773,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"びきょうじ"},
+{"id":"osm:relation:7170348","name":"満福禅寺","lat":43.91132,"lon":144.1756,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","pk":2},
+{"id":"osm:way:705614621","name":"田中神社","lat":43.82206,"lon":144.1877,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"たなかじんじゃ"},
+{"id":"osm:way:1080055453","name":"弘明寺","lat":43.91548,"lon":144.17524,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1080055454","name":"妙行寺","lat":43.9131,"lon":144.18101,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"みょうぎょうじ"},
+{"id":"osm:way:1080055455","name":"広徳寺","lat":43.9139,"lon":144.177,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"こうとくじ"},
+{"id":"osm:way:1308545791","name":"東行寺","lat":43.91296,"lon":144.17635,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:8378105055","name":"頭首工竣功記念碑","lat":42.61116,"lon":142.13933,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5039917342","name":"富川シティホテル","lat":42.52347,"lon":142.0177,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5472512422","name":"びらとり温泉ゆから","lat":42.64605,"lon":142.16525,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0154723280"},
+{"id":"osm:node:11921790169","name":"Hotel Shun","lat":42.58595,"lon":142.13613,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:424863533","name":"山口フラワーランド","lat":33.98206,"lon":132.08998,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425928011","name":"アデリーホシパーク(旧、柳井ウェルネスパーク)","lat":33.98365,"lon":132.08341,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425934722","name":"南浜グラウンド","lat":33.9592,"lon":132.11485,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425948275","name":"中電グラウンド","lat":33.95403,"lon":132.12163,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425948277","name":"SL公園","lat":33.9653,"lon":132.10367,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:441546793","name":"ふるさと詩情公園","lat":33.95567,"lon":132.03855,"pref":"山口","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425934723","name":"南浜テニスコート","lat":33.95953,"lon":132.1162,"pref":"山口","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:425948276","name":"中電テニスコート","lat":33.95348,"lon":132.1211,"pref":"山口","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:585998628","name":"高太郎公園","lat":31.28542,"lon":130.23136,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:585998668","name":"丸山島公園","lat":31.38293,"lon":130.22419,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:660130462","name":"ほきの山公園","lat":31.40762,"lon":130.20035,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:679387841","name":"笠沙公園","lat":31.41174,"lon":130.18587,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:611793231","name":"笠沙公園グラウンド","lat":31.41221,"lon":130.18579,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","pk":2}
+]

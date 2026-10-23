@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:8301490417","name":"伊是名玉御殿","lat":26.91562,"lon":127.95175,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic","kana":"いぜなたまうどぅん"},
+{"id":"osm:node:8117365117","name":"なかがわ館","lat":26.92854,"lon":127.94176,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8117365318","name":"いずみ荘","lat":26.92856,"lon":127.94156,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

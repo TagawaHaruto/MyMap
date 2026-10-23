@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6206738508","name":"男山伊弥登牟多の碑","lat":43.85459,"lon":144.41026,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6206786860","name":"小清水駅跡","lat":43.85781,"lon":144.46541,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8928738836","name":"砥草原小学校之跡","lat":43.80506,"lon":144.43636,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8946627386","name":"絆","lat":43.84047,"lon":144.28525,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8946627401","name":"歌碑","lat":43.83865,"lon":144.28526,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8946627402","name":"開拓百年之碑","lat":43.83862,"lon":144.28528,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8969292312","name":"横道彦六翁の像","lat":43.85664,"lon":144.46276,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8969292313","name":"八木吉助翁顕彰碑","lat":43.85659,"lon":144.46285,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8969292314","name":"小清水町民憲章","lat":43.85657,"lon":144.46273,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9930451397","name":"旧小清水高等学校","lat":43.85642,"lon":144.47407,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10083657181","name":"天皇陛下散策記念碑","lat":43.94166,"lon":144.41362,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10083657182","name":"知床連山石碑","lat":43.94169,"lon":144.41417,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5166969088","name":"樹林","lat":43.93091,"lon":144.44297,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5816725498","name":"ホテル ひがしもこと","lat":43.84518,"lon":144.29485,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ほてるひがしもこと"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3378053509","name":"奥尻港","lat":42.17572,"lon":139.51687,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:奥尻港"},
+{"id":"osm:node:10841586799","name":"うにまるキャンプ場～NONA BASE～","lat":42.15293,"lon":139.52095,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286168192","name":"賽の河原キャンプ場","lat":42.23791,"lon":139.54922,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"01397-2-2351"}
+]

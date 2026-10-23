@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1674105075","name":"大木書店","lat":35.7837,"lon":137.69395,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:1675234862","name":"ナカムラモーター","lat":35.78184,"lon":137.6934,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:3640251038","name":"ブックガーデンやま路","lat":35.86728,"lon":137.74018,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3640405074","name":"やま路書店","lat":35.85017,"lon":137.69782,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

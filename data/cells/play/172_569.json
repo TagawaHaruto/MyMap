@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:851737731","name":"山部中央公園","lat":43.2447,"lon":142.3828,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:971498725","name":"かなやま湖森林公園","lat":43.1601,"lon":142.49305,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:840384431","name":"富良野市民球場","lat":43.23095,"lon":142.37414,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

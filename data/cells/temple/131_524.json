@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2919729984","name":"天神さん","lat":32.81453,"lon":131.09203,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4135852718","name":"福の神地蔵尊","lat":32.97816,"lon":131.05185,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4146802631","name":"道智寺","lat":32.97384,"lon":131.03961,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4146802638","name":"浄信寺","lat":32.97385,"lon":131.04026,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4146834598","name":"満徳寺","lat":32.9738,"lon":131.03773,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4146835739","name":"明行寺","lat":32.9761,"lon":131.03897,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4156838776","name":"菅原神社","lat":32.97676,"lon":131.03859,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4156838777","name":"内牧菅原神社","lat":32.97519,"lon":131.03447,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5280165123","name":"色見熊野座神社","lat":32.84529,"lon":131.11691,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8836115485","name":"清水寺","lat":32.80021,"lon":131.09043,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"きよみずでら"},
+{"id":"osm:node:14219374101","name":"今町神社 Imamachi Shrine","lat":32.97162,"lon":131.06818,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:244517995","name":"阿蘇山本堂　西巌殿寺奥之院","lat":32.88009,"lon":131.07499,"pref":"熊本","genres":["temple"],"indoor":false,"url":"http://www.saigandenji.com/okunoin/","note":"寺","g":"temple","k":"worship","tel":"0967-34-0928"},
+{"id":"osm:way:410995853","name":"八面社","lat":32.81031,"lon":131.10496,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:411249338","name":"法輪寺","lat":32.93689,"lon":131.04697,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:415424111","name":"蛇石神社","lat":32.91115,"lon":131.00271,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:415679332","name":"産神社","lat":32.94717,"lon":131.00675,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:415682525","name":"天満宮","lat":32.96729,"lon":131.03376,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:416540345","name":"霜宮神社","lat":32.94824,"lon":131.0917,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:424676197","name":"阿蘇山上神社","lat":32.88,"lon":131.07555,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1057092848","name":"矢村神社","lat":32.94953,"lon":131.11609,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

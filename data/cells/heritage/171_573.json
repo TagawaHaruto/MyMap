@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4424496111","name":"Tokachigawa Onsen Sanyoan","lat":42.93296,"lon":143.29615,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5125321836","name":"ホテル山庄","lat":42.95799,"lon":143.25934,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5125400882","name":"ベルエールの森","lat":42.93548,"lon":143.29472,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5125400883","name":"アマンの休日","lat":42.87731,"lon":143.41876,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1417647597","name":"笹井ホテル","lat":42.9331,"lon":143.30288,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.sasaihotel.com/","note":"宿","g":"heritage","k":"lodging","kana":"ささいほてる","tel":"+81 155 46 2211"},
+{"id":"osm:way:1417647598","name":"ホテル大平原","lat":42.93142,"lon":143.30309,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.daiheigen.com/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるだいへいげん","tel":"+81 155 46 2121"}
+]

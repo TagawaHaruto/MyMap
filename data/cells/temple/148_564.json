@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2972307909","name":"鹿嶋神社","lat":37.2101,"lon":141.00266,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2972307922","name":"朝見寺修行院","lat":37.20904,"lon":141.00048,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6435457057","name":"蹴球神社","lat":37.24516,"lon":141.00296,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13971096001","name":"弁天島","lat":37.11918,"lon":141.00051,"pref":"福島","genres":["temple"],"indoor":false,"url":"https://www.city.iwaki.lg.jp/www/contents/1480645369048/index.html","note":"寺社・教会","g":"temple","k":"worship","kana":"べんてんじま"},
+{"id":"osm:way:335301959","name":"古峯神社","lat":37.22587,"lon":141.00398,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:743212700","name":"姥嶽蛇王神社","lat":37.20767,"lon":141.00417,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

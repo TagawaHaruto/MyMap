@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5360522660","name":"仲自転車店","lat":35.4401,"lon":135.32838,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5360522763","name":"セノサイクル","lat":35.44517,"lon":135.33506,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5388996336","name":"さがねスポーツ","lat":35.29959,"lon":135.25202,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5389330072","name":"田所商会","lat":35.29777,"lon":135.26005,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5389351749","name":"高橋釣具店","lat":35.30149,"lon":135.25701,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5389354031","name":"おおつきサイクル","lat":35.30193,"lon":135.2571,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:10920660591","name":"Alpen","lat":35.44721,"lon":135.30202,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:42932770","name":"宮脇書店","lat":35.46609,"lon":135.39245,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:98572955","name":"Moto Wins","lat":35.47337,"lon":135.38868,"pref":"京都","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","oh":"10:30-19:00","tel":"81+773625526"}
+]

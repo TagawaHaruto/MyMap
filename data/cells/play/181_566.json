@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:61797658","name":"北防波堤ドーム公園　交流広場","lat":45.41996,"lon":141.67876,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:61842142","name":"中央公園","lat":45.41913,"lon":141.67658,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:259154588","name":"ノシャップ公園","lat":45.44449,"lon":141.64824,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:291707643","name":"港公園","lat":45.40047,"lon":141.67679,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:315708658","name":"北防波堤ドーム公園　イベント広場","lat":45.41929,"lon":141.68058,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:317191932","name":"宝来公園","lat":45.42593,"lon":141.67014,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:936659950","name":"恵山泊漁港公園","lat":45.44868,"lon":141.64369,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:182401455","name":"市営球場","lat":45.38686,"lon":141.68013,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:259332218","name":"稚内市大沼球場","lat":45.40025,"lon":141.7477,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","wp":"ja:稚内市大沼球場"},
+{"id":"osm:way:379337169","name":"稚内市勇知地区水泳プール","lat":45.25685,"lon":141.68868,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:node:770558609","name":"T・ジョイ稚内","lat":45.41703,"lon":141.67662,"pref":"北海道","genres":["play"],"indoor":true,"url":"","note":"映画館","g":"play","k":"amuse","wc":"yes"},
+{"id":"osm:node:2671030667","name":"遊ランド","lat":45.40075,"lon":141.68087,"pref":"北海道","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"}
+]

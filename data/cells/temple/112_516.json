@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4579906147","name":"金毘羅神社","lat":28.239,"lon":129.17432,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12113977018","name":"実久三次郎神社","lat":28.18552,"lon":129.18697,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12114565129","name":"西家神社","lat":28.18096,"lon":129.20248,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12162981027","name":"厳島神社","lat":28.11242,"lon":129.22261,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12163061885","name":"瀬相権現神社","lat":28.1221,"lon":129.24414,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1308293001","name":"厳島神社","lat":28.14631,"lon":129.21256,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1314099642","name":"西阿室 カトリック教会","lat":28.11199,"lon":129.22062,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

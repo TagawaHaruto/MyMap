@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:10877228141","name":"新得神社","lat":43.08539,"lon":142.82607,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10877228142","name":"猿田彦大神","lat":43.08531,"lon":142.82557,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10877228143","name":"弥彦神社","lat":43.08497,"lon":142.82544,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13929922713","name":"人舞神社","lat":43.04747,"lon":142.9195,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:747466846","name":"鹿追キリスト教会","lat":43.1033,"lon":142.98783,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:749963789","name":"笹川神社","lat":43.13167,"lon":142.99189,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:749967466","name":"玄誓寺","lat":43.107,"lon":142.98302,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:749967500","name":"禅昭寺","lat":43.10171,"lon":142.98492,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:749979564","name":"鹿追神社社務所","lat":43.09879,"lon":142.98448,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:749979565","name":"鹿追神社","lat":43.09924,"lon":142.98395,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:787549194","name":"エホバの証人の王国会館","lat":43.10319,"lon":142.89979,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:3365887958","name":"鮨・天ぷら　いしはら","lat":39.34975,"lon":141.34989,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3365890252","name":"焼肉レストラン　みまつ","lat":39.35052,"lon":141.34916,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3365892192","name":"孝和園","lat":39.37402,"lon":141.25126,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5918330073","name":"米田屋","lat":39.39928,"lon":141.34008,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:399009913","name":"中国料理 広東厨房","lat":39.30749,"lon":141.37955,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1313595402","name":"本家ねぎみそ屋","lat":39.47314,"lon":141.27867,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"11:00-15:00","tel":"0198482242"},
+{"id":"osm:way:1313595403","name":"レストランベルンドルフ","lat":39.47363,"lon":141.28248,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1424962266","name":"朔望","lat":39.30318,"lon":141.42552,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:1494110878","name":"しらいし屋","lat":39.38199,"lon":141.3418,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1425132797","name":"隠れ家いつき","lat":39.30259,"lon":141.42216,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1425477691","name":"おっともちゃん","lat":39.26891,"lon":141.42275,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

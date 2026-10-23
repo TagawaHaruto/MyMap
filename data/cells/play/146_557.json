@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:1059750681","name":"俵石","lat":36.74003,"lon":139.42502,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:4157430154","name":"白根葵","lat":36.74244,"lon":139.48648,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5876263349","name":"松ヶ崎","lat":36.73845,"lon":139.45732,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5876274371","name":"白岩展望台","lat":36.73762,"lon":139.44227,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5876278669","name":"梵字岩","lat":36.73902,"lon":139.43688,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5876302749","name":"乙次郎橋","lat":36.74486,"lon":139.42154,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:345637362","name":"銀山平公園","lat":36.65395,"lon":139.4104,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:434716877","name":"東運動公園野球場","lat":36.53788,"lon":139.36954,"pref":"群馬","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

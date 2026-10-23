@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:13838657940","name":"面山森林公園","lat":34.78482,"lon":132.72172,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:737176661","name":"香六ダム公園","lat":34.78539,"lon":132.67738,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1352090832","name":"美郷町民グランド","lat":34.94066,"lon":132.6431,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:358278158","name":"山村広場","lat":34.99787,"lon":132.7101,"pref":"島根","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1378873990","name":"瑞穂町武道館","lat":34.85021,"lon":132.51949,"pref":"島根","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

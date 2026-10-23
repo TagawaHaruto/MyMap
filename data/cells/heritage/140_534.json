@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:9181945613","name":"高田城三の丸遺跡","lat":35.08826,"lon":133.69143,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:573259168","name":"渡辺屋敷","lat":35.08281,"lon":133.69191,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:3737642568","name":"湯原温泉 湯快感 花やしき","lat":35.20275,"lon":133.731,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.y-hanayashiki.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 867 62 3341"},
+{"id":"osm:node:5525157100","name":"湯原温泉 森のホテル ロシュフォール","lat":35.17784,"lon":133.73985,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.takagawa-g.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13070061166","name":"ゆばらの宿 米屋","lat":35.20166,"lon":133.73555,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.komeya.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-62-3775"},
+{"id":"osm:node:13070061169","name":"大江戸温泉物語 輝乃湯","lat":35.19383,"lon":133.73178,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.ooedoonsen.jp/terunoyu/","note":"宿","g":"heritage","k":"lodging","tel":"+81 50 3615 3456"},
+{"id":"osm:node:13070986440","name":"さつき荘","lat":35.19995,"lon":133.7325,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://satsukisou.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-62-2026"},
+{"id":"osm:node:13073647412","name":"旅館かど屋","lat":35.15629,"lon":133.62214,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-56-2081"},
+{"id":"osm:node:13073647416","name":"癒しの宿 やまなみ","lat":35.18082,"lon":133.56707,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"http://www.vill.shinjo.okayama.jp/index.php?id=156","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-56-2626"},
+{"id":"osm:way:573686228","name":"はらだ旅館","lat":35.08165,"lon":133.69516,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:574622264","name":"湯の蔵 つるや","lat":35.20047,"lon":133.7326,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"http://www.yunokura.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-62-2016"},
+{"id":"osm:way:574627885","name":"ゆばらリゾート","lat":35.20156,"lon":133.7312,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.net626.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-62-2600"},
+{"id":"osm:way:747003941","name":"岡本旅館","lat":35.07762,"lon":133.74642,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

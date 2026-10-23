@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:8555409909","name":"神蹟 美保之碕","lat":35.56744,"lon":133.32555,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332520456","name":"美保神社","lat":35.56223,"lon":133.30733,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332520458","name":"恵比須社","lat":35.56236,"lon":133.30733,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332520468","name":"おかげの井","lat":35.56228,"lon":133.30747,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332645933","name":"筑紫社 和田津見社","lat":35.56145,"lon":133.30889,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665738","name":"永世不諼","lat":35.56308,"lon":133.30874,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665763","name":"恵比須社","lat":35.56305,"lon":133.30863,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665769","name":"探古徴今 長存勝蹟","lat":35.56295,"lon":133.30845,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665785","name":"独り帰る 道 すがらの 桐の花おち","lat":35.56292,"lon":133.3083,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665789","name":"杯の数 かさなりて 夜はふけぬ 酔おもしろし 美保は風流","lat":35.56275,"lon":133.30809,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665790","name":"関の松さえ 切られりゃかなし 恋のえにしを 誰が切る","lat":35.56276,"lon":133.30802,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665794","name":"地蔵碕 わが乗る船も 大山も 沖の御前も 紺青のうえ","lat":35.56268,"lon":133.30785,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332665806","name":"烏賊の味 忘れで帰る 美保の関 虚子","lat":35.56239,"lon":133.30752,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332756982","name":"糺社","lat":35.56172,"lon":133.3078,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12803390838","name":"福浦小廃校記念碑","lat":35.55387,"lon":133.25795,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11332645950","name":"御宿 福間","lat":35.56245,"lon":133.30777,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1036071797","name":"ホテルエリアワン境港マリーナ","lat":35.51266,"lon":133.25053,"pref":"鳥取","genres":["lodging"],"indoor":true,"url":"https://www.hotel-areaone.com/sakaiminato/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1221933476","name":"貸切宿 和泉屋","lat":35.56275,"lon":133.30788,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1221933492","name":"旅館 美保館","lat":35.56273,"lon":133.30834,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:美保館"}
+]

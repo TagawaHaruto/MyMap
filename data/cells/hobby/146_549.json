@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2029829796","name":"文苑堂","lat":36.6828,"lon":137.25922,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"ぶねんど"},
+{"id":"osm:node:5253279531","name":"サイクルベースあさひ富山上飯野店","lat":36.71393,"lon":137.25002,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5267038830","name":"ハードオフ","lat":36.68698,"lon":137.25183,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5267038831","name":"オフハウス","lat":36.68699,"lon":137.25161,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:298793196","name":"明文堂書店 富山新庄経堂店","lat":36.69061,"lon":137.25173,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:541458722","name":"モンベルヴィレッジ 立山","lat":36.6866,"lon":137.29788,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:466069177","name":"高根城址公園","lat":35.14975,"lon":137.86756,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:3666702162","name":"浜松市水窪文化会館","lat":35.16637,"lon":137.86927,"pref":"静岡","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

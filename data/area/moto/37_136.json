@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2279406035","name":"道の駅能登食祭市場","lat":37.04875,"lon":136.96874,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:2950856668","name":"道の駅　のと里山空港","lat":37.2954,"lon":136.95744,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:4059783581","name":"道の駅「あなみず」","lat":37.22824,"lon":136.90463,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:288140698","name":"西山PA (下り)","lat":37.01134,"lon":136.80608,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:288140699","name":"西山PA (上り)","lat":37.0105,"lon":136.80694,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:288642432","name":"別所岳SA","lat":37.17953,"lon":136.85553,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:706168520","name":"道の駅ころ柿の里しか","lat":37.00745,"lon":136.78,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1451629191","name":"道の駅輪島 ふらっと訪夢","lat":37.38922,"lon":136.90639,"type":"SA・PA","k":"rest_area","likely":true}
+]

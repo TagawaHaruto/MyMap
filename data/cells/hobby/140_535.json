@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5109200358","name":"名和香美堂","lat":35.01754,"lon":133.75043,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5555474179","name":"TSUTAYA ブックス ウェストランド店","lat":35.06074,"lon":133.95892,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"http://store-tsutaya.tsite.jp/storelocator/detail/6509.html","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6442434386","name":"ブックオフ","lat":35.06139,"lon":133.95888,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10831164678","name":"長谷川硝子店","lat":35.06072,"lon":133.99664,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:10831177363","name":"柿木書店","lat":35.06001,"lon":133.99947,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10831185373","name":"中央印刷","lat":35.06067,"lon":133.99653,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:13018345149","name":"パワースポット","lat":35.05815,"lon":133.98422,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"https://lit.link/powerspot2016","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

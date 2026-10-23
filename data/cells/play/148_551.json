@@ -1,0 +1,18 @@
+[
+{"id":"osm:way:461500632","name":"駅前海望公園","lat":37.04626,"lon":137.86035,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:601460307","name":"アスレチック","lat":37.02565,"lon":137.86805,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:606566842","name":"体験学習広場","lat":37.02575,"lon":137.86616,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:606566848","name":"お花見広場","lat":37.02376,"lon":137.85771,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:606566850","name":"美山公園","lat":37.02468,"lon":137.86404,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:671787651","name":"姫川みなと公園","lat":37.03937,"lon":137.84246,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:671787657","name":"夕日ヶ丘公園","lat":37.04152,"lon":137.84318,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:671787677","name":"横町なかのきり公園","lat":37.03846,"lon":137.84847,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:691641775","name":"C12 SLパーク","lat":37.04224,"lon":137.85975,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:943759009","name":"八久保公園","lat":37.03041,"lon":137.82302,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1262117865","name":"梶浜公園","lat":37.05873,"lon":137.9075,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1262117873","name":"中宿シーサイドパーク","lat":37.06117,"lon":137.91468,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:358286843","name":"青海屋内水泳プール","lat":37.02072,"lon":137.81147,"pref":"新潟","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:461651568","name":"糸魚川市陸上競技場","lat":37.02298,"lon":137.86805,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:461651569","name":"糸魚川市営美山球場","lat":37.02318,"lon":137.86512,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:452580492","name":"糸魚川市会館青海総合文化会館・きらら青海","lat":37.02343,"lon":137.79799,"pref":"新潟","genres":["play"],"indoor":true,"url":"","note":"アートセンター","g":"play","k":"amuse"}
+]

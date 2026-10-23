@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:355367027","name":"霧島錦江湾国立公園ふれあいパーク佐多","lat":31.04776,"lon":130.67824,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:591848057","name":"長崎鼻パーキングガーデン","lat":31.16107,"lon":130.58619,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:624197997","name":"瀬平自然公園","lat":31.22048,"lon":130.50315,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686845770","name":"セントラルパーク指宿","lat":31.23858,"lon":130.64576,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686845776","name":"橋牟礼川公園","lat":31.22972,"lon":130.64563,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686845796","name":"大牟礼児童遊園","lat":31.24008,"lon":130.64193,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686845797","name":"ロータリー公園","lat":31.24167,"lon":130.6421,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686845798","name":"ゆのさと中央公園","lat":31.24324,"lon":130.63948,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686845826","name":"指宿西公園","lat":31.23502,"lon":130.64066,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:722908241","name":"成川公園","lat":31.20994,"lon":130.62826,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:722908244","name":"フラワーパークかごしま","lat":31.16712,"lon":130.58584,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:743814949","name":"湊児童公園","lat":31.23871,"lon":130.64685,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:939315350","name":"砂むしの里 交流広場","lat":31.23021,"lon":130.65173,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1388000553","name":"池田湖遊園地","lat":31.24652,"lon":130.54613,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1413416701","name":"開聞山麓自然公園","lat":31.17611,"lon":130.54882,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1454914258","name":"太平次公園","lat":31.24029,"lon":130.65056,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1455232543","name":"稲荷公園","lat":31.24215,"lon":130.64784,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1460795590","name":"丈六児童公園","lat":31.22743,"lon":130.64488,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

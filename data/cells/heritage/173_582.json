@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5940318114","name":"根室半島チャシ跡群","lat":43.39103,"lon":145.66862,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5942793481","name":"根室半島チャシ跡群","lat":43.2831,"lon":145.50547,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13140093746","name":"和田村道路元標","lat":43.26784,"lon":145.54078,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:629474648","name":"西月ヶ岡遺跡","lat":43.31591,"lon":145.55881,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"https://japan-heritage.bunka.go.jp/ja/culturalproperties/result/4759/","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307962477","name":"アッケシエト1号チャシ跡","lat":43.3229,"lon":145.55257,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307962479","name":"アッケシエト2号チャシ跡","lat":43.32185,"lon":145.55385,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307963054","name":"ニラウンケシ1号チャシ跡","lat":43.31486,"lon":145.54684,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307970124","name":"ノツカマフ1号チャシ跡","lat":43.39045,"lon":145.66901,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1307970125","name":"ノツカマフ2号チャシ跡","lat":43.39114,"lon":145.66931,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5154654659","name":"クイーンズコート","lat":43.31258,"lon":145.57402,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5154654660","name":"ホテル カーサねむろ","lat":43.36754,"lon":145.62697,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:185162171","name":"根室グランドホテル","lat":43.32876,"lon":145.58608,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.nemuro.co.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:186641955","name":"民宿ときわ","lat":43.3287,"lon":145.58742,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:241629908","name":"民宿たかの","lat":43.32989,"lon":145.57634,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:241898434","name":"ねむろグリーンホテル","lat":43.33253,"lon":145.57659,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ねむろぐりーんほてる"},
+{"id":"osm:way:242978428","name":"イーストハーバーホテル","lat":43.32706,"lon":145.57877,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://eastharbor-hotel.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:243626675","name":"ホテルねむろ海陽亭","lat":43.33105,"lon":145.58281,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.n-kaiyoutei.co.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ほてる ねむろかいようてい","tel":"+81 153 22 8881","pk":2},
+{"id":"osm:way:246511456","name":"ねむろエクハシの宿","lat":43.3256,"lon":145.5768,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:246511819","name":"レストランホテル ルピナス","lat":43.31357,"lon":145.54402,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:248023912","name":"お宿エクハシ","lat":43.32493,"lon":145.57696,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

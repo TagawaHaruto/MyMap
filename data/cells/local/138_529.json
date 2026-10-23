@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:143448030","name":"千代田GC","lat":34.69632,"lon":132.48729,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1442943752","name":"加計町民プール","lat":34.60994,"lon":132.31885,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7215002955","name":"広島市青少年野外活動センター 広島市こども村","lat":34.57759,"lon":132.43137,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285845200","name":"杉の泊ホビーフィールド すぎまりキャンプ場","lat":34.61945,"lon":132.27688,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285900903","name":"りゅうずの森 Base Camp 豊平","lat":34.65781,"lon":132.44461,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287476341","name":"茶ウナキャンプ場","lat":34.65851,"lon":132.29877,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://www.chaunacamp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4364-5657"},
+{"id":"osm:node:14287481854","name":"ドッグランROAN キャンプ広島","lat":34.58255,"lon":132.28292,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1338-5055"},
+{"id":"osm:node:14287484493","name":"柳瀬キャンプ場","lat":34.50637,"lon":132.48286,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287489822","name":"温井ダムリゾート","lat":34.63679,"lon":132.29505,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"082-625-0141"},
+{"id":"osm:node:14287489848","name":"龍頭峡交流の森キャンプ場","lat":34.54875,"lon":132.25341,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://forest-ac.jimdofree.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-32-2755"}
+]

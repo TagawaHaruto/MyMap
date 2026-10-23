@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:13154802366","name":"幸せの海鮮丼　つのしま食堂","lat":34.34979,"lon":130.84523,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1198221343","name":"晴海","lat":34.3007,"lon":130.88651,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:1198221344","name":"晴海","lat":34.30054,"lon":130.88646,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:1236508235","name":"LightHouse","lat":34.3525,"lon":130.84172,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1236508237","name":"夢岬","lat":34.35213,"lon":130.8431,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12464993989","name":"Goodies Ella","lat":34.32434,"lon":130.89827,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:421324152","name":"Agawa","lat":34.3361,"lon":130.92622,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1236034357","name":"ZERO CAFE","lat":34.30307,"lon":130.88653,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:2303851405","name":"だるま堂","lat":34.35932,"lon":130.97568,"pref":"山口","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:2303851406","name":"ケーキ工房","lat":34.36685,"lon":130.98637,"pref":"山口","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:9847264417","name":"角島ジェラートポポロ","lat":34.35372,"lon":130.90392,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"アイス","g":"food","k":"sweets"},
+{"id":"osm:node:14098092545","name":"Mamena","lat":34.28945,"lon":130.95697,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"アイス","g":"food","k":"sweets"}
+]

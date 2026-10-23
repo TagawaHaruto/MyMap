@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2160598160","name":"Daiso","lat":32.71313,"lon":130.34711,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2160617534","name":"Daiso","lat":32.69697,"lon":130.35226,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:7986467433","name":"オリンピック","lat":32.6102,"lon":130.47276,"pref":"熊本","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:659425418","name":"TSUTAYA","lat":32.66204,"lon":130.31109,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

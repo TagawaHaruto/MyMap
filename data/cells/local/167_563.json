@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:266685181","name":"すずらんの丘公園パークゴルフ場","lat":41.80633,"lon":140.80686,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:266685182","name":"函館ゴルフ倶楽部","lat":41.79492,"lon":140.80888,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://wwwc.ncv.ne.jp/~hgc/index.html","note":"遊び・スポーツ","g":"local","k":"activity","kana":"はこだてごるふくらぶ","tel":"+81 138 59 2318"},
+{"id":"osm:way:578927792","name":"函館高専第一体育館・第二体育館・武道場","lat":41.7823,"lon":140.80257,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:601216946","name":"函館パークカントリークラブ","lat":41.82757,"lon":140.82291,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://hakodateparkcc.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"はこだてぱーくかんとりーくらぶ","tel":"+81 138 55 2552"},
+{"id":"osm:way:984794651","name":"函館シーサイドカントリークラブ","lat":41.78418,"lon":140.86969,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.hakodate-seaside-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"はこだてしーさいどかんとりーくらぶ","tel":"+81 138 58 3361"},
+{"id":"osm:node:4450255194","name":"白石公園 はこだて オートキャンプ場","lat":41.75696,"lon":140.90085,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://shiroishi-park.hakodate.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81120546145"},
+{"id":"osm:node:9134792669","name":"南茅部河川公園","lat":41.93859,"lon":140.91321,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.hakobura.jp/db/db-fun/2010/08/post-12.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0138-25-5084"},
+{"id":"osm:node:12011096878","name":"すずらんヶ丘キャンプ場","lat":41.80976,"lon":140.80794,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-1475-7900"},
+{"id":"osm:node:12011096887","name":"JUNファームキャンプ場","lat":41.78875,"lon":140.83462,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286183301","name":"川汲公園","lat":41.88867,"lon":140.96014,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0138-25-5111"}
+]

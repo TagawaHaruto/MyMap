@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:3770447159","name":"ラ・ミア・カーサ","lat":35.06604,"lon":134.7759,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11775104777","name":"はるこむぎ","lat":35.00087,"lon":134.91414,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11775104794","name":"エアレーベン八千代","lat":35.01234,"lon":134.90836,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12117895733","name":"お好み焼き さなえ","lat":35.163,"lon":134.79061,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12117965638","name":"ほのぼのキッチン","lat":35.16683,"lon":134.79182,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13169158078","name":"台湾料理 豊源 黒田庄店","lat":35.05578,"lon":134.99209,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:588532143","name":"たたらぎ","lat":35.24618,"lon":134.80272,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:588532144","name":"木香里","lat":35.24644,"lon":134.80374,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:865617811","name":"タッチャン","lat":35.10197,"lon":134.89938,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:9131453816","name":"サイフォンコーヒー ひだまり","lat":35.07072,"lon":134.77762,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:9907099499","name":"森カフェ","lat":35.24719,"lon":134.9936,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11775066081","name":"喫茶やすらぎ","lat":35.00464,"lon":134.90754,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11775104796","name":"リポサーレ","lat":35.01189,"lon":134.91573,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12117729894","name":"スパロー","lat":35.16705,"lon":134.79379,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12117965639","name":"芒種","lat":35.1666,"lon":134.79176,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12117967572","name":"VI.LOG","lat":35.16411,"lon":134.78905,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:865589194","name":"田園ダイニング＆カフェ りりは","lat":35.05965,"lon":134.92476,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Th-Tu 08:00-17:00"},
+{"id":"osm:way:870441865","name":"まつば","lat":35.07171,"lon":134.77758,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:987922899","name":"神河寫楽","lat":35.07049,"lon":134.77794,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:2758378816","name":"パン工房 丸藤","lat":35.11089,"lon":134.78575,"pref":"兵庫","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:6820264887","name":"浅野商店","lat":35.02302,"lon":134.7583,"pref":"兵庫","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"あさの"}
+]

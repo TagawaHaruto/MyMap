@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2120241301","name":"元村教会","lat":34.7533,"lon":139.35451,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:2120250256","name":"潮音寺","lat":34.75329,"lon":139.35546,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2120255183","name":"海中寺","lat":34.75338,"lon":139.35939,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2120258129","name":"倉澤大明神","lat":34.75352,"lon":139.35712,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2170724537","name":"愛宕神社","lat":34.77033,"lon":139.3592,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4265359680","name":"龍王神社","lat":34.78843,"lon":139.39131,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:202049574","name":"吉谷神社","lat":34.75107,"lon":139.35703,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:202392392","name":"金光寺","lat":34.75431,"lon":139.3577,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"きんこじ"}
+]

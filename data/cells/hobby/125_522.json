@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6743966560","name":"セカンドストリート","lat":31.49173,"lon":130.50596,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:9608503564","name":"TSUTAYA","lat":31.25754,"lon":130.63459,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1370323864","name":"ハーティスポーツ","lat":31.2522,"lon":130.63448,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"https://hearty-sp.com/","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1416538297","name":"迫田輪業","lat":31.29048,"lon":130.60138,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

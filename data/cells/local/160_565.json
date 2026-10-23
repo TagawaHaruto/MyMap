@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:443298411","name":"サラダボウルこずや","lat":40.15438,"lon":141.30883,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","oh":"Mo-Su 09:00-17:00","pk":2},
+{"id":"osm:way:467131652","name":"内徳","lat":40.21334,"lon":141.3003,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:533299692","name":"稲荷魚店","lat":40.21117,"lon":141.29773,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:426080069","name":"一戸町民体育館","lat":40.21223,"lon":141.29564,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:426533481","name":"クラブハウス","lat":40.20056,"lon":141.29088,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:486296320","name":"ターゲットバードゴルフ場","lat":40.20422,"lon":141.29881,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:546756519","name":"旧鳥越小学校体育館","lat":40.23902,"lon":141.28059,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:547849266","name":"鳥海小学校_プール","lat":40.19569,"lon":141.26402,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:6164766404","name":"Santo sports","lat":36.14043,"lon":137.25305,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6164766458","name":"Asanoya","lat":36.14331,"lon":137.25908,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6164768209","name":"Cycle shop Hara","lat":36.14281,"lon":137.25532,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13833693253","name":"ぴーちく ぱーく","lat":36.14135,"lon":137.25995,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:13833693258","name":"ミッフィーおやつ堂","lat":36.14141,"lon":137.25954,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"https://miffykitchenbakery.jp/oyatsudo/","note":"手芸・画材","g":"hobby","k":"hobby","oh":"09:30-17:30","tel":"0577-36-0333"}
+]

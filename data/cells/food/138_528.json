@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2304874436","name":"縁","lat":34.57659,"lon":132.22609,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2304888933","name":"はらだ鉄板焼","lat":34.57939,"lon":132.22307,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2307238552","name":"割烹堂座","lat":34.57663,"lon":132.22784,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9081354217","name":"道の駅サンエイト美都","lat":34.68778,"lon":132.02225,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wp":"ja:道の駅サンエイト美都"},
+{"id":"osm:node:12448309751","name":"広島・お好み焼き屋","lat":34.59454,"lon":132.14486,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2304455447","name":"セリエ戸河内","lat":34.57567,"lon":132.22833,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","wc":"yes"}
+]

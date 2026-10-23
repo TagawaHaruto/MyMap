@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:397141783","name":"新富魚貝","lat":32.08731,"lon":131.51226,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1301886803","name":"ママンマルシェTAKANABE","lat":32.16238,"lon":131.51544,"pref":"宮崎","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3966598608","name":"富田浜漕艇場","lat":32.06876,"lon":131.5111,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:393222391","name":"ゴルフ練習場 打ち放し","lat":32.07742,"lon":131.50015,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:393222393","name":"バッティングマシン","lat":32.07679,"lon":131.50049,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:399594936","name":"日置運動広場 (日置球場)","lat":32.08865,"lon":131.51079,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287603358","name":"青鹿自然公園","lat":32.19277,"lon":131.5258,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0983-27-8002"},
+{"id":"osm:node:14287603363","name":"高鍋海水浴場キャンプ村","lat":32.11985,"lon":131.5348,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0983-22-1570"},
+{"id":"osm:node:14287603888","name":"富田浜公園キャンプ場","lat":32.08074,"lon":131.51505,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0983-33-1022"}
+]

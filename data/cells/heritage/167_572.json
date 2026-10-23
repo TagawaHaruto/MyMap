@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:8378054404","name":"震嘯罹災記念","lat":41.93518,"lon":143.24182,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2838792601","name":"お刺身旅館さんすいかく","lat":41.92652,"lon":143.24601,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"no"}
+]

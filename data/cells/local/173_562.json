@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3111963168","name":"まりんはうす","lat":43.26053,"lon":140.65446,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10885963662","name":"美国漁港海岸緑地広場","lat":43.29665,"lon":140.60554,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10885963667","name":"古平家族旅行村","lat":43.25746,"lon":140.65672,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286108240","name":"しゃこまるBASE","lat":43.29492,"lon":140.60576,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0135-48-7355"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:591527627","name":"苫前地方卸売市場","lat":44.31426,"lon":141.64965,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:776662564","name":"羽幌地方卸売市場","lat":44.37069,"lon":141.70055,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:562182732","name":"苫前町B＆G　海洋センター","lat":44.3129,"lon":141.6558,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:777608411","name":"羽幌町スポーツ公園　パークゴルフ場","lat":44.35118,"lon":141.70186,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:780811631","name":"とままえ夕陽ヶ丘　オートキャンプ場","lat":44.31422,"lon":141.65938,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:330792493","name":"うにまる公園","lat":42.15315,"lon":139.51967,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:330801882","name":"グラウンド","lat":42.16283,"lon":139.51362,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

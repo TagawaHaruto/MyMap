@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1181397759","name":"弥勒寺","lat":38.25929,"lon":138.43673,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1452805934","name":"諏訪神社","lat":38.28776,"lon":138.44308,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1452805935","name":"熊野神社","lat":38.28878,"lon":138.44521,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1452805936","name":"光明仏寺","lat":38.28208,"lon":138.47363,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:343096110","name":"遠浅神社","lat":42.72665,"lon":141.77342,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:424474373","name":"鵡川大漁地蔵堂","lat":42.57439,"lon":141.94651,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:623681094","name":"厚真神社","lat":42.72373,"lon":141.88648,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:624068141","name":"真正寺","lat":42.72558,"lon":141.87682,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:relation:8670425","name":"専厚寺","lat":42.7374,"lon":141.89385,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","pk":2},
+{"id":"osm:way:630793461","name":"正楽寺","lat":42.659,"lon":141.89793,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:637305812","name":"鹿沼出雲神社","lat":42.62248,"lon":141.9218,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:645489057","name":"熊野神社","lat":42.60112,"lon":141.89766,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:648260617","name":"願照寺","lat":42.61566,"lon":141.92549,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:786425031","name":"興隆寺","lat":42.72406,"lon":141.87836,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:805877047","name":"相馬妙見神社","lat":42.71586,"lon":141.9067,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

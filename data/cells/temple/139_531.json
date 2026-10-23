@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:7932596092","name":"圓光寺","lat":34.98508,"lon":132.98898,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12982918168","name":"住吉神社","lat":34.80905,"lon":132.84813,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12982937840","name":"三勝寺","lat":34.81617,"lon":132.84659,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12982937851","name":"太歳神社","lat":34.81876,"lon":132.84471,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12985407656","name":"稲荷神社","lat":34.81085,"lon":132.84641,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12985407682","name":"常運寺","lat":34.80931,"lon":132.8464,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13017231205","name":"照林坊","lat":34.80934,"lon":132.84732,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13017231211","name":"稲荷神社","lat":34.80952,"lon":132.84659,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:221672104","name":"創価学会三次平和会館","lat":34.80389,"lon":132.87593,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1565047949","name":"法正寺","lat":34.80516,"lon":132.84876,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

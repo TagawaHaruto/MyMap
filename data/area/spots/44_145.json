@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:288180380","name":"知床自然センター","lat":44.09149,"lon":145.02302,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum","oh":"Mo-Su 09:00-16:00","wc":"yes"},
+{"id":"osm:way:379690497","name":"百平方メートルハウス","lat":44.09244,"lon":145.02265,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:6583660585","name":"知床岬ヒグマクルーズ","lat":44.19059,"lon":145.32384,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","oh":"Mo-Su 09:00-19:00","tel":"0153857604"},
+{"id":"osm:node:8969322917","name":"南岳硫黄山分岐","lat":44.12491,"lon":145.17021,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:5603039929","name":"羅臼湖","lat":44.03303,"lon":145.08205,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5674112021","name":"熊越の滝展望台","lat":44.03183,"lon":145.14613,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:6583641986","name":"フレペの滝 展望台","lat":44.09596,"lon":145.01296,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:9949655911","name":"目梨望遥台","lat":44.03212,"lon":145.1057,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:458537731","name":"羅臼国後展望塔","lat":44.0156,"lon":145.18637,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"https://zh.wikipedia.org/wiki/%E7%BE%85%E8%87%BC%E5%9C%8B%E5%BE%8C%E5%B1%95%E6%9C%9B%E5%A1%94","note":"展望台","k":"viewpoint","kana":"らうすくなしりてんぼうとう"},
+{"id":"osm:node:5930815696","name":"熊の湯","lat":44.03206,"lon":145.15523,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath","kana":"くまのゆ"},
+{"id":"osm:node:6583754336","name":"相泊温泉","lat":44.16351,"lon":145.29571,"pref":"北海道","genres":["onsen"],"indoor":false,"url":"","note":"温泉","k":"onsen"},
+{"id":"osm:node:6711181086","name":"瀬石温泉","lat":44.17797,"lon":145.31222,"pref":"北海道","genres":["onsen"],"indoor":false,"url":"","note":"温泉","k":"onsen","kana":"せせきおんせん"}
+]

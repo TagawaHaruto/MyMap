@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4003709021","name":"ラーメン山岡家","lat":43.99984,"lon":144.28416,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"やまおかや"},
+{"id":"osm:node:4003709026","name":"かつ里き","lat":43.99518,"lon":144.28918,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:4003752946","name":"しば乃家","lat":43.99349,"lon":144.29031,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"しばのや"},
+{"id":"osm:node:4381596833","name":"ビッグサン","lat":43.99811,"lon":144.25962,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6205481354","name":"レストランくるりんく","lat":43.84513,"lon":144.2947,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"れすとらん くるりんく"},
+{"id":"osm:node:6732188131","name":"原生牧場レストラン","lat":43.97344,"lon":144.31166,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12514066987","name":"ファイヤーバーグ","lat":43.99767,"lon":144.28609,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant"},
+{"id":"osm:node:13031362401","name":"キッチンままべん","lat":43.85444,"lon":144.46408,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:411032570","name":"麦わら帽子","lat":43.95666,"lon":144.35641,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4381596834","name":"ブルーエム","lat":43.99793,"lon":144.25984,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5963179163","name":"停車場","lat":43.95839,"lon":144.35261,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"ていしゃば"},
+{"id":"osm:node:5963183785","name":"軽食喫茶トロッコ","lat":43.96838,"lon":144.32015,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"けいしょくきっさとろっこ"},
+{"id":"osm:node:14225727997","name":"MoiMoi","lat":43.8569,"lon":144.46249,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://watashino-koshimizu.jp/cafe","note":"カフェ","g":"food","k":"cafe","kana":"もいもい"},
+{"id":"osm:node:4127653131","name":"ほっともっと","lat":43.9994,"lon":144.28551,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ほっともっと","chain":true,"oh":"10:00-23:00"},
+{"id":"osm:node:12514066995","name":"ピザハット","lat":43.99777,"lon":144.28532,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ぴざはっと","chain":true},
+{"id":"osm:way:406211252","name":"マクドナルド","lat":43.9978,"lon":144.28637,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:way:406211256","name":"モスバーガー","lat":43.99709,"lon":144.28718,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"もすばーがー","chain":true}
+]

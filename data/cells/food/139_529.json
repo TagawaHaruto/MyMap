@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5443188789","name":"川本食堂","lat":34.9935,"lon":132.49423,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8092427457","name":"大番食堂","lat":34.95775,"lon":132.33478,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:10989598765","name":"山の上のお母さんのうどん屋","lat":34.8627,"lon":132.45153,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:10989598766","name":"よろず庵","lat":34.86273,"lon":132.45149,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:690730854","name":"たぬきの国","lat":34.93873,"lon":132.32003,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:1183418621","name":"温泉食堂 釜之助","lat":34.87463,"lon":132.42158,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1183425546","name":"レストラン香夢里","lat":34.8759,"lon":132.42228,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1183425549","name":"里山イタリアン AJIKURA","lat":34.87533,"lon":132.42462,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:9992906713","name":"喫茶K","lat":34.99332,"lon":132.49486,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

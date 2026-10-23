@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:7254085605","name":"大町桂月の墓","lat":40.59637,"lon":140.95646,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:9938663117","name":"雪中行軍遭難の地","lat":40.70589,"lon":140.87089,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2417779397","name":"Sukayu Onsen (酸ヶ湯)","lat":40.65029,"lon":140.85077,"pref":"青森","genres":["lodging"],"indoor":true,"url":"https://www.sukayu.jp/","note":"宿","g":"heritage","k":"lodging","wp":"en:Sukayu Onsen","kana":"すかゆおんせん","tel":"017-738-2428"},
+{"id":"osm:node:2417845539","name":"ホテル城ヶ倉","lat":40.65655,"lon":140.83669,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2417845548","name":"Tsuta Onsen","lat":40.59688,"lon":140.95342,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4272600933","name":"酸ヶ湯温泉","lat":40.65061,"lon":140.85049,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:node:4383043606","name":"谷地温泉","lat":40.63287,"lon":140.92465,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"やちおんせん"},
+{"id":"osm:node:4795307997","name":"星野リゾート 奥入瀬渓流ホテル","lat":40.57575,"lon":140.98095,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4795340447","name":"星野リゾート 奥入瀬渓流ホテル","lat":40.57641,"lon":140.98238,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5052897434","name":"猿倉温泉","lat":40.62701,"lon":140.90946,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:956084799","name":"温川山荘","lat":40.51513,"lon":140.78583,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

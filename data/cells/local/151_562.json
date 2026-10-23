@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4741211724","name":"小野こけし店","lat":37.91521,"lon":140.6003,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5116772837","name":"管野魚店","lat":37.99966,"lon":140.62599,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12131003190","name":"くにみ市場","lat":37.87288,"lon":140.54695,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","oh":"Mo-Su 09:00-18:00"},
+{"id":"osm:way:1563525369","name":"南東北木材","lat":37.82146,"lon":140.53125,"pref":"福島","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4329380558","name":"梁川総合支所梁川体育館","lat":37.85833,"lon":140.61443,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5114994828","name":"Katsuma Bowl","lat":37.99368,"lon":140.61095,"pref":"宮城","genres":["outdoor"],"indoor":true,"url":"https://www.katsuma-syouzi.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity","oh":"Mo-We,Su 10:00-21:00; Fr-Sa 10:00-23:00","tel":"+81 224 26 2250"},
+{"id":"osm:node:8242312621","name":"スパッシュランドしろいし","lat":37.97862,"lon":140.56016,"pref":"宮城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1097645383","name":"仙台グリーンゴルフクラブ","lat":37.98894,"lon":140.68675,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 224 29 3591"},
+{"id":"osm:way:1178266101","name":"パーシモンCC","lat":37.7655,"lon":140.60277,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1442317161","name":"伊達市保原プール","lat":37.81912,"lon":140.5643,"pref":"福島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5143106498","name":"霊山湧水の里キャンプ場","lat":37.78379,"lon":140.67038,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","oh":"Apr 25-Nov 15"},
+{"id":"osm:node:14286275032","name":"やながわ希望の森公園キャンプ場","lat":37.85337,"lon":140.60545,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"024-577-6100"},
+{"id":"osm:node:14286275036","name":"赤坂の里森林公園","lat":37.81543,"lon":140.60029,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"024-575-3566"},
+{"id":"osm:node:14286371230","name":"霊山こどもの村キャンプ場","lat":37.75957,"lon":140.68934,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://kodomo-ryozen.org/","note":"キャンプ・野外","g":"local","k":"camp","tel":"024-589-2211"}
+]

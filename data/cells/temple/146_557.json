@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4092006646","name":"深山巴の宿　県指定史跡","lat":36.64537,"lon":139.4997,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4157427573","name":"二荒山神社4合目社務所","lat":36.74979,"lon":139.48944,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4157481881","name":"上野島・勝道上人墓所","lat":36.72997,"lon":139.46712,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5874008109","name":"一の鳥居跡","lat":36.5146,"lon":139.25445,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6703590554","name":"巫女石","lat":36.73948,"lon":139.49671,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"みこいし"},
+{"id":"osm:node:6741805736","name":"足尾キリスト教会","lat":36.63936,"lon":139.44369,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:8589642071","name":"善雄寺","lat":36.51555,"lon":139.30117,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8826686420","name":"呑龍寺","lat":36.64062,"lon":139.44818,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:323742796","name":"本堂","lat":36.73094,"lon":139.49164,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ほんど"},
+{"id":"osm:way:323742797","name":"五大堂","lat":36.73075,"lon":139.4921,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ごだいど"},
+{"id":"osm:way:416440817","name":"日光二荒山神社宝物館","lat":36.74172,"lon":139.48823,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:418289735","name":"千手堂跡","lat":36.74055,"lon":139.42031,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:434923017","name":"愛染堂","lat":36.73119,"lon":139.49133,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"あいぜんど"},
+{"id":"osm:way:434923020","name":"波之利大黒天堂","lat":36.73083,"lon":139.49144,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"はしりだいこくてんど"},
+{"id":"osm:relation:12702901","name":"中禅寺立木観音","lat":36.73087,"lon":139.49156,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ちゅぜんじたちきかんのん"},
+{"id":"osm:way:668170545","name":"本山鉱山神社","lat":36.66622,"lon":139.43573,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:717844977","name":"宝増寺","lat":36.63975,"lon":139.44412,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:6984494981","name":"最福寺","lat":31.44079,"lon":130.50976,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6984583267","name":"伊勢神社","lat":31.31058,"lon":130.56773,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8696842621","name":"南方神社","lat":31.35617,"lon":130.53295,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8696842622","name":"山之神神社","lat":31.35638,"lon":130.52009,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8752731504","name":"鈴神社","lat":31.32925,"lon":130.56128,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9609058392","name":"善行寺","lat":31.37112,"lon":130.54569,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9956772531","name":"指宿報国神社","lat":31.27471,"lon":130.62125,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10235368261","name":"大山積神社","lat":31.48168,"lon":130.5089,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:360137620","name":"不動山青隆寺","lat":31.28673,"lon":130.55535,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1044439792","name":"八幡宮","lat":31.25613,"lon":130.62587,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"はちまんぐ"},
+{"id":"osm:way:1044439793","name":"湯権現神社","lat":31.2561,"lon":130.62587,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ゆごんげんじんじゃ"},
+{"id":"osm:way:1384676003","name":"清泉寺観音堂","lat":31.48445,"lon":130.50531,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1411754660","name":"豊玉媛神社","lat":31.29109,"lon":130.59744,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1413189956","name":"大野岳神社","lat":31.25669,"lon":130.51851,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1491873581","name":"間水神社","lat":31.25385,"lon":130.62037,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

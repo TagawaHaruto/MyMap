@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:495998593","name":"ドライブインしろ","lat":34.54654,"lon":132.39417,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6216343496","name":"レストハウス大朝","lat":34.73725,"lon":132.43804,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1450781578","name":"味彩紀行","lat":34.57478,"lon":132.2693,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","tel":"+81 826 28 1770"},
+{"id":"osm:way:1450781577","name":"Takeoutの店やすらぎ","lat":34.57475,"lon":132.26922,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","oh":"We-Mo 10:30-19:00","tel":"+81 90 7015 2882"},
+{"id":"osm:way:1450781579","name":"おふくろ弁当","lat":34.5748,"lon":132.26938,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","oh":"Fr-We 09:00-17:00","tel":"+81 826 28 2530"},
+{"id":"osm:way:1442945956","name":"鯛焼屋 よしお","lat":34.60911,"lon":132.32042,"pref":"広島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

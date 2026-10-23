@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5195247155","name":"JOHZUKA","lat":36.85396,"lon":136.98778,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:5195311188","name":"かめや釣具店","lat":36.85535,"lon":136.98822,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5703638722","name":"千田書店","lat":36.8983,"lon":136.77581,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6302910709","name":"表サイクル商会","lat":36.84957,"lon":136.98996,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11299195898","name":"あさの釣具店","lat":36.89979,"lon":136.77593,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:11312736215","name":"セカンドストリート","lat":36.89547,"lon":136.79716,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:11686887975","name":"ブックオフ","lat":36.75092,"lon":136.99723,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:600179605","name":"太陽書店 羽咋店","lat":36.89501,"lon":136.81216,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

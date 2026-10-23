@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:7927130421","name":"増毛厳島神社","lat":43.85617,"lon":141.52432,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10026926415","name":"暑寒沢神社","lat":43.83663,"lon":141.52605,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11373641362","name":"朱文別沢神社","lat":43.84952,"lon":141.5748,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11373669443","name":"笹沼神社","lat":43.84408,"lon":141.59506,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11373713712","name":"豊受大神宮","lat":43.85052,"lon":141.51233,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:543341486","name":"礼受厳島神社","lat":43.91608,"lon":141.61978,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:543394269","name":"藤山八幡神社","lat":43.88995,"lon":141.71456,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:543540298","name":"塩見神社","lat":43.96249,"lon":141.64351,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:543540911","name":"臼谷稲荷神社","lat":43.9945,"lon":141.65527,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:543541215","name":"正法寺","lat":43.99917,"lon":141.6586,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:543930390","name":"創価学会","lat":43.93395,"lon":141.63686,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

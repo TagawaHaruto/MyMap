@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:2979718133","name":"大成館","lat":42.51671,"lon":140.37629,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"limited"},
+{"id":"osm:node:4297606666","name":"奥美利河温泉・山の家","lat":42.55342,"lon":140.25911,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5426310924","name":"歌才自然の家","lat":42.65548,"lon":140.31027,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0136723010"},
+{"id":"osm:node:5738317821","name":"長万部温泉ホテル","lat":42.5168,"lon":140.37605,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5740529322","name":"民宿シャマンの里","lat":42.51535,"lon":140.37954,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13744025123","name":"ホテルあづま","lat":42.5162,"lon":140.37576,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13744025131","name":"ホテルエクセルイン","lat":42.51641,"lon":140.3764,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"limited"},
+{"id":"osm:node:13744025196","name":"昇月旅館","lat":42.51648,"lon":140.37519,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13744025237","name":"ホテル四国屋","lat":42.51665,"lon":140.3751,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:521706468","name":"温泉旅館もりかわ","lat":42.51695,"lon":140.37545,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.osyamanbe-kankou.jp/syousai/morikawa.html","note":"宿","g":"heritage","k":"lodging","tel":"01377-2-5555"}
+]

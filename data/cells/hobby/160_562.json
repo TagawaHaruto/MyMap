@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:7238200098","name":"佐藤自転車店","lat":40.22848,"lon":140.58185,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7238200099","name":"佐々木釣具店","lat":40.22847,"lon":140.58198,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:966484145","name":"サイクルショップムラカミ（有）","lat":40.2294,"lon":140.57947,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

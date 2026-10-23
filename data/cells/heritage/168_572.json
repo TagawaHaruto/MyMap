@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:6577805085","name":"まるは旅館","lat":42.01486,"lon":143.14752,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-1466-2-2079"},
+{"id":"osm:way:464306526","name":"新井旅館","lat":42.01756,"lon":143.14856,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

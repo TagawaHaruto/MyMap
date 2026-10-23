@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:14018993058","name":"さとうきび NCO310号記念碑","lat":27.82189,"lon":128.96441,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14019901159","name":"母間線刻画","lat":27.79521,"lon":128.97911,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14069553874","name":"塩田発祥之地記念碑","lat":27.83173,"lon":128.88282,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14069783025","name":"西郷南洲翁上陸記念碑","lat":27.82508,"lon":128.8828,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14070715574","name":"西郷南洲顕彰碑","lat":27.838,"lon":128.89654,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14072204289","name":"矢沢永吉シークレットライブ記念碑","lat":27.85671,"lon":128.89161,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1546710236","name":"高倉","lat":27.81567,"lon":128.89483,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:2931945472","name":"ときわや (Ya Tokiwa)","lat":27.79957,"lon":128.99922,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4208197192","name":"金見荘","lat":27.8888,"lon":128.9682,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14104606154","name":"ホテル サンセットリゾート徳之島","lat":27.8689,"lon":128.89002,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

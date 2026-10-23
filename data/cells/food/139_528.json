@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:829948410","name":"ジョイフル","lat":34.86464,"lon":132.02667,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4571192582","name":"麺虎","lat":34.90188,"lon":132.08959,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:4571192589","name":"ケンボロー","lat":34.90132,"lon":132.09014,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12848335826","name":"韓国御食事処飛鳥","lat":34.98349,"lon":132.18871,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12869789732","name":"すし蔵のはなれ江津店","lat":34.98557,"lon":132.18664,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:12869842391","name":"旨いとんかつ　糸吉","lat":34.98233,"lon":132.18174,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14090851703","name":"寿しかつ","lat":34.89794,"lon":132.07425,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant","kana":"すしかつ","oh":"Th-Tu 11:00-14:00, 17:00-22:00","tel":"+81 855-22-1855"},
+{"id":"osm:way:654451099","name":"みのり食堂","lat":34.90309,"lon":132.0852,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:657111107","name":"王将浜田店／食彩美酒小旬","lat":34.90037,"lon":132.09201,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:659260893","name":"福新楼","lat":34.90233,"lon":132.09033,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:659329799","name":"玉鮨","lat":34.90068,"lon":132.08974,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:682929639","name":"手造りうどんたまき浜田店","lat":34.90215,"lon":132.08458,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:682929641","name":"いきなりステーキ浜田店","lat":34.90162,"lon":132.0843,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:684548617","name":"コメダ珈琲店","lat":34.89886,"lon":132.07107,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","chain":true},
+{"id":"osm:node:829978058","name":"モスバーガー","lat":34.88955,"lon":132.07143,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:6413752559","name":"マクドナルド","lat":34.89986,"lon":132.0719,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:way:1387946743","name":"すき家","lat":34.98248,"lon":132.18287,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true},
+{"id":"osm:way:657108413","name":"シャトレーゼ","lat":34.90008,"lon":132.09148,"pref":"島根","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"ちゃてらいせ","chain":true},
+{"id":"osm:way:735179251","name":"ケーキ工房菓子の実","lat":34.89035,"lon":132.07904,"pref":"島根","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:684549640","name":"きらら浜田店","lat":34.90163,"lon":132.08902,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

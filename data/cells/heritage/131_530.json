@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:9717939062","name":"愛媛放送殉職記者慰霊碑","lat":32.95006,"lon":132.5495,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4343783694","name":"秋沢ホテル","lat":32.93378,"lon":132.7206,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5350187042","name":"河野旅館","lat":32.92046,"lon":132.69964,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11381139569","name":"ゲストハウスさくら","lat":32.92094,"lon":132.69935,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://www.guesthouse-sakura.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 880 63 9431"},
+{"id":"osm:node:12019775204","name":"Albergue Sakura","lat":32.92247,"lon":132.70108,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13904553783","name":"とみや","lat":32.95952,"lon":132.58208,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:550525556","name":"まなべ旅館","lat":32.93334,"lon":132.71827,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:551005208","name":"上村ビジネスホテル","lat":32.93427,"lon":132.7207,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:551554642","name":"ホテルアバン宿毛","lat":32.9316,"lon":132.71831,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:552515231","name":"ホテルマツヤ","lat":32.9283,"lon":132.71076,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:553382359","name":"ビジネスホテルあさひ","lat":32.92611,"lon":132.70425,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:554369985","name":"民宿・渡船源福荘","lat":32.91986,"lon":132.70003,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:554587882","name":"金沢旅館","lat":32.92107,"lon":132.698,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:554587884","name":"森下旅館","lat":32.921,"lon":132.69786,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:554758285","name":"初福荘","lat":32.92161,"lon":132.69626,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:890900925","name":"青い国ホテル","lat":32.95957,"lon":132.56075,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"https://www.aoikunihotel.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-895-72-2131","pk":2},
+{"id":"osm:way:1127415813","name":"ぴんくのくじら","lat":32.93019,"lon":132.69977,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1127415822","name":"HOTEL Pierce","lat":32.96614,"lon":132.69583,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1540825623","name":"ホテル セレクト 愛媛愛南町","lat":32.9647,"lon":132.6487,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"https://hotelselect-ainan.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-895-84-3311"}
+]

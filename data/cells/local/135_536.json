@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2617205699","name":"ファガスの森　キャンプ場","lat":33.90489,"lon":134.23458,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287563772","name":"中尾山高原キャンプ場","lat":33.89909,"lon":134.13873,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0883-68-3422"},
+{"id":"osm:way:312541198","name":"奥祖谷二重かずら橋キャンプ場","lat":33.85383,"lon":134.04672,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 883 88 2640"}
+]

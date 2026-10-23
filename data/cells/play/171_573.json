@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:474089215","name":"十勝エコロジーパーク","lat":42.93312,"lon":143.31881,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:474313155","name":"スマイルパーク","lat":42.91928,"lon":143.27056,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560167202","name":"あけぼの公園","lat":42.90192,"lon":143.36618,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560167650","name":"緑央公園","lat":42.90252,"lon":143.36843,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560167958","name":"新緑公園","lat":42.90524,"lon":143.36707,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560187071","name":"南町公園","lat":42.90127,"lon":143.35718,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560187080","name":"寿町公園","lat":42.90322,"lon":143.35334,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560316468","name":"宝町公園","lat":42.90357,"lon":143.35613,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560316665","name":"緑町あすなろ公園","lat":42.90552,"lon":143.36375,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560341251","name":"本町公園","lat":42.9098,"lon":143.35745,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560356245","name":"旭町あさかぜ公園","lat":42.91574,"lon":143.36225,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560356695","name":"旭町こばと公園","lat":42.91299,"lon":143.3614,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560356697","name":"旭町三角公園","lat":42.91391,"lon":143.36392,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560356710","name":"もみじ公園","lat":42.9173,"lon":143.36556,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:708020704","name":"幕別町運動公園","lat":42.90373,"lon":143.34902,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:787320057","name":"のぞみ公園","lat":42.90444,"lon":143.36112,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1079767637","name":"清見ヶ丘公園","lat":42.92698,"lon":143.45616,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"きよみがおか こうえん"},
+{"id":"osm:way:559822472","name":"池田町総合体育館","lat":42.92091,"lon":143.44898,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"https://www.ikeda-dreamwork.com/ikeda-gym/","note":"体育館","g":"play","k":"sports"}
+]

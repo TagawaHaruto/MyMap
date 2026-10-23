@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4571197607","name":"明珠","lat":34.67581,"lon":131.84174,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"めいしゅ"},
+{"id":"osm:node:4571197609","name":"大阪王将","lat":34.67756,"lon":131.83966,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10083049317","name":"民宿とみ","lat":34.74697,"lon":131.87259,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1366162988","name":"ガスト","lat":34.68986,"lon":131.81673,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:3045235034","name":"栗栗珈琲","lat":34.68064,"lon":131.83838,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:9081354317","name":"すき家","lat":34.68079,"lon":131.83929,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:684555780","name":"モスバーガー","lat":34.68974,"lon":131.81775,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:way:1366162977","name":"はま寿司","lat":34.68588,"lon":131.84284,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"はますし","chain":true},
+{"id":"osm:way:1366162989","name":"ケンタッキーフライドチキン","lat":34.69003,"lon":131.81675,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:12651148916","name":"シャトレーゼ","lat":34.68897,"lon":131.84123,"pref":"島根","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"ちゃてらいせ","chain":true}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2630942477","name":"石碑　喜びも悲しみも幾歳月","lat":43.25647,"lon":141.35998,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10003580372","name":"石狩油田跡","lat":43.28114,"lon":141.48093,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:846860797","name":"市立厚田小学校跡","lat":43.40034,"lon":141.43532,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

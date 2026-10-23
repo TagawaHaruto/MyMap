@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4312053428","name":"稲荷神社","lat":43.43439,"lon":144.10193,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5552678722","name":"白龍神王","lat":43.43444,"lon":144.10219,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:578524501","name":"阿寒岳神社","lat":43.43285,"lon":144.09925,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あかんだけじんじゃ","wc":"no"}
+]

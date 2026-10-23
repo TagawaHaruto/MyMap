@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5019608370","name":"升形七所明神社","lat":38.74898,"lon":140.24083,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5019612329","name":"八幡宮","lat":38.74922,"lon":140.23461,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5019612334","name":"宝蔵寺","lat":38.73742,"lon":140.14139,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5019612642","name":"善念寺","lat":38.73773,"lon":140.14453,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5019614164","name":"古峯神社","lat":38.74956,"lon":140.22037,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5052981624","name":"法含寺","lat":38.70637,"lon":140.23011,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5052981637","name":"日秀寺","lat":38.60973,"lon":140.16492,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5053027122","name":"一念寺","lat":38.70469,"lon":140.2333,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5053027227","name":"西来院","lat":38.69718,"lon":140.22871,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5053027228","name":"興源院","lat":38.69562,"lon":140.22883,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5053027423","name":"光明寺","lat":38.70518,"lon":140.23312,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5053027424","name":"金比羅神社","lat":38.70862,"lon":140.22622,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11464788968","name":"積雲寺","lat":38.72657,"lon":140.22742,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:366322142","name":"月山神社本宮","lat":38.54867,"lon":140.02683,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"がっさんじんじゃほんぐ"}
+]

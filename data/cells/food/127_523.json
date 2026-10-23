@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:4773807176","name":"がまこう庵 soba restaurant","lat":31.8472,"lon":130.90012,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5489779535","name":"わび助","lat":31.84478,"lon":130.87644,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5489779540","name":"関西風お好み焼き 遊","lat":31.84501,"lon":130.8778,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5489779560","name":"夢見が丘深山・霧島キッチン","lat":31.84494,"lon":130.88236,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6757338186","name":"湯けむりダイニング トントン亭","lat":31.89278,"lon":130.82665,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"とんとんてい","tel":"+81 995 78 8330"},
+{"id":"osm:node:6757402386","name":"焼肉厨房わきもと","lat":31.89202,"lon":130.82675,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6757423285","name":"Shokudo & Teishoku Restaurant","lat":31.89217,"lon":130.82636,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6759135085","name":"kirishima viewing point","lat":31.85807,"lon":130.87229,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13208256190","name":"小手茶屋","lat":31.78965,"lon":130.87025,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:14279843401","name":"Taverna Mangiare","lat":31.81717,"lon":130.82828,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14282940601","name":"四季ごよみ","lat":31.89284,"lon":130.82733,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo, We-Su 17:30-22:30"},
+{"id":"osm:node:14283796792","name":"焼肉のきり亭","lat":31.88609,"lon":130.81808,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:1411748289","name":"黒豚の館","lat":31.8092,"lon":130.81225,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1428452120","name":"黒豚ラーメン 蔵","lat":31.77399,"lon":130.78503,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:1537906980","name":"ジョイフル小林細野店","lat":31.99706,"lon":130.96742,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 08:00-25:00","tel":"0984210466"},
+{"id":"osm:node:4953851722","name":"Cockapoo","lat":31.84685,"lon":130.90046,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Fr-Su 11:00-17:00"},
+{"id":"osm:node:5489779565","name":"À LA MINUTE","lat":31.84523,"lon":130.88188,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:14282220101","name":"レストラン喫茶　mole","lat":31.82778,"lon":130.83861,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:1309869349","name":"薩摩蒸氣屋","lat":31.76292,"lon":130.75236,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"さつまじょきや","chain":true},
+{"id":"osm:way:1425301139","name":"薩摩 蒸氣屋","lat":31.85484,"lon":130.87004,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

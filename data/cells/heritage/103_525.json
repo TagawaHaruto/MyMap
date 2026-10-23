@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5535467422","name":"国標","lat":25.95265,"lon":131.2855,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5536976921","name":"中野のビロウ林","lat":25.9442,"lon":131.29946,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12825214242","name":"第4倉庫跡","lat":25.95449,"lon":131.28556,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic","tel":"+81 9802-3-4001"},
+{"id":"osm:node:12825214244","name":"発電所跡","lat":25.9544,"lon":131.28589,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:12825214245","name":"社員風呂遺構","lat":25.95466,"lon":131.28643,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:12825214250","name":"旧魚市場・社宅遺構","lat":25.9536,"lon":131.28655,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:12825214275","name":"開拓主故玉置半右衛門君之碑","lat":25.95354,"lon":131.28737,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"https://www.kitadaito.jp/shop_detail1.html?shop_code=661","note":"記念碑","g":"heritage","k":"historic","wp":"ja:玉置半右衛門"},
+{"id":"osm:node:12825312900","name":"開拓主故玉置半右衛門君之碑","lat":25.94107,"lon":131.28904,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"https://www.kitadaito.jp/shop_detail1.html?shop_code=660","note":"記念碑","g":"heritage","k":"historic","wp":"ja:玉置半右衛門"},
+{"id":"osm:node:12825359227","name":"北大東島開拓百周年記念碑","lat":25.94105,"lon":131.28906,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"https://www.kitadaito.jp/shop_detail1.html?shop_code=660","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5535487621","name":"ハマユウ荘うふあがり島","lat":25.9483,"lon":131.29559,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"http://www.hamayuso.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 9802-3-4880"},
+{"id":"osm:node:5536929325","name":"二六荘","lat":25.95482,"lon":131.28726,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

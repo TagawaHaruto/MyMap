@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5756041180","name":"嶽宮神社","lat":33.86584,"lon":130.0367,"pref":"福岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11406468669","name":"薬師堂","lat":33.86482,"lon":130.03481,"pref":"福岡","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

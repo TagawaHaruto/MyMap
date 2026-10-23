@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5593591722","name":"野間之関趾","lat":32.1262,"lon":130.34953,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463045860","name":"米之津川河川激甚災害対策特別緊急事業竣工之碑","lat":32.0885,"lon":130.34668,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463045861","name":"慰霊之碑","lat":32.13432,"lon":130.35919,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12535950077","name":"水俣病慰霊の碑","lat":32.19969,"lon":130.37331,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1493545317","name":"出水市公開武家屋敷「竹添邸」","lat":32.0756,"lon":130.35779,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:1493545321","name":"出水市公開武家屋敷「税所邸」","lat":32.07601,"lon":130.35776,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:5913050685","name":"ロイヤルイン ステーションプラザ","lat":32.0897,"lon":130.35644,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6401710092","name":"喜久屋旅館","lat":32.1502,"lon":130.44061,"pref":"熊本","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"きくや"},
+{"id":"osm:way:98241422","name":"ホテルウィングインターナショナル出水","lat":32.0886,"lon":130.35738,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1427875363","name":"ロイヤルイン桃晃","lat":32.08881,"lon":130.35399,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1427892251","name":"HOTEL R9 The Yard","lat":32.08201,"lon":130.3409,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

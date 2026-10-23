@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5599851050","name":"龍泉洞","lat":39.86015,"lon":141.79704,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378105056","name":"東日本大震災　羅賀大津波伝承の碑","lat":39.93767,"lon":141.93807,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12290917034","name":"震災遺構_明戸海岸防潮堤","lat":39.94605,"lon":141.94339,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4379346044","name":"ふれあいらんど岩泉","lat":39.84087,"lon":141.86625,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"http://www.fureailand-iwaizumi.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4379346045","name":"ブルートレイン「日本海」","lat":39.84037,"lon":141.86713,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:列車ホテル"},
+{"id":"osm:node:8909399179","name":"思惟創館","lat":39.91481,"lon":141.90265,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"https://shiinokaze.or.jp/pages/shisoukan","note":"宿","g":"heritage","k":"lodging","tel":"+81 194-32-3555"},
+{"id":"osm:node:12287543601","name":"白花シャクナゲ荘","lat":39.978,"lon":141.95045,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0194332085"},
+{"id":"osm:way:401884178","name":"グリーンピア三陸宮古","lat":39.79237,"lon":141.97204,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:485828220","name":"津別町農業者トレーニングセンター","lat":43.70629,"lon":144.03193,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.town.tsubetsu.hokkaido.jp/soshikikarasagasu/shogaigakushu/5/1/730.html","note":"遊び・スポーツ","g":"local","k":"activity","kana":"つべつちょうのうぎょうしゃとれーにんぐせんたー","tel":"+81 152 76 2721"},
+{"id":"osm:way:485828389","name":"温水プール すいむ","lat":43.70609,"lon":144.03331,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:487590871","name":"２１世紀の森キャンプ場","lat":43.6974,"lon":144.03649,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

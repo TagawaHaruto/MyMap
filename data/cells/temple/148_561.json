@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2469769721","name":"川辺八幡神社","lat":37.20149,"lon":140.40831,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7239241411","name":"乗蓮寺","lat":37.14491,"lon":140.44926,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12747499097","name":"秋葉神社","lat":37.14259,"lon":140.45571,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12747499110","name":"石川バプテスト教会","lat":37.14397,"lon":140.46742,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:12747499111","name":"大山阿夫利神社","lat":37.14542,"lon":140.45591,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12747505740","name":"近津神社","lat":37.14643,"lon":140.45614,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13726788552","name":"蓮家寺","lat":37.03203,"lon":140.38303,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"0247-33-2344"},
+{"id":"osm:way:764159822","name":"長徳寺","lat":37.2384,"lon":140.303,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:968697054","name":"竹駒稲荷神社","lat":37.20152,"lon":140.33269,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:970842984","name":"八幡神社","lat":37.19413,"lon":140.33259,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:970842986","name":"矢吹神社","lat":37.20518,"lon":140.32407,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1191215435","name":"馬場都都古和氣神社","lat":37.03179,"lon":140.3763,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1376697267","name":"華蔵寺","lat":37.1445,"lon":140.4555,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

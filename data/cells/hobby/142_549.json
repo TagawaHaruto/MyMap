@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:11815974309","name":"四万十","lat":35.51591,"lon":137.48161,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:793420585","name":"町乃書店 長城店","lat":35.63909,"lon":137.44558,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:793779788","name":"釣り具のしず","lat":35.64076,"lon":137.4441,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:793783674","name":"オートショップ タケカワ","lat":35.61684,"lon":137.46098,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

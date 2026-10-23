@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4508498882","name":"住三吉神社","lat":41.74894,"lon":140.71601,"pref":"北海道","genres":["temple"],"indoor":false,"url":"http://www.miyoshi.or.jp","note":"神社","g":"temple","k":"worship","tel":"+81 138 22 2608"},
+{"id":"osm:node:4743664179","name":"白浜稲荷神社","lat":41.74728,"lon":140.72014,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4743664183","name":"称名寺地蔵堂","lat":41.74911,"lon":140.71851,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13736841201","name":"ルルドの洞窟","lat":41.74433,"lon":140.56184,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:221905926","name":"古泉神社","lat":41.70259,"lon":140.5139,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:221905974","name":"大泉寺","lat":41.70204,"lon":140.51326,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:620114077","name":"カトリック当別教会","lat":41.73835,"lon":140.5715,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

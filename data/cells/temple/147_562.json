@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:1941471650","name":"諏訪神社","lat":36.79363,"lon":140.74206,"pref":"茨城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5952381879","name":"普賢寺","lat":36.91694,"lon":140.74598,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5952393091","name":"村主北野神社","lat":36.91683,"lon":140.74843,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11081216363","name":"Odo お堂","lat":36.92263,"lon":140.73881,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11107482503","name":"Myohoji 妙宝寺","lat":36.90713,"lon":140.72284,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11107836910","name":"Joenji 浄円寺","lat":36.90671,"lon":140.72799,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11116167649","name":"Hiyoshi Shrine 日吉神社","lat":36.8993,"lon":140.72534,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11136008276","name":"Ryushunji 龍春寺","lat":36.88762,"lon":140.72782,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4929852952","name":"宮脇書店広田店","lat":34.32953,"lon":134.83852,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6139925489","name":"シーバイト","lat":34.43755,"lon":134.90786,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1034511139","name":"まるは釣具","lat":34.34458,"lon":134.87822,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5903006693","name":"達曽部八幡神社","lat":39.39405,"lon":141.34876,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5903006696","name":"八幡神社　鳥居","lat":39.39339,"lon":141.34472,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5903006697","name":"稲荷さん","lat":39.40854,"lon":141.37931,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9430142071","name":"笹谷観音","lat":39.41424,"lon":141.49935,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13097737140","name":"光明寺","lat":39.32133,"lon":141.45801,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13097887177","name":"宇迦神社","lat":39.3144,"lon":141.4482,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:239821089","name":"法華寺","lat":39.34421,"lon":141.35294,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:625185704","name":"駒形神社","lat":39.40914,"lon":141.37237,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1424957680","name":"長泉寺","lat":39.31514,"lon":141.43341,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1425168990","name":"鱒沢四社・高舘八幡神社とエドヒガンザクラ","lat":39.29847,"lon":141.40565,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1425218870","name":"迷岡駒形神社","lat":39.32527,"lon":141.38488,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1425248803","name":"卯子酉神社","lat":39.33748,"lon":141.37014,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1425475787","name":"常楽寺","lat":39.27211,"lon":141.42312,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1425475813","name":"厳龍神社","lat":39.27128,"lon":141.42194,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

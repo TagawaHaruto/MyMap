@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:9886644348","name":"お食事処たんぽぽ","lat":42.57379,"lon":141.92542,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11113389052","name":"FORT by THE COAST","lat":42.60064,"lon":141.86214,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.10a.jp","note":"飲食店","g":"food","k":"restaurant","tel":"081-145-28-3010"},
+{"id":"osm:way:623695886","name":"ラーメン潮騒","lat":42.72495,"lon":141.88068,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","kana":"らめんしおさい"},
+{"id":"osm:way:624067948","name":"焼き鳥おやじ","lat":42.72568,"lon":141.87921,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:624067970","name":"飲み喰い処 江戸っ子","lat":42.72526,"lon":141.88048,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:624068152","name":"焼肉 厚真園","lat":42.72629,"lon":141.87914,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant","tel":"+31 145-27-2929"},
+{"id":"osm:way:624068167","name":"食空間ゆるり","lat":42.72597,"lon":141.87891,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:624068215","name":"厚真町 まちなか交流館・しゃべーる","lat":42.72506,"lon":141.87849,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:652891924","name":"蕎麦家いごころ","lat":42.5753,"lon":141.91846,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.thankful.jp/","note":"そば","g":"food","k":"restaurant","oh":"Mo,Tu,Th-Su 11:00-14:00,17:00-20:30; We off; PH 11:00-14:00,17:00-20:30","tel":"+81-145-42-3921"},
+{"id":"osm:way:785822796","name":"そば 中島食堂","lat":42.72476,"lon":141.87793,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:813561028","name":"ラーメン秀来","lat":42.57526,"lon":141.92937,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:934564271","name":"手打ちそば そば哲 遠浅店","lat":42.72503,"lon":141.79125,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://h863500.gorp.jp/","note":"そば","g":"food","k":"restaurant","oh":"Fr-We 11:00-14:00"},
+{"id":"osm:way:624140715","name":"喫茶 寒露","lat":42.72552,"lon":141.87352,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:624206702","name":"momo・cafe","lat":42.70741,"lon":141.88414,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"We-Mo 11:00-18:00","tel":"0145-29-7020"},
+{"id":"osm:way:791186345","name":"Shijima Cafe","lat":42.72246,"lon":141.8761,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://ja-jp.facebook.com/shijimayoga","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:624139370","name":"ハスカップカフェ LABO","lat":42.7241,"lon":141.87286,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"https://hasukappu.com/labo/","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:624140721","name":"パン工房 チリン","lat":42.72578,"lon":141.87356,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"https://www.facebook.com/%E3%83%91%E3%83%B3%E5%B7%A5%E6%88%BF-Chillin-883529955139809/","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:624206696","name":"此方","lat":42.70777,"lon":141.8853,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:652084222","name":"まくまくぱん","lat":42.58199,"lon":141.93416,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:813559781","name":"むかわ夢風船","lat":42.57478,"lon":141.92809,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

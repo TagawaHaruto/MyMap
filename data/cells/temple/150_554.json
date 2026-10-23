@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3119897616","name":"八幡神社","lat":37.5028,"lon":138.66004,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3119904520","name":"御島石部神社","lat":37.51763,"lon":138.66054,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3119904587","name":"石井神社","lat":37.52101,"lon":138.65875,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

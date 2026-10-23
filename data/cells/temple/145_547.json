@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2837485301","name":"湯涌稲荷神社","lat":36.48591,"lon":136.75822,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4400562292","name":"地主神社","lat":36.42672,"lon":136.93535,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4400575328","name":"神明社","lat":36.42894,"lon":136.93942,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4400576905","name":"愛宕社","lat":36.4281,"lon":136.93862,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4478228791","name":"Tenryu shrine","lat":36.2553,"lon":136.9073,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5059449922","name":"神明社","lat":36.40494,"lon":136.88735,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:236248653","name":"本覚寺","lat":36.25748,"lon":136.90534,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:546727885","name":"櫻ケ池神社","lat":36.49808,"lon":136.86872,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:586014687","name":"秋葉神社","lat":36.25662,"lon":136.9044,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:662319025","name":"鳩谷八幡神社","lat":36.26549,"lon":136.9015,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1342700014","name":"白山宮本殿","lat":36.41124,"lon":136.93048,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1342700018","name":"住吉社","lat":36.40831,"lon":136.93241,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:3084067577","name":"カヤの平牧場","lat":36.83306,"lon":138.50088,"pref":"長野","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:641082305","name":"結東じゃまくら石公園","lat":36.91771,"lon":138.63782,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:641082320","name":"見玉公園","lat":36.95749,"lon":138.66105,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:644449295","name":"栄村植物園","lat":36.93525,"lon":138.57272,"pref":"長野","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:676025380","name":"穴山ふれあい広場","lat":36.99926,"lon":138.60664,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:639408363","name":"越後妻有「上郷クローブ座」","lat":36.99192,"lon":138.58798,"pref":"新潟","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse","wp":"ja:上郷クローブ座"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:4663566839","name":"飛騨古川さくら物産館","lat":36.23367,"lon":137.1855,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:node:5853188485","name":"花と雑貨の店 いたばし","lat":36.23541,"lon":137.18698,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"https://www.itabashiseikaten.com","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:00-18:00","tel":"0577732278","wc":"no"},
+{"id":"osm:node:6164766425","name":"Pottery","lat":36.13558,"lon":137.24016,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6819919086","name":"三嶋和ろうそく店","lat":36.2344,"lon":137.18765,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"https://www.hida-kankou.jp/product/28/article/","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Th-Tu 09:30-17:00","tel":"+81 577-73-4109"},
+{"id":"osm:way:798391241","name":"岡田屋","lat":36.23648,"lon":137.18534,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1414272782","name":"あじか","lat":36.2047,"lon":137.22472,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:1416000409","name":"飛騨高山ビッグアリーナ","lat":36.15029,"lon":137.2327,"pref":"岐阜","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4416143903","name":"High-Mount","lat":36.14683,"lon":137.24943,"pref":"岐阜","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","oh":"Tu-Fr 15:00-22:30; Sa-Su 15:00-21:00"},
+{"id":"osm:way:1463958525","name":"飛騨高山カントリークラブ","lat":36.10292,"lon":137.24668,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://www.hidatakayama-cc.jp","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5655733521","name":"昼ごはん","lat":36.19981,"lon":137.04165,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285746935","name":"嵓 KURA Nagomi Hida Takayama","lat":36.11493,"lon":137.2387,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://kuranagomi.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-57-9753"},
+{"id":"osm:node:14285746937","name":"せせらぎキャンプ場","lat":36.09859,"lon":137.15818,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://seseragicamp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286830178","name":"NOASOBI campfield","lat":36.24003,"lon":137.082,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1283-9117"},
+{"id":"osm:node:14286830193","name":"宇津江四十八滝キャンプ場","lat":36.19714,"lon":137.16121,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-72-3948"},
+{"id":"osm:node:14286866925","name":"飛騨高山 彦谷の里キャンプ場","lat":36.1499,"lon":137.09936,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286878833","name":"MOUNTAIN SIDE MIYA BASE","lat":36.08131,"lon":137.24985,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"http://www.hida-mountainside.jp","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286894365","name":"あららぎパーク","lat":36.02531,"lon":137.21473,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-53-2067"},
+{"id":"osm:node:14286896705","name":"飛騨高山 釣り＆キャンプ 鱒蔵","lat":36.05742,"lon":137.18491,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"http://masukuracamp.jimdofree.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287658009","name":"FORESTDOMEひだ高山","lat":36.14203,"lon":137.13906,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-5306-3247"},
+{"id":"osm:node:14289699444","name":"清見すのまたオートキャンプ場","lat":36.06661,"lon":137.10417,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://www.city.takayama.lg.jp/shisetsu/1004139/1000028/1001417.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-68-3630"}
+]

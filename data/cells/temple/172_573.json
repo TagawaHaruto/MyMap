@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:3433217639","name":"法輪寺　東","lat":43.23488,"lon":143.29363,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3433217640","name":"光明寺　西","lat":43.2354,"lon":143.29312,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3433217641","name":"総林寺　吉祥閣","lat":43.24026,"lon":143.30057,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4443811978","name":"天理教","lat":43.22871,"lon":143.29095,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5309922315","name":"士幌神社","lat":43.16821,"lon":143.25006,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5542795444","name":"ひとり観音","lat":43.24025,"lon":143.30242,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5542795449","name":"妙正寺","lat":43.232,"lon":143.28728,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5544071769","name":"上士幌神社","lat":43.23667,"lon":143.30171,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12411464512","name":"松雲山高昭寺","lat":43.02078,"lon":143.45771,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:562523903","name":"遍照寺","lat":43.22886,"lon":143.27745,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:562787398","name":"神社","lat":43.23696,"lon":143.30232,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:782586077","name":"上美神社","lat":43.17885,"lon":143.48584,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

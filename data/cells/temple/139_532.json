@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2786977790","name":"宝蔵寺","lat":34.86049,"lon":133.02171,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5596100927","name":"永野八幡神社","lat":34.83442,"lon":133.21986,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6017303263","name":"永明寺","lat":34.87164,"lon":133.20056,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:7501018109","name":"小堀山八幡神社","lat":34.77442,"lon":133.17683,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10066646366","name":"御神山広国院","lat":34.87902,"lon":133.17092,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10066662310","name":"天満宮","lat":34.89279,"lon":133.17353,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:425291800","name":"慶雲寺","lat":34.97763,"lon":133.03041,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:442363579","name":"西楽寺","lat":34.8574,"lon":133.01677,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:442363580","name":"雲龍寺","lat":34.85734,"lon":133.01765,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:545658861","name":"長政八幡神社宝物殿","lat":34.7506,"lon":133.05809,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:545658862","name":"長政八幡神社本殿","lat":34.75064,"lon":133.05803,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:837137083","name":"八幡神社","lat":34.76133,"lon":133.19809,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

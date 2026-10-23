@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:9459867547","name":"","lat":34.98609,"lon":139.09447,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:190167573","name":"","lat":34.97526,"lon":139.09253,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:2119233338","name":"みはらし休憩場","lat":34.68717,"lon":139.43547,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:4201929092","name":"道の駅 伊東マリンタウン","lat":34.98471,"lon":139.09433,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:9874736584","name":"道の駅白浜野島崎","lat":34.90618,"lon":139.87737,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:320638815","name":"道の駅ちくら・潮風王国","lat":34.92953,"lon":139.95151,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:420490700","name":"道の駅白間津花のパーキング","lat":34.91842,"lon":139.9357,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441616120","name":"道の駅伊東","lat":34.98547,"lon":139.09414,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:457109726","name":"\"渚の駅\"たてやま","lat":34.98948,"lon":139.85461,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:486886107","name":"駐車場","lat":34.93035,"lon":139.95163,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:725842209","name":"道の駅 南房パラダイス","lat":34.93996,"lon":139.82139,"type":"SA・PA","k":"rest_area","likely":true}
+]

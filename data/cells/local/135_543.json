@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:5115935425","name":"樹の里","lat":33.83866,"lon":135.77369,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 08:00-17:00"},
+{"id":"osm:node:5116085021","name":"たまご 酒 たばこ","lat":33.82904,"lon":135.75748,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:587225562","name":"体育館","lat":33.76417,"lon":135.99655,"pref":"三重","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:2240661283","name":"おくとろ公園キャンプ場","lat":33.9378,"lon":135.95075,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7827956185","name":"小船キャンプ場","lat":33.83769,"lon":135.85766,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913286","name":"空中の村【キャンプ場】","lat":33.96793,"lon":135.85652,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"https://kuuchuu-no-mura.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0746-62-0567"},
+{"id":"osm:node:14285913295","name":"千枚田オートキャンプ場","lat":33.8732,"lon":135.94435,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285920933","name":"WATAZE OUTDOOR「おとなしの郷」","lat":33.81916,"lon":135.76649,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://hongu-otonashi.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0735-42-1777"},
+{"id":"osm:node:14287502386","name":"小口キャンプ場","lat":33.75848,"lon":135.83731,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0735-45-2232"},
+{"id":"osm:node:14287528332","name":"おくとろ温泉 やまのやど","lat":33.94015,"lon":135.9454,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:285165782","name":"小口キャンプ場","lat":33.76152,"lon":135.83944,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://www.shinguu.jp/spots/detail/B0035","note":"キャンプ・野外","g":"local","k":"camp","tel":"+84 0735-45-2434"},
+{"id":"osm:way:717025542","name":"川湯温泉木魂の里(川原サイト)","lat":33.81499,"lon":135.7811,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:717025543","name":"川湯野営場木魂の里","lat":33.81628,"lon":135.78003,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://tanabe-kawayu-camp.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0735-42-1168","pk":2},
+{"id":"osm:way:1025274083","name":"飛雪の滝キャンプ場","lat":33.75822,"lon":135.92631,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://hisetsu.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0735-21-1333"},
+{"id":"osm:way:1025274084","name":"飛雪の滝キャンプ場　コテージ","lat":33.75766,"lon":135.92681,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://hisetsu.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0735-21-1333"},
+{"id":"osm:way:1244531565","name":"渡瀬緑の広場キャンプ場","lat":33.81965,"lon":135.76504,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://hongu-otonashi.com/campsite/","note":"キャンプ・野外","g":"local","k":"camp","oh":"Fr-We 09:00-21:00; Mo-Su 09:00-21:00 \"Year end, golden week, obon\"","tel":"0735-42-1777"}
+]

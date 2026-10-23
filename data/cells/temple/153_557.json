@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:9719696004","name":"観音寺","lat":38.4633,"lon":139.25336,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9719696005","name":"やす突き観音","lat":38.4633,"lon":139.25284,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9719696006","name":"八所神社","lat":38.46352,"lon":139.25052,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9719707895","name":"乳入観音","lat":38.46481,"lon":139.25177,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9719732778","name":"古峯様","lat":38.46424,"lon":139.2525,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:14273010349","name":"十二神社","lat":38.37008,"lon":139.45554,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

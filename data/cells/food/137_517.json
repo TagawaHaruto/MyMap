@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:430348715","name":"wild boar (inoshishi)","lat":34.27449,"lon":129.31778,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430348716","name":"yakitori","lat":34.26907,"lon":129.31243,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430348717","name":"Sakana-ya","lat":34.27827,"lon":129.3244,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"restaurant"},
+{"id":"osm:way:430348718","name":"Lilac Café","lat":34.27862,"lon":129.32433,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430348719","name":"Italian","lat":34.27287,"lon":129.32007,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430361235","name":"onsen & restaurant","lat":34.28491,"lon":129.31857,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430450669","name":"Soba","lat":34.28339,"lon":129.31924,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430896583","name":"キッチン平山","lat":34.38291,"lon":129.34998,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430896674","name":"Bento","lat":34.45741,"lon":129.36504,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430898226","name":"Izakaya","lat":34.45723,"lon":129.37544,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:462238536","name":"しげちゃんラーメン","lat":34.25183,"lon":129.31433,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","kana":"らめん"},
+{"id":"osm:way:463839071","name":"Haruchan Ramen","lat":34.27413,"lon":129.31937,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430755496","name":"Hotto Motto","lat":34.27191,"lon":129.31774,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:430896948","name":"Taiyaki","lat":34.45729,"lon":129.37055,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:465070483","name":"Takoyaki","lat":34.29912,"lon":129.35571,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:430287563","name":"bakery","lat":34.27171,"lon":129.31804,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:462241033","name":"Pattiserie","lat":34.26835,"lon":129.31358,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6386846527","name":"Strong Man - All Japan Triathlon Miyajima","lat":24.72042,"lon":125.46751,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463045845","name":"乾隆三十六年大波の碑","lat":24.74482,"lon":125.26097,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7760758185","name":"宮古島東急ホテル＆リゾーツ","lat":24.73943,"lon":125.26211,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10636676407","name":"アラマンダ インギャーコーラルヴィレッジ","lat":24.72385,"lon":125.35472,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:714442506","name":"シギラ ベイサイドスイートアラマンダ","lat":24.7233,"lon":125.33639,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:714442542","name":"ホテル シーブリーズコーラル","lat":24.72068,"lon":125.33319,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:734492866","name":"アラマンダ プレミアハウス","lat":24.72259,"lon":125.3374,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1143791843","name":"ザ シギラ","lat":24.71847,"lon":125.33967,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"しぎら","tel":"+81 980-74-7240"},
+{"id":"osm:way:1235137191","name":"ザ  シギラ","lat":24.72418,"lon":125.34925,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1257645600","name":"プールヴィラ ロイヤルスイート","lat":24.72336,"lon":125.33479,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:708073217","name":"明生児童公園","lat":43.56928,"lon":145.00603,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"めいせいじどうこうえん"},
+{"id":"osm:way:1037747732","name":"しべつ「海の公園」","lat":43.65918,"lon":145.13554,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"しべつうみのこうえん"},
+{"id":"osm:way:431827220","name":"町営野球場","lat":43.65416,"lon":145.12753,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","kana":"ちょうえいやきゅうじょう"},
+{"id":"osm:way:431827231","name":"町営温水プール","lat":43.65612,"lon":145.12593,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports","kana":"ちょうえいおんすいぷーる"}
+]

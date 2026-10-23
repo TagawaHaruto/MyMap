@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2517982085","name":"千畳敷砲台跡（戦闘司令所）","lat":41.74745,"lon":140.70662,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10647867404","name":"三木露風詩碑","lat":41.73915,"lon":140.57071,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10647893052","name":"北海道まちづくり100選 トラピスト男子修道院付近","lat":41.7388,"lon":140.5708,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:434683836","name":"Hakodateyama Guest House","lat":41.74832,"lon":140.71676,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://hakog-e.cloud-line.com","note":"宿","g":"heritage","k":"lodging","tel":"+81 80 4503 9044"}
+]

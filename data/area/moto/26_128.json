@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:1211643096","name":"","lat":26.66078,"lon":128.10155,"type":"バイク専用","k":"moto_dedicated","fee":"無料","cap":20},
+{"id":"osm:way:412912391","name":"道の駅 ゆいゆい国頭","lat":26.73192,"lon":128.16945,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:relation:6176719","name":"サンライズひがし","lat":26.63102,"lon":128.15356,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1027241153","name":"道の駅おおぎみ やんばるの森ビジターセンター","lat":26.661,"lon":128.10207,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1037499481","name":"道の駅やんばるパイナップルの丘 安波","lat":26.705,"lon":128.28075,"type":"SA・PA","k":"rest_area","likely":true,"oh":"10:00-17:00"}
+]

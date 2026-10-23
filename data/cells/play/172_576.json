@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:802532873","name":"中央公園","lat":43.11524,"lon":144.12886,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1301975105","name":"阿寒町総合運動公園","lat":43.11302,"lon":144.12065,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:171860233","name":"阿寒町野球場","lat":43.11237,"lon":144.12072,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","kana":"あかんきょうやきゅうじょう"},
+{"id":"osm:way:785109831","name":"阿寒町多目的広場","lat":43.11386,"lon":144.12,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","kana":"あかんちょうたもくてきひろば"},
+{"id":"osm:way:1301975103","name":"阿寒町多種目競技広場","lat":43.11147,"lon":144.12115,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

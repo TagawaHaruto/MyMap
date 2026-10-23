@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:8637195410","name":"TSUTAYA","lat":32.95902,"lon":131.90309,"pref":"大分","genres":["shopping"],"indoor":true,"url":"https://store-tsutaya.tsite.jp/storelocator/detail/8209.html","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:way:914967278","name":"サイクルショップやまうち","lat":32.95965,"lon":131.89697,"pref":"大分","genres":["shopping"],"indoor":true,"url":"https://cs-yamauchi.jimdofree.com/","note":"自転車","g":"hobby","k":"hobby","oh":"Mo,We-Su","tel":"+81 972-22-2148","wc":"limited"},
+{"id":"osm:way:919975152","name":"佐伯市民番匠体育館","lat":32.95081,"lon":131.90044,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:920120200","name":"明屋書店","lat":32.96038,"lon":131.86531,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:962272243","name":"アルペン","lat":32.96188,"lon":131.869,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:977470355","name":"シオツキサイクル","lat":32.97021,"lon":131.90294,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1017069086","name":"エトウ釣具","lat":32.95086,"lon":131.89438,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","oh":"24/7","wc":"yes"},
+{"id":"osm:way:1034126749","name":"二階堂書店","lat":32.95733,"lon":131.89496,"pref":"大分","genres":["shopping"],"indoor":true,"url":"https://www.e-hon.ne.jp/bec/SF/ShotenHome?shotenCode=87377","note":"本屋","g":"hobby","k":"hobby","oh":"09:00-19:00","tel":"+81 972 22 0308"},
+{"id":"osm:way:1034345361","name":"ミヤ乗物センター","lat":32.95811,"lon":131.89576,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1038948243","name":"マリンピア","lat":32.96052,"lon":131.8981,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

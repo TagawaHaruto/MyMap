@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4618289576","name":"総合リユースショップ リサイクルマートマルタニ奄美店","lat":28.38127,"lon":129.49535,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5294916653","name":"サッカーショップリベロ","lat":28.3776,"lon":129.49579,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:548043600","name":"じんのうち","lat":28.37833,"lon":129.49498,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:way:555852473","name":"セントラル楽器","lat":28.37853,"lon":129.49463,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:555858129","name":"楠田書店","lat":28.38219,"lon":129.49275,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

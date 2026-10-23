@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3104884104","name":"富良野神社","lat":43.34388,"lon":142.38189,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:530028305","name":"創価学会","lat":43.34644,"lon":142.36474,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:530759927","name":"興仁寺","lat":43.34155,"lon":142.38845,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:530784046","name":"崇教新光富良野準道場","lat":43.34956,"lon":142.38432,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:941192142","name":"宣教寺","lat":43.47236,"lon":142.25992,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

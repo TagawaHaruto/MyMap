@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:8378105051","name":"復興記念碑","lat":41.53274,"lon":140.421,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4678035078","name":"宿 きたかい","lat":41.68734,"lon":140.44683,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4678039614","name":"きこないビュウ温泉のとや","lat":41.68877,"lon":140.44817,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.kikonai-notoya.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 1392 2 4055"},
+{"id":"osm:node:4807857785","name":"寿旅館","lat":41.67474,"lon":140.43204,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4807857988","name":"民宿ユーターン","lat":41.65233,"lon":140.43197,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

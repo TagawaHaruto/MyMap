@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:678850414","name":"佐和田海水浴場","lat":37.99974,"lon":138.31785,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:678850426","name":"河原田公園","lat":37.99974,"lon":138.31884,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682370132","name":"真野公園","lat":37.95716,"lon":138.34561,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:682931418","name":"小木みなと公園","lat":37.81548,"lon":138.28068,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:872152164","name":"紅葉山公園","lat":37.92388,"lon":138.45278,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:963947510","name":"畑野農村公園","lat":37.9913,"lon":138.3961,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1039503055","name":"羽茂児童遊園","lat":37.85938,"lon":138.33051,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1039518879","name":"大橋緑地公園","lat":37.82782,"lon":138.31011,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1049482363","name":"城の山公園","lat":37.86975,"lon":138.40962,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1049485566","name":"赤泊臨海運動公園","lat":37.86534,"lon":138.41056,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1107885044","name":"八幡公園","lat":37.99225,"lon":138.33923,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1245839284","name":"金丸農村公園","lat":37.99271,"lon":138.35706,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1496885658","name":"多田海浜公園","lat":37.91237,"lon":138.48203,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:363664697","name":"サンスポーツランド畑野","lat":37.99612,"lon":138.40581,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1059459475","name":"国見平広場","lat":37.97735,"lon":138.40689,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:877819144","name":"加茂神社能舞台","lat":37.99339,"lon":138.40757,"pref":"新潟","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"},
+{"id":"osm:way:914958906","name":"大膳神社能舞台","lat":37.9735,"lon":138.36758,"pref":"新潟","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse","kana":"だいぜん じんじゃ のう ぶたい"},
+{"id":"osm:way:1029903936","name":"吉岡總社神社能舞台","lat":37.96772,"lon":138.35478,"pref":"新潟","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

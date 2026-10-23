@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:616806328","name":"ひるがの高原","lat":36.00575,"lon":136.91392,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686833242","name":"荘川桜公園","lat":36.09093,"lon":136.93784,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:972806705","name":"MIBOROダムサイトパーク","lat":36.145,"lon":136.90878,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1303243053","name":"荘川グラウンド","lat":36.00933,"lon":136.97675,"pref":"岐阜","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

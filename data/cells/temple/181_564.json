@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:326850475","name":"元地神社","lat":45.30693,"lon":141.02334,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:326860612","name":"礼香寺","lat":45.30294,"lon":141.04267,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:326860634","name":"厳島神社","lat":45.30285,"lon":141.0453,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"}
+]

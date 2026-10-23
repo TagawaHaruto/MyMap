@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5019612332","name":"日韓ひろば","lat":38.73454,"lon":140.17546,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5019612333","name":"芭蕉ドライブイン","lat":38.72487,"lon":140.1646,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5019612336","name":"佐藤長三郎そば","lat":38.73852,"lon":140.14215,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5019612637","name":"たけのこ","lat":38.74331,"lon":140.18055,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5019612641","name":"戸城","lat":38.74834,"lon":140.17752,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5053027221","name":"たんぽぽ","lat":38.70298,"lon":140.2334,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5053027222","name":"大蔵食堂","lat":38.70398,"lon":140.23252,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5053027236","name":"みち草","lat":38.60812,"lon":140.16645,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10137231927","name":"食文化館","lat":38.72861,"lon":140.1614,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1111880455","name":"そば処寿屋","lat":38.60931,"lon":140.16631,"pref":"山形","genres":["food"],"indoor":true,"url":"https://kotobukisoba.com/","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Sa 10:00-15:00","tel":"+81 0233 76 2140"},
+{"id":"osm:way:1229020424","name":"大蔵山蕎麦ねぎぼうず","lat":38.71184,"lon":140.22929,"pref":"山形","genres":["food"],"indoor":true,"url":"https://nagomigroup.com/","note":"そば","g":"food","k":"restaurant","oh":"11:15-14:30","tel":"+81 233-29-8825"},
+{"id":"osm:node:10137231929","name":"うめちゃんキムチ","lat":38.72785,"lon":140.16212,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:5053027432","name":"長山餅屋","lat":38.60798,"lon":140.16734,"pref":"山形","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1111826722","name":"ほていや","lat":38.60753,"lon":140.16644,"pref":"山形","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"ほていや","oh":"Mo-Sa 06:30-17:30","tel":"+81 2337 62 132"}
+]

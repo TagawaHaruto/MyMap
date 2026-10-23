@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:477972395","name":"世界アルペン記念公園","lat":39.69546,"lon":140.97675,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:553562064","name":"御所湖ファミリーランド","lat":39.6641,"lon":140.96597,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:553562068","name":"雫石総合運動公園","lat":39.70011,"lon":140.96367,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:741850972","name":"貝沢地区砂防公園","lat":39.54412,"lon":140.842,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:761210021","name":"御所湖広域公園","lat":39.66674,"lon":140.97289,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1107239682","name":"こまくさ団地公園","lat":39.69285,"lon":140.96192,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:741748741","name":"旧貝沢小学校グラウンド","lat":39.54798,"lon":140.84407,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:4712598141","name":"野菊ホール","lat":39.69414,"lon":140.9763,"pref":"岩手","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

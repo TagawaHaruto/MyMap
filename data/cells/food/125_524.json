@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3339348095","name":"野菜ごはん 菜ばな","lat":31.43039,"lon":131.01212,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 99-476-0883","wc":"limited"},
+{"id":"osm:node:3362849493","name":"蓬の郷","lat":31.47096,"lon":131.03946,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 99-475-2626","wc":"yes"},
+{"id":"osm:node:5679258610","name":"ジョイフル","lat":31.47357,"lon":131.09489,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:5679268245","name":"ジョイフル","lat":31.45363,"lon":131.21476,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:11164421530","name":"マルチョンラーメン","lat":31.47587,"lon":131.0984,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:12215823232","name":"寿司虎","lat":31.4627,"lon":131.228,"pref":"宮崎","genres":["food"],"indoor":true,"url":"https://tora-corp.com/sushitora/","note":"寿司","g":"food","k":"restaurant","tel":"+81-987-72-1427"},
+{"id":"osm:node:4265974340","name":"すき家","lat":31.46741,"lon":131.08313,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true},
+{"id":"osm:node:12217449791","name":"ほっともっと","lat":31.4547,"lon":131.2158,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ほっともっと","chain":true},
+{"id":"osm:node:12208366061","name":"洋菓子工房 BonBonMaman","lat":31.45539,"lon":131.21648,"pref":"宮崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","tel":"+81 987-72-0584"},
+{"id":"osm:node:12215487759","name":"くいもん屋 しんちゃん","lat":31.46185,"lon":131.22747,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:12179564036","name":"シドッチ上陸記念碑","lat":30.23092,"lon":130.53778,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2267366542","name":"Shiki Noyado Onoaida","lat":30.24138,"lon":130.56172,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81997-47-3377"},
+{"id":"osm:node:5153337723","name":"嵐の散歩道<屋久島>","lat":30.24474,"lon":130.58213,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:444984893","name":"屋久島いわさきホテル","lat":30.23957,"lon":130.54666,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:444985047","name":"samana hotel Yakushima","lat":30.2336,"lon":130.55596,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"https://samanahotel.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-997-47-2011","wc":"yes"}
+]

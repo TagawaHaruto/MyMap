@@ -1,0 +1,21 @@
+[
+{"name":"道の駅よこはま　菜の花プラザ","lat":41.0837577,"lon":141.2569111,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅なとわ・えさん","lat":41.779626,"lon":141.10131324999998,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅よこはま 菜の花プラザ","lat":41.083702200000005,"lon":141.25723025000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅よこはま","lat":41.0837593,"lon":141.2570436,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%82%88%E3%81%93%E3%81%AF%E3%81%BE","k":"michinoeki"},
+{"name":"ふれあい湯遊館","lat":41.7295454,"lon":141.03178765,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"大湯","lat":41.4667763,"lon":141.09202545,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"新湯","lat":41.46586205,"lon":141.09259695,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"桑畑温泉;湯ん湯ん♪","lat":41.4819061,"lon":141.03576915,"kind":"onsen","wikipedia":"https://ja.wikipedia.org/wiki/%E6%A1%91%E7%95%91%E6%B8%A9%E6%B3%89","k":"onsen"},
+{"name":"五智山展望台","lat":41.3260002,"lon":141.0888547,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"釜臥山展望台","lat":41.2818581,"lon":141.1205226,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"前山展望台","lat":41.795276,"lon":141.1565332,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"海峡展望台","lat":41.8022393,"lon":141.1510298,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"恵山展望台","lat":41.8025635,"lon":141.1583511,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"恐山展望台","lat":41.3069282,"lon":141.1161354,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"釜臥山","lat":41.278503,"lon":141.1200512,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E9%87%9C%E8%87%A5%E5%B1%B1","k":"scenic"},
+{"name":"大尽山","lat":41.2929781,"lon":141.0684241,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B0%BD%E5%B1%B1","k":"scenic"},
+{"name":"丸山","lat":41.8518914,"lon":141.09211,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E6%81%B5%E5%B1%B1%E4%B8%B8%E5%B1%B1","k":"scenic"},
+{"name":"燧岳","lat":41.4390715,"lon":141.0529493,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E7%87%A7%E5%B2%B3","k":"scenic"},
+{"name":"宇曽利湖","lat":41.317932850000005,"lon":141.08759665,"kind":"lake","wikipedia":"https://ja.wikipedia.org/wiki/%E5%AE%87%E6%9B%BD%E5%88%A9%E6%B9%96","k":"scenic"}
+]

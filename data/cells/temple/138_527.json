@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:3036157163","name":"住吉神社","lat":34.67305,"lon":131.86294,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3036505187","name":"大元神社","lat":34.67729,"lon":131.85563,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3045130534","name":"人麻呂神社","lat":34.68011,"lon":131.86104,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:299286979","name":"松龍山 泉光寺","lat":34.67616,"lon":131.85154,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:300167320","name":"明義寺","lat":34.67247,"lon":131.8601,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:700608953","name":"朝倉八幡宮","lat":34.67576,"lon":131.92465,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

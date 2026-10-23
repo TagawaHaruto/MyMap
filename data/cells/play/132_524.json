@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:13437157522","name":"千羽鶴鹿公園","lat":33.06069,"lon":131.17827,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1190583600","name":"天瀬総合運動公園","lat":33.24587,"lon":131.03086,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9922530113","name":"TAOの丘","lat":33.05924,"lon":131.21089,"pref":"熊本","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

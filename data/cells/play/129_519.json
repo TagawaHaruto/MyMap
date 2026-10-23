@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:546384863","name":"十三仏公園","lat":32.38527,"lon":129.99108,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:928313764","name":"お万が池公園","lat":32.32447,"lon":129.98921,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:928797648","name":"西平椿公園","lat":32.34743,"lon":129.9795,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:928284870","name":"大江農村広場","lat":32.32604,"lon":129.98685,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

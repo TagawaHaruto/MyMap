@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:11768527244","name":"宍喰漁港","lat":33.56172,"lon":134.30921,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11840999551","name":"浅川港","lat":33.62731,"lon":134.36809,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11860267087","name":"牟岐漁港","lat":33.66179,"lon":134.42142,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:313653029","name":"屋内温水プール","lat":33.62221,"lon":134.36986,"pref":"徳島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:315560215","name":"町民体育館","lat":33.672,"lon":134.42579,"pref":"徳島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4734246422","name":"Free camp ground","lat":33.69649,"lon":134.25464,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11531413869","name":"まぜのおか","lat":33.62355,"lon":134.36906,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://www.kaiyo-kankou.jp/spots/spots-1226/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 74 3111"},
+{"id":"osm:node:11531758569","name":"白浜キャンプ場","lat":33.54326,"lon":134.29579,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81887293395"},
+{"id":"osm:node:14285920196","name":"4491Base","lat":33.55728,"lon":134.31302,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"078-991-1794"},
+{"id":"osm:node:14287534801","name":"ほたる村 CAMP FIELD","lat":33.70764,"lon":134.48099,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287545611","name":"徳島県立牟岐少年自然の家","lat":33.66877,"lon":134.44308,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0884-72-2811"},
+{"id":"osm:node:14287545624","name":"OZUNA CAMP&LODGE","lat":33.64037,"lon":134.38095,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://ozunacamplodge.com/camp.html","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:313517448","name":"美波町体験活動施設南阿波サンラインモビレージ","lat":33.69248,"lon":134.48935,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"http://www.awasun.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 77 0709"},
+{"id":"osm:way:313652991","name":"まぜのおかオートキャンプ場","lat":33.623,"lon":134.36914,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://www.kaifu.or.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 74 3111"},
+{"id":"osm:way:1275235310","name":"南阿波ピクニック公園","lat":33.62022,"lon":134.37318,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wp":"ja:南阿波ピクニック公園"}
+]

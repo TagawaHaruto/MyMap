@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6934867385","name":"高原ふれあい産直ハウス","lat":39.54173,"lon":140.83818,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81197855488","wc":"yes"},
+{"id":"osm:node:7418829551","name":"ちゃい夢の会","lat":39.5221,"lon":140.82663,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9010055453","name":"銀河の里","lat":39.54217,"lon":140.83801,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:742344716","name":"八幡平カントリークラブ","lat":39.63525,"lon":140.93839,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286177371","name":"道の駅雫石あねっこ（小柳沢砂防公園キャンプ場）","lat":39.70886,"lon":140.87388,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://www.anekko.co.jp/camp","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-692-5577"},
+{"id":"osm:node:14286177372","name":"国見キャンプ場","lat":39.70363,"lon":140.87857,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-692-2111"},
+{"id":"osm:node:14287663295","name":"鶯宿温泉 寿広園","lat":39.64097,"lon":140.93562,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

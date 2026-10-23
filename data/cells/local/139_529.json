@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:6480736230","name":"長谷体育館","lat":34.93206,"lon":132.28557,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1284986414","name":"川本町民球場","lat":34.97861,"lon":132.48207,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285457149","name":"瑞穂ハイランド","lat":34.81588,"lon":132.39987,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287449658","name":"広島YMCA雲月山キャンプ村","lat":34.80935,"lon":132.25137,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-35-0384"},
+{"id":"osm:node:14287456971","name":"KAZENOKUNI IWAMI RESORT＆STAYS（風の国）","lat":34.92469,"lon":132.26691,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0855-92-0001"},
+{"id":"osm:node:14287471705","name":"深篠川キャンプ場","lat":34.90317,"lon":132.4802,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0855-95-0352"},
+{"id":"osm:node:14287476486","name":"ユートピアサイオト","lat":34.78598,"lon":132.31734,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1183425547","name":"香木の森公園","lat":34.8763,"lon":132.42167,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

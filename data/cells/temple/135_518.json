@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4478356126","name":"華光寺","lat":33.75415,"lon":129.70038,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4858861729","name":"壱岐四国八十八ヶ所霊場１番札所（神岳山金蔵寺）","lat":33.82719,"lon":129.71076,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4858868276","name":"壱岐四国八十八ヶ所霊場２番札所","lat":33.82914,"lon":129.70598,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4858868277","name":"壱岐四国八十八ヶ所霊場３番札所（岩熊堂）","lat":33.82792,"lon":129.70454,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4858868278","name":"壱岐四国八十八ヶ所霊場４番札所（寺原田堂）","lat":33.82575,"lon":129.71634,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9660134603","name":"津神社","lat":33.77465,"lon":129.69629,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9660134708","name":"円光寺","lat":33.75486,"lon":129.71911,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:442879410","name":"天手長男神社","lat":33.76404,"lon":129.70244,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:442886902","name":"創価学会","lat":33.76251,"lon":129.69558,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","pk":2},
+{"id":"osm:way:443023536","name":"弥佐支刀神社","lat":33.75328,"lon":129.7199,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:499873086","name":"祥雲寺","lat":33.76955,"lon":129.69416,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1432949675","name":"住吉神社","lat":33.78844,"lon":129.70649,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

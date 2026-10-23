@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:9515393772","name":"宇部蒲鉾株式会社 本社直売店","lat":33.99532,"lon":131.27229,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Fr 09:00-17:00","pk":2},
+{"id":"osm:way:549154635","name":"(株)やなぎだ 万栄店","lat":33.95236,"lon":131.25753,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:553055005","name":"幸屋","lat":33.94316,"lon":131.26637,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:553055006","name":"もち吉","lat":33.94323,"lon":131.26673,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3753772433","name":"宇部岬漁港","lat":33.92606,"lon":131.26385,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:288447990","name":"俵田翁記念体育館","lat":33.94683,"lon":131.2722,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:宇部市俵田翁記念体育館"},
+{"id":"osm:way:375944745","name":"パークレーン宇部","lat":33.93407,"lon":131.25781,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:562476620","name":"SSSフットサルクラブ宇部","lat":33.93433,"lon":131.25701,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6476790748","name":"Wild beach camping.","lat":33.99338,"lon":131.44387,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10933610505","name":"ときわ湖畔北キャンプ場","lat":33.96098,"lon":131.2899,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"https://www.tokiwapark.jp/etc/camp.html","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287528502","name":"AIO YUME BEACH","lat":33.99598,"lon":131.44698,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-5260-5793"}
+]

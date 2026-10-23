@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:481333704","name":"西口公園","lat":39.01386,"lon":141.39432,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:482051732","name":"大明神親水公園","lat":39.01476,"lon":141.3901,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:700681028","name":"西口公園","lat":39.01503,"lon":141.39518,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:483626873","name":"大東野球場","lat":39.00675,"lon":141.3298,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:483626874","name":"大東グランド","lat":39.00652,"lon":141.33115,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:559419314","name":"春日グラウンド","lat":39.01839,"lon":141.39809,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:672193290","name":"春日公園テニスコート","lat":39.01826,"lon":141.39706,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:893961284","name":"大東バレーボール記念館","lat":39.04908,"lon":141.36782,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

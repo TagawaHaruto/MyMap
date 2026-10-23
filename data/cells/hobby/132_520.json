@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:12184254549","name":"武雄 旅 書店","lat":33.19608,"lon":130.02287,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12209126413","name":"古賀自転車商会","lat":33.19318,"lon":130.01594,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:12209126417","name":"和島屋佛壇店","lat":33.19283,"lon":130.01521,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:way:454280505","name":"TSUTAYA 武雄店","lat":33.20573,"lon":130.03619,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1060259063","name":"積文館書店","lat":33.11178,"lon":130.08821,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

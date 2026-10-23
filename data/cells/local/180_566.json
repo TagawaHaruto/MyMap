@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:6554860888","name":"兜沼公園キャンプ場","lat":45.21695,"lon":141.70018,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.toyotomicamp.sakura.ne.jp/","note":"キャンプ・野外","g":"local","k":"camp","oh":"Mo-Su 08:00-22:00","tel":"+81-162-84-2600"},
+{"id":"osm:way:263601292","name":"兜沼オートキャンプ場","lat":45.21961,"lon":141.69335,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

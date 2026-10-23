@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1060953680","name":"徳良湖 こども広場","lat":38.59999,"lon":140.4369,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"とくらこ こどもひろば"},
+{"id":"osm:way:1509690258","name":"西ノ前遺跡公園","lat":38.6915,"lon":140.31286,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1236148080","name":"新庄市サイクルスポーツセンター","lat":38.72066,"lon":140.31296,"pref":"山形","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports","wp":"ja:新庄市サイクルスポーツセンター"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:619683553","name":"東町公園","lat":36.33445,"lon":137.30285,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:619683556","name":"坂巻公園","lat":36.32044,"lon":137.30977,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:619683566","name":"緑ヶ丘公園","lat":36.3214,"lon":137.30242,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:686668128","name":"城ヶ丘公園","lat":36.32975,"lon":137.30253,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1080296907","name":"展望台","lat":36.49141,"lon":137.45086,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5549483034","name":"正行寺","lat":41.18241,"lon":140.47623,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5549483124","name":"今別八幡宮","lat":41.1819,"lon":140.48589,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5549483134","name":"湊久庵","lat":41.19548,"lon":140.43122,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5705335094","name":"脇元岩木山神社","lat":41.08831,"lon":140.33078,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8171405671","name":"西願寺","lat":41.12944,"lon":140.30264,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8171405675","name":"海満寺","lat":41.13052,"lon":140.30413,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:819065510","name":"義経寺","lat":41.1995,"lon":140.42887,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ぎけいじ","tel":"+81-174-37-2045"},
+{"id":"osm:way:834757360","name":"熊野神社","lat":41.1218,"lon":140.27595,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:834757365","name":"稲荷神社","lat":41.11546,"lon":140.29777,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:834757368","name":"洗磯崎神社","lat":41.0959,"lon":140.31534,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:834757376","name":"熊野神社","lat":41.07901,"lon":140.3331,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:834757386","name":"日吉神社","lat":41.06658,"lon":140.3679,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:834757388","name":"神明宮","lat":41.03245,"lon":140.32928,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:834757393","name":"浜明神","lat":41.00335,"lon":140.32575,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:relation:20413688","name":"本覚寺","lat":41.18145,"lon":140.47817,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

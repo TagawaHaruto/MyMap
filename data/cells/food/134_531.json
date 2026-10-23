@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3956289869","name":"長寿し","lat":33.7408,"lon":132.7927,"pref":"愛媛","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:3956302507","name":"富そば","lat":33.73853,"lon":132.79311,"pref":"愛媛","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"とみそば"},
+{"id":"osm:node:5923150586","name":"なみへい","lat":33.59561,"lon":132.78458,"pref":"愛媛","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant","kana":"なみへい","oh":"Sa-Th 11:00-14:00"},
+{"id":"osm:node:12161936305","name":"久万山食堂","lat":33.61418,"lon":132.96976,"pref":"愛媛","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3956289864","name":"Strawberry Field","lat":33.74095,"lon":132.79293,"pref":"愛媛","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

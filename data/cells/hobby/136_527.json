@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:3205818368","name":"ヒマラヤスポーツ&ゴルフ イオンタウン周南店","lat":34.06899,"lon":131.75777,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3890162129","name":"宮脇書店","lat":34.04867,"lon":131.82993,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3890170962","name":"ゴルフ5","lat":34.04794,"lon":131.83058,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3929830657","name":"フィッシングうちうみ","lat":34.02148,"lon":131.83395,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:3987893332","name":"かめや","lat":34.01442,"lon":131.87113,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:3987943967","name":"ムネスエスポーツ","lat":34.0139,"lon":131.87014,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4035821690","name":"田村書店","lat":34.03623,"lon":131.87888,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4035821992","name":"アンフィ","lat":34.03445,"lon":131.87729,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:4036269292","name":"ふじいサイクル花岡","lat":34.03678,"lon":131.8741,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4107663989","name":"マツノ書店","lat":34.05049,"lon":131.80465,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4440521241","name":"サイクルギャラリー周南","lat":34.0499,"lon":131.81217,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549050876","name":"ヒマラヤスポーツ サンリブ下松店","lat":34.03064,"lon":131.86543,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:305511661","name":"明屋書店","lat":34.01798,"lon":131.86671,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:314669224","name":"花田書店","lat":34.07265,"lon":131.76987,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:314792649","name":"明屋書店","lat":34.06261,"lon":131.80019,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:335896971","name":"ブックスとんだ","lat":34.06965,"lon":131.77942,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:369606562","name":"ヴィレッジGOLF","lat":34.02856,"lon":131.85237,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:369685731","name":"サイクルベースあさひ","lat":34.02342,"lon":131.85751,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:374920273","name":"明屋書店","lat":34.07226,"lon":131.76721,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

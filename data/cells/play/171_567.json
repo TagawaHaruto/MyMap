@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4295773078","name":"ときわ公園","lat":42.7644,"lon":141.82772,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13638408018","name":"追分児童館","lat":42.87174,"lon":141.81459,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park","kana":"おいわけじどうかん"},
+{"id":"osm:way:544322087","name":"町民ふれあい公園","lat":42.99902,"lon":141.79069,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:559764485","name":"古山自然公園","lat":42.97567,"lon":141.77014,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:791965647","name":"さかえ児童公園","lat":42.76317,"lon":141.8139,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:804834889","name":"はだしの広場","lat":42.77008,"lon":141.82565,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:846321513","name":"あけぼの公園","lat":42.76306,"lon":141.81958,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:846321514","name":"雪だるま公園","lat":42.76704,"lon":141.82146,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:846321515","name":"北進カナディアン公園","lat":42.77271,"lon":141.82959,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:846321516","name":"北進会館公園","lat":42.77218,"lon":141.83177,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:851340980","name":"滝の上公園","lat":42.91225,"lon":141.97,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1413424126","name":"しらかば公園","lat":42.76787,"lon":141.82578,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1444471581","name":"ポッポらんど（柏が丘公園）","lat":42.87495,"lon":141.81949,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:624193562","name":"伏見台球場","lat":42.99659,"lon":141.77386,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1444471607","name":"柏が丘球場","lat":42.87476,"lon":141.8196,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

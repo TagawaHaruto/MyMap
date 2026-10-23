@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:2425338853","name":"糠平温泉 中村屋","lat":43.36476,"lon":143.18998,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://nukabira-nakamuraya.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 1564 4 2311"},
+{"id":"osm:node:2425338854","name":"森のふくろう","lat":43.36486,"lon":143.1896,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"もりのふくろ"},
+{"id":"osm:node:2425340022","name":"ユースホステル","lat":43.36573,"lon":143.19108,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2425340023","name":"プライマルステージ","lat":43.36462,"lon":143.19105,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2425340024","name":"グリーン糠平","lat":43.36685,"lon":143.19183,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2425340025","name":"山湖荘","lat":43.36502,"lon":143.1909,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"さんんこそう"},
+{"id":"osm:node:2425340026","name":"ぬかびら源泉郷 湯元館","lat":43.365,"lon":143.18733,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.nukabira-yumotokan.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 1564 4 2121"},
+{"id":"osm:node:2445941862","name":"幌加温泉 湯元鹿の谷","lat":43.46889,"lon":143.12532,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ほろかおんせんゆもとかのや"},
+{"id":"osm:node:4279349389","name":"然別湖畔溫泉旅館（風水）","lat":43.27359,"lon":143.10537,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:502705027","name":"糠平館観光ホテル","lat":43.36548,"lon":143.18818,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.nukabirakan.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 1564 4 2210"},
+{"id":"osm:way:992336705","name":"糠平温泉ホテル","lat":43.36466,"lon":143.18833,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 1564-4-2210"}
+]

@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:821819387","name":"九条武子歌碑","lat":43.73278,"lon":142.20153,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4354696754","name":"戸外炉峠 ねこバス","lat":43.69155,"lon":142.0976,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4809562605","name":"神居古潭竪穴住居遺跡","lat":43.72955,"lon":142.18562,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13956694860","name":"ズリ山展望広場","lat":43.55081,"lon":142.04398,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13956777124","name":"住友赤平炭砿立坑","lat":43.54818,"lon":142.05627,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:13956777186","name":"住友赤平炭鉱殉職職員慰霊塔","lat":43.54902,"lon":142.05573,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14091491992","name":"深川市合同墓「やすらぎの丘」","lat":43.74328,"lon":142.05582,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:478454739","name":"神居古潭おう穴群","lat":43.73225,"lon":142.20229,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:488708615","name":"音江環状列石","lat":43.6752,"lon":142.03248,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:534334643","name":"旧住友赤平炭鉱立坑櫓","lat":43.54805,"lon":142.05639,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:550242244","name":"北炭赤間炭鉱選炭工場揚炭ベルト","lat":43.55324,"lon":142.04802,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:550242251","name":"北炭赤間炭鉱選炭工場","lat":43.55311,"lon":142.04831,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:870604893","name":"赤平徳川城","lat":43.58054,"lon":142.03529,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","kana":"あかびらとくがわじょう"},
+{"id":"osm:way:937052172","name":"歌志内市立歌志内小学校","lat":43.51828,"lon":142.04723,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2479023916","name":"丸加高原伝承館","lat":43.62711,"lon":142.00174,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:node:9910923827","name":"芦別温泉スターライトホテル","lat":43.54535,"lon":142.2412,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://ofurocafe-seiyukan.com/","note":"宿","g":"heritage","k":"lodging","kana":"あしべつ おんせん すたーらいと ほてる","oh":"Mo-Su 06:00-22:00","tel":"+81 124 23 1155"}
+]

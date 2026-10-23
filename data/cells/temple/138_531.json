@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:3673260449","name":"明覚寺","lat":34.71546,"lon":132.99082,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6857666965","name":"上草井八幡神社","lat":34.54303,"lon":132.87063,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:way:606508003","name":"善正寺","lat":34.60734,"lon":132.85671,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606509799","name":"蓮教寺","lat":34.58171,"lon":132.82573,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606511140","name":"教円寺","lat":34.56555,"lon":132.84579,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606511850","name":"教円寺","lat":34.57005,"lon":132.83578,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606514648","name":"西教寺","lat":34.56864,"lon":132.81531,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606514649","name":"教得寺","lat":34.56785,"lon":132.81553,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606516509","name":"真如院正覚寺","lat":34.53796,"lon":132.78027,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606516510","name":"品覚寺","lat":34.53909,"lon":132.77929,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606524498","name":"品立寺","lat":34.51754,"lon":132.79256,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606525523","name":"光泉寺","lat":34.50186,"lon":132.82479,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606616304","name":"徳善寺","lat":34.54298,"lon":132.8378,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:606626453","name":"善立寺","lat":34.53473,"lon":132.80542,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

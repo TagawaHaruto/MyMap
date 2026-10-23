@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:454594669","name":"多良木えびす物産館","lat":32.26243,"lon":130.93298,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:relation:9655893","name":"熊本クラウンゴルフ倶楽部","lat":32.2598,"lon":130.87072,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287603345","name":"尾寄崎キャンプ場","lat":32.32392,"lon":130.77826,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0966-23-3112"},
+{"id":"osm:node:14287631001","name":"五家荘渓流キャンプ場","lat":32.49676,"lon":130.97467,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"http://goka.sakura.ne.jp/goka/shisetu/camp.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0965-67-5374"},
+{"id":"osm:node:14287631002","name":"端海野キャンプ場","lat":32.48775,"lon":130.80108,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://itsuki-outdoor.com/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

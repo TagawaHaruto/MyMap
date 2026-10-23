@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:518701252","name":"渓風園","lat":42.51955,"lon":141.10797,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:800173289","name":"大滝総合 運動公園","lat":42.64802,"lon":141.06223,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:14196139","name":"三階滝公園","lat":42.67275,"lon":141.10693,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.date-kanko.jp/?page_id=416","note":"公園","g":"play","k":"park","kana":"さんがいたき こうえん"},
+{"id":"osm:node:6805417811","name":"優徳農村公園スポーツ広場","lat":42.64523,"lon":141.05036,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

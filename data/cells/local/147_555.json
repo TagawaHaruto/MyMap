@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:3991215816","name":"ひより堂あじいち","lat":36.93944,"lon":138.80559,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4378228594","name":"丸須製菓","lat":36.7655,"lon":138.96885,"pref":"群馬","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11813695575","name":"茅平堂","lat":36.95062,"lon":138.79961,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1203861242","name":"湯沢みやげ店","lat":36.93361,"lon":138.8204,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6742317386","name":"大源太キャニオンキャンプ場","lat":36.91792,"lon":138.89062,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://daigenta.net/","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-787-3536"},
+{"id":"osm:node:14281509391","name":"谷川岳山麓オートキャンプ場","lat":36.81483,"lon":138.98578,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-8388-5918"},
+{"id":"osm:node:14281509394","name":"ちばむらオートキャンパーズリゾート","lat":36.75022,"lon":138.89223,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14281542738","name":"Outdoor Swag Life","lat":36.78491,"lon":138.97668,"pref":"群馬","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285398046","name":"NASPA CAMP GARDEN","lat":36.92659,"lon":138.81041,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://www.naspa.co.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0257806111"},
+{"id":"osm:node:14285398047","name":"KAGURA Garden Camp | COVE","lat":36.89747,"lon":138.77576,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285398051","name":"苗場高原オートキャンプ場","lat":36.78943,"lon":138.78436,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286480036","name":"湯沢パークゲレンデキャンプ","lat":36.92581,"lon":138.85733,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-8582-8880"},
+{"id":"osm:node:14286480039","name":"星のもとオートキャンプ場","lat":36.91853,"lon":138.87516,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://hoshinomoto-autocamp.cloud-line.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286480042","name":"RIVERSIDE VILLAGE","lat":36.907,"lon":138.83823,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://www.riversidecampandcafe.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286485923","name":"舞子高原オートキャンプ場・舞子グランピング","lat":36.9823,"lon":138.82427,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://www.maiko-resort.com/summer/","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-783-4100"},
+{"id":"osm:node:14286485925","name":"石打ユングパルナス オートキャンプ場","lat":36.9678,"lon":138.79984,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://www.yungparunas.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-783-7888","pk":2},
+{"id":"osm:node:14286786876","name":"苗場グリーンランドキャンプ場","lat":36.81552,"lon":138.77272,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-789-2036"},
+{"id":"osm:node:14286786888","name":"ライジングフィールド苗場","lat":36.79169,"lon":138.7847,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://www.yamate-co.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-1234-6793"},
+{"id":"osm:way:1031899402","name":"巻機山麓キャンプ場","lat":36.9545,"lon":138.93236,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

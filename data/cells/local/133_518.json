@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:13798317901","name":"茶おか","lat":33.36338,"lon":129.5833,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:433855296","name":"松浦スポーツセンター","lat":33.33747,"lon":129.70727,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:435912445","name":"松浦市立武道館","lat":33.34557,"lon":129.70661,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","oh":"09:00-22:00"},
+{"id":"osm:way:451692862","name":"ビートスイミングクラブ松浦プール","lat":33.33577,"lon":129.7081,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:769527811","name":"佐世保・平戸CC","lat":33.29657,"lon":129.67596,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286006798","name":"中瀬草原キャンプ場","lat":33.37629,"lon":129.5841,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0950-22-7333"},
+{"id":"osm:node:14286007106","name":"LUONTO","lat":33.25649,"lon":129.67285,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287575921","name":"glampark グラスハウス","lat":33.37643,"lon":129.5836,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"03-6820-1224"},
+{"id":"osm:node:14287592373","name":"佐世保市白岳自然公園","lat":33.30764,"lon":129.66451,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0956-66-9334"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4311303831","name":"耳浦キャンプ場","lat":36.12725,"lon":133.04536,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285430004","name":"TADAYOI - 海士グランピング","lat":36.10524,"lon":133.07372,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-5482-3332"},
+{"id":"osm:node:14286866917","name":"あいらんどパークキャンプ場","lat":36.17649,"lon":133.24457,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08512-6-2715"},
+{"id":"osm:node:14286878824","name":"明屋海岸キャンプ場","lat":36.10575,"lon":133.12507,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08514-2-0101"},
+{"id":"osm:node:14286894368","name":"渡津キャンプ場","lat":36.01393,"lon":133.03939,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"08514-8-2272"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:12709401885","name":"伊能忠敬先生絶讃の地","lat":31.24732,"lon":130.43399,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12709202352","name":"いせえび荘","lat":31.2477,"lon":130.43348,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5603043121","name":"道の駅はなやか小清水","lat":43.93372,"lon":144.45325,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","pk":2},
+{"id":"osm:node:6205481355","name":"ショップあえーる","lat":43.84484,"lon":144.29481,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"しょっぷ あえーる"},
+{"id":"osm:way:488489871","name":"東藻琴相撲場","lat":43.84154,"lon":144.2919,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:488688967","name":"小清水町農業者トレーニングセンター","lat":43.85395,"lon":144.47239,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"こしみずちょうのうぎょうしゃとれーにんぐせんたー"},
+{"id":"osm:way:488689205","name":"小清水町ふれあいアリーナ","lat":43.85231,"lon":144.47143,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"こしみずちょうふれあいありーな"},
+{"id":"osm:way:488689210","name":"小清水町武道館","lat":43.85322,"lon":144.47111,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"こしみずちょうぶどうかん"},
+{"id":"osm:way:720453448","name":"網走カントリークラブ","lat":43.92529,"lon":144.31436,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"あばしりかんとりーくらぶ"},
+{"id":"osm:way:720458808","name":"オホーツクカントリークラブ","lat":43.94625,"lon":144.34597,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.ohotsuku.cc/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"おほーつくかんとりーくらぶ"},
+{"id":"osm:way:1330163376","name":"大空町東藻琴B&G海洋センター","lat":43.84088,"lon":144.29286,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4059882439","name":"浜小清水前浜キャンプ場","lat":43.93489,"lon":144.45097,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12042946472","name":"果樹園キャンプ","lat":43.94648,"lon":144.28019,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13312450084","name":"ふくろうの渓谷","lat":43.96696,"lon":144.27575,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286040975","name":"東藻琴芝桜公園キャンプ場","lat":43.78286,"lon":144.31079,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0152-66-3111"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2288750042","name":"平賀こけし店","lat":38.3358,"lon":140.61229,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"http://www.h-kokeshi.net/","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:8755193221","name":"輸入屋ビーマー","lat":38.30722,"lon":140.62826,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","tel":"+81 22 395 2627"},
+{"id":"osm:node:8756926223","name":"ウッドベルモーターサイクル","lat":38.27606,"lon":140.71322,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

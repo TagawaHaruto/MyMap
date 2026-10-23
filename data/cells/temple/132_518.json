@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:2084001618","name":"金毘羅神社","lat":33.1147,"lon":129.69824,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4270903352","name":"遠照寺","lat":33.07697,"lon":129.67894,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4559495008","name":"浅間神社","lat":33.01896,"lon":129.56512,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4559528513","name":"八木天満宮","lat":33.02075,"lon":129.73582,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4728737292","name":"菅原神社","lat":33.15228,"lon":129.74112,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5304667725","name":"淀姫神社","lat":33.21151,"lon":129.74035,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5363658671","name":"福石観音 清岩寺","lat":33.16057,"lon":129.734,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6528499568","name":"大崎カトリック教会","lat":33.17231,"lon":129.64381,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:12738688605","name":"大山祇神社","lat":33.03659,"lon":129.62334,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:460272466","name":"洲崎神社","lat":33.00393,"lon":129.73973,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:840944529","name":"創価学会","lat":33.161,"lon":129.72891,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:892115433","name":"正法寺","lat":33.18169,"lon":129.71448,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1199351730","name":"天満神社","lat":33.20597,"lon":129.69515,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1233540252","name":"志賀神社","lat":33.1696,"lon":129.59189,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1296720530","name":"第17番礼所","lat":33.20844,"lon":129.69892,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1298255333","name":"中里八幡神社","lat":33.20378,"lon":129.68175,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1298279052","name":"今宮神社","lat":33.20259,"lon":129.67789,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

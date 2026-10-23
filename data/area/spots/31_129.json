@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:1423934813","name":"薩摩川内市下甑郷土館","lat":31.63843,"lon":129.70623,"pref":"鹿児島","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:way:518121471","name":"下甑郷土館","lat":31.63843,"lon":129.70629,"pref":"鹿児島","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:way:560735295","name":"甑ミュージアム","lat":31.77741,"lon":129.79036,"pref":"鹿児島","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:5832032769","name":"八尻展望所","lat":31.74044,"lon":129.76803,"pref":"鹿児島","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5834395891","name":"帽子山展望所","lat":31.80019,"lon":129.83543,"pref":"鹿児島","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5834395892","name":"木の口展望所","lat":31.79767,"lon":129.82068,"pref":"鹿児島","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"}
+]

@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:12270098101","name":"あさひ食堂","lat":43.84836,"lon":142.7716,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"Tu-Sa 11:00-14:30,17:00+","tel":"+81-1658-2-1738"},
+{"id":"osm:node:13189816590","name":"Fratello di Mikuni","lat":43.79853,"lon":142.82314,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://fratello-di-mikuni.com/","note":"飲食店","g":"food","k":"restaurant","oh":"We-Mo 11:30-14:00,18:00-20:00","tel":"+81-1658-2-3921"},
+{"id":"osm:node:13551072946","name":"二代目鉄人たかはし","lat":43.84948,"lon":142.76775,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:13551072947","name":"きよし","lat":43.84945,"lon":142.76787,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:13551107131","name":"喰い処あかし","lat":43.84924,"lon":142.76763,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:375228256","name":"お食事処さつき","lat":43.84337,"lon":142.77541,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://satsuki-k.net/about/","note":"飲食店","g":"food","k":"restaurant","kana":"おしょくじどころさつき","tel":"+81 1658 2 4115"},
+{"id":"osm:way:375233358","name":"ネパール料理タルチョ","lat":43.84398,"lon":142.78259,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13189816591","name":"緑丘茶房","lat":43.79853,"lon":142.82175,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://fratello-di-mikuni.com/gardencafe","note":"カフェ","g":"food","k":"cafe","kana":"りょっきゅてあほうせ","oh":"Mo-Su 09:00-16:00"},
+{"id":"osm:node:13190563280","name":"Kinubari Coffee Roasters","lat":43.84919,"lon":142.76883,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://shop.kinubaricoffee.com/","note":"カフェ","g":"food","k":"cafe","oh":"Tu-Th 11:00-17:00; Fr-Sa 11:00-20:00"},
+{"id":"osm:node:13190599826","name":"Anshindo Cafe","lat":43.84961,"lon":142.7689,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://efc.hokkaido.jp/anshindo","note":"カフェ","g":"food","k":"cafe","oh":"Th-Mo 07:30-14:00"},
+{"id":"osm:node:13190523399","name":"Asahiken","lat":43.84921,"lon":142.76874,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:13551072916","name":"居酒屋いこい","lat":43.84938,"lon":142.76888,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

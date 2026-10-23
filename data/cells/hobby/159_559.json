@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5492986231","name":"つりショップ 海風","lat":39.88289,"lon":139.8493,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5492986253","name":"藤崎屋","lat":39.87805,"lon":139.84528,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5492986637","name":"天狗屋","lat":39.88159,"lon":139.84633,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5492989627","name":"スガワラスポーツ","lat":39.88535,"lon":139.84611,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5493085626","name":"サイクランド サヨシ","lat":39.88604,"lon":139.84657,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","tel":"+81 185 24 2816"},
+{"id":"osm:node:7416928460","name":"加藤釣具釣船店おが丸","lat":39.95452,"lon":139.79959,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:1053555290","name":"ブックスなまはげ","lat":39.89968,"lon":139.9432,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

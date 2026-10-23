@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:8202083216","name":"テニス・バドショップ サポートアッシュ","lat":34.02985,"lon":133.01014,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8226539067","name":"玉井サイクル","lat":34.05849,"lon":133.00492,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:8227605855","name":"マスヤ書店","lat":34.06625,"lon":133.00006,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8253399946","name":"麻生自転車商会","lat":34.01655,"lon":133.00755,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:8311082097","name":"日浅自転車","lat":34.05226,"lon":133.0032,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:10583333802","name":"宮脇書店","lat":34.06082,"lon":133.01407,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:806262454","name":"明屋書店 喜田村店","lat":34.04221,"lon":133.02687,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:806264632","name":"つり具の上州屋 今治店","lat":34.04336,"lon":133.02647,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:806267478","name":"NK 生活館","lat":34.04478,"lon":133.0221,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:806267479","name":"NK オフィス館","lat":34.04462,"lon":133.02222,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:806286101","name":"ヒマラヤスポーツ&ゴルフ 今治店","lat":34.05256,"lon":133.01626,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:806329862","name":"サイクルベースあさひ","lat":34.05319,"lon":133.01291,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:806357920","name":"レッドバロン","lat":34.03708,"lon":133.03276,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:806457331","name":"Jam Sounds","lat":34.05173,"lon":133.0103,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:881693940","name":"ジャンプワールド今治店","lat":34.05628,"lon":133.01657,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:881953207","name":"ギャラップモーターサイクルズ","lat":34.02831,"lon":133.0064,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:678818358","name":"三吉神社","lat":44.42032,"lon":141.31987,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:678818460","name":"厳島神社","lat":44.44237,"lon":141.42366,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:678818461","name":"願海寺","lat":44.44301,"lon":141.4105,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

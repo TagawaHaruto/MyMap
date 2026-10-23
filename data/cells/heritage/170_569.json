@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:7619799585","name":"とよぬか山荘","lat":42.70585,"lon":142.40491,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10960615597","name":"振内鉄道記念館 ライダーハウス","lat":42.7274,"lon":142.29573,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.town.biratori.hokkaido.jp/kankou/bunka/bunka7/","note":"宿","g":"heritage","k":"lodging","kana":"ふれない てつどうきねんかん らいだーはうす","oh":"May-Sep: Mo-Fr 09:00-16:00; Sa-Su, PH off","tel":"+81-1457-3-3211"},
+{"id":"osm:node:12728096615","name":"バリアフリーのくまさん荘","lat":42.71129,"lon":142.41063,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-1457-3-3366","wc":"yes"}
+]

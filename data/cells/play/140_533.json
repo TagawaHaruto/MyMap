@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:733874422","name":"自然公園","lat":35.2066,"lon":133.31465,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:736665928","name":"カワコふれあい公園","lat":35.21066,"lon":133.38667,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:19571353","name":"ふるさと日南邑","lat":35.13096,"lon":133.3825,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1430018778","name":"八幡山公園","lat":35.23388,"lon":133.27809,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:580002617","name":"日南町総合運動場","lat":35.16813,"lon":133.31091,"pref":"鳥取","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:580002618","name":"社会体育館","lat":35.1673,"lon":133.31021,"pref":"鳥取","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:580002620","name":"体育館","lat":35.16723,"lon":133.30943,"pref":"鳥取","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:580002626","name":"武道館","lat":35.16701,"lon":133.31062,"pref":"鳥取","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:734143962","name":"グラウンドゴルフ場","lat":35.13112,"lon":133.38249,"pref":"鳥取","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:10230945688","name":"さつきホール","lat":35.1641,"lon":133.3069,"pref":"鳥取","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

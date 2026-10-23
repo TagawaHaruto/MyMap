@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:7261467180","name":"賀篭山稲荷神社","lat":37.71594,"lon":140.21412,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8283204210","name":"吾妻神社","lat":37.72331,"lon":140.17095,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:427241561","name":"大山祇神社","lat":37.53817,"lon":140.14077,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:491077480","name":"清神社","lat":37.54016,"lon":140.14699,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:777996961","name":"吾妻神社","lat":37.7429,"lon":140.13982,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

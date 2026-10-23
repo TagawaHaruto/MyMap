@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:6152749872","name":"中斉小学校記念碑","lat":39.41475,"lon":141.38585,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6152749881","name":"三つの記念碑","lat":39.41337,"lon":141.3825,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9430142072","name":"沢の口神秘の石碑","lat":39.41344,"lon":141.49589,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9430142073","name":"沢の口石碑","lat":39.41473,"lon":141.49151,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9430142075","name":"めあらい石","lat":39.42109,"lon":141.47902,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9430142076","name":"こさずかり石","lat":39.41962,"lon":141.46865,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1383648567","name":"権現様","lat":39.46591,"lon":141.27973,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11656937370","name":"ホテルベルンドルフ","lat":39.47288,"lon":141.28313,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1425168958","name":"農家民宿みずき","lat":39.29845,"lon":141.41063,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1425210185","name":"コテージランドかしわぎ","lat":39.30588,"lon":141.37349,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1425248809","name":"たんぽぽ","lat":39.3415,"lon":141.36781,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

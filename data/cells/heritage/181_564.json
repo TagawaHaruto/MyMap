@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:6611820161","name":"日食観測記念碑","lat":45.36539,"lon":141.05851,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9867685317","name":"ふれあいの鐘","lat":45.43835,"lon":141.03451,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4378838189","name":"ホテル礼文荘","lat":45.43546,"lon":141.02805,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4379840291","name":"民宿なかむら","lat":45.29898,"lon":141.04542,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6612373804","name":"夕陽館（ゆうひかん）","lat":45.25218,"lon":141.19095,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://sekiyou.ftw.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-163-89-2525"},
+{"id":"osm:node:9867467217","name":"海憧","lat":45.43845,"lon":141.03534,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かいど"},
+{"id":"osm:node:13887141401","name":"Hotel Rebun","lat":45.29898,"lon":141.04642,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:296674644","name":"旅館うきしま","lat":45.30192,"lon":141.04691,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"no"},
+{"id":"osm:way:326845749","name":"桃岩荘ユースホステル","lat":45.29067,"lon":141.02592,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:326847064","name":"旅館 桜井","lat":45.30096,"lon":141.04714,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:326862137","name":"ペンションう～に～","lat":45.30381,"lon":141.04485,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:326914215","name":"三井観光ホテル","lat":45.30419,"lon":141.04872,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

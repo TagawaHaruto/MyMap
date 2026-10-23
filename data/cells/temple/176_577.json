@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:405986621","name":"網走聖ペテロ教会","lat":44.01968,"lon":144.27231,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","kana":"あばしりせいぺてろきょうかい"},
+{"id":"osm:way:406206725","name":"創価学会","lat":44.01407,"lon":144.26968,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:409029720","name":"カトリック網走教会","lat":44.02448,"lon":144.25991,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://csd.or.jp/?-%E7%B6%B2%E8%B5%B0%E6%95%99%E4%BC%9A-","note":"教会","g":"temple","k":"worship","kana":"かとりっくあばしりきょうかい","tel":"+81 152 43 2581"},
+{"id":"osm:way:409044654","name":"天理会館","lat":44.02285,"lon":144.25966,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","kana":"てんりかいかん"},
+{"id":"osm:way:439668255","name":"長久山龍雲寺","lat":44.0017,"lon":144.26257,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1025991799","name":"天理教網走大教会","lat":44.02265,"lon":144.25864,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://tenrikyo-abashiri.xyz/","note":"寺社・教会","g":"temple","k":"worship","kana":"てんりきょうあばしりだいきょうかい"}
+]

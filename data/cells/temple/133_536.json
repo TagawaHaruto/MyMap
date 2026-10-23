@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5549137522","name":"Gosho Shrine","lat":33.25165,"lon":134.18053,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:9019408367","name":"福田寺","lat":33.42878,"lon":134.01288,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10155914458","name":"住吉神社","lat":33.28569,"lon":134.1493,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11684812905","name":"浜辺神社","lat":33.41979,"lon":134.02282,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12147866456","name":"八王子宮","lat":33.29358,"lon":134.14521,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12147869320","name":"中道寺","lat":33.29002,"lon":134.1472,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:616617222","name":"野々上神社","lat":33.2936,"lon":134.15061,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:616617223","name":"法導寺","lat":33.29404,"lon":134.15376,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1161088066","name":"田野八幡宮","lat":33.42821,"lon":134.00241,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1161088067","name":"田野大師堂 (たの だいしどう)","lat":33.42863,"lon":134.00263,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1237511176","name":"佐喜浜八幡宮","lat":33.40089,"lon":134.20937,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

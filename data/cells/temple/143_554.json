@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4226958906","name":"金櫻神社本宮","lat":35.871,"lon":138.62466,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4407627362","name":"大山祇神社","lat":35.94369,"lon":138.71716,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5808550151","name":"里宮神社","lat":35.88285,"lon":138.58292,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8519210220","name":"塩川神社","lat":35.85647,"lon":138.50076,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12149732288","name":"金櫻神社奥宮","lat":35.78886,"lon":138.69328,"pref":"山梨","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:685660051","name":"諏訪神社","lat":35.96893,"lon":138.63865,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

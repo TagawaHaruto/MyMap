@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:1085590995","name":"坂本龍馬銅像","lat":33.49859,"lon":133.57548,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","kana":"さかもとりょうま どうぞう"},
+{"id":"osm:node:3968917097","name":"長宗我部元親初陣の像","lat":33.49307,"lon":133.5463,"pref":"高知","genres":["heritage"],"indoor":false,"url":"https://www.city.kochi.kochi.jp/soshiki/39/uijinnozou.html","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5379614951","name":"浦戸城跡","lat":33.4979,"lon":133.57248,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026956","name":"浦戸稲荷神社石柱碑","lat":33.49843,"lon":133.5679,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11416984469","name":"お遍路ハウス３３（女性専用ゲストハウス）","lat":33.4996,"lon":133.54565,"pref":"高知","genres":["lodging"],"indoor":true,"url":"http://ohenrohouse.com","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:250513024","name":"国民宿舎桂浜荘","lat":33.49665,"lon":133.57232,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1120384359","name":"ホテル 太平洋アネックス","lat":33.49206,"lon":133.5576,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1121177289","name":"プライベートスペース 雅桜","lat":33.49184,"lon":133.55708,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1121177293","name":"ホテル 太平洋本館","lat":33.49032,"lon":133.55192,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1121177322","name":"ホテル ラ・メール","lat":33.49243,"lon":133.55185,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1121177327","name":"ホテル レステイ MOON 高知","lat":33.48858,"lon":133.54579,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1121889596","name":"レステイ 高知","lat":33.4856,"lon":133.53786,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1121889617","name":"うみぼうず","lat":33.48497,"lon":133.53589,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1541037742","name":"英光旅館","lat":33.49707,"lon":133.54974,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

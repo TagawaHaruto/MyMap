@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4502325093","name":"忠海港待合所","lat":34.33737,"lon":132.99363,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:00-16:00","tel":"+81-846-26-0321"},
+{"id":"osm:node:4582282302","name":"賀茂ボール","lat":34.41417,"lon":132.75351,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11124625989","name":"クライミングパーク東広島","lat":34.41764,"lon":132.75395,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:30437643","name":"広島カンツリー倶楽部　西条コース","lat":34.38828,"lon":132.77357,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:185406278","name":"フォレストヒルズ ゴルフ＆リゾート","lat":34.44817,"lon":132.92358,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://foresthills-golf-resort.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:8340673","name":"竹原市体育館","lat":34.33811,"lon":132.9301,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:710680106","name":"瀬戸内ゴルフリゾート","lat":34.30755,"lon":132.86215,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:728244329","name":"本郷CC","lat":34.38554,"lon":132.94895,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:728244341","name":"竹原CC","lat":34.38058,"lon":132.91896,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7999415594","name":"深山峡公園三本松キャンプ場","lat":34.48767,"lon":132.89966,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14284382482","name":"GLAM BASE 竹原","lat":34.40396,"lon":132.82559,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287474780","name":"瀬戸内ゴルフリゾート","lat":34.30608,"lon":132.86447,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0846-23-4141"},
+{"id":"osm:node:14287478993","name":"Nスタキャンプそらの庭","lat":34.46188,"lon":132.93965,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://nstacamp.wixsite.com/soranoniwa","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287485128","name":"谷風kokufu","lat":34.3779,"lon":132.85657,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287489759","name":"リンクウSTORAGE","lat":34.44484,"lon":132.92305,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0848-60-8053"},
+{"id":"osm:way:570994085","name":"大久野島キャンプ場","lat":34.3055,"lon":132.99755,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

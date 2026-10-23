@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2183010751","name":"藤田書店","lat":35.94563,"lon":136.18548,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2183121252","name":"UPPER YARD RECORDS","lat":35.9459,"lon":136.18546,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:2285171909","name":"斉藤玩具店","lat":35.94376,"lon":136.18526,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","wc":"no"},
+{"id":"osm:node:2288824492","name":"はしもと自転車","lat":35.94171,"lon":136.1885,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:11659228503","name":"SuperKaboS","lat":35.96935,"lon":136.19204,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11659228544","name":"ブックオフ","lat":35.96535,"lon":136.18906,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11907214820","name":"TSUTAYA","lat":35.96781,"lon":136.17526,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12387432316","name":"ミナミ卓球用品","lat":35.92302,"lon":136.1589,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12387568862","name":"セカンドストリート","lat":35.90105,"lon":136.155,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12387568916","name":"オザキスポーツ","lat":35.89929,"lon":136.15423,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12387644724","name":"FUJINO","lat":35.88758,"lon":136.15724,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:12387696675","name":"スーパーカボス","lat":35.90426,"lon":136.15376,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12387722133","name":"酒井輪業","lat":35.90954,"lon":136.15475,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12387722306","name":"武生スポーツ","lat":35.90945,"lon":136.16009,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:202759252","name":"白崎サイクル","lat":35.94633,"lon":136.19097,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:202806177","name":"MULITARY GEAR M☆CAT","lat":35.94622,"lon":136.18605,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","wc":"limited"},
+{"id":"osm:way:219352088","name":"明石庄栄堂","lat":35.95027,"lon":136.18612,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:523379559","name":"ヒマラヤスポーツ&ゴルフ 越前店","lat":35.92398,"lon":136.19095,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:548946261","name":"ひしだい書店","lat":35.9081,"lon":136.18217,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

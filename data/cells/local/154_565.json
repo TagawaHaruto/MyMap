@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:2493329946","name":"阿部茶舗","lat":38.67799,"lon":141.44832,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"09:00-18:00","tel":"+81-226-46-3202","wc":"yes"},
+{"id":"osm:node:2493330502","name":"志津川生鮮ロイヤルフィッシュ","lat":38.67849,"lon":141.44814,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"09:00-18:00","tel":"+81 226 46 2643","wc":"yes"},
+{"id":"osm:node:2493398330","name":"山内鮮魚店","lat":38.67823,"lon":141.44794,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Tu 09:00-18:00; Th-Su 09:00-18:00","tel":"+81 226 46 2159","wc":"yes"},
+{"id":"osm:node:2493431407","name":"及善蒲鉾店","lat":38.67836,"lon":141.44819,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 226 25 9334"},
+{"id":"osm:node:2982084642","name":"わたや","lat":38.67808,"lon":141.44829,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2982084645","name":"鮮魚 マルセン","lat":38.67843,"lon":141.44784,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3162367109","name":"西鮮魚店","lat":38.64697,"lon":141.42947,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3666892561","name":"さかなのみうら","lat":38.68582,"lon":141.44005,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4744621559","name":"さんさん市場","lat":38.67831,"lon":141.44788,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81 226 25 8703"},
+{"id":"osm:node:6979152192","name":"入谷Yes工房","lat":38.70382,"lon":141.41339,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"https://ms-octopus.jp/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 226 46 5153"},
+{"id":"osm:node:6979152408","name":"及川水産 分店","lat":38.70087,"lon":141.41278,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 226 46 4441"},
+{"id":"osm:node:8447571921","name":"麦鮮魚店","lat":38.5527,"lon":141.27675,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8451979017","name":"伊勢丸水産","lat":38.5913,"lon":141.49045,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:464665782","name":"志津川新魚市場","lat":38.67317,"lon":141.45468,"pref":"宮城","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:8600606355","name":"雄勝漁港","lat":38.5165,"lon":141.46876,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286240357","name":"三滝堂ふれあい公園","lat":38.71973,"lon":141.3144,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0220-42-2882"},
+{"id":"osm:node:14286240367","name":"白浜ビーチパーク","lat":38.58646,"lon":141.47507,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","pk":2}
+]

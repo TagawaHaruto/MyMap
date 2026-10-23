@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:626874492","name":"中斉地区センターグラウンド","lat":39.41466,"lon":141.38509,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1055866216","name":"花巻市大迫体育館","lat":39.46587,"lon":141.28978,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1057503501","name":"遠野市宮守体育館","lat":39.34476,"lon":141.35785,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1298756051","name":"大迫高校グラウンド３","lat":39.47184,"lon":141.28726,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1298756052","name":"大迫高校体育館","lat":39.47292,"lon":141.28695,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1383648566","name":"楽天イーグルス大迫球場","lat":39.46684,"lon":141.27345,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1425281751","name":"銀河ドーム","lat":39.34956,"lon":141.3452,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:6942496248","name":"庚申塔","lat":40.1874,"lon":141.75253,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378026996","name":"三陸大海嘯羅災紀念","lat":40.00586,"lon":141.90865,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378026999","name":"祭畤被災地展望の丘","lat":40.01093,"lon":141.88461,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378029631","name":"津波防災之碑","lat":40.01168,"lon":141.89583,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378029632","name":"顕彰碑","lat":40.01165,"lon":141.89577,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378029633","name":"海嘯遭難供養塔","lat":40.11176,"lon":141.81551,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378054392","name":"大海嘯記念","lat":40.00819,"lon":141.88466,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378105062","name":"東日本大震災　大津波記念碑","lat":40.0992,"lon":141.82517,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378105063","name":"津浪記念碑","lat":40.09913,"lon":141.82517,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378105067","name":"津波記念塔","lat":40.00951,"lon":141.90451,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12974266067","name":"東日本大震災モニュメント","lat":40.18968,"lon":141.79816,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1705893075","name":"久慈ニューホテル","lat":40.18557,"lon":141.77729,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:567841507","name":"久慈第一ホテル","lat":40.19061,"lon":141.76935,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:567841708","name":"久慈ステーションホテル","lat":40.18996,"lon":141.76996,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:567841722","name":"ホテルみちのく","lat":40.18826,"lon":141.77133,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:677787499","name":"ホテル福乃屋","lat":40.19177,"lon":141.76778,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:677796924","name":"つたや旅館","lat":40.1909,"lon":141.76899,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:678035275","name":"三船旅館","lat":40.18982,"lon":141.76811,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:682052268","name":"ビジネスホテルいろは","lat":40.19209,"lon":141.76083,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:682066487","name":"旅館ひかり","lat":40.19163,"lon":141.76098,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

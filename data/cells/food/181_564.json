@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2417297420","name":"海鮮処かふか","lat":45.30205,"lon":141.04734,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.kafuka.or.jp/store/","note":"和食","g":"food","k":"restaurant","chain":true,"oh":"11:00-20:00","tel":"+81163861228","wc":"no"},
+{"id":"osm:node:2990314233","name":"武ちゃん寿し","lat":45.29856,"lon":141.0463,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"no"},
+{"id":"osm:node:4379983489","name":"花文","lat":45.29869,"lon":141.04558,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6341996785","name":"Dining Cafe 海","lat":45.31011,"lon":141.02267,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant"},
+{"id":"osm:way:326845659","name":"海鮮処あとい","lat":45.46083,"lon":141.03301,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://funadomari.jp/hpgen/HPB/entries/3.html","note":"海鮮","g":"food","k":"restaurant","kana":"かいせんどころあとい","oh":"Apr-Sep Mo-Su,PH 11:00-14:30","tel":"+81 163 87 2284"},
+{"id":"osm:way:326846804","name":"双葉食堂","lat":45.44008,"lon":141.0365,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81-163-87-2075"},
+{"id":"osm:node:9867445417","name":"ダン","lat":45.43877,"lon":141.03609,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"だん"},
+{"id":"osm:way:326846047","name":"Ben & Joe","lat":45.29236,"lon":141.02642,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4379976093","name":"番屋","lat":45.29928,"lon":141.04564,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

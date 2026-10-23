@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:3196562561","name":"アコヤ楽器店","lat":35.50017,"lon":134.22842,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:3196562562","name":"花房書店","lat":35.50023,"lon":134.22858,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4240177311","name":"セガワールド","lat":35.51192,"lon":134.21054,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:node:5676872089","name":"横山書店","lat":35.50068,"lon":134.2337,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5677936080","name":"アオバサイクル","lat":35.51177,"lon":134.228,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5677936102","name":"鈴木釣具店","lat":35.51377,"lon":134.22555,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5677936113","name":"ファミリーマート鳥取田園町店","lat":35.51441,"lon":134.22456,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5678554865","name":"岡本自転車商会","lat":35.50149,"lon":134.23426,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5851232381","name":"イシタニ模型店","lat":35.50045,"lon":134.23525,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6385214385","name":"サイクルセンターヨネサワ","lat":35.51799,"lon":134.18295,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7278898349","name":"スポーツデポ鳥取店","lat":35.52373,"lon":134.19969,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7278940942","name":"トイザらス鳥取店","lat":35.52158,"lon":134.20097,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:7278940943","name":"ゴルフ5 鳥取店","lat":35.52202,"lon":134.20113,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9951618182","name":"キングファミリー","lat":35.51453,"lon":134.18998,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549092957","name":"ヒマラヤスポーツ&ゴルフ 鳥取店","lat":35.51137,"lon":134.20132,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:424427640","name":"今井書店","lat":35.51585,"lon":134.18668,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:440056582","name":"二輪倶楽部","lat":35.51776,"lon":134.17406,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:624769200","name":"宮本リサイクル","lat":35.51302,"lon":134.0454,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://miyamoto-recycle.jp/","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:776139395","name":"解放倉庫","lat":35.5119,"lon":134.20386,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"}
+]

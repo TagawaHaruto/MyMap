@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:222964368","name":"温泉ホテル八雲遊楽亭","lat":42.23538,"lon":140.31015,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430478926","name":"銀婚湯","lat":42.11987,"lon":140.37309,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:上の湯温泉"},
+{"id":"osm:way:430478936","name":"パシフィック温泉ホテル清龍園","lat":42.1219,"lon":140.37543,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://primenet2010.biz/seiryuen/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:431051844","name":"桜野温泉 熊嶺荘","lat":42.14826,"lon":140.29009,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:663117826","name":"民宿潮騒","lat":42.15429,"lon":140.48322,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

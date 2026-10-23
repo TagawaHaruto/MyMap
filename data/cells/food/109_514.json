@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6681347178","name":"仁","lat":27.33335,"lon":128.57803,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:13775294889","name":"ゆらり処","lat":27.39492,"lon":128.65626,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:13775310953","name":"グスト","lat":27.39271,"lon":128.65589,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:13775311995","name":"中華料理 来来","lat":27.38948,"lon":128.65459,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:13775394076","name":"前田工房","lat":27.38998,"lon":128.6551,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:13776176333","name":"どんつき","lat":27.39673,"lon":128.66003,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"韓国料理","g":"food","k":"restaurant"},
+{"id":"osm:node:13922168337","name":"西郷食堂","lat":27.41438,"lon":128.64234,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13775416968","name":"あじさい","lat":27.39342,"lon":128.65634,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13775431170","name":"マシュマロカフェ","lat":27.39021,"lon":128.65608,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:13775520884","name":"sweet kitchen","lat":27.39499,"lon":128.65451,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:6805158109","name":"和田マツ商店","lat":27.40859,"lon":128.66671,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:13775311486","name":"城之屋","lat":27.39361,"lon":128.65621,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:13775404402","name":"南洲堂","lat":27.39513,"lon":128.65659,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

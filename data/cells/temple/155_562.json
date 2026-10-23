@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5011196359","name":"天徳寺","lat":38.75828,"lon":140.52051,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5011196363","name":"見性寺","lat":38.75309,"lon":140.52797,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5011196364","name":"応住寺","lat":38.75152,"lon":140.5243,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10901249962","name":"洞川院","lat":38.7519,"lon":140.72295,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"+81-229-83-2164"}
+]

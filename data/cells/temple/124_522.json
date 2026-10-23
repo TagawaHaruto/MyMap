@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2343095212","name":"竹山神社","lat":31.18479,"lon":130.62231,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2915436401","name":"龍宮神社","lat":31.15896,"lon":130.58846,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5150291941","name":"熊野神社","lat":31.20611,"lon":130.63971,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5150291953","name":"菅原神社","lat":31.20032,"lon":130.64004,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6914521686","name":"天理教指宿分教会","lat":31.24992,"lon":130.63138,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6984898296","name":"稲荷神社","lat":31.24228,"lon":130.64767,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8148205792","name":"御嶽神社","lat":31.18004,"lon":130.52848,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"みたけ じんじゃ"},
+{"id":"osm:node:13398086054","name":"秋葉神社","lat":31.2261,"lon":130.64214,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13398086055","name":"山王神社","lat":31.22672,"lon":130.64282,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13672057676","name":"光明禅寺","lat":31.24253,"lon":130.62941,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1411751791","name":"徳光神社","lat":31.1795,"lon":130.5847,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1481550848","name":"大願寺","lat":31.24104,"lon":130.64663,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

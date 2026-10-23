@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5581797022","name":"イヌガイ","lat":33.21156,"lon":132.5586,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:11985055430","name":"フジモト釣具店","lat":33.22409,"lon":132.55776,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:11985055433","name":"ブックランド 宇和島店","lat":33.2243,"lon":132.55775,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12365032861","name":"宮脇書店","lat":33.23622,"lon":132.56982,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:node:13904181630","name":"明屋","lat":33.21328,"lon":132.55846,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13904181633","name":"銭形商会","lat":33.21184,"lon":132.55865,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13904181639","name":"ホソイ","lat":33.21017,"lon":132.55846,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13904181642","name":"玉田自転車店","lat":33.20704,"lon":132.55655,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13904227389","name":"新田釣具店","lat":33.1299,"lon":132.5228,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

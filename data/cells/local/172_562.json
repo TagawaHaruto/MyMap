@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:10660732139","name":"ノチウアウトドアPARK","lat":43.06926,"lon":140.705,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-6213-0484"},
+{"id":"osm:node:11149263183","name":"Mount NIKI","lat":43.0797,"lon":140.72153,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:619972585","name":"バーベキューエリア","lat":43.11775,"lon":140.73103,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

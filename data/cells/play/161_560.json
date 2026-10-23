@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:453443853","name":"ポンポコ山公園","lat":40.26686,"lon":140.02604,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562742117","name":"八峰町中央公園","lat":40.36647,"lon":140.01708,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","oh":"24/7"},
+{"id":"osm:way:774539545","name":"八森ぶなっこランド","lat":40.39131,"lon":140.02574,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:795283444","name":"田中公園","lat":40.28529,"lon":140.04368,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:874971242","name":"毘沙門いこいの森","lat":40.2775,"lon":140.15304,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:875441584","name":"竹生地区公園","lat":40.25603,"lon":140.03452,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:965912261","name":"米田農村公園","lat":40.30934,"lon":140.23269,"pref":"秋田","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:795301059","name":"八峰町峰浜野球場","lat":40.28358,"lon":140.04613,"pref":"秋田","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

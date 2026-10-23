@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4003662352","name":"ハードオフ","lat":44.00118,"lon":144.28509,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=201181https://www.hardoff.co.jp/shop/detail/?p=201181","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10026546927","name":"オフハウス","lat":44.00109,"lon":144.2852,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=201181","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10029957302","name":"流氷硝子館","lat":44.02226,"lon":144.27702,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.ryuhyo-glass.com/","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:way:406206778","name":"フジヤ書店","lat":44.02111,"lon":144.26896,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

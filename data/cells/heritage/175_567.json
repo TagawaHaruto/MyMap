@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:7796011824","name":"明治鉱業(株) 昭和炭鉱跡","lat":43.98288,"lon":141.94968,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1108936158","name":"秩父別温泉 ちっぷ・ゆう&ゆ","lat":43.76502,"lon":141.96645,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

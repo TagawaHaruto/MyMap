@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:591527671","name":"苫前神社","lat":44.31249,"lon":141.65058,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:776653780","name":"成田山","lat":44.36398,"lon":141.70705,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:776653856","name":"明徳寺","lat":44.36368,"lon":141.7049,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:776660807","name":"法泉寺","lat":44.36344,"lon":141.7035,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:776699382","name":"羽幌神社","lat":44.36241,"lon":141.69701,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:777606660","name":"東伝寺","lat":44.35727,"lon":141.70123,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:777608432","name":"真浄寺","lat":44.36187,"lon":141.69874,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:777638719","name":"中央神社","lat":44.33748,"lon":141.73593,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:778770800","name":"法流寺","lat":44.37291,"lon":141.70997,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:780814732","name":"古丹別神社","lat":44.26186,"lon":141.71885,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:884594870","name":"羽幌神社本殿","lat":44.36251,"lon":141.69661,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

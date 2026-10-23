@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5050130725","name":"つたや魚店","lat":38.60589,"lon":140.40391,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5050130727","name":"きない魚店","lat":38.60575,"lon":140.40483,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5050137832","name":"ギフトさいとう","lat":38.60533,"lon":140.40707,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5050438727","name":"安達魚店","lat":38.60528,"lon":140.40666,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5050453042","name":"矢口鮮魚店","lat":38.60361,"lon":140.40212,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5052898721","name":"やまたま魚店","lat":38.58526,"lon":140.37361,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5057859341","name":"伊藤商店","lat":38.53613,"lon":140.36537,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5057859452","name":"大沼鮮魚店","lat":38.508,"lon":140.32277,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5057860028","name":"渡邊魚店","lat":38.50121,"lon":140.39508,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11978336272","name":"ログハウスヤハギ","lat":38.59238,"lon":140.44211,"pref":"山形","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286240359","name":"舟形若あゆ温泉「あゆっこ村」キャンプ場","lat":38.70968,"lon":140.34096,"pref":"山形","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0233-32-3655"},
+{"id":"osm:node:14286240365","name":"サンビレッジ徳良湖オートキャンプ場","lat":38.59384,"lon":140.44042,"pref":"山形","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0237-23-2111"}
+]

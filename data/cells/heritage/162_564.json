@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:6620335878","name":"ヘリコプター","lat":40.73868,"lon":141.16446,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7664028690","name":"天間林村中央公園モニュメント","lat":40.73994,"lon":141.16405,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:556681450","name":"太素塚","lat":40.61647,"lon":141.21971,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:556727241","name":"三本木霊園","lat":40.61523,"lon":141.23065,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:813336890","name":"二ッ森貝塚","lat":40.74844,"lon":141.22947,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:二ツ森貝塚","kana":"ふたつもりして"},
+{"id":"osm:node:7142415291","name":"旅館大阪屋","lat":40.61774,"lon":141.21446,"pref":"青森","genres":["lodging"],"indoor":true,"url":"http://towada-osakaya.com","note":"宿","g":"heritage","k":"lodging","kana":"りょかんおさかや","tel":"+81 176 23 0637"},
+{"id":"osm:node:7142415989","name":"十和田プチホテル","lat":40.61832,"lon":141.21377,"pref":"青森","genres":["lodging"],"indoor":true,"url":"http://towadapetithotel.com","note":"宿","g":"heritage","k":"lodging","tel":"+81 176 25 3939"},
+{"id":"osm:node:7142416219","name":"民宿 やまと","lat":40.60408,"lon":141.21564,"pref":"青森","genres":["lodging"],"indoor":true,"url":"http://towadayamato.wixsite.com","note":"宿","g":"heritage","k":"lodging","kana":"みんしゅくやまと","tel":"+81 186 22 9998"},
+{"id":"osm:node:7150562794","name":"旅館 陽静閣","lat":40.61348,"lon":141.21646,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 176 23 2100"},
+{"id":"osm:node:10281792554","name":"奥入瀬 森のホテル","lat":40.58223,"lon":141.00287,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:547685589","name":"ホテルポニー温泉","lat":40.60935,"lon":141.17222,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

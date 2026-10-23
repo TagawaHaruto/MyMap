@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1239345083","name":"赤住漁港公園プール","lat":37.04883,"lon":136.73196,"pref":"石川","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286479036","name":"能登リゾートエリア増穂浦","lat":37.15049,"lon":136.70732,"pref":"石川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

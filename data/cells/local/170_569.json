@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1137846609","name":"振内町民プール","lat":42.72491,"lon":142.3027,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ふれないちょうみんぷーる"},
+{"id":"osm:node:10706062984","name":"ニセウ・エコランド","lat":42.73857,"lon":142.33896,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

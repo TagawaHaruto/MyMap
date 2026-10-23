@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:151208359","name":"可部吹屋公園","lat":34.51761,"lon":132.514,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:481541003","name":"千代田運動公園","lat":34.68642,"lon":132.54365,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:481699516","name":"寺山公園","lat":34.51467,"lon":132.5171,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:483002981","name":"のどごえ公園","lat":34.66213,"lon":132.61678,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:483590286","name":"吉田運動公園","lat":34.67022,"lon":132.69131,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:483590287","name":"吉田サッカー公園","lat":34.66389,"lon":132.66745,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:658846545","name":"丸山公園","lat":34.60951,"lon":132.71959,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:782710187","name":"神楽ドーム","lat":34.72166,"lon":132.63041,"pref":"広島","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

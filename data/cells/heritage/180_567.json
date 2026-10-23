@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:7978951938","name":"北緯45度通過点","lat":45.00226,"lon":141.857,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7978951940","name":"北緯45度の碑","lat":45.00225,"lon":141.80752,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3519116294","name":"ホテル豊富","lat":45.07133,"lon":141.84039,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3521111893","name":"ヤドカリハウス","lat":45.09837,"lon":141.77833,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4401926391","name":"サロベツ会館","lat":45.01481,"lon":141.84649,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4401927789","name":"光栄荘","lat":45.01554,"lon":141.84622,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4688139290","name":"トーヨーホテル","lat":45.10851,"lon":141.7723,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:431161359","name":"北斗荘","lat":45.01703,"lon":141.84647,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:457228871","name":"JA北宗谷 実習生宿泊施設 北斗星","lat":45.10581,"lon":141.77887,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:457228952","name":"松屋旅館","lat":45.10517,"lon":141.77335,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:531222546","name":"豊富町セミナーハウス","lat":45.10402,"lon":141.76884,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.town.toyotomi.hokkaido.jp/section/kyouikuiinkai/a7cug600000004vt.html","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:577709929","name":"川島旅館","lat":45.07402,"lon":141.83939,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","oh":"08:00-22:00 \"日帰り入浴\"","tel":"+81 162 82 1248"},
+{"id":"osm:way:577709936","name":"ニュー温泉閣ホテル","lat":45.07451,"lon":141.83931,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","oh":"11:00-22:00 \"日帰り入浴\"","tel":"+81 162 82 1243"},
+{"id":"osm:way:577709938","name":"Toji Stay アズマシーナ","lat":45.07478,"lon":141.83954,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://azumashi-na.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:580408492","name":"ホテルウィン","lat":45.07505,"lon":141.83873,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www16.plala.or.jp/hotel-win/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるうぃん","tel":"+81 162 82 3030"},
+{"id":"osm:way:580408503","name":"ウスカイモシリ","lat":45.0747,"lon":141.83897,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://ukasuymosir.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:855651621","name":"名山荘","lat":45.01143,"lon":141.84627,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:11756001630","name":"願教寺","lat":36.26387,"lon":136.22977,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"+81 776 79 1095"},
+{"id":"osm:node:11756001846","name":"松ヶ崎神社","lat":36.26389,"lon":136.22915,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11788780982","name":"円光寺","lat":36.25199,"lon":136.14825,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"+81 776 81 2775"},
+{"id":"osm:node:12009614444","name":"春日神社","lat":36.26219,"lon":136.24656,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12013454314","name":"大山神社","lat":36.27718,"lon":136.22906,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12026958441","name":"磯崎神社","lat":36.26638,"lon":136.21553,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:12026958442","name":"八雲神社","lat":36.26629,"lon":136.21512,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:14197770443","name":"神明神社","lat":36.25224,"lon":136.18652,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7","wc":"no"},
+{"id":"osm:node:14202297214","name":"氷川神社","lat":36.25571,"lon":136.18577,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7","wc":"no"},
+{"id":"osm:way:421959566","name":"氷川神社","lat":36.2559,"lon":136.19279,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:585913985","name":"大湊神社","lat":36.25065,"lon":136.11974,"pref":"福井","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

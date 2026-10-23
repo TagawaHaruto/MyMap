@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2649308671","name":"納沙布岬","lat":43.38529,"lon":145.81682,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:納沙布岬"},
+{"id":"osm:node:3495901721","name":"ヲンネモトチャシ跡","lat":43.38868,"lon":145.78253,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wc":"no"},
+{"id":"osm:node:5940318110","name":"根室半島チャシ跡群","lat":43.38697,"lon":145.75212,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5940318112","name":"根室半島チャシ跡群","lat":43.3914,"lon":145.75189,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1408487384","name":"ポンモイチャシ跡","lat":43.38242,"lon":145.81313,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"}
+]

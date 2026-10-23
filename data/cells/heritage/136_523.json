@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:920270978","name":"本州最西端の地","lat":34.11007,"lon":130.86243,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4583483430","name":"吉見柑橘組合","lat":34.07146,"lon":130.90259,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9385607758","name":"湊 祭祀遺跡","lat":34.14137,"lon":130.88647,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10795097797","name":"一心不動参道","lat":34.02055,"lon":130.97244,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:240638369","name":"若宮1号墳","lat":34.01271,"lon":130.92446,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4628971225","name":"ホテル新下関","lat":34.0046,"lon":130.94998,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4695894989","name":"HOTEL AZ 山口下関店","lat":34.00939,"lon":130.99518,"pref":"山口","genres":["lodging"],"indoor":true,"url":"https://www.az-hotel.com/shimonoseki/","note":"宿","g":"heritage","k":"lodging","tel":"+81 83 245 3301"},
+{"id":"osm:node:4707609933","name":"川棚グランドホテル","lat":34.13973,"lon":130.93967,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5819514653","name":"民宿 立石","lat":34.08946,"lon":130.87781,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14165245721","name":"ビジネスホテルはやし","lat":34.00674,"lon":130.95036,"pref":"山口","genres":["lodging"],"indoor":true,"url":"http://www.hotel-hayashi.jp","note":"宿","g":"heritage","k":"lodging","tel":"+81 83 256 3888"},
+{"id":"osm:way:323853746","name":"白馬","lat":34.01831,"lon":130.94309,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 83 256 7338"},
+{"id":"osm:way:345066671","name":"HOTEL YARMA","lat":34.08199,"lon":130.89208,"pref":"山口","genres":["lodging"],"indoor":true,"url":"https://hotenavi.com/yarma/index.html","note":"宿","g":"heritage","k":"lodging","tel":"+81 83 286 2924"},
+{"id":"osm:way:684688238","name":"寿旅館","lat":34.13708,"lon":130.93978,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

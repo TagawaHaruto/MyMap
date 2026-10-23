@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:11092778843","name":"こめこめまんま","lat":36.22175,"lon":133.30455,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11092889903","name":"ライトハウス","lat":36.17765,"lon":133.33015,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1069451066","name":"水車","lat":36.21589,"lon":133.31715,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"うどん","g":"food","k":"restaurant"},
+{"id":"osm:way:1195146253","name":"Jackと豆の木","lat":36.20327,"lon":133.32922,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1195149580","name":"海宝","lat":36.21631,"lon":133.32025,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1207722276","name":"ファミリーレストラン　いりふね","lat":36.2031,"lon":133.33428,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207722277","name":"サカータブロス","lat":36.2031,"lon":133.33442,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207722286","name":"味の蔵","lat":36.20314,"lon":133.33227,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207989886","name":"鍋国","lat":36.20368,"lon":133.33261,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207994724","name":"讃岐","lat":36.20412,"lon":133.33311,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1207994727","name":"更科","lat":36.20362,"lon":133.33429,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207994729","name":"カフェ　グリーングラス","lat":36.20352,"lon":133.33476,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207994730","name":"味太郎","lat":36.2034,"lon":133.33452,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1207994734","name":"青柳","lat":36.20352,"lon":133.33446,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207994738","name":"料亭　末廣","lat":36.20268,"lon":133.33368,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1207994748","name":"MS Home","lat":36.20331,"lon":133.33468,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1308539806","name":"登貴","lat":36.21075,"lon":133.32839,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:1325179700","name":"煉瓦屋","lat":36.21553,"lon":133.32115,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1208642243","name":"100taro coffee","lat":36.20902,"lon":133.32039,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1204666219","name":"三共製菓","lat":36.20383,"lon":133.33086,"pref":"島根","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

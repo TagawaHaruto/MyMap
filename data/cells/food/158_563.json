@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:7236203158","name":"仙岩峠 峠の茶屋","lat":39.70226,"lon":140.76119,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:741436674","name":"母ちゃんの店わがや","lat":39.54625,"lon":140.82145,"pref":"岩手","genres":["food"],"indoor":true,"url":"https://www.facebook.com/kaachanwagaya/","note":"麺類","g":"food","k":"restaurant","oh":"11:00-16:00; We off","tel":"+81197855320","wc":"yes"},
+{"id":"osm:way:741673392","name":"利久庵","lat":39.54187,"lon":140.83861,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:761417057","name":"いしや食堂","lat":39.68981,"lon":140.97513,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"}
+]

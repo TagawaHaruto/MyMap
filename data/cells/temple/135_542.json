@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5705929359","name":"川合神社","lat":33.97262,"lon":135.7364,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6405914985","name":"Kannon Temple","lat":33.9144,"lon":135.74717,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11254246645","name":"龍蔵寺","lat":33.99496,"lon":135.56108,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11254246654","name":"天満宮","lat":33.99503,"lon":135.56096,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:14241859901","name":"Kenshoji","lat":33.81418,"lon":135.6098,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1085108741","name":"菅原神社","lat":33.93121,"lon":135.65178,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

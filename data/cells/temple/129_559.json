@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5412162467","name":"富士様","lat":32.45317,"lon":139.76665,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:592199332","name":"東台所神社","lat":32.45976,"lon":139.76162,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:592199333","name":"渡海神社","lat":32.46464,"lon":139.76072,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:592199334","name":"金刀比羅神社","lat":32.46895,"lon":139.75929,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:592199335","name":"清受寺","lat":32.46406,"lon":139.76691,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:592199336","name":"大里神社","lat":32.46258,"lon":139.76801,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

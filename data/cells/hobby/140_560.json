@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3804437568","name":"Nonkey's Surf & Sports","lat":35.10325,"lon":140.10526,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3804450797","name":"Sunazawa","lat":35.10443,"lon":140.10504,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"ホビー・模型","g":"hobby","k":"hobby"},
+{"id":"osm:node:6780530805","name":"TSUTAYA","lat":35.10414,"lon":140.09692,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10112435856","name":"アタック5","lat":35.10689,"lon":140.09745,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","tel":"+81-4-7099-2077"},
+{"id":"osm:way:722722728","name":"鴨川書店","lat":35.10742,"lon":140.10447,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

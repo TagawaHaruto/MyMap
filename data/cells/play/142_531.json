@@ -1,0 +1,17 @@
+[
+{"id":"osm:way:619592108","name":"恵曇漁港交流広場","lat":35.52877,"lon":132.97184,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:619593060","name":"神名火公園","lat":35.52423,"lon":132.97554,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:639990871","name":"古浦コミュニティ広場","lat":35.52236,"lon":132.97659,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:676173498","name":"深田運動公園第一公園","lat":35.53087,"lon":132.98878,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:676173508","name":"深田運動公園第二公園","lat":35.52618,"lon":132.98912,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1126910584","name":"深田コミュニティ公園","lat":35.52555,"lon":132.99392,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1137744020","name":"恵曇児童公園","lat":35.52642,"lon":132.97721,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1137836333","name":"鹿の里団地公園","lat":35.52467,"lon":132.98506,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1137979983","name":"森田池水辺公園","lat":35.52003,"lon":132.99168,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1138008665","name":"潮香公園","lat":35.53748,"lon":132.98512,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1139076618","name":"根連木農村公園","lat":35.51901,"lon":132.9863,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1139105722","name":"魚瀬緑地広場","lat":35.51435,"lon":132.92314,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1139109273","name":"魚瀬展望広場","lat":35.51641,"lon":132.92131,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1197863154","name":"小伊津なぎさ公園","lat":35.50307,"lon":132.8411,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:427194835","name":"松江市鹿島文化ホール","lat":35.52198,"lon":132.99661,"pref":"島根","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

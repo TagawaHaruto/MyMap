@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:10063360851","name":"ハードオフ","lat":42.65952,"lon":141.64429,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=201243","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10063360852","name":"オフハウス","lat":42.65956,"lon":141.64443,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=203122","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12484583338","name":"リサイクルハウス四季屋","lat":42.62422,"lon":141.51976,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","tel":"+81-144-78-3315"},
+{"id":"osm:node:12505056796","name":"なんでもリサイクル ビッグバン","lat":42.65829,"lon":141.64815,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bigban.jp/","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su,PH 10:00-20:00","tel":"+81-144-53-3196"},
+{"id":"osm:node:12506467389","name":"BOOKOFF 苫小牧柳町店","lat":42.65863,"lon":141.64675,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/shop/shop10789.html","note":"本屋","g":"hobby","k":"hobby","kana":"ぶっくおふ","oh":"Mo-Su 10:00-20:00","tel":"+81-144-53-5530"},
+{"id":"osm:way:551369896","name":"サカイスポーツ","lat":42.63409,"lon":141.59992,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:552507443","name":"つり具の釣人","lat":42.63896,"lon":141.61081,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:556915661","name":"おおとりスポーツ","lat":42.65244,"lon":141.61119,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:569156181","name":"ゴール5","lat":42.64281,"lon":141.59675,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:624080825","name":"TSUTAYA苫小牧三光店","lat":42.65578,"lon":141.61314,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:624185126","name":"サイクルベースあさひ苫小牧店","lat":42.65026,"lon":141.62059,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:849808767","name":"ポラリス","lat":42.66587,"lon":141.68521,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:849838380","name":"エビス釣具店","lat":42.64642,"lon":141.62691,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:850527219","name":"オンザコーナー","lat":42.6518,"lon":141.60754,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:850554275","name":"苫小牧ゴルフクリニック","lat":42.65229,"lon":141.60924,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:850577255","name":"スーパースポーツゼビオ","lat":42.65575,"lon":141.63777,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.supersports.com/ja-jp/xebio/","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-21:00","tel":"+81-144-53-5755"},
+{"id":"osm:way:981303370","name":"リサイクルバナナ","lat":42.61897,"lon":141.51713,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.all-kaitori.com/","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-19:00; PH 10:00-19:00"},
+{"id":"osm:way:998502899","name":"レッドバロン","lat":42.6642,"lon":141.65964,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.redbaron.co.jp/","note":"バイク用品","g":"hobby","k":"hobby","kana":"れっどばろん","oh":"Mar-Oct:Mo,We-Su 10:00-20:00; Nov-Feb:Mo,We-Su 10:00-19:00; Tu off","tel":"+81-144-57-9881"}
+]

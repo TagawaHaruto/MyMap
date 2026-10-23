@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2707991640","name":"カトリック井持浦教会","lat":32.61918,"lon":128.61179,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4716277025","name":"嵯峨ノ島教会","lat":32.73109,"lon":128.6013,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:6326615995","name":"水ノ浦教会","lat":32.74985,"lon":128.74788,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","oh":"Mo-Su 09:00-16:00"},
+{"id":"osm:way:1523090261","name":"楠原教会","lat":32.73338,"lon":128.7464,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2535849437","name":"晋光寺","lat":32.98498,"lon":131.43006,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5089460828","name":"上野神社","lat":32.76516,"lon":131.29959,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5089460850","name":"鉾神社","lat":32.78151,"lon":131.38514,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5518003722","name":"熊野鳴滝神社","lat":32.77734,"lon":131.25391,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

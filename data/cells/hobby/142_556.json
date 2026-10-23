@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2449083096","name":"つり具・えさ かとう","lat":35.6162,"lon":139.18961,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:2518518385","name":"平本書店","lat":35.62845,"lon":139.11264,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3730357643","name":"近藤書店","lat":35.62395,"lon":139.11536,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6369154398","name":"第一堂書店","lat":35.62884,"lon":139.11192,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6793550301","name":"ブックセンター","lat":35.6246,"lon":139.09892,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7083429831","name":"Book & Stationery","lat":35.61549,"lon":139.18903,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"+81 426 85 1511"},
+{"id":"osm:node:13273733807","name":"Fruit in the desert","lat":35.61607,"lon":139.19726,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:13951260725","name":"bookCafé 魔法の森","lat":35.61563,"lon":139.11741,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"https://earth-blue.wixsite.com/mahounomori/bookapartment","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-17:00 \"opens 4th-8th, 14th-18th, 24th-28th\""}
+]

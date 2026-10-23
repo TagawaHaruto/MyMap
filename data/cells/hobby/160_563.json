@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5458525342","name":"ブックス ウッドペッカー","lat":40.19782,"lon":140.78994,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5458655126","name":"オートサイクル トダテ","lat":40.18325,"lon":140.78844,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:822177733","name":"タケダスポーツ","lat":40.20244,"lon":140.79237,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

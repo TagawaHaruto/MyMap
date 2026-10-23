@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5550294920","name":"味覚工房 そばの館","lat":35.27684,"lon":133.62396,"pref":"岡山","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6461649706","name":"蒜山高原レストラン","lat":35.27102,"lon":133.62949,"pref":"岡山","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 867 66 4344"},
+{"id":"osm:node:13070061152","name":"やまな食堂","lat":35.2908,"lon":133.72306,"pref":"岡山","genres":["food"],"indoor":true,"url":"https://yamanashokudou.com/","note":"飲食店","g":"food","k":"restaurant","tel":"+81-867-66-4113"},
+{"id":"osm:node:13785980913","name":"牛骨ラーメンたかうな　琴浦本店","lat":35.49031,"lon":133.69738,"pref":"鳥取","genres":["food"],"indoor":true,"url":"https://www.takauna.com/","note":"ラーメン","g":"food","k":"restaurant","tel":"+81 858 53 2550"},
+{"id":"osm:way:1030020882","name":"蒜山屋 きんべえ","lat":35.27954,"lon":133.64053,"pref":"岡山","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1228772469","name":"飲食店すみれ","lat":35.49287,"lon":133.69317,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1437108642","name":"つるや 蒜山店","lat":35.27684,"lon":133.62192,"pref":"岡山","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6435592971","name":"ひるぜん塩釜ロッジ","lat":35.30092,"lon":133.67948,"pref":"岡山","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6435593033","name":"塩釜堂","lat":35.30155,"lon":133.67869,"pref":"岡山","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6435593034","name":"冷泉茶屋","lat":35.30147,"lon":133.67854,"pref":"岡山","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13070061149","name":"新田菓子舗","lat":35.28403,"lon":133.69672,"pref":"岡山","genres":["food","shopping"],"indoor":true,"url":"https://nitta-kashiho.com/index.html","note":"パン・お菓子","g":"food","k":"sweets","tel":"+81-867-66-2116"},
+{"id":"osm:way:161867597","name":"のーすぽーる","lat":35.29615,"lon":133.66845,"pref":"岡山","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

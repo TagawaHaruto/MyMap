@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:572695317","name":"高梁川親水公園","lat":34.98853,"lon":133.45609,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1066476445","name":"夢すき公園","lat":34.98635,"lon":133.38684,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1288107176","name":"城山公園","lat":34.98611,"lon":133.46741,"pref":"岡山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9767207635","name":"東城中央運動公園","lat":34.89804,"lon":133.2837,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:13068151084","name":"カーブス","lat":34.98909,"lon":133.46126,"pref":"岡山","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"}
+]

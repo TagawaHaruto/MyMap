@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:2478929652","name":"矢谷古墳","lat":34.78622,"lon":132.88092,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:矢谷墳丘墓"},
+{"id":"osm:node:4571074622","name":"三次ロイヤルホテル","lat":34.79941,"lon":132.86416,"pref":"広島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13017231130","name":"長岡旅館","lat":34.80412,"lon":132.85553,"pref":"広島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:221436216","name":"三次グランドホテル","lat":34.80341,"lon":132.86245,"pref":"広島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:221441131","name":"ホテルアルファーワン三次","lat":34.80239,"lon":132.84971,"pref":"広島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:783208723","name":"君田温泉森の泉","lat":34.89872,"lon":132.84929,"pref":"広島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

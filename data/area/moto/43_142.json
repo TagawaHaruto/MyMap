@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5791833884","name":"","lat":43.36447,"lon":142.37614,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:13937805401","name":"Bus stop for rest from Kushiro to Sapporo","lat":43.00554,"lon":142.41613,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:207430772","name":"音江PA (下り)","lat":43.70926,"lon":142.1442,"type":"SA・PA","k":"rest_area","likely":true,"fee":"無料"},
+{"id":"osm:way:207430773","name":"音江PA (上り)","lat":43.70836,"lon":142.14442,"type":"SA・PA","k":"rest_area","likely":true,"fee":"無料"},
+{"id":"osm:way:445007613","name":"占冠PA (上り)","lat":43.00564,"lon":142.41632,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445007879","name":"占冠PA (下り)","lat":43.00933,"lon":142.4224,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445028994","name":"比布大雪PA (下り)","lat":43.89155,"lon":142.45818,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445029180","name":"比布大雪PA (上り)","lat":43.89095,"lon":142.45921,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:458753568","name":"道の駅あさひかわ","lat":43.7599,"lon":142.34845,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:524311720","name":"道の駅うたしないチロルの湯","lat":43.50306,"lon":142.00616,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562022562","name":"道の駅しかおい","lat":43.09754,"lon":142.98866,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:592161784","name":"道の駅 とうま","lat":43.84436,"lon":142.4895,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:619075761","name":"道の駅 ライスランドふかがわ","lat":43.69977,"lon":142.07017,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:624214791","name":"道の駅スタープラザ芦別","lat":43.52527,"lon":142.18867,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:673344704","name":"道の駅 びえい「白金ビルケ」","lat":43.5033,"lon":142.59688,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1094400006","name":"道の駅 南ふらの","lat":43.16904,"lon":142.57271,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1094400433","name":"道の駅 びえい「丘のくら」","lat":43.59228,"lon":142.46398,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1094893106","name":"道の駅 ひがしかわ「道草館」","lat":43.69724,"lon":142.50879,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1157654696","name":"夢ロード桜 塩狩パーク","lat":43.96342,"lon":142.44671,"type":"SA・PA","k":"rest_area","likely":true}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:3991679333","name":"古本深窓堂","lat":37.69375,"lon":139.06232,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7968853531","name":"山田自転車店","lat":37.69301,"lon":139.17847,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:729106317","name":"コメリ書房","lat":37.74542,"lon":139.18081,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:851988592","name":"コメリ書房","lat":37.66346,"lon":139.04381,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:936248938","name":"小林スポーツ","lat":37.65911,"lon":139.0521,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:939632892","name":"川口書店","lat":37.65764,"lon":139.05911,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:940223212","name":"番場堂書店","lat":37.65832,"lon":139.05613,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:947176912","name":"管波書店","lat":37.65723,"lon":139.05936,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,18 @@
+[
+{"name":"道の駅 あいぽーと佐渡","lat":38.08391245,"lon":138.4361406,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%82%E3%81%84%E3%81%BD%E3%83%BC%E3%81%A8%E4%BD%90%E6%B8%A1","k":"michinoeki"},
+{"name":"金井温泉 金北の里","lat":38.0284849,"lon":138.3584488,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"新穂潟上温泉","lat":38.03559825,"lon":138.4448635,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"ブイガ沢のコル","lat":38.1286119,"lon":138.3622152,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"イモリ平","lat":38.1225495,"lon":138.3608813,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"イラツボ沢のコル","lat":38.1152883,"lon":138.3598117,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"天狗の休場","lat":38.1136032,"lon":138.358688,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"真砂の峰","lat":38.1254717,"lon":138.3600563,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"真砂の芝生","lat":38.1269393,"lon":138.3619202,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"道遊の割戸","lat":38.0407064,"lon":138.2574586,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"佐和田ダム管理棟","lat":38.035047,"lon":138.2977384,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"トキのテラス","lat":38.0181279,"lon":138.4493675,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"道遊の割戸","lat":38.0353156,"lon":138.2474361,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"大ザレの滝","lat":38.2764594,"lon":138.4444598,"kind":"waterfall","wikipedia":"https://ja.wikipedia.org/wiki/%E5%A4%A7%E3%82%B6%E3%83%AC%E3%81%AE%E6%BB%9D","k":"scenic"},
+{"name":"金剛山","lat":38.1723099,"lon":138.4193276,"kind":"peak","wikipedia":"https://en.wikipedia.org/wiki/Mount_Kong%C5%8D_%28Sado%29","k":"scenic"},
+{"name":"加茂湖","lat":38.0655292,"lon":138.43438005,"kind":"lake","wikipedia":"https://ja.wikipedia.org/wiki/%E5%8A%A0%E8%8C%82%E6%B9%96","k":"scenic"}
+]

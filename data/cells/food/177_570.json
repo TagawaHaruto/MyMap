@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:3176222529","name":"鮨政","lat":44.30142,"lon":142.63952,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:3245942568","name":"きよみ","lat":44.30235,"lon":142.63771,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:3245942569","name":"まつい","lat":44.30392,"lon":142.63587,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3245942570","name":"みなみ","lat":44.30215,"lon":142.63906,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3245942571","name":"もりした","lat":44.30196,"lon":142.63902,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3245942572","name":"やまと屋","lat":44.30348,"lon":142.63747,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:3245942575","name":"ハンター","lat":44.3025,"lon":142.63747,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:3245942577","name":"味よし","lat":44.30315,"lon":142.6376,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:3176192862","name":"はるころ","lat":44.30309,"lon":142.63784,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:3245942573","name":"アポロ","lat":44.30312,"lon":142.63896,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:3245942578","name":"美花夢","lat":44.30407,"lon":142.63313,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"11:00-20:00"},
+{"id":"osm:way:308520190","name":"やない菓子店","lat":44.30318,"lon":142.63936,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:3174396861","name":"門車\"","lat":44.30376,"lon":142.64031,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub","oh":"Tu-Su 17:00-21:00"},
+{"id":"osm:node:3176177991","name":"SWAN","lat":44.30314,"lon":142.63767,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:3176222528","name":"味源","lat":44.3025,"lon":142.63812,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:3245942574","name":"スナックFuji","lat":44.30316,"lon":142.63751,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:3245942576","name":"串辰","lat":44.30286,"lon":142.64012,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

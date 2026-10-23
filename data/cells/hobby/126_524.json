@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:1316715303","name":"フィッシング志布志","lat":31.54061,"lon":131.04377,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:1316915054","name":"うら島釣り具","lat":31.50359,"lon":131.07665,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4757176451","name":"ユニオン3","lat":31.72656,"lon":131.09623,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4757342629","name":"田中書店","lat":31.72793,"lon":131.07362,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4757342631","name":"TSUTAYA","lat":31.72856,"lon":131.0743,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:4757342639","name":"ブックオフ 都城駅前店","lat":31.73475,"lon":131.07528,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4757342698","name":"TSUTAYA","lat":31.72583,"lon":131.03609,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:4757562640","name":"ＢＯＯＫＭＡＲＫＥＴエーツー","lat":31.7396,"lon":131.07356,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10651964211","name":"レッドバロン","lat":31.71027,"lon":131.05561,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13458315367","name":"Auto Shop HIDAKA","lat":31.71703,"lon":131.0606,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13458315368","name":"八木オート商会","lat":31.71384,"lon":131.06044,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13695318609","name":"かめや漁具","lat":31.72665,"lon":131.06098,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:13907298387","name":"オフハウス","lat":31.72901,"lon":131.06324,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13907298388","name":"ハードオフ","lat":31.72913,"lon":131.06309,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1374700398","name":"まるたや","lat":31.71347,"lon":131.06362,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:way:1376982723","name":"つるやゴルフ","lat":31.7389,"lon":131.07095,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1376982726","name":"FISHING 都城","lat":31.73924,"lon":131.07161,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:1376982738","name":"セカンドストリート","lat":31.73892,"lon":131.07001,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1376982753","name":"田中書店","lat":31.73809,"lon":131.0704,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1376982816","name":"サイクルベースあさひ","lat":31.73664,"lon":131.06945,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

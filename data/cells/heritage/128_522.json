@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:8463045871","name":"山津波記念石","lat":32.07516,"lon":130.72968,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14068490594","name":"吉松町役場","lat":32.01437,"lon":130.7447,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14068490595","name":"吉松町合併記念碑","lat":32.01436,"lon":130.74464,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14068490596","name":"第12回全国婦人消防操法大会準優勝記念碑","lat":32.01435,"lon":130.74461,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14068514301","name":"吉松町地籍調査事業完了記念碑","lat":32.01435,"lon":130.74451,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14068514316","name":"学びの碑","lat":32.01465,"lon":130.74458,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14068514317","name":"湧水町民憲章","lat":32.01468,"lon":130.7447,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12445887078","name":"大口グリーンホテル","lat":32.06056,"lon":130.60468,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"http://www.miyasako-sangyou.com/hotel/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1345282472","name":"Hotel R9 The Yard 伊佐","lat":32.05622,"lon":130.60598,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"https://hotel-r9.jp/hotels/isa/","note":"宿","g":"heritage","k":"lodging"}
+]

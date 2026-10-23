@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:38967326","name":"三眺河畔公園","lat":44.01431,"lon":144.23649,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"さんちょうかはんこうえん"},
+{"id":"osm:way:479226077","name":"土佐地区農村公園","lat":44.11003,"lon":144.05593,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:665975147","name":"レイクサイドパーク・のとろ","lat":44.04391,"lon":144.18783,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.city.abashiri.hokkaido.jp/040shisetsu/050sports/410lakesidepark_notoro/","note":"公園","g":"play","k":"park","tel":"0152-47-1255"},
+{"id":"osm:way:996059822","name":"大曲湖畔園地","lat":44.00753,"lon":144.22211,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:996059824","name":"大曲公園","lat":44.01079,"lon":144.2232,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:996059825","name":"大曲西公園","lat":44.01035,"lon":144.22527,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1025841587","name":"新町一丁目児童公園","lat":44.02077,"lon":144.24851,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

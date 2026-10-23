@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:788779936","name":"報徳神社","lat":43.24224,"lon":144.65311,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:789084818","name":"五十石神社","lat":43.23765,"lon":144.5473,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:850331094","name":"暁善寺","lat":43.00906,"lon":144.70069,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:850349936","name":"尾幌神社","lat":43.01232,"lon":144.70131,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

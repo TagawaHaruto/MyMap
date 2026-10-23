@@ -1,0 +1,14 @@
+[
+{"name":"池間温泉","lat":24.9350412,"lon":125.2426118,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"牧山展望台","lat":24.8177845,"lon":125.2183222,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"平安名埼灯台","lat":24.719523,"lon":125.468515,"kind":"viewpoint","wikipedia":null,"oh":"Mo-Su 09:30-16:30","k":"viewpoint"},
+{"name":"大神島","lat":24.91566,"lon":125.2663426,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"白鳥岬公園","lat":24.8632112,"lon":125.1626648,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"竜宮城展望台","lat":24.7260362,"lon":125.2516669,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"東平安名岬","lat":24.7188134,"lon":125.4691408,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%B9%B3%E5%AE%89%E5%90%8D%E5%B2%AC","k":"scenic"},
+{"name":"西平安名岬","lat":24.910234,"lon":125.255214,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E8%A5%BF%E5%B9%B3%E5%AE%89%E5%90%8D%E5%B2%AC","k":"scenic"},
+{"name":"砂山ビーチ","lat":24.8393845,"lon":125.280609,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E7%A0%82%E5%B1%B1%E3%83%93%E3%83%BC%E3%83%81","k":"scenic"},
+{"name":"佐和田の浜","lat":24.84051195,"lon":125.15998995,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E4%BD%90%E5%92%8C%E7%94%B0%E3%81%AE%E6%B5%9C","k":"scenic"},
+{"name":"与那覇前浜","lat":24.7359817,"lon":125.2630106,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E4%B8%8E%E9%82%A3%E8%A6%87%E5%89%8D%E6%B5%9C","k":"scenic"},
+{"name":"渡口の浜","lat":24.8115446,"lon":125.1800001,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E6%B8%A1%E5%8F%A3%E3%81%AE%E6%B5%9C","k":"scenic"}
+]

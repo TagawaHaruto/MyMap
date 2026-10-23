@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:14282820368","name":"ゲストハウスCOCODA","lat":37.66121,"lon":140.71045,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://cocoda399.wixsite.com/home","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-1159-9690"},
+{"id":"osm:node:14286236199","name":"峠の森自然公園","lat":37.66609,"lon":140.61514,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"024-566-2111"},
+{"id":"osm:node:14286371232","name":"月舘オートキャンプベースSAKURA","lat":37.74074,"lon":140.61044,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://sakura-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"03-4361-7918"},
+{"id":"osm:node:14286371233","name":"月見舘森林公園キャンプ場","lat":37.73606,"lon":140.60981,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"024-572-2111"},
+{"id":"osm:node:14286376571","name":"葛尾村森林公園 もりもりランド・かつらお","lat":37.52181,"lon":140.72482,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://morimoriland-k.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286376572","name":"きになるキャンプ場","lat":37.52,"lon":140.69039,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-9037-8233"},
+{"id":"osm:node:14286378308","name":"Sakura Bushcraft Field","lat":37.61999,"lon":140.50289,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://bikecamping.jp/sbf/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-4620-0038"},
+{"id":"osm:node:14286378310","name":"夏無沼キャンプ場","lat":37.60645,"lon":140.6054,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0243-66-2490"},
+{"id":"osm:node:14287673702","name":"日山キャンプ場","lat":37.53747,"lon":140.65576,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0243-56-2124"}
+]

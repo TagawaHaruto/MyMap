@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5126106428","name":"岩洞湖家族旅行村","lat":39.82902,"lon":141.34529,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177365","name":"盛岡市外山森林公園キャンプ場","lat":39.77504,"lon":141.27905,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-681-5132"},
+{"id":"osm:node:14286177366","name":"まほら岩手キャンプ場","lat":39.76876,"lon":141.34007,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://www.mahora-iwate.com/iceworld2026","note":"キャンプ・野外","g":"local","k":"camp"}
+]

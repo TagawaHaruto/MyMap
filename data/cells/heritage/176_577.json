@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:11954982498","name":"網走消防百年記念之碑「義勇」","lat":44.01753,"lon":144.27049,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:405991306","name":"モヨロ貝塚","lat":44.02529,"lon":144.26786,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:モヨロ貝塚","kana":"もよろかいづか"},
+{"id":"osm:node:4003709030","name":"網走ロイヤルホテル","lat":44.02304,"lon":144.25564,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://abashiri-royal.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4003709032","name":"網走グリーンホテル","lat":44.0209,"lon":144.2551,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10027682891","name":"網走セントラルホテル","lat":44.02142,"lon":144.26458,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.abashirich.com/","note":"宿","g":"heritage","k":"lodging","kana":"あばしりせんとらるほてる"},
+{"id":"osm:node:11936463096","name":"東横イン 網走駅前","lat":44.0207,"lon":144.2534,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"とうよこいん あばしりえきまえ","tel":"+81 152 45 1043"},
+{"id":"osm:node:11936463136","name":"ホテルルートイン網走駅前","lat":44.02078,"lon":144.25407,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_502/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるるーといん あばしりえきまえ","tel":"+81 152 44 5511"},
+{"id":"osm:way:406206728","name":"やすらぎの宿 B&Bあばしり","lat":44.01298,"lon":144.26981,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:406206729","name":"ホテル オホーツク・イン","lat":44.0216,"lon":144.27125,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"おほつくいんん"},
+{"id":"osm:way:409030029","name":"北海ホテル","lat":44.02121,"lon":144.25893,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://abashiri-hokkai.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ほっかいほてる"},
+{"id":"osm:way:409072222","name":"ホテルサンアバシリ","lat":44.02,"lon":144.25191,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://primenet2010.biz/sunabashiri/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるさんあばしり","tel":"+81 152 43 3155"},
+{"id":"osm:way:1028372912","name":"ドーミーイン網走","lat":44.02193,"lon":144.26372,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 152 45 5489"}
+]

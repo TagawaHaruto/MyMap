@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:424232062","name":"シシャモパーク","lat":42.57748,"lon":141.93934,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:424232065","name":"たんぽぽ公園","lat":42.57891,"lon":141.93638,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:430299078","name":"京町公園","lat":42.72435,"lon":141.87968,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:623695650","name":"新町公園","lat":42.7203,"lon":141.88539,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:641387555","name":"表町公園","lat":42.72495,"lon":141.87536,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:786079185","name":"つたえり公園","lat":42.722,"lon":141.87698,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:810902509","name":"浜厚真野原公園","lat":42.60879,"lon":141.84102,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"はまあつまやげんこうえん"},
+{"id":"osm:way:811666458","name":"本郷公園","lat":42.72976,"lon":141.86503,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:936284234","name":"上厚真中央公園","lat":42.63982,"lon":141.84981,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:623845372","name":"かしわ公園野球場","lat":42.72973,"lon":141.86276,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:624145484","name":"厚真町スポーツセンター","lat":42.73145,"lon":141.86355,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"https://www.town.atsuma.lg.jp/office/reception/environment/facility/sports_info/","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:624145513","name":"あつまスタードーム","lat":42.73124,"lon":141.86281,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"https://www.town.atsuma.lg.jp/office/reception/environment/facility/sports_info/","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:652898962","name":"むかわ町ゲートボールセンター","lat":42.57966,"lon":141.93151,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:relation:11166239","name":"浜厚真野原公園サッカー場","lat":42.60926,"lon":141.84139,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"http://yagen-football.com/","note":"グラウンド・コート","g":"play","k":"sports","kana":"はまあつまやげんこうえんさっかーじょう"}
+]

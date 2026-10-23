@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:612816909","name":"法蔵寺","lat":37.85084,"lon":136.92019,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:612816910","name":"弁天社","lat":37.85,"lon":136.92232,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:612816911","name":"観音堂","lat":37.85283,"lon":136.91752,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:612816912","name":"無他神社","lat":37.8522,"lon":136.91703,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:612816915","name":"恵比須神社","lat":37.85444,"lon":136.92312,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:612816919","name":"八坂神社","lat":37.85012,"lon":136.91445,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:612816926","name":"大和田神社","lat":37.84586,"lon":136.91381,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:612816929","name":"奥津比咩神社","lat":37.8458,"lon":136.91404,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"おくつひめじんじゃ"},
+{"id":"osm:way:612816934","name":"金毘羅神社","lat":37.85132,"lon":136.91617,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:612816940","name":"伊勢神社","lat":37.85114,"lon":136.9215,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:6525179618","name":"十勝千年の森キサラ チーズショップ 売店","lat":42.93343,"lon":142.86632,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1374937152","name":"清水ドライブイン","lat":42.97444,"lon":142.8057,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9119301586","name":"帯広カントリークラブ","lat":42.84095,"lon":142.97355,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.obihiro-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12787089029","name":"kitara campfield","lat":42.89144,"lon":142.88465,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12787089030","name":"遊び小屋コニファー","lat":42.8942,"lon":142.88592,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"01566-7-7747"},
+{"id":"osm:node:12787089058","name":"Prehub Tokachi","lat":42.89063,"lon":142.8779,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12787089059","name":"十勝ワッカの森キャンプ場","lat":42.887,"lon":142.87975,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://wakka-camp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286129352","name":"Pre Hub 十勝〈グランピング・野営キャンプ場〉","lat":42.89167,"lon":142.87671,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://prehubgogo.com/jp/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

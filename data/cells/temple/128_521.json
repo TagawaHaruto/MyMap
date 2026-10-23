@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4999629123","name":"月浦キリスト教会","lat":32.18796,"lon":130.3855,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","oh":"Mo-Su 09:00-18:00","tel":"0966611000"},
+{"id":"osm:node:5593591622","name":"見海山善光寺","lat":32.12463,"lon":130.34451,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6401710091","name":"湯の鶴温泉神社","lat":32.14626,"lon":130.43737,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6592869185","name":"米ノ津天満宮","lat":32.12277,"lon":130.34004,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:14205327444","name":"湯の児神社","lat":32.23633,"lon":130.41724,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1384293864","name":"矢城神社","lat":32.21,"lon":130.48508,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1412117551","name":"箱崎八幡神社","lat":32.08537,"lon":130.34137,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","pk":2},
+{"id":"osm:way:1493545322","name":"出水市護国神社","lat":32.07558,"lon":130.35839,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1493545325","name":"八坂神社","lat":32.07831,"lon":130.35737,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

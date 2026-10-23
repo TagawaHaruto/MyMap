@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5575037917","name":"くすくす館","lat":31.76149,"lon":130.57063,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"https://kusukusukan.com/","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:8176522570","name":"スカイショップ 2階売店 №2","lat":31.8013,"lon":130.71576,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 995 58 2117"},
+{"id":"osm:node:8176522574","name":"スカイショップ 9G売店","lat":31.80065,"lon":130.71662,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 995 58 2117"},
+{"id":"osm:way:659010827","name":"横川物産館","lat":31.88833,"lon":130.69209,"pref":"鹿児島","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:435917175","name":"鹿児島高牧カントリークラブ","lat":31.76117,"lon":130.53981,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:644959041","name":"蒲生体育館","lat":31.76431,"lon":130.56395,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:645327618","name":"フォンタナの丘蒲生","lat":31.75377,"lon":130.56388,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:645965478","name":"横川体育館","lat":31.89155,"lon":130.69487,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:645965480","name":"横川屋内プール","lat":31.89101,"lon":130.69476,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:659010819","name":"鹿児島空港36カントリー","lat":31.88454,"lon":130.70773,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:664337556","name":"蒲生ゴルフ","lat":31.79526,"lon":130.56404,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:772604008","name":"溝辺カントリー","lat":31.84064,"lon":130.67052,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287614804","name":"観音滝公園キャンプ場","lat":31.9237,"lon":130.56301,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0996-58-0889"},
+{"id":"osm:node:14287633695","name":"鹿児島県県民の森丹生附オートキャンプ場","lat":31.82555,"lon":130.64976,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0995-59-3928"},
+{"id":"osm:node:14287640304","name":"住吉池公園キャンプ村","lat":31.76131,"lon":130.57224,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0995-52-1211"},
+{"id":"osm:way:647643483","name":"住吉池キャンプ場","lat":31.7716,"lon":130.58851,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:654419998","name":"さえずりの森","lat":31.75933,"lon":130.66515,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

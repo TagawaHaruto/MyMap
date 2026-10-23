@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1068031054","name":"伊平屋村歴史民俗資料館","lat":27.0372,"lon":127.96883,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:5885062521","name":"ヤヘー岩","lat":27.08871,"lon":127.99628,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5885062959","name":"米岬ビーチ","lat":27.0016,"lon":127.93841,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5885064107","name":"前泊港","lat":27.03655,"lon":127.96832,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"}
+]

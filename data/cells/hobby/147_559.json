@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5158706321","name":"アルペン","lat":36.89454,"lon":139.98356,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5411937002","name":"ブックオフ","lat":36.79918,"lon":139.94388,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5411937003","name":"楽着","lat":36.79931,"lon":139.94362,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5411943499","name":"うさぎやTSUTAYA矢板店","lat":36.80555,"lon":139.93455,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5411968415","name":"二木ゴルフ","lat":36.79674,"lon":139.94477,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5453988489","name":"WILD-1","lat":36.89086,"lon":139.9798,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12289119711","name":"adidas Golf","lat":36.96681,"lon":139.99032,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"https://www.adidas.co.uk/storefront/JP501879-nasu-shiobara-tochigi-shionozaki-184-7-adidas-golf-factory-outlet-nasu-shiobara-tochigi","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12289119712","name":"Adidas","lat":36.96688,"lon":139.99025,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"https://www.adidas.co.uk/storefront/JP492916-那須塩原市-塩野崎184-7-adidas-outlet-store-nasushiobara","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"+81 287-67-3910"},
+{"id":"osm:node:13143714169","name":"オフハウス","lat":36.89151,"lon":139.98809,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13143714170","name":"ハードオフ","lat":36.89144,"lon":139.98816,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:422417315","name":"小滝輪業","lat":36.88751,"lon":139.98311,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:422417558","name":"薄井自転車店","lat":36.88798,"lon":139.98602,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:422417617","name":"イワモトモーターサイクルショップ","lat":36.88872,"lon":139.98515,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:491522041","name":"ブックオフ","lat":36.89072,"lon":139.98733,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

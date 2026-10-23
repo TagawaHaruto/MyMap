@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5468457823","name":"遠軽神社","lat":44.05718,"lon":143.51653,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:465958013","name":"創価学会","lat":44.05242,"lon":143.53884,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:466384553","name":"日本キリスト教会遠軽教会","lat":44.05575,"lon":143.52136,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://hkdck.net/church-introduction/815/","note":"教会","g":"temple","k":"worship","kana":"にっぽんきりすときょうかい えんがるきょうかい","tel":"+81 158 42 3879"},
+{"id":"osm:way:468751462","name":"登栄床神社","lat":44.18891,"lon":143.73825,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:935164965","name":"計呂地神社","lat":44.05917,"lon":143.72549,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"けろちじんじゃ"},
+{"id":"osm:way:1435313267","name":"覚王寺","lat":44.15313,"lon":143.5737,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1435313268","name":"法徳寺","lat":44.15241,"lon":143.57328,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1435313269","name":"明光寺","lat":44.14987,"lon":143.57033,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

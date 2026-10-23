@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:12014503200","name":"海の駅ふかうら 深浦まるごと市場","lat":40.64222,"lon":139.92775,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:974359158","name":"物産館 カワセミ","lat":40.55704,"lon":139.94643,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:978399401","name":"森の物産館キョロロ","lat":40.56485,"lon":139.98331,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:978608372","name":"物産館 コロポックル","lat":40.59264,"lon":139.87076,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12081911364","name":"岡崎キャンプ場","lat":40.64168,"lon":139.91403,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12082178980","name":"行合崎キャンプ場","lat":40.66745,"lon":139.94013,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286211424","name":"八森山キャンプ場","lat":40.64137,"lon":139.9248,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0173-74-3779"},
+{"id":"osm:node:14286211425","name":"八森山町民の森公園","lat":40.63285,"lon":139.91727,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0173-74-3779"},
+{"id":"osm:way:978399402","name":"十二湖リフレッシュ村","lat":40.55656,"lon":139.97708,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

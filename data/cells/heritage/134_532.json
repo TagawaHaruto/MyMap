@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3920902037","name":"安徳天皇陵参考地","lat":33.53577,"lon":133.20146,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065870","name":"宝永地震伝承碑","lat":33.52824,"lon":133.23985,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8422564477","name":"宝来荘","lat":33.66958,"lon":133.19077,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13717830301","name":"仁淀川町観光センター 秋葉の宿","lat":33.54236,"lon":133.11423,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あきばのやど"},
+{"id":"osm:way:184968800","name":"国民宿舎面河","lat":33.72343,"lon":133.10086,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

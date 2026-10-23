@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:250509393","name":"土佐清水さかなセンター","lat":32.77733,"lon":132.96057,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:250509394","name":"物産館サンリバー四万十","lat":32.98089,"lon":132.9445,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1499968673","name":"Minokoshi Coastline Nature Park","lat":32.77408,"lon":132.86809,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:263184587","name":"四万十カントリークラブ","lat":32.94627,"lon":132.96726,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:549283407","name":"体育館","lat":32.99004,"lon":132.91961,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:552328769","name":"体育館","lat":32.98676,"lon":132.90228,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4734249852","name":"Camp ground Tsumajiro","lat":32.78828,"lon":132.8594,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4969433622","name":"四万十川キャンプ場","lat":32.99294,"lon":132.92247,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13172201001","name":"三原キャンプ場","lat":32.88757,"lon":132.88734,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285918763","name":"Laki Lani on the Beach キャンプ場","lat":32.96178,"lon":132.99415,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://lakilanionthebeach.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285918765","name":"四万十 山みず木","lat":32.931,"lon":132.99528,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-5390-8492"},
+{"id":"osm:node:14285932614","name":"スノーピーク土佐清水キャンプフィールド","lat":32.78979,"lon":132.85939,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://sbs.snowpeak.co.jp/tosashimizu/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0880-87-9789"},
+{"id":"osm:way:1083090422","name":"オートキャンプ 場とまろっと","lat":32.94639,"lon":132.99451,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

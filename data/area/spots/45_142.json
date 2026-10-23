@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4042926023","name":"旧天北線 安別駅跡","lat":45.17563,"lon":142.28023,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:1646670516","name":"クローバの丘","lat":45.13792,"lon":142.24646,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:9876493117","name":"ベニヤ原生花園展望台","lat":45.14746,"lon":142.36918,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint","pk":2},
+{"id":"osm:way:264694163","name":"はまとんべつ温泉ウィング","lat":45.12529,"lon":142.34758,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"","note":"温泉宿（日帰り入浴は要確認）","k":"onsen"},
+{"id":"osm:way:1333690208","name":"桜庭牧場","lat":45.08184,"lon":142.39513,"pref":"北海道","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"}
+]

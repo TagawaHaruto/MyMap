@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:8378105057","name":"追悼碑","lat":44.89226,"lon":141.73995,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2713544717","name":"日の丸旅館","lat":44.88558,"lon":141.74511,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2713544718","name":"民宿さとう","lat":44.88539,"lon":141.74575,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:263173833","name":"林業研修センター富士見荘","lat":44.87671,"lon":141.74418,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:292975080","name":"ホテルいち花","lat":44.89145,"lon":141.74787,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:297137974","name":"西澤旅館","lat":44.88581,"lon":141.7425,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:297143473","name":"高橋旅館","lat":44.88519,"lon":141.74384,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:297840464","name":"サンホテル","lat":44.88056,"lon":141.74683,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

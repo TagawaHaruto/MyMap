@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4307284484","name":"日高沙流川オートキャンプ場","lat":42.86987,"lon":142.4414,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:6482589441","name":"ニニウキャンプ場","lat":42.95524,"lon":142.32068,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://niniu-camp.sakura.ne.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13030582140","name":"国立日高青少年自然の家からまつキャンプ場","lat":42.87336,"lon":142.44589,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

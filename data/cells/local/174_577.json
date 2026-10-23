@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:14205701301","name":"渡辺体験牧場","lat":43.51614,"lon":144.44915,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:430706553","name":"硫黄山MOKMOKベース","lat":43.6179,"lon":144.44335,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","pk":2},
+{"id":"osm:way:1183906131","name":"弟子屈カントリークラブ","lat":43.52746,"lon":144.48661,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://teshikaga-cc.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"てしかがかんとりーくらぶ","tel":"+81 15 482 1611"},
+{"id":"osm:node:4238894793","name":"湖畔キャンプ場","lat":43.57704,"lon":144.30681,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4450199695","name":"RECAMP砂湯","lat":43.62331,"lon":144.35929,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14284414821","name":"和琴湖畔キャンプフィールド","lat":43.57674,"lon":144.30809,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:653275834","name":"和琴野営場","lat":43.57661,"lon":144.31116,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"015-484-2835"},
+{"id":"osm:way:965181692","name":"ハイランド小清水キャンプ場","lat":43.7101,"lon":144.35093,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2077035731","name":"ファミリーレストラン","lat":36.25094,"lon":136.17287,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2077035732","name":"海の見えるレストラン","lat":36.25129,"lon":136.17252,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11788781155","name":"LULL","lat":36.25142,"lon":136.14569,"pref":"福井","genres":["food"],"indoor":true,"url":"https://mrivers.jp/lull/","note":"フレンチ","g":"food","k":"restaurant","oh":"Fr-We 11:30-13:30; Fr-Tu 14:00-16:00; Fr-We 17:30-20:00","tel":"+81 776 97 8903"},
+{"id":"osm:node:12473348958","name":"Cafe 02glee","lat":36.25844,"lon":136.22668,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Tu-Su 09:00-sunset","tel":"+81 80 9349 0222"},
+{"id":"osm:node:14048242395","name":"なみまちCAFE","lat":36.26192,"lon":136.20159,"pref":"福井","genres":["food"],"indoor":true,"url":"https://www.naimatsu-stay.jp/cafe","note":"カフェ","g":"food","k":"cafe","oh":"Sa-Su 11:00-14:00","tel":"+81 90 1633 7302","pk":2},
+{"id":"osm:node:2077035730","name":"芝政ドームショップ","lat":36.25011,"lon":136.17149,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:14040472853","name":"シフォンケーキの店 森のプチリス","lat":36.27081,"lon":136.22378,"pref":"福井","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","oh":"Tu-We 10:30-17:30; Fr-Su 10:30-17:30","tel":"+81 80 2655 9741"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5559642609","name":"JA鳥取中央直売店 あぐりポート琴浦","lat":35.50673,"lon":133.66323,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5559642733","name":"赤碕町漁協鮮魚直売センター","lat":35.50676,"lon":133.66315,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:616054945","name":"中山農業者トレーニングセンター","lat":35.51781,"lon":133.57369,"pref":"鳥取","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

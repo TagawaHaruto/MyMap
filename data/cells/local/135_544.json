@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:6854692996","name":"マル美魚屋 木本店","lat":33.89028,"lon":136.10323,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6854693001","name":"熊野市駅前店特産品館","lat":33.88976,"lon":136.09947,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6854693006","name":"森本魚店","lat":33.88992,"lon":136.0954,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6854731718","name":"プチショップ ワインハウス モリオカ","lat":33.88734,"lon":136.09456,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8308912234","name":"お網茶屋","lat":33.87899,"lon":136.09258,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 597 88 1011"},
+{"id":"osm:node:9050388204","name":"くまのParadise","lat":33.87365,"lon":136.06123,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","oh":"09:00-17:30","tel":"0597-89-1020"},
+{"id":"osm:way:1461694945","name":"ほほえみかん","lat":33.87949,"lon":136.08327,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"https://life.ja-group.jp/farm/market/detail?id=72","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9061784005","name":"浜峰ひもの店　浜街道店","lat":33.88255,"lon":136.09613,"pref":"三重","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","oh":"09:00-17:00; Tu off"},
+{"id":"osm:node:2266567634","name":"大泊海水浴場キャンプ場","lat":33.89916,"lon":136.11755,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913285","name":"なぎキャンプ場","lat":33.99896,"lon":136.19948,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://www.nagicamp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913293","name":"熊野の郷 たけのこ","lat":33.90814,"lon":136.08974,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287563764","name":"新鹿海水浴場キャンプ場","lat":33.92828,"lon":136.14416,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0597-86-1510"}
+]

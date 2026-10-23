@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:6918819210","name":"宮脇書店","lat":37.54084,"lon":140.39566,"pref":"福島","genres":["shopping"],"indoor":true,"url":"https://www.miyawakishoten.com/","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん","tel":"+81 243 68 2912"},
+{"id":"osm:node:11953961435","name":"e-fit GOLF Lab","lat":37.65289,"lon":140.45809,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:294881262","name":"スーパースポーツゼビオ","lat":37.72792,"lon":140.46363,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:294903329","name":"ブックオフ","lat":37.72715,"lon":140.46976,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:456371015","name":"YSP福島","lat":37.73221,"lon":140.46634,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:894288911","name":"ホンダドリーム　福島鳥矢野","lat":37.73951,"lon":140.46792,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

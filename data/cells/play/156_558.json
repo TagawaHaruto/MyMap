@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:627499660","name":"緑地公園","lat":39.18521,"lon":139.5466,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:628284968","name":"勝浦広場","lat":39.19172,"lon":139.55141,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:628291927","name":"中村小広場","lat":39.19253,"lon":139.55241,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:628291928","name":"中村大広場","lat":39.19249,"lon":139.55257,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:628295764","name":"法木乙広場","lat":39.20419,"lon":139.55551,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:628295765","name":"法木甲広場","lat":39.2026,"lon":139.55767,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

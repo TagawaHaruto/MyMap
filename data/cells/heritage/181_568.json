@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:579305420","name":"いさりの碑","lat":45.33006,"lon":142.17842,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"https://www.vill.sarufutsu.hokkaido.jp/hotnews/detail/00001287.html","note":"記念碑","g":"heritage","k":"historic","kana":"いさり の ひ"},
+{"id":"osm:way:579305421","name":"インディギルカ号遭難者慰霊碑","lat":45.33115,"lon":142.17778,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4160521889","name":"ホテルさるふつ","lat":45.32941,"lon":142.17633,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5750381223","name":"Rider’s House","lat":45.31332,"lon":142.19255,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

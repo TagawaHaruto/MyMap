@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:427057443","name":"高萩カントリークラブ","lat":36.77522,"lon":140.58587,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1227407636","name":"北茨城市立中妻小学校","lat":36.80963,"lon":140.72708,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14281990821","name":"Wadona","lat":36.88883,"lon":140.53842,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286480037","name":"田人オートキャンプ場","lat":36.92513,"lon":140.70102,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"http://tabito-camp.net/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0246-67-7123"},
+{"id":"osm:node:14286485922","name":"鹿角平観光牧場","lat":36.98241,"lon":140.53169,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0247-48-2010"},
+{"id":"osm:node:14286747458","name":"北茨城市花園オートキャンプ場","lat":36.86428,"lon":140.63772,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0293-43-9277"},
+{"id":"osm:node:14286747459","name":"YAEI～ TABIMASU BASE～","lat":36.86034,"lon":140.58451,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://select-type.com/s/tabimasu_base_yanagisawa","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286786881","name":"高萩ユーフィールド","lat":36.80181,"lon":140.58494,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://www.you-field.com/index.html","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286786882","name":"ブッシュクラフト・アウトドアフィールド／ブッシュ＆レイク","lat":36.80105,"lon":140.63503,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://bushcraft-outdoor-field.com/bushlake/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0293-24-2331"},
+{"id":"osm:node:14286786883","name":"オートリゾートinはぎビレッジ","lat":36.8003,"lon":140.64048,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://autoresortfun.wixsite.com/autoresort","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286786884","name":"ストームフィールドガイドはぎビレッジ店","lat":36.8003,"lon":140.64292,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"http://www.hagi-v.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286786886","name":"Forest of THEN","lat":36.79647,"lon":140.51451,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://forestofthen.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286796334","name":"高萩ふれあいの里フィッシングエリア キャンプ場","lat":36.77767,"lon":140.59756,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"http://ayanao2003.web.fc2.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0293-28-0814"},
+{"id":"osm:node:14286796336","name":"異空間サウナ&キャンプ","lat":36.77525,"lon":140.63124,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-2041-8666"},
+{"id":"osm:node:14286796341","name":"北茨城ビーチキャンプ場","lat":36.7639,"lon":140.73868,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://www.redlinecars.jp/about-3","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-9165-6715"},
+{"id":"osm:node:14286796342","name":"みどりのオートキャンプ場 あさの郷","lat":36.76181,"lon":140.6082,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://asanosato.jimdosite.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0293-24-7737"},
+{"id":"osm:node:14286796344","name":"天空の庭 天馬夢-AMAMU- 茨城フリーサイトキャンプ場","lat":36.75472,"lon":140.59203,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

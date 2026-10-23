@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5265014922","name":"ゲストハウス絆","lat":42.48964,"lon":140.35725,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:224826507","name":"ビジネスホテルフレスコ","lat":42.25315,"lon":140.27416,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:224826596","name":"桜庭旅館","lat":42.25377,"lon":140.27345,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

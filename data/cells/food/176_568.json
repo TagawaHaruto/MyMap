@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:7409905211","name":"そばの里","lat":44.11445,"lon":142.13858,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://horokanaisoba.com/restaurant/","note":"麺類","g":"food","k":"restaurant","kana":"そばのさと","oh":"Mo-Tu,Th-Su 11:30-14:00,17:00-20:00","tel":"0165-37-2070"},
+{"id":"osm:way:305370010","name":"あじよし食堂","lat":44.01255,"lon":142.15358,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:479818923","name":"佐呂間町交通記念公園","lat":44.01902,"lon":143.77756,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:479818930","name":"佐呂間町100年広場","lat":44.01999,"lon":143.76911,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:507874483","name":"栄浦多目的広場","lat":44.12832,"lon":143.97493,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"さかえうらたもくてきひろば"},
+{"id":"osm:way:687247178","name":"栄浦児童公園","lat":44.12847,"lon":143.97313,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"さかえうらじどうこうえん"},
+{"id":"osm:way:739439712","name":"ところ遺跡の森","lat":44.12419,"lon":143.97623,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.city.kitami.lg.jp/detail.php?content=8321","note":"公園","g":"play","k":"park","kana":"ところいせきのもり"},
+{"id":"osm:way:664751111","name":"浜佐呂間テニスコート","lat":44.08045,"lon":143.945,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","kana":"はまさろまてにすこーと"},
+{"id":"osm:way:664751113","name":"浜佐呂間プール","lat":44.08087,"lon":143.94526,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

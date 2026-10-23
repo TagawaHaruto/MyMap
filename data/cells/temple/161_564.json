@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5449463340","name":"長栄寺","lat":40.37553,"lon":141.24768,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13162237801","name":"儒童寺","lat":40.47734,"lon":141.20246,"pref":"青森","genres":["temple"],"indoor":false,"url":"https://sotozen-navi.com/spn/detail/index_20093.html","note":"寺","g":"temple","k":"worship","kana":"じゅどうじ"},
+{"id":"osm:way:589900882","name":"八坂神社","lat":40.34245,"lon":141.15303,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:589914041","name":"稲荷神社","lat":40.33968,"lon":141.14348,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:770956777","name":"耕田寺","lat":40.34165,"lon":141.14829,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:770981386","name":"稲荷神社","lat":40.3736,"lon":141.13053,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:770981387","name":"蒼前神社","lat":40.38344,"lon":141.09814,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:771012017","name":"三嶽神社","lat":40.4395,"lon":141.19752,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:771012080","name":"三嶽神社","lat":40.46122,"lon":141.16053,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

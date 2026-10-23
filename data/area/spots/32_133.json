@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1275225550","name":"天狗の鼻","lat":32.72671,"lon":133.02143,"pref":"高知","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4984012722","name":"足摺岬展望台","lat":32.72568,"lon":133.02068,"pref":"高知","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:1024256178","name":"第38番札所 金剛福寺","lat":32.72573,"lon":133.01842,"pref":"高知","genres":["temple"],"indoor":false,"url":"http://www.88shikokuhenro.jp/kochi/38kongofukuji/index.html","note":"寺社","k":"temple","tel":"+81 880 88 0038","pk":2},
+{"id":"osm:node:2569428192","name":"万次郎足湯","lat":32.72455,"lon":133.01411,"pref":"高知","genres":["onsen"],"indoor":true,"url":"","note":"銭湯・入浴施設","k":"bath"}
+]

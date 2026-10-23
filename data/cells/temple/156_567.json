@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:10678671292","name":"長林寺","lat":39.05092,"lon":141.79051,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10683526226","name":"Tenshogoso Shrine","lat":39.04165,"lon":141.7991,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12635124757","name":"龍昌寺","lat":39.09274,"lon":141.80174,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

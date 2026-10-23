@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:11885712353","name":"盛久神社","lat":30.31114,"lon":130.64829,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12167120019","name":"顕正寺","lat":30.44663,"lon":130.5192,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12171822547","name":"屋久島大社","lat":30.41529,"lon":130.59027,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12172262260","name":"楠川天満宮","lat":30.41418,"lon":130.59624,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12824149169","name":"若宮神社","lat":30.31561,"lon":130.65302,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:432824406","name":"長峰神社","lat":30.38064,"lon":130.66034,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:494960086","name":"如竹神社","lat":30.31354,"lon":130.65555,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:844675998","name":"創価学会","lat":30.36455,"lon":130.66355,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:relation:14901548","name":"北海道ゴルフ倶楽部","lat":42.6358,"lon":141.49963,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://hgc.classicgolf.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ほっかいどうごるふくらぶ"},
+{"id":"osm:way:1458418306","name":"樽前カントリークラブ","lat":42.62523,"lon":141.47147,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://reserve.accordiagolf.com/golfCourse/hokkaido/tarumae/","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:樽前カントリークラブ","kana":"たるまえかんとりーくらぶ","tel":"+81 144 67 0131"},
+{"id":"osm:node:2506332001","name":"モラップキャンプ場","lat":42.74441,"lon":141.40867,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:3704130670","name":"美笛キャンプ場","lat":42.73151,"lon":141.26396,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.shikotuko.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10586074852","name":"ブウベツの森キャンプ場","lat":42.55037,"lon":141.32575,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12011096891","name":"Wild Camp Base えん","lat":42.54029,"lon":141.2813,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-5729-2710"},
+{"id":"osm:node:13874587601","name":"ポロト自然森キャンプ場","lat":42.57598,"lon":141.34775,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177243","name":"オートリゾート苫小牧 アルテン","lat":42.61999,"lon":141.45163,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.dp-flex.co.jp/arten/camp/index.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0144-61-4126"},
+{"id":"osm:node:14286177245","name":"白老ふるさと2000年ポロトの森キャンプ場","lat":42.57488,"lon":141.34996,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0144-85-2005"}
+]

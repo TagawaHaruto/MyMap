@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:201982855","name":"宮の台展望台","lat":45.14703,"lon":141.76211,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:361910339","name":"ふるさとの森 森林公園","lat":45.02146,"lon":141.84622,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:502432343","name":"とよとみ自転車広場","lat":45.10189,"lon":141.78351,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:502441368","name":"豊富町自然公園","lat":45.10112,"lon":141.78952,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.town.toyotomi.hokkaido.jp/section/nouseika/a7cug60000002mt6.html","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:577355807","name":"パークゴルフ場","lat":45.0081,"lon":141.85062,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:582251529","name":"名林公園","lat":45.01711,"lon":141.85124,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:200177084","name":"屋内広場","lat":45.07294,"lon":141.83778,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:458072786","name":"尚武館","lat":45.10532,"lon":141.76887,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"https://www.town.toyotomi.hokkaido.jp/section/kyouikuiinkai/a7cug600000005wc.html","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:458072787","name":"豊富町スポーツセンター","lat":45.10563,"lon":141.76871,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:759070804","name":"豊富町営野球場","lat":45.10659,"lon":141.76703,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"https://www.town.toyotomi.hokkaido.jp/section/kyouikuiinkai/a7cug600000006jb.html","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:relation:10489389","name":"豊富町陸上競技場","lat":45.10472,"lon":141.76738,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"https://www.town.toyotomi.hokkaido.jp/section/kyouikuiinkai/a7cug600000005c4.html","note":"陸上トラック","g":"play","k":"sports"}
+]

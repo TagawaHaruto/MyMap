@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:928680928","name":"本土最南端の碑","lat":30.99687,"lon":130.6593,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6438111354","name":"川田順歌碑","lat":30.9969,"lon":130.65926,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6438111374","name":"北緯31度線モニュメント","lat":30.9995,"lon":130.66531,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1391517007","name":"佐多岬灯台　灯台守宿舎跡","lat":30.99668,"lon":130.6606,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"}
+]

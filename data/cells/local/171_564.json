@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3645197582","name":"タカラ牧場","lat":42.76106,"lon":141.00524,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"たから ぼくじょう"},
+{"id":"osm:node:9416003154","name":"定山渓物産館","lat":42.96537,"lon":141.16217,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8531226758","name":"一達国際PrivateGolf倶楽部","lat":42.79511,"lon":141.00551,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8531623891","name":"札幌市定山渓自然の村","lat":42.93096,"lon":141.15202,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10841586791","name":"晴好雨喜","lat":42.9754,"lon":141.16409,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12025214015","name":"八剣山ワイナリー焚き火キャンプ場","lat":42.96404,"lon":141.23315,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14281900656","name":"RVパーク outdoor base TRIOUT","lat":42.96899,"lon":141.21134,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

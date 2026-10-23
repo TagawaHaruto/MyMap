@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1842530541","name":"大戸瀬観音","lat":40.76814,"lon":140.05349,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","oh":"24/7"},
+{"id":"osm:node:8968501386","name":"豊愛美神社","lat":40.78128,"lon":140.1916,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8968501412","name":"正八幡宮","lat":40.77624,"lon":140.21984,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8968501518","name":"白八幡宮","lat":40.78161,"lon":140.20553,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5309914577","name":"實相寺","lat":43.1665,"lon":143.24658,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5309914586","name":"本光寺","lat":43.1667,"lon":143.24304,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:749706493","name":"瓜幕神社","lat":43.17002,"lon":143.02756,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:749950775","name":"浄教寺","lat":43.16359,"lon":143.02595,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

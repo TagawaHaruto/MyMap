@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:10110831067","name":"CAFE and BEEFかる。","lat":33.60698,"lon":133.16782,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12816030194","name":"Okkun toko","lat":33.61101,"lon":133.17472,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13707205901","name":"Germain Cafe","lat":33.66934,"lon":133.19101,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 11:00-17:00"},
+{"id":"osm:way:388909584","name":"自由軒","lat":33.5539,"lon":133.21493,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:13247210796","name":"Cha Cafe Asunaro","lat":33.54182,"lon":133.08634,"pref":"高知","genres":["food"],"indoor":true,"url":"https://asunaro-cafe.com","note":"カフェ","g":"food","k":"cafe"}
+]

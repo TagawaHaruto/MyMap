@@ -1,0 +1,9 @@
+[
+{"name":"道の駅さるふつ公園","lat":45.3291399,"lon":142.17730095000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 北オホーツクはまとんべつ","lat":45.1252336,"lon":142.36070965,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E5%8C%97%E3%82%AA%E3%83%9B%E3%83%BC%E3%83%84%E3%82%AF%E3%81%AF%E3%81%BE%E3%81%A8%E3%82%93%E3%81%B9%E3%81%A4","tel":"+81 1634-8-7887","k":"michinoeki"},
+{"name":"クローバの丘","lat":45.1379199,"lon":142.2464622,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"ベニヤ原生花園展望台","lat":45.1474636,"lon":142.3691764,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"北見神威岬","lat":45.0594271,"lon":142.5033272,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E5%8C%97%E8%A6%8B%E7%A5%9E%E5%A8%81%E5%B2%AC","k":"scenic"},
+{"name":"斜内山","lat":45.0535904,"lon":142.4858844,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E6%96%9C%E5%86%85%E5%B1%B1","k":"scenic"},
+{"name":"珠文岳","lat":45.011888,"lon":142.3923479,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E7%8F%A0%E6%96%87%E5%B2%B3","k":"scenic"}
+]

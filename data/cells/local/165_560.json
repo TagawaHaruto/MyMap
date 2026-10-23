@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:1925268639","name":"あさみ商店","lat":41.42803,"lon":140.10833,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1925270617","name":"北前屋","lat":41.42883,"lon":140.11165,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1925270792","name":"龍野屋","lat":41.42914,"lon":140.11202,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:683906137","name":"花守","lat":41.43014,"lon":140.1089,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1924585863","name":"松前港","lat":41.42068,"lon":140.09159,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924744528","name":"吉岡港","lat":41.44519,"lon":140.23933,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924799667","name":"館浜漁港","lat":41.44643,"lon":140.04051,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924801698","name":"札前漁港","lat":41.46897,"lon":140.02883,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924801759","name":"朝日漁港","lat":41.42963,"lon":140.12624,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924803346","name":"赤神漁港","lat":41.48061,"lon":140.02333,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924803553","name":"静浦漁港","lat":41.48581,"lon":140.01832,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924806250","name":"茂草漁港","lat":41.49219,"lon":140.01464,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924823435","name":"大沢漁港","lat":41.42704,"lon":140.14063,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1924824218","name":"白神漁港","lat":41.41387,"lon":140.17003,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6079982530","name":"白符漁港","lat":41.46244,"lon":140.24796,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

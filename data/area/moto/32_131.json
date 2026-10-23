@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:6434750721","name":"","lat":32.70223,"lon":131.30121,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:436808998","name":"","lat":32.93648,"lon":131.0808,"type":"バイク専用","k":"moto_dedicated","cap":10},
+{"id":"osm:way:477419445","name":"バイク・自転車専用","lat":32.99824,"lon":131.07087,"type":"バイク専用","k":"moto_dedicated","fee":"無料","oh":"08:30-17:00"},
+{"id":"osm:node:3967472660","name":"道の駅　あそ望の郷くぎの","lat":32.81846,"lon":131.04116,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:8446280430","name":"かまえインターパーク","lat":32.80536,"lon":131.89335,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:160867598","name":"道の駅清和文楽邑","lat":32.69064,"lon":131.09159,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:410862737","name":"川南PA","lat":32.20061,"lon":131.48606,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:413671616","name":"道の駅波野","lat":32.95965,"lon":131.19731,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:436808993","name":"道の駅あそ","lat":32.93666,"lon":131.081,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:436895120","name":"道の駅かまえ","lat":32.8019,"lon":131.92433,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441569062","name":"道の駅つの","lat":32.26026,"lon":131.55765,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441569547","name":"道の駅日向","lat":32.34322,"lon":131.62412,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441570801","name":"道の駅北川はゆま","lat":32.66638,"lon":131.70441,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441572413","name":"道の駅やよい","lat":32.96458,"lon":131.83849,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:522251814","name":"道の駅 高千穂","lat":32.70856,"lon":131.30084,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:909676593","name":"かまえインターパーク 海べの市","lat":32.80569,"lon":131.89346,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:969656405","name":"道の駅 北方よっちみろ屋","lat":32.5954,"lon":131.49167,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:975311341","name":"道の駅「青雲橋」","lat":32.66064,"lon":131.38841,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1111558696","name":"道の駅「北浦」","lat":32.68497,"lon":131.80088,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1148785276","name":"道の駅　きよかわ","lat":32.97141,"lon":131.51761,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1167517544","name":"道の駅　竹田","lat":32.98546,"lon":131.34072,"type":"SA・PA","k":"rest_area","likely":true}
+]

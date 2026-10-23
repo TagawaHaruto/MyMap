@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:14100308097","name":"青龍山高臺寺","lat":43.81034,"lon":141.92979,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:14100308098","name":"沼田神社","lat":43.81145,"lon":141.92969,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:14101984374","name":"大徳寺","lat":43.8067,"lon":141.92967,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:14106640073","name":"地神宮","lat":43.80685,"lon":141.91939,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:720105098","name":"清雲寺","lat":43.77145,"lon":141.86989,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:720109641","name":"碧水神社","lat":43.76849,"lon":141.8806,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:720117490","name":"村社　花籠神社","lat":43.78612,"lon":141.9029,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:722140619","name":"大光寺","lat":43.76709,"lon":141.96038,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:722145653","name":"常楽寺","lat":43.76753,"lon":141.95795,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:722396250","name":"秩父別神社社務所","lat":43.76401,"lon":141.95708,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:722396251","name":"秩父別神社","lat":43.76407,"lon":141.95556,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:724209218","name":"善性寺","lat":43.77223,"lon":141.9631,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:724212239","name":"高徳寺","lat":43.76683,"lon":141.95587,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:731227239","name":"西念寺","lat":43.99733,"lon":141.7534,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:972709469","name":"共成神社","lat":43.82243,"lon":141.99963,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:972709471","name":"正見寺","lat":43.82369,"lon":141.99826,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

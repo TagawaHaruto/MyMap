@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:3914763952","name":"淡路島南PA","lat":34.2595,"lon":134.6857,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Fr 07:30-20:30; Sa-Su 07:30-21:00"},
+{"id":"osm:node:9412466637","name":"あわじ島バーガー淡路島オニオンキッチン うずの丘店","lat":34.25488,"lon":134.68482,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant"},
+{"id":"osm:node:9412466638","name":"絶景レストラン うずの丘","lat":34.25474,"lon":134.68461,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9530015259","name":"なないろ","lat":34.25549,"lon":134.71933,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"yes"},
+{"id":"osm:way:560622460","name":"あわぢ阿呍","lat":34.25693,"lon":134.72022,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:3127176326","name":"友治","lat":34.31885,"lon":134.69191,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12810983705","name":"G.ELM","lat":34.25598,"lon":134.72096,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"アイス","g":"food","k":"sweets"},
+{"id":"osm:node:12810983706","name":"淡路島しふぉんの店fortune","lat":34.25594,"lon":134.72093,"pref":"兵庫","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

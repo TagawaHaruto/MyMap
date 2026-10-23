@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1041883036","name":"ジョイフルスポーツ","lat":40.27101,"lon":140.44774,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1042819755","name":"MUTO","lat":40.27421,"lon":140.46728,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:1055678542","name":"佐藤政治書店","lat":40.27107,"lon":140.44562,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

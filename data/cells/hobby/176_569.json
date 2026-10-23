@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2705217461","name":"ふうきどう","lat":44.17285,"lon":142.39346,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2705228072","name":"たからや","lat":44.17569,"lon":142.39218,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2705228073","name":"えばた","lat":44.17596,"lon":142.39209,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:264861846","name":"学海堂書店","lat":44.16579,"lon":142.39509,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:974906530","name":"バイシクルショップサイトウ","lat":44.01018,"lon":142.42741,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://bicycleshopsaito.jimdofree.com/","note":"自転車","g":"hobby","k":"hobby"}
+]

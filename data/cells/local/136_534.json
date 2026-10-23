@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2182763186","name":"まめや本舗 みやけ","lat":34.12188,"lon":133.65316,"pref":"香川","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2399895620","name":"伊吹漁協","lat":34.12617,"lon":133.53323,"pref":"香川","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8331368969","name":"Kioskおみやげどころ","lat":34.12447,"lon":133.65539,"pref":"香川","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 08:00-19:00","wc":"no"},
+{"id":"osm:node:11445432098","name":"マルタカ","lat":34.12821,"lon":133.65373,"pref":"香川","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:665461809","name":"萩庵","lat":34.07097,"lon":133.68752,"pref":"香川","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:648475047","name":"観音寺地方卸売市場","lat":34.11685,"lon":133.6682,"pref":"香川","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:397561047","name":"三豊市総合体育館","lat":34.19408,"lon":133.72714,"pref":"香川","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:三豊市総合体育館"},
+{"id":"osm:way:559992696","name":"すぽっシュ　TOYOHAMA","lat":34.07504,"lon":133.64215,"pref":"香川","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:624778402","name":"たくまシーマックス","lat":34.22234,"lon":133.67515,"pref":"香川","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:625113547","name":"体育館","lat":34.07247,"lon":133.64314,"pref":"香川","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:666676157","name":"観音寺乗馬クラブ","lat":34.12257,"lon":133.64551,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4269708628","name":"一の宮","lat":34.08552,"lon":133.63867,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285903519","name":"紫雲出山シーサイドキャンプ場","lat":34.23388,"lon":133.60247,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287509764","name":"GCTV(グラマラス・キャンピング・トワイライト・ヴィレッジ)","lat":34.22734,"lon":133.61025,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287562700","name":"ふるさとの森天神山キャンプ場","lat":34.11822,"lon":133.74184,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0875-63-1041"},
+{"id":"osm:node:14287563788","name":"つたじまキャンプ場","lat":34.19988,"lon":133.62909,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0875-82-2404"},
+{"id":"osm:node:14287563795","name":"仁尾サンセットピーク","lat":34.19127,"lon":133.65025,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"https://www.nio-sunsetpeak.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-3924-9610"},
+{"id":"osm:relation:8681855","name":"観音寺ファミリーキャンプ場","lat":34.14497,"lon":133.64318,"pref":"香川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

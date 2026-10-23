@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2565909857","name":"大漁市場なかうら","lat":35.52266,"lon":133.25348,"pref":"鳥取","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1221950373","name":"桝谷鮮魚店","lat":35.56315,"lon":133.30852,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6326091440","name":"境港","lat":35.53792,"lon":133.2758,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6326091441","name":"境港","lat":35.53151,"lon":133.25301,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6327397648","name":"諸喰港","lat":35.57355,"lon":133.265,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6327397660","name":"軽尾港","lat":35.57277,"lon":133.29917,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6327397661","name":"才港","lat":35.57235,"lon":133.30429,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6327397692","name":"法田港","lat":35.5712,"lon":133.25218,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:441754299","name":"境港公共マリーナ","lat":35.51484,"lon":133.25194,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10092392775","name":"美保関・風ヶ浦キャンプ場","lat":35.55746,"lon":133.28636,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0852-73-0111"},
+{"id":"osm:node:14285591275","name":"美保関キャンプサイト（美保関 風ケ浦キャンプ場）","lat":35.56078,"lon":133.30755,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1026912998","name":"境港公共マリーナ キャンプ場","lat":35.51407,"lon":133.25081,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

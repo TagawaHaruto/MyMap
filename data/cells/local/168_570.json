@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:836124012","name":"魚勝水産","lat":42.19888,"lon":142.66209,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:837359383","name":"山崎水産 仁一郎商店","lat":42.24861,"lon":142.55713,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"やまざきすいさん にいいちろうしょうてん","tel":"+81-146-49-0870"},
+{"id":"osm:way:894441320","name":"船越谷水産","lat":42.17712,"lon":142.73621,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://funakoshiya-suisan.com/","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ふなこしやすいさん","oh":"Mo-Fr 08:30+; Sa,Su off","tel":"+81-146-22-1304","pk":2},
+{"id":"osm:way:1036459124","name":"ひだか漁業協同組合 販売センター","lat":42.22093,"lon":142.63466,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4450181506","name":"三石海浜公園 オートキャンプ場","lat":42.22228,"lon":142.62975,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.shinhidaka-hokkaido.jp/hotnews/detail/00000025.html#a2_2","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4157399918","name":"オートポリス","lat":33.03894,"lon":130.97438,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","pk":2},
+{"id":"osm:node:14286007107","name":"池の山キャンプ場","lat":33.24775,"lon":130.75675,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://www.hoshinomura-ikenoyama.com/page2","note":"キャンプ・野外","g":"local","k":"camp","tel":"0943-52-2082"},
+{"id":"osm:node:14286007110","name":"Hoshino Camp Village","lat":33.2253,"lon":130.82414,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286007112","name":"スノーピーク奥日田キャンプフィールド","lat":33.18489,"lon":130.90386,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"http://sbs.snowpeak.co.jp/okuhita/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-53-2358"},
+{"id":"osm:node:14287526964","name":"菊池高原オートキャンプ場かぶと虫王国","lat":33.01528,"lon":130.93252,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0968-27-1345"},
+{"id":"osm:node:14287564995","name":"ハート岩キャンプ場","lat":33.1775,"lon":130.79074,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287564997","name":"グリーンパル日向神峡","lat":33.17524,"lon":130.77315,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0943-45-1001"},
+{"id":"osm:node:14287564999","name":"大杣キャンプ場","lat":33.17347,"lon":130.85097,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0943-47-2167"},
+{"id":"osm:node:14287593038","name":"矢谷渓谷キャンプ場","lat":33.08672,"lon":130.80396,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0968-48-9156"},
+{"id":"osm:node:14287593042","name":"上津江フィッシングパーク","lat":33.07285,"lon":130.90448,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-55-2003"},
+{"id":"osm:node:14287593043","name":"かっこうの郷キャンプ場","lat":33.07244,"lon":130.90761,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0973-55-2041"},
+{"id":"osm:node:14287593044","name":"郭公の郷キャンプ場","lat":33.07239,"lon":130.9099,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0968-43-3239"},
+{"id":"osm:node:14287594793","name":"石割岳ふもとキャンプ場","lat":33.2122,"lon":130.79717,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0943-52-3898"},
+{"id":"osm:node:14287595773","name":"ドラゴンキャンプ場","lat":33.0388,"lon":130.84692,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287596504","name":"鯛生家族旅行村","lat":33.12957,"lon":130.88063,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287596512","name":"奥矢谷渓谷マザーネイチャーきらり","lat":33.09064,"lon":130.8219,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-5332-5531"},
+{"id":"osm:node:14289685293","name":"菊池高原ファミリーキャンプ場","lat":33.04201,"lon":130.89127,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0968-27-1228"}
+]

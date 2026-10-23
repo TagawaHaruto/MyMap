@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2004299624","name":"Okinawa Art Shop ゆんたん","lat":26.40926,"lon":127.71656,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5764110120","name":"たぬき弁当","lat":26.2556,"lon":127.71037,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 05:00-02:00"},
+{"id":"osm:node:9954222238","name":"お土産店 読谷物産館","lat":26.40737,"lon":127.72032,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:00-18:00","tel":"098-958-1111","wc":"yes"},
+{"id":"osm:node:12086667497","name":"OKILIFE","lat":26.41489,"lon":127.73705,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"https://www.okilife.jp/","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Sa 10:00-16:00"},
+{"id":"osm:node:12874723835","name":"ワイン店un deux trois","lat":26.39284,"lon":127.72696,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Tu-Sa 13:00-18:00","tel":"098-923-2852"},
+{"id":"osm:way:788309678","name":"ほっともっと","lat":26.26696,"lon":127.71597,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ほっともっと"},
+{"id":"osm:node:9692244484","name":"ハッピーモア市場","lat":26.28544,"lon":127.74388,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","oh":"Mo-Su 09:00-20:00"},
+{"id":"osm:way:160439263","name":"読谷ファーマーズマーケット「ゆんた市場」","lat":26.39285,"lon":127.74503,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3331472229","name":"宜野湾港マリーナ","lat":26.27773,"lon":127.72956,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ぎのわんまりな"},
+{"id":"osm:node:5031016822","name":"ラウンドワン","lat":26.27569,"lon":127.73087,"pref":"沖縄","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 98-870-2110"},
+{"id":"osm:way:189138983","name":"残波ゴルフクラブ","lat":26.43565,"lon":127.72258,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:440758351","name":"Kadena Marina","lat":26.35097,"lon":127.74455,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:540474832","name":"てだこボウル","lat":26.25213,"lon":127.71557,"pref":"沖縄","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:588768622","name":"マチナトボウル","lat":26.26542,"lon":127.7296,"pref":"沖縄","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:643378165","name":"ANAまじゅんらんど浦添","lat":26.25215,"lon":127.72382,"pref":"沖縄","genres":["outdoor"],"indoor":true,"url":"https://www.majunland.com","note":"遊び・スポーツ","g":"local","k":"activity","oh":"Mo-Su 09:30-21:30"},
+{"id":"osm:way:703493731","name":"屋内体育館","lat":26.28113,"lon":127.73651,"pref":"沖縄","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1394084884","name":"ユンタンザパークゴルフ場","lat":26.39449,"lon":127.74588,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3331468714","name":"宜野湾トロピカルビーチ","lat":26.28088,"lon":127.73212,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

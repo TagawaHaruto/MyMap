@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:14286832572","name":"利賀国際キャンプ場","lat":36.44121,"lon":137.0399,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"https://www.toga-camp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286832575","name":"富山市21世紀の森杉ヶ平キャンプ場","lat":36.42815,"lon":137.08398,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"076-458-1352"},
+{"id":"osm:node:14286833436","name":"ひだ流葉オートキャンプ場","lat":36.3063,"lon":137.23864,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://hida-nagareha.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286840715","name":"ナチュールみやがわ","lat":36.33797,"lon":137.14904,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-63-2195"},
+{"id":"osm:node:14286852434","name":"飛騨市森林公園キャンプ場","lat":36.25699,"lon":137.13826,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-75-2901"}
+]

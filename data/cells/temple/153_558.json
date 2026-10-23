@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12210276222","name":"大儀寺","lat":38.25653,"lon":139.5258,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1322776163","name":"羽黒神社","lat":38.27512,"lon":139.52382,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1322799623","name":"諏訪神社","lat":38.25875,"lon":139.53216,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

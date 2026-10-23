@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3520947255","name":"五木温泉 夢唄","lat":32.39715,"lon":130.82643,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13780577628","name":"山江亭","lat":32.26157,"lon":130.7688,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:365543286","name":"徳丸","lat":32.2822,"lon":130.98001,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"yes"},
+{"id":"osm:way:369813895","name":"味工房さがら","lat":32.28233,"lon":130.97526,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:397563642","name":"味千ラーメン　湯前店","lat":32.28248,"lon":130.98372,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:960892477","name":"ユノカフェ","lat":32.28131,"lon":130.9806,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"10:00-16:00"},
+{"id":"osm:way:365556950","name":"兼田製菓補","lat":32.28025,"lon":130.98239,"pref":"熊本","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

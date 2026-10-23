@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2139666321","name":"ブックオフ","lat":35.99593,"lon":139.08699,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3487825893","name":"Maunga","lat":35.80149,"lon":139.18415,"pref":"東京","genres":["shopping"],"indoor":true,"url":"https://www.maunga.jp/","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3875438909","name":"和田輪店","lat":35.78299,"lon":139.23429,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","tel":"+81-428-224397"},
+{"id":"osm:node:3875452670","name":"山川自転車店","lat":35.86838,"lon":139.18674,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:3879958503","name":"グラビティ","lat":35.80264,"lon":139.19436,"pref":"東京","genres":["shopping"],"indoor":true,"url":"https://gravity-jp.com/","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3879961889","name":"リバーハウス","lat":35.80106,"lon":139.18079,"pref":"東京","genres":["shopping"],"indoor":true,"url":"https://www.canoebar.jp/","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7919536890","name":"宇川自転車店","lat":35.91025,"lon":139.23038,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:9135894991","name":"みふねおもちゃ店","lat":35.99643,"lon":139.08263,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","oh":"11:00-18:30"},
+{"id":"osm:way:965332170","name":"多摩書房","lat":35.80353,"lon":139.21613,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

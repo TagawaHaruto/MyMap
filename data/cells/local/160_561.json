@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5479578124","name":"村井鮮魚店","lat":40.22928,"lon":140.36544,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11078755656","name":"産直・物販コーナー","lat":40.21634,"lon":140.25949,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:546090510","name":"森田園茶舗","lat":40.22784,"lon":140.36725,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:738491186","name":"米倉園","lat":40.15959,"lon":140.32937,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:794655610","name":"庄司さかな屋","lat":40.00319,"lon":140.40223,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:453442769","name":"健康増進トレーニングセンター","lat":40.06372,"lon":140.29501,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:547011630","name":"北秋田市民体育館","lat":40.22288,"lon":140.36169,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:777205529","name":"カツラコース","lat":40.16492,"lon":140.37074,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:963229764","name":"トチノキコース・ブナコース","lat":40.16803,"lon":140.36827,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286180300","name":"きみまち阪キャンプ場","lat":40.21746,"lon":140.26779,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0185-73-5300"},
+{"id":"osm:node:14286218503","name":"北欧の杜公園オートキャンプ場","lat":40.16442,"lon":140.3639,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"https://hokuopark.wixsite.com/hokuonomori","note":"キャンプ・野外","g":"local","k":"camp","tel":"0186-78-3300"}
+]

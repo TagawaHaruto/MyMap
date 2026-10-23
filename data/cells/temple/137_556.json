@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:243027170","name":"御神楽殿","lat":34.33401,"lon":139.21294,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:444238057","name":"拝殿","lat":34.33375,"lon":139.21292,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:512578906","name":"大王神社","lat":34.32308,"lon":139.21992,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

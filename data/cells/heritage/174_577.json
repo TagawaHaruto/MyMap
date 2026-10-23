@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:8928695849","name":"唐笠何蝶句碑","lat":43.7024,"lon":144.35541,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9909797904","name":"山中源吉師の碑","lat":43.70432,"lon":144.33098,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4201199590","name":"ホテルパークウェイ Hotel Parkway","lat":43.61684,"lon":144.45461,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://h-parkway.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 15-483-2616"},
+{"id":"osm:node:4201212689","name":"あさ寝坊 Asanebou","lat":43.61921,"lon":144.45612,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 15-483-2725"},
+{"id":"osm:node:6673454385","name":"屈斜路湖ホテル","lat":43.64537,"lon":144.39866,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13574771201","name":"レイクサイドリゾートペンション クッシャレラ","lat":43.56317,"lon":144.34278,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://kussha-rera.com","note":"宿","g":"heritage","k":"lodging","tel":"+810154867866"},
+{"id":"osm:node:13854744001","name":"Kussharo Genya Youth Hostel","lat":43.54821,"lon":144.34802,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14286024381","name":"コテージ ログハウス川湯","lat":43.61132,"lon":144.45428,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430706556","name":"お宿欣喜湯","lat":43.63761,"lon":144.43633,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430706558","name":"ホテル川湯パーク","lat":43.63651,"lon":144.43579,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430706559","name":"川湯温泉湯富・イン","lat":43.63763,"lon":144.43798,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430706562","name":"川湯観光ホテル","lat":43.63647,"lon":144.43906,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430706563","name":"川湯第一ホテル忍冬","lat":43.63672,"lon":144.43915,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430706565","name":"KKRかわゆ","lat":43.63745,"lon":144.43901,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430706566","name":"きたふくろう","lat":43.63748,"lon":144.43969,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:438122916","name":"Parkway Hotel","lat":43.61684,"lon":144.45411,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:1110751085","name":"屈斜路プリンスホテル","lat":43.58577,"lon":144.27367,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.princehotels.co.jp/kussharo/","note":"宿","g":"heritage","k":"lodging","wp":"ja:屈斜路プリンスホテル","kana":"くっしゃろぷりんすほてる","tel":"+81 15 484 2111"},
+{"id":"osm:way:1225029364","name":"Polaris","lat":43.52517,"lon":144.40272,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

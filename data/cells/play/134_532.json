@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5489975650","name":"織田公園","lat":33.5354,"lon":133.22362,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5597074056","name":"宮の前公園","lat":33.53567,"lon":133.24468,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13707435001","name":"ひょうたん桜公園","lat":33.58765,"lon":133.16977,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:659765168","name":"スカイパーク","lat":33.57507,"lon":133.06377,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:353395586","name":"大野潮騒はまなす公園","lat":36.03519,"lon":140.62792,"pref":"茨城","genres":["play"],"indoor":false,"url":"https://www.hamanasukouen.info/","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:471896627","name":"鹿島灘海浜公園","lat":36.15305,"lon":140.57929,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:471896628","name":"とちぎ海浜自然の家","lat":36.22055,"lon":140.56083,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1219092486","name":"くぬぎの森スポーツ公園","lat":36.10069,"lon":140.5801,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:328124752","name":"行方市北浦体育館","lat":36.08268,"lon":140.53249,"pref":"茨城","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:328126613","name":"鉾田市大洋体育館","lat":36.10524,"lon":140.57277,"pref":"茨城","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:328126622","name":"鉾田市大洋武道館","lat":36.10515,"lon":140.57297,"pref":"茨城","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:1473275096","name":"野外ステージ","lat":36.03505,"lon":140.62785,"pref":"茨城","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

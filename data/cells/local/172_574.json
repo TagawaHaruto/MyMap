@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:13295755614","name":"交通公園（ゴーカート）","lat":43.12373,"lon":143.6211,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5703964722","name":"第一静山キャンプ場","lat":43.13015,"lon":143.62734,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13295757198","name":"第二静山キャンプ場","lat":43.13218,"lon":143.63184,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285746928","name":"コヤラボタイニーハウス新明台","lat":43.22854,"lon":143.52621,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286108244","name":"里見が丘キャンプ場","lat":43.24043,"lon":143.53655,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0156-25-6300"},
+{"id":"osm:node:14286108247","name":"コヤラボキャンプサイト","lat":43.22857,"lon":143.5262,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://koya-lab.jp/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

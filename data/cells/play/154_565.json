@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:4564983493","name":"北上川親水公園","lat":38.70971,"lon":141.28793,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5427983227","name":"北上川河川緑地公園","lat":38.74275,"lon":141.27585,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:6765547326","name":"大手口沼釣り公園","lat":38.7461,"lon":141.25442,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:8253566162","name":"夫婦持石","lat":38.58275,"lon":141.36752,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:10741834904","name":"Ishimakishi Oppagawa Kasen Undo Park","lat":38.50635,"lon":141.30576,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12020385605","name":"三滝堂ふれあい公園","lat":38.71939,"lon":141.31426,"pref":"宮城","genres":["play"],"indoor":false,"url":"https://www.city.tome.miyagi.jp/koho/tourism/library/tazunearuki/towa03.html","note":"公園","g":"play","k":"park","tel":"+81 220 42 2882"},
+{"id":"osm:way:543813722","name":"寺池城址公園","lat":38.65514,"lon":141.28157,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:687474707","name":"豊里花の公園","lat":38.58711,"lon":141.25048,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:721068266","name":"地蔵沼親水公園","lat":38.7463,"lon":141.2655,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:721935982","name":"冠木沼親水公園","lat":38.74137,"lon":141.26964,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:769102431","name":"荒島パーク","lat":38.67114,"lon":141.46094,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:814796284","name":"登米森林公園","lat":38.68644,"lon":141.34631,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:937471582","name":"北上親水公園","lat":38.70957,"lon":141.28939,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:937479500","name":"機織沼公園","lat":38.73338,"lon":141.28207,"pref":"宮城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12069024263","name":"雄勝体育館","lat":38.52184,"lon":141.46919,"pref":"宮城","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:215083707","name":"ベイサイドアリーナ","lat":38.68103,"lon":141.46163,"pref":"宮城","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:835618511","name":"登米高グラウンド","lat":38.65862,"lon":141.27844,"pref":"宮城","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:835628833","name":"津山若者総合体育館","lat":38.61716,"lon":141.30206,"pref":"宮城","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:836825604","name":"登米総合体育館 エスビー食品とよま蔵ジアム","lat":38.6573,"lon":141.27507,"pref":"宮城","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

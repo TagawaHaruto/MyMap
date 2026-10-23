@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5539942603","name":"円誠寺","lat":40.85995,"lon":141.12732,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5539977530","name":"西光寺","lat":40.86243,"lon":141.12924,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5539977541","name":"神明宮","lat":40.86481,"lon":141.12674,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5541792352","name":"海中寺","lat":40.86343,"lon":141.13036,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5541792633","name":"常光寺","lat":40.86403,"lon":141.12918,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6612475123","name":"愛宕神社","lat":40.86175,"lon":141.13571,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7168789789","name":"乙供神社","lat":40.77633,"lon":141.20984,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7826030953","name":"清水川八幡宮","lat":40.92653,"lon":141.01767,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7826033190","name":"弁財天宮","lat":40.92874,"lon":141.02079,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

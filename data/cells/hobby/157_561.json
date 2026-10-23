@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:2976403070","name":"榊田楽器店","lat":39.46346,"lon":140.47927,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:5181215832","name":"大日向理容自転車店","lat":39.3143,"lon":140.26653,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:11015860837","name":"TSUTAYA","lat":39.45889,"lon":140.49647,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:295424129","name":"セカンドストリート","lat":39.47008,"lon":140.48323,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:452059227","name":"タケダスポーツ大曲店","lat":39.45156,"lon":140.4946,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:815845893","name":"INOUE","lat":39.46144,"lon":140.47898,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:way:871538802","name":"ブックスモア大曲店","lat":39.44008,"lon":140.48273,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1004410456","name":"BAILEY BOOKS","lat":39.46475,"lon":140.47909,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1008642894","name":"ルーキースポーツ","lat":39.45368,"lon":140.47346,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1008805371","name":"スポーツハウスタミヤ","lat":39.45391,"lon":140.47702,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1008805426","name":"タミヤスポーツ","lat":39.45345,"lon":140.47692,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1009107584","name":"上州屋","lat":39.45378,"lon":140.49773,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1222888509","name":"島田書店","lat":39.29063,"lon":140.42788,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1224783345","name":"佐藤書店","lat":39.27832,"lon":140.43057,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1231353027","name":"備隆商店","lat":39.34468,"lon":140.42878,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1231381029","name":"山茂輪店","lat":39.34583,"lon":140.41478,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1288638059","name":"打川輪店","lat":39.40385,"lon":140.48052,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:13004736936","name":"黄金道路","lat":42.28224,"lon":143.31844,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1941489516","name":"HOTEL TAIKI","lat":42.48755,"lon":143.27678,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13797814086","name":"めぐみ屋旅館","lat":42.28914,"lon":143.31532,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"めぐみやりょかん","wc":"no"},
+{"id":"osm:node:14286168188","name":"MEMU EARTH HOTEL（メムアースホテル）","lat":42.469,"lon":143.37723,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"03-3560-3727"},
+{"id":"osm:way:341708453","name":"ヘルスファーマシー","lat":42.29498,"lon":143.31369,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

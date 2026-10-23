@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4757163392","name":"マンガ倉庫","lat":31.75333,"lon":131.07819,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4757163393","name":"ヒマラヤスポーツ&ゴルフ 都城店","lat":31.75353,"lon":131.08233,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5812476297","name":"スポーツデポ","lat":31.76127,"lon":131.08786,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1501037086","name":"バイクショップRPM","lat":31.75767,"lon":131.08458,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

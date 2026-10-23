@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:505825691","name":"竜門ダムエントランス広場","lat":33.03928,"lon":130.84733,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:919636195","name":"田来原美しい森づくり公園","lat":33.23404,"lon":130.93602,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1056367309","name":"あんずの丘","lat":33.02789,"lon":130.77079,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:1078123190","name":"河川敷公園","lat":33.24765,"lon":130.97281,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1079182404","name":"あんずの丘","lat":33.02969,"lon":130.77018,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:14349177","name":"西峰スポーツ公園","lat":33.24936,"lon":130.95733,"pref":"大分","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

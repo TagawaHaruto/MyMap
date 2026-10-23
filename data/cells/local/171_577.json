@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:531721068","name":"和商市場","lat":42.98918,"lon":144.37991,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wp":"ja:釧路和商市場","kana":"わしょういちば"},
+{"id":"osm:node:2533126204","name":"春採アイスアリーナ","lat":42.97789,"lon":144.41205,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:462339642","name":"パレスボウル","lat":42.9868,"lon":144.37992,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.palace-bowl.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ぱれすぼうる","tel":"+81 154 24 0311"},
+{"id":"osm:way:1318037499","name":"太平洋パークゴルフ場","lat":42.96034,"lon":144.42895,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

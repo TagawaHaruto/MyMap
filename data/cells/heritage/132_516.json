@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4417481597","name":"忠魂碑","lat":33.2006,"lon":129.05459,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4417481894","name":"鯨供養碑","lat":33.19329,"lon":129.05417,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4417512694","name":"牛魂碑","lat":33.1943,"lon":129.07085,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11907010768","name":"王位石","lat":33.20882,"lon":129.12129,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","kana":"おえいし"},
+{"id":"osm:node:4417481892","name":"小西旅館","lat":33.18749,"lon":129.05982,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4417512197","name":"民宿田登美","lat":33.18901,"lon":129.05938,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8147783017","name":"旅の宿　やがため","lat":33.01866,"lon":129.07343,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:430734284","name":"こもりスポーツ","lat":40.21897,"lon":141.29968,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:435399099","name":"のだトーイセンター","lat":40.21294,"lon":141.29901,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:437404164","name":"一守書店","lat":40.21548,"lon":141.30048,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:933969290","name":"別海町鉄道記念公園","lat":43.41759,"lon":144.76401,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:727112036","name":"西春別体育館","lat":43.40938,"lon":144.7721,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:727112037","name":"西春別温水プール","lat":43.40914,"lon":144.77176,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:727112054","name":"西春別ファミリースポーツハウス","lat":43.40864,"lon":144.77269,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:relation:19323771","name":"西春別スケートリンク","lat":43.41764,"lon":144.76327,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

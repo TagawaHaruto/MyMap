@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:712186337","name":"千走寺","lat":42.68502,"lon":140.00654,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:712190852","name":"清浄寺","lat":42.68875,"lon":140.03687,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:712196776","name":"永豊寺","lat":42.70331,"lon":140.06252,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:712201892","name":"厳島神社","lat":42.70543,"lon":140.06546,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

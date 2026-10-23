@@ -1,0 +1,19 @@
+[
+{"name":"道の駅知床らうす","lat":44.016895250000005,"lon":145.19169855,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"熊の湯","lat":44.0320562,"lon":145.1552268,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"羅臼湖","lat":44.033026,"lon":145.0820538,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"熊越の滝展望台","lat":44.031826,"lon":145.1461308,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"フレペの滝 展望台","lat":44.0959619,"lon":145.0129553,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"目梨望遥台","lat":44.0321201,"lon":145.1056959,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"羅臼国後展望塔","lat":44.0156027,"lon":145.18636935,"kind":"viewpoint","wikipedia":"https://zh.wikipedia.org/wiki/%E7%BE%85%E8%87%BC%E5%9C%8B%E5%BE%8C%E5%B1%95%E6%9C%9B%E5%A1%94","k":"viewpoint"},
+{"name":"カシュニの滝","lat":44.2466364,"lon":145.2255542,"kind":"waterfall","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%AB%E3%82%B7%E3%83%A5%E3%83%8B%E3%81%AE%E6%BB%9D","k":"scenic"},
+{"name":"知円別岳","lat":44.1246142,"lon":145.1688256,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%86%86%E5%88%A5%E5%B2%B3","k":"scenic"},
+{"name":"サシルイ岳","lat":44.0953628,"lon":145.1436861,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%B7%E3%83%AB%E3%82%A4%E5%B2%B3","k":"scenic"},
+{"name":"英嶺山","lat":44.0377502,"lon":145.1846065,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E8%8B%B1%E5%B6%BA%E5%B1%B1","k":"scenic"},
+{"name":"三ツ峰","lat":44.0842862,"lon":145.132695,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E4%B8%89%E3%83%83%E5%B3%B0","k":"scenic"},
+{"name":"オッカバケ岳","lat":44.104405,"lon":145.1484342,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%83%E3%82%AB%E3%83%90%E3%82%B1%E5%B2%B3","k":"scenic"},
+{"name":"ウイーヌプリ","lat":44.3038804,"lon":145.322354,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A4%E3%83%BC%E3%83%8C%E3%83%97%E3%83%AA","k":"scenic"},
+{"name":"ルシャ山","lat":44.1450185,"lon":145.2071585,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E3%83%AB%E3%82%B7%E3%83%A3%E5%B1%B1","k":"scenic"},
+{"name":"東岳","lat":44.1284792,"lon":145.1794245,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%B2%B3_%28%E7%9F%A5%E5%BA%8A%E5%8D%8A%E5%B3%B6%29","k":"scenic"},
+{"name":"羅臼湖","lat":44.02834415,"lon":145.08005459999998,"kind":"lake","wikipedia":"https://ja.wikipedia.org/wiki/%E7%BE%85%E8%87%BC%E6%B9%96","k":"scenic"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5836410328","name":"きくざわ書店","lat":37.03071,"lon":136.96848,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12547924931","name":"アルバトロス","lat":37.22555,"lon":136.90747,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:572638833","name":"コメリ書房穴水店","lat":37.24405,"lon":136.89678,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

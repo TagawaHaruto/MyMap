@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1415806624","name":"玉之浦カントリーパーク","lat":32.61828,"lon":128.61414,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:735411859","name":"校庭","lat":32.59915,"lon":128.74531,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1415806628","name":"多目的広場","lat":32.61861,"lon":128.61465,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"}
+]

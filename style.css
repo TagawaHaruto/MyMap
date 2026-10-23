@@ -1,0 +1,494 @@
+/* DADS トークン（index.html で読み込み）を参照する */
+:root {
+  --fg: var(--color-neutral-solid-gray-900);
+  --fg-sub: var(--color-neutral-solid-gray-700);
+  --bg: var(--color-neutral-white);
+  --bg-sub: var(--color-neutral-solid-gray-50);
+  --line: var(--color-neutral-solid-gray-420);
+  --key: var(--color-primitive-blue-900);
+  --key-bg: var(--color-primitive-blue-50);
+  --rain: var(--color-primitive-light-blue-900);
+  --rain-bg: var(--color-primitive-light-blue-50);
+  --warn: var(--color-semantic-warning-orange-2);
+  --tap: 44px;   /* 押せる要素の最小の高さ */
+  --gap: 6px;    /* ボタン同士の間隔 */
+  --bw: 1px;     /* 枠線の太さ */
+  --tab-h: 56px; /* 画面下のタブの高さ */
+}
+/* 屋外モード: 日光の反射で明暗差が縮むので、色を濃くするより「大きく・太く・塗る」で読ませる */
+:root[data-outdoor] {
+  font-size: 125%; /* DADS の文字サイズは rem なので全体が 1.25 倍になる */
+  --fg: var(--color-neutral-black);
+  --fg-sub: var(--color-neutral-solid-gray-900);
+  --line: var(--color-neutral-solid-gray-900);
+  --tap: 64px;
+  --gap: 12px;
+  --bw: 2px;
+  --tab-h: 64px;
+}
+:root[data-outdoor] :is(.meta, .status, .label, .tabs button, .card p, summary, .hint) { font-weight: var(--font-weight-700); }
+:root[data-outdoor] .leaflet-tile-pane { filter: contrast(1.25) saturate(1.3); }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; } /* display を指定した要素でも hidden で必ず隠す（全画面地図の上部バーが空のまま出ていた） */
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-family-sans); font-size: var(--font-size-16); line-height: 1.6;
+  padding-bottom: calc(var(--tab-h) + 16px + env(safe-area-inset-bottom));
+  padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+h1 { font-size: var(--font-size-20); margin: 0; }
+h2 { font-size: var(--font-size-18); margin: 16px 0 8px; }
+h3 { font-size: var(--font-size-16); margin: 0 0 4px; }
+a { color: var(--key); }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 16px; border-bottom: var(--bw) solid var(--line); }
+.bar-actions { display: flex; gap: var(--gap); min-width: 0; }
+.weather { min-height: var(--tap); padding: 0 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; border: var(--bw) solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); font: inherit; font-size: var(--font-size-14); }
+.weather[aria-pressed="true"] { background: var(--rain); border-color: var(--rain); color: var(--color-neutral-white); font-weight: var(--font-weight-700); }
+#outdoor { flex: 0 0 auto; }
+#outdoor[aria-pressed="true"] { background: var(--fg); border-color: var(--fg); }
+.notice { margin: 8px 16px; padding: 8px 12px; border-left: 4px solid var(--key); background: var(--key-bg); }
+.notice button { margin-left: 8px; }
+
+/* 絞り込み: 1 行のサマリーにたたむ（details は JS なしで開閉できる） */
+.filters, .recommend { margin: 0 16px; border-bottom: var(--bw) solid var(--line); }
+.filters > summary, .recommend > summary { display: flex; align-items: center; gap: 8px; min-height: var(--tap); cursor: pointer; font-weight: var(--font-weight-700); list-style: none; }
+.filters > summary::-webkit-details-marker, .recommend > summary::-webkit-details-marker { display: none; }
+.filters > summary::after, .recommend > summary::after { content: "▼"; margin-left: auto; font-size: var(--font-size-14); }
+:is(.filters, .recommend)[open] > summary::after { content: "▲"; }
+details.status > summary { min-height: var(--tap); display: flex; align-items: center; cursor: pointer; }
+#f-sum { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.count { flex: 0 0 auto; }
+.filters[open] { padding-bottom: 8px; }
+.row { min-width: 0; display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+.row .label { white-space: nowrap; }
+.row > .btn { flex: none; white-space: nowrap; } /* 入力欄の横のボタン（「探す」など）が縦に折れないように */
+.row > input[type=search] { flex: 1; min-width: 0; }
+.label { flex: 0 0 2.5em; color: var(--fg-sub); font-size: var(--font-size-14); }
+.chips { min-width: 0; display: flex; gap: var(--gap); overflow-x: auto; padding: 2px 0; scrollbar-width: none; }
+.chip { flex: 0 0 auto; min-height: var(--tap); padding: 0 12px; border: var(--bw) solid var(--line); border-radius: 22px; background: var(--bg); color: var(--fg); font: inherit; font-size: var(--font-size-14); }
+.chip[aria-pressed="true"] { background: var(--key); border-color: var(--key); color: var(--color-neutral-white); font-weight: var(--font-weight-700); }
+/* 色だけに頼らず、選択中は ✓ でも示す */
+.chip[aria-pressed="true"]::before, .icon[aria-pressed="true"]::before { content: "✓"; margin-right: 4px; }
+.recommend .cards { display: grid; gap: 8px; padding-bottom: 8px; }
+/* タブに関係ない欄は出さない */
+body:is([data-tab="touring"], [data-tab="settings"]) :is(.filters, .recommend) { display: none; }
+body[data-tab="events"] :is(#r-genre, .recommend) { display: none; }
+
+/* タブは画面下に固定（親指・グローブで押しやすい） */
+.tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1100; display: flex; background: var(--bg); border-top: var(--bw) solid var(--line);
+  padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+.tabs button { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; white-space: nowrap; min-height: var(--tab-h); border: 0; border-top: 4px solid transparent; background: none; color: var(--fg-sub); font: inherit; font-size: var(--font-size-14); line-height: 1.2; }
+.tabs button span { font-size: var(--font-size-18); }
+.tabs button[aria-selected="true"] { color: var(--key); border-top-color: var(--key); font-weight: var(--font-weight-700); }
+
+main { padding: 8px 16px 32px; display: grid; gap: 8px; }
+.card { border: var(--bw) solid var(--line); border-radius: 8px; padding: 12px; background: var(--bg); }
+.card .meta { margin: 0 0 4px; color: var(--fg-sub); font-size: var(--font-size-14); }
+.meta strong { color: var(--fg); }
+.card p { margin: 0 0 4px; overflow-wrap: anywhere; }
+.badge { display: inline-block; padding: 0 6px; border-radius: 4px; font-size: var(--font-size-14); }
+.badge.rain { background: var(--rain); color: var(--color-neutral-white); font-weight: var(--font-weight-700); }
+.badge.unk { border: var(--bw) dashed var(--fg-sub); }
+.badge.warn { color: var(--warn); font-weight: var(--font-weight-700); }
+.actions { display: flex; flex-wrap: wrap; gap: var(--gap); margin-top: 8px; }
+.btn, .icon { display: inline-flex; align-items: center; justify-content: center; min-height: var(--tap); padding: 0 12px; border: var(--bw) solid var(--key); border-radius: 8px; background: var(--bg); color: var(--key); font: inherit; font-size: var(--font-size-14); text-decoration: none; cursor: pointer; }
+.btn.primary { background: var(--key); color: var(--color-neutral-white); font-weight: var(--font-weight-700); }
+.icon[aria-pressed="true"] { background: var(--key); color: var(--color-neutral-white); font-weight: var(--font-weight-700); }
+/* 押せない状態は破線で示す */
+.btn:disabled { background: var(--bg-sub); border-style: dashed; color: var(--fg-sub); cursor: not-allowed; }
+/* 押している間は太い枠（日なた・グローブでも押したことが分かる） */
+:is(.btn, .chip, .icon, .weather):active { outline: 4px solid var(--fg); outline-offset: 2px; }
+.tabs button:active { outline: 4px solid var(--fg); outline-offset: -4px; }
+.btn[aria-disabled] { pointer-events: none; background: var(--bg-sub); border-style: dashed; color: var(--fg-sub); }
+.empty { color: var(--fg-sub); }
+.status { font-size: var(--font-size-14); color: var(--fg-sub); }
+.hint { margin: 0; font-size: var(--font-size-14); color: var(--fg-sub); }
+input[type="search"], input[type="password"], input[type="text"], textarea, select { width: 100%; min-height: var(--tap); font: inherit; padding: 0 8px; border: var(--bw) solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); }
+label.check { display: flex; align-items: center; gap: 10px; min-height: var(--tap); }
+label.check input { width: 28px; height: 28px; flex: 0 0 auto; accent-color: var(--key); }
+:focus-visible { outline: 3px solid var(--color-primitive-yellow-400); outline-offset: 2px; }
+
+/* ツーリング */
+#map, #spot-map, #visited-map { height: min(60vh, 520px); border: var(--bw) solid var(--line); border-radius: 8px; }
+.leaflet-touch .leaflet-bar a { width: 48px; height: 48px; line-height: 48px; font-size: 24px; }
+.leaflet-tooltip.num { background: none; border: 0; box-shadow: none; color: var(--color-neutral-white); font-weight: var(--font-weight-700); font-size: 13px; padding: 0; }
+.leaflet-tooltip.num::before { display: none; }
+.route-sum { margin: 0; font-size: var(--font-size-24); font-weight: var(--font-weight-700); }
+.stop { display: grid; grid-template-columns: auto 2.8em minmax(0, 1fr) auto; align-items: center; gap: 6px; padding: 4px 8px; }
+.stop input { width: 24px; height: 24px; margin: 0; accent-color: var(--key); }
+.stop.is-picked { border: 2px solid var(--key); background: var(--key-bg); }
+.stop.is-disabled { border-style: dashed; opacity: 0.75; }
+.stop .km { font-size: 1.05rem; font-weight: var(--font-weight-700); text-align: right; font-variant-numeric: tabular-nums; line-height: 1; }
+.stop .km small { font-size: 0.7rem; }
+.stop .name { min-width: 0; font-size: 0.9rem; font-weight: var(--font-weight-700); line-height: 1.3; }
+.stop .nm { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.stop .sub { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 0.75rem; font-weight: normal; color: var(--fg-sub); }
+.tour-bar { position: sticky; bottom: calc(var(--tab-h) + 8px + env(safe-area-inset-bottom)); z-index: 1000; display: flex; gap: var(--gap); padding: 8px 0; background: var(--bg); border-top: 2px solid var(--fg); }
+.tour-bar .btn { flex: 1; min-height: max(56px, var(--tap)); font-size: var(--font-size-16); }
+.map-wrap { position: relative; }
+.crosshair { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 500; pointer-events: none;
+  font-size: 32px; font-weight: var(--font-weight-700); color: var(--color-neutral-black); text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff; }
+.map-pick { position: absolute; right: 8px; top: 8px; z-index: 600; background: var(--bg); font-weight: var(--font-weight-700); } /* 下は地図の出典表示と重なるので上に */
+/* 走り方の選択とルート候補 */
+.opts { border: var(--bw) solid var(--line); border-radius: 8px; margin: 0; padding: 4px 12px 8px; }
+.opts legend { padding: 0 4px; }
+.cands { display: grid; gap: 8px; }
+.cand { display: grid; gap: 2px; width: 100%; text-align: left; font: inherit; color: var(--fg); cursor: pointer; }
+.cand-title { font-weight: var(--font-weight-700); font-size: var(--font-size-16); }
+.cand-time { font-size: var(--font-size-20); font-weight: var(--font-weight-700); font-variant-numeric: tabular-nums; }
+.cand-sub { font-size: var(--font-size-14); color: var(--fg-sub); }
+.cand[aria-pressed="true"] { border: 3px solid var(--key); background: var(--key-bg); }
+.cand[aria-pressed="true"] .cand-title::before { content: "✓ "; color: var(--key); }
+.tour-bar #nav { flex: 2; }
+/* スポットの説明と写真 */
+.info { margin-top: 8px; padding-top: 8px; border-top: var(--bw) solid var(--line); }
+.stop-info { margin: -1px 0 3px; padding: 8px 12px; border: var(--bw) solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; }
+.stop-info .info-img { max-height: 150px; }
+.info p { margin: 0 0 6px; }
+.info-img { display: block; width: 100%; max-height: 240px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; background: var(--bg-sub); }
+.photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 6px; }
+.photos a { display: grid; gap: 2px; color: var(--fg-sub); text-decoration: none; }
+.photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; background: var(--bg-sub); }
+.credit { font-size: var(--font-size-14); color: var(--fg-sub); overflow-wrap: anywhere; }
+.stop .info-btn { min-height: 32px; padding: 0 8px; font-size: 0.75rem; white-space: nowrap; }
+/* 地図の吹き出し */
+.pop { display: grid; gap: 4px; font-family: var(--font-family-sans); font-size: var(--font-size-14); color: var(--fg); }
+.pop strong { font-size: var(--font-size-16); }
+.pop-sub { color: var(--fg-sub); }
+.pop-img { display: block; width: 100%; max-height: 110px; object-fit: cover; border-radius: 6px; background: var(--bg-sub); }
+.pop p { margin: 0; }
+.pop-pick { margin-top: 4px; min-height: 44px; }
+.leaflet-popup-content { margin: 12px; }
+.badge.fast { border: var(--bw) solid var(--key); color: var(--key); font-weight: var(--font-weight-700); }
+/* 目的地の検索 */
+.dest-search { display: flex; gap: var(--gap); margin-top: 8px; }
+.dest-search input { flex: 1; min-width: 0; }
+.dq-list { display: grid; gap: 6px; margin-top: 6px; }
+.dq-item { display: grid; gap: 2px; width: 100%; text-align: left; font: inherit; color: var(--fg); cursor: pointer; padding: 8px 12px; }
+/* スポットのカード（一覧はコンパクトに。ボタン類は「▼詳しく」の中） */
+.card.spot { padding: 8px 12px; }
+.spot-head { display: flex; align-items: flex-start; gap: 8px; }
+.spot-head h3 { flex: 1; min-width: 0; margin: 0; }
+.head-btns { flex: 0 0 auto; display: flex; gap: 6px; margin: -2px -4px 0 0; }
+.head-btns .btn, .head-btns .icon { min-height: 40px; min-width: 44px; padding: 0 8px; font-size: var(--font-size-14); }
+:root[data-outdoor] .head-btns :is(.btn, .icon) { min-height: var(--tap); }
+.card.spot .meta { margin: 2px 0; }
+.card.spot .note { margin: 0; font-size: var(--font-size-14); color: var(--fg-sub); line-height: 1.5;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card.spot .info .actions { margin-top: 0; }
+.card.spot .info { margin-top: 6px; }
+/* 絞り込みの項目は横スクロールさせず、折り返して全部見せる */
+.filters .chips { flex-wrap: wrap; overflow: visible; }
+.filters .chip { min-height: 40px; padding: 0 10px; }
+:root[data-outdoor] .filters .chip { min-height: var(--tap); }
+/* 天気ボタンは 2 行まで折り返す（雨の日モードの表示が見切れないように） */
+.weather#weather { white-space: normal; line-height: 1.2; text-overflow: clip; text-align: center; padding: 2px 8px; }
+.filters .row { align-items: flex-start; }
+.filters .label { padding-top: 10px; }
+/* 関連スポット */
+.rel-box { margin-top: 6px; border: var(--bw) solid var(--line); border-radius: 8px; padding: 0 10px; }
+.rel-box > summary { padding: 8px 0; font-weight: var(--font-weight-700); cursor: pointer; }
+.rel-box[open] { padding-bottom: 8px; }
+.rel { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.rel li { overflow-wrap: anywhere; }
+.rel a { font-weight: var(--font-weight-700); }
+.rel .status { display: block; }
+.chips.wrap { flex-wrap: wrap; overflow: visible; }
+/* 営業中・見頃・日帰りプラン・ルートの道具 */
+.badge.open { background: #2f9e44; color: var(--color-neutral-white); font-weight: var(--font-weight-700); }
+.badge.closed { border: var(--bw) solid var(--fg-sub); color: var(--fg-sub); }
+.badge.season { background: #d6336c; color: var(--color-neutral-white); font-weight: var(--font-weight-700); }
+.plan-steps { padding-left: 1.4em; display: grid; gap: 4px; }
+.plan h4, .nearby h4, #rt-out h4 { margin: 10px 0 4px; font-size: var(--font-size-16); }
+table.rain { border-collapse: collapse; width: 100%; }
+table.rain th, table.rain td { border-bottom: 1px solid var(--line); padding: 4px; text-align: left; }
+svg.elev { width: 100%; height: 120px; display: block; background: var(--bg-sub, transparent); }
+.elev-fill { fill: rgba(232, 89, 12, 0.18); stroke: none; }
+.elev-line { fill: none; stroke: #e8590c; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.rt-photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+.rt-photos figure { margin: 0; }
+.rt-photos .ph { padding: 0; border: 0; background: none; width: 100%; cursor: pointer; }
+.rt-photos img { width: 100%; height: 110px; object-fit: cover; border-radius: 6px; display: block; }
+.rt-photos figcaption { font-size: var(--font-size-14); overflow-wrap: anywhere; }
+.leaflet-bar.locate { display: block; width: 48px; height: 48px; line-height: 48px; text-align: center; font-size: 24px; background: #fff; color: #1a73e8; text-decoration: none; }
+.wplan { border: var(--bw) solid var(--line); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; }
+.wplan ul { margin: 4px 0; padding-left: 1.2em; }
+details.tools, details#curvy { border: var(--bw) solid var(--line); border-radius: 8px; padding: 8px 12px; margin: 8px 0; }
+details.tools summary, details#curvy summary { font-weight: var(--font-weight-700); cursor: pointer; }
+#curvy li .btn { min-height: 36px; padding: 2px 10px; margin-right: 6px; }
+/* スポット一覧を詰めて 1 画面に多く並べる（屋外モードでは使わず、大きいまま） */
+:root:not([data-outdoor]) .card.spot { padding: 6px 10px; border-radius: 6px; }
+:root:not([data-outdoor]) .card.spot h3 { font-size: 0.8rem; line-height: 1.35; }
+:root:not([data-outdoor]) .card.spot .meta { font-size: 0.68rem; line-height: 1.4; margin: 1px 0 0; }
+:root:not([data-outdoor]) .card.spot .badge { font-size: 0.64rem; padding: 0 4px; }
+:root:not([data-outdoor]) .card.spot .note { font-size: 0.68rem; line-height: 1.4; -webkit-line-clamp: 1; }
+:root:not([data-outdoor]) .card.spot .head-btns .btn, :root:not([data-outdoor]) .card.spot .head-btns .icon { min-height: 34px; min-width: 40px; padding: 0 6px; font-size: 0.68rem; }
+:root:not([data-outdoor]) #spot-list .card.spot + .card.spot, :root:not([data-outdoor]) .recommend .cards { margin-top: 4px; gap: 4px; }
+:root:not([data-outdoor]) #spot-list .chips .chip, :root:not([data-outdoor]) #spot-list #t-map { min-height: 34px; padding: 0 10px; font-size: 0.68rem; }
+:root:not([data-outdoor]) #spot-list .chips { gap: 4px; margin-bottom: 4px; }
+:root:not([data-outdoor]) #spot-list .actions { margin: 2px 0 4px; }
+.gacha { border: 3px solid var(--key); border-radius: 10px; padding: 8px; margin: 6px 0 10px; }
+.gacha .card { border: 0; padding: 4px 2px; }
+.newdir { margin: 10px 0 4px; font-size: var(--font-size-16); }
+.gphotos .photos { margin-bottom: 6px; }
+/* 検索欄（スポットタブだけ・一番上） */
+#search-slot { padding: 8px 16px 0; }
+#search-slot input { width: 100%; box-sizing: border-box; }
+body:not([data-tab="spots"]) #search-slot { display: none; }
+/* 絞り込み欄を詰める（屋外モードでは大きいまま） */
+:root:not([data-outdoor]) .filters .row { margin: 2px 0; gap: 6px; }
+:root:not([data-outdoor]) .filters .chips { gap: 4px; }
+:root:not([data-outdoor]) .filters .chip { min-height: 32px; padding: 0 9px; font-size: 0.66rem; }
+:root:not([data-outdoor]) .filters .label { font-size: 0.66rem; }
+details.more { margin: 4px 0; }
+details.more summary { cursor: pointer; color: var(--fg-sub); font-size: var(--font-size-14); }
+.plan-times { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 4px 0; }
+.plan-steps li { margin: 2px 0; }
+.plan-edit { display: inline-flex; gap: 4px; align-items: center; margin-left: 4px; vertical-align: middle; }
+.plan-edit .icon { min-height: 32px; min-width: 32px; padding: 0 6px; }
+.plan-edit select { min-height: 32px; font: inherit; font-size: var(--font-size-14); }
+details.plan-add { margin: 6px 0; }
+details.plan-add summary { cursor: pointer; font-weight: var(--font-weight-700); color: var(--key); }
+.plan-q { width: 100%; box-sizing: border-box; margin: 6px 0; }
+/* 検索の入力補完 */
+#search-slot { position: relative; }
+.sugg { position: absolute; left: 16px; right: 16px; z-index: 1000; background: var(--bg); border: var(--bw) solid var(--line); border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18); max-height: 60vh; overflow-y: auto; }
+.sugg-item { display: block; width: 100%; text-align: left; padding: 10px 12px; border: 0; border-bottom: 1px solid var(--line); background: none; color: var(--fg); font: inherit; cursor: pointer; }
+.sugg-item:last-child { border-bottom: 0; }
+/* アプリの入れ方 */
+.install-banner { margin: 8px 16px; padding: 10px 12px; border: 3px solid var(--key); border-radius: 10px; background: var(--bg); }
+.install-banner p { margin: 0 0 4px; }
+.install-share { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+.qr { width: 160px; height: 160px; flex: 0 0 auto; background: #fff; }
+.qr svg { width: 100%; height: 100%; display: block; }
+.install-steps dt { font-weight: var(--font-weight-700); margin-top: 6px; }
+.install-steps dd { margin: 0 0 4px 0; font-size: var(--font-size-14); }
+/* ドライブコースの凡例 */
+.swatch { display: inline-block; width: 18px; height: 6px; border-radius: 3px; background: var(--c); margin-right: 6px; vertical-align: middle; }
+.swatch.dash { background: repeating-linear-gradient(90deg, var(--c) 0 5px, transparent 5px 9px); }
+.swatch.dot { width: 10px; height: 10px; border-radius: 50%; }
+.course-legend .chip[aria-pressed="false"] { opacity: 0.55; }
+.course-legend .chip[aria-pressed="false"]::before { content: ""; margin: 0; }
+:root:not([data-outdoor]) .course-legend .chip { min-height: 34px; padding: 0 9px; font-size: 0.66rem; }
+/* 地図の点（絵文字のピン） */
+.pin { position: relative; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%;
+  background: #fff; border: 2px solid #3d5afe; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); font-size: 17px; line-height: 1; }
+.pin.top { border: 3px solid #d4a000; }
+/* ツーリングの地図: 引いて見ているときは、選んでいない立ち寄りのアイコンを少し小さく（道が見えるように。押せる範囲は同じ）。
+   ルートに重なるアイコンは横へずらす（app.js の layoutPins） */
+.pin { transform: scale(var(--pin-s, 1)); transition: transform 0.15s; }
+#map.zoom-mid .leaflet-marker-pane { --pin-s: 0.85; }
+#map.zoom-far .leaflet-marker-pane { --pin-s: 0.7; }
+#map.zoom-far .leaflet-marker-pane .pin { opacity: 0.92; }
+/* ルートに重なるので横へずらしたアイコン: 本当の位置の点と、そこからの細い線 */
+.pin-stem { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+.pin-stem line { stroke: #333; stroke-width: 1.5; }
+.pin-stem circle { fill: #fff; stroke: #333; stroke-width: 1.5; }
+.pin.picked { border: 3px solid var(--key); background: #e8edff; transform: scale(1.15); }
+.pin b { position: absolute; right: -6px; top: -6px; min-width: 18px; height: 18px; padding: 0 3px; border-radius: 9px; background: var(--key); color: #fff;
+  font-size: 12px; line-height: 18px; text-align: center; font-family: var(--font-family-sans); }
+.pin.pass { width: 24px; height: 24px; font-size: 14px; border-color: #f08c00; }
+.cost-form { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.cost-form input { width: 5.5em; font: inherit; padding: 4px 6px; }
+
+/* =====================================================================
+   スタイリッシュ（設定タブで「標準」に戻せる）。屋外モードのときは使わない（読みやすさ優先）
+   ===================================================================== */
+:root[data-theme="stylish"]:not([data-outdoor]) {
+  --bg: #ffffff; --bg-page: #f3f5fa; --bg-sub: #f7f8fc; --fg: #141a2e; --fg-sub: #5b6478; --line: #e3e7f0;
+  --key: #4f46e5; --key-bg: #eef2ff; --accent: #06b6d4; --chip: #eef1f8;
+  --grad: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #06b6d4 100%);
+  --shadow: 0 2px 10px rgba(20, 26, 46, 0.07), 0 1px 2px rgba(20, 26, 46, 0.05);
+  --radius: 16px;
+}
+:root[data-theme="stylish"]:not([data-outdoor]) body { background: var(--bg-page); letter-spacing: 0.01em; }
+:root[data-theme="stylish"]:not([data-outdoor]) .bar {
+  position: sticky; top: 0; z-index: 1050; border: 0; color: #fff; padding: 10px 14px;
+  background: linear-gradient(120deg, #0f172a 0%, #312e81 55%, #4f46e5 100%); box-shadow: 0 4px 16px rgba(15, 23, 42, 0.25); }
+:root[data-theme="stylish"]:not([data-outdoor]) .bar h1 { font-weight: 800; letter-spacing: 0.06em; }
+:root[data-theme="stylish"]:not([data-outdoor]) .weather {
+  border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 999px; background: rgba(255, 255, 255, 0.14); color: #fff; }
+:root[data-theme="stylish"]:not([data-outdoor]) .weather[aria-pressed="true"] { background: #06b6d4; border-color: #06b6d4; }
+:root[data-theme="stylish"]:not([data-outdoor]) #search-slot { padding: 10px 12px 0; }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(input[type="search"], input[type="password"], select) {
+  border: 1px solid var(--line); border-radius: 14px; background: var(--bg); box-shadow: var(--shadow); padding: 0 14px; }
+:root[data-theme="stylish"]:not([data-outdoor]) #q { min-height: 48px; border: 0; box-shadow: 0 4px 18px rgba(79, 70, 229, 0.14); }
+:root[data-theme="stylish"]:not([data-outdoor]) #q:focus { outline: 2px solid var(--key); }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(.filters, .recommend) {
+  margin: 10px 12px 0; padding: 0 14px; border: 0; border-radius: var(--radius); background: var(--bg); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) main { padding: 10px 12px 32px; gap: 10px; }
+:root[data-theme="stylish"]:not([data-outdoor]) .card { border: 0; border-radius: var(--radius); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) .card.spot { padding: 8px 12px; }
+:root[data-theme="stylish"]:not([data-outdoor]) .card.spot h3 { font-weight: 700; }
+:root[data-theme="stylish"]:not([data-outdoor]) .chip { border: 0; border-radius: 999px; background: var(--chip); color: var(--fg); }
+:root[data-theme="stylish"]:not([data-outdoor]) .chip[aria-pressed="true"] { background: var(--grad); color: #fff; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(.btn, .icon) { border: 1px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--key); }
+:root[data-theme="stylish"]:not([data-outdoor]) .btn.primary { border: 0; background: var(--grad); color: #fff; box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); }
+:root[data-theme="stylish"]:not([data-outdoor]) .icon[aria-pressed="true"] { border: 0; background: var(--grad); color: #fff; }
+:root[data-theme="stylish"]:not([data-outdoor]) .badge { border-radius: 999px; padding: 0 8px; }
+:root[data-theme="stylish"]:not([data-outdoor]) .notice { border: 0; border-radius: 12px; background: var(--key-bg); }
+:root[data-theme="stylish"]:not([data-outdoor]) h2 { font-weight: 800; letter-spacing: 0.02em; }
+:root[data-theme="stylish"]:not([data-outdoor]) :is(#map, #spot-map, #visited-map) { border: 0; border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs {
+  background: rgba(255, 255, 255, 0.82); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid rgba(20, 26, 46, 0.06); }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button { border-top: 0; }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button span { padding: 2px 16px; border-radius: 999px; transition: background 0.2s; }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button[aria-selected="true"] { color: var(--key); }
+:root[data-theme="stylish"]:not([data-outdoor]) .tabs button[aria-selected="true"] span { background: var(--key-bg); }
+:root[data-theme="stylish"]:not([data-outdoor]) .install-banner { border: 0; border-radius: var(--radius); background: var(--key-bg); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) .gacha { border: 0; border-radius: var(--radius); background: linear-gradient(135deg, #eef2ff, #ecfeff); box-shadow: var(--shadow); }
+:root[data-theme="stylish"]:not([data-outdoor]) .pin { border-color: #6366f1; }
+:root[data-theme="stylish"]:not([data-outdoor]) .pin.top { border-color: #f59e0b; }
+:root[data-theme="stylish"]:not([data-outdoor]) .sugg { border: 0; border-radius: 14px; }
+/* 端末がダークモードのときは、スタイリッシュも暗い配色に */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="stylish"]:not([data-outdoor]) {
+    --bg: #161b2e; --bg-page: #0b0f1c; --bg-sub: #1b2136; --fg: #e8ebf4; --fg-sub: #a3abc0; --line: #2a3150;
+    --key: #a5b4fc; --key-bg: #1f2550; --chip: #1f253d; --shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+    color-scheme: dark; }
+  :root[data-theme="stylish"]:not([data-outdoor]) .tabs { background: rgba(14, 18, 34, 0.85); border-top-color: rgba(255, 255, 255, 0.06); }
+  :root[data-theme="stylish"]:not([data-outdoor]) :is(.leaflet-popup-content-wrapper, .leaflet-popup-tip) { background: var(--bg); color: var(--fg); }
+  :root[data-theme="stylish"]:not([data-outdoor]) .pin { background: #1f253d; }
+  :root[data-theme="stylish"]:not([data-outdoor]) .gacha { background: linear-gradient(135deg, #1f2550, #0e2a33); }
+  :root[data-theme="stylish"]:not([data-outdoor]) .qr { background: #fff; }
+}
+:root:not([data-outdoor]) .hint .chip { min-height: 30px; padding: 0 10px; font-size: 0.66rem; vertical-align: middle; }
+
+textarea { padding: 8px; min-height: 0; resize: vertical; }
+#my-route input, #my-route textarea { margin-top: 6px; }
+.jct-list { margin: 0; padding-left: 1.4em; display: grid; gap: 6px; }
+.linklike { background: none; border: 0; padding: 0; font: inherit; color: var(--key); text-decoration: underline; cursor: pointer; }
+
+.course-info { position: relative; margin-top: 8px; padding: 10px 54px 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.course-info .course-close { position: absolute; top: 4px; right: 4px; }
+.chain-box { margin-top: 8px; padding: 10px 12px; border: 2px solid var(--key); border-radius: 8px; background: var(--bg); display: grid; gap: 6px; }
+.chain-list { margin: 0; padding-left: 1.4em; display: grid; gap: 4px; }
+.chain-list li > span:first-child { overflow-wrap: anywhere; }
+.chain-btns { display: inline-flex; gap: 4px; margin-left: 6px; vertical-align: middle; }
+
+/* ---- ツーリング: 全画面の地図＋下から引き出すパネル ---- */
+.map-full { display: none; }
+body.tour-full { padding-bottom: 0; overflow: hidden; }
+body.tour-full :is(header.bar, #install-banner, #load-msg, #update-msg) { display: none !important; }
+body.tour-full .map-full { display: block; position: fixed; inset: 0 0 calc(var(--tab-h) + env(safe-area-inset-bottom)) 0; z-index: 1; }
+body.tour-full .map-full .map-wrap, body.tour-full .map-full #map { height: 100%; }
+body.tour-full .map-full #map { border: 0; border-radius: 0; }
+body.tour-full .map-full .leaflet-top { top: calc(56px + env(safe-area-inset-top)); }
+body.tour-full .map-full .map-pick { top: calc(64px + env(safe-area-inset-top)); right: 58px; min-height: 36px; font-size: 0.8rem; }
+body.tour-full #view .chain-btns :is(.icon, .btn) { min-height: 30px; min-width: 30px; padding: 0 6px; font-size: 0.75rem; }
+body.tour-full #view { display: block; position: fixed; left: 0; right: 0; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom)); z-index: 1050; height: var(--sheet-h, 50vh);
+  overflow-y: auto; overscroll-behavior: contain; background: var(--bg); border-radius: 14px 14px 0 0; box-shadow: 0 -4px 16px rgb(0 0 0 / 0.18);
+  padding: 0 12px 16px; font-size: 0.86rem; gap: 6px; transition: height 0.15s ease-out; }
+body.tour-full #view .sheet-handle { position: sticky; top: 0; z-index: 2; display: grid; place-items: center; height: 30px; margin: 0 -12px; background: var(--bg); cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; }
+body.tour-full #view.sheet-drag { transition: none; } /* 動かしている間は指にそのままついてくる */
+body.tour-full .map-full .radar-bar { transition: bottom 0.15s ease-out; }
+body.sheet-dragging .map-full .radar-bar { transition: none; }
+body.tour-full #view .sheet-handle span { width: 44px; height: 5px; border-radius: 3px; background: var(--line); }
+body.tour-full #view :is(.btn, select, input, .chip) { min-height: 36px; font-size: 0.82rem; padding-top: 2px; padding-bottom: 2px; }
+body.tour-full #view :is(h2, h4) { font-size: 0.95rem; margin: 4px 0; }
+body.tour-full #view :is(.hint, .status, .notice) { font-size: 0.78rem; }
+body.tour-full #view .tour-bar { position: static; padding: 4px 0; border-top: 0; }
+body.tour-full #view .tour-bar .btn { min-height: 40px; font-size: 0.86rem; }
+.tour-top { position: fixed; top: calc(8px + env(safe-area-inset-top)); left: max(8px, env(safe-area-inset-left)); right: max(8px, env(safe-area-inset-right)); z-index: 1060;
+  display: flex; align-items: center; gap: 6px; padding: 6px 8px 6px 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 2px 10px rgb(0 0 0 / 0.18); font-size: 0.8rem; }
+.tour-top .tt-main { flex: 1; min-width: 0; display: grid; line-height: 1.3; }
+.tour-top .tt-main strong, .tour-top .tt-main span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tour-top .tt-main span { color: var(--fg-sub); }
+.tour-top .btn { min-height: 36px; padding: 0 14px; font-size: 0.82rem; }
+.tour-top .icon { min-height: 36px; min-width: 36px; }
+.map-full-btn { position: absolute; left: 56px; top: 8px; z-index: 600; min-height: 36px; font-size: 0.8rem; background: var(--bg); }
+.chain-save { display: flex; gap: 6px; }
+.chain-save input { flex: 1; min-width: 0; }
+
+body.tour-full #view > * + * { margin-top: 6px; } /* グリッドだと高さの決まったパネルで項目が重なるため、縦に積むだけに */
+.stops-box > summary { font-weight: var(--font-weight-700); padding: 8px 0; cursor: pointer; }
+.stops-box[open] > summary { position: sticky; top: 26px; z-index: 1; background: var(--bg); }
+.stops-box .stop { margin-top: 3px; cursor: pointer; }
+body.tour-full #view .stop .info-btn { min-height: 30px; font-size: 0.75rem; }
+.stop.is-focused { outline: 3px solid var(--key); outline-offset: -3px; }
+.pin-hi { z-index: 2000 !important; }
+.pin-hi .pin { transform: scale(1.7); box-shadow: 0 0 0 4px var(--key), 0 2px 8px rgb(0 0 0 / 0.4); }
+.chain-mode { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; margin: 0; display: grid; gap: 2px; }
+.chain-mode legend { font-weight: var(--font-weight-700); padding: 0 4px; }
+/* 全画面の地図: ☰ で右から出る設定のパネル（通常の表示では、ふつうに一覧の中に並ぶ） */
+.drawer-head { display: none; }
+body.tour-full .tour-drawer { position: fixed; z-index: 1055; font-size: 0.86rem; top: calc(64px + env(safe-area-inset-top)); right: 0; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom));
+  width: min(320px, 88vw); overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 6px 12px 12px; background: var(--bg);
+  border-radius: 14px 0 0 14px; box-shadow: -4px 0 16px rgb(0 0 0 / 0.2); transform: translateX(105%); visibility: hidden; transition: transform 0.18s ease-out, visibility 0.18s; }
+body.tour-full.drawer-open .tour-drawer { transform: none; visibility: visible; }
+body.tour-full .tour-drawer .drawer-head { display: flex; align-items: center; gap: 6px; }
+body.tour-full .tour-drawer .drawer-head strong { flex: 1; }
+body.tour-full .tour-drawer > * + * { margin-top: 4px; }
+body.tour-full .tour-drawer #tour-opts > summary { display: none; }
+body.tour-full .tour-drawer .opts { padding: 0 8px 4px; }
+body.tour-full .tour-drawer label.check { min-height: 32px; gap: 8px; font-size: 0.82rem; }
+body.tour-full .tour-drawer label.check input { width: 20px; height: 20px; min-height: 0; }
+body.tour-full .tour-drawer .chip { min-height: 30px; padding: 0 8px; font-size: 0.75rem; }
+body.tour-full .tour-drawer .hint { display: none; }
+body.tour-full .tour-drawer :is(.btn, select, input) { min-height: 34px; font-size: 0.8rem; }
+/* 首都高ルートを組み立てる: 次に進める区間のボタン */
+.sx-opts { display: flex; flex-wrap: wrap; gap: 6px; }
+.sx-opt { flex-direction: column; align-items: flex-start; line-height: 1.2; }
+.sx-opt small { font-size: 0.72rem; font-weight: normal; color: var(--fg-sub); }
+#sx-start { margin-top: 4px; }
+/* 説明は小さな i を押すと出る（画面をすっきりさせる） */
+.help { display: inline-block; margin: 0; vertical-align: middle; }
+.help > summary { list-style: none; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--line);
+  font: italic bold 13px Georgia, serif; color: var(--fg-sub); cursor: pointer; }
+.help > summary::-webkit-details-marker { display: none; }
+.help[open] { display: block; margin: 4px 0; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: var(--font-size-14); color: var(--fg-sub); }
+.help[open] > summary { float: right; margin-left: 6px; }
+body.tour-full #view .help[open] { font-size: 0.78rem; }
+.map-note { background: var(--bg); color: var(--fg-sub); font-size: var(--font-size-14); padding: 2px 8px; border-radius: 6px; border: 1px solid var(--line); }
+.row .help { margin-left: 4px; }
+label[for="dest"] { display: inline; }
+/* スポットの地図: 近いピンをまとめた数字の丸 */
+.cluster { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--key); color: #fff; font: 700 13px/1 var(--font-family-sans);
+  border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.35); }
+.cluster.big { width: 46px; height: 46px; margin: -3px; font-size: 14px; }
+/* 雨雲レーダー（ツーリングの地図の上。Yahoo!天気のように下の時刻のバーでずらして見る） */
+.map-radar { position: absolute; right: 8px; top: 52px; z-index: 600; min-height: 36px; font-size: 0.8rem; font-weight: var(--font-weight-700); background: var(--bg); }
+.map-radar[aria-pressed="true"] { background: var(--key); color: #fff; border-color: var(--key); }
+body.tour-full .map-full .map-radar { top: calc(108px + env(safe-area-inset-top)); right: 58px; }
+/* 半透明にして、バーの下の地図（雨雲）も透けて見えるように */
+.radar-bar { position: absolute; left: 8px; right: 8px; bottom: 22px; z-index: 650; padding: 4px 8px 2px; border-radius: 12px;
+  background: var(--bg); background: color-mix(in srgb, var(--bg) 78%, transparent); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.25); font-size: 0.8rem; }
+body.tour-full .map-full .radar-bar { bottom: calc(var(--sheet-h, 50vh) + 8px); }
+.radar-bar .hint { margin: 4px 32px 4px 0; }
+.radar-top { display: flex; align-items: center; gap: 8px; }
+.radar-time { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; }
+.radar-time strong { font-size: 1.1rem; white-space: nowrap; }
+.radar-time small { margin-left: 4px; font-size: 0.72rem; font-weight: normal; color: var(--fg-sub); }
+.radar-time .rel { font-size: 0.78rem; font-weight: var(--font-weight-700); color: var(--key); }
+.radar-bar .radar-play { flex: none; width: 36px; height: 36px; min-height: 36px; border-radius: 50%; border: 0; background: var(--key); color: #fff; font-size: 0.95rem; }
+.radar-bar .radar-plan-btn { flex: none; min-height: 34px; padding: 0 8px; font-size: 0.75rem; }
+.radar-bar .radar-x { flex: none; min-height: 32px; min-width: 32px; }
+.radar-bar > .radar-x { position: absolute; right: 6px; top: 4px; }
+.radar-track { position: relative; padding-bottom: 13px; }
+.radar-track input[type=range] { -webkit-appearance: none; appearance: none; display: block; width: 100%; height: 24px; margin: 0; padding: 0; background: transparent; border: 0; }
+.radar-track input[type=range]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: linear-gradient(90deg, #adb5bd var(--past), #4dabf7 var(--past)); }
+.radar-track input[type=range]::-moz-range-track { height: 6px; border-radius: 3px; background: linear-gradient(90deg, #adb5bd var(--past), #4dabf7 var(--past)); }
+.radar-track input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; margin-top: -8px; border-radius: 50%; background: var(--key); border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.4); }
+.radar-track input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: var(--key); border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.4); }
+.radar-ticks { position: absolute; left: 11px; right: 11px; bottom: 0; height: 14px; }
+.radar-ticks span { position: absolute; transform: translateX(-50%); font-size: 0.65rem; line-height: 14px; color: var(--fg-sub); white-space: nowrap; }
+.radar-ticks span.now { color: var(--key); font-weight: var(--font-weight-700); }
+.radar-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; column-gap: 8px; }
+.radar-legend { display: flex; align-items: center; gap: 1px; font-size: 0.58rem; color: var(--fg-sub); }
+.radar-legend span { display: inline-block; width: 10px; height: 7px; margin-left: 3px; border: 1px solid rgb(0 0 0 / 0.15); }
+.radar-legend em { margin-left: 4px; font-style: normal; }
+.radar-here { margin: 0; font-size: 0.74rem; }
+.radar-here:empty { display: none; }
+.radar-rider { font-size: 26px; line-height: 30px; text-align: center; filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px #fff); }
+.radar-plan:empty { display: none; }
+.rplan { display: grid; gap: 4px; }
+.rplan .rp { display: grid; grid-template-columns: auto auto 1fr auto; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; text-align: left; font: inherit;
+  border: var(--bw) solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); cursor: pointer; }
+.rplan .rp[aria-pressed="true"] { border-color: var(--key); box-shadow: inset 0 0 0 1px var(--key); }
+.rplan .rp-dot { width: 12px; height: 12px; border-radius: 50%; }
+.rplan .rp small { color: var(--fg-sub); white-space: nowrap; }
+.radar-sum { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; margin: 0 0 2px; padding: 3px 8px; border: 0; border-radius: 8px;
+  background: color-mix(in srgb, var(--key) 12%, transparent); color: var(--fg); font: inherit; font-size: 0.78rem; font-weight: var(--font-weight-700); text-align: left; cursor: pointer; }
+.radar-sum span { flex: none; color: var(--key); font-size: 0.72rem; }
+.cand-rain { font-size: 0.8rem; }
+.radar-time .trust { font-size: 0.68rem; color: var(--fg-sub); }

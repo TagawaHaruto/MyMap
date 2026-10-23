@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:11960245766","name":"K-Sports","lat":43.34682,"lon":142.38727,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"Th-Tu 10:00-19:00"},
+{"id":"osm:node:13542704601","name":"Rythm","lat":43.34332,"lon":142.36238,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://rhythmjapan.com/rhythm-furano/","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"Mo-Su 08:00-20:00"}
+]

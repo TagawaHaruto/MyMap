@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:7060217581","name":"白神不動尊","lat":39.94529,"lon":139.71432,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:806436412","name":"臨済宗 海月寺","lat":39.99936,"lon":139.70628,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:823462705","name":"星辻神社","lat":39.96771,"lon":139.7441,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

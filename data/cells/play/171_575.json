@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1110443785","name":"ふれあい公園","lat":42.89032,"lon":143.92838,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:209127309","name":"音別町スケートリンク場 スピードスケートリンク","lat":42.8941,"lon":143.9244,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:427397683","name":"音別町温水プール","lat":42.89198,"lon":143.93474,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:427418654","name":"音別町スケートリンク場 カーリング場","lat":42.89324,"lon":143.92412,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

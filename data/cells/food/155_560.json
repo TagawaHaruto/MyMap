@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5019612621","name":"そばや千太郎","lat":38.83612,"lon":140.243,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5019612624","name":"リンダ","lat":38.855,"lon":140.2494,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 233 62 3216"},
+{"id":"osm:node:5019613221","name":"ケロ屋浪漫","lat":38.83471,"lon":140.24114,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 233 55 3510"},
+{"id":"osm:node:5019614131","name":"プラム","lat":38.86118,"lon":140.2489,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:291905975","name":"ラーメンショップ 大吉","lat":38.86552,"lon":140.24137,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"11:00-14:00, 15:30-20:00","pk":2},
+{"id":"osm:way:592897629","name":"中華そば雲ノ糸最上川店","lat":38.76655,"lon":140.05124,"pref":"山形","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"07:00-15:00"},
+{"id":"osm:node:5019614163","name":"八鍬菓子店","lat":38.75431,"lon":140.23981,"pref":"山形","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:5019614168","name":"長沢菓子店","lat":38.75485,"lon":140.19342,"pref":"山形","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:5021640227","name":"ひらの屋","lat":38.88673,"lon":140.21453,"pref":"山形","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"ひらのや","tel":"+81 233 63 2318"}
+]

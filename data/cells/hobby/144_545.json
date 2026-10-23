@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6103804079","name":"田中サイクル商会","lat":36.01646,"lon":136.27234,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:11180890144","name":"まつかわ書店","lat":36.09411,"lon":136.30151,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11180890175","name":"木下つり具店","lat":36.09697,"lon":136.30727,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:11195878233","name":"サイクルベースあさひ","lat":36.09165,"lon":136.2504,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:11371027436","name":"高良書店","lat":36.14996,"lon":136.26456,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11371027721","name":"カワムラ書店","lat":36.15014,"lon":136.27516,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12071709827","name":"SnowPit","lat":36.07463,"lon":136.49218,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12073471297","name":"白野輪業商会","lat":36.06681,"lon":136.49798,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:180516008","name":"KaBoS","lat":36.09765,"lon":136.25181,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:180977105","name":"レッドバロン 丸岡店","lat":36.1401,"lon":136.26401,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

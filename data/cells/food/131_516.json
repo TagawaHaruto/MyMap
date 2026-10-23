@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12134735206","name":"いろは","lat":32.98249,"lon":129.11622,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12134735212","name":"し喜","lat":32.98328,"lon":129.1156,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12134735223","name":"大地のめぐみ","lat":32.98259,"lon":129.11681,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

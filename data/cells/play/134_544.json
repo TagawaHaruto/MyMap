@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:586800273","name":"鵜殿運動場","lat":33.74136,"lon":136.00891,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733610977","name":"北川公園","lat":33.73489,"lon":136.00914,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733786947","name":"紀宝町中央公園","lat":33.73716,"lon":136.01218,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733788547","name":"神内公園","lat":33.74605,"lon":136.01256,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:734087390","name":"あけぼの公園","lat":33.72401,"lon":136.00265,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:734087543","name":"王子製紙記念公園","lat":33.72541,"lon":136.00021,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:734088441","name":"大浜の公園","lat":33.71577,"lon":136.00285,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:766657050","name":"中曽公園","lat":33.73817,"lon":136.01679,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:926651990","name":"ふるさと歴史公園　ふれあいの森","lat":33.73369,"lon":136.00346,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

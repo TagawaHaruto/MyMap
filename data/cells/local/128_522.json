@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:7984029511","name":"吉松物産館","lat":32.02306,"lon":130.74291,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:823311042","name":"おべんとうのヒライ","lat":32.21102,"lon":130.74326,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:556258056","name":"大口総合運動公園","lat":32.05659,"lon":130.59796,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:571722296","name":"環境改善センター","lat":32.0078,"lon":130.63462,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285932624","name":"十曽青少年旅行村","lat":32.10782,"lon":130.60326,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://www.natureresort.jp/isa","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287603349","name":"woods yard小さな森の庭","lat":32.23269,"lon":130.61437,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-8567-7765"},
+{"id":"osm:node:14287603351","name":"球磨川リバーサイドキャンプ場","lat":32.22467,"lon":130.68387,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0966-33-0002"},
+{"id":"osm:node:14287603887","name":"たかくまソロライダーズ野営場","lat":32.08576,"lon":130.61158,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://umesan.wixsite.com/takakuma","note":"キャンプ・野外","g":"local","k":"camp","tel":"0995-22-0989"},
+{"id":"osm:node:14287603893","name":"楠本川渓流自然公園","lat":32.03913,"lon":130.66778,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0995-23-1311"},
+{"id":"osm:node:14287603894","name":"森のやかた湯ったり館","lat":32.02526,"lon":130.73143,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0995-75-4142"}
+]

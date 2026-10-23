@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:712211702","name":"すっつ浜直市場","lat":42.79634,"lon":140.23183,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Fr off; Sa,PH 10:00+; Su 08:00+","tel":"+81-136-62-2395","pk":2},
+{"id":"osm:way:728952270","name":"山下水産","lat":42.79313,"lon":140.23363,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://www.yamashitasuisan.com/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-136-62-2023","pk":2},
+{"id":"osm:way:728305879","name":"寿都町民プール","lat":42.7881,"lon":140.23299,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","pk":2},
+{"id":"osm:way:728924925","name":"プール","lat":42.79676,"lon":140.22319,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"}
+]

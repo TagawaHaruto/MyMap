@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5200164321","name":"菅原現場","lat":32.63873,"lon":131.4428,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6434750705","name":"北原白秋 歌碑","lat":32.702,"lon":131.30132,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6434750727","name":"若山牧水 歌碑","lat":32.70199,"lon":131.30129,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6434750734","name":"名勝 高千穂峡","lat":32.70213,"lon":131.30126,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7070431667","name":"遭難記念碑","lat":32.51061,"lon":131.32566,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2183573492","name":"Hotel Grateful Takachiho","lat":32.71375,"lon":131.30423,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"https://www.h-hikari.co.jp/","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:node:2183598161","name":"ホテル 四季見","lat":32.70878,"lon":131.3108,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2962849149","name":"Hotel Chikimi","lat":32.70375,"lon":131.30761,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3731457225","name":"Shikimi","lat":32.70908,"lon":131.31021,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"https://shikimi.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3918435760","name":"浮き雲","lat":32.70448,"lon":131.3009,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5087166409","name":"Kariboshi","lat":32.7056,"lon":131.30851,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6746486885","name":"Takachiho B&B","lat":32.70464,"lon":131.30086,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11777725293","name":"Train Inn","lat":32.64854,"lon":131.39138,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0982-87-2600"},
+{"id":"osm:node:11779953333","name":"Solest Takachiho Hotel","lat":32.70777,"lon":131.3049,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0982-83-0001"},
+{"id":"osm:node:14159622101","name":"ビジネスホテルかなや","lat":32.71081,"lon":131.30819,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14203038193","name":"民宿 暖心","lat":32.72502,"lon":131.32527,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:762762527","name":"国民宿舎 ホテル高千穂","lat":32.70527,"lon":131.29964,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,18 @@
+[
+{"id":"osm:way:292810552","name":"田舎屋","lat":44.88554,"lon":141.74705,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:292810566","name":"さだちゃん","lat":44.88547,"lon":141.74671,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:296798320","name":"夢竜馬","lat":44.88547,"lon":141.7443,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:297138002","name":"七福","lat":44.8855,"lon":141.74298,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:297138025","name":"焼肉専門店 力","lat":44.88587,"lon":141.74286,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:297143484","name":"焼肉のたちばな","lat":44.88478,"lon":141.74286,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:297841074","name":"南花園","lat":44.87566,"lon":141.74676,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:292256491","name":"喫茶あげいん","lat":44.8859,"lon":141.74752,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:297143510","name":"とらや","lat":44.88417,"lon":141.74309,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:3077668733","name":"桜新町","lat":44.88578,"lon":141.7442,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:4438506289","name":"ふく助","lat":44.88439,"lon":141.74301,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:5030234622","name":"もん","lat":44.88496,"lon":141.74312,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:295053852","name":"くわむら","lat":44.88416,"lon":141.74493,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:297138023","name":"たつみ","lat":44.88558,"lon":141.74296,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:297143438","name":"スナック エルム","lat":44.88435,"lon":141.74383,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:297143465","name":"みやび","lat":44.88513,"lon":141.74373,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

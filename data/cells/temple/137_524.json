@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:1631268036","name":"俵山八幡宮","lat":34.28487,"lon":131.1111,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4622718736","name":"能満寺","lat":34.28856,"lon":131.12394,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4685206427","name":"厳島神社","lat":34.26024,"lon":131.02835,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6418966349","name":"宮地嶽社","lat":34.41429,"lon":131.09126,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:666683738","name":"貴布祢神社","lat":34.39369,"lon":131.10469,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:666688930","name":"日置八幡宮","lat":34.38844,"lon":131.10892,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:667197106","name":"久富八幡宮","lat":34.37417,"lon":131.06837,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:667797107","name":"白潟 大歳神社","lat":34.37909,"lon":131.20873,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:667804328","name":"八坂神社","lat":34.38999,"lon":131.19959,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:668012437","name":"飯山八幡宮","lat":34.3662,"lon":131.18592,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:668013720","name":"赤崎神社","lat":34.36505,"lon":131.1834,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:668244296","name":"河内神社","lat":34.42389,"lon":131.00286,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:668246860","name":"恵毘須神社","lat":34.42174,"lon":131.00281,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:672492445","name":"御所原大神宮","lat":34.36246,"lon":131.15984,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:685057329","name":"須賀神社","lat":34.40553,"lon":131.08938,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1364248938","name":"三神社","lat":34.37906,"lon":131.04286,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1525437036","name":"薬師堂","lat":34.29148,"lon":131.10178,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

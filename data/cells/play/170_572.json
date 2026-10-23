@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3081964685","name":"すももの里","lat":42.64006,"lon":143.20359,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"すもものさと"},
+{"id":"osm:node:3081964686","name":"どんぐり公園","lat":42.63652,"lon":143.20646,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park","kana":"どんぐりこうえん"},
+{"id":"osm:node:3081964695","name":"交通公園","lat":42.74534,"lon":143.16119,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"こうつうこうえん"},
+{"id":"osm:way:474090490","name":"六花の森","lat":42.69117,"lon":143.11515,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:474090491","name":"六花の森","lat":42.69147,"lon":143.1139,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:474272258","name":"幸福交通公園","lat":42.74477,"lon":143.16145,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733146336","name":"かしわ公園","lat":42.69674,"lon":143.13641,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733170502","name":"鉄道記念公園","lat":42.69497,"lon":143.13361,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"てつどうきねんこうえん"},
+{"id":"osm:way:733437514","name":"札内側総合運動公園","lat":42.70256,"lon":143.12669,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:733465569","name":"興農区公園","lat":42.70317,"lon":143.13769,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

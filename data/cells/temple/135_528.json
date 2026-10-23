@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:3412041420","name":"大多満根神社","lat":33.95344,"lon":132.18813,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3412041484","name":"自光寺","lat":33.90533,"lon":132.22113,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4358953991","name":"蓮光寺","lat":33.98871,"lon":132.00051,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4360849791","name":"三輪神社","lat":33.98197,"lon":132.00905,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4360857393","name":"須賀神社","lat":33.99311,"lon":132.01857,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4362722897","name":"牛島八幡宮","lat":33.86098,"lon":132.00534,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4362770792","name":"教念寺","lat":33.85804,"lon":132.00778,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12099277731","name":"西蓮寺","lat":33.91272,"lon":132.21317,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12998453297","name":"白鳥神社","lat":33.89679,"lon":132.07986,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12998453298","name":"心光寺","lat":33.89657,"lon":132.08019,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:437896402","name":"浄泉寺","lat":33.95563,"lon":132.02359,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:441546788","name":"椙山稲荷神社","lat":33.95583,"lon":132.03846,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:441726916","name":"龍厳寺","lat":33.95696,"lon":132.0404,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:444670024","name":"大明神社","lat":33.95515,"lon":132.03825,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1567054326","name":"八島神社","lat":33.75259,"lon":132.14615,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

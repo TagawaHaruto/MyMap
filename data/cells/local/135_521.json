@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:8971356924","name":"鮮奉","lat":33.76363,"lon":130.48099,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:552307580","name":"お魚センターうみがめ","lat":33.78955,"lon":130.45911,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:817124421","name":"あんずの里市","lat":33.8295,"lon":130.49173,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"https://www.anzu-sato.jp/","note":"直売所","g":"local","k":"souvenir","oh":"08:00-17:00"},
+{"id":"osm:way:817430064","name":"ぎょうざの山八","lat":33.76909,"lon":130.4846,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:825753955","name":"みやじ園","lat":33.7659,"lon":130.48418,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:815628096","name":"津屋崎体育センター","lat":33.78464,"lon":130.47144,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:819392954","name":"福間武道館","lat":33.76688,"lon":130.47787,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:852564113","name":"NEWユーアイゴルフクラブ","lat":33.83946,"lon":130.49443,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:907331320","name":"福間体育館","lat":33.76444,"lon":130.47832,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287522815","name":"神湊ガーデンキャンプ","lat":33.85108,"lon":130.49914,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://konominato-camp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287522831","name":"グランピング福岡 ぶどうの樹 海風と波の音","lat":33.77384,"lon":130.47112,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"http://fukutsu-glamping.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:822835082","name":"大峰山キャンプ場","lat":33.79321,"lon":130.4502,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

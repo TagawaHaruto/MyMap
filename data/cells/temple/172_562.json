@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:732489956","name":"然別神社","lat":43.12426,"lon":140.73321,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:732493034","name":"光明寺","lat":43.09195,"lon":140.722,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:732493046","name":"大江神社","lat":43.09092,"lon":140.72062,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:732505738","name":"女代神社","lat":43.04445,"lon":140.71897,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:732537576","name":"浄宣寺","lat":43.03643,"lon":140.73855,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:732537630","name":"孝徳寺","lat":43.03548,"lon":140.74196,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:764879018","name":"専念寺","lat":43.03134,"lon":140.57771,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:764879040","name":"聖賢寺","lat":43.0359,"lon":140.56154,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:902541639","name":"龍神社","lat":43.03421,"lon":140.52876,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:902541658","name":"大雄寺","lat":43.03455,"lon":140.52623,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:902547319","name":"堀株稲荷神社","lat":43.03231,"lon":140.52255,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:902547423","name":"渋井神社","lat":43.04404,"lon":140.50669,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"しぶいじんじゃ"},
+{"id":"osm:way:967732725","name":"恵比須３神社","lat":43.05708,"lon":140.50054,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

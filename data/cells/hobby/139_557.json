@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2120310026","name":"三芳","lat":34.75273,"lon":139.35285,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"04992-2-1654"},
+{"id":"osm:node:2123715303","name":"高梨モータース","lat":34.75339,"lon":139.35634,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2125039150","name":"とうま","lat":34.75016,"lon":139.35614,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","tel":"04992-2-1515"},
+{"id":"osm:node:2125086904","name":"富士屋書店","lat":34.75027,"lon":139.35453,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

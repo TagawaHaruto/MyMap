@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:3377603791","name":"ジョイフル","lat":32.01237,"lon":130.19703,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:4773807034","name":"いけすの山和","lat":32.10819,"lon":130.17032,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"http://www.ikesuno-yamakazu.com/","note":"海鮮","g":"food","k":"restaurant","oh":"11:00-14:30,17:30-21:00","tel":"0996871215"},
+{"id":"osm:node:9953894126","name":"あらかぶ亭","lat":32.10744,"lon":130.17113,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12019761795","name":"Soba restaurant","lat":32.16417,"lon":130.10978,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:592783823","name":"あずま寿司","lat":32.19772,"lon":130.17741,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:592783827","name":"幸柳寿司","lat":32.1987,"lon":130.17615,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:592783829","name":"あじろ","lat":32.19711,"lon":130.17695,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:592788752","name":"あじへい","lat":32.19923,"lon":130.17836,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:592788753","name":"いっきゅう","lat":32.19848,"lon":130.17867,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13611451938","name":"喫茶ももの木","lat":32.03215,"lon":130.2033,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:3376305983","name":"寿しまどか阿久根店","lat":32.03349,"lon":130.20387,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:3377604394","name":"ほっともっと","lat":32.01343,"lon":130.19719,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ほっともっと","chain":true},
+{"id":"osm:node:3661485345","name":"とと","lat":32.05788,"lon":130.22179,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:11082847150","name":"crisantemo クリザンテーモ","lat":32.01774,"lon":130.19595,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

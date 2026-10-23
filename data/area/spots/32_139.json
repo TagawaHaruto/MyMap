@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:561525786","name":"名主屋敷跡","lat":32.46552,"lon":139.76715,"pref":"東京","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:7777464385","name":"地熱窯","lat":32.45347,"lon":139.76498,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:456786337","name":"青ヶ島村 ふれあいサウナ","lat":32.45257,"lon":139.76464,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"銭湯・入浴施設","k":"bath","oh":"Mo-Fr 16:00-20:00; Sa-Su 14:00-20:00 || \"休館日　毎週第1・3・5・水曜日\""}
+]

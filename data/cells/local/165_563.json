@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:12069020069","name":"むつ市営森林公園キャンプ場","lat":41.28821,"lon":140.97534,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12069252801","name":"野平高原キャンプ場","lat":41.26456,"lon":140.86385,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1303026645","name":"がんかけ公園キャンプ場","lat":41.41624,"lon":140.83875,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-38-2159"},
+{"id":"osm:way:1303026646","name":"がんかけ公園キャンプ場","lat":41.41522,"lon":140.83848,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-38-2159"}
+]

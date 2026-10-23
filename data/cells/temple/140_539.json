@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2794241365","name":"久学寺","lat":35.00462,"lon":134.85755,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"きゅうがくじ","tel":"+81 790-44-1405"},
+{"id":"osm:node:2883010275","name":"津谷神社","lat":35.00498,"lon":134.84109,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775065482","name":"火車天王神社","lat":35.00504,"lon":134.91165,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775104779","name":"戎神社","lat":35.00008,"lon":134.91504,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775104795","name":"天満神社","lat":35.01214,"lon":134.91235,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775147573","name":"太神宮社","lat":35.01437,"lon":134.89267,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775147589","name":"山の神さん","lat":35.04004,"lon":134.91252,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775147590","name":"八坂神社","lat":35.0407,"lon":134.91868,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775147591","name":"旧縣社・糀屋稲荷神社","lat":35.03522,"lon":134.92183,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775147594","name":"當勝神社","lat":35.03542,"lon":134.92858,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11775147595","name":"八幡神社","lat":35.03477,"lon":134.92964,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12117859374","name":"円応教朝来教会","lat":35.1634,"lon":134.7918,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117893080","name":"西福寺","lat":35.1688,"lon":134.79498,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117944739","name":"来迎寺","lat":35.16913,"lon":134.79384,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117947958","name":"東西寺","lat":35.16901,"lon":134.79457,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117948727","name":"金蔵寺","lat":35.16856,"lon":134.79539,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12117956553","name":"教徳寺","lat":35.16799,"lon":134.79645,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:278199774","name":"笠形神社","lat":35.04196,"lon":134.83678,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:278199775","name":"笠形寺","lat":35.04632,"lon":134.83776,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"かさがたでら"},
+{"id":"osm:way:865597548","name":"天理教高田郷分教会","lat":35.05683,"lon":134.92632,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

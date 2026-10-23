@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3076813630","name":"ブックオフ","lat":34.08626,"lon":134.48583,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3076814937","name":"ほりえ","lat":34.08603,"lon":134.48491,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5931175989","name":"いはら釣具","lat":34.08554,"lon":134.4943,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7179067823","name":"ブックオフ","lat":34.06879,"lon":134.35215,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13653819645","name":"morocon","lat":34.06836,"lon":134.3487,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13962310180","name":"ホビーショップ ネオ","lat":34.07308,"lon":134.4911,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:315117904","name":"平惣石井店","lat":34.08344,"lon":134.45404,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:315829667","name":"ゴルフ5 徳島藍住店","lat":34.11705,"lon":134.49796,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:379866760","name":"ハードオフ","lat":34.12651,"lon":134.47628,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1451007589","name":"石原自転車店","lat":34.0624,"lon":134.35583,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

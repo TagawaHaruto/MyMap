@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:750649197","name":"比宇神社","lat":42.51726,"lon":142.32664,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:751767896","name":"太陽神社","lat":42.52531,"lon":142.41302,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"たいようじんじゃ"},
+{"id":"osm:way:885386599","name":"三和八幡神社","lat":42.59467,"lon":142.35155,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:885722165","name":"互願寺","lat":42.66705,"lon":142.26693,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:885758377","name":"芽生神社","lat":42.67278,"lon":142.35574,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:885785624","name":"貫気別八幡神社","lat":42.67697,"lon":142.26526,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:887403606","name":"大正八幡神社","lat":42.55225,"lon":142.32788,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1157582529","name":"岩知志神社","lat":42.73422,"lon":142.34871,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1311431135","name":"芽呂神社","lat":42.5026,"lon":142.38584,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"めろじんじゃ"},
+{"id":"osm:way:1475201273","name":"豊糠神社","lat":42.70608,"lon":142.40434,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

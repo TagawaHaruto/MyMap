@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5939889821","name":"春採台地竪穴群","lat":42.97505,"lon":144.39949,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:12050356936","name":"野口雨情詩碑","lat":42.9859,"lon":144.3837,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13274103544","name":"東釧路貝塚","lat":42.99413,"lon":144.41182,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13284829158","name":"鶴ヶ岱チャランケ砦跡","lat":42.97766,"lon":144.40863,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:437668854","name":"モシリヤチャシ跡","lat":42.9836,"lon":144.39601,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:モシリヤチャシ"},
+{"id":"osm:node:1759357952","name":"コンフォートホテル釧路","lat":42.98881,"lon":144.38345,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5125416310","name":"ホテル プチトマト","lat":42.99276,"lon":144.3791,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5125419384","name":"ホテル 花たば","lat":42.9909,"lon":144.38677,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5913071347","name":"釧路ロイヤルイン","lat":42.99025,"lon":144.38058,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13284828920","name":"大喜湯","lat":42.97617,"lon":144.41416,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:462339649","name":"釧路センチュリーキャッスルホテル","lat":42.98049,"lon":144.38743,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.castlehotel.jp/","note":"宿","g":"heritage","k":"lodging","kana":"くしろせんちゅりーきゃっするほてる","tel":"+81 154 43 2111","pk":2},
+{"id":"osm:way:531485661","name":"スーパーホテル釧路駅前","lat":42.98959,"lon":144.38443,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.superhotel.co.jp/s_hotels/kushiroekimae/","note":"宿","g":"heritage","k":"lodging","kana":"すーぱーほてるくしろえきまえ","tel":"+81 154 25 9000"},
+{"id":"osm:way:531720899","name":"東横イン","lat":42.98547,"lon":144.38367,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"とうよこいん","tel":"+81 154 23 1045","pk":2},
+{"id":"osm:way:531720978","name":"ANAクラウンプラザホテル釧路","lat":42.9825,"lon":144.38207,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.anacpkushiro.com/","note":"宿","g":"heritage","k":"lodging","wp":"ja:ANAクラウンプラザホテル釧路","kana":"あなくらうんぷらざほてるくしろ","tel":"+81 154 31 4111"},
+{"id":"osm:way:531721020","name":"HOTEL ROUTE-INN KUSHIRO EKIMAE","lat":42.98931,"lon":144.38236,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.route-inn.co.jp/hotel_list/hokkaido/index_hotel_id_242/","note":"宿","g":"heritage","k":"lodging","tel":"+81 154 32 1112"},
+{"id":"osm:way:531749824","name":"ホテルグローバルビュー釧路","lat":42.98244,"lon":144.387,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.rio-hotels.co.jp/kushiro/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるぐろーばるびゅーくしろ","tel":"+81 154 23 8585"},
+{"id":"osm:way:531750400","name":"ドーミーインPREMIUM釧路","lat":42.98229,"lon":144.38555,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://dormy-hotels.com/dormyinn/hotels/kushiro/","note":"宿","g":"heritage","k":"lodging","tel":"+81 154 31 5489"},
+{"id":"osm:way:531750590","name":"Hotel Crown hills Kushiro","lat":42.98915,"lon":144.3835,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://breezbay-group.com/hch-kushiro/","note":"宿","g":"heritage","k":"lodging","tel":"+81 154 22 0109"},
+{"id":"osm:way:1301009061","name":"スーパーホテル釧路天然温泉","lat":42.98741,"lon":144.38219,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.superhotel.co.jp/s_hotels/kushiro/","note":"宿","g":"heritage","k":"lodging","kana":"すーぱーほてるくしろてんねんおんせん","tel":"+81 154 24 9000"},
+{"id":"osm:way:1301009065","name":"釧路プリンスホテル","lat":42.9846,"lon":144.38055,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.princehotels.co.jp/kushiro/","note":"宿","g":"heritage","k":"lodging","wp":"ja:釧路プリンスホテル","kana":"くしろぷりんすほてる","tel":"+81 154 31 1111"}
+]

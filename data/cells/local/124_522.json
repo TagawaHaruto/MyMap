@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6911143985","name":"かいもん市場 久太郎","lat":31.19082,"lon":130.57683,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9943775861","name":"しのはら土産品店","lat":31.20453,"lon":130.63503,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1418709689","name":"指宿市開聞 きらら館","lat":31.22705,"lon":130.53792,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:365371041","name":"いぶすきゴルフクラブ開聞コース","lat":31.18352,"lon":130.54875,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3358848793","name":"さたでいランド","lat":31.11257,"lon":130.72222,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0994-26-0800"},
+{"id":"osm:node:3358849093","name":"さたでいランド","lat":31.0982,"lon":130.69812,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0994-26-0800","wc":"yes"},
+{"id":"osm:node:14234785689","name":"大泊野営場","lat":31.02137,"lon":130.68306,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://www.town.minamiosumi.lg.jp/kanko/leisure/leisure/camp.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0994-24-3115"},
+{"id":"osm:node:14287604211","name":"いぶすき焚き火の森ソロキャンプ場","lat":31.24661,"lon":130.61973,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"http://www2.synapse.ne.jp/ibusuki-solo/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1412956773","name":"かいもん山麓ふれあい公園・キャンプ場","lat":31.19461,"lon":130.53381,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1563810432","name":"佐多岬野営場","lat":31.02803,"lon":130.68456,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://www.town.minamiosumi.lg.jp/kanko/leisure/leisure/camp.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0994-24-3115"}
+]

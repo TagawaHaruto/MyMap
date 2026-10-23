@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:451366981","name":"春日公園","lat":28.14831,"lon":129.31132,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548268146","name":"須手公園","lat":28.1492,"lon":129.30369,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548268150","name":"清水運動公園","lat":28.14063,"lon":129.32841,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:554190777","name":"コーラル公園","lat":28.1457,"lon":129.3119,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:561392146","name":"宮前公園","lat":28.15008,"lon":129.31213,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:561392147","name":"森山公園","lat":28.14891,"lon":129.31446,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:852668022","name":"ホノホシ園地","lat":28.13008,"lon":129.37038,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1323788507","name":"島尾敏雄文学碑公園","lat":28.12106,"lon":129.26688,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

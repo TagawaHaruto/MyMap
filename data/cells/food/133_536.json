@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5537348422","name":"釜めし初音","lat":33.2877,"lon":134.14928,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 11:30-13:00, 17:00-20:30"},
+{"id":"osm:node:6418656662","name":"じばうま八","lat":33.26925,"lon":134.16083,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8374251817","name":"サンフィッシュまんぼう","lat":33.28226,"lon":134.18523,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10810976848","name":"Sadamaru Burger","lat":33.32364,"lon":134.10587,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant","oh":"Mo-Fr 10:30-17:00"},
+{"id":"osm:node:11684813387","name":"イタリア食堂トンノ","lat":33.42483,"lon":134.01822,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:node:12009616890","name":"みなと食堂","lat":33.38032,"lon":134.03468,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4734250177","name":"Panse","lat":33.42545,"lon":134.01973,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

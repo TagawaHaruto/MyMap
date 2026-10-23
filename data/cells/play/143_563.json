@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:472957041","name":"豊ヶ浜運動公園","lat":35.75063,"lon":140.83154,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:472957042","name":"童子女の松原公園","lat":35.75291,"lon":140.82972,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:472957044","name":"波崎海岸砂丘植物公園","lat":35.76233,"lon":140.8225,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:472957045","name":"シーサイドパーク","lat":35.78964,"lon":140.80013,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:472957046","name":"土合運動公園","lat":35.79181,"lon":140.7858,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:754194985","name":"土合6号公園","lat":35.79083,"lon":140.77013,"pref":"茨城","genres":["play"],"indoor":false,"url":"https://www.city.kamisu.ibaraki.jp/living/park/1001219/1001225.html","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758267677","name":"土合1号公園","lat":35.79557,"lon":140.7777,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758267679","name":"土合5号公園","lat":35.79128,"lon":140.77174,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758267681","name":"土合4号公園","lat":35.78789,"lon":140.77596,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758267682","name":"大沼公園","lat":35.78615,"lon":140.78449,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758267683","name":"土合3号公園","lat":35.78558,"lon":140.77945,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758267684","name":"土合2号公園","lat":35.7928,"lon":140.77835,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:760138263","name":"弁天公園","lat":35.77601,"lon":140.77599,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:10901422","name":"いきいきランド","lat":35.79561,"lon":140.78272,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:484088101","name":"神栖市若松運動場","lat":35.84421,"lon":140.75119,"pref":"茨城","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:754198973","name":"グリーン土合グラウンド A・B","lat":35.79087,"lon":140.7777,"pref":"茨城","genres":["outdoor","play"],"indoor":false,"url":"https://www.hasaki.net/ground/ground21.html","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:754451506","name":"土合運動広場","lat":35.7826,"lon":140.77818,"pref":"茨城","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

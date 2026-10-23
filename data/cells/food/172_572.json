@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:3433217617","name":"sｈinmura　クリームテラス","lat":43.23734,"lon":143.23354,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5164384346","name":"食事処 祥","lat":43.16885,"lon":143.24611,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5170401835","name":"食事処 和","lat":43.16493,"lon":143.24681,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5303428630","name":"しほろ庵","lat":43.16979,"lon":143.24455,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5303428631","name":"寿し大洋","lat":43.16969,"lon":143.24575,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:5305974049","name":"清寿司","lat":43.16893,"lon":143.24566,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5669008144","name":"平和園 士幌店","lat":43.08095,"lon":143.22669,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:5913075749","name":"にじいろ食堂","lat":43.14419,"lon":143.23926,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12101732801","name":"Okhi Farm","lat":43.1551,"lon":143.19387,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"0156455354"},
+{"id":"osm:node:13075275361","name":"森のキッチンかわい","lat":43.19386,"lon":143.02837,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:529691078","name":"遊楽食堂","lat":43.16959,"lon":143.24572,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5913075748","name":"CAFE KANICHI 寛一","lat":43.14436,"lon":143.23922,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:529691065","name":"もりのくまさん","lat":43.16841,"lon":143.24546,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5164383902","name":"ラーメンハウス三平","lat":43.16788,"lon":143.24584,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:3433217618","name":"cake　shop","lat":43.24082,"lon":143.22133,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:5164383903","name":"鳥しん","lat":43.16826,"lon":143.24602,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:5303428632","name":"居酒屋じゅんぺい","lat":43.1699,"lon":143.2463,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

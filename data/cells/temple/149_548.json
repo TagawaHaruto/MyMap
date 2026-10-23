@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:11476165819","name":"新宮神社","lat":37.46145,"lon":137.21206,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11476165839","name":"正福寺","lat":37.46152,"lon":137.21411,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11478592820","name":"白山神社","lat":37.47276,"lon":137.09505,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11486054246","name":"広江八幡神社","lat":37.42781,"lon":137.08991,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11491017530","name":"鈴屋神社","lat":37.42596,"lon":137.09085,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11491295217","name":"正願寺","lat":37.40675,"lon":137.07193,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11496230657","name":"八幡神社","lat":37.42625,"lon":137.03427,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:591623392","name":"岩倉寺","lat":37.45543,"lon":137.08163,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1237197973","name":"長光寺","lat":37.42306,"lon":137.09694,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1238512951","name":"御船神社","lat":37.29823,"lon":137.22731,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1238513669","name":"伝証寺","lat":37.29822,"lon":137.22962,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1238533428","name":"法融寺","lat":37.29841,"lon":137.22864,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1238824583","name":"八王子神社","lat":37.34001,"lon":137.22291,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

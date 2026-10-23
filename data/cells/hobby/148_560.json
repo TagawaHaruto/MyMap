@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:5898170583","name":"那須ブックセンター","lat":37.04533,"lon":140.02414,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5987644875","name":"antiques","lat":37.04923,"lon":140.03858,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:5987644876","name":"古道具おお屋","lat":37.04911,"lon":140.03824,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:6023905622","name":"アンティークマザーグース","lat":37.0628,"lon":140.03074,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:6026399974","name":"みどり書房白河店","lat":37.12181,"lon":140.22717,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6026617684","name":"ワンズサイクル 白河店","lat":37.12584,"lon":140.19754,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6026617689","name":"昭和輪業商会","lat":37.12822,"lon":140.20762,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6031295834","name":"ガレージ・ドリーム","lat":37.07164,"lon":140.01103,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:6041303067","name":"白河鑑定団","lat":37.12413,"lon":140.18198,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:6041303493","name":"ホビーショップ こばやし","lat":37.12271,"lon":140.19658,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6041303495","name":"ブックオフ 白河店","lat":37.1204,"lon":140.19535,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6041303499","name":"スーパーブックス 新白河店","lat":37.11904,"lon":140.19412,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6041303501","name":"スーパースポーツゼビオ","lat":37.11832,"lon":140.19309,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6041303510","name":"村上スポーツ 白河店","lat":37.11872,"lon":140.19742,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6041303512","name":"オフハウス 新白河店","lat":37.11988,"lon":140.19411,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"0248-21-1877"},
+{"id":"osm:node:6041303514","name":"サイクル工房 B.B.","lat":37.12383,"lon":140.19207,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6043516608","name":"GEO 白河旭町店","lat":37.12438,"lon":140.22446,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:node:6047685036","name":"メガトン書店白河店","lat":37.14141,"lon":140.22409,"pref":"福島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6167457293","name":"アートスペース那須","lat":37.0288,"lon":140.02165,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:8991821450","name":"金子書店","lat":37.02239,"lon":140.11986,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:422420735","name":"薄葉輪業商会","lat":37.01663,"lon":140.12348,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

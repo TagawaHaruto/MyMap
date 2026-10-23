@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2477653799","name":"湯舟沢環状列石","lat":39.78113,"lon":141.09749,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"en:Yubunezawa Stone Circle"},
+{"id":"osm:node:3686497128","name":"素心知困","lat":39.79978,"lon":141.14008,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3694550925","name":"D51形式蒸気機関車","lat":39.75013,"lon":141.01874,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4082279832","name":"啄木歌碑","lat":39.84828,"lon":141.16597,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9006611636","name":"宮沢賢治の詩碑　庚申","lat":39.81445,"lon":141.13658,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4315874999","name":"なかやま荘","lat":39.92889,"lon":141.00276,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10917577691","name":"ユートランド姫神","lat":39.85954,"lon":141.11305,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"https://yutoland-himekami.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-19-683-3215"}
+]

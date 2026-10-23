@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:1499501741","name":"常夜燈","lat":40.85585,"lon":141.11948,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12068894011","name":"奥州街道","lat":40.88557,"lon":141.08303,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12068934100","name":"基点第九〇号","lat":40.88615,"lon":141.08379,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5539942599","name":"藤川旅館","lat":40.8574,"lon":141.12581,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ふじかわりょかん"},
+{"id":"osm:node:5539965935","name":"野一旅館","lat":40.86291,"lon":141.12719,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5539977536","name":"ビジネスイン倶楽部","lat":40.86549,"lon":141.12829,"pref":"青森","genres":["lodging"],"indoor":true,"url":"https://business-in-club.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 175 64 2181"},
+{"id":"osm:node:7168788696","name":"東北温泉","lat":40.77862,"lon":141.21701,"pref":"青森","genres":["lodging"],"indoor":true,"url":"http://touhoku-onsen.com","note":"宿","g":"heritage","k":"lodging","kana":"とほくおんせん","tel":"+81 176 63 3715","pk":2},
+{"id":"osm:way:192934454","name":"旅館コマイ","lat":40.85614,"lon":141.1202,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:192934455","name":"松山旅館","lat":40.85665,"lon":141.1208,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

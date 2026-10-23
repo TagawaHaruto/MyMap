@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:723019246","name":"まほろば（寿司・喫茶）","lat":37.34842,"lon":139.31777,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"0241-82-2372"},
+{"id":"osm:node:858098861","name":"太郎鮨(Taro sushi)","lat":37.34877,"lon":139.32022,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7183589953","name":"ぴょっここ亭","lat":37.39433,"lon":139.4445,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10840893995","name":"味付マトンケバブカフェ","lat":37.34951,"lon":139.31531,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4392989001","name":"マトンケバブCafe","lat":37.3502,"lon":139.31763,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:859742139","name":"歳時記会館","lat":37.33762,"lon":139.29859,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"さいじきかいかん","tel":"0241-82-2221"},
+{"id":"osm:node:862480499","name":"森のくまさん","lat":37.31154,"lon":139.28472,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:723019030","name":"三石屋","lat":37.34845,"lon":139.31765,"pref":"福島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","tel":"0241-82-2092","wc":"yes"},
+{"id":"osm:way:198706622","name":"ヤマザキショップ","lat":37.34924,"lon":139.31703,"pref":"福島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:723019216","name":"倉","lat":37.34418,"lon":139.31418,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:198932075","name":"出羽竜","lat":37.34315,"lon":139.32071,"pref":"福島","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

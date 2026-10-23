@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2705291063","name":"伊能忠敬天測之地","lat":32.69635,"lon":128.84635,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2705289106","name":"五島第一ホテル","lat":32.69695,"lon":128.84499,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11793983474","name":"ホテル カラリト五島列島","lat":32.6559,"lon":128.80693,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13523386522","name":"ホテルダウンタウン","lat":32.69458,"lon":128.8421,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"https://down-town.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-959-74-3939"}
+]

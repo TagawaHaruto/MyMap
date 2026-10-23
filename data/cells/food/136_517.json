@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6531776589","name":"てら","lat":34.20205,"lon":129.2908,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430482056","name":"Hamburg Steak","lat":34.24948,"lon":129.31598,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:430482057","name":"うどん茶屋","lat":34.22982,"lon":129.30274,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"うどん"},
+{"id":"osm:way:463776261","name":"Bamboo","lat":34.20267,"lon":129.29143,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:463776478","name":"千両","lat":34.20312,"lon":129.29158,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:463779277","name":"いけす料理 志まもと","lat":34.20258,"lon":129.28856,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"しまもと","tel":"+81 920-52-5252"},
+{"id":"osm:way:463815816","name":"Crepe House","lat":34.18816,"lon":129.27822,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:463866892","name":"おはしのくに","lat":34.20998,"lon":129.29007,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:463866893","name":"創菜もぐもぐ","lat":34.21001,"lon":129.2902,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:463779389","name":"Chinguya","lat":34.20204,"lon":129.29112,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:463779536","name":"モスバーガー","lat":34.20333,"lon":129.28917,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true,"oh":"Mo-Su 07:00-22:00","tel":"+81 920-52-7222"},
+{"id":"osm:way:463866340","name":"ほっともっと厳原店","lat":34.21129,"lon":129.28974,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:430482090","name":"ダイケーすしや","lat":34.20022,"lon":129.2891,"pref":"長崎","genres":["food"],"indoor":true,"url":"https://susiyadaike.com/shopinfo","note":"居酒屋","g":"food","k":"pub","kana":"すしや","oh":"Th-Tu 11:00-21:00","tel":"+81 0920-52-8088"}
+]

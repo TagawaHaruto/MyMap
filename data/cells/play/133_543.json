@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:483477785","name":"サン・ナンタンランド","lat":33.48137,"lon":135.7836,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:676939260","name":"ぎおん山","lat":33.46794,"lon":135.77549,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:677776578","name":"串本町町民グランド","lat":33.45557,"lon":135.78091,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:483024307","name":"野球場","lat":33.4814,"lon":135.78421,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:483024308","name":"B&G財団串本海洋センター","lat":33.48223,"lon":135.78307,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:483090940","name":"テニスコード","lat":33.48116,"lon":135.78271,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:629048950","name":"串本古座高校 運動場","lat":33.46237,"lon":135.77798,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:676725550","name":"串本古座高校 プール","lat":33.46183,"lon":135.77989,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:676728874","name":"串本古座高校 テニスコート","lat":33.46317,"lon":135.77761,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

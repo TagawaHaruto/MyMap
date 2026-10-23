@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5466296622","name":"工藤モータース","lat":40.28064,"lon":140.55931,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5470145733","name":"カワサキショップ グッドラック","lat":40.26738,"lon":140.55496,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5470145741","name":"サイクルショップ 虹徳","lat":40.26813,"lon":140.55722,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5470146940","name":"工藤輪店","lat":40.27274,"lon":140.54775,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7238297504","name":"タケダスポーツ大館店","lat":40.27638,"lon":140.55383,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11449089167","name":"さすがや iPhone修理SHOP","lat":40.28658,"lon":140.57636,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:390069892","name":"セカンドストリート","lat":40.28313,"lon":140.56335,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:729226048","name":"ブックオフ","lat":40.27411,"lon":140.53061,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:759077808","name":"ブックスモア大館店","lat":40.28344,"lon":140.54691,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:825161183","name":"ホンダハート","lat":40.28184,"lon":140.5543,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:934906243","name":"TSUTAYA","lat":40.28344,"lon":140.55382,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:948589851","name":"茂内輪店","lat":40.30155,"lon":140.5619,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:962637821","name":"ヤマシロスポーツ","lat":40.27098,"lon":140.55905,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:963398681","name":"丸憲モーター商会","lat":40.27551,"lon":140.56489,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","tel":"+81 186 42 1817"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:3074312433","name":"海津見神社 (龍王宮)","lat":33.4956,"lon":133.57464,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:4964926935","name":"Katsurahama shrine","lat":33.49559,"lon":133.57447,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5379614743","name":"秋葉神社","lat":33.49808,"lon":133.54751,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5379614801","name":"稲荷大明神","lat":33.49869,"lon":133.56782,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5605723546","name":"八幡宮","lat":33.49062,"lon":133.52077,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5605723551","name":"相生神社","lat":33.49802,"lon":133.5198,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10179262615","name":"草野姫神社","lat":33.4932,"lon":133.53948,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10179264591","name":"恵美須神社","lat":33.48778,"lon":133.54365,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:552165684","name":"戎神社","lat":33.49978,"lon":133.57313,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1110510376","name":"山崎神社","lat":33.49467,"lon":133.53084,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1167946392","name":"若一王子神社","lat":33.49137,"lon":133.5074,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

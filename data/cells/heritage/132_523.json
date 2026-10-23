@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:2483565746","name":"鞠智城","lat":33.00207,"lon":130.78814,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:鞠智城"},
+{"id":"osm:node:3399306683","name":"田北塔","lat":33.20467,"lon":130.98834,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6702080485","name":"第Ⅱ系原点(旧日本測地系)","lat":33.0033,"lon":130.99768,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9713909263","name":"熊本県指定史跡 鞠智城跡","lat":33.00313,"lon":130.78792,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9713909275","name":"天皇皇后両陛下行幸啓記念樹","lat":33.00211,"lon":130.78768,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11708765570","name":"TVアニメ『進撃の巨人』10周年記念植樹","lat":33.23553,"lon":130.93769,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14025297102","name":"牛ヶ城","lat":33.13167,"lon":130.94242,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14025297401","name":"雪ヶ岳城","lat":33.18943,"lon":130.90165,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13785162490","name":"プチホテル","lat":33.24405,"lon":130.7602,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13785162491","name":"スターキャビン","lat":33.24387,"lon":130.76038,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

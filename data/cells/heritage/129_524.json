@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:7040655710","name":"那須大八郎と鶴富姫像","lat":32.46451,"lon":131.15496,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","oh":"24/7","wc":"yes"},
+{"id":"osm:node:7040729854","name":"女神像","lat":32.46042,"lon":131.15166,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7071882736","name":"日向椎葉湖","lat":32.46061,"lon":131.15137,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:166902135","name":"民宿焼畑","lat":32.49132,"lon":131.03852,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:365537038","name":"ゆのまえ温泉　湯楽里","lat":32.27135,"lon":131.00023,"pref":"熊本","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:way:753539651","name":"森の宿 三越","lat":32.46608,"lon":131.15672,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"もりのやどみつこし"},
+{"id":"osm:way:753539656","name":"旅館 鶴富屋敷","lat":32.46487,"lon":131.15509,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"りょかんつるとみやしき","tel":"+81 982-67-2320"},
+{"id":"osm:way:753549385","name":"奥日向旅館","lat":32.46638,"lon":131.15727,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 982 67 2454"},
+{"id":"osm:way:753560333","name":"民宿ひえつき荘","lat":32.47089,"lon":131.1613,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 982 67 2125"},
+{"id":"osm:way:757076040","name":"旅荘 陣屋の里","lat":32.46695,"lon":131.15664,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 982 67 2836"},
+{"id":"osm:way:757076042","name":"すずかけ","lat":32.46693,"lon":131.1564,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 982 67 2166"},
+{"id":"osm:way:757079974","name":"二鶴旅館","lat":32.46807,"lon":131.15835,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"にかくりょかん","tel":"+81 982 67 2064"}
+]

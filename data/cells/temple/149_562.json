@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4977185231","name":"阿武隈神社","lat":37.34379,"lon":140.67526,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12761970280","name":"八雲神社","lat":37.27169,"lon":140.63122,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:445255742","name":"東光寺","lat":37.43686,"lon":140.57249,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

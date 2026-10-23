@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:13783932484","name":"本宗寺","lat":43.88158,"lon":143.18064,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:430166218","name":"上白滝神社","lat":43.87807,"lon":143.1526,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1505805682","name":"白瀧山祥巌寺","lat":43.8877,"lon":143.19424,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

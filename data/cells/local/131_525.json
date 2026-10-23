@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5719468421","name":"但馬屋老舗／茶房だんだん","lat":32.96645,"lon":131.39346,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"limited"},
+{"id":"osm:node:7999119085","name":"竹田市野外活動施設そうぞうの丘","lat":32.9634,"lon":131.39976,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9525720017","name":"カワセミ公園","lat":32.90533,"lon":131.45158,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287580154","name":"陽目の里キャンピングパーク","lat":32.8825,"lon":131.27792,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://hinatamecamp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0974-68-2210"},
+{"id":"osm:node:14287580173","name":"LAMP豊後大野","lat":32.82262,"lon":131.38814,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://lamp-guesthouse.com/bungoohno/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287595147","name":"四季見原すこやかの森キャンプ場","lat":32.77833,"lon":131.33689,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-82-2151"},
+{"id":"osm:node:14289685294","name":"かもしかの森キャンプ場","lat":32.7885,"lon":131.45532,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-89-1220"},
+{"id":"osm:way:1306084184","name":"辻河原公園","lat":32.9516,"lon":131.44404,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","oh":"24/7","wc":"no"}
+]

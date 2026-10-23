@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4671565304","name":"昭和堂","lat":38.83111,"lon":140.98705,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"しょわど","tel":"+81 228 45 1117"},
+{"id":"osm:node:4671697005","name":"カスカワ輪店","lat":38.83179,"lon":140.98674,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5293336627","name":"阿部輪業商会","lat":38.8089,"lon":140.98411,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:8340437517","name":"糟川輪業","lat":38.83151,"lon":140.98665,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8340482520","name":"サイクルセンター カノ","lat":38.83055,"lon":140.99162,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:8340920019","name":"菅峻輪業商会","lat":38.83089,"lon":140.98755,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:8340920219","name":"シミズ運動具店","lat":38.8304,"lon":140.99119,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8737253217","name":"六日町ナマケモノ書店","lat":38.83062,"lon":140.99044,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Sa-Su 13:00-18:00","tel":"+81 80 8161 1581"}
+]

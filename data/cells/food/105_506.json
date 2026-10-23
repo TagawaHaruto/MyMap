@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:13859695831","name":"パーラーシンリ浜","lat":26.3554,"lon":126.71671,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 09:00-17:00"},
+{"id":"osm:way:1169512029","name":"やん小～","lat":26.34748,"lon":126.74652,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1169512036","name":"ゆき","lat":26.34621,"lon":126.74831,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:14135970880","name":"パーラー球美","lat":26.36497,"lon":126.71766,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

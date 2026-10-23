@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:13946978675","name":"城址ながお","lat":34.41576,"lon":131.38233,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13947082468","name":"千春楽城山　陶芸店","lat":34.41525,"lon":131.38064,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13947094162","name":"波多野指月窯","lat":34.41402,"lon":131.38941,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13947121446","name":"雅萩堂　陶芸展","lat":34.41435,"lon":131.38726,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13947122304","name":"萩宝堂　陶芸店","lat":34.41446,"lon":131.38782,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:551194191","name":"ながお","lat":34.41576,"lon":131.38234,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:384630328","name":"温水プール","lat":34.49852,"lon":131.46847,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4237169735","name":"秋吉台オートキャンプ場","lat":34.28893,"lon":131.32594,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:6476790105","name":"Camping area (summer)","lat":34.38679,"lon":131.25713,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10703326961","name":"ABU CAMPFIELD","lat":34.49698,"lon":131.46765,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"https://abucampfield.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"08388-2-3000"},
+{"id":"osm:node:14287495442","name":"萩アクティビティパークあさひオートキャンプ場","lat":34.26243,"lon":131.45126,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"https://hagiactivitypark.wixsite.com/hagi-activity","note":"キャンプ・野外","g":"local","k":"camp","tel":"0838-56-0390"},
+{"id":"osm:node:14287498878","name":"桂木山麓緑地自然公園","lat":34.32492,"lon":131.28182,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0837-65-2548"},
+{"id":"osm:way:1069178766","name":"桂岩ふれあいセンター","lat":34.25133,"lon":131.3836,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

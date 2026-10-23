@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:5352346629","name":"三國谷霊塔","lat":35.1159,"lon":134.62391,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8024992168","name":"奥谷村道路元標","lat":35.20558,"lon":134.51769,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8071477623","name":"鶴石","lat":35.08732,"lon":134.5865,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8071477727","name":"皇族下乘","lat":35.08806,"lon":134.58634,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8071477744","name":"國幣中社 伊和神社","lat":35.08837,"lon":134.58743,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:974365218","name":"波賀城","lat":35.15976,"lon":134.5506,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:2260270421","name":"峰山l高原ホテル リラクシア","lat":35.13253,"lon":134.66714,"pref":"兵庫","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12117893072","name":"らどーれ","lat":35.06554,"lon":134.74107,"pref":"兵庫","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14285406097","name":"glaminka KAMIKAWA","lat":35.09747,"lon":134.71587,"pref":"兵庫","genres":["lodging"],"indoor":true,"url":"https://www.glaminka.com","note":"宿","g":"heritage","k":"lodging","tel":"090-9067-2596"},
+{"id":"osm:node:14287440912","name":"雪彦山バンガロー","lat":35.04741,"lon":134.66631,"pref":"兵庫","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"079-335-0608"}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:7615424204","name":"湯の花","lat":39.9622,"lon":140.72616,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7615424254","name":"焼山は生きている！","lat":39.96238,"lon":140.72619,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8379964003","name":"先達土石流災害慰霊碑","lat":39.75384,"lon":140.71728,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10089738096","name":"石井露月句碑","lat":39.75111,"lon":140.65051,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10089738097","name":"ふるさとの碑","lat":39.75097,"lon":140.64965,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11022875050","name":"慰霊碑","lat":39.78975,"lon":140.65442,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11022875051","name":"鎧畑ダム","lat":39.78978,"lon":140.65446,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11023036451","name":"秋田県公営電気事業発祥の地","lat":39.77417,"lon":140.66784,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11023036469","name":"慰霊碑","lat":39.77466,"lon":140.66863,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:457363678","name":"ログハウスの宿 仙人","lat":39.76041,"lon":140.74094,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:457366435","name":"ペンション クライマー","lat":39.76545,"lon":140.74986,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:550244706","name":"玉川温泉","lat":39.96312,"lon":140.72451,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:玉川温泉 (秋田県)","kana":"たまがわおんせん"},
+{"id":"osm:way:760947078","name":"南玉川温泉　湯宿　はなやの森","lat":39.85437,"lon":140.66728,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:984856738","name":"なか志ま旅館","lat":39.81304,"lon":140.58568,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

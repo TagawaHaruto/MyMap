@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:3412041008","name":"早田八幡宮","lat":33.77677,"lon":132.26066,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3412041009","name":"浄光寺","lat":33.77834,"lon":132.26081,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3412041010","name":"海蔵禅院","lat":33.78105,"lon":132.25514,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3412041056","name":"普門寺","lat":33.90023,"lon":132.27279,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3412041308","name":"八田八幡宮","lat":33.94183,"lon":132.27159,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3412041325","name":"玉神社","lat":33.94763,"lon":132.26858,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13651700890","name":"帯石山観音堂","lat":33.91774,"lon":132.27929,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13651717805","name":"帯石神社","lat":33.91759,"lon":132.27977,"pref":"山口","genres":["temple"],"indoor":false,"url":"https://tadpoul3.wixsite.com/obiishi-kannon","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13651735864","name":"安楽寺","lat":33.89897,"lon":132.2781,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13652436633","name":"帯石観音　大悲閣","lat":33.91763,"lon":132.27957,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13811342160","name":"金光稲荷","lat":33.7779,"lon":132.25946,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1385607359","name":"阿弥陀寺","lat":33.94687,"lon":132.26752,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1385607360","name":"覚法寺","lat":33.94734,"lon":132.26581,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1393261582","name":"天理教　理富久分協会","lat":33.94837,"lon":132.26852,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1489391563","name":"快念寺","lat":33.8996,"lon":132.27754,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1489702502","name":"恵比寿神社","lat":33.90054,"lon":132.28031,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1497961806","name":"久屋寺","lat":33.94152,"lon":132.26487,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1506383799","name":"教西寺","lat":33.94555,"lon":132.26761,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1506407036","name":"追原神社","lat":33.94739,"lon":132.26489,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1559142907","name":"天理教久賀分教会","lat":33.94668,"lon":132.27141,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

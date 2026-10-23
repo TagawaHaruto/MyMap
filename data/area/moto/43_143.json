@@ -1,0 +1,17 @@
+[
+{"id":"osm:way:563853074","name":"タイムズのB 北見北2東1","lat":43.80672,"lon":143.89551,"type":"駐車場（二輪可）","k":"moto_named","fee":"有料"},
+{"id":"osm:node:4786499046","name":"道の駅あいおい","lat":43.5454,"lon":143.98033,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:5411468447","name":"道の駅しらたき","lat":43.86977,"lon":143.07628,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:13937699802","name":"Bus stop for rest from Kushiro to Sapporo","lat":43.11491,"lon":143.63794,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:428008031","name":"道の駅しほろ温泉","lat":43.13904,"lon":143.36718,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:473903166","name":"道の駅おんねゆ温泉","lat":43.7535,"lon":143.50083,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561148834","name":"白滝PA","lat":43.86984,"lon":143.07601,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561697769","name":"道の駅あいおい","lat":43.54501,"lon":143.98002,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562015197","name":"道の駅ピア２１しほろ","lat":43.14428,"lon":143.23947,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:572496604","name":"上浦幌ＰＡ（下り）","lat":43.11595,"lon":143.63792,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:572496845","name":"上浦幌ＰＡ（上り）","lat":43.11496,"lon":143.63783,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:630654696","name":"道の駅まるせっぷ","lat":43.99565,"lon":143.32874,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:674676856","name":"道の駅あしょろ銀河ホール21","lat":43.24448,"lon":143.5466,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1111270923","name":"道の駅 オーロラタウン93りくべつ","lat":43.46765,"lon":143.74257,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1112450051","name":"道の駅 かみしほろ","lat":43.2245,"lon":143.29167,"type":"SA・PA","k":"rest_area","likely":true}
+]

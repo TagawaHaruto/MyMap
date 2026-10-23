@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:13860290277","name":"霧島神宮","lat":31.85572,"lon":130.8704,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13860312250","name":"日本発祥の地霧島","lat":31.85471,"lon":130.87029,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13863502747","name":"税所神社","lat":31.85874,"lon":130.87172,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:161003984","name":"古宮址","lat":31.88649,"lon":130.89812,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4663763896","name":"溫泉酒店預約專櫃","lat":31.89205,"lon":130.82833,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7537593385","name":"田舎の宿・か家","lat":31.84605,"lon":130.75339,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"https://inakanoyadokaya.com/","note":"宿","g":"heritage","k":"lodging","kana":"いなかのやどかや"},
+{"id":"osm:node:13282243720","name":"house","lat":31.77636,"lon":130.86631,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14279534201","name":"旅に夢中","lat":31.88608,"lon":130.81839,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 90-3077-0076"},
+{"id":"osm:way:184521355","name":"The Pulse Kirishima","lat":31.84433,"lon":130.87285,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:185194469","name":"新燃荘","lat":31.90297,"lon":130.85476,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:297467442","name":"ホテル ピコ ラナイ えびの高原","lat":31.94587,"lon":130.84063,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:866302731","name":"霧島国際ホテル","lat":31.89441,"lon":130.82788,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"https://www.kirikoku.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 995-78-2621","wc":"yes"},
+{"id":"osm:way:866302732","name":"霧島観光ホテル","lat":31.89009,"lon":130.82421,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1377360345","name":"きりしま悠久の宿 一心","lat":31.87459,"lon":130.81456,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1422334673","name":"湯治の宿妙見館","lat":31.81231,"lon":130.75736,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1425301127","name":"あかまつ荘","lat":31.85457,"lon":130.87054,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1425301146","name":"民宿 きりしま路","lat":31.85502,"lon":130.87065,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:12394975724","name":"葛巻町森林公園","lat":40.00264,"lon":141.33381,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:426305012","name":"花の丘公園","lat":40.20907,"lon":141.30532,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:545376667","name":"一戸公園","lat":40.21863,"lon":141.30434,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:546266456","name":"一戸小学校跡地","lat":40.21873,"lon":141.30262,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:546266473","name":"一戸町総合運動公園","lat":40.2013,"lon":141.29138,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:549263225","name":"来田小学校跡","lat":40.21653,"lon":141.3504,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:622345549","name":"葛巻町総合運動公園","lat":40.04904,"lon":141.4619,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:426305029","name":"一戸グラウンド","lat":40.19979,"lon":141.29264,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:426305030","name":"テニスコート","lat":40.1999,"lon":141.291,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:426305031","name":"スパーク一戸","lat":40.19993,"lon":141.28933,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:426305033","name":"陸上競技場","lat":40.20169,"lon":141.29243,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:436811255","name":"一戸町武道館「士道館」","lat":40.21193,"lon":141.2966,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:559626868","name":"旧小鳥谷中学校体育館","lat":40.17525,"lon":141.30737,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:426084008","name":"萬代舘","lat":40.21753,"lon":141.30249,"pref":"岩手","genres":["play"],"indoor":true,"url":"","note":"映画館","g":"play","k":"amuse"}
+]

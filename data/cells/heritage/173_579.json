@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:8594397812","name":"計根別第一飛行場跡","lat":43.47564,"lon":144.76754,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:727112035","name":"西春別温泉クローバーハウス","lat":43.40977,"lon":144.77155,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://betsukai-clover-house.com/","note":"宿","g":"heritage","k":"lodging","kana":"にししゅんべつおんせん くろーばーはうす","tel":"+81 153 77 1170"},
+{"id":"osm:way:920614505","name":"別海まきばの湯しまふくろう","lat":43.37639,"lon":144.85406,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.shimafukurou.online/","note":"宿","g":"heritage","k":"lodging"}
+]

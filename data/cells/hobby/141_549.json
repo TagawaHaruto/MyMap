@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:7196619016","name":"三洋堂書店","lat":35.36052,"lon":137.26082,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9736991824","name":"ブックオフ","lat":35.4524,"lon":137.41119,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10065635233","name":"ただちサイクル","lat":35.45303,"lon":137.40944,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","oh":"Mo-Tu,Th-Fr 09:00-18:30; We off; Sa-Su 09:00-18:00","tel":"+81 57-3252-339"},
+{"id":"osm:node:10074096475","name":"セカンドストリート","lat":35.44913,"lon":137.41665,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10136536253","name":"松林堂書店","lat":35.45424,"lon":137.4088,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Sa 09:00-18:30; Su off","tel":"+81 57-3253-155"},
+{"id":"osm:node:10156233038","name":"asitis","lat":35.41018,"lon":137.43235,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:10863813686","name":"コスモブックセンター","lat":35.44896,"lon":137.41036,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:590771310","name":"サイクルショップ DADDY","lat":35.35672,"lon":137.25257,"pref":"岐阜","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

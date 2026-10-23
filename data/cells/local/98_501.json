@@ -1,0 +1,5 @@
+[
+{"id":"osm:relation:9462491","name":"オーシャンリンクス宮古島","lat":24.7451,"lon":125.44434,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://ocean-links.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"オーシャンリンクスみやこじま"},
+{"id":"osm:way:713887830","name":"エメラルドコーストゴルフリンクス","lat":24.72604,"lon":125.2833,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://www.emeraldcoast.jp/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:15453329","name":"シギラベイカントリークラブ","lat":24.72313,"lon":125.34366,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://shigira.com/golf","note":"遊び・スポーツ","g":"local","k":"activity","pk":2}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1023329520","name":"三石海浜公園","lat":42.2213,"lon":142.63133,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:984148942","name":"三石スポーツセンター","lat":42.24583,"lon":142.5806,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

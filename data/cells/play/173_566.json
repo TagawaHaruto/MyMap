@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:1058437197","name":"知来乙駐車公園","lat":43.33539,"lon":141.63446,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1096828771","name":"当別ダム下流広場","lat":43.31611,"lon":141.56028,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:17469934","name":"皆楽公園","lat":43.33861,"lon":141.68394,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5056204877","name":"北海道ドローン協会 当別練習場","lat":43.25749,"lon":141.52963,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"https://drone-tobe.business.site/","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1125081109","name":"月形町総合体育館","lat":43.33074,"lon":141.6647,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

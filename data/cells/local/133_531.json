@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:12289070261","name":"長田鮮魚店","lat":33.33387,"lon":132.79884,"pref":"愛媛","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11234897307","name":"姫鶴平キャンプ場","lat":33.4675,"lon":132.9625,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13715891401","name":"ゆすはらキャンプ場","lat":33.38816,"lon":132.94606,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287575913","name":"太郎川公園キャンプ場","lat":33.38833,"lon":132.94496,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-65-0478"},
+{"id":"osm:node:14287585576","name":"節安ふれあいの森","lat":33.34775,"lon":132.87647,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0895-44-2211"}
+]

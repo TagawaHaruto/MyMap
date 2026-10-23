@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5383731592","name":"Onkyo Temple 恩敬寺","lat":37.05189,"lon":136.73064,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11513711334","name":"西岸時","lat":37.15542,"lon":136.72213,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11515619961","name":"師岡比古神社","lat":37.14473,"lon":136.74627,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1237676741","name":"比佐喜神社","lat":37.14771,"lon":136.67881,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1237717880","name":"菅原神社","lat":37.16954,"lon":136.67517,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1239345086","name":"西ノ宮神社","lat":37.049,"lon":136.73135,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

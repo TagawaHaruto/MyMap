@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:1966017469","name":"むつみ","lat":35.51383,"lon":133.49878,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1969248469","name":"BIKAI","lat":35.50413,"lon":133.48616,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"limited"},
+{"id":"osm:node:4410702137","name":"醍醐","lat":35.50503,"lon":133.48754,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5597718076","name":"大漁丸","lat":35.52182,"lon":133.25404,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:5597751273","name":"お魚天国　すし若","lat":35.52185,"lon":133.25276,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant","oh":"Mo-Fr 11:00-22:00; Sa-Su 10:00-22:00","tel":"+81 859 45 9800"},
+{"id":"osm:node:9553108445","name":"太陽軒","lat":35.52035,"lon":133.25212,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:11332645949","name":"かもめ亭","lat":35.56237,"lon":133.30787,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:79506702","name":"美保関灯台ビュッフェ","lat":35.5673,"lon":133.32519,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1221933486","name":"魚河岸 阿川","lat":35.56297,"lon":133.30867,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9553108444","name":"ドトールコーヒーショップ","lat":35.52025,"lon":133.25186,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","chain":true},
+{"id":"osm:node:13666088420","name":"TOWER's CAFE","lat":35.51973,"lon":133.25922,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1221933503","name":"喫茶 クリフネ","lat":35.56209,"lon":133.30748,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1073275028","name":"すき家　431号境港店","lat":35.50689,"lon":133.25508,"pref":"鳥取","genres":["food"],"indoor":true,"url":"https://maps.sukiya.jp/jp/detail/543.html","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true,"oh":"24/7"},
+{"id":"osm:node:8555407506","name":"太鼓屋醤油店","lat":35.56285,"lon":133.308,"pref":"島根","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

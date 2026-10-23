@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:7196472585","name":"うのべ古墳","lat":34.28385,"lon":134.27006,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7196472599","name":"赤山古墳","lat":34.27838,"lon":134.25842,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7207541141","name":"一つ山古墳","lat":34.28717,"lon":134.27542,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7207541142","name":"げぼ山古墳","lat":34.28836,"lon":134.27171,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7244020323","name":"御神馬","lat":34.28623,"lon":134.25254,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7244020324","name":"御馬庫","lat":34.2862,"lon":134.25198,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7244020326","name":"三社（天神・諸神・春日）","lat":34.28585,"lon":134.25208,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7244020327","name":"三社（稲荷・瑜咖・農牛）","lat":34.28606,"lon":134.25193,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7394185591","name":"西山","lat":34.27792,"lon":134.25162,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7394185592","name":"準基2052","lat":34.28091,"lon":134.27136,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7394185593","name":"小野辺山","lat":34.28817,"lon":134.27028,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026970","name":"やすらぎの塔","lat":34.47248,"lon":134.31495,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026971","name":"被災復興之碑","lat":34.46925,"lon":134.32795,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026972","name":"復興記念碑","lat":34.47454,"lon":134.32035,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026974","name":"大水害復興記念碑","lat":34.48567,"lon":134.30006,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026980","name":"白鳥湛水防除事業竣功之碑","lat":34.25052,"lon":134.35769,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026982","name":"忘れじの標","lat":34.31714,"lon":134.25793,"pref":"香川","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:260998458","name":"Shodoshima Olive Youth Hostel","lat":34.47317,"lon":134.28459,"pref":"香川","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:261014130","name":"Marine Resort Rihaku Hotel","lat":34.47977,"lon":134.29594,"pref":"香川","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5148863421","name":"ひろきや旅館","lat":34.48301,"lon":134.32492,"pref":"香川","genres":["lodging"],"indoor":true,"url":"https://hirokiya.net/","note":"宿","g":"heritage","k":"lodging","kana":"ひときよりょかん","tel":"+81 879 82 0137"},
+{"id":"osm:way:1097458847","name":"Sen Guest House","lat":34.46113,"lon":134.28879,"pref":"香川","genres":["lodging"],"indoor":true,"url":"https://www.senguesthouse.com","note":"宿","g":"heritage","k":"lodging","tel":"+81-879-61-9980"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4330043334","name":"Rondo Antiques","lat":36.74997,"lon":139.61103,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:5456545478","name":"文教堂書店","lat":36.74176,"lon":139.71026,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6433502308","name":"日光オルゴール館","lat":36.7398,"lon":139.50301,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-17:00","tel":"+81-288-55-1284"},
+{"id":"osm:node:6657159390","name":"NIKKO BIKE","lat":36.74692,"lon":139.61763,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"https://www.nikko-bike.com/","note":"自転車","g":"hobby","k":"hobby","oh":"09:00-19:00","tel":"+81-70-4410-9399"},
+{"id":"osm:way:422041771","name":"かみやまサイクルショップ","lat":36.74363,"lon":139.62587,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"https://www.cs-kamiyama.com/","note":"自転車","g":"hobby","k":"hobby","oh":"09:00-18:00","tel":"+81-288-54-0767"},
+{"id":"osm:way:422209832","name":"星野輪業","lat":36.72154,"lon":139.69304,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:422214419","name":"いちもとサイクル","lat":36.73854,"lon":139.67266,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:422215029","name":"吉原輪業土沢店","lat":36.6917,"lon":139.73246,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:432719460","name":"グレートスケートジャパン","lat":36.72505,"lon":139.68535,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

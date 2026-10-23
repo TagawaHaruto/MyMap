@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:547845580","name":"シーサイドキャトルパーク","lat":41.51706,"lon":140.93267,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548353825","name":"内山公園","lat":41.52012,"lon":140.92296,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548930766","name":"下手浜児童公園","lat":41.54214,"lon":140.91371,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"}
+]

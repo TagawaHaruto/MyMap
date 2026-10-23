@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:10237702998","name":"宮脇書店","lat":34.06473,"lon":134.16553,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん","oh":"09:30-20:00"},
+{"id":"osm:node:12065960425","name":"ハードオフ","lat":34.07506,"lon":134.23083,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12065960427","name":"オフハウス","lat":34.07521,"lon":134.23082,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12065960429","name":"ホビーオフ","lat":34.07513,"lon":134.23082,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12069139905","name":"西野サイクル","lat":34.06586,"lon":134.17012,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:12080106439","name":"大塚書店","lat":34.05564,"lon":134.1657,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12458742610","name":"MAD LOUT MOTORCYCLE","lat":34.05557,"lon":134.23374,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13637540399","name":"ANGEL WINGS","lat":34.06396,"lon":134.1621,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:14000361433","name":"BOOKS　おおたに","lat":34.05749,"lon":134.23882,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1287840534","name":"大阪屋模型","lat":34.06723,"lon":134.14506,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"ホビー・模型","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4271455116","name":"平家城跡","lat":30.80765,"lon":130.30304,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:464497311","name":"安徳天皇御陵","lat":30.7845,"lon":130.27948,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4713238861","name":"民宿ガジュマル","lat":30.78309,"lon":130.27867,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4713238862","name":"民宿硫黄島","lat":30.7827,"lon":130.27828,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4713238863","name":"マリンハウス孔雀の里","lat":30.78243,"lon":130.2788,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

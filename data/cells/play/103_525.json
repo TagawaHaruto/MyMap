@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:12825359197","name":"上陸公園","lat":25.94106,"lon":131.2893,"pref":"沖縄","genres":["play"],"indoor":false,"url":"https://www.kitadaito.jp/shop_detail1.html?shop_code=660","note":"公園","g":"play","k":"park","oh":"24/7"},
+{"id":"osm:way:427618110","name":"北大東総合運動公園","lat":25.94409,"lon":131.30131,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"https://www.ritou.com/spot/view2-kitadaito-kt9.html","note":"グラウンド・コート","g":"play","k":"sports","tel":"+81 9802-3-4001"}
+]

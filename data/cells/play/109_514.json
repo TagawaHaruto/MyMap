@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:13775381505","name":"カラス公園","lat":27.39537,"lon":128.65664,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13775381506","name":"いしご公園","lat":27.39286,"lon":128.657,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1411771726","name":"笠石海浜公園","lat":27.4121,"lon":128.67325,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1527757678","name":"ワンジョ公園","lat":27.40829,"lon":128.63396,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1530036320","name":"沖泊海浜公園","lat":27.39514,"lon":128.55881,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1530739528","name":"あしきぶ公園","lat":27.38178,"lon":128.58407,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1531208059","name":"フローラルパーク","lat":27.33073,"lon":128.55743,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1531872205","name":"和泊町民運動広場","lat":27.38258,"lon":128.61605,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1531951964","name":"ヤーシチ公園","lat":27.39468,"lon":128.65267,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1532626685","name":"伊延公園","lat":27.41568,"lon":128.64418,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1533773546","name":"沖泊公園","lat":27.3958,"lon":128.55341,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1534125319","name":"マリンパーク白浜","lat":27.33106,"lon":128.57091,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1534125326","name":"メントマリ公園","lat":27.33148,"lon":128.57326,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1534537473","name":"ショウヌ川公園","lat":27.36212,"lon":128.59649,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1530960740","name":"大山総合グラウンド","lat":27.36201,"lon":128.5741,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

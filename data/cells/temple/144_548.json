@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:1384994583","name":"崇教真光光神殿","lat":36.03952,"lon":137.22992,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:4800603925","name":"崇教真光世界総本山","lat":36.13688,"lon":137.23284,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5318505274","name":"御蔵稲荷神社","lat":36.23449,"lon":137.19238,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:5369236590","name":"熊野神社","lat":36.15942,"lon":137.22268,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5908238998","name":"崇教真光本部","lat":36.13567,"lon":137.23347,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6435656869","name":"水穂神社","lat":36.24731,"lon":137.18036,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6435656870","name":"憶念寺","lat":36.24485,"lon":137.19128,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6435656879","name":"弘法大師堂","lat":36.24015,"lon":137.19622,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6937649786","name":"崇教真光高山中修験道場","lat":36.13345,"lon":137.24686,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","kana":"すきょまひかりたかやまちゅどじょ"},
+{"id":"osm:node:13075435982","name":"飛騨八十八ヶ所第五十一番霊場","lat":36.06174,"lon":137.04097,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","wc":"yes"}
+]

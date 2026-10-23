@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12566128447","name":"ダイマル大谷会館 食堂部","lat":42.79402,"lon":140.23326,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://daimaru-otani.com/","note":"和食","g":"food","k":"restaurant","tel":"+81-136-62-2034"},
+{"id":"osm:way:728285261","name":"寿し・食事処 かっぱ","lat":42.79334,"lon":140.23409,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://suttufan.com/tourism/foods/food-02/","note":"和食","g":"food","k":"restaurant","oh":"11:00-14:00,17:00+","tel":"+81-136-62-2069"},
+{"id":"osm:way:728952224","name":"中華 昇園","lat":42.79481,"lon":140.23087,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"}
+]

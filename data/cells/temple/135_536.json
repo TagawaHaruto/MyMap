@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:277516684","name":"川井峠白い神様","lat":33.94236,"lon":134.22805,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:277869126","name":"川上神社","lat":33.89593,"lon":134.15462,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:302466861","name":"つづら堂 (Tsuzura-do)","lat":33.89728,"lon":134.07397,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5570382325","name":"瀧宮神社","lat":33.91292,"lon":134.16777,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6483485413","name":"劍山本宮剱神社","lat":33.8662,"lon":134.12061,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7255328912","name":"真福寺","lat":33.9856,"lon":134.2277,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11958240119","name":"劔山本宮 槇渕神社","lat":33.8793,"lon":134.13186,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13149228315","name":"奉八毛猫大明神","lat":33.79855,"lon":134.12578,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13758252084","name":"友内神社","lat":33.98764,"lon":134.10448,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:325861893","name":"剣山 円福寺","lat":33.86865,"lon":134.09002,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:674365348","name":"剣山本宮宝蔵石神社","lat":33.85529,"lon":134.09599,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1221395941","name":"大劔神社","lat":33.85571,"lon":134.09197,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"だい つるぎ じんじゃ"}
+]

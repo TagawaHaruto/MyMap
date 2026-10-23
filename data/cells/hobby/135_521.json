@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:8751340440","name":"井原書店","lat":33.76373,"lon":130.48587,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8971347182","name":"河島楽器店","lat":33.76369,"lon":130.48051,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:9184260098","name":"セカンドストリート","lat":33.76114,"lon":130.47749,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:9252581121","name":"HMV","lat":33.75248,"lon":130.49323,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:9252581122","name":"トイザらス","lat":33.7522,"lon":130.49281,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:9252581126","name":"スポーツオーソリティ","lat":33.75495,"lon":130.49488,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9252581130","name":"未来屋書店","lat":33.7548,"lon":130.49491,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:816462247","name":"津屋崎人形巧房","lat":33.78735,"lon":130.46505,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:way:816870878","name":"マルティグラス","lat":33.77816,"lon":130.48847,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:way:817243892","name":"ゲオ","lat":33.77081,"lon":130.48287,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:825753961","name":"ヤナイ釣具店","lat":33.76981,"lon":130.48325,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5893195390","name":"ウトロ漁協婦人部食堂","lat":44.07292,"lon":144.99391,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"うとろぎょきょふじんぶしょくど"},
+{"id":"osm:node:5893195391","name":"知床かに乃家","lat":44.07196,"lon":144.99351,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"しれとこかにのや"},
+{"id":"osm:node:13040614401","name":"Bon's Home","lat":44.07031,"lon":144.9945,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14019725701","name":"知床食堂レオナルド","lat":44.07133,"lon":144.99364,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:14026424302","name":"波飛沫","lat":44.06698,"lon":144.98861,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://namishibuki.jp/","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13040590401","name":"APU","lat":44.07013,"lon":144.99453,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13040590501","name":"Albireo","lat":44.07014,"lon":144.99423,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.coffee-albireo.com","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13991085401","name":"アルビレオ","lat":44.07013,"lon":144.9942,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.coffee-albireo.com/","note":"カフェ","g":"food","k":"cafe","oh":"Fr-Mo 08:00-14:00"}
+]

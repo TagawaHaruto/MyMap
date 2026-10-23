@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6583345548","name":"三星食堂","lat":44.3498,"lon":142.46431,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11955477579","name":"Hachka","lat":44.35093,"lon":142.46029,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:262147096","name":"ビッグボーイ","lat":44.3453,"lon":142.45749,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant","chain":true},
+{"id":"osm:way:646905828","name":"久の家食堂","lat":44.4855,"lon":142.34494,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:646906021","name":"東家","lat":44.48469,"lon":142.3477,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:648769882","name":"札幌海鮮丸　名寄店","lat":44.36159,"lon":142.45047,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:11955466598","name":"North Life Cafe","lat":44.35123,"lon":142.46028,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:9778324874","name":"マクドナルド","lat":44.33839,"lon":142.45285,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:10019963775","name":"モスバーガー","lat":44.33656,"lon":142.45061,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.mos.jp/","note":"ファストフード","g":"food","k":"fastfood","chain":true,"oh":"09:00-22:00","tel":"+81 1654 3 6464"},
+{"id":"osm:node:14128039909","name":"ゼッテリア","lat":44.34842,"lon":142.45778,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ぜってりあ","chain":true},
+{"id":"osm:way:262147095","name":"すき家","lat":44.34486,"lon":142.45747,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true},
+{"id":"osm:way:645963379","name":"おくむら","lat":44.48434,"lon":142.34733,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:645963383","name":"料理処 おかざき","lat":44.48398,"lon":142.34738,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:645963440","name":"スナックことぶき","lat":44.4832,"lon":142.34793,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

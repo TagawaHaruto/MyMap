@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:6283672298","name":"国府尾神社 鳥居","lat":36.20425,"lon":133.3239,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6283964208","name":"大御崎神社","lat":36.17129,"lon":133.34008,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11092778849","name":"創価学会","lat":36.2176,"lon":133.31405,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:670829600","name":"仁蔵大明神","lat":36.21071,"lon":133.32512,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:670994733","name":"諾浦神社","lat":36.20557,"lon":133.33355,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:670994830","name":"御碕神社","lat":36.20525,"lon":133.33198,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:671000128","name":"大川神社","lat":36.20623,"lon":133.32627,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:671000141","name":"東山神社","lat":36.20652,"lon":133.32685,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:671002078","name":"国府尾神社","lat":36.20466,"lon":133.32071,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:671003943","name":"日乃賣神社","lat":36.21254,"lon":133.31102,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1208410379","name":"出雲大社　西郷分院","lat":36.20325,"lon":133.33402,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

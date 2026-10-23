@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:13394488429","name":"第47回全日本中学校バレーボール選手権大会出場記念碑","lat":31.47362,"lon":131.22575,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3339263093","name":"コスモピア内之浦","lat":31.28221,"lon":131.07387,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"}
+]

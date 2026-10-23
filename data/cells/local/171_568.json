@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:786152423","name":"穂別水泳プール","lat":42.76547,"lon":142.13578,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:786909233","name":"夕張市紅葉山武道館","lat":42.93591,"lon":142.03727,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5692238422","name":"穂別キャンプ場","lat":42.87222,"lon":142.13061,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

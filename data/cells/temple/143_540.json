@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:8622231802","name":"間主神社","lat":35.76435,"lon":135.20007,"pref":"京都","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8622232162","name":"万福寺","lat":35.76331,"lon":135.20161,"pref":"京都","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","pk":2}
+]

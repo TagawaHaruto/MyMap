@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1500914133","name":"サトウスポーツ","lat":41.28159,"lon":141.16351,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3092300102","name":"タケダスポーツ","lat":41.28542,"lon":141.18834,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","kana":"たけだすぽーつ"},
+{"id":"osm:node:3103661775","name":"TSUTAYA","lat":41.2878,"lon":141.18333,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby","kana":"つたや"},
+{"id":"osm:node:10825709316","name":"セカンドストリート","lat":41.2832,"lon":141.21017,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

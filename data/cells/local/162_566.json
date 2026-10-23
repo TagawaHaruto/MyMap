@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:5426422036","name":"日登商店","lat":40.52442,"lon":141.51873,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6924266503","name":"北村園","lat":40.50952,"lon":141.50736,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:558519872","name":"ほっともっと 八戸南類家店","lat":40.5045,"lon":141.50658,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:688628849","name":"浜市場みなとっと","lat":40.52618,"lon":141.53352,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:923042548","name":"かぶーにゃ","lat":40.53698,"lon":141.5592,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7682007438","name":"八戸市営魚菜小売市場","lat":40.52365,"lon":141.5271,"pref":"青森","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:5385424349","name":"体育館","lat":40.53911,"lon":141.5722,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:373162861","name":"テクノルアイスパーク八戸","lat":40.50002,"lon":141.51633,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:545270001","name":"福祉体育館","lat":40.50765,"lon":141.50594,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12119771640","name":"種差キャンプ場","lat":40.51143,"lon":141.609,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 178 38 8420"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4039393898","name":"水波権現","lat":33.94412,"lon":133.54234,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:4352313792","name":"善法寺","lat":33.98211,"lon":133.56074,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"+81 896 23 2779"},
+{"id":"osm:node:6105022032","name":"若一王子宮","lat":33.75556,"lon":133.56416,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:13337746874","name":"新長谷寺","lat":33.95965,"lon":133.50271,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:415749531","name":"三皇神社","lat":33.9925,"lon":133.57048,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"https://www.iyokannet.jp/spot/3764","note":"神社","g":"temple","k":"worship","kana":"さんこうじんじゃ"},
+{"id":"osm:way:421999567","name":"宝乗寺","lat":33.91594,"lon":133.6502,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:585317383","name":"兼山廟","lat":33.75808,"lon":133.59466,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:588825858","name":"瀧神社","lat":33.97665,"lon":133.55978,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:601450302","name":"安楽寺","lat":33.94967,"lon":133.68298,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:650911169","name":"三倉神社","lat":33.75483,"lon":133.56015,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:673597452","name":"石戸八幡神社","lat":33.9709,"lon":133.51825,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:743169921","name":"金刀比羅神社（お台場跡）","lat":33.98452,"lon":133.54172,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1168522147","name":"今宮神社","lat":33.97539,"lon":133.53549,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

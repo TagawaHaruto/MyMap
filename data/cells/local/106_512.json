@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:9739411185","name":"おおぎみの直売所 がじゅまる館","lat":26.66086,"lon":128.10235,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Fr 10:00-18:00; Sa-Su,PH 09:30-18:30"},
+{"id":"osm:node:10764325771","name":"Asian Art","lat":26.52292,"lon":128.04689,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Sa 10:00-19:00; Su 10:00-18:00"},
+{"id":"osm:node:1997940156","name":"山の駅","lat":26.66368,"lon":128.24949,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","kana":"やまのえき"},
+{"id":"osm:node:1998430098","name":"愛すらんど古宇利島","lat":26.69613,"lon":128.02063,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:2002201033","name":"わんさか大浦パーク","lat":26.55466,"lon":128.0406,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"https://wansaka-o.jp/","note":"市場","g":"local","k":"market","oh":"Mo-Fr 10:00-17:00; Sa-Su 09:00-17:00","tel":"098-051-9446","wc":"yes"},
+{"id":"osm:node:10957739371","name":"インドアプール レインフォレスト","lat":26.55116,"lon":128.07801,"pref":"沖縄","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:6421242","name":"カヌチャゴルフコース","lat":26.55051,"lon":128.0799,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:778005194","name":"エナジック瀬嵩カントリークラブ","lat":26.55931,"lon":128.05595,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://www.enagicsedakecc.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1323090801","name":"カヌチャリゾートパターゴルフ場","lat":26.54676,"lon":128.07772,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","oh":"24/7"},
+{"id":"osm:node:7092552015","name":"Scorebrand park","lat":26.67686,"lon":128.01833,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285999549","name":"古宇利島キャンプ庭園","lat":26.70774,"lon":128.01771,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-56-3729"},
+{"id":"osm:node:14285999550","name":"BBQ330 and yummy","lat":26.69638,"lon":128.0223,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285999551","name":"屋我地ビーチ","lat":26.64812,"lon":128.03328,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"http://yagaji-beach.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-52-8123"},
+{"id":"osm:node:14287604218","name":"国頭村森林公園～星と森のキャンプ場～","lat":26.73308,"lon":128.19091,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://www.kunigami-forest-park.org/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-43-0514"},
+{"id":"osm:node:14287634969","name":"ナンマムイネイチャーリゾート","lat":26.65235,"lon":128.02536,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"http://www.nanmamui.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-52-8686"},
+{"id":"osm:node:14287634970","name":"福地川海浜公園","lat":26.63185,"lon":128.15874,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://fukujipark.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-51-2301"},
+{"id":"osm:node:14287634971","name":"AILE Okinawa Retreat","lat":26.6306,"lon":128.07046,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:414563942","name":"つつじエコパーク","lat":26.64108,"lon":128.15798,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://tsutsuji-ecopark.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-43-3300","wc":"limited"},
+{"id":"osm:way:1302171645","name":"比地の滝キャンプ場","lat":26.71891,"lon":128.17964,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1366753768","name":"Camp fermate","lat":26.64563,"lon":128.08172,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://fermate.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-3331-1968"},
+{"id":"osm:way:1371962362","name":"つつじエコパークキャンプ場","lat":26.64213,"lon":128.16017,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"https://tsutsuji-ecopark.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-43-3300"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12333410001","name":"未来の風","lat":33.99197,"lon":131.71445,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12830223481","name":"回天碑","lat":33.99332,"lon":131.71776,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1419639145","name":"小屋場只只","lat":33.9855,"lon":131.72006,"pref":"山口","genres":["lodging"],"indoor":true,"url":"https://koyaba.info/","note":"宿","g":"heritage","k":"lodging","kana":"こやばただただ"}
+]

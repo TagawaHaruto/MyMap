@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:622391701","name":"おおはさま 産直センター「アスタ」","lat":39.47216,"lon":141.28288,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81 198 48 2760"},
+{"id":"osm:node:12273416522","name":"稲荷穴レクリエーション施設キャンプ場","lat":39.42937,"lon":141.42793,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12333534035","name":"田瀬湖オートキャンプ場","lat":39.32663,"lon":141.30361,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177378","name":"大迫笠詰キャンプ場","lat":39.49945,"lon":141.3239,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0198-48-2111"},
+{"id":"osm:node:14286226210","name":"東和いこいの森","lat":39.31698,"lon":141.29979,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0198-44-5846"}
+]

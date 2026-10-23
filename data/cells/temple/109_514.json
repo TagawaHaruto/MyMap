@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6796319975","name":"岬大明神","lat":27.43366,"lon":128.71009,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6949208338","name":"高千穂神社","lat":27.40173,"lon":128.64712,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13775374937","name":"龍王寺","lat":27.39304,"lon":128.64845,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1531872209","name":"世之主神社","lat":27.38655,"lon":128.61425,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:105234258","name":"ギャラリー館","lat":34.35232,"lon":130.84146,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:687531826","name":"あまがせ観光","lat":34.3479,"lon":130.89565,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1236508238","name":"ゆめみさき","lat":34.35213,"lon":130.8429,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4663174605","name":"地方卸売市場特牛市場","lat":34.31645,"lon":130.89305,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4652409088","name":"デルタマリン特牛マリーナ","lat":34.30981,"lon":130.89008,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:325036828","name":"豊北ゴルフセンター","lat":34.33287,"lon":130.90977,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ほうほくごるふせんたー","oh":"Mo-Fr 10:00-18:30","tel":"+81 83 786 1369"},
+{"id":"osm:way:1307863049","name":"テニスコート","lat":34.29617,"lon":130.94464,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4663202343","name":"肥中海水浴オートキャンプ場","lat":34.33114,"lon":130.89584,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4671780795","name":"角島大浜海水浴場","lat":34.35386,"lon":130.84958,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"083-786-0477"},
+{"id":"osm:node:14287485136","name":"土井ケ浜キャンプ場","lat":34.30022,"lon":130.88588,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287496188","name":"赤田キャンプ海水浴場","lat":34.35457,"lon":130.90314,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"083-786-0450"},
+{"id":"osm:node:14287498877","name":"ベイサイド104","lat":34.32599,"lon":130.89534,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"083-786-0519"},
+{"id":"osm:way:666380413","name":"川尻岬キャンプ場","lat":34.43802,"lon":130.97549,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:669613521","name":"油谷オートキャンプ場","lat":34.3647,"lon":130.98317,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

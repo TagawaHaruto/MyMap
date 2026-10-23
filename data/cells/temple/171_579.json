@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:701978772","name":"厳島神社","lat":42.97421,"lon":144.87993,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:848713799","name":"正応寺","lat":42.99913,"lon":144.87058,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:848725782","name":"床潭神社","lat":42.99825,"lon":144.87213,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:848744912","name":"金比羅大権現","lat":42.99221,"lon":144.87602,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:848753157","name":"保呂神社","lat":42.98701,"lon":144.88557,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:848753195","name":"末広金比羅神社","lat":42.98947,"lon":144.8966,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:724840169","name":"はまなす公園","lat":40.77868,"lon":140.21751,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:969240150","name":"鰺ヶ沢町児童公園","lat":40.78231,"lon":140.20556,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1562532583","name":"大高山総合公園","lat":40.769,"lon":140.20305,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1562532576","name":"大高山総合公園テニス場","lat":40.76789,"lon":140.20274,"pref":"青森","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1562532586","name":"大高山総合公園サッカー場","lat":40.76754,"lon":140.20148,"pref":"青森","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

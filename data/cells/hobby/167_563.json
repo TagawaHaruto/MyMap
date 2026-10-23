@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:2514003459","name":"ムライ","lat":41.79922,"lon":140.75481,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2700716358","name":"三省堂書店","lat":41.79327,"lon":140.77052,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.books-sanseido.co.jp/shop/hakodate/","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 138 30 2466"},
+{"id":"osm:node:4777850806","name":"ゲオ函館鍛治店","lat":41.80446,"lon":140.77218,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:5888147366","name":"アニメイト","lat":41.81391,"lon":140.75751,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/hakodate/","note":"アニメ・漫画","g":"hobby","k":"hobby","kana":"あにまて","oh":"Mo-Fr 11:00-19:00; Sa,Su,PH 10:00-19:00","tel":"+81-138-44-7361"},
+{"id":"osm:node:9121602480","name":"セカンドストリート","lat":41.77992,"lon":140.80235,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

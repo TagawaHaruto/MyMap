@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3694534905","name":"お食事処油屋","lat":35.67444,"lon":135.29112,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3694534913","name":"レストラン舟屋","lat":35.67449,"lon":135.29104,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"We-Mo 11:00-16:00","tel":"0772-32-0680"},
+{"id":"osm:node:5181434530","name":"海宮 (wadatsumi)","lat":35.67389,"lon":135.29089,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Th-Tu 11:00-15:00, 17:30-21:00"},
+{"id":"osm:node:5181475422","name":"舟屋日和 ( Ine cafe)","lat":35.67392,"lon":135.29073,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Tu, Th-Fr 11:00-17:00; Sa-Su 10:00-17:00"},
+{"id":"osm:node:10757468555","name":"Fon Din","lat":35.54241,"lon":135.3489,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"タイ料理","g":"food","k":"restaurant"},
+{"id":"osm:way:682937945","name":"イタリアンバール ピエーノ伊根店","lat":35.72972,"lon":135.25723,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant","oh":"Mo-Fr 11:00-14:00"},
+{"id":"osm:way:957859301","name":"海辺の宿/お食事処 かもめ","lat":35.67359,"lon":135.28624,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1026963917","name":"Bayside Place M's deli","lat":35.51404,"lon":135.34389,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:7912532291","name":"guri","lat":35.67593,"lon":135.28671,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:959008723","name":"ギャラリー・喫茶舟屋","lat":35.66879,"lon":135.29171,"pref":"京都","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

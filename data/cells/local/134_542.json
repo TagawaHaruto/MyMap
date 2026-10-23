@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:14285920195","name":"MARUTA 和歌山すさみ","lat":33.55842,"lon":135.5404,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://kashi-kiri.jp/maruta-susami/cottage","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1245-0868"},
+{"id":"osm:node:14285920938","name":"リバーサイドテラス安川","lat":33.74951,"lon":135.60951,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285920948","name":"Ri Terrace","lat":33.5936,"lon":135.63746,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287502393","name":"大塔青少年旅行村","lat":33.73607,"lon":135.57438,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0739-63-0133"},
+{"id":"osm:node:14287502399","name":"百間山渓谷キャンプ村","lat":33.71214,"lon":135.61496,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://www.100ken-campv.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-8355-8254"},
+{"id":"osm:node:14287578030","name":"寿絵里","lat":33.50974,"lon":135.62975,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0739-58-8110"},
+{"id":"osm:node:14287578033","name":"ガーデンキャンプ場パノラマ","lat":33.50649,"lon":135.60237,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://r.goope/appjum167","note":"キャンプ・野外","g":"local","k":"camp","tel":"0739-58-0053"},
+{"id":"osm:node:14287582613","name":"ライテラスキャンプ場","lat":33.59362,"lon":135.63746,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://riterrace.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-3490-5246"}
+]

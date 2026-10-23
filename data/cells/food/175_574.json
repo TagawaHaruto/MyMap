@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4936932752","name":"エフ","lat":43.78144,"lon":143.59527,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11982751611","name":"すずや食堂","lat":43.78717,"lon":143.63969,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:481246301","name":"焼肉ぎゅうしゃ","lat":43.7816,"lon":143.60554,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:465244235","name":"ノルディックファーム","lat":43.90372,"lon":143.53203,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

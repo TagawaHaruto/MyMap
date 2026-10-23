@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:409245208","name":"オホーツクバザール","lat":44.0136,"lon":144.23573,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:409246662","name":"刑務所作業製品展示場","lat":44.01602,"lon":144.23424,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:473844961","name":"ところ道の市","lat":44.12238,"lon":144.04063,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:409245759","name":"三眺武道館","lat":44.01637,"lon":144.2339,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"さんちょうぶどうかん"},
+{"id":"osm:way:409246615","name":"網走ヤングボウル","lat":44.01761,"lon":144.24536,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"http://www.youngbowl.com/shoplist/abashiri","note":"遊び・スポーツ","g":"local","k":"activity","kana":"あばしりやんぐぼうる"},
+{"id":"osm:way:422620427","name":"アドヴィックス常呂カーリングホール","lat":44.12145,"lon":144.05644,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://seesaawiki.jp/w/curlingtokoro/","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:北見市常呂町カーリングホール","oh":"Mo-Sa 10:00-22:00; Su 10:00-17:00","tel":"+81 152 54 1099"},
+{"id":"osm:way:422620428","name":"北見市常呂町スポーツセンター","lat":44.12148,"lon":144.05737,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:422620430","name":"多目的研修センター","lat":44.12114,"lon":144.05808,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4059882436","name":"レイクサイドパーク・のとろ キャンプ場","lat":44.04501,"lon":144.18675,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.city.abashiri.hokkaido.jp/040shisetsu/050sports/410lakesidepark_notoro/040camp.html","note":"キャンプ・野外","g":"local","k":"camp","oh":"Jun 01-Sep 30","tel":"0152-47-1255"}
+]

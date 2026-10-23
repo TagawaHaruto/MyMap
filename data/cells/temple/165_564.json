@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5290557164","name":"二見岩","lat":41.47029,"lon":141.08831,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5607598293","name":"稲荷大明神","lat":41.32753,"lon":141.09149,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"いなりだいみょじん"},
+{"id":"osm:node:11226102181","name":"神明宮","lat":41.29934,"lon":141.21244,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13762106443","name":"春日神社","lat":41.35171,"lon":141.17775,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:530614598","name":"本尊安置地蔵殿","lat":41.32832,"lon":141.08974,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"じぞでん","wc":"no"},
+{"id":"osm:way:547407809","name":"若宮神社","lat":41.46642,"lon":141.09088,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:547524100","name":"浄土寺","lat":41.46631,"lon":141.09274,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:547524126","name":"自由寺","lat":41.46651,"lon":141.09205,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:567437637","name":"村社神明宮","lat":41.28177,"lon":141.16238,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:586989088","name":"八角円堂","lat":41.32807,"lon":141.08535,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"はっかくえんど","wc":"no"},
+{"id":"osm:way:797146389","name":"田名部神社","lat":41.29527,"lon":141.21356,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:804886661","name":"徳玄寺","lat":41.29193,"lon":141.21264,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:858937525","name":"創価学会","lat":41.25716,"lon":141.22835,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

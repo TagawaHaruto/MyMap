@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:3846433679","name":"道の駅たかの","lat":35.02457,"lon":132.88095,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:4138195636","name":"道の駅 キララ多伎","lat":35.2906,"lon":132.6323,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:6240863933","name":"RUINS","lat":35.19217,"lon":132.50036,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:12645290055","name":"道の駅　サンピコごうつ","lat":35.04524,"lon":132.2995,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433739591","name":"道の駅サンピコごうつ","lat":35.04536,"lon":132.29872,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433743834","name":"道の駅ロード銀山","lat":35.22213,"lon":132.5143,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433745861","name":"道の駅大社ご縁広場","lat":35.38929,"lon":132.68693,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433751810","name":"道の駅湯の川","lat":35.39578,"lon":132.86939,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:433755169","name":"道の駅 秋鹿なぎさ公園","lat":35.47457,"lon":132.95067,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:442983118","name":"道の駅頓原","lat":35.08955,"lon":132.78566,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445050331","name":"加茂岩倉PA (下り)","lat":35.35725,"lon":132.88838,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445051199","name":"加茂岩倉PA (上り)","lat":35.35758,"lon":132.88949,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:577872198","name":"ドライブステーション舞乃市","lat":35.04539,"lon":132.30026,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1472693563","name":"道の駅 掛合の里","lat":35.21072,"lon":132.81665,"type":"SA・PA","k":"rest_area","likely":true}
+]

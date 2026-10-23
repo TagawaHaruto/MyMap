@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:1925265395","name":"松前駅石碑","lat":41.42734,"lon":140.101,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1925603222","name":"吉岡峠 (YOSHIOKA pass)","lat":41.42646,"lon":140.20606,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1927105853","name":"町境","lat":41.4602,"lon":140.19963,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1927310656","name":"トンネルメモリアルパーク","lat":41.4422,"lon":140.23593,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2007656865","name":"北海道最南端の碑","lat":41.39855,"lon":140.19984,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6388796378","name":"史蹟 松前城","lat":41.4298,"lon":140.10891,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6406507450","name":"松前神社","lat":41.43055,"lon":140.10797,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6406507452","name":"史跡 福山城跡","lat":41.43061,"lon":140.10818,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6406507453","name":"国指定史跡 福山城","lat":41.43061,"lon":140.10827,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6406507454","name":"御大典紀念樹","lat":41.43038,"lon":140.10828,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378027004","name":"光明寺寛保津波の碑","lat":41.42512,"lon":140.09106,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:488836870","name":"松前城","lat":41.42979,"lon":140.10837,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:松前城","kana":"まつまえじょう"},
+{"id":"osm:node:1925270332","name":"温泉旅館 矢野","lat":41.42937,"lon":140.1109,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"limited"},
+{"id":"osm:node:4811134866","name":"民宿はまべ","lat":41.4291,"lon":140.14321,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

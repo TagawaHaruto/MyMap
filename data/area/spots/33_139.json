@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4840937223","name":"八丈島地熱館","lat":33.07448,"lon":139.81258,"pref":"東京","genres":["museum"],"indoor":true,"url":"http://www.geothermal-hachijo.com/","note":"博物館","k":"museum"},
+{"id":"osm:way:561263963","name":"八丈島歴史民俗資料館","lat":33.10243,"lon":139.78598,"pref":"東京","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum","kana":"はちじょうじまれきしみんぞくしりょうかん"},
+{"id":"osm:node:5126400263","name":"ポットホール","lat":33.09722,"lon":139.83245,"pref":"東京","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:way:561263956","name":"大里の玉石垣","lat":33.09855,"lon":139.78183,"pref":"東京","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:4840912322","name":"大坂トンネル展望台","lat":33.08487,"lon":139.78392,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4840950926","name":"名護の展望台","lat":33.07826,"lon":139.84254,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4840964125","name":"登龍園地展望台","lat":33.11387,"lon":139.83621,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:9594455983","name":"遊び平牧野看視舎","lat":33.14152,"lon":139.75531,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:437439723","name":"八丈植物公園","lat":33.11146,"lon":139.78437,"pref":"東京","genres":["garden"],"indoor":false,"url":"http://www.hachijo-vc.com/garden/","note":"庭園","k":"garden"},
+{"id":"osm:way:1041981556","name":"アロエ園","lat":33.15327,"lon":139.74809,"pref":"東京","genres":["garden"],"indoor":false,"url":"","note":"庭園","k":"garden"},
+{"id":"osm:way:1042247391","name":"服部屋敷","lat":33.07187,"lon":139.796,"pref":"東京","genres":["garden"],"indoor":false,"url":"","note":"庭園","k":"garden","kana":"はっとりやしきして"},
+{"id":"osm:node:4470931396","name":"洞輪沢温泉","lat":33.07516,"lon":139.83875,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:node:4840944522","name":"裏見ヶ滝温泉","lat":33.06353,"lon":139.81666,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:way:446436278","name":"樫立向里温泉 ふれあいの湯","lat":33.07569,"lon":139.79007,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:way:446436279","name":"中之郷温泉 やすらぎの湯","lat":33.06076,"lon":139.81504,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:way:446436280","name":"ブルーポート・スパ ザ・BOON","lat":33.06075,"lon":139.81622,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:way:447198932","name":"みはらしの湯","lat":33.07925,"lon":139.85107,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"温泉","k":"bath"},
+{"id":"osm:node:4840930622","name":"ふれあいの湯","lat":33.07581,"lon":139.79031,"pref":"東京","genres":["onsen"],"indoor":true,"url":"","note":"入浴施設（サウナ）","k":"onsen"},
+{"id":"osm:node:4840937222","name":"黄八丈 め由工房","lat":33.06865,"lon":139.80745,"pref":"東京","genres":["experience"],"indoor":true,"url":"https://www.8jo.org/meyukobo/meyu/","note":"工芸体験","k":"experience"},
+{"id":"osm:way:525527344","name":"ふれあい牧場","lat":33.13082,"lon":139.76748,"pref":"東京","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"},
+{"id":"osm:way:1391321371","name":"ゆーゆー牧場","lat":33.14381,"lon":139.78905,"pref":"東京","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"}
+]

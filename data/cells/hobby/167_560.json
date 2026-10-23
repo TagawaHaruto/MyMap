@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3343616002","name":"いちりき(2F)","lat":41.86435,"lon":140.12615,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:239951905","name":"サイクルショップ小川","lat":41.9197,"lon":140.22333,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:248773291","name":"ひやまスポーツ","lat":41.86421,"lon":140.12658,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:251576085","name":"岩崎商会","lat":41.8674,"lon":140.12597,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:253556974","name":"二輪車や","lat":41.87078,"lon":140.13055,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:328363426","name":"グローリー書店","lat":41.80498,"lon":140.12417,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:330654043","name":"万年屋","lat":41.86995,"lon":140.12863,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

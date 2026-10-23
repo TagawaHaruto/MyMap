@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:6616500574","name":"日女ヶ森匹見八幡宮石柱","lat":34.56905,"lon":132.01838,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2304864656","name":"フルハウス戸河内","lat":34.57952,"lon":132.22289,"pref":"広島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"no"},
+{"id":"osm:node:2304888674","name":"戸河内旅館","lat":34.5792,"lon":132.22327,"pref":"広島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5540344540","name":"やすらぎの湯","lat":34.56714,"lon":132.02229,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:341977137","name":"ikoinoie","lat":34.56837,"lon":132.02285,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1552036804","name":"いこいの村ひろしま","lat":34.64625,"lon":132.2168,"pref":"広島","genres":["lodging"],"indoor":true,"url":"https://global-resort-residence.com/%e3%81%84%e3%81%93%e3%81%84%e3%81%ae%e6%9d%91/","note":"宿","g":"heritage","k":"lodging","tel":"+81-826-29-0011"}
+]

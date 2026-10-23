@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:678565053","name":"ほっともっと","lat":43.47811,"lon":141.90296,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:435230856","name":"パークゴルフ","lat":43.44519,"lon":141.93537,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:435242784","name":"新奈井江カントリークラブ","lat":43.42673,"lon":141.90627,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:551078506","name":"美唄市総合体育館","lat":43.33411,"lon":141.84703,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:551409760","name":"美唄市体育センター","lat":43.33725,"lon":141.85839,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:551662055","name":"パークゴルフ","lat":43.34286,"lon":141.89364,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:606081030","name":"北海道リンクスカントリー倶楽部","lat":43.25257,"lon":141.81858,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:677841388","name":"豊沼小学校兼市民プール","lat":43.46702,"lon":141.90684,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4310238838","name":"鶴沼公園キャンプ場","lat":43.44782,"lon":141.83679,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10991149335","name":"我路ファミリー公園キャンプ場","lat":43.32329,"lon":141.9506,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13987074960","name":"唄の森キャンプ場","lat":43.31452,"lon":141.87842,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286108238","name":"我路公園キャンプ場","lat":43.32041,"lon":141.94718,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0126-62-3131"}
+]

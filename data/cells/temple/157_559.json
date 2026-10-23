@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5167175055","name":"塩竈神社","lat":39.26402,"lon":139.91625,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5167175056","name":"金浦山神社","lat":39.26168,"lon":139.91919,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5167184643","name":"浄光寺","lat":39.25914,"lon":139.91806,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5167185725","name":"金浦寺","lat":39.2552,"lon":139.91524,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5167185729","name":"三嶽神社","lat":39.26192,"lon":139.92273,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5182705738","name":"聖徳太子神社","lat":39.33311,"lon":139.99429,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:755464717","name":"仁賀保神社","lat":39.29037,"lon":139.96206,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:755464720","name":"八幡神社","lat":39.2914,"lon":139.9586,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

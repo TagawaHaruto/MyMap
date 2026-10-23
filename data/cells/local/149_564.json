@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:4828035816","name":"ミッセなみえ","lat":37.4941,"lon":141.00105,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"0240-34-1012"},
+{"id":"osm:node:7334819258","name":"ぽてと","lat":37.49392,"lon":141.00142,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"05:30-18:30"},
+{"id":"osm:node:8940280494","name":"浪江の産直　いなほ","lat":37.49639,"lon":141.0004,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"10:00-18:00"},
+{"id":"osm:node:8940697888","name":"サンプラザふたば","lat":37.45746,"lon":141.02717,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"10:00-17:30; Tu off"},
+{"id":"osm:node:14286401026","name":"あぶくま高原中部県立自然公園","lat":37.44906,"lon":141.01213,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0240-38-2111"},
+{"id":"osm:node:14286479019","name":"天神岬スポーツ公園","lat":37.26889,"lon":141.01429,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0240-25-3113"},
+{"id":"osm:way:371988363","name":"バーベキュー広場　キャンプ場","lat":37.26745,"lon":141.01449,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"http://naraha-tenjin.net","note":"キャンプ・野外","g":"local","k":"camp","tel":"0240-25-3113"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:298593792","name":"恵比寿神社","lat":33.73568,"lon":134.55074,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:369987357","name":"山神社","lat":33.74855,"lon":134.54011,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:572935315","name":"金光教","lat":33.73524,"lon":134.53827,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

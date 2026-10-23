@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5893981086","name":"万松院殿（宗義智の墓）","lat":34.20537,"lon":129.28485,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:6565961041","name":"徳恵翁主結婚記念碑","lat":34.20394,"lon":129.28613,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:431106807","name":"Sino-Russian War Fort","lat":34.24183,"lon":129.28637,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:431106899","name":"gun emplacement","lat":34.2413,"lon":129.28622,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:463778719","name":"清水山城","lat":34.20767,"lon":129.28544,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:清水山城 (対馬国)"},
+{"id":"osm:way:624149783","name":"金石城東の櫓門","lat":34.20347,"lon":129.28704,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4683441602","name":"民宿ちんぐ","lat":34.21888,"lon":129.28418,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0920528820"},
+{"id":"osm:node:5893753211","name":"ホテルシーサイドアネックス","lat":34.20308,"lon":129.29117,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:463776520","name":"東横イン対馬厳原","lat":34.20425,"lon":129.28982,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"とよこいんん","tel":"+81 920-53-6145"},
+{"id":"osm:way:624149781","name":"ホテル柿谷","lat":34.20458,"lon":129.28936,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"https://www.tsushima-net.org/","note":"宿","g":"heritage","k":"lodging","tel":"+81 920-52-1860"},
+{"id":"osm:way:624169037","name":"丸屋ホテル","lat":34.20191,"lon":129.28787,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"https://www.tsushima-net.org/","note":"宿","g":"heritage","k":"lodging","tel":"+81 920-52-1970"}
+]

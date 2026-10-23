@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5695604621","name":"弟子屈ラーメン総本店","lat":43.4963,"lon":144.45439,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:755233355","name":"くまうし","lat":43.49156,"lon":144.45663,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://kumaushi.jp/","note":"飲食店","g":"food","k":"restaurant","kana":"くまうし","tel":"+81 15 482 2688"},
+{"id":"osm:way:755233158","name":"摩周湖のあいす","lat":43.49918,"lon":144.45527,"pref":"北海道","genres":["food"],"indoor":true,"url":"http://ice1.sakura.ne.jp/","note":"アイス","g":"food","k":"sweets","kana":"ましゅうこのあいす","tel":"+81 15 482 6500"}
+]

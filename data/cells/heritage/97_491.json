@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:9009836947","name":"日本最西端之地","lat":24.44989,"lon":122.93427,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2950235995","name":"アイランドホテル与那国","lat":24.4659,"lon":122.9913,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/839/","note":"宿","g":"heritage","k":"lodging","tel":"+81-980-87-2300"},
+{"id":"osm:node:2950236370","name":"与那国観光ホテル","lat":24.45091,"lon":122.94284,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2950236382","name":"民宿てぃだん","lat":24.45133,"lon":122.94448,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/86/","note":"宿","g":"heritage","k":"lodging","tel":"+81-980-87-2250"},
+{"id":"osm:node:5350727521","name":"はいどなん","lat":24.45245,"lon":122.94285,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"http://www.haidonan.com","note":"宿","g":"heritage","k":"lodging","tel":"+81-980-87-2651"},
+{"id":"osm:node:12475021040","name":"Villa エデンの幸旅物語","lat":24.45353,"lon":122.94395,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

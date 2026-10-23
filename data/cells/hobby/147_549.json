@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5826646551","name":"TSUTAYA 明文堂黒部店","lat":36.87984,"lon":137.4612,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5908045988","name":"Tenseido Books 典誠堂書店","lat":36.86633,"lon":137.42259,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:543432136","name":"吉﨑サイクル","lat":36.87558,"lon":137.44212,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:587700673","name":"明文堂書店","lat":36.82437,"lon":137.41435,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

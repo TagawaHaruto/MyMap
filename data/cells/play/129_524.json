@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:753560117","name":"女神像公園","lat":32.46063,"lon":131.15143,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1228830056","name":"総合グラウンド","lat":32.45641,"lon":131.14778,"pref":"宮崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"}
+]

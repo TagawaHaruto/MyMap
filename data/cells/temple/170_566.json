@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4722941283","name":"沼ノ端神社","lat":42.66966,"lon":141.68916,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5367426635","name":"安立寺","lat":42.62682,"lon":141.58774,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:224085006","name":"恵比須神社","lat":42.63465,"lon":141.72749,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:450272912","name":"末日聖徒イエス・キリスト教会","lat":42.65461,"lon":141.6181,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.ldschurch.jp/","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:474807734","name":"樽前山神社","lat":42.66101,"lon":141.60559,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","tel":"0144-36-6661"},
+{"id":"osm:way:553383136","name":"苫小牧聖ルカ教会","lat":42.63041,"lon":141.60552,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.lukeskindergarten.jp/church/","note":"教会","g":"temple","k":"worship","tel":"0144-36-1155"},
+{"id":"osm:way:555029431","name":"正光寺","lat":42.62722,"lon":141.59949,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:555595433","name":"大町寿稲荷神社","lat":42.63053,"lon":141.59634,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:556195666","name":"望洋寺","lat":42.62731,"lon":141.59616,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:556195680","name":"眞宗寺","lat":42.62864,"lon":141.59251,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:556195682","name":"日本キリスト教会","lat":42.63076,"lon":141.59367,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:556661332","name":"曹洞宗 中央禅院","lat":42.62559,"lon":141.58939,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:556915981","name":"苫小牧福音教会","lat":42.64776,"lon":141.61141,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:561320525","name":"佛宝寺","lat":42.64947,"lon":141.59783,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:628162810","name":"法華寺","lat":42.67048,"lon":141.69026,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:857427289","name":"創価学会","lat":42.63295,"lon":141.56986,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:980158369","name":"糸井山神社","lat":42.63131,"lon":141.52843,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:980158543","name":"秀恩寺","lat":42.62841,"lon":141.53039,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"+81-144-77-6555","wc":"yes","pk":2},
+{"id":"osm:way:984705291","name":"陽泉寺","lat":42.62452,"lon":141.52475,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","tel":"+81-144-74-5001"},
+{"id":"osm:way:998502898","name":"大乗寺","lat":42.6645,"lon":141.6595,"pref":"北海道","genres":["temple"],"indoor":false,"url":"http://daijouji.jp","note":"寺","g":"temple","k":"worship","kana":"だいじょうじ","tel":"+81-144-67-2901"},
+{"id":"osm:way:1003583792","name":"日本イエス・キリスト教団 苫小牧小羊教会","lat":42.67398,"lon":141.68411,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://tomakomai-kohitsuji.jccj.or.jp/","note":"教会","g":"temple","k":"worship"}
+]

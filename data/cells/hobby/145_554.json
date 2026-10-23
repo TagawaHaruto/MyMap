@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5929182621","name":"サイクルメイトQ","lat":36.34379,"lon":138.63514,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6871676375","name":"サロモン","lat":36.34135,"lon":138.63839,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"+81 267 41 2256"},
+{"id":"osm:node:6871676376","name":"コロンビア","lat":36.34176,"lon":138.63771,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-19:00","tel":"+81 267 42 1435"},
+{"id":"osm:node:10788298351","name":"アークテリクス","lat":36.34159,"lon":138.63818,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 267 48 6663"},
+{"id":"osm:node:10870002264","name":"エコー","lat":36.3545,"lon":138.63429,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:12063152392","name":"アシックス","lat":36.34191,"lon":138.63786,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"+81 267 46 8894"},
+{"id":"osm:node:13328374183","name":"デサントストア","lat":36.34179,"lon":138.63665,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"+81 267 41 1377"},
+{"id":"osm:way:589215479","name":"軽井沢書店","lat":36.34377,"lon":138.62555,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Sa 09:00-21:00; We off"},
+{"id":"osm:way:913530041","name":"長野リサイクルセンター","lat":36.32448,"lon":138.5023,"pref":"長野","genres":["shopping"],"indoor":true,"url":"https://naganorc.co.jp/","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"09:30-18:30"}
+]

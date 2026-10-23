@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2703613616","name":"柔家","lat":45.12237,"lon":142.36443,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4160377889","name":"レークサイドビュー","lat":45.12507,"lon":142.34774,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 11:00-14:00, 17:30-19:35"},
+{"id":"osm:node:4631079389","name":"草原","lat":45.12745,"lon":142.36177,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant","oh":"11:30-13:30,17:00-22:00; Tu off"}
+]

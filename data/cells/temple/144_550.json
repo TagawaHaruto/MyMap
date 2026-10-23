@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3611978239","name":"梓水神社","lat":36.13391,"lon":137.66782,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あずさみずじんじゃしりね"},
+{"id":"osm:node:3612041698","name":"大山神社","lat":36.1242,"lon":137.64671,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"おやまじんじゃ"},
+{"id":"osm:node:3612047111","name":"八瀬尾神社","lat":36.12435,"lon":137.65013,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6488079357","name":"村上神社","lat":36.24629,"lon":137.51585,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7321945230","name":"三杜神社","lat":36.12287,"lon":137.62696,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7357980769","name":"梓川神社","lat":36.15356,"lon":137.74967,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7"},
+{"id":"osm:way:432768143","name":"乗鞍本宮","lat":36.10654,"lon":137.55368,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"のりくらほんぐ"}
+]

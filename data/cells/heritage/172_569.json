@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3080110117","name":"かなやま湖ログホテルラーチ","lat":43.16342,"lon":142.49234,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かなやまころぐほてるらーち"},
+{"id":"osm:node:3080110118","name":"かなやま湖保養センター","lat":43.15889,"lon":142.48931,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かなやまこほようせんたー"},
+{"id":"osm:way:907012948","name":"旅館やまべ","lat":43.24473,"lon":142.38211,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"りょかんやまべ"}
+]

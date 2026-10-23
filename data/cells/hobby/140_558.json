@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:3866592181","name":"TOY CHERRY","lat":35.14856,"lon":139.62672,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:3880329337","name":"ROJI","lat":35.14026,"lon":139.61891,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:3880329704","name":"三崎堂書店","lat":35.14086,"lon":139.61866,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:3881822196","name":"青木釣具店","lat":35.14212,"lon":139.61509,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:3984034167","name":"TSUTAYA","lat":35.15365,"lon":139.63181,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4017264417","name":"はまゆう書房","lat":35.18814,"lon":139.65391,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4200310999","name":"いけのや釣具","lat":35.13596,"lon":139.61331,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:4401959220","name":"J.LUNA","lat":35.13822,"lon":139.62806,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5491592064","name":"つり具上州屋","lat":35.2298,"lon":139.62023,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:5909355028","name":"栄モーター商会","lat":35.23007,"lon":139.6541,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6069991761","name":"ナガシマ","lat":35.21973,"lon":139.63686,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6069991766","name":"レッドバロン","lat":35.24197,"lon":139.66197,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7022957335","name":"スズキショップ","lat":35.17945,"lon":139.64558,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8961521097","name":"サイクルショップ　岡","lat":35.24931,"lon":139.71485,"pref":"神奈川","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

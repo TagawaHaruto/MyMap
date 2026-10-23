@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:5733814921","name":"南昌寺","lat":39.31667,"lon":140.77544,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6936427096","name":"山衹神社","lat":39.48248,"lon":140.79908,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:6936427097","name":"稲荷神社","lat":39.48235,"lon":140.79894,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6950256215","name":"天照大神宮","lat":39.39994,"lon":140.75606,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7829623898","name":"厳島神社","lat":39.44294,"lon":140.7608,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9019725863","name":"草木供養経","lat":39.45072,"lon":140.78005,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:9232988281","name":"金比羅神社","lat":39.47662,"lon":140.78959,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9249551601","name":"山衹神社","lat":39.44329,"lon":140.75514,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9249551602","name":"馬頭観音","lat":39.44444,"lon":140.75555,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

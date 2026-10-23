@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:463047799","name":"十勝神社","lat":42.29096,"lon":143.31052,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:753796963","name":"石坂神社","lat":42.451,"lon":143.29457,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:754128134","name":"高野山寺","lat":42.48836,"lon":143.27353,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:754133165","name":"創価学会","lat":42.47863,"lon":143.27817,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:754142101","name":"好教寺","lat":42.49304,"lon":143.27263,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:754170733","name":"大樹キリスト教会","lat":42.49181,"lon":143.27245,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:754503714","name":"大仙寺","lat":42.4988,"lon":143.2756,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:754503717","name":"顕法寺","lat":42.49903,"lon":143.27503,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:754506753","name":"大樹神社","lat":42.4988,"lon":143.2774,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

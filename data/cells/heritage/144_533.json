@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:6283696017","name":"竣功記念碑","lat":36.21927,"lon":133.30578,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6283877582","name":"隠岐国分寺","lat":36.22336,"lon":133.30734,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11265527504","name":"隠岐坂騒動勃発地","lat":36.20373,"lon":133.33321,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11265527505","name":"隠岐しげき節の由来","lat":36.2027,"lon":133.33377,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11265609754","name":"史蹟隠岐國分寺境内","lat":36.22457,"lon":133.30759,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11265609756","name":"後醍醐天皇行在所阯","lat":36.22454,"lon":133.3075,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11265609825","name":"禅尾山 隠岐國分寺","lat":36.2234,"lon":133.30734,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11270717714","name":"天然紀念物 玉若酢命神社ノ八百杉","lat":36.20717,"lon":133.31292,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5475051421","name":"隠岐プラザホテル","lat":36.20258,"lon":133.33146,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11092759546","name":"ホテル宮尾","lat":36.21291,"lon":133.33752,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11195365045","name":"ホテル　のち","lat":36.20421,"lon":133.33511,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:671003173","name":"作田屋","lat":36.20552,"lon":133.31677,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1195146089","name":"竹の坊","lat":36.20285,"lon":133.33348,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1195146092","name":"アイランドホテル　しまじ","lat":36.20235,"lon":133.32883,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1195149813","name":"作田屋","lat":36.20532,"lon":133.3166,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1204675223","name":"民宿　松浜","lat":36.20238,"lon":133.32861,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

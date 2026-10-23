@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11311213484","name":"大心寺","lat":43.60086,"lon":141.38899,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:944729617","name":"川下八幡神社","lat":43.58839,"lon":141.39085,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1058801851","name":"雄冬神社","lat":43.73895,"lon":141.34072,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2340276077","name":"長心寺","lat":34.70336,"lon":136.99991,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3077802740","name":"豊泉寺","lat":34.70168,"lon":136.97196,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3086895741","name":"高宮神社","lat":34.73691,"lon":136.87427,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3086924679","name":"慈光寺","lat":34.73415,"lon":136.87288,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3086925025","name":"熊野神社","lat":34.73175,"lon":136.87396,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3086925116","name":"宝樹院","lat":34.74046,"lon":136.86452,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3086925203","name":"秋葉神社","lat":34.73949,"lon":136.86165,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3086979011","name":"中洲神社","lat":34.70975,"lon":136.92198,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4594251949","name":"栄野神社","lat":34.50014,"lon":136.79194,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5343555427","name":"如意輪寺","lat":34.73967,"lon":136.8736,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","wc":"limited"},
+{"id":"osm:node:6345064776","name":"桂光院","lat":34.54916,"lon":136.98088,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6345064777","name":"八代神社","lat":34.54915,"lon":136.98283,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6461850045","name":"日向稲荷大明神","lat":34.50694,"lon":136.83657,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8206026237","name":"本誓寺","lat":34.53024,"lon":136.90023,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8206057336","name":"八幡神社","lat":34.52916,"lon":136.90484,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:304163100","name":"西岸寺","lat":34.73528,"lon":136.87132,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:397733014","name":"八幡神社","lat":34.70542,"lon":136.99719,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:690284866","name":"龍宮社","lat":34.50796,"lon":136.78866,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"りゅう みやしゃ"},
+{"id":"osm:way:820305207","name":"影向寺","lat":34.71016,"lon":136.92087,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:relation:14116999","name":"全久寺","lat":34.73933,"lon":136.87665,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1303834941","name":"天理教 尾知分教会","lat":34.74449,"lon":136.87484,"pref":"愛知","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","wc":"yes"}
+]

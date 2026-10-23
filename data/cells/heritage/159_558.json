@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:6911987178","name":"男鹿プリンスホテル（廃墟）","lat":39.97276,"lon":139.74122,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7059920040","name":"日本海中部地震　合川南小学校児童慰霊碑","lat":39.90905,"lon":139.73304,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7059920043","name":"合川南小学校児童地震津波殉難の碑","lat":39.90869,"lon":139.73296,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7059920050","name":"この先プロでも通れぬ狭い道","lat":39.90887,"lon":139.7328,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7060217493","name":"日本海中部地震　慰霊　仏像","lat":39.94389,"lon":139.70416,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7059920037","name":"青の砂","lat":39.90946,"lon":139.73095,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7059920038","name":"カンカネ荘","lat":39.90878,"lon":139.73242,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7063451253","name":"ホテルきららか","lat":39.91125,"lon":139.71865,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:339303221","name":"国民宿舎男鹿","lat":39.97591,"lon":139.74548,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:738185573","name":"セイコーグランドホテル","lat":39.97188,"lon":139.74275,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"せいこうぐらんどほてる","tel":"+81 185-33-2131"},
+{"id":"osm:way:738185581","name":"結いの宿 別邸 つばき","lat":39.97572,"lon":139.74371,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:754578221","name":"男鹿温泉郷　男鹿ホテル","lat":39.97447,"lon":139.74341,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:802068163","name":"民宿浜中荘","lat":39.94838,"lon":139.72131,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:802068170","name":"かもめ荘","lat":39.94878,"lon":139.72151,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:823462768","name":"温泉旅館ゆもと","lat":39.96609,"lon":139.746,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:4231252199","name":"くりくりの里中津川","lat":35.54364,"lon":137.44918,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:61933044","name":"ひるかわゴルフ場","lat":35.50338,"lon":137.41997,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285591265","name":"プライベートキャンプ場 リノア白川町","lat":35.67211,"lon":137.30364,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285591267","name":"CROCE RESORT 星降る丘キャンプ場","lat":35.64689,"lon":137.32139,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286955230","name":"本谷オートキャンプ場","lat":35.70485,"lon":137.42048,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-82-2901"},
+{"id":"osm:node:14286955232","name":"峡北恵那キャンプ場","lat":35.70303,"lon":137.42291,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-82-4802"},
+{"id":"osm:node:14286978585","name":"森林キャンプ場","lat":35.70164,"lon":137.42449,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-82-3210"},
+{"id":"osm:node:14286978589","name":"宮島キャンプ場","lat":35.69807,"lon":137.42705,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-82-4737"},
+{"id":"osm:node:14286978590","name":"FORESTDOME付知峡","lat":35.69618,"lon":137.42304,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://forestdome-tsukechi.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-7222-1044"},
+{"id":"osm:node:14286978591","name":"BeGreen日和立","lat":35.69458,"lon":137.44759,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-82-3921"},
+{"id":"osm:node:14287059076","name":"よこ川渓谷キャンプ場","lat":35.63695,"lon":137.46363,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-72-4166"},
+{"id":"osm:node:14287059087","name":"青空見聞塾 宮代オートキャンプ場","lat":35.61837,"lon":137.27851,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0574-78-3535"},
+{"id":"osm:node:14287060901","name":"塔の岩オートキャンプ場","lat":35.67175,"lon":137.42004,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-82-2989"},
+{"id":"osm:node:14287072713","name":"花街道オートキャンプ場","lat":35.6438,"lon":137.43988,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-82-3900"},
+{"id":"osm:node:14287084563","name":"福岡ローマン渓谷オートキャンプ場","lat":35.56279,"lon":137.44819,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-72-3654"},
+{"id":"osm:node:14287118448","name":"大博士キャンプ場","lat":35.53613,"lon":137.37762,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-45-3328"},
+{"id":"osm:node:14287123138","name":"蛭川オートキャンプ場","lat":35.51337,"lon":137.39001,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-6923-7998"},
+{"id":"osm:node:14287123143","name":"笠置山 望郷の森キャンプ場","lat":35.50852,"lon":137.34039,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://bokyo.org/","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-3740-8231"},
+{"id":"osm:node:14287658016","name":"アオミキャンプ場","lat":35.69617,"lon":137.42538,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:3630326975","name":"ステーキハウス 萠美野","lat":34.99653,"lon":132.71517,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ステーキ","g":"food","k":"restaurant"},
+{"id":"osm:node:3630326957","name":"道の駅 赤来高原","lat":34.99898,"lon":132.71386,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","pk":2}
+]

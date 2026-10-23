@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:13006211301","name":"Le Montagne","lat":43.16339,"lon":142.49204,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"フレンチ","g":"food","k":"restaurant","oh":"Mo-Su 11:30-14:00, 17:30-20:30"},
+{"id":"osm:way:851737704","name":"ドライブインやまべ","lat":43.23924,"lon":142.38056,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:851737727","name":"ときわ食堂","lat":43.2433,"lon":142.38216,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:851737730","name":"ちいさなログカフェふらわ","lat":43.24433,"lon":142.38243,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

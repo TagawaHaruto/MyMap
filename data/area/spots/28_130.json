@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:12108451700","name":"雁股の泉","lat":28.36279,"lon":130.00454,"pref":"鹿児島","genres":["sightseeing"],"indoor":false,"url":"https://www.town.kikai.lg.jp/","note":"観光名所","k":"attraction"},
+{"id":"osm:node:12816110055","name":"サンゴの石垣","lat":28.36502,"lon":130.00018,"pref":"鹿児島","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:12108451698","name":"大久保展望台","lat":28.35884,"lon":130.00566,"pref":"鹿児島","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"}
+]

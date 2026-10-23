@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:10093746346","name":"郷の駅 ホッときもべつ","lat":42.79445,"lon":140.93774,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"さとのえき ほっときもべつ","oh":"Mo-Su 10:00-16:00","tel":"+81 136 55 6755"},
+{"id":"osm:node:8531208887","name":"ルスツリゾートゴルフ72リバーコース・ウッドコース","lat":42.77891,"lon":140.965,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8531208888","name":"ルスツリゾートゴルフ72リバーコース・ウッドコース","lat":42.77729,"lon":140.97811,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:429224497","name":"喜茂別町民公園　パークゴルフ場","lat":42.78625,"lon":140.93712,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:732821085","name":"京極町温水プール","lat":42.85816,"lon":140.8852,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10901119937","name":"ペトトル倶知安","lat":42.88317,"lon":140.75494,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12024118898","name":"YOTEI CAMP FLATBASE NISEKO","lat":42.90099,"lon":140.77089,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14281900655","name":"MEMUの森","lat":42.87575,"lon":140.7679,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.memunomori.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0136-22-3759"},
+{"id":"osm:node:14286129353","name":"Youtei Outdoor","lat":42.8823,"lon":140.77782,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.youteioutdoor.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-6075-9466"},
+{"id":"osm:node:14286129355","name":"羊蹄山半月湖野営場","lat":42.86679,"lon":140.78976,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0136-22-1121"},
+{"id":"osm:node:14286129361","name":"あずましくない野営場","lat":42.8274,"lon":140.89093,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177228","name":"焚き火キャンプ場","lat":42.77689,"lon":140.79236,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://takibi-camp.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0136-55-6400"},
+{"id":"osm:node:14286177232","name":"ルスツ山はともだちキャンプ場","lat":42.75371,"lon":140.89699,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://rusutsu.com/rusutsu-camp-village/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0136-46-3111"},
+{"id":"osm:way:429221870","name":"羊蹄山自然公園真狩キャンプ場","lat":42.79512,"lon":140.7861,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:615535378","name":"羊蹄山半月湖野営場","lat":42.84564,"lon":140.75915,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:615540920","name":"京極スリーユーパークキャンプ場","lat":42.86184,"lon":140.87164,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:930552193","name":"るさんキャンプ場","lat":42.8105,"lon":140.89222,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://rusan.whitesnow.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-3238-3097"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:7238200094","name":"仲吉魚店","lat":40.2287,"lon":140.58114,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:839841990","name":"おみやげ 石六","lat":40.21297,"lon":140.64356,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:775739858","name":"大館市立比内体育館","lat":40.22449,"lon":140.58386,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:11534171","name":"健康福祉センター","lat":40.21536,"lon":140.6555,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:981992487","name":"麓西体育館","lat":40.23069,"lon":140.50986,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12060324872","name":"竜ケ森キャンプ場","lat":40.10171,"lon":140.55379,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14281932837","name":"妖精の森キャンプ場","lat":40.00903,"lon":140.51094,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0186-72-3179"},
+{"id":"osm:node:14286218507","name":"親子ふれあいオートキャンプ場","lat":40.05416,"lon":140.58069,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1490-6885"},
+{"id":"osm:way:793705464","name":"青少年野外活動基地 親子キャンプ場","lat":40.00284,"lon":140.60371,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-7064-7867"}
+]

@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2004048168","name":"日向見薬師堂","lat":36.69702,"lon":138.77358,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ひなたみやくしど"},
+{"id":"osm:node:6640480139","name":"玉泉寺","lat":36.69393,"lon":138.99893,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10062983322","name":"岩櫃神社","lat":36.56282,"lon":138.80837,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11259698551","name":"稲裏神社","lat":36.69289,"lon":138.77441,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"いなつつみじんじゃ"},
+{"id":"osm:node:11278798935","name":"湯前神社","lat":36.68118,"lon":138.78154,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:184611718","name":"顕徳寺","lat":36.57386,"lon":138.8281,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:764563073","name":"温泉薬師神社","lat":36.68774,"lon":138.77315,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:771569173","name":"天宗寺","lat":36.50705,"lon":138.92962,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:823692691","name":"大黒山東泉寺","lat":36.69544,"lon":138.91011,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:823692782","name":"須川ハリストス正教会 聖パンテレイモン聖堂","lat":36.6992,"lon":138.90694,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:1135909133","name":"金蔵寺","lat":36.5215,"lon":138.98563,"pref":"群馬","genres":["temple"],"indoor":false,"url":"https://konzouji.jimdofree.com/","note":"寺","g":"temple","k":"worship","kana":"こんぞじ"},
+{"id":"osm:way:1215307380","name":"Yakuoji","lat":36.69691,"lon":138.7743,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

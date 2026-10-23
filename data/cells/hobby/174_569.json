@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1765702956","name":"Proon","lat":43.73964,"lon":142.40414,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2083126340","name":"ブックオフ","lat":43.73339,"lon":142.38913,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/shop/shop10398.html","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-20:00","tel":"+81 166 66 5151"},
+{"id":"osm:node:4935233922","name":"セカンドストリート 旭川東光店","lat":43.74939,"lon":142.38726,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4978924249","name":"アンティークハウス","lat":43.71057,"lon":142.48364,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"}
+]

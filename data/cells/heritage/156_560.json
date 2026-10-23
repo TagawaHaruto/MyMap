@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3739847371","name":"康ケルン","lat":39.11454,"lon":140.06166,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5179425331","name":"矢島城址","lat":39.22998,"lon":140.13345,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:683962544","name":"フォレスタ鳥海","lat":39.17399,"lon":140.1175,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"https://foresta-chokai.com/","note":"宿","g":"heritage","k":"lodging","kana":"フォレスタちょうかい","tel":"+81 184-58-2888"},
+{"id":"osm:node:1831766493","name":"鳥海荘","lat":39.16847,"lon":140.13331,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"http://www.chokaiso.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ちょかいそ","tel":"+81 0184-58-2065","wc":"yes"},
+{"id":"osm:node:5179174123","name":"旭旅館","lat":39.22927,"lon":140.13854,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あさひりょかん","tel":"0184562223"},
+{"id":"osm:node:5179423542","name":"錦旅館","lat":39.22867,"lon":140.13538,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5179440123","name":"三舩旅館","lat":39.2296,"lon":140.13602,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5862583451","name":"湯の台温泉　鳥海山荘","lat":39.03076,"lon":140.03291,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:172252061","name":"ホテルまさか","lat":39.16948,"lon":140.13039,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ホテルまさか"},
+{"id":"osm:way:821821414","name":"ペンション鳥海","lat":39.2404,"lon":140.06382,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

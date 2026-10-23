@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:1423932688","name":"町立山崎中学校","lat":31.86206,"lon":130.43612,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423933021","name":"町立鶴田中学校","lat":31.94893,"lon":130.48028,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:さつま町立鶴田中学校"},
+{"id":"osm:node:3093668477","name":"君が代発祥の地","lat":31.7968,"lon":130.44163,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463045851","name":"復興之碑","lat":31.9057,"lon":130.44799,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463045856","name":"大水害救援之塔","lat":31.81406,"lon":130.30374,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13851473086","name":"昇格五十年記念碑","lat":31.82505,"lon":130.29241,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13851499750","name":"國幣中社 新田神社","lat":31.8254,"lon":130.29247,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","pk":2},
+{"id":"osm:node:13851499751","name":"みくに幼稚園 園歌","lat":31.82544,"lon":130.29239,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:291944950","name":"西郷どんのツンの像","lat":31.93353,"lon":130.31148,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:368256101","name":"ホテルルートイン薩摩川内","lat":31.81298,"lon":130.30765,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:way:368256127","name":"スーパーホテル薩摩川内","lat":31.81278,"lon":130.31041,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:509264852","name":"ロイヤルイン川内","lat":31.8219,"lon":130.30239,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:568077059","name":"竹屋旅館","lat":31.91617,"lon":130.2553,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:568077061","name":"竹屋旅館","lat":31.91612,"lon":130.25603,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

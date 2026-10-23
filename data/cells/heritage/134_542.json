@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:9635520078","name":"平成23年土砂災害慰霊碑","lat":33.71385,"lon":135.62183,"pref":"和歌山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6840120733","name":"田中民宿","lat":33.50794,"lon":135.59575,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12598767780","name":"TUZUMI wakayama Susami","lat":33.50505,"lon":135.59872,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"https://tuzumi-wakayama.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-739-58-8700"},
+{"id":"osm:node:12598767781","name":"フェアフィールド･バイ･マリオット･和歌山熊野古道すさみ","lat":33.50569,"lon":135.59813,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"https://www.marriott.com/ja/hotels/osafw-fairfield-wakayama-kumano-kodo-susami/overview/","note":"宿","g":"heritage","k":"lodging","tel":"+81-739-34-2105"},
+{"id":"osm:node:13797971801","name":"Beach Terrace Kushimoto","lat":33.50562,"lon":135.63959,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

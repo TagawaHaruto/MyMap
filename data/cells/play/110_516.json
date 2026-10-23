@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1540744562","name":"亀津児童公園","lat":27.72736,"lon":129.0198,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1540770374","name":"亀津公園","lat":27.72859,"lon":129.0077,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1548836187","name":"亀津闘牛場","lat":27.72452,"lon":129.01552,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1532329197","name":"高千穂カントリークラブ","lat":27.40437,"lon":128.64791,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1534202106","name":"沖永良部GC","lat":27.35514,"lon":128.56465,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13953380235","name":"大山野営場","lat":27.36392,"lon":128.57478,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,22 @@
+[
+{"name":"道の駅サンピコごうつ","lat":35.0452442,"lon":132.2986018,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅たかの","lat":35.0245715,"lon":132.8809509,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 キララ多伎","lat":35.2906038,"lon":132.6322975,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%82%AD%E3%83%A9%E3%83%A9%E5%A4%9A%E4%BC%8E","k":"michinoeki"},
+{"name":"道の駅　サンピコごうつ","lat":35.0452375,"lon":132.299495,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅たき","lat":35.29053175,"lon":132.6322206,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅きらら多岐","lat":35.290487299999995,"lon":132.63242795000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅ロード銀山","lat":35.222128850000004,"lon":132.51430345,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%83%AD%E3%83%BC%E3%83%89%E9%8A%80%E5%B1%B1","k":"michinoeki"},
+{"name":"道の駅大社ご縁広場","lat":35.389294500000005,"lon":132.68692655,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E5%A4%A7%E7%A4%BE%E3%81%94%E7%B8%81%E5%BA%83%E5%A0%B4","k":"michinoeki"},
+{"name":"道の駅湯の川","lat":35.3957758,"lon":132.86938844999997,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E6%B9%AF%E3%81%AE%E5%B7%9D","k":"michinoeki"},
+{"name":"道の駅 秋鹿なぎさ公園","lat":35.47457175,"lon":132.950667,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E7%A7%8B%E9%B9%BF%E3%81%AA%E3%81%8E%E3%81%95%E5%85%AC%E5%9C%92","k":"michinoeki"},
+{"name":"道の駅頓原","lat":35.0894023,"lon":132.7855984,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 おろちの里","lat":35.22030715,"lon":132.9622572,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%8A%E3%82%8D%E3%81%A1%E3%81%AE%E9%87%8C","k":"michinoeki"},
+{"name":"道の駅「ごいせ仁摩」","lat":35.145954849999995,"lon":132.41298895,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%94%E3%81%84%E3%81%9B%E4%BB%81%E6%91%A9","k":"michinoeki"},
+{"name":"道の駅　ロード銀山","lat":35.22213695,"lon":132.5140795,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 掛合の里","lat":35.2107227,"lon":132.81665025,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E6%8E%9B%E5%90%88%E3%81%AE%E9%87%8C","k":"michinoeki"},
+{"name":"大万木山","lat":35.0875874,"lon":132.8545306,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%B8%87%E6%9C%A8%E5%B1%B1","k":"scenic"},
+{"name":"女三瓶山","lat":35.1348258,"lon":132.6322639,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E5%A5%B3%E4%B8%89%E7%93%B6%E5%B1%B1","k":"scenic"},
+{"name":"神西湖","lat":35.3264183,"lon":132.68323225,"kind":"lake","wikipedia":"https://ja.wikipedia.org/wiki/%E7%A5%9E%E8%A5%BF%E6%B9%96","k":"scenic"},
+{"name":"稲佐の浜","lat":35.39573285,"lon":132.6715216,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E7%A8%B2%E4%BD%90%E3%81%AE%E6%B5%9C","k":"scenic"},
+{"name":"宍道湖","lat":35.44364615,"lon":132.95929255,"kind":"lake","wikipedia":"https://ja.wikipedia.org/wiki/%E5%AE%8D%E9%81%93%E6%B9%96","k":"scenic"}
+]

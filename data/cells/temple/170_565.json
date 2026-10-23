@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2321257848","name":"白老八幡神社","lat":42.55208,"lon":141.35289,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8771352003","name":"天理教 八十春分教会","lat":42.56548,"lon":141.38088,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:907671420","name":"塩釜神社","lat":42.56494,"lon":141.34172,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:946740241","name":"法伝寺","lat":42.54972,"lon":141.34839,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:946746948","name":"眞澄寺","lat":42.54933,"lon":141.34723,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:950220863","name":"八幡神社","lat":42.51314,"lon":141.27779,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:950255428","name":"眞雄寺","lat":42.52436,"lon":141.30474,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:951907311","name":"禅照寺","lat":42.50793,"lon":141.27441,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:973257411","name":"錦岡樽前神社本殿","lat":42.60273,"lon":141.48324,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

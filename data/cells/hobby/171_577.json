@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5709990121","name":"Cycle Garage PAZ","lat":42.99774,"lon":144.38407,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6253259149","name":"コーチャンフォー釧路店","lat":42.97744,"lon":144.41377,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12035782636","name":"古書かわしま","lat":42.98603,"lon":144.38415,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://kosyokawashima.com/","note":"本屋","g":"hobby","k":"hobby","kana":"こしょかわしま","oh":"10:00-19:00","tel":"+81 154 31 4880","wc":"no"},
+{"id":"osm:node:12050356893","name":"ミヤケ模型","lat":42.98915,"lon":144.38312,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.miyake-shouten.jp/","note":"おもちゃ","g":"hobby","k":"hobby","kana":"みやけもけい","tel":"+81 154 22 2269"}
+]

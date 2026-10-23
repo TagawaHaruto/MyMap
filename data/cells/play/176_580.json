@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:474088570","name":"クジラの見える丘公園","lat":44.03724,"lon":145.21945,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"くじらのみえるおかこうえん"},
+{"id":"osm:way:474088717","name":"しおかぜ公園","lat":44.02249,"lon":145.19924,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1485889592","name":"湯のメッコ公園","lat":44.02933,"lon":145.17671,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1469344561","name":"羅臼町民体育館","lat":44.02251,"lon":145.19149,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5116628235","name":"妙法寺","lat":38.08107,"lon":139.73489,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5116628236","name":"早船寺","lat":38.08734,"lon":139.72931,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5116629141","name":"大宮子易両神社","lat":38.07843,"lon":139.73742,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5116629142","name":"吉祥寺","lat":38.09616,"lon":139.73819,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5116629536","name":"洞泉寺","lat":38.10493,"lon":139.73348,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1199322534","name":"光岳寺","lat":38.06266,"lon":139.73935,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1322030136","name":"薬師神社","lat":38.24325,"lon":139.50329,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1322049984","name":"常栄寺","lat":38.2323,"lon":139.50142,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

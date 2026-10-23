@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:1423928166","name":"市立久志中学校","lat":31.30924,"lon":130.2265,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:南さつま市立久志中学校"},
+{"id":"osm:node:1423928176","name":"市立久志小学校","lat":31.3112,"lon":130.22585,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423928436","name":"市立坊泊中学校","lat":31.27671,"lon":130.23094,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423928439","name":"市立坊泊小学校","lat":31.27169,"lon":130.23127,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423929545","name":"市立清原小学校","lat":31.28806,"lon":130.24207,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423929605","name":"市立玉林小学校","lat":31.4088,"lon":130.1863,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423929693","name":"市立笠沙中学校","lat":31.41001,"lon":130.18486,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423929697","name":"旧市立笠沙小学校","lat":31.41457,"lon":130.13664,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423929835","name":"市立赤生木小学校","lat":31.39412,"lon":130.20765,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5708571551","name":"007は二度死ぬ ロケ地","lat":31.35691,"lon":130.20128,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5756497212","name":"いろは歌と　いぬまきの街　加世田","lat":31.40563,"lon":130.23855,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5756497450","name":"大浦くじら座礁の地","lat":31.40965,"lon":130.23376,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3268370161","name":"笠沙恵比寿","lat":31.41638,"lon":130.13448,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

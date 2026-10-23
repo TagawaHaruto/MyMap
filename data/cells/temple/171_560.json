@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:728916331","name":"菩提院","lat":42.79374,"lon":140.2246,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:728919265","name":"寿都神社","lat":42.79073,"lon":140.23087,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:728919357","name":"法華寺","lat":42.79253,"lon":140.22892,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:728919361","name":"善龍寺","lat":42.79309,"lon":140.22864,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:728921491","name":"法界寺","lat":42.79358,"lon":140.22798,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:728921493","name":"龍洞院","lat":42.79387,"lon":140.22743,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:728921508","name":"願乗寺","lat":42.79439,"lon":140.22732,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:729759767","name":"建岩神社","lat":42.76776,"lon":140.24429,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1134663267","name":"歌島神社","lat":42.77798,"lon":140.1528,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

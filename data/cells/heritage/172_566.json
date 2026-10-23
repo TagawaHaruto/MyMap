@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3466680675","name":"黒澤先生像","lat":43.07363,"lon":141.51081,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wc":"yes"},
+{"id":"osm:node:3466697245","name":"酪農賛歌歌碑","lat":43.07354,"lon":141.51061,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3466703849","name":"動物慰霊碑","lat":43.07226,"lon":141.51102,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3514067415","name":"建土建民の碑","lat":43.07405,"lon":141.5091,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3521136232","name":"駐蹕の碑","lat":43.06852,"lon":141.52102,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8663824046","name":"江別古墳群","lat":43.11693,"lon":141.51612,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:江別古墳群"},
+{"id":"osm:node:3655518996","name":"くつろぎの宿 なんぽろ温泉ハート＆ハート","lat":43.0694,"lon":141.59807,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:458438195","name":"チャダ","lat":43.10336,"lon":141.50543,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:459294927","name":"ホテルリボーン野幌","lat":43.09143,"lon":141.52921,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://hotel-reborn.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 11 391 8677"}
+]

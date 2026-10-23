@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5330309985","name":"雲見浅間神社","lat":34.72548,"lon":138.74017,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6261346044","name":"雲見浅間神社","lat":34.72589,"lon":138.74153,"pref":"静岡","genres":["temple"],"indoor":false,"url":"https://go-izu.com/matsuzaki/eboshiyama/","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11107523360","name":"弁財天","lat":34.72769,"lon":138.74253,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

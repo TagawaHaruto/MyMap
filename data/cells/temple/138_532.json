@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:3673259902","name":"積善寺","lat":34.55291,"lon":133.11318,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3673259904","name":"宇津戸地頭八幡神社","lat":34.55518,"lon":133.11493,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3673259906","name":"宇津戸領家八幡神社","lat":34.56102,"lon":133.11463,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3673259908","name":"観音寺","lat":34.5618,"lon":133.11651,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:3673259909","name":"照善寺","lat":34.5632,"lon":133.11695,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9103354451","name":"金毘羅大権現","lat":34.59737,"lon":133.24883,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11477165441","name":"平井荒神社","lat":34.55475,"lon":133.23906,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11477265005","name":"荒神社","lat":34.55669,"lon":133.23833,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11477288818","name":"御門神社","lat":34.55809,"lon":133.23805,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11487053576","name":"羽黒神社","lat":34.55269,"lon":133.24416,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:559733720","name":"観音寺","lat":34.56181,"lon":133.11648,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1009941345","name":"生長の家 府中養心道場","lat":34.58047,"lon":133.23777,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1270843554","name":"二之宮神社","lat":34.5671,"lon":133.23626,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1270890872","name":"秋葉神社","lat":34.57244,"lon":133.2289,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1270908259","name":"稲荷神社","lat":34.55984,"lon":133.24841,"pref":"広島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3717907237","name":"三所神社","lat":33.88252,"lon":133.93395,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"さんしょじんじゃ"},
+{"id":"osm:node:7448249585","name":"高靇神社","lat":33.88457,"lon":133.7559,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7448251685","name":"持性院","lat":33.87899,"lon":133.75422,"pref":"徳島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

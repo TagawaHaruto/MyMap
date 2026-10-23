@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:8463065859","name":"中野川耕地整理組合記念碑","lat":33.12284,"lon":133.13332,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065860","name":"耕地整理紀念碑","lat":33.04333,"lon":133.06683,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065861","name":"安政南海地震伝承碑","lat":33.03267,"lon":133.0791,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065862","name":"南海大地震の碑","lat":33.02259,"lon":133.01448,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065863","name":"安政津浪の碑","lat":33.02264,"lon":133.01455,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065866","name":"明治二十三年水測標","lat":33.24269,"lon":133.13164,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065868","name":"明治弐参年水測票","lat":33.22088,"lon":133.12451,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6140762427","name":"旅籠屋四万十店","lat":33.22965,"lon":133.14857,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6905122286","name":"まるか旅館","lat":33.21164,"lon":133.1362,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10810960648","name":"Surf House Realista","lat":33.03767,"lon":133.02339,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11377475869","name":"ゲストハウスまぁる","lat":33.03575,"lon":133.07643,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"へんろほうせまある"},
+{"id":"osm:node:12901241596","name":"木のホテル","lat":33.21011,"lon":133.13437,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:297158470","name":"ネスト・ウエストガーデン土佐","lat":33.01886,"lon":133.01222,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1317150632","name":"Sou Town Hostel","lat":33.21257,"lon":133.13654,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1462967528","name":"土佐佐賀温泉","lat":33.13741,"lon":133.12507,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://kobushinosato-kuroshio.jp/","note":"宿","g":"heritage","k":"lodging","kana":"とささがおんせん"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:331172771","name":"観音山公園","lat":32.06904,"lon":131.50199,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:390933201","name":"富田浜公園","lat":32.07117,"lon":131.51206,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1301811095","name":"百年庭","lat":32.13016,"lon":131.50827,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1301886800","name":"宮崎県農業科学公園 ルピナスパーク","lat":32.17087,"lon":131.5207,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1485651019","name":"川南町運動公園","lat":32.19236,"lon":131.53196,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1271951422","name":"たかしんホール 高鍋町中央公民館","lat":32.13134,"lon":131.50526,"pref":"宮崎","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

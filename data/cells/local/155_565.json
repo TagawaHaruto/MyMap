@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:8356427525","name":"小山魚店","lat":38.92126,"lon":141.33895,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9348309411","name":"恒春園茶舗","lat":38.91753,"lon":141.33265,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9348332493","name":"岩井魚店","lat":38.92046,"lon":141.33674,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9349891216","name":"有限会社北進冷蔵","lat":38.92419,"lon":141.34432,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6344755090","name":"一関市 千厩アイスアリーナ","lat":38.92468,"lon":141.36054,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8353798344","name":"千厩体育館","lat":38.91684,"lon":141.33777,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:483627707","name":"大東体育館","lat":38.99875,"lon":141.32514,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:584815492","name":"室根体育館","lat":38.9345,"lon":141.44642,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:585008062","name":"東山Ｂ＆Ｇ海洋センター","lat":38.99922,"lon":141.25055,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:585012439","name":"藤沢Ｂ＆Ｇ海洋センター","lat":38.85724,"lon":141.36169,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:585013460","name":"藤沢スポーツプラザ","lat":38.86785,"lon":141.35099,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:585016714","name":"藤沢スポーツランド","lat":38.87984,"lon":141.34976,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:589924340","name":"体育館","lat":38.89765,"lon":141.26996,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12175676357","name":"黄金山キャンプ場","lat":38.86888,"lon":141.39825,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0191-52-2496"},
+{"id":"osm:node:14286234793","name":"アストロ・ロマン大東","lat":38.99424,"lon":141.46526,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0191-72-2860"},
+{"id":"osm:node:14286234799","name":"黄金山キャンプ場","lat":38.90207,"lon":141.38187,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0191-52-2496"},
+{"id":"osm:node:14286240355","name":"グリーンキャンプなかだ","lat":38.75151,"lon":141.27283,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0220-34-2812"},
+{"id":"osm:way:799290684","name":"飛ヶ森キャンプ場","lat":38.97498,"lon":141.42283,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0191-56-2950"},
+{"id":"osm:way:799290693","name":"望洋平キャンプ場","lat":38.97383,"lon":141.45194,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0191-64-3701"},
+{"id":"osm:way:799290694","name":"望洋平オートキャンプ場","lat":38.97493,"lon":141.45171,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:799290695","name":"望洋平キャンプ場","lat":38.97514,"lon":141.45133,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

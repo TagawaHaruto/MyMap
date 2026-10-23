@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2670155425","name":"HYOD","lat":34.72483,"lon":137.77361,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"https://hyod-products.com/","note":"バイク用品","g":"hobby","k":"hobby","oh":"We-Mo 10:00-20:00","tel":"053-465-8282"},
+{"id":"osm:node:2683153771","name":"コーエー","lat":34.72106,"lon":137.76674,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2683153773","name":"レッドバロン","lat":34.71868,"lon":137.76306,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3688910729","name":"カメラのキタムラ","lat":34.71779,"lon":137.75423,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"カメラ","g":"hobby","k":"hobby"},
+{"id":"osm:node:4686460791","name":"YSP浜松","lat":34.72048,"lon":137.75075,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4899482705","name":"海野商会","lat":34.74823,"lon":137.92263,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5918614417","name":"アニメイト","lat":34.74011,"lon":137.76274,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/hamamatsuichino/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"09:00-22:00","tel":"053-411-3081"},
+{"id":"osm:node:6333052426","name":"モトライフタカハシ","lat":34.68037,"lon":137.98455,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","oh":"10:00-17:00"},
+{"id":"osm:node:6333066515","name":"テラホンダ販売","lat":34.68388,"lon":137.90068,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","oh":"09:00-18:00"},
+{"id":"osm:node:6467162813","name":"宮脇書店磐田浅羽店","lat":34.67939,"lon":137.92291,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"https://www.miyawakishoten.com/store/shinetsu_tokai/shizuoka/2243711150.html","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-22:00"},
+{"id":"osm:node:6467690719","name":"キングファミリー","lat":34.67788,"lon":137.96965,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"10:00-19:30"},
+{"id":"osm:node:13204116801","name":"ブックオフ浜松芳川店","lat":34.68925,"lon":137.75578,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13243348310","name":"サイクルベースあさひ浜松店","lat":34.71492,"lon":137.75779,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13611060899","name":"SPOPIAシラトリ","lat":34.72381,"lon":137.76183,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:14086656342","name":"レジャーフィールド","lat":34.73507,"lon":137.75981,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:14086656343","name":"サイクル フィールド","lat":34.73489,"lon":137.75984,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:194581583","name":"スーパースポーツゼビオ","lat":34.72553,"lon":137.76688,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:435930033","name":"人形の南遠","lat":34.67517,"lon":137.9774,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:554589488","name":"総合リサイクルショップ ピックアップ","lat":34.72284,"lon":137.76487,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:561519687","name":"バイク用品専門店 ナップス 浜松店","lat":34.72694,"lon":137.76686,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:984895471","name":"モンベル 浜松店","lat":34.72372,"lon":137.76253,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"}
+]

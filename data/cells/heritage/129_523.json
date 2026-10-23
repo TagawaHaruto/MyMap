@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4003472419","name":"飛行機","lat":32.27266,"lon":130.99883,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4003538838","name":"戦没者慰霊碑","lat":32.28491,"lon":130.97861,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463045879","name":"災害復興記念碑","lat":32.43463,"lon":130.86016,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14114591006","name":"九州自動車道 八代～人吉間4車線化完成記念碑","lat":32.26194,"lon":130.7686,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4511370846","name":"ブルートレインたらき","lat":32.26241,"lon":130.93251,"pref":"熊本","genres":["lodging"],"indoor":true,"url":"https://www.bluetrain-taragi.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 966 42 1120"},
+{"id":"osm:way:365543326","name":"椎葉旅館","lat":32.28181,"lon":130.98028,"pref":"熊本","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

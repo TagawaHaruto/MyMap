@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4345315743","name":"無人島キャンプ場 ありが島","lat":33.9177,"lon":132.46484,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:5585712548","name":"陸奥野営場","lat":33.95008,"lon":132.43799,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287528331","name":"周防大島町青少年旅行村","lat":33.94163,"lon":132.40424,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0820-75-0260"},
+{"id":"osm:node:14287528335","name":"大島ビーチファミリー","lat":33.92862,"lon":132.44174,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0820-75-1803"},
+{"id":"osm:node:14287563773","name":"片添ヶ浜海浜公園オートキャンプ場","lat":33.89633,"lon":132.36073,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0820-78-0986"}
+]

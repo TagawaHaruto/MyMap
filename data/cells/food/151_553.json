@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:11484337480","name":"ちょぼくり","lat":37.87543,"lon":138.33674,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:12119386371","name":"真野カミノ","lat":37.96572,"lon":138.34591,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"スペイン料理","g":"food","k":"restaurant"},
+{"id":"osm:way:682869713","name":"しまふうみ","lat":37.93997,"lon":138.30734,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:697313435","name":"丸美亭","lat":37.99998,"lon":138.32205,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1115140724","name":"福寿し","lat":37.99989,"lon":138.32209,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1170040581","name":"ファミリーレストラン たいがあ","lat":37.97376,"lon":138.35967,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1171661717","name":"レストラン こさど","lat":37.96775,"lon":138.34635,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Th-Mo 11:00-14:00,17:00-21:00"},
+{"id":"osm:way:1173060788","name":"いとう","lat":37.99864,"lon":138.32347,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1194288733","name":"りか亭","lat":37.8451,"lon":138.31358,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11484337479","name":"おいしいドーナツ タガヤス堂","lat":37.8755,"lon":138.3367,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:1172688855","name":"パンピーノ","lat":37.99778,"lon":138.3282,"pref":"新潟","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:1171661761","name":"たつみ","lat":37.9672,"lon":138.34534,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:1171661809","name":"割烹ごしま","lat":37.96712,"lon":138.34493,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:1194288606","name":"炭火串焼 えん萬","lat":37.84635,"lon":138.31353,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

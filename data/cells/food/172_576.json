@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:9112893064","name":"レストラン　たんちょう","lat":43.04532,"lon":144.1963,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9112893065","name":"和食・拉麺 北斗","lat":43.0453,"lon":144.19624,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1301978776","name":"あっかんべぇ〜","lat":43.22044,"lon":144.13678,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.akkanbay.com/akkanbay","note":"アイス","g":"food","k":"sweets","kana":"あっかんべぇ〜","oh":"Tu-Su 10:00-16:00","tel":"+81 154 68 5188"}
+]

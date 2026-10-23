@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:5326556521","name":"佐敷城跡","lat":32.302,"lon":130.50289,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1827561502","name":"金波廊","lat":32.43282,"lon":130.57388,"pref":"熊本","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

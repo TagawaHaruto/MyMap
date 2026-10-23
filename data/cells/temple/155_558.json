@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5038255940","name":"常福寺","lat":38.76171,"lon":139.73189,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5038260847","name":"石切鶴岡神社","lat":38.76753,"lon":139.7352,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5038260848","name":"安養寺","lat":38.76314,"lon":139.7362,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5038260853","name":"浄禪寺","lat":38.76005,"lon":139.73272,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5038261026","name":"少林寺","lat":38.76233,"lon":139.73635,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5038261027","name":"龍宮寺","lat":38.76415,"lon":139.73445,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5038261029","name":"極楽寺","lat":38.75998,"lon":139.73381,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5038261030","name":"春日神社","lat":38.76198,"lon":139.73123,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5038275722","name":"熊野神社","lat":38.77129,"lon":139.74185,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5038276921","name":"皇大神社","lat":38.77528,"lon":139.74876,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5038555250","name":"潮連寺","lat":38.7567,"lon":139.72084,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6918338761","name":"菩薩大蔵地命延","lat":38.77434,"lon":139.74632,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6918347790","name":"正一位稲荷大明神","lat":38.77438,"lon":139.74625,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:804906065","name":"新山神社","lat":38.75921,"lon":139.72495,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

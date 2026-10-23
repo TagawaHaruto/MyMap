@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:11306787969","name":"天幕駅跡","lat":43.85815,"lon":142.82571,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11307159970","name":"上越駅跡","lat":43.88847,"lon":142.99208,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13190599828","name":"Anshindo Micro Hotel","lat":43.8496,"lon":142.76901,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://efc.hokkaido.jp/anshindo","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:375228181","name":"さつき荘","lat":43.84339,"lon":142.77516,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:8968501399","name":"鰺ヶ沢町奉行所跡","lat":40.77982,"lon":140.20672,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11064490169","name":"わさお","lat":40.77954,"lon":140.21052,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11064490170","name":"赤い靴","lat":40.7795,"lon":140.21065,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11064490172","name":"白神山地 世界遺産登録認定書","lat":40.77945,"lon":140.21081,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11064490173","name":"認定書訳文","lat":40.77944,"lon":140.21085,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1847437140","name":"民宿 望洋館","lat":40.76813,"lon":140.05469,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:803350412","name":"鰺ヶ沢温泉 水軍の宿","lat":40.7742,"lon":140.22015,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

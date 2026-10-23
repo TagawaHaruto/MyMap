@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:10120418027","name":"七ツ池自然公園","lat":34.60449,"lon":133.23514,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:11480777400","name":"南の丘公園","lat":34.56265,"lon":133.2304,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:482765425","name":"府中公園","lat":34.58056,"lon":133.23205,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:482768758","name":"上下運動公園","lat":34.70099,"lon":133.11814,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1009941344","name":"見晴北児童公園","lat":34.58127,"lon":133.23783,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1009941346","name":"見晴南児童公園","lat":34.57891,"lon":133.23436,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1009947689","name":"ひこうき公園","lat":34.58,"lon":133.23923,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1009947690","name":"府中公園","lat":34.58202,"lon":133.23257,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1010151443","name":"古府の森スポーツグラウンド体育館","lat":34.58115,"lon":133.23404,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1057772733","name":"世羅高原農場","lat":34.65567,"lon":133.04327,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1105987505","name":"七ツ池自然公園","lat":34.60182,"lon":133.23411,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1236153974","name":"ふれあいグラウンドゴルフ","lat":34.55967,"lon":133.23812,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1270843553","name":"府川児童公園","lat":34.5683,"lon":133.23571,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1270908265","name":"下桶掛児童公園","lat":34.56155,"lon":133.24545,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5701390853","name":"桜ヶ丘グランド","lat":34.5816,"lon":133.24547,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

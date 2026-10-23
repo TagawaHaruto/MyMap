@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:612650296","name":"大黒屋魚店","lat":35.18074,"lon":133.09051,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:612650309","name":"大黒屋魚店","lat":35.18056,"lon":133.09033,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1051723735","name":"JAしまね やすぎ地区本部 比田店","lat":35.24066,"lon":133.1361,"pref":"島根","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1051723734","name":"比田いきいき交流館","lat":35.24022,"lon":133.13552,"pref":"島根","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4674130182","name":"奥出雲町立中央公民館","lat":35.19706,"lon":133.007,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285780092","name":"ひろしま県民の森キャンプ場","lat":35.06924,"lon":133.07396,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://hiroshima-kenmori.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0824-84-2020"},
+{"id":"osm:node:14287372346","name":"ゆきんこ村オートキャンプ場","lat":35.20968,"lon":133.20768,"pref":"鳥取","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0859-87-0431"},
+{"id":"osm:node:14287402804","name":"吾妻山大膳原キャンプ場","lat":35.12545,"lon":133.04582,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0854-54-1221"},
+{"id":"osm:node:14287405194","name":"三井野原オートキャンプ場","lat":35.08951,"lon":133.11564,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0854-52-3100"},
+{"id":"osm:node:14287449508","name":"道後山キャンプ場","lat":35.06796,"lon":133.21505,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0824-82-2727"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:558488490","name":"地方卸売市場","lat":44.16395,"lon":142.3809,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:558490298","name":"スーパーアークス","lat":44.17464,"lon":142.39902,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:291469633","name":"和寒東山スキー場","lat":44.03682,"lon":142.41748,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:558513227","name":"スポーツ研究場","lat":44.17104,"lon":142.39756,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1159636426","name":"和寒町営球場","lat":44.01397,"lon":142.41482,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.town.wassamu.hokkaido.jp/school-board/facility/stadium/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6751552685","name":"つくも水郷公園キャンプ場","lat":44.189,"lon":142.40486,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0165-23-2224"},
+{"id":"osm:node:10015152067","name":"ふれあいのもりキャンプ場","lat":44.01353,"lon":142.42133,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://wassamutaikyo.com/hureainomori/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10765917692","name":"三笠山自然公園内キャンプ場","lat":44.00884,"lon":142.41983,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.town.wassamu.hokkaido.jp/industrial-development/commerce-tourism/attractions/mikasayama-park-campground/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287644553","name":"焚き火キャンプ場　士別ペコラ","lat":44.15967,"lon":142.40439,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://pecora.jp/camp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-5152-3619"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4440181192","name":"ピッケル","lat":36.24609,"lon":137.63547,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5652689085","name":"ショップ白樺","lat":36.24914,"lon":137.63758,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6594028084","name":"アルプラザ","lat":36.19102,"lon":137.55178,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6832392885","name":"上高地のおみやげや","lat":36.24853,"lon":137.63807,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 263 95 2111"},
+{"id":"osm:way:191022641","name":"平湯産直市場","lat":36.19112,"lon":137.55214,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"ひらゆさんちょくいちば"},
+{"id":"osm:way:699421616","name":"白骨斎藤売店","lat":36.15246,"lon":137.62729,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:786007238","name":"エコー乗鞍","lat":36.12133,"lon":137.62389,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3612137778","name":"一の瀬キャンプ場 (ichinose camp area)","lat":36.10355,"lon":137.61681,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7913041445","name":"平湯キャンプ場","lat":36.18349,"lon":137.55107,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285430003","name":"乗鞍BASE","lat":36.11969,"lon":137.6415,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285746941","name":"AiMiX南乗鞍BASE","lat":36.05679,"lon":137.53255,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-59-3500"},
+{"id":"osm:node:14285746942","name":"飛騨たかね野麦オートビレッジ","lat":36.05426,"lon":137.55531,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-59-2577"},
+{"id":"osm:node:14286830179","name":"ヒトハリ","lat":36.23974,"lon":137.52809,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"http://hitohari.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286852441","name":"奥飛騨リバーサイドキャンプ場","lat":36.24505,"lon":137.5075,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0578-89-2588"},
+{"id":"osm:node:14286866933","name":"やまぶきキャンプ","lat":36.12313,"lon":137.61716,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286866934","name":"美鈴温泉オートキャンプ場","lat":36.12305,"lon":137.63808,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://misuzu-camp.norikura.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286866935","name":"ペンションマドンナ ペットとキャンプ","lat":36.1227,"lon":137.6522,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.madonna-norikura.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286878818","name":"乗鞍BASE いがやレクリエーションランド","lat":36.11997,"lon":137.6426,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://norikurabase.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0263-88-0300"},
+{"id":"osm:node:14286878835","name":"高ソメキャンプ場","lat":36.07842,"lon":137.69496,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0263-79-2919"},
+{"id":"osm:node:14286896711","name":"ヴィレッジファインオートキャンプ場","lat":36.04416,"lon":137.7081,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0263-79-2787"},
+{"id":"osm:node:14286896712","name":"ウッディ・もっく","lat":36.04245,"lon":137.7011,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://mock.furusatonagawa.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0263-79-2770"}
+]

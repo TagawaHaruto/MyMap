@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6377370591","name":"かわぎし釣具店","lat":35.38311,"lon":140.38783,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6377385687","name":"三芳堂","lat":35.37597,"lon":140.36219,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6377385688","name":"小林釣具店","lat":35.37427,"lon":140.36438,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:11368160247","name":"TSUTAYA","lat":35.43104,"lon":140.31017,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:288655689","name":"アタック5茂原早野店","lat":35.41577,"lon":140.28763,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:597394001","name":"WonderREX","lat":35.4598,"lon":140.30082,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:597394002","name":"UJackキャンプストア&カフェ茂原店","lat":35.45952,"lon":140.30009,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1234553128","name":"ブックオフ","lat":35.43637,"lon":140.28731,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1242085670","name":"釣具のキャスティング 茂原店","lat":35.44576,"lon":140.29512,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:1242654239","name":"レッドバロン","lat":35.44553,"lon":140.29454,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

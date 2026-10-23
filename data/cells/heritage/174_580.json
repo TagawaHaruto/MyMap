@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6612929027","name":"４島返れ","lat":43.53217,"lon":145.23773,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5154652086","name":"ホテル アルファー","lat":43.55307,"lon":145.00232,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5154657588","name":"ホテル ベルサイユ","lat":43.59156,"lon":145.04496,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:431827188","name":"楠旅館","lat":43.64993,"lon":145.13712,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:708073074","name":"ホテルマルエー温泉俵橋館","lat":43.57457,"lon":145.01674,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.aurens.or.jp/~maruei2/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるまるえーおんせんたわらばしかん","tel":"+81 153 78 7888"},
+{"id":"osm:way:1217087040","name":"ホテルクテクン","lat":43.56806,"lon":145.00923,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://hotelkutekun.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるくてくん","tel":"+81 153 76 2048"},
+{"id":"osm:way:1217087042","name":"ビジネスホテルアルムもみの木","lat":43.56342,"lon":145.00083,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://arm-mominoki.com/","note":"宿","g":"heritage","k":"lodging","kana":"びじねすほてる あるむ もみのき"}
+]

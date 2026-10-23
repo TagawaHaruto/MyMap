@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:431106752","name":"Kamizaka Park","lat":34.24286,"lon":129.2857,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:489192544","name":"漁火公園","lat":34.20533,"lon":129.29761,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:624149779","name":"今屋敷公園","lat":34.20313,"lon":129.28993,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:483042068","name":"croquet pitch","lat":34.24254,"lon":129.31366,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

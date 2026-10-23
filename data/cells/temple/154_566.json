@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:5168670822","name":"田の浦旭岡八幡神社","lat":38.73655,"lon":141.54605,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5965562066","name":"稲荷神社","lat":38.71875,"lon":141.52952,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7720646792","name":"二渡神社","lat":38.6364,"lon":141.50741,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7720649492","name":"清水寺","lat":38.6339,"lon":141.51028,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8451979317","name":"熊野神社","lat":38.60451,"lon":141.50099,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"くまのじんじゃ"},
+{"id":"osm:node:8452006620","name":"瀧泉院","lat":38.53188,"lon":141.51026,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8452007120","name":"船魂神社","lat":38.53251,"lon":141.51063,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8452037817","name":"山祇神社","lat":38.53103,"lon":141.50048,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:415183823","name":"三島神社","lat":38.71724,"lon":141.52414,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:888036931","name":"地福寺","lat":38.60483,"lon":141.50293,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

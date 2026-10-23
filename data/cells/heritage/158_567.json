@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:4281960995","name":"牧庵鞭牛和尚生誕の地","lat":39.61945,"lon":141.80098,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6370164840","name":"災害復旧工事記念","lat":39.63829,"lon":141.95675,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6370164841","name":"西國順禮塔","lat":39.63505,"lon":141.96224,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6370164847","name":"幕軍無名戦士の墓","lat":39.63508,"lon":141.96222,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6370164849","name":"三陸大海嘯記念碑","lat":39.63365,"lon":141.96279,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6370164850","name":"海嘯紀念碑","lat":39.63366,"lon":141.96279,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6370164851","name":"西國順禮塔","lat":39.63369,"lon":141.96279,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6370174239","name":"津波到達地","lat":39.64144,"lon":141.94718,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6611667644","name":"馬頭観世音","lat":39.58283,"lon":141.93905,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6611667645","name":"西国順禮塔","lat":39.58284,"lon":141.93907,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378054385","name":"大海嘯記念","lat":39.73608,"lon":141.96567,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378054393","name":"大海嘯記念","lat":39.65263,"lon":141.97835,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1205255790","name":"ビックウェーブ","lat":39.63985,"lon":141.94901,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7836575686","name":"湯ったり館","lat":39.61566,"lon":141.79388,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","oh":"Mo-Su 10:00-22:00","tel":"0193-72-3800"},
+{"id":"osm:node:13773367601","name":"Guest House Minato","lat":39.64177,"lon":141.94891,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:104223660","name":"末広館","lat":39.64142,"lon":141.94776,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:238734179","name":"近江屋","lat":39.62829,"lon":141.96508,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1049347426","name":"休暇村陸中宮古","lat":39.68419,"lon":141.98354,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"https://www.qkamura.or.jp/miyako/","note":"宿","g":"heritage","k":"lodging"}
+]

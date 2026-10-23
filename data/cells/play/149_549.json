@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:700648731","name":"うじま公園","lat":37.44164,"lon":137.30451,"pref":"石川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:700653933","name":"小泊農村公園","lat":37.45437,"lon":137.35898,"pref":"石川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1236252323","name":"ゆとりーとパーク","lat":37.44504,"lon":137.26976,"pref":"石川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1237206242","name":"鉢ヶ崎総合公園","lat":37.44361,"lon":137.32583,"pref":"石川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:11486849634","name":"珠洲市立武道館","lat":37.44706,"lon":137.27042,"pref":"石川","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:node:11486849635","name":"珠洲市立県民体育館","lat":37.44649,"lon":137.27033,"pref":"石川","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:402598030","name":"ラポルトすず","lat":37.43337,"lon":137.26134,"pref":"石川","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse","wp":"ja:ラポルトすず"}
+]

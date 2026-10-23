@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4171015133","name":"八雲東店","lat":35.40036,"lon":132.68437,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5259099421","name":"NAMI","lat":35.39727,"lon":132.68412,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8076471517","name":"手打ちそば えにし","lat":35.39546,"lon":132.68649,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8076666317","name":"出雲そば 八雲","lat":35.39974,"lon":132.68304,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11502773940","name":"とれとれ海鮮丼 マルセン","lat":35.3956,"lon":132.68648,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"とれとれかいせんどんまるせん"},
+{"id":"osm:node:12488022922","name":"OKB Burger","lat":35.35906,"lon":132.73011,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant","wc":"limited"},
+{"id":"osm:node:13916849501","name":"日本海のどぐろ","lat":35.39621,"lon":132.68627,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:415475621","name":"ガスト渡橋店","lat":35.3661,"lon":132.7465,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:416332843","name":"松の屋","lat":35.40059,"lon":132.68418,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:418197858","name":"炭火焼肉屋さかい","lat":35.36587,"lon":132.74563,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:418250412","name":"無添くら寿司","lat":35.36751,"lon":132.74017,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:492114057","name":"ぐるめ幸洋","lat":35.43237,"lon":132.62982,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1219250931","name":"海鮮丼の店 まの商店","lat":35.43244,"lon":132.62958,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1344807605","name":"看雲楼","lat":35.3983,"lon":132.68257,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1353664887","name":"出雲・湖陵クリフバーガー","lat":35.30563,"lon":132.64716,"pref":"島根","genres":["food"],"indoor":true,"url":"https://windyfarm.jp/cliff-burger/","note":"ハンバーガー","g":"food","k":"restaurant","wc":"yes"},
+{"id":"osm:node:4171015135","name":"縁","lat":35.40027,"lon":132.68437,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8076039517","name":"okinogami blue cacao's","lat":35.39537,"lon":132.68738,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:8076040217","name":"福乃和","lat":35.39594,"lon":132.68646,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11302145681","name":"cafe大宮","lat":35.42908,"lon":132.62894,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:492114051","name":"モスバーガー 出雲ドーム店","lat":35.38258,"lon":132.73939,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:4138195633","name":"暖簾","lat":35.39729,"lon":132.6901,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub","chain":true}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2356893114","name":"味方村","lat":42.12691,"lon":142.93393,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2356893117","name":"弁慶","lat":42.12683,"lon":142.93409,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2356911135","name":"喜味乃屋","lat":42.1274,"lon":142.93592,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3088991457","name":"やなぎ","lat":42.16155,"lon":142.77464,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"やなぎ"},
+{"id":"osm:node:3088991458","name":"らーめん横町MIO店","lat":42.16211,"lon":142.77536,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant","kana":"らーめんよこちょうみおてん"},
+{"id":"osm:node:12008721497","name":"ラーメンまさご","lat":42.17676,"lon":142.76074,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"Tu-Su 11:00-15:00,17:00-20:00","wc":"no"},
+{"id":"osm:node:12143444568","name":"Jian","lat":42.17729,"lon":142.76108,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","oh":"Mo,We-Su 11:30-14:00,17:30-21:00; Tu off"},
+{"id":"osm:node:12143444569","name":"ラーメン八雲","lat":42.17628,"lon":142.76323,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"Mo off; Tu-Sa 11:00-14:00,17:00-20:00; Su 11:00-14:00","wc":"no"},
+{"id":"osm:node:12357313301","name":"かど天","lat":42.17578,"lon":142.76208,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Sa 11:30-13:30,17:00-22:00"},
+{"id":"osm:way:830328042","name":"喰処・呑処 天馬","lat":42.14246,"lon":142.83451,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Sa 11:00-14:00,17:30-21:00; Su off","tel":"+81-146-28-1443"},
+{"id":"osm:way:832926355","name":"マールワール","lat":42.16376,"lon":142.7743,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant","oh":"Mo,We-Fr 11:00-15:00,17:00-21:00; Sa,Su,PH 11:00-21:00; Tu off","tel":"+81-146-22-7717"},
+{"id":"osm:node:3088982502","name":"てどり","lat":42.16096,"lon":142.77597,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:2356893096","name":"○楽","lat":42.12679,"lon":142.93402,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

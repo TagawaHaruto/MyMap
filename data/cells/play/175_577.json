@@ -1,0 +1,18 @@
+[
+{"id":"osm:way:294458951","name":"ゆりの郷 こしみず リリーパーク","lat":43.85894,"lon":144.44885,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:439118538","name":"潮見２丁目公園","lat":43.9992,"lon":144.2579,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:440164006","name":"潮見緑地","lat":43.99704,"lon":144.25847,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:440164036","name":"潮見11丁目公園","lat":43.99342,"lon":144.26016,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:440443125","name":"潮見第４公園","lat":43.9961,"lon":144.26134,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:472613983","name":"羽衣公園","lat":43.99074,"lon":144.28155,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"はごろもこうえん"},
+{"id":"osm:way:488489996","name":"緑とチーズの里ふれあいパーク","lat":43.83943,"lon":144.28781,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:593248862","name":"ひがしもこと芝桜公園","lat":43.78293,"lon":144.31235,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:720684084","name":"白鳥公園","lat":43.9526,"lon":144.35884,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:906800852","name":"語らい公園","lat":43.99337,"lon":144.28724,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"かたらいこうえん"},
+{"id":"osm:way:1352332255","name":"オホーツク児童公園","lat":43.98686,"lon":144.28078,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"おほーつくじどうこうえん"},
+{"id":"osm:way:1352332256","name":"ファミリーポケット公園","lat":43.99056,"lon":144.2787,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ふぁみりーぽけっとこうえん"},
+{"id":"osm:way:1352332258","name":"つくし3丁目西公園","lat":43.99338,"lon":144.28131,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"つくしさんちょうめにしこうえん"},
+{"id":"osm:way:1378910862","name":"こまば木のひろば","lat":43.99947,"lon":144.28908,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"こまばきのひろば","pk":2},
+{"id":"osm:node:14225727996","name":"ジム＆スタジオ ホッタス","lat":43.8568,"lon":144.46255,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports","kana":"じむあんどすたじおほったす","oh":"Mo-We, Fr 05:00-21:00; Sa 05:00-20:00; Su, PH 05:00-18:00; Th off","tel":"+81 152-67-6270"},
+{"id":"osm:way:488831467","name":"こしみずサンプール","lat":43.85314,"lon":144.46877,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports","kana":"こしみずさんぷーる"}
+]

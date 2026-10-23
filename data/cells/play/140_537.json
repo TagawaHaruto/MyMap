@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:970056579","name":"栄々人来","lat":35.153,"lon":134.44407,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:8976865780","name":"千種B&G海洋センター","lat":35.1506,"lon":134.44368,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

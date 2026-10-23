@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:559273202","name":"竜宮公園","lat":33.72263,"lon":134.53974,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:777483828","name":"みなみらい広場公園","lat":33.73392,"lon":134.53272,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","oh":"sunrise-sunset"},
+{"id":"osm:way:777689795","name":"日和佐川水際公園","lat":33.73336,"lon":134.53258,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:777484566","name":"みなみらいグラウンド","lat":33.73472,"lon":134.53228,"pref":"徳島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

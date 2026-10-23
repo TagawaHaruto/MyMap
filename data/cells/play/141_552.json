@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:878104520","name":"便ヶ島森林公園","lat":35.38478,"lon":138.09174,"pref":"長野","genres":["play"],"indoor":false,"url":"https://minami-alps-br.org/travel_guide/detail/location_07/tourist_facility/tourist_facility05.html","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:952926325","name":"程野お池レクリエーションの森","lat":35.45094,"lon":138.01751,"pref":"長野","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:954095915","name":"Highlands Shirabiso","lat":35.43365,"lon":138.02907,"pref":"長野","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4274827131","name":"瀬戸口近代車商会","lat":31.73796,"lon":130.7627,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"せとぐちきんだいしゃ","oh":"Mo 09:00-19:00; Tu off; We off; Th-Su 09:00-19:00"},
+{"id":"osm:node:7537593585","name":"ホンダドリーム霧島","lat":31.7277,"lon":130.77543,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:658706897","name":"ブックオフ","lat":31.74212,"lon":130.768,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1017154852","name":"サンサンランド","lat":31.73866,"lon":130.7517,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:1265775529","name":"レッドバロン","lat":31.73521,"lon":130.76805,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1324055620","name":"TSUTAYA","lat":31.73732,"lon":130.75438,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

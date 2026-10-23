@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:12169285152","name":"稲庭キャンプ場","lat":40.18932,"lon":141.05346,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286218502","name":"高森高原キャンプ場","lat":40.1718,"lon":141.19661,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0195-33-1211"},
+{"id":"osm:node:14286218504","name":"稲庭岳キャンプ場","lat":40.14925,"lon":141.08399,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0195-38-2211"},
+{"id":"osm:node:14286218506","name":"いわて子どもの森","lat":40.07576,"lon":141.18449,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0195-35-3888"}
+]

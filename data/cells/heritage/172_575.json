@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:7708981942","name":"白糠線 上茶路駅跡","lat":43.09886,"lon":143.90238,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7709044343","name":"白糠線 下北進駅跡","lat":43.14079,"lon":143.88338,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7709049001","name":"白糠線 北進駅跡","lat":43.16038,"lon":143.89601,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7709080524","name":"白糠線 縫別駅跡","lat":43.07631,"lon":143.96201,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:425117274","name":"縫別自然の家","lat":43.07783,"lon":143.96784,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","oh":"May 01-Oct 31"}
+]

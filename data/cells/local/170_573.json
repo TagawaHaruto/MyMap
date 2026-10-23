@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:427155876","name":"ナウマン公園パークゴルフ場 チャンピオンコース","lat":42.55796,"lon":143.30231,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427155878","name":"ナウマン公園パークゴルフ場 ファミリーコース","lat":42.55696,"lon":143.30031,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13099299004","name":"さらべつカントリーパーク","lat":42.6263,"lon":143.30213,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:427155877","name":"ナウマン公園キャンプ場","lat":42.55689,"lon":143.30325,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1122835264","name":"晩成温泉キャンプ場","lat":42.5331,"lon":143.48402,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.town.taiki.hokkaido.jp/soshiki/kikaku/shoko/bansei_onsen.html","note":"キャンプ・野外","g":"local","k":"camp","kana":"ばんせいおんせんきゃんぷじょう"},
+{"id":"osm:way:1547363260","name":"ナウマン公園キャンプ場","lat":42.55779,"lon":143.30077,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1547363624","name":"ナウマン公園キャンプ場","lat":42.5566,"lon":143.30123,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6832289716","name":"大孫商店","lat":33.76863,"lon":135.31972,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6832290398","name":"大阪屋魚店","lat":33.76921,"lon":135.32,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:307286642","name":"物産販売所","lat":33.80338,"lon":135.42759,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"0739-36-0301"},
+{"id":"osm:way:243521012","name":"ラ・グレースゴルフ倶楽部和歌山コース　(La Grace Golf Club Wakayama Course)","lat":33.86001,"lon":135.27746,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:247016781","name":"レオグラードゴルフクラブ","lat":33.93597,"lon":135.29585,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7827969685","name":"猪谷川水辺公園","lat":33.96773,"lon":135.42182,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913290","name":"鳴滝オートキャンプ場","lat":33.94926,"lon":135.30093,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0738-54-0295"},
+{"id":"osm:node:14287522832","name":"秘境キャンプ千里の浜","lat":33.773,"lon":135.29479,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://gongendaira.com/camp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287528329","name":"第二鳴滝キャンプ場","lat":33.9562,"lon":135.30299,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0738-54-0084"},
+{"id":"osm:node:14287563765","name":"宮代オートキャンプ場(ふれあいの里龍神)","lat":33.92687,"lon":135.4792,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0739-78-8080"}
+]

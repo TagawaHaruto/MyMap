@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:13133030592","name":"ぬいぐるみ","lat":41.07787,"lon":141.24721,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1212436827","name":"横浜町トレーニングセンター","lat":41.07846,"lon":141.24841,"pref":"青森","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"}
+]

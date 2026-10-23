@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:9112893059","name":"SHINE BLESS","lat":43.04529,"lon":144.19633,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9112893060","name":"Butler","lat":43.04526,"lon":144.19625,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9112893061","name":"ANA FESTA","lat":43.04527,"lon":144.19629,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9112893062","name":"JALUX BLUE SKY","lat":43.04525,"lon":144.19621,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9112893063","name":"たんばや","lat":43.04524,"lon":144.19617,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6253291292","name":"釧路空港ゴルフクラブ","lat":43.02769,"lon":144.21301,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6253299097","name":"阿寒カントリークラブ","lat":43.11485,"lon":144.15124,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:785904292","name":"阿寒町スポーツセンター","lat":43.11377,"lon":144.12306,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"あかんちょうすぽーつせんたー","tel":"+81 154 66 3653"},
+{"id":"osm:node:5963994732","name":"釧路市山花公園オートキャンプ場","lat":43.08842,"lon":144.23214,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286104944","name":"あかんランド丹頂の里キャンプ場","lat":43.14426,"lon":144.14497,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0154-66-3810"}
+]

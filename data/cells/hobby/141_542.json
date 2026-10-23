@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:753373883","name":"タカイサイクルセンター","lat":35.49924,"lon":135.74371,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:753374575","name":"ゲオ小浜店","lat":35.49617,"lon":135.74851,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:way:753374948","name":"創楽堂","lat":35.49639,"lon":135.74538,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:753377417","name":"三洋堂書店小浜店","lat":35.49239,"lon":135.749,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:956657774","name":"パチンコ パーラーとうえい","lat":35.07779,"lon":137.69428,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:1313793234","name":"宝文堂書店","lat":35.0676,"lon":137.7002,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:1313820265","name":"パチンコラッキースマイル","lat":35.07256,"lon":137.70017,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:1660069985","name":"松下書店","lat":35.09658,"lon":137.56948,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:1660253083","name":"福沢書店","lat":35.09782,"lon":137.57129,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

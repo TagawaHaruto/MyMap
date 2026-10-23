@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:3287832961","name":"CYCLE BASE ASAHI 久留米合川店","lat":33.32155,"lon":130.54962,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","tel":"0942-41-1551"},
+{"id":"osm:node:3862398671","name":"ツタヤ上津店","lat":33.28807,"lon":130.5288,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:4104351003","name":"紀伊国屋書店 久留米店","lat":33.32177,"lon":130.53978,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"0942-45-7170"},
+{"id":"osm:node:4362491498","name":"BOOKOFF 楽市街道くるめ店","lat":33.31935,"lon":130.54284,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"0942-45-6789"},
+{"id":"osm:node:4458973793","name":"ブックオフ","lat":33.28497,"lon":130.51101,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4544436094","name":"FreeRide","lat":33.313,"lon":130.52323,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4730177935","name":"鳥栖スポーツ","lat":33.3778,"lon":130.51824,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4730184664","name":"塚原旗商会","lat":33.37777,"lon":130.51715,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:5875755789","name":"らしんばん","lat":33.48081,"lon":130.52637,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"https://www.lashinbang.com/store/chikushino/","note":"ホビー・模型","g":"hobby","k":"hobby","oh":"09:00-21:00","tel":"092-918-1351"},
+{"id":"osm:node:5923392959","name":"アニメイト","lat":33.48093,"lon":130.52642,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/chikushino/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"09:00-21:00","tel":"092-919-5732"},
+{"id":"osm:node:6165464756","name":"ハードオフ","lat":33.36439,"lon":130.50385,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:6168025602","name":"ヒマラヤ","lat":33.4818,"lon":130.52809,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"https://www.himaraya.co.jp/","note":"スポーツ用品","g":"hobby","k":"hobby","kana":"ひまらや"},
+{"id":"osm:node:6312165294","name":"古美術草場","lat":33.313,"lon":130.51346,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549080502","name":"ヒマラヤスポーツ イオンモール筑紫野店","lat":33.48085,"lon":130.52681,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10756201664","name":"MOVEment <ROCK>","lat":33.49847,"lon":130.51783,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:10756201669","name":"hirabikes","lat":33.4976,"lon":130.51794,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13992210719","name":"トレジャー・ファクトリー","lat":33.4436,"lon":130.5394,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:477061538","name":"油屋本店","lat":33.37347,"lon":130.51552,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:479986128","name":"おもちゃのとよふく","lat":33.37385,"lon":130.51591,"pref":"佐賀","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:1155949725","name":"HONDA WING 九州ホンダ販売","lat":33.49889,"lon":130.51535,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1169075454","name":"創庫生活館 筑紫野本店","lat":33.4827,"lon":130.54384,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

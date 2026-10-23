@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:2840290510","name":"正徳寺","lat":37.50186,"lon":139.70119,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2840290511","name":"稲荷神社","lat":37.5017,"lon":139.69984,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8265619458","name":"諏訪神社","lat":37.53087,"lon":139.7244,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:292434379","name":"大山祗神社 御本社","lat":37.5364,"lon":139.60519,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:292446969","name":"大山祗神社 大久保遥拝殿","lat":37.55646,"lon":139.62276,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:453614655","name":"金剛山如法寺","lat":37.57564,"lon":139.64169,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","pk":2},
+{"id":"osm:way:453615191","name":"圓藏寺","lat":37.53352,"lon":139.72546,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"えんぞじ","oh":"Mo-Su 08:00-15:45","pk":2},
+{"id":"osm:way:454175754","name":"松沢山奥之禅院本殿","lat":37.53171,"lon":139.72741,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1281895004","name":"観音寺","lat":37.68813,"lon":139.57256,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1495784452","name":"西光寺","lat":37.61986,"lon":139.62986,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1496801487","name":"慈眼寺","lat":37.63021,"lon":139.61973,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:12902215029","name":"レストラン おりつめ","lat":40.24841,"lon":141.41641,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:426104385","name":"常前食堂","lat":40.2161,"lon":141.29886,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:429618270","name":"チェリー","lat":40.2088,"lon":141.2994,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:429618273","name":"えいらく","lat":40.21106,"lon":141.30618,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","pk":2},
+{"id":"osm:way:429618274","name":"田中食堂","lat":40.20369,"lon":141.30548,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:435399096","name":"旭食堂","lat":40.21247,"lon":141.29899,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:460507137","name":"すし重","lat":40.21428,"lon":141.29846,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:497573041","name":"けん坊","lat":40.21755,"lon":141.30285,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:523960619","name":"奈良屋","lat":40.21121,"lon":141.29757,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:533299685","name":"うらら亭","lat":40.19765,"lon":141.30445,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:533299696","name":"チキンハウスポンタ","lat":40.21244,"lon":141.2986,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:546266479","name":"一戸家","lat":40.21645,"lon":141.30653,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:546756497","name":"京定","lat":40.21344,"lon":141.29781,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:546756516","name":"ラーメン麺太","lat":40.2336,"lon":141.27867,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:559626942","name":"そば処こずや","lat":40.15452,"lon":141.30881,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:426533517","name":"パントーネ","lat":40.22821,"lon":141.2924,"pref":"岩手","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

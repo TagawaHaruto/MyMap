@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:13999567489","name":"豊潤 国営事業完工記念","lat":28.31095,"lon":129.93739,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14000301864","name":"土地改良の碑","lat":28.34297,"lon":129.99288,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14004434681","name":"旧日本軍電波探知基地跡","lat":28.29994,"lon":129.97353,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"砦跡","g":"heritage","k":"historic"},
+{"id":"osm:node:14000150585","name":"ココネドコ喜界島","lat":28.3209,"lon":129.93727,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14000150606","name":"ユースホステルKIKAI","lat":28.31966,"lon":129.92959,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:875001197","name":"喜界第一ホテル","lat":28.3226,"lon":129.9345,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:616474761","name":"能海山市場","lat":37.35051,"lon":137.10185,"pref":"石川","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4826903122","name":"見附島シーサイドキャンプ場","lat":37.39543,"lon":137.24113,"pref":"石川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285398042","name":"九十九湾園地キャンプ場","lat":37.30393,"lon":137.23949,"pref":"石川","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-5990-7471"}
+]

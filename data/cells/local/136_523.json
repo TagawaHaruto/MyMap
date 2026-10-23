@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4009101720","name":"内田蒲鉾店","lat":34.02421,"lon":130.91527,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10301775945","name":"まるなが商店","lat":34.0718,"lon":130.89943,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1016856899","name":"市村","lat":34.06639,"lon":130.90531,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:323859653","name":"安岡地方卸売市場","lat":34.0307,"lon":130.9125,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","oh":"Mo 10:30-20:00; We-Fr 10:30-20:00; Su 10:30-20:00","tel":"+81-83-258-0323","wc":"yes"},
+{"id":"osm:way:550206194","name":"ふれあい市場","lat":34.07155,"lon":130.89996,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","oh":"Mo, We, Sa 08:00-12:00"},
+{"id":"osm:node:3304396752","name":"下関フィッシングパーク","lat":34.06282,"lon":130.90172,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 83 286 5210","wc":"yes"},
+{"id":"osm:node:4711014716","name":"観光つり堀場","lat":34.14806,"lon":130.90188,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4716619552","name":"室津ヨットハーバー","lat":34.13878,"lon":130.88574,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:388983644","name":"下関市吉見体育館","lat":34.07249,"lon":130.89914,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","oh":"Mo-Sa 09:00-22:00; Su, PH 09:00-17:00; Dec 28-Jan 04 off","tel":"+81-83-286-5910"},
+{"id":"osm:way:389079332","name":"体育館","lat":34.07386,"lon":130.89556,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:476926274","name":"川棚Gセンター","lat":34.1615,"lon":130.92893,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:478080200","name":"下関GC","lat":34.13657,"lon":130.90148,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285903525","name":"seasidevilla HILIFE","lat":34.20431,"lon":130.93137,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287476391","name":"深坂自然の森キャンプ場","lat":34.05263,"lon":130.94357,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"083-259-8555"},
+{"id":"osm:node:14287508231","name":"ZERO BASE+","lat":34.13797,"lon":130.87988,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4145-5607"},
+{"id":"osm:node:14287508235","name":"室津海水浴場松原荘","lat":34.13415,"lon":130.89133,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"083-772-0832"},
+{"id":"osm:node:14287517119","name":"小串後浜海水浴場","lat":34.17688,"lon":130.93011,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-6837-8477"},
+{"id":"osm:node:14287517122","name":"くすの森キャンプ場・ライダーズハウスくすの森","lat":34.16926,"lon":130.96388,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287563798","name":"Wild Sunset Beachキャンプ場","lat":34.1878,"lon":130.93337,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-9017-1708"},
+{"id":"osm:node:14287578801","name":"鳴き砂ビーチうしろはま","lat":34.18466,"lon":130.93311,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-6832-3219"},
+{"id":"osm:node:14287578918","name":"吉見温泉センターキャンプ場","lat":34.08231,"lon":130.91707,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"083-286-5123","pk":2}
+]

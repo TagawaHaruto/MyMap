@@ -1,0 +1,11 @@
+[
+{"name":"道の駅風Wとままえ","lat":44.31284555,"lon":141.65643265,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅あびら鰊番屋","lat":44.13741415,"lon":141.65507580000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 えんべつ富士見","lat":44.714033150000006,"lon":141.79240264999999,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%88%E3%82%93%E3%81%B9%E3%81%A4%E5%AF%8C%E5%A3%AB%E8%A6%8B","k":"michinoeki"},
+{"name":"道の駅 ☆ロマン街道しょさんべつ","lat":44.562990400000004,"lon":141.7781115,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E2%98%86%E3%83%AD%E3%83%9E%E3%83%B3%E8%A1%97%E9%81%93%E3%81%97%E3%82%87%E3%81%95%E3%82%93%E3%81%B9%E3%81%A4","k":"michinoeki"},
+{"name":"道の駅 ほっと♡はぼろ","lat":44.36656485,"lon":141.70730099999997,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%BB%E3%81%A3%E3%81%A8%E2%99%A1%E3%81%AF%E3%81%BC%E3%82%8D","k":"michinoeki"},
+{"name":"道の駅　おびら鰊番屋","lat":44.13751525,"lon":141.65496825000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 てしお","lat":44.88468295,"lon":141.74821005,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%A6%E3%81%97%E3%81%8A","tel":"+81 1632-9-2155","k":"michinoeki"},
+{"name":"とままえ温泉ふわっと","lat":44.3132057,"lon":141.6565061,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"サンセットプラザ温泉大浴場","lat":44.3668154,"lon":141.706807,"kind":"onsen","wikipedia":null,"wc":"yes","k":"onsen"}
+]

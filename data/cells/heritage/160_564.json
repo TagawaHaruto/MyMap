@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5805948964","name":"宮田宝篋印塔","lat":40.17847,"lon":141.23157,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:7612146211","name":"日本の滝百選","lat":40.06759,"lon":141.06161,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4327071590","name":"天台の湯","lat":40.19839,"lon":141.09071,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:426752610","name":"奥中山高原センターハウス","lat":40.08313,"lon":141.19132,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:566121817","name":"新安比温泉 静流閣","lat":40.10204,"lon":141.05938,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

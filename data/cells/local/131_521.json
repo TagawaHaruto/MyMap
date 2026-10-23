@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:2768899472","name":"おべんとうのヒライ","lat":32.9954,"lon":130.43703,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2769049791","name":"Pizza Pockets","lat":32.99729,"lon":130.4376,"pref":"熊本","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:476222579","name":"ロージーショップ","lat":32.75068,"lon":130.28558,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1138036433","name":"みゆき蒲鉾本舗","lat":32.87442,"lon":130.30726,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1138748251","name":"有明の森ふるさと物産館","lat":32.81799,"lon":130.30169,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1141858886","name":"丸政水産 贈答品センター","lat":32.85923,"lon":130.32773,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:777379327","name":"霊丘公園体育館","lat":32.783,"lon":130.37637,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:888402786","name":"雲仙市国見体育館","lat":32.86748,"lon":130.28897,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1136713852","name":"国見町武道館","lat":32.86899,"lon":130.27153,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1142499108","name":"島原市有明体育場","lat":32.84699,"lon":130.33643,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1142499120","name":"島原市有明プール","lat":32.84551,"lon":130.33436,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1147617555","name":"市立有馬武道館","lat":32.7831,"lon":130.37721,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1147617556","name":"市立温水プール","lat":32.78326,"lon":130.37763,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:18526569","name":"グリーンランド リゾートゴルフコース","lat":32.99193,"lon":130.45306,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6956554985","name":"みずほの森キャンプ場","lat":32.81719,"lon":130.26456,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"http://city.unzen.nagasaki.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0957772111"},
+{"id":"osm:node:14287584000","name":"SOLA Sio キャンプ場","lat":32.8991,"lon":130.48726,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://siomachi-park.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0968-57-4377"},
+{"id":"osm:way:1133472435","name":"田代原キャンプ場","lat":32.78733,"lon":130.25819,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

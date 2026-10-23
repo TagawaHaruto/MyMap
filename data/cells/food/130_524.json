@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:7907179208","name":"ごかせ温泉 森の宿 木地屋","lat":32.67793,"lon":131.21188,"pref":"宮崎","genres":["food"],"indoor":true,"url":"http://www.gokase.co.jp/kijiya/#","note":"飲食店","g":"food","k":"restaurant","tel":"0982-82-1115"},
+{"id":"osm:way:965764605","name":"ビアガーデン","lat":32.67812,"lon":131.21227,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3768250333","name":"鮎の瀬交流館","lat":32.64598,"lon":131.00416,"pref":"熊本","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"10:00-16:00","tel":"0967-72-4210"}
+]

@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:4075291798","name":"松尾城址","lat":33.96204,"lon":133.54437,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5362777714","name":"野中兼山像","lat":33.75748,"lon":133.59493,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5593784317","name":"秋田婦人墓碑","lat":33.75832,"lon":133.59467,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:5593784318","name":"野中順の墓","lat":33.75838,"lon":133.59462,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:5593784319","name":"忠魂碑","lat":33.75832,"lon":133.59505,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5593785328","name":"崎山比佐衛顕彰碑","lat":33.7575,"lon":133.59463,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:410581801","name":"新宮鉱山跡","lat":33.93717,"lon":133.63231,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:417839577","name":"佐々連鉱山索道遺構","lat":33.92781,"lon":133.53931,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:607854554","name":"佐々連鉱山跡","lat":33.90766,"lon":133.53634,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:11228737875","name":"汗見川ふれあい の郷 清流館","lat":33.78672,"lon":133.55313,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11413648269","name":"お遍路ハウス毛利荘","lat":33.9863,"lon":133.62893,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"おへんろほうせもりそ","tel":"+81 896 59 5257"},
+{"id":"osm:way:312154236","name":"奥小歩危温泉源氏の里","lat":33.89916,"lon":133.70763,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 86 2372"},
+{"id":"osm:way:312155269","name":"賢見温泉","lat":33.96611,"lon":133.74324,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"http://www.kenmi.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 86 2982"},
+{"id":"osm:way:312156176","name":"ゲストハウス モモンガビレッジ","lat":33.96342,"lon":133.72022,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"https://www.momonga-village.com/","note":"宿","g":"heritage","k":"lodging","kana":"ゲストハウス モモンガビレッジ","tel":"+81 883 86 2334"},
+{"id":"osm:way:312158232","name":"田舎のかまや 風流里","lat":33.96795,"lon":133.71314,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 86 1503"},
+{"id":"osm:way:408767921","name":"ホテルリブマックス伊予三島","lat":33.9812,"lon":133.54163,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:410048674","name":"スーパーホテル四国中央","lat":33.98693,"lon":133.5704,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:410319886","name":"ホテルグランフォーレ","lat":33.98471,"lon":133.55144,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:410320490","name":"ホテルマイルド","lat":33.98451,"lon":133.55373,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

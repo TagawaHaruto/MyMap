@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:6012271543","name":"かいかん食堂","lat":34.65557,"lon":129.46627,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","tel":"+81 920-86-2223"},
+{"id":"osm:node:6530844985","name":"かいかん","lat":34.6555,"lon":129.46628,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:492267414","name":"みなと寿司","lat":34.65488,"lon":129.46515,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"みなとすし","tel":"+81 920-86-3710"},
+{"id":"osm:way:492267413","name":"Chiguya & Kiyo","lat":34.65524,"lon":129.46509,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6360818286","name":"パンのポエム","lat":34.65475,"lon":129.46495,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

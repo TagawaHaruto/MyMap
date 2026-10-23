@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:292933263","name":"鹿部稲荷神社","lat":42.03552,"lon":140.81742,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:292934142","name":"本別稲荷神社","lat":42.05153,"lon":140.80836,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:292945336","name":"宝光寺","lat":42.04995,"lon":140.81051,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:292950878","name":"東光寺","lat":42.03321,"lon":140.81396,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:293160382","name":"大岩神社","lat":42.01903,"lon":140.84258,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

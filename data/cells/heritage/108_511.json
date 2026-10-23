@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:6355809989","name":"念頭平松","lat":27.07164,"lon":127.99673,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13930920557","name":"大田名の大地","lat":27.05937,"lon":127.98632,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:465558932","name":"松金ホテル","lat":27.03312,"lon":127.9632,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0980-46-2282"}
+]

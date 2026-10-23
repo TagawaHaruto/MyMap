@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4539347817","name":"旭書店","lat":35.72004,"lon":140.67906,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6380395942","name":"ゲオ","lat":35.69507,"lon":140.53934,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:7124166610","name":"TSUTAYA","lat":35.72572,"lon":140.65542,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10692452803","name":"つり具うりど","lat":35.72413,"lon":140.62616,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:10813141297","name":"Proshop Otsuka","lat":35.72431,"lon":140.64086,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"https://www.fishing-otsuka.co.jp/","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:10813142149","name":"セカンドストリート","lat":35.72451,"lon":140.64339,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10813143021","name":"ブックオフ","lat":35.72302,"lon":140.6397,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11301988955","name":"小野釣具店","lat":35.61394,"lon":140.52899,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:11301988956","name":"河井釣具店","lat":35.61291,"lon":140.52768,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

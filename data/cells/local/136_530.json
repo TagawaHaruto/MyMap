@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5699100521","name":"Museum Shop Yamato","lat":34.24118,"lon":132.55608,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"https://shop.yamato-museum.com/","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:node:5768083301","name":"島谷昆布（株）","lat":34.2336,"lon":132.59581,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9371672853","name":"小田商店","lat":34.19654,"lon":132.53902,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10748588231","name":"田頭茶舗","lat":34.24842,"lon":132.56866,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10750055613","name":"なかじ鮮魚店","lat":34.24578,"lon":132.5656,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:217270253","name":"体育館","lat":34.21568,"lon":132.54459,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:608252833","name":"呉市総合体育館（オークアリーナ）","lat":34.23228,"lon":132.62656,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:呉市総合体育館"},
+{"id":"osm:way:608471323","name":"呉市 市営温水プール","lat":34.23254,"lon":132.61403,"pref":"広島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13694386462","name":"キャンプ＆コテージ梶ヶ浜","lat":34.17222,"lon":132.67072,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913277","name":"ホシアカリ 波うち","lat":34.11664,"lon":132.50191,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287508245","name":"大迫キャンプ場","lat":34.1229,"lon":132.57251,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287578909","name":"ホシアカリ 山びこ","lat":34.10253,"lon":132.51726,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-6347-1173"},
+{"id":"osm:node:14287578910","name":"桂浜キャンプ場","lat":34.10112,"lon":132.51197,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0823-53-2575"}
+]

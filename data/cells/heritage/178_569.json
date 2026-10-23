@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6458778455","name":"びふか温泉","lat":44.5587,"lon":142.32361,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://bifukaonsen.com/index.htm","note":"宿","g":"heritage","k":"lodging","tel":"+81 1656 2 2900"},
+{"id":"osm:way:709161001","name":"イケレ音威子府","lat":44.72905,"lon":142.25913,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:709574220","name":"Blueberyy House音威子府","lat":44.64686,"lon":142.26592,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:856219469","name":"青い星通信社","lat":44.54233,"lon":142.33285,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

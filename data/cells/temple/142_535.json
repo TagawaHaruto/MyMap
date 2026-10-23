@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4328281895","name":"隆法山 興宗寺","lat":35.51744,"lon":133.99132,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13279984471","name":"湊神社","lat":35.50357,"lon":133.87659,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:434820683","name":"清蓮山 専念寺","lat":35.51926,"lon":133.99769,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:434822742","name":"統一山 立正寺","lat":35.51993,"lon":133.99674,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,18 @@
+[
+{"id":"osm:way:1225327037","name":"さんて旬菜館","lat":36.08243,"lon":140.60123,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1227248077","name":"ファーマーズマーケットなだろう","lat":36.16254,"lon":140.50207,"pref":"茨城","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:831743460","name":"ザ・ロイヤルゴルフクラブ","lat":36.09508,"lon":140.57773,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1231843056","name":"旭スポーツセンター","lat":36.24142,"lon":140.51104,"pref":"茨城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1277543100","name":"セントラルGC NEWコース","lat":36.04773,"lon":140.52146,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1231766460","name":"行方市立北浦中学校","lat":36.08822,"lon":140.50486,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14279656575","name":"大洋カントリーオートキャンプ場","lat":36.13068,"lon":140.55724,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14279666978","name":"ファームリゾート","lat":36.14034,"lon":140.58338,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14280092334","name":"サーフアンドターフマリブ","lat":36.03855,"lon":140.63244,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://camp.travel.rakuten.co.jp/properties/1700","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14280100532","name":"HAOLE SURF RESORT","lat":36.03203,"lon":140.63528,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-3120-3556"},
+{"id":"osm:node:14280177767","name":"Osoto Sauna & Glamping","lat":36.07585,"lon":140.58049,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://laugh-at-sauna.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286830181","name":"tama海terrasse","lat":36.22489,"lon":140.56141,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://tama-umi-terrasse.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286831599","name":"GLAMPING KASHIMA753#00","lat":36.06861,"lon":140.61168,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://gp753.jp/kashima/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286866920","name":"ファミリーキャンプほこたBASE","lat":36.16605,"lon":140.51615,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"https://basehokota.wixsite.com/website","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-6339-7955"},
+{"id":"osm:node:14286878822","name":"KITAURA LAKESIDE RV PARK","lat":36.11212,"lon":140.53455,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-8414-8109"},
+{"id":"osm:node:14286894366","name":"Farm Glamping なめがたファーマーズヴィレッジ","lat":36.02268,"lon":140.54642,"pref":"茨城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0299-87-1130"}
+]

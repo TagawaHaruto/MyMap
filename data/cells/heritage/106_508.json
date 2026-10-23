@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:12250543459","name":"番屋跡","lat":26.57933,"lon":127.21597,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:12250739509","name":"むんじゅる節の碑","lat":26.59273,"lon":127.22456,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12250498766","name":"風月","lat":26.58016,"lon":127.23385,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:454878501","name":"プチホテル いさ","lat":26.57812,"lon":127.23705,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

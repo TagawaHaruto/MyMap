@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4417429303","name":"お一がにつく","lat":33.18946,"lon":129.05922,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4417481601","name":"焼き鳥こにし","lat":33.18934,"lon":129.05939,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4417510299","name":"谷商店","lat":33.1899,"lon":129.05911,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

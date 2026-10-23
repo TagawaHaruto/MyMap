@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1265585346","name":"北潟湖小学校グラウンド","lat":36.26421,"lon":136.2232,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1265585347","name":"北潟小学校プール","lat":36.26352,"lon":136.22239,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1269214373","name":"オレンジドルフィンプール","lat":36.25309,"lon":136.14684,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1269971648","name":"じゃぶじゃぶ海水プール","lat":36.25325,"lon":136.14741,"pref":"福井","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:972866641","name":"住吉神社","lat":32.95342,"lon":131.89429,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"すみよしじんじゃ"},
+{"id":"osm:way:982373940","name":"宝剣神社","lat":32.95782,"lon":131.90669,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ほうけんじんじゃ"},
+{"id":"osm:way:1016816043","name":"養賢寺","lat":32.9624,"lon":131.89443,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1038948247","name":"カトリック","lat":32.96123,"lon":131.90061,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:1089831730","name":"御嶽神社","lat":32.8963,"lon":131.77415,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"Mitake Jinja"},
+{"id":"osm:way:1089831739","name":"天満神社","lat":32.8955,"lon":131.77697,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

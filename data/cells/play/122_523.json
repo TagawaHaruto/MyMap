@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:545126063","name":"中種子中央運動公園","lat":30.52959,"lon":130.9683,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1413491934","name":"日ポみなと公園","lat":30.73085,"lon":130.98853,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1414161300","name":"東町公園","lat":30.73236,"lon":130.99442,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:5268913014","name":"流水プール","lat":30.52992,"lon":130.96763,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:node:5268913015","name":"陸上競技場","lat":30.52892,"lon":130.96866,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:5268913016","name":"野球場","lat":30.52865,"lon":130.97098,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:5271095969","name":"相撲場","lat":30.53163,"lon":130.96037,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:559998112","name":"野間小学校プール","lat":30.53347,"lon":130.95692,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:559998113","name":"中種子中学校プール","lat":30.53519,"lon":130.95604,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:560005494","name":"油久小学校プール","lat":30.50025,"lon":130.95992,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1298241619","name":"校庭","lat":30.71874,"lon":130.98804,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

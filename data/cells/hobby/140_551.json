@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:7080262252","name":"高木自転車店","lat":35.16457,"lon":137.86753,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7080296186","name":"丸山書店","lat":35.16852,"lon":137.8699,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:80678513","name":"山本自転車","lat":35.05421,"lon":137.76474,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:80679719","name":"田高書店","lat":35.05544,"lon":137.76352,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

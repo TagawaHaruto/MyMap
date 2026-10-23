@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4467927098","name":"潮岬神社","lat":33.43848,"lon":135.75391,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6842754703","name":"潮崎本之宮神社","lat":33.46315,"lon":135.77854,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6842754904","name":"日本イエスキリスト教団 串本教会","lat":33.46484,"lon":135.77722,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:6842754906","name":"雷公神社","lat":33.46382,"lon":135.77801,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6842754908","name":"カトリック 串本教会","lat":33.46354,"lon":135.7787,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:541467174","name":"矢倉神社","lat":33.47361,"lon":135.77965,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

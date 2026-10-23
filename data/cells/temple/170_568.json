@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:625219061","name":"花岡神社","lat":42.57459,"lon":142.01651,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:625222942","name":"浄覚寺","lat":42.55245,"lon":142.07521,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.higashihonganji.or.jp/","note":"寺","g":"temple","k":"worship","kana":"じょうかくじ","tel":"+81-1457-2-2783"},
+{"id":"osm:way:625294371","name":"光生寺","lat":42.59115,"lon":142.06432,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:625318324","name":"仁和神社","lat":42.6602,"lon":142.08012,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:625837890","name":"和泉神社","lat":42.71131,"lon":142.127,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:882636472","name":"庫富神社","lat":42.52677,"lon":142.14878,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:883105984","name":"豊郷神社","lat":42.51114,"lon":142.17758,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:885021401","name":"緑ヶ丘神社","lat":42.5096,"lon":142.08804,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:886057856","name":"本村馬頭観音","lat":42.66782,"lon":142.24081,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:886098877","name":"荷負神社","lat":42.68025,"lon":142.20213,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1418428381","name":"幾千世神社","lat":42.50154,"lon":142.11892,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1419335690","name":"広富金刀比羅神社","lat":42.57533,"lon":142.21397,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1507059150","name":"去場相馬神社","lat":42.56523,"lon":142.09027,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1507483537","name":"八幡神社","lat":42.54305,"lon":142.10861,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

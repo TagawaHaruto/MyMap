@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2098266669","name":"稲荷神社","lat":45.07229,"lon":141.84035,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:457225473","name":"豊富八幡神社","lat":45.108,"lon":141.77603,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:467731544","name":"光寿寺","lat":45.09867,"lon":141.7792,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:579552819","name":"専正寺","lat":45.01545,"lon":141.85232,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:586019341","name":"養寿寺","lat":45.01629,"lon":141.85351,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:659939470","name":"法昌寺","lat":45.03701,"lon":141.75328,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:855650537","name":"温内神社","lat":45.03997,"lon":141.75782,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855663634","name":"幌延神社","lat":45.01929,"lon":141.84991,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855770056","name":"東豊富地蔵尊","lat":45.08506,"lon":141.81536,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:855845249","name":"徳満神社","lat":45.14198,"lon":141.75399,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855865186","name":"福永神社","lat":45.121,"lon":141.80016,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:986118961","name":"弘法大師堂","lat":45.07323,"lon":141.83739,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

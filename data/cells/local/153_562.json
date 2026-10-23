@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:6986620905","name":"新茶屋","lat":38.36359,"lon":140.66904,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12073252558","name":"有路こけし店","lat":38.3639,"lon":140.66859,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12073273269","name":"おまもり授所","lat":38.36371,"lon":140.6684,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12073273280","name":"丸かん商店","lat":38.36347,"lon":140.66887,"pref":"宮城","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8756931123","name":"青野木ライディングクラブ","lat":38.28958,"lon":140.7216,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 22 391 3522"},
+{"id":"osm:node:13192031969","name":"宮城広瀬温水プール","lat":38.27429,"lon":140.73968,"pref":"宮城","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1213543375","name":"グレート仙台カントリー倶楽部","lat":38.25939,"lon":140.71021,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5209444725","name":"作並渓流釣り場","lat":38.34948,"lon":140.60009,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8023580985","name":"立石沢","lat":38.28384,"lon":140.53859,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8023669085","name":"五合目","lat":38.29028,"lon":140.53687,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8023705885","name":"7合目","lat":38.29431,"lon":140.53068,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:8712620168","name":"二口キャンプ場","lat":38.27322,"lon":140.54405,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9049917352","name":"ドロキャン新川","lat":38.30062,"lon":140.6583,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"http://drone-camp-nikkawa.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 22 797 6180"},
+{"id":"osm:node:9965037116","name":"IZUMI PEAK BASE","lat":38.38891,"lon":140.72722,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"https://peak-base.com/","note":"キャンプ・野外","g":"local","k":"camp","kana":"いずみぴーくべーす","oh":"Mo-Su 06:00-21:00","tel":"+81 22-347-3356"},
+{"id":"osm:node:11119841164","name":"学校キャンプ場","lat":38.39158,"lon":140.71797,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"がっこうきゃんぷじょう"},
+{"id":"osm:node:11119841171","name":"市民キャンプ場","lat":38.38967,"lon":140.71892,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"しみんきゃんぷじょう"},
+{"id":"osm:node:14285562561","name":"秋保ドローンキャンプ場","lat":38.27071,"lon":140.62772,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"http://akiu-autocamp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-8612-0325"},
+{"id":"osm:node:14286246524","name":"旗坂野営場","lat":38.45764,"lon":140.68031,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"022-345-7501"},
+{"id":"osm:node:14286246537","name":"AKIU CAMP RESORT","lat":38.26667,"lon":140.61515,"pref":"宮城","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-1667-6865"}
+]

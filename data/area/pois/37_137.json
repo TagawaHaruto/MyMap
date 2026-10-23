@@ -1,0 +1,14 @@
+[
+{"name":"道の駅「狼煙」","lat":37.5259693,"lon":137.3246316,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E7%8B%BC%E7%85%99","k":"michinoeki"},
+{"name":"道の駅「すずなり」","lat":37.4414667,"lon":137.269844,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%99%E3%81%9A%E3%81%AA%E3%82%8A","k":"michinoeki"},
+{"name":"道の駅 すず塩田村","lat":37.4864156,"lon":137.113298,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅桜峠","lat":37.33164955,"lon":137.0112117,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E6%A1%9C%E5%B3%A0","k":"michinoeki"},
+{"name":"道の駅いおり","lat":37.0285375,"lon":137.04681,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%84%E3%81%8A%E3%82%8A","k":"michinoeki"},
+{"name":"道の駅 親不知ピアパーク","lat":37.003972000000005,"lon":137.731333,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"椿の展望台","lat":37.5257517,"lon":137.2575785,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"美山公園水道タンク展望台","lat":37.0236302,"lon":137.8608819,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"日本海展望台","lat":37.04685285,"lon":137.8596253,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"観音崎","lat":37.1069523,"lon":137.0584835,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E8%A6%B3%E9%9F%B3%E5%B4%8E_%28%E7%9F%B3%E5%B7%9D%E7%9C%8C%29","k":"scenic"},
+{"name":"禄剛崎","lat":37.5290424,"lon":137.3277813,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E7%A6%84%E5%89%9B%E5%B4%8E","k":"scenic"},
+{"name":"出光","lat":37.0456,"lon":137.88003,"kind":"fuel24","oh":"24/7","k":"fuel24"}
+]

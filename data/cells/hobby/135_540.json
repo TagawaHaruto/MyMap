@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4355175940","name":"吉川サイクル","lat":33.89054,"lon":135.15871,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6832285693","name":"つり吉","lat":33.8127,"lon":135.21918,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6832289503","name":"片山自転車店","lat":33.81525,"lon":135.21973,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6832289792","name":"早田モータース","lat":33.81395,"lon":135.2198,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6832289793","name":"壽丸","lat":33.81214,"lon":135.21891,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899764298","name":"山崎自転車店","lat":33.89306,"lon":135.15718,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899764314","name":"箕島屋 支店","lat":33.89625,"lon":135.15462,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899779391","name":"のりものショップ イトカワ","lat":33.89343,"lon":135.15564,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899779409","name":"田嶋銃砲火薬武道具店","lat":33.89591,"lon":135.15158,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899779795","name":"WAY ロマンシティ御坊店","lat":33.89778,"lon":135.14924,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899779888","name":"炭家書店","lat":33.89695,"lon":135.15433,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6899779890","name":"ワールドスポーツ","lat":33.897,"lon":135.15049,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6901335392","name":"つり一番","lat":33.89587,"lon":135.12512,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6901335694","name":"WAY書店 TSUTAYA","lat":33.88621,"lon":135.152,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6901335701","name":"野田スポーツ","lat":33.89222,"lon":135.15612,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6901335717","name":"ホビーショップ ピット","lat":33.88846,"lon":135.15639,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6901335797","name":"岡自転車店","lat":33.89404,"lon":135.16022,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6901335798","name":"サイクルショップ ニシザキ","lat":33.89395,"lon":135.16197,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6901343286","name":"いろは書房","lat":33.89073,"lon":135.15621,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10889813598","name":"リユースプラザ","lat":33.88663,"lon":135.15154,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Sa 10:00-19:00"},
+{"id":"osm:way:1452345692","name":"御坊ホンダモーター","lat":33.89546,"lon":135.15723,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

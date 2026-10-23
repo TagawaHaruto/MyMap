@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2023170615","name":"劔沢キャンプサイト","lat":36.60352,"lon":137.61658,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4303612189","name":"雷鳥沢キャンプ場","lat":36.58711,"lon":137.60119,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286755258","name":"剱岳青少年旅行村キャンプ場","lat":36.64559,"lon":137.55339,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"076-472-3080"},
+{"id":"osm:node:14289691277","name":"剣沢キャンプ場","lat":36.60238,"lon":137.61657,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:936638079","name":"阿曽原温泉","lat":36.65727,"lon":137.6765,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"https://azohara.niikawa.com/","note":"キャンプ・野外","g":"local","k":"camp","wc":"no"},
+{"id":"osm:way:936772499","name":"くろよん","lat":36.55761,"lon":137.6565,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"http://www.kuroyon.com","note":"キャンプ・野外","g":"local","k":"camp","kana":"くろじょん","tel":"076-463-6350"},
+{"id":"osm:way:1383089314","name":"スゴ乗越小屋テント場","lat":36.50076,"lon":137.56826,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

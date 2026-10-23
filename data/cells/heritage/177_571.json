@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4260690619","name":"上興部中学校跡碑","lat":44.3383,"lon":142.88687,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:relation:3860445","name":"ホテル森夢","lat":44.33057,"lon":142.94774,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:426801831","name":"西興部ゲストハウス ga.kopor","lat":44.33905,"lon":142.88661,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

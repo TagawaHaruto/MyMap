@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1526764207","name":"蓬莱山公園","lat":42.26135,"lon":142.59061,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:837164405","name":"三石緑ヶ丘運動公園球場","lat":42.25092,"lon":142.5598,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

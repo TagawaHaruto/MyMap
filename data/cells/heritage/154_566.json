@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4850839696","name":"歌津館崎の魚竜化石産地および魚竜化石","lat":38.70894,"lon":141.53519,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5965562063","name":"観世音","lat":38.7184,"lon":141.52953,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5965562064","name":"庚申","lat":38.71841,"lon":141.52956,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5965562065","name":"庚申碑","lat":38.71841,"lon":141.52958,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6413774784","name":"歌津舘崎の魚竜化石産地","lat":38.70942,"lon":141.53551,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8380017242","name":"昭和８年３月３日　大震嘯災記念碑","lat":38.60975,"lon":141.52091,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8380017243","name":"昭和８年３月３日　大震嘯災記念碑","lat":38.60505,"lon":141.50844,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8380017244","name":"昭和８年３月３日　大震嘯災記念碑","lat":38.60095,"lon":141.50144,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2497101711","name":"漁家民宿やすらぎ","lat":38.71086,"lon":141.52269,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"https://team-yasuragi.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-226-36-3670"},
+{"id":"osm:node:5917763189","name":"渚泊","lat":38.52389,"lon":141.54345,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5917763190","name":"長栄館","lat":38.52147,"lon":141.54071,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 225 58 2916"},
+{"id":"osm:node:5917763191","name":"亀山旅館","lat":38.52169,"lon":141.54129,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かめやまりょかん","tel":"+81 225 58 2025"},
+{"id":"osm:node:7720646597","name":"ながしず荘","lat":38.63729,"lon":141.50882,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://nagashizu.jimbo.com","note":"宿","g":"heritage","k":"lodging","kana":"ながしずそ","tel":"+81 226 46 9248"},
+{"id":"osm:node:7720646790","name":"民宿 松波荘","lat":38.63438,"lon":141.52078,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"みんしゅくまつなみそ","tel":"+81 226 46 9815"},
+{"id":"osm:node:7720646791","name":"うらしま荘","lat":38.62942,"lon":141.52535,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"うらしまそ","tel":"+81 225 66 2473"},
+{"id":"osm:node:7720649491","name":"はまなす 民宿","lat":38.62313,"lon":141.5242,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"はまなすみんしゅく","tel":"+81 225 66 2051"},
+{"id":"osm:node:7720652686","name":"小滝荘","lat":38.62412,"lon":141.52437,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"こたきそ","tel":"+81 225 66 2046"}
+]

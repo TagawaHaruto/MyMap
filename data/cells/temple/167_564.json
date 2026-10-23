@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:13762891101","name":"観世音菩薩","lat":41.79105,"lon":141.15174,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:491790620","name":"海積神社","lat":41.78879,"lon":141.11753,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:565913588","name":"高聖寺","lat":41.78823,"lon":141.11218,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

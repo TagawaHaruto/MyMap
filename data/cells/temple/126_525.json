@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3384116050","name":"野島神社","lat":31.73854,"lon":131.46812,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5919682564","name":"恵比寿神社","lat":31.62494,"lon":131.35266,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5919918495","name":"飫肥教会","lat":31.62802,"lon":131.3556,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:5919918507","name":"願成就寺","lat":31.63038,"lon":131.35956,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5919930684","name":"浄念寺","lat":31.63127,"lon":131.3626,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5920068509","name":"吾田神社","lat":31.60221,"lon":131.37636,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あがたじんじゃ"},
+{"id":"osm:node:5923146736","name":"立正佼成会","lat":31.60128,"lon":131.38231,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:494141987","name":"伊比井神社","lat":31.71029,"lon":131.45528,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:677777013","name":"平野神社","lat":31.59292,"lon":131.39494,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

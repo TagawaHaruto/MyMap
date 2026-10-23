@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:12062526316","name":"遊仙公園","lat":41.129,"lon":140.33665,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12062659326","name":"町民の森　やすらぎ公園","lat":41.17329,"lon":140.42877,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:183854109","name":"青函トンネル入口広場","lat":41.17711,"lon":140.45916,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:183854111","name":"青函トンネル入口広場","lat":41.17762,"lon":140.45929,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:755366925","name":"ライオン岩公園","lat":41.12126,"lon":140.28359,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:819065520","name":"義経海浜公園","lat":41.20343,"lon":140.4289,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1496588065","name":"海峡あすなろ公園","lat":41.18058,"lon":140.49175,"pref":"青森","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

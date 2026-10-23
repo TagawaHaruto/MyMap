@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5603039982","name":"純の店","lat":43.29655,"lon":140.59783,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5603040049","name":"田村岩太郎商店","lat":43.29648,"lon":140.59909,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5603040056","name":"新家寿司","lat":43.27793,"lon":140.63846,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5603041024","name":"港寿司","lat":43.27826,"lon":140.63779,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9570296495","name":"堀食堂","lat":43.26229,"lon":140.64031,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:13784040770","name":"冨久寿司","lat":43.2967,"lon":140.59948,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:270698534","name":"ふじ鮨","lat":43.29799,"lon":140.59722,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5585653448","name":"神威ファーム","lat":43.30452,"lon":140.56258,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

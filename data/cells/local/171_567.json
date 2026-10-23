@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:13253873915","name":"農産物直売所","lat":42.87607,"lon":141.81843,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:627522933","name":"石澤とうふ店","lat":42.87235,"lon":141.8133,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:791964730","name":"安平町物産館","lat":42.76531,"lon":141.81427,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:797254007","name":"手造りとうふ屋 新沼商店","lat":42.81431,"lon":141.82989,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:427544853","name":"エバーグリーンゴルフ倶楽部","lat":42.94403,"lon":141.8958,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://evergreen-gc.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427544854","name":"SIRル・ペタウゴルフコース","lat":42.87213,"lon":141.86388,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427544855","name":"千歳カントリークラブ","lat":42.87673,"lon":141.77273,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:427556350","name":"札幌ゴルフ倶楽部由仁コース","lat":42.9918,"lon":141.77917,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:624163525","name":"安平町スポーツセンター","lat":42.76384,"lon":141.82382,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:8724855","name":"新千歳カントリークラブ【PGM】","lat":42.8996,"lon":141.76239,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1118212011","name":"アロハリゾート","lat":42.80523,"lon":141.8857,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1458416267","name":"安平ゴルフ倶楽部","lat":42.77783,"lon":141.79735,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"あびらごるふくらぶ","tel":"+81 145 22 4488"},
+{"id":"osm:node:4295773079","name":"安平町ときわキャンプ場","lat":42.76217,"lon":141.8297,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10700866854","name":"弥生パークキャンプ場","lat":42.85679,"lon":141.82261,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10703125126","name":"ファミリーパーク追分","lat":42.89963,"lon":141.87455,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286129347","name":"古山貯水池自然公園オートキャンプ場","lat":42.97405,"lon":141.78753,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0123-83-3633"},
+{"id":"osm:node:14286129354","name":"安平町鹿公園キャンプ場","lat":42.87449,"lon":141.80688,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.town.abira.lg.jp/midokoro/shisetsu/camp/90","note":"キャンプ・野外","g":"local","k":"camp","tel":"0145-25-4488"},
+{"id":"osm:node:14286177230","name":"北海道クラシックゴルフクラブ","lat":42.75893,"lon":141.77261,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.hcgc.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0145-22-4101"},
+{"id":"osm:way:559764486","name":"古山貯水池自然公園オートキャンプ場","lat":42.97918,"lon":141.768,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0123-83-3979"}
+]

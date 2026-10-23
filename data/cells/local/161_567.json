@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:1224873369","name":"岩手県洋野町立八木保育園","lat":40.34168,"lon":141.76363,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12313528507","name":"北侍浜野営場","lat":40.27064,"lon":141.81411,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286211440","name":"北侍浜野営場","lat":40.26859,"lon":141.79552,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0194-52-2111"}
+]

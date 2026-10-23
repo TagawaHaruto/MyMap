@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3011776445","name":"だるまや","lat":40.95997,"lon":141.37,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11609844677","name":"レストラン あぶにーる","lat":40.98008,"lon":141.33445,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 175 72 3589"},
+{"id":"osm:way:1210423944","name":"コマイ食堂","lat":40.88463,"lon":141.27239,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1108428407","name":"真木葉","lat":40.88896,"lon":141.27954,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Mo-Sa 11:00-14:00","tel":"+81 175 74 3006"}
+]

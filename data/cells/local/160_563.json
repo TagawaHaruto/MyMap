@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:814807951","name":"いしきた","lat":40.19024,"lon":140.78989,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:815156262","name":"ワイナリーこのはな","lat":40.19109,"lon":140.78995,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:835031960","name":"十和田ワイン醸造場","lat":40.18291,"lon":140.7885,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:683174979","name":"安比高原スキー場","lat":40.00156,"lon":140.97006,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:安比高原スキー場"},
+{"id":"osm:node:7425333216","name":"花輪スキー場","lat":40.18786,"lon":140.82228,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:花輪スキー場"},
+{"id":"osm:way:793807676","name":"かづのパークゴルフ公園","lat":40.18458,"lon":140.82164,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:814801166","name":"鹿角スポーツセンター","lat":40.21488,"lon":140.78818,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:834667812","name":"湯瀬体育館","lat":40.12004,"lon":140.84019,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:835043850","name":"花輪市立花輪市民プール","lat":40.18637,"lon":140.78395,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:835198598","name":"かなやまアリーナ","lat":40.18885,"lon":140.76393,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14281956304","name":"クルマアソビアドベンチャーフィールド安比","lat":40.018,"lon":140.97216,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://www.kurumaasobi.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-632-6222"},
+{"id":"osm:node:14286218509","name":"安比高原キャンプ","lat":40.00227,"lon":140.96892,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://www.appi.co.jp/glamping/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0195-73-5010"}
+]

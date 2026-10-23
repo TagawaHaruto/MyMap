@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3088991455","name":"!detourPoint!","lat":42.39507,"lon":143.30446,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1511002451","name":"たいきうどん","lat":42.49975,"lon":143.279,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"うどん","g":"food","k":"restaurant","oh":"Tu-Sa 11:00-14:00; Su,Mo off","tel":"+81-1558-8-7100","pk":2},
+{"id":"osm:node:13797814087","name":"Bay Lounge Coffee","lat":42.28885,"lon":143.31503,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.instagram.com/bayloungecoffee/","note":"カフェ","g":"food","k":"cafe","oh":"Mo-Sa 09:00-17:00; PH closed","tel":"+81 1558-2-4789"}
+]

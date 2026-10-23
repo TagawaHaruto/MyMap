@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3664552148","name":"は〜もに〜","lat":37.45971,"lon":139.00728,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"0258-53-2030","wc":"yes"},
+{"id":"osm:node:14286350481","name":"越後ハーブ香園入広瀬","lat":37.37611,"lon":139.06757,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://echigoherb.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-796-2120"},
+{"id":"osm:node:14286350484","name":"福山峠のふるさと広場","lat":37.36295,"lon":139.00049,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286401031","name":"道院高原オートキャンプ場","lat":37.41913,"lon":139.05966,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0258-58-2120"}
+]

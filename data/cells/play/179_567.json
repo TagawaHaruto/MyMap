@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:8678380827","name":"天塩町運動公園","lat":44.88846,"lon":141.75223,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:263171491","name":"ソフトボール場","lat":44.8869,"lon":141.75308,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:263171492","name":"サブ野球場","lat":44.88906,"lon":141.75264,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:263171493","name":"野球場","lat":44.89017,"lon":141.75269,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:263171572","name":"天塩町町民プール","lat":44.88276,"lon":141.75207,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:263296678","name":"パークゴルフ場","lat":44.8889,"lon":141.75333,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:263308633","name":"テニスコート","lat":44.89174,"lon":141.75141,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:263308984","name":"テニスコート","lat":44.88501,"lon":141.75153,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:265738241","name":"ゲートボール場","lat":44.88793,"lon":141.75181,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

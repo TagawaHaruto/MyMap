@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5377376951","name":"願成寺","lat":33.08272,"lon":133.109,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10810977710","name":"八坂神社","lat":33.13177,"lon":133.11927,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13044815801","name":"Iyoki Tenmangu Shrine","lat":33.14444,"lon":133.12141,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13044816301","name":"Kumano Shrine","lat":33.10331,"lon":133.09961,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:297182541","name":"萬行寺","lat":33.01846,"lon":133.0085,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

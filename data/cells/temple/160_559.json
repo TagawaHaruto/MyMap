@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:754599460","name":"涌出神社","lat":40.10178,"lon":139.9815,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:801042210","name":"相染神社","lat":40.00491,"lon":139.93528,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:837512905","name":"三吉神社","lat":40.10077,"lon":139.98173,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:837514251","name":"八郎神社","lat":40.09522,"lon":139.9823,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:837514261","name":"大谷地神社","lat":40.06918,"lon":139.96088,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:844729137","name":"大潟神社","lat":40.0128,"lon":139.95465,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:883270311","name":"追泊神社","lat":40.06328,"lon":139.95482,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:883984937","name":"姥御前神社","lat":40.07682,"lon":139.96609,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:relation:12006816","name":"稲荷神社","lat":40.07696,"lon":139.96609,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1083530792","name":"茨嶋山神社","lat":40.15068,"lon":139.99837,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

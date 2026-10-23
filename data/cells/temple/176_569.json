@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:558508915","name":"士別神社","lat":44.18256,"lon":142.40398,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:558509270","name":"天理教会","lat":44.17983,"lon":142.40483,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:978018440","name":"称真寺","lat":44.17278,"lon":142.44083,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:978048278","name":"中士別神社","lat":44.15369,"lon":142.45667,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:998265940","name":"川南神社","lat":44.10921,"lon":142.4771,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:998265998","name":"西光寺","lat":44.11615,"lon":142.48003,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1000415345","name":"川西神社","lat":44.13905,"lon":142.42977,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1159482250","name":"和寒神社","lat":44.02271,"lon":142.41091,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:624061213","name":"早来神社","lat":42.76576,"lon":141.82032,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:627495343","name":"天理教勇名分教会","lat":42.87287,"lon":141.81658,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:627495364","name":"見龍寺庫裡","lat":42.8735,"lon":141.81854,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:627598122","name":"追分八幡神社","lat":42.87629,"lon":141.81687,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:627598133","name":"安立寺","lat":42.87598,"lon":141.81485,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:752146729","name":"三川神社","lat":42.94892,"lon":141.80205,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:752156427","name":"鶴林寺","lat":42.94639,"lon":141.803,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:752858875","name":"三明寺","lat":42.94194,"lon":141.80372,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:797250425","name":"安平八幡神社","lat":42.81422,"lon":141.8346,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:851341006","name":"髙峰寺","lat":42.91209,"lon":141.97576,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:851349804","name":"滝ノ上神社","lat":42.90979,"lon":141.97873,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:881785412","name":"南角田神社","lat":42.97549,"lon":141.87576,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:881818062","name":"円山神社","lat":42.94771,"lon":141.87951,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

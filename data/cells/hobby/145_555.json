@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1666788596","name":"Rodeo Manfufacturing","lat":36.34185,"lon":138.99057,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"https://www.rodeomotorcycle.com/","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:3335662727","name":"イワイスポーツ","lat":36.26221,"lon":138.90199,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4846254053","name":"立川商店","lat":36.43989,"lon":138.98154,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:5162485990","name":"とまる模型店","lat":36.49973,"lon":138.99618,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6389039540","name":"ながしま","lat":36.39607,"lon":138.9667,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:node:9326529555","name":"エスワイスポーツ","lat":36.32387,"lon":138.98749,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10114288058","name":"森田輪店","lat":36.34762,"lon":138.97531,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13011545749","name":"岡田だるま店","lat":36.33053,"lon":138.94703,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby","tel":"027-325-3721"},
+{"id":"osm:way:196693589","name":"戸田書店 高崎店","lat":36.35284,"lon":138.99972,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:327529510","name":"スーパースポーツゼビオ","lat":36.33376,"lon":138.923,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:347410405","name":"トイプラネット","lat":36.2577,"lon":138.89948,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:425714470","name":"wonder goo 富岡店","lat":36.26051,"lon":138.87009,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:425729058","name":"文真堂書店","lat":36.25045,"lon":138.86131,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","wp":"ja:文真堂書店"},
+{"id":"osm:way:514886529","name":"ギャラリー毘沙門堂 atelier","lat":36.34026,"lon":138.93849,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:way:563966828","name":"トイプラネット 高崎棟高店","lat":36.38588,"lon":138.99964,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1041338390","name":"TSUTAYA","lat":36.31897,"lon":138.87573,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1340719030","name":"木田書店","lat":36.25543,"lon":138.89292,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1340719034","name":"おもちゃのストウ","lat":36.25542,"lon":138.89258,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"}
+]

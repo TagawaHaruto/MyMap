@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:13146317215","name":"沙流川温泉 ひだか高原荘","lat":42.86945,"lon":142.4455,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:431520078","name":"日高青少年自然の家","lat":42.87398,"lon":142.45134,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:563299870","name":"ホテル日勝","lat":42.87696,"lon":142.44078,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:563299956","name":"松屋旅館","lat":42.87609,"lon":142.44198,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:563459876","name":"旅館おさふね","lat":42.99381,"lon":142.40147,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

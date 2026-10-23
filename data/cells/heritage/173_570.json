@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:8378054416","name":"十勝岳爆発記念","lat":43.44748,"lon":142.64995,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378105076","name":"大正大爆発丸谷温泉遭難者慰霊碑","lat":43.44383,"lon":142.65131,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9928885617","name":"小屋まで4km, 登山口まで2km","lat":43.46372,"lon":142.68645,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:724866592","name":"Hotel Park Hills","lat":43.47512,"lon":142.63717,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:1252548749","name":"湯元白金温泉ホテル","lat":43.47426,"lon":142.63996,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.shiroganeonsen.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 166 94 3333"},
+{"id":"osm:node:5077088459","name":"Akane-yado","lat":43.3903,"lon":142.51294,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.geocities.jp/akaneyado2005/index.htm","note":"宿","g":"heritage","k":"lodging","kana":"あかねやど","tel":"+81 167 444177"},
+{"id":"osm:node:8266981427","name":"カミホロ荘","lat":43.41538,"lon":142.63836,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://kamihorosou.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8266981440","name":"ホテル富良野思惟林","lat":43.41915,"lon":142.63222,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://shiyuirin.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:673248549","name":"森の旅亭　びえい","lat":43.47366,"lon":142.6433,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:889237285","name":"湯元 凌雲閣","lat":43.41358,"lon":142.64282,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.ryounkaku.jp/","note":"宿","g":"heritage","k":"lodging","kana":"りょうんかく","tel":"+81 167 39 4111"},
+{"id":"osm:way:945981154","name":"国立大雪青少年交流の家","lat":43.47247,"lon":142.64996,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1098800067","name":"美瑛白金の湯","lat":43.4734,"lon":142.64383,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

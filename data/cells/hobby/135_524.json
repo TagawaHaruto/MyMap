@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:7814280098","name":"井上書店","lat":33.96047,"lon":131.24757,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9472329341","name":"プロショップＫＫ","lat":33.97161,"lon":131.20071,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9472329375","name":"セカンドストリート宇部厚南店","lat":33.97726,"lon":131.20605,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:9472329379","name":"ゴルフ5","lat":33.9767,"lon":131.20201,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10549107839","name":"ヒマラヤスポーツ＆ゴルフ おのだサンパーク店","lat":33.98454,"lon":131.17183,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:370267751","name":"レッドバロン","lat":33.96373,"lon":131.24313,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:378127029","name":"ひかり書店","lat":33.95127,"lon":131.24453,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:378567986","name":"京屋書店","lat":33.95719,"lon":131.24351,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:378568011","name":"山本写真機店","lat":33.95701,"lon":131.24215,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"カメラ","g":"hobby","k":"hobby"},
+{"id":"osm:way:560979796","name":"幸太郎本舗","lat":33.96098,"lon":131.24291,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:561558757","name":"幸太郎スポーツ","lat":33.95635,"lon":131.24951,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

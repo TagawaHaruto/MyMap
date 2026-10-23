@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:6355716655","name":"草津聖バルナバ教会","lat":36.6219,"lon":138.59955,"pref":"群馬","genres":["temple"],"indoor":false,"url":"https://nskk-kitakanto.org/facilities/gunma/kusatsu-christ/","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:9565854162","name":"神明神社","lat":36.55493,"lon":138.61662,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10062983321","name":"松谷神社","lat":36.56867,"lon":138.74458,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:954982172","name":"白根神社","lat":36.6247,"lon":138.59626,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"しらね じんじゃ"},
+{"id":"osm:way:956109288","name":"目洗い地蔵尊","lat":36.62256,"lon":138.59811,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1252020893","name":"日晃寺","lat":36.62429,"lon":138.59852,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"にぅこじ"}
+]

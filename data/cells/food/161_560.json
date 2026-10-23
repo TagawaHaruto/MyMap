@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:450194516","name":"レストハウス白神","lat":40.34265,"lon":140.24715,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:450194517","name":"サフォーク白神","lat":40.34256,"lon":140.24749,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9740809317","name":"鹿の浦食堂　サザエさん","lat":40.35538,"lon":140.02418,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"アイス","g":"food","k":"sweets"}
+]

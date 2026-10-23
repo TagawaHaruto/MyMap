@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3172058653","name":"トイザらス","lat":34.02953,"lon":131.0116,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:4812749721","name":"GEO","lat":34.02628,"lon":131.00678,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:way:618968662","name":"明屋書店","lat":34.0534,"lon":131.17271,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

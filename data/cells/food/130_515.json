@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2705291997","name":"やぐら寿司","lat":32.69505,"lon":128.84507,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant","oh":"11:30-22:00","tel":"72-4980","wc":"no"},
+{"id":"osm:node:2705299203","name":"はたなか","lat":32.69541,"lon":128.84496,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2705300071","name":"寅寿司","lat":32.69516,"lon":128.84526,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant","tel":"+81-959-72-1271"},
+{"id":"osm:node:13926187472","name":"おっどん亭","lat":32.69734,"lon":128.8173,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:14251425901","name":"五島列島製麺所","lat":32.60993,"lon":128.77195,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ごとうれっとうせいめんしょ"},
+{"id":"osm:way:1188552185","name":"レストラン　カウベル","lat":32.66414,"lon":128.84312,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2705488409","name":"シルクロード","lat":32.6949,"lon":128.84338,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:2705171792","name":"Hotto Motto","lat":32.69447,"lon":128.84552,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:2705461527","name":"モスバーガー","lat":32.69465,"lon":128.84314,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:2706510543","name":"うま亭","lat":32.69549,"lon":128.84879,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","wc":"no"},
+{"id":"osm:node:5470711910","name":"洋菓子工房ル・ポン","lat":32.69356,"lon":128.81362,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","oh":"10:00-19:00, We off","tel":"+81 959 74 6339"},
+{"id":"osm:node:2705294805","name":"しん","lat":32.69666,"lon":128.84417,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:2705488485","name":"おかん","lat":32.69452,"lon":128.84306,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:2705488730","name":"らんぷ","lat":32.69448,"lon":128.84307,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:2705488891","name":"Zenや","lat":32.69444,"lon":128.84297,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub","tel":"0959-74-2884","wc":"limited"},
+{"id":"osm:node:2705488933","name":"エンドレス","lat":32.69431,"lon":128.84318,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:2706725867","name":"一番どり","lat":32.69236,"lon":128.84045,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:2706956121","name":"銀河","lat":32.69749,"lon":128.84409,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:2706957989","name":"二番館","lat":32.69732,"lon":128.84474,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:2706958095","name":"スナック","lat":32.69751,"lon":128.8452,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

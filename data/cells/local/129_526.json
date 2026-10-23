@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:7049903747","name":"まちの駅 とみたか物産館","lat":32.42542,"lon":131.62804,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 08:30-18:30","tel":"+81 982 54 4228"},
+{"id":"osm:way:755171147","name":"道の駅とうごう","lat":32.39112,"lon":131.51295,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","wp":"ja:道の駅とうごう","kana":"みちのえきとご"},
+{"id":"osm:node:4670412649","name":"家畜市場","lat":32.49867,"lon":131.6703,"pref":"宮崎","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4278350896","name":"日向サンパーク オートキャンプ場","lat":32.34758,"lon":131.62519,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4284086490","name":"石並川キャンプ場","lat":32.32994,"lon":131.59085,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10904819905","name":"御鉾ヶ浦公園キャンプ場","lat":32.42284,"lon":131.67357,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://www.hyugacity.jp/sp/display.php?cont=140319105158","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287631003","name":"スポーツキャンプハウスジェイス日向シーサイド","lat":32.48568,"lon":131.66387,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-66-7111"},
+{"id":"osm:node:14287631004","name":"乙島キャンプ場","lat":32.46632,"lon":131.66789,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://kadogawa-ta.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-57-4110"},
+{"id":"osm:node:14287631010","name":"DOG RUN & CAMP FIELD SUZU","lat":32.41457,"lon":131.65967,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://dogandcampsuzu.studio.site","note":"キャンプ・野外","g":"local","k":"camp"}
+]

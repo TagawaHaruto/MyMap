@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5119103726","name":"大草原の小さな家","lat":43.12664,"lon":142.98763,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5603039931","name":"ドライブインいとう","lat":43.03663,"lon":142.94382,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11710985388","name":"四川","lat":43.01371,"lon":142.88063,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:554780561","name":"食事処 暖笑","lat":43.08279,"lon":142.83314,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:554780718","name":"そば処 せきぐち","lat":43.08292,"lon":142.83348,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:585033896","name":"そば処 みなとや","lat":43.0831,"lon":142.83506,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:588525780","name":"十勝漬本舗","lat":43.08583,"lon":142.83498,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:588525801","name":"ラーメン寶龍 新得店","lat":43.08763,"lon":142.83338,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:749967456","name":"そば処 しかめん","lat":43.1084,"lon":142.98298,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:787895408","name":"ドライブイン 松の味","lat":43.09395,"lon":142.90182,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:787939873","name":"屈足平和園","lat":43.10043,"lon":142.90361,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:869970918","name":"蕎麦 十箱","lat":43.08524,"lon":142.83587,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:9794159121","name":"サルビア","lat":43.00409,"lon":142.87495,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:588520156","name":"パン工房 わかふじ","lat":43.08038,"lon":142.82535,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

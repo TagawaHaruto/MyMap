@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:6534886074","name":"香久山ブックリー","lat":34.49298,"lon":135.81483,"pref":"奈良","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11263947232","name":"高尾釣具店","lat":34.37804,"lon":135.78758,"pref":"奈良","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:414780692","name":"三洋堂書店","lat":34.48511,"lon":135.79642,"pref":"奈良","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

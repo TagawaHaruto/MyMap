@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5179174131","name":"鳥海水産","lat":39.22854,"lon":140.13935,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5179423536","name":"サラダ館 矢島店","lat":39.22988,"lon":140.13626,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5179425335","name":"ヤマ荘商店","lat":39.22861,"lon":140.13631,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1244352662","name":"鳥海トレーニングセンター","lat":39.18648,"lon":140.18711,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ちょうかいトレーニングセンター"},
+{"id":"osm:way:821821422","name":"由利高原ゴルフ練習場","lat":39.24038,"lon":140.07027,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:722411554","name":"秡川キャンプ場","lat":39.13322,"lon":140.07089,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"はらいかわキャンプじょう"},
+{"id":"osm:node:7715632985","name":"鳥海高原家族旅行村","lat":39.03418,"lon":140.03541,"pref":"山形","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7782771185","name":"法体園地キャンプ場","lat":39.1087,"lon":140.15534,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286226220","name":"花立牧場公園キャンプ場","lat":39.21557,"lon":140.09213,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0184-56-2915"},
+{"id":"osm:node:14286226221","name":"祓川キャンプ場","lat":39.20236,"lon":140.11781,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0184-55-4953"},
+{"id":"osm:node:14289691270","name":"大清水園地キャンプ場","lat":39.09628,"lon":140.10564,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0184-57-2205"},
+{"id":"osm:way:174393263","name":"鳥海大平キャンプ場","lat":39.07176,"lon":140.23008,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"ちょうかいおおひらキャンプじょう","wc":"yes"},
+{"id":"osm:way:821821474","name":"由利高原オートキャンプ場","lat":39.24289,"lon":140.06134,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

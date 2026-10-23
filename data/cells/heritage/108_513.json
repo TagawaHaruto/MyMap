@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:2911889103","name":"松園 (Shoen)","lat":27.04855,"lon":128.41713,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7085618687","name":"与論島ビレッジ","lat":27.06051,"lon":128.4231,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7093214286","name":"MEEDAFU'S YUI HOSTEL","lat":27.04837,"lon":128.41679,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7094793685","name":"与論島ビレッジ入口","lat":27.06101,"lon":128.42171,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1344030437","name":"ビーチランド ロッジ","lat":27.02237,"lon":128.45008,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81997973706"},
+{"id":"osm:way:1353020075","name":"プリシアリゾートヨロン","lat":27.04911,"lon":128.39852,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1414010848","name":"ヨロン島ビレッジ","lat":27.06088,"lon":128.42155,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

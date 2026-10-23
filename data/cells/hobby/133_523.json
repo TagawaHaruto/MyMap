@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:13242480262","name":"天領銘木 Woodworking DIY","lat":33.32657,"lon":130.93616,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:way:509157265","name":"ヒマラヤスポーツ&ゴルフ 日田店","lat":33.33509,"lon":130.93986,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:533812724","name":"あさひや書店","lat":33.31666,"lon":130.93784,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

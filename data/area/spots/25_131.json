@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1068012991","name":"南大東村立ふるさと文化センター","lat":25.82903,"lon":131.22961,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:5537028721","name":"北大東村人材交流センター・民族資料館","lat":25.94955,"lon":131.29583,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"https://vill.kitadaito.okinawa.jp/mokuteki/shisetsu/jinzai_kouryu.html","note":"博物館","k":"museum","oh":"Mo-Fr 09:00-12:00,13:00-16:00","tel":"+81 9802-3-4350  +81"},
+{"id":"osm:node:2568407094","name":"星野洞","lat":25.85776,"lon":131.22472,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","oh":"Mo-Su 09:00-11:30,13:00-16:30"},
+{"id":"osm:node:2568407097","name":"塩屋プール","lat":25.82736,"lon":131.21569,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","tel":"+81 9802-2-2815"},
+{"id":"osm:node:2568407100","name":"海軍棒プール","lat":25.83254,"lon":131.26726,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"https://www.okinawastory.jp/spot/600010487","note":"観光名所","k":"attraction","tel":"+81 9802-2-2815"},
+{"id":"osm:node:12844319583","name":"バリバリ岩","lat":25.86867,"lon":131.23869,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"https://www.okinawastory.jp/spot/600010426","note":"観光名所","k":"attraction","kana":"ばりばりいわ","tel":"+81 9802-2-2815"},
+{"id":"osm:node:12844368871","name":"夕日の広場","lat":25.85374,"lon":131.22014,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","tel":"+81 9802-2-2815"},
+{"id":"osm:node:12844368893","name":"塩屋海岸","lat":25.82765,"lon":131.21599,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","tel":"+81 9802-2-2815"},
+{"id":"osm:way:1387545192","name":"星野洞案内所","lat":25.85796,"lon":131.22444,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","tel":"+81 9802-2-4333"},
+{"id":"osm:node:2568407088","name":"大池","lat":25.85921,"lon":131.23913,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:2568407091","name":"日の丸山展望台","lat":25.82125,"lon":131.24299,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"http://www.vill.minamidaito.okinawa.jp/sight_06.html","note":"展望台","k":"viewpoint","tel":"+81 9802-2-2815"},
+{"id":"osm:node:5535275621","name":"沖縄最東端之碑","lat":25.94397,"lon":131.32758,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5535452626","name":"燐鉱石貯蔵庫","lat":25.95411,"lon":131.28476,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5536892521","name":"上陸公園","lat":25.94092,"lon":131.2891,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5536913721","name":"台風岩","lat":25.92925,"lon":131.3064,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:1387545215","name":"展望台","lat":25.83236,"lon":131.2666,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4268164880","name":"大東宮","lat":25.94423,"lon":131.30259,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"https://www.kitadaito.jp/shop_detail1.html?shop_code=658","note":"寺社","k":"temple","oh":"24/7","tel":"+81 9802-3-4001"},
+{"id":"osm:node:4269647026","name":"大東神社","lat":25.84242,"lon":131.22658,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%9D%B1%E7%A5%9E%E7%A4%BE_%28%E5%8D%97%E5%A4%A7%E6%9D%B1%E6%9D%91%29","note":"寺社","k":"temple"}
+]

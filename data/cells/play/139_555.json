@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5501216910","name":"伊豆月ヶ瀬梅林","lat":34.91302,"lon":138.91519,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:6176057468","name":"堂ヶ島公園","lat":34.7826,"lon":138.76717,"pref":"静岡","genres":["play"],"indoor":false,"url":"https://go-izu.com/nishiizu/dougashima/","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:6968720827","name":"枯野公園","lat":34.77571,"lon":138.76733,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:380605072","name":"修善寺自然公園","lat":34.97797,"lon":138.91317,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548709003","name":"狩野川記念公園","lat":34.99329,"lon":138.93374,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548862758","name":"独鈷の湯公園","lat":34.9702,"lon":138.92777,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:549494155","name":"赤蛙公園","lat":34.96915,"lon":138.9235,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:551197556","name":"大仁ポケットパーク","lat":34.99182,"lon":138.94139,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:551386450","name":"鹿島田公園","lat":34.98148,"lon":138.95385,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:556499641","name":"土肥松原公園","lat":34.91043,"lon":138.79024,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:560753023","name":"安城岬　ふれあい公園","lat":34.77066,"lon":138.77033,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1210503492","name":"大藪公園","lat":34.91446,"lon":138.7882,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1217677410","name":"芝生広場","lat":34.91813,"lon":138.98364,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1558811555","name":"ひなた公園","lat":34.96955,"lon":138.94679,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:549670253","name":"白岩グラウンド","lat":34.96508,"lon":138.98425,"pref":"静岡","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:710594185","name":"３面","lat":34.95709,"lon":138.91623,"pref":"静岡","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:710594251","name":"３面","lat":34.95678,"lon":138.91526,"pref":"静岡","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:710594984","name":"３面","lat":34.95606,"lon":138.91547,"pref":"静岡","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:710594985","name":"３面","lat":34.95622,"lon":138.91623,"pref":"静岡","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:11003223672","name":"ことぶき","lat":34.75603,"lon":138.98367,"pref":"静岡","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"}
+]

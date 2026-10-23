@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5024155132","name":"神田神社","lat":35.6435,"lon":137.32421,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6332116562","name":"六地蔵","lat":35.74769,"lon":137.33295,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6342460457","name":"天照山","lat":35.73209,"lon":137.34054,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6354581954","name":"秋葉神社","lat":35.6574,"lon":137.4297,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6440772931","name":"下郷神社","lat":35.70093,"lon":137.38459,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

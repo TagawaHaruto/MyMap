@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:9368960916","name":"伊部岳実弾射撃演習阻止 闘争の碑","lat":26.75535,"lon":128.30063,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9425488976","name":"義本王の墓","lat":26.85895,"lon":128.26073,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:9425597620","name":"一般国道五十八号について","lat":26.84004,"lon":128.29107,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9425645659","name":"平和・共同","lat":26.83753,"lon":128.28768,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9560411508","name":"拝所","lat":26.87327,"lon":128.2643,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9740542489","name":"新沖縄観光名所 國頭東海岸線","lat":26.87217,"lon":128.26444,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9740542504","name":"ヨロン島・国頭村友好のきずな","lat":26.87236,"lon":128.26459,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9740542505","name":"琉球鐘鬼門","lat":26.87236,"lon":128.26439,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9740542506","name":"友情の火","lat":26.87265,"lon":128.26421,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9740542526","name":"祖国復帰闘争碑","lat":26.87327,"lon":128.26424,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10687574639","name":"石灯籠","lat":26.8554,"lon":128.26098,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13341932173","name":"史跡宇佐浜遺跡","lat":26.86672,"lon":128.26028,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13342056594","name":"大田政作先生緑化顕彰碑","lat":26.87173,"lon":128.2634,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13342056595","name":"日本トレイル起終点","lat":26.87282,"lon":128.26439,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4240300964","name":"民宿 海山木","lat":26.8405,"lon":128.29101,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

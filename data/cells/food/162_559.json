@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:12014426865","name":"ラーメン101","lat":40.61411,"lon":139.87284,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:974359128","name":"ぽっぽ茶屋","lat":40.55164,"lon":139.94261,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:974359157","name":"アカショウビン","lat":40.55665,"lon":139.94637,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:978399369","name":"王池 お休み処","lat":40.56317,"lon":139.96928,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6549260466","name":"うぐいす茶屋","lat":35.13312,"lon":132.69215,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:231440830","name":"さんべ温泉そばカフェ湯元","lat":35.11778,"lon":132.62734,"pref":"島根","genres":["food"],"indoor":true,"url":"https://sobacafe-yumoto.stores.jp/","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:586226991","name":"天霧","lat":35.20505,"lon":132.50141,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"うどん","g":"food","k":"restaurant"},
+{"id":"osm:way:230838642","name":"三瓶バーガー","lat":35.15355,"lon":132.62151,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

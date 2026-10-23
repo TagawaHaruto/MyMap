@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4264255409","name":"大海祇神社","lat":38.29534,"lon":141.56679,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"おおわだつみじんじゃ"},
+{"id":"osm:node:5956685600","name":"地蔵山開悟峯寺","lat":38.29156,"lon":141.52244,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5963479613","name":"観音寺","lat":38.29606,"lon":141.51174,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5963496624","name":"熊野神社","lat":38.29567,"lon":141.51403,"pref":"宮城","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

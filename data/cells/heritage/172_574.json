@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5460819349","name":"松山千春歌碑","lat":43.24413,"lon":143.54672,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:673107214","name":"本別温泉グランドホテル","lat":43.13196,"lon":143.58868,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:964446824","name":"陵雲荘","lat":43.22855,"lon":143.52616,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://koya-lab.jp/","note":"宿","g":"heritage","k":"lodging","tel":"080-1299-3828"}
+]

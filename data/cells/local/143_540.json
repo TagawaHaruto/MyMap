@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:14286866955","name":"中浜キャンプ場","lat":35.75933,"lon":135.18099,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0772-75-0437"},
+{"id":"osm:node:14286866957","name":"宇川温泉 よし野の里 キャンプ場","lat":35.75401,"lon":135.17684,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"https://ukawaonsen.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286866958","name":"高嶋海水浴場・オートキャンプ場","lat":35.75308,"lon":135.16976,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"https://tango-takashima.com/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

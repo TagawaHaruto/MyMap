@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:779007139","name":"初山別村スポーツ公園","lat":44.53068,"lon":141.77204,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779023156","name":"みなと公園","lat":44.72162,"lon":141.78603,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779023157","name":"汐見公園","lat":44.72035,"lon":141.78963,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779023158","name":"ダンジュ公園","lat":44.71981,"lon":141.79102,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779023159","name":"富士見ヶ丘公園","lat":44.71341,"lon":141.7989,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779023160","name":"富士見ヶ丘公園","lat":44.71284,"lon":141.80055,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779027004","name":"出逢いの広場","lat":44.71646,"lon":141.78701,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:779027005","name":"遠別川河川公園","lat":44.71604,"lon":141.79082,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1106996578","name":"水辺の楽校","lat":44.5306,"lon":141.769,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1106996927","name":"初山別川緑地","lat":44.53644,"lon":141.76836,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1107005912","name":"みさき台公園","lat":44.56299,"lon":141.77812,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.vill.shosanbetsu.lg.jp/shosanbetsu/?kankou=%E3%81%BF%E3%81%95%E3%81%8D%E5%8F%B0%E5%85%AC%E5%9C%92","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1354309209","name":"金浦原生花園","lat":44.68156,"lon":141.79229,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"かなうらげんせいかえん"},
+{"id":"osm:way:478757857","name":"初山別村スポーツセンター","lat":44.53286,"lon":141.77114,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

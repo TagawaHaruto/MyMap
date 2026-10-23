@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:9217137998","name":"遭難碑","lat":38.2836,"lon":139.78961,"pref":"新潟","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1071184258","name":"朝日屋","lat":38.47681,"lon":139.76355,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:795878543","name":"道の駅夕陽が丘そとめ","lat":32.83583,"lon":129.70355,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","pk":2},
+{"id":"osm:node:13227508826","name":"食事処魚宗","lat":32.93431,"lon":129.64029,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"}
+]

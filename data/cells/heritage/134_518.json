@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:8152714017","name":"島永祐術壽像","lat":33.72486,"lon":129.65151,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8152423217","name":"民宿　滝の上","lat":33.73778,"lon":129.68534,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13140906670","name":"アイランド壱岐","lat":33.74024,"lon":129.68516,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13140906671","name":"弁天荘","lat":33.74159,"lon":129.68778,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13523386530","name":"壱岐マリーナホテル","lat":33.74534,"lon":129.68974,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"http://www.iki-marinahotel.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-920-47-0603"},
+{"id":"osm:node:13785655945","name":"ゲストハウスnagatafune","lat":33.7491,"lon":129.69866,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"https://www.nagatafure.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 90-4879-6405","wc":"limited"}
+]

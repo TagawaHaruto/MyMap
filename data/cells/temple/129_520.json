@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5359064334","name":"Somedake Kannon Temple","lat":32.44969,"lon":130.16317,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6041865940","name":"百貫様","lat":32.45922,"lon":130.09497,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6046742340","name":"行人岳","lat":32.46271,"lon":130.11078,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ぎょにんだけ"},
+{"id":"osm:node:8664054701","name":"古江大神宮","lat":32.28841,"lon":130.08961,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8678378083","name":"諏訪大明神","lat":32.28232,"lon":130.12391,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8780677662","name":"下浦船場天満宮","lat":32.41705,"lon":130.22308,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:919231920","name":"幣串神社","lat":32.25473,"lon":130.22264,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"へいぐしじんじゃ"},
+{"id":"osm:way:927641555","name":"一町田八幡宮","lat":32.33554,"lon":130.07868,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:930668888","name":"木場神社","lat":32.45071,"lon":130.07497,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:932260892","name":"本徳稲荷神社","lat":32.47122,"lon":130.20432,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:934704583","name":"本渡諏訪神社","lat":32.45488,"lon":130.18859,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:935755684","name":"無畏庵","lat":32.45842,"lon":130.17005,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:938641477","name":"亀浦神社","lat":32.27171,"lon":130.02285,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:939399671","name":"平床神社","lat":32.33239,"lon":130.09748,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1213295667","name":"諏訪","lat":32.3119,"lon":130.02493,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

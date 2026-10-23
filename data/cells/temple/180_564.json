@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4376724591","name":"北のいつくしま弁財天","lat":45.14111,"lon":141.16466,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:441430701","name":"創価学会","lat":45.24518,"lon":141.21522,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:515743747","name":"利尻山神社奥宮","lat":45.18044,"lon":141.24159,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"りしりざん じんじゃ おくみや"}
+]

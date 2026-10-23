@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:701838645","name":"わんぱく城","lat":37.6542,"lon":141.01435,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:701838658","name":"宇宙ステーション","lat":37.65712,"lon":141.01582,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:relation:9754936","name":"原町シーサイドパーク","lat":37.65666,"lon":141.016,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

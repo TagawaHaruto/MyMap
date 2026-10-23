@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:2987352948","name":"ブックショップ かえで","lat":40.64414,"lon":140.60037,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4239212990","name":"スーパースポーツゼビオ","lat":40.59614,"lon":140.50436,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6278295311","name":"ファイテン弘前","lat":40.60364,"lon":140.50288,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9502619657","name":"セカンドストリート","lat":40.66669,"lon":140.60138,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:9502634744","name":"ブックスモア","lat":40.63266,"lon":140.59784,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11099718163","name":"未来屋書店","lat":40.65718,"lon":140.50163,"pref":"青森","genres":["shopping"],"indoor":true,"url":"https://www.miraiyashoten.co.jp/shop/%E6%9C%AA%E6%9D%A5%E5%B1%8B%E6%9B%B8%E5%BA%97%E8%97%A4%E5%B4%8E/","note":"本屋","g":"hobby","k":"hobby","kana":"みらいやしょてん","tel":"+81 172 89 7361"},
+{"id":"osm:node:11099718169","name":"売るナビ","lat":40.65759,"lon":140.50114,"pref":"青森","genres":["shopping"],"indoor":true,"url":"https://www.urunavi.jp/shop.php?id=106","note":"古着・リサイクル","g":"hobby","k":"hobby","tel":"+81 172 26 8113"},
+{"id":"osm:node:11500529121","name":"未来屋書店","lat":40.59061,"lon":140.56603,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みらいやしょてん"},
+{"id":"osm:node:11500529125","name":"売るナビ","lat":40.59089,"lon":140.56654,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:14066322444","name":"阿保こけしや","lat":40.61966,"lon":140.65171,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:way:546949545","name":"ブックオフ","lat":40.59614,"lon":140.50497,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"0172-29-2520"},
+{"id":"osm:way:663795077","name":"オフハウス弘前店","lat":40.60104,"lon":140.50246,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:663795081","name":"TSUTAYA","lat":40.60065,"lon":140.50123,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:663795088","name":"セカンドストリート弘前店","lat":40.6016,"lon":140.50168,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:844098978","name":"上州屋","lat":40.59683,"lon":140.50261,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1546547396","name":"リサイクルショップ四次元ポケット 黒石店","lat":40.62628,"lon":140.59484,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1546547401","name":"おもしろ市場 本店","lat":40.63343,"lon":140.58974,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

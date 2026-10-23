@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:2982086508","name":"ビアガーデン国境（ハテ）","lat":24.46869,"lon":123.0011,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/838/","note":"居酒屋","g":"food","k":"pub","kana":"びあがーでんはて","tel":"+81-980-87-3255"},
+{"id":"osm:node:2982086512","name":"居酒屋女酋長","lat":24.46851,"lon":123.00082,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://welcome-yonaguni.jp/guide/95/","note":"居酒屋","g":"food","k":"pub","oh":"18:00-23:00; We off","tel":"+81-70-8470-6250"}
+]

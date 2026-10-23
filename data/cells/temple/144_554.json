@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4100262648","name":"山神宮","lat":36.18157,"lon":138.65779,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5837341948","name":"Anyoji","lat":36.16133,"lon":138.7178,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6722533388","name":"諏訪神社","lat":36.2362,"lon":138.56202,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6722533393","name":"霊台寺","lat":36.23632,"lon":138.55677,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13087475067","name":"Iwato Shrine","lat":36.17053,"lon":138.72898,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13087475080","name":"Oyamainari Shrine","lat":36.15873,"lon":138.71869,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:407993365","name":"星尾諏訪神社","lat":36.17264,"lon":138.64647,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1258479965","name":"諏訪神社","lat":36.05955,"lon":138.54313,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1258479966","name":"新海神社","lat":36.05174,"lon":138.52186,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1270583402","name":"上宮寺","lat":36.19241,"lon":138.50882,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1278689225","name":"大昌寺","lat":36.22248,"lon":138.51098,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1278727352","name":"正安寺","lat":36.2315,"lon":138.51201,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1278754046","name":"園城寺","lat":36.23701,"lon":138.52234,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1278754389","name":"長福寺","lat":36.23484,"lon":138.52203,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

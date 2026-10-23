@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:747263549","name":"ふれあいパーク浦内","lat":31.85962,"lon":129.86555,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263739","name":"西の浜緑地公園","lat":31.84716,"lon":129.91565,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263740","name":"上甑グラウンド","lat":31.83866,"lon":129.8585,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:747263744","name":"太田の浜海浜公園","lat":31.83747,"lon":129.85812,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263745","name":"平良港防波堤緑道","lat":31.80246,"lon":129.84286,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263751","name":"平良港開港200周年記念公園","lat":31.80278,"lon":129.83893,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263756","name":"鹿の子大橋展望公園","lat":31.81812,"lon":129.83931,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263757","name":"花の広場","lat":31.82492,"lon":129.84263,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263758","name":"石の広場","lat":31.82703,"lon":129.84394,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:747263764","name":"橋の広場","lat":31.83195,"lon":129.84893,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:958253254","name":"江石港ふれあい健康広場","lat":31.82252,"lon":129.8694,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

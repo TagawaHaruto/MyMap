@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:644352639","name":"本城地区コミュニティパーク","lat":31.43139,"lon":131.26079,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:644404801","name":"立宇津公園","lat":31.39009,"lon":131.30657,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:674060156","name":"いこいの里公園","lat":31.43538,"lon":131.2793,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:704085773","name":"坪子池公園","lat":31.49946,"lon":131.35941,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1320076114","name":"恋ヶ浦展望所","lat":31.40041,"lon":131.34445,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1320080669","name":"築島漁村公園","lat":31.47798,"lon":131.38779,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1319022115","name":"都井小学校 プール","lat":31.39849,"lon":131.30522,"pref":"宮崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1319022116","name":"都井小学校 体育館","lat":31.39829,"lon":131.30513,"pref":"宮崎","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1319022123","name":"都井基幹集落センター","lat":31.3975,"lon":131.30553,"pref":"宮崎","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

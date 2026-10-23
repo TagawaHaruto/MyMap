@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5492986242","name":"佐藤鮮魚店","lat":39.88305,"lon":139.84596,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5492988731","name":"坂下鮮魚店","lat":39.87814,"lon":139.84485,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5493086521","name":"魚屋じゅん","lat":39.88656,"lon":139.84363,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5493089026","name":"男鹿海鮮市場","lat":39.89196,"lon":139.85521,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14099017163","name":"おみやげプラザ","lat":39.93382,"lon":139.87551,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:823851186","name":"なまはげ直売所","lat":39.94103,"lon":139.77594,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:794219283","name":"総合運動公園体育館","lat":39.9113,"lon":139.85379,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:795478652","name":"潟上市天王総合体育館","lat":39.88613,"lon":139.98177,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:795478653","name":"潟上市 体育・文化天王Ｂ＆Ｇ天王海洋センタープール","lat":39.88614,"lon":139.98273,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4440234506","name":"なまはげオートキャンプ場","lat":39.95272,"lon":139.7592,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"https://www.namahage.co.jp/camp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0185 22 5030"},
+{"id":"osm:node:14285576582","name":"ホテルパークテラスOGA グランピング&キャンプエリア","lat":39.89508,"lon":139.9478,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:605495731","name":"Saaji Ori","lat":24.32817,"lon":124.08579,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:605495780","name":"西塘御嶽","lat":24.33009,"lon":124.08646,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2206116838","name":"東パイザーシ御嶽","lat":24.32918,"lon":124.0871,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:4786539644","name":"川平観音堂","lat":24.46114,"lon":124.14284,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4786539677","name":"赤イロ目宮鳥御嶽","lat":24.46302,"lon":124.13765,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4786710480","name":"日蓮正宗唱行寺","lat":24.35978,"lon":124.15769,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5310135423","name":"群星御嶽","lat":24.46578,"lon":124.13139,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5476314648","name":"世持御嶽","lat":24.33178,"lon":124.08566,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9591633058","name":"幸本御嶽","lat":24.32601,"lon":124.08629,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:9591633076","name":"久間原御嶽","lat":24.3279,"lon":124.09175,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:9591633089","name":"美崎御嶽","lat":24.33977,"lon":124.08728,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:12163655610","name":"喜宝院 布教所","lat":24.33162,"lon":124.08451,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12866514953","name":"ヌスクオン","lat":24.49592,"lon":124.23101,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:712482327","name":"創価学会八重山文化会館","lat":24.36545,"lon":124.14135,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:713290135","name":"石垣宝来宝来神社","lat":24.35702,"lon":124.16556,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"06:00-21:00"},
+{"id":"osm:way:1306656240","name":"冨崎観音堂","lat":24.36493,"lon":124.11625,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"とみ さき かんのんどう"}
+]

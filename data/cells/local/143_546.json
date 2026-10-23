@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:11297734270","name":"道の駅九頭竜","lat":35.90466,"lon":136.66233,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81 779 78 2300"},
+{"id":"osm:node:11327784606","name":"荒島マルシェ","lat":35.97174,"lon":136.55256,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7792090286","name":"勝原園地","lat":35.97279,"lon":136.59548,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0779-66-1111"},
+{"id":"osm:node:14285591261","name":"和泉前坂家族旅行村 前坂キャンプ場","lat":35.94667,"lon":136.70743,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"https://maesaka-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0779-78-2248"},
+{"id":"osm:node:14286888855","name":"麻那姫湖青少年旅行村","lat":35.87227,"lon":136.50799,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"http://manahimeko.ono-city.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286900496","name":"スターランドさかだに満点星空オートキャンプ場","lat":35.99069,"lon":136.58124,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286904742","name":"福井和泉スキー場内 ホワイトパーク和泉キャンプ場","lat":35.94469,"lon":136.71643,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0779-78-2711"},
+{"id":"osm:node:14286920086","name":"パークホテル九頭竜オートキャンプ場","lat":35.89875,"lon":136.65364,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0779-78-2326"},
+{"id":"osm:way:692532109","name":"キャンプ場","lat":35.89767,"lon":136.65181,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:692532110","name":"オートキャンプ場","lat":35.89842,"lon":136.65025,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:956202806","name":"RVパーク","lat":35.97347,"lon":136.55209,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

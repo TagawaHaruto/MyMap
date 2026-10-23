@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1732835484","name":"新生堂","lat":42.92034,"lon":143.20218,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:1739132987","name":"栄陽堂","lat":42.92259,"lon":143.20464,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:1739197992","name":"PubliC","lat":42.92286,"lon":143.20488,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4481847250","name":"岡書 帯広イーストモール店","lat":42.9145,"lon":143.21341,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4827162927","name":"ハードオフ・オフハウス","lat":42.89618,"lon":143.20229,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4827162928","name":"ハードオフ・オフハウス 音更店","lat":42.958,"lon":143.20681,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4827191523","name":"セカンドストリート","lat":42.88734,"lon":143.19791,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4827828670","name":"ブックオフ","lat":42.89609,"lon":143.20231,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4920229321","name":"リサイクルショップあいうえお","lat":42.91945,"lon":143.16286,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4920229322","name":"リサイクルショップ あいうえお　音更店","lat":42.96633,"lon":143.20588,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4920229323","name":"ツタヤ","lat":42.95775,"lon":143.2051,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5099947155","name":"なんでもリサイクルビッグバン　帯広柏林台店","lat":42.91959,"lon":143.16246,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5112151199","name":"ブックオフ音更店","lat":42.958,"lon":143.2071,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5700651421","name":"Kamada Bicycle Shop","lat":42.92912,"lon":143.21474,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5700959621","name":"Bike Shop","lat":42.91737,"lon":143.20582,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6134193972","name":"TSUTAYA 西帯店","lat":42.91693,"lon":143.13854,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"つたやにしおびてん"},
+{"id":"osm:way:549417089","name":"スポーツデポ","lat":42.89047,"lon":143.19984,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:561061603","name":"クレイジーフィッシャー","lat":42.94903,"lon":143.20526,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

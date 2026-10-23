@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:4822638908","name":"あさひ","lat":37.45654,"lon":138.80985,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5563961831","name":"米太輪店","lat":37.30881,"lon":138.8095,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5563961836","name":"山吉書店","lat":37.30966,"lon":138.79777,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5563961862","name":"エビスヤ","lat":37.30963,"lon":138.79691,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5566033138","name":"Spolt Golf","lat":37.45434,"lon":138.81257,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5567919769","name":"石井スポーツ","lat":37.45312,"lon":138.81808,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5567919776","name":"ブックオフ","lat":37.45363,"lon":138.81976,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5913812778","name":"アニメイト","lat":37.44832,"lon":138.85354,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/nagaoka/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"11:00-19:00","tel":"0258-30-0851"},
+{"id":"osm:node:6698469137","name":"West","lat":37.42768,"lon":138.86422,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7489421983","name":"セカンドストリート アクロスプラザ長岡店","lat":37.44481,"lon":138.86498,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13277182208","name":"ヒマラヤスポーツ＆ゴルフ 長岡店","lat":37.45431,"lon":138.81694,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:502281403","name":"(有)龍文堂","lat":37.44812,"lon":138.84688,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:502296900","name":"西脇書店","lat":37.44845,"lon":138.84672,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:624392456","name":"TSUTAYA 花園店","lat":37.43003,"lon":138.86266,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:624615289","name":"蔦屋書店 アクロスプラザ美沢店","lat":37.4442,"lon":138.86513,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"https://www.topculture.co.jp/","note":"本屋","g":"hobby","k":"hobby","kana":"つたやしょてん あくろすぷらざみさわてん"},
+{"id":"osm:way:624734189","name":"オオミヤスポーツ","lat":37.44454,"lon":138.86849,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:692422060","name":"セカンドストリート","lat":37.45998,"lon":138.82435,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:802155385","name":"上州屋 新長岡店","lat":37.44637,"lon":138.81014,"pref":"新潟","genres":["shopping"],"indoor":true,"url":"https://www.johshuya.co.jp/shop/top.php?s=161","note":"釣具","g":"hobby","k":"hobby","kana":"じょうしゅうや しんながおかてん"}
+]

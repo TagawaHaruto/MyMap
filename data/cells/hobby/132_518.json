@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:2113594876","name":"ダイソー大野店","lat":33.20657,"lon":129.72189,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2113594881","name":"ダイソー矢峰店","lat":33.21085,"lon":129.74132,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:5923376954","name":"アニメイト","lat":33.17033,"lon":129.72163,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/sasebo/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"11:00-20:00","tel":"0956-37-3001"},
+{"id":"osm:node:6797844195","name":"TSUTAYA","lat":33.16431,"lon":129.72311,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11068149166","name":"金明堂書店","lat":33.20671,"lon":129.72204,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12027567848","name":"ヒマラヤスポーツ 佐世保店","lat":33.1609,"lon":129.74875,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12027780773","name":"ブックオフ","lat":33.15965,"lon":129.74347,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12027780775","name":"スーパースポーツゼビオ","lat":33.15971,"lon":129.74313,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12027780806","name":"トイザらス","lat":33.16549,"lon":129.72277,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:12027780816","name":"島村楽器","lat":33.16457,"lon":129.72542,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:12343197180","name":"Navy Marine Corps Relief Society Thrift Shop","lat":33.16728,"lon":129.71233,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1106554337","name":"角床つり具店","lat":33.22933,"lon":129.65009,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:1192240098","name":"エコログ","lat":33.20215,"lon":129.67684,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1222047687","name":"金明堂書店","lat":33.16876,"lon":129.6802,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1296720544","name":"マンガ倉庫 佐々店","lat":33.24035,"lon":129.65165,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1375794797","name":"しまづ釣具店","lat":33.03539,"lon":129.62228,"pref":"長崎","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","oh":"Mo-Fr 08:00-20:00; Sa 04:00-20:00; PH,Su 04:00-19:00","wc":"no"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:9001382989","name":"フタバ図書","lat":34.24442,"lon":132.55713,"pref":"広島","genres":["shopping"],"indoor":true,"url":"https://www.futabatosho.co.jp/h17","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-21:00"},
+{"id":"osm:node:9688894078","name":"至誠堂書店","lat":34.24321,"lon":132.56451,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9719962830","name":"Point呉警固屋店","lat":34.20918,"lon":132.54448,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:10741559412","name":"オート小笠原","lat":34.24374,"lon":132.55969,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10748562574","name":"東部バイク","lat":34.24772,"lon":132.5671,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11468888582","name":"廣文館","lat":34.24479,"lon":132.55803,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11469029678","name":"啓文社","lat":34.24225,"lon":132.55636,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:353443352","name":"ヒマラヤスポーツ&ゴルフ 呉駅前店","lat":34.2453,"lon":132.55716,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:363074847","name":"マルタホビー","lat":34.24341,"lon":132.55839,"pref":"広島","genres":["shopping"],"indoor":true,"url":"http://malta.hobby.co.jp/","note":"ホビー・模型","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:4294130730","name":"道祖神","lat":34.99771,"lon":134.14191,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9718349456","name":"和氣氏政廳之趾","lat":34.81154,"lon":134.17326,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10920925351","name":"池田家東墓所","lat":34.92327,"lon":134.09045,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10921099345","name":"吉井詩情 五木ひろし","lat":34.92418,"lon":134.09261,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10921099346","name":"茶臼山城跡","lat":34.92416,"lon":134.09261,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12565690971","name":"熊山遺跡","lat":34.754,"lon":134.12038,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:熊山遺跡"},
+{"id":"osm:way:455096115","name":"周匝茶臼山城","lat":34.92414,"lon":134.09243,"pref":"岡山","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:3106938614","name":"かつらぎ","lat":34.99233,"lon":134.13416,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かつらぎ","tel":"+81-868-721555"},
+{"id":"osm:node:4265423599","name":"ポピースプリングス リゾート アンド スパ","lat":34.99255,"lon":134.13472,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4283539787","name":"さくとう山の学校","lat":34.95871,"lon":134.20696,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4283543159","name":"やさしさの宿 竹亭","lat":34.99409,"lon":134.13502,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4283543959","name":"季譜の里","lat":34.99512,"lon":134.13915,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4358033499","name":"大芦高原温泉 雲海","lat":34.89068,"lon":134.12696,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12237939703","name":"草楽","lat":34.90096,"lon":134.13249,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://matsu3028.wixsite.com/souraku","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:272983517","name":"ロッジ","lat":34.91514,"lon":134.21742,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:399315397","name":"フォーシーズン湯郷","lat":34.99099,"lon":134.13311,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:399326810","name":"湯郷グランドホテル","lat":34.99248,"lon":134.13679,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://www.yunogo.co.jp/","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:529351272","name":"和気鵜飼谷温泉","lat":34.81342,"lon":134.14451,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://plus.harenet.ne.jp/~ugaidani/","note":"宿","g":"heritage","k":"lodging","tel":"+81-869-92-9001"},
+{"id":"osm:way:1295996177","name":"杉金旅館","lat":34.79783,"lon":134.15162,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-869-92-0024"},
+{"id":"osm:way:1322536652","name":"囲炉裏のお宿 zen","lat":34.89145,"lon":134.13074,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://vacation-stay.jp/listings/280209","note":"宿","g":"heritage","k":"lodging"}
+]

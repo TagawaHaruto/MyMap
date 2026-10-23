@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:1184306054","name":"石見銀山遺跡","lat":35.11376,"lon":132.44534,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:石見銀山"},
+{"id":"osm:node:5956794241","name":"石灯籠","lat":35.1225,"lon":132.44844,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5956794242","name":"亀石","lat":35.12247,"lon":132.44875,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5956794243","name":"西南之役戦死者記念碑","lat":35.12167,"lon":132.4483,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6267169024","name":"正明井戸君碑","lat":35.09677,"lon":132.35137,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6267202307","name":"新谷道太郎翁銅像","lat":35.09653,"lon":132.35323,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6269113841","name":"ふれあい橋","lat":35.14677,"lon":132.40674,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7360549755","name":"琴姫の碑","lat":35.13056,"lon":132.38943,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7460556385","name":"清水谷製錬所跡","lat":35.10526,"lon":132.43881,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","kana":"しみずだにせいれんしょあと"},
+{"id":"osm:node:8463033038","name":"水難横死者追悼碑","lat":35.12751,"lon":132.42551,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13387974107","name":"銀山大盛祈願道場碑","lat":35.10714,"lon":132.4382,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13387988716","name":"下河原吹屋跡","lat":35.11016,"lon":132.43951,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","kana":"しもがわらふきやあと"},
+{"id":"osm:node:4608593995","name":"アサリハウス","lat":35.03481,"lon":132.27854,"pref":"島根","genres":["lodging"],"indoor":true,"url":"http://52-ghs.com","note":"宿","g":"heritage","k":"lodging","wc":"no"},
+{"id":"osm:node:9546614617","name":"旅館ますや","lat":35.09553,"lon":132.34684,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

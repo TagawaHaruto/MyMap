@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4212044697","name":"三吉神社","lat":39.79715,"lon":140.31081,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7416583039","name":"根子神社（根子山神社）","lat":39.94,"lon":140.3971,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:421446568","name":"御滝神社","lat":39.80781,"lon":140.29314,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:781442598","name":"日蓮宗 法華寺","lat":39.99931,"lon":140.40391,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:794622273","name":"畑町愛宕神社","lat":39.99367,"lon":140.40275,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:794646968","name":"浄土宗 一心山 円信院 専念寺","lat":39.99801,"lon":140.40104,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:794647022","name":"善導寺","lat":39.99849,"lon":140.40323,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:798826114","name":"門","lat":39.90908,"lon":140.45103,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:relation:11580315","name":"金山　善勝寺","lat":39.9983,"lon":140.40415,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:813427167","name":"荒瀬神社","lat":39.9822,"lon":140.40611,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:843722081","name":"神仙山神社","lat":39.78338,"lon":140.25649,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:843722082","name":"木曽吉山神社","lat":39.77948,"lon":140.27068,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:844257228","name":"銀山神明社","lat":39.99982,"lon":140.40339,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:844257229","name":"稲荷神社・今木神社","lat":39.99967,"lon":140.40347,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:969824688","name":"弁財天神社","lat":39.996,"lon":140.40363,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

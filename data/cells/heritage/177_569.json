@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5179524407","name":"山一ホテル","lat":44.33104,"lon":142.47575,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5179524408","name":"ホテル グリーン","lat":44.33065,"lon":142.47575,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6583300424","name":"二条旅館","lat":44.35123,"lon":142.46108,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"にじょりょかん","tel":"+81 1654 3 1117"},
+{"id":"osm:node:6583352689","name":"ニュー富士屋ホテル","lat":44.35074,"lon":142.46342,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11951520655","name":"ホテル バード・イン","lat":44.3518,"lon":142.45981,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:node:11951528286","name":"Business hotel Sunflower","lat":44.34768,"lon":142.46351,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:644441699","name":"ゲストハウスびふか","lat":44.47738,"lon":142.34889,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:645963393","name":"しらかば荘","lat":44.48335,"lon":142.34971,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

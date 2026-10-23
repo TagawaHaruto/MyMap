@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5552626492","name":"にしむら屋","lat":35.17084,"lon":133.32219,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5552626493","name":"蓬莱","lat":35.16944,"lon":133.32296,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5552626496","name":"ゴン","lat":35.16992,"lon":133.32333,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:5553634272","name":"水川","lat":35.16598,"lon":133.30667,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

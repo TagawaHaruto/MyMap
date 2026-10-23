@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:423654383","name":"富川さるがわせせらぎ公園","lat":42.51829,"lon":142.03941,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:848328847","name":"二風谷交通公園","lat":42.61594,"lon":142.15009,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:858898710","name":"富川ふれあい広場","lat":42.5216,"lon":142.03255,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"とみかわふれあいひろば"},
+{"id":"osm:way:859320548","name":"とみかわ児童館","lat":42.52182,"lon":142.03306,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park","tel":"+81-1456-2-3044"},
+{"id":"osm:way:886828367","name":"二風谷湖公園","lat":42.63917,"lon":142.15664,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13533590485","name":"平取町民体育館","lat":42.5899,"lon":142.13747,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:423438362","name":"門別競馬場","lat":42.53925,"lon":142.00246,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"https://www.hokkaidokeiba.net/guide/","note":"スタジアム","g":"play","k":"sports","wp":"ja:門別競馬場"},
+{"id":"osm:way:423633052","name":"町営富川球場","lat":42.51898,"lon":142.02037,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1378274548","name":"ふれあい広場グラウンド","lat":42.52077,"lon":142.03264,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:886832587","name":"平取町アイヌ工芸伝承館（ウレㇱパ）","lat":42.63654,"lon":142.16067,"pref":"北海道","genres":["play"],"indoor":true,"url":"https://biratori-urespa.jp/","note":"アートセンター","g":"play","k":"amuse","kana":"びらとりちょうあいぬこうげいでんしょうかん（うれしぱ）","tel":"+81-1457-3-7501"}
+]

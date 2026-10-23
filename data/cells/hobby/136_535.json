@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:2224289845","name":"カワサキサービスプラザ坂出(KSP坂出)","lat":34.24879,"lon":133.87211,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2224808456","name":"宮脇書店","lat":34.24338,"lon":133.83564,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:node:10278129376","name":"はしたか書店","lat":34.18893,"lon":133.82406,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10747621422","name":"文英堂","lat":34.22766,"lon":133.78329,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","wc":"no"},
+{"id":"osm:node:10747621450","name":"畑田サイクル","lat":34.22703,"lon":133.78075,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","oh":"Mo-Fr 09:00-19:00; Sa,Su,PH 10:00-18:00; Mo[1,2] off","wc":"no"},
+{"id":"osm:node:10806776634","name":"本プラス","lat":34.23321,"lon":133.78414,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10917598192","name":"山本商会","lat":34.22812,"lon":133.77819,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:10951142716","name":"谷口サイクル","lat":34.18855,"lon":133.821,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","wc":"no"},
+{"id":"osm:node:11201700655","name":"みどり書店","lat":34.22585,"lon":133.77976,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:11610137617","name":"宮脇書店","lat":34.18831,"lon":133.82884,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:node:12069446675","name":"マナベスポーツ","lat":34.02821,"lon":133.8055,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12237292655","name":"ルコルシブックス","lat":34.22734,"lon":133.781,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","wc":"limited"},
+{"id":"osm:node:12698061946","name":"サイクルショップ ミヤモト","lat":34.18889,"lon":133.82173,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:568220740","name":"バイクサイクルくわはら","lat":34.2408,"lon":133.82413,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1085276471","name":"香川記章","lat":34.23528,"lon":133.78974,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby","oh":"Mo-Fr 09:00-19:00; Sa 10:00-18:00; Su,PH off"},
+{"id":"osm:way:1134538127","name":"宮脇書店","lat":34.2312,"lon":133.78091,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん","oh":"10:00-21:00"}
+]

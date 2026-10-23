@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:11637195613","name":"小才角休憩所","lat":32.75501,"lon":132.78177,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:437439671","name":"道の駅みしょうMIC","lat":32.95891,"lon":132.56166,"type":"SA・PA","k":"rest_area","likely":true,"oh":"Mo-Su 07:00-19:00"},
+{"id":"osm:way:441711916","name":"道の駅 めじかの里土佐清水","lat":32.79348,"lon":132.88346,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441712504","name":"道の駅 大月","lat":32.82913,"lon":132.70946,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:441713656","name":"道の駅すくも","lat":32.916,"lon":132.71261,"type":"SA・PA","k":"rest_area","likely":true}
+]

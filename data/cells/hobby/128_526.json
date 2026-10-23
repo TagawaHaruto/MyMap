@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11811590583","name":"TSUTAYA","lat":32.128,"lon":131.51139,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:396056233","name":"リサイクルショップ大村","lat":32.07369,"lon":131.50587,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:397141747","name":"PYZEL SURFBOARDS JAPAN","lat":32.08698,"lon":131.5122,"pref":"宮崎","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

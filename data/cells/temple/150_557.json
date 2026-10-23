@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:6899544537","name":"住吉神社","lat":37.68371,"lon":139.45153,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6899544538","name":"玉泉寺","lat":37.68154,"lon":139.45084,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6899544539","name":"密蔵院","lat":37.68211,"lon":139.45078,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6899544540","name":"正法寺","lat":37.68267,"lon":139.45069,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9030078266","name":"室谷神社","lat":37.55198,"lon":139.36763,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:451811398","name":"徳昌寺","lat":37.71542,"lon":139.35159,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:451982962","name":"西照寺","lat":37.74122,"lon":139.27978,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:451982964","name":"長徳寺","lat":37.73495,"lon":139.28827,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:455002133","name":"新善光寺","lat":37.68047,"lon":139.45405,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:456886677","name":"正寿寺","lat":37.73848,"lon":139.30482,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1225575350","name":"観音寺","lat":37.74955,"lon":139.26189,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1225579545","name":"八幡社","lat":37.7461,"lon":139.26204,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1225823755","name":"若宮八幡神社","lat":37.73939,"lon":139.2808,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1225832785","name":"若宮八幡宮","lat":37.73545,"lon":139.29117,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1227091955","name":"諏訪神社","lat":37.65419,"lon":139.47835,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4864161706","name":"青島神社","lat":33.73657,"lon":132.48675,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6618131741","name":"住吉神社","lat":33.61311,"lon":132.48445,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7992455910","name":"大元神社","lat":33.58578,"lon":132.48913,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994726474","name":"地蔵堂","lat":33.57453,"lon":132.48694,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:7994726475","name":"藤島神社","lat":33.55911,"lon":132.48274,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994726476","name":"日切地蔵尊","lat":33.55905,"lon":132.47416,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:7994726477","name":"神山神社","lat":33.55851,"lon":132.4669,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994894768","name":"森大明神社","lat":33.53085,"lon":132.46038,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994894769","name":"天神社","lat":33.52523,"lon":132.46405,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994894770","name":"山神防お宮","lat":33.52457,"lon":132.46214,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994894771","name":"八尺神社","lat":33.51494,"lon":132.45982,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994913744","name":"宇都宮神社","lat":33.56958,"lon":132.46715,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7994913746","name":"三島神社","lat":33.56249,"lon":132.46645,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:599090034","name":"長久寺","lat":33.61298,"lon":132.48275,"pref":"愛媛","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

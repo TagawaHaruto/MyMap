@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:7062373194","name":"水神社","lat":33.96581,"lon":131.19714,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:325412786","name":"赤嵜神社","lat":33.95967,"lon":131.17689,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:375944881","name":"信行寺","lat":33.95058,"lon":131.24865,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:459136949","name":"住吉神社","lat":33.97942,"lon":131.18259,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:483330385","name":"子持御前","lat":33.95037,"lon":131.16912,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:493963102","name":"松濤神社","lat":33.95977,"lon":131.23799,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:493966532","name":"天理教西新川教会","lat":33.95914,"lon":131.23685,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:548954294","name":"宇部カトリック教会","lat":33.95483,"lon":131.24974,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:549554507","name":"中津瀬神社","lat":33.94892,"lon":131.2493,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:549554508","name":"法興寺","lat":33.94957,"lon":131.248,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:562395858","name":"高泊神社","lat":33.99953,"lon":131.16326,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:562395861","name":"當嶋八幡宮","lat":33.99718,"lon":131.16581,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:865809690","name":"蓮光寺","lat":33.99598,"lon":131.212,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

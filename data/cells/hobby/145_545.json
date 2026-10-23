@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4689835244","name":"ブックメイトとくひさ","lat":36.4435,"lon":136.49264,"pref":"石川","genres":["shopping"],"indoor":true,"url":"https://tokuhisa-syoten.com/","note":"本屋","g":"hobby","k":"hobby","oh":"09:00-22:00"},
+{"id":"osm:node:4689855990","name":"中西書店","lat":36.44284,"lon":136.49393,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"09:00-20:00"},
+{"id":"osm:node:4689855996","name":"村上モータース","lat":36.43262,"lon":136.48965,"pref":"石川","genres":["shopping"],"indoor":true,"url":"http://murakamimotors.jp/","note":"バイク用品","g":"hobby","k":"hobby","oh":"08:30-20:00"},
+{"id":"osm:node:5265393332","name":"BOOKS KaBoS","lat":36.39497,"lon":136.46761,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5764776452","name":"万代書店","lat":36.3049,"lon":136.34642,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7310991864","name":"ハードオフ","lat":36.40043,"lon":136.47732,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:7310991865","name":"オフハウス","lat":36.40026,"lon":136.47731,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:492296305","name":"明文堂書店","lat":36.3965,"lon":136.46177,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:492296306","name":"アルペン","lat":36.39661,"lon":136.46268,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:492296308","name":"セカンドストリート","lat":36.39647,"lon":136.46542,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:492355578","name":"ブックオフ","lat":36.40462,"lon":136.46019,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:511073561","name":"うつのみや","lat":36.40795,"lon":136.43427,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:514502774","name":"長野書店","lat":36.39205,"lon":136.44994,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:617638119","name":"山屋楽器","lat":36.40164,"lon":136.47004,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:727103862","name":"セカンドストリート","lat":36.42036,"lon":136.47446,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:783555956","name":"サイクルベースあさひ","lat":36.39577,"lon":136.45545,"pref":"石川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

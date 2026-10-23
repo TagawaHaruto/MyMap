@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6023474388","name":"素盞嗚社","lat":36.47293,"lon":137.2424,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6023505306","name":"八坂神社","lat":36.47026,"lon":137.2388,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6023505307","name":"西禅寺","lat":36.46948,"lon":137.23968,"pref":"富山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"さいぜんじ"},
+{"id":"osm:node:6435509934","name":"神明神社","lat":36.33282,"lon":137.14809,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6435656850","name":"信行寺","lat":36.2666,"lon":137.13418,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6435656853","name":"浄永寺","lat":36.26234,"lon":137.14856,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6435656855","name":"秋葉神社","lat":36.26211,"lon":137.15181,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6435656856","name":"向善寺","lat":36.25447,"lon":137.12905,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6435656857","name":"熊野神社","lat":36.25364,"lon":137.12487,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6435656867","name":"高田神社","lat":36.25669,"lon":137.17277,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6436229262","name":"本竜寺","lat":36.25285,"lon":137.16665,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6436257366","name":"末高白山神社","lat":36.27055,"lon":137.14446,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7804955901","name":"春日神社","lat":36.41384,"lon":137.18911,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:983628307","name":"打保白山神社","lat":36.38399,"lon":137.17971,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

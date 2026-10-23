@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:9906880679","name":"最北端","lat":45.52201,"lon":141.93755,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9906880680","name":"てっぺん市場","lat":45.52205,"lon":141.93743,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10804179043","name":"間宮堂","lat":45.52107,"lon":141.93798,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"}
+]

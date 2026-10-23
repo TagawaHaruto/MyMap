@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5504856543","name":"西村サイクル","lat":40.90218,"lon":140.45644,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5504856551","name":"角田靴スポーツ店","lat":40.90348,"lon":140.45447,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5504925028","name":"平山ホンダ自転車店","lat":40.90363,"lon":140.45115,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5504930247","name":"松尾自転車店","lat":40.90372,"lon":140.44917,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5504951727","name":"小野輪業","lat":40.90305,"lon":140.45118,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5504996223","name":"徳田釣具店","lat":40.8989,"lon":140.45305,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8768482828","name":"TSUTAYA","lat":40.79219,"lon":140.45074,"pref":"青森","genres":["shopping"],"indoor":true,"url":"https://store-tsutaya.tsite.jp/storelocator/detail/0306.html","note":"CD・レコード","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-23:00","tel":"0173-38-1147"},
+{"id":"osm:node:10776078839","name":"HMV","lat":40.80142,"lon":140.41682,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:12099905865","name":"くまざわ書店","lat":40.79791,"lon":140.45485,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12099905875","name":"ムラサキスポーツ","lat":40.79813,"lon":140.45527,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13338503475","name":"スポーツデポ","lat":40.7988,"lon":140.45715,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:651988953","name":"四次元ポケット","lat":40.79767,"lon":140.4579,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:651988984","name":"カルチャーボーイ 五所川原広田店","lat":40.78639,"lon":140.45832,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"0173-34-0840"},
+{"id":"osm:way:652859440","name":"WonderGOO","lat":40.79968,"lon":140.41864,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:868238149","name":"ゲーム倉庫","lat":40.8129,"lon":140.45245,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","tel":"0173-35-8797"},
+{"id":"osm:way:875351846","name":"こっとう屋　奥津軽","lat":40.81491,"lon":140.44792,"pref":"青森","genres":["shopping"],"indoor":true,"url":"https://okutugaru.cloud-line.com/gaiyou/","note":"骨董","g":"hobby","k":"hobby","tel":"0173-34-9525"},
+{"id":"osm:way:888827725","name":"ホビーショップB-FIELD","lat":40.80758,"lon":140.44217,"pref":"青森","genres":["shopping"],"indoor":true,"url":"https://b-field.net/","note":"ホビー・模型","g":"hobby","k":"hobby","oh":"Mo-Fr 15:00-20:00; Sa,Su 13:00-19:00","tel":"0173-33-1116"},
+{"id":"osm:way:966896459","name":"スーパースポーツゼビオ","lat":40.79871,"lon":140.41003,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1453573170","name":"ホンダモーター五所川原","lat":40.7941,"lon":140.44665,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

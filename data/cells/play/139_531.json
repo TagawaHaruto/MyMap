@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:221316606","name":"広島県立みよし公園","lat":34.79845,"lon":132.90383,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:221450063","name":"若宮公園","lat":34.80014,"lon":132.85688,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:221570089","name":"６区グラウンド","lat":34.80122,"lon":132.84388,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:372471939","name":"庄原市ほたる見公園","lat":34.91931,"lon":132.87978,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475767918","name":"国営備北丘陵公園 花の広場","lat":34.84034,"lon":132.99974,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475769213","name":"国営備北丘陵公園 ひばの里","lat":34.83721,"lon":132.99873,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475770272","name":"国営備北丘陵公園 中の広場","lat":34.83932,"lon":132.99625,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475771498","name":"国営備北丘陵公園 備北オートビレッジ","lat":34.83655,"lon":132.98982,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:475775268","name":"国営備北丘陵公園 いこいの森","lat":34.83189,"lon":132.98609,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:482061927","name":"みよし運動公園","lat":34.78026,"lon":132.86993,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:456604824","name":"みよし運動公園野球場（三次きんさいスタジアム）","lat":34.77808,"lon":132.87034,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","wp":"ja:みよし運動公園野球場"},
+{"id":"osm:relation:8413877","name":"三次市営球場","lat":34.77718,"lon":132.8339,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","wp":"ja:三次市営球場"},
+{"id":"osm:way:1368596780","name":"チョコザップ三次店","lat":34.80437,"lon":132.87804,"pref":"広島","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:way:1564618105","name":"三次市民ホールきりり","lat":34.8116,"lon":132.86654,"pref":"広島","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

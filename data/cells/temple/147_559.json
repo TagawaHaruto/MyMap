@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:1955826957","name":"淡嶋神社","lat":36.95498,"lon":139.97424,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4212289216","name":"星宮神社","lat":36.7544,"lon":139.86551,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4306908532","name":"合格神社","lat":36.83901,"lon":139.98402,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4306925659","name":"八雲神社","lat":36.8309,"lon":139.97376,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4306938795","name":"法善寺","lat":36.86436,"lon":139.93932,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4306938830","name":"温泉神社","lat":36.86612,"lon":139.94056,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5456655413","name":"妙道寺","lat":36.81288,"lon":139.93195,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5732457104","name":"温泉神社","lat":36.85233,"lon":139.95209,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5846830861","name":"岩戸別神社","lat":36.77699,"lon":139.79716,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5846831491","name":"八坂神社","lat":36.76906,"lon":139.78701,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5846831493","name":"稲荷神社","lat":36.76942,"lon":139.78714,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12608840292","name":"長延寺","lat":36.86437,"lon":139.97973,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:428466664","name":"木幡神社　国指定建造物","lat":36.79045,"lon":139.93298,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:490452090","name":"養蚕神社","lat":36.90271,"lon":139.9454,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:490492830","name":"雲照寺","lat":36.89376,"lon":139.95322,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:810104828","name":"嶽山箒根神社奥の院","lat":36.92066,"lon":139.8536,"pref":"栃木","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

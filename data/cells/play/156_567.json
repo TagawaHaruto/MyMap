@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:886674559","name":"ド根性ポプラ広場","lat":39.11731,"lon":141.81406,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1148252742","name":"Ishihamafureai Park","lat":39.04,"lon":141.79333,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1102182812","name":"三陸B&G海洋センター","lat":39.0486,"lon":141.80139,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

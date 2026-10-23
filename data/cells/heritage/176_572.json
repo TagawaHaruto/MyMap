@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4294450978","name":"上雄柏小・中学校跡","lat":44.08101,"lon":143.07211,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4294450979","name":"オシラネップ官設駅逓所跡","lat":44.08006,"lon":143.07154,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4296689366","name":"北滝上官設駅逓所跡","lat":44.12057,"lon":143.00585,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11963627842","name":"弘法大師","lat":44.19851,"lon":143.08958,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11965356286","name":"上渚滑駅逓跡","lat":44.19584,"lon":143.08117,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13052271463","name":"たきのうえホテル渓谷","lat":44.19842,"lon":143.09099,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.hotel-keikoku.jp/","note":"宿","g":"heritage","k":"lodging","tel":"0158-29-3399"}
+]

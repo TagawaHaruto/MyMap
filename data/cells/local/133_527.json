@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:12598539388","name":"佐賀関港","lat":33.25033,"lon":131.86951,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8355135668","name":"高島キャンプ場","lat":33.27447,"lon":131.94274,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

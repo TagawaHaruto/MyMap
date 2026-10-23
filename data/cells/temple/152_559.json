@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5119171824","name":"本長寺","lat":38.03734,"lon":139.98756,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5119171826","name":"大福寺","lat":38.04266,"lon":139.99096,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5119171837","name":"恩徳寺","lat":38.06274,"lon":139.98613,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5119184531","name":"瑞雲寺","lat":38.06158,"lon":139.98813,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5119184532","name":"吉祥寺","lat":38.06453,"lon":139.98459,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:771654695","name":"葉山神社","lat":38.17965,"lon":139.9833,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1208192118","name":"平等寺","lat":38.05356,"lon":139.75088,"pref":"山形","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

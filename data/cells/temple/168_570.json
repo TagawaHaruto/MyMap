@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:835518418","name":"東栄神社","lat":42.18957,"lon":142.69827,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"とうえいじんじゃ"},
+{"id":"osm:way:836124053","name":"浜荻伏金刀比羅神社","lat":42.19855,"lon":142.6634,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"はまおぎふしことひらじんじゃ"},
+{"id":"osm:way:888011697","name":"瑞穂稲荷神社","lat":42.23642,"lon":142.71717,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:894441344","name":"井寒台神社","lat":42.1781,"lon":142.73491,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1416589403","name":"照法寺","lat":42.24842,"lon":142.56104,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.sotozen-net.or.jp/","note":"寺","g":"temple","k":"worship","kana":"しょうほうじ","tel":"+81-1463-3-2149"},
+{"id":"osm:way:1417160663","name":"鳧舞稲荷神社","lat":42.22676,"lon":142.61868,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"けりまいいなりじんじゃ"}
+]

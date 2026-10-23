@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:347007929","name":"おぐに運動公園","lat":37.29113,"lon":138.71213,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:581048880","name":"潮風公園","lat":37.37778,"lon":138.55464,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:583625378","name":"赤坂山公園","lat":37.35881,"lon":138.54238,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"あかさかやまこうえん"},
+{"id":"osm:way:875983377","name":"雪国植物園","lat":37.46422,"lon":138.7457,"pref":"新潟","genres":["play"],"indoor":false,"url":"http://www.niks.or.jp/syokubut/","note":"公園","g":"play","k":"park","kana":"ゆきぐにしょくぶつえん","oh":"Mo-Su,PH 09:00-17:00 open \"16:30 入場券発売停止 Ticket Office Close\", Jun Mo-Su,PH 19:00-20:15 unknown \"ホタルの夕べ開催期間は営業、ウェブサイト参照 ","tel":"+81 258 46 0030"},
+{"id":"osm:way:1208325435","name":"牧口記念墓地公園","lat":37.29552,"lon":138.60725,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:2534469955","name":"スポーツアカデミー","lat":37.35974,"lon":138.54905,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:347006276","name":"長岡市成出運動広場","lat":37.3702,"lon":138.74798,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:348815741","name":"柏崎市陸上競技場","lat":37.37244,"lon":138.55445,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"},
+{"id":"osm:way:349363815","name":"源土運動広場野球場","lat":37.42415,"lon":138.63916,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:363259703","name":"佐藤池野球場","lat":37.35146,"lon":138.58489,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:391617284","name":"柏崎市文化会館 アルフォーレ","lat":37.36541,"lon":138.56016,"pref":"新潟","genres":["play"],"indoor":true,"url":"https://www.artforet.jp/","note":"劇場・ホール","g":"play","k":"amuse","wp":"ja:柏崎市文化会館アルフォーレ"}
+]

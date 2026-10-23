@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4130539500","name":"金山巨石群 岩屋岩蔭遺跡 妙見神社","lat":35.75532,"lon":137.15977,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6441938998","name":"妙覚寺","lat":35.87372,"lon":137.21065,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6441965033","name":"お美津稲荷","lat":35.91849,"lon":137.20416,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6441965034","name":"永養寺","lat":35.9251,"lon":137.19876,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6441965035","name":"明白神社","lat":35.92544,"lon":137.1981,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6441965060","name":"梵音堂","lat":35.92621,"lon":137.20171,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6441965061","name":"頓乗寺","lat":35.93068,"lon":137.20644,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6441965062","name":"森山神社","lat":35.93032,"lon":137.21091,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6486854559","name":"養泉寺","lat":35.84491,"lon":137.02642,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6486854560","name":"浄国寺","lat":35.83534,"lon":137.02688,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6793237485","name":"さるぼぼ神社","lat":35.79823,"lon":137.23377,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7125611132","name":"醫王霊山 温泉寺","lat":35.81059,"lon":137.24293,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","pk":2},
+{"id":"osm:node:14067321973","name":"加恵瑠神社","lat":35.80986,"lon":137.24143,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:450190740","name":"白山神社","lat":35.75298,"lon":137.03707,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:767233339","name":"役行者堂","lat":35.80938,"lon":137.24386,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:769008078","name":"天醫稲荷大明神社","lat":35.81074,"lon":137.24317,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

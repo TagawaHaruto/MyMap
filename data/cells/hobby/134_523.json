@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3865115462","name":"鑑月焼","lat":33.5414,"lon":130.83535,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:6778460711","name":"ヒマラヤスポーツ&ゴルフ コスタ行橋店","lat":33.7174,"lon":130.97326,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13879201821","name":"セカンドストリート","lat":33.71574,"lon":130.97032,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13879263461","name":"TSUTAYA","lat":33.71701,"lon":130.9716,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:6355930567","name":"西浦漁港","lat":44.44181,"lon":141.39794,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10763041981","name":"焼尻港","lat":44.44123,"lon":141.42865,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:焼尻港"},
+{"id":"osm:node:6355940655","name":"白浜キャンプ場","lat":44.42893,"lon":141.41493,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

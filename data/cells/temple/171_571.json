@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:9943091871","name":"剣山神社","lat":42.8747,"lon":142.88191,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13018146978","name":"聖火の郷","lat":42.8858,"lon":142.89298,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:13018195934","name":"照明寺","lat":42.87532,"lon":142.88062,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1162394115","name":"上美生神社","lat":42.80454,"lon":142.9531,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1162394147","name":"廣證寺","lat":42.80575,"lon":142.95681,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

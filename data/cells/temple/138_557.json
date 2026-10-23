@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2119034593","name":"波布比咩命神社","lat":34.68483,"lon":139.43779,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"はぶひめのみことじんじゃ"},
+{"id":"osm:node:2119247775","name":"薬師堂","lat":34.73871,"lon":139.36104,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:2119558855","name":"龍音様","lat":34.68556,"lon":139.44386,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7"},
+{"id":"osm:node:2119639947","name":"大宮神社","lat":34.73352,"lon":139.35636,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2128414568","name":"天理教伊豆大島分教会","lat":34.74874,"lon":139.3565,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:2508172835","name":"大宮神社","lat":34.73349,"lon":139.35877,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2508172842","name":"慈眼寺","lat":34.72862,"lon":139.35436,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4271565947","name":"大山小山神社","lat":34.51554,"lon":139.27733,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"おおやまこやまじんじゃ"},
+{"id":"osm:node:4271565954","name":"阿豆佐和氣命本宮","lat":34.51581,"lon":139.27434,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あずさわけのみことほんぐう"},
+{"id":"osm:node:4271565987","name":"下上神社","lat":34.52112,"lon":139.2841,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"おりのぼりじんじゃ"},
+{"id":"osm:node:5011270850","name":"天満神社","lat":34.52924,"lon":139.27864,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5011270860","name":"浜宮神社","lat":34.53135,"lon":139.27658,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5209882326","name":"三原神社下社","lat":34.73793,"lon":139.38055,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:37379807","name":"三原神社","lat":34.73039,"lon":139.39151,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:512532522","name":"明照山 長久寺","lat":34.52899,"lon":139.27914,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:512532524","name":"八幡神社","lat":34.53033,"lon":139.27825,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:512532525","name":"阿豆佐和氣命神社","lat":34.52958,"lon":139.27692,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あずさわけのみことじんじゃ"},
+{"id":"osm:way:512532526","name":"堂山神社","lat":34.52866,"lon":139.27756,"pref":"東京","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"どうのやまじんじゃ"}
+]

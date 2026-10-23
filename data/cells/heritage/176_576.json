@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4223623350","name":"常呂遺跡","lat":44.12442,"lon":144.04909,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9176418193","name":"太田の森之碑","lat":44.05243,"lon":144.24573,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9458146120","name":"網走刑務所開基百周年記念碑","lat":44.01507,"lon":144.23419,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12914406045","name":"旧サロマ湖口記念碑","lat":44.13252,"lon":144.00303,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4003709042","name":"天都の郷ホテル本陣網走湖","lat":44.00993,"lon":144.23361,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://breezbay-group.com/honjin-a/","note":"宿","g":"heritage","k":"lodging","kana":"てんとのさとほてるほんじんあばしりこ"},
+{"id":"osm:node:4003709043","name":"旅荘さくら","lat":44.01062,"lon":144.23326,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"たびそうさくら"},
+{"id":"osm:node:4003709044","name":"ファームイン・アニマの里","lat":44.00109,"lon":144.23077,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あにまのさと"},
+{"id":"osm:node:5160511964","name":"コテージ  ブルースプルース","lat":44.00486,"lon":144.23685,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10223489276","name":"オーベルジュ 北の暖暖","lat":44.00703,"lon":144.23619,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://kitanodandan.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:991717508","name":"佐藤旅館","lat":44.12259,"lon":144.07351,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

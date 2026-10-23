@@ -1,0 +1,23 @@
+[
+{"id":"osm:way:681906024","name":"宮古島海宝館","lat":24.73036,"lon":125.42959,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","wp":"ja:宮古島海宝館","kana":"みやこじまかいほうかん"},
+{"id":"osm:way:714442487","name":"蕎麦居酒屋 彩海","lat":24.72045,"lon":125.3377,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:714442507","name":"アラマンダ和琉創作","lat":24.72324,"lon":125.33602,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:714442516","name":"スターダストガーデン","lat":24.72026,"lon":125.33849,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:way:714442539","name":"火鍋 小肥羊","lat":24.72073,"lon":125.33403,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:714442540","name":"焼肉 琉宮苑","lat":24.72076,"lon":125.33427,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:714464397","name":"ポルトチェルヴォ","lat":24.71991,"lon":125.32486,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"イタリアン","g":"food","k":"restaurant"},
+{"id":"osm:way:714464420","name":"かつ勘","lat":24.72028,"lon":125.32443,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1133378759","name":"シギラ タートルベイ","lat":24.72098,"lon":125.34058,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:1144999698","name":"バーベキュー","lat":24.72036,"lon":125.32529,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1235115204","name":"HORIZON","lat":24.72092,"lon":125.34167,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"ステーキ","g":"food","k":"restaurant"},
+{"id":"osm:way:1235115205","name":"ルナロッサ","lat":24.72084,"lon":125.34153,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"ピザ","g":"food","k":"restaurant"},
+{"id":"osm:way:1235134642","name":"アラマンダ和琉創作テラス席","lat":24.72307,"lon":125.33628,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1315288188","name":"蕎麦前 宮古","lat":24.7207,"lon":125.33449,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1315288189","name":"居酒屋 昴","lat":24.72071,"lon":125.33462,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1315288190","name":"鮨 蒼風","lat":24.72071,"lon":125.33476,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:1315288191","name":"天ぷら天翔","lat":24.7207,"lon":125.3349,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1503290984","name":"リストランテDEA","lat":24.72,"lon":125.33997,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://shigira.com/restaurant/dea","note":"イタリアン","g":"food","k":"restaurant","oh":"17:00-22:00"},
+{"id":"osm:way:1539622412","name":"中国料理　琥珀楼","lat":24.72135,"lon":125.33692,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:1235128072","name":"ベーカリー南西の風","lat":24.72009,"lon":125.32488,"pref":"沖縄","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:12800145183","name":"酒食処うるか","lat":24.7323,"lon":125.27333,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub","wc":"yes"}
+]

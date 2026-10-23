@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4405219533","name":"ひなざくら","lat":40.67585,"lon":140.8589,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12691289877","name":"Oirase Guest house KEIGETSU","lat":40.57748,"lon":140.98615,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:480005940","name":"レストハウス八甲田","lat":40.68067,"lon":140.83192,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:732945863","name":"石窯ピザ Ortolana","lat":40.5759,"lon":140.98465,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"ピザ","g":"food","k":"restaurant"},
+{"id":"osm:way:1306944985","name":"カヤ野","lat":40.70816,"lon":140.82364,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1564453270","name":"そば処 きこり","lat":40.64294,"lon":140.81339,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2417822912","name":"Kayano Chaya","lat":40.7058,"lon":140.8224,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:732945832","name":"shop&cafe鳥曇（株式会社とり）","lat":40.57863,"lon":140.99532,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Th-Mo 09:00-16:00"},
+{"id":"osm:way:732945878","name":"喫茶ひめはうす","lat":40.57729,"lon":140.98745,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1306944984","name":"長生きの茶屋","lat":40.70838,"lon":140.82353,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1562416461","name":"パンと珈琲の店 ねこのて","lat":40.73858,"lon":140.78486,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1564453275","name":"こすもす","lat":40.74336,"lon":140.78513,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

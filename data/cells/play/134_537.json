@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:1273834023","name":"ふれあい水辺公園","lat":33.56998,"lon":134.30658,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1275235324","name":"野外交流の郷","lat":33.6224,"lon":134.36936,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1277604359","name":"大谷避難広場","lat":33.66747,"lon":134.41661,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1277605397","name":"内妻公園","lat":33.65714,"lon":134.41015,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:313653857","name":"蛇王運動公園野球場","lat":33.62015,"lon":134.37123,"pref":"徳島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1252324383","name":"東洋町B&G海洋センター","lat":33.52869,"lon":134.28313,"pref":"高知","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1274578743","name":"海部高校野球場","lat":33.61112,"lon":134.36077,"pref":"徳島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

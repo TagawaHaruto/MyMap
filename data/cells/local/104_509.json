@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:7639639872","name":"海風","lat":26.22833,"lon":127.30301,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"うみかじ"},
+{"id":"osm:node:7798039081","name":"ZAMAMI-MUN MARKET","lat":26.22663,"lon":127.30212,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:node:4562748090","name":"阿真キャンプ場","lat":26.22713,"lon":127.29213,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"098-987-3259"},
+{"id":"osm:node:14285999558","name":"渡嘉敷村青少年旅行村キャンプ場","lat":26.17105,"lon":127.34473,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"098-987-2090"},
+{"id":"osm:node:14287634980","name":"Tatazumi渡嘉敷島","lat":26.17097,"lon":127.34685,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"098-987-2836"}
+]

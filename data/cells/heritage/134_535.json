@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:1614754797","name":"ピースフルセレネ","lat":33.64763,"lon":133.78328,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10810974250","name":"東風ノ家","lat":33.50186,"lon":133.9101,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://kochinoya.com/","note":"宿","g":"heritage","k":"lodging","kana":"こちのや","tel":"+81 70-4141-1004"},
+{"id":"osm:node:11634485274","name":"芸西村の家","lat":33.52917,"lon":133.81846,"pref":"高知","genres":["lodging"],"indoor":true,"url":"http://www.muranoie.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12888076526","name":"清月旅館","lat":33.50208,"lon":133.90616,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"せいげつりょかん"},
+{"id":"osm:way:156771621","name":"ライダーズイン奥物部","lat":33.69402,"lon":133.87283,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://www.okumonobe.com/riders.php","note":"宿","g":"heritage","k":"lodging","tel":"+81 887 58 3030"},
+{"id":"osm:way:406772851","name":"土佐ロイヤルホテル","lat":33.52275,"lon":133.78543,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:413951727","name":"HOTEL TAMAI","lat":33.50201,"lon":133.90863,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

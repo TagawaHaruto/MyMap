@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6620335877","name":"熊野神社","lat":40.73714,"lon":141.16586,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7140697292","name":"覚宣寺","lat":40.61968,"lon":141.21356,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:7142421985","name":"カトリック 十和田教会","lat":40.61747,"lon":141.21275,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:7148544792","name":"インマヌエル 十和田キリスト教会","lat":40.61773,"lon":141.22748,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:7168765191","name":"新山大権現","lat":40.65744,"lon":141.20459,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:7168771494","name":"キリスト福音教会","lat":40.64283,"lon":141.19854,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:7168771499","name":"枯木根明神","lat":40.6548,"lon":141.19519,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:7168771897","name":"法蓮寺","lat":40.66387,"lon":141.19962,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:565804003","name":"澄月寺","lat":40.61231,"lon":141.2099,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:598284876","name":"三本木稲荷神社","lat":40.61854,"lon":141.20947,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:695782479","name":"七戸神明宮","lat":40.69768,"lon":141.15018,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:699634726","name":"創価学会 十和田文化会館","lat":40.6235,"lon":141.23344,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:777395503","name":"行妙寺","lat":40.60365,"lon":141.23043,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:804576806","name":"切田八幡宮","lat":40.58077,"lon":141.20654,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

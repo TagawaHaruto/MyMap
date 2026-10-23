@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5895541695","name":"坂田旅館","lat":43.23254,"lon":143.29182,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10678398455","name":"カミシホロホテル Kamishihoro Hotel","lat":43.23326,"lon":143.29253,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://kamishihoro-hotel.com/","note":"宿","g":"heritage","k":"lodging","tel":"01564-7-7266"},
+{"id":"osm:way:562787225","name":"旅人宿ちろんぬっぷ","lat":43.22976,"lon":143.29701,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"たびびとやどちろんぬっぷ","tel":"+81 50 7505 8009"},
+{"id":"osm:way:562882554","name":"さかた旅館","lat":43.23253,"lon":143.29177,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1379643781","name":"MUJI","lat":43.22559,"lon":143.29028,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

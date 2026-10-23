@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:14284281513","name":"new sakuraresort","lat":35.77161,"lon":138.51693,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"055-260-3100"},
+{"id":"osm:node:14284281516","name":"0site(ゼロサイト)","lat":35.86172,"lon":138.52183,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286866942","name":"森の隠れ家ビッグホーンオートキャンプ場","lat":35.7785,"lon":138.53518,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"055-277-0080"},
+{"id":"osm:node:14286866944","name":"琴川キャンプ場 & サウナ琴川","lat":35.77772,"lon":138.69678,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://kotogawacamp.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-5824-8952"},
+{"id":"osm:node:14286866954","name":"マキオカネイチャークラブ","lat":35.75968,"lon":138.64452,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286888857","name":"金山山荘・キャンプ場","lat":35.86834,"lon":138.57583,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0551-45-0435"},
+{"id":"osm:node:14286904751","name":"せせらぎの里 町田市自然休暇村","lat":35.93715,"lon":138.67386,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0267-99-2912"},
+{"id":"osm:node:14286906506","name":"五光牧場オートキャンプ場","lat":35.9725,"lon":138.51622,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-3817-6110"},
+{"id":"osm:node:14286955109","name":"ノースランドキャンパーズビレッジ","lat":35.79551,"lon":138.52573,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"055-277-0105"},
+{"id":"osm:node:14287658014","name":"0site","lat":35.8617,"lon":138.52185,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"https://0site-jp.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:161885522","name":"大日小屋","lat":35.88149,"lon":138.60193,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:161885524","name":"富士見平","lat":35.8821,"lon":138.58742,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"ふじみだいら"},
+{"id":"osm:way:472096026","name":"みずがき山自然公園","lat":35.89635,"lon":138.57379,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"みず がき やま しぜん こうえん","tel":"+81 551-45-0277"},
+{"id":"osm:way:571903208","name":"中央広場","lat":35.90781,"lon":138.64088,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:571903210","name":"廻り目平キャンプ場","lat":35.90792,"lon":138.6403,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://w2.avis.ne.jp/~mawarime/","note":"キャンプ・野外","g":"local","k":"camp","oh":"07:00-20:00","tel":"+81-267-99-2428"},
+{"id":"osm:way:571903216","name":"貸しテント場","lat":35.90801,"lon":138.63967,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0267-99-2428"},
+{"id":"osm:way:819890027","name":"みずがき山森の農園キャンプ場","lat":35.89447,"lon":138.5709,"pref":"山梨","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1252172198","name":"立原高原キャンプ場","lat":35.99978,"lon":138.569,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

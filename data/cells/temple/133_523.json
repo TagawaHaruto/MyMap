@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:6295247229","name":"高住神社","lat":33.48405,"lon":130.93299,"pref":"福岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8634639661","name":"若宮八幡宮","lat":33.34466,"lon":130.76638,"pref":"福岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9879117920","name":"稲荷神社","lat":33.32554,"lon":130.93698,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9881064892","name":"稲荷神社","lat":33.31621,"lon":130.93271,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11219033793","name":"西宗寺","lat":33.35863,"lon":130.79534,"pref":"福岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:386001727","name":"源兵衛稲荷","lat":33.3261,"lon":130.93629,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:388815435","name":"月隈神社","lat":33.33221,"lon":130.93548,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:505538533","name":"八坂神社","lat":33.31552,"lon":130.9308,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:561520368","name":"日田神社","lat":33.3307,"lon":130.94181,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:920627855","name":"妙栄寺","lat":33.32186,"lon":130.93753,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:920627856","name":"長福寺","lat":33.32788,"lon":130.93798,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:920667350","name":"若宮神社","lat":33.30964,"lon":130.93833,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:925166790","name":"垂玉神社","lat":33.32143,"lon":130.92451,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:929134271","name":"長野水神社","lat":33.34467,"lon":130.78589,"pref":"福岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1214002950","name":"水神社","lat":33.34487,"lon":130.75675,"pref":"福岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

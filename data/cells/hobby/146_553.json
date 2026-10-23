@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:2484195310","name":"しんせい","lat":36.69608,"lon":138.31601,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:2484218439","name":"マツシマスポーツ","lat":36.69848,"lon":138.31359,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6432174731","name":"平安堂","lat":36.65688,"lon":138.30532,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:161840291","name":"スマイルサンタ 中野店","lat":36.74657,"lon":138.35135,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:265147853","name":"タケダスポーツ","lat":36.65525,"lon":138.31011,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:265892102","name":"子供のりもの　高久","lat":36.6555,"lon":138.31318,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:610144138","name":"2nd STREET","lat":36.64818,"lon":138.30148,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:612790505","name":"TSUTAYA","lat":36.63746,"lon":138.27515,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"つたや"},
+{"id":"osm:way:737166116","name":"ブックオフ","lat":36.65484,"lon":138.28965,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:792015720","name":"マツヤスポーツ","lat":36.74435,"lon":138.36894,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:792431322","name":"金井書店","lat":36.74604,"lon":138.37252,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:792433110","name":"森田書店","lat":36.7462,"lon":138.36694,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:793348379","name":"トイパークコヤマ","lat":36.74764,"lon":138.37282,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:793659366","name":"なべや模型","lat":36.74794,"lon":138.37432,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"ホビー・模型","g":"hobby","k":"hobby"},
+{"id":"osm:way:794214990","name":"鈴木書店","lat":36.74842,"lon":138.37303,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

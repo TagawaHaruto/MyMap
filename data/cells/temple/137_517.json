@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:9660134659","name":"Entsuji Temple","lat":34.45799,"lon":129.37096,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:430503979","name":"Shinshoji","lat":34.27018,"lon":129.31374,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:430880697","name":"和多都美神社","lat":34.37908,"lon":129.31193,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:991429469","name":"海祇神社","lat":34.31639,"lon":129.31307,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

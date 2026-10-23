@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:174750494","name":"義名山公園 伊仙町総合グラウンド","lat":27.69127,"lon":128.94074,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1537943915","name":"瀬田海海浜公園","lat":27.67887,"lon":128.92128,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1543158423","name":"あがればー公園","lat":27.67238,"lon":128.96711,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1544365791","name":"義名山公園","lat":27.69014,"lon":128.94243,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1545286554","name":"前泊公園","lat":27.70955,"lon":128.8984,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1545423829","name":"池の台公園","lat":27.72044,"lon":128.90411,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:14038889986","name":"なくさみ館","lat":27.68542,"lon":128.98189,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:relation:21139707","name":"伊仙闘牛場","lat":27.6699,"lon":128.93973,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"}
+]

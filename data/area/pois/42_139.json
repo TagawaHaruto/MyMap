@@ -1,0 +1,8 @@
+[
+{"name":"道の駅てっくいランド大成","lat":42.2125547,"lon":139.8767836,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"立象山展望台","lat":42.4566326,"lon":139.8520265,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"北海道最西端（舟隠）","lat":42.3118812,"lon":139.7695869,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"賀老の滝","lat":42.599311,"lon":139.9928289,"kind":"waterfall","wikipedia":"https://ja.wikipedia.org/wiki/%E8%B3%80%E8%80%81%E3%81%AE%E6%BB%9D","k":"scenic"},
+{"name":"尾花岬","lat":42.3031139,"lon":139.7670865,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E5%B0%BE%E8%8A%B1%E5%B2%AC","k":"scenic"},
+{"name":"オコツナイ岳","lat":42.6301324,"lon":139.9036287,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%B3%E3%83%84%E3%83%8A%E3%82%A4%E5%B2%B3","k":"scenic"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2753120629","name":"洞泉寺","lat":37.41061,"lon":140.12335,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2998589849","name":"不動明王堂","lat":37.46403,"lon":140.01719,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10913225364","name":"正福寺","lat":37.30624,"lon":140.20778,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

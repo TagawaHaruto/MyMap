@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4401089521","name":"大水教会","lat":33.0737,"lon":129.09733,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4417512696","name":"阿弥陀寺","lat":33.18867,"lon":129.05718,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4515317089","name":"神島神社","lat":33.2088,"lon":129.1211,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"かみしま じんじゃ"},
+{"id":"osm:node:5572620621","name":"若宮神社","lat":33.20759,"lon":129.09387,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6536217613","name":"カトリック丸尾教会","lat":33.00853,"lon":129.09044,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

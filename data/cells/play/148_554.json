@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:471883698","name":"信濃川運動公園","lat":37.14282,"lon":138.73812,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:546118198","name":"明石公園","lat":37.11746,"lon":138.74197,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:608686521","name":"ふれあいの場公園","lat":37.20137,"lon":138.68385,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:640218574","name":"黄桜の丘公園","lat":37.06714,"lon":138.70019,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:640490745","name":"倉俣柳原公園","lat":37.01807,"lon":138.70621,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:640490746","name":"桔梗原うるおい公園","lat":37.03275,"lon":138.69908,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:640492213","name":"上山児童遊園地","lat":37.04945,"lon":138.69841,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:640492377","name":"姿集落多目的利用広場","lat":37.09669,"lon":138.71536,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:640493150","name":"水防・高水敷公園　つまりっ子広場","lat":37.14793,"lon":138.7481,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:675784158","name":"大割野遊園地","lat":37.01588,"lon":138.64753,"pref":"新潟","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:535837606","name":"中津川運動公園野球場","lat":37.00827,"lon":138.65748,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:597015924","name":"クロアチアピッチ（当間多目的グラウンド）","lat":37.0505,"lon":138.7323,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:634289122","name":"中津川運動公園テニスコート","lat":37.00995,"lon":138.65479,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:641291114","name":"中津川運動公園グラウンド","lat":37.00948,"lon":138.6562,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:978028706","name":"旧外丸小学校","lat":37.02981,"lon":138.65251,"pref":"新潟","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:relation:13153799","name":"中津川運動公園","lat":37.00892,"lon":138.65596,"pref":"新潟","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:352830453","name":"「森の学校」キョロロ","lat":37.09964,"lon":138.61719,"pref":"新潟","genres":["play"],"indoor":true,"url":"","note":"アートセンター","g":"play","k":"amuse"}
+]

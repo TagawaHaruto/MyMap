@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:7040731575","name":"平家本陣","lat":32.46918,"lon":131.19902,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 11:00-15:00"},
+{"id":"osm:way:753539654","name":"山中食堂","lat":32.46427,"lon":131.15552,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"やまなかしょくど","oh":"Mo-Su 11:00-14:00,17:00-20:00","tel":"+81 982 67 2032"},
+{"id":"osm:way:757079983","name":"よこい処 しいばや","lat":32.4646,"lon":131.15533,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 11:00-15:00","tel":"+81 982 67 2868"},
+{"id":"osm:way:757085558","name":"椎葉山の語り部","lat":32.46513,"lon":131.15553,"pref":"宮崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 08:00-17:00","tel":"+81 982 67 2065"},
+{"id":"osm:way:753555285","name":"中園本店","lat":32.46719,"lon":131.15736,"pref":"宮崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"なかぞのほんてん","oh":"Mo-Fr 08:00-20:00; Sa 09:00-18:00","tel":"+81 982 67 2020"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6517929887","name":"味徳","lat":30.23819,"lon":130.55674,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"http://www5.synapse.ne.jp/ajitoku/","note":"飲食店","g":"food","k":"restaurant","kana":"あじとく","tel":"+81 997 472988"},
+{"id":"osm:node:13284428672","name":"At Pesca","lat":30.23756,"lon":130.5185,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4867370542","name":"ペイタ","lat":30.23595,"lon":130.55646,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"ぺいた"},
+{"id":"osm:node:12167559255","name":"サロン湯の峯","lat":30.24039,"lon":130.549,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

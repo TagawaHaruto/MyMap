@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:6257315010","name":"半田モーターサイクル","lat":34.86805,"lon":134.35548,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6257315014","name":"藤井釣具店","lat":34.87005,"lon":134.35705,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6257315016","name":"妹尾サイクル","lat":34.86706,"lon":134.3505,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6257315019","name":"うかいや書店 上郡店","lat":34.86841,"lon":134.35114,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"https://ukaiya.co.jp/","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-21:00","tel":"+81 791 52 4104"},
+{"id":"osm:node:6257315092","name":"三木屋","lat":34.86791,"lon":134.35541,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12175877307","name":"サイクルヒット","lat":34.76278,"lon":134.37082,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"https://cycle-hit.com/","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12491949739","name":"TSUTAYA","lat":34.75418,"lon":134.40054,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:way:1092351733","name":"セカンドストリート","lat":34.75639,"lon":134.40215,"pref":"兵庫","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

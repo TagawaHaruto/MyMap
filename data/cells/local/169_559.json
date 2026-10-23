@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:12648057334","name":"Setana Bussan CO., Ltd","lat":42.45986,"lon":139.85196,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13602438196","name":"せたな町B&G海洋センター","lat":42.45496,"lon":139.85687,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5726990321","name":"せたな青少年旅行村","lat":42.4572,"lon":139.85435,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://town.setana.lg.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81-137873819"},
+{"id":"osm:node:14286168186","name":"熊戻野営場","lat":42.48481,"lon":139.96684,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0137-84-5111"},
+{"id":"osm:node:14286168187","name":"真駒内ダム公園","lat":42.47944,"lon":139.90908,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0137-84-5111"},
+{"id":"osm:node:14286168190","name":"三本杉海水浴場","lat":42.45718,"lon":139.84998,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0137-87-2888"},
+{"id":"osm:node:14286168191","name":"ふとろ海水浴場","lat":42.38008,"lon":139.81767,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0137-84-5111"}
+]

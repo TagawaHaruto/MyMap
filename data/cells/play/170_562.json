@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:3079572094","name":"豊浦町噴火湾展望塔","lat":42.58888,"lon":140.69861,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"とようらちょうふんかわんてんぼうとう"},
+{"id":"osm:node:9472687728","name":"豊浦町森林公園","lat":42.59764,"lon":140.57417,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:10907560288","name":"礼文華海浜公園","lat":42.57431,"lon":140.5924,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:678308229","name":"豊浦展望公園","lat":42.5901,"lon":140.69845,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1051700871","name":"カムイチャシ史跡公園","lat":42.57957,"lon":140.61975,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:701661944","name":"町民グラウンド","lat":42.58391,"lon":140.71334,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:701661948","name":"ファミリースポーツセンター","lat":42.5846,"lon":140.71404,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"https://www.town.toyoura.hokkaido.jp/hotnews/detail/00006443.html","note":"体育館","g":"play","k":"sports","kana":"ふぁみりーすぽーつせんたー","tel":"+81-142-83-2939"}
+]

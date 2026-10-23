@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6483379685","name":"旧増毛駅","lat":43.85721,"lon":141.52711,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378105047","name":"留萌川激特事業竣功記念碑","lat":43.92945,"lon":141.67271,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:785912670","name":"ビジネスホテル光陽館","lat":43.94242,"lon":141.6516,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4607723990","name":"オーベルジュましけ","lat":43.85323,"lon":141.51014,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6482945085","name":"ホテル ニューホワイトハウス","lat":43.94071,"lon":141.64413,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0164-42-8484"},
+{"id":"osm:node:6483367286","name":"ビジネスホテル光陽館","lat":43.94235,"lon":141.65142,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10026926398","name":"ぼちぼちいこか増毛館","lat":43.85784,"lon":141.52588,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

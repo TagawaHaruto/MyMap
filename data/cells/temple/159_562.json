@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:7254626025","name":"廃神社(道路なし)","lat":39.77258,"lon":140.6741,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:815394448","name":"玉川薬師神社","lat":39.96301,"lon":140.72664,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:837055330","name":"御座石神社","lat":39.75161,"lon":140.65048,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ござのいしじんじゃ"},
+{"id":"osm:way:837055341","name":"大蔵観音堂","lat":39.75144,"lon":140.6492,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:969838345","name":"森吉神社","lat":39.98061,"lon":140.5285,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:984822888","name":"愛宕神社","lat":39.85689,"lon":140.57805,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:984851607","name":"上檜木内神社","lat":39.81948,"lon":140.57923,"pref":"秋田","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:851374400","name":"法園寺","lat":42.93489,"lon":142.04084,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:851394055","name":"錦楓寺","lat":42.93455,"lon":142.07392,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:851410336","name":"紅葉山神社","lat":42.93788,"lon":142.03956,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:852216813","name":"一乗寺","lat":42.93537,"lon":142.03566,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:852230060","name":"永福寺","lat":42.95568,"lon":142.03022,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:852230072","name":"馬頭観世音","lat":42.955,"lon":142.02936,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:852230073","name":"沼ノ沢神社","lat":42.95499,"lon":142.0292,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:852587022","name":"清水沢神社","lat":42.99657,"lon":142.00954,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:854145647","name":"本照寺","lat":42.98541,"lon":142.00282,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:855200264","name":"妙園寺","lat":42.99278,"lon":142.0075,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:855293293","name":"光聖寺","lat":42.96483,"lon":142.04537,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:893604618","name":"本念寺本堂","lat":42.76387,"lon":142.13479,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

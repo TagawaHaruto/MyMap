@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:580919227","name":"赤碕ふれあい広場","lat":35.50745,"lon":133.66238,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:692574280","name":"きらりタウン公園","lat":35.50585,"lon":133.63314,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1267667614","name":"出上5区公園","lat":35.50191,"lon":133.62654,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1377115589","name":"中山運動公園","lat":35.5175,"lon":133.57469,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1381650562","name":"松河原公園","lat":35.52054,"lon":133.5529,"pref":"鳥取","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:616055660","name":"中山野球場","lat":35.51733,"lon":133.5752,"pref":"鳥取","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

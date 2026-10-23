@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4224606414","name":"二十四の瞳学校脾","lat":34.4575,"lon":134.28481,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:10047502154","name":"草壁第２児童公園","lat":34.47948,"lon":134.3065,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562768362","name":"琴林公園（津田の松原）","lat":34.28653,"lon":134.25539,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:603599601","name":"うのべ展望ふれあい公園","lat":34.28833,"lon":134.26972,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:715077621","name":"三本松公園","lat":34.25594,"lon":134.33867,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:770943105","name":"ゲートボール場","lat":34.28437,"lon":134.27419,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:775738454","name":"小田森林浴公園","lat":34.33605,"lon":134.25312,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:957567732","name":"オリーブ公園","lat":34.47191,"lon":134.27239,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:965635257","name":"小豆島町総合運動公園","lat":34.47272,"lon":134.31463,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1084172674","name":"日本ドルフィンセンター","lat":34.28748,"lon":134.26795,"pref":"香川","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9904389069","name":"ベッセルシネマ","lat":34.27471,"lon":134.29771,"pref":"香川","genres":["play"],"indoor":true,"url":"","note":"映画館","g":"play","k":"amuse"},
+{"id":"osm:way:1220669343","name":"ギャラリー松竹座映画館","lat":34.44522,"lon":134.28531,"pref":"香川","genres":["play"],"indoor":true,"url":"","note":"映画館","g":"play","k":"amuse"}
+]

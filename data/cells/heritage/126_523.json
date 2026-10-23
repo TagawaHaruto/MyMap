@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:13277408465","name":"親鸞聖人七百四忌記念造林碑","lat":31.69533,"lon":130.9884,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13277408466","name":"釋雲道記念碑","lat":31.69533,"lon":130.98835,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13277408467","name":"供養塔","lat":31.69533,"lon":130.98838,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13334063791","name":"今別府川橋受賞記念碑","lat":31.73443,"lon":130.79138,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13334063792","name":"田の神さぁ","lat":31.73442,"lon":130.79139,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13334063793","name":"田の神さぁ","lat":31.73435,"lon":130.79322,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14041431205","name":"農用地利用増進特別対策事業記念碑","lat":31.72352,"lon":130.98945,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14041431245","name":"帝釈池跡","lat":31.71862,"lon":130.98464,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","kana":"たいしゃくいけあと"},
+{"id":"osm:node:1309761785","name":"シンシア","lat":31.68515,"lon":130.83253,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4461556017","name":"ロイヤルイン国分","lat":31.74437,"lon":130.76366,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4461556027","name":"ビジネスホテル舞鶴館","lat":31.74305,"lon":130.76364,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:547682978","name":"アパホテル","lat":31.74021,"lon":130.76129,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:547682979","name":"ホテル　ネクステージ","lat":31.73977,"lon":130.76372,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:658706901","name":"ビジネス旅館森本","lat":31.74198,"lon":130.76778,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1413190428","name":"サンホテル国分","lat":31.73797,"lon":130.76611,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

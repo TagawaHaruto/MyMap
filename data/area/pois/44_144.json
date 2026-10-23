@@ -1,0 +1,8 @@
+[
+{"name":"道の駅うとろ・シリエトク","lat":44.06904715,"lon":144.99070460000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 流氷街道網走","lat":44.02199085,"lon":144.27408835,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E6%B5%81%E6%B0%B7%E8%A1%97%E9%81%93%E7%B6%B2%E8%B5%B0","k":"michinoeki"},
+{"name":"天都山展望台","lat":44.0005858,"lon":144.2397305,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"展望台","lat":44.0002856,"lon":144.2895064,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"百年記念展望塔","lat":44.11943035,"lon":144.08341145,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"能取湖","lat":44.0579885,"lon":144.1477233,"kind":"lake","wikipedia":"https://ja.wikipedia.org/wiki/%E8%83%BD%E5%8F%96%E6%B9%96","k":"scenic"}
+]

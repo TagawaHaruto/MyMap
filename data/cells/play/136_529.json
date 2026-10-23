@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:13649218902","name":"ヒューマンビーチ長瀬","lat":34.22644,"lon":132.4529,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","oh":"24/7"},
+{"id":"osm:way:391699723","name":"江田島中央公園","lat":34.24685,"lon":132.48306,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:5867162","name":"江田島公園","lat":34.24523,"lon":132.4888,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:481831837","name":"鷲部公園","lat":34.23281,"lon":132.47849,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:608808867","name":"江田島市総合運動公園","lat":34.19527,"lon":132.46552,"pref":"広島","genres":["outdoor","play"],"indoor":false,"url":"http://www.edc.etajima.hiroshima.jp/life/lifeinfr/progl19/progl19a.html","note":"グラウンド・コート","g":"play","k":"sports"}
+]

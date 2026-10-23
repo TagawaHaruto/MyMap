@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:904014950","name":"床丹第二神社","lat":43.43405,"lon":145.01865,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:923230815","name":"上風連神社","lat":43.26938,"lon":145.09718,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:923242473","name":"香川神社","lat":43.30744,"lon":145.10511,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1411166990","name":"別海神社","lat":43.3958,"lon":145.12422,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1411166991","name":"随法寺","lat":43.39615,"lon":145.12196,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

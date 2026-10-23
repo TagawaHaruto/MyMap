@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:4252323391","name":"稲倉稲荷神社","lat":33.88838,"lon":136.10124,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4355053686","name":"木本神社","lat":33.89187,"lon":136.10664,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6853275212","name":"見松寺","lat":33.76115,"lon":136.02169,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6854692989","name":"秋葉大権現","lat":33.88824,"lon":136.10178,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6854731506","name":"清泰寺","lat":33.90365,"lon":136.11741,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6854731511","name":"秋葉神社","lat":33.97755,"lon":136.19225,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6854731705","name":"金光教","lat":33.88601,"lon":136.09699,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6854731898","name":"三光寺","lat":33.89332,"lon":136.08916,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1461450913","name":"飛鳥神社","lat":33.94641,"lon":136.09785,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

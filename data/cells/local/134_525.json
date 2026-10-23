@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:9355526239","name":"かくまさ","lat":33.52754,"lon":131.37416,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9355526240","name":"清月堂","lat":33.52754,"lon":131.37403,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1013605428","name":"神宮茶屋","lat":33.52758,"lon":131.37443,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1013605434","name":"是恒商店","lat":33.52753,"lon":131.37362,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1013605441","name":"梅田家","lat":33.5275,"lon":131.37388,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:299624633","name":"ILL SPORTS Usa-City","lat":33.53052,"lon":131.33863,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"http://illsport.com","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81978333755"}
+]

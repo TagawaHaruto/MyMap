@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5875627161","name":"イナリワン記念碑","lat":43.04236,"lon":142.65735,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3080110115","name":"Tomamu Alpha Resort ヴィラスポルト","lat":43.06437,"lon":142.63412,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"とまむあるふぁりぞーとゔぃらスポルト"},
+{"id":"osm:node:3080110120","name":"オーベルジュ・ポーラスター","lat":43.04689,"lon":142.65132,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"おーべるじゅ・ぽーらすたー"},
+{"id":"osm:node:3080110121","name":"ザ・タワー","lat":43.06345,"lon":142.63134,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ざ・たわー","tel":"+81 167 58 1111"},
+{"id":"osm:node:3080110126","name":"ペンションインジ・トマム","lat":43.04936,"lon":142.64677,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ぺんしょんいんじ・とまむ"},
+{"id":"osm:node:3080110129","name":"ホテルグレーシィ・トマム","lat":43.04596,"lon":142.65058,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ほてるぐれーしぃ・とまむ"},
+{"id":"osm:node:3080111634","name":"リゾナーレトマム","lat":43.06687,"lon":142.63425,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"りぞなーれとまむ"},
+{"id":"osm:node:3080111643","name":"星野リゾートトマム","lat":43.06576,"lon":142.63264,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ほしのリゾートとまむ"},
+{"id":"osm:node:4382131841","name":"Alpine Backcountry Lodge","lat":43.03959,"lon":142.65739,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 080-3295-3718"},
+{"id":"osm:node:8826327325","name":"Club Med Tomamu","lat":43.0636,"lon":142.61906,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:クラブメッド北海道トマム"},
+{"id":"osm:way:1456931465","name":"フェアフィールド・バイ・マリオット・北海道南富良野","lat":43.17019,"lon":142.57131,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.marriott.co.jp/hotels/travel/ctsfm-fairfield-hokkaido-minamifurano/","note":"宿","g":"heritage","k":"lodging","tel":"+81 167 56 7555"}
+]

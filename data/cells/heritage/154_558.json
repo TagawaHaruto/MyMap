@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:1731429853","name":"鼠ヶ関キャンプ場","lat":38.55959,"lon":139.54825,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5045767132","name":"三国屋旅館","lat":38.62755,"lon":139.58881,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"みくにやりょかん","tel":"+81 235 43 2055"},
+{"id":"osm:node:5045767138","name":"清水屋旅館","lat":38.62291,"lon":139.58658,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 235 43 3326"},
+{"id":"osm:node:6053970629","name":"かつら","lat":38.51566,"lon":139.53582,"pref":"新潟","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6053970630","name":"平喜旅館","lat":38.51525,"lon":139.53731,"pref":"新潟","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10869588872","name":"庄内あつみ温泉 高見屋別邸 久遠","lat":38.61753,"lon":139.60065,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://atsumionsen-kuon.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-235-43-4119"},
+{"id":"osm:node:10869588873","name":"あつみ温泉 たちばなや","lat":38.6153,"lon":139.60539,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://www.tachibanaya.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-235-43-2211"},
+{"id":"osm:node:10869588874","name":"あつみ温泉 萬国屋","lat":38.61478,"lon":139.60686,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://www.bankokuya.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-570-008-598"},
+{"id":"osm:node:10869588875","name":"瀧の屋","lat":38.6157,"lon":139.60952,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://www.takinoya.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-235-43-3025"},
+{"id":"osm:node:10869588876","name":"あつみ温泉 川端の宿 東屋旅館","lat":38.61562,"lon":139.60911,"pref":"山形","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-235-43-2345"},
+{"id":"osm:node:10869588878","name":"かしわや旅館","lat":38.61618,"lon":139.60915,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://atsumi-kashiwaya.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-235-43-2011"},
+{"id":"osm:way:548295052","name":"高見屋別邸 久遠","lat":38.61742,"lon":139.60107,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://atsumionsen-kuon.com/","note":"宿","g":"heritage","k":"lodging","kana":"たかみやべってい くおん","tel":"+81 235 43 4119"},
+{"id":"osm:way:549084425","name":"たちばなや","lat":38.61505,"lon":139.6057,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://www.tachibanaya.jp/","note":"宿","g":"heritage","k":"lodging","kana":"たちばなや","tel":"+81 235 43 2211"},
+{"id":"osm:way:549084435","name":"萬国屋","lat":38.61488,"lon":139.60747,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://www.bankokuya.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ばんこくや","tel":"+81 120 085 980"},
+{"id":"osm:way:567847914","name":"あさひや旅館","lat":38.61654,"lon":139.60939,"pref":"山形","genres":["lodging"],"indoor":true,"url":"http://atsumi-asahiya.com/","note":"宿","g":"heritage","k":"lodging","kana":"あさひやりょかん","tel":"+81 235 43 2002"},
+{"id":"osm:way:567847951","name":"温海荘","lat":38.61611,"lon":139.60896,"pref":"山形","genres":["lodging"],"indoor":true,"url":"https://atsumiso.com/","note":"宿","g":"heritage","k":"lodging","kana":"あつみそう","tel":"+81 235 43 2888"}
+]

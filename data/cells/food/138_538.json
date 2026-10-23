@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:12801563160","name":"夜来香","lat":34.677,"lon":134.53017,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:12801583201","name":"料理旅館おかべ","lat":34.67693,"lon":134.52869,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13067888197","name":"炉端","lat":34.67686,"lon":134.52634,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:13409101560","name":"食事処かわさき","lat":34.67448,"lon":134.52334,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13565929742","name":"あじこう","lat":34.67684,"lon":134.52653,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14079474470","name":"松鶴","lat":34.6773,"lon":134.52676,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14079654036","name":"味恋Ⅱ","lat":34.67685,"lon":134.52913,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14079679608","name":"スナック鎌倉","lat":34.67242,"lon":134.53362,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14079701018","name":"月桂冠 焼肉おふくろ","lat":34.67365,"lon":134.53208,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:12927616360","name":"マーガレット","lat":34.6759,"lon":134.52577,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Mo,Sa-Su 10:00-16:00; Tu-Fr off"},
+{"id":"osm:node:13341599156","name":"お好み焼きアムール","lat":34.67199,"lon":134.53333,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:14079579447","name":"海のみえるCafé PORTO（ポルト）","lat":34.67813,"lon":134.5279,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13067971146","name":"ange","lat":34.67707,"lon":134.52733,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:14079485066","name":"活魚料理 おおだて","lat":34.67827,"lon":134.52801,"pref":"兵庫","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

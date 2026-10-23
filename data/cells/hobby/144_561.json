@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1126278479","name":"Wonder Goo","lat":36.18986,"lon":140.28943,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:1790063636","name":"おおえだ自転車店","lat":36.18887,"lon":140.28075,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7023047485","name":"Golf Partners","lat":36.1888,"lon":140.28606,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:97222627","name":"富士書店","lat":36.19899,"lon":140.29618,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

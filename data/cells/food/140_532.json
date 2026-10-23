@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5027820033","name":"ピコピコ","lat":35.1789,"lon":133.09485,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ハンバーガー","g":"food","k":"restaurant","oh":"We-Mo 08:30-19:00"},
+{"id":"osm:node:5678558063","name":"八川そば","lat":35.1489,"lon":133.08951,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5690821926","name":"姫のそば ゆかり庵","lat":35.1686,"lon":133.10604,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5690825231","name":"川西そば公房","lat":35.16858,"lon":133.08399,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5690828821","name":"純そば一風庵","lat":35.17432,"lon":133.08653,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5690830281","name":"あさひ亭","lat":35.17805,"lon":133.09276,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:5690839817","name":"古民家暖々","lat":35.16764,"lon":133.08914,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:612671153","name":"吾妻ずし","lat":35.17971,"lon":133.09067,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:712427470","name":"ホームランド多里","lat":35.11586,"lon":133.20028,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1558280724","name":"農家レストラン アメダス茶屋","lat":35.19486,"lon":133.22993,"pref":"鳥取","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5787209886","name":"シナトラ","lat":35.17847,"lon":133.09408,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:612651942","name":"奥出雲屋","lat":35.1746,"lon":133.08737,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:611200537","name":"佳肴やきとり","lat":35.17968,"lon":133.09465,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

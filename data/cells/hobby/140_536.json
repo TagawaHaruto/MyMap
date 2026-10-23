@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5449529623","name":"柿木書店","lat":35.05995,"lon":134.0007,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5449529625","name":"照文堂書店","lat":35.0587,"lon":134.0021,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"しょうぶんどうしょぼう"},
+{"id":"osm:node:5449550321","name":"マチノキチ","lat":35.06292,"lon":134.00097,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5450178979","name":"津山ブックセンター","lat":35.0595,"lon":134.00051,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5580353319","name":"ゴルフパートナー","lat":35.06318,"lon":134.02131,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6047883340","name":"喜久屋書店","lat":35.0798,"lon":134.00311,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7178395287","name":"トレビック模型","lat":35.05548,"lon":134.00372,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:8234645270","name":"TSUTAYA","lat":35.08103,"lon":134.00381,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:12599613876","name":"バイクショップＹＴＢ","lat":35.01177,"lon":134.15099,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","tel":"+81-868-72-3819"},
+{"id":"osm:node:13018341470","name":"人形のこどもや","lat":35.05891,"lon":134.03191,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"http://kodomoya.jp/","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:13072008650","name":"お宝発見 津山店","lat":35.06205,"lon":134.04776,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"https://otakarahakken-tsuyama.com/","note":"古着・リサイクル","g":"hobby","k":"hobby","tel":"+81-868-32-8257"},
+{"id":"osm:node:13072008664","name":"セカンドストリート","lat":35.06034,"lon":134.04526,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:543683849","name":"万歩書店","lat":35.06157,"lon":134.01201,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:584483488","name":"大谷商店","lat":35.0623,"lon":134.01492,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:626110529","name":"津山ブックセンター","lat":35.05922,"lon":134.03969,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"つやまぶっくせんたー"},
+{"id":"osm:way:675350101","name":"柴田商会","lat":35.1202,"lon":134.16907,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","kana":"しばたしょうかい","tel":"+81 868 36 5563"},
+{"id":"osm:way:1131612044","name":"ヒマラヤスポーツ&ゴルフ","lat":35.06143,"lon":134.04552,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

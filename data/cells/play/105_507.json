@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:544123043","name":"白瀬川公園","lat":26.34567,"lon":126.7643,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:544239622","name":"銭田公園","lat":26.32052,"lon":126.80483,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:544240364","name":"久米島県立自然公園","lat":26.38972,"lon":126.76865,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:550555369","name":"だるま山園地","lat":26.36126,"lon":126.76441,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:550555370","name":"だるま山第二公園","lat":26.36022,"lon":126.76317,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:587960889","name":"だるま山第3公園","lat":26.3617,"lon":126.75398,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:599435200","name":"下阿嘉農村公園","lat":26.36505,"lon":126.79855,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:599438719","name":"登武那覇城跡公園","lat":26.34747,"lon":126.80266,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:603977956","name":"白瀬川公園","lat":26.34213,"lon":126.76135,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:188614483","name":"仲里野球場","lat":26.33572,"lon":126.81309,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

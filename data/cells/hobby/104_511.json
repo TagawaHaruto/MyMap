@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6906607248","name":"宮脇書店","lat":26.20587,"lon":127.76481,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:node:8602805658","name":"さつき書店","lat":26.20146,"lon":127.75458,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8692246357","name":"アブソリュートゼロ","lat":26.24765,"lon":127.77064,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:node:9417688355","name":"城間三味線店","lat":26.22579,"lon":127.75754,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:9691924893","name":"球陽堂書店","lat":26.22415,"lon":127.76525,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12066433981","name":"ハードオフ","lat":26.2443,"lon":127.76859,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 11:00-20:00","tel":"+81-98-943-5853"},
+{"id":"osm:node:12066433982","name":"ホビーオフ","lat":26.24429,"lon":127.76862,"pref":"沖縄","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 11:00-20:00","tel":"+81-98-943-5854"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2042067082","name":"備瀬神殿","lat":26.7031,"lon":127.88104,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4745508895","name":"名護神社","lat":26.58866,"lon":127.99258,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4770693168","name":"山入端神社","lat":26.60633,"lon":127.93383,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4770717025","name":"凌雲院","lat":26.60565,"lon":127.95217,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4887088617","name":"日本ナザレン教団今帰仁教会","lat":26.68251,"lon":127.97699,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:5083830165","name":"部間権現","lat":26.60833,"lon":127.90101,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5158606309","name":"千眼寺","lat":26.59121,"lon":127.97823,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5158606368","name":"弘泉寺","lat":26.59806,"lon":127.98186,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5385298207","name":"護佐喜宮","lat":26.59153,"lon":127.98529,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5885062511","name":"赤墓","lat":26.70467,"lon":127.94057,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","kana":"あかばか"},
+{"id":"osm:node:9497181358","name":"クバの御嶽 (クボウ御嶽)","lat":26.68816,"lon":127.92744,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship","kana":"くばのうたきくぼうたき"},
+{"id":"osm:node:9756001485","name":"テンチジアマチジ（城内上の御嶽）","lat":26.69065,"lon":127.93043,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:9756001486","name":"ソイツギ（城内下之御嶽）","lat":26.69066,"lon":127.93004,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:11195739240","name":"祈りの森, 風","lat":26.54888,"lon":127.96817,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"https://www.inorinomorikaze.com","note":"寺社・教会","g":"temple","k":"worship","kana":"いのりのもりかぜ","oh":"09:00-18:00","tel":"+81 980-43-0569"},
+{"id":"osm:node:11203322504","name":"阿良御嶽","lat":26.70743,"lon":127.81126,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:11750433991","name":"照太寺","lat":26.71329,"lon":127.77208,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12856631209","name":"越地土帝君(宮里門中土帝君)","lat":26.69192,"lon":127.96933,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:484323989","name":"山入端御嶽","lat":26.60462,"lon":127.93604,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1212181432","name":"伊豆味神社","lat":26.65073,"lon":127.94735,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1268269263","name":"タチンジャナシ宮","lat":26.70615,"lon":127.80614,"pref":"沖縄","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

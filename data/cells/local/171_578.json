@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:1415172237","name":"新釧路ゴルフ倶楽部","lat":42.99442,"lon":144.70503,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://shinkushirogolfclub.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"しんくしろごるふくらぶ","tel":"+81 153 56 2141"},
+{"id":"osm:node:12908560589","name":"来止臥野営場","lat":42.95166,"lon":144.56157,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

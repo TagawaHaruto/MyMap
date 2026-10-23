@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:14196155039","name":"朝倉梨栗園直売所","lat":36.25663,"lon":136.19351,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"https://asakuraya.com/","note":"直売所","g":"local","k":"souvenir","oh":"Mo-Su 14:00-18:00; Nov-Jul off","tel":"+81 776 79 1930"},
+{"id":"osm:way:1265585599","name":"農産物直売所 風羽里","lat":36.26868,"lon":136.22909,"pref":"福井","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:relation:10744327","name":"芦原GC","lat":36.2821,"lon":136.23907,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286852437","name":"芝政ワールドオートキャンプ場","lat":36.25202,"lon":136.18087,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"https://shibamasa.com/sp/camp.php","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:197322774","name":"オートキャンプ場","lat":36.25357,"lon":136.18115,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

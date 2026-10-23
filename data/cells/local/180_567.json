@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:577709927","name":"ホクレン豊富家畜市場","lat":45.09199,"lon":141.80539,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3663186586","name":"幌延町総合体育館","lat":45.01895,"lon":141.84897,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:458072785","name":"豊富町民温水プール","lat":45.10527,"lon":141.76846,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.town.toyotomi.hokkaido.jp/section/kyouikuiinkai/a7cug60000000558.html","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3663186611","name":"ふるさとの森 森林公園 キャンプ場","lat":45.02143,"lon":141.84565,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

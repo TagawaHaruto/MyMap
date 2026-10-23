@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:5597429410","name":"ほ場整備記念碑","lat":33.82227,"lon":130.52106,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065853","name":"記念碑","lat":33.78715,"lon":130.71033,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11971059129","name":"古月横穴","lat":33.80379,"lon":130.66916,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"en:Furutsuki Cave Tombs"},
+{"id":"osm:way:688123383","name":"ひびき灘公園墓地","lat":33.91558,"lon":130.69442,"pref":"福岡","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:relation:5205151","name":"玄海ロイヤルホテル","lat":33.8613,"lon":130.5253,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:655487025","name":"ファミリーロッジ旅籠屋北九州八幡店","lat":33.88078,"lon":130.70765,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:936238162","name":"HOTEL AZ","lat":33.78426,"lon":130.54765,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:992653460","name":"八幡屋","lat":33.87938,"lon":130.57067,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:992653461","name":"杜の七種","lat":33.8753,"lon":130.5845,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1084578532","name":"チサンイン宗像","lat":33.78581,"lon":130.55208,"pref":"福岡","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

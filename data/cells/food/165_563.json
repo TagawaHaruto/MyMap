@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5432865631","name":"南華飯店","lat":41.43097,"lon":140.86257,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:439633260","name":"道の駅かわうち湖","lat":41.27044,"lon":140.88836,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"みちのえきかわうち","pk":2},
+{"id":"osm:way:589005609","name":"ぬいどう食堂","lat":41.32764,"lon":140.81201,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:589005613","name":"仏ヶ浦ドライブイン","lat":41.32775,"lon":140.81151,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:5432838547","name":"Cafe いおり","lat":41.43221,"lon":140.86194,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5432838548","name":"スナックエンゼル","lat":41.43165,"lon":140.86136,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

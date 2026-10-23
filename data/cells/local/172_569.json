@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:440427448","name":"作倶楽","lat":43.1981,"lon":142.416,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:3080124000","name":"かなやま湖キャンプ場","lat":43.1595,"lon":142.49126,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"かなやまこきゃんぷじょ"},
+{"id":"osm:node:6565860687","name":"山部自然公園太陽の里キャンプ場","lat":43.24641,"lon":142.34189,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

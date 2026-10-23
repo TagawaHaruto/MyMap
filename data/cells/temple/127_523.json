@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5224050421","name":"川上神社","lat":31.76139,"lon":130.98833,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562144","name":"霧島神社","lat":31.77441,"lon":130.75025,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562145","name":"菅原神社","lat":31.77903,"lon":130.7651,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562146","name":"芦江神社","lat":31.78467,"lon":130.76455,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562147","name":"熊野神社","lat":31.76929,"lon":130.77131,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562148","name":"白山神社","lat":31.77138,"lon":130.76739,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562149","name":"日枝神社","lat":31.77647,"lon":130.81465,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562150","name":"止神神社","lat":31.77533,"lon":130.78942,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562151","name":"熊野神社","lat":31.75692,"lon":130.79817,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562153","name":"菅原神社","lat":31.76374,"lon":130.7607,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562154","name":"稲荷神社","lat":31.75596,"lon":130.76356,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5311562155","name":"北山神社","lat":31.7522,"lon":130.7619,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8991907451","name":"愛宕神社","lat":31.99675,"lon":130.98095,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12768632264","name":"霧島東神社","lat":31.89195,"lon":130.96215,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"http://www.takaharu-tourism.jp/look/kirishimahigashi/","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1480921741","name":"八幡神社（大平八幡宮）","lat":31.90139,"lon":130.75507,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:978064464","name":"実心寺","lat":44.13042,"lon":142.51742,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:998041858","name":"ベンケ神社","lat":44.09482,"lon":142.61642,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:998075585","name":"大和神社","lat":44.08969,"lon":142.52379,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

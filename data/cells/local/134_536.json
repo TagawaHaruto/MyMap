@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:14287502390","name":"CAMP PARK KITO","lat":33.74399,"lon":134.15423,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0884-64-8055"},
+{"id":"osm:node:14287571151","name":"馬路温泉","lat":33.55668,"lon":134.0492,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-44-2026"},
+{"id":"osm:node:14287571159","name":"清流の里 野根川オートキャンプ場","lat":33.54391,"lon":134.22811,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://toyo-kochi.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287578028","name":"安田川アユおどる清流キャンプ場","lat":33.51281,"lon":134.02078,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-39-2266"},
+{"id":"osm:node:14287582610","name":"魚梁瀬森林公園オートキャンプ場","lat":33.60371,"lon":134.10651,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"http://umajimura.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:313343324","name":"美那川キャンプ村","lat":33.74466,"lon":134.15508,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"http://www.nett.ne.jp/kankou/kouen/minagawa/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 68 2333"},
+{"id":"osm:way:313766065","name":"海陽町船津キャンプ場","lat":33.56887,"lon":134.21837,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://www.kaiyo-kankou.jp/index.php/staying2/stay-funatsuc","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 884 76 2958"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2507563942","name":"川下海浜公園キャンプ場","lat":43.58344,"lon":141.38627,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286024383","name":"川下海浜施設","lat":43.5848,"lon":141.38727,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0133-79-2047"},
+{"id":"osm:node:14286040983","name":"雄冬キャンプ場","lat":43.73861,"lon":141.3385,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0164-53-3332"}
+]

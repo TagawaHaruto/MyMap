@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:474642505","name":"かえで緑地","lat":43.90568,"lon":144.66545,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"かえでりょくち"},
+{"id":"osm:way:489618093","name":"モトエカ広場","lat":43.83025,"lon":144.59515,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"もとえかひろば"},
+{"id":"osm:way:662525695","name":"はまなす公園","lat":43.9028,"lon":144.65772,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"はまなすこうえん"},
+{"id":"osm:way:760889924","name":"いずみの森来運公園","lat":43.83445,"lon":144.64217,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"いずみのもりらいうんこうえん"},
+{"id":"osm:way:1058033510","name":"あさひ広場","lat":43.90856,"lon":144.67417,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"あさひひろば"},
+{"id":"osm:way:1058040936","name":"又三郎公園","lat":43.91114,"lon":144.66538,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"またさぶろうこうえん"},
+{"id":"osm:way:1058040943","name":"びんちゃん公園","lat":43.91155,"lon":144.65983,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1058318856","name":"本町公園","lat":43.91492,"lon":144.66603,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ほんまちこうえん"},
+{"id":"osm:way:1058978693","name":"プレイロット","lat":43.90497,"lon":144.66023,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ぷれいろっと"},
+{"id":"osm:way:1058978694","name":"土の広場","lat":43.90482,"lon":144.66117,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"つちのひろば"},
+{"id":"osm:way:1060170503","name":"以久科原生花園","lat":43.91847,"lon":144.70975,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"いくしなげんせいかえん"},
+{"id":"osm:relation:14120734","name":"斜里町民公園","lat":43.91254,"lon":144.67496,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"しゃりちょうみんこうえん"}
+]

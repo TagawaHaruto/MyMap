@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2481029863","name":"光徳寺","lat":35.57596,"lon":137.59536,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"こうとくじ"},
+{"id":"osm:node:4166928695","name":"諏訪神社","lat":35.51129,"lon":137.57514,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6393145688","name":"子安観音","lat":35.54574,"lon":137.58553,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","oh":"24/7"},
+{"id":"osm:node:8474419305","name":"尾又 おしゃごじ様","lat":35.57356,"lon":137.59586,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9465216729","name":"建神社奥宮","lat":35.50532,"lon":137.70539,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12450497120","name":"成田不動尊","lat":35.50008,"lon":137.50747,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"なりたふどそん"},
+{"id":"osm:way:837340174","name":"諏訪神社","lat":35.55419,"lon":137.72576,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1061555782","name":"神坂護摩堂（吉祥院）","lat":35.50697,"lon":137.58567,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"https://enasan.net/chief/008821.php","note":"寺","g":"temple","k":"worship","kana":"みさかごまどきちじょいん"},
+{"id":"osm:way:1196032804","name":"倉科祖霊社","lat":35.55753,"lon":137.58993,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"くらしな そ れいしゃ"},
+{"id":"osm:way:1196060649","name":"熊野神社","lat":35.53679,"lon":137.58439,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"くまのじんじゃ"},
+{"id":"osm:way:1196985668","name":"覚明神社","lat":35.50635,"lon":137.51788,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1196985670","name":"神明神社","lat":35.50544,"lon":137.51819,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1463413265","name":"エホバの証人の王国会館","lat":35.50887,"lon":137.5086,"pref":"岐阜","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","oh":"Th 18:30-21:30; Su 09:00-12:00","wc":"yes"}
+]

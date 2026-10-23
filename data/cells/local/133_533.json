@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:731868663","name":"土佐漁菜市場本店","lat":33.38465,"lon":133.27246,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13429931195","name":"井ノ尻マリーナ","lat":33.43557,"lon":133.4431,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:388378590","name":"佐川町民プール","lat":33.49906,"lon":133.29887,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:388701472","name":"佐川ナウマングラウンド","lat":33.49753,"lon":133.29336,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:388701488","name":"体育館","lat":33.49879,"lon":133.30277,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:709707553","name":"須崎市立市民体育館","lat":33.38926,"lon":133.28565,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","pk":2},
+{"id":"osm:way:710589119","name":"多ノ郷体育センター","lat":33.41363,"lon":133.28947,"pref":"高知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:713462621","name":"キリマゴルフガーデン","lat":33.4169,"lon":133.26677,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:10658602","name":"スカイ　ベイゴルフクラブ","lat":33.4176,"lon":133.39225,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287575905","name":"ロゴスパーク シーサイド高知須崎","lat":33.41182,"lon":133.36211,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-59-0601"}
+]

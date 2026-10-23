@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:6522417768","name":"宣徳寺","lat":32.21124,"lon":130.85773,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9287552041","name":"土屋観音 相良三十三観音 第三十一番","lat":32.20648,"lon":130.83609,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11115812483","name":"相良神社","lat":32.21098,"lon":130.76401,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11115812485","name":"林鹿寺","lat":32.20956,"lon":130.76397,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11115812486","name":"洪願寺","lat":32.20689,"lon":130.76476,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11115812487","name":"老神神社","lat":32.2106,"lon":130.75892,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11700432025","name":"水天宮","lat":32.21655,"lon":130.75886,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:478881768","name":"観音禅寺","lat":32.21655,"lon":130.77267,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1432014395","name":"宮地嶽神社","lat":32.16474,"lon":130.78946,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

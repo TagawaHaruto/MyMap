@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2849795392","name":"喜船商店","lat":36.48812,"lon":136.75596,"pref":"石川","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4342031289","name":"惠びす屋","lat":36.25606,"lon":136.90572,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5059456021","name":"かっぱ","lat":36.40421,"lon":136.88577,"pref":"富山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:node:9048325833","name":"民芸品店Neo","lat":36.25768,"lon":136.90775,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:236248623","name":"おいしんぼ","lat":36.25653,"lon":136.90458,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:236248636","name":"おみやげ こびきや","lat":36.25977,"lon":136.90701,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:236248646","name":"おみやげ ぜん助","lat":36.25712,"lon":136.90728,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:236248650","name":"豆菓子 豆吉本舗","lat":36.25851,"lon":136.90633,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:236248704","name":"いろり","lat":36.26091,"lon":136.90693,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:236408784","name":"古太神","lat":36.25586,"lon":136.90267,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"こだいじん"},
+{"id":"osm:way:236408799","name":"合掌庵","lat":36.25672,"lon":136.90689,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:586010782","name":"天主閣","lat":36.26313,"lon":136.90855,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:586014670","name":"おみやげ処 めめんこ","lat":36.2596,"lon":136.90697,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:586014684","name":"かたりべ","lat":36.25658,"lon":136.90507,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:973431592","name":"山峡の家","lat":36.25609,"lon":136.90633,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5287432945","name":"桂湖オートキャンプ場","lat":36.32291,"lon":136.83658,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286775481","name":"桜ヶ池キャンプ場","lat":36.4987,"lon":136.86694,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0763-62-3360"},
+{"id":"osm:node:14286775483","name":"南砺市つくばね森林公園","lat":36.49652,"lon":136.90909,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0763-62-2115"},
+{"id":"osm:node:14286832577","name":"五箇山国民休養地相倉キャンプ場","lat":36.42491,"lon":136.93663,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0763-66-2123"}
+]

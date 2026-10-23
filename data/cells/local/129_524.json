@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:753557416","name":"椎葉村物産センター　平家本陣","lat":32.46921,"lon":131.19888,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","oh":"Mo-Su 09:00-18:00","tel":"+81 982 67 3140"},
+{"id":"osm:way:1228830055","name":"村民体育館","lat":32.45499,"lon":131.14784,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1696029235","name":"市房キャンプ場","lat":32.31831,"lon":131.07051,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://outsidebase-mizukami.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0966-46-0768"},
+{"id":"osm:node:14287603346","name":"ゆのまえグリーンパレス","lat":32.27216,"lon":131.00129,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://www.y-yurari.co.jp/greenpalace/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0966-43-4545"},
+{"id":"osm:node:14287631005","name":"BASE CAMP shiiba（ひえつきの里キャンプ場）","lat":32.46059,"lon":131.13998,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-67-2722"},
+{"id":"osm:node:14287631014","name":"矢立高原キャンプ場","lat":32.36533,"lon":131.10351,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0983-38-1440"},
+{"id":"osm:way:371347994","name":"ゆのまえグリーンパレス炊飯棟","lat":32.27183,"lon":131.00265,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

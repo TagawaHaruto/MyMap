@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:962689914","name":"館山公園","lat":37.24247,"lon":140.57081,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:964889312","name":"ポケットパーク","lat":37.24037,"lon":140.56971,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1375179182","name":"町民憩いの森公園","lat":37.0889,"lon":140.5513,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:749673465","name":"勤労者体育館","lat":37.22144,"lon":140.57734,"pref":"福島","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:962689913","name":"平田村総合運動場","lat":37.2227,"lon":140.57415,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:962689919","name":"テニスコート","lat":37.22191,"lon":140.57708,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:962689920","name":"ひらたフィットネクラブ","lat":37.22038,"lon":140.57594,"pref":"福島","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"}
+]

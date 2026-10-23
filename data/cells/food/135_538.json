@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:1808475125","name":"スシロー　小松島店","lat":33.97579,"lon":134.61335,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:1883337662","name":"はなまるうどん","lat":33.96243,"lon":134.62245,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"はなまるうどん","chain":true},
+{"id":"osm:node:1883337672","name":"神龍","lat":33.96228,"lon":134.62282,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:3057328859","name":"中華そば 猪虎","lat":33.99142,"lon":134.60476,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"いのこ"},
+{"id":"osm:node:9890867317","name":"麺場　水や","lat":33.89172,"lon":134.65736,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:12064394220","name":"あいさいキッチン","lat":33.9763,"lon":134.60216,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"11:00-14:30"},
+{"id":"osm:node:12064394222","name":"ちゃーちゃんうどん","lat":33.97603,"lon":134.6022,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:12064394223","name":"一生大吉","lat":33.97617,"lon":134.6022,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14022281684","name":"カントリーロード","lat":33.85598,"lon":134.50347,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1458250554","name":"ごはんや 阿南食堂","lat":33.92555,"lon":134.66981,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ごはにゃあなんしょくど"},
+{"id":"osm:node:3783232849","name":"大菩薩峠","lat":33.85091,"lon":134.62573,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","wp":"ja:大菩薩峠 (喫茶店)"},
+{"id":"osm:node:4057490539","name":"シャラの樹Ⅱ","lat":33.93301,"lon":134.60738,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12064394221","name":"田んぼと畑のカフェ","lat":33.97635,"lon":134.60201,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13204079601","name":"やまいぬカフェ","lat":33.91737,"lon":134.54649,"pref":"徳島","genres":["food"],"indoor":true,"url":"https://lit.link/en/kamodaniookamiproject","note":"カフェ","g":"food","k":"cafe","kana":"やまいぬカフェ","oh":"Th-Tu 08:00-17:00"},
+{"id":"osm:node:1808475118","name":"CoCo壱番屋　小松島バイパス店","lat":33.97726,"lon":134.61063,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:1810016914","name":"モスバーガー","lat":33.91615,"lon":134.66912,"pref":"徳島","genres":["food"],"indoor":true,"url":"https://www.mos.co.jp/","note":"ファストフード","g":"food","k":"fastfood","chain":true,"oh":"Mo-Su 10:00-00:00","tel":"+81-884-243103"},
+{"id":"osm:node:1810100407","name":"すき家","lat":33.91924,"lon":134.65196,"pref":"徳島","genres":["food"],"indoor":true,"url":"https://www.sukiya.jp/","note":"ファストフード","g":"food","k":"fastfood","kana":"すきや","chain":true},
+{"id":"osm:node:1810100412","name":"CoCo壱番屋","lat":33.9204,"lon":134.66684,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ここいちばんや","chain":true},
+{"id":"osm:node:1883337670","name":"モスバーガー","lat":33.96602,"lon":134.61977,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:3783232848","name":"マクドナルド","lat":33.91778,"lon":134.673,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:node:12012590005","name":"丸亀製麺","lat":33.92168,"lon":134.66656,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"まるがめせいめん","chain":true}
+]

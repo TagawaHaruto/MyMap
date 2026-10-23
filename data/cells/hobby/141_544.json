@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5507550453","name":"ブックス年輪","lat":35.32871,"lon":136.02115,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5508079430","name":"平和書店 あどがわ店","lat":35.32843,"lon":136.02856,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5508079454","name":"玉垣芳文堂","lat":35.33281,"lon":136.01731,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5865079913","name":"山元自転車商会","lat":35.26954,"lon":136.24985,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5865080189","name":"マリンショップ オグリ","lat":35.28378,"lon":136.24652,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"http://oguri-marine.jp","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 749 22 0851"},
+{"id":"osm:node:5865080199","name":"大場自転車商会","lat":35.27027,"lon":136.24949,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5865096693","name":"ウエダスポーツ 彦根本店","lat":35.2663,"lon":136.24637,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5895891988","name":"サイクルショップ ミヤオ","lat":35.25786,"lon":136.23782,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:11164215757","name":"三洋堂書店","lat":35.4806,"lon":136.23027,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1368759671","name":"サイクルベースあさひ","lat":35.25509,"lon":136.23913,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","oh":"Mo-Fr 11:00-20:00; Sa-Su 10:00-20:00","tel":"+81 749 21 3531"},
+{"id":"osm:way:1368759682","name":"Sunmusic","lat":35.25271,"lon":136.24105,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1378831724","name":"自転車ドーム チャンピオン 彦根店","lat":35.2528,"lon":136.24215,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1381321642","name":"つり具の北川","lat":35.26634,"lon":136.24557,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:1460464366","name":"イシグロ","lat":35.27857,"lon":136.2437,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","kana":"いしぐろ"}
+]

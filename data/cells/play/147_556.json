@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:209556285","name":"虻ヶ原親水公園","lat":36.83626,"lon":139.24701,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:210368765","name":"寄居山公園","lat":36.77071,"lon":139.22482,"pref":"群馬","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1425478282","name":"ふきあげ体育館","lat":36.83102,"lon":139.245,"pref":"群馬","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

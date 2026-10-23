@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5802910654","name":"ウドノモータース","lat":33.73583,"lon":136.01557,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","tel":"+81 735 32 1133"},
+{"id":"osm:node:5802910659","name":"鵜殿ホンダ 尾崎商会","lat":33.73523,"lon":136.01178,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6853147588","name":"アルゴ","lat":33.722,"lon":136.00423,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:561722125","name":"道の駅サロマ湖","lat":44.09991,"lon":143.82351,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561725571","name":"道の駅愛ランド湧別","lat":44.13131,"lon":143.71884,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561731909","name":"道の駅かみゆうべつ温泉チューリップの湯","lat":44.18503,"lon":143.59525,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562512589","name":"道の駅 香りの里たきのうえ","lat":44.19687,"lon":143.09087,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:629165354","name":"道の駅オホーツク紋別","lat":44.32869,"lon":143.37442,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:relation:10518747","name":"道の駅 遠軽 森のオホーツク","lat":44.02202,"lon":143.49646,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1095316887","name":"道の駅 おこっぺ","lat":44.46936,"lon":143.11726,"type":"SA・PA","k":"rest_area","likely":true}
+]

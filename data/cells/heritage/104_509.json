@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2449052090","name":"太平洋戦争沖縄戦上陸第一号之地","lat":26.22745,"lon":127.30259,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13670995001","name":"阿佐大所墓","lat":26.23891,"lon":127.31323,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:2420406236","name":"シラハマアイランズリゾート","lat":26.22808,"lon":127.30494,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2449051675","name":"民宿 みやひら","lat":26.2363,"lon":127.30998,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"098-987-2618"},
+{"id":"osm:node:4238855105","name":"ペンション星砂","lat":26.22797,"lon":127.30295,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ぺんしおんほしずな"},
+{"id":"osm:node:6427808186","name":"宿なかむら","lat":26.1903,"lon":127.28118,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"https://yadonakamura.wixsite.com/nakamura","note":"宿","g":"heritage","k":"lodging","kana":"やどなかむら","tel":"09037957685"},
+{"id":"osm:node:6813444623","name":"Cha villa","lat":26.22772,"lon":127.30308,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7639639861","name":"遊遊","lat":26.22878,"lon":127.30205,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ゆゆ"},
+{"id":"osm:node:7639639871","name":"民宿中村屋","lat":26.22789,"lon":127.30264,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"なかむらや"},
+{"id":"osm:node:7639639882","name":"あさぎ","lat":26.22851,"lon":127.30305,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"あさぎ","wc":"yes"},
+{"id":"osm:node:7639650204","name":"Okinawa Resort","lat":26.22932,"lon":127.30245,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7639650206","name":"ペンション高月","lat":26.22987,"lon":127.30373,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ぺんしおんたかつき"},
+{"id":"osm:node:7639650234","name":"座間味荘","lat":26.22837,"lon":127.30184,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ざまみそ"},
+{"id":"osm:node:7639650235","name":"民宿宮之里","lat":26.22822,"lon":127.30141,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11109624306","name":"シーフレンド","lat":26.17087,"lon":127.34703,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"https://seafriend.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11109637505","name":"やどかり","lat":26.22749,"lon":127.29456,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"やどかり"},
+{"id":"osm:node:13670955401","name":"ホームスティ くちゃ","lat":26.23594,"lon":127.30984,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"https://zamami-homestay.shopinfo.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+818033781714"},
+{"id":"osm:node:13673582001","name":"おれの宿","lat":26.22756,"lon":127.29467,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

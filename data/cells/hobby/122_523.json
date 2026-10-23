@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5271128123","name":"スポーツショップなかたね","lat":30.53476,"lon":130.9584,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5271477205","name":"寺田書店","lat":30.53309,"lon":130.95931,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5271477217","name":"おもちゃの福屋","lat":30.53411,"lon":130.96002,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:5271513001","name":"和田書店","lat":30.53599,"lon":130.95922,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

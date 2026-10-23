@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2970955976","name":"錦秋湖川尻運動公園","lat":39.31448,"lon":140.78744,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:2972911102","name":"あやめ園","lat":39.31335,"lon":140.78786,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9008932474","name":"和衷園児童遊園","lat":39.45731,"lon":140.77795,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:741628135","name":"川舟児童遊園","lat":39.48145,"lon":140.80203,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:741651589","name":"焼地台公園","lat":39.33265,"lon":140.78641,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","pk":2},
+{"id":"osm:way:839777367","name":"およねの里自然園","lat":39.49532,"lon":140.81746,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:839845940","name":"湖畔ステージ","lat":39.31403,"lon":140.77985,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:842284020","name":"猿橋農村公園","lat":39.44462,"lon":140.76162,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:965908040","name":"志賀来屋外ステージ","lat":39.39698,"lon":140.76991,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:966693042","name":"七内小学校跡地","lat":39.45081,"lon":140.78707,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:997179204","name":"猿橋地区町営住宅公園","lat":39.44575,"lon":140.75842,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1002181929","name":"鍵飯地区児童遊園","lat":39.40851,"lon":140.763,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1002205118","name":"高台公園","lat":39.4031,"lon":140.75364,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:293488478","name":"錦秋湖グラウンド","lat":39.31466,"lon":140.78852,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:761930640","name":"川尻体育館","lat":39.31824,"lon":140.77682,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:842935723","name":"沢内中学校第二体育館","lat":39.43723,"lon":140.7507,"pref":"岩手","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:988789678","name":"旧川舟小学校体育館","lat":39.484,"lon":140.80099,"pref":"岩手","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:node:5733814622","name":"西和賀町文化創造館 銀河ホール","lat":39.31363,"lon":140.779,"pref":"岩手","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"},
+{"id":"osm:relation:11523136","name":"銀河ホール","lat":39.31364,"lon":140.77893,"pref":"岩手","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:1864231227","name":"小笠原ビジターセンター","lat":27.09307,"lon":142.19184,"pref":"東京","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum","kana":"おがさわらびじたあせんたあ"},
+{"id":"osm:way:443594741","name":"小笠原海洋センター","lat":27.09392,"lon":142.20379,"pref":"東京","genres":["play"],"indoor":true,"url":"","note":"水族館","k":"park"},
+{"id":"osm:node:3774779748","name":"ウェザーステーション","lat":27.09548,"lon":142.18451,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4373968549","name":"大神山展望台","lat":27.09659,"lon":142.19471,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4373968550","name":"長崎展望台","lat":27.09993,"lon":142.21368,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:4373968551","name":"電信山展望台","lat":27.10206,"lon":142.20584,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5653801121","name":"中山展望台","lat":27.05816,"lon":142.19341,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5653819221","name":"枕状溶岩","lat":27.09852,"lon":142.21444,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5653819222","name":"旭平展望台","lat":27.09579,"lon":142.21724,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:5653819223","name":"ハートロック","lat":27.04467,"lon":142.20566,"pref":"東京","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:602821147","name":"大神山神社","lat":27.09655,"lon":142.19415,"pref":"東京","genres":["temple"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E5%A4%A7%E7%A5%9E%E5%B1%B1%E7%A5%9E%E7%A4%BE_%28%E6%9D%B1%E4%BA%AC%E9%83%BD%29","note":"寺社","k":"temple"}
+]

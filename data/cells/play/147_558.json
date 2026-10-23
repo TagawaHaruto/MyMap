@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:266763143","name":"稲荷町防災公園","lat":36.75088,"lon":139.61484,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:424524661","name":"美濃原森林公園","lat":36.77713,"lon":139.60459,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:11890108","name":"滝見公園","lat":36.83833,"lon":139.72083,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"たきみこうえん"},
+{"id":"osm:way:908386675","name":"高徳中岩河川公園","lat":36.7789,"lon":139.70995,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:908388353","name":"鬼怒川レジャー公園","lat":36.79968,"lon":139.70754,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:986689786","name":"倉ケ崎SL花畑","lat":36.75052,"lon":139.71057,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1087660289","name":"さくら並木公園","lat":36.8243,"lon":139.71428,"pref":"栃木","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:10132692855","name":"Fujihara sports park","lat":36.81497,"lon":139.71636,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:418050623","name":"日光霧降アイスアリーナ","lat":36.76082,"lon":139.60993,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports","wp":"ja:栃木県立日光霧降アイスアリーナ"},
+{"id":"osm:way:418050654","name":"日光霧降スケートセンター","lat":36.75945,"lon":139.61084,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:430132666","name":"西川運動場","lat":36.93286,"lon":139.67867,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:708446189","name":"タイムトライアルサーキット・グランデイソーラ","lat":36.79962,"lon":139.70075,"pref":"栃木","genres":["outdoor","play"],"indoor":false,"url":"http://www.grandeisola.com/","note":"陸上トラック","g":"play","k":"sports","tel":"+81-288-77-3500"},
+{"id":"osm:way:941868313","name":"文化映像館","lat":36.7955,"lon":139.69838,"pref":"栃木","genres":["play"],"indoor":true,"url":"","note":"映画館","g":"play","k":"amuse"}
+]

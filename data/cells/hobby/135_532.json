@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4269708348","name":"Winds Bikes","lat":33.92259,"lon":133.16784,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","oh":"12:00-20:00"},
+{"id":"osm:node:7926363785","name":"ビデオ 安売王","lat":33.93424,"lon":133.09007,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7926364086","name":"セイワ 書店","lat":33.93215,"lon":133.08883,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8253952553","name":"伊予桜井漆器会館","lat":33.99624,"lon":133.04488,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:11919772303","name":"古着屋fuko to","lat":33.92621,"lon":133.2482,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:379012725","name":"ジャンプワールド","lat":33.93056,"lon":133.19217,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

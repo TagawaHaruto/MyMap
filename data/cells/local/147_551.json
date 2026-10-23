@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:14286480040","name":"蓮華温泉キャンプ場","lat":36.91402,"lon":137.83019,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-552-1063"},
+{"id":"osm:node:14286480041","name":"ヒーリングガーデン たかなみ","lat":36.91389,"lon":137.83167,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-556-2327"},
+{"id":"osm:node:14286480045","name":"雨飾高原キャンプ場","lat":36.88214,"lon":137.9735,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.amakazari.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0261-85-1045"},
+{"id":"osm:node:14286786878","name":"石坂森林探険村","lat":36.80928,"lon":137.88861,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.otarinatureschool.net/tankenmuracamp","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-4284-4364"},
+{"id":"osm:node:14286786889","name":"棚田キャンプ場","lat":36.78887,"lon":137.91988,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4361-0159"},
+{"id":"osm:node:14286796333","name":"眺望の郷キャンプ場","lat":36.78184,"lon":137.93329,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://camp-zekkei.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286796335","name":"コルチナオートキャンプ場","lat":36.77648,"lon":137.88721,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.hgp.co.jp/hakuba/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0261-82-2236"},
+{"id":"osm:node:14286796338","name":"mukava otari private camp(ムカヴァ オタリ プライベートキャンプ)","lat":36.77312,"lon":137.88736,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://mukavaotari.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-5327-5862"},
+{"id":"osm:node:14286796339","name":"Matkaotari","lat":36.77223,"lon":137.88693,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://matkaotari.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0261-82-3808"},
+{"id":"osm:node:14286796345","name":"TSUGAIKE CAMP-LANTERN CAMPING FIELD-","lat":36.75392,"lon":137.86012,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

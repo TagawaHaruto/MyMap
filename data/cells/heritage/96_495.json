@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4472671341","name":"下田原城跡","lat":24.06913,"lon":123.77811,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:9591588942","name":"日本最南端之碑","lat":24.04786,"lon":123.79488,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9591588943","name":"聖寿奉祝の碑","lat":24.04785,"lon":123.79485,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9591588944","name":"波照間之碑","lat":24.04796,"lon":123.79501,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9591588945","name":"日本最南端平和の碑","lat":24.048,"lon":123.7949,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6518037387","name":"民宿あーちゃん","lat":24.2384,"lon":123.99513,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6518059885","name":"なかた荘","lat":24.23781,"lon":123.99559,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6844569486","name":"照島荘","lat":24.06156,"lon":123.77995,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"https://ameblo.jp/haterusima/","note":"宿","g":"heritage","k":"lodging","tel":"+81-90-4518-4921"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:13844706381","name":"こだわり市場","lat":32.88537,"lon":130.00695,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:654402712","name":"千々石観光センター","lat":32.79585,"lon":130.17622,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:993659825","name":"チサンCC森山","lat":32.80534,"lon":130.11866,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:993848067","name":"愛野カントリー倶楽部","lat":32.80278,"lon":130.18073,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1133034581","name":"雲仙市千々石体育館","lat":32.78747,"lon":130.20617,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1135585027","name":"ふれあいプール","lat":32.87102,"lon":130.23584,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1135633950","name":"瑞穂体育館","lat":32.86578,"lon":130.23915,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1194220904","name":"道越環境広場","lat":32.96313,"lon":130.22355,"pref":"佐賀","genres":["outdoor"],"indoor":true,"url":"https://www.town.tara.lg.jp/koukyou/_1396.html","note":"遊び・スポーツ","g":"local","k":"activity","kana":"みちこしかんきょうひろば"},
+{"id":"osm:way:1194220999","name":"太良町民体育センター","lat":32.97369,"lon":130.204,"pref":"佐賀","genres":["outdoor"],"indoor":true,"url":"https://www.town.tara.lg.jp/koukyou/_1389.html","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たらちょうみんたいいくせんたー"},
+{"id":"osm:node:14285932616","name":"レストハウス 森のしらべ","lat":32.75107,"lon":130.24454,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287526972","name":"中山キャンプ場","lat":32.99787,"lon":130.11267,"pref":"佐賀","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0954-67-0220"},
+{"id":"osm:node:14287526979","name":"黒木さわがにキャンプ場","lat":32.97309,"lon":130.06073,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0957-55-3294"},
+{"id":"osm:node:14287526982","name":"とりかぶと自然学校・生活科学研究所","lat":32.96187,"lon":130.03761,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0957-55-5977"},
+{"id":"osm:way:1386905087","name":"中山キャンプ場","lat":32.98535,"lon":130.09463,"pref":"佐賀","genres":["outdoor"],"indoor":false,"url":"https://www.town.tara.lg.jp/kanko/_1900/_1237.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 954-67-0220"},
+{"id":"osm:way:1387992110","name":"奥平谷キャンプ場","lat":32.99678,"lon":130.06104,"pref":"佐賀","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

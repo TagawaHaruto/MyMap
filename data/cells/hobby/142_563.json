@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4883752201","name":"ミソラ電気模型店","lat":35.73147,"lon":140.83975,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6180845585","name":"Cycle Shop Issindo","lat":35.73098,"lon":140.82742,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:9438731765","name":"ブックオフ","lat":35.71473,"lon":140.7914,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

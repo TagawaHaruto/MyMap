@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:13028026708","name":"味処 海小屋 夕陽","lat":42.21626,"lon":142.64075,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://umigoya-yuhi.webnode.jp/","note":"和食","g":"food","k":"restaurant","tel":"+81-146-34-2500"},
+{"id":"osm:way:837164267","name":"黒毛和牛のドン","lat":42.24826,"lon":142.55619,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://kurogewagyu-don.net/","note":"焼肉","g":"food","k":"restaurant","tel":"+81-146-37-1129"},
+{"id":"osm:way:1072143460","name":"くまのフライパン","lat":42.22468,"lon":142.62555,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://kuma-hura.com/","note":"和食","g":"food","k":"restaurant","oh":"Mo-Sa 11:00-14:30,17:00-21:00; Su,Mo[1,3] off"}
+]

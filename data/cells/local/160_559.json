@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:448300359","name":"村民体育館","lat":40.02783,"lon":139.9606,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:463822521","name":"大潟村B&G海洋センター","lat":40.02479,"lon":139.95901,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:778009083","name":"弓道場","lat":40.00587,"lon":139.95817,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4633801688","name":"南の池記念公園キャンプ場","lat":40.00319,"lon":139.95187,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

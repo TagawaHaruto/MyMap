@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5576292919","name":"弁天宮","lat":41.01648,"lon":140.87165,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12552401741","name":"蒼前神社","lat":41.00482,"lon":140.90635,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12552401742","name":"椿神社","lat":41.00552,"lon":140.90562,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:559356851","name":"鯛島弁財天","lat":41.12037,"lon":140.81454,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:755084647","name":"脇野沢八幡宮","lat":41.14674,"lon":140.82479,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:807432718","name":"愛宕神社","lat":41.14064,"lon":140.82242,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1259735253","name":"八幡宮","lat":41.13246,"lon":140.81437,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1259735267","name":"市杵島神社","lat":41.1367,"lon":140.81688,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2578247926","name":"寝太郎之像","lat":34.05428,"lon":131.16083,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2578247932","name":"慈眼","lat":34.0543,"lon":131.16064,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2578247940","name":"献眼をたたえる碑","lat":34.05427,"lon":131.16062,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4618259755","name":"飯塚城跡","lat":34.17774,"lon":131.06133,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4618297762","name":"毛利千代姫の墓","lat":34.16786,"lon":131.07718,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:5976154887","name":"祠移設記念碑","lat":34.06509,"lon":131.16726,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5976251644","name":"長光寺山古墳","lat":34.04595,"lon":131.14785,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10249364016","name":"華山記念碑 山口県知事平井龍","lat":34.18015,"lon":131.02888,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:625360656","name":"SL","lat":34.05086,"lon":131.169,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5257015107","name":"美祢グランドホテル","lat":34.16661,"lon":131.20891,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:266162618","name":"ナチュラルグリーンパークホテル","lat":34.03314,"lon":131.18569,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:442160129","name":"小野田オリエンタルホテル","lat":34.0077,"lon":131.18231,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:620189509","name":"厚狭ステーションホテル","lat":34.05499,"lon":131.1613,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

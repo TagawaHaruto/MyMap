@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:9161882603","name":"うたのぼりグリーンパークホテル","lat":44.78404,"lon":142.51585,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://greenpark.esashi.biz/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:293128638","name":"ホテルニュー幸林","lat":44.93492,"lon":142.56633,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.esashi.biz/new-kohrin/","note":"宿","g":"heritage","k":"lodging","tel":"+81 163 62 4040"}
+]

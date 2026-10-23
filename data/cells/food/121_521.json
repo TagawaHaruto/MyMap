@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:6520445047","name":"Sea & Sun","lat":30.41224,"lon":130.43791,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"https://cafe-25611.business.site/","note":"カフェ","g":"food","k":"cafe","oh":"Fr-Tu 11:30-17:00"},
+{"id":"osm:node:13747066389","name":"WAA Ma-no","lat":30.45284,"lon":130.49153,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7021211785","name":"平海製菓","lat":30.45253,"lon":130.48865,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","tel":"+81 99-7442-058"}
+]

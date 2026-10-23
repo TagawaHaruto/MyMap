@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:293511058","name":"二ツ沼総合公園","lat":37.23371,"lon":141.00145,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:688059416","name":"広野の風景ゾーン","lat":37.21429,"lon":141.00507,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:783046248","name":"四季の森ゾーン","lat":37.21741,"lon":141.0051,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:10867018","name":"ひろの防災緑地","lat":37.2133,"lon":141.00105,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:103818879","name":"北フィールド9","lat":37.24695,"lon":141.005,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818881","name":"南フィールド5","lat":37.24446,"lon":141.0057,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818883","name":"南フィールド3","lat":37.24458,"lon":141.00376,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818887","name":"南フィールド4","lat":37.24452,"lon":141.00475,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818897","name":"南フィールド2","lat":37.24318,"lon":141.00535,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818905","name":"全天候型練習場","lat":37.24696,"lon":141.00623,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818907","name":"北フィールド7","lat":37.24706,"lon":141.0033,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818914","name":"北フィールド8","lat":37.24701,"lon":141.00411,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:103818920","name":"南フィールド1","lat":37.24316,"lon":141.00411,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:155163753","name":"トレーニングフィールド6","lat":37.24559,"lon":141.00449,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:155163755","name":"楢葉町中高一貫教育施設 サッカーグラウンド","lat":37.2454,"lon":141.00007,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:686621875","name":"Jヴィレッジスタジアム","lat":37.23879,"lon":141.00322,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:686621878","name":"雨天練習場","lat":37.24508,"lon":141.0015,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

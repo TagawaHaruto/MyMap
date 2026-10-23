@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:14060723474","name":"秋利神キャンパスパーク","lat":27.76768,"lon":128.90624,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:14074244410","name":"与名間海浜公園","lat":27.87005,"lon":128.88883,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1411758808","name":"手々浜海浜公園","lat":27.88937,"lon":128.93013,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1539295360","name":"畦プリンスビーチ海浜公園","lat":27.84748,"lon":128.96967,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1546287086","name":"こうしりいじゅん広場","lat":27.78382,"lon":128.91412,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1546676341","name":"上名道森林公園","lat":27.81465,"lon":128.91406,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1546876457","name":"湾屋川史跡公園","lat":27.8253,"lon":128.8849,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1546894332","name":"天城町総合運動公園 われんきゃ広場","lat":27.83846,"lon":128.88578,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1546894348","name":"天城町総合運動公園","lat":27.83702,"lon":128.88506,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1546979134","name":"岡前西郷公園","lat":27.83824,"lon":128.89682,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1547083204","name":"浅間ため池公園","lat":27.82869,"lon":128.90592,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1547143576","name":"松原漁港公園","lat":27.85647,"lon":128.8917,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1547829748","name":"フサナキ公園","lat":27.81643,"lon":128.97383,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:14074162086","name":"小出義雄メモリアル天城クロスカントリーパーク","lat":27.86445,"lon":128.90102,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:relation:21105191","name":"花徳闘牛場","lat":27.82085,"lon":128.96543,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:1546894322","name":"天城町総合運動公園 野球場","lat":27.8373,"lon":128.88507,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1546894341","name":"天城町総合運動公園 陸上競技場","lat":27.8358,"lon":128.88444,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:1547388172","name":"松原闘牛場","lat":27.85824,"lon":128.89364,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"}
+]

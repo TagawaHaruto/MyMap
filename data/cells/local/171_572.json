@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:1730400730","name":"エスタ帯広","lat":42.91831,"lon":143.20132,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"limited"},
+{"id":"osm:node:4516909661","name":"高橋まんじゅう屋","lat":42.92644,"lon":143.20604,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:265205030","name":"帯広の森体育館","lat":42.89195,"lon":143.14161,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"yes"},
+{"id":"osm:way:265217178","name":"帯広の森スポーツセンター","lat":42.89007,"lon":143.14198,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:386997181","name":"帯広の森スピードスケート場","lat":42.89453,"lon":143.14029,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:帯広の森スピードスケート場"},
+{"id":"osm:way:426106272","name":"アイスホッケー場","lat":42.87743,"lon":143.17249,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:547149395","name":"ばんえい競馬場","lat":42.92105,"lon":143.18231,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:549417000","name":"帯広スズランボウル","lat":42.89016,"lon":143.19648,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:550303222","name":"カールプレックスおびひろ","lat":42.87358,"lon":143.19542,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"http://tsuchiyanoki.com/sports","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 0155-67-7234"},
+{"id":"osm:way:554783350","name":"音更町総合体育館　サンドームおとふけ","lat":42.99224,"lon":143.19396,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:7906923","name":"帯広の森アイスアリーナ","lat":42.89393,"lon":143.14245,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"no"},
+{"id":"osm:way:1087831201","name":"よつ葉アリーナ十勝","lat":42.9334,"lon":143.20196,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://obihiro-arena.jp/","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:帯広市総合体育館","kana":"よつばありーなとかち","tel":"+81 155 22 7828"},
+{"id":"osm:node:12011096869","name":"CAMP VILLAGE ピュットの森","lat":42.95357,"lon":143.16303,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0155-42-2343"}
+]

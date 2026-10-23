@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:6312229485","name":"","lat":32.74307,"lon":129.88208,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:6798404785","name":"parking","lat":32.77423,"lon":129.86267,"type":"バイク専用","k":"moto_dedicated","fee":"有料"},
+{"id":"osm:node:6798404786","name":"parking","lat":32.77298,"lon":129.86492,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:6810865094","name":"","lat":32.77296,"lon":129.86488,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:6810872586","name":"","lat":32.77417,"lon":129.86256,"type":"バイク専用","k":"moto_dedicated","fee":"有料"},
+{"id":"osm:node:11190633937","name":"","lat":32.74248,"lon":129.87665,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:11190641037","name":"","lat":32.743,"lon":129.8776,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:node:12836826895","name":"parking","lat":32.773,"lon":129.86523,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:1551258592","name":"","lat":32.82257,"lon":129.87298,"type":"バイク専用","k":"moto_dedicated","fee":"無料"},
+{"id":"osm:way:1551258593","name":"","lat":32.82304,"lon":129.87369,"type":"バイク専用","k":"moto_dedicated","fee":"無料"},
+{"id":"osm:way:443762099","name":"木場PA (下り)","lat":32.90263,"lon":129.98007,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1286581717","name":"道の駅夕陽が丘そとめ","lat":32.83579,"lon":129.70412,"type":"SA・PA","k":"rest_area","likely":true}
+]

@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:4031316805","name":"TSUTAYA","lat":36.21981,"lon":139.1852,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"つたやほんじょうわせだ","oh":"Mo-Su 09:00-23:00","tel":"+81 4-9527-3310"},
+{"id":"osm:node:4031316808","name":"スーパースポーツゼビオ","lat":36.22085,"lon":139.18214,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4043214096","name":"倉庫生活館","lat":36.22928,"lon":139.17481,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4043228291","name":"ハードオフ","lat":36.2332,"lon":139.20857,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5060114977","name":"モンベル","lat":36.11032,"lon":139.11421,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"https://www.montbell.jp/","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6433501899","name":"くまざわ書店","lat":36.23881,"lon":139.15385,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"http://www.kumabook.net","note":"本屋","g":"hobby","k":"hobby","tel":"+81 495 35 0007"},
+{"id":"osm:node:7179128809","name":"文真堂書店","lat":36.24405,"lon":139.18748,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8897876541","name":"よむよむMEGAドン・キホーテUNY本庄店","lat":36.23682,"lon":139.18293,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9109602934","name":"Haraguchi wa-ten","lat":36.11434,"lon":139.19409,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","wc":"yes"},
+{"id":"osm:node:10142537470","name":"Adidas","lat":36.13312,"lon":139.24858,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:10158911290","name":"猫八モータース","lat":36.0205,"lon":139.09571,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:12854719179","name":"ネコオドル","lat":36.11292,"lon":139.19632,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13102852989","name":"オフハウス","lat":36.23312,"lon":139.20846,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13639936070","name":"セカンドストリート","lat":36.24014,"lon":139.1855,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:617126168","name":"ヒマラヤスポーツ&ゴルフ ウニクス上里店","lat":36.23779,"lon":139.15138,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:739850492","name":"セカンドストリート","lat":36.24853,"lon":139.18373,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:943238460","name":"ブックオフ","lat":36.24571,"lon":139.06158,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su,PH 10:00-20:00"},
+{"id":"osm:way:1033747190","name":"サイクルベースあさひ","lat":36.22817,"lon":139.19554,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1041947059","name":"TSUTAYA","lat":36.01389,"lon":139.093,"pref":"埼玉","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

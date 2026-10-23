@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:12801587690","name":"希望の光","lat":34.67433,"lon":134.53088,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12801608442","name":"家島十景 白髭霊祠","lat":34.67667,"lon":134.53376,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12801700891","name":"百度石","lat":34.67908,"lon":134.54535,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12801709652","name":"砲台場跡","lat":34.67962,"lon":134.54425,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12801748005","name":"チンカンドー古墳","lat":34.67267,"lon":134.53657,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:13067771299","name":"とんがめっさん記念日","lat":34.67776,"lon":134.5273,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13067824658","name":"家島十景 間浦古","lat":34.6784,"lon":134.52679,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13067824659","name":"弘法大師一千百度𛂝記念","lat":34.67841,"lon":134.5268,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13067864611","name":"真浦区大師堂新築寄進者御芳名","lat":34.67846,"lon":134.52666,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13067896808","name":"百度石","lat":34.67844,"lon":134.52667,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13068050384","name":"家島村道路元標","lat":34.67372,"lon":134.53057,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13341689860","name":"田井清教墓","lat":34.6714,"lon":134.5341,"pref":"兵庫","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13067872902","name":"家島ハレテラス","lat":34.67801,"lon":134.52753,"pref":"兵庫","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14079485065","name":"一棟貸し宿泊施設 家島ヨカテラス","lat":34.67937,"lon":134.52765,"pref":"兵庫","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14079705745","name":"旅館井伊","lat":34.67443,"lon":134.53279,"pref":"兵庫","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

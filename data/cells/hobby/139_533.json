@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3730338175","name":"宮脇書店フリーウェイ","lat":34.99038,"lon":133.45829,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13068151048","name":"宮脇書店","lat":34.96487,"lon":133.4733,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:node:13068151089","name":"セムラスポーツ","lat":34.98885,"lon":133.46016,"pref":"岡山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"+81-867-72-1657"},
+{"id":"osm:way:1218253594","name":"ウィー","lat":34.89726,"lon":133.27623,"pref":"広島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"+81 8477 2 1188"}
+]

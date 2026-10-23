@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1423932915","name":"町立薩摩中学校","lat":31.92523,"lon":130.53976,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:1423933161","name":"県立栗野工業高等学校","lat":31.94273,"lon":130.73336,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6062792464","name":"山田の凱旋門","lat":31.77375,"lon":130.61427,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6062792468","name":"蒲生どん墓","lat":31.76646,"lon":130.57718,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:13875285687","name":"學舎建築紀年碑","lat":31.77389,"lon":130.61433,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14000150793","name":"湧水町民憲章","lat":31.95148,"lon":130.72083,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14002629339","name":"表彰碑","lat":31.94911,"lon":130.72261,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14002629340","name":"陸軍大将表彰碑","lat":31.94913,"lon":130.72261,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14002629346","name":"少名彦根神","lat":31.94884,"lon":130.72208,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14002629361","name":"環境庁指定 名水丸池","lat":31.94944,"lon":130.72191,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:668581771","name":"膝付栗毛の墓","lat":31.75043,"lon":130.62609,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:668830091","name":"蒲生どん墓","lat":31.76675,"lon":130.57767,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:964511516","name":"龍門司焼古窯跡","lat":31.76557,"lon":130.6719,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:way:964511532","name":"小山田氏の墓","lat":31.76734,"lon":130.67749,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:4294638989","name":"club Villa 36","lat":31.88358,"lon":130.70547,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4376992689","name":"ビジネスホテル伊佐","lat":31.81388,"lon":130.70774,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4491154241","name":"かごしま空港ホテル","lat":31.79506,"lon":130.71778,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14287633689","name":"丸岡公園 バンガロー「こもれびの里」","lat":31.88898,"lon":130.67721,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0995-64-6056"}
+]

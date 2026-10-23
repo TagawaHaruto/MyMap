@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4677946874","name":"佐女川神社","lat":41.68226,"lon":140.43185,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4766473409","name":"重内神社","lat":41.61157,"lon":140.39133,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4807857410","name":"円照寺","lat":41.67568,"lon":140.43374,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6080070085","name":"千軒神社","lat":41.55928,"lon":140.27131,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10669308889","name":"佐女沼","lat":41.71518,"lon":140.41792,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13741620301","name":"薬師堂","lat":41.68426,"lon":140.43545,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:737787791","name":"善昭寺","lat":41.60353,"lon":140.4235,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:738075736","name":"中ノ川八幡神社","lat":41.63537,"lon":140.42959,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:738092097","name":"森越神社","lat":41.62401,"lon":140.42761,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:738378263","name":"涌元神社","lat":41.56,"lon":140.43057,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:738379709","name":"国本寺","lat":41.56233,"lon":140.42879,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:738381258","name":"大乗寺　涌元分院","lat":41.56342,"lon":140.42769,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:738388772","name":"涌元谷地神社","lat":41.57926,"lon":140.41783,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:738452035","name":"稲荷神社","lat":41.60031,"lon":140.3219,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:740890679","name":"願応寺","lat":41.6803,"lon":140.4377,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:742071899","name":"西野神社","lat":41.69858,"lon":140.47094,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:742074062","name":"洞泉寺","lat":41.69935,"lon":140.47341,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:742357197","name":"最勝寺","lat":41.67061,"lon":140.43091,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:742371304","name":"禅燈時","lat":41.67124,"lon":140.40972,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:742386860","name":"鶴岡神社","lat":41.67342,"lon":140.41065,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:742392956","name":"建川神社","lat":41.65796,"lon":140.40753,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

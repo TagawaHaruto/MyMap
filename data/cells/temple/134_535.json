@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:1614754653","name":"大川美良布神社","lat":33.64998,"lon":133.78381,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1710827746","name":"秋葉神社 (Akiba Shrine)","lat":33.60577,"lon":133.75787,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あきばじんじゃ"},
+{"id":"osm:node:11652393500","name":"藤崎神社","lat":33.51992,"lon":133.91303,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13116189003","name":"極楽寺","lat":33.50667,"lon":133.84327,"pref":"高知","genres":["temple"],"indoor":false,"url":"http://sikoku36fudo.org/?page_id=132","note":"寺社・教会","g":"temple","k":"worship","tel":"+81887355612"},
+{"id":"osm:way:685263993","name":"轟神社","lat":33.71201,"lon":133.83463,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:755899243","name":"別役神社","lat":33.62076,"lon":133.81227,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:919999949","name":"西八幡宮","lat":33.50527,"lon":133.89584,"pref":"高知","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

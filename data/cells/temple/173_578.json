@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:425872696","name":"虹別神社","lat":43.46402,"lon":144.67369,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:786435207","name":"南弟子屈神社","lat":43.41992,"lon":144.51671,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1221522182","name":"光禅寺","lat":43.46583,"lon":144.67218,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"こうぜんじ"}
+]

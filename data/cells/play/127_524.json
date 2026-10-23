@@ -1,0 +1,17 @@
+[
+{"id":"osm:way:469240619","name":"観音池公園","lat":31.82509,"lon":131.136,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:556326372","name":"母智丘公園","lat":31.7502,"lon":131.01305,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:621257624","name":"旭ヶ丘運動公園","lat":31.75446,"lon":131.11644,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:690967492","name":"吉尾児童遊園","lat":31.75756,"lon":131.07753,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:692684812","name":"宮島農村公園","lat":31.77884,"lon":131.05462,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:770230155","name":"一堂ケ丘公園第２駐車場","lat":31.82733,"lon":131.04087,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:770230156","name":"一堂ケ丘公園第１駐車場","lat":31.82417,"lon":131.04309,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:770230157","name":"一堂ケ丘公園","lat":31.82614,"lon":131.04319,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:776231341","name":"万ヶ塚市営住宅ちびっ子広場","lat":31.8197,"lon":131.06381,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:776231342","name":"万ヶ塚児童公園","lat":31.8179,"lon":131.06266,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:777204995","name":"児童広場","lat":31.8236,"lon":131.06626,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1446908169","name":"中池農村公園","lat":31.81401,"lon":131.14184,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1559930496","name":"山野原公園","lat":31.77386,"lon":131.0938,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:469265285","name":"観音池公園野外プール","lat":31.82441,"lon":131.13811,"pref":"宮崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:node:4757562642","name":"カラオケ コロッケ倶楽部","lat":31.75352,"lon":131.08065,"pref":"宮崎","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"}
+]

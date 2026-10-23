@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:10035316217","name":"山岳太郎","lat":30.31838,"lon":130.65458,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"https://www.sangakutaro.com/","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Fr 09:00-18:30","tel":"+81-997-49-7112"},
+{"id":"osm:node:11064094193","name":"泊書店","lat":30.31502,"lon":130.65557,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","tel":"+81-997-46-3111"},
+{"id":"osm:node:12172507606","name":"文昌堂","lat":30.42312,"lon":130.57111,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13049474477","name":"The North Face","lat":30.43142,"lon":130.56897,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:432822169","name":"YOUSHOP 南国","lat":30.31781,"lon":130.65502,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","oh":"Mo-Fr 09:00-18:00"}
+]

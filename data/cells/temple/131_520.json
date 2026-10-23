@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:4039434189","name":"御館山稲荷神社","lat":32.84721,"lon":130.0358,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6919461586","name":"中核稲荷神社","lat":32.81629,"lon":130.00201,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8819295120","name":"天祐寺","lat":32.84325,"lon":130.04746,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:8819295121","name":"虚空蔵堂","lat":32.84198,"lon":130.04732,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10559046556","name":"宗像神社","lat":32.75421,"lon":130.19821,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10575973762","name":"吾妻温泉神社","lat":32.82507,"lon":130.19712,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10578045473","name":"熊野神社","lat":32.8406,"lon":130.2008,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10580802061","name":"古部熊野神社","lat":32.85666,"lon":130.21857,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10593931764","name":"八幡神社","lat":32.86861,"lon":130.24626,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10688365476","name":"水分神社","lat":32.82807,"lon":130.19285,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10688366076","name":"天満神社","lat":32.83066,"lon":130.17955,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10742640368","name":"宮之尾神社","lat":32.83894,"lon":130.20523,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:484351460","name":"高城神社","lat":32.84443,"lon":130.04874,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:518149697","name":"太良嶽山　金泉寺","lat":32.97367,"lon":130.08962,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:655873842","name":"大歳神社","lat":32.86883,"lon":130.08116,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1133016309","name":"橘神社","lat":32.78629,"lon":130.2061,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1136432139","name":"御大﨑神社","lat":32.87432,"lon":130.24574,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1148836065","name":"宝養山 法性寺","lat":32.82992,"lon":130.1916,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1155146552","name":"大福寺","lat":32.8423,"lon":130.19788,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

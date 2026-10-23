@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5850085056","name":"李台","lat":38.69822,"lon":139.65321,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548295062","name":"あつみ温泉バラ園","lat":38.61539,"lon":139.61195,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"あつみおんせんばらえん"},
+{"id":"osm:way:548295063","name":"温海公園","lat":38.61587,"lon":139.61121,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"あつみこうえん"},
+{"id":"osm:way:793362026","name":"上郷農村公園","lat":38.71116,"lon":139.73765,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"かみさとのうそんこうえん"}
+]

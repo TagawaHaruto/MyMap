@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:6933351658","name":"山神神社","lat":39.52083,"lon":140.82672,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6934285523","name":"金毘羅神社","lat":39.52385,"lon":140.82749,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:6936068756","name":"駒形神社","lat":39.51549,"lon":140.8274,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:6936085253","name":"稲荷神社","lat":39.51884,"lon":140.82608,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6936108561","name":"山神神社","lat":39.51693,"lon":140.82941,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:6941662431","name":"太平山三吉神社","lat":39.50894,"lon":140.82733,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7650986186","name":"大廣目神社","lat":39.53187,"lon":140.83186,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7821339761","name":"山祇神社","lat":39.5357,"lon":140.83331,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7996348266","name":"山祇神社","lat":39.55721,"lon":140.84169,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8065415391","name":"貝沢野神社","lat":39.5555,"lon":140.83428,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8071371675","name":"山祇神社","lat":39.51295,"lon":140.82701,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8123194256","name":"貝沢駒形神社","lat":39.55374,"lon":140.84548,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1210240590","name":"安栖神社","lat":39.69526,"lon":140.89027,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

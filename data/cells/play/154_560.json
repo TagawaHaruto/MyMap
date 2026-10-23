@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:750675999","name":"松の木公園","lat":38.74213,"lon":140.00541,"pref":"山形","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1234840185","name":"八向球場","lat":38.74311,"lon":140.23982,"pref":"山形","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1234840186","name":"八向グラウンド","lat":38.74408,"lon":140.24021,"pref":"山形","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

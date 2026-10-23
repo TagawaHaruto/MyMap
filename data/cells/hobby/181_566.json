@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:2659036266","name":"クラーク書店","lat":45.41793,"lon":141.67397,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Sa 10:00-20:00; Su 10:00-19:00","wc":"yes"},
+{"id":"osm:node:2671033738","name":"戸川自転車店","lat":45.40936,"lon":141.67364,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:2924326667","name":"国際元気堂","lat":45.41712,"lon":141.67525,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby","kana":"こくさいげんきど","wc":"no"},
+{"id":"osm:node:3227492461","name":"シドウスポーツ","lat":45.39513,"lon":141.7008,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"10:00-19:00"},
+{"id":"osm:node:4134716689","name":"TAKAHASI","lat":45.39666,"lon":141.69565,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4435631504","name":"わっかないリサイクルショップ","lat":45.4006,"lon":141.69025,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4470939791","name":"稚内サイクル","lat":45.3951,"lon":141.69568,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4503746990","name":"Seamore","lat":45.39514,"lon":141.69746,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4503795890","name":"白金堂","lat":45.39516,"lon":141.69731,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:4510130289","name":"オリウチ","lat":45.40157,"lon":141.67941,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4564627594","name":"アイザ釣具店","lat":45.39855,"lon":141.68544,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:305123718","name":"ノーザンノース","lat":45.41591,"lon":141.67559,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:305123737","name":"sports mart","lat":45.41635,"lon":141.67572,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"12:00-18:00; We off"},
+{"id":"osm:way:305123748","name":"ハセガワ","lat":45.41623,"lon":141.67563,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","kana":"はせがわ"},
+{"id":"osm:way:305196547","name":"ミズグチ","lat":45.41537,"lon":141.67509,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby","kana":"みずぐち"},
+{"id":"osm:way:314046906","name":"渡辺つり具店","lat":45.40801,"lon":141.67547,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:314214949","name":"志ちや","lat":45.41018,"lon":141.67429,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

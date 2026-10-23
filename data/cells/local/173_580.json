@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:546000772","name":"ほかほか弁当","lat":43.3881,"lon":145.12877,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:902938910","name":"中春別地区水泳プール","lat":43.47893,"lon":145.06097,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:19325581","name":"別海町営スケートリンク","lat":43.39036,"lon":145.13034,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:13417053334","name":"ふれあいキャンプ場","lat":43.3822,"lon":145.11039,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

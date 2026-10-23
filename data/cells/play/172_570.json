@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:588256003","name":"上トマム児童公園","lat":43.0416,"lon":142.65502,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:588256477","name":"トマムパークゴルフ場","lat":43.04102,"lon":142.65521,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:606172377","name":"上トマム公園","lat":43.04212,"lon":142.65339,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:3080124005","name":"ミナミナビーチ","lat":43.0632,"lon":142.62045,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports","kana":"みなみなびーち"},
+{"id":"osm:way:401667131","name":"南富良野町町民体育館","lat":43.16548,"lon":142.56931,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:1267849188","name":"百菜屋","lat":32.22129,"lon":131.17054,"pref":"宮崎","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1267849185","name":"西米良村トレーニング施設","lat":32.2264,"lon":131.16385,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11975820264","name":"RVパークsmart 西米良村 健康増進広場","lat":32.22946,"lon":131.14494,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285932622","name":"STELLA SPORTS","lat":32.22742,"lon":131.16273,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285932626","name":"すきむらんど 東俣谷バンガロー","lat":32.07262,"lon":131.0875,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285932627","name":"綾川荘 オートキャンプ場","lat":32.01731,"lon":131.24234,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287603350","name":"ステラスポーツ","lat":32.22768,"lon":131.16257,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://stella-sports.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287603353","name":"RePlus","lat":32.22064,"lon":131.16845,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://reborn2022.jp/page1","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287603355","name":"ふるさとの森休養施設","lat":32.20417,"lon":131.0293,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0966-42-6111"},
+{"id":"osm:node:14287603890","name":"ままこ滝キャンプ場","lat":32.06759,"lon":131.08697,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0984-48-2480"},
+{"id":"osm:node:14287677510","name":"双子キャンプ村　オートキャンプ場","lat":32.2247,"lon":131.16375,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

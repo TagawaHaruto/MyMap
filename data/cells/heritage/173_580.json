@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:725117144","name":"旧奥行臼駅逓所","lat":43.31313,"lon":145.21016,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"屋敷","g":"heritage","k":"historic","wp":"ja:奥行臼駅逓","kana":"きゅうおくゆきうすえきていしょ"},
+{"id":"osm:node:6586060785","name":"旅館石川屋","lat":43.39338,"lon":145.12413,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:way:545995946","name":"ホテルマグハウス","lat":43.39261,"lon":145.12587,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

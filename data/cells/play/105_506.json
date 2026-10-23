@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:544063127","name":"ふれあい公園","lat":26.34396,"lon":126.74992,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:544240951","name":"仲地農村公園","lat":26.36497,"lon":126.74764,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:544448127","name":"北原農村公園","lat":26.36571,"lon":126.72368,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548295144","name":"五枝の松園地","lat":26.35899,"lon":126.74256,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:551726662","name":"上田森農村公園","lat":26.35728,"lon":126.74923,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:587645694","name":"カンジンダム自然公園","lat":26.3596,"lon":126.73929,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"かんじんだむしぜんこうえん"},
+{"id":"osm:way:544103544","name":"久米島野球場","lat":26.34942,"lon":126.73454,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports","wp":"ja:久米島野球場"},
+{"id":"osm:way:544779545","name":"多目的グラウンド","lat":26.3494,"lon":126.7309,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:544907411","name":"ホタルドーム","lat":26.34904,"lon":126.73276,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

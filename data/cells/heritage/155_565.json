@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:7353545503","name":"旧折壁小学校 歌碑","lat":38.94173,"lon":141.45436,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7475353941","name":"室根山頂","lat":38.97516,"lon":141.44737,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7580380642","name":"千厩川源流の地","lat":38.97361,"lon":141.43834,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8377446817","name":"旧嵯峨立小学校跡","lat":38.77158,"lon":141.28496,"pref":"宮城","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378054409","name":"昭和２２年９月　カスリン台風洪水水位　昭和２３年９月　アイオン台風洪水水位","lat":38.89873,"lon":141.27194,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12640501910","name":"菊池知勇歌碑","lat":38.98501,"lon":141.384,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12640601214","name":"中館跡","lat":38.99131,"lon":141.38353,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:12640601215","name":"忠魂碑","lat":38.98642,"lon":141.37687,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12922503187","name":"中西一里塚","lat":38.91655,"lon":141.48203,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4531867565","name":"ひがしやま観光ホテル","lat":38.99021,"lon":141.25492,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5572588301","name":"館ヶ森高原ホテル","lat":38.8202,"lon":141.27903,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0191-63-5600","pk":2},
+{"id":"osm:node:9348376529","name":"勢登屋旅館","lat":38.91916,"lon":141.33423,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13058946112","name":"KAZIYA旅館","lat":38.99319,"lon":141.25096,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"https://kaziya-ryokan.com/guesthouse/","note":"宿","g":"heritage","k":"lodging","tel":"0191473377"}
+]

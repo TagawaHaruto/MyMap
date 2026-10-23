@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:6280554672","name":"北湯沢三峯神社","lat":42.61907,"lon":141.02239,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:518565469","name":"カルルス薬師神社","lat":42.51764,"lon":141.10905,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:725836835","name":"大滝神社","lat":42.67315,"lon":141.07939,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

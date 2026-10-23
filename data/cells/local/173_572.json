@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5544095777","name":"上士幌ゴルフ場","lat":43.25702,"lon":143.22863,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6008996091","name":"然別峡野営場","lat":43.32778,"lon":143.04445,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286108241","name":"ナイタイグラスキャンプフィールド（ナイタイテラス）","lat":43.28653,"lon":143.18553,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"01564-7-7777"},
+{"id":"osm:way:1192642355","name":"国設然別湖北岸野営場","lat":43.29813,"lon":143.1173,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

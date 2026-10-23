@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:13282231652","name":"玉泉寺","lat":41.13725,"lon":140.63419,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1302772699","name":"福昌寺","lat":41.16218,"lon":140.63864,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1302772710","name":"平舘神社","lat":41.1624,"lon":140.63846,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1447280700","name":"稲荷神社","lat":41.15579,"lon":140.63578,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1447626726","name":"稲荷神社","lat":41.11866,"lon":140.63119,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1447637552","name":"船岡久須志神社","lat":41.10554,"lon":140.63122,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1448100460","name":"塩越稲荷神社","lat":41.06958,"lon":140.63647,"pref":"青森","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

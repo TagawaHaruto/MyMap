@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1183708070","name":"宇賀神社","lat":38.06911,"lon":138.51123,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1183943525","name":"両尾神社","lat":38.07002,"lon":138.51624,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:relation:16003641","name":"持秀院","lat":38.07053,"lon":138.51313,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1227544154","name":"八剣神社","lat":38.24805,"lon":138.50378,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

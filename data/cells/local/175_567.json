@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4303739300","name":"お土産","lat":43.75116,"lon":141.87539,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:364888946","name":"秩父別町ファミリースポーツセンター","lat":43.76505,"lon":141.96371,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:908451680","name":"沼田町民パークゴルフ場","lat":43.80231,"lon":141.94026,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4082319923","name":"ほたるの里オートキャンプ場","lat":43.88592,"lon":141.92545,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10740779215","name":"田島公園キャンプ場","lat":43.80872,"lon":141.94828,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10741124607","name":"幌新いこいの森公園キャンプサイト","lat":43.88655,"lon":141.92839,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286040969","name":"勤労者野外活動施設キャンプ場","lat":43.8882,"lon":141.92269,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0164-35-1188"},
+{"id":"osm:node:14289691264","name":"ベルパークちっぷべつキャンプ場","lat":43.76357,"lon":141.96207,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.town.chippubetsu.hokkaido.jp/category/detail.html?category=parenting&content=287","note":"キャンプ・野外","g":"local","k":"camp"}
+]

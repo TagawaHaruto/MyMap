@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:8264126456","name":"きよひめ公園","lat":37.53176,"lon":139.72448,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:244093642","name":"きよひめ公園","lat":37.53174,"lon":139.72451,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:889077298","name":"ちびっこ広場","lat":37.52292,"lon":139.72092,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:889552076","name":"瑞光寺公園","lat":37.53223,"lon":139.72255,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1233206946","name":"たかはし桜公園","lat":37.58887,"lon":139.64403,"pref":"福島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:395031770","name":"福島レッドホープス西会津球場","lat":37.59785,"lon":139.64109,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:889162790","name":"運動公園グラウンド","lat":37.52229,"lon":139.72038,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

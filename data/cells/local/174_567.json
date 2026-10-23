@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:431127593","name":"パークゴルフ","lat":43.74489,"lon":141.87413,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:517620330","name":"滝川スマイルビル","lat":43.55555,"lon":141.90272,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:546946504","name":"滝川市民プール","lat":43.57885,"lon":141.92435,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:679628808","name":"ソメスサドル敷地","lat":43.51953,"lon":141.92074,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:729796108","name":"カーリングホール","lat":43.70179,"lon":141.9599,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.town.moseushi.hokkaido.jp/machi/sporting_facilities/carling_hall.html","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:妹背牛町カーリングホール","tel":"+81 0164-32-9511"},
+{"id":"osm:way:765860198","name":"新十津川室内パークゴルフ","lat":43.53731,"lon":141.84518,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:945302614","name":"空知カントリークラブ","lat":43.54237,"lon":141.94682,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1419292577","name":"滝川市民ゴルフ場","lat":43.56482,"lon":141.88686,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.takikawashimin-golf.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たきかわしみんごるふじょう"},
+{"id":"osm:node:2479026256","name":"丸加高原オートキャンプ場","lat":43.6262,"lon":141.9966,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wc":"yes"},
+{"id":"osm:node:10740779286","name":"滝川キャンプサイト","lat":43.58126,"lon":141.89229,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286024384","name":"グリーンパークキャンプ場","lat":43.5326,"lon":141.84544,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0125-76-4000"},
+{"id":"osm:node:14286024385","name":"北海道子どもの国キャンプ場","lat":43.52164,"lon":141.93233,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0125-53-3319"},
+{"id":"osm:node:14286040984","name":"北竜町金比羅公園キャンプ場","lat":43.72979,"lon":141.85662,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0164-34-2111"},
+{"id":"osm:way:765858232","name":"しんとつかわキャンプフィールド","lat":43.5302,"lon":141.84449,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

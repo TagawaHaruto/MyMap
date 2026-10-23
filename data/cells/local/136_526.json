@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4041110095","name":"潮彩市場防府","lat":34.03782,"lon":131.5973,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:4041148791","name":"山口県漁協防府地方卸売市場","lat":34.03824,"lon":131.59815,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:5336959163","name":"防府青果","lat":34.04255,"lon":131.53264,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3779390457","name":"新南陽体育センター","lat":34.07091,"lon":131.7476,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4886887109","name":"防府市体育館","lat":34.02309,"lon":131.56947,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:防府市スポーツセンター体育館"},
+{"id":"osm:node:4886887111","name":"武道館","lat":34.023,"lon":131.56837,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5391599398","name":"ベスト・ゴルフセンター","lat":34.16695,"lon":131.50136,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:147225979","name":"泉水原ゴルフクラブ","lat":34.18332,"lon":131.58345,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:315421999","name":"徳地体育館","lat":34.1892,"lon":131.66124,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:316919213","name":"新南陽G練習場","lat":34.06819,"lon":131.74079,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:460544488","name":"新山口ＣＣ","lat":34.06605,"lon":131.58706,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1435271762","name":"やまぐちリフレッシュパーク","lat":34.15826,"lon":131.52317,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"https://tatara-sportsmura.com/refresh/","note":"遊び・スポーツ","g":"local","k":"activity","oh":"Tu-Su 09:00-22:00","tel":"+81 83 927 7211"},
+{"id":"osm:node:14287476388","name":"HJM BASE","lat":34.0715,"lon":131.71959,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1859-4371"},
+{"id":"osm:node:14287476389","name":"ゆうゆう広場","lat":34.07127,"lon":131.56694,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0835-25-2180"}
+]

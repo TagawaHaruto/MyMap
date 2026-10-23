@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:432054640","name":"相生公園","lat":42.25005,"lon":140.27332,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:639438600","name":"遊楽部公園","lat":42.26027,"lon":140.25306,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.town.yakumo.lg.jp/soshiki/kouen/kouen-22.html","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:641931607","name":"さらんべ公園","lat":42.25703,"lon":140.25462,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.town.yakumo.lg.jp/soshiki/kouen/kouen-12.html","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13731503678","name":"八雲町総合体育館","lat":42.25833,"lon":140.26497,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:499736737","name":"中山児童遊園","lat":34.65306,"lon":137.07997,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:499740964","name":"伊良湖休暇村公園（いらご さららパーク）","lat":34.60594,"lon":137.03834,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:499740965","name":"西ノ浜海浜の森","lat":34.61446,"lon":137.04011,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:500180830","name":"福江公園","lat":34.62728,"lon":137.10406,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:505450209","name":"若見農村広場","lat":34.60379,"lon":137.16809,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:522497446","name":"白谷海浜公園","lat":34.6856,"lon":137.23277,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:543752572","name":"下地公園","lat":34.62764,"lon":137.1019,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:544026952","name":"万葉歌碑公園　展望台","lat":34.66922,"lon":137.00285,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:606994151","name":"夕陽が浜西公園","lat":34.64347,"lon":137.1393,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:789303476","name":"佐久島クラインガルテンウェルカムスペース","lat":34.72607,"lon":137.03805,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1197958862","name":"高松東部農村広場","lat":34.62363,"lon":137.24204,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1197958863","name":"高松東部児童遊園","lat":34.62368,"lon":137.24249,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1308046905","name":"大久保公園","lat":34.65116,"lon":137.23987,"pref":"愛知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:517964831","name":"テニスコート","lat":34.60736,"lon":137.03934,"pref":"愛知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:517964834","name":"テニスコート","lat":34.60786,"lon":137.03919,"pref":"愛知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:517969236","name":"グラウンド","lat":34.60718,"lon":137.03812,"pref":"愛知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:522480855","name":"白谷海浜公園・陸上競技場","lat":34.68395,"lon":137.23227,"pref":"愛知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:997802796","name":"空ともウィンドパーク","lat":34.66828,"lon":137.18614,"pref":"愛知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

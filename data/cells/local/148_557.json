@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6551381664","name":"山人家","lat":37.03278,"lon":139.39582,"pref":"福島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"やもうどや","tel":"+81 241 71 7373"},
+{"id":"osm:node:13898287954","name":"小豆温泉せせらぎオートキャンプ場Red Bean","lat":37.06743,"lon":139.41591,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-76-7750"},
+{"id":"osm:node:14285398045","name":"野営キリンテかわばた","lat":37.00216,"lon":139.36438,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"https://oze-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-5767-8866"},
+{"id":"osm:node:14286482372","name":"シルクバレーキャンプ場","lat":37.04157,"lon":139.47773,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-78-3001"},
+{"id":"osm:node:14286485907","name":"見通りオートキャンプ場","lat":37.03431,"lon":139.39786,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-75-2075"},
+{"id":"osm:node:14286485908","name":"キャンプ場・泉","lat":37.03216,"lon":139.3961,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-75-2180"},
+{"id":"osm:node:14286485914","name":"オートキャンプ尾瀬街道","lat":37.00387,"lon":139.3672,"pref":"福島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0241-75-2388"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:10794439179","name":"ブックスマルゴ","lat":39.21565,"lon":140.52106,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:10794439183","name":"SPORTS MAX","lat":39.21583,"lon":140.52172,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:770615967","name":"興文館東海林書店","lat":39.20384,"lon":140.5462,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"https://www.city.yokote.lg.jp/masuda/1001614/1004390.html","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:974911222","name":"中央モーター","lat":39.14783,"lon":140.56573,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1137828774","name":"藤井書店","lat":39.22197,"lon":140.52217,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1155424016","name":"リサイクル蔵","lat":39.23484,"lon":140.52687,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

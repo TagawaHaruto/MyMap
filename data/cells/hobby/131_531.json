@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:1800702903","name":"TSUTAYA四万十店","lat":32.98119,"lon":132.95264,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7922090385","name":"中村フィッシング","lat":32.98433,"lon":132.95622,"pref":"高知","genres":["shopping"],"indoor":true,"url":"https://www.n-fishing.co.jp","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"24/7","tel":"+81 880 34 3720"},
+{"id":"osm:node:10549049891","name":"ヒマラヤスポーツ","lat":32.98063,"lon":132.92037,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:2201326677","name":"石垣島ショッピングプラザ","lat":24.33982,"lon":124.1786,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4538856490","name":"えいこ鮮魚店","lat":24.34585,"lon":124.15102,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5125680287","name":"川平観光おみやげ品店","lat":24.46111,"lon":124.14256,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5941540897","name":"Puka Shell","lat":24.45186,"lon":124.19514,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"11:00-17:00"},
+{"id":"osm:node:6728450088","name":"刺身・天ぷら屋","lat":24.33624,"lon":124.16916,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9591633034","name":"イナフク","lat":24.33061,"lon":124.08535,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13062647116","name":"石垣島水産直売所","lat":24.33586,"lon":124.16744,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13062647117","name":"砂川さしみ店","lat":24.33402,"lon":124.1661,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13062647118","name":"西里さしみ店","lat":24.33617,"lon":124.1708,"pref":"沖縄","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3978007064","name":"新川漁港","lat":24.34783,"lon":124.14531,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3979383948","name":"石垣市特産品販売センター","lat":24.33979,"lon":124.15798,"pref":"沖縄","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:3979369709","name":"石垣市総合体育館","lat":24.3443,"lon":124.17582,"pref":"沖縄","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:9950399417","name":"竹富島","lat":24.32972,"lon":124.08735,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286058902","name":"レインボーフォレスト石垣島","lat":24.48119,"lon":124.23641,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-2727-6962"},
+{"id":"osm:node:14287613566","name":"石垣島 米原キャンプ場","lat":24.45529,"lon":124.18733,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-9596-1166"},
+{"id":"osm:node:14287613567","name":"石垣川平コーラルサイドキャンプ場","lat":24.44862,"lon":124.16837,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-7132-1045"},
+{"id":"osm:node:14287613568","name":"伊野田オートキャンプ場","lat":24.43829,"lon":124.24939,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0980-88-5292"},
+{"id":"osm:node:14289705902","name":"棲家ま～る","lat":24.4765,"lon":124.22411,"pref":"沖縄","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

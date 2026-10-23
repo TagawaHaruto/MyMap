@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4208134491","name":"クジラ岬","lat":27.76647,"lon":129.03647,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14022083133","name":"第46代横綱朝潮太郎","lat":27.77651,"lon":129.01992,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","wp":"ja:朝潮太郎 (3代)"},
+{"id":"osm:node:4240823589","name":"きむきゅら","lat":27.78813,"lon":129.01139,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","oh":"24/7"},
+{"id":"osm:node:14022427132","name":"徳之島リゾートホテル&オフィス","lat":27.76864,"lon":129.03647,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

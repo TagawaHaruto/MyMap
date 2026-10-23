@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:8242620471","name":"神路山野菜","lat":34.49004,"lon":136.39399,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"0598-32-3320"},
+{"id":"osm:node:8285614681","name":"ショッピングコーナー","lat":34.41447,"lon":136.45464,"pref":"三重","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 598 83 6515"},
+{"id":"osm:node:10088262517","name":"魚末あまごセンター","lat":34.48615,"lon":136.27115,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6794314285","name":"つつじの里 荒滝","lat":34.44864,"lon":136.2988,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287478983","name":"ふれあいの森 勢山荘（キャンプ/バンガロー）","lat":34.47679,"lon":136.49158,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://seizanso.space","note":"キャンプ・野外","g":"local","k":"camp","tel":"0598-49-3881"},
+{"id":"osm:node:14287485121","name":"浦谷オートキャンプ場","lat":34.38929,"lon":136.3372,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0598-76-0044"},
+{"id":"osm:node:14287485142","name":"四季の森キャンプ場","lat":34.28847,"lon":136.3566,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://sikinomoricamp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0598-89-4488"},
+{"id":"osm:node:14287496185","name":"語らいの里噺野","lat":34.35917,"lon":136.4253,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"http://camp-hanashino.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0598-86-3061"},
+{"id":"osm:node:14287496186","name":"奥伊勢フォレストピアリバーサイドヴィレッジ","lat":34.35729,"lon":136.34594,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://okuiseforestpia.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0598-76-1200"},
+{"id":"osm:node:14287496187","name":"いち","lat":34.35492,"lon":136.4119,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-9400-4354"},
+{"id":"osm:node:14287496192","name":"大滝峡キャンプ場","lat":34.35064,"lon":136.40244,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0598-86-2079"},
+{"id":"osm:node:14287498863","name":"paddyfield","lat":34.34852,"lon":136.49185,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287498870","name":"ASOBINO","lat":34.33476,"lon":136.43497,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287498881","name":"Meivi camp&dog","lat":34.3141,"lon":136.38197,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287498904","name":"美杉パークゴルフクラブ・キャンプスペース","lat":34.47748,"lon":136.29891,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"https://yuji212hori316.wixsite.com/misugisugi","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14289699458","name":"エバーグレイズ香肌峡","lat":34.45922,"lon":136.39959,"pref":"三重","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

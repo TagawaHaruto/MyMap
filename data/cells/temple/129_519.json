@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:546384834","name":"鈴木神社","lat":32.37399,"lon":129.99777,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:546384877","name":"隣峰寺","lat":32.37445,"lon":129.99752,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:928735534","name":"大江天主堂","lat":32.33686,"lon":129.99293,"pref":"熊本","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

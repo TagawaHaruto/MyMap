@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:7056805289","name":"白瀬　辞世の歌碑","lat":39.26753,"lon":139.92624,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7056805290","name":"竹嶋潟周辺案内図","lat":39.2674,"lon":139.92466,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13954974553","name":"竣工記念碑","lat":39.26907,"lon":139.92813,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7056707615","name":"佐藤旅館","lat":39.29028,"lon":139.96293,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:387749515","name":"ホテルエクセルキクスイ","lat":39.29063,"lon":139.97237,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

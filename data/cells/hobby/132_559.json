@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5126400252","name":"神港つり具店","lat":33.12885,"lon":139.8055,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:5126406767","name":"菊池釣具店","lat":33.10031,"lon":139.77214,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:524421724","name":"八丈書房","lat":33.12101,"lon":139.80389,"pref":"東京","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

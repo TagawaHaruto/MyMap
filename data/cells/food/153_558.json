@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4828170983","name":"IRORI","lat":38.33364,"lon":139.6089,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6053950222","name":"あさひ食堂","lat":38.48867,"lon":139.5151,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6053950230","name":"凪のてらす仲","lat":38.49424,"lon":139.51784,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12210283798","name":"大吉亭","lat":38.25459,"lon":139.51727,"pref":"新潟","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

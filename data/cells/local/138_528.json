@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4745225121","name":"聖湖","lat":34.67968,"lon":132.17181,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:5540347092","name":"匹見峡レストパーク","lat":34.5498,"lon":132.03409,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287476333","name":"小板まきばの里","lat":34.66774,"lon":132.19869,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287481845","name":"恐羅漢エコロジーキャンプ場","lat":34.60111,"lon":132.14325,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-28-7270"},
+{"id":"osm:node:14287487103","name":"カントリーインふーすけ","lat":34.71681,"lon":132.23759,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287487108","name":"西中国山地国定公園聖湖キャンプ場","lat":34.70951,"lon":132.17313,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-37-0001"},
+{"id":"osm:node:14287489817","name":"みと自然の森","lat":34.64562,"lon":132.02593,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0856-52-2020"},
+{"id":"osm:node:14287489819","name":"深入山グリーンシャワーオートキャンプ場","lat":34.64071,"lon":132.21042,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"http://www.ikoi-hiroshima.jp/green-shower/html/camp.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-28-1961"},
+{"id":"osm:node:14287489836","name":"匹見峡レストパークキャンプ場","lat":34.57037,"lon":132.0153,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0856-56-0341"},
+{"id":"osm:node:14287489843","name":"筒賀ふれあい農園ありんこ","lat":34.5587,"lon":132.24714,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://forest-ac.jimdofree.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-32-2755"}
+]

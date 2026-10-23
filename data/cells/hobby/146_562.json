@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4535485174","name":"田中書店","lat":36.5391,"lon":140.61085,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6052489994","name":"スーパースポーツゼビオ","lat":36.58437,"lon":140.64085,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6052597372","name":"WONDER REX","lat":36.62763,"lon":140.67033,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:6516461379","name":"WONDER REX","lat":36.70675,"lon":140.71063,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:6594504733","name":"セカンドストリート","lat":36.54675,"lon":140.62261,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:6715438107","name":"サウスブロンクス","lat":36.60506,"lon":140.66504,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:14049030566","name":"TSUTAYA","lat":36.54763,"lon":140.53202,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:457408966","name":"golf partner","lat":36.53333,"lon":140.6197,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:458295643","name":"おたちゅう 日立南店","lat":36.51667,"lon":140.61383,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","kana":"おたちゅ"},
+{"id":"osm:way:460253549","name":"ブックオフ","lat":36.5449,"lon":140.62272,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:605786243","name":"ワンダーグー","lat":36.55947,"lon":140.63894,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:605787242","name":"ブックエース","lat":36.56849,"lon":140.64041,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:625956865","name":"上州屋","lat":36.51864,"lon":140.62782,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"https://www.johshuya.co.jp/shop/top.php?s=193","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:643052927","name":"セカンドストリート","lat":36.6242,"lon":140.68119,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:643052929","name":"WONDER GOO","lat":36.62591,"lon":140.6829,"pref":"茨城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

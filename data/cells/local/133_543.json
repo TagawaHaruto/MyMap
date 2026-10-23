@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:4467933826","name":"山本鮮魚店","lat":33.44277,"lon":135.75984,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4908533159","name":"OTTOMAN KONAK","lat":33.47091,"lon":135.86011,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 735-65-0013"},
+{"id":"osm:node:6842754697","name":"吹石鮮魚店","lat":33.46854,"lon":135.77738,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6842754708","name":"潮崎商店","lat":33.46821,"lon":135.78025,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6842754724","name":"南地魚店","lat":33.4748,"lon":135.78185,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6842754902","name":"後藤鮮魚店","lat":33.46849,"lon":135.77862,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6842760988","name":"前田蒲鉾店","lat":33.47142,"lon":135.78113,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:483464794","name":"道の駅 くしもと橋杭岩","lat":33.48818,"lon":135.79436,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"みちのえきくしもとはしぐいいわ","wc":"yes"},
+{"id":"osm:way:483024305","name":"屋内練習場","lat":33.48013,"lon":135.78332,"pref":"和歌山","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:483024309","name":"多目的グラウンド","lat":33.48292,"lon":135.78449,"pref":"和歌山","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:676728875","name":"串本古座高校 弓道場","lat":33.46339,"lon":135.77772,"pref":"和歌山","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:676940016","name":"串本町立体育館","lat":33.47211,"lon":135.78377,"pref":"和歌山","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:689095430","name":"串本町立武道館","lat":33.47426,"lon":135.78486,"pref":"和歌山","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"くしもとぶどかん"},
+{"id":"osm:node:289122204","name":"潮岬キャンプ場","lat":33.43843,"lon":135.7631,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","kana":"しおのみさきキャンプじょう"},
+{"id":"osm:node:14285999508","name":"グランキャンプ・凪ノ谷","lat":33.45847,"lon":135.83272,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285999509","name":"ペットと泊まれる宿 福籠","lat":33.45111,"lon":135.775,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"http://www.fukurou-pet.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287571008","name":"和歌山県立潮岬青少年の家","lat":33.44771,"lon":135.7614,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0735-62-6045"},
+{"id":"osm:way:316312546","name":"リゾート大島","lat":33.46131,"lon":135.84579,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://www.resortohshima.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 0735 65 0840"}
+]

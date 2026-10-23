@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:1783271860","name":"ブックオフ中野七瀬店","lat":36.75429,"lon":138.35218,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4620109188","name":"Nozawa Sports Thanx","lat":36.92027,"lon":138.45178,"pref":"長野","genres":["shopping"],"indoor":true,"url":"https://sportsthanx.com/","note":"スポーツ用品","g":"hobby","k":"hobby","oh":"Mo-Fr 08:00-17:00; Su,Sa 07:30-17:30","tel":"+81-269-67-0112"},
+{"id":"osm:node:8910846820","name":"上松商会","lat":36.84667,"lon":138.36437,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","kana":"うえまつしょかい"},
+{"id":"osm:way:161840280","name":"TSUTAYA","lat":36.75561,"lon":138.35668,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:358197339","name":"TSUTAYA","lat":36.83087,"lon":138.35444,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:way:481524152","name":"Ｓキューブバイパス店","lat":36.83499,"lon":138.35859,"pref":"長野","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

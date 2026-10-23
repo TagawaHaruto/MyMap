@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4005079353","name":"やさい畑　おんが店","lat":33.84978,"lon":130.66848,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"https://www.ja-kitakyu.or.jp/service/chokubai/chokubai-1/","note":"直売所","g":"local","k":"souvenir","tel":"+81 93 293 1123"},
+{"id":"osm:node:7295768086","name":"かのこの里(JA)","lat":33.78474,"lon":130.55767,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:269188965","name":"ほたるの里","lat":33.80891,"lon":130.56148,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:691019658","name":"鮮達","lat":33.84229,"lon":130.72867,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10277865059","name":"芦屋港","lat":33.89993,"lon":130.6561,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:561666428","name":"体育館","lat":33.90181,"lon":130.67693,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:800255412","name":"瀬板の森北九州ゴルフコース","lat":33.85636,"lon":130.73508,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:830702675","name":"宗像市民体育館","lat":33.81508,"lon":130.55759,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:854154755","name":"玄海ゴルフクラブ","lat":33.84928,"lon":130.51964,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:936238161","name":"イトマンスイミングスクール","lat":33.78302,"lon":130.54629,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:973183257","name":"ベスパ大栄","lat":33.8819,"lon":130.69906,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:986082422","name":"グローバルアリーナ","lat":33.79535,"lon":130.63424,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:992396167","name":"ザ・クラシックゴルフ倶楽部","lat":33.76893,"lon":130.6458,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:992439463","name":"ムーンレイクゴルフクラブ","lat":33.76946,"lon":130.65454,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1537642429","name":"沖田市民プール","lat":33.83522,"lon":130.73954,"pref":"福岡","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287563766","name":"響灘キャンプベース","lat":33.91927,"lon":130.72395,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"https://hibikinada-camp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"093-701-5575"},
+{"id":"osm:node:14287563768","name":"縄文のOKAグランピングリゾート キャンプ場","lat":33.91373,"lon":130.66877,"pref":"福岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"093-701-8177"}
+]

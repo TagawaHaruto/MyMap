@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:345024883","name":"風の広場","lat":33.88862,"lon":134.22292,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:594266589","name":"北川グラウンド","lat":33.77381,"lon":134.10373,"pref":"徳島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

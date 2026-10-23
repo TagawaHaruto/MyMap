@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:30708664","name":"八千代CC","lat":34.63274,"lon":132.60105,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285845199","name":"Morizo BBQ","lat":34.62888,"lon":132.72645,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://morizo-park.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287476342","name":"土師ダムファミリーキャンプ場","lat":34.65703,"lon":132.60822,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-52-2841"},
+{"id":"osm:node:14287476344","name":"玉重リゾート","lat":34.65639,"lon":132.66293,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287478422","name":"OutdoorFunキャンプフィールド","lat":34.73877,"lon":132.63209,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://www.outdoorfun.jp","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287487101","name":"テージャスランチ","lat":34.71925,"lon":132.74102,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-45-7070"},
+{"id":"osm:node:14287489820","name":"キャンプ＆コテージ フォレスタ広島","lat":34.63808,"lon":132.59091,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://www.foresta-hiroshima.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-52-2500"}
+]

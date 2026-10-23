@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:2611781478","name":"昌慶寺","lat":34.45824,"lon":136.45109,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4621695814","name":"丹生大師","lat":34.47824,"lon":136.49227,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5689530748","name":"柿野神社","lat":34.47207,"lon":136.39879,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:685598858","name":"徳林寺","lat":34.43981,"lon":136.44519,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:687886692","name":"長由介神社．川島神社","lat":34.36586,"lon":136.42607,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:687886693","name":"瀧原宮本殿","lat":34.36613,"lon":136.4258,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:687886694","name":"瀧原宮拜殿","lat":34.36604,"lon":136.4258,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:687886696","name":"瀧原竝宮本殿","lat":34.36613,"lon":136.42553,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:687886697","name":"瀧原竝宮拜殿","lat":34.36604,"lon":136.42553,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:704302852","name":"車川八幡神社","lat":34.43996,"lon":136.44715,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:704303760","name":"車川観音寺","lat":34.43994,"lon":136.44734,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

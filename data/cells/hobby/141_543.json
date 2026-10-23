@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:10757980579","name":"リサイクルうさぎ","lat":35.44229,"lon":135.90342,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:10757980587","name":"５５ｃ","lat":35.44271,"lon":135.90269,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:way:753376077","name":"オンユアマーク","lat":35.49402,"lon":135.75833,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:753377243","name":"宮脇書店小浜店","lat":35.49082,"lon":135.75242,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:753378251","name":"ビッグ釣具店","lat":35.48938,"lon":135.75496,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

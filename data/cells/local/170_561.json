@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:253124487","name":"長万部町スポーツセンター","lat":42.51675,"lon":140.37275,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14286168184","name":"長万部公園キャンプ場","lat":42.51343,"lon":140.34408,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"01377-2-5854"},
+{"id":"osm:node:14286177233","name":"黒松内ぶなの森自然学校","lat":42.74222,"lon":140.29983,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.buna-cross.org","note":"キャンプ・野外","g":"local","k":"camp","tel":"0136-77-2012"},
+{"id":"osm:node:14286177235","name":"添別ミニビジターセンター","lat":42.68199,"lon":140.26353,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://soibetsumvc.jimdofree.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0136-72-3780"},
+{"id":"osm:node:14286177238","name":"歌才オートキャンプ場ル・ピック","lat":42.6501,"lon":140.30679,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0136-72-4546"}
+]

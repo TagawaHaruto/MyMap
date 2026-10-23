@@ -1,0 +1,22 @@
+[
+{"id":"osm:way:189192566","name":"東村ふれあいヒルギ公園","lat":26.60427,"lon":128.14497,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:192046782","name":"古宇利橋詰広場","lat":26.69566,"lon":128.02109,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:412881156","name":"鏡地シナマー 公園","lat":26.73006,"lon":128.16159,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:6162514","name":"くいなエコ・スポレク公園","lat":26.72765,"lon":128.16212,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:415162480","name":"結の浜公園","lat":26.6795,"lon":128.09892,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:415221750","name":"国頭村森林公園","lat":26.73288,"lon":128.19122,"pref":"沖縄","genres":["play"],"indoor":false,"url":"https://www.kunigami-forest-park.org/","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:680763995","name":"福地公園","lat":26.64174,"lon":128.16743,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1214700645","name":"久志公園","lat":26.51793,"lon":128.00692,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:189164926","name":"くにがみ球場","lat":26.72678,"lon":128.1621,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:189164928","name":"国頭陸上競技場兼サッカー場","lat":26.72518,"lon":128.1623,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:189630670","name":"旧大宜味小学校グラウンド","lat":26.70277,"lon":128.11917,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:412881142","name":"くにがみ屋内運動場","lat":26.72418,"lon":128.16114,"pref":"沖縄","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:412881144","name":"シーサイドテニスコート","lat":26.72907,"lon":128.16155,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:relation:6176720","name":"東村屋外運動場","lat":26.63122,"lon":128.15462,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:527790754","name":"東村村営体育館","lat":26.63212,"lon":128.15064,"pref":"沖縄","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1179775824","name":"ガーデンプール","lat":26.55062,"lon":128.07704,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1179778128","name":"ビーチサイドプール","lat":26.54662,"lon":128.0778,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1214700646","name":"久志屋外運動場","lat":26.51707,"lon":128.00712,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:14211824753","name":"人形劇団かじまやぁ","lat":26.67323,"lon":128.02038,"pref":"沖縄","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"},
+{"id":"osm:way:1040178495","name":"Schwab Theater","lat":26.52339,"lon":128.04208,"pref":"沖縄","genres":["play"],"indoor":true,"url":"","note":"映画館","g":"play","k":"amuse"}
+]

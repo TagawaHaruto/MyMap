@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2127383845","name":"サンスポーツ","lat":36.39824,"lon":139.72781,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:2128420511","name":"TSUTAYA","lat":36.37256,"lon":139.74454,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby","kana":"つたや"},
+{"id":"osm:node:2128420832","name":"ウサギ屋書店","lat":36.37255,"lon":139.74452,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2166359640","name":"かめやま","lat":36.3917,"lon":139.72884,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6483414720","name":"和紙工芸","lat":36.3757,"lon":139.7306,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:13022771837","name":"サイクルショップ・ファン","lat":36.33282,"lon":139.58361,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:13076372959","name":"フォックスファイヤー","lat":36.29397,"lon":139.60537,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 283 27 2801"},
+{"id":"osm:node:13102852653","name":"オフハウス","lat":36.32008,"lon":139.59175,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13102889287","name":"ハードオフ","lat":36.31011,"lon":139.5919,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13102889288","name":"ブックオフ","lat":36.31011,"lon":139.59206,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13143639827","name":"オフハウス","lat":36.3804,"lon":139.71656,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13143639828","name":"ブックオフ","lat":36.38039,"lon":139.71667,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:307452095","name":"ワンダーグー","lat":36.25167,"lon":139.54027,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:422038607","name":"中島輪業","lat":36.38959,"lon":139.74656,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:422039118","name":"ザ・ちゃりんこや","lat":36.37379,"lon":139.73326,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:422039215","name":"小林輪店","lat":36.37373,"lon":139.73041,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:441761972","name":"ゲオ 大平店","lat":36.32806,"lon":139.7141,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:way:479834093","name":"セカンドストリート","lat":36.39462,"lon":139.72692,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:536787368","name":"永楽屋書店","lat":36.3158,"lon":139.57805,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:538622362","name":"文真堂書店瀬戸谷店","lat":36.25115,"lon":139.54144,"pref":"群馬","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo 10:00-22:00; Tu 10:00-22:00; We 10:00-22:00; Th 10:00-22:00; Fr 10:00-22:00; Sa 10:00-22:00; Su 10:00-22:00"},
+{"id":"osm:way:848418821","name":"スポーツデポ","lat":36.39405,"lon":139.7285,"pref":"栃木","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:1872581486","name":"不老山総合公園","lat":33.33689,"lon":129.72258,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:435910325","name":"志佐漁港多目的広場","lat":33.34815,"lon":129.70231,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:8616811","name":"亀岡公園","lat":33.36742,"lon":129.55674,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"かめおか こうえん"},
+{"id":"osm:relation:10384817","name":"千里ヶ浜鄭成功記念公園","lat":33.33236,"lon":129.53278,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1010868928","name":"ポットホール公園","lat":33.26902,"lon":129.69515,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1010873004","name":"常燈の鼻公園","lat":33.37186,"lon":129.55584,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1011524881","name":"岩下公園","lat":33.28382,"lon":129.68306,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1020768927","name":"旧正興寺の墓地公園","lat":33.26005,"lon":129.66742,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:999809615","name":"吉井北運動広場","lat":33.28412,"lon":129.69633,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

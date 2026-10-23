@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5297511941","name":"葛の花　折りて滝見に　上がりけり","lat":33.7813,"lon":135.41259,"pref":"和歌山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5297511968","name":"不動の滝","lat":33.78134,"lon":135.4131,"pref":"和歌山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5297511999","name":"み佛の 肩に 秋日の 手が 置かれ","lat":33.78181,"lon":135.41213,"pref":"和歌山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10312948898","name":"南部町道路元標","lat":33.76825,"lon":135.32041,"pref":"和歌山","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:290585364","name":"鶴の湯温泉","lat":33.83513,"lon":135.31979,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","pk":2},
+{"id":"osm:node:6832308293","name":"民宿リッチ","lat":33.75757,"lon":135.32679,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 739 72 4120"},
+{"id":"osm:node:6832308294","name":"料理宿 朝日楼","lat":33.75706,"lon":135.3266,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"https://asahiro.com/","note":"宿","g":"heritage","k":"lodging","kana":"あさひろ","tel":"+81 739 72 5000"},
+{"id":"osm:node:6832309288","name":"民宿にしかわ","lat":33.75444,"lon":135.32643,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6832310685","name":"いく田","lat":33.75625,"lon":135.32679,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11299863038","name":"Nagano Guesthouse","lat":33.76584,"lon":135.45101,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:480418166","name":"紀州南部ロイヤルホテル","lat":33.76855,"lon":135.30151,"pref":"和歌山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"きしゅうみなべろいやるほてる","tel":"+81-739-725500"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:3358968193","name":"ほっかほっか亭垂水店","lat":31.49059,"lon":130.70103,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:node:4226095008","name":"屋久杉見学工場アリヨシ民芸品店","lat":31.41002,"lon":130.52585,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5603040077","name":"売店","lat":31.47622,"lon":130.51289,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10727449674","name":"七ツ島海宝館","lat":31.48225,"lon":130.51374,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13103678576","name":"農畜水産物直売所","lat":31.4853,"lon":130.51151,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","tel":"+81 99 284 6777"},
+{"id":"osm:way:1417745486","name":"わいわい市前之浜館","lat":31.35124,"lon":130.55427,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1419605945","name":"瀬々串物産館","lat":31.43369,"lon":130.52087,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1455232532","name":"あっど!","lat":31.26976,"lon":130.62471,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"あっど"},
+{"id":"osm:way:1370324188","name":"横村青果指宿地方卸売市場","lat":31.25948,"lon":130.62815,"pref":"鹿児島","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:275682989","name":"キララドーム","lat":31.48532,"lon":130.70276,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"yes"},
+{"id":"osm:way:303434192","name":"知覧カントリークラブ","lat":31.39546,"lon":130.50358,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:303434334","name":"喜入カントリークラブ","lat":31.35827,"lon":130.50475,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:387047034","name":"マリンピア喜入温水プール","lat":31.37943,"lon":130.54496,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:591208499","name":"七ツ島サンライフプール","lat":31.48725,"lon":130.51208,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:824743219","name":"喜入CC","lat":31.35886,"lon":130.50475,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285999543","name":"夢・風と音楽の里 アグリランドえい","lat":31.30548,"lon":130.52811,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285999544","name":"指宿レイクグリーンキャンプ場","lat":31.25101,"lon":130.55862,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0993-26-2799"},
+{"id":"osm:node:14287620710","name":"グッドラックスターガーデン","lat":31.49213,"lon":130.51149,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"099-262-3088"},
+{"id":"osm:node:14287620711","name":"錦江湾公園キャンプ場","lat":31.46294,"lon":130.50638,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"099-261-9833"},
+{"id":"osm:node:14287620718","name":"鹿児島市観光農業公園グリーンファーム","lat":31.3534,"lon":130.51043,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"099-345-2622"},
+{"id":"osm:way:385862774","name":"指宿エコキャンプ場","lat":31.26524,"lon":130.66396,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

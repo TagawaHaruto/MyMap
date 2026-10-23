@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1371129040","name":"澄海岬","lat":45.41157,"lon":140.98603,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:3107167162","name":"ゴロタ岬","lat":45.43918,"lon":140.97308,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:3336382986","name":"トド島展望台","lat":45.44713,"lon":140.98152,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:596104215","name":"スコトン岬展望台","lat":45.46367,"lon":140.96782,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint","wc":"no"}
+]

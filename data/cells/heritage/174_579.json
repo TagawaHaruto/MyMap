@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5154657587","name":"ホテル パセオ","lat":43.59391,"lon":144.98468,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11295472473","name":"ushiyado","lat":43.54957,"lon":144.97556,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://ushiyado.jp/","note":"宿","g":"heritage","k":"lodging","kana":"うしやど","tel":"+81 153 77 9305"},
+{"id":"osm:way:709907191","name":"中標津保養所温泉旅館","lat":43.56674,"lon":144.98102,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://nakaho.jp/","note":"宿","g":"heritage","k":"lodging","kana":"なかしべつほようじょおんせんりょかん"},
+{"id":"osm:way:710673018","name":"ビジネスホテルマルワ","lat":43.54886,"lon":144.9766,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www17.plala.or.jp/maruwa/","note":"宿","g":"heritage","k":"lodging","kana":"びじねすほてるまるわ","tel":"153-72-4271"},
+{"id":"osm:way:710701267","name":"山洋旅館","lat":43.54611,"lon":144.97576,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:711049052","name":"ホテルビズイン","lat":43.54757,"lon":144.97384,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.hotel-biz-inn.com/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるびずいん"},
+{"id":"osm:way:711688230","name":"ホテルマルエー温泉本館","lat":43.54932,"lon":144.97043,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.aurens.or.jp/~maruei/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるまるえーおんせんほんかん","tel":"+81 153 73 3815"},
+{"id":"osm:way:711688247","name":"ホテル開陽イン","lat":43.54837,"lon":144.97209,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://kaiyo-in.com/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるかいよういん","tel":"+81 153 72 2278"},
+{"id":"osm:way:711976831","name":"ビジネスホテル藤","lat":43.54625,"lon":144.96784,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"びじねすほてるふじ"},
+{"id":"osm:way:711976866","name":"ホテル秀月","lat":43.54602,"lon":144.96833,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.aurens.or.jp/~syugetsu/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるしゅうげつ","tel":"+81 153 72 2254"},
+{"id":"osm:way:1216505416","name":"トーヨーグランドホテル","lat":43.55826,"lon":144.99072,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://toyo-hotel.jp/","note":"宿","g":"heritage","k":"lodging","kana":"とーよーぐらんどほてる"},
+{"id":"osm:way:1217087053","name":"ホテルモアン","lat":43.56109,"lon":144.99672,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://moan.co.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるもあん","tel":"+81 153 74 0111"},
+{"id":"osm:way:1218994975","name":"ビジネスホテルさとう","lat":43.54811,"lon":144.97166,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.aurens.or.jp/hp/ryokan/k-satou.html","note":"宿","g":"heritage","k":"lodging","kana":"びじねすほてるさとう"}
+]

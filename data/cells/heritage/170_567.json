@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:1106237645","name":"静川遺跡","lat":42.67715,"lon":141.81846,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:静川遺跡"},
+{"id":"osm:node:3704154372","name":"ホテル 四季の館","lat":42.57381,"lon":141.92491,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.shikinoyakata.com/","note":"宿","g":"heritage","k":"lodging","kana":"ほてる しきのやかた","tel":"+81 145-42-4171"},
+{"id":"osm:way:430299094","name":"こぶしの湯あつま","lat":42.73454,"lon":141.86714,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.kobushi-atsuma.com/","note":"宿","g":"heritage","k":"lodging","kana":"こぶしのゆあつま"},
+{"id":"osm:way:624067952","name":"Dino旅館","lat":42.72567,"lon":141.87954,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.facebook.com/Dino%E6%97%85%E9%A4%A8-251258395662103/","note":"宿","g":"heritage","k":"lodging","kana":"ぢのいんん"},
+{"id":"osm:way:624068050","name":"高寿司・高田旅館","lat":42.72442,"lon":141.87764,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

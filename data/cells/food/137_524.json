@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:529780068","name":"千疊敷鄉村廚房","lat":34.41458,"lon":131.09,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2301970323","name":"錦町商店","lat":34.39143,"lon":131.19837,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2302485677","name":"きらく","lat":34.38887,"lon":131.20131,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2302485681","name":"よ志乃","lat":34.38936,"lon":131.20104,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2302485687","name":"江戸屋","lat":34.38837,"lon":131.1996,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2302490966","name":"すし楽","lat":34.38821,"lon":131.20173,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2306269789","name":"金の鈴","lat":34.37805,"lon":131.18694,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3714409928","name":"楊貴館別荘　ととろの里","lat":34.3374,"lon":131.02307,"pref":"山口","genres":["food"],"indoor":true,"url":"https://www.hotelyokikan.jp/totoro/","note":"麺類","g":"food","k":"restaurant","kana":"ようきかんべっそう　ととろのさと","oh":"11:00-21:00; We off","tel":"+81-837-32-1597","wc":"limited"},
+{"id":"osm:node:4353641970","name":"ふれあい食堂","lat":34.37617,"lon":131.18495,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5489307772","name":"レストランせきギャラリー","lat":34.25249,"lon":131.2056,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13904047363","name":"たべ山","lat":34.29146,"lon":131.10156,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:165297637","name":"浜屋","lat":34.38874,"lon":131.20136,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:550383098","name":"どんどん","lat":34.37467,"lon":131.18841,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:560656977","name":"バイキングビレッジ北長門","lat":34.36568,"lon":131.21846,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:668017920","name":"ジョイフル","lat":34.37426,"lon":131.18957,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1364237026","name":"草々","lat":34.39662,"lon":131.02205,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2302485685","name":"ワンスモア","lat":34.38783,"lon":131.20186,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13159408254","name":"恩湯喫茶スペース","lat":34.32881,"lon":131.17207,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Mo-Su 12:00-21:00"},
+{"id":"osm:way:1525437200","name":"ユーカリとタイヨウ","lat":34.29095,"lon":131.09925,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1525437192","name":"福田泉月堂","lat":34.29059,"lon":131.10021,"pref":"山口","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

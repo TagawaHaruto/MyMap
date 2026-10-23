@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:623321773","name":"標津漁業協同組合 地方卸売市場","lat":43.66705,"lon":145.13037,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:relation:13891610","name":"町営スケートリンク","lat":43.65691,"lon":145.12669,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ちょうえいすけーとりんく"},
+{"id":"osm:way:431827228","name":"標津町鳩ケ丘体育館","lat":43.65427,"lon":145.12619,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"しべつちょうはとがおかたいいくかん"},
+{"id":"osm:way:431827230","name":"標津町総合体育館","lat":43.65578,"lon":145.12651,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"しべつちょうそうごうたいいくかん","tel":"+81 153 82 3112"},
+{"id":"osm:relation:19325474","name":"尾岱沼スケートリンク","lat":43.55885,"lon":145.21921,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4891213878","name":"しべつ海の公園","lat":43.65764,"lon":145.1349,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0153-82-2265"},
+{"id":"osm:node:12042932957","name":"ふぁーむながの","lat":43.58712,"lon":145.21196,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13959206347","name":"尾岱沼ふれあいキャンプ場","lat":43.5838,"lon":145.21467,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14284414820","name":"星おどるRVパークおだいとう","lat":43.58648,"lon":145.21283,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

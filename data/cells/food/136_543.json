@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:13408523333","name":"Sén","lat":34.24531,"lon":135.85597,"pref":"奈良","genres":["food"],"indoor":true,"url":"https://sen-tenkawa.com/","note":"フレンチ","g":"food","k":"restaurant","tel":"+81 50-1721-9991"},
+{"id":"osm:way:1548781432","name":"蕎麦処風庵","lat":34.09419,"lon":135.75652,"pref":"奈良","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","pk":2},
+{"id":"osm:node:5017436923","name":"kiridasu cafe","lat":34.02768,"lon":135.78739,"pref":"奈良","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7774685287","name":"たにせ","lat":34.10055,"lon":135.76282,"pref":"奈良","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:7774753485","name":"スプルース","lat":34.10109,"lon":135.76599,"pref":"奈良","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:129384599","name":"つり橋茶屋","lat":34.10324,"lon":135.76238,"pref":"奈良","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

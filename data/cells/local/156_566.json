@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2984007066","name":"鬼椿市民雑貨店","lat":39.06098,"lon":141.72182,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4838295021","name":"三陸おさかなファクトリー","lat":39.06114,"lon":141.72228,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4838295037","name":"KAWATOKU","lat":39.06088,"lon":141.72164,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4838305133","name":"鮮魚うえの","lat":39.06123,"lon":141.72229,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7291152508","name":"地方卸売市場大船渡青果（株）","lat":39.07264,"lon":141.71876,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:156983841","name":"川村商店","lat":39.02641,"lon":141.59011,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:397732433","name":"菊池果樹園直売所","lat":39.01109,"lon":141.67416,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:577024445","name":"産直はまなす","lat":39.01473,"lon":141.66304,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"サンチョクハマナス"},
+{"id":"osm:way:1372197128","name":"荒木鮮魚店","lat":39.01508,"lon":141.63171,"pref":"岩手","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4831900705","name":"フィットネススタジオ ReBorn","lat":39.01711,"lon":141.62907,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:413343554","name":"大船渡市民体育館","lat":39.08011,"lon":141.71639,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:1226402690","name":"陸前高田自動車学校","lat":39.03413,"lon":141.62256,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1277932179","name":"雷神自治会館","lat":39.01781,"lon":141.66248,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1277935728","name":"和方会館","lat":39.00844,"lon":141.67609,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1277936320","name":"旧自然休暇村","lat":39.01114,"lon":141.67878,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1277938406","name":"松峰公民館","lat":39.00938,"lon":141.65394,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1287220911","name":"矢作公民館多目的研修センター","lat":39.03068,"lon":141.53212,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285406033","name":"ワタミオーガニックランド","lat":39.01001,"lon":141.6205,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0192532107"},
+{"id":"osm:node:14286234791","name":"フレアイランド尾崎岬","lat":39.02421,"lon":141.73931,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0192-27-4478"}
+]

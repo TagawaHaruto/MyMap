@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:3757991912","name":"中岡慎太郎像","lat":33.24574,"lon":134.17625,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:599495993","name":"岬観光ホテル","lat":33.24991,"lon":134.1797,"pref":"高知","genres":["lodging"],"indoor":true,"url":"https://higashi-kochi.jp/stay/post-82.html","note":"宿","g":"heritage","k":"lodging","kana":"みさきかんこうホテル","tel":"+81 887 34 0866"},
+{"id":"osm:node:5547739722","name":"岬観光ホテル","lat":33.24898,"lon":134.17919,"pref":"高知","genres":["lodging"],"indoor":true,"url":"http://www.misakikankohotel.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 887 22 0541"},
+{"id":"osm:way:372253770","name":"室戸荘","lat":33.24588,"lon":134.17693,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 887 22 0409"}
+]

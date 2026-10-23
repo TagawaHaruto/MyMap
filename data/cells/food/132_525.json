@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5246747721","name":"ガンジーファーム","lat":33.06369,"lon":131.27163,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wc":"limited"},
+{"id":"osm:node:5719492821","name":"道の駅あさじ","lat":33.00262,"lon":131.44813,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wp":"ja:道の駅あさじ","wc":"yes"},
+{"id":"osm:node:13166685525","name":"Culofornia cafe","lat":33.05852,"lon":131.32073,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11794127647","name":"Hot dog stand","lat":33.09595,"lon":131.43348,"pref":"大分","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"}
+]

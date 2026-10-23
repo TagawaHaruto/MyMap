@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:410053544","name":"中央公園","lat":44.02077,"lon":144.26068,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ちゅうおうこうえん"},
+{"id":"osm:way:906800856","name":"駒場北4丁目公園","lat":44.00345,"lon":144.28281,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"こまばきたよんちょうめこうえん"},
+{"id":"osm:relation:19012249","name":"駒場公園","lat":44.00185,"lon":144.2761,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"こまばこうえん"},
+{"id":"osm:way:1025991784","name":"網走川左岸水の広場","lat":44.02233,"lon":144.25848,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1352332227","name":"駒場北6丁目公園","lat":44.0012,"lon":144.28664,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"こまばきたろくちょうめこうえん"},
+{"id":"osm:way:1377122623","name":"南公園","lat":44.01423,"lon":144.26238,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"みなみこうえん"},
+{"id":"osm:way:1569875995","name":"あかしや公園","lat":44.02383,"lon":144.25889,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1569875997","name":"ほくせい公園","lat":44.02582,"lon":144.25816,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1569875998","name":"北児童公園","lat":44.02679,"lon":144.25862,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1569876000","name":"海眺児童公園","lat":44.0297,"lon":144.26138,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12514066849","name":"PHYSIT","lat":44.00272,"lon":144.28463,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"https://physit.biz/abashiri/","note":"ジム","g":"play","k":"sports","kana":"ふぃじっと","tel":"+81 152 67 6702"},
+{"id":"osm:way:155405844","name":"網走市営野球場","lat":44.00688,"lon":144.27088,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:1111798426","name":"網走市営陸上競技場","lat":44.00516,"lon":144.2699,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports","kana":"あばしりしえいりくじょうきょうぎじょう"}
+]

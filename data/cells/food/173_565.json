@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:844673871","name":"レストラン厚田亭","lat":43.31928,"lon":141.44567,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:202854465","name":"マウニの丘","lat":43.25402,"lon":141.35575,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"closed in winter"},
+{"id":"osm:way:202854490","name":"はまなすの丘公園ヴィジターセンター","lat":43.25632,"lon":141.35933,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Apr 29-Aug 31 09:00-18:00; Sep 01-Mar 11 09:00-17:00","tel":"0133-62-3450※期間外0133"},
+{"id":"osm:way:607548006","name":"Diamant Pur","lat":43.38469,"lon":141.43197,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

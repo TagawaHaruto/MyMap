@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:12666206797","name":"みずき","lat":34.21221,"lon":135.57899,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12669219550","name":"平野清椒庵","lat":34.21279,"lon":135.59359,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12669285946","name":"一の橋天風","lat":34.21349,"lon":135.59533,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14247214422","name":"珠数屋芳兵衛","lat":34.21255,"lon":135.59217,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:857772486","name":"松栄堂","lat":34.21271,"lon":135.59072,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:240636483","name":"紀伊高原ゴルフクラブ (Kii Kogen Golf Club)","lat":34.24496,"lon":135.53138,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4432308137","name":"北今西キャンプ場","lat":34.11593,"lon":135.61776,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"https://hotel-nosegawa.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0747-38-0011"},
+{"id":"osm:node:4432308138","name":"宮の向いキャンプ場","lat":34.11704,"lon":135.61462,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"https://hotel-nosegawa.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0747-38-0011"},
+{"id":"osm:node:14285903528","name":"リバーサイド新城キャンプ場","lat":34.20274,"lon":135.51255,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4649-3609"},
+{"id":"osm:node:14285903530","name":"中南CAMP【花園BASE】","lat":34.13712,"lon":135.56507,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913278","name":"アドベンチャーランド","lat":34.11166,"lon":135.63394,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"http://adventureland.xyz","note":"キャンプ・野外","g":"local","k":"camp","tel":"0747-38-0049"},
+{"id":"osm:node:14285913279","name":"かわらびオートキャンプ場","lat":34.10916,"lon":135.62243,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-7095-0362"},
+{"id":"osm:node:14287508234","name":"花園BASE 中南CAMP","lat":34.13447,"lon":135.5771,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://hanazonobase.com/camp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1405-7596"},
+{"id":"osm:node:14287508236","name":"花園グリーンパーク","lat":34.13402,"lon":135.55991,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://ribersidebnb.jp","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287508237","name":"北寺オートキャンプ場","lat":34.13367,"lon":135.53248,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0736-20-1329"},
+{"id":"osm:node:14287508238","name":"金剛緑地オートキャンプ場","lat":34.13237,"lon":135.54997,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0737-26-0544"},
+{"id":"osm:node:14287508239","name":"新子キャンパーズパーク","lat":34.13202,"lon":135.54616,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287517130","name":"花園BASE","lat":34.15925,"lon":135.525,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287578902","name":"NOSEGAWA GARDEN","lat":34.11505,"lon":135.60934,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"https://nosegawa-garden.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0747-20-0749"},
+{"id":"osm:node:14287578905","name":"こならの森","lat":34.11029,"lon":135.62229,"pref":"奈良","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0747-38-0122"},
+{"id":"osm:way:1424698868","name":"中野さんちのキャンプ場・RVパークほたるの郷","lat":34.23572,"lon":135.51397,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://www.rvhotarunosato.com/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

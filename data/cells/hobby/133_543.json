@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6338840998","name":"TSUTAYA","lat":33.47598,"lon":135.78413,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6840125417","name":"Ai Shop","lat":33.47968,"lon":135.77035,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"http://kushimoto-aishop.com","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Su 08:00-20:00","tel":"+81 90 8982 0169"},
+{"id":"osm:node:6840125418","name":"pole pole @ sea","lat":33.47634,"lon":135.77524,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"http://pole-pole.wakayama.jp","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-19:00","tel":"+81 735 70 0820"},
+{"id":"osm:node:6840128009","name":"クラブドゥ ダイビングセンター 串本","lat":33.47411,"lon":135.77384,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"https://club-do.com/","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 735 62 3796"},
+{"id":"osm:node:6840132691","name":"串本ダイビングスクール ダイブステーション","lat":33.4736,"lon":135.77315,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"https://kushimoto.com/","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 735 62 7717"},
+{"id":"osm:node:6840135700","name":"バブルリングダイバーズ","lat":33.47699,"lon":135.77487,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"https://bubble-ring-divers.com/","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Fr 09:00-17:00; Sa-Su 08:00-19:00","tel":"+81 735 62 3381"},
+{"id":"osm:node:6840145886","name":"串本ダイビングセンター","lat":33.47554,"lon":135.77508,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"https://kushimotodivingcenter.com/","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 735 67 7577"},
+{"id":"osm:node:6842754718","name":"ケイスポーツ","lat":33.47263,"lon":135.78228,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6842754721","name":"工作センター やぐら","lat":33.47354,"lon":135.78096,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6842754725","name":"ミヤモトスポーツ","lat":33.47473,"lon":135.7816,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6842754727","name":"すぎや 釣りエサ店","lat":33.47499,"lon":135.78305,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6842760412","name":"串本中央ホンダ","lat":33.47369,"lon":135.78311,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6842760693","name":"串本マリンセンター","lat":33.47291,"lon":135.77339,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"https://www.kmcscuba1977.com/","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 735 62 4757"},
+{"id":"osm:way:481535424","name":"TSUTAYA WAY 串本店","lat":33.476,"lon":135.78412,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:483076074","name":"バイクランド モリユキ","lat":33.47679,"lon":135.78432,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:676939187","name":"Both Beach","lat":33.46676,"lon":135.77621,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:689277938","name":"ケイスポーツ","lat":33.47353,"lon":135.7823,"pref":"和歌山","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

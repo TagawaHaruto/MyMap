@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:834729558","name":"アスクル","lat":41.14557,"lon":140.51428,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:1516410525","name":"蟹田駅前市場 ウェル蟹","lat":41.03814,"lon":140.64363,"pref":"青森","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:834729559","name":"いまべつ総合体育館","lat":41.14668,"lon":140.51299,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"0174-31-0354"},
+{"id":"osm:node:12060936128","name":"高野崎キャンプ場","lat":41.22668,"lon":140.54983,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177349","name":"観瀾山公園海水浴場キャンプ場","lat":41.04882,"lon":140.64405,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0174-22-3181"},
+{"id":"osm:way:387271805","name":"おだいばオートビレッジ","lat":41.17261,"lon":140.64158,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

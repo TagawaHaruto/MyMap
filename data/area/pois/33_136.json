@@ -1,0 +1,10 @@
+[
+{"name":"道の駅 紀宝町ウミガメ公園","lat":33.7701952,"lon":136.0286405,"kind":"michinoeki","wikipedia":null,"wc":"yes","k":"michinoeki"},
+{"name":"道の駅紀宝町ウミガメ公園","lat":33.7702174,"lon":136.02864590000001,"kind":"michinoeki","wikipedia":null,"tel":"+81 735 33 0300","k":"michinoeki"},
+{"name":"道の駅パーク七里御浜","lat":33.804456650000006,"lon":136.04346420000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅熊野・花の窟","lat":33.87881725,"lon":136.09203945000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 熊野きのくに","lat":33.959875749999995,"lon":136.10441500000002,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"鬼ヶ城","lat":33.8902908,"lon":136.1163562,"kind":"viewpoint","wikipedia":"https://ja.wikipedia.org/wiki/%E9%AC%BC%E3%83%B6%E5%9F%8E","k":"viewpoint"},
+{"name":"楯ヶ崎","lat":33.9311276,"lon":136.2129138,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E6%A5%AF%E3%83%B6%E5%B4%8E","k":"scenic"},
+{"name":"七里御浜","lat":33.82098525000001,"lon":136.06645525,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E4%B8%83%E9%87%8C%E5%BE%A1%E6%B5%9C","k":"scenic"}
+]

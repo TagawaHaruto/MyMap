@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:2419476840","name":"明屋書店","lat":33.58827,"lon":131.21337,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2419477810","name":"ブックオフ","lat":33.58929,"lon":131.21218,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2419479131","name":"東京書店","lat":33.59087,"lon":131.2069,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1131617385","name":"ヒマラヤスポーツ&ゴルフ 中津店","lat":33.58997,"lon":131.20705,"pref":"大分","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

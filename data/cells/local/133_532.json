@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:5537391622","name":"西岡酒造","lat":33.33114,"lon":133.2278,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 09:00-16:00"},
+{"id":"osm:node:10873064900","name":"多田水産","lat":33.32962,"lon":133.22857,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10873078627","name":"山本鮮魚店","lat":33.32893,"lon":133.23062,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10873078628","name":"浜岡惣菜店","lat":33.32901,"lon":133.23053,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10873078632","name":"田中鮮魚店","lat":33.32911,"lon":133.23066,"pref":"高知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1169279829","name":"久礼大正町市場","lat":33.32906,"lon":133.23066,"pref":"高知","genres":["souvenir"],"indoor":false,"url":"http://xn--3iqz5v2uac6ljot32netg.com/","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:11897547420","name":"三堰キャンプ場","lat":33.26974,"lon":133.12104,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285999513","name":"朝見谷キャンプ場","lat":33.4137,"lon":133.0753,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286006796","name":"美ららの森キャンプ場","lat":33.38908,"lon":133.20861,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"https://sites.google.com/view/cyurara/%E3%83%9B%E3%83%BC%E3%83%A0","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287571006","name":"桑の川キャンプ場","lat":33.45198,"lon":133.18931,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-55-2021"},
+{"id":"osm:node:14287575919","name":"四万十源流の里","lat":33.37757,"lon":133.13446,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-57-2126"},
+{"id":"osm:node:14287585577","name":"天満宮前キャンプ場","lat":33.33719,"lon":133.13747,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-52-2473"},
+{"id":"osm:node:14287587221","name":"天狗高原キャンプ場","lat":33.4768,"lon":133.0035,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0889-62-3188"},
+{"id":"osm:node:14287592372","name":"松葉川林間キャンプ場","lat":33.31309,"lon":133.07104,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0880-23-0615"},
+{"id":"osm:way:711099469","name":"新土居キャンプ場","lat":33.4336,"lon":133.22729,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:711099478","name":"かわうそ自然公園キャンプ場","lat":33.4459,"lon":133.20509,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

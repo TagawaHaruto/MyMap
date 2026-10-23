@@ -1,0 +1,22 @@
+[
+{"name":"道の駅愛ランド湧別","lat":44.131404,"lon":143.71905594999998,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅かみゆうべつ温泉;チューリップの湯","lat":44.18428605,"lon":143.59483515,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅かみゆうべつ温泉チューリップの湯第１Ｐ","lat":44.1850939,"lon":143.59521855,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅サロマ湖","lat":44.0999077,"lon":143.8235147,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%82%B5%E3%83%AD%E3%83%9E%E6%B9%96","tel":"+81 1587 5 2828","k":"michinoeki"},
+{"name":"道の駅かみゆうべつ温泉チューリップの湯","lat":44.1850327,"lon":143.59525275,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅オホーツク紋別","lat":44.3288527,"lon":143.3736932,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 香りの里たきのうえ","lat":44.196872549999995,"lon":143.0908717,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E9%A6%99%E3%82%8A%E3%81%AE%E9%87%8C%E3%81%9F%E3%81%8D%E3%81%AE%E3%81%86%E3%81%88","k":"michinoeki"},
+{"name":"道の駅かみゆうべつ温泉チューリップの湯第２Ｐ","lat":44.1858627,"lon":143.59580234999999,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 遠軽 森のオホーツク","lat":44.022024200000004,"lon":143.49645900000002,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E9%81%A0%E8%BB%BD_%E6%A3%AE%E3%81%AE%E3%82%AA%E3%83%9B%E3%83%BC%E3%83%84%E3%82%AF","k":"michinoeki"},
+{"name":"道の駅 遠軽 森のオホーツク 足湯","lat":44.021923900000004,"lon":143.4965038,"kind":"michinoeki","wikipedia":null,"wc":"no","k":"michinoeki"},
+{"name":"道の駅 おこっぺ","lat":44.4693592,"lon":143.11725754999998,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"日の出岬展望台 ラ・ルーナ","lat":44.530801,"lon":143.0612915,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"ピラオロ展望台","lat":44.095918,"lon":143.8027572,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"第一展望台","lat":44.0969664,"lon":143.8346436,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"紋別公園流氷展望台","lat":44.355388,"lon":143.34843445,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"サロマ湖展望台","lat":44.09736985,"lon":143.83616949999998,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"北見富士","lat":44.0032722,"lon":143.1256352,"kind":"peak","wikipedia":"https://en.wikipedia.org/wiki/Kitami_Fuji","k":"scenic"},
+{"name":"欝岳","lat":44.2917483,"lon":143.0825257,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E9%AC%B1%E5%B2%B3","k":"scenic"},
+{"name":"立牛岳","lat":44.1492426,"lon":143.2702212,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E7%AB%8B%E7%89%9B%E5%B2%B3","k":"scenic"},
+{"name":"コムケ湖","lat":44.268041350000004,"lon":143.4874282,"kind":"lake","wikipedia":"https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%A0%E3%82%B1%E6%B9%96","k":"scenic"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5611658769","name":"にいななまる","lat":31.34756,"lon":130.27801,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5756497455","name":"百姓市場　さえんばたけ","lat":31.41521,"lon":130.32039,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:5760240654","name":"百姓市場　さえんばたけ","lat":31.39104,"lon":130.40031,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:6743895747","name":"お茶街道ゆとり館","lat":31.30414,"lon":130.45183,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9609112322","name":"JA知覧特攻物産館","lat":31.36248,"lon":130.43218,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:9930631998","name":"かつお公社","lat":31.26915,"lon":130.28504,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:12709401883","name":"中村鮮魚精肉店","lat":31.25539,"lon":130.43429,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:398717187","name":"枕崎お魚センター","lat":31.26979,"lon":130.28845,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:503053796","name":"特産品の店りんどう","lat":31.36245,"lon":130.43244,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:519065456","name":"辻商店","lat":31.37676,"lon":130.44174,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:626410360","name":"ひまわり館","lat":31.48683,"lon":130.35169,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1052408998","name":"山形屋ギフトショップ","lat":31.41883,"lon":130.32657,"pref":"鹿児島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7658440392","name":"大坂ボルダリング施設","lat":31.47426,"lon":130.40376,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:385517857","name":"湯の浦カントリークラブ","lat":31.49456,"lon":130.35904,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:603957782","name":"森林馬事公苑","lat":31.43095,"lon":130.47164,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5731785722","name":"オートキャンプ森のかわなべ","lat":31.42931,"lon":130.46737,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287604207","name":"リバーバンク森の学校","lat":31.34414,"lon":130.37946,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://riverbank.jp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287620712","name":"県立吹上浜海浜公園キャンプ場","lat":31.44143,"lon":130.2919,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0993-52-7600"},
+{"id":"osm:way:1306081041","name":"火之神キャンプ場","lat":31.25198,"lon":130.27979,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","oh":"24/7","wc":"no"},
+{"id":"osm:way:1411772849","name":"清水岩屋公園・キャンプ場","lat":31.41829,"lon":130.42625,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://iwayacamp.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-3529-6424"}
+]

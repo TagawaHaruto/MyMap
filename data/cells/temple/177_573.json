@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5940157069","name":"厳島神社","lat":44.35515,"lon":143.35113,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:359839716","name":"創価学会","lat":44.33461,"lon":143.35869,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:359839717","name":"エホバの証人の王国会館","lat":44.33092,"lon":143.34699,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

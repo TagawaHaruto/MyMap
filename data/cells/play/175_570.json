@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:70079498","name":"当麻鐘乳洞公園","lat":43.82643,"lon":142.60962,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"とうましょうにゅうどうこうえん"},
+{"id":"osm:way:292440146","name":"あいべつリバーフロントパーク","lat":43.88797,"lon":142.66157,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:486976686","name":"当麻開拓公園","lat":43.83155,"lon":142.52679,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:501363475","name":"愛別スポーツ公園","lat":43.91203,"lon":142.57813,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:726611367","name":"北町公園","lat":43.90861,"lon":142.57958,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:727678293","name":"さくら公園","lat":43.88663,"lon":142.66506,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:518316685","name":"旧旭川市旭川第一中学校プール","lat":43.75488,"lon":142.54855,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1420100819","name":"ぴあふる岩山　グラウンド","lat":43.75567,"lon":142.51413,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

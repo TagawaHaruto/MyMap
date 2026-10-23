@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4865331521","name":"ドライブイン十勝","lat":42.93255,"lon":142.97403,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9119291936","name":"めむろ新嵐山スカイパーク","lat":42.83114,"lon":142.99032,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://shin-arashiyama.jp/","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1374937151","name":"とかち亭","lat":42.97452,"lon":142.80618,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81-1566-2-4121","wc":"yes"},
+{"id":"osm:node:6145316527","name":"カフェ クローバー","lat":42.98061,"lon":142.88181,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6525179609","name":"十勝千年の森 ガーデンカフェ・ラウラウ","lat":42.93211,"lon":142.86778,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

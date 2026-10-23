@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:262327242","name":"道の駅 鷲敷","lat":33.86897,"lon":134.5546,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:6418656663","name":"海の駅 とろむ","lat":33.2692,"lon":134.16065,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:6655040411","name":"槍ノ尾サービスエリア","lat":33.93138,"lon":134.20632,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:313767903","name":"道の駅 宍喰温泉","lat":33.5691,"lon":134.30723,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:437435819","name":"道の駅田野駅屋","lat":33.43007,"lon":134.00788,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:442740599","name":"道の駅キラメッセ室戸","lat":33.30675,"lon":134.11008,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443115937","name":"道の駅日和佐","lat":33.72991,"lon":134.53003,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1468130747","name":"道の駅「ひなの里かつうら」","lat":33.9323,"lon":134.5232,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1469755574","name":"道の駅鷲の里","lat":33.86316,"lon":134.50175,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1472554831","name":"道の駅 もみじ川温泉","lat":33.79765,"lon":134.44603,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1519474666","name":"道の駅 公方の郷なかがわ","lat":33.95304,"lon":134.66768,"type":"SA・PA","k":"rest_area","likely":true}
+]

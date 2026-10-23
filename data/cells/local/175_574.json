@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:430671444","name":"からくり王国","lat":43.75345,"lon":143.50162,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:430671445","name":"からくり王国","lat":43.75364,"lon":143.50152,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:430671446","name":"からくり王国","lat":43.75384,"lon":143.50142,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:481358759","name":"温根湯スポーツセンター","lat":43.75612,"lon":143.51544,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:486432253","name":"栄地域交流センター","lat":43.9601,"lon":143.66128,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:503215025","name":"北見温泉ゴルフ場","lat":43.78532,"lon":143.64427,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:538380691","name":"留辺蘂町体育館","lat":43.77585,"lon":143.60981,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4232976089","name":"つつじ公園キャンプ場","lat":43.76081,"lon":143.5203,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14071578358","name":"富里湖森林公園キャンプ場","lat":43.86053,"lon":143.74598,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:538380686","name":"八方台森林公園キャンプ場","lat":43.77149,"lon":143.61433,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:12113588439","name":"中神茶園","lat":34.65468,"lon":137.24301,"pref":"愛知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:364717780","name":"浜の休憩所さつき","lat":34.58126,"lon":137.02201,"pref":"愛知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:427372105","name":"しーちゃんの里","lat":34.7268,"lon":137.03454,"pref":"愛知","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:700625967","name":"長栄","lat":34.58847,"lon":137.02829,"pref":"愛知","genres":["souvenir"],"indoor":true,"url":"https://choei.net/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:505450205","name":"体育館","lat":34.60098,"lon":137.16603,"pref":"愛知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544315129","name":"体育館","lat":34.60979,"lon":137.0673,"pref":"愛知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544503367","name":"体育館","lat":34.59754,"lon":137.09665,"pref":"愛知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544503371","name":"体育館","lat":34.59716,"lon":137.0967,"pref":"愛知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544590448","name":"体育館","lat":34.61215,"lon":137.19505,"pref":"愛知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544594878","name":"体育館","lat":34.62616,"lon":137.23453,"pref":"愛知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:way:544611501","name":"体育館","lat":34.64929,"lon":137.15338,"pref":"愛知","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"たいいくかん"},
+{"id":"osm:node:14284382454","name":"Sea&Sun 恋路ヶ浜オートキャンプ場","lat":34.58501,"lon":137.02652,"pref":"愛知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287475575","name":"篠島デューテラス オートキャンプ場","lat":34.68211,"lon":137.00735,"pref":"愛知","genres":["outdoor"],"indoor":false,"url":"https://shinojima-kankou.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0569-67-2557"},
+{"id":"osm:node:14287475579","name":"仁崎キャンプ場","lat":34.6777,"lon":137.21235,"pref":"愛知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0531-25-0276"},
+{"id":"osm:node:14287481841","name":"休暇村伊良湖オートキャンプ場","lat":34.60526,"lon":137.03756,"pref":"愛知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0531-35-6411"},
+{"id":"osm:node:14287677503","name":"恋路ヶ浜オートキャンプ場","lat":34.58115,"lon":137.02392,"pref":"愛知","genres":["outdoor"],"indoor":false,"url":"https://sea-and-sun5128.my.canva.site/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:517963560","name":"キャンプ場","lat":34.60903,"lon":137.04075,"pref":"愛知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wc":"yes"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:765755094","name":"おみやげのゆめ","lat":35.80915,"lon":137.25056,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7236633202","name":"おんたけ森きちオートキャンプ場","lat":35.8067,"lon":137.44984,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10293204904","name":"乗政キャンプ場","lat":35.80968,"lon":137.30339,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14283411116","name":"のほほんパークひだおさか","lat":35.91547,"lon":137.31207,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://www.nohohonpark.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-2321-5941"},
+{"id":"osm:node:14285591258","name":"新くるみランド","lat":35.99574,"lon":137.39295,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-6585-7587"},
+{"id":"osm:node:14286894376","name":"くるみ温泉&キャンプ","lat":35.99915,"lon":137.39108,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://www.kurumionsen-camp.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-56-1137"},
+{"id":"osm:node:14286900495","name":"N.A.O.高山すずらん高原キャンプ場","lat":35.99517,"lon":137.34929,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://naosuzuran.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-40-0000"},
+{"id":"osm:node:14286904749","name":"胡桃島キャンプ場","lat":35.93883,"lon":137.45907,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://sites.google.com/view/kurumijimacamp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0576-62-3349"},
+{"id":"osm:node:14286920073","name":"中川原キャンプ場","lat":35.92456,"lon":137.31427,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0576-62-3366"}
+]

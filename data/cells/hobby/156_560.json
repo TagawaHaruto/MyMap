@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5179174130","name":"坂田書店","lat":39.2285,"lon":140.13906,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5179174138","name":"栄輪社","lat":39.22942,"lon":140.1445,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5179174140","name":"やしま釣具店","lat":39.23004,"lon":140.14773,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5179423538","name":"田口スポーツ","lat":39.22935,"lon":140.13789,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

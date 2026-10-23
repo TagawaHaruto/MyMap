@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:1104603506","name":"奢母智神社","lat":35.57208,"lon":133.26451,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1104623831","name":"三保神社","lat":35.55412,"lon":133.25191,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1157015416","name":"宝寿寺","lat":35.56142,"lon":133.30754,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ほじゅじ"},
+{"id":"osm:way:1221950351","name":"佛谷寺","lat":35.56407,"lon":133.30837,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1221950360","name":"満玉山圓淨寺","lat":35.56421,"lon":133.30886,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1350873707","name":"歳徳神","lat":35.56133,"lon":133.31131,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

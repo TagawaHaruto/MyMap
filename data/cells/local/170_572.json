@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:1734841092","name":"メークイン","lat":42.73234,"lon":143.21261,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81-155-64-5238"},
+{"id":"osm:node:3081932238","name":"更別チーズ工房","lat":42.66004,"lon":143.18145,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"さらべつちーずこうぼう"},
+{"id":"osm:node:12101896216","name":"カントリーショップ てんとうむし","lat":42.6921,"lon":143.12675,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:735022039","name":"花水山","lat":42.69184,"lon":143.1272,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:3081929615","name":"あんてぃー","lat":42.69178,"lon":143.12731,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","kana":"あんてぃー","tel":"+818055971142"},
+{"id":"osm:node:3081964678","name":"トレーニングセンター更別","lat":42.65065,"lon":143.19193,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3081964701","name":"更別村屋内ゲートボール場","lat":42.64523,"lon":143.19515,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"さらべつむらやないげーとぼーるじょう"},
+{"id":"osm:way:273163905","name":"更別村コミュニティプール","lat":42.64989,"lon":143.19277,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.sarabetsu.jp/shisetsu/pool/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"さらべつむらこみゅにてぃぷーる"},
+{"id":"osm:way:273164235","name":"柔剣道場","lat":42.65087,"lon":143.19163,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:306238773","name":"プラムカントリークラブ","lat":42.63634,"lon":143.20707,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"ぷらむかんとりーくらぶ"},
+{"id":"osm:way:319410601","name":"中札内交流の杜","lat":42.69798,"lon":143.13973,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"http://www.koryu-no-mori.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:733154892","name":"中札内プール","lat":42.68919,"lon":143.13126,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7618167086","name":"スノーピーク十勝ポロシリキャンプフィールド","lat":42.70825,"lon":143.02024,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13071943087","name":"カムイコタン公園キャンプ場","lat":42.52499,"lon":143.19201,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177236","name":"帯広市岩内自然の村","lat":42.6681,"lon":143.02803,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0155-60-2063"},
+{"id":"osm:node:14286177237","name":"十勝中札内 グランピングリゾート フェーリエンドルフ","lat":42.6614,"lon":143.14697,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0155-68-3301"}
+]

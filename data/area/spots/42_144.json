@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:12050357174","name":"くしろ港町ギャラリー","lat":42.98605,"lon":144.3842,"pref":"北海道","genres":["museum"],"indoor":true,"url":"https://www.satokamiten.com/gallery","note":"美術館","k":"museum","kana":"くしろみなとまちぎゃらりー"},
+{"id":"osm:node:13185715988","name":"釧路文学館","lat":42.98717,"lon":144.38323,"pref":"北海道","genres":["museum"],"indoor":true,"url":"https://kushirolibrary.jp/bungakukan/","note":"博物館","k":"museum","kana":"くしろぶんがくかん"},
+{"id":"osm:way:104783369","name":"釧路市立博物館","lat":42.97439,"lon":144.40348,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:way:245269121","name":"港文館","lat":42.9802,"lon":144.38222,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum","kana":"こぶんかん"},
+{"id":"osm:way:462339640","name":"釧路市こども遊学館","lat":42.98674,"lon":144.37902,"pref":"北海道","genres":["museum"],"indoor":true,"url":"https://kodomoyugakukan.jp/","note":"博物館","k":"museum","kana":"くしろしこどもゆうがくかん","tel":"+81 154 32 0122"},
+{"id":"osm:way:531721100","name":"釧路芸術館","lat":42.9827,"lon":144.38,"pref":"北海道","genres":["museum"],"indoor":true,"url":"https://www.kushiro-artmu.jp/","note":"博物館","k":"museum","kana":"くしろげいじゅつかん","tel":"+81 154 23 2381"},
+{"id":"osm:way:536632320","name":"旧太平洋炭礦炭鉱展示館受付","lat":42.97006,"lon":144.42519,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum","oh":"Th-Tu 10:00-16:00; Dec 28-Jan 03 off"},
+{"id":"osm:way:536632457","name":"旧太平洋炭礦炭鉱展示館","lat":42.96911,"lon":144.42472,"pref":"北海道","genres":["museum"],"indoor":true,"url":"https://www.city.kushiro.lg.jp/sangyou/sanshien/1006425/1006427.html","note":"博物館","k":"museum","oh":"Th-Tu 10:00-16:00; Dec 28-Jan 03 off","tel":"+81-154-91-5117"},
+{"id":"osm:way:629127344","name":"釧路市立美術館","lat":42.97816,"lon":144.38593,"pref":"北海道","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:node:9122407617","name":"仙鳳趾かき直売","lat":42.97372,"lon":144.72483,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:way:292847659","name":"釧路フィッシャーマンズワーフMOO","lat":42.98181,"lon":144.38357,"pref":"北海道","genres":["sightseeing"],"indoor":false,"url":"http://www.moo946.com/","note":"観光名所","k":"attraction","kana":"くしろふぃっしゃーまんずわーふ むー","tel":"+81 154 23 0600","wc":"yes"},
+{"id":"osm:node:5678707034","name":"米町展望台","lat":42.97298,"lon":144.37324,"pref":"北海道","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:way:1046377402","name":"別保公園","lat":42.99294,"lon":144.46003,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E5%88%A5%E4%BF%9D%E5%85%AC%E5%9C%92","note":"公園","k":"bigpark","kana":"べっぽこうえん"},
+{"id":"osm:way:531782609","name":"大喜湯","lat":42.97628,"lon":144.41415,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"https://www.taikiyu.com/","note":"銭湯・入浴施設","k":"bath"},
+{"id":"osm:way:1301009061","name":"スーパーホテル釧路天然温泉","lat":42.98741,"lon":144.38219,"pref":"北海道","genres":["onsen"],"indoor":true,"url":"https://www.superhotel.co.jp/s_hotels/kushiro/","note":"温泉宿（日帰り入浴は要確認）","k":"onsen","kana":"すーぱーほてるくしろてんねんおんせん","tel":"+81 154 24 9000"}
+]

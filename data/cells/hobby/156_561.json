@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:5181467541","name":"鈴木輪業","lat":39.10595,"lon":140.29139,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5181480026","name":"鈴木輪業","lat":39.10753,"lon":140.29136,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5181480027","name":"園辺輪業","lat":39.10689,"lon":140.29128,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5199457651","name":"高養輪店","lat":39.16767,"lon":140.47909,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5199567634","name":"ブックスモア","lat":39.1647,"lon":140.48854,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5201472133","name":"アキタアルペンスポーツ","lat":39.18493,"lon":140.49946,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5201472722","name":"渋谷自転車店","lat":39.1723,"lon":140.49103,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5203690623","name":"サイクルショップ オバラ","lat":39.16643,"lon":140.49552,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7184711139","name":"カトウサイクルショップ","lat":39.19855,"lon":140.39961,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7184718893","name":"羽後モータース","lat":39.20312,"lon":140.40432,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7184719039","name":"書店ミケーネ","lat":39.1959,"lon":140.41235,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:770789025","name":"タジリ","lat":39.16495,"lon":140.49263,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:777829247","name":"サタツ輪業","lat":39.15939,"lon":140.48976,"pref":"秋田","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:9890613217","name":"立山寺の銀木犀","lat":36.69625,"lon":137.3976,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:339204833","name":"常願寺川公園","lat":36.69292,"lon":137.28145,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:388943595","name":"グリーンパーク吉峰","lat":36.61207,"lon":137.33108,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:388945191","name":"グリーンパーク吉峰宴会場日帰り湯","lat":36.61364,"lon":137.32891,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:441860754","name":"殿様林 緑地公園","lat":36.61451,"lon":137.30155,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:493450557","name":"オレンジパークふなはし","lat":36.70008,"lon":137.30428,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:493452318","name":"舟橋村児童公園","lat":36.70346,"lon":137.30536,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:529099792","name":"竹内なかよし公園","lat":36.70651,"lon":137.3068,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:609210481","name":"千寿ヶ原1号公園","lat":36.58411,"lon":137.4444,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:685695789","name":"月岡東緑町四丁目公園","lat":36.61531,"lon":137.25478,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:685695792","name":"月岡東緑町二丁目第一公園","lat":36.61592,"lon":137.25701,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:685695793","name":"月岡東緑町二丁目第二公園","lat":36.61667,"lon":137.25786,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:822867386","name":"Oiwagawa Water Park 大岩川親水公園","lat":36.66467,"lon":137.38855,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1181250436","name":"立山登り口公園","lat":36.58276,"lon":137.44526,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1181250442","name":"山野スポーツセンター","lat":36.57592,"lon":137.43157,"pref":"富山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:400099907","name":"富山市民球場アルペンスタジアム","lat":36.73067,"lon":137.26196,"pref":"富山","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports","wp":"ja:富山市民球場アルペンスタジアム"},
+{"id":"osm:way:541458780","name":"高平メモリアル常願寺スポーツパーク","lat":36.68754,"lon":137.29844,"pref":"富山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:555613994","name":"富山市市民球場サブグラウンド","lat":36.73227,"lon":137.26188,"pref":"富山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

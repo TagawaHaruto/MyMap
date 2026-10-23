@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:9906880677","name":"宗谷の味","lat":45.52206,"lon":141.93858,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:9906880681","name":"えぞや","lat":45.52208,"lon":141.93731,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:373726744","name":"柏屋","lat":45.52225,"lon":141.93809,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"}
+]

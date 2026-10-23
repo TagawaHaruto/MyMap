@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:7262717366","name":"王地山公園","lat":35.07393,"lon":135.22771,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:7262739199","name":"下河原町鳳凰苑","lat":35.07172,"lon":135.22418,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:338216985","name":"ダム下公園","lat":35.243,"lon":135.10102,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:573415952","name":"多目的広場","lat":35.15104,"lon":135.07306,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:573415953","name":"子供広場","lat":35.15105,"lon":135.07369,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:573415961","name":"水分かれ公園","lat":35.15055,"lon":135.07327,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:573834665","name":"三ツ塚史跡公園","lat":35.2106,"lon":135.14241,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:595746528","name":"兵庫県立丹波年輪の郷","lat":35.14264,"lon":135.05337,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1105811648","name":"よし池公園","lat":35.08048,"lon":135.21677,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1105997271","name":"西紀運動公園","lat":35.09417,"lon":135.17996,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1106007345","name":"王地山公園","lat":35.07371,"lon":135.22735,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1107059391","name":"春日総合運動公園","lat":35.15471,"lon":135.16779,"pref":"兵庫","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:4578731789","name":"彩華スポーツクラブ","lat":35.05561,"lon":135.17658,"pref":"兵庫","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:node:5044286428","name":"市立西紀体育館","lat":35.09378,"lon":135.17617,"pref":"兵庫","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports","oh":"Mo-Su 09:00-22:00"},
+{"id":"osm:way:338216974","name":"市島市民グラウンド","lat":35.21698,"lon":135.1343,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"https://yoyakunomado.com/tamba/user/index.jsp","note":"グラウンド・コート","g":"play","k":"sports","tel":"0795-85-3030","wc":"yes"},
+{"id":"osm:way:734473312","name":"ブルーベリースタジアム丹波","lat":35.15289,"lon":135.16715,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1077573489","name":"川代体育館","lat":35.08088,"lon":135.16123,"pref":"兵庫","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports","oh":"Tu-Su 09:00-22:00"},
+{"id":"osm:way:1105798987","name":"運動場","lat":35.07559,"lon":135.16038,"pref":"兵庫","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1107078914","name":"丹波篠山総合スポーツセンター","lat":35.08008,"lon":135.2059,"pref":"兵庫","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:369377831","name":"たんば田園交響ホール","lat":35.07555,"lon":135.21777,"pref":"兵庫","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse","wp":"ja:たんば田園交響ホール"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:2979097007","name":"ちゃみせ","lat":43.69026,"lon":142.52125,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"ちゃみせ","oh":"11:00+"},
+{"id":"osm:node:3081662495","name":"Berry shop","lat":43.52721,"lon":142.55565,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4362405168","name":"宮崎豆腐店","lat":43.69743,"lon":142.50815,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4978678793","name":"我良笑","lat":43.69405,"lon":142.51352,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"わらえ"},
+{"id":"osm:node:4978794291","name":"越智恵子の漬物","lat":43.66014,"lon":142.56412,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:681072657","name":"ビルケの森パークゴルフ場","lat":43.50488,"lon":142.59666,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://town.biei.hokkaido.jp/facility/golf.html","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1394173841","name":"コート旭川カントリークラブ","lat":43.73692,"lon":142.52936,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://cote-asahikawa-cc.hokkaido.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"こーとあさひかわかんとりーくらぶ","tel":"+81 166 82 6111"},
+{"id":"osm:node:4082309375","name":"２１世紀の森　ふれあい広場","lat":43.71747,"lon":142.66853,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:4082311078","name":"２１世紀の森　ファミリーゾーン","lat":43.71592,"lon":142.6793,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10823266765","name":"Oasis biei","lat":43.60111,"lon":142.56358,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12871953193","name":"アサヒの丘キャンプ場","lat":43.66707,"lon":142.57055,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-8297-9393"},
+{"id":"osm:node:14284414818","name":"東神楽大学キャンプ場","lat":43.69012,"lon":142.50073,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-8885-9373"},
+{"id":"osm:node:14286024382","name":"アースヴィレッジチカラノ","lat":43.59118,"lon":142.63825,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287644556","name":"キトウシ森林公園家族旅行村","lat":43.72828,"lon":142.53469,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0166-82-2632"},
+{"id":"osm:way:1040437587","name":"道の駅 びえい「白金ビルケ」キャンピングカーサイト","lat":43.50387,"lon":142.59797,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://biei-info.jp/biruke/experience/campersite.php","note":"キャンプ・野外","g":"local","k":"camp"}
+]

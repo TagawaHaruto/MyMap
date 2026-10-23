@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4100055998","name":"稲荷神社","lat":33.81504,"lon":135.85647,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4154917158","name":"乳大師","lat":33.81042,"lon":135.85819,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5162319338","name":"福山神社","lat":33.94144,"lon":135.76913,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5324350251","name":"地主神社","lat":33.81363,"lon":135.77747,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5705929365","name":"三柱稲荷大明神","lat":33.92504,"lon":135.83121,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7488259667","name":"Akiba Shrine","lat":33.91264,"lon":135.88367,"pref":"奈良","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9453443259","name":"大瀧寺","lat":33.75944,"lon":135.92721,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10050158774","name":"丸山神社","lat":33.87536,"lon":135.95504,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1031184122","name":"宝蔵寺","lat":33.78764,"lon":135.98934,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1127998652","name":"祐川寺","lat":33.82078,"lon":135.78872,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

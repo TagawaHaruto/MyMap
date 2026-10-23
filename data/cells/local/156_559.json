@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5021923236","name":"斎藤鮮魚店","lat":39.02218,"lon":139.90847,"pref":"山形","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5167009123","name":"魚光","lat":39.2072,"lon":139.90053,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:921145456","name":"秋田商店","lat":39.19557,"lon":139.908,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:921165621","name":"佐々木鮮魚店","lat":39.19267,"lon":139.90933,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:928141161","name":"サラダ館 象潟店","lat":39.20683,"lon":139.89868,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:935252536","name":"菅原鮮魚店","lat":39.20992,"lon":139.89815,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:921738464","name":"象潟体育館","lat":39.20204,"lon":139.90653,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:921755948","name":"B&G海洋センター","lat":39.20911,"lon":139.89316,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5021916055","name":"西浜キャンプ場","lat":39.06935,"lon":139.87461,"pref":"山形","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 234 77 3600"},
+{"id":"osm:node:5166966556","name":"象潟海水浴場キャンプ場","lat":39.20495,"lon":139.89488,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:5168632964","name":"三崎公園キャンプ場","lat":39.12057,"lon":139.87278,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:9271969396","name":"西浜キャンプ場 管理棟","lat":39.06877,"lon":139.87421,"pref":"山形","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286226218","name":"仁賀保高原キャンプ場","lat":39.22694,"lon":139.99784,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0184-37-2833"},
+{"id":"osm:node:14286226222","name":"中島台レクリエーションの森","lat":39.17586,"lon":139.9742,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0184-38-4305"},
+{"id":"osm:node:14286234787","name":"三崎公園キャンプ場","lat":39.13066,"lon":139.88461,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0184-46-2826"}
+]

@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:690871406","name":"野菜市","lat":34.51188,"lon":133.14466,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"https://crossroad-mitsugi.com/vegetable/","note":"直売所","g":"local","k":"souvenir","oh":"Mo-Su 09:00-17:00"},
+{"id":"osm:way:719059637","name":"尾道GC","lat":34.52087,"lon":133.06187,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:719060192","name":"尾道CC","lat":34.55271,"lon":133.07648,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287475565","name":"いこいの森弘法山","lat":34.70037,"lon":133.09034,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0847-67-2217"},
+{"id":"osm:node:14287476336","name":"矢野温泉公園四季の里","lat":34.6665,"lon":133.10734,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0847-62-4990"},
+{"id":"osm:node:14287478415","name":"星のこやまランド","lat":34.74747,"lon":133.21918,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://mserrnt.jp/service/hoshinokoyama_land/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0847-85-3927"},
+{"id":"osm:node:14287481846","name":"芦田湖オートキャンプ場","lat":34.5982,"lon":133.14306,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0847-24-1760"},
+{"id":"osm:node:14287481852","name":"河佐峡キャンプ場","lat":34.59067,"lon":133.15755,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0847-49-0344"},
+{"id":"osm:node:14287484492","name":"みつぎグリーンランド","lat":34.50662,"lon":133.06905,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0848-78-0153"},
+{"id":"osm:node:14287489828","name":"世羅甲山ふれあいの里","lat":34.63044,"lon":133.14732,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0847-24-1188"},
+{"id":"osm:node:14287489841","name":"羽高湖森林公園キャンプ場","lat":34.55947,"lon":133.16591,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0847-49-0339"},
+{"id":"osm:node:14287489847","name":"アウトドアパーク宇根山（宇根山家族旅行村）","lat":34.54876,"lon":133.07184,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"https://www.outdoorpark-uneyama.com/","note":"キャンプ・野外","g":"local","k":"camp"}
+]

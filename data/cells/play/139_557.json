@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:202773308","name":"東京都まちかど庭園","lat":34.75083,"lon":139.35361,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:202918379","name":"長根浜公園","lat":34.75504,"lon":139.35203,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:221085358","name":"つつじ園","lat":34.75158,"lon":139.39909,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"つつじえん"},
+{"id":"osm:way:539984449","name":"仲の原園地","lat":34.76019,"lon":139.3511,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:2125088677","name":"フィットネスクラブ ピコ","lat":34.75168,"lon":139.3546,"pref":"東京","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:way:197315539","name":"ピコ","lat":34.7512,"lon":139.35453,"pref":"東京","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports","tel":"04992-2-4577"}
+]

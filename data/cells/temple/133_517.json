@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4564210161","name":"潮見神社","lat":33.35489,"lon":129.43464,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4583423109","name":"金比羅神社","lat":33.32089,"lon":129.43964,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4583423110","name":"八坂神社","lat":33.32361,"lon":129.44524,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4583423111","name":"春日神社","lat":33.34036,"lon":129.44195,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:4143798875","name":"道の駅・松山","lat":31.58173,"lon":131.04242,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:4757562647","name":"道の駅 山之口","lat":31.79439,"lon":131.20265,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:node:6060323338","name":"駅の駅くしま","lat":31.46288,"lon":131.23032,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:197499825","name":"一ツ葉PA (上り)","lat":31.968,"lon":131.47826,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:287038662","name":"道の駅高岡","lat":31.94581,"lon":131.34063,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:436646833","name":"道の駅なんごう","lat":31.50298,"lon":131.37838,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:436887076","name":"道の駅フェニックス","lat":31.76891,"lon":131.47851,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:436889356","name":"道の駅酒谷","lat":31.64187,"lon":131.26638,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443717066","name":"日向高崎PA (下り)","lat":31.9015,"lon":131.03259,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443717261","name":"日向高崎PA (上り)","lat":31.90131,"lon":131.0318,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443717985","name":"山之口SA (下り)","lat":31.79562,"lon":131.16391,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443718304","name":"山之口SA (上り)","lat":31.79455,"lon":131.16364,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443718684","name":"清武PA (上り)","lat":31.86705,"lon":131.39567,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443718736","name":"清武PA (下り)","lat":31.86797,"lon":131.40169,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443720877","name":"宮崎PA (上り)","lat":31.90982,"lon":131.36545,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:443721628","name":"宮崎PA (下り)","lat":31.91073,"lon":131.36672,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:736792345","name":"道の駅 都城NiQLL","lat":31.76881,"lon":131.09525,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:915136279","name":"道の駅くしま","lat":31.46265,"lon":131.22806,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1165322170","name":"一ツ葉PA (下り)","lat":31.96784,"lon":131.47889,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1318947195","name":"情報館","lat":31.46286,"lon":131.22923,"type":"SA・PA","k":"rest_area","likely":true}
+]

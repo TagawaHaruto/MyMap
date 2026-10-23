@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4297579055","name":"Neso Tomb #1","lat":34.26301,"lon":129.32441,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:4297579056","name":"Neso Tomb #3","lat":34.26234,"lon":129.32541,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:4297579057","name":"Neso Tomb #2","lat":34.26205,"lon":129.32387,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:4297579058","name":"Neso Tomb #4","lat":34.26253,"lon":129.32558,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:4297579059","name":"Neso Tomb #5","lat":34.26257,"lon":129.3254,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:4301360441","name":"金田城","lat":34.30016,"lon":129.27539,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:金田城","kana":"かねだじょう"},
+{"id":"osm:node:5546563284","name":"Russian Naval survey team base (1861)","lat":34.32112,"lon":129.26732,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5546563285","name":"Naval Gun Fort (1885)","lat":34.32065,"lon":129.27041,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:431350893","name":"Gun position 1901 Sino-Russian war","lat":34.25886,"lon":129.32211,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:431490672","name":"Seaweed Drying Houses","lat":34.46463,"lon":129.27835,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:437448788","name":"Sino-Japanese War gun positions","lat":34.26632,"lon":129.31838,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:430344884","name":"Hotel Inn","lat":34.2757,"lon":129.32166,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430347022","name":"Guesthouse","lat":34.28044,"lon":129.32554,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:430366482","name":"Tsushima Grand Hotel","lat":34.25841,"lon":129.32253,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:431351516","name":"Kayak Centre Club Rooms","lat":34.29366,"lon":129.26247,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:relation:7136240","name":"Tsushima Resort","lat":34.30644,"lon":129.30393,"pref":"長崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

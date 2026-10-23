@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:397559775","name":"駅前公園","lat":32.28203,"lon":130.97932,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:397562629","name":"時の公園","lat":32.28124,"lon":130.98271,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:454594672","name":"ファミリーパーク宇宙ランド","lat":32.26369,"lon":130.93234,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:484235598","name":"田代ケ丘公園","lat":32.27257,"lon":130.92929,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:484236464","name":"高山運動公園","lat":32.25194,"lon":130.8772,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:366098827","name":"町民グラウンド","lat":32.27163,"lon":130.99856,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:368095306","name":"B&G海洋センター プール","lat":32.27287,"lon":130.99666,"pref":"熊本","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

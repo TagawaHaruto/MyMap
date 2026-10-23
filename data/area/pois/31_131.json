@@ -1,0 +1,22 @@
+[
+{"name":"道の駅フェニックス","lat":31.7689495,"lon":131.4784247,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅くにの松原おおさき","lat":31.4381088,"lon":131.0307816,"kind":"michinoeki","wikipedia":null,"tel":"+81 99-471-6666","wc":"yes","k":"michinoeki"},
+{"name":"道の駅「高岡」","lat":31.9456511,"lon":131.3405596,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅・松山","lat":31.5817337,"lon":131.0424217,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 山之口","lat":31.7943918,"lon":131.2026535,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E5%B1%B1%E4%B9%8B%E5%8F%A3","k":"michinoeki"},
+{"name":"道の駅;ゆ～ぱるのじり","lat":31.9643825,"lon":131.0823888,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅酒谷","lat":31.641866450000002,"lon":131.26661535,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅なんごう","lat":31.5028825,"lon":131.37827425,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅高岡","lat":31.9458061,"lon":131.34062605000003,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 田野","lat":31.79664735,"lon":131.30737025,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅ゆ～ぱるのじり","lat":31.96472915,"lon":131.08173725,"kind":"michinoeki","wikipedia":null,"k":"michinoeki"},
+{"name":"道の駅 都城NiQLL","lat":31.76881185,"lon":131.09525455,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E9%83%BD%E5%9F%8ENiQLL","k":"michinoeki"},
+{"name":"道の駅くしま","lat":31.46265005,"lon":131.2280613,"kind":"michinoeki","wikipedia":"https://ja.wikipedia.org/wiki/%E9%81%93%E3%81%AE%E9%A7%85%E3%81%8F%E3%81%97%E3%81%BE","k":"michinoeki"},
+{"name":"曽山寺温泉 貸切露天風呂  ほのかの湯 加江田店","lat":31.8131795,"lon":131.4378062,"kind":"onsen","wikipedia":null,"k":"onsen"},
+{"name":"モアイ岬","lat":31.6662663,"lon":131.4610952,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"綾 酒泉の杜","lat":31.9929963,"lon":131.2357276,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"夕日の広場","lat":31.3754917,"lon":131.3217346,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"グラスアート黒木","lat":31.9931952,"lon":131.2348346,"kind":"viewpoint","wikipedia":null,"k":"viewpoint"},
+{"name":"鰐塚山","lat":31.7688497,"lon":131.2694868,"kind":"peak","wikipedia":"https://ja.wikipedia.org/wiki/%E9%B0%90%E5%A1%9A%E5%B1%B1","k":"scenic"},
+{"name":"都井岬","lat":31.3670127,"lon":131.3417673,"kind":"coast","wikipedia":"https://ja.wikipedia.org/wiki/%E9%83%BD%E4%BA%95%E5%B2%AC","k":"scenic"}
+]

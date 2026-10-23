@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5517520340","name":"ますや書店","lat":35.50607,"lon":136.22495,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5517520349","name":"いわね書店","lat":35.50448,"lon":136.22582,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5517520353","name":"松尾自転車店","lat":35.50279,"lon":136.22817,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5517520457","name":"望月スポーツ","lat":35.50452,"lon":136.22178,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11247678352","name":"アートショップ大嶋","lat":35.6463,"lon":136.07481,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:11516222357","name":"Tsuruga Books&Commonsちえなみき","lat":35.64487,"lon":136.07487,"pref":"福井","genres":["shopping"],"indoor":true,"url":"https://chienamiki.jp/","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-20:00"},
+{"id":"osm:node:12108003059","name":"にしおか","lat":35.65306,"lon":136.07335,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:12108003061","name":"千田書店","lat":35.65294,"lon":136.0733,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:12108003063","name":"リサイクルコレクションmono","lat":35.65276,"lon":136.07327,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12108003070","name":"シンドウ","lat":35.65062,"lon":136.0729,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:way:1385434665","name":"ブックオフ","lat":35.6432,"lon":136.04996,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-22:00","tel":"+81770219900"}
+]

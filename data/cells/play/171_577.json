@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:6253225471","name":"白樺台中央公園","lat":42.96172,"lon":144.44733,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:437668460","name":"鶴ケ岱公園","lat":42.97938,"lon":144.3981,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"つるがたいこうえん"},
+{"id":"osm:way:474513818","name":"千代の浦マリンパーク","lat":42.9672,"lon":144.38887,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:474514926","name":"貝塚公園","lat":42.99418,"lon":144.41148,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:531691013","name":"旭町公園","lat":42.98568,"lon":144.39203,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:629128507","name":"春採公園","lat":42.97572,"lon":144.40314,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:17830776","name":"栄町平和公園","lat":42.9853,"lon":144.3871,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"さかえまちへいわこうえん"},
+{"id":"osm:way:1209684700","name":"舟着き広場","lat":42.98742,"lon":144.39685,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1209684723","name":"白樺5号公園","lat":42.9583,"lon":144.45236,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1318037498","name":"白樺8号公園","lat":42.95988,"lon":144.44256,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:536632318","name":"旧太平洋炭礦青雲台体育館","lat":42.96985,"lon":144.42549,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

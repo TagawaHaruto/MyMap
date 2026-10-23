@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:12989756568","name":"H-IIロケットモックアップ","lat":30.73203,"lon":130.99036,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:850505831","name":"旧種子島空港","lat":30.54574,"lon":130.95093,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5268913007","name":"いちに会館","lat":30.53238,"lon":130.95904,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5269332257","name":"グリーンホテルさかえ","lat":30.53026,"lon":130.95743,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5302849442","name":"公園通り","lat":30.53224,"lon":130.9624,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5305798742","name":"太陽の里ロッジ（宿泊施設）","lat":30.52829,"lon":130.96668,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1414161217","name":"池田旅館","lat":30.73279,"lon":130.9953,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1414161247","name":"民宿おぐら","lat":30.73187,"lon":130.99491,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1414161291","name":"種子島西之表市民宿みゆき","lat":30.7324,"lon":130.99454,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

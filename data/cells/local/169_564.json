@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:3688650337","name":"函館 美鈴","lat":42.35484,"lon":141.0186,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4609259994","name":"杉養蜂園","lat":42.49385,"lon":141.1436,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4609286289","name":"藤崎わさび園","lat":42.49389,"lon":141.14363,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5350221322","name":"室蘭中央卸売市場","lat":42.35705,"lon":141.04241,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13429908613","name":"三徳平川商店","lat":42.33473,"lon":141.0113,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:238811748","name":"玉川本店","lat":42.49392,"lon":141.14386,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:238813596","name":"うさぎや","lat":42.49349,"lon":141.14337,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:429794055","name":"魚卵人","lat":42.45425,"lon":141.2036,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"https://sk-suikou.com/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13431757246","name":"室蘭市公設地方卸売市場","lat":42.33382,"lon":141.02239,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:13754836366","name":"登別市民プール","lat":42.42298,"lon":141.12562,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:364715014","name":"新和産業アイスアリーナ室蘭","lat":42.35257,"lon":141.00926,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.city.muroran.lg.jp/administration/?content=1578","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:384498120","name":"登別市総合体育館","lat":42.39222,"lon":141.07979,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"0143-85-5552"},
+{"id":"osm:way:961188449","name":"登別カントリー倶楽部","lat":42.48978,"lon":141.1103,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.noboribetsu-cc.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"のぼりべつかんとりーくらぶ"},
+{"id":"osm:node:4609020292","name":"むろらん高原だんパラキャンプ場","lat":42.41319,"lon":141.00168,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:10841586833","name":"つどいの館 キャンプ場","lat":42.45268,"lon":141.13069,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12823558774","name":"登別野営場","lat":42.4685,"lon":141.16122,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13026598761","name":"室蘭キャンプ＆パークだんパラ","lat":42.41185,"lon":141.00126,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1302604863","name":"大地のnimaキャンプ場","lat":42.38991,"lon":141.0727,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0143-88-0002"},
+{"id":"osm:way:1382911606","name":"いずみ温泉キャンプ場","lat":42.45605,"lon":141.19562,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0144-87-2621"}
+]

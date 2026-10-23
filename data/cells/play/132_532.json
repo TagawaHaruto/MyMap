@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:297168474","name":"童夢公園","lat":33.0191,"lon":133.00764,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:647742280","name":"西南大規模公園","lat":33.02235,"lon":133.01602,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1317150776","name":"四万十森林公園","lat":33.21317,"lon":133.12884,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12901241589","name":"TAP DANCE STUDIO","lat":33.20956,"lon":133.13438,"pref":"高知","genres":["outdoor","play"],"indoor":true,"url":"","note":"ダンス","g":"play","k":"sports"},
+{"id":"osm:node:12190169205","name":"窪川四万十会館","lat":33.21394,"lon":133.12909,"pref":"高知","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

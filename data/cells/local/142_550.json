@@ -1,0 +1,17 @@
+[
+{"id":"osm:way:717167972","name":"馬籠館","lat":35.52425,"lon":137.56565,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"まごめかん"},
+{"id":"osm:way:632357324","name":"大桑村村民体育館","lat":35.70021,"lon":137.69256,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:633680649","name":"上松B＆G海洋センター","lat":35.74722,"lon":137.71332,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3642001369","name":"阿寺渓谷キャンプ場","lat":35.66534,"lon":137.62917,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11195227195","name":"阿寺渓谷キャンプ場","lat":35.7019,"lon":137.57975,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13257920502","name":"ties Camping Ground Nagiso","lat":35.61673,"lon":137.62183,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://tiescamp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0264-24-0332"},
+{"id":"osm:node:14285437356","name":"ふるさと村自然園 せいなの森キャンプ場","lat":35.52185,"lon":137.66238,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://seinanomori.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-46-2525"},
+{"id":"osm:node:14286934762","name":"田立の滝オートキャンプ場","lat":35.61265,"lon":137.5498,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-75-5797"},
+{"id":"osm:node:14287072702","name":"のぞきど森林公園キャンプ場","lat":35.66311,"lon":137.66026,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.vill.okuwa.lg.jp/kanko/miru-asobu/outdoor-sports/nature_nozokido.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-6307-6992"},
+{"id":"osm:node:14287072715","name":"中津川竜神の滝キャンプ場","lat":35.64113,"lon":137.50738,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287084557","name":"蘭キャンプ場","lat":35.5721,"lon":137.63223,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0264-58-2215"},
+{"id":"osm:node:14287123142","name":"ほしとせせらぎのぐらんぴんぐ（クアリゾート湯舟沢）","lat":35.50918,"lon":137.57423,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"https://hoshi-glamping.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0573-69-5000"},
+{"id":"osm:way:866148556","name":"せいなの森キャンプ場","lat":35.51077,"lon":137.66522,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.seinanomori.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-46-2525"},
+{"id":"osm:way:879152514","name":"大平キャンプ場","lat":35.56324,"lon":137.70131,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1034927393","name":"子野の里 中山道いこいの場","lat":35.50513,"lon":137.51732,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

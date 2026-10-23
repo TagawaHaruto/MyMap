@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1131619135","name":"ヒマラヤスポーツ&ゴルフ 出水店","lat":32.11111,"lon":130.3276,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:1427875730","name":"TSUTAYA","lat":32.09401,"lon":130.34941,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1427914216","name":"ブックオフ","lat":32.09346,"lon":130.35056,"pref":"鹿児島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

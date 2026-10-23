@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:13253873959","name":"Ｄ51 241モニュメント","lat":42.8756,"lon":141.81868,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:627367070","name":"追分ホテルわたなべ","lat":42.87418,"lon":141.81207,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.hotel-watanabe.jp/","note":"宿","g":"heritage","k":"lodging"}
+]

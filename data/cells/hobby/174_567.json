@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:10012481678","name":"ブックオフ","lat":43.56858,"lon":141.9316,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-21:00","tel":"+81 125 26 1280"},
+{"id":"osm:way:520284447","name":"つたや","lat":43.5546,"lon":141.91777,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

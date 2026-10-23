@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:1978840791","name":"今井書店 境港店","lat":35.53956,"lon":133.23284,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://www.imaishotengroup.co.jp/","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-20:00"},
+{"id":"osm:node:14040817572","name":"木のおもちゃ・わらべうた「ここあん（子己庵）」","lat":35.53862,"lon":133.23926,"pref":"鳥取","genres":["shopping"],"indoor":true,"url":"https://cocoan.jp/","note":"おもちゃ","g":"hobby","k":"hobby","oh":"Tu,Th,St 10::-17:00","tel":"0859-44-8607"}
+]

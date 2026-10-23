@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6164766409","name":"Kiosk","lat":36.14125,"lon":137.2515,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:node:6164766423","name":"三川屋本店","lat":36.14244,"lon":137.25909,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6164766464","name":"Blue Leaf","lat":36.14282,"lon":137.25536,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6164768196","name":"San ai handmade","lat":36.14232,"lon":137.25934,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","wc":"yes"},
+{"id":"osm:node:10972119105","name":"舩坂酒造店","lat":36.14071,"lon":137.25966,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"http://funasaka-shozu.co.jp","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 08:30-18:00","tel":"+81 577-32-0016"},
+{"id":"osm:node:13683997793","name":"なべしま銘茶","lat":36.14431,"lon":137.25998,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"なべしまめいちゃ","oh":"Mo-Su 10:00-17:00"},
+{"id":"osm:node:13684085988","name":"swing HIDE TAKAYAMA","lat":36.14355,"lon":137.2599,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13914296592","name":"Boss","lat":36.15264,"lon":137.2621,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2291055192","name":"Jinyamae Morning Market","lat":36.1395,"lon":137.25912,"pref":"岐阜","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","wc":"yes"},
+{"id":"osm:node:2291055940","name":"宮川朝市","lat":36.14469,"lon":137.25785,"pref":"岐阜","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","wp":"ja:宮川朝市","oh":"Mo-Su 07:00-12:00","wc":"yes"},
+{"id":"osm:node:6164768207","name":"朝市","lat":36.13966,"lon":137.25824,"pref":"岐阜","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market","wc":"yes"},
+{"id":"osm:node:14285746936","name":"カクレハ高原オートキャンプ場","lat":36.11234,"lon":137.41593,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286830191","name":"岩舟河川公園","lat":36.20471,"lon":137.29137,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-78-2818"},
+{"id":"osm:node:14286852439","name":"奥飛騨温泉郷オートキャンプ場","lat":36.24911,"lon":137.49925,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0578-89-3410"},
+{"id":"osm:node:14286878827","name":"美女高原キャンプ場","lat":36.10232,"lon":137.31799,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-55-3820"},
+{"id":"osm:node:14286878832","name":"カクレハ高原オートキャンプ場","lat":36.09294,"lon":137.38576,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0577-55-3464"},
+{"id":"osm:node:14286894374","name":"なんもないキャンプ場","lat":36.00201,"lon":137.36047,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4440-9973"}
+]

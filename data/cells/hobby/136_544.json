@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6854769920","name":"プラスゲオ","lat":34.06778,"lon":136.19059,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6854831186","name":"おくむら模型","lat":34.07406,"lon":136.19596,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:6854831188","name":"ウチヤマスポーツ","lat":34.0731,"lon":136.18778,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6856824414","name":"川崎尚古堂","lat":34.07463,"lon":136.19737,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6856839499","name":"北村自転車店","lat":34.07573,"lon":136.19608,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6859731691","name":"シンポー釣具","lat":34.07389,"lon":136.20008,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6859731695","name":"尾鷲自転車商会","lat":34.07557,"lon":136.19844,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1286188614","name":"つりエサ市場 尾鷲店","lat":34.07952,"lon":136.18786,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:1286552746","name":"さらや商会","lat":34.07308,"lon":136.19857,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"さらやしょかい"},
+{"id":"osm:way:1286988091","name":"素材工房えさきち","lat":34.05106,"lon":136.19598,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby","pk":2}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:2386724461","name":"伊予連合農協青果","lat":33.77401,"lon":132.70809,"pref":"愛媛","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:2386747452","name":"産直市まさき村","lat":33.7896,"lon":132.71832,"pref":"愛媛","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:2385940956","name":"トミタレークゴルフ","lat":33.77136,"lon":132.72424,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4474600257","name":"ザ・ココナツウェルネスクラブ 古三津","lat":33.85687,"lon":132.72282,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:450534886","name":"ザ・ココナツウエルネスクラブ　古三津","lat":33.85681,"lon":132.7228,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1523938241","name":"空港東第四公園テニスコート","lat":33.81792,"lon":132.71518,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1529300584","name":"伊予銀行 テニスコート","lat":33.81078,"lon":132.73758,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1530509936","name":"伊予銀行 体育センター","lat":33.8119,"lon":132.74191,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1530510026","name":"テニススクールWinner","lat":33.81386,"lon":132.7449,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1547836524","name":"Kids1 Tennis School","lat":33.83417,"lon":132.74636,"pref":"愛媛","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81-89-954-3719"},
+{"id":"osm:node:4225380889","name":"DASH島船屋","lat":33.85261,"lon":132.52161,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913292","name":"GoGoShima North Camp Site","lat":33.91229,"lon":132.68039,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-4113-5842"},
+{"id":"osm:node:14287528328","name":"姫ヶ浜ビーチ","lat":33.9577,"lon":132.62276,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"089-997-0149"}
+]

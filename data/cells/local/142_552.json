@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:10800570300","name":"塩の里お土産","lat":35.58887,"lon":138.04886,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://shionosato.jp/","note":"お土産・特産品","g":"local","k":"souvenir","pk":2},
+{"id":"osm:node:10800570301","name":"美農屋豆腐店","lat":35.58888,"lon":138.0492,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10800570302","name":"塩の里直売所","lat":35.58887,"lon":138.04881,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://shionosato.jp/","note":"お土産・特産品","g":"local","k":"souvenir","pk":2},
+{"id":"osm:node:10970253328","name":"花ちゃの無人販売所","lat":35.61141,"lon":138.0523,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"はなちゃ"},
+{"id":"osm:way:1196296733","name":"北沢農園","lat":35.56113,"lon":138.04097,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:12372897688","name":"大鹿村運動広場","lat":35.56445,"lon":138.03493,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"https://www.vill.ooshika.nagano.jp/undouhiroba/","note":"遊び・スポーツ","g":"local","k":"activity","pk":2},
+{"id":"osm:node:4908695558","name":"農鳥キャンプ場","lat":35.63179,"lon":138.22987,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11070465738","name":"四徳温泉キャンプ場","lat":35.65328,"lon":138.00553,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://shitoku.net/%e6%b3%8a%e3%81%be%e3%82%8b/%e5%85%b1%e6%9c%89%e6%96%bd%e8%a8%ad/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:11171034327","name":"森の小さな秘密基地","lat":35.62632,"lon":138.05737,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://morichi152.com/","note":"キャンプ・野外","g":"local","k":"camp","kana":"もりのちいさなひみつきち"},
+{"id":"osm:node:13366316882","name":"少年少女山の家","lat":35.70545,"lon":138.09495,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://yamanoie.wordpress.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:826365541","name":"大池高原キャンプ場","lat":35.60234,"lon":138.07244,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.vill.ooshika.nagano.jp/2020/07/13/kyannpuzyou/","note":"キャンプ・野外","g":"local","k":"camp","pk":2},
+{"id":"osm:way:826633060","name":"鳥ヶ池キャンプ場","lat":35.55603,"lon":138.08594,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.vill.ooshika.nagano.jp/2023/03/31/kyannpuzyou/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1042821418","name":"大鹿キャンプ場ストリーム深ケ沢","lat":35.50167,"lon":138.01786,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://ooshika-kanko.com/nikki/2016/07/post-72.html","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1303592983","name":"三伏峠キャンプ場","lat":35.55577,"lon":138.14243,"pref":"静岡","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

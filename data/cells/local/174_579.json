@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:11295472481","name":"クイックほかほか弁当","lat":43.55064,"lon":144.97761,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:712477898","name":"魚の勝頼","lat":43.55415,"lon":144.95922,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:711653322","name":"ホクレン根室地区家畜市場","lat":43.52596,"lon":144.96149,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:709907174","name":"中標津町シルバースポーツセンター","lat":43.56549,"lon":144.98342,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:712478225","name":"中標津町武道館","lat":43.55326,"lon":144.96372,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"http://www.zncs.or.jp/gym/budokan.html","note":"遊び・スポーツ","g":"local","k":"activity","kana":"なかしべつちょうぶどうかん","tel":"+81 153 72 7002"},
+{"id":"osm:way:1218918679","name":"中標津町総合体育館","lat":43.55532,"lon":144.96941,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"http://www.zncs.or.jp/gym/taiikukan.html","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:中標津町総合体育館","kana":"なかしべつちょうそうごうたいいくかん","tel":"+81 153 72 2316","pk":2},
+{"id":"osm:node:2977657770","name":"中標津町緑ヶ丘森林公園 林間キャンプ場","lat":43.56365,"lon":144.95636,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12811729098","name":"ウシ空のキャンプ場","lat":43.61408,"lon":144.86997,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

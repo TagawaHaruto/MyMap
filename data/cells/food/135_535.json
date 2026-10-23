@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3717942814","name":"Oku-Iya Hotel","lat":33.86766,"lon":133.90386,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3717945526","name":"Yanamoto","lat":33.86594,"lon":133.90207,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4062690147","name":"京柱茶屋","lat":33.82389,"lon":133.86171,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6874544510","name":"道の駅にしいや","lat":33.88886,"lon":133.81102,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wp":"ja:道の駅にしいや","kana":"みちのえきにしいや"},
+{"id":"osm:node:4983727421","name":"森のくまさん","lat":33.875,"lon":133.83474,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"We-Mo 09:00-18:00"},
+{"id":"osm:node:9195499906","name":"ハレとケ珈琲","lat":33.96163,"lon":133.80066,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:312682744","name":"桃源郷祖谷の山里","lat":33.86381,"lon":133.8762,"pref":"徳島","genres":["food"],"indoor":true,"url":"http://www.tougenkyo-iya.jp/stay/index.html","note":"カフェ","g":"food","k":"cafe","tel":"+81 883 88 2540"},
+{"id":"osm:way:389529571","name":"Tsuzuki Soba Workshop","lat":33.85825,"lon":133.89696,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:389543101","name":"Nakochi (life share cottage)","lat":33.88289,"lon":133.93559,"pref":"徳島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

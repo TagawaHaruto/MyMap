@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:437240178","name":"奥中山自然休養村遊具広場","lat":40.08207,"lon":141.19616,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548551667","name":"河川公園","lat":40.07031,"lon":141.22882,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:548551668","name":"コスモスパーク","lat":40.08142,"lon":141.19811,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:814923566","name":"桜松公園","lat":40.06878,"lon":141.06116,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:993374099","name":"いわてまち川の駅","lat":40.0388,"lon":141.24338,"pref":"岩手","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

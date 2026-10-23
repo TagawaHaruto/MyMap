@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3045225973","name":"まつしま","lat":34.67597,"lon":131.84152,"pref":"島根","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:9816075965","name":"セカンドストリート","lat":34.68966,"lon":131.81916,"pref":"島根","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:684555771","name":"ヒマラヤスポーツ&ゴルフ 益田店","lat":34.6903,"lon":131.81744,"pref":"島根","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:684555783","name":"ブックセンタージャスト益田高津店","lat":34.69039,"lon":131.81882,"pref":"島根","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1366114706","name":"明林堂書店","lat":34.6773,"lon":131.8446,"pref":"島根","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

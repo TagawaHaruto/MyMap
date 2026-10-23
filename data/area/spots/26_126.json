@@ -1,0 +1,19 @@
+[
+{"id":"osm:way:1169515015","name":"久米島自然文化センター","lat":26.34174,"lon":126.76375,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"https://en.wikipedia.org/wiki/Kumejima_Museum","note":"博物館","k":"museum"},
+{"id":"osm:way:1413219649","name":"上江洲家住宅","lat":26.35504,"lon":126.74888,"pref":"沖縄","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum","kana":"うえずか じゅうたく"},
+{"id":"osm:node:1992264780","name":"畳石","lat":26.33565,"lon":126.82529,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","kana":"たたみいし","oh":"24/7"},
+{"id":"osm:node:4832279529","name":"はての浜","lat":26.3457,"lon":126.88539,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:5260992821","name":"中の浜","lat":26.34019,"lon":126.86421,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:5272572812","name":"ゆいまーる館","lat":26.35552,"lon":126.806,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:5297018348","name":"五枝の松","lat":26.35872,"lon":126.74254,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:5885062548","name":"涙石","lat":26.34764,"lon":126.82059,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction","kana":"ないだいし"},
+{"id":"osm:node:10870698864","name":"ミーフガー","lat":26.38687,"lon":126.75474,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:10870787885","name":"タチジャミ","lat":26.3894,"lon":126.76461,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:13859695916","name":"北原海岸の石切場跡","lat":26.37404,"lon":126.72426,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:13859695920","name":"おばけ坂","lat":26.37267,"lon":126.75377,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:1992264763","name":"久米島ウミガメ館","lat":26.33641,"lon":126.82622,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"動物園","k":"park"},
+{"id":"osm:node:5885064120","name":"鳥の口","lat":26.29325,"lon":126.80431,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint","kana":"とりのくち"},
+{"id":"osm:way:1464195528","name":"イーフビーチ展望台","lat":26.32826,"lon":126.80672,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:node:1992264778","name":"バーデハウス (Bade Haus)","lat":26.33654,"lon":126.82497,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"プール・遊び場","k":"play","kana":"ばではうす"},
+{"id":"osm:way:769047652","name":"久米島地鶏牧場","lat":26.37195,"lon":126.75234,"pref":"沖縄","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4484114541","name":"知床峠","lat":44.05432,"lon":145.10515,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","pk":2},
+{"id":"osm:node:4484114542","name":"知床峠","lat":44.05489,"lon":145.10472,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic","pk":2},
+{"id":"osm:node:3789932844","name":"知床プリンスホテル風なみ季","lat":44.07166,"lon":145.00049,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3789932867","name":"知床第一ホテル","lat":44.07063,"lon":145.00423,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:知床第一ホテル"},
+{"id":"osm:node:5729393122","name":"Rider’s House","lat":44.02119,"lon":145.18867,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:6506449985","name":"民宿鷲の宿","lat":44.03414,"lon":145.20845,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://fishowl-observatory.org","note":"宿","g":"heritage","k":"lodging","kana":"みんしゅくわしのやど","tel":"+81153872877"},
+{"id":"osm:node:13514290901","name":"Shiretokoserai","lat":44.01543,"lon":145.19061,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13854934801","name":"The SUNSET Shiretoko","lat":44.07328,"lon":145.00068,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:458537547","name":"民宿よね丸","lat":44.01644,"lon":145.18921,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:458538259","name":"民宿本間","lat":44.05059,"lon":145.23128,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

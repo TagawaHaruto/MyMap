@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:8384887617","name":"うなぎ　徳右ェ門","lat":35.55528,"lon":135.90335,"pref":"福井","genres":["food"],"indoor":true,"url":"https://unagiryouri-tokuemon.com/","note":"飲食店","g":"food","k":"restaurant","tel":"0770-45-0039"},
+{"id":"osm:node:10756240814","name":"湖畔","lat":35.57799,"lon":135.87317,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:10757747990","name":"鮨一","lat":35.52292,"lon":135.75145,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:11829550486","name":"うなぎ淡水","lat":35.55997,"lon":135.89091,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:778889294","name":"すし良","lat":35.50564,"lon":135.7504,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:way:909322770","name":"割烹おとり","lat":35.60603,"lon":135.9163,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:909322771","name":"シルバーショップ湖畔","lat":35.60586,"lon":135.91056,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:909322772","name":"味一休","lat":35.60653,"lon":135.91106,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:909322774","name":"美浜町健康楽膳施設こるぱ","lat":35.60012,"lon":135.91446,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10756368219","name":"カフェ縞","lat":35.55932,"lon":135.89698,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:10757751530","name":"GOSHOEN","lat":35.51357,"lon":135.75185,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11829550479","name":"サタCafe","lat":35.55977,"lon":135.87861,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11829574842","name":"Café MIROKU","lat":35.53012,"lon":135.98105,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11883827611","name":"きらやま茶屋","lat":35.55579,"lon":135.90957,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:11883864540","name":"ぽっぽ茶屋ほっとむら","lat":35.51654,"lon":135.89752,"pref":"福井","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

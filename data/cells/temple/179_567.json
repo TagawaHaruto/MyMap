@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:7977296210","name":"雄興神社","lat":44.91179,"lon":141.93968,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:423647485","name":"幌萌神社","lat":44.90153,"lon":141.9801,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:840813009","name":"神社","lat":44.96777,"lon":141.77508,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:840825244","name":"上幌延諏訪神社","lat":44.99047,"lon":141.88195,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:841157601","name":"開進神社","lat":44.94803,"lon":141.89234,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:842551332","name":"更岸神社","lat":44.83747,"lon":141.7841,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:855420652","name":"長応寺","lat":44.98178,"lon":141.87966,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

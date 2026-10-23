@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:382147886","name":"大南町民広場","lat":33.73728,"lon":132.79172,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:395015017","name":"衝上断層公園","lat":33.73154,"lon":132.79589,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:588271019","name":"砥部町陶街道ゆとり公園","lat":33.74694,"lon":132.79642,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:588271448","name":"笛ヶ滝公園","lat":33.65118,"lon":132.90117,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:777632443","name":"内子町城の台公園","lat":33.56808,"lon":132.80707,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:780937552","name":"花の木公園","lat":33.571,"lon":132.78816,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:780938671","name":"御嶽世善桜公園","lat":33.56856,"lon":132.87371,"pref":"愛媛","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:354721150","name":"砥部町陶芸創作館","lat":33.7371,"lon":132.79012,"pref":"愛媛","genres":["play"],"indoor":true,"url":"","note":"アートセンター","g":"play","k":"amuse","pk":2},
+{"id":"osm:way:354721357","name":"砥部焼伝統産業会館","lat":33.73904,"lon":132.79192,"pref":"愛媛","genres":["play"],"indoor":true,"url":"","note":"アートセンター","g":"play","k":"amuse","wp":"ja:砥部焼伝統産業会館"}
+]

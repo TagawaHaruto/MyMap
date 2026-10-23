@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:7930229343","name":"奥尻空港 旧滑走路跡地","lat":42.06737,"lon":139.44234,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8326983903","name":"北追岬","lat":42.16625,"lon":139.40946,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378029645","name":"慰霊碑","lat":42.07204,"lon":139.47001,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8653192466","name":"徳洋記念碑","lat":42.05226,"lon":139.45057,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:689032833","name":"時空翔","lat":42.05491,"lon":139.44979,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

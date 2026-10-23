@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:766774488","name":"電源神社","lat":37.15242,"lon":139.24643,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7973042608","name":"熊野神社","lat":37.19302,"lon":139.08062,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13898287931","name":"大福銀山十二神社","lat":37.0839,"lon":139.23759,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1067978742","name":"東養寺","lat":37.22965,"lon":139.00554,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1067978749","name":"龍徳寺","lat":37.22883,"lon":139.00607,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1067978759","name":"天満宮","lat":37.22929,"lon":139.00629,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

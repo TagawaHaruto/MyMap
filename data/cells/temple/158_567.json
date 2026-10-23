@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:7757109402","name":"藤原比古神社","lat":39.63614,"lon":141.95976,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10978898235","name":"Zuiunji 瑞雲寺","lat":39.56798,"lon":141.92719,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:104105888","name":"長根寺高台","lat":39.6424,"lon":141.9346,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:104105889","name":"長根寺","lat":39.64237,"lon":141.93442,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:104221760","name":"長根寺","lat":39.64232,"lon":141.93486,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:841740366","name":"創価学会","lat":39.62764,"lon":141.91445,"pref":"岩手","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

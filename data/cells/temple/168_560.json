@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:429232105","name":"蓮華寺","lat":42.07519,"lon":140.06262,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:429232106","name":"無量寺","lat":42.07482,"lon":140.06326,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:736448906","name":"正受寺","lat":42.04775,"lon":140.08504,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:736448908","name":"本誓寺","lat":42.04741,"lon":140.08477,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:737159951","name":"稲荷大明神","lat":42.05165,"lon":140.07771,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:737163038","name":"八幡神社","lat":42.03277,"lon":140.09667,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:737167427","name":"元和八幡神社","lat":42.00953,"lon":140.10542,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:737177799","name":"正一稲荷大明神","lat":42.02554,"lon":140.10272,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:737180177","name":"龍寶寺","lat":42.00074,"lon":140.12278,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:737180218","name":"栄浜八幡神社","lat":42.00229,"lon":140.12333,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

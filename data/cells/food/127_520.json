@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:1928524001","name":"麺処ふくなが牛ノ浜店","lat":31.97386,"lon":130.20725,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:3024414240","name":"Queen's Cafe","lat":31.75527,"lon":130.20432,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"Mo, We-Su 10:00-17:00","wc":"yes"}
+]

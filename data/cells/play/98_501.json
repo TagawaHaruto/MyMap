@@ -1,0 +1,9 @@
+[
+{"id":"osm:way:1144578855","name":"うえのドイツ文化村","lat":24.71893,"lon":125.32343,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1005792734","name":"マリーナプール","lat":24.71959,"lon":125.32548,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1145459735","name":"ミラージュプール","lat":24.72113,"lon":125.33981,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1197854312","name":"ビーチサイドプール","lat":24.72018,"lon":125.34188,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1217462267","name":"ビーチサイドプール","lat":24.72029,"lon":125.34136,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1503293199","name":"サンタモニカプール","lat":24.71964,"lon":125.33257,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1227750520","name":"グランブルー","lat":24.72088,"lon":125.34179,"pref":"沖縄","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"}
+]

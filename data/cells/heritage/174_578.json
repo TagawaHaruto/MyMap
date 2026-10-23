@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:8968671387","name":"緑ダム石碑","lat":43.67169,"lon":144.62829,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5110240021","name":"湯宿だいいち","lat":43.58756,"lon":144.72271,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

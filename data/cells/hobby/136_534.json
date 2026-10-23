@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:11291231795","name":"宮脇書店","lat":34.14586,"lon":133.69889,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:node:11445465516","name":"POLER","lat":34.1288,"lon":133.65239,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:625764204","name":"シノハラスポーツ","lat":34.1246,"lon":133.68647,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:625977154","name":"ciclo vita シクロヴィータ","lat":34.13317,"lon":133.6937,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:625977160","name":"ブックオフ","lat":34.12596,"lon":133.68753,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:626239997","name":"宮脇書店","lat":34.12509,"lon":133.66297,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"みやわきしょてん"},
+{"id":"osm:way:629170492","name":"ビークルセガワ","lat":34.09104,"lon":133.67665,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:629193293","name":"ビークルハウスツツミ","lat":34.18129,"lon":133.70965,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:658425712","name":"2ndStreet 観音寺店","lat":34.13455,"lon":133.69322,"pref":"香川","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:3081918840","name":"かつら旅館","lat":42.69728,"lon":143.13123,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"かつらりょかん"},
+{"id":"osm:node:3081918841","name":"かつら旅館","lat":42.70419,"lon":143.13692,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3081918842","name":"きくや旅館別館","lat":42.69571,"lon":143.12992,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"きくやりょかんべっかん"},
+{"id":"osm:node:3081918843","name":"フェーリエンドルフ","lat":42.6604,"lon":143.1453,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ふぇーりえんどるふ"},
+{"id":"osm:node:3081918844","name":"十勝オーベルジュ","lat":42.6602,"lon":143.14555,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"とかちおーべるじゅ"},
+{"id":"osm:way:273099784","name":"日の出旅館","lat":42.64997,"lon":143.18731,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ひのでりょかん"}
+]

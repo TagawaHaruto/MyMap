@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:8356427530","name":"株式会社日野屋本店","lat":38.9193,"lon":141.33487,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8401168468","name":"ブックマートせんまや","lat":38.92395,"lon":141.3458,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1055888354","name":"小原書店","lat":38.99402,"lon":141.32806,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

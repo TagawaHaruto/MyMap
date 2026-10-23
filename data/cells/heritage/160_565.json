@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4290461851","name":"三浦哲郎文学記念碑","lat":40.2128,"lon":141.30265,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5271448712","name":"五輪さん","lat":40.21376,"lon":141.3023,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:7298147558","name":"野中一里塚跡","lat":40.17458,"lon":141.30548,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8232725084","name":"火行墳墓","lat":40.10737,"lon":141.2712,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:way:550805035","name":"盛土遺構","lat":40.19778,"lon":141.30631,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:550805036","name":"配石遺構","lat":40.19805,"lon":141.30655,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:559626925","name":"姉帯城跡","lat":40.17487,"lon":141.32231,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:1566511807","name":"御所野遺跡","lat":40.19795,"lon":141.30769,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:御所野遺跡","kana":"ごしょのして"},
+{"id":"osm:node:6361004785","name":"ふれあい宿舎 グリーンテージ","lat":40.05035,"lon":141.46237,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","oh":"24/7","tel":"0195-66-3000"},
+{"id":"osm:node:12394970407","name":"くずまき交流館プラトー","lat":40.00254,"lon":141.33267,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

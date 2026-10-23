@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:4595272890","name":"大沼駒ヶ岳神社","lat":42.00739,"lon":140.69926,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:222892857","name":"蛯谷稲荷神社","lat":42.13054,"lon":140.51133,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:222897147","name":"本茅部稲荷神社","lat":42.14067,"lon":140.50189,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:310758947","name":"龍光寺","lat":42.10387,"lon":140.57748,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","wc":"yes","pk":2},
+{"id":"osm:way:310764567","name":"稲荷神社","lat":42.1055,"lon":140.5747,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:way:314706765","name":"一妙寺","lat":42.10507,"lon":140.57998,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","wc":"limited"},
+{"id":"osm:way:372579419","name":"鳥崎神社","lat":42.11096,"lon":140.55956,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:way:374077235","name":"祐専寺","lat":42.10276,"lon":140.58045,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","wc":"limited","pk":2},
+{"id":"osm:way:376664356","name":"霊鷲院","lat":42.11666,"lon":140.53797,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:way:376665348","name":"富士見町稲荷神社","lat":42.11296,"lon":140.54751,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:way:376667780","name":"森三吉神社","lat":42.10459,"lon":140.58186,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:474090708","name":"港町海神社","lat":42.10946,"lon":140.59786,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:484186649","name":"鷲ノ木稲荷神社","lat":42.11783,"lon":140.53853,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:484186720","name":"浄土宗　法輪寺","lat":42.11411,"lon":140.54165,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:499214876","name":"砂原権現山・砂原稲荷神社","lat":42.12458,"lon":140.68885,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:675942630","name":"白旗神社","lat":42.12061,"lon":140.736,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:821771106","name":"赤井川神社","lat":42.00405,"lon":140.63109,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

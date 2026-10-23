@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4607342696","name":"室蘭うずら園","lat":42.39459,"lon":140.97269,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4607562999","name":"伊達市観光物産館","lat":42.47047,"lon":140.87563,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5808376262","name":"福寿園","lat":42.32017,"lon":140.97035,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5808431512","name":"蝦天本店","lat":42.31925,"lon":140.9709,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:5808558152","name":"佐藤商店","lat":42.3142,"lon":140.9724,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3104844807","name":"Japan Food Agriculture Food Market","lat":42.47265,"lon":140.86732,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:5808431521","name":"中央市場","lat":42.31902,"lon":140.97114,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:5808529130","name":"追直卸売場","lat":42.30888,"lon":140.97233,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:5808558455","name":"室蘭市武揚体育館","lat":42.31193,"lon":140.97299,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:365850764","name":"室蘭ゴルフ倶楽部","lat":42.38176,"lon":140.95605,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:367421421","name":"室蘭花の丘パークゴルフクラブ","lat":42.37318,"lon":140.99115,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","pk":2},
+{"id":"osm:way:780081282","name":"伊達市市民プール","lat":42.47237,"lon":140.87793,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14284414828","name":"室蘭グランピング","lat":42.38492,"lon":140.95657,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0143594641"},
+{"id":"osm:way:1167682192","name":"RVパーク室蘭 ZEKKEI BASE CAMP","lat":42.34108,"lon":140.9425,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

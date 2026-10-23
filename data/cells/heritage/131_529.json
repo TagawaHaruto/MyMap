@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:9718604179","name":"石垣の里 外泊","lat":32.93741,"lon":132.47851,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:453119863","name":"国民宿舎レストハウス","lat":32.94898,"lon":132.45811,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:5705929746","name":"木製遊具コーナー","lat":33.96826,"lon":135.85664,"pref":"奈良","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:node:9453443318","name":"浅里郷モニュメント","lat":33.7583,"lon":135.93962,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:586367376","name":"深田グラウンド","lat":33.77219,"lon":135.98136,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:586793491","name":"田代公園","lat":33.76465,"lon":135.99571,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:586794571","name":"紀宝町役場ふるさと資料館","lat":33.76644,"lon":135.99413,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:599909001","name":"２１世紀の森・紀伊半島森林植物公園","lat":33.96827,"lon":135.85587,"pref":"奈良","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:712731561","name":"薬師広場","lat":33.81247,"lon":135.77235,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1025274085","name":"飛雪の滝キャンプ場広場","lat":33.75824,"lon":135.92673,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1025274089","name":"浅里地区多目的グランド","lat":33.76161,"lon":135.93314,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1025274091","name":"浅里郷","lat":33.75787,"lon":135.93965,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1326137789","name":"井内みんなの広場","lat":33.78954,"lon":135.99198,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:454894833","name":"温泉プール","lat":33.93896,"lon":135.7534,"pref":"奈良","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:454894835","name":"グラウンド","lat":33.96782,"lon":135.8553,"pref":"奈良","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:713648766","name":"本宮町民プール","lat":33.83799,"lon":135.77573,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:712731568","name":"ファイン","lat":33.81312,"lon":135.77093,"pref":"和歌山","genres":["play"],"indoor":true,"url":"","note":"カラオケ","g":"play","k":"amuse"}
+]

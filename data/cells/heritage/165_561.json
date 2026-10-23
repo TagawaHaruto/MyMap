@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:462262003","name":"青函トンネル慰霊碑","lat":41.25614,"lon":140.34836,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3013670334","name":"津軽海峡冬景色歌謡碑","lat":41.25803,"lon":140.34476,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5549483043","name":"太宰治文学碑","lat":41.25803,"lon":140.34931,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8164672157","name":"三厩村立龍飛中学校跡地 蛍雪之碑","lat":41.25874,"lon":140.34417,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8357492709","name":"道路竣成記念之碑","lat":41.25821,"lon":140.3497,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8357492710","name":"牧野逸蔵先生","lat":41.25791,"lon":140.34948,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:569678295","name":"ハウス サンライズ 食堂","lat":41.25763,"lon":140.34628,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:569678297","name":"ホテル竜飛","lat":41.25716,"lon":140.34784,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 174 38 2011","wc":"yes"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3718144999","name":"Yama Yoga Studio","lat":33.8603,"lon":133.87773,"pref":"徳島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285920932","name":"四国吉野川オートキャンプ場","lat":33.83207,"lon":133.76931,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287502388","name":"梶ヶ森キャンプ場","lat":33.75831,"lon":133.75775,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-74-0256"},
+{"id":"osm:node:14287522826","name":"堂床キャンプ場","lat":33.79912,"lon":133.96903,"pref":"高知","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0887-58-3111"},
+{"id":"osm:node:14287563778","name":"奥祖谷二重かずら橋キャンプ場","lat":33.87469,"lon":133.98967,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0883-72-7620"},
+{"id":"osm:way:312174147","name":"かずら橋キャンプ村","lat":33.87987,"lon":133.8415,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://iyakei-camp.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 90 1571 5258"},
+{"id":"osm:way:312182481","name":"祖谷ふれあい公園キャンプサイト","lat":33.89153,"lon":133.81438,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 883 76 8585"},
+{"id":"osm:way:312371403","name":"祖谷渓キャンプ村","lat":33.94579,"lon":133.81434,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://iyakei-camp.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 90 9553 3795"},
+{"id":"osm:way:312545576","name":"龍宮崖コテージ","lat":33.8606,"lon":133.87718,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"http://www.ryugugake.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 80 2981 6221"}
+]

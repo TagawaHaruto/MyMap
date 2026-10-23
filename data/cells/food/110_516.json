@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:4279900592","name":"大海軒","lat":27.72984,"lon":129.01922,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","oh":"Tu-Su 11:30-21:30","tel":"0997822355"},
+{"id":"osm:node:14025380475","name":"ジョイフル","lat":27.73077,"lon":129.0209,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:node:4240812492","name":"ドウースメール","lat":27.7339,"lon":129.02049,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

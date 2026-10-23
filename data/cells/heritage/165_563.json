@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:5293437855","name":"布海苔発祥の地碑","lat":41.49677,"lon":140.97767,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:12827506477","name":"大町桂月歌碑","lat":41.31042,"lon":140.80437,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5432864741","name":"川畑旅館","lat":41.43139,"lon":140.86109,"pref":"青森","genres":["lodging"],"indoor":true,"url":"https://saikanko.sakura.ne.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ばわばたりょかん","tel":"+81 175 38 2201"},
+{"id":"osm:node:5432864743","name":"民宿芳栄丸","lat":41.43141,"lon":140.85775,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5432864744","name":"民宿みやの","lat":41.42955,"lon":140.85632,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:548811585","name":"わいどの家","lat":41.48514,"lon":140.99376,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:550369068","name":"飯田旅館","lat":41.48845,"lon":140.9951,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

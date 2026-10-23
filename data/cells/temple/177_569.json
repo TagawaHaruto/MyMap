@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6458868882","name":"美深神社","lat":44.47674,"lon":142.34495,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7093050800","name":"名寄神社","lat":44.34601,"lon":142.4708,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7644925226","name":"尊光寺","lat":44.48507,"lon":142.34362,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:9748113513","name":"五社神宮","lat":44.47467,"lon":142.37252,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:643435789","name":"開原寺","lat":44.46799,"lon":142.35225,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:643436248","name":"静円寺","lat":44.47177,"lon":142.35025,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:645963544","name":"日本キリスト教会美深教会","lat":44.48285,"lon":142.34547,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:645963579","name":"天理教名美分教会","lat":44.48172,"lon":142.34494,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:645963581","name":"キリスト教聖協団美深教会","lat":44.48167,"lon":142.34441,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:647429485","name":"妙賢寺","lat":44.48777,"lon":142.34501,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:658789634","name":"創価学会","lat":44.33485,"lon":142.46789,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:856428351","name":"八幡神社","lat":44.45513,"lon":142.41273,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:856428372","name":"乗舩寺","lat":44.43964,"lon":142.38977,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:856437082","name":"砺波神社","lat":44.36288,"lon":142.43692,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

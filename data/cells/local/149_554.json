@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:1209070012","name":"てん路　天ぷら","lat":37.34292,"lon":138.56758,"pref":"新潟","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2354368587","name":"少年広場","lat":37.37258,"lon":138.55067,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3106331851","name":"西山町総合体育館","lat":37.48781,"lon":138.6359,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:471883732","name":"長岡ニュータウン運動公園","lat":37.43446,"lon":138.7484,"pref":"新潟","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285398038","name":"sora umi tovila","lat":37.48576,"lon":138.62932,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-5943-9024"},
+{"id":"osm:node:14286350483","name":"かしわざきセントラルビーチ","lat":37.37142,"lon":138.54552,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://k-c-b.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0257-32-2615"},
+{"id":"osm:node:14286350498","name":"長岡市おぐに森林公園","lat":37.28146,"lon":138.71717,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://www.ogurin-park.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0258-95-3161"},
+{"id":"osm:node:14286401017","name":"ゆうぎオートキャンプ場（西山自然体験交流施設）","lat":37.49327,"lon":138.67242,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"https://www.ksz.or.jp/yuugi/index.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0257-31-6300"},
+{"id":"osm:node:14286401023","name":"ネイチャーランド椎谷","lat":37.47128,"lon":138.62136,"pref":"新潟","genres":["outdoor"],"indoor":false,"url":"http://www.natureland-shiiya.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"025-526-8807"}
+]

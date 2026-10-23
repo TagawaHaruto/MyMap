@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5260972120","name":"杉浦自転車店","lat":34.62843,"lon":137.10254,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5260972130","name":"アラキスポーツ","lat":34.62789,"lon":137.10198,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:386746225","name":"やまちゃんの釣具店","lat":34.58294,"lon":137.02141,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","tel":"+81 531 36 5814"},
+{"id":"osm:way:700625980","name":"早川釣具店","lat":34.58566,"lon":137.02587,"pref":"愛知","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

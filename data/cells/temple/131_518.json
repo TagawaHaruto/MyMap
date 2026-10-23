@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:3806059172","name":"大瀬戸カトリック教会","lat":32.93367,"lon":129.64208,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4558632952","name":"長濱神社","lat":32.93286,"lon":129.64352,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4558650936","name":"市杵島神社","lat":32.93141,"lon":129.62392,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4583458603","name":"黒崎修道院","lat":32.84027,"lon":129.71552,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4583458605","name":"出津修道院","lat":32.84448,"lon":129.69893,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4583458606","name":"宮崎カリタス修道会聖ヨゼフ修道院","lat":32.8532,"lon":129.70383,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4583458607","name":"カトリック黒崎教会","lat":32.83938,"lon":129.71567,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","pk":2},
+{"id":"osm:node:12833589536","name":"龍神のほこら","lat":32.88727,"lon":129.60595,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:460658971","name":"市杵島神社","lat":32.98927,"lon":129.64611,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:794228080","name":"枯松神社","lat":32.83938,"lon":129.72323,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"}
+]

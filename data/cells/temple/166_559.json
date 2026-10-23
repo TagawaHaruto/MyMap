@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:6078286543","name":"江良八幡神社","lat":41.54723,"lon":139.99608,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/02/02018.html","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6078292750","name":"原口八幡神社","lat":41.60546,"lon":139.98857,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.hokkaidojinjacho.jp/data/02/02019.html","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:801527463","name":"西教寺","lat":41.54605,"lon":139.99357,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:801527535","name":"感應院","lat":41.54604,"lon":139.99302,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:801527537","name":"泉龍院","lat":41.54651,"lon":139.9931,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:802376475","name":"源照寺","lat":41.60366,"lon":139.98686,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

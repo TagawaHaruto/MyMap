@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5285073298","name":"観音像","lat":43.56669,"lon":141.93096,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:520284609","name":"滝川海牛","lat":43.55222,"lon":141.91412,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2476397569","name":"ホテルグリンパーク新十津川","lat":43.53139,"lon":141.84486,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:way:525302244","name":"ホテル三浦華園","lat":43.55358,"lon":141.90655,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.miurakaen.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-125-22-2101"}
+]

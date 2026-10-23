@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:7809126888","name":"忠魂碑","lat":40.23137,"lon":140.7357,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7836932847","name":"神明社","lat":40.21043,"lon":140.63587,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7837185267","name":"忠魂碑","lat":40.21464,"lon":140.67554,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8982689601","name":"大葛金山跡","lat":40.13718,"lon":140.70065,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8982689602","name":"金山製錬所跡","lat":40.13778,"lon":140.70139,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9081508932","name":"忠魂碑","lat":40.2049,"lon":140.59366,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:798382974","name":"餌釣鉱山跡","lat":40.24138,"lon":140.60145,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:798397453","name":"小真木鉱山跡","lat":40.24784,"lon":140.73053,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:966156922","name":"旧喫茶ポニー","lat":40.22972,"lon":140.57924,"pref":"秋田","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7424323709","name":"奥ノ湯 森吉山荘","lat":40.04986,"lon":140.58525,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:7424323722","name":"湯の沢湯本杣温泉旅館","lat":40.05377,"lon":140.5813,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:839841977","name":"ホテル千歳","lat":40.21344,"lon":140.64307,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:839841986","name":"リトル大滝温泉ホテル","lat":40.21346,"lon":140.64349,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:965867348","name":"旅館つばき荘","lat":40.22741,"lon":140.57668,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:967533101","name":"たむら旅館","lat":40.22857,"lon":140.58272,"pref":"秋田","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

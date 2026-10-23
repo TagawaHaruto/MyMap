@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4800425528","name":"津別神社社務所","lat":43.70626,"lon":144.02014,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5207877724","name":"勝光寺","lat":43.74532,"lon":144.05418,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:485830667","name":"禅昌寺","lat":43.70634,"lon":144.02702,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:486125876","name":"妙照寺","lat":43.71585,"lon":144.02391,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:487358592","name":"福王寺","lat":43.71153,"lon":144.02671,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:487358665","name":"順誓寺","lat":43.70986,"lon":144.02512,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:487452862","name":"佛願寺","lat":43.70511,"lon":144.01838,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:487452975","name":"津別神社","lat":43.70686,"lon":144.01952,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:501720022","name":"活汲神社","lat":43.74572,"lon":144.05449,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:663204864","name":"上里神社","lat":43.62259,"lon":144.11354,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"かみさとじんじゃ"}
+]

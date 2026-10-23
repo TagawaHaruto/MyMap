@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5365979850","name":"信玄曲がり","lat":33.1174,"lon":131.45332,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8270297863","name":"入山公廟","lat":33.0925,"lon":131.29228,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"古墳・墓所","g":"heritage","k":"historic"},
+{"id":"osm:node:14145352001","name":"鳥屋城","lat":33.05307,"lon":131.43661,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic"},
+{"id":"osm:way:556265550","name":"今市石畳","lat":33.11738,"lon":131.45314,"pref":"大分","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5719356221","name":"水神之森","lat":33.06499,"lon":131.38135,"pref":"大分","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:node:14287595761","name":"くじゅうロッジ","lat":33.05535,"lon":131.32679,"pref":"大分","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0974-77-2012"},
+{"id":"osm:way:181733926","name":"黒嶽荘","lat":33.11842,"lon":131.31346,"pref":"大分","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:226828010","name":"大分市立のつはる少年自然の家","lat":33.07882,"lon":131.49681,"pref":"大分","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

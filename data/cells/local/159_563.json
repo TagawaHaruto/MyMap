@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:7706928985","name":"後生掛キャンプ場","lat":39.98,"lon":140.79873,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14281956306","name":"キャンパスの森 Campus Forest Hachimantai","lat":39.90298,"lon":140.98819,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://www.campusforest.info/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14281956308","name":"RVパーク岩手山","lat":39.81385,"lon":140.94747,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-5557-1341"},
+{"id":"osm:node:14285406030","name":"Grassland クレソン","lat":39.78922,"lon":140.97589,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"https://www.cresson.gr.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-693-1755"},
+{"id":"osm:node:14285746930","name":"網張温泉キャンプ場（休暇村 岩手網張温泉）","lat":39.82192,"lon":140.94277,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-693-2211"},
+{"id":"osm:node:14286177362","name":"滝ノ上野営場","lat":39.8153,"lon":140.90286,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-693-3037"},
+{"id":"osm:node:14286218513","name":"八幡平コモンガーデン","lat":39.91019,"lon":140.98155,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"http://activehachimantai.big-apple.info/camp/common/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-4117-2582"},
+{"id":"osm:node:14286218515","name":"妻の神広場キャンプ場","lat":39.90476,"lon":140.97462,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0195-78-2496"},
+{"id":"osm:node:14287663291","name":"岩手県県民の森キャンプ場","lat":39.89553,"lon":140.96514,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0195-78-2092"},
+{"id":"osm:way:760935944","name":"休暇村乳頭温泉郷キャンプ場","lat":39.79562,"lon":140.77948,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1350319532","name":"網張温泉キャンプ場  林間サイト","lat":39.8223,"lon":140.94376,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"019-693-2211"},
+{"id":"osm:way:1350319533","name":"網張温泉キャンプ場  芝生サイト","lat":39.82123,"lon":140.94171,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

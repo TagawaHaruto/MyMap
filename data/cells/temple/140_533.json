@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:1971234989","name":"生山神社","lat":35.16906,"lon":133.32135,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1982445933","name":"栄福寺","lat":35.14783,"lon":133.3306,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5552626510","name":"徳雲寺","lat":35.16863,"lon":133.3216,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5554605377","name":"霞神社","lat":35.15692,"lon":133.30658,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5554605884","name":"丸山神社","lat":35.15776,"lon":133.28654,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10685215912","name":"福成神社","lat":35.12726,"lon":133.37785,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13124779178","name":"自照寺","lat":35.11666,"lon":133.3118,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:736663228","name":"大石見神社","lat":35.11369,"lon":133.3552,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1426609914","name":"福栄神社","lat":35.11156,"lon":133.30094,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1426823167","name":"天理教伯備分教会","lat":35.09061,"lon":133.27028,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1427296575","name":"福重寺","lat":35.11352,"lon":133.35219,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1430018767","name":"樂樂福神社","lat":35.23917,"lon":133.27155,"pref":"鳥取","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

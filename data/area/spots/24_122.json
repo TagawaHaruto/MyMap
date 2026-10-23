@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:130970250","name":"イヌダチ岩","lat":24.47183,"lon":122.9658,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:way:291429168","name":"Dr.コトー診療所","lat":24.44341,"lon":122.98395,"pref":"沖縄","genres":["sightseeing"],"indoor":false,"url":"","note":"観光名所","k":"attraction"},
+{"id":"osm:node:2982086490","name":"ティンダバナ","lat":24.46741,"lon":122.99808,"pref":"沖縄","genres":["scenic"],"indoor":false,"url":"","note":"展望台","k":"viewpoint"},
+{"id":"osm:relation:3966041","name":"北牧場","lat":24.46856,"lon":122.96472,"pref":"沖縄","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"},
+{"id":"osm:relation:18704882","name":"南牧場","lat":24.44127,"lon":122.95979,"pref":"沖縄","genres":["experience","outdoor"],"indoor":false,"url":"","note":"牧場","k":"experience"}
+]

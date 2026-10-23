@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:4319648445","name":"貝取澗小学校 開校百周年記念碑","lat":42.18722,"lon":139.89405,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:433041906","name":"国民宿舎 あわび山荘","lat":42.18893,"lon":139.89871,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

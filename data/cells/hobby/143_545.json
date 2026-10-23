@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:9938304414","name":"ITO STATIONERY STORE","lat":35.97726,"lon":136.4945,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:12091807871","name":"らっきー","lat":35.99598,"lon":136.49955,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:12091882686","name":"天空の駅もっこ","lat":35.9851,"lon":136.48911,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"手芸・画材","g":"hobby","k":"hobby"},
+{"id":"osm:node:12093278290","name":"サイクルショップ菊川","lat":35.98476,"lon":136.49084,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:12093448259","name":"はなまる","lat":35.99029,"lon":136.49993,"pref":"福井","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

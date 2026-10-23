@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:2985518786","name":"すき家","lat":39.33909,"lon":141.52862,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2985522063","name":"花りん","lat":39.33989,"lon":141.53809,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2985545807","name":"食堂 にしき","lat":39.3429,"lon":141.54207,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2985556081","name":"喫茶のんのん","lat":39.33214,"lon":141.53046,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:2986887259","name":"八百忠","lat":39.33002,"lon":141.52958,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3009919233","name":"まるまつ","lat":39.33788,"lon":141.54316,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"Mo-Su 11:00-24:00"},
+{"id":"osm:node:3040552547","name":"遠野食肉センター　ガーデンハウス","lat":39.33331,"lon":141.55369,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:3040567180","name":"ばんがり","lat":39.3326,"lon":141.55621,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3231579371","name":"来々軒遠野店","lat":39.33826,"lon":141.541,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12099359993","name":"ばんがり伊藤家店","lat":39.32982,"lon":141.52864,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant","kana":"いとけ"},
+{"id":"osm:node:13111288517","name":"はやちね食堂","lat":39.37188,"lon":141.56273,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13114144595","name":"レストラン道","lat":39.30508,"lon":141.57423,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13136023964","name":"Korean kitchen","lat":39.33062,"lon":141.53083,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:648177627","name":"宝介","lat":39.33926,"lon":141.52369,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:638526127","name":"ちから.","lat":39.33108,"lon":141.53054,"pref":"岩手","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2928616023","name":"沼島八幡神社","lat":34.16787,"lon":134.82083,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2928616025","name":"神宮寺","lat":34.16821,"lon":134.82056,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2928616026","name":"蓮光寺","lat":34.16993,"lon":134.82159,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2928616027","name":"西光寺","lat":34.1673,"lon":134.82026,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:2928777078","name":"山ノ大神社","lat":34.16433,"lon":134.82789,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2928777082","name":"自凝神社","lat":34.16617,"lon":134.81601,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2928777083","name":"辯才天神社","lat":34.17025,"lon":134.81994,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:2932119620","name":"観音寺","lat":34.16637,"lon":134.82092,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:11338159205","name":"神倉神社","lat":34.24723,"lon":134.79818,"pref":"兵庫","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

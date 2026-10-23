@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3378084447","name":"お食事処うにまる(2F)","lat":42.17481,"lon":139.51749,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3378084448","name":"まつや食堂","lat":42.17135,"lon":139.51523,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:3378084454","name":"叶寿司","lat":42.17108,"lon":139.51543,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:3378084453","name":"ビアハウス　まとい","lat":42.17182,"lon":139.51433,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:3378084456","name":"実乃花（みのはな）","lat":42.17129,"lon":139.5142,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:2905828638","name":"やよい公園","lat":34.59726,"lon":132.32077,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:13200082871","name":"安野　花の駅公園","lat":34.55447,"lon":132.38036,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:129601425","name":"あさひが丘公園","lat":34.50716,"lon":132.43541,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:323406157","name":"見入ヶ崎スポーツ広場","lat":34.60629,"lon":132.32157,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:481696323","name":"広島市可部運動公園","lat":34.53858,"lon":132.46419,"pref":"広島","genres":["play"],"indoor":false,"url":"http://www.kabe-sportspark.jp/","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:481700496","name":"勝木台公園","lat":34.53045,"lon":132.47468,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1118917562","name":"亀山南第六公園","lat":34.51584,"lon":132.49458,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1118917566","name":"亀山南第五公園","lat":34.51625,"lon":132.49322,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1442943728","name":"月ヶ瀬公園","lat":34.60796,"lon":132.32205,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1450781575","name":"わくわくランド","lat":34.57576,"lon":132.27038,"pref":"広島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

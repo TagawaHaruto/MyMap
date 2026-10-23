@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4772699451","name":"カトリック山間教会","lat":28.24244,"lon":129.41714,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:12347746416","name":"むちゃかな神社","lat":28.11188,"lon":129.32559,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12355215522","name":"龍宮神社","lat":28.07457,"lon":129.32883,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:12358412357","name":"大屯神社","lat":28.09641,"lon":129.32348,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:451131129","name":"古仁屋高千穂神社","lat":28.15112,"lon":129.31386,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1317563836","name":"厳島神社","lat":28.1123,"lon":129.25264,"pref":"鹿児島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:2183006553","name":"市民像","lat":33.96084,"lon":133.28255,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2183007133","name":"子どもの像","lat":33.96087,"lon":133.28208,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7632408843","name":"廃レストラン 大野城跡","lat":33.92133,"lon":133.42653,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026958","name":"関川改修記念碑","lat":33.96959,"lon":133.44278,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:10633909369","name":"金子山古墳","lat":33.94887,"lon":133.27959,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:10743616079","name":"旧山根製錬所煙突","lat":33.92042,"lon":133.31002,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:410004210","name":"旧端出場水力発電所","lat":33.90154,"lon":133.3108,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:410858100","name":"端出場貯鉱庫跡","lat":33.90295,"lon":133.30938,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:415804434","name":"住友金属鉱山選鉱場","lat":33.95142,"lon":133.26516,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:416377945","name":"鹿森社宅跡","lat":33.90065,"lon":133.30572,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:416379008","name":"鹿森神社跡","lat":33.90149,"lon":133.30721,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:643122211","name":"日暮別邸記念館","lat":33.95242,"lon":133.26597,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1149382659","name":"旧広瀬邸","lat":33.91895,"lon":133.28675,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic"},
+{"id":"osm:node:4070946590","name":"ホテルキングダムパート2","lat":33.96807,"lon":133.48356,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12948927058","name":"HOTEL AZ 愛媛土居インター店","lat":33.96666,"lon":133.46925,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:415809080","name":"リーガロイヤルホテル新居浜","lat":33.95678,"lon":133.26714,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:655414573","name":"ファミリーロッジ旅籠屋","lat":33.94514,"lon":133.2817,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:660174849","name":"東横イン","lat":33.94824,"lon":133.29331,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"とよこいんん"},
+{"id":"osm:way:916261556","name":"Konoka Onsen","lat":33.77992,"lon":133.30726,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1272396714","name":"大黒屋旅館","lat":33.9647,"lon":133.27747,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

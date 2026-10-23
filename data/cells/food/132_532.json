@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:708839638","name":"レストラン風人","lat":33.2311,"lon":133.14927,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6907495685","name":"満州軒","lat":33.2101,"lon":133.14019,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12900817770","name":"食堂ヒラグシ","lat":33.23545,"lon":133.15247,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:12905484056","name":"ニュー白浜","lat":33.05466,"lon":133.09771,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:297308705","name":"喫茶サーフサイド","lat":33.02206,"lon":133.01099,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:621468318","name":"駒鳥","lat":33.21047,"lon":133.13481,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","tel":"+81 880 22 0374"},
+{"id":"osm:way:297204242","name":"来夢","lat":33.01616,"lon":133.00643,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1069167457","name":"ロガー","lat":33.2311,"lon":133.15048,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:12901241592","name":"タナベベーカリー","lat":33.20941,"lon":133.13451,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

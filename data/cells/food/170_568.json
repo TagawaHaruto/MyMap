@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:5538910242","name":"さかえ食堂","lat":42.57802,"lon":142.11648,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5538910244","name":"いこい食堂","lat":42.5863,"lon":142.13468,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:625334927","name":"焼肉きよもと","lat":42.65941,"lon":142.06879,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:848071700","name":"西陣","lat":42.51855,"lon":142.03258,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:857266806","name":"焼肉ハウス リン","lat":42.51867,"lon":142.02496,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant","oh":"Tu-Su 11:30-13:30,17:00-21:30; Mo off","tel":"+81-1456-2-3456"},
+{"id":"osm:way:857266903","name":"百番","lat":42.52015,"lon":142.0265,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"Mo,We-Su 11:00-23:00; Tu off","tel":"+81 1456-2-2698"},
+{"id":"osm:way:857266920","name":"中華料理 五行山","lat":42.5191,"lon":142.02704,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","oh":"Mo-Sa 11:00-14:00,17:00-20:30; Su off","tel":"+81-1456-2-2355"},
+{"id":"osm:way:858898770","name":"萬珍楼","lat":42.51862,"lon":142.03138,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:way:859320398","name":"萃龍","lat":42.52047,"lon":142.02723,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","oh":"Tu-Su 11:00-20:30; Mo off","tel":"+81 1456-2-0484"},
+{"id":"osm:way:860349586","name":"焼肉のんき","lat":42.52159,"lon":142.01901,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant","oh":"Mo-Sa 17:00-23:00; Sa[1,3],Su off","tel":"+81-1456-2-2368"},
+{"id":"osm:way:863053132","name":"びらとり和牛専門店 くろべこ","lat":42.54479,"lon":142.05952,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12590590028","name":"つぼ八","lat":42.51969,"lon":142.0247,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.tsubohachi.co.jp/","note":"居酒屋","g":"food","k":"pub","kana":"つぼはち","chain":true,"oh":"Mo-Su,PH 17:00-23:00; Dec 31,Jan 1,Jan 4 off","tel":"+81-1456-2-4088"}
+]

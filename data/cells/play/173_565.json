@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:257609734","name":"はまなすの丘公園","lat":43.26178,"lon":141.36363,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","wc":"limited"},
+{"id":"osm:way:844673872","name":"戸田記念広場","lat":43.32023,"lon":141.44802,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:972711086","name":"カシオペアの丘","lat":43.33237,"lon":141.42621,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9148306774","name":"サッポロスポーツランド","lat":43.3366,"lon":141.45118,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:9148325183","name":"望来オフロードパーク","lat":43.32833,"lon":141.43899,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"http://mourai-offroadpark.com/","note":"グラウンド・コート","g":"play","k":"sports"}
+]

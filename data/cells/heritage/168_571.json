@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:2356893111","name":"プラザ美寿々","lat":42.12674,"lon":142.93397,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3088976343","name":"うらかわ優駿ビレッジ「AERU」","lat":42.19153,"lon":142.84786,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"うらかわゆうしゅんびれっじあえる","tel":"+81146282111"},
+{"id":"osm:node:3088976344","name":"浦河ウエリントンホテル","lat":42.16146,"lon":142.77597,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.uwh.jp/","note":"宿","g":"heritage","k":"lodging","kana":"うらかわ うえりんとんほてる","tel":"+81-146-22-8888"},
+{"id":"osm:node:5340041147","name":"Guest House MASAGO","lat":42.17676,"lon":142.76081,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.gh-masago.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11052529605","name":"ホテルアポイ山荘","lat":42.11003,"lon":142.98542,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:248665213","name":"浦河イン","lat":42.17218,"lon":142.76646,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.urakawainn.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-146-22-1212"},
+{"id":"osm:way:464740513","name":"岩手屋旅館","lat":42.1285,"lon":142.91823,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-146-36-2105"},
+{"id":"osm:way:832926378","name":"中央旅館","lat":42.16285,"lon":142.77429,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-146-22-2026"}
+]

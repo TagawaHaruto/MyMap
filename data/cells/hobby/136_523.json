@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:4628681409","name":"明屋書店","lat":34.00696,"lon":130.93956,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4628707634","name":"ヒマラヤスポーツ&ゴルフ 新下関店","lat":34.00485,"lon":130.93111,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4632094057","name":"明林堂書店","lat":34.01269,"lon":130.95283,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5314411951","name":"河村サイクル","lat":34.02779,"lon":130.91269,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1016856905","name":"もったいない屋壱番館","lat":34.05306,"lon":130.91362,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","tel":"+81 83 258 3777"}
+]

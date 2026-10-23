@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4501653177","name":"トレンド書店","lat":34.05101,"lon":131.60061,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4820249500","name":"びーくる自転車館","lat":34.05306,"lon":131.55611,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4823250374","name":"オートショップ ヨシオカ","lat":34.05261,"lon":131.59768,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4861951233","name":"GEO","lat":34.0525,"lon":131.56563,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:node:4861963210","name":"サイクルベースあさひ","lat":34.05223,"lon":131.56534,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4941749359","name":"アンフィ","lat":34.03802,"lon":131.57129,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:5899710722","name":"アニメイト","lat":34.05244,"lon":131.56968,"pref":"山口","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/hofu/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"09:00-21:00","tel":"+81 835 26 6660"},
+{"id":"osm:way:315901776","name":"ANOサイクル","lat":34.15851,"lon":131.50252,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:328131844","name":"しみずサイクル","lat":34.17423,"lon":131.52362,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:357029273","name":"明屋書店","lat":34.05377,"lon":131.57861,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:405833068","name":"ヒマラヤスポーツ&ゴルフ 山口店","lat":34.15416,"lon":131.50581,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:475283666","name":"明林堂コスパ防府店","lat":34.04911,"lon":131.53768,"pref":"山口","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

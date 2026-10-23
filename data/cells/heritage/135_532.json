@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:8463026962","name":"復興碑","lat":33.86699,"lon":133.19634,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026963","name":"客土記念碑","lat":33.9134,"lon":133.15139,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026964","name":"堤防決潰記念碑","lat":33.92813,"lon":133.13817,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13971663801","name":"岡林墓群","lat":33.88967,"lon":133.13241,"pref":"愛媛","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:2190491932","name":"ルートイン西条","lat":33.91324,"lon":133.18741,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2190508939","name":"西条アーバンホテル","lat":33.91323,"lon":133.18741,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2190511021","name":"西条ステーションホテル","lat":33.91304,"lon":133.18777,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2190511938","name":"ホテルオレール西条","lat":33.91293,"lon":133.18786,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2190527292","name":"玉の家西条","lat":33.91324,"lon":133.18694,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2190537605","name":"西条国際ホテル","lat":33.91365,"lon":133.18973,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2213881199","name":"ホテルルートイン西条","lat":33.92783,"lon":133.18393,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:2213882208","name":"西条パシフィックホテル","lat":33.92826,"lon":133.18628,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3710323697","name":"ホテル アジュール 汐の丸","lat":33.99575,"lon":133.05263,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wp":"ja:ホテルアジュール汐の丸"},
+{"id":"osm:node:7926374786","name":"田中屋","lat":33.93055,"lon":133.0863,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:8375023818","name":"休暇村瀬戸内東予","lat":33.98221,"lon":133.06162,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11402656769","name":"ゲストハウス氷見","lat":33.89532,"lon":133.12951,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 70 4394 6309"},
+{"id":"osm:node:11535055770","name":"旅宿まるいち","lat":33.9218,"lon":133.04508,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"https://tabiyado-maruichi.wixsite.com/mysite","note":"宿","g":"heritage","k":"lodging","kana":"たびやどまるいち","tel":"+818040329245"},
+{"id":"osm:node:12944733844","name":"ゲストハウス BEKKU","lat":33.90044,"lon":133.05975,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13702732701","name":"Itomachi Hotel 0","lat":33.92572,"lon":133.19007,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"http://itomachihotel-0.com","note":"宿","g":"heritage","k":"lodging","oh":"24/7","tel":"+81 897-47-7568"},
+{"id":"osm:way:185013235","name":"国民宿舎石鎚","lat":33.75759,"lon":133.14431,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1127824604","name":"ビジネスホテル　アネックス　あかやね","lat":33.91373,"lon":133.18666,"pref":"愛媛","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

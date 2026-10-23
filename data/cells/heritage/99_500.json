@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:9008814967","name":"先島諸島火番盛","lat":24.92217,"lon":125.2479,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:4102805390","name":"コーラルホテル","lat":24.82388,"lon":125.16097,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5084110948","name":"紺碧ザ・ヴィラオールスイート","lat":24.80646,"lon":125.21102,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5084182237","name":"ソラニワホテルアンドカフェ","lat":24.80674,"lon":125.19646,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5084182253","name":"ヴィラブリゾート","lat":24.80855,"lon":125.19116,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5084182501","name":"カテラ荘","lat":24.8175,"lon":125.17662,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5084182517","name":"ゲストハウス&レンタルハウス 宿屋つきうみ荘","lat":24.82017,"lon":125.17677,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:10046424772","name":"民宿キャンプ村","lat":24.82646,"lon":125.1615,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

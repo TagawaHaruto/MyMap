@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4548113328","name":"機雷殉難の塔","lat":44.21833,"lon":143.65858,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378054400","name":"水天宮の跡","lat":44.17678,"lon":143.58035,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9024871025","name":"芭露発祥の地","lat":44.15199,"lon":143.68913,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9024871040","name":"計呂地開拓百年碑","lat":44.10328,"lon":143.72887,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9024871041","name":"鉄道記念碑","lat":44.10308,"lon":143.72875,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9024871042","name":"計呂地開基85周年開拓記念碑","lat":44.10376,"lon":143.72659,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13158129324","name":"百年広場","lat":44.18503,"lon":143.59626,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13191792660","name":"上湧別町民憲章","lat":44.15168,"lon":143.57241,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13192576431","name":"庄田萬里翁像","lat":44.15447,"lon":143.57409,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13192576432","name":"久美愛病院の跡碑","lat":44.15445,"lon":143.57409,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1431506974","name":"開基百年記念塔 かみゆうべつ・われらが心の調べ","lat":44.18474,"lon":143.59615,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5154661559","name":"ホテル ドームe","lat":44.03778,"lon":143.50963,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5154661560","name":"しんぱくホテル","lat":44.01821,"lon":143.51153,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5744886622","name":"ライダーハウスSLの宿","lat":44.1035,"lon":143.72838,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11927661402","name":"New Humber","lat":44.22389,"lon":143.61667,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1379108794","name":"ホテルサンシャイン","lat":44.06051,"lon":143.52322,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://hotel-sunshine.jp/","note":"宿","g":"heritage","k":"lodging","kana":"ほてるさんしゃいん","pk":2}
+]

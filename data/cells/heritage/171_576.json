@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4248715046","name":"白糠運上屋跡","lat":42.9545,"lon":144.08171,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4248715047","name":"北海道石炭採掘創始の碑","lat":42.95412,"lon":144.09092,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7709224733","name":"白糠線 上白糠駅跡","lat":42.99573,"lon":144.04344,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:438510904","name":"ホテルまつや","lat":42.95537,"lon":144.07785,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.hotel-matsuya.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 1547 2 2211","pk":2}
+]

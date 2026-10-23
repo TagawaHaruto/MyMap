@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:2008203828","name":"サガミヤ 湯の花店","lat":34.97319,"lon":139.09322,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:2008230368","name":"新丁薬局","lat":34.97212,"lon":139.09455,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"ゲーム","g":"hobby","k":"hobby"},
+{"id":"osm:node:2010345667","name":"アンティークモール","lat":34.97576,"lon":139.09421,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:node:5512627174","name":"Arty","lat":34.93467,"lon":139.12107,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5512954301","name":"版画美術館","lat":34.92911,"lon":139.10919,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"},
+{"id":"osm:node:6481741077","name":"いわかみ書店","lat":34.87629,"lon":139.10351,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6834275587","name":"パパラギダイビングスクール 伊豆店","lat":34.8885,"lon":139.12299,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"https://izu-papalagi.jp/","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"Mo-Su 09:00-17:00","tel":"+81 557-51-8222"},
+{"id":"osm:node:6834291685","name":"イルカのうねりドルフィンウェーブ","lat":34.88925,"lon":139.12393,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"https://www.dolphinwave.net/","note":"アウトドア用品","g":"hobby","k":"hobby","tel":"+81 557-51-6627"},
+{"id":"osm:node:9273578617","name":"レコルト","lat":34.80339,"lon":139.05838,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:11012076215","name":"稲取リサイクルショップ","lat":34.77405,"lon":139.03772,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","tel":"0557-95-3555"},
+{"id":"osm:node:14005502514","name":"稲七釣具","lat":34.97052,"lon":139.10395,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:14005798435","name":"ソフトランド JUMP","lat":34.94702,"lon":139.11823,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"https://jump-kawana.com/","note":"アニメ・漫画","g":"hobby","k":"hobby","oh":"10:00-19:00"},
+{"id":"osm:way:260934170","name":"Down The Cave","lat":34.75314,"lon":139.00657,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:564727018","name":"Lui","lat":34.91313,"lon":139.12215,"pref":"静岡","genres":["shopping"],"indoor":true,"url":"","note":"画材・アート","g":"hobby","k":"hobby"}
+]

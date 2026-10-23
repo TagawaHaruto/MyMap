@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4853639619","name":"岩嶽神社","lat":35.08483,"lon":138.00595,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5216019211","name":"智者山神社","lat":35.11904,"lon":138.18316,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5280994490","name":"大泉院","lat":35.08028,"lon":138.11536,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5288784851","name":"大間如意輪観音","lat":35.17397,"lon":138.1205,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:387943910","name":"若宮神社","lat":35.17443,"lon":138.18749,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:464088480","name":"宝珠寺","lat":35.04627,"lon":138.02278,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:547246294","name":"外森神社","lat":35.17622,"lon":138.12003,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:585007765","name":"登福寺","lat":35.01094,"lon":138.14677,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:881511375","name":"久円寺","lat":35.03619,"lon":138.16658,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:881519837","name":"海前寺","lat":35.11892,"lon":138.21798,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:884671568","name":"宝積寺","lat":35.10378,"lon":138.22759,"pref":"静岡","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

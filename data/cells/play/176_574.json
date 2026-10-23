@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:430678144","name":"かみゆうべつチューリップ公園","lat":44.15862,"lon":143.58009,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:6906620","name":"運動公園","lat":44.22128,"lon":143.62475,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:741179387","name":"五鹿山公園","lat":44.18023,"lon":143.61145,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:931990863","name":"計呂地交通公園","lat":44.10383,"lon":143.72873,"pref":"北海道","genres":["play"],"indoor":false,"url":"https://www.town.yubetsu.lg.jp/tourism/enjoy/detail.html?content=286","note":"公園","g":"play","k":"park","kana":"けろちこうつうこうえん"},
+{"id":"osm:way:971052043","name":"せせらぎ広場","lat":44.05389,"lon":143.52292,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"せせらぎひろば"},
+{"id":"osm:way:1309967474","name":"東児童公園","lat":44.06195,"lon":143.52682,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1379108803","name":"ふれあいパーク","lat":44.05732,"lon":143.52224,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"ふれあいぱーく"},
+{"id":"osm:way:617732906","name":"芝生広場","lat":44.04284,"lon":143.5181,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:617732907","name":"Bコート","lat":44.04388,"lon":143.51872,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:617732908","name":"Aコート","lat":44.04419,"lon":143.51772,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

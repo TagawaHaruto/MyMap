@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:1907339553","name":"菅原神社","lat":34.8856,"lon":133.89612,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1907340579","name":"高井神社","lat":34.89121,"lon":133.90448,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1907343343","name":"妙福寺","lat":34.87022,"lon":133.90618,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:1907344056","name":"八幡神社","lat":34.86657,"lon":133.90726,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1907346036","name":"七社八幡宮","lat":34.86429,"lon":133.90245,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1909394086","name":"日高神社　Hidaka Shrine","lat":34.94037,"lon":133.85374,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1909399747","name":"和田神社　Wada Shrine","lat":34.93515,"lon":133.88259,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1909412157","name":"成就寺　Johju-ji Temple","lat":34.85405,"lon":133.88906,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:1909416319","name":"熊野神社","lat":34.83692,"lon":133.90872,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:1909425741","name":"阿弥陀堂","lat":34.86609,"lon":133.90068,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"あみだど"},
+{"id":"osm:node:3937425001","name":"清水観音堂","lat":34.88972,"lon":133.89487,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:3937474063","name":"多自枯鴨神社","lat":34.86495,"lon":133.87409,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4172495906","name":"寺社","lat":34.83977,"lon":133.91138,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5896770285","name":"白山神社","lat":34.99298,"lon":133.92808,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:450306973","name":"中田天神宮","lat":34.84478,"lon":133.89648,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:565285822","name":"真名井神社","lat":34.84702,"lon":133.90603,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1175006682","name":"石上布都魂神社","lat":34.85171,"lon":133.97041,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1500122825","name":"志呂神社","lat":34.89355,"lon":133.91692,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

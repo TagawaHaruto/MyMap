@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:6549324480","name":"美池のさと","lat":35.1046,"lon":132.72659,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8636834354","name":"石見一宮 物部神社","lat":35.15421,"lon":132.51316,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8637223264","name":"皇族下馬下乘","lat":35.15466,"lon":132.51331,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8637235101","name":"岩谷九十老翁頌德碑","lat":35.15446,"lon":132.51276,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8637679254","name":"物部神社","lat":35.15471,"lon":132.51337,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1238538525","name":"スカイホテル大田","lat":35.1974,"lon":132.50462,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 854 82 6525"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:3092300109","name":"菜の花プラザ","lat":41.08366,"lon":141.25705,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","kana":"なのはなぷらざ"},
+{"id":"osm:node:11224956509","name":"621野営場","lat":41.12467,"lon":141.25952,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-78-2080"},
+{"id":"osm:way:1211591706","name":"621野営場","lat":41.12448,"lon":141.25956,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-78-2080"}
+]

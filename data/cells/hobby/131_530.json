@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5338321520","name":"明屋書店宿毛店","lat":32.92963,"lon":132.70917,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5350187041","name":"河野釣り具","lat":32.92039,"lon":132.69967,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7922090285","name":"松岡漁具","lat":32.92748,"lon":132.70805,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8239106225","name":"明屋書店 南宇和店","lat":32.95928,"lon":132.56617,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13904553785","name":"松岡漁具","lat":32.95947,"lon":132.58224,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:13919115536","name":"南海楽器","lat":32.93736,"lon":132.72334,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:13919115569","name":"タニモト","lat":32.93706,"lon":132.72278,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13919115649","name":"幸福書店","lat":32.9357,"lon":132.72048,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13919291609","name":"片島磯釣りセンター","lat":32.9216,"lon":132.69721,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:550417569","name":"宿毛釣具","lat":32.93022,"lon":132.71594,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:553242321","name":"パシフィックマリン","lat":32.92617,"lon":132.70543,"pref":"高知","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"}
+]

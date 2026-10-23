@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:1448127471","name":"塩浜公園","lat":34.39103,"lon":129.38526,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1448130416","name":"権現山公園","lat":34.38934,"lon":129.31315,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1448130427","name":"憩いの広場","lat":34.3858,"lon":129.31313,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1448135608","name":"ファミリーパーク","lat":34.45148,"lon":129.31202,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1448135610","name":"万関展望台","lat":34.30183,"lon":129.35305,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1448135611","name":"三根総合運動公園","lat":34.46225,"lon":129.31307,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1448135612","name":"三根浜公園","lat":34.46419,"lon":129.31125,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:430267255","name":"Sports Field","lat":34.27754,"lon":129.32701,"pref":"長崎","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:430286388","name":"open air auditorium","lat":34.27774,"lon":129.3277,"pref":"長崎","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

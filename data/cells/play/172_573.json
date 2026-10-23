@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:544973124","name":"しほろ温泉パークゴルフ場","lat":43.13904,"lon":143.36657,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:547674697","name":"中央公園","lat":43.17102,"lon":143.25025,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562596535","name":"交通公園","lat":43.23109,"lon":143.28947,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562787393","name":"高台公園","lat":43.23611,"lon":143.30227,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562787395","name":"高台公園パークゴルフ場","lat":43.23796,"lon":143.30288,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562882087","name":"航空公園","lat":43.23863,"lon":143.27507,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562523881","name":"町営プール","lat":43.23026,"lon":143.27971,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:562787335","name":"サッカーグランド","lat":43.23871,"lon":143.30063,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:562787336","name":"ソフトボール場","lat":43.23711,"lon":143.30057,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

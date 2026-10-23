@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:729763966","name":"三ツ橋公園","lat":42.75089,"lon":140.28175,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1459986442","name":"リンリン公園","lat":42.76262,"lon":140.47784,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"りんりんこうえん"},
+{"id":"osm:way:1007896582","name":"蘭越町目名サッカー場","lat":42.76483,"lon":140.45962,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

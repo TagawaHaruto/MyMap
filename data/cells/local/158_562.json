@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:7451187736","name":"角館桜皮細工センター 武家屋敷店","lat":39.60086,"lon":140.56131,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7451188056","name":"桜皮細工 須江","lat":39.59952,"lon":140.56166,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7451188064","name":"さとくガーデン","lat":39.59788,"lon":140.56194,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:14073991785","name":"Rose","lat":39.71342,"lon":140.63463,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:395950310","name":"高橋鮮魚店","lat":39.59164,"lon":140.55134,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:797116798","name":"角館おみやげ蔵 さかもと","lat":39.5993,"lon":140.56008,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:896038488","name":"角館こだわり蔵","lat":39.59522,"lon":140.56241,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1106235983","name":"お土産処 城下町物産","lat":39.59924,"lon":140.55997,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1114966883","name":"平熊","lat":39.54759,"lon":140.5464,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1547373506","name":"斎藤商店","lat":39.71367,"lon":140.63419,"pref":"秋田","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3985849714","name":"サン・ビレッジ中仙","lat":39.55907,"lon":140.60886,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:676989640","name":"角館東地区公民館 (旧角館東小学校体育館)","lat":39.59667,"lon":140.57181,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1105807136","name":"西木総合健康増進センター","lat":39.74841,"lon":140.5981,"pref":"秋田","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:7236269145","name":"田沢湖キャンプ場","lat":39.7449,"lon":140.68498,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wp":"ja:田沢湖"},
+{"id":"osm:node:14286177369","name":"田沢湖キャンプ場","lat":39.72765,"lon":140.70135,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"http://www.tazawako.net/index.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"0187-43-2990"},
+{"id":"osm:node:14286177370","name":"かたまえ山森林公園","lat":39.71601,"lon":140.62505,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"http://www.tazawako.net/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0187-47-2007"},
+{"id":"osm:node:14286177377","name":"大台キャンプ場","lat":39.51875,"lon":140.65519,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0187-88-1795"},
+{"id":"osm:way:775664499","name":"田沢湖オートキャンプ場縄文の森たざわこ","lat":39.744,"lon":140.68533,"pref":"秋田","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wp":"ja:田沢湖"}
+]

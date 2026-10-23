@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:2751043896","name":"志布志運動公園","lat":31.46598,"lon":131.09055,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"yes"},
+{"id":"osm:node:3362789393","name":"志布志市民プール","lat":31.46529,"lon":131.0867,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wc":"yes"},
+{"id":"osm:node:6060323308","name":"串間市民総合体育館","lat":31.46478,"lon":131.21902,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","pk":2},
+{"id":"osm:node:12548843529","name":"志布志港","lat":31.4628,"lon":131.10468,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:888615571","name":"日南串間GC","lat":31.43566,"lon":131.24799,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1318935506","name":"串間市営プール","lat":31.46923,"lon":131.21883,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1318938767","name":"串間市営テニスコート","lat":31.46941,"lon":131.218,"pref":"宮崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1517308003","name":"ジャパンアスリートトレーニングセンター","lat":31.44713,"lon":131.04171,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:3339328193","name":"円山公園","lat":31.36227,"lon":131.01264,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","wc":"yes"},
+{"id":"osm:node:14287620713","name":"くにの松原キャンプ場","lat":31.42365,"lon":131.03303,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"https://www.gocamp.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"099-476-3611"}
+]

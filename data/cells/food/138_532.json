@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:1817508729","name":"古川食堂","lat":34.57416,"lon":133.2286,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:6485769572","name":"みつぎ・御里","lat":34.51342,"lon":133.12932,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 11:00-14:00,17:00-21:00"},
+{"id":"osm:node:13392376002","name":"とみしの里","lat":34.73773,"lon":133.00501,"pref":"広島","genres":["food"],"indoor":true,"url":"https://tomishinosato.com/","note":"和食","g":"food","k":"restaurant","tel":"+81 824 43 4661"},
+{"id":"osm:way:690871404","name":"野の葡萄","lat":34.51156,"lon":133.1448,"pref":"広島","genres":["food"],"indoor":true,"url":"https://crossroad-mitsugi.com/restaurant/","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Fr 11:00-15:00; Sa-Su,PH 11:00-16:00"},
+{"id":"osm:way:1453329379","name":"レストラン タイニー","lat":34.58748,"lon":133.06093,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1945768707","name":"ケンタッキーフライドチキン","lat":34.5696,"lon":133.23654,"pref":"広島","genres":["food"],"indoor":true,"url":"https://www.kfc.co.jp/","note":"ファストフード","g":"food","k":"fastfood","kana":"けんたっきふらいどちきん","chain":true,"oh":"Mo-Su 10:00-22:00","tel":"+81-847-471053"}
+]

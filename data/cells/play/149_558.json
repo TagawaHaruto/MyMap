@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:280137449","name":"西山グラウンド","lat":37.44171,"lon":139.69952,"pref":"福島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:245332871","name":"妖精の里 かねやま妖精美術館","lat":37.45595,"lon":139.5865,"pref":"福島","genres":["play"],"indoor":true,"url":"","note":"アートセンター","g":"play","k":"amuse"},
+{"id":"osm:way:245332876","name":"椎名誠写真館","lat":37.45294,"lon":139.58752,"pref":"福島","genres":["play"],"indoor":true,"url":"","note":"アートセンター","g":"play","k":"amuse"}
+]

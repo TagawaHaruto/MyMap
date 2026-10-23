@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:332656443","name":"奥久慈茶の里公園","lat":36.82694,"lon":140.28052,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:496341309","name":"湯の里公園","lat":36.76742,"lon":140.35661,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:496341847","name":"大子広域公園","lat":36.79138,"lon":140.34863,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:829311157","name":"小中ロードパーク","lat":36.75241,"lon":140.48706,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:829311158","name":"せせらぎの郷北口公園","lat":36.78234,"lon":140.47992,"pref":"茨城","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1315678715","name":"多目的運動場","lat":36.79132,"lon":140.34791,"pref":"茨城","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

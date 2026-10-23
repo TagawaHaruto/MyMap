@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:297689757","name":"久万CC","lat":33.68706,"lon":132.88703,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:297823457","name":"松山ロイヤルCC","lat":33.69667,"lon":132.77103,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:309402978","name":"高原GC","lat":33.6717,"lon":132.94267,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11533722069","name":"久万高原ふるさと旅行村キャンプ場","lat":33.67215,"lon":132.93692,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"https://www.kuma-furusato.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81892410711"},
+{"id":"osm:node:11533722269","name":"千本高原キャンプ場","lat":33.67504,"lon":132.92289,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81892211111"},
+{"id":"osm:node:14287534804","name":"銚子ダム公園","lat":33.69694,"lon":132.79196,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"089-962-6010"},
+{"id":"osm:node:14287545616","name":"オートキャンプ場KAWASE","lat":33.6631,"lon":132.92483,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-7788-2605"},
+{"id":"osm:node:14287582607","name":"御三戸遊園地キャンプ場","lat":33.61337,"lon":132.97459,"pref":"愛媛","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0892-56-0211"}
+]

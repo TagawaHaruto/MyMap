@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:7693008303","name":"神石郡油木町道路元標","lat":34.77875,"lon":133.27627,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463027016","name":"復興の碑","lat":34.95894,"lon":133.28053,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7809743724","name":"ゲストハウス ELEVEN VILLAGE 吹屋","lat":34.86136,"lon":133.47079,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13068151068","name":"ビジネス旅館 備中路","lat":34.96685,"lon":133.46507,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"http://www.bicchuji.co.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-72-3731"},
+{"id":"osm:node:13068207316","name":"新見ビジネスシティーホテル","lat":34.98867,"lon":133.46051,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"http://www.n-cityhotel.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81-867-72-1118"},
+{"id":"osm:way:367998307","name":"元仲田邸くらやしき","lat":34.83108,"lon":133.49172,"pref":"岡山","genres":["lodging"],"indoor":true,"url":"https://uji-irodori.info/","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:4376992488","name":"ざぼんラーメン","lat":31.81443,"lon":130.70717,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4603223690","name":"お食事処 食楽楽","lat":31.80334,"lon":130.70754,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8408075832","name":"いちき","lat":31.94951,"lon":130.54525,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:14295307095","name":"流楽","lat":31.95362,"lon":130.71832,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"るうら"},
+{"id":"osm:node:14303020362","name":"黒龍","lat":31.95041,"lon":130.71872,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:320763515","name":"お祭り一番館鹿児島空港店","lat":31.79321,"lon":130.72166,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:320763571","name":"ジョイフル","lat":31.79286,"lon":130.72164,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:way:645318188","name":"いち膳","lat":31.75204,"lon":130.66713,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1325868077","name":"そば茶屋吹上庵","lat":31.77194,"lon":130.72635,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1379318582","name":"お食事処 はなよし","lat":31.94636,"lon":130.71085,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"11:00-19:30"},
+{"id":"osm:way:1423936036","name":"らーめん鎮","lat":31.75902,"lon":130.67484,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:1431009317","name":"木花家","lat":31.75437,"lon":130.67321,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カレー","g":"food","k":"restaurant","kana":"こかげ"},
+{"id":"osm:way:1569304243","name":"くじら亭","lat":31.95436,"lon":130.71843,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:1569306792","name":"昇龍","lat":31.9888,"lon":130.7445,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:way:1570048074","name":"お食事処 尾方屋","lat":31.95383,"lon":130.71979,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:2347053921","name":"Sky Terrace","lat":31.80175,"lon":130.7158,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","tel":"0995-58-2117","wc":"yes"},
+{"id":"osm:node:3175832961","name":"ドトールコーヒーショップ","lat":31.8018,"lon":130.71533,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"どとるこひしょっぷ","chain":true,"tel":"+81-995-58-2234"},
+{"id":"osm:node:3680192402","name":"Sky Shop","lat":31.80209,"lon":130.71558,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","tel":"+81 995 58 2117"},
+{"id":"osm:node:14064473127","name":"浮遊","lat":31.95032,"lon":130.72393,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1517900424","name":"じんぐう茶屋","lat":31.75359,"lon":130.73878,"pref":"鹿児島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:14303058954","name":"やきいも","lat":31.99065,"lon":130.74734,"pref":"鹿児島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

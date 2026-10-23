@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:14287570075","name":"井無田高原キャンプ場","lat":32.72729,"lon":131.10338,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0967-82-3210"},
+{"id":"osm:node:14287570079","name":"歌瀬キャンプ場","lat":32.71579,"lon":131.15031,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0967-83-0554"},
+{"id":"osm:node:14287570084","name":"五ヶ瀬の里キャンプ村","lat":32.69227,"lon":131.17849,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"https://www.gokase.org/camp/news-detail.php?id=36","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4475-5005"},
+{"id":"osm:node:14287570086","name":"きじやでキャンプ","lat":32.67792,"lon":131.21184,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://gokase.icomt.jp/camp/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287608192","name":"カタラウスタンド","lat":32.66217,"lon":131.21634,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://www.katarau-stand.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287608193","name":"青葉の瀬（あおばんせ）","lat":32.66155,"lon":131.07084,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0967-82-3511"},
+{"id":"osm:node:14287608198","name":"緑仙峡キャンプ場","lat":32.62685,"lon":131.09053,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0967-82-3224"},
+{"id":"osm:way:582439641","name":"服掛松キャンプ場","lat":32.69944,"lon":131.16198,"pref":"熊本","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

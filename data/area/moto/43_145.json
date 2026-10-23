@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6585530885","name":"","lat":43.6188,"lon":145.23086,"type":"バイク専用","k":"moto_dedicated"},
+{"id":"osm:way:561667620","name":"道の駅スワン44ねむろ","lat":43.2617,"lon":145.43844,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:561668545","name":"道の駅おだいとう","lat":43.53276,"lon":145.23691,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1449343576","name":"茶内駐車場","lat":43.1526,"lon":145.05349,"type":"SA・PA","k":"rest_area","likely":true}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:way:847531089","name":"十勝川温泉アクアパークパークゴルフ場","lat":42.93506,"lon":143.28825,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1051068631","name":"帯広国際カントリークラブ","lat":42.90069,"lon":143.27883,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"http://www.obihirokokusaicc.com/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"おびひろこくさいかんとりーくらぶ"},
+{"id":"osm:node:12025132290","name":"Ｇｒüｎｈｅｒｚ","lat":42.76962,"lon":143.27617,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://grunherz.jp","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12918480736","name":"茂岩山自然公園キャンプ場","lat":42.80419,"lon":143.49667,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286129350","name":"十勝まきばの家 Winery & Campfield","lat":42.9373,"lon":143.47371,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://makibanoie.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286129351","name":"十勝エコロジーパークオートキャンプ場","lat":42.93343,"lon":143.30864,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0155-32-6780"}
+]

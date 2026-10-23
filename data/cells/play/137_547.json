@@ -1,0 +1,20 @@
+[
+{"id":"osm:way:183416197","name":"木場公園","lat":34.36927,"lon":136.80529,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:183972086","name":"里の庭","lat":34.48241,"lon":136.84072,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:362056224","name":"志摩市磯部ふれあい公園","lat":34.38668,"lon":136.80743,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:362218304","name":"崎山公園","lat":34.27928,"lon":136.90083,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:362218305","name":"崎山公園","lat":34.27945,"lon":136.90033,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:414295550","name":"鵜方児童公園","lat":34.32906,"lon":136.82278,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:459672748","name":"佐田浜東公園","lat":34.48701,"lon":136.84467,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","wc":"yes","pk":2},
+{"id":"osm:way:459672749","name":"佐田浜西公園","lat":34.48809,"lon":136.84232,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:479211995","name":"市民の森公園","lat":34.47066,"lon":136.84881,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:7085402","name":"阿児ふるさと公園","lat":34.32289,"lon":136.83038,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:561162933","name":"朝熊山麓公園","lat":34.49451,"lon":136.7695,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1160659054","name":"長田小公園","lat":34.26049,"lon":136.83375,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1160662835","name":"志摩総合スポーツ公園","lat":34.25321,"lon":136.82188,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1160663545","name":"布施田ふれあい公園","lat":34.2516,"lon":136.82095,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1432791494","name":"ミジュマル公園 in とば","lat":34.49113,"lon":136.845,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:362395252","name":"フィットネススタジオ Lightbody NEO","lat":34.32748,"lon":136.83633,"pref":"三重","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:way:363456508","name":"長沢野球場","lat":34.32283,"lon":136.85167,"pref":"三重","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1198226237","name":"鳥羽市民体育館","lat":34.46849,"lon":136.85146,"pref":"三重","genres":["outdoor","play"],"indoor":true,"url":"https://toba-sports.jp/facility/447/","note":"体育館","g":"play","k":"sports"}
+]

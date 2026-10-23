@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4671419000","name":"岡本旅館","lat":38.83027,"lon":140.98638,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"おかもとりょかん"},
+{"id":"osm:node:4671427508","name":"佐竹旅館","lat":38.82768,"lon":140.98566,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"さたけりょかん","tel":"+81 228 45 1273"},
+{"id":"osm:node:4671565303","name":"旅館いづみ荘","lat":38.82986,"lon":140.98773,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"りょかんいずみそ","tel":"+81 228 45 1138"},
+{"id":"osm:node:4674337092","name":"氏家旅館","lat":38.802,"lon":140.90317,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"うじいえりょかん","tel":"+81 228 55 2003"},
+{"id":"osm:node:4676423393","name":"新湯温泉くりこま荘","lat":38.93329,"lon":140.83619,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://kurikomaso.jp","note":"宿","g":"heritage","k":"lodging","kana":"くりこまそ","tel":"+81 228 46 2036"},
+{"id":"osm:node:4676443794","name":"民宿まぐさ森","lat":38.91537,"lon":140.82796,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"http://magusamori.com","note":"宿","g":"heritage","k":"lodging","kana":"まぐさもり","tel":"+81 228 46 2159"},
+{"id":"osm:node:4676447390","name":"ハイルザーム栗駒","lat":38.93487,"lon":140.83131,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 228 43 4100"},
+{"id":"osm:node:4676447691","name":"花山青少年自然の家","lat":38.82281,"lon":140.83294,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 228 56 2311"},
+{"id":"osm:node:5094654422","name":"須川高原温泉","lat":38.97971,"lon":140.77074,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"すかわこげのんせん"},
+{"id":"osm:node:5094654423","name":"栗駒山荘","lat":38.98005,"lon":140.7674,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"くりこまさんそ"},
+{"id":"osm:node:8340480818","name":"ホテル アートインすがわら","lat":38.83121,"lon":140.98833,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 228 45 2035"},
+{"id":"osm:node:10057363889","name":"温湯温泉 佐藤旅館","lat":38.86378,"lon":140.77754,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"https://nuruyu-sato.com/","note":"宿","g":"heritage","k":"lodging","kana":"ぬるゆおんせんさとりょかん","tel":"+81 228 56 2251","wc":"yes"},
+{"id":"osm:node:10057363890","name":"花山温泉 温湯山荘","lat":38.86129,"lon":140.77814,"pref":"宮城","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"はなやまおんせんぬるゆさんそ","tel":"+81 228 56 2040"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:8378029638","name":"東日本大震災記念碑","lat":40.46825,"lon":141.65257,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378029639","name":"海嘯記念碑","lat":40.4684,"lon":141.65249,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8378054407","name":"震嘯災記念碑","lat":40.4599,"lon":141.66484,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8485261217","name":"マリンサイドスパたねいち","lat":40.41191,"lon":141.71811,"pref":"岩手","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

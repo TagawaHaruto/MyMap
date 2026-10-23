@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:11820972132","name":"見島ジーコンボ古墳群","lat":34.76363,"lon":131.15947,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:見島ジーコンボ古墳群"},
+{"id":"osm:node:6796569985","name":"赤崎旅館","lat":34.76388,"lon":131.14971,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13789521883","name":"岩崎旅館","lat":34.76199,"lon":131.15101,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13789521887","name":"旅館北国屋","lat":34.78278,"lon":131.14397,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:4343845989","name":"丸善","lat":45.24121,"lon":141.22824,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4376208892","name":"物忘草","lat":45.18476,"lon":141.13835,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant","oh":"Tu-Su 11:00-14:00"},
+{"id":"osm:node:4376593590","name":"利尻ラーメン味楽","lat":45.18436,"lon":141.13736,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant","kana":"りしらめんみらく","oh":"Fr-We 11:00-14:00"},
+{"id":"osm:node:4378161490","name":"食堂さとう","lat":45.24108,"lon":141.22772,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4378167389","name":"磯やき亭","lat":45.24114,"lon":141.22771,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4379975695","name":"利尻ふるさと食堂","lat":45.18664,"lon":141.13645,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4379976095","name":"ぼん天","lat":45.18515,"lon":141.13606,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4379981591","name":"まつや食堂","lat":45.18455,"lon":141.1361,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4379988789","name":"大量亭","lat":45.18551,"lon":141.13691,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4379988790","name":"常寿司","lat":45.18592,"lon":141.13627,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:4464285789","name":"さくらば","lat":45.24412,"lon":141.22188,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4343815390","name":"月","lat":45.24125,"lon":141.22841,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"07:30-18:30"},
+{"id":"osm:node:4379988889","name":"ヴィガ","lat":45.18555,"lon":141.13718,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5029708878","name":"ミルピス","lat":45.21139,"lon":141.13793,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:4379978595","name":"イマージュ","lat":45.18672,"lon":141.13766,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:node:4379982690","name":"スナックほろ酔","lat":45.18458,"lon":141.13665,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

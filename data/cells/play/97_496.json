@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:2236381513","name":"米原のヤエヤマヤシ群落","lat":24.45089,"lon":124.19495,"pref":"沖縄","genres":["play"],"indoor":false,"url":"https://www.city.ishigaki.okinawa.jp/100000/100500/ishigaki_fuukei_rekishi/084.html","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:3977659330","name":"石垣島サイエンスガーデン","lat":24.44906,"lon":124.13455,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:478717546","name":"舟蔵公園","lat":24.35479,"lon":124.13673,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:715269794","name":"真栄里公園","lat":24.33316,"lon":124.1686,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:715276401","name":"石垣市中央運動公園","lat":24.34458,"lon":124.173,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:737573663","name":"サザンゲート公園","lat":24.33084,"lon":124.15718,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1420845847","name":"やどかり公園","lat":24.33087,"lon":124.17774,"pref":"沖縄","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:3979365865","name":"石垣市営総合運動場","lat":24.34511,"lon":124.17312,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:195926184","name":"石垣市総合運動場室内練習場","lat":24.34382,"lon":124.1743,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:195926185","name":"石垣市営野球場","lat":24.34522,"lon":124.17109,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1430115661","name":"サッカーパークあかんま","lat":24.42448,"lon":124.21133,"pref":"沖縄","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:7294439886","name":"ゆいロードシアター","lat":24.33952,"lon":124.15856,"pref":"沖縄","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

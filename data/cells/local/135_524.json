@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:2607841918","name":"豊前街道","lat":33.83945,"lon":131.03177,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2607841935","name":"IZUTSUYA","lat":33.83945,"lon":131.0317,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2607841940","name":"BLUE SKY","lat":33.83975,"lon":131.03161,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2607841941","name":"空の丘","lat":33.83988,"lon":131.03159,"pref":"福岡","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7814280031","name":"西村鮮魚店","lat":33.95928,"lon":131.24705,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:353411421","name":"進物の大進","lat":33.96198,"lon":131.24641,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:370267690","name":"幸屋","lat":33.95376,"lon":131.24376,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:370267720","name":"ギフトギャラリーオズ","lat":33.96339,"lon":131.24377,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:642277740","name":"縄田雅海苔　中川店","lat":33.98572,"lon":131.17572,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:832288109","name":"清中鮮魚 本店","lat":33.95631,"lon":131.24404,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:332618163","name":"西部体育館","lat":33.96279,"lon":131.24225,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:332618174","name":"宇部市武道館","lat":33.96255,"lon":131.24293,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1172743892","name":"若山ゴルフクラブ 梶コース","lat":33.99456,"lon":131.13579,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:562749283","name":"竜王山公園オートキャンプ場","lat":33.95117,"lon":131.16796,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2289958226","name":"岩下こけし資料館","lat":38.73613,"lon":140.70433,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2289966366","name":"こけしの菅原屋","lat":38.73787,"lon":140.70807,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2289966367","name":"こけしの店 松田工房","lat":38.7376,"lon":140.70834,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2289966768","name":"中澤太鼓店","lat":38.73855,"lon":140.7096,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:2289967616","name":"こけしの店佐藤","lat":38.73897,"lon":140.71012,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2289975797","name":"いとうこけし店","lat":38.748,"lon":140.7346,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2289976240","name":"おみやげギフト 尾形","lat":38.74664,"lon":140.73562,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290002305","name":"こけしの岡仁","lat":38.74523,"lon":140.71896,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290010710","name":"こけしとぬりもの まるよし","lat":38.74408,"lon":140.71707,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290010776","name":"鳴子みやげ製造元 川合商店","lat":38.74403,"lon":140.71702,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290015251","name":"岸こけし店","lat":38.74232,"lon":140.71594,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290015271","name":"秋山こけし店","lat":38.74218,"lon":140.71597,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290018373","name":"桜井こけし店","lat":38.742,"lon":140.71534,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290046432","name":"鳴子こけし 岡崎","lat":38.74241,"lon":140.7171,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290047420","name":"大沼こけし店","lat":38.74286,"lon":140.71774,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290054031","name":"佐藤こけしや","lat":38.7431,"lon":140.71778,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290095969","name":"鳴子民芸の店 かねげん","lat":38.74217,"lon":140.71764,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290096279","name":"老舗 高亀こけし店","lat":38.74227,"lon":140.71748,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290110826","name":"郷土民芸 佐々久","lat":38.74187,"lon":140.71804,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:2290829157","name":"早坂こけし店","lat":38.74182,"lon":140.71566,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:4641672394","name":"古本屋千年王国","lat":38.60186,"lon":140.7044,"pref":"宮城","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

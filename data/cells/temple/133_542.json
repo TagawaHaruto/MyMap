@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4908979109","name":"円光寺","lat":33.48727,"lon":135.71624,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4908985774","name":"田並キリスト教会","lat":33.48694,"lon":135.71569,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","wc":"no"},
+{"id":"osm:node:4909047619","name":"天満神社","lat":33.49196,"lon":135.72199,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6840125414","name":"妙光寺","lat":33.48797,"lon":135.73639,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6840128005","name":"金比羅宮","lat":33.49016,"lon":135.67449,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6840128006","name":"正覚寺","lat":33.48915,"lon":135.73639,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:437442241","name":"大賀郷園地","lat":33.1096,"lon":139.78057,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:446343124","name":"和泉親水公園","lat":33.10953,"lon":139.79927,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:527273225","name":"登龍園地","lat":33.11352,"lon":139.83559,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:564059270","name":"護神山公園","lat":33.11091,"lon":139.79157,"pref":"東京","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

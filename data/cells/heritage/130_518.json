@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:4967453533","name":"慰霊碑","lat":32.62822,"lon":129.73862,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:192217475","name":"端島炭鉱","lat":32.62775,"lon":129.73822,"pref":"長崎","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

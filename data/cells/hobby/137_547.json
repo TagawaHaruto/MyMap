@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:1937996035","name":"広のモーターサイクル","lat":34.36952,"lon":136.8037,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:1944052894","name":"伊藤書店","lat":34.48349,"lon":136.84211,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4163229319","name":"（有）小倉モータース","lat":34.33005,"lon":136.8238,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4172848046","name":"神戸屋楽器店","lat":34.3285,"lon":136.82407,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:node:12551468191","name":"松井商店","lat":34.30778,"lon":136.81914,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"}
+]

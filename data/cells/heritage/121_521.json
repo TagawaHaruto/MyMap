@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:13747673872","name":"平成十四年九月完成","lat":30.45236,"lon":130.49187,"pref":"鹿児島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5467140342","name":"Soyotei","lat":30.40487,"lon":130.43059,"pref":"鹿児島","genres":["lodging"],"indoor":true,"url":"http://www.soyotei.net","note":"宿","g":"heritage","k":"lodging","kana":"そよてい"}
+]

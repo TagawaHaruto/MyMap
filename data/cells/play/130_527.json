@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:10171667351","name":"七ツ島展望所","lat":32.65338,"lon":131.76282,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1114965660","name":"本村児童公園","lat":32.70498,"lon":131.81908,"pref":"宮崎","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:1114965661","name":"北浦体育館","lat":32.71,"lon":131.82201,"pref":"宮崎","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5802910557","name":"烏止野神社","lat":33.73397,"lon":136.00439,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5802910662","name":"大上神社","lat":33.73416,"lon":136.00341,"pref":"三重","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6853147592","name":"念法寺","lat":33.72592,"lon":136.0022,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6853147593","name":"地蔵","lat":33.72195,"lon":136.00061,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:6853147594","name":"阿弥陀院","lat":33.7211,"lon":136.00144,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:6853148188","name":"榎大明神","lat":33.72342,"lon":136.00316,"pref":"和歌山","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"}
+]

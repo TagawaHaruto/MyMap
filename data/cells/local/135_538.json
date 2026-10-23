@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:2618137755","name":"みはらしの丘あいさい広場","lat":33.97643,"lon":134.60169,"pref":"徳島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","oh":"08:30-17:30"},
+{"id":"osm:node:2990721599","name":"ひなの里かつうら","lat":33.93211,"lon":134.52291,"pref":"徳島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:2990721601","name":"よってネ市","lat":33.93204,"lon":134.52259,"pref":"徳島","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:11898876684","name":"由岐漁港（木岐）","lat":33.76314,"lon":134.57236,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11913095216","name":"由岐漁港（由岐）","lat":33.77016,"lon":134.59238,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11952009539","name":"あななんアリーナ","lat":33.86756,"lon":134.60378,"pref":"徳島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:465301939","name":"阿南カントリークラブ","lat":33.88043,"lon":134.63772,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1296385648","name":"阿南市スポーツ総合センター","lat":33.9197,"lon":134.68421,"pref":"徳島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:阿南市スポーツ総合センター"},
+{"id":"osm:node:4883209146","name":"RVパークライト ひなの里 かつうら","lat":33.9319,"lon":134.52279,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"https://www.hinanosato.com","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13255860501","name":"勝浦フライイトパーク オートキャンプ場","lat":33.95952,"lon":134.50682,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287522817","name":"YMCA阿南国際海洋センター","lat":33.8485,"lon":134.70302,"pref":"徳島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0884-33-1221"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:14287631006","name":"おせりの滝キャンプ場","lat":32.45045,"lon":131.39325,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://r.goope.jp/misatoya","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-9796-8338"},
+{"id":"osm:node:14287631007","name":"美郷町石峠レイクランド","lat":32.43179,"lon":131.46842,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-68-2222"},
+{"id":"osm:node:14287631012","name":"水清谷ふるさと村オートキャンプ場","lat":32.39891,"lon":131.37091,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0982-59-1600"},
+{"id":"osm:node:14287631016","name":"牧水公園","lat":32.36114,"lon":131.46253,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"https://www.bokusuipark.com/","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14289685298","name":"尾鈴キャンプ場","lat":32.28728,"lon":131.46469,"pref":"宮崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0983-25-5721"}
+]

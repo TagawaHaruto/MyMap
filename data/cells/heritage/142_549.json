@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:2501451285","name":"苗木城","lat":35.51316,"lon":137.48526,"pref":"岐阜","genres":["heritage"],"indoor":false,"url":"","note":"城跡","g":"heritage","k":"historic","wp":"ja:苗木城"},
+{"id":"osm:node:6112625233","name":"国指定史跡 苗木城跡","lat":35.51342,"lon":137.48798,"pref":"岐阜","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6114437163","name":"苗木遠山史料館","lat":35.51448,"lon":137.48124,"pref":"岐阜","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6114437406","name":"恵那の雪 ひとまづ消えし 小春かな","lat":35.51303,"lon":137.47938,"pref":"岐阜","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6114437408","name":"苗木城公園","lat":35.51295,"lon":137.47928,"pref":"岐阜","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6125724834","name":"苗木城址碑","lat":35.5132,"lon":137.48527,"pref":"岐阜","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6342460281","name":"整郷塔","lat":35.74863,"lon":137.33193,"pref":"岐阜","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14286978587","name":"舞台峠コテージ","lat":35.70057,"lon":137.37456,"pref":"岐阜","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"0573-79-3333"},
+{"id":"osm:node:14287072716","name":"魚の宿","lat":35.64032,"lon":137.32035,"pref":"岐阜","genres":["lodging"],"indoor":true,"url":"http://www.sakananoyado.com/index.html","note":"宿","g":"heritage","k":"lodging","tel":"0574-78-3192"}
+]

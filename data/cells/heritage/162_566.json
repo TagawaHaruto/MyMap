@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:6140369959","name":"塩入観音","lat":40.50746,"lon":141.5265,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7076571866","name":"忠魂碑","lat":40.52761,"lon":141.52195,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7076571867","name":"震嘯災記念碑","lat":40.52772,"lon":141.5219,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7076571868","name":"慰霊観音","lat":40.52767,"lon":141.52194,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7076571869","name":"夏堀源三郎像","lat":40.52783,"lon":141.52195,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7076571870","name":"神田重雄像","lat":40.52773,"lon":141.52212,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5385424348","name":"旧八戸シーガルビューホテル 花と月の渚","lat":40.53934,"lon":141.57153,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","wc":"yes","pk":2},
+{"id":"osm:node:5426421922","name":"高山旅館","lat":40.52223,"lon":141.51975,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"たかやまりょかん","tel":"+81 178 22 1971"},
+{"id":"osm:node:5426421924","name":"パンションこうよう","lat":40.52544,"lon":141.51084,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ぺんしおんこよ","tel":"+81 178 47 8787"},
+{"id":"osm:node:5426422041","name":"旅舘 照本","lat":40.52291,"lon":141.51783,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

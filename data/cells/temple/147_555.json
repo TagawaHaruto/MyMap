@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:14091416401","name":"魚沼神社","lat":36.93207,"lon":138.82057,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:871809086","name":"Suwa shrine","lat":36.94657,"lon":138.80138,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:871809087","name":"Old gate of Suwa shrine","lat":36.94613,"lon":138.80304,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:872052069","name":"湯沢寺","lat":36.93678,"lon":138.80549,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1000530005","name":"御坂三社神社","lat":36.76636,"lon":138.82265,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1048281434","name":"建明寺","lat":36.76737,"lon":138.9672,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1049815656","name":"十二神社","lat":36.98085,"lon":138.89139,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1204099562","name":"両山神社","lat":36.92075,"lon":138.8448,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

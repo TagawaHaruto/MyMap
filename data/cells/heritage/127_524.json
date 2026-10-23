@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:13275792738","name":"高崎新田駅前団地完成記念 山頭火の歌碑","lat":31.87615,"lon":131.06292,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13695567203","name":"植樹記念碑","lat":31.75066,"lon":131.01268,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13988078645","name":"戦場原区画整理記念碑","lat":31.78556,"lon":131.01012,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14189497657","name":"太郎坊耕地整理記念碑","lat":31.78627,"lon":131.09093,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14189497660","name":"架橋記念碑","lat":31.7827,"lon":131.07876,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14189512883","name":"星ヶ池","lat":31.78559,"lon":131.09207,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14189512890","name":"営農研修館建設記念碑","lat":31.77541,"lon":131.07831,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:14189512891","name":"公會堂記念碑","lat":31.77521,"lon":131.07839,"pref":"宮崎","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4757163420","name":"ベッセルホテル 都城","lat":31.7583,"lon":131.08551,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4757562650","name":"青井岳荘","lat":31.82955,"lon":131.22526,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12768745948","name":"エアリーピーク","lat":31.92589,"lon":131.00891,"pref":"宮崎","genres":["lodging"],"indoor":true,"url":"https://airypeak.net/","note":"宿","g":"heritage","k":"lodging"}
+]

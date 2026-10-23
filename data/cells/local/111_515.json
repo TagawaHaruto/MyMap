@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:173603409","name":"天城町Ｂ＆Ｇ海洋センター プール","lat":27.83873,"lon":128.88433,"pref":"鹿児島","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1546219940","name":"兼久ゴルフコース","lat":27.80106,"lon":128.92266,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1539295357","name":"畦キャンプ場","lat":27.8463,"lon":128.96983,"pref":"鹿児島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

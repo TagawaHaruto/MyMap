@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:1726372044","name":"堀自転車商会","lat":42.82652,"lon":141.65226,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4588452437","name":"オカモトサイクル","lat":42.97333,"lon":141.56776,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5639939651","name":"ビッグバン","lat":42.8378,"lon":141.63665,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bigban.jp/","note":"古着・リサイクル","g":"hobby","k":"hobby","kana":"びっぐばん","oh":"10:00-22:00"},
+{"id":"osm:node:5639962534","name":"セカンドストリート","lat":42.83931,"lon":141.63346,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.2ndstreet.jp/","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"10:00-22:00"},
+{"id":"osm:node:5644932589","name":"サイクルベースあさひ","lat":42.84087,"lon":141.63069,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"http://www.cb-asahi.jp/","note":"自転車","g":"hobby","k":"hobby","kana":"さいくるべいすあさひ","oh":"Mo-Fr 11:00-20:00; Sa-Su 10:00-20:00; PH 10:00-20:00"},
+{"id":"osm:node:5647846966","name":"アルペン","lat":42.84038,"lon":141.63072,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.alpen-group.jp/","note":"スポーツ用品","g":"hobby","k":"hobby","kana":"あるぺん","oh":"10:00-20:00"},
+{"id":"osm:node:5714409485","name":"喜久屋書店","lat":42.83085,"lon":141.6718,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.blg.co.jp/kikuya/","note":"本屋","g":"hobby","k":"hobby","oh":"10:00-21:00"},
+{"id":"osm:node:5723391347","name":"ブックオフ","lat":42.83488,"lon":141.66238,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/","note":"本屋","g":"hobby","k":"hobby","kana":"ぶっくおふ","oh":"10:00-22:00"},
+{"id":"osm:node:5811132273","name":"文教堂","lat":42.82831,"lon":141.65079,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"ぶんきょど"},
+{"id":"osm:node:5888147365","name":"アニメイト","lat":42.78771,"lon":141.68052,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/new_chitose_airport/","note":"ホビー・模型","g":"hobby","k":"hobby","kana":"あにまて","oh":"10:00-20:00","tel":"0123-45-0711"},
+{"id":"osm:node:5891213679","name":"ポケモンストア","lat":42.78761,"lon":141.68048,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.pokemon.co.jp/gp/store/new-chitose-airport/","note":"ホビー・模型","g":"hobby","k":"hobby","oh":"08:00-20:00","tel":"0123-45-5865"},
+{"id":"osm:node:6784184997","name":"岡本書店","lat":42.88736,"lon":141.57012,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9959186991","name":"ハードオフ","lat":42.89053,"lon":141.59978,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=201297","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su,PH 10:00-20:00","tel":"+81 123 39 3370"},
+{"id":"osm:node:9959186992","name":"オフハウス","lat":42.89061,"lon":141.59955,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su,PH 10:00-20:00","tel":"+81 123 39 3380"},
+{"id":"osm:node:12592407089","name":"博品館 TOY PARK","lat":42.78705,"lon":141.67677,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:363245138","name":"キャンパーズアンドアングラーズ北広島","lat":42.98328,"lon":141.55541,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://campers-and-anglers.co.jp/kitahiroshima/","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:605957182","name":"フィッシングプロ","lat":42.8295,"lon":141.65528,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

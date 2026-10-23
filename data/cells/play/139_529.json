@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6449975510","name":"白角川水辺公園","lat":34.87296,"lon":132.27337,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:6483909395","name":"天床地公園","lat":34.96373,"lon":132.33495,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:687751736","name":"浜田市旭運動公園","lat":34.85944,"lon":132.25387,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:688378303","name":"ふるさと歴史公園","lat":34.86419,"lon":132.30428,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:690495949","name":"風の国森林公園","lat":34.92379,"lon":132.2663,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:690725556","name":"江尾公園","lat":34.93521,"lon":132.32193,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:690884943","name":"川戸児童公園","lat":34.95892,"lon":132.33535,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1379300312","name":"断魚渓つつじ公園","lat":34.93052,"lon":132.47321,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:relation:19014966","name":"香木の森公園","lat":34.87679,"lon":132.4222,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1383482508","name":"ふれあい水辺公園","lat":34.83418,"lon":132.30962,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1386594990","name":"余勢城跡 碑公園","lat":34.90077,"lon":132.45835,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1387014386","name":"薬草・薬木公園","lat":34.87215,"lon":132.42101,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1387408169","name":"いわみスタジアム","lat":34.88017,"lon":132.41893,"pref":"島根","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:661418668","name":"石見野球場","lat":34.88093,"lon":132.41878,"pref":"島根","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:1385218507","name":"市木ふれあい広場体育館","lat":34.84828,"lon":132.34979,"pref":"島根","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1385315999","name":"石見柔道場","lat":34.91359,"lon":132.37868,"pref":"島根","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1091004835","name":"悠邑ふるさと会館","lat":34.99135,"lon":132.49693,"pref":"島根","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse","kana":"ゆうゆうふるさとかいかん"}
+]

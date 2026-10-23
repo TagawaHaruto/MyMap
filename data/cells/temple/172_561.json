@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:11198548470","name":"厳島神社","lat":43.14417,"lon":140.43047,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11198548484","name":"浄国寺","lat":43.141,"lon":140.43363,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:500021886","name":"長福寺","lat":43.09921,"lon":140.46647,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:relation:7328799","name":"光徳寺","lat":43.09997,"lon":140.46287,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:718788227","name":"法勝寺","lat":43.10023,"lon":140.46353,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.sotozen-net.or.jp/","note":"寺","g":"temple","k":"worship","kana":"ほうしょうじ","tel":"+81-135-75-3064"},
+{"id":"osm:way:718788237","name":"一乗寺","lat":43.09977,"lon":140.46548,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:967695532","name":"川白稲荷神社","lat":43.22006,"lon":140.32825,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:967740856","name":"智龍寺","lat":43.06108,"lon":140.49691,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:967751651","name":"泊稲荷神社","lat":43.06815,"lon":140.49143,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:967756323","name":"瑞龍山法輪寺","lat":43.06855,"lon":140.49426,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1172887546","name":"天龍寺","lat":43.13999,"lon":140.43257,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

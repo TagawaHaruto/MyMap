@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:4102865989","name":"サシバ","lat":24.82401,"lon":125.16103,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4111351893","name":"レストラン入江","lat":24.81654,"lon":125.17379,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5084182287","name":"伊島観光サービス","lat":24.81198,"lon":125.17768,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5084183230","name":"琉宮Ｒｙｕｇｕｕ","lat":24.81688,"lon":125.17339,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5822729581","name":"伊良部食堂ちゃんぷる","lat":24.82465,"lon":125.16678,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:6471661885","name":"伊良部 かめそば","lat":24.83979,"lon":125.16635,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:714730451","name":"いちば","lat":24.84058,"lon":125.21225,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1262786963","name":"Doug’s Burger Ikema-Jima","lat":24.92313,"lon":125.24904,"pref":"沖縄","genres":["food"],"indoor":true,"url":"https://www.dougsburger.com","note":"飲食店","g":"food","k":"restaurant","tel":"0980-79-6888"},
+{"id":"osm:node:5084182509","name":"ゆくいどぅくるかなさ","lat":24.8187,"lon":125.17645,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5084183229","name":"茶喜屋","lat":24.81584,"lon":125.17662,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13017229794","name":"Gelato Cafe Ninufa","lat":24.92991,"lon":125.23348,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5084183228","name":"居酒屋 でんみ","lat":24.81568,"lon":125.17731,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

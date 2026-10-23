@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:946509311","name":"旧花田家番屋","lat":44.13644,"lon":141.65539,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"歴史的建造物","g":"heritage","k":"historic","kana":"きゅはなだけばんや"},
+{"id":"osm:way:722229148","name":"小平町総合交流ターミナル ゆったりかん","lat":44.02772,"lon":141.66547,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:722231666","name":"ゆうゆうそう（夕遊創）","lat":44.02974,"lon":141.66515,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

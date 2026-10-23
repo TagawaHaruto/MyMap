@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:6933551242","name":"記恩碑","lat":39.52207,"lon":140.8276,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8017935818","name":"交通安全祈念慰霊碑","lat":39.54373,"lon":140.83933,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8017968537","name":"貝沢小学校閉校記念碑","lat":39.54846,"lon":140.84325,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8038831877","name":"山伏線縣道隧道開通記念碑","lat":39.56234,"lon":140.85272,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8065415390","name":"菅野敬一団長顕彰碑","lat":39.55539,"lon":140.83419,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8065415392","name":"貝沢音頭","lat":39.55543,"lon":140.83421,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8073591280","name":"慰霊碑","lat":39.53574,"lon":140.83342,"pref":"岩手","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"}
+]

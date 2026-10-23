@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2784757243","name":"スポーツデポ","lat":43.0106,"lon":144.40719,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:4798363830","name":"ハードオフ","lat":43.00747,"lon":144.40578,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su,PH 10:00-20:00"},
+{"id":"osm:node:4828284161","name":"ドキドキ 昭和店","lat":43.01745,"lon":144.36265,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4828296483","name":"なんでもリサイクルビックバン","lat":43.01457,"lon":144.32114,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bigban.jp/bb-hoshigaura/","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"10:00-20:00","tel":"+81 154-51-3196"},
+{"id":"osm:node:4832501323","name":"ハードオフ","lat":43.01201,"lon":144.36007,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4832531322","name":"スーパースポーツゼビオ","lat":43.0081,"lon":144.40626,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5099953447","name":"セカンドストリート","lat":43.00169,"lon":144.39647,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:5326400422","name":"西松屋","lat":43.0246,"lon":144.35298,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:5888147364","name":"アニメイト","lat":43.00887,"lon":144.40498,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.animate.co.jp/shop/kushiro/","note":"アニメ・漫画","g":"hobby","k":"hobby","kana":"あにめいと","oh":"09:00-21:00","tel":"+81-154-39-5561"},
+{"id":"osm:node:6758873265","name":"佐藤自転車商会","lat":43.00842,"lon":144.36323,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","tel":"+81 154-51-5220"},
+{"id":"osm:node:6758927419","name":"ブックスハンター鳥取店","lat":43.01765,"lon":144.3552,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"09:30-20:00","tel":"+81 154-53-1175"},
+{"id":"osm:node:6768953966","name":"レッドバロン釧路","lat":43.01699,"lon":144.33742,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","oh":"10:00-20:00","tel":"+81 154-55-5302"},
+{"id":"osm:node:10079203451","name":"オフハウス","lat":43.00758,"lon":144.40598,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su,PH 10:00-20:00"},
+{"id":"osm:node:10079203452","name":"ホビーオフ","lat":43.00768,"lon":144.40616,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su,PH 10:00-20:00"},
+{"id":"osm:node:10081961827","name":"オフハウス","lat":43.01193,"lon":144.3602,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:10081961828","name":"ホビーオフ","lat":43.01186,"lon":144.36031,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:13095385301","name":"カメラのキタムラ","lat":43.01103,"lon":144.41101,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"カメラ","g":"hobby","k":"hobby","tel":"+81 154 37 8727"},
+{"id":"osm:way:386389317","name":"ブックオフ","lat":43.01834,"lon":144.3935,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00"},
+{"id":"osm:way:490644011","name":"トイザらス","lat":43.02209,"lon":144.36003,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"}
+]

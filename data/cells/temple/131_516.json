@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:769298136","name":"浜串教会","lat":32.89089,"lon":129.08445,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4401084599","name":"希望の聖母像","lat":32.8913,"lon":129.09098,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:4787585820","name":"高松権現","lat":32.75441,"lon":129.00318,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:4787587545","name":"鷹ん巣神社","lat":32.75237,"lon":129.00196,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5185623272","name":"奈良尾神社","lat":32.83978,"lon":129.05982,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6536391431","name":"八坂神社(下社)","lat":32.99925,"lon":129.17485,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6536391469","name":"崎浦寺","lat":32.99908,"lon":129.17607,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:12134735207","name":"黒住教会所","lat":32.98492,"lon":129.11651,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:12134735209","name":"恵比寿神社","lat":32.98486,"lon":129.11432,"pref":"長崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

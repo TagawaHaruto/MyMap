@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:5536658489","name":"くまざわ書店","lat":33.8921,"lon":130.74239,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:5536658492","name":"タワーレコード","lat":33.89196,"lon":130.7427,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:7701888504","name":"ヒマラヤスポーツ&ゴルフ くりえいと宗像店","lat":33.81471,"lon":130.56353,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:8826337557","name":"パレット","lat":33.80953,"lon":130.56594,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","kana":"ぱれっと"},
+{"id":"osm:node:12819599117","name":"ハセガワスポーツ","lat":33.83216,"lon":130.73783,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:13091754231","name":"買取専門店 銀座屋","lat":33.83171,"lon":130.73773,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:14026713787","name":"ダートバイク ZIM","lat":33.84905,"lon":130.74029,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:way:549859432","name":"ヒマラヤスポーツ 八幡西店","lat":33.84753,"lon":130.72602,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:802505664","name":"TSUTAYA共立大前店","lat":33.87249,"lon":130.70668,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:824816811","name":"カメラのキタムラ","lat":33.81103,"lon":130.5645,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"カメラ","g":"hobby","k":"hobby"},
+{"id":"osm:way:824816818","name":"明屋書店","lat":33.81106,"lon":130.56364,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1084578509","name":"ブックオフ","lat":33.78409,"lon":130.54492,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:1364253494","name":"ヒマラヤゴルフ 八幡西店","lat":33.84849,"lon":130.72632,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby","pk":2},
+{"id":"osm:way:1368881028","name":"明林堂書店","lat":33.83506,"lon":130.73822,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:1385073617","name":"サイクルベースあさひ","lat":33.84063,"lon":130.73373,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:1525793698","name":"おたから本舗","lat":33.83866,"lon":130.74048,"pref":"福岡","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

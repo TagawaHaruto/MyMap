@@ -1,0 +1,14 @@
+[
+{"id":"osm:way:186530930","name":"創価学会","lat":43.32709,"lon":145.59574,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:243626903","name":"根室キリスト教会","lat":43.33362,"lon":145.58131,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:245997334","name":"根室山開法寺","lat":43.33331,"lon":145.5841,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ねむろさんかいほうじ"},
+{"id":"osm:way:1198008360","name":"法真寺","lat":43.27874,"lon":145.5068,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1198036796","name":"真宗大谷派根室別院","lat":43.33045,"lon":145.5764,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1198036831","name":"根室出雲神社","lat":43.32943,"lon":145.57445,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ねむろいずもじんじゃ"},
+{"id":"osm:way:1200959033","name":"實成寺","lat":43.33098,"lon":145.5821,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"じつじょうじ"},
+{"id":"osm:way:1201414416","name":"常惺寺","lat":43.32952,"lon":145.57339,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"じょうこうじ"},
+{"id":"osm:way:1201414417","name":"耕雲寺","lat":43.32975,"lon":145.5752,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"こううんじ"},
+{"id":"osm:way:1201414419","name":"白毫寺","lat":43.33099,"lon":145.57773,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"びゃくごうじ"},
+{"id":"osm:way:1201414420","name":"大徳寺","lat":43.33156,"lon":145.58028,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"だいとくじ"},
+{"id":"osm:way:1410558734","name":"法海寺","lat":43.33192,"lon":145.59622,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

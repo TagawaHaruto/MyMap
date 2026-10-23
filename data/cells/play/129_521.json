@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4116423214","name":"龍ケ岳山頂自然公園","lat":32.4047,"lon":130.38003,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:798289286","name":"芦北海浜総合公園","lat":32.3205,"lon":130.47291,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:943172868","name":"ホタルの里公園","lat":32.46558,"lon":130.39945,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:946397347","name":"倉岳町史跡ゾーン公園","lat":32.41261,"lon":130.34532,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:946397348","name":"倉岳町史跡ゾーン公園","lat":32.41448,"lon":130.34564,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:946827658","name":"えびす像公園","lat":32.3955,"lon":130.30926,"pref":"熊本","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:942554892","name":"楠甫体育館","lat":32.49799,"lon":130.36985,"pref":"熊本","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:944681884","name":"姫戸体育館","lat":32.42867,"lon":130.40259,"pref":"熊本","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:945506302","name":"龍ヶ岳体育館","lat":32.39389,"lon":130.39207,"pref":"熊本","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:946385409","name":"倉岳武道場","lat":32.41049,"lon":130.34353,"pref":"熊本","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:946458279","name":"倉岳体育館","lat":32.40479,"lon":130.33909,"pref":"熊本","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:946906241","name":"栖本体育館","lat":32.40886,"lon":130.27589,"pref":"熊本","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:948864194","name":"金焼体育館","lat":32.39814,"lon":130.25228,"pref":"熊本","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

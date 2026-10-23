@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:458537927","name":"知床羅臼 濱田商店","lat":44.00537,"lon":145.17927,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:1489034753","name":"羅臼(漁協) 直営店 海鮮工房","lat":44.01751,"lon":145.19223,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:458537151","name":"羅臼漁港第一市場","lat":44.0209,"lon":145.19777,"pref":"北海道","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:1209638914","name":"羅臼温泉野営場","lat":44.03301,"lon":145.15628,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://kanko.rausu-town.jp/spots/view/29","note":"キャンプ・野外","g":"local","k":"camp","kana":"らうすおんせんやえいじょう","tel":"+81 153 87 2126","wc":"no"},
+{"id":"osm:way:1479479582","name":"知床羅臼野遊びフィールド","lat":44.01875,"lon":145.17839,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://shiretokorausu-noasobi.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-9398-6019"}
+]

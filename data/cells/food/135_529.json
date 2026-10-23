@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:8261590617","name":"中華そば　たちばなや","lat":33.90028,"lon":132.27894,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1383941869","name":"Sun Sun ガーデン","lat":33.94653,"lon":132.2668,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1385609460","name":"ALOHA ORANGE 2nd アロハオレンジ セカンド","lat":33.94749,"lon":132.26125,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1387819343","name":"Cafe & Bar ESSENCE","lat":33.94734,"lon":132.26847,"pref":"山口","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:1385607363","name":"ながや菓子工房","lat":33.94719,"lon":132.26812,"pref":"山口","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

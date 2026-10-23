@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:6180426985","name":"祭り屋回転寿司","lat":43.00281,"lon":144.37872,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","kana":"まつりやかいてんずし"},
+{"id":"osm:way:1266335392","name":"釧之助本店","lat":43.00681,"lon":144.4043,"pref":"北海道","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6758815816","name":"釧路アイスアリーナ","lat":43.01329,"lon":144.36003,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:釧路アイスアリーナ","tel":"+81 154-54-2345"},
+{"id":"osm:node:6758918935","name":"スケートハウス釧路","lat":43.0136,"lon":144.35933,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://www.facebook.com/skkushiro/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 154-51-8381"},
+{"id":"osm:node:6768629886","name":"鳥取温水プール","lat":43.01183,"lon":144.35107,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"https://tottori.aqua-topia.com/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 154-53+5333"},
+{"id":"osm:way:498975225","name":"湿原の風アリーナ釧路","lat":43.02756,"lon":144.41819,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"http://www.situgennokaze.jp/index.html","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:532958573","name":"釧路市柳町スピードスケート場","lat":43.00327,"lon":144.38268,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1424524882","name":"釧路カントリークラブ","lat":43.14882,"lon":144.31122,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.kushiro-country-club.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"くしろかんとりーくらぶ","tel":"+81 154 65 2331"},
+{"id":"osm:way:1424524900","name":"釧路風林カントリークラブ","lat":43.14228,"lon":144.29982,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"https://www.fuurin-cc.co.jp/","note":"遊び・スポーツ","g":"local","k":"activity","kana":"くしろふうりんかんとりーくらぶ","tel":"+81 154 65 2121"},
+{"id":"osm:node:10682258206","name":"達古武オートキャンプ場","lat":43.10949,"lon":144.48898,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12032078680","name":"鶴の里キャンプフィールド","lat":43.15452,"lon":144.32767,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286108245","name":"鶴居村キャンプ場","lat":43.23699,"lon":144.32173,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0154-64-2050"},
+{"id":"osm:node:14286108252","name":"シラルトロ湖キャンプ場","lat":43.19168,"lon":144.49984,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"015-487-2121"},
+{"id":"osm:way:422747533","name":"つるい村民の森オートキャンプ場","lat":43.23488,"lon":144.28188,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

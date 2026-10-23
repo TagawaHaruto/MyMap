@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:323368943","name":"屋内アイススケート場","lat":34.93631,"lon":132.12975,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:602633751","name":"浜田室内プール","lat":34.90296,"lon":132.0937,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:657111516","name":"ラ・ペアーレ浜田","lat":34.90373,"lon":132.09115,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:660061225","name":"第２体育館","lat":34.99768,"lon":132.21431,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:669372090","name":"浜田リンクスゴルフ場","lat":34.94,"lon":132.13782,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1236851651","name":"グランドゴルフ場","lat":34.88216,"lon":132.20217,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5002295321","name":"石見海浜公園オートキャンプ場","lat":34.94972,"lon":132.12383,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"http://kkisp.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 855 28 2231"},
+{"id":"osm:node:14287465796","name":"島根県立道猿坊公園キャンプ場","lat":34.7665,"lon":132.07344,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0855-32-0080"},
+{"id":"osm:node:14287476480","name":"186.Haza","lat":34.79293,"lon":132.20153,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-4659-6563"},
+{"id":"osm:way:657887293","name":"石見海浜公園ケビン村","lat":34.94979,"lon":132.12119,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1507392484","name":"石見海浜公園キャンプ村(フリーサイト)","lat":34.9499,"lon":132.11999,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

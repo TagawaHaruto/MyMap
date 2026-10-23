@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:4533762975","name":"わんぱく広場","lat":34.18015,"lon":135.35046,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"遊び場","g":"play","k":"park"},
+{"id":"osm:way:329658992","name":"椿園","lat":34.22456,"lon":135.35695,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:457201166","name":"のかみふれあい公園","lat":34.17944,"lon":135.34751,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:558956138","name":"明恵の里スポーツ公園","lat":34.05708,"lon":135.26179,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:650582039","name":"四季の里公園","lat":34.21643,"lon":135.25997,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:722982197","name":"くすのき公園","lat":34.15516,"lon":135.31269,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758318191","name":"那賀スポーツレクリエーションセンター","lat":34.24307,"lon":135.33161,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","oh":"Tu-Su 10:00-21:00; Sa 10:00-18:00"},
+{"id":"osm:way:784500957","name":"鳥屋城山公園","lat":34.0636,"lon":135.26104,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1007570373","name":"貴志川スポーツ公園","lat":34.19403,"lon":135.3275,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1208019499","name":"二川河川敷公園","lat":34.06889,"lon":135.35677,"pref":"和歌山","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:758311661","name":"東部テニスコート","lat":34.15096,"lon":135.27755,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:758313262","name":"海南市沖野々スポーツ広場","lat":34.1635,"lon":135.27284,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:758314743","name":"長谷川プール","lat":34.05821,"lon":135.30178,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:1330239497","name":"紀の川市桃源郷運動公園陸上競技場","lat":34.22196,"lon":135.35647,"pref":"和歌山","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports","wp":"ja:紀の川市桃源郷運動公園陸上競技場"}
+]

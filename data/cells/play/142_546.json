@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:570145132","name":"断層展望広場","lat":35.61497,"lon":136.6203,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"だんそうてんぼうひろば"},
+{"id":"osm:way:583239524","name":"西秋沢公園","lat":35.50163,"lon":136.69665,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:587533604","name":"ハリヨ公園","lat":35.51786,"lon":136.73638,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:587613350","name":"梅原あおぞら公園","lat":35.51291,"lon":136.7409,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:783204861","name":"淡墨公園","lat":35.63263,"lon":136.60904,"pref":"岐阜","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1354148044","name":"月夜谷ふれあいの里","lat":35.57925,"lon":136.53627,"pref":"岐阜","genres":["play"],"indoor":false,"url":"http://doinaka-kk.com/index.php","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:583239522","name":"岐阜西秋沢運動場","lat":35.50124,"lon":136.69172,"pref":"岐阜","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:585415433","name":"三甲スタジアム","lat":35.50838,"lon":136.69547,"pref":"岐阜","genres":["outdoor","play"],"indoor":false,"url":"","note":"スタジアム","g":"play","k":"sports"},
+{"id":"osm:way:585635482","name":"フィールドかけぼら","lat":35.51747,"lon":136.69472,"pref":"岐阜","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

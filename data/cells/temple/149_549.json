@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:9572654142","name":"白山神社","lat":37.44703,"lon":137.25548,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9572654164","name":"広栗神社","lat":37.45341,"lon":137.26064,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:11484493869","name":"乗光寺","lat":37.43716,"lon":137.26447,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1168915322","name":"総神社","lat":37.43613,"lon":137.25901,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1236074546","name":"春日神社社務所","lat":37.43758,"lon":137.26075,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1236240114","name":"菅原神社（野々江町）","lat":37.44072,"lon":137.27384,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1236622484","name":"大連寺","lat":37.43711,"lon":137.26305,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1236637135","name":"西勝寺","lat":37.43736,"lon":137.26197,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1236932471","name":"野々江町本江寺","lat":37.44719,"lon":137.28234,"pref":"石川","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

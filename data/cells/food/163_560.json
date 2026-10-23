@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:8038856985","name":"汐風ドライブイン","lat":40.77209,"lon":140.17452,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","oh":"Mo-Su 10:00-18:00","tel":"0173723401"},
+{"id":"osm:node:8968501379","name":"らーめん 寛","lat":40.77792,"lon":140.21791,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8968501416","name":"らーめん鯵丸","lat":40.77635,"lon":140.22046,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81 173 72 8780"},
+{"id":"osm:node:8968501419","name":"駅前ラーメン 良治","lat":40.77566,"lon":140.21993,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:8968501425","name":"おふくろの味 泉","lat":40.7785,"lon":140.2109,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:8968501492","name":"らーめん鯵丸","lat":40.7783,"lon":140.21508,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:8968501505","name":"山清","lat":40.7791,"lon":140.20857,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11108312565","name":"番場食堂","lat":40.77711,"lon":140.22277,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","tel":"+81 173 72 2412"},
+{"id":"osm:node:12730297601","name":"たきわ","lat":40.78357,"lon":140.20541,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:803350422","name":"一心亭","lat":40.77544,"lon":140.22417,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:node:8968501502","name":"穂高","lat":40.77877,"lon":140.20939,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:9565988973","name":"きくや商店","lat":40.78749,"lon":140.23985,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:8968501414","name":"焼き立てパン工房　TATUYA","lat":40.77649,"lon":140.22048,"pref":"青森","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","tel":"0173-72-5885"},
+{"id":"osm:node:8968501415","name":"お菓子のTATUYA","lat":40.77642,"lon":140.22048,"pref":"青森","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","tel":"0173-72-5885"},
+{"id":"osm:node:8968501517","name":"山ざき","lat":40.78025,"lon":140.20633,"pref":"青森","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:8968501519","name":"村上屋","lat":40.78188,"lon":140.20553,"pref":"青森","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

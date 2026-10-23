@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:1655841959","name":"南町児童遊園","lat":35.243,"lon":140.38953,"pref":"千葉","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:9018326428","name":"八幡岬公園","lat":35.13591,"lon":140.31134,"pref":"千葉","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12958879867","name":"植村記念公園","lat":35.13995,"lon":140.31409,"pref":"千葉","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:828747783","name":"高磯公園","lat":35.14931,"lon":140.30965,"pref":"千葉","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:12958744789","name":"My Life Fitness","lat":35.14517,"lon":140.3136,"pref":"千葉","genres":["outdoor","play"],"indoor":true,"url":"","note":"ジム","g":"play","k":"sports"},
+{"id":"osm:way:713581975","name":"松前達郎記念球場","lat":35.19472,"lon":140.28643,"pref":"千葉","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

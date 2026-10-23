@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4663300535","name":"愛宕神社","lat":35.17582,"lon":133.56816,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5109545393","name":"木山神社奥宮","lat":35.017,"lon":133.71581,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5109545394","name":"木山神社","lat":35.01684,"lon":133.72246,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5109547891","name":"垂水神社","lat":35.01588,"lon":133.74743,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5109555604","name":"仏土寺","lat":35.01371,"lon":133.74186,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5184978479","name":"宝福寺","lat":35.00468,"lon":133.73924,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:519188892","name":"春日神社","lat":35.04295,"lon":133.66522,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:580854814","name":"一宮神社","lat":35.09443,"lon":133.69476,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:593408071","name":"久世神社","lat":35.08749,"lon":133.74387,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:603785171","name":"岡本山 真光寺","lat":35.08396,"lon":133.74604,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:634624425","name":"惣八幡神社","lat":35.07272,"lon":133.74321,"pref":"岡山","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

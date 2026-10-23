@@ -1,0 +1,16 @@
+[
+{"id":"osm:way:840026408","name":"白浜団地公園","lat":43.06872,"lon":144.81536,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:840050071","name":"白浜公園","lat":43.06082,"lon":144.81943,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:843740561","name":"住之江丘陵公園","lat":43.06341,"lon":144.84514,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:847875311","name":"奔渡公園","lat":43.03091,"lon":144.85623,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:848292500","name":"湾月町児童公園","lat":43.0349,"lon":144.84166,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1046380263","name":"子野日公園","lat":43.02893,"lon":144.86075,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1445217618","name":"町民広場","lat":43.0514,"lon":144.84874,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1445776138","name":"宮園公園","lat":43.06764,"lon":144.82534,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:389142959","name":"厚岸小学校グラウンド","lat":43.03628,"lon":144.84976,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:840032934","name":"宮園公園野球広場","lat":43.06908,"lon":144.82658,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:840032952","name":"厚岸町勤労者体育センター","lat":43.06589,"lon":144.82641,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1445776109","name":"多目的屋内スポーツ施設 あすた","lat":43.06624,"lon":144.82561,"pref":"北海道","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:1445776126","name":"宮園公園野球場","lat":43.06677,"lon":144.82414,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:relation:19765775","name":"宮園公園スケートリンク","lat":43.06853,"lon":144.82364,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"陸上トラック","g":"play","k":"sports"}
+]

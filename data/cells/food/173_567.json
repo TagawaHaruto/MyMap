@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2941565875","name":"焼肉 十々亭","lat":43.48432,"lon":141.91256,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4089559195","name":"とん太","lat":43.48388,"lon":141.85496,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"},
+{"id":"osm:node:5036084422","name":"レストラン藤観光","lat":43.31478,"lon":141.85628,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6346888981","name":"口福厨房","lat":43.47762,"lon":141.90345,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9700135302","name":"手打ち蕎麦 からまつ園","lat":43.41304,"lon":141.88465,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://www.karamatsu.co.jp/index.html","note":"和食","g":"food","k":"restaurant","kana":"てうちそば からまつえん","tel":"+81 125 65 4571"},
+{"id":"osm:node:11686817576","name":"長栄堂","lat":43.3317,"lon":141.86053,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://bibaichoeido.net/","note":"飲食店","g":"food","k":"restaurant","kana":"ちょうえいどう","oh":"09:00-18:00; Tu off","tel":"+81 126 63 2011"},
+{"id":"osm:node:14246175196","name":"あまとう みに","lat":43.49374,"lon":141.90718,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:179416274","name":"更科","lat":43.2614,"lon":141.95702,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:551082940","name":"寶龍ラーメン","lat":43.33212,"lon":141.86195,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:551182053","name":"ほっともっと美唄東3条店","lat":43.33497,"lon":141.8695,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:551408204","name":"寿楽","lat":43.33099,"lon":141.85779,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:1135447331","name":"ドライブインしらかば","lat":43.38792,"lon":141.87642,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1897894350","name":"古母里（廃業）","lat":43.26121,"lon":141.95824,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"11:00-15:00"},
+{"id":"osm:node:3930066086","name":"福屋cafe","lat":43.30787,"lon":141.75451,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:551082923","name":"ヤマシタ菓子店","lat":43.3319,"lon":141.86334,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:551431138","name":"お菓子のほんだ 美唄店","lat":43.33041,"lon":141.85571,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:679659377","name":"笑飛巣ーえびすー","lat":43.48104,"lon":141.91081,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:551442208","name":"つぼ八 美唄店","lat":43.32865,"lon":141.8582,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:551442276","name":"福よし美唄本店","lat":43.32921,"lon":141.8574,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

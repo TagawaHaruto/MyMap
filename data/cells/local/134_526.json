@@ -1,0 +1,13 @@
+[
+{"id":"osm:way:436899884","name":"道の駅くにさき","lat":33.5456,"lon":131.73985,"pref":"大分","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","pk":2},
+{"id":"osm:node:6622626753","name":"B&G","lat":33.67949,"lon":131.6045,"pref":"大分","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:705457553","name":"パシフィックブルーゴルフ&リゾート国東","lat":33.63253,"lon":131.68666,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:5704215139","name":"長崎鼻リゾートキャンプ場","lat":33.68327,"lon":131.52269,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://nagasakibana-beach.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-5482-3330","wc":"limited"},
+{"id":"osm:node:6616542350","name":"マリンピア姫島","lat":33.72062,"lon":131.64078,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:6616570335","name":"明石","lat":33.72294,"lon":131.65798,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:6616570336","name":"青年団","lat":33.72237,"lon":131.65775,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:6622603417","name":"権限崎ふるさと自然公園","lat":33.68603,"lon":131.60488,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287502396","name":"姫島海水浴場キャンプ場","lat":33.72053,"lon":131.66012,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"https://www.himeshima.jp/kankou/leisure/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0978-87-2279"},
+{"id":"osm:node:14287578021","name":"空気の森キャンプ場","lat":33.52815,"lon":131.54619,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0978-25-6986"},
+{"id":"osm:node:14287578026","name":"梅園の里","lat":33.52055,"lon":131.61941,"pref":"大分","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0978-64-6300"}
+]

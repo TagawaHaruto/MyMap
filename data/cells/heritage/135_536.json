@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:8463026991","name":"殉職の碑","lat":33.93188,"lon":134.21588,"pref":"徳島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026992","name":"災害復旧記念碑","lat":33.89599,"lon":134.15478,"pref":"徳島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463026993","name":"災害復旧記念碑","lat":33.96533,"lon":134.13528,"pref":"徳島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13149202705","name":"那賀川源流碑","lat":33.83594,"lon":134.08437,"pref":"徳島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:13172843556","name":"glampark つるぎの湯","lat":33.93292,"lon":134.21299,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:312023140","name":"中尾山高原平成荘","lat":33.89912,"lon":134.13879,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 68 3422"},
+{"id":"osm:way:312530248","name":"剣神社簡易宿泊所","lat":33.8682,"lon":134.09055,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:312531582","name":"民宿　平家の宿","lat":33.86777,"lon":134.08989,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"http://heike28soba.web.fc2.com/index.html","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 67 5296"},
+{"id":"osm:way:312533637","name":"霧の峰","lat":33.86764,"lon":134.08967,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"http://www.kirinomine.jp/","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 67 5211"},
+{"id":"osm:way:312537512","name":"民宿まつうら","lat":33.86805,"lon":134.08939,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"http://turugi-yado.com/index.php","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 67 5009"},
+{"id":"osm:way:312540199","name":"松浦商店/民宿松浦","lat":33.85411,"lon":134.02141,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 88 2131"},
+{"id":"osm:way:313325310","name":"小森旅館","lat":33.77129,"lon":134.2018,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 884 68 2810"},
+{"id":"osm:way:313780967","name":"ラ・フォーレつるぎ山","lat":33.87334,"lon":134.07669,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"https://www.laforet-t.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 67 5555"},
+{"id":"osm:way:313781473","name":"つるぎの宿 岩戸","lat":33.95537,"lon":134.06784,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"http://ww81.tiki.ne.jp/~iwado/index.html","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 67 2826"},
+{"id":"osm:way:313782872","name":"民宿川又","lat":33.90429,"lon":134.08083,"pref":"徳島","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 883 67 5130"},
+{"id":"osm:way:749358461","name":"べふ峡温泉","lat":33.76331,"lon":134.0309,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:4867790085","name":"みつかんや","lat":34.17248,"lon":132.22396,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:relation:2654938","name":"物産販売コーナー","lat":34.03268,"lon":132.21708,"pref":"山口","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:599684404","name":"大竹和紙工房","lat":34.21576,"lon":132.22125,"pref":"広島","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:769375755","name":"岩国市地方卸売市場","lat":34.12905,"lon":132.21958,"pref":"山口","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:325138885","name":"和木GC","lat":34.18603,"lon":132.21625,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:723282625","name":"岩国センチュリーGC","lat":34.06702,"lon":132.17291,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:723282629","name":"岩国CC","lat":34.02561,"lon":132.17173,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:728265554","name":"由宇文化スポーツセンター","lat":34.04013,"lon":132.21482,"pref":"山口","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1086229701","name":"柳井カントリークラブ確乎【ＰＧＭ】","lat":34.00833,"lon":132.13572,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1160795694","name":"美和ゴルフクラブ","lat":34.21408,"lon":132.08005,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4530923591","name":"ふれあいパーク","lat":34.01221,"lon":132.19783,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:13720047901","name":"Free camp","lat":34.0308,"lon":132.21729,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287495458","name":"晴海臨海公園デイキャンプ場","lat":34.23692,"lon":132.22521,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-57-4333"},
+{"id":"osm:node:14287517131","name":"二鹿野外活動センター","lat":34.15633,"lon":132.05756,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-47-3156"},
+{"id":"osm:node:14287563796","name":"蜂ヶ峯総合公園キャンプ場","lat":34.19097,"lon":132.22029,"pref":"山口","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0827-52-3751"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:621051884","name":"岩泉町B&G海洋センター","lat":39.84901,"lon":141.7952,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:621051885","name":"岩泉町B&G海洋センター・温水プール","lat":39.84893,"lon":141.79567,"pref":"岩手","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:623652993","name":"龍泉洞青少年旅行村","lat":39.86257,"lon":141.79045,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:925803820","name":"明戸キャンプ場","lat":39.94637,"lon":141.93637,"pref":"岩手","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

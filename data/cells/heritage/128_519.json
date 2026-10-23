@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:8693062717","name":"遠見岳見張番所跡","lat":32.24475,"lon":129.97775,"pref":"熊本","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:938298012","name":"天草レストハウス結乃里","lat":32.24548,"lon":129.9865,"pref":"熊本","genres":["lodging"],"indoor":true,"url":"https://www.yuisato.com/","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,11 @@
+[
+{"id":"osm:node:3174198444","name":"五味温泉「東の森」","lat":44.24948,"lon":142.64016,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:3174198847","name":"五味温泉「西の森」","lat":44.24687,"lon":142.64201,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:311691262","name":"下川町五味温泉体験の森","lat":44.24768,"lon":142.64042,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:311691766","name":"五味温泉体験の森「北の森」","lat":44.24894,"lon":142.64521,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:289504791","name":"朝日プール","lat":44.11498,"lon":142.59863,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"https://www.city.shibetsu.lg.jp/www/contents/1225180602968/index.html","note":"プール","g":"play","k":"sports","tel":"+81 165 28 2121"},
+{"id":"osm:way:289505127","name":"朝日山村広場・運動広場","lat":44.11062,"lon":142.5914,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:289505130","name":"あさひパークゴルフ場","lat":44.11082,"lon":142.59434,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:289505462","name":"朝日テニスコート","lat":44.1131,"lon":142.59744,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:255629249","name":"あさひサンライズホール","lat":44.11729,"lon":142.59515,"pref":"北海道","genres":["play"],"indoor":true,"url":"http://www6.ocn.ne.jp/~sunrise/","note":"劇場・ホール","g":"play","k":"amuse","wp":"ja:あさひサンライズホール"}
+]

@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:5977044243","name":"（株）明屋書店 広見店","lat":33.25176,"lon":132.67984,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7555880227","name":"いのじや","lat":33.27812,"lon":132.5407,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:350240191","name":"西本自転車大商会","lat":33.27416,"lon":132.54274,"pref":"愛媛","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

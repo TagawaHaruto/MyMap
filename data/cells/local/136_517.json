@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:624169029","name":"JA対馬本店厳原支店","lat":34.20775,"lon":129.29046,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"https://ja-tsushima.or.jp/","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 920-52-1116"},
+{"id":"osm:way:331951042","name":"対馬市役所 厳原体育館","lat":34.20479,"lon":129.28593,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","tel":"+81 920-52-1193"},
+{"id":"osm:node:14287517124","name":"青潮の里","lat":34.16557,"lon":129.28372,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0920-52-0081"}
+]

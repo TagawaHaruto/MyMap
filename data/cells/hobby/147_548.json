@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5253330991","name":"立野サイクル","lat":36.76759,"lon":137.13437,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:411426891","name":"文苑堂","lat":36.7596,"lon":137.04116,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:412988124","name":"セカンドストリート","lat":36.75318,"lon":137.03907,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:412988188","name":"リ・ポイント","lat":36.75306,"lon":137.03891,"pref":"富山","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"}
+]

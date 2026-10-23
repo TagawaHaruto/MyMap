@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5565852728","name":"今崎半太郎像","lat":36.09277,"lon":132.99505,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11270871759","name":"山本幡男顕彰之碑","lat":36.10487,"lon":132.97472,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11270871760","name":"凍てるシベリアに・・・","lat":36.10488,"lon":132.97472,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11270875144","name":"皇太子殿下 皇太子妃殿下 御野立所","lat":36.09765,"lon":132.96593,"pref":"島根","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4311370137","name":"国賀荘","lat":36.09176,"lon":132.9984,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5552508910","name":"海福屋","lat":36.09259,"lon":132.99878,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5552508920","name":"民宿 福来朗","lat":36.09271,"lon":132.99885,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5552509321","name":"鶴陽旅館","lat":36.09303,"lon":132.99546,"pref":"島根","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

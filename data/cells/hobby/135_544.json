@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6854692789","name":"西書店","lat":33.88922,"lon":136.09952,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:6854692794","name":"ドルフィン フィッシング","lat":33.8884,"lon":136.10262,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6854692994","name":"酒井釣具店","lat":33.8894,"lon":136.10378,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6854693089","name":"Magic Surf Shop","lat":33.89127,"lon":136.09989,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"}
+]

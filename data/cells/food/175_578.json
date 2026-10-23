@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:5963246043","name":"ラーメンきっさえきばしゃ","lat":43.92143,"lon":144.52013,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:6594058610","name":"レストランパパス","lat":43.79056,"lon":144.53409,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6594726504","name":"レストラン槿","lat":43.83465,"lon":144.59949,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"れすとらんむくげ"},
+{"id":"osm:node:13057860680","name":"春日寿し","lat":43.90142,"lon":144.67018,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant","kana":"かすがすし","oh":"Tu-Su 11:30-14:00,17:00-23:00"},
+{"id":"osm:way:288252586","name":"レストランエクセル","lat":43.91162,"lon":144.66468,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"れすとらんえくせる"},
+{"id":"osm:way:474189542","name":"居酒屋波の華","lat":43.9109,"lon":144.66591,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"いざかやなみのはな"},
+{"id":"osm:way:474189563","name":"豚匠サチク","lat":43.91098,"lon":144.66449,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://sachiku.jp/tonshou/","note":"焼肉","g":"food","k":"restaurant","kana":"とんしょうさちく"},
+{"id":"osm:way:474189769","name":"しれとこ来々軒","lat":43.91233,"lon":144.65957,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","kana":"しれとこらいらいけん"},
+{"id":"osm:way:474434876","name":"焼肉工房くりから","lat":43.90024,"lon":144.65905,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:474434953","name":"そば処福住","lat":43.90082,"lon":144.65543,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:474435099","name":"しれとこ里味","lat":43.90071,"lon":144.65201,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:474607026","name":"麺通館 MEN'S CLUB","lat":43.90143,"lon":144.66311,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:474607224","name":"ガーデンハウス藤苑","lat":43.90208,"lon":144.68198,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://fujien.jimdo.com/","note":"飲食店","g":"food","k":"restaurant","kana":"がーでんはうすふじえん"},
+{"id":"osm:way:1057070783","name":"知床ごんた村","lat":43.90028,"lon":144.65951,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://gonta-shiretoko.com/restaurant/","note":"飲食店","g":"food","k":"restaurant","kana":"しれとこごんたむら","tel":"+81 152 23 3036"},
+{"id":"osm:way:474393047","name":"グリーンズカフェ","lat":43.90601,"lon":144.66285,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:13057860688","name":"知床くまうし","lat":43.91199,"lon":144.66337,"pref":"北海道","genres":["food"],"indoor":true,"url":"https://kumaushi.jp/","note":"ファストフード","g":"food","k":"fastfood","kana":"しれとこくまうし","oh":"Mo-Su 11:00-15:00,17:00-20:00; Th off"},
+{"id":"osm:way:474189514","name":"和洋菓子のモンブラン","lat":43.91166,"lon":144.66534,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"もんぶらん"},
+{"id":"osm:way:1057914624","name":"ノルディックファーム","lat":43.90133,"lon":144.66305,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"アイス","g":"food","k":"sweets"},
+{"id":"osm:way:474393497","name":"居酒屋いた吉","lat":43.90888,"lon":144.66905,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

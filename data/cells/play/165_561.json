@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:608664834","name":"福島町新緑公園","lat":41.48555,"lon":140.25605,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:1927289272","name":"海峡横綱ビーチ","lat":41.48151,"lon":140.26293,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

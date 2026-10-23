@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:1074433788","name":"アルカディア　多目的広場","lat":35.27544,"lon":138.45887,"pref":"山梨","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:435226604","name":"ゲートボール場","lat":35.42419,"lon":138.4723,"pref":"山梨","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:435226605","name":"ゲートボール場","lat":35.42437,"lon":138.47393,"pref":"山梨","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:987880268","name":"アルカディア　運動場","lat":35.27663,"lon":138.45814,"pref":"山梨","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:987880272","name":"アルカディア　野球場","lat":35.27777,"lon":138.45785,"pref":"山梨","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:987880273","name":"アルカディアスポーツセンター","lat":35.27906,"lon":138.45627,"pref":"山梨","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"},
+{"id":"osm:way:987880274","name":"アルカディア　テニスコート","lat":35.27929,"lon":138.45534,"pref":"山梨","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:node:9131163809","name":"南部町文化ホール","lat":35.28407,"lon":138.46252,"pref":"山梨","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

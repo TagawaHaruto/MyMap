@@ -1,0 +1,12 @@
+[
+{"id":"osm:way:445008411","name":"十勝平原SA (下り)","lat":42.98311,"lon":143.02203,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445015153","name":"十勝平原SA (上り)","lat":42.98167,"lon":143.02317,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445015793","name":"長流枝PA (上り)","lat":42.99183,"lon":143.3353,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:445016277","name":"長流枝PA (下り)","lat":42.99274,"lon":143.33628,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562103658","name":"カントリープラザ","lat":42.69225,"lon":143.1268,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562108850","name":"道の駅さらべつ","lat":42.63305,"lon":143.27175,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:562110202","name":"道の駅 コスモール大樹","lat":42.4896,"lon":143.27368,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:563165569","name":"道の駅おとふけ","lat":42.97502,"lon":143.18179,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:939146400","name":"道の駅 ガーデンスパ十勝川温泉","lat":42.93328,"lon":143.30098,"type":"SA・PA","k":"rest_area","likely":true},
+{"id":"osm:way:1306737870","name":"道の駅なかさつない","lat":42.69254,"lon":143.12726,"type":"SA・PA","k":"rest_area","likely":true}
+]

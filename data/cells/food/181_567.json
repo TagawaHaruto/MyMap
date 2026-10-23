@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:2681531579","name":"さるぼぼ","lat":45.37509,"lon":141.81457,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10771123277","name":"食事・喫茶ハビイ","lat":45.40531,"lon":141.75216,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10892645872","name":"サングリーン食堂","lat":45.25006,"lon":141.85473,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant"}
+]

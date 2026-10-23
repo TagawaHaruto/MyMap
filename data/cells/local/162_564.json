@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:7140702285","name":"三共魚店","lat":40.62082,"lon":141.21316,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7142416218","name":"立崎食品","lat":40.60356,"lon":141.21563,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:10281778597","name":"十和田市アネックススポーツランド","lat":40.58242,"lon":141.00523,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:595996345","name":"高森山パークゴルフ場","lat":40.60573,"lon":141.13313,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:677244070","name":"みちのく国際ゴルフ場","lat":40.655,"lon":141.21582,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6620335854","name":"中央公園キャンプ場","lat":40.74055,"lon":141.16453,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:12139992181","name":"東八甲田家族旅行村","lat":40.70131,"lon":141.09306,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"https://www.shichinohe-kankou.jp","note":"キャンプ・野外","g":"local","k":"camp","tel":"0176-62-5671"},
+{"id":"osm:node:14286211429","name":"小渡平公園","lat":40.50778,"lon":141.2458,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0178-62-7968"}
+]

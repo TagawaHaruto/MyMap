@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:5580216110","name":"帝釈観音堂洞窟遺跡","lat":34.81337,"lon":133.22973,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","kana":"たいしゃくかんのんどうどうくついせき"},
+{"id":"osm:node:5580221397","name":"帝釈大風呂洞窟遺跡","lat":34.81357,"lon":133.22976,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5584148205","name":"帝釈寄倉岩陰遺跡","lat":34.86995,"lon":133.2049,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:5596124894","name":"奈賀野鉱山跡","lat":34.83392,"lon":133.22133,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:node:7902740896","name":"唐櫃古墳","lat":34.87484,"lon":133.04499,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:唐櫃古墳"},
+{"id":"osm:node:8463053017","name":"篠堂川復旧記念碑","lat":34.91444,"lon":133.04917,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9930114926","name":"神竜湖遊覧船沈没事故慰霊碑","lat":34.84549,"lon":133.22452,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:475763589","name":"瓢山古墳","lat":34.86018,"lon":133.02355,"pref":"広島","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

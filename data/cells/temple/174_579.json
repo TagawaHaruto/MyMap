@@ -1,0 +1,11 @@
+[
+{"id":"osm:way:710627419","name":"日本キリスト教団中標津教会","lat":43.55105,"lon":144.98587,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","kana":"にほんきりすときょうだんなかしべつきょうかい"},
+{"id":"osm:way:711049162","name":"天理教十根分教会","lat":43.55008,"lon":144.97323,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:711688155","name":"日本メノサイト中標津キリスト教会","lat":43.54642,"lon":144.97161,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship","tel":"+81 153 72 1192"},
+{"id":"osm:way:1218918743","name":"妙宣寺","lat":43.55297,"lon":144.95866,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1218994968","name":"開光寺","lat":43.55707,"lon":144.97336,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"かいこうじ"},
+{"id":"osm:way:1225007495","name":"上武佐神社","lat":43.61795,"lon":144.99478,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"かみむさじんじゃ"},
+{"id":"osm:way:1225007499","name":"上武佐ハリストス正教会","lat":43.61853,"lon":144.99482,"pref":"北海道","genres":["temple"],"indoor":false,"url":"https://www.orthodoxjapan.jp/annai/h-kamimusa.html","note":"教会","g":"temple","k":"worship","kana":"かみむさはりすとすせいきょうかい","tel":"+81 153 74 2169"},
+{"id":"osm:way:1226712967","name":"天徳寺","lat":43.54874,"lon":144.96954,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"てんとくじ"},
+{"id":"osm:way:1226712973","name":"法薗寺","lat":43.55167,"lon":144.97674,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ほうえんじ"}
+]

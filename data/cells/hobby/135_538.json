@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:1883337657","name":"キングスロード","lat":33.96415,"lon":134.62065,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:1883337674","name":"ゲオ","lat":33.96571,"lon":134.6194,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:way:315112523","name":"平惣羽ノ浦国道店","lat":33.96565,"lon":134.61929,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:319719335","name":"いはら釣具バイパス店","lat":33.99682,"lon":134.58114,"pref":"徳島","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

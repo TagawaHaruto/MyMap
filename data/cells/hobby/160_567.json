@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:567842200","name":"ソフトランドタケヤ","lat":40.19077,"lon":141.76563,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"楽器","g":"hobby","k":"hobby"},
+{"id":"osm:way:677796913","name":"セカンドビズ","lat":40.19118,"lon":141.77007,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:677812640","name":"バラエティショップDON","lat":40.18942,"lon":141.76946,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:way:677812643","name":"みどり書店","lat":40.18945,"lon":141.76927,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:684405714","name":"みのるモーターサイクル","lat":40.19256,"lon":141.75852,"pref":"岩手","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"}
+]

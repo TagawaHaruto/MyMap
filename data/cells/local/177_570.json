@@ -1,0 +1,4 @@
+[
+{"id":"osm:way:292812666","name":"下川町民スポーツセンター","lat":44.29885,"lon":142.63392,"pref":"北海道","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:10747801807","name":"ふうれん望湖台自然公園","lat":44.28383,"lon":142.52277,"pref":"北海道","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

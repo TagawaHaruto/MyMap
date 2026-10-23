@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:9956304935","name":"マウンテンギアスタンド","lat":43.06303,"lon":142.63176,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:9960783833","name":"モンベル","lat":43.16904,"lon":142.57234,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://store.montbell.jp/search/shopinfo/?shop_no=678603","note":"アウトドア用品","g":"hobby","k":"hobby","oh":"10:00-19:00","tel":"+81 167 56 7126"},
+{"id":"osm:way:1086603427","name":"フルマークストマム","lat":43.06526,"lon":142.63277,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"}
+]

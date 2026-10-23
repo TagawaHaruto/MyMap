@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:12060929612","name":"吉田松陰東北遊日記碑","lat":41.22043,"lon":140.52922,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:1566511806","name":"大平山元I遺跡","lat":41.0654,"lon":140.55223,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","wp":"ja:大平山元I遺跡","kana":"おうだいやまもといして"},
+{"id":"osm:node:2457533809","name":"中村旅館","lat":41.04241,"lon":140.64343,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:13279234706","name":"平舘不老不死温泉","lat":41.14999,"lon":140.63212,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

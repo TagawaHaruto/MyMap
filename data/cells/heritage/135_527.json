@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:4362720590","name":"毛利公記念碑","lat":33.91799,"lon":131.97415,"pref":"山口","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3981186463","name":"笠戸島ハイツ","lat":33.97889,"lon":131.85662,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:3981187257","name":"青少年セミナーハウス","lat":33.97964,"lon":131.86252,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4324764011","name":"光第一","lat":33.97506,"lon":131.91559,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4326371293","name":"ホテル松原屋","lat":33.97197,"lon":131.91532,"pref":"山口","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4364111712","name":"亀の井ホテル せとうち光","lat":33.93112,"lon":131.98291,"pref":"山口","genres":["lodging"],"indoor":true,"url":"https://kamenoi-hotels.com/setouchihikari","note":"宿","g":"heritage","k":"lodging","tel":"+81-833-78-1515"}
+]

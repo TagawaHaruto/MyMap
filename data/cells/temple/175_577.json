@@ -1,0 +1,15 @@
+[
+{"id":"osm:way:439988391","name":"天理教網走分教会","lat":43.99562,"lon":144.25745,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:472528280","name":"真如苑網走支部","lat":43.99476,"lon":144.28791,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:473040432","name":"藻琴神社","lat":43.9688,"lon":144.31625,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:488489541","name":"大法寺","lat":43.83988,"lon":144.29442,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"だいほうじ"},
+{"id":"osm:way:488489957","name":"東藻琴神社","lat":43.84215,"lon":144.2836,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"ひがしもことじんじゃ"},
+{"id":"osm:way:488490210","name":"善法寺","lat":43.85052,"lon":144.29378,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ぜんほうじ"},
+{"id":"osm:way:488490247","name":"瑶楽寺","lat":43.85006,"lon":144.29437,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ようらくじ"},
+{"id":"osm:way:488831554","name":"真宗寺","lat":43.85072,"lon":144.46056,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"しんしゅうじ"},
+{"id":"osm:way:488831560","name":"瑞雲寺","lat":43.85091,"lon":144.46183,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ずいうんじ"},
+{"id":"osm:way:488850731","name":"小清水神社","lat":43.86274,"lon":144.46062,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"こしみずじんじゃ"},
+{"id":"osm:way:488850786","name":"法晃寺","lat":43.86149,"lon":144.45853,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"ほうこうじ"},
+{"id":"osm:way:663043398","name":"神浦神社","lat":43.85904,"lon":144.41167,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"かみうらじんじゃ"},
+{"id":"osm:way:1337277695","name":"西倉神社","lat":43.86437,"lon":144.2861,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","kana":"にしくらじんじゃ"}
+]

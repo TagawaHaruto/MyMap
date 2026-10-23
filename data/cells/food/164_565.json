@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:3011790333","name":"さつき食堂","lat":41.04083,"lon":141.38316,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3092300919","name":"鮮菜","lat":41.08382,"lon":141.2568,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"せんな"},
+{"id":"osm:node:3103674806","name":"ラーメン定食","lat":41.04961,"lon":141.25072,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant","kana":"らめんていしょく"},
+{"id":"osm:node:11224961120","name":"檜屋","lat":41.10259,"lon":141.25294,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:433827941","name":"道の駅よこはま","lat":41.08376,"lon":141.25704,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","wp":"ja:道の駅よこはま","kana":"みちのえきよこはま"}
+]

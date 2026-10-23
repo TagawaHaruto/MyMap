@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:9009868310","name":"先島諸島火番盛","lat":24.46282,"lon":123.03164,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:702922728","name":"人面岩","lat":24.44292,"lon":123.01382,"pref":"沖縄","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic","kana":"じんめんいわ"},
+{"id":"osm:node:2982086511","name":"入福旅館","lat":24.46983,"lon":123.00324,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-980-872017"},
+{"id":"osm:node:8593715646","name":"ゲストハウス フィエスタ","lat":24.47127,"lon":123.00406,"pref":"沖縄","genres":["lodging"],"indoor":true,"url":"https://fiesta09.jimdofree.com","note":"宿","g":"heritage","k":"lodging","tel":"+81-980-87-2339"}
+]

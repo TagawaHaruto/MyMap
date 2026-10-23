@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:793862363","name":"河太郎（イカ料理）","lat":33.54671,"lon":129.89135,"pref":"佐賀","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4417579304","name":"いか本家","lat":33.54011,"lon":129.89488,"pref":"佐賀","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:130939651","name":"呼子萬坊（イカ料理）","lat":33.53829,"lon":129.88345,"pref":"佐賀","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","pk":2},
+{"id":"osm:way:330569244","name":"海舟","lat":33.52841,"lon":129.87318,"pref":"佐賀","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:331315315","name":"いかの活き造り大和","lat":33.52846,"lon":129.87941,"pref":"佐賀","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:331366121","name":"松ずし","lat":33.52846,"lon":129.87674,"pref":"佐賀","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

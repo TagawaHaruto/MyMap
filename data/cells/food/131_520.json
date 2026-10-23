@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:6144552736","name":"青ごしょう","lat":32.86374,"lon":130.07695,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:way:1053243035","name":"焼肉　清香園","lat":32.83263,"lon":130.05085,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1053243036","name":"うどん　古都","lat":32.83255,"lon":130.05106,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1053243037","name":"割烹　古都","lat":32.83268,"lon":130.05139,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1053243038","name":"ラーメン　一香軒","lat":32.83266,"lon":130.0517,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1053243040","name":"フーズホットライン諫早店","lat":32.83252,"lon":130.0529,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1062751629","name":"丸亀製麺","lat":32.83298,"lon":130.07415,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant","kana":"まるがめせいめん","chain":true},
+{"id":"osm:way:1132404924","name":"リストランテ ハルパン","lat":32.75191,"lon":130.20833,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1133034579","name":"六兵衛茶屋","lat":32.77963,"lon":130.20839,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1133506009","name":"焼肉 牛花","lat":32.79639,"lon":130.16332,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:1133506012","name":"ジョイフル","lat":32.79658,"lon":130.16509,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","chain":true},
+{"id":"osm:way:1133852252","name":"リンガーハット","lat":32.81795,"lon":130.15208,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","chain":true},
+{"id":"osm:way:1371861906","name":"野鳥の森レストラン","lat":32.8855,"lon":130.00732,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11113368994","name":"和カフェ　和らびの","lat":32.8826,"lon":130.05045,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:6919471897","name":"マクドナルド","lat":32.83712,"lon":130.01468,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:way:1062751630","name":"マクドナルド","lat":32.83373,"lon":130.0732,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","chain":true},
+{"id":"osm:way:1133506016","name":"長崎カステラランド","lat":32.79523,"lon":130.16509,"pref":"長崎","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

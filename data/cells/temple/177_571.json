@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:14117949963","name":"大行寺","lat":44.32836,"lon":142.94394,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:426801827","name":"上興部神社","lat":44.33768,"lon":142.87733,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:710777101","name":"大興寺","lat":44.3396,"lon":142.8874,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:710777183","name":"妙覚寺","lat":44.33527,"lon":142.86343,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:974190690","name":"一の橋神社","lat":44.31611,"lon":142.76877,"pref":"北海道","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

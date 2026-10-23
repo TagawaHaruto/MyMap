@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:6586074885","name":"きらく食堂","lat":43.3881,"lon":145.11322,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"きらくしょくどう","oh":"Mo-Su 11:00-20:00","tel":"+81-153 75 3424"},
+{"id":"osm:way:546000769","name":"ドライブインロマン","lat":43.37589,"lon":145.13566,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6586173886","name":"カフェ・オーク","lat":43.39967,"lon":145.12082,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","oh":"We-Su 10:00-16:30","tel":"0153 75 0995"},
+{"id":"osm:way:545995945","name":"吉田菓子舗","lat":43.39275,"lon":145.12532,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

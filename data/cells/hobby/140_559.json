@@ -1,0 +1,5 @@
+[
+{"id":"osm:node:11215121981","name":"昭和おもちゃ館","lat":35.1281,"lon":139.83682,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:13961647463","name":"マリンスポット釣𠮷","lat":35.03578,"lon":139.85211,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:755421129","name":"黒河釣具店","lat":35.16796,"lon":139.82217,"pref":"千葉","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"}
+]

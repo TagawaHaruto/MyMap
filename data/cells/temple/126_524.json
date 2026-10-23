@@ -1,0 +1,12 @@
+[
+{"id":"osm:node:4459864789","name":"御年神社","lat":31.71093,"lon":131.12117,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"http://www.geocities.jp/mitosizinzya/","note":"神社","g":"temple","k":"worship","tel":"0986-52-0934"},
+{"id":"osm:node:4757176438","name":"創価学会 都城文化会館","lat":31.72675,"lon":131.10085,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5172494101","name":"早馬神社","lat":31.73619,"lon":131.13223,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5222708922","name":"宮地嶽神社","lat":31.73538,"lon":131.07695,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6393998658","name":"小鷹神社","lat":31.71423,"lon":131.09335,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13965641261","name":"火之神神社","lat":31.72407,"lon":131.06016,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1385348975","name":"攝護寺","lat":31.72477,"lon":131.06098,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship","kana":"しょごじ"},
+{"id":"osm:way:1387426463","name":"兼喜神社","lat":31.71991,"lon":131.04941,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1525803012","name":"日本キリスト教団 都城城南教会","lat":31.71991,"lon":131.06227,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:1528982664","name":"旭丘神社","lat":31.71933,"lon":131.05961,"pref":"宮崎","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

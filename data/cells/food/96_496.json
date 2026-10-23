@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:6518079885","name":"うんどうや","lat":24.23632,"lon":124.01456,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"そば","g":"food","k":"restaurant"},
+{"id":"osm:way:466073422","name":"Cafe Iconoma","lat":24.24374,"lon":124.01652,"pref":"沖縄","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

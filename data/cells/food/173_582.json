@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:11141028066","name":"あんくる&チボリ","lat":43.3332,"lon":145.58116,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:11141028068","name":"喫茶どりあん","lat":43.33217,"lon":145.582,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"きっさどりあん","tel":"+81 153 24 3403"},
+{"id":"osm:node:11141028069","name":"ねむろお魚食堂","lat":43.33244,"lon":145.58214,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:241898624","name":"食事喫茶薔薇","lat":43.33205,"lon":145.57784,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:242978435","name":"ラーメンさんぱち根室店","lat":43.32814,"lon":145.58645,"pref":"北海道","genres":["food"],"indoor":true,"url":"http://www.sanpachi.co.jp/","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:12961196229","name":"モスバーガー","lat":43.33131,"lon":145.59687,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"もすばーがー","chain":true,"oh":"09:00-20:00","tel":"+81 153 22 2474"},
+{"id":"osm:way:213197054","name":"すき家","lat":43.32096,"lon":145.56288,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:240803438","name":"根室花まる","lat":43.32598,"lon":145.57464,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"ねむろはなまる","chain":true},
+{"id":"osm:way:213197149","name":"パテスリーはまざき","lat":43.3205,"lon":145.56163,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:243626673","name":"焼肉酒場笑山","lat":43.33434,"lon":145.579,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"},
+{"id":"osm:way:248029842","name":"根室ベース","lat":43.32881,"lon":145.5829,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

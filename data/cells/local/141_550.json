@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:5923607865","name":"新野千石平直売所 かあちゃんの店","lat":35.25761,"lon":137.74528,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:8444439015","name":"うるぎふるさと館","lat":35.27409,"lon":137.70945,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"https://www.urugi.jp/db/miyage/post-25.html","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8301939868","name":"ブナの嶺GC","lat":35.25768,"lon":137.66744,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:8703403886","name":"ひまわりプール","lat":35.32455,"lon":137.63083,"pref":"長野","genres":["outdoor"],"indoor":true,"url":"https://hiraya-himawarinoyu.com/pool.php","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11166135887","name":"清流の里 車屋","lat":35.36707,"lon":137.70849,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:461844912","name":"平谷湖フィッシングスポット","lat":35.30517,"lon":137.64223,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.hirayako.com/","note":"遊び・スポーツ","g":"local","k":"activity","tel":"0265481127"},
+{"id":"osm:way:548181555","name":"あららぎカントリークラブ","lat":35.41225,"lon":137.67194,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:941716953","name":"平谷CC","lat":35.31531,"lon":137.6069,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"http://www.hirayacc.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14282226843","name":"うるぎ自然休養村センターささゆり荘","lat":35.26971,"lon":137.71419,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287172412","name":"富士見台高原ロープウェイヘブンスそのはら","lat":35.45516,"lon":137.66862,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://mt-heavens.com/day-camp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-44-2311"},
+{"id":"osm:node:14287172414","name":"ひるがみの森","lat":35.45404,"lon":137.71299,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://hirumori.co.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-43-4321","pk":2},
+{"id":"osm:node:14287270081","name":"キャンプサイト ななつ星","lat":35.38817,"lon":137.68808,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.camp7.net/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-49-0709"},
+{"id":"osm:node:14287292868","name":"青少年の家ジブ","lat":35.35164,"lon":137.67069,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.campjibu.net/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-47-2021"},
+{"id":"osm:node:14287293022","name":"銀河もみじキャンプ場","lat":35.36808,"lon":137.66849,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://ginga-momiji.camp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-47-2777"},
+{"id":"osm:node:14287333839","name":"CAMP屋 うるぎキャンプフィールド","lat":35.28886,"lon":137.67526,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.campya-urugi.com","note":"キャンプ・野外","g":"local","k":"camp","tel":"0260-28-2255"},
+{"id":"osm:node:14287333851","name":"Farmer's Camp ポレポレ","lat":35.2771,"lon":137.72564,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://polepoleurugi.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0260-28-2802"},
+{"id":"osm:node:14287359161","name":"もりどころ sauna &camp","lat":35.25209,"lon":137.63918,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14289699445","name":"ネスティピ・キャンプエリア","lat":35.30798,"lon":137.65243,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0564-54-7340"},
+{"id":"osm:way:438548607","name":"もみじ平キャンプ場","lat":35.36736,"lon":137.66661,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://ginga-momiji.camp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0265-47-2777"},
+{"id":"osm:way:1038937048","name":"弓の又キャンプ場","lat":35.44072,"lon":137.66636,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://www.vill.achi.lg.jp/soshiki/5/2009-11-post-95.html","note":"キャンプ・野外","g":"local","k":"camp"}
+]

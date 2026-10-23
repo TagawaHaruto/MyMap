@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:264694163","name":"はまとんべつ温泉ウィング","lat":45.12529,"lon":142.34758,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:264695303","name":"浜頓ホテル","lat":45.12496,"lon":142.36217,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 1634 2 2381"},
+{"id":"osm:way:283330233","name":"トシカの宿","lat":45.13514,"lon":142.35471,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81-1634-2-2836"}
+]

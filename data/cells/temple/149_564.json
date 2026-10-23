@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:3751590408","name":"大山榊神社","lat":37.27226,"lon":141.00713,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:4893291721","name":"初發神社","lat":37.49438,"lon":141.01574,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship","oh":"24/7","wc":"yes"},
+{"id":"osm:node:4893322621","name":"八幡神社","lat":37.49861,"lon":141.01035,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7310702546","name":"諏訪神社","lat":37.4665,"lon":141.02718,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:7334883872","name":"八幡神社","lat":37.46017,"lon":141.0288,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10915888826","name":"Jorinji 浄林寺","lat":37.32367,"lon":141.00902,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:10918339132","name":"Jiganji 慈眼寺","lat":37.31789,"lon":141.00518,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:13124301903","name":"雷神社","lat":37.49442,"lon":141.01483,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13124301904","name":"稲荷神社","lat":37.49585,"lon":141.00667,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:335297259","name":"風宮 龍田神社","lat":37.28586,"lon":141.00104,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:335297266","name":"大山津見神社","lat":37.28286,"lon":141.00152,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:335297267","name":"佐倉神社","lat":37.28591,"lon":141.00112,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:371603813","name":"北田天満宮","lat":37.2677,"lon":141.01199,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:782642745","name":"初發神社","lat":37.45276,"lon":141.00674,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1271093416","name":"自性院","lat":37.4496,"lon":141.00581,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

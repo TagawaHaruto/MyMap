@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:1420950027","name":"越廼ふるさと資料館","lat":36.01265,"lon":135.99309,"pref":"福井","genres":["museum"],"indoor":true,"url":"","note":"博物館","k":"museum"},
+{"id":"osm:way:688152188","name":"越前水仙の里公園","lat":36.01294,"lon":135.99097,"pref":"福井","genres":["play"],"indoor":false,"url":"https://ja.wikipedia.org/wiki/%E8%B6%8A%E5%89%8D%E6%B0%B4%E4%BB%99%E3%81%AE%E9%87%8C%E5%85%AC%E5%9C%92","note":"公園","k":"bigpark"}
+]

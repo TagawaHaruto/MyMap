@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4039931823","name":"戦没者慰霊碑","lat":24.7974,"lon":141.33151,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:9468233293","name":"米海兵隊記念碑","lat":24.75034,"lon":141.28916,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:995809487","name":"北飛行場跡","lat":24.79692,"lon":141.32528,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"},
+{"id":"osm:way:995809488","name":"北飛行場跡","lat":24.79385,"lon":141.31794,"pref":"東京","genres":["heritage"],"indoor":false,"url":"","note":"遺跡","g":"heritage","k":"historic"}
+]

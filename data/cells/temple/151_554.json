@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1185051190","name":"文殊院","lat":37.99337,"lon":138.53232,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1185525249","name":"善寶寺","lat":37.94323,"lon":138.50235,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1185525272","name":"萬福寺","lat":37.9433,"lon":138.50213,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:1185525274","name":"熊野神社","lat":37.94345,"lon":138.50184,"pref":"新潟","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

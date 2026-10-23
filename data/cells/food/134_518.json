@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:4458669291","name":"みうらや","lat":33.7458,"lon":129.69035,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4458868390","name":"角丸","lat":33.74798,"lon":129.69135,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5982046787","name":"乃もと寿司","lat":33.7478,"lon":129.69059,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10813064605","name":"かもめの朝ごはん","lat":33.745,"lon":129.68364,"pref":"長崎","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

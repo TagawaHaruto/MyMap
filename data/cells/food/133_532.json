@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:10867241293","name":"海王","lat":33.3222,"lon":133.23534,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:node:10873078631","name":"市場のめし屋 浜ちゃん","lat":33.32904,"lon":133.23072,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:10873078633","name":"串焼きポン吉","lat":33.32915,"lon":133.2307,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:12900817776","name":"自家製うどん　なかむらや","lat":33.29261,"lon":133.1719,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant"},
+{"id":"osm:way:739082862","name":"豚太郎 葉山店","lat":33.44185,"lon":133.21097,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:762443138","name":"レストラン今橋","lat":33.44565,"lon":133.20038,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:817586864","name":"たま吉","lat":33.43943,"lon":133.21479,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:822210153","name":"ひめなか食堂","lat":33.44038,"lon":133.21342,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:969816090","name":"いろは食堂","lat":33.44645,"lon":133.18583,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:970092013","name":"みさや","lat":33.4473,"lon":133.20156,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1168510093","name":"黒潮工房","lat":33.32151,"lon":133.23637,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:way:822707836","name":"散歩道","lat":33.44147,"lon":133.21086,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:822707843","name":"ティファニー","lat":33.44149,"lon":133.21143,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:way:419990832","name":"ほかほかのお弁当 風の駅","lat":33.43944,"lon":133.12892,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:10867241292","name":"風工房","lat":33.32228,"lon":133.23565,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:10867241294","name":"岩本こむぎ店","lat":33.32224,"lon":133.23548,"pref":"高知","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:way:822225518","name":"遊食や 楽","lat":33.44064,"lon":133.21184,"pref":"高知","genres":["food"],"indoor":true,"url":"","note":"居酒屋","g":"food","k":"pub"}
+]

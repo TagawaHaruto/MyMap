@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:2639149064","name":"木村輪業","lat":34.97239,"lon":136.16508,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby","oh":"09:30-19:00"},
+{"id":"osm:node:2639149068","name":"木村輪業","lat":34.97252,"lon":136.16518,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby","oh":"09:30-19:00"},
+{"id":"osm:node:5522612680","name":"ヒマラヤスポーツ&ゴルフ 水口店","lat":34.97718,"lon":136.17211,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5531155091","name":"アングラーズ","lat":34.97829,"lon":136.17186,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:6342821302","name":"秋田自転車店","lat":34.87583,"lon":136.05302,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6342821305","name":"植西自転車店","lat":34.87603,"lon":136.05071,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:7142180411","name":"ブックオフ","lat":34.77694,"lon":136.12994,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7142180416","name":"コメリ書房","lat":34.77455,"lon":136.12281,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:7180467577","name":"平和書店","lat":34.97704,"lon":136.16959,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:8299804020","name":"山田書店","lat":34.96956,"lon":136.17382,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby","kana":"やまだしょてん"},
+{"id":"osm:node:9936444574","name":"井筒屋書店 あかもん店","lat":34.76722,"lon":136.12565,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:9936599884","name":"ギャラリーやまほん","lat":34.84352,"lon":136.12411,"pref":"三重","genres":["shopping"],"indoor":true,"url":"https://gallery-yamahon.com/","note":"手芸・画材","g":"hobby","k":"hobby","tel":"+81595441911"},
+{"id":"osm:node:14118120777","name":"セカンドストリート","lat":34.77552,"lon":136.12614,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:way:248009302","name":"ブックオフ","lat":34.97641,"lon":136.16845,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:251840811","name":"自転車チャンピオン","lat":34.97281,"lon":136.16656,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:267496498","name":"うったや","lat":34.97224,"lon":136.16681,"pref":"滋賀","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:way:606045637","name":"TSUTAYA","lat":34.77248,"lon":136.13428,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:way:718073449","name":"石田サイクル","lat":34.7673,"lon":136.13129,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:774606162","name":"バードランド","lat":34.76618,"lon":136.12959,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:way:1171702639","name":"古美術荒木","lat":34.76175,"lon":136.12899,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"骨董","g":"hobby","k":"hobby"},
+{"id":"osm:way:1171718004","name":"タル井スポーツ","lat":34.75961,"lon":136.12934,"pref":"三重","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"}
+]

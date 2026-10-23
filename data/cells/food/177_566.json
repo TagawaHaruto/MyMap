@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:4138219289","name":"食事処おろろん","lat":44.36692,"lon":141.70823,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5816706006","name":"北のにしん屋さん","lat":44.35825,"lon":141.69292,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant","oh":"We-Mo 11:00-15:00"},
+{"id":"osm:node:5816707713","name":"浜のかあちゃん食堂","lat":44.37137,"lon":141.699,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant","oh":"08:00-14:00"},
+{"id":"osm:node:7748170583","name":"甘えびファクトリー 蝦名漁業部","lat":44.35873,"lon":141.69331,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"海鮮","g":"food","k":"restaurant"},
+{"id":"osm:node:14063024070","name":"二島物語","lat":44.36708,"lon":141.70686,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","kana":"にとうものがたり","oh":"Mo-Su 11:30-14:30, 17:30-20:30"},
+{"id":"osm:way:776649748","name":"のんのん","lat":44.36597,"lon":141.70499,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ラーメン","g":"food","k":"restaurant","kana":"のんのん"},
+{"id":"osm:way:777592074","name":"ジンギスカン蜂屋","lat":44.35808,"lon":141.69362,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:4520193990","name":"梅月","lat":44.36557,"lon":141.70159,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

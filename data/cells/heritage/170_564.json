@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:8730009613","name":"白花豆植栽発祥記念碑","lat":42.7449,"lon":141.04037,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8730009614","name":"歌碑","lat":42.74523,"lon":141.0395,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3104863451","name":"望楼NOGUCHI登別","lat":42.50021,"lon":141.14068,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"ぼうろうのぐちのぼりべつ"},
+{"id":"osm:node:6612535585","name":"ばんけい温泉 湯人家","lat":42.58249,"lon":141.02461,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:518562097","name":"森の湯山静館","lat":42.51954,"lon":141.10724,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:518698013","name":"湯元オロフレ荘","lat":42.5184,"lon":141.10779,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:518698355","name":"深山の庵いわい","lat":42.51847,"lon":141.10615,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:518699125","name":"鈴木旅館","lat":42.519,"lon":141.10757,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:725840333","name":"きたゆざわ 森のソラニワ","lat":42.62753,"lon":141.02714,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.mori-soraniwa.com/","note":"宿","g":"heritage","k":"lodging","wc":"yes"},
+{"id":"osm:way:725841026","name":"緑の風 リゾート きたゆざわ","lat":42.62403,"lon":141.0255,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://midorinokaze-resort.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:726014411","name":"蟠渓温泉 蟠岳荘","lat":42.58708,"lon":141.02523,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://sobetsu-kanko.com/onsen/bangakuso","note":"宿","g":"heritage","k":"lodging","kana":"ばんけいおんせんばんがくそう","tel":"+81-142-65-2277"},
+{"id":"osm:way:785318591","name":"澤の宿 錦泉閣","lat":42.62134,"lon":141.02369,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","kana":"さわのやど きんせんかく","tel":"+81-142-82-6840"}
+]

@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:8621463989","name":"北海道三景之碑（利尻富士）","lat":45.13413,"lon":141.30494,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:4376875907","name":"うに御殿","lat":45.23321,"lon":141.26751,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

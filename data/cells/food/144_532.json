@@ -1,0 +1,19 @@
+[
+{"id":"osm:node:5657045862","name":"海鮮処 味蔵","lat":36.10218,"lon":133.08161,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5657045875","name":"Radice","lat":36.10162,"lon":133.07873,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5657045889","name":"たかつや食堂","lat":36.10149,"lon":133.07811,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5657045890","name":"花屋のポンタ","lat":36.10153,"lon":133.07819,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5657045891","name":"ふみや","lat":36.1016,"lon":133.07828,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5657047332","name":"島生まれ島育ち「隠岐牛店」","lat":36.1048,"lon":133.07607,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5657047379","name":"船渡来流亭","lat":36.10514,"lon":133.07675,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5658851469","name":"離島キッチン海士店","lat":36.09675,"lon":133.09942,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5658975924","name":"亀乃","lat":36.09568,"lon":133.09005,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5658976181","name":"焼肉いのうえ","lat":36.09599,"lon":133.09666,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:9961088518","name":"知夫の里","lat":36.00414,"lon":133.03793,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ちぶのさと"},
+{"id":"osm:node:13467880101","name":"どんどん","lat":36.00929,"lon":133.04795,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"どんどん","oh":"Th-Mo 11:30-13:30, 18:00-21:00","tel":"+81 8514-2-2174"},
+{"id":"osm:node:5589043792","name":"喫茶 茶蘭花","lat":36.09676,"lon":133.09773,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5655863108","name":"TRY","lat":36.09551,"lon":133.09422,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5657045869","name":"喫茶MG","lat":36.1016,"lon":133.07937,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5658851470","name":"三休","lat":36.09664,"lon":133.0987,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:5658976180","name":"大八車","lat":36.0954,"lon":133.0955,"pref":"島根","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"}
+]

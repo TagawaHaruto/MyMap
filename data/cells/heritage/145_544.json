@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:11759440227","name":"北潟湖辺ほ場整備事業竣工記念碑","lat":36.25783,"lon":136.24496,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:11788781333","name":"戦死之碑","lat":36.25215,"lon":136.14282,"pref":"福井","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:6592959756","name":"料理民宿 前田","lat":36.25165,"lon":136.15247,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11762519529","name":"あわら北潟温泉 hanaゆらり","lat":36.26162,"lon":136.23148,"pref":"福井","genres":["lodging"],"indoor":true,"url":"https://www.hanayurari.com/","note":"宿","g":"heritage","k":"lodging","tel":"+81 776 79 1124"},
+{"id":"osm:node:11788780943","name":"ペンション シャロット","lat":36.25158,"lon":136.14722,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging","tel":"+81 776 82 5481"},
+{"id":"osm:node:11788781075","name":"料理民宿 いとや","lat":36.25203,"lon":136.14713,"pref":"福井","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

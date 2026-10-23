@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:3695956830","name":"ササキ","lat":34.79993,"lon":133.61685,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7802706547","name":"道の駅かよう","lat":34.8165,"lon":133.70513,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:node:13667086795","name":"観光案内所内お土産売り場","lat":34.78901,"lon":133.61638,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13667193543","name":"城見橋公園お土産売り場","lat":34.80722,"lon":133.62703,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 10:00-15:00","pk":2},
+{"id":"osm:node:13667193544","name":"ふいご峠お土産売り場","lat":34.80567,"lon":133.62138,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","oh":"Mo-Su 10:00-15:00","pk":2},
+{"id":"osm:way:361818264","name":"観光物産館紺屋川","lat":34.79676,"lon":133.6162,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:692568786","name":"ゆめ市場","lat":34.7774,"lon":133.58766,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir","oh":"Mo-Su 09:00-18:30"},
+{"id":"osm:way:835965057","name":"道の駅かよう","lat":34.81636,"lon":133.70521,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"","note":"直売所","g":"local","k":"souvenir"},
+{"id":"osm:way:1320951156","name":"海咲己商事","lat":34.92816,"lon":133.52367,"pref":"岡山","genres":["souvenir"],"indoor":true,"url":"https://misakishouji.thebase.in/","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7799873701","name":"（有）フルーツカントリー熊野","lat":34.91389,"lon":133.51152,"pref":"岡山","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:568282612","name":"上竹荘小学校体育館","lat":34.84751,"lon":133.67303,"pref":"岡山","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:836938287","name":"パインツリーゴルフクラブ","lat":34.80861,"lon":133.59341,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"https://cherry-group.jp/course_pinetree/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:6417515416","name":"高間キャンプ場","lat":34.7547,"lon":133.63821,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7811444681","name":"高梁自然公園キャンプ場","lat":34.79549,"lon":133.5772,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7813901244","name":"大平山キャンプ場","lat":34.90569,"lon":133.70922,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287449616","name":"矢萩の森キャンプ場","lat":34.84202,"lon":133.66386,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287449660","name":"ハレクニキャンプ","lat":34.80669,"lon":133.68429,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287456962","name":"大谷キャンプ場","lat":34.94117,"lon":133.62994,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0866-52-4540"}
+]

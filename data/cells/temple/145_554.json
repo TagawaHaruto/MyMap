@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:2463546453","name":"聖パウロカトリック教会","lat":36.35972,"lon":138.63413,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:node:2463546492","name":"軽井沢ショー記念礼拝堂","lat":36.36211,"lon":138.63903,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:node:5795097820","name":"愛宕神社","lat":36.36875,"lon":138.63452,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5795097821","name":"三笠成田山神社","lat":36.36997,"lon":138.63474,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:6366361086","name":"大日向神社","lat":36.3572,"lon":138.56032,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8097066908","name":"白髭神社","lat":36.34124,"lon":138.72481,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:8932408649","name":"諏訪神社","lat":36.33784,"lon":138.73509,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9750496277","name":"三笠神社","lat":36.37268,"lon":138.63458,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9750679286","name":"古峰神社","lat":36.36881,"lon":138.63446,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:9750679287","name":"琴平宮","lat":36.37007,"lon":138.63576,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:13142025017","name":"手水舎","lat":36.44345,"lon":138.53401,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:267169393","name":"石の教会 内村鑑三記念堂","lat":36.35642,"lon":138.58707,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"教会","g":"temple","k":"worship"},
+{"id":"osm:way:404247911","name":"青松寺","lat":36.35206,"lon":138.7145,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:695008669","name":"大山祇稲荷神社","lat":36.34442,"lon":138.63857,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1169907031","name":"熊野皇大神社","lat":36.36967,"lon":138.65621,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1169939561","name":"八幡宮","lat":36.35242,"lon":138.71551,"pref":"群馬","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1258477321","name":"浅間神社","lat":36.34125,"lon":138.54723,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1260477459","name":"諏訪神社","lat":36.35707,"lon":138.63764,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1260480106","name":"豊昇神社","lat":36.29704,"lon":138.52997,"pref":"長野","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

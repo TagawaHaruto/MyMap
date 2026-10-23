@@ -1,0 +1,23 @@
+[
+{"id":"osm:node:6257315385","name":"竜中","lat":34.86675,"lon":134.35379,"pref":"兵庫","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6278020186","name":"海老寿","lat":34.86901,"lon":134.35089,"pref":"兵庫","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:216625806","name":"赤穂市漁業協同組合 坂越かき直販所","lat":34.76833,"lon":134.44503,"pref":"兵庫","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:8837200882","name":"とれとれ市場","lat":34.79627,"lon":134.46939,"pref":"兵庫","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:6307639951","name":"JOYXゴルフ倶楽部 上月コース","lat":34.95757,"lon":134.29718,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:64715807","name":"ストークヒルゴルフクラブ","lat":34.93459,"lon":134.43305,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"http://www.storkhill.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:65623508","name":"相生カントリークラブ","lat":34.82651,"lon":134.49422,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:598479060","name":"ふれあいスポーツ交流館","lat":34.95201,"lon":134.43981,"pref":"兵庫","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:relation:9366550","name":"赤穂国際カントリークラブ","lat":34.8408,"lon":134.32797,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"http://www.akcgolf.com/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:717874698","name":"播磨自然高原船坂GC","lat":34.84534,"lon":134.28504,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:717880475","name":"JOYXゴルフ倶楽部 上月コース","lat":34.95778,"lon":134.29436,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1154776770","name":"G-style CC","lat":34.99633,"lon":134.33336,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1157356902","name":"上郡中央公園","lat":34.86293,"lon":134.35423,"pref":"兵庫","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285784580","name":"BAMPO CAMP SITE (Bansyu Model Plane Airport＆Camp)","lat":34.89189,"lon":134.32551,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285843408","name":"ポパイテンキャンプ場 たつの店","lat":34.96301,"lon":134.38625,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287438377","name":"オートキャンプポパイテン たつの店","lat":34.9673,"lon":134.44781,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0791-60-1712"},
+{"id":"osm:node:14287438381","name":"キャンプ＆コテージ ポパイテン","lat":34.96301,"lon":134.38625,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0790-78-1288"},
+{"id":"osm:node:14287463089","name":"望ヶ丘レストラン＆キャンプ場","lat":34.9155,"lon":134.25159,"pref":"岡山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0869-85-0312"},
+{"id":"osm:node:14287465791","name":"ファクトリーファーム赤穂","lat":34.77205,"lon":134.383,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:631409277","name":"羅漢羅漢の里キャンプ場","lat":34.87977,"lon":134.44527,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1355689234","name":"安室ダムキャンプ場","lat":34.87779,"lon":134.28717,"pref":"兵庫","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

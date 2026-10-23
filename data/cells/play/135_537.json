@@ -1,0 +1,5 @@
+[
+{"id":"osm:way:1162035381","name":"前川交流広場","lat":33.9293,"lon":134.49728,"pref":"徳島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:313766870","name":"鷲敷プール","lat":33.85646,"lon":134.49725,"pref":"徳島","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"},
+{"id":"osm:way:313766871","name":"那賀町総合体育館","lat":33.8566,"lon":134.49657,"pref":"徳島","genres":["outdoor","play"],"indoor":true,"url":"","note":"体育館","g":"play","k":"sports"}
+]

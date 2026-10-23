@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:5167184641","name":"焼鳥カネトミ","lat":39.2573,"lon":139.91907,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5167184648","name":"ほの香","lat":39.25995,"lon":139.91413,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:5167184650","name":"和み庵 京かのこ","lat":39.25825,"lon":139.92508,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:6698417189","name":"鯛太郎","lat":39.28604,"lon":139.95628,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"寿司","g":"food","k":"restaurant"},
+{"id":"osm:node:7056748366","name":"キッチンさかなやさん","lat":39.29289,"lon":139.96233,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:13955382712","name":"一休食堂","lat":39.291,"lon":139.95727,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1210502303","name":"じげん","lat":39.28598,"lon":139.96443,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:1447611712","name":"すき家にかほ店","lat":39.28958,"lon":139.97274,"pref":"秋田","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:5167175045","name":"小池菓子舗 金浦店","lat":39.25679,"lon":139.91872,"pref":"秋田","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:7056707616","name":"松永菓子屋","lat":39.2903,"lon":139.96361,"pref":"秋田","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"},
+{"id":"osm:node:7056748365","name":"幸月菓子舗","lat":39.29276,"lon":139.96257,"pref":"秋田","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:661424710","name":"健康センター元気館","lat":34.85829,"lon":132.53485,"pref":"島根","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14287449620","name":"江の川カヌー公園さくぎ","lat":34.83929,"lon":132.72223,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0824-55-7050"},
+{"id":"osm:node:14287449626","name":"エコヴィレッジかわね","lat":34.83172,"lon":132.66726,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-58-0404"},
+{"id":"osm:node:14287467395","name":"邑南町青少年旅行村オートキャンプ場","lat":34.8546,"lon":132.54339,"pref":"島根","genres":["outdoor"],"indoor":false,"url":"https://ohnan-ryokomura.j-c-s.info/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0855-83-0221"},
+{"id":"osm:node:14287476487","name":"香六ダム公園","lat":34.78592,"lon":132.68014,"pref":"広島","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0826-57-0579"}
+]

@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:5501393854","name":"桂光院","lat":34.36246,"lon":131.66771,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:node:5501393855","name":"地福八幡宮","lat":34.36634,"lon":131.66723,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:5540238405","name":"徳佐八幡宮","lat":34.3962,"lon":131.72637,"pref":"山口","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1315992210","name":"西光禅寺","lat":34.48564,"lon":131.74035,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

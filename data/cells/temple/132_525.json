@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:3398918444","name":"愛宕神社","lat":33.24721,"lon":131.45383,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1051302646","name":"念相寺","lat":33.17397,"lon":131.43005,"pref":"大分","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"}
+]

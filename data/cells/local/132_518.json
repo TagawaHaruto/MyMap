@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:1794582574","name":"釣具のポイント","lat":33.16115,"lon":129.74839,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:13926203353","name":"アクアショップ きらら","lat":33.16147,"lon":129.67945,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir","tel":"+81 956 28 4187"},
+{"id":"osm:way:891996667","name":"ほっともっと 相生町店","lat":33.17705,"lon":129.71581,"pref":"長崎","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:4269363361","name":"オレンジドーム","lat":33.04366,"lon":129.69599,"pref":"長崎","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:way:1296720546","name":"佐世保市地方卸売市場","lat":33.18698,"lon":129.65275,"pref":"長崎","genres":["souvenir"],"indoor":false,"url":"","note":"市場","g":"local","k":"market"},
+{"id":"osm:node:11392835646","name":"小佐々海洋スポーツ基地","lat":33.21802,"lon":129.60171,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11434296681","name":"佐々港","lat":33.20625,"lon":129.65006,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:739473103","name":"佐世保市温水プール","lat":33.16942,"lon":129.71791,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:769389185","name":"ハウステンボスCC","lat":33.02804,"lon":129.7236,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1334922088","name":"Main Base Outdoor Pool","lat":33.16158,"lon":129.71942,"pref":"長崎","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285525249","name":"グランピング ひみつきち","lat":33.23956,"lon":129.68895,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287594783","name":"長串山キャンプ場","lat":33.24637,"lon":129.56576,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0956-77-4111"},
+{"id":"osm:way:552400838","name":"百合岳キャンプ場","lat":33.04046,"lon":129.60818,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1050828305","name":"オートフォレストナキリ","lat":33.1779,"lon":129.72012,"pref":"長崎","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0956-33-3344"}
+]

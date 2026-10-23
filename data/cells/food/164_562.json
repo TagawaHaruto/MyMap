@@ -1,0 +1,4 @@
+[
+{"id":"osm:node:2456232294","name":"とりや","lat":41.03876,"lon":140.6443,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:way:586341444","name":"お食事処 高野崎","lat":41.22572,"lon":140.54995,"pref":"青森","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"}
+]

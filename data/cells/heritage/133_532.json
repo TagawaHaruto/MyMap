@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:4176351612","name":"四万十川源流之碑","lat":33.44144,"lon":133.0723,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:5447130632","name":"吉村虎太郎像","lat":33.39432,"lon":133.02517,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:7632198546","name":"顕彰碑","lat":33.44637,"lon":133.19914,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065865","name":"明治二十三年水害伝承碑","lat":33.3084,"lon":133.10883,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065867","name":"明治二十三年水害伝承碑","lat":33.25667,"lon":133.13397,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065876","name":"水害紀念","lat":33.37618,"lon":133.12995,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065877","name":"復興記念碑","lat":33.32966,"lon":133.23322,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8463065878","name":"久礼熊野神社伝承碑","lat":33.32617,"lon":133.22707,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:8910750471","name":"殉職記念碑","lat":33.31055,"lon":133.06869,"pref":"高知","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:way:709707551","name":"葉山の郷","lat":33.44632,"lon":133.20378,"pref":"高知","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:way:1168510070","name":"鰹乃國の湯宿 黒潮本陣","lat":33.32165,"lon":133.23705,"pref":"高知","genres":["lodging"],"indoor":true,"url":"http://honjin.or.jp/","note":"宿","g":"heritage","k":"lodging","wp":"ja:黒潮本陣温泉","tel":"+81-889-52-3500"}
+]

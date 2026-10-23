@@ -1,0 +1,16 @@
+[
+{"id":"osm:node:5170888986","name":"上砂川町水源公園","lat":43.45732,"lon":142.03218,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:472077846","name":"緑泉公園","lat":43.46732,"lon":142.17299,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:935663125","name":"啓南公園","lat":43.49785,"lon":142.19619,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:935677510","name":"あかね公園","lat":43.49731,"lon":142.19344,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:935683616","name":"ふるさと公園","lat":43.49577,"lon":142.18562,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:936163562","name":"星んこ公園","lat":43.49496,"lon":142.20046,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:936207668","name":"西山公園","lat":43.49311,"lon":142.19709,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:939598323","name":"頼城仲町公園","lat":43.45195,"lon":142.1588,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:941647170","name":"上芦別公園","lat":43.48532,"lon":142.22405,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:941655378","name":"上芦別三条公園","lat":43.48941,"lon":142.21524,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:941689278","name":"ひかり公園","lat":43.49304,"lon":142.21013,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:942002062","name":"西芦別中央公園","lat":43.49076,"lon":142.17696,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:942014290","name":"青葉二条公園","lat":43.48331,"lon":142.17372,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:942041754","name":"滝の里公園","lat":43.49628,"lon":142.20624,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

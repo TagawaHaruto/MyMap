@@ -1,0 +1,10 @@
+[
+{"id":"osm:node:10753531446","name":"内浦港","lat":35.53343,"lon":135.49985,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","wp":"ja:内浦港 (福井県)"},
+{"id":"osm:way:715010908","name":"舞鶴CC","lat":35.52463,"lon":135.44704,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1091806656","name":"宮津市海洋つり場","lat":35.55364,"lon":135.26396,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"https://www.city.miyazu.kyoto.jp/site/turiba/","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:14285775224","name":"Halo KYOTO no UMI","lat":35.51205,"lon":135.29117,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286978586","name":"伊根温泉郷オートキャンプ場","lat":35.70145,"lon":135.28416,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"https://www.ine.camp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0772-45-1311"},
+{"id":"osm:node:14287116229","name":"ヒロセオートキャンプ場","lat":35.52498,"lon":135.47762,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0770-76-1858"},
+{"id":"osm:node:14287125332","name":"アウトドアスペースストリーム","lat":35.50588,"lon":135.28142,"pref":"京都","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0772-26-9200"},
+{"id":"osm:way:873054501","name":"五色山公園管理事務所","lat":35.52553,"lon":135.4752,"pref":"福井","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

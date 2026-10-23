@@ -1,0 +1,8 @@
+[
+{"id":"osm:node:5259379237","name":"レールパル３５１","lat":35.51678,"lon":138.45292,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:5789359672","name":"ブックジョイ","lat":35.67355,"lon":138.46462,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:13723517631","name":"ハードオフ","lat":35.67932,"lon":138.49513,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:14026132793","name":"くまざわ書店","lat":35.6846,"lon":138.48246,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:14282371463","name":"晩成堂書店","lat":35.56311,"lon":138.49963,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:14282387422","name":"一瀬自転車店","lat":35.56338,"lon":138.49617,"pref":"山梨","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"}
+]

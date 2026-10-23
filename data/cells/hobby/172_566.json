@@ -1,0 +1,20 @@
+[
+{"id":"osm:node:3707663474","name":"TSUTAYA","lat":43.10027,"lon":141.54795,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"CD・レコード","g":"hobby","k":"hobby"},
+{"id":"osm:node:3707671668","name":"ハードオフ","lat":43.09815,"lon":141.5489,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=201311","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 11-391-8100"},
+{"id":"osm:node:3707671669","name":"ブックオフ","lat":43.09824,"lon":141.54877,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/shop/shop10377.html","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-21:00"},
+{"id":"osm:node:4714534656","name":"ブックオフ","lat":43.18702,"lon":141.7432,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.bookoff.co.jp/shop/shop10655.html","note":"本屋","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-21:00","tel":"+81 126-23-8155"},
+{"id":"osm:node:4714534657","name":"ハードオフ","lat":43.18716,"lon":141.7434,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=201260","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 126-31-6876"},
+{"id":"osm:node:4714534658","name":"オフハウス","lat":43.18731,"lon":141.74358,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=203142","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 126-31-6877"},
+{"id":"osm:node:4916390123","name":"セカンドストリート","lat":43.0963,"lon":141.5277,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"古着・リサイクル","g":"hobby","k":"hobby"},
+{"id":"osm:node:4917767321","name":"サイクルベースあさひ","lat":43.10383,"lon":141.53839,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:4941277921","name":"BOOK ART","lat":43.09446,"lon":141.52597,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"},
+{"id":"osm:node:4976827025","name":"スポーツデポ","lat":43.18853,"lon":141.73378,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5302608222","name":"フィッシュランド","lat":43.10044,"lon":141.53354,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"釣具","g":"hobby","k":"hobby"},
+{"id":"osm:node:5394567521","name":"世登サイクル","lat":43.00801,"lon":141.69848,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:6698884915","name":"ボーネルンド","lat":43.11442,"lon":141.54,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"おもちゃ","g":"hobby","k":"hobby"},
+{"id":"osm:node:9841134950","name":"ホビーオフ","lat":43.09808,"lon":141.54901,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=208042","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 11-389-4400"},
+{"id":"osm:node:9841134951","name":"オフハウス","lat":43.09798,"lon":141.54917,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=203196","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 11-391-8100"},
+{"id":"osm:node:9841416404","name":"ホビーオフ","lat":43.18732,"lon":141.74385,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://www.hardoff.co.jp/shop/detail/?p=208012","note":"古着・リサイクル","g":"hobby","k":"hobby","oh":"Mo-Su 10:00-20:00","tel":"+81 126-23-8255"},
+{"id":"osm:way:444509931","name":"富川自転車商会","lat":43.11074,"lon":141.54939,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:way:712569293","name":"江別 蔦屋書店","lat":43.11453,"lon":141.53887,"pref":"北海道","genres":["shopping"],"indoor":true,"url":"https://ebetsu-t.com/","note":"本屋","g":"hobby","k":"hobby"}
+]

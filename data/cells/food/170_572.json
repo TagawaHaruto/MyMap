@@ -1,0 +1,21 @@
+[
+{"id":"osm:node:1734841087","name":"Daiheigen","lat":42.73205,"lon":143.21267,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1734896313","name":"お食事処 花田","lat":42.7414,"lon":143.19221,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","tel":"+81-155-64-2525"},
+{"id":"osm:node:1734896405","name":"開拓村","lat":42.7287,"lon":143.1542,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:node:3081951819","name":"しなのや食堂","lat":42.69662,"lon":143.13201,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"しなのやしょくどう"},
+{"id":"osm:node:3081951827","name":"中国菜館翡翠樓","lat":42.64856,"lon":143.18677,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant","kana":"ちゅうごくさいかんひすいろう"},
+{"id":"osm:node:3081954133","name":"焼肉つがる亭","lat":42.64928,"lon":143.18749,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant","kana":"やきにくつがるてい"},
+{"id":"osm:node:3081954134","name":"石焼ピッツェリアTUKA","lat":42.66017,"lon":143.1817,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"ピザ","g":"food","k":"restaurant","kana":"いしやきぴっつぇりあつか"},
+{"id":"osm:node:3081954135","name":"食堂わがや","lat":42.64945,"lon":143.18729,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"しょくどうわがや"},
+{"id":"osm:node:3081954136","name":"鳥せい中札内店","lat":42.6965,"lon":143.13241,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3081954138","name":"鳥ふじ","lat":42.69618,"lon":143.1304,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:3081964692","name":"ファームレストラン野島さんち","lat":42.72705,"lon":143.16346,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"ふぁーむれすとらんのじまさんち","tel":"+81-155672880"},
+{"id":"osm:node:14087883419","name":"ジンギスカン白樺","lat":42.74544,"lon":143.08409,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"焼肉","g":"food","k":"restaurant"},
+{"id":"osm:way:273099761","name":"御食事処あさひ","lat":42.6505,"lon":143.18665,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"おしょくじところあさひ"},
+{"id":"osm:node:3081951818","name":"さくら","lat":42.72315,"lon":143.15347,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"さくら"},
+{"id":"osm:node:3081951821","name":"アンクル・ヒロ","lat":42.72417,"lon":143.15165,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"あんくる・ひろ"},
+{"id":"osm:node:3082051683","name":"mae cafe.","lat":42.70266,"lon":143.13504,"pref":"北海道","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe","kana":"まえかふぇ"},
+{"id":"osm:node:3081929614","name":"おばらパン","lat":42.69562,"lon":143.13065,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"あばらぱん","tel":"+81-155683488"},
+{"id":"osm:node:3081929618","name":"お菓子のニシヤマ","lat":42.64963,"lon":143.18708,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"おかしのにしやま"},
+{"id":"osm:way:273164214","name":"パン舎","lat":42.65188,"lon":143.19201,"pref":"北海道","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets","kana":"ぱんしゃ"}
+]

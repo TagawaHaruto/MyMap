@@ -1,0 +1,7 @@
+[
+{"id":"osm:node:5539942606","name":"佐藤自転車店","lat":40.85997,"lon":141.12642,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"自転車","g":"hobby","k":"hobby"},
+{"id":"osm:node:5541792625","name":"田荷モータース","lat":40.86729,"lon":141.12487,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"バイク用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5541792626","name":"昭和堂","lat":40.8671,"lon":141.12608,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"スポーツ用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:5541792640","name":"昭和堂 釣り専科","lat":40.86748,"lon":141.11093,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"アウトドア用品","g":"hobby","k":"hobby"},
+{"id":"osm:node:7168789290","name":"天賞堂","lat":40.77827,"lon":141.21463,"pref":"青森","genres":["shopping"],"indoor":true,"url":"","note":"本屋","g":"hobby","k":"hobby"}
+]

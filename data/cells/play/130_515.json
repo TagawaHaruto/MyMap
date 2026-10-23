@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:562943584","name":"外濠公園","lat":32.69338,"lon":128.84803,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562944685","name":"新港公園","lat":32.7003,"lon":128.84919,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:562945763","name":"五島市福江中央公園","lat":32.68629,"lon":128.83641,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:563207245","name":"久木山公園","lat":32.68157,"lon":128.81459,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:589110911","name":"末広公園","lat":32.69522,"lon":128.84207,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:589122470","name":"高崎公園","lat":32.64784,"lon":128.81123,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:600474941","name":"あんだん坂公園","lat":32.65957,"lon":128.81948,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1074802193","name":"福江大津みなと公園","lat":32.68842,"lon":128.85475,"pref":"長崎","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

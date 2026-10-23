@@ -1,0 +1,7 @@
+[
+{"id":"osm:way:730440258","name":"あけぼの公園","lat":43.26229,"lon":140.64171,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:730454747","name":"さわえ公園","lat":43.26061,"lon":140.64746,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:730552535","name":"みどり公園","lat":43.27874,"lon":140.63892,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:730920222","name":"まるやま公園","lat":43.281,"lon":140.64158,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:730436174","name":"中島グラウンド","lat":43.25954,"lon":140.64383,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]

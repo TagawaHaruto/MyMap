@@ -1,0 +1,22 @@
+[
+{"id":"osm:node:6832289504","name":"岩津かまぼこ店","lat":33.81399,"lon":135.21948,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6832289518","name":"早友商店","lat":33.80192,"lon":135.23217,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6832289694","name":"西山蒲鉾店","lat":33.81461,"lon":135.21867,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6832289703","name":"海貝鮮魚店","lat":33.80075,"lon":135.23518,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6899779785","name":"魚貞鮮魚店","lat":33.89383,"lon":135.15571,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6901335387","name":"カタヤマワインショップ","lat":33.89184,"lon":135.1596,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6901335709","name":"ギフトショップ おおかわ","lat":33.8897,"lon":135.15913,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:6901336089","name":"椿丸福蒲鉾店","lat":33.88899,"lon":135.15399,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11059042506","name":"Aコープ由良店","lat":33.96008,"lon":135.12235,"pref":"和歌山","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:732247065","name":"紀南CC","lat":33.84825,"lon":135.20622,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:732247071","name":"いなみCCフジ","lat":33.82848,"lon":135.23505,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:4618503965","name":"白崎海洋公園 オートキャンプ場","lat":33.9762,"lon":135.07124,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:5839074785","name":"野口オートキャンプ場","lat":33.89836,"lon":135.19303,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://www.city.gobo.wakayama.jp/sisetu/sisetu/1383725123644.html","note":"キャンプ・野外","g":"local","k":"camp","tel":"+81 738 23 5669"},
+{"id":"osm:node:10823030517","name":"Free Camping","lat":33.8913,"lon":135.12857,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14285913294","name":"MOUNTQ","lat":33.87463,"lon":135.17051,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://mount-q.net/","note":"キャンプ・野外","g":"local","k":"camp","tel":"050-8887-2620"},
+{"id":"osm:node:14285920931","name":"Nadaオートキャンプ場","lat":33.84288,"lon":135.19118,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"080-2914-8000"},
+{"id":"osm:node:14285920937","name":"MARINE-Q","lat":33.80843,"lon":135.22079,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287528320","name":"YURAGU","lat":33.9843,"lon":135.09148,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287528324","name":"ストロベリーファーム白崎","lat":33.96872,"lon":135.0935,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14287528327","name":"ゆらきゃんぷ","lat":33.95928,"lon":135.12892,"pref":"和歌山","genres":["outdoor"],"indoor":false,"url":"https://www.yuracamp.com/","note":"キャンプ・野外","g":"local","k":"camp","tel":"070-7667-5353"}
+]

@@ -1,0 +1,15 @@
+[
+{"id":"osm:node:4924053314","name":"みちくさショップ","lat":36.26571,"lon":137.69045,"pref":"長野","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:7916868443","name":"新穂高温泉駅 売店","lat":36.28575,"lon":137.57521,"pref":"岐阜","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:1281064873","name":"徳沢キャンプ場","lat":36.26528,"lon":137.69002,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1281064891","name":"横尾キャンプ場","lat":36.29302,"lon":137.69844,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:1281064991","name":"涸沢野営場","lat":36.2944,"lon":137.66265,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:2293285488","name":"小梨平キャンプ場","lat":36.25058,"lon":137.64038,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0263-95-2321"},
+{"id":"osm:node:4440389671","name":"ババ平キャンプ場","lat":36.32344,"lon":137.67572,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:7913116424","name":"合掌の森中尾キャンプ場","lat":36.25958,"lon":137.57299,"pref":"岐阜","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286775485","name":"七倉山荘","lat":36.49406,"lon":137.72394,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"https://webmarunaka.com/nanakura/","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-6007-0208"},
+{"id":"osm:node:14286832581","name":"燕岳キャンプ場","lat":36.40668,"lon":137.7128,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"090-1420-0008"},
+{"id":"osm:node:14286852428","name":"森のリゾート小梨","lat":36.2731,"lon":137.68556,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0263-95-2321"},
+{"id":"osm:node:14286852438","name":"徳沢ロッヂ","lat":36.25003,"lon":137.63842,"pref":"長野","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:way:1383089315","name":"太郎平キャンプ場","lat":36.45316,"lon":137.52537,"pref":"富山","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

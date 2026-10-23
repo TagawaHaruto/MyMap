@@ -1,0 +1,9 @@
+[
+{"id":"osm:node:9050388800","name":"熊野市防災公園","lat":33.86785,"lon":136.06781,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:425919250","name":"山崎運動公園","lat":33.86753,"lon":136.07519,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:979504733","name":"吉野熊野国立公園","lat":33.86789,"lon":136.06708,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:979505234","name":"熊野防災球場","lat":33.86766,"lon":136.06682,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1148319243","name":"上平公園","lat":33.89095,"lon":136.09029,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1231587613","name":"飛鳥里山ふれあいの森","lat":33.9385,"lon":136.08344,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1231587614","name":"鶯の森","lat":33.93572,"lon":136.08356,"pref":"三重","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"}
+]

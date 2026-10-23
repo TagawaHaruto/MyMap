@@ -1,0 +1,18 @@
+[
+{"id":"osm:node:6984203099","name":"まさかりプラザ 下北駅前店","lat":41.28384,"lon":141.19033,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:11226091419","name":"むつ下北観光物産館　まさかりプラザ","lat":41.29791,"lon":141.21647,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:way:547577152","name":"工藤商店","lat":41.46716,"lon":141.09294,"pref":"青森","genres":["souvenir"],"indoor":true,"url":"","note":"お土産・特産品","g":"local","k":"souvenir"},
+{"id":"osm:node:3103747565","name":"むつボウル","lat":41.27932,"lon":141.19598,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity","kana":"むつぼうる"},
+{"id":"osm:node:11225148319","name":"ウェルネスパーク","lat":41.28227,"lon":141.17377,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:11225159108","name":"太平マリーナ","lat":41.28001,"lon":141.17192,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:547914985","name":"あさひな丘プール","lat":41.41084,"lon":141.15919,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:549061459","name":"むつ市大畑体育館","lat":41.40476,"lon":141.16776,"pref":"青森","genres":["outdoor"],"indoor":true,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:way:1303176977","name":"矢立グリーン","lat":41.3088,"lon":141.16598,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"遊び・スポーツ","g":"local","k":"activity"},
+{"id":"osm:node:12071009068","name":"早掛レイクサイドヒルキャンプ場","lat":41.31432,"lon":141.22036,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"},
+{"id":"osm:node:14286177345","name":"国設薬研野営場","lat":41.40566,"lon":141.16352,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-34-3175"},
+{"id":"osm:node:14286177346","name":"PARK DAIKANYAMA","lat":41.29623,"lon":141.21031,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"https://parkdaikanyama.jp/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-31-1370"},
+{"id":"osm:node:14286177347","name":"むつ市かまふせビレッジ","lat":41.26248,"lon":141.13792,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-29-2555"},
+{"id":"osm:way:298021061","name":"矢立温泉キャンプ場","lat":41.30808,"lon":141.16473,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-22-8211"},
+{"id":"osm:way:547903399","name":"むつ下北自然の家","lat":41.44793,"lon":141.11606,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"https://kyoushin.org/shizennoie/","note":"キャンプ・野外","g":"local","k":"camp","tel":"0175-34-6151"},
+{"id":"osm:way:1303188450","name":"薬研野営場","lat":41.38325,"lon":141.07232,"pref":"青森","genres":["outdoor"],"indoor":false,"url":"","note":"キャンプ・野外","g":"local","k":"camp"}
+]

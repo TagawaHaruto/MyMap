@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:359344506","name":"北海道立オホーツク流氷公園","lat":44.31496,"lon":143.39798,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:363287872","name":"せせらぎ公園","lat":44.36425,"lon":143.32995,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:460326437","name":"ライラック公園","lat":44.36431,"lon":143.34517,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","kana":"らいらっくこうえん"},
+{"id":"osm:way:460532797","name":"紋別公園","lat":44.35521,"lon":143.34407,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:629165352","name":"海洋公園","lat":44.33362,"lon":143.37272,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:741180801","name":"オホーツク森林公園","lat":44.34622,"lon":143.34046,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1526801731","name":"団地公園","lat":44.34113,"lon":143.34481,"pref":"北海道","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:359839710","name":"オホーツク健康プール ステア","lat":44.3297,"lon":143.3728,"pref":"北海道","genres":["outdoor","play"],"indoor":false,"url":"","note":"プール","g":"play","k":"sports"}
+]

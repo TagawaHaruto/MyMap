@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:1426898421","name":"COCO'S 可部店","lat":34.50584,"lon":132.51381,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1426898456","name":"天霧 可部店","lat":34.50607,"lon":132.51372,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"麺類","g":"food","k":"restaurant"},
+{"id":"osm:node:1737966089","name":"へんくつや","lat":34.50486,"lon":132.51434,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1866816621","name":"中華楼","lat":34.51756,"lon":132.50741,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"中華","g":"food","k":"restaurant"},
+{"id":"osm:node:7053556927","name":"吉野家54号線可部店","lat":34.50978,"lon":132.51083,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"和食","g":"food","k":"restaurant","oh":"09:00-23:00"},
+{"id":"osm:way:149508937","name":"ステーキガスト","lat":34.51355,"lon":132.50565,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant","kana":"すてきがすと","chain":true,"oh":"Mo-Fr 11:00-24:00; Sa-Su 10:00-24:00;PH 10:00-24:00"},
+{"id":"osm:way:1229275331","name":"極からあげ匠","lat":34.51702,"lon":132.50543,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"飲食店","g":"food","k":"restaurant"},
+{"id":"osm:node:1432572925","name":"マザーズショップ","lat":34.51846,"lon":132.52081,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"カフェ","g":"food","k":"cafe"},
+{"id":"osm:node:361398643","name":"お好みハウス花ふぶき","lat":34.55238,"lon":132.65612,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:node:1426898466","name":"香龍 可部店","lat":34.5013,"lon":132.51319,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood"},
+{"id":"osm:way:161841723","name":"マクドナルド","lat":34.52162,"lon":132.50713,"pref":"広島","genres":["food"],"indoor":true,"url":"","note":"ファストフード","g":"food","k":"fastfood","kana":"まくどなるど","chain":true},
+{"id":"osm:way:161841347","name":"石釜パン工房 Lupin","lat":34.52101,"lon":132.50696,"pref":"広島","genres":["food","shopping"],"indoor":true,"url":"","note":"パン・お菓子","g":"food","k":"sweets"}
+]

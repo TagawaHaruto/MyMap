@@ -1,0 +1,17 @@
+[
+{"id":"osm:node:2569190010","name":"風の里公園","lat":33.45805,"lon":133.14192,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:416960749","name":"風の里公園","lat":33.45078,"lon":133.11661,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:419990836","name":"みどりの広場","lat":33.44011,"lon":133.12873,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:706095125","name":"津野町葉山運動公園総合センター","lat":33.44533,"lon":133.20256,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:708294935","name":"かわうそ自然公園","lat":33.4458,"lon":133.20465,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:712269811","name":"城山公園","lat":33.44248,"lon":133.21418,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:734151171","name":"白河瀬のぞみ橋公園","lat":33.43768,"lon":133.16327,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1168591387","name":"親渕もみじ公園","lat":33.39062,"lon":133.0941,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1458756468","name":"脱藩広場","lat":33.44262,"lon":133.24963,"pref":"高知","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:708806354","name":"運動場","lat":33.44595,"lon":133.20226,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:711084978","name":"運動場","lat":33.44203,"lon":133.21228,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:712026690","name":"鳴川グランド","lat":33.43896,"lon":133.21139,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:712026695","name":"ゲートボール場","lat":33.43873,"lon":133.21268,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:718430112","name":"運動場","lat":33.44163,"lon":133.17229,"pref":"高知","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"},
+{"id":"osm:way:711099474","name":"酒蔵ホール 葉山の蔵","lat":33.44446,"lon":133.20813,"pref":"高知","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

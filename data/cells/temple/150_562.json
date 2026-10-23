@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:7340250252","name":"古峯神社","lat":37.74507,"lon":140.50223,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:node:10878337718","name":"Zennoji 善応寺","lat":37.66092,"lon":140.72415,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:443758466","name":"笶取八幡神社","lat":37.54722,"lon":140.50564,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1136153250","name":"神社","lat":37.51343,"lon":140.66317,"pref":"福島","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

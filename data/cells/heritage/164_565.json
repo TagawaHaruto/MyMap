@@ -1,0 +1,6 @@
+[
+{"id":"osm:node:12149499935","name":"なのはの看板","lat":41.08384,"lon":141.25707,"pref":"青森","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3092293379","name":"民宿はまなす","lat":41.08097,"lon":141.25686,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11235165631","name":"風の谷","lat":41.0932,"lon":141.25518,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11237523327","name":"ビジネスイン横浜","lat":41.03609,"lon":141.25327,"pref":"青森","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,14 @@
+[
+{"id":"osm:node:8378105053","name":"美瑛川治水竣功記念","lat":43.68114,"lon":142.39022,"pref":"北海道","genres":["heritage"],"indoor":false,"url":"","note":"記念碑","g":"heritage","k":"historic"},
+{"id":"osm:node:3104867025","name":"With You","lat":43.53314,"lon":142.46066,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:4201331488","name":"おかせん里 Okasenri","lat":43.54086,"lon":142.44515,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"http://www.geocities.jp/okasenri/","note":"宿","g":"heritage","k":"lodging","tel":"+81 166-95-2161"},
+{"id":"osm:node:4475242481","name":"P-DASH GARDEN","lat":43.74301,"lon":142.49423,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://pdashgarden.jimdo.com","note":"宿","g":"heritage","k":"lodging","tel":"+81 166 85 6753"},
+{"id":"osm:node:4962803931","name":"ポテトの丘","lat":43.6045,"lon":142.44365,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.potatovillage.com/","note":"宿","g":"heritage","k":"lodging","oh":"Mo-Su 08:00-10:00, 15:00-22:00","tel":"0166-92-3255"},
+{"id":"osm:node:5154806287","name":"ホテル　マリオン","lat":43.74772,"lon":142.37356,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:5154810155","name":"ホテル ムーンドロップ","lat":43.74784,"lon":142.37319,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11955472523","name":"フォテージ イン 美瑛","lat":43.59247,"lon":142.4571,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://inn-biei.jp/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11955477367","name":"Guesthouse 美瑛 B cycle","lat":43.58923,"lon":142.46016,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:11955479577","name":"Pension Megumiyuki","lat":43.57092,"lon":142.45567,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:12473199501","name":"ととのうプレース","lat":43.64613,"lon":142.44828,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://www.totonouplace.com/","note":"宿","g":"heritage","k":"lodging"},
+{"id":"osm:node:14283565033","name":"ALL SEASON CAMP","lat":43.60628,"lon":142.46193,"pref":"北海道","genres":["lodging"],"indoor":true,"url":"https://all-season-camp.com/","note":"宿","g":"heritage","k":"lodging"}
+]

@@ -1,0 +1,10 @@
+[
+{"id":"osm:way:380254618","name":"草履石公園","lat":35.17693,"lon":138.11866,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:387943911","name":"接岨親水公園","lat":35.17561,"lon":138.18759,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:547350220","name":"宮前広場","lat":35.17543,"lon":138.11921,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:547350787","name":"尾崎坂展望台","lat":35.18194,"lon":138.11088,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:666226919","name":"智者の丘公園","lat":35.11327,"lon":138.14541,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:666400848","name":"やんばい広場","lat":35.10984,"lon":138.14156,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:666400942","name":"小長井中央公園","lat":35.10836,"lon":138.14231,"pref":"静岡","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:node:6239132297","name":"川根本町文化会館","lat":35.10638,"lon":138.14273,"pref":"静岡","genres":["play"],"indoor":true,"url":"","note":"劇場・ホール","g":"play","k":"amuse"}
+]

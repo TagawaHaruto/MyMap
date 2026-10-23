@@ -1,0 +1,13 @@
+[
+{"id":"osm:node:10607758224","name":"風見大権現跡地","lat":35.54291,"lon":132.969,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:616985650","name":"朝日寺","lat":35.50972,"lon":132.97899,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺","g":"temple","k":"worship"},
+{"id":"osm:way:643051629","name":"片句大師堂","lat":35.5359,"lon":132.9896,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:759557169","name":"杠神社","lat":35.50425,"lon":132.91835,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1137961750","name":"大日堂","lat":35.52844,"lon":132.97529,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1137962037","name":"惠曇神社","lat":35.52823,"lon":132.97505,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1137965856","name":"天理教恵曇分教会","lat":35.52927,"lon":132.97675,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1138008001","name":"津上神社","lat":35.54035,"lon":132.96892,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1139106780","name":"八神神社","lat":35.51597,"lon":132.91847,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"},
+{"id":"osm:way:1144577633","name":"毘沙門堂","lat":35.51985,"lon":132.98037,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"寺社・教会","g":"temple","k":"worship"},
+{"id":"osm:way:1144577634","name":"須賀神社","lat":35.52005,"lon":132.98045,"pref":"島根","genres":["temple"],"indoor":false,"url":"","note":"神社","g":"temple","k":"worship"}
+]

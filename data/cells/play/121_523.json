@@ -1,0 +1,6 @@
+[
+{"id":"osm:way:1412114386","name":"宇宙ヶ丘公園","lat":30.3995,"lon":130.9025,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1413195000","name":"国史跡広田遺跡公園","lat":30.42483,"lon":130.96584,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park"},
+{"id":"osm:way:1413346902","name":"長谷展望公園","lat":30.43827,"lon":130.92784,"pref":"鹿児島","genres":["play"],"indoor":false,"url":"","note":"公園","g":"play","k":"park","oh":"24/7"},
+{"id":"osm:way:850897553","name":"竹崎野球場","lat":30.37556,"lon":130.96079,"pref":"鹿児島","genres":["outdoor","play"],"indoor":false,"url":"","note":"グラウンド・コート","g":"play","k":"sports"}
+]
