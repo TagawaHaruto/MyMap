@@ -211,6 +211,15 @@ class OsmSpotTest(unittest.TestCase):
         self.assertIsNone(g('サウナ北欧', leisure='sauna'))
         self.assertEqual(g('東京タワー', tourism='attraction')[0], ['sightseeing'])
 
+    def test_big_stores(self):
+        # IKEA・コストコは家具店・倉庫店でも拾う（ブランドで）。店でない IKEA（配送センター）や、ブランドのない家具店は拾わない
+        g = lambda **t: collect.osm_genre({'name': 'x', **t})
+        self.assertEqual(g(shop='furniture', **{'brand:wikidata': 'Q54078'})[:2], (['shopping'], True))
+        self.assertIn('コストコ', g(shop='supermarket;wholesale', **{'brand:wikidata': 'Q715583'})[2])
+        self.assertIsNone(g(**{'brand:wikidata': 'Q54078'}))
+        self.assertIsNone(g(shop='furniture'))
+        self.assertTrue(any(k == 'bigstore' for k, _ in collect.SPOT_QUERIES))
+
     def test_romaji_kana(self):
         r = collect.romaji_to_kana
         self.assertEqual(r('Nobeha No Yu Tsuruhashi'), 'のべはのゆつるはし')

@@ -258,6 +258,8 @@ SPOT_QUERIES = [
     ('shop', 'nwr["shop"~"^(mall|department_store)$"]["name"]'),
     ('play', 'nwr["leisure"~"^(water_park|amusement_arcade|trampoline_park|miniature_golf)$"]["name"]'),
     ('planetarium', 'nwr["amenity"="planetarium"]["name"]'),
+    # 休日に出かける先になる大型店（IKEA・コストコ）。家具店・倉庫店として登録されているので、ブランドで拾う
+    ('bigstore', 'nwr["brand:wikidata"~"^(Q54078|Q715583)$"]["shop"]["name"]'),
     # 温泉: 入浴施設の印（public_bath）がない温泉もある（温泉の印・源泉や地獄・名前に温泉の入ったサウナや宿として登録）
     ('onsen', ['nwr["leisure"="hot_spring"]["name"]', 'nwr["amenity"="spa"]["name"]',
                'nwr["natural"~"^(hot_spring|spring)$"]["name"~"温泉|湯|地獄"]', 'nwr["leisure"="sauna"]["name"~"温泉|の湯"]',
@@ -269,6 +271,7 @@ SPOT_QUERIES = [
 ]
 FARM_WORDS = re.compile('狩|摘み|観光農園|体験農園|果樹園|ぶどう園|いちご園|ブルーベリー|牧場')
 CRAFT = {'pottery': '陶芸体験', 'glassblower': 'ガラス工房', 'handicraft': '工芸体験'}
+BIG_STORES = {'Q54078': 'IKEA（家具・雑貨。スウェーデン料理のレストランも）', 'Q715583': 'コストコ（会員制の大型倉庫店）'}
 VEHICLE_WORDS = re.compile('鉄道|電車|機関車|航空|飛行|宇宙|ロケット|自動車|クルマ|モーター|バイク|オートバイ|船|交通|乗り物')
 
 
@@ -333,6 +336,8 @@ def osm_genre(t):
         g = (['temple'], False, '寺社')
     elif amen == 'public_bath':
         g = (['onsen'], True, '温泉' if t.get('bath:type') == 'onsen' else '銭湯・入浴施設')
+    elif t.get('brand:wikidata') in BIG_STORES and t.get('shop'):
+        g = (['shopping'], True, BIG_STORES[t['brand:wikidata']])
     elif t.get('shop') in ('mall', 'department_store'):
         g = (['shopping'], True, 'ショッピング')
     else:
@@ -410,12 +415,17 @@ def parse_osm_spots(text, exclude_names=frozenset(), kind=None, seen=None):
         if not t.get('name') or not pos or t['name'] in exclude_names:
             continue
         g = osm_genre(t)
-        key = (t['name'], round(pos['lat'], 3), round(pos['lon'], 3))  # 建物と敷地など、近くの同名は 1 件に
+        big = t.get('brand:wikidata') in BIG_STORES
+        # 建物と敷地など、近くの同名は 1 件に（IKEA・コストコは店の点と建物が離れていることがあるので約 1km 四方で）
+        key = (t['brand:wikidata'], round(pos['lat'], 2), round(pos['lon'], 2)) if big else (t['name'], round(pos['lat'], 3), round(pos['lon'], 3))
         if not g or key in seen:
             continue
         seen.add(key)
         site = t.get('website', '')
-        spot = {'id': f"osm:{el['type']}:{el['id']}", 'name': show_name(t['name']), 'lat': round(pos['lat'], 5),
+        name = show_name(t['name'])
+        if big and t.get('branch') and t['branch'] not in name:
+            name = f"{name} {t['branch']}"  # 「IKEA」だけの名前に支店名（立川など）を足す
+        spot = {'id': f"osm:{el['type']}:{el['id']}", 'name': name, 'lat': round(pos['lat'], 5),
                 'lon': round(pos['lon'], 5), 'pref': norm_province(t.get('addr:province')), 'genres': g[0], 'indoor': g[1],
                 'url': site if site.startswith(('http://', 'https://')) else wiki_url(t.get('wikipedia')) or '',
                 'note': g[2], 'k': kind}
@@ -851,7 +861,7 @@ def save_cells(root, cells):
 
 # ---- 全国の OpenStreetMap データ（Geofabrik の日本全体の .osm.pbf）から、上の全種類を週 1 回まとめて作る ----
 OSM_PBF_URL = 'https://download.geofabrik.de/asia/japan-latest.osm.pbf'
-OSM_VER = 2  # 作り方を変えたら上げる（1 週間以内でも作り直す）。2: 温泉の印・源泉・温泉宿なども温泉に、ローマ字の名前から読み
+OSM_VER = 3  # 作り方を変えたら上げる（1 週間以内でも作り直す）。2: 温泉の印・源泉・温泉宿なども温泉に、ローマ字の名前から読み。3: IKEA・コストコ
 OSM_PARTS = ('pois', 'spots', 'cells', 'roads', 'moto')  # アプリの COLLECT_PARTS（取れなかった部分の表示）と同じ
 PREF_STMT = 'rel["boundary"="administrative"]["admin_level"="4"]'
 # 高速道路の分岐（JCT）の名前: ルートの分岐の案内に付ける
@@ -861,7 +871,7 @@ KEEP_TAGS = {'name', 'amenity', 'shop', 'tourism', 'leisure', 'historic', 'natur
              'highway', 'public_transport', 'bath:type', 'religion', 'cuisine', 'brand', 'brand:wikidata', 'operator', 'website',
              'wikipedia', 'opening_hours', 'phone', 'contact:phone', 'wheelchair', 'addr:province', 'name:ja-Hira', 'name:ja_kana',
              'name:ja-Hrkt', 'self_service', 'access', 'fee', 'capacity', 'capacity:motorcycle', 'motorcycle', 'moped', 'parking',
-             'toll', 'ele', 'mountain_pass', 'museum', 'name:en', 'name:ja_rm', 'name:ja-Latn'}
+             'toll', 'ele', 'mountain_pass', 'museum', 'name:en', 'name:ja_rm', 'name:ja-Latn', 'branch'}
 
 
 def osm_queries():
