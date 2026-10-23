@@ -491,3 +491,4 @@ body.tour-full .map-full .radar-bar { bottom: calc(var(--sheet-h, 50vh) + 8px); 
   background: color-mix(in srgb, var(--key) 12%, transparent); color: var(--fg); font: inherit; font-size: 0.78rem; font-weight: var(--font-weight-700); text-align: left; cursor: pointer; }
 .radar-sum span { flex: none; color: var(--key); font-size: 0.72rem; }
 .cand-rain { font-size: 0.8rem; }
+.radar-time .trust { font-size: 0.68rem; color: var(--fg-sub); }

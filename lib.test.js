@@ -846,6 +846,20 @@ assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.l
   assert.strictEqual(Lib.sxCloseLoop(sx, ['AB'], 2), null); // 2 区間までには戻れない
 }
 
+// 2 日先まで: 数値予報の格子のコマ（15 時間より先）
+{
+  assert.deepStrictEqual([0, 0.5, 3, 12, 90].map(Lib.mmLevel), [0, 1, 2, 4, 8]);
+  const g = Lib.gridPoints([35, 139, 36, 140], 2);
+  assert.deepStrictEqual(g.pts.map((p) => [p.lat, p.lon]), [[35.25, 139.25], [35.25, 139.75], [35.75, 139.25], [35.75, 139.75]]);
+  const json = [0, 1, 2, 3].map((i) => ({ hourly: { time: ['2026-10-23T03:00', '2026-10-23T04:00'], precipitation: [0, i * 4] } }));
+  const fr = Lib.modelFrames(json, g, Date.UTC(2026, 9, 23, 3, 0));
+  assert.deepStrictEqual(fr.map((f) => [new Date(f.t).toISOString().slice(11, 16), f.kind, f.grid.levels]), [['04:00', 'model', [0, 2, 3, 4]]]);
+  assert.strictEqual(Lib.gridLevelAt(fr[0], 35.8, 139.7), 4);
+  assert.strictEqual(Lib.gridLevelAt(fr[0], 38, 139.7), null); // 格子の外
+  assert.ok(Lib.modelUrl(g.pts).includes('models=jma_seamless'));
+  assert.deepStrictEqual([0.5, 3, 10, 20, 50].map((h) => Lib.rainTrust(h * 3600e3, 0)).concat(Lib.rainTrust(0, 0, 'now')), ['高', 'やや高', '中', 'やや低', '低', '実測']);
+}
+
 console.log('lib: ALL PASS');
 // 経由地の横に同じ向きの一般道のランプ（出入口）があれば避ける
 {
