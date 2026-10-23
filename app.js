@@ -2020,7 +2020,7 @@ const candCard = (c, i) => `<button type="button" class="card cand" data-cand="$
   <span class="cand-sub">${c.toll === true ? '<span class="badge warn">有料あり</span>' : c.toll === false ? '有料なし' : ''}
     ・景色 ${'★'.repeat(c.stars)}${'☆'.repeat(5 - c.stars)}（展望台など${c.spots}か所${c.roadKm >= 1 ? `・おすすめの道${Math.round(c.roadKm)}km` : ''}）
     ・カーブ ${'★'.repeat(curvOf(c))}${'☆'.repeat(5 - curvOf(c))}</span>
-  ${c.rain ? `<span class="cand-rain">${c.rainBest ? '<span class="badge open">☂雨が少ない</span> ' : ''}${rainText(c.rain)}</span>` : ''}</button>`;
+  ${c.rain ? `<span class="cand-rain">${c.rainBest ? '<span class="badge open">☂雨が少ない</span> ' : ''}${rainText(c.rain)}${c.rain.at ? ` <small>信頼度 ${Lib.rainTrust(c.rain.at + c.min * 60e3)}</small>` : ''}</span>` : ''}</button>`;
 const curvOf = (c) => (c.curvStars = c.curvStars || Lib.curvStars(Lib.curviness(c.line)));
 
 // ---- 地図を全画面にして、ほかの情報は下から引き出すパネルに（Google マップのアプリのように）。上にはルートの要約 ----
@@ -2564,7 +2564,19 @@ async function radarFrames() {
   const [n1, n2, rs] = await Promise.all(Lib.JMA_TIMES.map((u) => fetch(u, { cache: 'no-store', signal: timeoutSignal(10000) })
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))));
   const prev = RADAR.frames && RADAR.frames[RADAR.idx];
-  RADAR.frames = Lib.jmaFrames(n1, n2, rs, 60); RADAR.at = Date.now(); RTILES.clear();
+  const jma = Lib.jmaFrames(n1, n2, rs, 60);
+  // 15 時間より先は 3 日先まで、数値予報（Open-Meteo の気象庁モデル）をルート（なければ地図の範囲）のまわりの格子で
+  let model = [];
+  try {
+    const b = tour.route ? tour.route.line.reduce((a, [lon, lat]) => [Math.min(a[0], lat), Math.min(a[1], lon), Math.max(a[2], lat), Math.max(a[3], lon)], [90, 180, -90, -180])
+      : map ? [map.getBounds().getSouth(), map.getBounds().getWest(), map.getBounds().getNorth(), map.getBounds().getEast()] : null;
+    if (b) {
+      const m = 0.25, grid = Lib.gridPoints([b[0] - m, b[1] - m, b[2] + m, b[3] + m], 14);
+      const r = await fetch(Lib.modelUrl(grid.pts, 74), { signal: timeoutSignal(15000) });
+      if (r.ok) model = Lib.modelFrames(await r.json(), grid, jma.length ? jma[jma.length - 1].to : Date.now());
+    }
+  } catch { /* 数値予報が取れなければ 15 時間先まで */ }
+  RADAR.frames = jma.concat(model); RADAR.at = Date.now(); RTILES.clear();
   // 選んでいた時刻をできるだけ保つ（初めては、ルートの出発時刻が予報の範囲なら出発時刻、なければ現在）
   const want = prev ? prev.t : tour.route ? departMs() : Date.now();
   const f = Lib.frameAt(RADAR.frames, want) || RADAR.frames.find((x) => x.kind === 'now');
@@ -2586,6 +2598,7 @@ function radarTile(url) {
 }
 // その地点の雨の強さの段階（Lib.RAIN_LABELS）。まわり 1 画素（約 0.6km）も見て、ルートのすぐ横の雨も拾う。読めなければ null
 async function rainLevelAt(f, lat, lon, z = 8) {
+  if (f.kind === 'model') return Lib.gridLevelAt(f, lat, lon);
   const p = Lib.tilePixel(lat, lon, z);
   const d = await radarTile(f.url.replace('{z}', z).replace('{x}', p.x).replace('{y}', p.y));
   if (!d) return null;
@@ -2598,7 +2611,10 @@ async function rainLevelAt(f, lat, lon, z = 8) {
   }
   return lv;
 }
-const hhmm = (ms) => { const d = new Date(ms); return `${d.toDateString() === new Date().toDateString() ? '' : '翌'}${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`; };
+const hhmm = (ms) => {
+  const d = new Date(ms), days = Math.round((new Date(d).setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / 864e5);
+  return `${days === 0 ? '' : days === 1 ? '翌' : `${d.getMonth() + 1}/${d.getDate()} `}${d.getHours()}:${String(d.getMinutes()).padStart(2, '0')}`;
+};
 // そのコマの時刻に走っている所を見る時刻。1 時間の予報のコマは、その 1 時間のうち走っている時間（なければ真ん中）
 function riderTime(f) {
   if (f.kind !== 'fcst' || !tour.route) return f.t;
@@ -2610,7 +2626,8 @@ const relText = (ms) => {
   return a < 3 ? '現在' : `${m < 0 ? '-' : '+'}${a >= 60 ? `${Math.floor(a / 60)}時間${a % 60 ? (a % 60) + '分' : ''}` : `${a}分`}`;
 };
 function radarLabel(f) {
-  return f.kind === 'fcst' ? `${hhmm(f.from)}〜${hhmm(f.to)}<small>予報（1時間の雨量）</small>`
+  return f.kind === 'model' ? `${hhmm(f.from)}〜${hhmm(f.to)}<small>予報（数値予報・おおまか）</small>`
+    : f.kind === 'fcst' ? `${hhmm(f.from)}〜${hhmm(f.to)}<small>予報（1時間の雨量）</small>`
     : `${hhmm(f.t)}<small>${f.kind === 'past' ? '実況' : f.kind === 'now' ? '実況（最新）' : '予報'}</small>`;
 }
 // 時刻のバー（Yahoo!天気の雨雲レーダーのように、再生・つまみ・「現在」と「+1時間」などの目盛り）
@@ -2620,9 +2637,9 @@ function radarBarHtml() {
   if (!fr) return '<p class="hint">雨雲を読み込んでいます…</p>';
   const n = fr.length - 1, nowI = fr.findIndex((f) => f.kind === 'now');
   const pos = (i) => `${(i / Math.max(1, n)) * 100}%`;
-  // 目盛り: 左端（1時間前）・現在・1・3・6・9・12・15時間後（それぞれに一番近いコマの位置）
+  // 目盛り: 左端（1時間前）・現在・1・3・6・12・24・48・72時間後（それぞれに一番近いコマの位置）
   const ticks = [[0, `-${Math.round((fr[nowI].t - fr[0].t) / 3600e3)}h`], [nowI, '現在']];
-  for (const h of [1, 3, 6, 9, 12, 15]) {
+  for (const h of [1, 3, 6, 12, 24, 48, 72]) {
     let best = -1;
     fr.forEach((f, i) => { if (i > nowI && (best < 0 || Math.abs(f.t - fr[nowI].t - h * 3600e3) < Math.abs(fr[best].t - fr[nowI].t - h * 3600e3))) best = i; });
     if (best > 0 && Math.abs(fr[best].t - fr[nowI].t - h * 3600e3) < 45 * 60e3 && !ticks.some(([i]) => i === best)) ticks.push([best, `+${h}h`]);
@@ -2654,7 +2671,7 @@ async function updateRadarText() {
   const f = RADAR.frames && RADAR.frames[RADAR.idx];
   const tm = $('#radar-time'), here = $('#radar-here');
   if (!f || !tm) return;
-  tm.innerHTML = `<strong>${radarLabel(f)}</strong><span class="rel">${relText(f.t)}</span>`;
+  tm.innerHTML = `<strong>${radarLabel(f)}</strong><span class="rel">${relText(f.t)}</span><span class="trust">信頼度 ${Lib.rainTrust(f.t, Date.now(), f.kind)}</span>`;
   const r = $('#radar-range'); if (r && +r.value !== RADAR.idx) r.value = RADAR.idx;
   if (!here) return;
   if (!tour.route) { here.textContent = ''; return; }
@@ -2684,12 +2701,25 @@ const radarLayer = (opts) => {
   }
   return new RadarLayer(opts);
 };
+// 数値予報のコマ: 格子の升目を雨の強さの色で塗る（雨のない升目は塗らない）
+function modelLayer(f) {
+  if (!map.getPane('rainPane')) { const rp = map.createPane('rainPane'); rp.style.zIndex = 300; rp.style.pointerEvents = 'none'; } // 地図の上・ルートの下
+  const g = f.grid, r = L.canvas({ pane: 'rainPane' }), lay = L.layerGroup();
+  g.pts.forEach((p, i) => {
+    const lv = g.levels[i]; if (!lv) return;
+    const [cr, cg, cb] = Lib.RAIN_COLORS[lv - 1];
+    L.rectangle([[p.lat - g.dy / 2, p.lon - g.dx / 2], [p.lat + g.dy / 2, p.lon + g.dx / 2]], { renderer: r, stroke: false, fillColor: `rgb(${cr},${cg},${cb})`, fillOpacity: 0.55, interactive: false }).addTo(lay);
+  });
+  lay.getAttribution = () => '雨の予報: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>（気象庁 MSM など）';
+  setTimeout(() => lay.fire('load'), 0);
+  return lay;
+}
 // 地図に選んだ時刻の雨雲と、その時刻に走っている所（🏍）を出す
 function showRadarFrame() {
   if (!map || !RADAR.on || !RADAR.frames) return;
   const f = RADAR.frames[RADAR.idx]; if (!f) return;
   const old = RADAR.layer;
-  RADAR.layer = radarLayer({ url: f.url, opacity: 0.65, minZoom: 4, maxZoom: 18, zIndex: 450, className: 'radar-tiles',
+  RADAR.layer = f.kind === 'model' ? modelLayer(f) : radarLayer({ url: f.url, opacity: 0.65, minZoom: 4, maxZoom: 18, zIndex: 450, className: 'radar-tiles',
     attribution: '雨雲: <a href="https://www.jma.go.jp/bosai/nowc/" target="_blank" rel="noopener">気象庁</a>' });
   // 新しいコマが読み込めてから前のコマを消す（ちらつかないように）
   const drop = () => { if (old && old !== RADAR.layer && old._map) old.remove(); };
@@ -2712,7 +2742,10 @@ async function radarOn(on) {
   try { await radarFrames(); } catch { RADAR.err = '雨雲を読み込めませんでした（圏外の可能性があります）。'; }
   renderRadarBar(); showRadarFrame();
   // ルートが下のパネル・時刻のバーに隠れない所に収まるように
-  if (map && tour.route) map.fitBounds(L.latLngBounds(tour.route.line.map(([lon, lat]) => [lat, lon])), fitPad());
+  if (map && tour.route) {
+    map.invalidateSize(); // 読み込みの間に地図の大きさが変わっていることがある（大きさ 0 のまま合わせると最大まで拡大してしまう）
+    if (map.getSize().y > 150) map.fitBounds(L.latLngBounds(tour.route.line.map(([lon, lat]) => [lat, lon])), { ...fitPad(), maxZoom: 13 });
+  }
 }
 function radarStep(i) {
   RADAR.idx = Math.max(0, Math.min(RADAR.frames.length - 1, i));
@@ -2762,7 +2795,9 @@ async function radarPlan() {
   try {
     const fr = await radarFrames();
     const last = fr[fr.length - 1].to, rt = tour.route;
-    const opts = Lib.departOptions(Date.now(), last, 30, 30);
+    // 15 時間先までは 30 分ごと、その先（数値予報）は 3 時間ごと
+    const jmaEnd = fr.filter((f) => f.kind !== 'model').pop().to;
+    const opts = [...new Set([...Lib.departOptions(Date.now(), jmaEnd, 30, 30), ...Lib.departOptions(jmaEnd, last, 180, 20)])].sort((a, b) => a - b);
     const n = Math.max(20, Math.min(120, Math.round(rt.km / 2))); // 約 2km ごと
     const rows = [];
     for (const d of opts) {
@@ -2780,15 +2815,15 @@ async function radarPlan() {
       : ok.length ? `✓ 雨に合わない出発: ${runs.slice(0, 2).map(([a, b]) => (a === b ? hhmm(a) : `${hhmm(a)}〜${hhmm(b)}`)).join('・')}${runs.length > 2 ? '…' : ''}`
         : '☔ どの時刻に出ても、どこかで雨に合いそう';
     RADAR.planHtml = `<h4>🕒何時に出れば雨に合わない？（${esc(currentDest() ? currentDest().name : 'ルート')}・約${Math.round(rt.km)}km・${fmtMin(Math.round(rt.min))}）</h4>
-      ${!rows.length ? '<p class="notice">雨雲の予報（15時間先まで）の中に収まる出発時刻がありません（ルートが長いため）。</p>'
+      ${!rows.length ? '<p class="notice">雨の予報（3日先まで）の中に収まる出発時刻がありません。</p>'
     : ok.length ? `<p class="status">✓ 雨に合わずに走れそうな出発: <strong>${runs.map(([a, b]) => (a === b ? hhmm(a) : `${hhmm(a)}〜${hhmm(b)}`)).join('・')}</strong>（いちばん早いのは ${hhmm(ok[0].d)}）</p>`
-      : '<p class="notice">☔ 今から15時間の間は、どの時刻に出てもルートのどこかで雨に合いそうです。雨の少ない時刻を選ぶか、カッパの用意を。</p>'}
+      : '<p class="notice">☔ 今から3日の間は、どの時刻に出てもルートのどこかで雨に合いそうです。雨の少ない時刻を選ぶか、カッパの用意を。</p>'}
       <div class="rplan">${rows.map((r) => `<button type="button" class="rp" data-radar="dep" data-t="${r.d}" aria-pressed="${Math.abs(r.d - departMs()) < 60e3}">
         <span class="rp-dot" style="background:${dot(r.v.wet ? r.v.max : r.v.max == null ? null : 0)}"></span><strong>${hhmm(r.d)}</strong>
         <span>${r.v.max == null ? '予報の範囲外' : r.v.wet ? `☔ ${hhmm(r.first.at)}ごろ ${Math.round(r.first.km)}km付近から雨（最大 ${Lib.RAIN_LABELS[r.v.max]}・雨の区間 約${Math.max(1, Math.round(r.v.wet * rt.km / n))}km）`
     : r.v.drizzle ? '🌂 ぱらつく程度（1mm未満）' : '✓ 雨なし'}${r.v.unknown && r.v.max != null ? `（${hhmm(r.lastKnown.at)}より後は予報の範囲外）` : ''}</span>
-        <small>着 ${hhmm(r.d + rt.min * 60e3)}</small></button>`).join('')}</div>
-      <details class="help"><summary aria-label="説明を見る">i</summary>気象庁の高解像度降水ナウキャスト（1時間先まで5分ごと）と降水短時間予報（15時間先まで1時間ごと）の雨雲で、ルート上の約${(rt.km / n).toFixed(1)}kmごとの地点を通る時刻の雨を見ています（1mm/時以上を「雨」）。休憩・立ち寄りの時間は含みません。予報なので外れることがあります。押すとその時刻を出発にし、地図の雨雲もその時刻にします。</details>`;
+        <small>着 ${hhmm(r.d + rt.min * 60e3)}<br>信頼度 ${Lib.rainTrust(r.d + rt.min * 60e3)}</small></button>`).join('')}</div>
+      <details class="help"><summary aria-label="説明を見る">i</summary>気象庁の高解像度降水ナウキャスト（1時間先まで5分ごと）と降水短時間予報（15時間先まで1時間ごと）、その先3日先までは数値予報（Open-Meteo の気象庁モデル・約10kmの升目・おおまか）で、ルート上の約${(rt.km / n).toFixed(1)}kmごとの地点を通る時刻の雨を見ています（1mm/時以上を「雨」）。休憩・立ち寄りの時間は含みません。予報なので外れることがあり、先になるほど外れやすくなります（信頼度は到着時刻での目安）。押すとその時刻を出発にし、地図の雨雲もその時刻にします。</details>`;
   } catch { RADAR.planHtml = '<p class="hint">雨雲を読み込めませんでした（圏外の可能性があります）。</p>'; RADAR.planSum = ''; }
   RADAR.busy = false;
   const o = $('#radar-plan'); if (o) o.innerHTML = RADAR.planHtml;

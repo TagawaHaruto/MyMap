@@ -791,6 +791,41 @@ const Lib = (() => {
     }
     return out.sort((a, b) => a.t - b.t);
   }
+  // ---- 15 時間より先（2 日先まで）: Open-Meteo の気象庁の数値予報（MSM など）を、地域の格子の点で 1 時間ごとに ----
+  const mmLevel = (mm) => (mm == null ? null : mm < 0.1 ? 0 : mm < 1 ? 1 : mm < 5 ? 2 : mm < 10 ? 3 : mm < 20 ? 4 : mm < 30 ? 5 : mm < 50 ? 6 : mm < 80 ? 7 : 8);
+  // 範囲 [south, west, north, east] を n×n の格子に（点は升目の真ん中）
+  function gridPoints(b, n) {
+    const [s, w, nn, e] = b, dy = (nn - s) / n, dx = (e - w) / n, pts = [];
+    for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) pts.push({ lat: +(s + dy * (i + 0.5)).toFixed(3), lon: +(w + dx * (j + 0.5)).toFixed(3) });
+    return { pts, dy, dx };
+  }
+  const modelUrl = (pts, hours = 50) => 'https://api.open-meteo.com/v1/forecast?' + new URLSearchParams({ latitude: pts.map((p) => p.lat).join(','),
+    longitude: pts.map((p) => p.lon).join(','), hourly: 'precipitation', timezone: 'UTC', forecast_hours: String(hours), models: 'jma_seamless' });
+  // Open-Meteo の答え → after より後の 1 時間ごとのコマ（各コマはその時刻までの 1 時間の雨量。格子の点ごとの段階）
+  function modelFrames(json, grid, after) {
+    const arr = Array.isArray(json) ? json : [json];
+    const h = arr[0] && arr[0].hourly;
+    if (!h) return [];
+    const out = [];
+    h.time.forEach((iso, k) => {
+      const t = Date.parse(`${iso}:00Z`);
+      if (t <= after) return;
+      out.push({ t, from: t - 3600e3, to: t, kind: 'model', grid: { ...grid, levels: arr.map((a) => mmLevel(a.hourly ? a.hourly.precipitation[k] : null)) } });
+    });
+    return out;
+  }
+  // 格子のコマで、その地点に一番近い点の段階（格子の外は null）
+  function gridLevelAt(f, lat, lon) {
+    const g = f.grid; let best = -1, bd = Infinity;
+    g.pts.forEach((p, i) => { const d = Math.abs(p.lat - lat) / g.dy + Math.abs(p.lon - lon) / g.dx; if (d < bd) { bd = d; best = i; } });
+    return best < 0 || bd > 1.5 ? null : g.levels[best];
+  }
+  // 雨の予報の信頼度の目安（先になるほど下がる）。実況は観測そのもの
+  function rainTrust(t, now = Date.now(), kind = '') {
+    if (kind === 'past' || kind === 'now') return '実測';
+    const h = (t - now) / 3600e3;
+    return h <= 1 ? '高' : h <= 6 ? 'やや高' : h <= 15 ? '中' : h <= 24 ? 'やや低' : '低';
+  }
   // 時刻 t の雨を表すコマ（重なるときは短い時間のコマ＝ナウキャストを優先）。範囲の外は null
   function frameAt(frames, t) {
     let best = null;
@@ -1571,7 +1606,7 @@ const Lib = (() => {
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
-    sxCloseLoop, JMA_TIMES, jmaFrames, frameAt, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict, rainDetourVias, nearestOnLine,
+    sxCloseLoop, JMA_TIMES, jmaFrames, frameAt, mmLevel, gridPoints, modelUrl, modelFrames, gridLevelAt, rainTrust, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict, rainDetourVias, nearestOnLine,
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
