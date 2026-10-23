@@ -860,6 +860,14 @@ assert.strictEqual(Lib.outerFromPoints([left, right.map((p) => ({ ...p, lon: p.l
   assert.deepStrictEqual([0.5, 3, 10, 20, 50].map((h) => Lib.rainTrust(h * 3600e3, 0)).concat(Lib.rainTrust(0, 0, 'now')), ['高', 'やや高', '中', 'やや低', '低', '実測']);
 }
 
+// 施設名＋郵便番号＋住所をまとめて打った目的地
+{
+  const q = Lib.placeQuery('ホテルおおるり、〒329-2921 栃木県那須塩原市塩原815 3');
+  assert.deepStrictEqual([q.name, q.addr, q.tries], ['ホテルおおるり', '栃木県那須塩原市塩原815-3', ['栃木県那須塩原市塩原815-3', '栃木県那須塩原市塩原815', '栃木県那須塩原市塩原']]);
+  assert.deepStrictEqual(Lib.placeQuery('新宿駅').tries, ['新宿駅']);
+  assert.strictEqual(Lib.placeQuery('東京都調布市深大寺元町5丁目').addr, '東京都調布市深大寺元町5丁目');
+}
+
 console.log('lib: ALL PASS');
 // 経由地の横に同じ向きの一般道のランプ（出入口）があれば避ける
 {

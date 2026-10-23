@@ -1492,6 +1492,21 @@ const Lib = (() => {
   // 手元のデータと同じ場所（同じ名前で 300m 以内）は除く
   const notInLocal = (xs, local) => xs.filter((x) => !local.some((s) => norm(s.name) === norm(x.name) && haversineKm(s, x) < 0.3));
 
+  // 「ホテルおおるり、〒329-2921 栃木県那須塩原市塩原815 3」のように施設名・郵便番号・住所をまとめて打ったもの →
+  // { name: 施設名, addr: 住所, tries: 国土地理院の住所検索で順に試す文字（番地をだんだん短く） }
+  function placeQuery(q) {
+    const t = String(q || '').normalize('NFKC').replace(/〒?\s*\d{3}-?\d{4}/g, ' ').replace(/[、,，。・]/g, ' ').replace(/\s+/g, ' ').trim();
+    const m = t.match(/(北海道|東京都|京都府|大阪府|[^\s]{2,3}県|[^\s]{1,6}[市区町村]).*$/);
+    let addr = m ? m[0] : '', name = m ? t.slice(0, m.index).trim() : t;
+    addr = addr.replace(/(\d+)\s+(?=\d)/g, '$1-').replace(/\s+/g, ''); // 「815 3」→「815-3」
+    const tries = [];
+    if (addr) {
+      let a = addr;
+      for (let k = 0; k < 4 && a; k++) { if (!tries.includes(a)) tries.push(a); const b = a.replace(/[-‐－]?\d+(番地?|号)?$|丁目$/, ''); if (b === a) break; a = b; }
+    }
+    if (!addr || !name) tries.push(t);
+    return { name, addr, tries };
+  }
   const gsiSearchUrl = (q) => `https://msearch.gsi.go.jp/address-search/AddressSearch?q=${encodeURIComponent(q)}`;
   function parseGsi(j, limit = 8) {
     const out = [];
@@ -1606,7 +1621,7 @@ const Lib = (() => {
     wikiRef, summaryUrl, shortExtract, parseSummary, commonsNearbyUrl, parseCommons, gmapsSearchUrl, gmapsPlaceDirUrl, gsiReverseUrl, parseGsiAddress, gsiSearchUrl, parseGsi,
     cellId, cellsInRadius, relatedSpots, FOOD_CATS, searchKeys, inFoodCat,
     openState, ohText, seasonNow, seasonText, routeSamples, rainAlongUrl, parseRainAlong, elevationUrl, climbOf,
-    sxCloseLoop, JMA_TIMES, jmaFrames, frameAt, mmLevel, gridPoints, modelUrl, modelFrames, gridLevelAt, rainTrust, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict, rainDetourVias, nearestOnLine,
+    placeQuery, sxCloseLoop, JMA_TIMES, jmaFrames, frameAt, mmLevel, gridPoints, modelUrl, modelFrames, gridLevelAt, rainTrust, RAIN_COLORS, RAIN_LABELS, rainLevel, tilePixel, routeAt, departOptions, rainVerdict, rainDetourVias, nearestOnLine,
     dayPlan, autoPlanStops, schedulePlan, orderStops, visitedStats, streetViewUrl, NEARBY_KINDS, nearbyQuery, parseNearby,
     sunPosition, sunTimes, dir16, bearing, diamondFuji, isochroneUrl, inGeometry, curviness, curvStars,
     jpHoliday, crowdLevel, dirPoints, tilesAlong, closedAlong, onsenHome,
